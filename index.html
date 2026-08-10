@@ -1,13 +1,686 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<script>(function(){var t=localStorage.getItem('citt-theme')||'dark';document.documentElement.setAttribute('data-theme',t);})();</script>
 <title>canitakethis.co — Can I bring this on a plane or into a country? (2026)</title>
 <meta name="description" content="Fast, sourced answers on what you can bring on 79 airlines and into 85 countries — baggage, liquids, power banks, vapes, medication, alcohol, cash and more.">
 <link rel="canonical" href="https://canitakethis.co/">
-<style>body{margin:0;font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;color:#14181f}.wrap{max-width:820px;margin:0 auto;padding:24px 18px 60px}h1{font-size:1.7rem}.grid a{display:inline-block;background:#f2f5fa;margin:4px;padding:8px 12px;border-radius:10px;text-decoration:none;color:#14181f;font-size:.92rem}.cta{display:inline-block;margin:1em 0;background:#0b63f6;color:#fff;padding:13px 22px;border-radius:12px;text-decoration:none;font-weight:700}h2{margin-top:1.6em;font-size:1.1rem}</style></head><body><div class="wrap">
+<style>
+:root,[data-theme="dark"]{--bg:#0E1428;--glow:#1A2542;--surface:#161F3A;--surface-2:#22304F;--line:#2A3A5E;--text:#EDF0F7;--muted:#8A96B8;--accent:#4CC2FF;--card:#182238;--card-text:#EDF0F7;--card-muted:#98A4C2;--card-line:#2A3A5E;}
+[data-theme="light"]{--bg:#ECEAE1;--glow:#FFFFFF;--surface:#FFFFFF;--surface-2:#F0EEE4;--line:#DED9CB;--text:#1B2233;--muted:#6B7488;--accent:#1E86D6;--card:#FFFFFF;--card-text:#141414;--card-muted:#6A6A6A;--card-line:#E7E3D6;}
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap');
+:root,[data-theme="dark"]{--bg:#0E1428;--glow:#1A2542;--surface:#161F3A;--surface-2:#22304F;--line:#2A3A5E;--text:#EDF0F7;--muted:#8A96B8;--accent:#4CC2FF;--go:#2FCF9B;--warn:#F5B841;--stop:#FF6B6B;--info:#4CC2FF;--card:#182238;--card-text:#EDF0F7;--card-muted:#98A4C2;--card-line:#2A3A5E;--card-notch:#0E1428;--card-sub:#1E2A46;--card-sub-line:#2A3A5E;--tg-neutral:#C2CCE4;--tg-green:#54DDAD;--tg-amber:#F3C765;--tg-stop:#FF9A9A;--mark-bg:#26324E;--sel-bg:#4CC2FF;--sel-text:#08111f;}
+[data-theme="light"]{--bg:#ECEAE1;--glow:#FFFFFF;--surface:#FFFFFF;--surface-2:#F0EEE4;--line:#DED9CB;--text:#1B2233;--muted:#6B7488;--accent:#1E86D6;--go:#2FCF9B;--warn:#F5B841;--stop:#FF6B6B;--info:#4CC2FF;--card:#FFFFFF;--card-text:#141414;--card-muted:#6A6A6A;--card-line:#E7E3D6;--card-notch:#ECEAE1;--card-sub:#F4F1E8;--card-sub-line:#E4DFCE;--tg-neutral:#333333;--tg-green:#0F6F49;--tg-amber:#8A6410;--tg-stop:#A23131;--mark-bg:#333A48;--sel-bg:#1B2233;--sel-text:#FFFFFF;}
+*{box-sizing:border-box}html,body{margin:0}
+body{background:radial-gradient(1200px 600px at 50% -10%,var(--glow) 0%,transparent 60%),var(--bg);color:var(--text);font-family:'Inter',system-ui,sans-serif;min-height:100vh;-webkit-font-smoothing:antialiased;transition:background .25s,color .25s}
+.wrap{max-width:440px;margin:0 auto;padding:20px 18px 64px}
+.topbar{display:flex;align-items:center;justify-content:space-between;margin-bottom:4px}
+.brand{display:flex;align-items:center;gap:10px}
+.mark{width:34px;height:34px;border-radius:10px;flex:none;background:var(--mark-bg);display:grid;place-items:center;color:#EDF0F7;box-shadow:0 6px 18px rgba(0,0,0,.22)}
+.mark svg{width:18px;height:18px}
+.brand h1{font-family:'Space Grotesk','Inter',sans-serif;font-weight:700;font-size:18px;letter-spacing:-.4px;margin:0;color:var(--text)}
+.theme-toggle{display:flex;align-items:center;gap:6px;background:var(--surface);border:1px solid var(--line);color:var(--text);border-radius:999px;padding:7px 12px;font-family:'Inter',sans-serif;font-size:12px;font-weight:600;cursor:pointer}
+.theme-toggle .ico{font-size:13px}
+.tag-line{color:var(--muted);font-size:13px;margin:8px 2px 18px;line-height:1.4}
+.tag-line b{color:var(--text);font-weight:600}
+.trip{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-bottom:16px;align-items:stretch}
+.combo{position:relative}
+.combo>label{position:absolute;top:9px;left:13px;font-family:'Space Mono',monospace;font-size:9px;letter-spacing:1.2px;color:var(--muted);text-transform:uppercase;pointer-events:none;z-index:1}
+.combo-trigger{background:var(--surface);border:1px solid var(--line);border-radius:13px;padding:24px 30px 9px 12px;min-height:57px;height:100%;display:flex;align-items:center;gap:9px;cursor:pointer;transition:border-color .15s}
+.combo-trigger:hover{border-color:var(--surface-2)}
+.combo-trigger .name{font-weight:600;font-size:14px;line-height:1.16;white-space:normal;word-break:break-word;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+.combo .chev{position:absolute;right:12px;top:50%;transform:translateY(-20%);color:var(--muted);pointer-events:none}
+.combo-panel{position:absolute;top:calc(100% + 6px);left:0;right:0;z-index:40;background:var(--surface);border:1px solid var(--line);border-radius:13px;box-shadow:0 22px 55px rgba(0,0,0,.35);padding:8px}
+.combo-search{width:100%;background:var(--bg);border:1px solid var(--line);border-radius:9px;color:var(--text);font-family:'Inter',sans-serif;font-size:14px;padding:10px 12px;margin-bottom:6px}
+.combo-search:focus-visible{outline:none;border-color:var(--accent)}
+.combo-list{max-height:250px;overflow-y:auto}
+.opt{display:flex;align-items:center;gap:10px;padding:9px 10px;border-radius:9px;cursor:pointer;font-size:14px;color:var(--text)}
+.opt:hover{background:var(--surface-2)}
+.opt .iata{margin-left:auto;font-family:'Space Mono',monospace;font-size:10px;color:var(--muted)}
+.opt.empty{color:var(--muted);font-size:13px;cursor:default;padding:12px 10px}
+.opt.empty:hover{background:transparent}
+.flag{font-size:18px;width:24px;text-align:center;flex:none}
+.logo{position:relative;width:26px;height:26px;border-radius:6px;overflow:hidden;display:inline-grid;place-items:center;color:#fff;font-family:'Space Mono',monospace;font-size:8.5px;font-weight:700;flex:none}
+.logo img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;background:#fff}
+.seg{display:grid;grid-template-columns:1fr 1fr;gap:6px;background:var(--surface);border:1px solid var(--line);border-radius:15px;padding:6px;margin-bottom:14px}
+.seg button{border:0;background:transparent;color:var(--muted);cursor:pointer;font-family:'Inter',sans-serif;font-weight:600;font-size:13.5px;padding:11px 8px;border-radius:10px;display:flex;align-items:center;justify-content:center;gap:7px;transition:.18s}
+.seg button svg{width:16px;height:16px}
+.seg button.on{background:var(--sel-bg);color:var(--sel-text);box-shadow:0 5px 15px rgba(0,0,0,.18)}
+.slab{font-family:'Space Mono',monospace;font-size:9.5px;letter-spacing:1.6px;text-transform:uppercase;color:var(--muted);margin:16px 4px 10px}
+.bag2{display:grid;grid-template-columns:1fr 1fr;gap:9px;align-items:stretch}
+.bag2 button{background:var(--surface);border:1px solid var(--line);border-radius:13px;color:var(--text);cursor:pointer;font-family:'Inter',sans-serif;font-weight:600;font-size:13.5px;padding:13px 12px;text-align:left;transition:.15s;line-height:1.22;height:100%;display:flex;flex-direction:column;justify-content:flex-start}
+.bag2 button small{display:block;font-weight:400;font-size:11px;color:var(--muted);margin-top:3px}
+.bag2 button.on{border-color:var(--sel-bg);background:var(--surface);box-shadow:inset 0 0 0 1px var(--sel-bg)}
+.bagsolo{width:100%;margin-top:9px;background:var(--surface);border:1px solid var(--line);border-radius:13px;color:var(--text);cursor:pointer;font-family:'Inter',sans-serif;font-weight:600;font-size:13.5px;padding:13px 14px;text-align:left;transition:.15s;line-height:1.22;display:block}
+.bagsolo small{display:block;font-weight:400;font-size:11px;color:var(--muted);margin-top:3px}
+.bagsolo.on{border-color:var(--sel-bg);box-shadow:inset 0 0 0 1px var(--sel-bg)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{background:var(--surface);border:1px solid var(--line);border-radius:999px;color:var(--text);cursor:pointer;font-family:'Inter',sans-serif;font-weight:500;font-size:13.5px;padding:9px 14px;transition:.14s;display:inline-flex;align-items:center;gap:7px}
+.chip:hover{border-color:var(--surface-2)}
+.chip .e{font-size:14px}
+.chip.on{background:var(--sel-bg);color:var(--sel-text);border-color:var(--sel-bg);font-weight:600}
+.chip.sm{font-family:'Space Mono',monospace;font-size:12.5px;font-weight:700;padding:8px 13px}
+.chip.fare{font-size:12.5px}
+#itemQuick,#dogSize{margin-bottom:9px}
+#itemQuick:empty{display:none}
+.searchrow{display:flex;gap:8px}
+.tinput{flex:1;background:var(--surface);border:1px solid var(--line);border-radius:13px;color:var(--text);font-family:'Inter',sans-serif;font-size:15px;padding:13px 14px}
+.tinput:focus-visible{outline:none;border-color:var(--accent)}
+.tinput::placeholder{color:var(--muted)}
+#scanBtn{flex:none;background:var(--surface);border:1px solid var(--line);border-radius:13px;color:var(--accent);width:48px;display:grid;place-items:center;cursor:pointer}
+#scanBtn svg{width:20px;height:20px}
+.suggest{margin-top:6px;background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.pickwrap{position:relative}
+@media(max-width:640px){
+.pickwrap .suggest{position:absolute;left:0;right:0;bottom:100%;margin:0 0 8px;max-height:46vh;overflow:auto;z-index:60;box-shadow:0 -10px 28px rgba(0,0,0,.4)}
+.pickwrap .suggest:empty{display:none}
+}
+.suggest:empty{display:none}
+.sug{padding:11px 14px;cursor:pointer;font-size:14px;display:flex;justify-content:space-between;gap:10px;border-bottom:1px solid var(--bg);color:var(--text)}
+.sug:last-child{border-bottom:0}
+.sug:hover{background:var(--surface-2)}
+.sug.anyway{color:var(--accent);font-weight:600}
+.sug .ing{font-family:'Space Mono',monospace;font-size:10.5px;color:var(--muted);align-self:center;font-weight:400}
+#scanNote{margin-top:8px;font-size:12px;color:var(--muted);display:none}
+.pass-wrap{margin-top:20px;min-height:150px}
+.pass{position:relative;background:var(--card);color:var(--card-text);border-radius:18px;overflow:hidden;box-shadow:0 20px 50px rgba(0,0,0,.30);transition:background .25s,color .25s}
+.pass.print{animation:print .5s cubic-bezier(.2,.9,.25,1) both}
+@keyframes print{from{opacity:0;transform:translateY(14px) scale(.97)}to{opacity:1;transform:none}}
+.spin{width:22px;height:22px;border:2.5px solid var(--card-line);border-top-color:var(--accent);border-radius:50%;animation:spin .7s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.strip{padding:15px 18px;display:flex;align-items:center;gap:12px;color:#08111f}
+.strip .badge{width:34px;height:34px;border-radius:10px;display:grid;place-items:center;background:rgba(0,0,0,.16)}
+.strip .badge svg{width:19px;height:19px}
+.strip .verdict{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:20px;letter-spacing:-.4px;line-height:1}
+.strip .vsub{font-family:'Space Mono',monospace;font-size:9.5px;letter-spacing:1px;text-transform:uppercase;opacity:.75;margin-top:3px}
+.go .strip{background:var(--go)}.warn .strip{background:var(--warn)}.stop .strip{background:var(--stop)}.info .strip{background:var(--info)}
+.perf{position:relative;height:0;border-top:2px dashed var(--card-line)}
+.perf::before,.perf::after{content:"";position:absolute;top:-11px;width:22px;height:22px;border-radius:50%;background:var(--card-notch);transition:background .25s}
+.perf::before{left:-11px}.perf::after{right:-11px}
+.body{padding:16px 18px 18px}
+.route{font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:.5px;color:var(--card-muted);display:flex;flex-wrap:wrap;gap:6px 10px;margin-bottom:12px}
+.route b{color:var(--card-text)}
+.tagrow{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:11px}
+.tag{font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.4px;padding:5px 9px;border-radius:7px}
+.tag-neutral{background:rgba(140,150,170,.16);color:var(--tg-neutral)}
+.tag-green{background:rgba(47,207,155,.16);color:var(--tg-green);font-weight:700}
+.tag-amber{background:rgba(245,184,65,.18);color:var(--tg-amber);font-weight:700}
+.tag-stop{background:rgba(255,107,107,.18);color:var(--tg-stop);font-weight:700}
+.headline{font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:16px;line-height:1.3;margin:0 0 10px;color:var(--card-text)}
+.detail{list-style:none;margin:0;padding:0}
+.detail li{position:relative;padding-left:18px;font-size:13.5px;line-height:1.5;color:var(--card-text);opacity:.92;margin-bottom:6px}
+.detail li::before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%;background:var(--card-text);opacity:.4}
+.xlink{margin-top:13px;width:100%;background:#141414;color:#F5F3EC;border:0;border-radius:11px;padding:12px;font-family:'Inter',sans-serif;font-weight:600;font-size:13px;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:7px}
+.help{margin-top:13px;background:var(--card-sub);border-radius:12px;padding:12px 13px}
+.help-h{font-family:'Space Mono',monospace;font-size:9.5px;letter-spacing:1.2px;text-transform:uppercase;color:var(--card-muted);margin-bottom:9px}
+.hitem{display:flex;align-items:center;gap:10px;padding:9px 11px;border-radius:9px;background:var(--card);text-decoration:none;color:var(--card-text);margin-bottom:6px;border:1px solid var(--card-sub-line)}
+a.hitem:hover{border-color:var(--accent)}
+.hi-ic{width:20px;text-align:center;font-size:14px;flex:none}
+.hi-l{font-size:13px;font-weight:600;line-height:1.25;display:flex;flex-direction:column;min-width:0}
+.hi-l small{font-weight:400;font-size:11px;color:var(--card-muted);margin-top:1px}
+.email-addr{text-decoration:underline;text-underline-offset:2px;-webkit-user-select:text;user-select:text;color:var(--card-muted);font-weight:400;word-break:break-all}
+.hi-go{margin-left:auto;color:var(--card-text);font-weight:700;flex:none}
+.email-menu{margin:-2px 0 8px 30px;display:flex;flex-direction:column;gap:5px}
+.email-menu.hidden{display:none}
+.em-opt{background:var(--card);border:1px solid var(--card-sub-line);border-radius:8px;padding:8px 11px;font-size:12.5px;font-weight:600;color:var(--card-text);text-decoration:none;display:flex;align-items:center;gap:8px}
+a.em-opt:hover{border-color:var(--accent)}
+.hnote{font-size:11px;color:var(--card-muted);line-height:1.4;margin-top:8px}
+.src{margin-top:12px;padding-top:11px;border-top:1px solid var(--card-line);font-family:'Space Mono',monospace;font-size:9.5px;letter-spacing:.3px;color:var(--card-muted);line-height:1.5}
+.bstrip{padding:15px 18px;display:flex;align-items:center;gap:12px;background:var(--card-sub);color:var(--card-text);border-bottom:1px solid var(--card-sub-line)}
+.bstrip .bic{width:34px;height:34px;border-radius:10px;display:grid;place-items:center;background:var(--card)}
+.bstrip .bic svg{width:19px;height:19px;color:var(--accent)}
+.bstrip .bt{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:18px;letter-spacing:-.3px;line-height:1;color:var(--card-text)}
+.bstrip .bsub{font-family:'Space Mono',monospace;font-size:9px;letter-spacing:.7px;text-transform:uppercase;color:var(--card-muted);margin-top:5px}
+.bsec-h{font-family:'Space Mono',monospace;font-size:9.5px;letter-spacing:1px;text-transform:uppercase;color:var(--card-muted);display:flex;align-items:center;gap:7px;margin-bottom:8px}
+.bsec-h svg{width:15px;height:15px;color:var(--card-text);opacity:.6}
+.perpax{display:inline-block;font-family:'Space Mono',monospace;font-size:9px;letter-spacing:.6px;text-transform:uppercase;background:var(--card-sub);color:var(--card-muted);padding:4px 8px;border-radius:6px;margin-bottom:10px;border:1px solid var(--card-sub-line)}
+.bsec-p{font-size:14px;line-height:1.5;color:var(--card-text);margin:0}
+.empty{border:1.5px dashed var(--line);border-radius:18px;padding:34px 20px;text-align:center;color:var(--muted)}
+.empty .ei{width:40px;height:40px;margin:0 auto 12px;color:var(--surface-2)}
+.empty p{margin:0;font-size:13.5px;line-height:1.5}
+.empty p b{color:var(--text);font-weight:600}
+.hidden{display:none}
+@media (prefers-reduced-motion:reduce){.pass.print{animation:none}}
+
+body{margin:0;font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;color:var(--text);background:var(--bg);transition:background .25s,color .25s}
+.seo{max-width:820px;margin:0 auto;padding:24px 18px 60px}
+.seo h1{font-size:1.7rem}
+.seo .grid a{display:inline-block;background:var(--surface);border:1px solid var(--line);margin:4px;padding:8px 12px;border-radius:10px;text-decoration:none;color:var(--text);font-size:.92rem}
+.seo h2{margin-top:1.6em;font-size:1.1rem}
+</style></head><body>
+<div class="wrap">
+  <div class="topbar">
+    <div class="brand"><div class="mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.8 19.2 16 11l3.5-3.5a2.1 2.1 0 0 0-3-3L13 8 4.8 6.2a.5.5 0 0 0-.5.8l3.9 4.3-2 2-2.2-.4a.5.5 0 0 0-.5.8L6 17l2.7 2.4a.5.5 0 0 0 .8-.5l-.4-2.2 2-2 4.3 3.9a.5.5 0 0 0 .8-.5Z"/></svg></div><h1>can i take this?</h1></div>
+    <button class="theme-toggle" id="themeToggle"><span class="ico" id="themeIcon">&#9728;</span><span id="themeLabel">Light</span></button>
+  </div>
+  <p class="tag-line">Know before you pack. <b>Pick your trip, tap what you're bringing, get a straight answer.</b></p>
+
+  <div class="trip">
+    <div class="combo" id="airlineCombo"><label>Airline</label><div class="combo-trigger" id="airlineTrigger"></div><span class="chev">&#9662;</span><div class="combo-panel hidden" id="airlinePanel"><input class="combo-search" id="airlineSearch" placeholder="Search airline" autocomplete="off"><div class="combo-list" id="airlineList"></div></div></div>
+    <div class="combo" id="countryCombo"><label>Destination</label><div class="combo-trigger" id="countryTrigger"></div><span class="chev">&#9662;</span><div class="combo-panel hidden" id="countryPanel"><input class="combo-search" id="countrySearch" placeholder="Search country" autocomplete="off"><div class="combo-list" id="countryList"></div></div></div>
+  </div>
+
+  <div class="seg" id="seg">
+    <button data-mode="plane" class="on"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.8 19.2 16 11l3.5-3.5a2.1 2.1 0 0 0-3-3L13 8 4.8 6.2a.5.5 0 0 0-.5.8l3.9 4.3-2 2-2.2-.4a.5.5 0 0 0-.5.8L6 17l2.7 2.4a.5.5 0 0 0 .8-.5l-.4-2.2 2-2 4.3 3.9a.5.5 0 0 0 .8-.5Z"/></svg>On the plane</button>
+    <button data-mode="country"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 22V4a2 2 0 0 1 2-2h9l-1 3 1 3H6"/><circle cx="12" cy="14" r="3"/></svg>Into the country</button>
+  </div>
+
+  <div id="bagBlock">
+    <div class="slab">Where in your bags?</div>
+    <div class="bag2" id="bag">
+      <button data-bag="carry" class="on">Carry-on <small>Trolley, backpack, under-seat</small></button>
+      <button data-bag="checked">Checked <small>Goes in the hold</small></button>
+    </div>
+    <button class="bagsolo" data-bag="standalone" id="bagStandalone">Check it in as its own item <small>Something too big for a bag — surfboard, bike, skis</small></button>
+  </div>
+
+  <div class="slab" id="catLabel">What are you bringing?</div>
+  <div class="chips" id="cats"></div>
+
+  <div id="subArea"></div>
+
+  <div id="itemBlock" class="hidden">
+    <div class="slab" id="itemLabel">Which one?</div>
+    <div class="chips" id="itemQuick"></div>
+    <div class="pickwrap"><div class="searchrow"><input id="itemInput" class="tinput" type="text" autocomplete="off" placeholder="Type a name"><button id="scanBtn" title="Scan barcode"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 5v14M7 5v14M11 5v14M14 5v14M18 5v14M21 5v14"/></svg></button></div>
+    <div id="itemSuggest" class="suggest"></div></div>
+    <div id="scanNote">Barcode scanning is on the roadmap — for now, just type the name.</div>
+  </div>
+
+  <div id="animalBlock" class="hidden">
+    <div class="slab">Which animal?</div>
+    <div class="chips" id="animalChips" style="margin-bottom:9px"><button class="chip" data-a="Dog"><span class="e">&#128021;</span>Dog</button><button class="chip" data-a="Cat"><span class="e">&#128008;</span>Cat</button></div>
+    <div class="chips hidden" id="dogSize"><button class="chip sm" data-s="Small">Small (cabin-sized)</button><button class="chip sm" data-s="Medium">Medium</button><button class="chip sm" data-s="Large">Large</button></div>
+    <div class="pickwrap"><input id="animalInput" class="tinput" type="text" autocomplete="off" placeholder="Other animal (e.g. rabbit, parrot)">
+    <div id="aniSuggest" class="suggest"></div></div>
+  </div>
+
+  <div class="pass-wrap" id="passWrap"></div>
+</div>
+<div class="seo">
 <h1>Can I take this? Know before you pack.</h1>
 <p>Fast, sourced answers on what you can bring — on <b>79 airlines</b> and into <b>85 countries</b>. Baggage, liquids, power banks, vapes, medication, alcohol, cash, plants and more.</p>
-<a class="cta" href="/app/">Open the checker →</a>
 <h2>Airline baggage allowances</h2><div class="grid"><a href="/airline/el-al/baggage-allowance/">El Al</a><a href="/airline/arkia/baggage-allowance/">Arkia</a><a href="/airline/israir/baggage-allowance/">Israir</a><a href="/airline/wizz-air/baggage-allowance/">Wizz Air</a><a href="/airline/easyjet/baggage-allowance/">easyJet</a><a href="/airline/ryanair/baggage-allowance/">Ryanair</a><a href="/airline/emirates/baggage-allowance/">Emirates</a><a href="/airline/qatar-airways/baggage-allowance/">Qatar Airways</a><a href="/airline/etihad-airways/baggage-allowance/">Etihad Airways</a><a href="/airline/turkish-airlines/baggage-allowance/">Turkish Airlines</a><a href="/airline/lufthansa/baggage-allowance/">Lufthansa</a><a href="/airline/swiss/baggage-allowance/">Swiss</a><a href="/airline/austrian/baggage-allowance/">Austrian</a><a href="/airline/brussels-airlines/baggage-allowance/">Brussels Airlines</a><a href="/airline/eurowings/baggage-allowance/">Eurowings</a><a href="/airline/air-france/baggage-allowance/">Air France</a><a href="/airline/klm/baggage-allowance/">KLM</a><a href="/airline/transavia/baggage-allowance/">Transavia</a><a href="/airline/british-airways/baggage-allowance/">British Airways</a><a href="/airline/aer-lingus/baggage-allowance/">Aer Lingus</a><a href="/airline/aegean/baggage-allowance/">Aegean</a><a href="/airline/ita-airways/baggage-allowance/">ITA Airways</a><a href="/airline/iberia/baggage-allowance/">Iberia</a><a href="/airline/vueling/baggage-allowance/">Vueling</a></div>
 <h2>Country customs rules</h2><div class="grid"><a href="/country/israel/">Israel</a><a href="/country/united-states/">United States</a><a href="/country/united-kingdom/">United Kingdom</a><a href="/country/japan/">Japan</a><a href="/country/united-arab-emirates/">United Arab Emirates</a><a href="/country/france/">France</a><a href="/country/germany/">Germany</a><a href="/country/thailand/">Thailand</a><a href="/country/australia/">Australia</a><a href="/country/canada/">Canada</a><a href="/country/italy/">Italy</a><a href="/country/spain/">Spain</a><a href="/country/greece/">Greece</a><a href="/country/turkey/">Turkey</a><a href="/country/netherlands/">Netherlands</a><a href="/country/switzerland/">Switzerland</a><a href="/country/singapore/">Singapore</a><a href="/country/india/">India</a><a href="/country/china/">China</a><a href="/country/south-korea/">South Korea</a><a href="/country/qatar/">Qatar</a><a href="/country/saudi-arabia/">Saudi Arabia</a><a href="/country/egypt/">Egypt</a><a href="/country/cyprus/">Cyprus</a></div>
 <h2>On the plane</h2><div class="grid"><a href="/plane/liquids/">Liquids</a><a href="/plane/power-bank/">Power banks</a><a href="/plane/vape-e-cigarette/">Vapes</a><a href="/plane/alcohol/">Alcohol</a><a href="/plane/lighter/">Lighters</a><a href="/plane/sharp-objects/">Sharp objects</a></div>
-<p style="color:#5a6472;font-size:.82rem;margin-top:2em">Guidance, not legal advice. Confirm with the airline or customs authority before you travel. Updated 2026.</p>
-</div></body></html>
+<p style="color:var(--muted);font-size:.82rem;margin-top:2em">Guidance, not legal advice. Confirm with the airline or customs authority before you travel. Updated 2026.</p>
+</div>
+<script>
+/* ============ ILLUSTRATIVE prototype data ============ */
+var DEF_CABIN={kg:8,dim:'55 × 40 × 23 cm',pcs:'1 cabin bag + 1 personal item'};
+var DEF_CHECKED={kg:23,dim:'up to 158 cm total',pcs:'1 bag, fare-dependent'};
+var AIRLINES=[
+ {name:'El Al',iata:'LY',site:'elal.com',cabin:{kg:8,dim:'56 × 45 × 25 cm',pcs:'1 cabin bag + 1 personal item'},checked:{kg:23,dim:'up to 158 cm total',pcs:'1–2 bags, fare-dependent'}},
+ {name:'Arkia',iata:'IZ'},{name:'Israir',iata:'6H'},
+ {name:'Wizz Air',iata:'W6',site:'wizzair.com',cabin:{kg:10,dim:'40 × 30 × 20 cm free',pcs:'1 small bag free; trolley is paid'},checked:{kg:23,dim:'up to 158 cm total',pcs:'paid, fare-dependent'}},
+ {name:'easyJet',iata:'U2',site:'easyjet.com',cabin:{kg:15,dim:'45 × 36 × 20 cm free',pcs:'1 small bag free; bigger needs Plus'},checked:{kg:23,dim:'up to 275 cm total',pcs:'paid add-on'}},
+ {name:'Ryanair',iata:'FR',site:'ryanair.com',cabin:{kg:10,dim:'40×20×25 free; 55×40×20 paid',pcs:'1 small bag free; 10 kg bag = Priority'},checked:{kg:20,dim:'standard',pcs:'paid add-on'}},
+ {name:'Emirates',iata:'EK',site:'emirates.com',cabin:{kg:7,dim:'55 × 38 × 20 cm',pcs:'1 cabin bag (+ handbag in some fares)'},checked:{kg:30,dim:'weight concept',pcs:'25–35 kg by fare'}},
+ {name:'Qatar Airways',iata:'QR',site:'qatarairways.com',cabin:{kg:7,dim:'50 × 37 × 25 cm',pcs:'1 cabin bag + 1 personal item'},checked:{kg:25,dim:'up to 158 cm',pcs:'25–35 kg by fare'}},
+ {name:'Etihad Airways',iata:'EY',site:'etihad.com'},{name:'Turkish Airlines',iata:'TK',site:'turkishairlines.com'},
+ {name:'Lufthansa',iata:'LH',site:'lufthansa.com'},{name:'Swiss',iata:'LX',site:'swiss.com'},{name:'Austrian',iata:'OS',site:'austrian.com'},{name:'Brussels Airlines',iata:'SN',site:'brusselsairlines.com'},{name:'Eurowings',iata:'EW',site:'eurowings.com'},
+ {name:'Air France',iata:'AF',site:'airfrance.com',cabin:{kg:12,dim:'55 × 35 × 25 cm',pcs:'1 cabin bag + 1 accessory'},checked:{kg:23,dim:'up to 158 cm',pcs:'fare-dependent'}},
+ {name:'KLM',iata:'KL',site:'klm.com'},{name:'Transavia',iata:'HV',site:'transavia.com'},
+ {name:'British Airways',iata:'BA',site:'britishairways.com',cabin:{kg:23,dim:'56 × 45 × 25 cm',pcs:'1 cabin bag + 1 personal item'},checked:{kg:23,dim:'up to 208 cm',pcs:'fare-dependent'}},
+ {name:'Aer Lingus',iata:'EI',site:'aerlingus.com'},{name:'Aegean',iata:'A3',site:'aegeanair.com'},{name:'ITA Airways',iata:'AZ',site:'ita-airways.com'},{name:'Iberia',iata:'IB',site:'iberia.com'},{name:'Vueling',iata:'VY',site:'vueling.com'},{name:'Air Europa',iata:'UX',site:'aireuropa.com'},{name:'TAP Air Portugal',iata:'TP',site:'flytap.com'},
+ {name:'Norwegian',iata:'DY',site:'norwegian.com'},{name:'SAS',iata:'SK',site:'flysas.com'},{name:'Finnair',iata:'AY',site:'finnair.com'},{name:'Icelandair',iata:'FI',site:'icelandair.com'},{name:'LOT Polish',iata:'LO',site:'lot.com'},{name:'Pegasus',iata:'PC',site:'flypgs.com'},{name:'SunExpress',iata:'XQ',site:'sunexpress.com'},
+ {name:'Delta',iata:'DL',site:'delta.com',cabin:{kg:null,dim:'56 × 35 × 23 cm',pcs:'1 carry-on + 1 personal item'},checked:{kg:23,dim:'up to 157 cm',pcs:'fees on Basic Economy'}},
+ {name:'United',iata:'UA',site:'united.com',cabin:{kg:null,dim:'56 × 35 × 22 cm',pcs:'1 carry-on + 1 personal item'},checked:{kg:23,dim:'up to 157 cm',pcs:'fees on Basic Economy'}},
+ {name:'American Airlines',iata:'AA',site:'aa.com',cabin:{kg:null,dim:'56 × 36 × 23 cm',pcs:'1 carry-on + 1 personal item'},checked:{kg:23,dim:'up to 157 cm',pcs:'fees on Basic Economy'}},
+ {name:'Air Canada',iata:'AC',site:'aircanada.com'},{name:'Alaska Airlines',iata:'AS',site:'alaskaair.com'},{name:'JetBlue',iata:'B6',site:'jetblue.com'},{name:'Southwest',iata:'WN',site:'southwest.com'},{name:'Spirit',iata:'NK',site:'spirit.com'},{name:'Frontier',iata:'F9',site:'flyfrontier.com'},
+ {name:'Aeromexico',iata:'AM',site:'aeromexico.com'},{name:'LATAM',iata:'LA',site:'latamairlines.com'},{name:'Avianca',iata:'AV',site:'avianca.com'},{name:'Copa Airlines',iata:'CM',site:'copaair.com'},{name:'GOL',iata:'G3',site:'voegol.com.br'},{name:'Azul',iata:'AD',site:'voeazul.com.br'},
+ {name:'Singapore Airlines',iata:'SQ',site:'singaporeair.com'},{name:'Cathay Pacific',iata:'CX',site:'cathaypacific.com'},{name:'Japan Airlines',iata:'JL',site:'jal.com'},{name:'ANA',iata:'NH',site:'ana.co.jp'},{name:'Korean Air',iata:'KE',site:'koreanair.com'},{name:'Asiana',iata:'OZ',site:'flyasiana.com'},{name:'Thai Airways',iata:'TG',site:'thaiairways.com'},{name:'Malaysia Airlines',iata:'MH',site:'malaysiaairlines.com'},{name:'Vietnam Airlines',iata:'VN',site:'vietnamairlines.com'},{name:'Philippine Airlines',iata:'PR',site:'philippineairlines.com'},{name:'Air India',iata:'AI',site:'airindia.com'},{name:'IndiGo',iata:'6E',site:'goindigo.in'},{name:'China Southern',iata:'CZ',site:'csair.com'},{name:'China Eastern',iata:'MU',site:'ceair.com'},{name:'Air China',iata:'CA',site:'airchina.com'},
+ {name:'Qantas',iata:'QF',site:'qantas.com'},{name:'Air New Zealand',iata:'NZ',site:'airnewzealand.com'},{name:'Virgin Australia',iata:'VA',site:'virginaustralia.com'},
+ {name:'Saudia',iata:'SV',site:'saudia.com'},{name:'flydubai',iata:'FZ',site:'flydubai.com'},{name:'Air Arabia',iata:'G9',site:'airarabia.com'},{name:'Gulf Air',iata:'GF',site:'gulfair.com'},{name:'Oman Air',iata:'WY',site:'omanair.com'},{name:'Kuwait Airways',iata:'KU',site:'kuwaitairways.com'},{name:'Royal Jordanian',iata:'RJ',site:'rj.com'},{name:'Middle East Airlines',iata:'ME',site:'mea.com.lb'},
+ {name:'EgyptAir',iata:'MS',site:'egyptair.com'},{name:'Ethiopian Airlines',iata:'ET',site:'ethiopianairlines.com'},{name:'Kenya Airways',iata:'KQ',site:'kenya-airways.com'},{name:'South African Airways',iata:'SA',site:'flysaa.com'},{name:'Royal Air Maroc',iata:'AT',site:'royalairmaroc.com'}
+];
+function acabin(a){return a.cabin||DEF_CABIN;}function achecked(a){return a.checked||DEF_CHECKED;}
+var FARES={
+ 'El Al':[{label:'Economy (Classic & Flex)',cabin:'1 carry-on bag up to 8 kg (max 56 × 45 × 25 cm) per passenger, plus 1 small personal item like a backpack or laptop bag.',checked:'1–2 checked bags, 23 kg each, per passenger — depends on the exact fare and route.'},{label:'Economy (Lite)',cabin:'Per passenger: standard cabin suitcases may be checked free at the gate due to fare rules; you can still bring 1 small personal item into the cabin.',checked:'No checked bag included per passenger — add one for a fee.'},{label:'Premium Class',cabin:'2 carry-on bags per passenger, max 8 kg each (combined up to 12 kg).',checked:'2 checked bags per passenger, 23 kg each.'},{label:'Business Class',cabin:'2 carry-on bags per passenger, max 16 kg each (combined up to 20 kg).',checked:'2 checked bags per passenger, 32 kg each.'}],
+ 'Ryanair':[{label:'Basic',cabin:'1 small personal bag per passenger (40 × 20 × 25 cm) that fits under the seat in front of you.',checked:'No checked bag per passenger — add 10 kg or 20 kg for a fee.'},{label:'Priority',cabin:'Per passenger: 1 small personal bag + 1 cabin bag up to 10 kg (55 × 40 × 20 cm).',checked:'No checked bag included per passenger unless added.'}],
+ 'easyJet':[{label:'Standard',cabin:'1 small under-seat bag per passenger (max 45 × 36 × 20 cm), any weight you can lift yourself.',checked:'Add checked bags up to 23 kg per passenger for a fee.'},{label:'Plus / Up front',cabin:'Per passenger: 1 under-seat bag plus 1 larger cabin bag (56 × 45 × 25 cm).',checked:'Add checked bags up to 23 kg per passenger for a fee.'}],
+ 'Emirates':[{label:'Economy Saver',cabin:'1 cabin bag up to 7 kg per passenger (55 × 38 × 20 cm).',checked:'20–25 kg checked per passenger (weight concept), fare-dependent.'},{label:'Economy Flex',cabin:'1 cabin bag up to 7 kg per passenger (55 × 38 × 20 cm).',checked:'30–35 kg checked per passenger, fare-dependent.'},{label:'Business',cabin:'2 cabin bags up to 7 kg each, per passenger.',checked:'40 kg checked per passenger (weight concept).'}],
+ 'British Airways':[{label:'Basic (hand only)',cabin:'1 cabin bag (56 × 45 × 25 cm) + 1 personal item, per passenger.',checked:'No checked bag included per passenger.'},{label:'Standard',cabin:'1 cabin bag (56 × 45 × 25 cm) + 1 personal item, per passenger.',checked:'1 checked bag up to 23 kg per passenger.'},{label:'Club (Business)',cabin:'1 cabin bag + 1 personal item, per passenger.',checked:'2 checked bags up to 32 kg each, per passenger.'}],
+ 'Singapore Airlines':[{label:'Economy Lite',cabin:'1 cabin bag up to 7 kg per passenger (max 115 cm total).',checked:'25 kg checked per passenger on most routes — no changes, no upgrades.'},{label:'Economy Standard',cabin:'1 cabin bag up to 7 kg per passenger (max 115 cm total).',checked:'30 kg checked per passenger (route-dependent).'},{label:'Economy Flexi',cabin:'1 cabin bag up to 7 kg per passenger (max 115 cm total).',checked:'35 kg checked per passenger, fully flexible.'},{label:'Premium Economy',cabin:'2 cabin bags up to 7 kg total, per passenger.',checked:'35 kg checked per passenger.'},{label:'Business',cabin:'2 cabin bags up to 7 kg each, per passenger.',checked:'40 kg checked per passenger.'},{label:'First / Suites',cabin:'2 cabin bags per passenger.',checked:'50 kg checked per passenger.'}]
+};
+function faresFor(a){return FARES[a.name]||null;}
+var COUNTRIES=[{name:'Israel',code:'IL'},{name:'United States',code:'US'},{name:'United Kingdom',code:'GB'},{name:'Japan',code:'JP'},{name:'United Arab Emirates',code:'AE'},{name:'France',code:'FR'},{name:'Germany',code:'DE'},{name:'Thailand',code:'TH'},{name:'Australia',code:'AU'},{name:'Canada',code:'CA'},{name:'Italy',code:'IT'},{name:'Spain',code:'ES'},{name:'Greece',code:'GR'},{name:'Turkey',code:'TR'},{name:'Netherlands',code:'NL'},{name:'Switzerland',code:'CH'},{name:'Singapore',code:'SG'},{name:'India',code:'IN'},{name:'China',code:'CN'},{name:'South Korea',code:'KR'},{name:'Qatar',code:'QA'},{name:'Saudi Arabia',code:'SA'},{name:'Egypt',code:'EG'},{name:'Cyprus',code:'CY'},{name:'Portugal',code:'PT'},{name:'Austria',code:'AT'},{name:'Belgium',code:'BE'},{name:'Poland',code:'PL'},{name:'Mexico',code:'MX'},{name:'Brazil',code:'BR'},{name:'Argentina',code:'AR'},{name:'Chile',code:'CL'},{name:'Colombia',code:'CO'},{name:'Peru',code:'PE'},{name:'South Africa',code:'ZA'},{name:'Morocco',code:'MA'},{name:'Kenya',code:'KE'},{name:'Nigeria',code:'NG'},{name:'Ethiopia',code:'ET'},{name:'New Zealand',code:'NZ'},{name:'Ireland',code:'IE'},{name:'Sweden',code:'SE'},{name:'Norway',code:'NO'},{name:'Denmark',code:'DK'},{name:'Finland',code:'FI'},{name:'Iceland',code:'IS'},{name:'Czechia',code:'CZ'},{name:'Hungary',code:'HU'},{name:'Romania',code:'RO'},{name:'Bulgaria',code:'BG'},{name:'Croatia',code:'HR'},{name:'Slovenia',code:'SI'},{name:'Slovakia',code:'SK'},{name:'Serbia',code:'RS'},{name:'Ukraine',code:'UA'},{name:'Georgia',code:'GE'},{name:'Russia',code:'RU'},{name:'Malta',code:'MT'},{name:'Luxembourg',code:'LU'},{name:'Estonia',code:'EE'},{name:'Latvia',code:'LV'},{name:'Lithuania',code:'LT'},{name:'Jordan',code:'JO'},{name:'Lebanon',code:'LB'},{name:'Kuwait',code:'KW'},{name:'Bahrain',code:'BH'},{name:'Oman',code:'OM'},{name:'Indonesia',code:'ID'},{name:'Malaysia',code:'MY'},{name:'Philippines',code:'PH'},{name:'Vietnam',code:'VN'},{name:'Cambodia',code:'KH'},{name:'Sri Lanka',code:'LK'},{name:'Nepal',code:'NP'},{name:'Hong Kong',code:'HK'},{name:'Taiwan',code:'TW'},{name:'Maldives',code:'MV'},{name:'Mauritius',code:'MU'},{name:'Seychelles',code:'SC'},{name:'Fiji',code:'FJ'},{name:'Costa Rica',code:'CR'},{name:'Panama',code:'PA'},{name:'Dominican Republic',code:'DO'},{name:'Jamaica',code:'JM'},{name:'Cuba',code:'CU'}];
+function flagFromCode(cc){return cc.replace(/./g,function(ch){return String.fromCodePoint(127397+ch.toUpperCase().charCodeAt(0));});}
+var LOGOCOLORS=['#2E6BE6','#12A150','#B8412E','#7A5CFF','#D98A00','#0E7C86','#C0356B','#3A6E3A'];
+var CFLAG={};COUNTRIES.forEach(function(c){CFLAG[c.name]=flagFromCode(c.code);});
+function airlineByName(n){for(var i=0;i<AIRLINES.length;i++)if(AIRLINES[i].name===n)return AIRLINES[i];return AIRLINES[0];}
+
+var CATS={
+  plane:[{id:'baginfo',e:'\uD83E\uDDF3',label:'Bag info'},{id:'liquids',e:'\uD83D\uDCA7',label:'Liquids',detail:'vol'},{id:'perfume',e:'\uD83C\uDF38',label:'Perfume & aerosols',detail:'vol'},{id:'med',e:'\uD83D\uDC8A',label:'Medication'},{id:'power',e:'\uD83D\uDD0B',label:'Power bank',detail:'wh'},{id:'vape',e:'\uD83D\uDCA8',label:'Vape / e-cig'},{id:'sharp',e:'\uD83D\uDD2A',label:'Sharp objects'},{id:'alcohol',e:'\uD83C\uDF77',label:'Alcohol',detail:'vol'},{id:'food',e:'\uD83E\uDD6A',label:'Food'},{id:'animal',e:'\uD83D\uDC3E',label:'Animals'},{id:'sports',e:'\uD83C\uDFBE',label:'Sports gear'},{id:'lighter',e:'\uD83D\uDD25',label:'Lighter'}],
+  country:[{id:'med',e:'\uD83D\uDC8A',label:'Medication'},{id:'food',e:'\uD83E\uDD69',label:'Food & produce'},{id:'animal',e:'\uD83D\uDC3E',label:'Animals'},{id:'alcohol',e:'\uD83C\uDF77',label:'Alcohol'},{id:'cash',e:'\uD83D\uDCB5',label:'Cash'},{id:'plants',e:'\uD83C\uDF31',label:'Plants & seeds'},{id:'vape',e:'\uD83D\uDCA8',label:'Vape / e-cig'},{id:'tobacco',e:'\uD83D\uDEAC',label:'Tobacco'}]
+};
+var DETAILS={vol:[{id:'50',label:'50 ml'},{id:'100',label:'100 ml'},{id:'300',label:'300 ml'},{id:'500',label:'500 ml+'}],wh:[{id:'lo',label:'Under 100 Wh'},{id:'mid',label:'100-160 Wh'},{id:'hi',label:'Over 160 Wh'}]};
+
+var MED_DB=[{n:'Sudafed',ing:'Pseudoephedrine',controlled:true},{n:'Claritin-D',ing:'Pseudoephedrine',controlled:true},{n:'Nurofen',ing:'Ibuprofen'},{n:'Advil',ing:'Ibuprofen'},{n:'Tylenol',ing:'Paracetamol'},{n:'Panadol',ing:'Paracetamol'},{n:'Codeine',ing:'Codeine',controlled:true},{n:'Solpadeine',ing:'Codeine',controlled:true},{n:'Tramadol',ing:'Tramadol',controlled:true},{n:'Adderall',ing:'Amphetamine',controlled:true},{n:'Ritalin',ing:'Methylphenidate',controlled:true},{n:'Vyvanse',ing:'Lisdexamfetamine',controlled:true},{n:'Concerta',ing:'Methylphenidate',controlled:true},{n:'Xanax',ing:'Alprazolam',controlled:true},{n:'Valium',ing:'Diazepam',controlled:true},{n:'Ambien',ing:'Zolpidem',controlled:true},{n:'OxyContin',ing:'Oxycodone',controlled:true},{n:'Vicks VapoInhaler',ing:'Levomethamphetamine'},{n:'Benadryl',ing:'Diphenhydramine'},{n:'Zyrtec',ing:'Cetirizine'},{n:'Claritin',ing:'Loratadine'},{n:'Melatonin',ing:'Melatonin'},{n:'Aspirin',ing:'Aspirin'},{n:'Nexium',ing:'Esomeprazole'},{n:'Ventolin',ing:'Salbutamol'},{n:'EpiPen',ing:'Epinephrine',injectable:true},{n:'Ozempic',ing:'Semaglutide',injectable:true},{n:'Insulin',ing:'Insulin',liquid:true,injectable:true},{n:'Prozac',ing:'Fluoxetine'},{n:'Zoloft',ing:'Sertraline'},{n:'Lexapro',ing:'Escitalopram'},{n:'CBD oil',ing:'Cannabidiol',controlled:true},{n:'Imodium',ing:'Loperamide'},{n:'Viagra',ing:'Sildenafil'}];
+var MED_RULES={'Pseudoephedrine':{def:'rx',Japan:'ban',Thailand:'permit','United States':'ok'},'Codeine':{def:'rx','United Arab Emirates':'permit',Japan:'rx'},'Tramadol':{def:'rx','United Arab Emirates':'permit'},'Amphetamine':{def:'permit',Japan:'ban','United Arab Emirates':'permit'},'Methylphenidate':{def:'permit',Japan:'permit','United Arab Emirates':'permit'},'Levomethamphetamine':{def:'ok',Japan:'ban'},'Semaglutide':{def:'ok'},'Ibuprofen':{def:'ok'},'Paracetamol':{def:'ok'},'Diphenhydramine':{def:'ok',Japan:'rx'},'Melatonin':{def:'rx','United States':'ok'},'Insulin':{def:'ok'}};
+var MED_AUTH={Japan:{label:'Japan MHLW — medication import',url:'https://www.mhlw.go.jp/english/',email:'kanshi@mhlw.go.jp'},'United Arab Emirates':{label:'UAE Ministry of Health & Prevention',url:'https://mohap.gov.ae/en',email:'info@mohap.gov.ae'}};
+
+var FOOD_DB=[{n:'Beef jerky',c:'meat'},{n:'Salami',c:'meat'},{n:'Prosciutto',c:'meat'},{n:'Ham',c:'meat'},{n:'Dried sausage',c:'meat'},{n:'Fresh fish',c:'meat'},{n:'Canned tuna',c:'packaged'},{n:'Cheese',c:'dairy'},{n:'Butter',c:'dairy'},{n:'Baby formula',c:'dairy',form:'liquid'},{n:'Yoghurt',c:'dairy',form:'liquid'},{n:'Milk',c:'dairy',form:'liquid'},{n:'Eggs',c:'egg'},{n:'Apple',c:'fresh'},{n:'Mango',c:'fresh'},{n:'Banana',c:'fresh'},{n:'Orange',c:'fresh'},{n:'Fresh vegetables',c:'fresh'},{n:'Honey',c:'honey',form:'liquid'},{n:'Raw nuts',c:'seeds'},{n:'Seeds',c:'seeds'},{n:'Rice',c:'seeds'},{n:'Dried fruit',c:'packaged'},{n:'Chocolate',c:'packaged'},{n:'Cookies',c:'packaged'},{n:'Coffee beans',c:'packaged'},{n:'Tea',c:'packaged'},{n:'Spices',c:'seeds'},{n:'Olive oil',c:'packaged',form:'liquid'},{n:'Soup',c:'packaged',form:'liquid'},{n:'Bread',c:'packaged'},{n:'Instant noodles',c:'packaged'}];
+var FOOD_RULES={Australia:{meat:'stop',dairy:'warn',fresh:'stop',seeds:'stop',honey:'stop',egg:'stop',packaged:'warn',def:'warn'},'United States':{meat:'stop',dairy:'warn',fresh:'stop',seeds:'warn',honey:'warn',egg:'stop',packaged:'go',def:'warn'},'United Kingdom':{meat:'warn',dairy:'warn',fresh:'go',seeds:'go',honey:'go',egg:'warn',packaged:'go',def:'warn'},'New Zealand':{meat:'stop',dairy:'warn',fresh:'stop',seeds:'stop',honey:'stop',egg:'stop',packaged:'warn',def:'warn'},def:{meat:'warn',dairy:'warn',fresh:'warn',seeds:'warn',honey:'warn',egg:'warn',packaged:'go',def:'warn'}};
+var CATNAME={meat:'Meat products',dairy:'Dairy',fresh:'Fresh produce',seeds:'Seeds & nuts',honey:'Honey',egg:'Eggs',packaged:'Packaged food'};
+
+var SHARP_DB=[{n:'Knife',carry:'stop',note:'Any blade over ~6 cm is barred from the cabin.'},{n:'Pocket knife',carry:'stop',note:'Folding pocket knives are barred from the cabin.'},{n:'Swiss Army knife',carry:'stop',note:'Multi-blade knives are barred from the cabin.'},{n:'Scissors',carry:'warn',note:'Small scissors with blades under ~6 cm are usually allowed in the cabin; larger ones are not.'},{n:'Safety razor',carry:'go',note:'A safety or disposable razor is fine in the cabin. Loose razor blades are not — pack those in checked.'},{n:'Straight razor',carry:'stop',note:'Open-blade straight razors are barred from the cabin.'},{n:'Razor blades',carry:'stop',note:'Loose razor blades must be packed in checked baggage.'},{n:'Nail clippers',carry:'go',note:'Nail clippers are allowed in the cabin.'},{n:'Nail file',carry:'go',note:'A metal nail file is allowed in the cabin.'},{n:'Nail scissors',carry:'go',note:'Small nail scissors are generally allowed in the cabin.'},{n:'Tweezers',carry:'go',note:'Tweezers are allowed in the cabin.'},{n:'Multi-tool',carry:'stop',note:'A multi-tool with a blade is barred from the cabin.'},{n:'Corkscrew',carry:'warn',note:'A plain corkscrew is usually fine; one with a foil-cutter blade may be refused in the cabin.'},{n:'Knitting needles',carry:'go',note:'Knitting needles are generally allowed in the cabin.'},{n:'Crochet hook',carry:'go',note:'Crochet hooks are generally allowed in the cabin.'},{n:'Box cutter',carry:'stop',note:'Box cutters and loose razor blades are barred from the cabin.'},{n:'Scalpel',carry:'stop',note:'Loose blades and scalpels are barred from the cabin.'},{n:'Screwdriver',carry:'warn',note:'Tools under ~7 inches are usually allowed in the cabin; longer ones must be checked.'},{n:'Scissors (craft)',carry:'warn',note:'Craft scissors with longer blades must be checked.'},{n:'Ice skates',carry:'warn',note:'Ice skates are usually allowed but bladed edges may draw extra screening.'},{n:'Utility knife',carry:'stop',note:'Utility knives are barred from the cabin.'},{n:'Meat cleaver',carry:'stop',note:'Cleavers and large blades must be checked.'},{n:'Axe',carry:'stop',note:'Axes and hatchets must be checked.'}];
+var SPORTS_DB=[{n:'Golf clubs',cabin:false,note:'Golf clubs travel as checked baggage (often as a sports item, sometimes for a fee). They are not allowed in the cabin.'},{n:'Skis',cabin:false,note:'Skis and poles go as checked sports baggage; most airlines have a ski-bag policy and a possible fee.'},{n:'Ski poles',cabin:false,note:'Ski poles go as checked sports baggage with skis.'},{n:'Snowboard',cabin:false,note:'Snowboards travel as checked sports baggage, often with a fee.'},{n:'Bicycle',cabin:false,note:'Bicycles must be checked — usually boxed or in a bike bag with tyres deflated; size limits and fees apply.'},{n:'Tennis racket',cabin:true,note:'A tennis racket can often go in the cabin if it fits your cabin allowance; otherwise check it.'},{n:'Badminton racket',cabin:true,note:'A racket can often go in the cabin if within your cabin allowance.'},{n:'Surfboard',cabin:false,note:'Surfboards travel as oversized checked baggage; length limits and fees apply.'},{n:'Bodyboard',cabin:false,note:'Bodyboards travel as checked sports baggage.'},{n:'Fishing rod',cabin:true,note:'A fishing rod can sometimes go in the cabin if within size limits, but is usually checked; hooks and knives must be checked.'},{n:'Scuba tank',cabin:false,note:'Scuba cylinders must be empty with the valve open or removed to be accepted, usually as checked baggage.'},{n:'Diving gear',cabin:false,note:'Diving gear travels as checked baggage; regulators/knives have their own rules.'},{n:'Dumbbells',cabin:false,note:'Weights go in checked baggage and count against your weight allowance; they are not allowed in the cabin.'},{n:'Yoga mat',cabin:true,note:'A yoga mat can usually go in the cabin as, or with, your personal item.'},{n:'Climbing gear',cabin:false,note:'Ropes and hardware usually go checked; ice axes and crampons must be checked.'},{n:'Ice hockey stick',cabin:false,note:'Hockey sticks travel as checked sports baggage.'},{n:'Baseball bat',cabin:false,note:'Bats are treated as potential weapons and must be checked.'},{n:'Skateboard',cabin:true,note:'A skateboard can often go in the cabin if it fits your allowance; otherwise check it.'},{n:'Kayak',cabin:false,note:'Kayaks travel as oversized checked baggage; size limits and fees apply.'},{n:'Paddleboard',cabin:false,note:'SUPs travel as oversized checked baggage.'},{n:'Helmet',cabin:true,note:'A helmet can usually go in the cabin or with your gear bag.'},{n:'Bowling ball',cabin:false,note:'Bowling balls are best checked due to weight.'},{n:'Archery bow',cabin:false,note:'Bows and arrows must be checked.'},{n:'Pool cue',cabin:false,note:'Pool cues usually must be checked due to length.'}];
+
+var ANIMAL_AUTH={'United States':{label:'USDA APHIS / CDC pet import',url:'https://www.aphis.usda.gov/'},'United Kingdom':{label:'UK pet travel (GOV.UK / APHA)',url:'https://www.gov.uk/take-pet-abroad'},'Australia':{label:'Australia Dept. of Agriculture',url:'https://www.agriculture.gov.au/'},'Japan':{label:'Japan Animal Quarantine Service',url:'https://www.maff.go.jp/aqs/english/'},'New Zealand':{label:'NZ Ministry for Primary Industries',url:'https://www.mpi.govt.nz/'}};
+var STRICT_PET=['Australia','New Zealand','United Kingdom','Japan','Ireland','Singapore'];
+var ANIMAL_DB=['Rabbit','Hamster','Guinea pig','Gerbil','Ferret','Parrot','Cockatiel','Canary','Budgie','Finch','Turtle','Tortoise','Snake','Lizard','Gecko','Iguana','Fish','Frog','Hedgehog','Horse','Pony','Pig','Goat','Chinchilla','Rat','Mouse','Sugar glider','Bird of prey','Capybara'];
+
+var ITEMCFG={
+ med:{db:MED_DB,quick:[],label:'Which medicine?',ph:'Type a medicine or ingredient (e.g. Sudafed)',sub:function(x){return x.ing;}},
+ food:{db:FOOD_DB,quick:[],label:'Which food?',ph:'Type a food (e.g. beef jerky)',sub:function(x){return CATNAME[x.c];}},
+ sharp:{db:SHARP_DB,quick:['Knife','Scissors','Safety razor','Nail clippers','Tweezers','Multi-tool'],label:'Which sharp object?',ph:'Type a sharp object (e.g. corkscrew)',sub:null},
+ sports:{db:SPORTS_DB,quick:['Golf clubs','Skis','Bicycle','Tennis racket','Surfboard','Scuba tank'],label:'Which sports gear?',ph:'Type your gear (e.g. fishing rod)',sub:null}
+};
+
+var S={mode:'plane',bag:'carry',airline:'El Al',country:'Japan',cat:'baginfo',detail:null,item:null,itemQ:'',open:null,aQ:'',cQ:'',fare:0,animal:null,dogSize:null,aniQ:'',liveToken:0};
+var theme=document.documentElement.getAttribute('data-theme')||'dark';
+function merge(a,b){var o={},k;for(k in a)o[k]=a[k];for(k in b)o[k]=b[k];return o;}
+function airSource(){var a=airlineByName(S.airline);return {label:a.name,url:a.site?('https://www.'+a.site):null};}
+
+/* ============ rules ============ */
+function R(status,head,lines,src){return {status:status,head:head,lines:lines,src:src};}
+function verdict(){
+  var mode=S.mode,bag=S.bag,cat=S.cat,detail=S.detail,airline=S.airline,country=S.country,carry=bag==='carry';
+  var src=mode==='plane'?'Based on standard IATA & aviation-security rules. Always confirm the exact limit with '+airline+' before you fly.':'Import rules change often and vary by nationality. Confirm with the '+country+' customs authority or your embassy before you travel.';
+  if(mode==='plane'){
+    if(cat==='liquids'||cat==='perfume'||cat==='alcohol'){
+      var ml=detail?parseInt(detail,10):null;
+      if(!carry)return R('go','Fine in your checked bag.',['No 100 ml limit applies to checked bags.',cat==='alcohol'?'Alcohol over 70% ABV is banned; 24-70% is capped at 5 L per person.':'Pack it well - pressure changes can cause leaks.'],src);
+      if(ml===null)return R('warn','Depends on the size - pick one above.',['In carry-on, each container must be 100 ml or less.'],src);
+      if(ml<=100)return R('go','Yes - carry it on.',[ml+' ml is within the 100 ml carry-on limit.','Keep it with your other liquids in one clear resealable bag.',cat==='alcohol'?'Sealed duty-free bought after security is also allowed.':''].filter(Boolean),src);
+      return R('stop','Not in your carry-on.',[(detail==='500'?'500 ml or more':ml+' ml')+' is over the 100 ml cabin limit.','Move it to your checked bag - there it is allowed.'],src);
+    }
+    if(cat==='power'){
+      if(!carry)return R('stop','No - never in checked baggage.',['Spare lithium batteries and power banks are banned from the hold.','They must travel in the cabin, with you.'],src);
+      if(detail==='hi')return R('stop','Not allowed on board.',['Over 160 Wh is prohibited on passenger flights entirely.'],src);
+      if(detail==='mid')return R('warn','Yes - with airline approval.',['100-160 Wh is allowed in carry-on, but needs '+airline+' prior approval.','Limit of two.'],src);
+      return R('go','Yes - in your carry-on.',['Under 100 Wh (most phone/laptop power banks) is fine in the cabin.','Keep terminals protected; do not charge devices during taxi/takeoff.'],src);
+    }
+    if(cat==='vape')return carry?R('warn','Cabin only - carry it on.',['E-cigarettes and vapes must be in the cabin, never checked.','Do not use or charge them on board.'],src):R('stop','No - never in the hold.',['Vapes and e-cigarettes are banned from checked baggage for fire safety.'],src);
+    if(cat==='lighter')return R('warn','One on you - not in bags.',['One lighter is allowed on your person, not in carry-on or checked bags.','Torch/jet lighters are usually banned entirely.'],src);
+  }
+  if(mode==='country'){
+    if(cat==='alcohol')return country==='United Arab Emirates'?R('warn','Tight limits - respect the local law.',['The UAE permits a small duty-free allowance for non-Muslim adults; know the current litre limit and behave accordingly.'],src):R('warn','Within your duty-free allowance.',['Adults may bring a set duty-free amount (often ~1 L spirits or a few L of wine).','Over the allowance, you pay duty at customs.'],src);
+    if(cat==='cash')return R('warn','Allowed - but you must declare large sums.',['Carrying cash is legal, but amounts over the threshold must be declared.','Typical limits: US $10,000 / EU EUR 10,000 (or equivalent).','Not declaring can mean seizure and fines.'],src);
+    if(cat==='plants')return R('warn','High-risk - usually needs a permit.',['Live plants, seeds, soil and cuttings are tightly controlled for biosecurity.','Most require a phytosanitary certificate or are banned outright.','Declare on arrival without exception.'],src);
+    if(cat==='vape')return country==='Thailand'?R('stop','Illegal - leave it at home.',['Thailand bans importing e-cigarettes and vapes; penalties include fines and jail.'],src):R('warn','Often restricted - check first.',['Some countries ban or heavily restrict vapes and nicotine liquids.','Where allowed, small personal quantities are typical.'],src);
+    if(cat==='tobacco')return R('warn','Within your duty-free allowance.',['Adults may bring a set amount duty-free (often ~200 cigarettes).','Above that you pay duty; some countries require a health-warning-compliant pack.'],src);
+  }
+  return null;
+}
+/* ---- medicine ---- */
+function medCountryVerdict(entry){
+  var ing=entry.ing,country=S.country,rules=MED_RULES[ing];
+  var level=rules?(rules[country]||rules.def):'unknown';
+  var auth=MED_AUTH[country]||{label:country+' health & customs authority',url:null};
+  var ingTag={t:'Active ingredient \u00B7 '+ing,k:'neutral'};
+  var base={source:auth,src:'Medication rules vary by country and can change. This is guidance, not legal advice - carry your prescription and confirm with the official authority before you fly.'};
+  if(level==='ban')return merge(base,{status:'stop',tags:[ingTag,{t:'Not permitted',k:'stop'}],head:entry.n+' contains '+ing+' \u2014 banned in '+country+'.',lines:['A prescription does not change this - '+ing+' is prohibited in '+country+'.','Do not pack it. Ask your doctor about an approved alternative for the trip.']});
+  if(level==='permit')return merge(base,{status:'warn',tags:[ingTag,{t:'Prescription + prior approval',k:'amber'}],head:'Allowed only if you arrange approval first.',lines:[ing+' is controlled in '+country+' - you need an import permit or advance approval before you travel.','Apply ahead of time and carry the approval together with your prescription.']});
+  if(level==='rx')return merge(base,{status:'go',tags:[ingTag,{t:'Prescription needed',k:'amber'}],head:'Yes - bring it with your prescription.',lines:['Carry '+entry.n+' in its original packaging with the prescription or a doctor letter.','Bring only a personal supply (usually up to ~30-90 days).']});
+  if(level==='ok')return merge(base,{status:'go',tags:[ingTag,{t:'No prescription needed',k:'green'}],head:'Yes - you can bring this in.',lines:[ing+' is not specially restricted in '+country+'.','Keep it in original packaging and bring a reasonable personal supply.']});
+  return merge(base,{status:'info',tags:[ingTag],head:'We don\'t have verified info for this yet.',lines:['We can\'t confirm how '+country+' treats '+ing+', so we won\'t guess.','See Helpful sources below and carry your prescription.']});
+}
+function medPlaneVerdict(entry){
+  var ing=entry.ing,country=S.country;
+  var lines=['Keep '+entry.n+' in your hand luggage in its original packaging, with the prescription or a doctor note.'];
+  if(entry.liquid)lines.push('As a liquid medicine it is exempt from the 100 ml cabin rule — just declare it at security.');
+  if(entry.injectable)lines.push('Needles and syringes are allowed with the medication — carry the prescription to show at security.');
+  if(entry.controlled)lines.push(ing+' is a controlled substance in many places — carry documentation, and the destination rule matters most (below).');
+  lines.push('Flying with it is fine — the real question is whether '+country+' lets '+ing+' in.');
+  return {status:'go',tags:[{t:'Active ingredient \u00B7 '+ing,k:'neutral'},{t:'Cabin only',k:'amber'}],head:'Yes — carry '+entry.n+' in the cabin.',lines:lines,source:airSource(),src:'Based on aviation-security rules. Keep medication with you in the cabin, never in the hold.'};
+}
+/* ---- food ---- */
+function foodCountryVerdict(entry){
+  var c=entry.c,country=S.country,rules=FOOD_RULES[country]||FOOD_RULES.def,level=rules[c]||rules.def,cn=CATNAME[c]||'Food';
+  var catTag={t:'Category \u00B7 '+cn,k:'neutral'};
+  var base={source:{label:country+' customs / biosecurity authority',url:null},src:'Food rules protect against pests and disease. When unsure, always declare it - declaring is free, smuggling is fined.'};
+  if(level==='go')return merge(base,{status:'go',tags:[catTag,{t:'Generally accepted',k:'green'}],head:entry.n+' is usually fine to bring in.',lines:['Sealed, commercially packaged '+cn.toLowerCase()+' is generally accepted.','Still tick the "food" box on your arrival card if there is one.']});
+  if(level==='stop')return merge(base,{status:'stop',tags:[catTag,{t:'Not permitted',k:'stop'}],head:'Leave the '+entry.n.toLowerCase()+' behind — '+country+' won\'t allow it.',lines:[cn+' is prohibited or destroyed on arrival in '+country+'.','Undeclared risks a fine; declared, it will simply be taken.']});
+  if(level==='warn')return merge(base,{status:'warn',tags:[catTag,{t:'Declare on arrival',k:'amber'}],head:entry.n+' is restricted — declare it.',lines:[cn+' is limited in '+country+' and may be inspected or refused.','Declare it on arrival; sealed commercial products have the best chance.']});
+  return merge(base,{status:'info',tags:[catTag],head:'We\'re not sure about '+entry.n+'.',lines:['We can\'t confirm how '+country+' treats this item.','Declare it to be safe and see Helpful sources below.']});
+}
+function foodPlaneVerdict(entry){
+  var country=S.country,liquid=(entry.form==='liquid'),carry=S.bag==='carry';
+  var lines=[];
+  if(liquid&&carry){lines.push(entry.n+' counts as a liquid/gel — in carry-on it must be 100 ml or less.');lines.push('Baby food and baby formula are exempt in reasonable amounts — just declare them.');}
+  else if(liquid){lines.push(entry.n+' is a liquid/gel but there is no 100 ml limit in checked bags.');}
+  else{lines.push('As a solid food, '+entry.n+' is fine in both the cabin and checked bags.');}
+  lines.push('The real question is whether '+country+' lets '+entry.n.toLowerCase()+' in — check that below.');
+  return {status:(liquid&&carry)?'warn':'go',tags:[{t:'Food \u00B7 '+entry.n,k:'neutral'}],head:(liquid&&carry)?('Keep '+entry.n+' to 100 ml in the cabin'):('Yes — '+entry.n+' is fine to fly with'),lines:lines,source:airSource(),src:'Based on aviation-security rules for food in the cabin and hold.'};
+}
+/* ---- sharp ---- */
+function sharpVerdict(item){
+  var carry=S.bag==='carry';
+  if(!carry)return {status:'go',tags:[{t:'Item \u00B7 '+item.n,k:'neutral'},{t:'Checked OK',k:'green'}],head:item.n+' is fine in checked baggage.',lines:['Wrap or sheath it so it can\'t injure baggage handlers.'],source:airSource(),src:'Based on standard aviation-security rules. Confirm anything unusual with '+S.airline+'.'};
+  var st=item.carry,tag=st==='go'?{t:'Cabin OK',k:'green'}:st==='warn'?{t:'Size-dependent',k:'amber'}:{t:'Not in cabin',k:'stop'};
+  var head=st==='go'?(item.n+' is allowed in the cabin.'):st==='warn'?(item.n+' — depends on the size.'):(item.n+' — not in your carry-on.');
+  var lines=[item.note];if(st==='stop')lines.push('Pack it in your checked bag instead, where it\'s allowed.');
+  return {status:st,tags:[{t:'Item \u00B7 '+item.n,k:'neutral'},tag],head:head,lines:lines,source:airSource(),src:'Based on standard aviation-security rules. Confirm anything unusual with '+S.airline+'.'};
+}
+function sharpUnknown(q){return {status:'info',tags:[{t:'Item \u00B7 '+q,k:'neutral'}],head:'We couldn\'t find "'+q+'" in our data yet.',lines:['General rule: anything with a fixed or exposed blade over ~6 cm belongs in checked baggage, not the cabin.','When unsure, put it in checked and confirm with '+S.airline+' — see Helpful sources.'],source:airSource(),src:'We only give a verdict when we can back it up. For everything else, we hand you the right people.'};}
+/* ---- sports ---- */
+function sportsVerdict(item){
+  var st=item.cabin?'go':'warn';
+  return {status:st,tags:[{t:'Gear \u00B7 '+item.n,k:'neutral'},item.cabin?{t:'Cabin possible',k:'green'}:{t:'Checked / oversized',k:'amber'}],head:item.cabin?(item.n+' — can often go in the cabin.'):(item.n+' — travels as checked baggage.'),lines:[item.note,'Check '+S.airline+'\'s sports-equipment and oversize-bag fees before you fly.'],source:airSource(),src:'Based on standard airline sports-baggage handling. Fees and size limits vary by airline.'};
+}
+function sportsUnknown(q){return {status:'info',tags:[{t:'Gear \u00B7 '+q,k:'neutral'}],head:'We couldn\'t find "'+q+'" in our data yet.',lines:['General rule: most sports gear travels as checked or oversized baggage, often for a fee, and rarely in the cabin.','Confirm the exact policy and fee with '+S.airline+' — see Helpful sources.'],source:airSource(),src:'We only give a verdict when we can back it up. For everything else, we hand you the right people.'};}
+/* ---- animals ---- */
+function animalVerdict(){
+  var sp=S.animal,size=S.dogSize,country=S.country,a=S.airline,strict=STRICT_PET.indexOf(country)>-1;
+  if(S.mode==='plane'){
+    var asrc={label:a+' pet travel policy',url:(airlineByName(a).site?('https://www.'+airlineByName(a).site):null)};
+    if(sp==='Cat')return {status:'warn',tags:[{t:'Animal \u00B7 Cat',k:'neutral'},{t:'Cabin-eligible',k:'amber'}],head:'A cat can usually fly in the cabin — book ahead.',lines:['A cat in an approved soft carrier can travel under the seat in front of you, within '+a+'\'s weight limit.','Cabin pet spots are limited per flight — reserve yours in advance.','Assistance animals follow separate rules.'],source:asrc,src:'Pet-in-cabin rules vary by airline, aircraft and route. Confirm with '+a+' when you book.'};
+    if(sp==='Dog'){
+      if(size==='Small')return {status:'warn',tags:[{t:'Animal \u00B7 Small dog',k:'neutral'},{t:'Cabin-eligible',k:'amber'}],head:'A small dog can usually fly in the cabin.',lines:['Within '+a+'\'s carrier + pet weight limit (often ~8 kg combined), a small dog travels under the seat.','Reserve the cabin pet spot early — places are capped per flight.','Snub-nosed (brachycephalic) breeds may face extra restrictions.'],source:asrc,src:'Confirm the exact carrier size and weight limit with '+a+' when you book.'};
+      return {status:'warn',tags:[{t:'Animal \u00B7 '+size+' dog',k:'neutral'},{t:'Travels as cargo',k:'amber'}],head:'A '+size.toLowerCase()+' dog travels as cargo, not in the cabin.',lines:['Too large for the cabin, it flies in the temperature-controlled hold, booked through the airline\'s pet-cargo service.','Some aircraft and routes don\'t accept pets in the hold — check before you commit.','Snub-nosed breeds are often barred from the hold for health reasons.'],source:asrc,src:'Pet-cargo acceptance varies by airline, aircraft and route. Confirm with '+a+' before you book.'};
+    }
+    return {status:'info',tags:[{t:'Animal \u00B7 '+sp,k:'neutral'}],head:'We couldn\'t find the exact answer for flying with a '+sp+' on '+a+'.',lines:['Unusual animals are handled case-by-case, usually as special cargo.','Contact '+a+' before you plan — see Helpful sources.'],source:asrc,src:'We only give a verdict when we can back it up. For everything else, we hand you the right people.'};
+  }
+  var cauth=ANIMAL_AUTH[country]||{label:country+' animal import / quarantine authority',url:null};
+  if(sp==='Cat')return {status:'warn',tags:[{t:'Animal \u00B7 Cat',k:'neutral'},{t:strict?'Permit + possible quarantine':'Paperwork required',k:'amber'}],head:strict?(country+' — plan months ahead for a cat.'):('A cat is allowed with the right paperwork.'),lines:[strict?(country+' is rabies-controlled: a cat needs a microchip, rabies vaccination, a blood-titre test, an import permit and possibly quarantine.'):'A cat typically needs a microchip, an up-to-date rabies vaccination and a government health certificate.','Cats have no breed restrictions, but timing is strict — start early.','Confirm the exact checklist with the authority below.'],source:cauth,src:'Live-animal import rules are strict and time-sensitive. Confirm every step with the official authority.'};
+  if(sp==='Dog')return {status:'warn',tags:[{t:'Animal \u00B7 Dog',k:'neutral'},{t:strict?'Permit + possible quarantine':'Paperwork required',k:'amber'}],head:strict?(country+' — plan months ahead for a dog.'):('A dog is allowed with the right paperwork.'),lines:[strict?(country+' is rabies-controlled: a dog needs a microchip, rabies vaccination, a blood-titre test, an import permit and possibly quarantine.'):'A dog typically needs a microchip, an up-to-date rabies vaccination and a government health certificate.','Some countries ban or restrict specific breeds (e.g. certain "dangerous dog" types) — check the destination\'s breed list.','Start early — some steps take months.'],source:cauth,src:'Live-animal import rules are strict and time-sensitive. Confirm every step with the official authority.'};
+  return {status:'info',tags:[{t:'Animal \u00B7 '+sp,k:'neutral'}],head:'We couldn\'t find the exact answer for bringing a '+sp+' into '+country+'.',lines:['Exotic and non-cat/dog animals have very specific, often restrictive rules.','Check the official authority below before making any plans.'],source:cauth,src:'We only give a verdict when we can back it up. For everything else, we hand you the right people.'};
+}
+
+var VICON={go:'<path d="M20 6 9 17l-5-5"/>',warn:'<path d="M12 9v4m0 4h.01M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"/>',stop:'<circle cx="12" cy="12" r="9"/><path d="M8 12h8"/>',info:'<circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v4h1"/>'};
+var VLABEL={go:'Allowed',warn:'Check first',stop:'Not allowed',info:'Check the source'};
+var SUITCASE='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="7" width="16" height="13" rx="2"/><path d="M9 7V4h6v3M9 11v5M15 11v5"/></svg>';
+var CABINICO='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="7" width="12" height="13" rx="2"/><path d="M9 7V4h6v3M10 11v5M14 11v5"/></svg>';
+var HOLDICO='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="8" width="16" height="11" rx="2"/><path d="M8 8V5h8v3M4 14h16"/></svg>';
+var SICON={web:'\uD83C\uDF10',phone:'\uD83D\uDCDE',mail:'\u2709\uFE0F',gov:'\uD83C\uDFDB\uFE0F',form:'\uD83D\uDCDD'};
+
+/* ============ render ============ */
+function $(s){return document.querySelector(s);}
+function isItemMode(){return !!ITEMCFG[S.cat];}
+function isAnimal(){return S.cat==='animal';}
+function logoHTML(a){var col=LOGOCOLORS[a.iata.charCodeAt(0)%LOGOCOLORS.length];var srcs=['https://pics.avs.io/64/64/'+a.iata+'.png','https://images.kiwi.com/airlines/64/'+a.iata+'.png'];return '<span class="logo" style="background:'+col+'"><span>'+a.iata+'</span><img class="logo-img" data-srcs="'+srcs.join('|')+'" data-i="0" src="'+srcs[0]+'" alt=""></span>';}
+function advanceLogo(im){var list=(im.dataset.srcs||'').split('|'),i=parseInt(im.dataset.i||'0',10)+1;if(i<list.length){im.dataset.i=i;im.src=list[i];}else{im.style.display='none';}}
+function bindLogoFallbacks(root){(root||document).querySelectorAll('img.logo-img').forEach(function(im){im.onerror=function(){advanceLogo(im);};if(im.complete&&im.naturalWidth===0)advanceLogo(im);});}
+function applyTheme(){document.documentElement.setAttribute('data-theme',theme);localStorage.setItem('citt-theme',theme);$('#themeLabel').textContent=theme==='dark'?'Light':'Dark';$('#themeIcon').innerHTML=theme==='dark'?'\u2600':'\u263D';}
+
+function renderTriggers(){
+  var a=airlineByName(S.airline);
+  $('#airlineTrigger').innerHTML=logoHTML(a)+'<span class="name">'+a.name+'</span>';
+  $('#countryTrigger').innerHTML='<span class="flag">'+(CFLAG[S.country]||'')+'</span><span class="name">'+S.country+'</span>';
+  bindLogoFallbacks($('#airlineTrigger'));
+}
+function renderAirlineList(){
+  var q=(S.aQ||'').toLowerCase().trim();
+  var list=AIRLINES.filter(function(a){return a.name.toLowerCase().indexOf(q)>-1||a.iata.toLowerCase().indexOf(q)>-1;});
+  var el=$('#airlineList');
+  el.innerHTML=list.length?list.map(function(a){return '<div class="opt" data-n="'+a.name+'">'+logoHTML(a)+'<span>'+a.name+'</span><span class="iata">'+a.iata+'</span></div>';}).join(''):'<div class="opt empty">No airline matches that.</div>';
+  el.querySelectorAll('.opt[data-n]').forEach(function(o){o.onclick=function(){S.airline=o.dataset.n;S.fare=0;S.open=null;closePanels();renderTriggers();render();};});
+  bindLogoFallbacks(el);
+}
+function renderCountryList(){
+  var q=(S.cQ||'').toLowerCase().trim();
+  var list=COUNTRIES.filter(function(c){return c.name.toLowerCase().indexOf(q)>-1;});
+  var el=$('#countryList');
+  el.innerHTML=list.length?list.map(function(c){return '<div class="opt" data-n="'+c.name+'"><span class="flag">'+flagFromCode(c.code)+'</span><span>'+c.name+'</span></div>';}).join(''):'<div class="opt empty">No country matches that.</div>';
+  el.querySelectorAll('.opt[data-n]').forEach(function(o){o.onclick=function(){S.country=o.dataset.n;S.open=null;closePanels();renderTriggers();render();};});
+}
+function closePanels(){$('#airlinePanel').classList.add('hidden');$('#countryPanel').classList.add('hidden');}
+function openPanel(which){S.open=which;if(which==='airline'){$('#countryPanel').classList.add('hidden');$('#airlinePanel').classList.remove('hidden');renderAirlineList();var s=$('#airlineSearch');s.value=S.aQ;s.focus();}else{$('#airlinePanel').classList.add('hidden');$('#countryPanel').classList.remove('hidden');renderCountryList();var s2=$('#countrySearch');s2.value=S.cQ;s2.focus();}}
+function emptyHTML(msg){return '<div class="empty"><svg class="ei" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 7a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/><path d="M4 12h16" stroke-dasharray="2 2"/></svg><p>'+msg+'</p></div>';}
+
+function renderSubArea(){
+  var el=$('#subArea');el.innerHTML='';
+  if(S.mode!=='plane')return;
+  if(S.cat==='baginfo'){
+    var fs=faresFor(airlineByName(S.airline));
+    if(!fs)return;
+    if(S.fare>fs.length-1)S.fare=0;
+    el.innerHTML='<div class="slab">Fare / cabin class</div><div class="chips" id="fareTabs">'+fs.map(function(f,i){return '<button class="chip fare'+(i===S.fare?' on':'')+'" data-f="'+i+'">'+f.label+'</button>';}).join('')+'</div>';
+    el.querySelectorAll('#fareTabs .chip').forEach(function(b){b.onclick=function(){S.fare=parseInt(b.dataset.f,10);render();};});
+    return;
+  }
+  var co=null,arr=CATS.plane;for(var i=0;i<arr.length;i++){if(arr[i].id===S.cat){co=arr[i];break;}}
+  if(co&&co.detail){
+    var list=DETAILS[co.detail];
+    el.innerHTML='<div class="slab">'+(co.detail==='wh'?'Battery capacity?':'How much?')+'</div><div class="chips" id="detChips">'+list.map(function(d){return '<button class="chip sm'+(S.detail===d.id?' on':'')+'" data-d="'+d.id+'">'+d.label+'</button>';}).join('')+'</div>';
+    el.querySelectorAll('#detChips .chip').forEach(function(b){b.onclick=function(){S.detail=b.dataset.d;render();};});
+  }
+}
+
+function render(){
+  document.querySelectorAll('#seg button').forEach(function(b){b.classList.toggle('on',b.dataset.mode===S.mode);});
+  $('#bagBlock').classList.toggle('hidden',S.mode!=='plane');
+  document.querySelectorAll('#bag button').forEach(function(b){b.classList.toggle('on',b.dataset.bag===S.bag);});
+  $('#bagStandalone').classList.toggle('on',S.bag==='standalone');
+  if(isStandalone()){
+    $('#catLabel').textContent='Which item are you checking in?';
+    $('#cats').innerHTML='';$('#subArea').innerHTML='';
+    $('#animalBlock').classList.add('hidden');
+    $('#itemBlock').classList.remove('hidden');
+    $('#itemLabel').textContent='Large / standalone item';
+    $('#itemInput').placeholder='Type any large item (e.g. kayak, wheelchair)';
+    renderSoloQuick();renderVerdict();return;
+  }
+  $('#catLabel').textContent=S.mode==='plane'?'What are you bringing?':'What do you want to bring in?';
+  var cats=CATS[S.mode];
+  if(S.cat&&!cats.some(function(c){return c.id===S.cat;})){S.cat=S.mode==='plane'?'baginfo':null;S.detail=null;}
+  $('#cats').innerHTML=cats.map(function(c){return '<button class="chip'+(S.cat===c.id?' on':'')+'" data-cat="'+c.id+'"><span class="e">'+c.e+'</span>'+c.label+'</button>';}).join('');
+  document.querySelectorAll('#cats .chip').forEach(function(el){el.onclick=function(){setCat(el.dataset.cat);};});
+  renderSubArea();
+  var itemMode=isItemMode();
+  $('#itemBlock').classList.toggle('hidden',!itemMode);
+  if(itemMode){var cfg=ITEMCFG[S.cat];$('#itemLabel').textContent=cfg.label;$('#itemInput').placeholder=cfg.ph;renderQuick();}
+  var animal=isAnimal();
+  $('#animalBlock').classList.toggle('hidden',!animal);
+  if(animal){document.querySelectorAll('#animalChips .chip').forEach(function(b){b.classList.toggle('on',S.animal===b.dataset.a);});$('#dogSize').classList.toggle('hidden',S.animal!=='Dog');document.querySelectorAll('#dogSize .chip').forEach(function(b){b.classList.toggle('on',S.dogSize===b.dataset.s);});}
+  renderVerdict();
+}
+function setCat(id){S.cat=id;S.detail=null;S.item=null;S.itemQ='';S.animal=null;S.dogSize=null;S.aniQ='';if(S.cat==='baginfo')S.fare=0;$('#itemInput').value='';$('#animalInput').value='';$('#itemSuggest').innerHTML='';$('#aniSuggest').innerHTML='';render();focusPicker();}
+function focusPicker(){
+  var item=$('#itemBlock'),ani=$('#animalBlock');
+  if(item&&!item.classList.contains('hidden')){var inp=$('#itemInput');if(inp){inp.focus({preventScroll:true});scrollToEl(item);}}
+  else if(ani&&!ani.classList.contains('hidden')){scrollToEl(ani);}
+}
+function scrollToEl(el){try{el.scrollIntoView({behavior:'smooth',block:'center'});}catch(e){el.scrollIntoView();}}
+function renderSoloQuick(){
+  var el=$('#itemQuick');
+  el.innerHTML=SOLO_PRESETS.map(function(n){var on=(S.item&&S.item.n===n);return '<button class="chip'+(on?' on':'')+'" data-q="'+esc(n)+'">'+esc(n)+'</button>';}).join('');
+  el.querySelectorAll('.chip').forEach(function(b){b.onclick=function(){S.item={free:true,n:b.dataset.q};S.itemQ=b.dataset.q;$('#itemInput').value=b.dataset.q;$('#itemSuggest').innerHTML='';renderVerdict();renderSoloQuick();};});
+}
+function renderSoloSuggest(){
+  var q=(S.itemQ||'').toLowerCase().trim();
+  var list=q?SOLO_DB.filter(function(x){return x.toLowerCase().indexOf(q)>-1;}).slice(0,6):[];
+  var html=list.map(function(x){return '<div class="sug" data-n="'+esc(x)+'">'+esc(x)+'</div>';}).join('');
+  if(q)html+='<div class="sug anyway" data-any="1">Check &ldquo;'+esc(S.itemQ.trim())+'&rdquo;<span class="ing">as a standalone item</span></div>';
+  $('#itemSuggest').innerHTML=html;
+  $('#itemSuggest').querySelectorAll('.sug').forEach(function(el){el.onclick=function(){var n=el.dataset.any?S.itemQ.trim():el.dataset.n;S.item={free:true,n:n};S.itemQ=n;$('#itemInput').value=n;$('#itemSuggest').innerHTML='';renderVerdict();renderSoloQuick();};});
+}
+
+function renderQuick(){
+  var cfg=ITEMCFG[S.cat],el=$('#itemQuick');
+  el.innerHTML=(cfg.quick||[]).map(function(n){var on=(S.item&&S.item.n===n);return '<button class="chip'+(on?' on':'')+'" data-q="'+n+'">'+n+'</button>';}).join('');
+  el.querySelectorAll('.chip').forEach(function(b){b.onclick=function(){var name=b.dataset.q,found=null;for(var i=0;i<cfg.db.length;i++){if(cfg.db[i].n===name){found=cfg.db[i];break;}}S.item=found||{free:true,n:name};S.itemQ=name;$('#itemInput').value=name;$('#itemSuggest').innerHTML='';render();};});
+}
+function renderItemSuggest(){
+  var cfg=ITEMCFG[S.cat],q=(S.itemQ||'').toLowerCase().trim();
+  var list=q?cfg.db.filter(function(x){return x.n.toLowerCase().indexOf(q)>-1;}).slice(0,6):[];
+  var html=list.map(function(x){var sub=cfg.sub?cfg.sub(x):'';return '<div class="sug" data-n="'+x.n+'">'+x.n+(sub?'<span class="ing">'+sub+'</span>':'')+'</div>';}).join('');
+  if(q&&list.length===0)html+='<div class="sug anyway" data-any="1">Check &ldquo;'+S.itemQ+'&rdquo; anyway<span class="ing">not in our list</span></div>';
+  $('#itemSuggest').innerHTML=html;
+  $('#itemSuggest').querySelectorAll('.sug').forEach(function(el){el.onclick=function(){if(el.dataset.any){S.item={free:true,n:S.itemQ};}else{var name=el.dataset.n,f=null;for(var j=0;j<cfg.db.length;j++){if(cfg.db[j].n===name){f=cfg.db[j];break;}}S.item=f;S.itemQ=name;}$('#itemInput').value=S.itemQ;$('#itemSuggest').innerHTML='';renderVerdict();renderQuick();};});
+}
+function renderAniSuggest(){
+  var q=(S.aniQ||'').toLowerCase().trim();
+  var list=q?ANIMAL_DB.filter(function(x){return x.toLowerCase().indexOf(q)>-1;}).slice(0,6):[];
+  var html=list.map(function(x){return '<div class="sug" data-a="'+x+'">'+x+'</div>';}).join('');
+  if(q&&list.length===0)html+='<div class="sug anyway" data-any="1">Check &ldquo;'+S.aniQ+'&rdquo; anyway<span class="ing">not in our list</span></div>';
+  $('#aniSuggest').innerHTML=html;
+  $('#aniSuggest').querySelectorAll('.sug').forEach(function(el){el.onclick=function(){S.animal=el.dataset.any?(S.aniQ.charAt(0).toUpperCase()+S.aniQ.slice(1)):el.dataset.a;S.dogSize=null;$('#animalInput').value=S.animal;$('#aniSuggest').innerHTML='';render();};});
+}
+
+function renderBagCard(wrap){
+  var a=airlineByName(S.airline),fs=faresFor(a);
+  if(!fs){
+    wrap.innerHTML='<div class="pass info print"><div class="strip"><div class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">'+VICON.info+'</svg></div><div><div class="verdict">Check the source</div><div class="vsub">Baggage allowance</div></div></div><div class="perf"></div><div class="body"><p class="headline">We don\u2019t have '+a.name+'\u2019s baggage allowance yet.</p><ul class="detail"><li>We only show allowances we can verify from the airline \u2014 we won\u2019t invent one.</li><li>Check '+a.name+' directly below for the exact carry-on and checked limits per fare.</li></ul>'+helpBlock(null)+'<div class="src">We show verified airline data only. For anything not yet in our data, we hand you the airline.</div></div></div>';
+    bindHelp(wrap);return;
+  }
+  var f=fs[Math.min(S.fare,fs.length-1)];
+  var carry=S.bag==='carry';var secH=carry?(CABINICO+' Carry-on allowance'):(HOLDICO+' Checked allowance');var body=carry?f.cabin:f.checked;
+  wrap.innerHTML='<div class="pass print"><div class="bstrip"><div class="bic">'+SUITCASE+'</div><div><div class="bt">Baggage allowance</div><div class="bsub">'+a.name+' \u00B7 '+f.label+'</div></div></div><div class="perf"></div><div class="body"><div class="bsec-h">'+secH+'</div><span class="perpax">Per passenger</span><p class="bsec-p">'+body+'</p>'+helpBlock(null)+'<div class="src">Allowances are per passenger and vary by fare, route and frequent-flyer status. Confirm with '+a.name+' before you fly.</div></div></div>';
+  bindHelp(wrap);
+}
+function itemVerdict(){
+  if(!S.item)return null;
+  if(S.item.free){if(S.cat==='sharp')return sharpUnknown(S.item.n);if(S.cat==='sports')return sportsUnknown(S.item.n);return unknownItem(S.item.n);}
+  if(S.cat==='med')return S.mode==='plane'?medPlaneVerdict(S.item):medCountryVerdict(S.item);
+  if(S.cat==='food')return S.mode==='plane'?foodPlaneVerdict(S.item):foodCountryVerdict(S.item);
+  if(S.cat==='sharp')return sharpVerdict(S.item);
+  if(S.cat==='sports')return sportsVerdict(S.item);
+}
+function unknownItem(q){
+  var country=S.country,auth=S.cat==='med'?(MED_AUTH[country]||{label:country+' health & customs authority',url:null}):{label:country+' customs authority',url:null};
+  return {status:'info',tags:[{t:(S.cat==='med'?'Medicine':'Food')+' \u00B7 '+q,k:'neutral'}],source:(S.mode==='plane'?airSource():auth),head:'We couldn\'t find "'+q+'" in our data yet.',lines:['We won\'t guess on something we can\'t back up.','Here\'s where to find out fast — see Helpful sources below.'],src:'We only give a verdict when we can back it up. For everything else, we hand you the right people.'};
+}
+/* ============ LIVE answer engine — real web fetch, no hand-typed data ============ */
+var LIVE={};var TTL=14*24*3600*1000;/* refresh cached answers every 2 weeks */
+function cacheGet(q){var e=LIVE[q];return (e&&(Date.now()-e.t)<TTL)?e.v:null;}
+function cacheSet(q,v){LIVE[q]={t:Date.now(),v:v};}
+var SOLO_PRESETS=['Surfboard','Skis','Snowboard','Bicycle','Golf clubs','Scuba gear','Musical instrument','Fishing rod'];
+var SOLO_DB=['Surfboard','Windsurf board','Paddleboard','Kayak','Canoe','Skis','Snowboard','Skateboard','Bicycle','Golf clubs','Scuba gear','Diving gear','Fishing rod','Tennis racket','Hockey stick','Pool cue','Bowling ball','Musical instrument','Guitar','Cello','Double bass','Wheelchair','Mobility scooter','Stroller','Car seat','Pushchair','Baby carriage','Tent','Camping gear','Hang glider','Vaulting pole','Archery set','Drone','Portable BBQ','Christmas tree','Rolled carpet','Framed artwork','Ladder'];
+function isStandalone(){return S.mode==='plane'&&S.bag==='standalone';}
+function bagLabel(){return S.bag==='carry'?'CARRY-ON':S.bag==='standalone'?'CHECK-IN ITEM':'CHECKED';}
+function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+function shortUrl(u){try{return u.replace(/^https?:\/\//,'').replace(/\/$/,'').slice(0,44);}catch(e){return u;}}
+function currentLabel(){return S.mode==='plane'?S.airline:S.country;}
+function currentThing(){
+  if(isStandalone())return S.item?S.item.n:'this item';
+  if(isAnimal()){var t=S.animal||'animal';if(S.animal==='Dog'&&S.dogSize)t=S.dogSize+' dog';return t;}
+  if(isItemMode()&&S.item)return S.item.n;
+  var d='';var arr=CATS[S.mode];for(var i=0;i<arr.length;i++)if(arr[i].id===S.cat){d=arr[i].label;break;}
+  if(S.detail){if(S.cat==='power')d+=' '+({lo:'under 100 Wh',mid:'100-160 Wh',hi:'over 160 Wh'}[S.detail]||'');else d+=' '+S.detail+' ml';}
+  return d||'this item';
+}
+function buildQuestion(){
+  if(isStandalone())return 'Can I check in "'+currentThing()+'" as its own standalone / oversized piece of baggage on a "'+S.airline+'" flight? Give the airline policy: accepted or not, size and weight limits, packing or boxing requirements, and the typical oversized / special-baggage fee.';
+  var thing=currentThing();
+  if(S.mode==='plane'){
+    if(S.cat==='baginfo'){var a=airlineByName(S.airline);var which=S.bag==='carry'?'carry-on / hand baggage':'checked baggage';return 'For the airline "'+a.name+'" (IATA '+a.iata+'), what is the '+which+' allowance PER PASSENGER, for economy and for business class? Give concrete kg, size and piece limits. Note it varies by fare/route.';}
+    return 'On a "'+S.airline+'" flight, can I bring '+thing+' in my '+(S.bag==='carry'?'carry-on / cabin bag':'checked bag / hold')+'? Give the specific airline and aviation-security rule, with any limits or conditions.';
+  }
+  return 'As an arriving traveler, can I bring '+thing+' into '+S.country+'? Give the specific customs / import / biosecurity rule, including limits, permits, declarations or bans.';
+}
+var LIVE_SYS='You are the answer engine for a "can I take this?" travel app. Use web search to find the CURRENT, SPECIFIC answer for the exact airline/country/item asked. Your FINAL message must be ONLY a single JSON object — no markdown, no code fences, no prose before or after — in this exact shape: {"status":"go|warn|stop|info","head":"one short verdict sentence","lines":["1 to 3 short factual reasons or conditions"],"tags":[{"t":"short label","k":"neutral|green|amber|stop"}],"sources":[{"label":"site or authority name","url":"real https url you used"}]}. status meaning: go=clearly allowed, warn=allowed with conditions/limits/approval, stop=not allowed, info=genuinely unclear. For medicines or live animals into a country be cautious: prefer warn or info and point to the official authority; never a careless yes. Keep each line under ~20 words. Always give 1-3 real sources with working https URLs.';
+
+function liveCard(wrap,fallbackFn,attempt){
+  attempt=attempt||0;
+  var q=buildQuestion(),label=currentLabel();
+  var hit=cacheGet(q);if(hit){renderLive(hit,wrap,false);return;}
+  var token=++S.liveToken;
+  renderSpin(wrap,label);
+  fetch("https://api.anthropic.com/v1/messages",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({model:"claude-sonnet-4-6",max_tokens:2000,system:LIVE_SYS,messages:[{role:"user",content:q}],tools:[{type:"web_search_20250305",name:"web_search"}]})})
+  .then(function(r){return r.json();})
+  .then(function(data){
+    if(token!==S.liveToken)return;
+    if(data&&data.error)throw new Error(data.error.message||'api error');
+    var txt=(data.content||[]).filter(function(b){return b.type==='text';}).map(function(b){return b.text;}).join('\n').trim();
+    txt=txt.replace(/```json/gi,'').replace(/```/g,'').trim();
+    var a=txt.indexOf('{'),b=txt.lastIndexOf('}');
+    if(a<0||b<0)throw new Error('no json');
+    var obj=JSON.parse(txt.slice(a,b+1));
+    if(!obj.head||!obj.status)throw new Error('bad shape');
+    cacheSet(q,obj);renderLive(obj,wrap,true);
+  })
+  .catch(function(){
+    if(token!==S.liveToken)return;
+    if(attempt<1){liveCard(wrap,fallbackFn,attempt+1);return;}
+    (fallbackFn||function(w){renderSpinError(w,label);})(wrap);
+  });
+}
+function renderSpin(wrap,label){
+  wrap.innerHTML='<div class="pass info print"><div class="strip" style="background:var(--card-sub);color:var(--card-text)"><div class="badge" style="background:rgba(0,0,0,.14)"><div class="spin"></div></div><div><div class="verdict">Checking live\u2026</div><div class="vsub">'+esc(label)+'</div></div></div><div class="perf"></div><div class="body"><p class="headline" style="opacity:.75">Reading current sources for '+esc(label)+'\u2026</p><ul class="detail"><li>Fetching the real, up-to-date rule with web search.</li></ul></div></div>';
+}
+function renderSpinError(wrap,label){
+  wrap.innerHTML='<div class="pass info print"><div class="strip"><div class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">'+VICON.info+'</svg></div><div><div class="verdict">No answer yet</div><div class="vsub">'+esc(label)+'</div></div></div><div class="perf"></div><div class="body"><p class="headline">Couldn\u2019t reach the source just now.</p><ul class="detail"><li>The connection or source didn\u2019t respond. Give it another try.</li></ul><button class="xlink" id="retryLive">Try again</button><div class="src">We won\u2019t show a made-up answer \u2014 only a real, sourced one.</div></div></div>';
+  var r=$('#retryLive');if(r)r.onclick=function(){liveCard(wrap);};
+}
+function renderLive(v,wrap,fresh){
+  var route=S.mode==='plane'?'<span>&#9992; <b>'+esc(S.airline)+'</b></span><span>'+bagLabel()+'</span><span>&rarr; <b>'+esc(S.country)+'</b></span>':'<span>&#128706; ENTERING</span><span><b>'+esc(S.country)+'</b> '+(CFLAG[S.country]||'')+'</span>';
+  var tags=(v.tags||[]).slice(0,4).map(function(t){var k=({neutral:'neutral',green:'green',amber:'amber',stop:'stop'}[t.k]||'neutral');return '<span class="tag tag-'+k+'">'+esc(t.t)+'</span>';});
+  var tagsHtml=tags.length?'<div class="tagrow">'+tags.join('')+'</div>':'';
+  var lines=(v.lines||[]).map(function(l){return '<li>'+esc(l)+'</li>';}).join('');
+  var srcRows=(v.sources||[]).slice(0,4).map(function(s){return '<a class="hitem" href="'+esc(s.url)+'" target="_blank" rel="noopener"><span class="hi-ic">'+SICON.web+'</span><span class="hi-l">'+esc(s.label)+'<small class="email-addr">'+esc(shortUrl(s.url))+'</small></span><span class="hi-go">\u2197</span></a>';}).join('');
+  var help='<div class="help"><div class="help-h">Helpful sources</div>'+(srcRows||'<div class="hnote">No direct source returned.</div>')+'<div class="hnote">To be 100% sure, we always recommend confirming with the official channels.</div></div>';
+  var xlink=(S.mode==='plane'&&(S.cat==='med'||S.cat==='food')&&S.item)?'<button class="xlink" id="toCountry">Now check if '+esc(S.country)+' lets '+esc(S.item.n)+' in &rarr;</button>':'';
+  var st=(['go','warn','stop','info'].indexOf(v.status)>-1)?v.status:'info';
+  wrap.innerHTML='<div class="pass '+st+' print"><div class="strip"><div class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">'+VICON[st]+'</svg></div><div><div class="verdict">'+VLABEL[st]+'</div><div class="vsub">'+(S.mode==='plane'?'On the aircraft':'At the border')+'</div></div></div><div class="perf"></div><div class="body"><div class="route">'+route+'</div>'+tagsHtml+'<p class="headline">'+esc(v.head||'')+'</p><ul class="detail">'+lines+'</ul>'+xlink+help+'<div class="src">Answer generated live from current web sources. Guidance, not legal advice.</div></div></div>';
+  var t=$('#toCountry');if(t)t.onclick=function(){S.mode='country';S.detail=null;S.animal=null;S.dogSize=null;S.aniQ='';render();$('#itemInput').value=S.item?S.item.n:'';renderVerdict();};
+  bindHelp(wrap);
+}
+
+function renderVerdict(){
+  var wrap=$('#passWrap'),v;
+  /* Standalone / oversized check-in item -> live */
+  if(isStandalone()){
+    if(!S.item){wrap.innerHTML=emptyHTML('Pick or type the large item you\'re checking in.<br><b>e.g. surfboard, bike, skis.</b>');return;}
+    liveCard(wrap);return;
+  }
+  /* Bag info: verified fares -> instant; otherwise fetch live */
+  if(S.mode==='plane'&&S.cat==='baginfo'){
+    if(faresFor(airlineByName(S.airline)))renderBagCard(wrap);
+    else liveCard(wrap,function(w){renderBagCard(w);});
+    return;
+  }
+  /* Animals -> always live (the real, airline/country-specific answer) */
+  if(isAnimal()){
+    if(!S.animal){wrap.innerHTML=emptyHTML('Pick <b>Dog</b>, <b>Cat</b>, or type another animal.<br>We\'ll check '+(S.mode==='plane'?S.airline:S.country)+'.');return;}
+    if(S.mode==='plane'&&S.animal==='Dog'&&!S.dogSize){wrap.innerHTML=emptyHTML('<b>How big is your dog?</b><br>Size decides cabin vs cargo — pick one above.');return;}
+    liveCard(wrap);return;
+  }
+  /* Specific-item categories (medication, food, sharp, sports) -> live */
+  if(isItemMode()){
+    if(!S.item){wrap.innerHTML=emptyHTML('Pick or type your '+({med:'medicine',food:'food',sharp:'sharp object',sports:'gear'}[S.cat])+' above.<br><b>We\'ll fetch a precise answer.</b>');return;}
+    liveCard(wrap);return;
+  }
+  /* Everything else -> live fetch (real, sourced answer) */
+  if(!S.cat){wrap.innerHTML=emptyHTML('Your verdict prints here.<br><b>Pick an item above to check it.</b>');return;}
+  var co=null,arr=CATS[S.mode];for(var i=0;i<arr.length;i++){if(arr[i].id===S.cat){co=arr[i];break;}}
+  if(co&&co.detail&&!S.detail){wrap.innerHTML=emptyHTML((co.detail==='wh'?'Pick the battery capacity above.':'Pick the size above.')+'<br><b>We\'ll fetch the exact rule.</b>');return;}
+  liveCard(wrap);
+}
+function linkRow(icon,label,sub,url){var inner='<span class="hi-ic">'+SICON[icon]+'</span><span class="hi-l">'+label+(sub?'<small>'+sub+'</small>':'')+'</span>'+(url?'<span class="hi-go">\u2197</span>':'');return url?('<a class="hitem" href="'+url+'" target="_blank" rel="noopener">'+inner+'</a>'):('<div class="hitem">'+inner+'</div>');}
+function helpBlock(authority){
+  var rows='';
+  if(S.mode==='plane'){var a=airlineByName(S.airline),d=a.site;if(d)rows+=linkRow('web',a.name+' website','Baggage & rules','https://www.'+d);}
+  else{var au=authority||{};if(au&&au.url)rows+=linkRow('web',au.label,'Official guidance',au.url);}
+  if(!rows)rows='<div class="hnote">See the airline\u2019s official website for exact details.</div>';
+  return '<div class="help"><div class="help-h">Helpful sources</div>'+rows+'<div class="hnote">To be 100% sure, we always recommend confirming with the official channels.</div></div>';
+}
+function bindHelp(scope){(scope||document).querySelectorAll('.email-trigger').forEach(function(t){t.onclick=function(ev){ev.stopPropagation();var m=t.nextElementSibling;document.querySelectorAll('.email-menu').forEach(function(x){if(x!==m)x.classList.add('hidden');});if(m&&m.classList.contains('email-menu'))m.classList.toggle('hidden');};});}
+function renderPass(v,wrap){
+  var route=S.mode==='plane'?'<span>&#9992; <b>'+S.airline+'</b></span><span>'+(S.bag==='carry'?'CARRY-ON':'CHECKED')+'</span><span>&rarr; <b>'+S.country+'</b></span>':'<span>&#128706; ENTERING</span><span><b>'+S.country+'</b> '+(CFLAG[S.country]||'')+'</span>';
+  var tagsHtml=(v.tags&&v.tags.length)?'<div class="tagrow">'+v.tags.map(function(t){return '<span class="tag tag-'+t.k+'">'+t.t+'</span>';}).join('')+'</div>':'';
+  var xlink=(S.mode==='plane'&&(S.cat==='med'||S.cat==='food')&&S.item&&!S.item.free)?'<button class="xlink" id="toCountry">Now check if '+S.country+' lets '+S.item.n+' in &rarr;</button>':'';
+  wrap.innerHTML='<div class="pass '+v.status+' print"><div class="strip"><div class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">'+VICON[v.status]+'</svg></div><div><div class="verdict">'+VLABEL[v.status]+'</div><div class="vsub">'+(S.mode==='plane'?'On the aircraft':'At the border')+'</div></div></div><div class="perf"></div><div class="body"><div class="route">'+route+'</div>'+tagsHtml+'<p class="headline">'+v.head+'</p><ul class="detail">'+v.lines.map(function(l){return '<li>'+l+'</li>';}).join('')+'</ul>'+xlink+helpBlock(v.source)+'<div class="src">'+v.src+'</div></div></div>';
+  var t=$('#toCountry');if(t)t.onclick=function(){S.mode='country';S.detail=null;S.animal=null;S.dogSize=null;S.aniQ='';render();$('#itemInput').value=S.item?S.item.n:'';renderVerdict();};
+  bindHelp(wrap);
+}
+
+/* ============ wire up ============ */
+$('#themeToggle').onclick=function(){theme=theme==='dark'?'light':'dark';applyTheme();};
+$('#airlineTrigger').onclick=function(){S.open==='airline'?(S.open=null,closePanels()):openPanel('airline');};
+$('#countryTrigger').onclick=function(){S.open==='country'?(S.open=null,closePanels()):openPanel('country');};
+$('#airlineSearch').addEventListener('input',function(e){S.aQ=e.target.value;renderAirlineList();});
+$('#countrySearch').addEventListener('input',function(e){S.cQ=e.target.value;renderCountryList();});
+document.addEventListener('click',function(e){if(!e.target.closest('.combo')){S.open=null;closePanels();}if(!e.target.closest('.email-trigger')&&!e.target.closest('.email-menu')){document.querySelectorAll('.email-menu').forEach(function(x){x.classList.add('hidden');});}});
+document.querySelectorAll('#seg button').forEach(function(b){b.onclick=function(){S.mode=b.dataset.mode;S.cat=S.mode==='plane'?'baginfo':'med';S.detail=null;S.item=null;S.itemQ='';S.animal=null;S.dogSize=null;S.aniQ='';S.fare=0;$('#itemInput').value='';$('#animalInput').value='';$('#itemSuggest').innerHTML='';$('#aniSuggest').innerHTML='';render();};});
+document.querySelectorAll('#bag button').forEach(function(b){b.onclick=function(){S.bag=b.dataset.bag;S.item=null;S.itemQ='';$('#itemInput').value='';$('#itemSuggest').innerHTML='';render();};});
+$('#bagStandalone').onclick=function(){S.bag='standalone';S.item=null;S.itemQ='';$('#itemInput').value='';$('#itemSuggest').innerHTML='';render();focusPicker();};
+$('#itemInput').addEventListener('input',function(e){S.itemQ=e.target.value;if(isStandalone())renderSoloSuggest();else renderItemSuggest();});
+document.querySelectorAll('#animalChips .chip').forEach(function(b){b.onclick=function(){S.animal=b.dataset.a;S.dogSize=null;S.aniQ='';$('#animalInput').value='';$('#aniSuggest').innerHTML='';render();};});
+document.querySelectorAll('#dogSize .chip').forEach(function(b){b.onclick=function(){S.dogSize=b.dataset.s;render();};});
+$('#animalInput').addEventListener('input',function(e){S.aniQ=e.target.value;renderAniSuggest();});
+$('#scanBtn').addEventListener('click',function(){var n=$('#scanNote');n.style.display=n.style.display==='block'?'none':'block';});
+applyTheme();renderTriggers();render();
+</script>
+</body></html>
