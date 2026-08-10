@@ -2,6 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url><loc>https://canitakethis.co/airline/el-al/baggage-allowance/</loc><changefreq>weekly</changefreq></url>
 <url><loc>https://canitakethis.co/airline/el-al/</loc><changefreq>monthly</changefreq></url>
+<url><loc>https://canitakethis.co/airline/wizz-air/baggage-allowance/</loc><changefreq>weekly</changefreq></url>
+<url><loc>https://canitakethis.co/airline/wizz-air/</loc><changefreq>monthly</changefreq></url>
 <url><loc>https://canitakethis.co/airline/easyjet/baggage-allowance/</loc><changefreq>weekly</changefreq></url>
 <url><loc>https://canitakethis.co/airline/easyjet/</loc><changefreq>monthly</changefreq></url>
 <url><loc>https://canitakethis.co/airline/ryanair/baggage-allowance/</loc><changefreq>weekly</changefreq></url>
@@ -10,6 +12,14 @@
 <url><loc>https://canitakethis.co/airline/emirates/</loc><changefreq>monthly</changefreq></url>
 <url><loc>https://canitakethis.co/airline/british-airways/baggage-allowance/</loc><changefreq>weekly</changefreq></url>
 <url><loc>https://canitakethis.co/airline/british-airways/</loc><changefreq>monthly</changefreq></url>
+<url><loc>https://canitakethis.co/airline/delta/baggage-allowance/</loc><changefreq>weekly</changefreq></url>
+<url><loc>https://canitakethis.co/airline/delta/</loc><changefreq>monthly</changefreq></url>
+<url><loc>https://canitakethis.co/airline/united/baggage-allowance/</loc><changefreq>weekly</changefreq></url>
+<url><loc>https://canitakethis.co/airline/united/</loc><changefreq>monthly</changefreq></url>
+<url><loc>https://canitakethis.co/airline/american-airlines/baggage-allowance/</loc><changefreq>weekly</changefreq></url>
+<url><loc>https://canitakethis.co/airline/american-airlines/</loc><changefreq>monthly</changefreq></url>
+<url><loc>https://canitakethis.co/airline/jetblue/baggage-allowance/</loc><changefreq>weekly</changefreq></url>
+<url><loc>https://canitakethis.co/airline/jetblue/</loc><changefreq>monthly</changefreq></url>
 <url><loc>https://canitakethis.co/airline/singapore-airlines/baggage-allowance/</loc><changefreq>weekly</changefreq></url>
 <url><loc>https://canitakethis.co/airline/singapore-airlines/</loc><changefreq>monthly</changefreq></url>
 <url><loc>https://canitakethis.co/plane/liquids/</loc><changefreq>monthly</changefreq></url>
