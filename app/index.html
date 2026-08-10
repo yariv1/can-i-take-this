@@ -603,33 +603,35 @@ function renderLive(v,wrap,fresh){
 
 function renderVerdict(){
   var wrap=$('#passWrap'),v;
-  /* Standalone / oversized check-in item -> live */
+  /* Standalone / oversized check-in item */
   if(isStandalone()){
     if(!S.item){wrap.innerHTML=emptyHTML('Pick or type the large item you\'re checking in.<br><b>e.g. surfboard, bike, skis.</b>');return;}
-    liveCard(wrap);return;
+    v=itemVerdict(); if(v)renderPass(v,wrap); else liveFallback(wrap); return;
   }
-  /* Bag info: verified fares -> instant; otherwise fetch live */
+  /* Bag info: verified fares -> instant card */
   if(S.mode==='plane'&&S.cat==='baginfo'){
-    if(faresFor(airlineByName(S.airline)))renderBagCard(wrap);
-    else liveCard(wrap,function(w){renderBagCard(w);});
-    return;
+    renderBagCard(wrap); return;
   }
-  /* Animals -> always live (the real, airline/country-specific answer) */
+  /* Animals */
   if(isAnimal()){
     if(!S.animal){wrap.innerHTML=emptyHTML('Pick <b>Dog</b>, <b>Cat</b>, or type another animal.<br>We\'ll check '+(S.mode==='plane'?S.airline:S.country)+'.');return;}
     if(S.mode==='plane'&&S.animal==='Dog'&&!S.dogSize){wrap.innerHTML=emptyHTML('<b>How big is your dog?</b><br>Size decides cabin vs cargo — pick one above.');return;}
-    liveCard(wrap);return;
+    v=animalVerdict(); if(v)renderPass(v,wrap); else liveFallback(wrap); return;
   }
-  /* Specific-item categories (medication, food, sharp, sports) -> live */
+  /* Specific-item categories (medication, food, sharp, sports) */
   if(isItemMode()){
-    if(!S.item){wrap.innerHTML=emptyHTML('Pick or type your '+({med:'medicine',food:'food',sharp:'sharp object',sports:'gear'}[S.cat])+' above.<br><b>We\'ll fetch a precise answer.</b>');return;}
-    liveCard(wrap);return;
+    if(!S.item){wrap.innerHTML=emptyHTML('Pick or type your '+({med:'medicine',food:'food',sharp:'sharp object',sports:'gear'}[S.cat])+' above.<br><b>We\'ll check it for you.</b>');return;}
+    v=itemVerdict(); if(v)renderPass(v,wrap); else liveFallback(wrap); return;
   }
-  /* Everything else -> live fetch (real, sourced answer) */
+  /* Universal plane + country customs categories */
   if(!S.cat){wrap.innerHTML=emptyHTML('Your verdict prints here.<br><b>Pick an item above to check it.</b>');return;}
   var co=null,arr=CATS[S.mode];for(var i=0;i<arr.length;i++){if(arr[i].id===S.cat){co=arr[i];break;}}
-  if(co&&co.detail&&!S.detail){wrap.innerHTML=emptyHTML((co.detail==='wh'?'Pick the battery capacity above.':'Pick the size above.')+'<br><b>We\'ll fetch the exact rule.</b>');return;}
-  liveCard(wrap);
+  if(co&&co.detail&&!S.detail){wrap.innerHTML=emptyHTML((co.detail==='wh'?'Pick the battery capacity above.':'Pick the size above.')+'<br><b>We\'ll show the exact rule.</b>');return;}
+  v=verdict(); if(v)renderPass(v,wrap); else liveFallback(wrap);
+}
+function liveFallback(wrap){
+  wrap.innerHTML='<div class="pass info print"><div class="strip"><div class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">'+VICON.info+'</svg></div><div><div class="verdict">Check the source</div><div class="vsub">'+(S.mode==='plane'?'On the aircraft':'At the border')+'</div></div></div><div class="perf"></div><div class="body"><p class="headline">We don’t have a verified answer for this exact combination yet.</p><ul class="detail"><li>We only show answers we can back with a real rule — we won’t invent one.</li><li>Use the official source below to confirm.</li></ul>'+helpBlock(null)+'<div class="src">We show verified data only. For anything not yet in our data, we hand you the official channel.</div></div></div>';
+  bindHelp(wrap);
 }
 function linkRow(icon,label,sub,url){var inner='<span class="hi-ic">'+SICON[icon]+'</span><span class="hi-l">'+label+(sub?'<small>'+sub+'</small>':'')+'</span>'+(url?'<span class="hi-go">\u2197</span>':'');return url?('<a class="hitem" href="'+url+'" target="_blank" rel="noopener">'+inner+'</a>'):('<div class="hitem">'+inner+'</div>');}
 function helpBlock(authority){
