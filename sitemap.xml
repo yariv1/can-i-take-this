@@ -2,6 +2,10 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url><loc>https://canitakethis.co/airline/el-al/baggage-allowance/</loc><changefreq>weekly</changefreq></url>
 <url><loc>https://canitakethis.co/airline/el-al/</loc><changefreq>monthly</changefreq></url>
+<url><loc>https://canitakethis.co/airline/arkia/baggage-allowance/</loc><changefreq>weekly</changefreq></url>
+<url><loc>https://canitakethis.co/airline/arkia/</loc><changefreq>monthly</changefreq></url>
+<url><loc>https://canitakethis.co/airline/israir/baggage-allowance/</loc><changefreq>weekly</changefreq></url>
+<url><loc>https://canitakethis.co/airline/israir/</loc><changefreq>monthly</changefreq></url>
 <url><loc>https://canitakethis.co/airline/wizz-air/baggage-allowance/</loc><changefreq>weekly</changefreq></url>
 <url><loc>https://canitakethis.co/airline/wizz-air/</loc><changefreq>monthly</changefreq></url>
 <url><loc>https://canitakethis.co/airline/easyjet/baggage-allowance/</loc><changefreq>weekly</changefreq></url>
@@ -50,6 +54,8 @@
 <url><loc>https://canitakethis.co/airline/sas/</loc><changefreq>monthly</changefreq></url>
 <url><loc>https://canitakethis.co/airline/finnair/baggage-allowance/</loc><changefreq>weekly</changefreq></url>
 <url><loc>https://canitakethis.co/airline/finnair/</loc><changefreq>monthly</changefreq></url>
+<url><loc>https://canitakethis.co/airline/sunexpress/baggage-allowance/</loc><changefreq>weekly</changefreq></url>
+<url><loc>https://canitakethis.co/airline/sunexpress/</loc><changefreq>monthly</changefreq></url>
 <url><loc>https://canitakethis.co/airline/delta/baggage-allowance/</loc><changefreq>weekly</changefreq></url>
 <url><loc>https://canitakethis.co/airline/delta/</loc><changefreq>monthly</changefreq></url>
 <url><loc>https://canitakethis.co/airline/united/baggage-allowance/</loc><changefreq>weekly</changefreq></url>
@@ -108,8 +114,18 @@
 <url><loc>https://canitakethis.co/airline/gulf-air/</loc><changefreq>monthly</changefreq></url>
 <url><loc>https://canitakethis.co/airline/oman-air/baggage-allowance/</loc><changefreq>weekly</changefreq></url>
 <url><loc>https://canitakethis.co/airline/oman-air/</loc><changefreq>monthly</changefreq></url>
+<url><loc>https://canitakethis.co/airline/kuwait-airways/baggage-allowance/</loc><changefreq>weekly</changefreq></url>
+<url><loc>https://canitakethis.co/airline/kuwait-airways/</loc><changefreq>monthly</changefreq></url>
+<url><loc>https://canitakethis.co/airline/royal-jordanian/baggage-allowance/</loc><changefreq>weekly</changefreq></url>
+<url><loc>https://canitakethis.co/airline/royal-jordanian/</loc><changefreq>monthly</changefreq></url>
+<url><loc>https://canitakethis.co/airline/middle-east-airlines/baggage-allowance/</loc><changefreq>weekly</changefreq></url>
+<url><loc>https://canitakethis.co/airline/middle-east-airlines/</loc><changefreq>monthly</changefreq></url>
 <url><loc>https://canitakethis.co/airline/ethiopian-airlines/baggage-allowance/</loc><changefreq>weekly</changefreq></url>
 <url><loc>https://canitakethis.co/airline/ethiopian-airlines/</loc><changefreq>monthly</changefreq></url>
+<url><loc>https://canitakethis.co/airline/kenya-airways/baggage-allowance/</loc><changefreq>weekly</changefreq></url>
+<url><loc>https://canitakethis.co/airline/kenya-airways/</loc><changefreq>monthly</changefreq></url>
+<url><loc>https://canitakethis.co/airline/south-african-airways/baggage-allowance/</loc><changefreq>weekly</changefreq></url>
+<url><loc>https://canitakethis.co/airline/south-african-airways/</loc><changefreq>monthly</changefreq></url>
 <url><loc>https://canitakethis.co/airline/royal-air-maroc/baggage-allowance/</loc><changefreq>weekly</changefreq></url>
 <url><loc>https://canitakethis.co/airline/royal-air-maroc/</loc><changefreq>monthly</changefreq></url>
 <url><loc>https://canitakethis.co/plane/liquids/</loc><changefreq>monthly</changefreq></url>
