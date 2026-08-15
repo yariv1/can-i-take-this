@@ -50,7 +50,7 @@ body{background:radial-gradient(1200px 600px at 50% -10%,var(--glow) 0%,transpar
 .opt.empty{color:var(--muted);font-size:13px;cursor:default;padding:12px 10px}
 .opt.empty:hover{background:transparent}
 .flag{font-size:18px;width:24px;text-align:center;flex:none}
-.logo{position:relative;width:26px;height:26px;border-radius:6px;overflow:hidden;display:inline-grid;place-items:center;color:#fff;font-family:'Space Mono',monospace;font-size:8.5px;font-weight:700;flex:none}
+.logo{position:relative;width:26px;height:26px;border-radius:6px;overflow:hidden;display:inline-grid;place-items:center;color:#1B2233;background:#fff;font-family:'Space Mono',monospace;font-size:8.5px;font-weight:700;flex:none}
 .logo img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;background:#fff}
 .seg{display:grid;grid-template-columns:1fr 1fr;gap:6px;background:var(--surface);border:1px solid var(--line);border-radius:15px;padding:6px;margin-bottom:14px}
 .seg button{border:0;background:transparent;color:var(--muted);cursor:pointer;font-family:'Inter',sans-serif;font-weight:600;font-size:13.5px;padding:11px 8px;border-radius:10px;display:flex;align-items:center;justify-content:center;gap:7px;transition:.18s}
@@ -493,7 +493,7 @@ var SICON={web:'\uD83C\uDF10',phone:'\uD83D\uDCDE',mail:'\u2709\uFE0F',gov:'\uD8
 function $(s){return document.querySelector(s);}
 function isItemMode(){return !!ITEMCFG[S.cat];}
 function isAnimal(){return S.cat==='animal';}
-function logoHTML(a){var col=LOGOCOLORS[a.iata.charCodeAt(0)%LOGOCOLORS.length];var srcs=['https://pics.avs.io/64/64/'+a.iata+'.png','https://images.kiwi.com/airlines/64/'+a.iata+'.png'];return '<span class="logo" style="background:'+col+'"><span>'+a.iata+'</span><img class="logo-img" data-srcs="'+srcs.join('|')+'" data-i="0" src="'+srcs[0]+'" alt=""></span>';}
+function logoHTML(a){var srcs=['https://www.gstatic.com/flights/airline_logos/70px/'+a.iata+'.png'];return '<span class="logo" style="background:#fff"><span>'+a.iata+'</span><img class="logo-img" data-srcs="'+srcs.join('|')+'" data-i="0" src="'+srcs[0]+'" alt=""></span>';}
 function advanceLogo(im){var list=(im.dataset.srcs||'').split('|'),i=parseInt(im.dataset.i||'0',10)+1;if(i<list.length){im.dataset.i=i;im.src=list[i];}else{im.style.display='none';}}
 function bindLogoFallbacks(root){(root||document).querySelectorAll('img.logo-img').forEach(function(im){im.onerror=function(){advanceLogo(im);};if(im.complete&&im.naturalWidth===0)advanceLogo(im);});}
 function applyTheme(){document.documentElement.setAttribute('data-theme',theme);localStorage.setItem('citt-theme',theme);$('#themeLabel').textContent=theme==='dark'?'Light':'Dark';$('#themeIcon').innerHTML=theme==='dark'?'\u2600':'\u263D';}
