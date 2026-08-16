@@ -152,7 +152,7 @@ function medV(entry){
 function noMatch(q){
   return {status:'nomatch',tags:[{t:(D.isMed?'Medicine':'Food')+' \u00B7 '+q,k:'neutral'}],source:D.auth,head:'Sorry, we couldn\'t find any matches for the item you were looking to get answers on. Please use the helpful source(s) we provided for further help.',lines:[],src:'We only give a verdict when we can back it up. For everything else, we hand you the right people.'};
 }
-function helpBlock(au){au=au||{};if(!au.url)return '';return '<div class="help"><div class="help-h">Helpful sources</div><a class="hitem" href="'+au.url+'" target="_blank" rel="noopener"><span class="hi-ic">\uD83C\uDF10</span><span class="hi-l">'+esc(au.label)+'<small>Official guidance</small></span><span class="hi-go">\u2197</span></a><div class="hnote">To be 100% sure, we always recommend confirming with the official channels.</div></div>';}
+function helpBlock(au){var arr=(au&&au.length)?au:(au&&au.url?[au]:[]);var rows='';for(var i=0;i<arr.length;i++){var a=arr[i];if(!a||!a.url)continue;rows+='<a class="hitem" href="'+a.url+'" target="_blank" rel="noopener"><span class="hi-ic">\uD83C\uDF10</span><span class="hi-l">'+esc(a.label)+'<small>Official guidance</small></span><span class="hi-go">\u2197</span></a>';}if(!rows)return '';return '<div class="help"><div class="help-h">Helpful sources</div>'+rows+'<div class="hnote">To be 100% sure, we always recommend confirming with the official channels.</div></div>';}
 function cardHTML(v){
   var lines=(v.lines||[]).filter(Boolean).map(function(l){return '<li>'+esc(l)+'</li>';}).join('');
   var tags=(v.tags&&v.tags.length)?'<div class="tagrow">'+v.tags.map(function(t){return '<span class="tag tag-'+t.k+'">'+esc(t.t)+'</span>';}).join('')+'</div>':'';

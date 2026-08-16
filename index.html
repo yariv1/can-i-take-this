@@ -351,7 +351,52 @@ var DETAILS={vol:[{id:'50',label:'50 ml'},{id:'100',label:'100 ml'},{id:'300',la
 
 var MED_DB=[{n:'Sudafed',ing:'Pseudoephedrine',controlled:true},{n:'Claritin-D',ing:'Pseudoephedrine',controlled:true},{n:'Nurofen',ing:'Ibuprofen'},{n:'Advil',ing:'Ibuprofen'},{n:'Tylenol',ing:'Paracetamol'},{n:'Panadol',ing:'Paracetamol'},{n:'Codeine',ing:'Codeine',controlled:true},{n:'Solpadeine',ing:'Codeine',controlled:true},{n:'Tramadol',ing:'Tramadol',controlled:true},{n:'Adderall',ing:'Amphetamine',controlled:true},{n:'Ritalin',ing:'Methylphenidate',controlled:true},{n:'Vyvanse',ing:'Lisdexamfetamine',controlled:true},{n:'Concerta',ing:'Methylphenidate',controlled:true},{n:'Xanax',ing:'Alprazolam',controlled:true},{n:'Valium',ing:'Diazepam',controlled:true},{n:'Ambien',ing:'Zolpidem',controlled:true},{n:'OxyContin',ing:'Oxycodone',controlled:true},{n:'Vicks VapoInhaler',ing:'Levomethamphetamine'},{n:'Benadryl',ing:'Diphenhydramine'},{n:'Zyrtec',ing:'Cetirizine'},{n:'Claritin',ing:'Loratadine'},{n:'Melatonin',ing:'Melatonin'},{n:'Aspirin',ing:'Aspirin'},{n:'Nexium',ing:'Esomeprazole'},{n:'Ventolin',ing:'Salbutamol'},{n:'EpiPen',ing:'Epinephrine',injectable:true},{n:'Ozempic',ing:'Semaglutide',injectable:true},{n:'Insulin',ing:'Insulin',liquid:true,injectable:true},{n:'Prozac',ing:'Fluoxetine'},{n:'Zoloft',ing:'Sertraline'},{n:'Lexapro',ing:'Escitalopram'},{n:'CBD oil',ing:'Cannabidiol',controlled:true},{n:'Imodium',ing:'Loperamide'},{n:'Viagra',ing:'Sildenafil'}];
 var MED_RULES={'Pseudoephedrine':{def:'rx',Japan:'ban',Thailand:'permit','United States':'ok'},'Codeine':{def:'rx','United Arab Emirates':'permit',Japan:'rx'},'Tramadol':{def:'rx','United Arab Emirates':'permit'},'Amphetamine':{def:'permit',Japan:'ban','United Arab Emirates':'permit'},'Methylphenidate':{def:'permit',Japan:'permit','United Arab Emirates':'permit'},'Levomethamphetamine':{def:'ok',Japan:'ban'},'Semaglutide':{def:'ok'},'Ibuprofen':{def:'ok'},'Paracetamol':{def:'ok'},'Diphenhydramine':{def:'ok',Japan:'rx'},'Melatonin':{def:'rx','United States':'ok'},'Insulin':{def:'ok'}};
-var MED_AUTH={Japan:{label:'Japan MHLW — medication import',url:'https://www.mhlw.go.jp/english/',email:'kanshi@mhlw.go.jp'},'United Arab Emirates':{label:'UAE Ministry of Health & Prevention',url:'https://mohap.gov.ae/en',email:'info@mohap.gov.ae'}};
+/*SRC_LINKS_V1*/var MED_AUTH={
+Japan:[{label:'Japan MHLW \u2014 medication import',url:'https://www.mhlw.go.jp/english/'}],
+'United Arab Emirates':[{label:'UAE Ministry of Health & Prevention (MOHAP)',url:'https://mohap.gov.ae/en'}],
+'United Kingdom':[{label:'MHRA \u2014 importing a medicine (GOV.UK)',url:'https://www.gov.uk/guidance/import-a-human-medicine'},{label:'Home Office \u2014 controlled drugs & travel',url:'https://www.gov.uk/guidance/controlled-drugs-personal-licences'}],
+'United States':[{label:'US FDA \u2014 personal importation of medicines',url:'https://www.fda.gov/industry/import-basics/personal-importation'}],
+Australia:[{label:'Australia TGA \u2014 travelling with medicines',url:'https://www.tga.gov.au/resources/consumer-information-and-resources/travelling-medicines-and-medical-devices'}],
+Thailand:[{label:'Thai FDA \u2014 bringing medicines for personal use',url:'https://en.fda.moph.go.th/guideline-of-importation-for-personal-use/category/bringing-of-health-products-01'}],
+Singapore:[{label:'Singapore HSA \u2014 personal medications',url:'https://www.hsa.gov.sg/travelling-with-medication-and-medical-devices/personal-medications/'}],
+'New Zealand':[{label:'NZ Medsafe \u2014 importing medicines',url:'https://www.medsafe.govt.nz/consumers/miet/importmedicines.asp'},{label:'NZ Customs \u2014 travelling with medicines',url:'https://www.customs.govt.nz/travel-to-and-from-new-zealand/medicines'}],
+Canada:[{label:'Government of Canada \u2014 travelling with medication',url:'https://travel.gc.ca/travelling/health-safety/medication'}],
+Germany:[{label:'Germany BfArM \u2014 travelling with narcotic drugs',url:'https://www.bfarm.de/EN/Federal-Opium-Agency/Narcotic-drugs/Travelling-with-narcotic-drugs/_artikel.html'}],
+France:[{label:'France ANSM \u2014 voyager avec ses m\u00e9dicaments',url:'https://ansm.sante.fr/vos-demarches/patient/voyager-avec-mes-medicaments'}],
+Spain:[{label:'Spain AEMPS \u2014 medicines for travellers',url:'https://www.aemps.gob.es/industria-farmaceutica/comercio-exterior/medicamentos-destinados-al-tratamiento-de-los-viajeros/'}],
+Italy:[{label:'Italy Ministry of Health \u2014 travelling with medicines',url:'https://www.salute.gov.it/new/en/tema/medicinali-stupefacenti-e-precursori-di-droghe/travelling-internationally-medicines-containing'},{label:'Italy AIFA \u2014 importing medicines',url:'https://www.aifa.gov.it/en/importare-i-farmaci'}]
+};
+var FOOD_AUTH={
+'United Kingdom':[{label:'DEFRA \u2014 bringing food into Great Britain',url:'https://www.gov.uk/bringing-food-into-great-britain'}],
+'United States':[{label:'US CBP \u2014 bringing agricultural items',url:'https://www.cbp.gov/travel/international-visitors/agricultural-items'},{label:'USDA APHIS \u2014 travellers bringing food',url:'https://www.aphis.usda.gov/traveling-with-ag-products'}],
+Australia:[{label:'Australia DAFF Biosecurity \u2014 bringing goods',url:'https://www.agriculture.gov.au/biosecurity-trade/travelling/bringing-mailing-goods'}],
+Japan:[{label:'Japan MAFF \u2014 animal products & quarantine',url:'https://www.maff.go.jp/aqs/english/product/import.html'},{label:'Japan Customs \u2014 quarantine on arrival',url:'https://www.customs.go.jp/english/summary/passenger.htm'}],
+'United Arab Emirates':[{label:'UAE Government \u2014 customs clearance',url:'https://u.ae/en/information-and-services/finance-and-investment/clearing-the-customs-and-paying-customs-duty'}],
+Thailand:[{label:'Tourism Thailand \u2014 customs & food',url:'https://www.tourismthailand.org/Articles/plan-your-trip-customs-and-immigration'}],
+Singapore:[{label:'Singapore Food Agency (SFA)',url:'https://www.sfa.gov.sg/bringing-food-for-private-consumption-from-overseas/general-rule-to-bring-food-into-singapore-non-commercial'}],
+'New Zealand':[{label:'NZ Biosecurity (MPI) \u2014 declaring items',url:'https://www.mpi.govt.nz/bring-send-to-nz/bringing-and-posting-items-to-nz/how-to-declare-items-when-arriving-in-nz/'}],
+Canada:[{label:'CFIA \u2014 bringing food into Canada',url:'https://inspection.canada.ca/en/food-safety-consumers/bring-food-personal-use'},{label:'CBSA \u2014 what you can bring home',url:'https://travel.gc.ca/returning/customs/what-you-can-bring-home-to-canada'}],
+Germany:[{label:'EU Commission \u2014 personal food imports',url:'https://food.ec.europa.eu/animals/animal-products-movements/personal-imports_en'},{label:'Your Europe \u2014 taking food into the EU',url:'https://europa.eu/youreurope/citizens/travel/carry/meat-dairy-animal/index_en.htm'}],
+France:[{label:'EU Commission \u2014 personal food imports',url:'https://food.ec.europa.eu/animals/animal-products-movements/personal-imports_en'},{label:'Your Europe \u2014 taking food into the EU',url:'https://europa.eu/youreurope/citizens/travel/carry/meat-dairy-animal/index_en.htm'}],
+Spain:[{label:'EU Commission \u2014 personal food imports',url:'https://food.ec.europa.eu/animals/animal-products-movements/personal-imports_en'},{label:'Your Europe \u2014 taking food into the EU',url:'https://europa.eu/youreurope/citizens/travel/carry/meat-dairy-animal/index_en.htm'}],
+Italy:[{label:'EU Commission \u2014 personal food imports',url:'https://food.ec.europa.eu/animals/animal-products-movements/personal-imports_en'},{label:'Your Europe \u2014 taking food into the EU',url:'https://europa.eu/youreurope/citizens/travel/carry/meat-dairy-animal/index_en.htm'}]
+};
+var CUSTOMS_AUTH={
+'United Kingdom':[{label:'HMRC / Border Force \u2014 bringing goods into the UK',url:'https://www.gov.uk/bringing-goods-into-uk-personal-use'}],
+'United States':[{label:'US CBP \u2014 prohibited & restricted items',url:'https://www.cbp.gov/travel/us-citizens/know-before-you-go/prohibited-and-restricted-items'}],
+Australia:[{label:'Australian Border Force \u2014 duty free',url:'https://www.abf.gov.au/entering-and-leaving-australia/duty-free'}],
+Japan:[{label:'Japan Customs \u2014 passenger clearance',url:'https://www.customs.go.jp/english/summary/passenger.htm'}],
+'United Arab Emirates':[{label:'Dubai Customs \u2014 traveller guide',url:'https://u.ae/en/information-and-services/finance-and-investment/clearing-the-customs-and-paying-customs-duty/restricted-items-in-the-uae'},{label:'UAE Government \u2014 customs clearance',url:'https://u.ae/en/information-and-services/finance-and-investment/clearing-the-customs-and-paying-customs-duty'}],
+Thailand:[{label:'Thai Customs Dept \u2014 travellers',url:'https://www.customs.go.th/'}],
+Singapore:[{label:'Singapore Customs \u2014 buying over the limit',url:'https://www.customs.gov.sg/individuals/going-through-customs/arrivals/duty-free-concession-and-gst-relief/'}],
+'New Zealand':[{label:'NZ Customs \u2014 duty-free allowances',url:'https://www.customs.govt.nz/travel-to-and-from-new-zealand/duty-free-shopping'}],
+Canada:[{label:'CBSA \u2014 I Declare (returning to Canada)',url:'https://www.cbsa-asfc.gc.ca/travel-voyage/declare-eng.html'}],
+Germany:[{label:'Your Europe \u2014 alcohol, tobacco & cash (EU)',url:'https://europa.eu/youreurope/citizens/travel/carry/alcohol-tobacco-cash/index_en.htm'}],
+France:[{label:'Your Europe \u2014 alcohol, tobacco & cash (EU)',url:'https://europa.eu/youreurope/citizens/travel/carry/alcohol-tobacco-cash/index_en.htm'}],
+Spain:[{label:'Your Europe \u2014 alcohol, tobacco & cash (EU)',url:'https://europa.eu/youreurope/citizens/travel/carry/alcohol-tobacco-cash/index_en.htm'}],
+Italy:[{label:'Your Europe \u2014 alcohol, tobacco & cash (EU)',url:'https://europa.eu/youreurope/citizens/travel/carry/alcohol-tobacco-cash/index_en.htm'}]
+};
+
 
 var FOOD_DB=[{n:'Beef jerky',c:'meat'},{n:'Salami',c:'meat'},{n:'Prosciutto',c:'meat'},{n:'Ham',c:'meat'},{n:'Dried sausage',c:'meat'},{n:'Fresh fish',c:'meat'},{n:'Canned tuna',c:'packaged'},{n:'Cheese',c:'dairy'},{n:'Butter',c:'dairy'},{n:'Baby formula',c:'dairy',form:'liquid'},{n:'Yoghurt',c:'dairy',form:'liquid'},{n:'Milk',c:'dairy',form:'liquid'},{n:'Eggs',c:'egg'},{n:'Apple',c:'fresh'},{n:'Mango',c:'fresh'},{n:'Banana',c:'fresh'},{n:'Orange',c:'fresh'},{n:'Fresh vegetables',c:'fresh'},{n:'Honey',c:'honey',form:'liquid'},{n:'Raw nuts',c:'seeds'},{n:'Seeds',c:'seeds'},{n:'Rice',c:'seeds'},{n:'Dried fruit',c:'packaged'},{n:'Chocolate',c:'packaged'},{n:'Cookies',c:'packaged'},{n:'Coffee beans',c:'packaged'},{n:'Tea',c:'packaged'},{n:'Spices',c:'seeds'},{n:'Olive oil',c:'packaged',form:'liquid'},{n:'Soup',c:'packaged',form:'liquid'},{n:'Bread',c:'packaged'},{n:'Instant noodles',c:'packaged'}];
 var FOOD_RULES={Australia:{meat:'stop',dairy:'warn',fresh:'stop',seeds:'stop',honey:'stop',egg:'stop',packaged:'warn',def:'warn'},'United States':{meat:'stop',dairy:'warn',fresh:'stop',seeds:'warn',honey:'warn',egg:'stop',packaged:'go',def:'warn'},'United Kingdom':{meat:'warn',dairy:'warn',fresh:'go',seeds:'go',honey:'go',egg:'warn',packaged:'go',def:'warn'},'New Zealand':{meat:'stop',dairy:'warn',fresh:'stop',seeds:'stop',honey:'stop',egg:'stop',packaged:'warn',def:'warn'},def:{meat:'warn',dairy:'warn',fresh:'warn',seeds:'warn',honey:'warn',egg:'warn',packaged:'go',def:'warn'}};
@@ -399,11 +444,12 @@ function verdict(){
     if(cat==='lighter')return R('warn','One on you - not in bags.',['One lighter is allowed on your person, not in carry-on or checked bags.','Torch/jet lighters are usually banned entirely.'],src);
   }
   if(mode==='country'){
-    if(cat==='alcohol')return country==='United Arab Emirates'?R('warn','Tight limits - respect the local law.',['The UAE permits a small duty-free allowance for non-Muslim adults; know the current litre limit and behave accordingly.'],src):R('warn','Within your duty-free allowance.',['Adults may bring a set duty-free amount (often ~1 L spirits or a few L of wine).','Over the allowance, you pay duty at customs.'],src);
-    if(cat==='cash')return R('warn','Allowed - but you must declare large sums.',['Carrying cash is legal, but amounts over the threshold must be declared.','Typical limits: US $10,000 / EU EUR 10,000 (or equivalent).','Not declaring can mean seizure and fines.'],src);
-    if(cat==='plants')return R('warn','High-risk - usually needs a permit.',['Live plants, seeds, soil and cuttings are tightly controlled for biosecurity.','Most require a phytosanitary certificate or are banned outright.','Declare on arrival without exception.'],src);
-    if(cat==='vape')return country==='Thailand'?R('stop','Illegal - leave it at home.',['Thailand bans importing e-cigarettes and vapes; penalties include fines and jail.'],src):R('warn','Often restricted - check first.',['Some countries ban or heavily restrict vapes and nicotine liquids.','Where allowed, small personal quantities are typical.'],src);
-    if(cat==='tobacco')return R('warn','Within your duty-free allowance.',['Adults may bring a set amount duty-free (often ~200 cigarettes).','Above that you pay duty; some countries require a health-warning-compliant pack.'],src);
+    var _cust=CUSTOMS_AUTH[country]||null;function RC(){var r=R.apply(null,arguments);if(_cust)r.source=_cust;return r;}
+    if(cat==='alcohol')return country==='United Arab Emirates'?RC('warn','Tight limits - respect the local law.',['The UAE permits a small duty-free allowance for non-Muslim adults; know the current litre limit and behave accordingly.'],src):RC('warn','Within your duty-free allowance.',['Adults may bring a set duty-free amount (often ~1 L spirits or a few L of wine).','Over the allowance, you pay duty at customs.'],src);
+    if(cat==='cash')return RC('warn','Allowed - but you must declare large sums.',['Carrying cash is legal, but amounts over the threshold must be declared.','Typical limits: US $10,000 / EU EUR 10,000 (or equivalent).','Not declaring can mean seizure and fines.'],src);
+    if(cat==='plants')return RC('warn','High-risk - usually needs a permit.',['Live plants, seeds, soil and cuttings are tightly controlled for biosecurity.','Most require a phytosanitary certificate or are banned outright.','Declare on arrival without exception.'],src);
+    if(cat==='vape')return country==='Thailand'?RC('stop','Illegal - leave it at home.',['Thailand bans importing e-cigarettes and vapes; penalties include fines and jail.'],src):RC('warn','Often restricted - check first.',['Some countries ban or heavily restrict vapes and nicotine liquids.','Where allowed, small personal quantities are typical.'],src);
+    if(cat==='tobacco')return RC('warn','Within your duty-free allowance.',['Adults may bring a set amount duty-free (often ~200 cigarettes).','Above that you pay duty; some countries require a health-warning-compliant pack.'],src);
   }
   return null;
 }
@@ -433,7 +479,7 @@ function medPlaneVerdict(entry){
 function foodCountryVerdict(entry){
   var c=entry.c,country=S.country,rules=FOOD_RULES[country]||FOOD_RULES.def,level=rules[c]||rules.def,cn=CATNAME[c]||'Food';
   var catTag={t:'Category \u00B7 '+cn,k:'neutral'};
-  var base={source:{label:country+' customs / biosecurity authority',url:null},src:'Food rules protect against pests and disease. When unsure, always declare it - declaring is free, smuggling is fined.'};
+  var base={source:(FOOD_AUTH[country]||{label:country+' customs / biosecurity authority',url:null}),src:'Food rules protect against pests and disease. When unsure, always declare it - declaring is free, smuggling is fined.'};
   if(level==='go')return merge(base,{status:'go',tags:[catTag,{t:'Generally accepted',k:'green'}],head:entry.n+' is usually fine to bring in.',lines:['Sealed, commercially packaged '+cn.toLowerCase()+' is generally accepted.','Still tick the "food" box on your arrival card if there is one.']});
   if(level==='stop')return merge(base,{status:'stop',tags:[catTag,{t:'Not permitted',k:'stop'}],head:'Leave the '+entry.n.toLowerCase()+' behind — '+country+' won\'t allow it.',lines:[cn+' is prohibited or destroyed on arrival in '+country+'.','Undeclared risks a fine; declared, it will simply be taken.']});
   if(level==='warn')return merge(base,{status:'warn',tags:[catTag,{t:'Declare on arrival',k:'amber'}],head:entry.n+' is restricted — declare it.',lines:[cn+' is limited in '+country+' and may be inspected or refused.','Declare it on arrival; sealed commercial products have the best chance.']});
@@ -748,7 +794,7 @@ function linkRow(icon,label,sub,url){var inner='<span class="hi-ic">'+SICON[icon
 /*app-synced*/function helpBlock(authority){
   var rows='';
   if(S.mode==='plane'){var a=airlineByName(S.airline),d=a.site;if(d)rows+=linkRow('web',a.name+' website','Baggage & rules','https://www.'+d);}
-  else{var au=authority||{};if(au&&au.url)rows+=linkRow('web',au.label,'Official guidance',au.url);}
+  else{var arr=(authority&&authority.length)?authority:(authority&&authority.url?[authority]:[]);for(var _i=0;_i<arr.length;_i++){var au=arr[_i];if(au&&au.url)rows+=linkRow('web',au.label,'Official guidance',au.url);}}
   if(!rows)return '';
   return '<div class="help"><div class="help-h">Helpful sources</div>'+rows+'<div class="hnote">To be 100% sure, we always recommend confirming with the official channels.</div></div>';
 }
