@@ -1,0 +1,23 @@
+{
+  "name": "can-i-take-this",
+  "version": "1.0.0",
+  "main": "build.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yariv1/can-i-take-this.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yariv1/can-i-take-this/issues"
+  },
+  "homepage": "https://github.com/yariv1/can-i-take-this#readme",
+  "description": "",
+  "dependencies": {
+    "jsdom": "^29.1.1"
+  }
+}

@@ -87,7 +87,7 @@ body{background:radial-gradient(1200px 600px at 50% -10%,var(--glow) 0%,transpar
 .strip .badge svg{width:19px;height:19px}
 .strip .verdict{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:20px;letter-spacing:-.4px;line-height:1}
 .strip .vsub{font-family:'Space Mono',monospace;font-size:9.5px;letter-spacing:1px;text-transform:uppercase;opacity:.75;margin-top:3px}
-.go .strip{background:var(--go)}.warn .strip{background:var(--warn)}.stop .strip{background:var(--stop)}.info .strip{background:var(--info)}
+.go .strip{background:var(--go)}.warn .strip{background:var(--warn)}.stop .strip{background:var(--stop)}.info .strip{background:var(--info)}.nomatch .strip{background:#363F52;color:#EDF0F7}
 .perf{position:relative;height:0;border-top:2px dashed var(--card-line)}
 .perf::before,.perf::after{content:"";position:absolute;top:-11px;width:22px;height:22px;border-radius:50%;background:var(--card-notch);transition:background .25s}
 .perf::before{left:-11px}.perf::after{right:-11px}
@@ -418,13 +418,13 @@ function sharpVerdict(item){
   var lines=[item.note];if(st==='stop')lines.push('Pack it in your checked bag instead, where it\'s allowed.');
   return {status:st,tags:[{t:'Item \u00B7 '+item.n,k:'neutral'},tag],head:head,lines:lines,source:airSource(),src:'Based on standard aviation-security rules. Confirm anything unusual with '+S.airline+'.'};
 }
-function sharpUnknown(q){return {status:'info',tags:[{t:'Item \u00B7 '+q,k:'neutral'}],head:'We couldn\'t find "'+q+'" in our data yet.',lines:['General rule: anything with a fixed or exposed blade over ~6 cm belongs in checked baggage, not the cabin.','When unsure, put it in checked and confirm with '+S.airline+' — see Helpful sources.'],source:airSource(),src:'We only give a verdict when we can back it up. For everything else, we hand you the right people.'};}
+function sharpUnknown(q){return {status:'nomatch',tags:[{t:'Item \u00B7 '+q,k:'neutral'}],head:'Sorry, we couldn\'t find any matches for the item you were looking to get answers on. Please use the helpful source(s) we provided for further help.',lines:[],source:airSource(),src:'We only give a verdict when we can back it up. For everything else, we hand you the right people.'};}
 /* ---- sports ---- */
 function sportsVerdict(item){
   var st=item.cabin?'go':'warn';
   return {status:st,tags:[{t:'Gear \u00B7 '+item.n,k:'neutral'},item.cabin?{t:'Cabin possible',k:'green'}:{t:'Checked / oversized',k:'amber'}],head:item.cabin?(item.n+' — can often go in the cabin.'):(item.n+' — travels as checked baggage.'),lines:[item.note,'Check '+S.airline+'\'s sports-equipment and oversize-bag fees before you fly.'],source:airSource(),src:'Based on standard airline sports-baggage handling. Fees and size limits vary by airline.'};
 }
-function sportsUnknown(q){return {status:'info',tags:[{t:'Gear \u00B7 '+q,k:'neutral'}],head:'We couldn\'t find "'+q+'" in our data yet.',lines:['General rule: most sports gear travels as checked or oversized baggage, often for a fee, and rarely in the cabin.','Confirm the exact policy and fee with '+S.airline+' — see Helpful sources.'],source:airSource(),src:'We only give a verdict when we can back it up. For everything else, we hand you the right people.'};}
+function sportsUnknown(q){return {status:'nomatch',tags:[{t:'Gear \u00B7 '+q,k:'neutral'}],head:'Sorry, we couldn\'t find any matches for the item you were looking to get answers on. Please use the helpful source(s) we provided for further help.',lines:[],source:airSource(),src:'We only give a verdict when we can back it up. For everything else, we hand you the right people.'};}
 /* ---- animals ---- */
 function animalVerdict(){
   var sp=S.animal,size=S.dogSize,country=S.country,a=S.airline,strict=STRICT_PET.indexOf(country)>-1;
@@ -443,8 +443,8 @@ function animalVerdict(){
   return {status:'info',tags:[{t:'Animal \u00B7 '+sp,k:'neutral'}],head:'We couldn\'t find the exact answer for bringing a '+sp+' into '+country+'.',lines:['Exotic and non-cat/dog animals have very specific, often restrictive rules.','Check the official authority below before making any plans.'],source:cauth,src:'We only give a verdict when we can back it up. For everything else, we hand you the right people.'};
 }
 
-var VICON={go:'<path d="M20 6 9 17l-5-5"/>',warn:'<path d="M12 9v4m0 4h.01M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"/>',stop:'<circle cx="12" cy="12" r="9"/><path d="M8 12h8"/>',info:'<circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v4h1"/>'};
-var VLABEL={go:'Allowed',warn:'Check first',stop:'Not allowed',info:'Check the source'};
+var VICON={go:'<path d="M20 6 9 17l-5-5"/>',warn:'<path d="M12 9v4m0 4h.01M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"/>',stop:'<circle cx="12" cy="12" r="9"/><path d="M8 12h8"/>',info:'<circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v4h1"/>',nomatch:'<circle cx="12" cy="12" r="9"/><path d="M9.6 9.4a2.4 2.4 0 0 1 4.2 1.6c0 1.6-2.2 2-2.2 3.4"/><path d="M12 17.3h.01"/>'};
+var VLABEL={go:'Allowed',warn:'Check first',stop:'Not allowed',info:'Check the source',nomatch:'No matches found'};
 var SUITCASE='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="7" width="16" height="13" rx="2"/><path d="M9 7V4h6v3M9 11v5M15 11v5"/></svg>';
 var CABINICO='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="7" width="12" height="13" rx="2"/><path d="M9 7V4h6v3M10 11v5M14 11v5"/></svg>';
 var HOLDICO='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="8" width="16" height="11" rx="2"/><path d="M8 8V5h8v3M4 14h16"/></svg>';
@@ -595,7 +595,7 @@ function itemVerdict(){
 }
 function unknownItem(q){
   var country=S.country,auth=S.cat==='med'?(MED_AUTH[country]||{label:country+' health & customs authority',url:null}):{label:country+' customs authority',url:null};
-  return {status:'info',tags:[{t:(S.cat==='med'?'Medicine':'Food')+' \u00B7 '+q,k:'neutral'}],source:(S.mode==='plane'?airSource():auth),head:'We couldn\'t find "'+q+'" in our data yet.',lines:['We won\'t guess on something we can\'t back up.','Here\'s where to find out fast — see Helpful sources below.'],src:'We only give a verdict when we can back it up. For everything else, we hand you the right people.'};
+  return {status:'nomatch',tags:[{t:(S.cat==='med'?'Medicine':'Food')+' \u00B7 '+q,k:'neutral'}],source:(S.mode==='plane'?airSource():auth),head:'Sorry, we couldn\'t find any matches for the item you were looking to get answers on. Please use the helpful source(s) we provided for further help.',lines:[],src:'We only give a verdict when we can back it up. For everything else, we hand you the right people.'};
 }
 /* ============ LIVE answer engine — real web fetch, no hand-typed data ============ */
 var LIVE={};var TTL=14*24*3600*1000;/* refresh cached answers every 2 weeks */
