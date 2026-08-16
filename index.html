@@ -111,18 +111,18 @@ body{background:radial-gradient(1200px 600px at 50% -10%,var(--glow) 0%,transpar
 .route{font-family:'Space Mono',monospace;font-size:10.5px;letter-spacing:.5px;color:var(--card-muted);display:flex;flex-wrap:wrap;gap:6px 10px;margin-bottom:12px}
 .route b{color:var(--card-text)}
 .tagrow{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:11px}
-.tag{font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.4px;padding:5px 9px;border-radius:7px}
+.tag{font-family:'Space Mono',monospace;font-size:13px;letter-spacing:.4px;padding:5px 9px;border-radius:7px}
 .tag-neutral{background:rgba(140,150,170,.16);color:var(--tg-neutral)}
 .tag-green{background:rgba(47,207,155,.16);color:var(--tg-green);font-weight:700}
 .tag-amber{background:rgba(245,184,65,.18);color:var(--tg-amber);font-weight:700}
 .tag-stop{background:rgba(255,107,107,.18);color:var(--tg-stop);font-weight:700}
-.headline{font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:16px;line-height:1.3;margin:0 0 10px;color:var(--card-text)}
+.headline{font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:18px;line-height:1.3;margin:0 0 10px;color:var(--card-text)}
 .detail{list-style:none;margin:0;padding:0}
-.detail li{position:relative;padding-left:18px;font-size:13.5px;line-height:1.5;color:var(--card-text);opacity:.92;margin-bottom:6px}
+.detail li{position:relative;padding-left:18px;font-size:16px;line-height:1.5;color:var(--card-text);opacity:.92;margin-bottom:6px}
 .detail li::before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%;background:var(--card-text);opacity:.4}
 .xlink{margin-top:13px;width:100%;background:#141414;color:#F5F3EC;border:0;border-radius:11px;padding:12px;font-family:'Inter',sans-serif;font-weight:600;font-size:13px;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:7px}
 .help{margin-top:13px;background:var(--card-sub);border-radius:12px;padding:12px 13px}
-.help-h{font-family:'Space Mono',monospace;font-size:9.5px;letter-spacing:1.2px;text-transform:uppercase;color:var(--card-muted);margin-bottom:9px}
+.help-h{font-family:'Space Mono',monospace;font-size:13px;letter-spacing:1.2px;text-transform:uppercase;color:var(--card-muted);margin-bottom:9px}
 .hitem{display:flex;align-items:center;gap:10px;padding:9px 11px;border-radius:9px;background:var(--card);text-decoration:none;color:var(--card-text);margin-bottom:6px;border:1px solid var(--card-sub-line)}
 a.hitem:hover{border-color:var(--accent)}
 .hi-ic{width:20px;text-align:center;font-size:14px;flex:none}
@@ -134,8 +134,8 @@ a.hitem:hover{border-color:var(--accent)}
 .email-menu.hidden{display:none}
 .em-opt{background:var(--card);border:1px solid var(--card-sub-line);border-radius:8px;padding:8px 11px;font-size:12.5px;font-weight:600;color:var(--card-text);text-decoration:none;display:flex;align-items:center;gap:8px}
 a.em-opt:hover{border-color:var(--accent)}
-.hnote{font-size:11px;color:var(--card-muted);line-height:1.4;margin-top:8px}
-.src{margin-top:12px;padding-top:11px;border-top:1px solid var(--card-line);font-family:'Space Mono',monospace;font-size:9.5px;letter-spacing:.3px;color:var(--card-muted);line-height:1.5}
+.hnote{font-size:13px;color:var(--card-muted);line-height:1.4;margin-top:8px}
+.src{margin-top:12px;padding-top:11px;border-top:1px solid var(--card-line);font-family:'Space Mono',monospace;font-size:14px;letter-spacing:.3px;color:var(--card-muted);line-height:1.5}
 .bstrip{padding:15px 18px;display:flex;align-items:center;gap:12px;background:var(--card-sub);color:var(--card-text);border-bottom:1px solid var(--card-sub-line)}
 .bstrip .bic{width:34px;height:34px;border-radius:10px;display:grid;place-items:center;background:var(--card)}
 .bstrip .bic svg{width:19px;height:19px;color:var(--accent)}
@@ -745,11 +745,11 @@ function liveFallback(wrap){
   bindHelp(wrap);
 }
 function linkRow(icon,label,sub,url){var inner='<span class="hi-ic">'+SICON[icon]+'</span><span class="hi-l">'+label+(sub?'<small>'+sub+'</small>':'')+'</span>'+(url?'<span class="hi-go">\u2197</span>':'');return url?('<a class="hitem" href="'+url+'" target="_blank" rel="noopener">'+inner+'</a>'):('<div class="hitem">'+inner+'</div>');}
-function helpBlock(authority){
+/*app-synced*/function helpBlock(authority){
   var rows='';
   if(S.mode==='plane'){var a=airlineByName(S.airline),d=a.site;if(d)rows+=linkRow('web',a.name+' website','Baggage & rules','https://www.'+d);}
   else{var au=authority||{};if(au&&au.url)rows+=linkRow('web',au.label,'Official guidance',au.url);}
-  if(!rows)rows='<div class="hnote">See the airline\u2019s official website for exact details.</div>';
+  if(!rows)return '';
   return '<div class="help"><div class="help-h">Helpful sources</div>'+rows+'<div class="hnote">To be 100% sure, we always recommend confirming with the official channels.</div></div>';
 }
 function bindHelp(scope){(scope||document).querySelectorAll('.email-trigger').forEach(function(t){t.onclick=function(ev){ev.stopPropagation();var m=t.nextElementSibling;document.querySelectorAll('.email-menu').forEach(function(x){if(x!==m)x.classList.add('hidden');});if(m&&m.classList.contains('email-menu'))m.classList.toggle('hidden');};});}
