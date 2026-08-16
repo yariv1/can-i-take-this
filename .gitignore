@@ -1,6 +1,1 @@
-build.js
-canitakethis-data-blueprint.md
-canitakethis.html
-node_modules/
-package.json
-package-lock.json
+patch_*.js
