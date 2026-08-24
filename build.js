@@ -420,19 +420,25 @@ function airPlaneShell(o){
     var route='<div class="route"><span>&#9992; <b>'+esc(a.name)+'</b></span><span>'+bagLabel+'</span></div>';
     return '<div class="pass '+v.status+' print"><div class="strip"><div class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">'+VICON[v.status]+'</svg></div><div><div class="verdict">'+VLABEL[v.status]+'</div><div class="vsub">On the plane</div></div></div><div class="perf"></div><div class="body">'+route+'<p class="headline">'+esc(v.head||'')+'</p><ul class="detail">'+lines+'</ul>'+help()+'<div class="src">'+esc(v.src||'')+'</div></div></div>';
   }
+  /*AIRPLANE_TOGGLE_V2*/
   var opts=VOL?['50','100','300','500']:(POWER?['lo','mid','hi']:[]);
   var def=VOL?'100':(POWER?'lo':null);
   var carryMap={}, vdef=null;
   opts.forEach(function(id){ setS({mode:'plane',bag:'carry',cat:cat,detail:id,airline:a.name}); var v=w.verdict(); carryMap[id]=card(v,'CARRY-ON'); if(id===def)vdef=v; });
-  var carryInit;
-  if(VAPE){ setS({mode:'plane',bag:'carry',cat:cat,detail:null,airline:a.name}); vdef=w.verdict(); carryInit=card(vdef,'CARRY-ON'); }
-  else carryInit=carryMap[def];
+  var carryVape='';
+  if(VAPE){ setS({mode:'plane',bag:'carry',cat:cat,detail:null,airline:a.name}); vdef=w.verdict(); carryVape=card(vdef,'CARRY-ON'); }
   setS({mode:'plane',bag:'checked',cat:cat,detail:(VOL?'100':(POWER?'lo':null)),airline:a.name});
   var checkedCard=card(w.verdict(),'CHECKED');
+  var initCard=VAPE?carryVape:carryMap[def];
+  var bagToggle='<div class="slab">Where in your bags?</div><div class="bag2" id="bagSeg"><button data-bag="carry" class="on">Carry-on <small>Trolley, backpack, under-seat</small></button><button data-bag="checked">Checked <small>Goes in the hold</small></button></div>';
   var pickerHtml='';
   if(!VAPE){ var list=VOL?w.DETAILS.vol:w.DETAILS.wh; var lbl=POWER?'Battery capacity?':'How much?'; pickerHtml='<div class="slab">'+lbl+'</div><div class="chips" id="detChips">'+list.map(function(d){return '<button class="chip sm'+(d.id===def?' on':'')+'" data-d="'+d.id+'">'+esc(d.label)+'</button>';}).join('')+'</div>'; }
-  var clientScript='';
-  if(!VAPE){ clientScript='<scr'+'ipt>(function(){var M='+JSON.stringify(carryMap)+';var box=document.getElementById("carryCard");var chips=document.querySelectorAll("#detChips .chip");[].forEach.call(chips,function(b){b.onclick=function(){[].forEach.call(chips,function(x){x.classList.remove("on");});b.classList.add("on");box.innerHTML=M[b.dataset.d];};});})();</scr'+'ipt>\n'; }
+  var clientScript;
+  if(VAPE){
+    clientScript='<scr'+'ipt>(function(){var CA='+JSON.stringify(carryVape)+',CH='+JSON.stringify(checkedCard)+';var box=document.getElementById("planeCard"),bag="carry";var bb=document.querySelectorAll("#bagSeg button");function r(){box.innerHTML=bag==="checked"?CH:CA;}[].forEach.call(bb,function(b){b.onclick=function(){bag=b.dataset.bag;[].forEach.call(bb,function(x){x.classList.toggle("on",x===b);});r();};});})();</scr'+'ipt>\n';
+  } else {
+    clientScript='<scr'+'ipt>(function(){var CARRY='+JSON.stringify(carryMap)+',CH='+JSON.stringify(checkedCard)+';var box=document.getElementById("planeCard"),bag="carry",det='+JSON.stringify(def)+';var bb=document.querySelectorAll("#bagSeg button"),ch=document.querySelectorAll("#detChips .chip");function r(){box.innerHTML=bag==="checked"?CH:CARRY[det];}[].forEach.call(bb,function(b){b.onclick=function(){bag=b.dataset.bag;[].forEach.call(bb,function(x){x.classList.toggle("on",x===b);});r();};});[].forEach.call(ch,function(c){c.onclick=function(){det=c.dataset.d;[].forEach.call(ch,function(x){x.classList.toggle("on",x===c);});r();};});})();</scr'+'ipt>\n';
+  }
   var CATMETA={
     liquids:{h1:'Can I bring liquids on '+a.name+'? (2026)',ttl:a.name+' Liquids Rules 2026 \u2014 Carry-On & Checked'},
     perfume:{h1:'Perfume & aerosols on '+a.name+' (2026)',ttl:a.name+' Perfume & Aerosol Rules 2026'},
@@ -570,7 +576,10 @@ function airPlaneShell(o){
 +'.chip:hover{border-color:var(--surface-2)}\n'
 +'.chip.on{background:var(--sel-bg);color:var(--sel-text);border-color:var(--sel-bg);font-weight:600}\n'
 +'.chip.sm{font-family:\'Space Mono\',monospace;font-size:12.5px;font-weight:700;padding:8px 13px}\n'
-+'.pstack{display:flex;flex-direction:column;gap:16px}\n'
++'.bag2{display:grid;grid-template-columns:1fr 1fr;gap:9px;align-items:stretch;margin:0 0 14px}\n'
++'.bag2 button{background:var(--surface);border:1px solid var(--line);border-radius:13px;color:var(--text);cursor:pointer;font-family:\'Inter\',sans-serif;font-weight:600;font-size:13.5px;padding:13px 12px;text-align:left;transition:.15s;line-height:1.22;display:flex;flex-direction:column;justify-content:flex-start}\n'
++'.bag2 button small{display:block;font-weight:400;font-size:11px;color:var(--muted);margin-top:3px}\n'
++'.bag2 button.on{border-color:var(--sel-bg);background:var(--surface);box-shadow:inset 0 0 0 1px var(--sel-bg)}\n'
 +'</style></head><body>\n'
 +'<div class="wrap">\n'
 +'<div class="topbar"><a class="brand" href="/" aria-label="canitakethis.co home"><span class="mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.8 19.2 16 11l3.5-3.5a2.1 2.1 0 0 0-3-3L13 8 4.8 6.2a.5.5 0 0 0-.5.8l3.9 4.3-2 2-2.2-.4a.5.5 0 0 0-.5.8L6 17l2.7 2.4a.5.5 0 0 0 .8-.5l-.4-2.2 2-2 4.3 3.9a.5.5 0 0 0 .8-.5Z"/></svg></span><h1>can i take this?</h1></a>'
@@ -578,7 +587,7 @@ function airPlaneShell(o){
 +'<div class="airhead">'+logo+'<h2>'+esc(a.name)+' <span class="muted">Airline Rules</span></h2></div>\n'
 +'<nav class="tabs">'+t.tabHtml+'</nav>\n'
 +t.moreBlock+'\n'
-+'<main>'+pickerHtml+'<div class="pstack"><div id="carryCard">'+carryInit+'</div>'+checkedCard+'</div></main>\n'+clientScript
++'<main>'+bagToggle+pickerHtml+'<div id="planeCard">'+initCard+'</div></main>\n'+clientScript
 +'<footer>Rules change and vary by nationality, route and fare. This is guidance, not legal advice \u2014 always confirm with the airline or the official customs authority before you travel. Updated 2026.<nav class="tlinks"><a href="/about/">About</a><a href="/contact/">Contact</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a></nav></footer>\n'
 +'</div>\n'
 +'<script>function advLogo(im){var l=(im.dataset.srcs||"").split("|"),i=parseInt(im.dataset.i||"0",10)+1;if(i<l.length){im.dataset.i=i;im.src=l[i];}else{im.style.display="none";}}document.querySelectorAll("img.logo-img").forEach(function(im){im.onerror=function(){advLogo(im);};if(im.complete&&im.naturalWidth===0)advLogo(im);});</scr'+'ipt>\n'
