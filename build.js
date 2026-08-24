@@ -118,14 +118,9 @@ function airShell({url,title,desc,a,fares}){
   const NOTICE=/no checked bag|for a fee|not included|not sold|add one|add a|add 1/i;
   const faqLd={"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is "+a.name+"'s baggage allowance?","acceptedAnswer":{"@type":"Answer","text":a.name+" economy: "+fares[0].cabin+" "+fares[0].checked}}]};
   const bread={"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":BASE+"/"},{"@type":"ListItem","position":2,"name":a.name+" baggage","item":canonical}]};
-  const tabs=[
-    {t:'\u2039 All rules',u:'/',back:true},
-    {t:'Baggage',u:url,on:true},
-    {t:'Liquids in carry-on',u:'/plane/liquids/'},
-    {t:'Power banks on a plane',u:'/plane/power-bank/'},
-    {t:'Vapes on a plane',u:'/plane/vape-e-cigarette/'}
-  ];
-  const tabsHtml=tabs.map(t=>'<a class="tab'+(t.on?' on':'')+(t.back?' back':'')+'" href="'+t.u+'">'+esc(t.t)+'</a>').join('');
+  const _at=airTabs(slug(a.name),'baggage');
+  const tabsHtml=_at.tabHtml;
+  const moreBlock=_at.moreBlock;
   const blocks=fares.map(fr=>{
     const notice=NOTICE.test(fr.checked)?'<div class="notice"><div class="ntitle">Please notice</div><div class="ntext">'+esc(fr.checked)+'</div></div>':'';
     return '<section class="fblock"><h2>'+esc(fr.label)+' <span class="tier">'+esc(fareTiers(fr.label))+'</span> <span class="tag tag-neutral">PER PASSENGER</span></h2>'
@@ -166,11 +161,20 @@ function airShell({url,title,desc,a,fares}){
 +'.airhead .logo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}\n'
 +'.airhead h2{font-family:\'Space Grotesk\',\'Inter\',sans-serif;font-size:1.7rem;line-height:1.15;margin:0;font-weight:700}\n'
 +'.airhead h2 .muted{color:var(--muted);font-weight:600}\n'
-+'.tabs{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 26px}\n'
++'.tabs{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 8px}\n'
 +'.tab{background:var(--surface);border:1px solid var(--line);border-radius:999px;color:var(--text);text-decoration:none;font-weight:500;font-size:13.5px;padding:9px 15px;transition:.14s;display:inline-flex;align-items:center;gap:6px}\n'
 +'.tab:hover{border-color:var(--surface-2)}\n'
 +'.tab.on{background:var(--sel-bg);color:var(--sel-text);border-color:var(--sel-bg);font-weight:600}\n'
 +'.tab.back{color:var(--muted)}\n'
++'.more{margin:0 0 26px}\n'
++'.more summary{list-style:none;display:inline-flex;align-items:center;gap:5px;cursor:pointer;color:var(--muted);font-size:13.5px;font-weight:600;padding:6px 10px;border-radius:8px;user-select:none;transition:.14s}\n'
++'.more summary::-webkit-details-marker{display:none}\n'
++'.more summary:hover{color:var(--text);background:var(--surface)}\n'
++'.more summary .chev{width:15px;height:15px;transition:transform .18s}\n'
++'.more[open] summary .chev{transform:rotate(180deg)}\n'
++'.more summary .mlabel::before{content:"Show more"}\n'
++'.more[open] summary .mlabel::before{content:"Show less"}\n'
++'.morerow{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 0}\n'
 +'.fblock{margin:0 0 34px}\n'
 +'.fblock h2{font-family:\'Space Grotesk\',\'Inter\',sans-serif;font-size:1.32rem;font-weight:700;margin:0 0 14px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}\n'
 +'.tag{display:inline-flex;align-items:center;height:24px;padding:0 6px;border-radius:8px;font-family:\'Space Mono\',monospace;font-size:14px;font-weight:700;letter-spacing:.4px;text-transform:uppercase}\n'
@@ -191,6 +195,7 @@ function airShell({url,title,desc,a,fares}){
 +'<button class="theme-toggle" id="themeToggle" onclick="__tt()"><span class="ico" id="themeIcon">&#9728;</span><span id="themeLabel">Light</span></button></div>\n'
 +'<div class="airhead">'+logo+'<h2>'+esc(a.name)+' <span class="muted">Airline Rules</span></h2></div>\n'
 +'<nav class="tabs">'+tabsHtml+'</nav>\n'
++moreBlock+'\n'
 +'<main>'+blocks+'</main>\n'
 +'<footer>Rules change and vary by nationality, route and fare. This is guidance, not legal advice \u2014 always confirm with the airline or the official customs authority before you travel. Updated 2026.<nav class="tlinks"><a href="/about/">About</a><a href="/contact/">Contact</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a></nav></footer>\n'
 +'</div>\n'
@@ -385,6 +390,203 @@ function countryShell(o){/*data-country4*/
 +'</body></html>';
 }
 
+/*AIRPLANE_PAGES_V1*/
+function airTabs(sl, active){
+  var visible=[
+    {t:'\u2039 All rules',u:'/',back:true},
+    {t:'Baggage',u:'/airline/'+sl+'/baggage-allowance/',key:'baggage'},
+    {t:'Liquids',u:'/airline/'+sl+'/liquids/',key:'liquids'},
+    {t:'Power bank',u:'/airline/'+sl+'/power-bank/',key:'power'},
+    {t:'Vape',u:'/airline/'+sl+'/vape-e-cigarette/',key:'vape'}
+  ];
+  var more=[
+    {t:'Perfume',u:'/airline/'+sl+'/perfume-aerosols/',key:'perfume'},
+    {t:'Alcohol',u:'/airline/'+sl+'/alcohol/',key:'alcohol'}
+  ];
+  var tabHtml=visible.map(function(t){return '<a class="tab'+(t.key&&t.key===active?' on':'')+(t.back?' back':'')+'" href="'+t.u+'">'+esc(t.t)+'</a>';}).join('');
+  var moreHtml=more.map(function(t){return '<a class="tab'+(t.key&&t.key===active?' on':'')+'" href="'+t.u+'">'+esc(t.t)+'</a>';}).join('');
+  var moreActive=more.some(function(t){return t.key===active;});
+  var moreBlock='<details class="more" data-airmore'+(moreActive?' open':'')+'><summary><span class="mlabel"></span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></summary><div class="morerow">'+moreHtml+'</div></details>';
+  return {tabHtml:tabHtml, moreBlock:moreBlock};
+}
+function airPlaneShell(o){
+  var a=o.a, cat=o.cat, url=o.url, sl=slug(a.name), canonical=BASE+url;
+  var VOL=(cat==='liquids'||cat==='perfume'||cat==='alcohol'), POWER=(cat==='power'), VAPE=(cat==='vape');
+  var VICON={go:'<path d="M20 6 9 17l-5-5"/>',warn:'<path d="M12 9v4m0 4h.01M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"/>',stop:'<circle cx="12" cy="12" r="9"/><path d="M8 12h8"/>',info:'<circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v4h1"/>'};
+  var VLABEL={go:'Allowed',warn:'Check first',stop:'Not allowed',info:'Check the source'};
+  function help(){ if(!a.site) return ''; return '<div class="help"><div class="help-h">Helpful sources</div><a class="hitem" href="https://www.'+esc(a.site)+'" target="_blank" rel="noopener"><span class="hi-ic">\uD83C\uDF10</span><span class="hi-l">'+esc(a.name)+' website<small>Baggage & rules</small></span><span class="hi-go">\u2197</span></a><div class="hnote">To be 100% sure, we always recommend confirming with the official channels.</div></div>'; }
+  function card(v,bagLabel){
+    var lines=(v.lines||[]).filter(Boolean).map(function(l){return '<li>'+esc(l)+'</li>';}).join('');
+    var route='<div class="route"><span>&#9992; <b>'+esc(a.name)+'</b></span><span>'+bagLabel+'</span></div>';
+    return '<div class="pass '+v.status+' print"><div class="strip"><div class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">'+VICON[v.status]+'</svg></div><div><div class="verdict">'+VLABEL[v.status]+'</div><div class="vsub">On the plane</div></div></div><div class="perf"></div><div class="body">'+route+'<p class="headline">'+esc(v.head||'')+'</p><ul class="detail">'+lines+'</ul>'+help()+'<div class="src">'+esc(v.src||'')+'</div></div></div>';
+  }
+  var opts=VOL?['50','100','300','500']:(POWER?['lo','mid','hi']:[]);
+  var def=VOL?'100':(POWER?'lo':null);
+  var carryMap={}, vdef=null;
+  opts.forEach(function(id){ setS({mode:'plane',bag:'carry',cat:cat,detail:id,airline:a.name}); var v=w.verdict(); carryMap[id]=card(v,'CARRY-ON'); if(id===def)vdef=v; });
+  var carryInit;
+  if(VAPE){ setS({mode:'plane',bag:'carry',cat:cat,detail:null,airline:a.name}); vdef=w.verdict(); carryInit=card(vdef,'CARRY-ON'); }
+  else carryInit=carryMap[def];
+  setS({mode:'plane',bag:'checked',cat:cat,detail:(VOL?'100':(POWER?'lo':null)),airline:a.name});
+  var checkedCard=card(w.verdict(),'CHECKED');
+  var pickerHtml='';
+  if(!VAPE){ var list=VOL?w.DETAILS.vol:w.DETAILS.wh; var lbl=POWER?'Battery capacity?':'How much?'; pickerHtml='<div class="slab">'+lbl+'</div><div class="chips" id="detChips">'+list.map(function(d){return '<button class="chip sm'+(d.id===def?' on':'')+'" data-d="'+d.id+'">'+esc(d.label)+'</button>';}).join('')+'</div>'; }
+  var clientScript='';
+  if(!VAPE){ clientScript='<scr'+'ipt>(function(){var M='+JSON.stringify(carryMap)+';var box=document.getElementById("carryCard");var chips=document.querySelectorAll("#detChips .chip");[].forEach.call(chips,function(b){b.onclick=function(){[].forEach.call(chips,function(x){x.classList.remove("on");});b.classList.add("on");box.innerHTML=M[b.dataset.d];};});})();</scr'+'ipt>\n'; }
+  var CATMETA={
+    liquids:{h1:'Can I bring liquids on '+a.name+'? (2026)',ttl:a.name+' Liquids Rules 2026 \u2014 Carry-On & Checked'},
+    perfume:{h1:'Perfume & aerosols on '+a.name+' (2026)',ttl:a.name+' Perfume & Aerosol Rules 2026'},
+    alcohol:{h1:'Bringing alcohol on '+a.name+' (2026)',ttl:a.name+' Alcohol Rules 2026 \u2014 Carry-On & Checked'},
+    power:{h1:'Power banks on '+a.name+' (2026)',ttl:a.name+' Power Bank Rules 2026 \u2014 Wh Limits'},
+    vape:{h1:'Vapes & e-cigarettes on '+a.name+' (2026)',ttl:a.name+' Vape & E-Cigarette Rules 2026'}
+  };
+  var meta=CATMETA[cat];
+  var faqA=(vdef.head||'')+' '+((vdef.lines||[]).filter(Boolean).join(' '));
+  var desc=((vdef.head||'')+' '+((vdef.lines||[]).filter(Boolean)[0]||'')).slice(0,155);
+  var LOGOSRC='https://www.gstatic.com/flights/airline_logos/70px/'+a.iata+'.png';
+  var logo='<span class="logo" style="background:#fff"><span>'+esc(a.iata)+'</span><img class="logo-img" data-srcs="'+LOGOSRC+'" data-i="0" src="'+LOGOSRC+'" alt=""></span>';
+  var t=airTabs(sl,cat);
+  var faqLd={"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":meta.h1,"acceptedAnswer":{"@type":"Answer","text":faqA}}]};
+  var bread={"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":BASE+"/"},{"@type":"ListItem","position":2,"name":a.name+" "+cat,"item":canonical}]};
+  return '<!doctype html><html lang="en"><head>\n'
++'<!-- Google tag (gtag.js) -->\n'
++'<script async src="https://www.googletagmanager.com/gtag/js?id=G-0HQ16GNH78"></scr'+'ipt>\n'
++'<script>\nwindow.dataLayer=window.dataLayer||[];\nfunction gtag(){dataLayer.push(arguments);}\ngtag(\'js\',new Date());\ngtag(\'config\',\'G-0HQ16GNH78\');\n</scr'+'ipt>\n'
++'<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6832331505671007" crossorigin="anonymous"></scr'+'ipt>\n'
++'<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">\n'
++'<title>'+esc(meta.ttl)+' | canitakethis.co</title>\n'
++'<meta name="description" content="'+esc(desc)+'">\n'
++'<link rel="canonical" href="'+canonical+'">\n'
++'<link rel="icon" href="/assets/favicon.ico" sizes="any">\n'
++'<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">\n'
++'<meta property="og:title" content="'+esc(meta.ttl)+'"><meta property="og:description" content="'+esc(desc)+'"><meta property="og:type" content="article"><meta property="og:url" content="'+canonical+'">\n'
++'<script type="application/ld+json">'+JSON.stringify(faqLd)+'</scr'+'ipt>\n'
++'<script type="application/ld+json">'+JSON.stringify(bread)+'</scr'+'ipt>\n'
++'<script>(function(){var t=localStorage.getItem(\'citt-theme\')||\'dark\';document.documentElement.setAttribute(\'data-theme\',t);})();</scr'+'ipt>\n'
++'<style>\n'
++"@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap');\n"
++':root,[data-theme="dark"]{--bg:#0E1428;--glow:#1A2542;--surface:#161F3A;--surface-2:#22304F;--line:#2A3A5E;--text:#EDF0F7;--muted:#8A96B8;--accent:#4CC2FF;--go:#2FCF9B;--warn:#F5B841;--stop:#FF6B6B;--info:#4CC2FF;--card:#182238;--card-text:#EDF0F7;--card-muted:#98A4C2;--card-line:#2A3A5E;--card-notch:#0E1428;--card-sub:#1E2A46;--card-sub-line:#2A3A5E;--tg-neutral:#C2CCE4;--tg-green:#54DDAD;--tg-amber:#F3C765;--tg-stop:#FF9A9A;--mark-bg:#26324E;--sel-bg:#4CC2FF;--sel-text:#08111f;--more-t:#A4B0CF;--more-th:#D2DAEF;--more-hbg:#161F3A;}\n'
++'[data-theme="light"]{--bg:#ECEAE1;--glow:#FFFFFF;--surface:#FFFFFF;--surface-2:#F0EEE4;--line:#DED9CB;--text:#1B2233;--muted:#6B7488;--accent:#1E86D6;--go:#2FCF9B;--warn:#F5B841;--stop:#FF6B6B;--info:#4CC2FF;--card:#FFFFFF;--card-text:#141414;--card-muted:#6A6A6A;--card-line:#E7E3D6;--card-notch:#ECEAE1;--card-sub:#F4F1E8;--card-sub-line:#E4DFCE;--tg-neutral:#333333;--tg-green:#0F6F49;--tg-amber:#8A6410;--tg-stop:#A23131;--mark-bg:#333A48;--sel-bg:#1B2233;--sel-text:#FFFFFF;--more-t:#6B7488;--more-th:#1B2233;--more-hbg:#FFFFFF;}\n'
++'*{box-sizing:border-box}body{margin:0;font-family:\'Inter\',system-ui,sans-serif;font-size:16px;line-height:1.55;color:var(--text);background:radial-gradient(1200px 600px at 50% -10%,var(--glow) 0%,transparent 60%),var(--bg);min-height:100vh;-webkit-font-smoothing:antialiased;transition:background .25s,color .25s}\n'
++'.wrap{max-width:760px;margin:0 auto;padding:20px 18px 64px}\n'
++'.topbar{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px}\n'
++'.brand{display:flex;align-items:center;gap:10px;text-decoration:none}\n'
++'.mark{width:34px;height:34px;border-radius:10px;flex:none;background:var(--mark-bg);display:grid;place-items:center;color:#EDF0F7;box-shadow:0 6px 18px rgba(0,0,0,.22)}\n'
++'.mark svg{width:18px;height:18px}\n'
++'.brand h1{font-family:\'Space Grotesk\',\'Inter\',sans-serif;font-weight:700;font-size:18px;letter-spacing:-.4px;margin:0;color:var(--text)}\n'
++'.theme-toggle{display:flex;align-items:center;gap:6px;background:var(--surface);border:1px solid var(--line);color:var(--text);border-radius:999px;padding:7px 12px;font-family:\'Inter\',sans-serif;font-size:12px;font-weight:600;cursor:pointer}\n'
++'.theme-toggle .ico{font-size:13px}\n'
++'.airhead{display:flex;align-items:center;gap:12px;margin:6px 0 16px}\n'
++'.airhead .cflag{line-height:0;flex:none}\n'
++'.fimg{border-radius:2px;vertical-align:middle}\n'
++'.airhead .cflag .fimg{height:26px;width:auto;box-shadow:0 0 0 1px rgba(0,0,0,.18)}\n'
++'.route .fimg{height:11px;width:auto;margin-left:3px;box-shadow:0 0 0 1px rgba(0,0,0,.18)}\n'
++'.airhead h2{font-family:\'Space Grotesk\',\'Inter\',sans-serif;font-size:1.7rem;line-height:1.15;margin:0;font-weight:700}\n'
++'.airhead h2 .muted{color:var(--muted);font-weight:600}\n'
++'.tabs{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 8px}\n'
++'.tab{background:var(--surface);border:1px solid var(--line);border-radius:999px;color:var(--text);text-decoration:none;font-weight:500;font-size:13.5px;padding:9px 15px;transition:.14s;display:inline-flex;align-items:center;gap:6px}\n'
++'.tab:hover{border-color:var(--surface-2)}\n'
++'.tab.on{background:var(--sel-bg);color:var(--sel-text);border-color:var(--sel-bg);font-weight:600}\n'
++'.tab.back{color:var(--muted)}\n'
++'.more{margin:0 0 26px}\n'
++'.more summary{list-style:none;display:inline-flex;align-items:center;gap:5px;cursor:pointer;color:var(--more-t);font-size:13.5px;font-weight:600;padding:6px 10px;border-radius:8px;user-select:none;transition:.14s}\n'
++'.more summary::-webkit-details-marker{display:none}\n'
++'.more summary:hover{color:var(--more-th);background:var(--more-hbg)}\n'
++'.more summary .chev{width:15px;height:15px;transition:transform .18s}\n'
++'.more[open] summary .chev{transform:rotate(180deg)}\n'
++'.more summary .mlabel::before{content:"Show more"}\n'
++'.more[open] summary .mlabel::before{content:"Show less"}\n'
++'.morerow{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 0}\n'
++'.pass{position:relative;background:var(--card);color:var(--card-text);border-radius:18px;overflow:hidden;box-shadow:0 20px 50px rgba(0,0,0,.30);transition:background .25s,color .25s}\n'
++'.pass.print{animation:print .5s cubic-bezier(.2,.9,.25,1) both}\n'
++'@keyframes print{from{opacity:0;transform:translateY(14px) scale(.97)}to{opacity:1;transform:none}}\n'
++'.strip{padding:15px 18px;display:flex;align-items:center;gap:12px;color:#08111f}\n'
++'.strip .badge{width:34px;height:34px;border-radius:10px;display:grid;place-items:center;background:rgba(0,0,0,.16)}\n'
++'.strip .badge svg{width:19px;height:19px}\n'
++'.strip .verdict{font-family:\'Space Grotesk\',sans-serif;font-weight:700;font-size:20px;letter-spacing:-.4px;line-height:1}\n'
++'.strip .vsub{font-family:\'Space Mono\',monospace;font-size:9.5px;letter-spacing:1px;text-transform:uppercase;opacity:.75;margin-top:3px}\n'
++'.go .strip{background:var(--go)}.warn .strip{background:var(--warn)}.stop .strip{background:var(--stop)}.info .strip{background:var(--info)}.nomatch .strip{background:#363F52;color:#EDF0F7}\n'
++'.perf{position:relative;height:0;border-top:2px dashed var(--card-line)}\n'
++'.perf::before,.perf::after{content:"";position:absolute;top:-11px;width:22px;height:22px;border-radius:50%;background:var(--card-notch);transition:background .25s}\n'
++'.perf::before{left:-11px}.perf::after{right:-11px}\n'
++'.body{padding:16px 18px 18px}\n'
++'.route{font-family:\'Space Mono\',monospace;font-size:10.5px;letter-spacing:.5px;color:var(--card-muted);display:flex;flex-wrap:wrap;gap:6px 10px;margin-bottom:12px}\n'
++'.route b{color:var(--card-text)}\n'
++'.headline{font-family:\'Space Grotesk\',sans-serif;font-weight:600;font-size:18px;line-height:1.3;margin:0 0 10px;color:var(--card-text)}\n'
++'.detail{list-style:none;margin:0;padding:0}\n'
++'.detail li{position:relative;padding-left:18px;font-size:16px;line-height:1.5;color:var(--card-text);opacity:.92;margin-bottom:6px}\n'
++'.detail li::before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%;background:var(--card-text);opacity:.4}\n'
++'.src{margin-top:12px;padding-top:11px;border-top:1px solid var(--card-line);font-family:\'Space Mono\',monospace;font-size:14px;letter-spacing:.3px;color:var(--card-muted);line-height:1.5}\n'
++'.hubintro{margin:0 0 14px}\n'
++'.hubintro .route{margin-bottom:8px}\n'
++'.hublead{margin:0;color:var(--muted);font-size:.95rem}\n'
++'.qgrid{display:flex;flex-direction:column;gap:10px}\n'
++'.qcard{display:flex;align-items:stretch;gap:0;background:var(--card);border-radius:14px;overflow:hidden;text-decoration:none;box-shadow:0 12px 30px rgba(0,0,0,.22);transition:transform .12s}\n'
++'.qcard:hover{transform:translateY(-1px)}\n'
++'.qcard .qv{flex:none;width:96px;display:flex;align-items:center;justify-content:center;text-align:center;padding:12px 8px;font-family:\'Space Grotesk\',sans-serif;font-weight:700;font-size:13px;line-height:1.15;color:#08111f}\n'
++'.qcard.go .qv{background:var(--go)}.qcard.warn .qv{background:var(--warn)}.qcard.stop .qv{background:var(--stop)}.qcard.info .qv{background:var(--info)}\n'
++'.qcard .ql{padding:11px 14px;color:var(--card-text);display:flex;flex-direction:column;justify-content:center;gap:3px}\n'
++'.qcard .ql b{font-family:\'Space Grotesk\',sans-serif;font-weight:600;font-size:16px}\n'
++'.qcard .qh{font-size:14px;color:var(--card-muted);line-height:1.4}\n'
++'.stack{display:flex;flex-direction:column;gap:16px}\n'
++'.tasearch{margin:0 0 16px}\n'
++'.talabel{display:block;font-family:\'Space Mono\',monospace;font-size:12px;letter-spacing:1px;text-transform:uppercase;color:var(--muted);margin:0 0 7px}\n'
++'.tapick{position:relative}\n'
++'.tapick .suggest{position:absolute;left:0;right:0;top:100%;margin:6px 0 0;max-height:46vh;overflow:auto;z-index:60;box-shadow:0 14px 30px rgba(0,0,0,.45)}\n'
++'.tapick .suggest.up{top:auto;bottom:100%;margin:0 0 6px;box-shadow:0 -14px 30px rgba(0,0,0,.45)}\n'
++'.tinput{width:100%;box-sizing:border-box;background:var(--surface);border:1px solid var(--line);border-radius:13px;color:var(--text);font-family:\'Inter\',sans-serif;font-size:15px;padding:13px 14px}\n'
++'.tinput:focus{outline:none;border-color:var(--accent)}\n'
++'.tinput::placeholder{color:var(--muted)}\n'
++'.suggest{margin-top:6px;background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden}\n'
++'.suggest:empty{display:none}\n'
++'.sug{padding:11px 14px;cursor:pointer;font-size:14px;display:flex;justify-content:space-between;gap:10px;border-bottom:1px solid var(--bg);color:var(--text)}\n'
++'.sug:last-child{border-bottom:0}\n'
++'.sug:hover{background:var(--surface-2)}\n'
++'.sug.anyway{color:var(--accent);font-weight:600}\n'
++'.sug .ing{font-family:\'Space Mono\',monospace;font-size:10.5px;color:var(--muted);align-self:center;font-weight:400}\n'
++'.tagrow{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:11px}\n'
++'.tag{font-family:\'Space Mono\',monospace;font-size:13px;letter-spacing:.4px;padding:5px 9px;border-radius:7px}\n'
++'.tag-neutral{background:rgba(140,150,170,.16);color:var(--tg-neutral)}\n'
++'.tag-green{background:rgba(47,207,155,.16);color:var(--tg-green);font-weight:700}\n'
++'.tag-amber{background:rgba(245,184,65,.18);color:var(--tg-amber);font-weight:700}\n'
++'.tag-stop{background:rgba(255,107,107,.18);color:var(--tg-stop);font-weight:700}\n'
++'.help{margin-top:13px;background:var(--card-sub);border-radius:12px;padding:12px 13px}\n'
++'.help-h{font-family:\'Space Mono\',monospace;font-size:13px;letter-spacing:1.2px;text-transform:uppercase;color:var(--card-muted);margin-bottom:9px}\n'
++'.hitem{display:flex;align-items:center;gap:10px;padding:9px 11px;border-radius:9px;background:var(--card);text-decoration:none;color:var(--card-text);margin-bottom:6px;border:1px solid var(--card-sub-line)}\n'
++'a.hitem:hover{border-color:var(--accent)}\n'
++'.hi-ic{width:20px;text-align:center;font-size:14px;flex:none}\n'
++'.hi-l{font-size:13px;font-weight:600;line-height:1.25;display:flex;flex-direction:column;min-width:0}\n'
++'.hi-l small{font-weight:400;font-size:11px;color:var(--card-muted);margin-top:1px}\n'
++'.hi-go{margin-left:auto;color:var(--card-muted)}\n'
++'.hnote{font-size:13px;color:var(--card-muted);line-height:1.4;margin-top:8px}\n'
++'.toproute{margin-bottom:8px}\n'
++'.tlinks{margin-top:.7em;text-align:center;line-height:2}.tlinks a{color:#8A96B8;text-decoration:none}.tlinks a:hover{color:var(--accent)}.tlinks a+a::before{content:"\u2022";color:#8A96B8;margin:0 10px}\n'
++'footer{margin-top:2.4em;color:var(--muted);font-size:.82rem;border-top:1px solid var(--line);padding-top:1em;line-height:1.55}\n'
++'.airhead .logo{position:relative;width:40px;height:40px;border-radius:9px;overflow:hidden;display:inline-grid;place-items:center;color:#1B2233;background:#fff;font-family:\'Space Mono\',monospace;font-size:11px;font-weight:700;flex:none}\n'
++'.airhead .logo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}\n'
++'.slab{font-family:\'Space Mono\',monospace;font-size:9.5px;letter-spacing:1.6px;text-transform:uppercase;color:var(--muted);margin:16px 4px 10px}\n'
++'.chips{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 14px}\n'
++'.chip{background:var(--surface);border:1px solid var(--line);border-radius:999px;color:var(--text);cursor:pointer;font-family:\'Inter\',sans-serif;font-weight:500;font-size:13.5px;padding:9px 14px;transition:.14s;display:inline-flex;align-items:center;gap:7px}\n'
++'.chip:hover{border-color:var(--surface-2)}\n'
++'.chip.on{background:var(--sel-bg);color:var(--sel-text);border-color:var(--sel-bg);font-weight:600}\n'
++'.chip.sm{font-family:\'Space Mono\',monospace;font-size:12.5px;font-weight:700;padding:8px 13px}\n'
++'.pstack{display:flex;flex-direction:column;gap:16px}\n'
++'</style></head><body>\n'
++'<div class="wrap">\n'
++'<div class="topbar"><a class="brand" href="/" aria-label="canitakethis.co home"><span class="mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.8 19.2 16 11l3.5-3.5a2.1 2.1 0 0 0-3-3L13 8 4.8 6.2a.5.5 0 0 0-.5.8l3.9 4.3-2 2-2.2-.4a.5.5 0 0 0-.5.8L6 17l2.7 2.4a.5.5 0 0 0 .8-.5l-.4-2.2 2-2 4.3 3.9a.5.5 0 0 0 .8-.5Z"/></svg></span><h1>can i take this?</h1></a>'
++'<button class="theme-toggle" id="themeToggle" onclick="__tt()"><span class="ico" id="themeIcon">&#9728;</span><span id="themeLabel">Light</span></button></div>\n'
++'<div class="airhead">'+logo+'<h2>'+esc(a.name)+' <span class="muted">Airline Rules</span></h2></div>\n'
++'<nav class="tabs">'+t.tabHtml+'</nav>\n'
++t.moreBlock+'\n'
++'<main>'+pickerHtml+'<div class="pstack"><div id="carryCard">'+carryInit+'</div>'+checkedCard+'</div></main>\n'+clientScript
++'<footer>Rules change and vary by nationality, route and fare. This is guidance, not legal advice \u2014 always confirm with the airline or the official customs authority before you travel. Updated 2026.<nav class="tlinks"><a href="/about/">About</a><a href="/contact/">Contact</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a></nav></footer>\n'
++'</div>\n'
++'<script>function advLogo(im){var l=(im.dataset.srcs||"").split("|"),i=parseInt(im.dataset.i||"0",10)+1;if(i<l.length){im.dataset.i=i;im.src=l[i];}else{im.style.display="none";}}document.querySelectorAll("img.logo-img").forEach(function(im){im.onerror=function(){advLogo(im);};if(im.complete&&im.naturalWidth===0)advLogo(im);});</scr'+'ipt>\n'
++'<script>function __lbl(c){var l=document.getElementById(\'themeLabel\'),i=document.getElementById(\'themeIcon\');if(l)l.textContent=c===\'dark\'?\'Light\':\'Dark\';if(i)i.innerHTML=c===\'dark\'?\'\u263C\':\'\u263D\';}function __tt(){var t=document.documentElement.getAttribute(\'data-theme\')===\'dark\'?\'light\':\'dark\';document.documentElement.setAttribute(\'data-theme\',t);localStorage.setItem(\'citt-theme\',t);__lbl(t);}window.addEventListener(\'DOMContentLoaded\',function(){__lbl(document.documentElement.getAttribute(\'data-theme\'));});</scr'+'ipt>\n'
++'<script src="/feedback.js" defer></scr'+'ipt>\n'
++'</body></html>';
+}
+
 function setS(o){Object.assign(w.S,o);}
 
 function run(){
@@ -429,6 +631,14 @@ function run(){
       faq:{q:`What can I bring on ${a.name}?`,a:`${a.name} sets baggage by fare class; liquids, batteries, vapes and sharp items follow standard aviation-security rules.`}
     }));
     pages.push({url:hub,changefreq:'monthly'});
+
+    /*AIRPLANE_GEN_V1*/
+    var _airCats=[{seg:'liquids',cat:'liquids'},{seg:'perfume-aerosols',cat:'perfume'},{seg:'alcohol',cat:'alcohol'},{seg:'power-bank',cat:'power'},{seg:'vape-e-cigarette',cat:'vape'}];
+    _airCats.forEach(function(pc){
+      var purl='/airline/'+slug(a.name)+'/'+pc.seg+'/';
+      write(purl+'index.html', airPlaneShell({a:a,cat:pc.cat,url:purl}));
+      pages.push({url:purl,changefreq:'monthly'});
+    });
   });
 
   // ---------- 2. UNIVERSAL PLANE CATEGORY PAGES ----------
