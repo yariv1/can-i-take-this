@@ -80,11 +80,11 @@ footer{margin-top:2.4em;color:var(--muted);font-size:.82rem;border-top:1px solid
 .tag-link{color:inherit;text-decoration:none}
 
 /* ── coming-soon placeholder card ── */
-.bcard-soon{display:flex;flex-direction:column;background:var(--surface);border:1px dashed var(--line);border-radius:13px;overflow:hidden;opacity:.5}
+.bcard-soon{display:flex;flex-direction:column;background:var(--surface);border:1px dashed var(--line);border-radius:13px;overflow:hidden;opacity:1}
 .bcard-soon .bcard-ph{height:140px;background:var(--surface-2);display:grid;place-items:center}
 .bcard-soon .bcard-ph svg{opacity:.3}
 .bcard-soon .bcard-body{padding:.95em 1em;display:flex;flex-direction:column;gap:.35em}
-.bcard-soon .bcard-title{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:.97rem;line-height:1.3;margin:0;color:var(--muted)}
+.bcard-soon .bcard-title{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:.97rem;line-height:1.3;margin:0;color:var(--text)}
 .bcard-soon .bcard-date{font-family:'Space Mono',monospace;font-size:.72rem;color:var(--muted)}
 .prose .guide-h1{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.85rem;line-height:1.15;margin:0 0 .5em}
 .prose h2{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.35rem;margin:2em 0 .55em;line-height:1.2}
@@ -224,11 +224,7 @@ footer{margin-top:2.4em;color:var(--muted);font-size:.82rem;border-top:1px solid
 <h2>What the major airlines changed — and when</h2>
 
 <div class="airline-rules">
-${arCard('UA','United Airlines','Mar 1, 2026','No overhead bins — seat pocket, under-seat, or on your person only.','Overhead ban','strict')}
-${arCard('AA','American Airlines','May 1, 2026','Max 2 banks, each under 100Wh, within reach at all times.','2-bank cap','mod')}
-${arCard('DL','Delta Air Lines','May 1, 2026','Max 2 banks, each under 100Wh, kept within reach.','2-bank cap','mod')}
-${arCard('LH','Lufthansa','Jan 15, 2026','Carry 2 banks — but zero in-flight use. Switched off, stowed for entire flight.','Use banned','strict')}
-${arCard('WN','Southwest Airlines','2026','Single power bank limit — strictest of the US majors.','1 bank only','strict')}
+<div class="ar-card"><div class="ar-head"><div class="ar-logo"><img src="https://www.gstatic.com/flights/airline_logos/70px/UA.png" alt="UA" onerror="this.style.display='none'"></div><div class="ar-name">United Airlines</div></div><div class="ar-date">Mar 1, 2026</div><div class="ar-rule">No overhead bins — seat pocket, under-seat, or on your person only.</div><span class="ar-pill strict">Overhead ban</span></div><div class="ar-card"><div class="ar-head"><div class="ar-logo"><img src="https://www.gstatic.com/flights/airline_logos/70px/AA.png" alt="AA" onerror="this.style.display='none'"></div><div class="ar-name">American Airlines</div></div><div class="ar-date">May 1, 2026</div><div class="ar-rule">Max 2 banks, each under 100Wh, within reach at all times.</div><span class="ar-pill mod">2-bank cap</span></div><div class="ar-card"><div class="ar-head"><div class="ar-logo"><img src="https://www.gstatic.com/flights/airline_logos/70px/DL.png" alt="DL" onerror="this.style.display='none'"></div><div class="ar-name">Delta Air Lines</div></div><div class="ar-date">May 1, 2026</div><div class="ar-rule">Max 2 banks, each under 100Wh, kept within reach.</div><span class="ar-pill mod">2-bank cap</span></div><div class="ar-card"><div class="ar-head"><div class="ar-logo"><img src="https://www.gstatic.com/flights/airline_logos/70px/LH.png" alt="LH" onerror="this.style.display='none'"></div><div class="ar-name">Lufthansa</div></div><div class="ar-date">Jan 15, 2026</div><div class="ar-rule">Carry 2 banks — but zero in-flight use. Switched off, stowed for entire flight.</div><span class="ar-pill strict">Use banned</span></div><div class="ar-card"><div class="ar-head"><div class="ar-logo"><img src="https://www.gstatic.com/flights/airline_logos/70px/WN.png" alt="WN" onerror="this.style.display='none'"></div><div class="ar-name">Southwest Airlines</div></div><div class="ar-date">2026</div><div class="ar-rule">Single power bank limit — strictest of the US majors.</div><span class="ar-pill strict">1 bank only</span></div>
 </div>
 
 <p>Every one of these rules pushes the same direction — fewer batteries, kept low, kept off, kept reachable. Lufthansa's rule covers SWISS, Austrian, Brussels Airlines, Eurowings, ITA, and Eurowings Discover. Check each airline before you fly — our <a href="/">airline pages</a> cover 78 carriers.</p>
@@ -274,7 +270,7 @@ ${arCard('WN','Southwest Airlines','2026','Single power bank limit — strictest
   </div>
 </div>
 
-<p>Most chargers show mAh, not Wh. The formula: <strong>Wh = (mAh × 3.7) ÷ 1000</strong>. A 20,000mAh bank works out to 74Wh — comfortably in the green zone. Our <a href="/guides/power-banks/">power bank guide</a> walks through the full maths.</p>
+<figure class="art-fig"><img src="/assets/blog/blog-power-bank-wh-tiers.webp" alt="Power bank watt-hour capacity tiers" width="800" height="400"><figcaption>The three capacity tiers — under 100Wh allowed, 100–160Wh needs approval, over 160Wh banned.</figcaption></figure><p>Most chargers show mAh, not Wh. The formula: <strong>Wh = (mAh × 3.7) ÷ 1000</strong>. A 20,000mAh bank works out to 74Wh — comfortably in the green zone. Our <a href="/guides/power-banks/">power bank guide</a> walks through the full maths.</p>
 
 <hr>
 
