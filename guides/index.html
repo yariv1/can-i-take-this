@@ -29,6 +29,7 @@ gtag('config','G-0HQ16GNH78');
 .brand h1{font-family:'Space Grotesk','Inter',sans-serif;font-weight:700;font-size:18px;letter-spacing:-.4px;margin:0;color:var(--text)}
 .theme-toggle{display:flex;align-items:center;gap:6px;background:var(--surface);border:1px solid var(--line);color:var(--text);border-radius:999px;padding:7px 12px;font-family:'Inter',sans-serif;font-size:12px;font-weight:600;cursor:pointer}
 .theme-toggle .ico{font-size:13px}
+.hdr-blog-link{font-family:Inter,sans-serif;font-size:12px;font-weight:600;color:var(--muted);text-decoration:none;padding:6px 10px;border:1px solid var(--line);border-radius:999px;background:var(--surface);margin-left:6px;transition:color .18s,border-color .18s}.hdr-blog-link:hover{color:var(--accent);border-color:var(--accent)}
 .tlinks{margin-top:.7em;text-align:center;line-height:2}.tlinks a{color:#8A96B8;text-decoration:none}.tlinks a:hover{color:var(--accent)}.tlinks a+a::before{content:"•";color:#8A96B8;margin:0 10px}
 footer{margin-top:2.4em;color:var(--muted);font-size:.82rem;border-top:1px solid var(--line);padding-top:1em;line-height:1.55}
 .prose .guide-h1{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.9rem;line-height:1.15;margin:0 0 .6em}
@@ -43,14 +44,147 @@ footer{margin-top:2.4em;color:var(--muted);font-size:.82rem;border-top:1px solid
 .prose strong{font-weight:700}
 .prose a{color:var(--accent);text-decoration:none}
 .prose a:hover{text-decoration:underline}
-</style></head><body>
+/* ── hub page hero ── */
+.hub-head{margin:0 0 2em}
+.hub-head h1{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:2rem;line-height:1.1;margin:0 0 .3em}
+.hub-head p{color:var(--muted);margin:0;font-size:.97rem}
+
+/* ── category label ── */
+.cat-label{display:flex;align-items:center;gap:.6em;margin:0 0 1em;font-family:'Space Mono',monospace;font-size:.72rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted)}
+.cat-label::after{content:'';flex:1;height:1px;background:var(--line)}
+
+/* ── card grid ── */
+.bcard-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1.1em;margin-bottom:2.2em}
+
+/* ── featured card (full-width hero) ── */
+.bcard-featured{display:grid;grid-template-columns:1fr;background:var(--surface);border:1px solid var(--line);border-radius:16px;overflow:hidden;text-decoration:none;color:var(--text);margin-bottom:1.8em;transition:border-color .18s,box-shadow .18s}
+@media(min-width:580px){.bcard-featured{grid-template-columns:1.1fr 1fr}}
+.bcard-featured:hover,.bcard:hover{border-color:var(--accent);box-shadow:0 4px 24px rgba(76,194,255,.11)}
+.bcard-featured .bcard-img-wrap{min-height:200px}
+.bcard-featured .bcard-img-wrap img{width:100%;height:100%;object-fit:cover;display:block}
+.bcard-featured .bcard-body{padding:1.4em 1.5em;display:flex;flex-direction:column;gap:.5em;justify-content:center}
+.bcard-featured .bcard-title{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.2rem;line-height:1.25;margin:0}
+.bcard-featured .bcard-excerpt{color:var(--muted);font-size:.92rem;line-height:1.6;margin:0}
+.bcard-featured .bcard-read{color:var(--accent);font-size:.85rem;font-weight:600;margin-top:.4em}
+.bcard-new{display:inline-flex;align-items:center;height:20px;padding:0 7px;border-radius:5px;font-family:'Space Mono',monospace;font-size:10px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;background:rgba(47,207,155,.15);color:#2FCF9B;margin-left:.5em}
+
+/* ── regular card ── */
+.bcard{display:flex;flex-direction:column;background:var(--surface);border:1px solid var(--line);border-radius:13px;overflow:hidden;text-decoration:none;color:var(--text);transition:border-color .18s,box-shadow .18s}
+.bcard .bcard-img-wrap{height:140px}
+.bcard .bcard-img-wrap img{width:100%;height:100%;object-fit:cover;display:block}
+.bcard .bcard-body{padding:.95em 1em;display:flex;flex-direction:column;gap:.4em;flex:1}
+.bcard .bcard-title{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:.97rem;line-height:1.3;margin:0}
+.bcard .bcard-excerpt{color:var(--muted);font-size:.85rem;line-height:1.5;margin:0;flex:1}
+.bcard .bcard-read{color:var(--accent);font-size:.82rem;font-weight:600;margin-top:.5em}
+.bcard-tag{font-size:.7rem;letter-spacing:.4px;margin-bottom:.1em}
+.tag-link{color:inherit;text-decoration:none}
+
+/* ── coming-soon placeholder card ── */
+.bcard-soon{display:flex;flex-direction:column;background:var(--surface);border:1px dashed var(--line);border-radius:13px;overflow:hidden;opacity:.5}
+.bcard-soon .bcard-ph{height:140px;background:var(--surface-2);display:grid;place-items:center}
+.bcard-soon .bcard-ph svg{opacity:.3}
+.bcard-soon .bcard-body{padding:.95em 1em;display:flex;flex-direction:column;gap:.35em}
+.bcard-soon .bcard-title{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:.97rem;line-height:1.3;margin:0;color:var(--muted)}
+.bcard-soon .bcard-date{font-family:'Space Mono',monospace;font-size:.72rem;color:var(--muted)}
+.prose .guide-h1{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.85rem;line-height:1.15;margin:0 0 .5em}
+.prose h2{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.35rem;margin:2em 0 .55em;line-height:1.2}
+.prose h3{font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:1.05rem;margin:1.4em 0 .4em;line-height:1.3}
+.prose p{margin:.8em 0;line-height:1.7}
+.prose ul{padding-left:1.4em;margin:.7em 0}
+.prose ul li{margin:.35em 0;line-height:1.6}
+.prose hr{border:none;border-top:1px solid var(--line);margin:2em 0}
+.prose strong{font-weight:700}
+.prose a{color:var(--accent);text-decoration:none}
+.prose a:hover{text-decoration:underline}
+
+/* article meta bar */
+.art-meta{display:flex;align-items:center;gap:.7em;flex-wrap:wrap;margin:0 0 1.6em;font-size:.85rem;color:var(--muted)}
+.art-meta .tag{font-size:.7rem}
+.art-meta-sep{opacity:.4}
+
+/* hero image */
+.art-hero{margin:0 0 2em;border-radius:14px;overflow:hidden;border:1px solid var(--line)}
+.art-hero img{width:100%;display:block;height:auto}
+.art-hero figcaption{padding:.5em 1em;font-size:.8rem;color:var(--muted);background:var(--surface);border-top:1px solid var(--line)}
+
+/* inline figure */
+.art-fig{margin:1.8em 0;border-radius:12px;overflow:hidden;border:1px solid var(--line)}
+.art-fig img{width:100%;display:block;height:auto}
+.art-fig figcaption{padding:.45em .9em;font-size:.8rem;color:var(--muted);background:var(--surface)}
+
+/* info callout */
+.callout{display:flex;gap:.85em;background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:0 12px 12px 0;padding:1em 1.1em;margin:1.6em 0}
+.callout-icon{font-size:1.2rem;flex:none;line-height:1.4}
+.callout ul{margin:.35em 0 0;padding-left:1.25em}
+.callout li{margin:.3em 0;font-size:.93rem}
+
+/* airline rule cards */
+.airline-rules{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:.75em;margin:1.4em 0}
+.ar-card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:.85em 1em;display:flex;flex-direction:column;gap:.4em}
+.ar-head{display:flex;align-items:center;gap:.6em}
+.ar-logo{width:28px;height:28px;border-radius:7px;background:#fff;display:grid;place-items:center;flex:none;overflow:hidden;font-family:'Space Mono',monospace;font-size:9px;font-weight:700;color:#1B2233}
+.ar-logo img{width:100%;height:100%;object-fit:cover}
+.ar-name{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:.9rem}
+.ar-date{font-family:'Space Mono',monospace;font-size:.68rem;color:var(--muted)}
+.ar-rule{font-size:.83rem;color:var(--muted);line-height:1.45}
+.ar-pill{display:inline-flex;height:18px;padding:0 6px;border-radius:5px;font-family:'Space Mono',monospace;font-size:10px;font-weight:700;letter-spacing:.3px;text-transform:uppercase;align-items:center}
+.ar-pill.strict{background:rgba(255,107,107,.15);color:#FF6B6B}
+.ar-pill.mod{background:rgba(245,184,65,.12);color:#F5B841}
+
+/* wh tiers (inline SVG replacement) */
+.wh-tiers{display:grid;grid-template-columns:repeat(3,1fr);gap:.6em;margin:1.4em 0;border-radius:12px;overflow:hidden;border:1px solid var(--line)}
+.wh-tier{padding:.9em .7em;text-align:center;display:flex;flex-direction:column;gap:.25em}
+.wh-tier.green{background:#0a1f0a}
+.wh-tier.amber{background:#1a1500}
+.wh-tier.red{background:#1a0505}
+.wh-tier .wh-label{font-family:'Space Mono',monospace;font-size:.65rem;font-weight:700;letter-spacing:1px;text-transform:uppercase}
+.wh-tier.green .wh-label{color:#2FCF9B}
+.wh-tier.amber .wh-label{color:#F5B841}
+.wh-tier.red .wh-label{color:#FF6B6B}
+.wh-tier .wh-val{font-family:'Space Mono',monospace;font-weight:700;font-size:1rem;margin:.1em 0}
+.wh-tier.green .wh-val{color:#2FCF9B}
+.wh-tier.amber .wh-val{color:#F5B841}
+.wh-tier.red .wh-val{color:#FF6B6B}
+.wh-tier .wh-mah{font-size:.68rem;color:var(--muted)}
+.wh-tier .wh-verdict{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:.78rem;margin-top:.2em}
+.wh-tier.green .wh-verdict{color:#2FCF9B}
+.wh-tier.amber .wh-verdict{color:#F5B841}
+.wh-tier.red .wh-verdict{color:#FF6B6B}
+[data-theme='light'] .wh-tier.green{background:#e6f9f1}
+[data-theme='light'] .wh-tier.amber{background:#fdf8e3}
+[data-theme='light'] .wh-tier.red{background:#fdeaea}
+
+/* incident timeline */
+.timeline{margin:1.4em 0;border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.tl-head{padding:.65em 1em;font-family:'Space Grotesk',sans-serif;font-size:.85rem;font-weight:700;background:var(--surface);border-bottom:1px solid var(--line)}
+.tl-item{display:grid;grid-template-columns:28px 1fr;gap:.7em;padding:.8em 1em;border-top:1px solid var(--line);align-items:start}
+.tl-item:first-of-type{border-top:none}
+.tl-icon{font-size:1rem;line-height:1.3;text-align:center}
+.tl-body{font-size:.88rem;line-height:1.5}
+.tl-when{font-family:'Space Mono',monospace;font-size:.68rem;color:var(--muted);display:block;margin-bottom:.2em}
+
+/* stat callout strip */
+.stat-strip{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:.7em;margin:1.5em 0}
+.stat-box{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:.9em;text-align:center}
+.stat-num{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.6rem;color:var(--accent);line-height:1}
+.stat-label{font-size:.78rem;color:var(--muted);margin-top:.25em;line-height:1.35}
+
+/* country pills */
+.country-row{display:flex;flex-wrap:wrap;gap:.6em;margin:1.2em 0}
+.cpill{display:flex;align-items:center;gap:.45em;background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:.4em .85em;font-size:.85rem}
+.cpill-flag{font-size:1rem}
+
+/* checklist */
+.checklist{display:flex;flex-direction:column;gap:.55em;margin:1.5em 0}
+.cl-item{display:flex;gap:.75em;align-items:flex-start;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:.8em 1em;font-size:.91rem;line-height:1.55}
+.cl-num{font-family:'Space Mono',monospace;font-size:.75rem;font-weight:700;color:var(--accent);flex:none;min-width:1.4em;padding-top:.12em}</style></head><body>
 <div class="wrap">
-<div class="topbar"><a class="brand" href="/" aria-label="canitakethis.co home"><span class="mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.8 19.2 16 11l3.5-3.5a2.1 2.1 0 0 0-3-3L13 8 4.8 6.2a.5.5 0 0 0-.5.8l3.9 4.3-2 2-2.2-.4a.5.5 0 0 0-.5.8L6 17l2.7 2.4a.5.5 0 0 0 .8-.5l-.4-2.2 2-2 4.3 3.9a.5.5 0 0 0 .8-.5Z"/></svg></span><h1>can i take this?</h1></a><button class="theme-toggle" id="themeToggle" onclick="__tt()"><span class="ico" id="themeIcon">&#9728;</span><span id="themeLabel">Light</span></button></div>
+<div class="topbar"><a class="brand" href="/" aria-label="canitakethis.co home"><span class="mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.8 19.2 16 11l3.5-3.5a2.1 2.1 0 0 0-3-3L13 8 4.8 6.2a.5.5 0 0 0-.5.8l3.9 4.3-2 2-2.2-.4a.5.5 0 0 0-.5.8L6 17l2.7 2.4a.5.5 0 0 0 .8-.5l-.4-2.2 2-2 4.3 3.9a.5.5 0 0 0 .8-.5Z"/></svg></span><h1>can i take this?</h1></a><button class="theme-toggle" id="themeToggle" onclick="__tt()"><span class="ico" id="themeIcon">&#9728;</span><span id="themeLabel">Light</span></button><a href="/blog/" class="hdr-blog-link">Blog</a></div>
 <main class="prose">
 <h1 class="guide-h1">Travel Packing &amp; Customs Guides</h1>
 <p>Welcome to the central resource library for <strong>canitakethis.co</strong>. Here, we break down complex aviation security standards, lithium battery regulations, and international customs policies into simple, stress-free packing checklists.</p><p>Use these deep-dive guides to prepare for your trip across our database of <strong>78 covered airlines</strong> and <strong>85 countries</strong>.</p><hr><h2>✈️ Core Security &amp; Packing Guides</h2><h3>💧 <a href="/guides/liquids/">The Flight 100ml Liquids Rule Explained</a></h3><p>Confused about what actually counts as a liquid? Learn the science behind the 100ml limit, discover surprising prohibited items (like peanut butter and toothpaste), and understand vital exceptions for baby food and prescription medications.</p><ul><li><strong>Key Topics:</strong> LAGs definition, 3-1-1 rules, CT airport scanner updates.</li><li><a href="/guides/liquids/">Read: Liquids 100ml Rule →</a></li></ul><h3>🔋 <a href="/guides/power-banks/">Aviation Power Bank &amp; Battery Rules</a></h3><p>Don't get your expensive backup chargers confiscated at the security gate. We explain the strict watt-hour (Wh) restrictions, how to calculate your device's capacity, and why lithium batteries are legally barred from your checked luggage.</p><ul><li><strong>Key Topics:</strong> Wh calculation formula, airline limits (100Wh to 160Wh), carry-on mandates.</li><li><a href="/guides/power-banks/">Read: Power Bank Rules →</a></li></ul><h3>💨 <a href="/guides/vapes/">Vapes, E-Cigarettes &amp; Airport Security</a></h3><p>Flying with vapes requires strict adherence to airline safety and international customs laws. This guide covers how to safely pack your vaping hardware, airline carry-on requirements, and critical local bans that could lead to heavy fines.</p><ul><li><strong>Key Topics:</strong> Liquid limits, pressure changes, high-risk destination warnings.</li><li><a href="/guides/vapes/">Read: Vapes &amp; E-Cig Guide →</a></li></ul><hr><h2>🔍 Quick-Search Travel Tools</h2><p>Need an instant answer for a specific item? Use our lightning-fast lookup tools to check airline-specific baggage restrictions and country customs rules before you fly:</p><ul><li><strong><a href="/">Search Airline Baggage Rules:</a></strong> Find allowance requirements and cabin restrictions across <strong>78 airlines</strong>, including El Al, Wizz Air, Ryanair, and Delta.</li><li><strong><a href="/">Search Country Customs Rules:</a></strong> Check restricted agricultural, medication, and currency regulations for <strong>85 international destinations</strong>, including Israel, the US, UK, and Japan.</li></ul><hr><p><em>Guides are updated in 2026. Always confirm with your airline or customs authority before you depart.</em></p>
 </main>
-<footer>Guidance, not legal advice — always confirm with your airline or customs authority before you travel. Updated 2026.<nav class="tlinks"><a href="/guides/">All Guides</a><a href="/guides/liquids/">Liquids 100ml Rule</a><a href="/guides/power-banks/">Power Bank Rules</a><a href="/guides/vapes/">Vape &amp; E-Cig Guide</a></nav><nav class="tlinks"><a href="/about/">About</a><a href="/contact/">Contact</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a></nav></footer>
+<footer>Guidance, not legal advice — always confirm with your airline or customs authority before you travel. Updated 2026.<nav class="tlinks"><a href="/guides/">All Guides</a><a href="/guides/liquids/">Liquids 100ml Rule</a><a href="/guides/power-banks/">Power Bank Rules</a><a href="/guides/vapes/">Vape &amp; E-Cig Guide</a><a href="/blog/">Blog</a></nav><nav class="tlinks"><a href="/about/">About</a><a href="/contact/">Contact</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a></nav></footer>
 </div>
 <script>function __lbl(c){var l=document.getElementById('themeLabel'),i=document.getElementById('themeIcon');if(l)l.textContent=c==='dark'?'Light':'Dark';if(i)i.innerHTML=c==='dark'?'☼':'☽';}function __tt(){var t=document.documentElement.getAttribute('data-theme')=== 'dark'?'light':'dark';document.documentElement.setAttribute('data-theme',t);localStorage.setItem('citt-theme',t);__lbl(t);}window.addEventListener('DOMContentLoaded',function(){__lbl(document.documentElement.getAttribute('data-theme'));});</script>
 <script src="/feedback.js" defer></script>

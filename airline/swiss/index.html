@@ -36,8 +36,9 @@ h1{font-size:1.55rem;line-height:1.25;margin:.6em 0 .2em}
 footer{margin-top:2.5em;color:var(--muted);font-size:.82rem;border-top:1px solid var(--line);padding-top:1em}
 .intro{color:var(--muted)}
 .theme-toggle{position:fixed;top:12px;right:12px;z-index:99;display:inline-flex;align-items:center;gap:6px;background:var(--surface);border:1px solid var(--line);color:var(--text);border-radius:999px;padding:7px 12px;font:600 12px/1 Inter,system-ui,sans-serif;cursor:pointer}
+.hdr-blog-link{font-family:Inter,sans-serif;font-size:12px;font-weight:600;color:var(--muted);text-decoration:none;padding:6px 10px;border:1px solid var(--line);border-radius:999px;background:var(--surface);margin-left:6px;transition:color .18s,border-color .18s}.hdr-blog-link:hover{color:var(--accent);border-color:var(--accent)}
 </style></head><body>
-<button class="theme-toggle" id="themeToggle" onclick="__tt()"><span id="themeIcon">&#9788;</span> <span id="themeLabel">Light</span></button>
+<button class="theme-toggle" id="themeToggle" onclick="__tt()"><span id="themeIcon">&#9788;</span> <span id="themeLabel">Light</span></button><a href="/blog/" class="hdr-blog-link">Blog</a>
 <div class="wrap">
 <header><a href="/" class="back" aria-label="Back to home">&#8249;</a><a href="/" class="logo">canitakethis.co</a></header>
 <main>
@@ -50,7 +51,7 @@ footer{margin-top:2.5em;color:var(--muted);font-size:.82rem;border-top:1px solid
 <a class="cta" href="/">Check your exact trip on canitakethis.co →</a>
 <nav class="rel"><h2>Related checks</h2><ul><li><a href="/airline/swiss/baggage-allowance/">Swiss baggage allowance</a></li><li><a href="/plane/liquids/">Liquids</a></li><li><a href="/plane/power-bank/">Power banks</a></li><li><a href="/plane/vape-e-cigarette/">Vapes</a></li><li><a href="/plane/sharp-objects/">Sharp objects</a></li><li><a href="/plane/alcohol/">Alcohol</a></li></ul></nav>
 </main>
-<footer>Rules change and vary by nationality, route and fare. This is guidance, not legal advice — always confirm with the airline or the official customs authority before you travel. Updated 2026. <nav class="tlinks"><a href="/guides/">All Guides</a><a href="/guides/liquids/">Liquids 100ml Rule</a><a href="/guides/power-banks/">Power Bank Rules</a><a href="/guides/vapes/">Vape &amp; E-Cig Guide</a></nav><nav class="tlinks"><a href="/about/">About</a><a href="/contact/">Contact</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a></nav></footer>
+<footer>Rules change and vary by nationality, route and fare. This is guidance, not legal advice — always confirm with the airline or the official customs authority before you travel. Updated 2026. <nav class="tlinks"><a href="/guides/">All Guides</a><a href="/guides/liquids/">Liquids 100ml Rule</a><a href="/guides/power-banks/">Power Bank Rules</a><a href="/guides/vapes/">Vape &amp; E-Cig Guide</a><a href="/blog/">Blog</a></nav><nav class="tlinks"><a href="/about/">About</a><a href="/contact/">Contact</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a></nav></footer>
 </div>
 <script>function __lbl(c){var l=document.getElementById('themeLabel'),i=document.getElementById('themeIcon');if(l)l.textContent=c==='dark'?'Light':'Dark';if(i)i.innerHTML=c==='dark'?'☼':'☽';}function __tt(){var t=document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark';document.documentElement.setAttribute('data-theme',t);localStorage.setItem('citt-theme',t);__lbl(t);}window.addEventListener('DOMContentLoaded',function(){__lbl(document.documentElement.getAttribute('data-theme'));});</script>
 <script src="/feedback.js" defer></script>
