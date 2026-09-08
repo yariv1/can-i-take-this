@@ -59,12 +59,15 @@ footer{margin-top:2.4em;color:var(--muted);font-size:.82rem;border-top:1px solid
 /* ── featured card (full-width hero) ── */
 .bcard-featured{display:grid;grid-template-columns:1fr;background:var(--surface);border:1px solid var(--line);border-radius:16px;overflow:hidden;text-decoration:none;color:var(--text);margin-bottom:1.8em;transition:border-color .18s,box-shadow .18s}
 @media(min-width:580px){.bcard-featured{grid-template-columns:1.1fr 1fr}}
-.bcard-featured:hover,.bcard:hover{border-color:var(--accent);box-shadow:0 4px 24px rgba(76,194,255,.11)}
+.bcard-featured,.bcard,.bcard-soon,.bcard-featured *,.bcard *,.bcard-soon *{text-decoration:none !important}
+.bcard-featured:hover,.bcard:hover,.bcard-soon:hover{background:#192443;text-decoration:none}
+.bcard-featured:hover *,.bcard:hover *,.bcard-soon:hover *{text-decoration:none}
+[data-theme='light'] .bcard-featured:hover,[data-theme='light'] .bcard:hover,[data-theme='light'] .bcard-soon:hover{background:#F2F2F2}
 .bcard-featured .bcard-img-wrap{min-height:200px}
 .bcard-featured .bcard-img-wrap img{width:100%;height:100%;object-fit:cover;display:block}
 .bcard-featured .bcard-body{padding:1.4em 1.5em;display:flex;flex-direction:column;gap:.5em;justify-content:center}
 .bcard-featured .bcard-title{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.2rem;line-height:1.25;margin:0}
-.bcard-featured .bcard-excerpt{color:var(--muted);font-size:.92rem;line-height:1.6;margin:0}
+.bcard-featured .bcard-excerpt{color:var(--text);font-size:.92rem;line-height:1.6;margin:0}
 .bcard-featured .bcard-read{color:var(--accent);font-size:.85rem;font-weight:600;margin-top:.4em}
 .bcard-new{display:inline-flex;align-items:center;height:20px;padding:0 7px;border-radius:5px;font-family:'Space Mono',monospace;font-size:10px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;background:rgba(47,207,155,.15);color:#2FCF9B;margin-left:.5em}
 
@@ -84,7 +87,8 @@ footer{margin-top:2.4em;color:var(--muted);font-size:.82rem;border-top:1px solid
 .bcard-soon .bcard-ph{height:140px;background:var(--surface-2);display:grid;place-items:center}
 .bcard-soon .bcard-ph svg{opacity:.3}
 .bcard-soon .bcard-body{padding:.95em 1em;display:flex;flex-direction:column;gap:.35em}
-.bcard-soon .bcard-title{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:.97rem;line-height:1.3;margin:0;color:var(--text)}
+.bcard-soon .bcard-title{font-family:'Space Grotesk',sans-serif;font-weight:400;font-size:.97rem;line-height:1.3;margin:0;color:var(--text)}
+.bcard-soon .bcard-tag{color:var(--accent)}
 .bcard-soon .bcard-date{font-family:'Space Mono',monospace;font-size:.72rem;color:var(--muted)}
 .prose .guide-h1{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.85rem;line-height:1.15;margin:0 0 .5em}
 .prose h2{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.35rem;margin:2em 0 .55em;line-height:1.2}
@@ -203,14 +207,14 @@ footer{margin-top:2.4em;color:var(--muted);font-size:.82rem;border-top:1px solid
 <div class="cat-label">📋 Packing Rules</div>
 
 <div class="bcard-grid">
-  <div class="bcard-soon">
-    <div class="bcard-ph"><img src="/assets/blog/blog-liquids-2026-hero.webp" alt="Liquids 100ml rule" style="width:100%;height:140px;object-fit:cover;display:block"></div>
+  <a class="bcard-soon" href="/blog/liquids-100ml-rule-2026/">
+    <div class="bcard-ph"><img src="/assets/blog/blog-liquids-100ml-rule-2026-card.webp" alt="Liquids 100ml rule" style="width:100%;height:140px;object-fit:cover;display:block"></div>
     <div class="bcard-body">
       <span class="tag tag-neutral bcard-tag">Liquids</span>
       <div class="bcard-title">The 100ml Rule in 2026: What Still Trips Travellers Up</div>
-      <div class="bcard-date">Coming soon</div>
+      <div class="bcard-read">Read article →</div>
     </div>
-  </div>
+  </a>
   <div class="bcard-soon">
     <div class="bcard-ph"><img src="/assets/blog/blog-vapes-country-rules-hero.webp" alt="Vapes country rules" style="width:100%;height:140px;object-fit:cover;display:block"></div>
     <div class="bcard-body">
