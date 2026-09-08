@@ -94,7 +94,10 @@ Rules:
 | `blog-liquids-100ml-rule-2026-card.webp` | 800×400px | Hub card (liquids) | ✅ live |
 | `blog-liquids-100ml-rule-2026-hero.webp` | 800×400px | Liquids article hero | ✅ live |
 | `blog-liquids-100ml-rule-2026-inArticle-1.webp` | 800×320px | Liquids article inline figure | ✅ live |
-| `blog-vapes-country-rules-hero.webp` | 800×400px | Hub card (coming soon) | ⏳ pending article |
+| `blog-vapes-country-rules-hero.webp` | 800×400px | Hub card (vapes) | ✅ live |
+| `blog-vapes-country-rules-2026-hero.webp` | 800×400px | Vapes article hero | ✅ live |
+| `blog-vapes-country-rules-2026-inArticle-1.webp` | 800×320px | Vapes article inline 1 | ✅ live |
+| `blog-vapes-country-rules-2026-inArticle-2.webp` | 800×320px | Vapes article inline 2 | ✅ live |
 | `blog-carry-on-size-wars-hero.webp` | 800×400px | Hub card (coming soon) | ⏳ pending article |
 
 ---
@@ -213,3 +216,11 @@ See Step 5 above. Always delivered in same message as preview. Always one entry 
 /*BLOG_V1*/         ← body vars + guideShell CSS injection
 /*GUIDES_V1*/       ← guides+blog forEach loop
 ```
+
+---
+
+## Vapes article — added this session
+
+| Slug | Title | Category | Images |
+|------|-------|----------|--------|
+| `vapes-country-rules-2026` | Flying with a Vape: The Country-by-Country Minefield | Vapes & E-Cigs | blog-vapes-country-rules-2026-hero.webp, blog-vapes-country-rules-2026-inArticle-1.webp, blog-vapes-country-rules-2026-inArticle-2.webp |
