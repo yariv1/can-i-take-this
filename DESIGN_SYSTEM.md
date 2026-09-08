@@ -208,3 +208,110 @@ The **only** hover effect is a background color change:
 - **This session:** featured excerpt → `var(--text)`; soon title weight → 400; soon tag →
   `var(--accent)`; unified card hover (bg `#192443`/`#F2F2F2`, no stroke/shadow/underline).
   Flagged featured light-hover selector bug (§5.3).
+
+---
+
+## 8. Article page components (guideShell)
+
+All classes below are defined inside `guideShell` CSS and are available in every `BODY_*` article var. Use these — never invent new classes or inline styles.
+
+### 8.1 Figures (images)
+
+| Class | Use | Notes |
+|---|---|---|
+| `art-hero` | Hero image at top of article | `<figure class="art-hero"><img ...><figcaption>...</figcaption></figure>` |
+| `art-fig` | Inline article image | Same structure as art-hero. **Always use this class — plain `<figure>` has no styling.** |
+
+Both get: border-radius, border `var(--line)`, overflow hidden, caption styled with `var(--muted)` on `var(--surface)` background.
+
+### 8.2 Callout box
+
+```html
+<div class="callout">
+  <div class="callout-icon">💡</div>
+  <div><strong>Label:</strong> Body text here.</div>
+</div>
+```
+Left accent border `var(--accent)`, background `var(--surface)`. Use for key warnings, tips, rules.
+
+### 8.3 Checklist
+
+```html
+<div class="checklist">
+  <div class="cl-item"><span class="cl-num">1</span>Item text</div>
+  <div class="cl-item"><span class="cl-num">✅</span>Item text</div>
+  <div class="cl-item"><span class="cl-num">❌</span><div><strong>Title.</strong> Detail text.</div></div>
+</div>
+```
+`cl-num` accepts numbers, emoji, or icons. Each item is a card on `var(--surface)`.
+
+### 8.4 Stat strip
+
+```html
+<div class="stat-strip">
+  <div class="stat-box"><div class="stat-num">100ml</div><div class="stat-label">Description</div></div>
+</div>
+```
+Auto-fill grid. `stat-num` in `var(--accent)`, large. Use for 2–4 key facts.
+
+### 8.5 Timeline
+
+```html
+<div class="timeline">
+  <div class="tl-head">Title</div>
+  <div class="tl-item">
+    <div class="tl-icon">✈️</div>
+    <div class="tl-body"><span class="tl-when">Label</span>Body text.</div>
+  </div>
+</div>
+```
+Bordered card, icon left column, `tl-when` in `var(--muted)` Space Mono. Use for history, events, steps.
+
+### 8.6 Blockquote
+
+```html
+<blockquote><p>Quote text.</p></blockquote>
+```
+Left border `var(--accent)`, background `var(--surface)`, text `var(--muted)`.
+
+### 8.7 Article meta
+
+```html
+<div class="art-meta">
+  <span class="tag tag-neutral">Category</span>
+  <span class="art-meta-sep">&middot;</span>
+  <span>Updated 2026</span>
+  <span class="art-meta-sep">&middot;</span>
+  <span>X min read</span>
+</div>
+```
+Always the first element in every article body.
+
+### 8.8 Icon usage — mandatory
+
+Icons make articles scannable. Humans do not consume content as walls of text. **Every article must use icons throughout.**
+
+**Where icons are required:**
+- Every `.cl-item` in a `.checklist` — emoji in `cl-num` (✅ ❌ 💊 ⚠️ 💡 etc.)
+- Every `.tl-item` in a `.timeline` — emoji in `tl-icon`
+- Every `.callout` — emoji in `callout-icon` (💡 ⚠️ 🔍 ❗)
+- Section headers (`h2`) — lead with a relevant emoji where it aids scanning
+- Lists (`<ul>`) with 4+ items — consider converting to `.checklist` with icons instead
+
+**Icon selection:**
+- Use semantically relevant emoji — ✅/❌ for allowed/banned, 💊 for medicine, ✈️ for flights, ⚠️ for warnings, 💡 for tips, 🔍 for updates/research
+- Never use decorative-only icons that add noise without meaning
+- Consistent within a block — don't mix ✅ and 👍 for the same concept
+
+**Minimum icon density per article:**
+- At least one `.callout` with icon
+- At least one `.checklist` with icons
+- No section longer than 3 prose paragraphs without a visual component (callout, checklist, stat-strip, timeline, or art-fig)
+
+### 8.9 Rules
+
+- **Every article MUST start with** `art-meta` → `art-hero` figure
+- **Every inline image MUST use** `class="art-fig"` — plain `<figure>` has no styling (invisible container)
+- **No `<h1>`** in body — `guideShell` renders it
+- **No `${fn()}`** inside double-quoted JS string vars
+- Use components freely — callouts, checklists, stat strips make articles scannable; walls of prose do not
