@@ -27,8 +27,17 @@
 ### Step 1 — Plan images FIRST, before writing a single line of article body
 - Decide exactly how many images the article will have
 - Assign a UNIQUE filename to EACH image — never reuse the same filename twice in one article
-- Standard sizes: hero = 800×400px, inline figure = 800×320px
+- Naming convention:
+  - Hub card (featured or grid): `blogHome-[slug]-card.webp` — 800×400px
+  - Article hero: `blog-[slug]-hero.webp` — 800×400px
+  - Inline figures: `blog-[slug]-inArticle-1.webp`, `-inArticle-2.webp`, ... — 800×320px
 - Write down every filename before touching build.js
+
+### Image variety rule — mandatory
+- Every image must illustrate a DIFFERENT beat/section of the article — never the same scene or subject reshot at a different angle
+- Before writing prompts, map each image to the specific section it illustrates
+- Images exist to create visual interest and break up text, not to decorate — if two images could swap sections without anyone noticing, they're too similar and need to be redesigned
+- Vary subject, setting, and composition across all images in one article (e.g. don't run "medication + bag" three times — mix in a different setting/subject like a checkpoint, a counter abroad, a passport, a map)
 
 ### Step 2 — Write the article body
 - Every `<figure>` must reference a DIFFERENT image file

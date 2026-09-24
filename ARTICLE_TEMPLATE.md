@@ -18,6 +18,21 @@ min_read:   [N]
 
 ---
 
+## Image naming convention
+
+| Role | Filename pattern | Size |
+|------|-------------------|------|
+| Blog homepage card (featured or grid) | `blogHome-[slug]-card.webp` | 800×400px |
+| Article hero (top of article) | `blog-[slug]-hero.webp` | 800×400px |
+| Inline article images | `blog-[slug]-inArticle-1.webp`, `-inArticle-2.webp`, ... | 800×320px |
+
+- `[slug]` = the article's URL slug, e.g. `banned-medications-by-country-2026`
+- Never reuse a filename across roles or figures — every `<figure>` gets a unique `-inArticle-N` number
+- Hub card image is separate from the hero — even though both may show similar imagery, they're different files
+- **Image variety is mandatory**: every image ties to a different section of the article and shows a different subject/setting — never the same scene reshot at a different angle. If any two images could swap places without changing meaning, redesign one.
+
+---
+
 ## build.js variable name
 
 ```
@@ -192,10 +207,11 @@ For each article, produce:
 
 | File | Dimensions | Notes |
 |------|-----------|-------|
-| `blog-[slug]-hero.webp` | 800×400px | Used in hub card + article hero |
-| `blog-[slug]-[optional].webp` | 800×320px | Inline figure if needed |
+| `blogHome-[slug]-card.webp` | 800×400px | Hub card (featured or grid) |
+| `blog-[slug]-hero.webp` | 800×400px | Article hero |
+| `blog-[slug]-inArticle-1.webp`, `-inArticle-2.webp`, ... | 800×320px | Inline figures, one per `<figure>` |
 
-Place in `/assets/` in repo root.
+Place in `/assets/blog/` in repo root.
 
 ---
 

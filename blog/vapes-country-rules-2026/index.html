@@ -176,12 +176,14 @@ footer{margin-top:2.4em;color:var(--muted);font-size:.82rem;border-top:1px solid
 /* country pills */
 .country-row{display:flex;flex-wrap:wrap;gap:.6em;margin:1.2em 0}
 .cpill{display:flex;align-items:center;gap:.45em;background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:.4em .85em;font-size:.85rem}
-.cpill-flag{font-size:1rem}
+.cpill-flag{font-size:1rem;line-height:0}
+.cpill-flagimg{width:1.15em;height:auto;border-radius:2px;box-shadow:0 0 0 1px rgba(0,0,0,.18);vertical-align:middle}
 
 /* checklist */
 .checklist{display:flex;flex-direction:column;gap:.55em;margin:1.5em 0}
 .cl-item{display:flex;gap:.75em;align-items:flex-start;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:.8em 1em;font-size:.91rem;line-height:1.55}
 .cl-num{font-family:'Space Mono',monospace;font-size:.75rem;font-weight:700;color:var(--accent);flex:none;min-width:1.4em;padding-top:.12em}
+.cl-flagimg{width:18px;height:auto;border-radius:2px;box-shadow:0 0 0 1px rgba(0,0,0,.18);vertical-align:middle;margin-top:.15em}
 .art-sources{margin:2.5em 0 0;border:1px solid var(--line);border-radius:12px;overflow:hidden}
 .art-sources-head{display:flex;align-items:center;gap:.5em;padding:.65em 1em;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:.85rem;background:var(--surface);color:var(--muted);border-bottom:1px solid var(--line)}
 .art-source-link{display:flex;align-items:center;gap:.6em;padding:.65em 1em;font-size:.87rem;color:var(--accent);text-decoration:none;border-top:1px solid var(--line)}
@@ -253,44 +255,44 @@ footer{margin-top:2.4em;color:var(--muted);font-size:.82rem;border-top:1px solid
 
 <h3>✅ Legal — permitted with standard restrictions</h3>
 <div class="country-row">
-  <div class="cpill"><span class="cpill-flag">🇬🇧</span> United Kingdom</div>
-  <div class="cpill"><span class="cpill-flag">🇺🇸</span> USA</div>
-  <div class="cpill"><span class="cpill-flag">🇨🇦</span> Canada</div>
-  <div class="cpill"><span class="cpill-flag">🇩🇪</span> Germany</div>
-  <div class="cpill"><span class="cpill-flag">🇫🇷</span> France</div>
-  <div class="cpill"><span class="cpill-flag">🇮🇹</span> Italy</div>
-  <div class="cpill"><span class="cpill-flag">🇳🇿</span> New Zealand</div>
-  <div class="cpill"><span class="cpill-flag">🇵🇱</span> Poland</div>
-  <div class="cpill"><span class="cpill-flag">🇪🇸</span> Spain</div>
+  <div class="cpill"><span class="cpill-flag"><img class="cpill-flagimg" src="https://flagcdn.com/gb.svg" alt="UK" loading="lazy"></span> United Kingdom</div>
+  <div class="cpill"><span class="cpill-flag"><img class="cpill-flagimg" src="https://flagcdn.com/us.svg" alt="USA" loading="lazy"></span> USA</div>
+  <div class="cpill"><span class="cpill-flag"><img class="cpill-flagimg" src="https://flagcdn.com/ca.svg" alt="Canada" loading="lazy"></span> Canada</div>
+  <div class="cpill"><span class="cpill-flag"><img class="cpill-flagimg" src="https://flagcdn.com/de.svg" alt="Germany" loading="lazy"></span> Germany</div>
+  <div class="cpill"><span class="cpill-flag"><img class="cpill-flagimg" src="https://flagcdn.com/fr.svg" alt="France" loading="lazy"></span> France</div>
+  <div class="cpill"><span class="cpill-flag"><img class="cpill-flagimg" src="https://flagcdn.com/it.svg" alt="Italy" loading="lazy"></span> Italy</div>
+  <div class="cpill"><span class="cpill-flag"><img class="cpill-flagimg" src="https://flagcdn.com/nz.svg" alt="New Zealand" loading="lazy"></span> New Zealand</div>
+  <div class="cpill"><span class="cpill-flag"><img class="cpill-flagimg" src="https://flagcdn.com/pl.svg" alt="Poland" loading="lazy"></span> Poland</div>
+  <div class="cpill"><span class="cpill-flag"><img class="cpill-flagimg" src="https://flagcdn.com/es.svg" alt="Spain" loading="lazy"></span> Spain</div>
 </div>
 <p>EU countries follow TPD regulations: nicotine max 20mg/ml, tank capacity max 2ml, 10ml refill bottles. USA requires 21+ and FDA-authorised products. UK is the most permissive — actively promotes vaping as a smoking cessation tool.</p>
 
 <h3>⚠️ Complex — legal but conditional</h3>
 <div class="country-row">
-  <div class="cpill"><span class="cpill-flag">🇦🇺</span> Australia</div>
-  <div class="cpill"><span class="cpill-flag">🇯🇵</span> Japan</div>
-  <div class="cpill"><span class="cpill-flag">🇦🇪</span> UAE</div>
-  <div class="cpill"><span class="cpill-flag">🇹🇷</span> Turkey</div>
-  <div class="cpill"><span class="cpill-flag">🇮🇩</span> Indonesia</div>
+  <div class="cpill"><span class="cpill-flag"><img class="cpill-flagimg" src="https://flagcdn.com/au.svg" alt="Australia" loading="lazy"></span> Australia</div>
+  <div class="cpill"><span class="cpill-flag"><img class="cpill-flagimg" src="https://flagcdn.com/jp.svg" alt="Japan" loading="lazy"></span> Japan</div>
+  <div class="cpill"><span class="cpill-flag"><img class="cpill-flagimg" src="https://flagcdn.com/ae.svg" alt="UAE" loading="lazy"></span> UAE</div>
+  <div class="cpill"><span class="cpill-flag"><img class="cpill-flagimg" src="https://flagcdn.com/tr.svg" alt="Turkey" loading="lazy"></span> Turkey</div>
+  <div class="cpill"><span class="cpill-flag"><img class="cpill-flagimg" src="https://flagcdn.com/id.svg" alt="Indonesia" loading="lazy"></span> Indonesia</div>
 </div>
 
 <div class="checklist">
-  <div class="cl-item"><span class="cl-num">🇦🇺</span><div><strong>Australia:</strong> Nicotine vapes require a prescription from an Australian doctor. Recreational nicotine e-liquid is illegal without one. Nicotine-free devices are legal. Importing nicotine e-liquid for personal use without a prescription can result in seizure at the border.</div></div>
-  <div class="cl-item"><span class="cl-num">🇯🇵</span><div><strong>Japan:</strong> Nicotine e-liquid is classified as a medicine and is effectively banned for consumers. Nicotine-free vaping is legal. Heated tobacco products (iQOS, glo, IQOS) are widely available and legal &mdash; many visitors use those instead.</div></div>
-  <div class="cl-item"><span class="cl-num">🇦🇪</span><div><strong>UAE:</strong> Legalised in 2019 after a prior ban. Vapes are sold in licensed shops. Public vaping is restricted &mdash; same rules as smoking. Do not vape near mosques, government buildings, or in enclosed public spaces.</div></div>
+  <div class="cl-item"><span class="cl-num"><img class="cl-flagimg" src="https://flagcdn.com/au.svg" alt="Australia" loading="lazy"></span><div><strong>Australia:</strong> Nicotine vapes require a prescription from an Australian doctor. Recreational nicotine e-liquid is illegal without one. Nicotine-free devices are legal. Importing nicotine e-liquid for personal use without a prescription can result in seizure at the border.</div></div>
+  <div class="cl-item"><span class="cl-num"><img class="cl-flagimg" src="https://flagcdn.com/jp.svg" alt="Japan" loading="lazy"></span><div><strong>Japan:</strong> Nicotine e-liquid is classified as a medicine and is effectively banned for consumers. Nicotine-free vaping is legal. Heated tobacco products (iQOS, glo, IQOS) are widely available and legal &mdash; many visitors use those instead.</div></div>
+  <div class="cl-item"><span class="cl-num"><img class="cl-flagimg" src="https://flagcdn.com/ae.svg" alt="UAE" loading="lazy"></span><div><strong>UAE:</strong> Legalised in 2019 after a prior ban. Vapes are sold in licensed shops. Public vaping is restricted &mdash; same rules as smoking. Do not vape near mosques, government buildings, or in enclosed public spaces.</div></div>
 </div>
 
 <h3>❌ Banned — do not bring</h3>
 <div class="country-row">
-  <div class="cpill"><span class="cpill-flag">🇹🇭</span> Thailand</div>
-  <div class="cpill"><span class="cpill-flag">🇸🇬</span> Singapore</div>
-  <div class="cpill"><span class="cpill-flag">🇮🇳</span> India</div>
-  <div class="cpill"><span class="cpill-flag">🇧🇷</span> Brazil</div>
-  <div class="cpill"><span class="cpill-flag">🇭🇰</span> Hong Kong</div>
-  <div class="cpill"><span class="cpill-flag">🇲🇾</span> Malaysia</div>
-  <div class="cpill"><span class="cpill-flag">🇵🇭</span> Philippines</div>
-  <div class="cpill"><span class="cpill-flag">🇶🇦</span> Qatar</div>
-  <div class="cpill"><span class="cpill-flag">🇰🇼</span> Kuwait</div>
+  <div class="cpill"><span class="cpill-flag"><img class="cpill-flagimg" src="https://flagcdn.com/th.svg" alt="Thailand" loading="lazy"></span> Thailand</div>
+  <div class="cpill"><span class="cpill-flag"><img class="cpill-flagimg" src="https://flagcdn.com/sg.svg" alt="Singapore" loading="lazy"></span> Singapore</div>
+  <div class="cpill"><span class="cpill-flag"><img class="cpill-flagimg" src="https://flagcdn.com/in.svg" alt="India" loading="lazy"></span> India</div>
+  <div class="cpill"><span class="cpill-flag"><img class="cpill-flagimg" src="https://flagcdn.com/br.svg" alt="Brazil" loading="lazy"></span> Brazil</div>
+  <div class="cpill"><span class="cpill-flag"><img class="cpill-flagimg" src="https://flagcdn.com/hk.svg" alt="Hong Kong" loading="lazy"></span> Hong Kong</div>
+  <div class="cpill"><span class="cpill-flag"><img class="cpill-flagimg" src="https://flagcdn.com/my.svg" alt="Malaysia" loading="lazy"></span> Malaysia</div>
+  <div class="cpill"><span class="cpill-flag"><img class="cpill-flagimg" src="https://flagcdn.com/ph.svg" alt="Philippines" loading="lazy"></span> Philippines</div>
+  <div class="cpill"><span class="cpill-flag"><img class="cpill-flagimg" src="https://flagcdn.com/qa.svg" alt="Qatar" loading="lazy"></span> Qatar</div>
+  <div class="cpill"><span class="cpill-flag"><img class="cpill-flagimg" src="https://flagcdn.com/kw.svg" alt="Kuwait" loading="lazy"></span> Kuwait</div>
 </div>
 
 <div class="callout">
