@@ -68,15 +68,11 @@ Deliver in the SAME message as the preview. One prompt per image file. Format:
 
 **Image 1 — [Role]**
 Filename: `blog-[slug]-[descriptor].webp`
-Size: **800 × 400px** | WebP 70–75%
-
-> [Subject, angle, lighting, style, colours. No text, no overlays, no logos.]
+[Subject, angle, lighting, style, colours. No text, no overlays, no logos. Size: 800 × 400px.]
 
 **Image 2 — [Role]**
 Filename: `blog-[slug]-[descriptor2].webp`
-Size: **800 × 320px** | WebP 70–75%
-
-> [Subject, angle, lighting, style, colours. No text, no overlays, no logos.]
+[Subject, angle, lighting, style, colours. No text, no overlays, no logos. Size: 800 × 320px.]
 
 💡 In ChatGPT: request **landscape** format (1792×1024), then crop to target ratio.
 ```
