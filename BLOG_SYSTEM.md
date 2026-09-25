@@ -89,6 +89,16 @@ Rules:
 
 ---
 
+## Typography & accessibility — mandatory, applies to every article
+
+- **No tiny font sizes.** Floor of `0.8rem` (12.8px) for any label/badge/caption text (`cat-label`, `bcard-tag`, `ar-pill`, `wh-label`, dates), and `0.85rem`+ for any body/caption/rule text (`ar-rule`, figcaptions, `cl-num`, etc). Never ship a class at `10px`/`.65rem`/`.68rem`/`.7rem` again.
+- **WCAG AA contrast, every color pair.** Any text color against its actual background must hit **4.5:1** (3:1 only for genuinely large/bold display text). This includes `--muted` text on `--bg`/`--surface` in BOTH themes, and colored pill/badge text against its tinted background. Check with a contrast calculator before shipping a new color, don't eyeball it.
+  - Light theme `--muted` was `#6B7488` (3.89:1 against `--bg`, an AA fail) — fixed to `#60687A`. Don't reintroduce a lighter value here.
+- **Dimmed text is a bug, not a style choice.** If a reviewer says "I can barely read this," that's the signal — fix the class in the shared CSS block (in `guideShell`'s `<style>`), not just the one instance that got flagged, since every article shares this stylesheet.
+- When adding a NEW small-text class, sanity-check its font-size and contrast against this rule before shipping — don't wait to be told.
+
+---
+
 ## IMAGE REGISTRY
 ### All images — current state
 
@@ -103,7 +113,10 @@ Rules:
 | `blog-vapes-country-rules-2026-hero.webp` | 800×400px | Vapes article hero | ✅ live |
 | `blog-vapes-country-rules-2026-inArticle-1.webp` | 800×320px | Vapes article inline 1 | ✅ live |
 | `blog-vapes-country-rules-2026-inArticle-2.webp` | 800×320px | Vapes article inline 2 | ✅ live |
-| `blog-carry-on-size-wars-hero.webp` | 800×400px | Hub card (coming soon) | ⏳ pending article |
+| `blogHome-carry-on-size-limits-by-airline-2026-card.webp` | 800×400px | Hub card (carry-on) | ⏳ pending image |
+| `blog-carry-on-size-limits-by-airline-2026-hero.webp` | 800×400px | Carry-on article hero | ⏳ pending image |
+| `blog-carry-on-size-limits-by-airline-2026-inArticle-1.webp` | 800×450px | Carry-on article inline 1 | ⏳ pending image |
+| `blog-carry-on-size-limits-by-airline-2026-inArticle-2.webp` | 800×450px | Carry-on article inline 2 | ⏳ pending image |
 
 ---
 
