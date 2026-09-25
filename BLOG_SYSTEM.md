@@ -96,6 +96,7 @@ Rules:
   - Light theme `--muted` was `#6B7488` (3.89:1 against `--bg`, an AA fail) — fixed to `#60687A`. Don't reintroduce a lighter value here.
 - **Dimmed text is a bug, not a style choice.** If a reviewer says "I can barely read this," that's the signal — fix the class in the shared CSS block (in `guideShell`'s `<style>`), not just the one instance that got flagged, since every article shares this stylesheet.
 - When adding a NEW small-text class, sanity-check its font-size and contrast against this rule before shipping — don't wait to be told.
+- **Card grid "Read article" links always sit at the card's bottom edge, never floating right after a variable-length title.** Card title is clamped to 2 lines (`-webkit-line-clamp:2`, ellipsis on overflow — long titles truncate, they never push the layout) and the read-link/date is pinned with `margin-top:auto` inside a flex column whose body has `flex:1`. This applies to both `.bcard` and `.bcard-soon` card variants. Never let a title's natural length determine where the bottom link sits — every card in a row must align regardless of title length.
 
 ---
 
