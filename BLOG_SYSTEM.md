@@ -114,10 +114,16 @@ Rules:
 | `blog-vapes-country-rules-2026-hero.webp` | 800×400px | Vapes article hero | ✅ live |
 | `blog-vapes-country-rules-2026-inArticle-1.webp` | 800×320px | Vapes article inline 1 | ✅ live |
 | `blog-vapes-country-rules-2026-inArticle-2.webp` | 800×320px | Vapes article inline 2 | ✅ live |
-| `blogHome-carry-on-size-limits-by-airline-2026-card.webp` | 800×400px | Hub card (carry-on) | ⏳ pending image |
-| `blog-carry-on-size-limits-by-airline-2026-hero.webp` | 800×400px | Carry-on article hero | ⏳ pending image |
-| `blog-carry-on-size-limits-by-airline-2026-inArticle-1.webp` | 800×450px | Carry-on article inline 1 | ⏳ pending image |
-| `blog-carry-on-size-limits-by-airline-2026-inArticle-2.webp` | 800×450px | Carry-on article inline 2 | ⏳ pending image |
+| `blogHome-carry-on-size-limits-by-airline-2026-card.webp` | 800×400px | Hub card (carry-on) | ✅ live |
+| `blog-carry-on-size-limits-by-airline-2026-hero.webp` | 800×400px | Carry-on article hero | ✅ live |
+| `blog-carry-on-size-limits-by-airline-2026-inArticle-1.webp` | 800×450px | Carry-on article inline 1 | ✅ live |
+| `blog-carry-on-size-limits-by-airline-2026-inArticle-2.webp` | 800×450px | Carry-on article inline 2 | ✅ live |
+| `blogHome-aerosols-on-a-plane-2026-card.webp` | 800×400px | Hub card (aerosols) | ✅ live |
+| `blog-aerosols-on-a-plane-2026-hero.webp` | 800×400px | Aerosols article hero | ✅ live |
+| `blog-aerosols-on-a-plane-2026-inArticle-1.webp` | 800×450px | Aerosols article inline 1 | ✅ live |
+| `blog-aerosols-on-a-plane-2026-inArticle-2.webp` | 800×450px | Aerosols article inline 2 | ✅ live |
+
+*(Note: this registry only tracks images added since the Vapes article — it does not have entries for the 8 Medications articles or the Customs/Food articles. Treat it as a partial log, not a complete inventory. Don't infer an image is missing just because it's absent from this table — check `assets/blog/` directly.)*
 
 ---
 
