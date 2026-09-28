@@ -24,11 +24,15 @@
     +   'box-shadow:0 12px 40px rgba(0,0,0,.5);padding:16px;font-family:inherit;'
     +   'max-height:calc(100vh - 32px);overflow:auto;}'
     + '#fbPanel h3{margin:0 28px 6px 0;font-size:15px;line-height:1.35;font-weight:700;}'
-    + '#fbPanel p{margin:0 0 12px;font-size:12.5px;line-height:1.45;color:var(--text-muted,#8A96B8);}'
+    + '#fbPanel p{margin:0 0 12px;font-size:14px;line-height:1.45;color:var(--text-muted,#8A96B8);}'
     + '#fbX{position:absolute;top:0;right:0;width:26px;height:26px;border:none;background:transparent;'
     +   'color:var(--text-muted,#8A96B8);font-size:20px;line-height:1;cursor:pointer;border-radius:8px;}'
     + '#fbX:hover{color:var(--text,#EDF0F7);}'
     + '#fbWrap{position:relative;}'
+    + '#fbEmail{width:100%;box-sizing:border-box;background:var(--bg,#0E1428);'
+    +   'color:var(--text,#EDF0F7);border:1px solid var(--line,#2A3A5E);border-radius:10px;padding:10px;'
+    +   'font-family:inherit;font-size:13px;line-height:1.4;outline:none;margin-bottom:8px;}'
+    + '#fbEmail:focus{border-color:var(--accent,#4CC2FF);}'
     + '#fbTa{width:100%;box-sizing:border-box;min-height:96px;resize:vertical;background:var(--bg,#0E1428);'
     +   'color:var(--text,#EDF0F7);border:1px solid var(--line,#2A3A5E);border-radius:10px;padding:10px;'
     +   'font-family:inherit;font-size:13px;line-height:1.4;outline:none;}'
@@ -66,6 +70,7 @@
       + '<h3>Your feedback will be super helpful and well appreciated.</h3>'
       + '<p>The good, the bad and the ugly 🙂<br>Anything you’d like to share? '
       + 'Your experience, what you think we should improve.</p>'
+      + '<input id="fbEmail" type="email" placeholder="Your email (optional, if you’d like a reply)">'
       + '<textarea id="fbTa" placeholder="Type your thoughts here…"></textarea>'
       + '<button id="fbSend">Send →</button>'
       + '<div id="fbMsg"></div>'
@@ -81,6 +86,7 @@
     document.body.appendChild(ov);
 
     var ta = ov.querySelector('#fbTa');
+    var email = ov.querySelector('#fbEmail');
     var send = ov.querySelector('#fbSend');
     var msg = ov.querySelector('#fbMsg');
     var form = ov.querySelector('#fbForm');
@@ -96,17 +102,20 @@
 
     send.addEventListener('click', function () {
       var text = (ta.value || '').trim();
+      var replyEmail = (email.value || '').trim();
       if (!text) { msg.textContent = 'Please add a note first.'; ta.focus(); return; }
       send.disabled = true; msg.textContent = 'Sending…';
+      var payload = {
+        message: text,
+        _subject: SUBJECT,
+        _template: 'table',
+        page: location.href
+      };
+      if (replyEmail) { payload.email = replyEmail; payload._replyto = replyEmail; }
       fetch(ENDPOINT, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-        body: JSON.stringify({
-          message: text,
-          _subject: SUBJECT,
-          _template: 'table',
-          page: location.href
-        })
+        body: JSON.stringify(payload)
       }).then(function (r) { return r.json().catch(function () { return {}; }); })
         .then(function (d) {
           if (d && (d.success === 'true' || d.success === true)) {
