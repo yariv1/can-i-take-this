@@ -315,3 +315,13 @@ Icons make articles scannable. Humans do not consume content as walls of text. *
 - **No `<h1>`** in body — `guideShell` renders it
 - **No `${fn()}`** inside double-quoted JS string vars
 - Use components freely — callouts, checklists, stat strips make articles scannable; walls of prose do not
+
+## Header back button (`.back-btn`)
+- Left of the logo in every page header (all pages except the home page/app). Markup lives in a
+  `.topbar-left` wrapper with `.brand`; on the older `<header>` pages it replaces the `‹` link.
+- 34×34, radius 10px, `--surface` bg, 1px `--line` border, icon `--text` (arrow-left, 18px).
+  Hover: icon + border → `--accent`. Active: bg `--surface-2`. Focus-visible: 2px `--accent` outline.
+- Behavior (inline `onclick`): same-origin referrer + history → `history.back()` (browser restores
+  the previous page's scroll position); otherwise follows `href` (`/`, or `/blog/` on articles).
+- ≤420px: h1 shrinks to 16px, no wrap; ≤370px: theme label hidden (icon only).
+- New blog articles must copy the topbar from an existing article so they inherit it.
