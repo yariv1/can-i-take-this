@@ -62,6 +62,7 @@ var BLOG_LINKS={
 function blogReadBlock(cat,cn){
   var list=(BLOG_LINKS[cat||'hub']||[]).slice();
   if(cat==='food'&&(cn==='Australia'||cn==='New Zealand'))list.unshift(['/blog/australia-nz-biosecurity-fines-2026/','Australia & NZ Biosecurity Fines: Undeclared Food Rules (2026)']);
+  if(cn==='Japan'&&(cat==='alcohol'||cat==='tobacco'||cat==='cash'||!cat))list.unshift(['/blog/japan-customs-declaration-2026/','Japan Customs Declaration (2026): Visit Japan Web QR Code or Paper Form?']);
   if(!list.length)return '';
   return '<nav class="readmore" aria-label="Related guides"><h2>Read the full guide</h2><ul>'+list.map(function(l){return '<li><a href="'+l[0]+'">'+esc(l[1])+'</a></li>';}).join('')+'</ul></nav>\n';
 }
