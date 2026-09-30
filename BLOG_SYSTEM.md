@@ -226,7 +226,7 @@ See Step 5 above. Always delivered in same message as preview. Always one entry 
 | Slug | Title | Category | Images |
 |------|-------|----------|--------|
 | `power-bank-rules-2026-crackdown` | Power Banks on Planes: What Actually Changed in 2026 | Batteries & Electronics | hero + wh-tiers |
-| `liquids-100ml-rule-2026` | The 100ml Rule in 2026: What Still Trips Travellers Up | Liquids & Packing | hero + bag-rule |
+| `liquids-100ml-rule-2026` | How Many ml Can You Take on a Plane? The 100ml Liquids Rule (2026) | Liquids & Packing | hero + bag-rule |
 
 ### Placeholder cards (hub)
 | Planned title | Category | Image ready |
@@ -238,7 +238,7 @@ See Step 5 above. Always delivered in same message as preview. Always one entry 
 | Slug | Title | Category | Images |
 |------|-------|----------|--------|
 | `power-bank-rules-2026-crackdown` | Power Banks on Planes: What Actually Changed in 2026 | Batteries & Electronics | blog-power-bank-2026-hero.webp, blog-power-bank-wh-tiers.webp |
-| `liquids-100ml-rule-2026` | The 100ml Rule in 2026: What Still Trips Travellers Up | Liquids & Packing | blog-liquids-2026-hero.webp, blog-liquids-bag-rule.webp |
+| `liquids-100ml-rule-2026` | How Many ml Can You Take on a Plane? The 100ml Liquids Rule (2026) | Liquids & Packing | blog-liquids-2026-hero.webp, blog-liquids-bag-rule.webp |
 
 ### Sentinels in build.js
 ```
