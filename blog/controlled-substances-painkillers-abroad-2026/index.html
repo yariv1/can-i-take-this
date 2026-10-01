@@ -44,6 +44,12 @@ footer{margin-top:2.4em;color:var(--muted);font-size:.82rem;border-top:1px solid
 .prose strong{font-weight:700}
 .prose a{color:var(--accent);text-decoration:none}
 .prose a:hover{text-decoration:underline}
+/* horizontal scrollers in articles share the home-page carousel scrollbar (DESIGN_SYSTEM 8.10) */
+.prose div:has(>table),.prose .scroll-x{scrollbar-width:thin;scrollbar-color:var(--accent) var(--surface)}
+.prose div:has(>table)::-webkit-scrollbar,.prose .scroll-x::-webkit-scrollbar{height:8px}
+.prose div:has(>table)::-webkit-scrollbar-track,.prose .scroll-x::-webkit-scrollbar-track{background:var(--surface);border-radius:999px}
+.prose div:has(>table)::-webkit-scrollbar-thumb,.prose .scroll-x::-webkit-scrollbar-thumb{background:var(--muted);border-radius:999px}
+.prose div:has(>table)::-webkit-scrollbar-thumb:hover,.prose .scroll-x::-webkit-scrollbar-thumb:hover{background:var(--accent)}
 /* ── hub page hero ── */
 .hub-head{margin:0 0 2em}
 .hub-head h1{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:2rem;line-height:1.1;margin:0 0 .3em}

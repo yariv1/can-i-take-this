@@ -205,6 +205,8 @@ The **only** hover effect is a background color change:
 
 ## 7. Changelog
 
+- **2026-10-01:** added §8.10 — article scrollbars must match the home-page carousel scrollbar (`:has(>table)` + `.scroll-x` in guideShell CSS).
+
 - **This session:** featured excerpt → `var(--text)`; soon title weight → 400; soon tag →
   `var(--accent)`; unified card hover (bg `#192443`/`#F2F2F2`, no stroke/shadow/underline).
   Flagged featured light-hover selector bug (§5.3).
@@ -315,6 +317,11 @@ Icons make articles scannable. Humans do not consume content as walls of text. *
 - **No `<h1>`** in body — `guideShell` renders it
 - **No `${fn()}`** inside double-quoted JS string vars
 - Use components freely — callouts, checklists, stat strips make articles scannable; walls of prose do not
+
+### 8.10 Horizontal scrollbars (HARD RULE — same everywhere)
+- Every horizontally scrolling element MUST use the home-page carousel scrollbar (`.hg-row`): `scrollbar-width:thin; scrollbar-color:var(--accent) var(--surface)`; WebKit `height:8px`, track `var(--surface)` radius 999px, thumb `var(--muted)` radius 999px, thumb:hover `var(--accent)`.
+- In articles this is automatic: `guideShell` CSS applies it to any `.prose div:has(>table)` (table wrappers) and to `.prose .scroll-x`. Wrap every new table in a `<div>` directly around the `<table>`, or add class `scroll-x` to any other scroller. Never leave the browser-default white scrollbar.
+- Never ship a new scroller (table, carousel, code block, chart) without checking its scrollbar against the home page.
 
 ## Header back button (`.back-btn`)
 - Left of the logo in every page header (all pages except the home page/app). Markup lives in a
