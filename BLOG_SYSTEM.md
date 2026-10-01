@@ -130,6 +130,10 @@ Rules:
 | `blog-duty-free-tobacco-allowance-by-country-2026-hero.webp` | 800×400px | Duty-free tobacco hero | ⏳ pending |
 | `blog-duty-free-tobacco-allowance-by-country-2026-inArticle-1.webp` | 800×320px | Duty-free tobacco inline 1 | ⏳ pending |
 | `blog-duty-free-tobacco-allowance-by-country-2026-inArticle-2.webp` | 800×320px | Duty-free tobacco inline 2 | ⏳ pending |
+| `blogHome-duty-free-alcohol-allowance-by-country-2026-card.webp` | 800×400px | Hub card (duty-free alcohol) | ⏳ pending |
+| `blog-duty-free-alcohol-allowance-by-country-2026-hero.webp` | 800×400px | Duty-free alcohol hero | ⏳ pending |
+| `blog-duty-free-alcohol-allowance-by-country-2026-inArticle-1.webp` | 800×440px | Duty-free alcohol inline 1 (Hong Kong) | ⏳ pending |
+| `blog-duty-free-alcohol-allowance-by-country-2026-inArticle-2.webp` | 800×440px | Duty-free alcohol inline 2 (Mauritius) | ⏳ pending |
 | `blogHome-japan-customs-declaration-2026-card.webp` | 800×400px | Hub card (Japan customs declaration) | ✅ live |
 | `blog-japan-customs-declaration-2026-hero.webp` | 800×400px | Japan customs declaration hero | ✅ live |
 | `blog-japan-customs-declaration-2026-inArticle-1.webp` | 800×320px | Japan customs declaration inline 1 | ✅ live |
