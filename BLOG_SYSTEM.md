@@ -134,6 +134,10 @@ Rules:
 | `blog-food-you-can-take-on-a-plane-list-2026-hero.webp` | 800×400px | Food list hero | ⏳ pending |
 | `blog-food-you-can-take-on-a-plane-list-2026-inArticle-1.webp` | 800×320px | Food list inline 1 | ⏳ pending |
 | `blog-food-you-can-take-on-a-plane-list-2026-inArticle-2.webp` | 800×320px | Food list inline 2 | ⏳ pending |
+| `blogHome-baby-food-pouches-on-a-plane-2026-card.webp` | 800×400px | Hub card (baby food) | ⏳ pending |
+| `blog-baby-food-pouches-on-a-plane-2026-hero.webp` | 800×400px | Baby food hero | ⏳ pending |
+| `blog-baby-food-pouches-on-a-plane-2026-inArticle-1.webp` | 800×320px | Baby food inline 1 | ⏳ pending |
+| `blog-baby-food-pouches-on-a-plane-2026-inArticle-2.webp` | 800×320px | Baby food inline 2 | ⏳ pending |
 | `blogHome-duty-free-alcohol-allowance-by-country-2026-card.webp` | 800×400px | Hub card (duty-free alcohol) | ⏳ pending |
 | `blog-duty-free-alcohol-allowance-by-country-2026-hero.webp` | 800×400px | Duty-free alcohol hero | ⏳ pending |
 | `blog-duty-free-alcohol-allowance-by-country-2026-inArticle-1.webp` | 800×440px | Duty-free alcohol inline 1 (Hong Kong) | ⏳ pending |
