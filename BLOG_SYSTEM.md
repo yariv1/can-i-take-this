@@ -130,6 +130,10 @@ Rules:
 | `blog-japan-customs-declaration-2026-hero.webp` | 800×400px | Japan customs declaration hero | ✅ live |
 | `blog-japan-customs-declaration-2026-inArticle-1.webp` | 800×320px | Japan customs declaration inline 1 | ✅ live |
 | `blog-japan-customs-declaration-2026-inArticle-2.webp` | 800×320px | Japan customs declaration inline 2 | ✅ live |
+| `blogHome-customs-declaration-forms-by-country-2026-card.webp` | 800×400px | Hub card (declaration forms by country) | ✅ live |
+| `blog-customs-declaration-forms-by-country-2026-hero.webp` | 800×400px | Declaration forms hero | ✅ live |
+| `blog-customs-declaration-forms-by-country-2026-inArticle-1.webp` | 800×320px | Declaration forms inline 1 | ✅ live |
+| `blog-customs-declaration-forms-by-country-2026-inArticle-2.webp` | 800×320px | Declaration forms inline 2 | ✅ live |
 
 *(Note: this registry only tracks images added since the Vapes article — it does not have entries for the 8 Medications articles or the Customs/Food articles. Treat it as a partial log, not a complete inventory. Don't infer an image is missing just because it's absent from this table — check `assets/blog/` directly.)*
 
