@@ -150,6 +150,10 @@ Rules:
 | `blog-how-many-ounces-can-you-bring-on-a-plane-2026-hero.webp` | 800×400px | Ounces hero | ⏳ pending |
 | `blog-how-many-ounces-can-you-bring-on-a-plane-2026-inArticle-1.webp` | 800×320px | Ounces inline 1 | ⏳ pending |
 | `blog-how-many-ounces-can-you-bring-on-a-plane-2026-inArticle-2.webp` | 800×320px | Ounces inline 2 | ⏳ pending |
+| `blogHome-how-much-liquid-can-you-put-in-checked-bag-2026-card.webp` | 800×400px | Hub card (checked bag) | ⏳ pending |
+| `blog-how-much-liquid-can-you-put-in-checked-bag-2026-hero.webp` | 800×400px | Checked bag hero | ⏳ pending |
+| `blog-how-much-liquid-can-you-put-in-checked-bag-2026-inArticle-1.webp` | 800×320px | Checked bag inline 1 | ⏳ pending |
+| `blog-how-much-liquid-can-you-put-in-checked-bag-2026-inArticle-2.webp` | 800×320px | Checked bag inline 2 | ⏳ pending |
 | `blogHome-duty-free-alcohol-allowance-by-country-2026-card.webp` | 800×400px | Hub card (duty-free alcohol) | ⏳ pending |
 | `blog-duty-free-alcohol-allowance-by-country-2026-hero.webp` | 800×400px | Duty-free alcohol hero | ⏳ pending |
 | `blog-duty-free-alcohol-allowance-by-country-2026-inArticle-1.webp` | 800×440px | Duty-free alcohol inline 1 (Hong Kong) | ⏳ pending |

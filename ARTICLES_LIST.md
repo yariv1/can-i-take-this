@@ -1,6 +1,6 @@
 # canitakethis.co: articles list
 
-Generated 2026-10-02 from the built `blog/<slug>/index.html` pages (28 articles). All live at `https://canitakethis.co<URL>`. Regenerate when an article is added (read titles from the built pages or `GUIDES` in `build.js`).
+Generated 2026-10-02 from the built `blog/<slug>/index.html` pages (29 articles). All live at `https://canitakethis.co<URL>`. Regenerate when an article is added (read titles from the built pages or `GUIDES` in `build.js`).
 
 | # | Category | Title | URL | First commit | ~Words |
 |---|---|---|---|---|---|
@@ -72,8 +72,9 @@ Generated 2026-10-02 from the built `blog/<slug>/index.html` pages (28 articles)
 - Can You Bring Aerosols on a Plane? (2026 TSA Rules) (`aerosols-on-a-plane-2026`)
 - Carry-On Size Limits by Airline (2026): The Real Chart (`carry-on-size-limits-by-airline-2026`)
 - Is a Duty-Free Bag an Extra Carry-On? The Real Rules (2026) (`duty-free-bag-extra-carry-on-2026`)
-| NaN | Liquids & Packing | Is It a Liquid? TSA Rules for 90+ Products: Toothpaste, Mascara, Lotion & More (2026) | `/blog/is-it-a-liquid-tsa-list-2026/` | 2026-10-02 | 1,500 |
-| NaN | Liquids & Packing | How Many Ounces Can You Bring on a Plane? 3.4 oz Carry-On Limit, Size Chart & Checked Bags (2026) | `/blog/how-many-ounces-can-you-bring-on-a-plane-2026/` | 2026-10-02 | 1,000 |
+| 27 | Liquids & Packing | Is It a Liquid? TSA Rules for 90+ Products: Toothpaste, Mascara, Lotion & More (2026) | `/blog/is-it-a-liquid-tsa-list-2026/` | 2026-10-02 | 1,500 |
+| 28 | Liquids & Packing | How Many Ounces Can You Bring on a Plane? 3.4 oz Carry-On Limit, Size Chart & Checked Bags (2026) | `/blog/how-many-ounces-can-you-bring-on-a-plane-2026/` | 2026-10-02 | 1,000 |
+| 29 | Liquids & Packing | How Much Liquid Can You Put in a Checked Bag? Limits, Banned Items & Packing Tips (2026) | `/blog/how-much-liquid-can-you-put-in-checked-bag-2026/` | 2026-10-02 | 1,700 |
 
 ## Programmatic pages (not articles)
 
