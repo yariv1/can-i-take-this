@@ -1,5 +1,7 @@
 # Liquids cluster: roadmap to dominate the topic
 
+**STATUS (2026-10-02, end of session 6):** items 1 and 2 below are LIVE: `is-it-a-liquid-tsa-list-2026` (pillar, 93 TSA products) and `how-many-ounces-can-you-bring-on-a-plane-2026` (oz/ml checker). NEXT: item 3 (checked-bag liquids): competitor check, then the user says "lock it". Items 4 to 10 still open. The pillar and oz page already cover the toiletry cap (500 ml / 70 oz) and alcohol 5 L in checked bags, so page 3 must not repeat them.
+
 Written 2026-10-02. Goal (user decision): "attack" the liquids topic from many angles, one page per search intent, and be dominant. Liquids is one of the most-searched airport questions. Never push back on making more pages here.
 
 Workflow for every page below (HARD): 1) demand check first (Ahrefs Keyword Generator or Google Trends, user sends screenshots), 2) competitor check + our angle, 3) title/slug proposal, wait for "lock it", 4) verify facts on official pages (TSA item pages, FAA, gov), 5) build + preview link, 6) four image prompts per `IMAGE_PROMPT_GUIDE.md`, 7) user says "deploy" then commit and push at once.
