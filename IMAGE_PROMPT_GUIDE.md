@@ -36,6 +36,13 @@ The facts and examples in sections 5 and 6 (specific airports, specific baby pro
 - Every product has a label. Use plain fictional brands with realistic fine print (nutrition panel, barcode, tiny text). Never a bare plastic shape and never a single-word sticker, because that looks like a stock render.
 - Verify what a real product looks like (WebSearch) before prompting it. Do not guess.
 
+## 3b. Interaction and natural actions (HARD, 2026-10-02)
+
+- When two or more people interact, write who talks to whom, where each looks and what each hand does. Example: "the officer faces the woman and talks to her, looking at her, not at the camera; she looks back at him." Without this the generator makes people stare into the camera as if a third person were there (it happened twice and the user fixed it by hand).
+- Only people with no counterpart (a lone traveller) may look at the camera, and only if it makes sense.
+- No clear zip quart bag by default. Use it only at the security tray or when packing a checked bag.
+- Show a natural action with exact hand anatomy (five fingers each hand, which hand holds what, where the product touches the skin). For cream: the nozzle touches the finger pad, never the nail.
+
 ## 4. Variety (four layers, all HARD)
 
 1. **Inside one article:** 4 different scenes, 4 different real airports or places, 4 different compositions (queue, gate, counter, hall). Not four crops of one flat-lay.
@@ -82,6 +89,8 @@ Add each new airport to this list, with the facts seen in the photos.
 6. Every product is verified, branded with a fictional brand, and no item repeats across the four images.
 7. Filenames grepped in the built page; alt texts match the prompts.
 8. Prompts in exact format, all four, in order, size last.
+9. Every image with 2+ people states who talks to whom and where each looks (section 3b); no camera-staring pairs.
+10. No clear zip quart bag unless it is natural for the scene; hands and product contact described exactly (section 3b).
 
 ## 8. After the user adds the images
 

@@ -142,6 +142,10 @@ Rules:
 | `blog-power-bank-rules-by-airline-2026-hero.webp` | 800×400px | Power bank by airline hero | ⏳ pending |
 | `blog-power-bank-rules-by-airline-2026-inArticle-1.webp` | 800×320px | Power bank by airline inline 1 | ⏳ pending |
 | `blog-power-bank-rules-by-airline-2026-inArticle-2.webp` | 800×320px | Power bank by airline inline 2 | ⏳ pending |
+| `blogHome-is-it-a-liquid-tsa-list-2026-card.webp` | 800×400px | Hub card (is it a liquid list) | ⏳ pending |
+| `blog-is-it-a-liquid-tsa-list-2026-hero.webp` | 800×400px | Is it a liquid list hero | ⏳ pending |
+| `blog-is-it-a-liquid-tsa-list-2026-inArticle-1.webp` | 800×320px | Is it a liquid list inline 1 | ⏳ pending |
+| `blog-is-it-a-liquid-tsa-list-2026-inArticle-2.webp` | 800×320px | Is it a liquid list inline 2 | ⏳ pending |
 | `blogHome-duty-free-alcohol-allowance-by-country-2026-card.webp` | 800×400px | Hub card (duty-free alcohol) | ⏳ pending |
 | `blog-duty-free-alcohol-allowance-by-country-2026-hero.webp` | 800×400px | Duty-free alcohol hero | ⏳ pending |
 | `blog-duty-free-alcohol-allowance-by-country-2026-inArticle-1.webp` | 800×440px | Duty-free alcohol inline 1 (Hong Kong) | ⏳ pending |
