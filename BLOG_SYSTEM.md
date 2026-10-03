@@ -305,3 +305,16 @@ Read CONTENT_UNIQUENESS_RULES.md before writing any article or sibling page set;
 | `american-airlines-baggage-fees-2026` | american-airlines baggage fees 2026 | Airline Fees | blogHome-american-airlines-baggage-fees-2026-card.webp, blog-american-airlines-baggage-fees-2026-hero.webp, blog-american-airlines-baggage-fees-2026-inArticle-1.webp, blog-american-airlines-baggage-fees-2026-inArticle-2.webp |
 | `delta-baggage-fees-2026` | delta baggage fees 2026 | Airline Fees | blogHome-delta-baggage-fees-2026-card.webp, blog-delta-baggage-fees-2026-hero.webp, blog-delta-baggage-fees-2026-inArticle-1.webp, blog-delta-baggage-fees-2026-inArticle-2.webp |
 | `jetblue-baggage-fees-2026` | JetBlue baggage fees 2026 | Airline Fees | blogHome-jetblue-baggage-fees-2026-card.webp, blog-jetblue-baggage-fees-2026-hero.webp, blog-jetblue-baggage-fees-2026-inArticle-1.webp, blog-jetblue-baggage-fees-2026-inArticle-2.webp |
+
+## Airline carry-on size articles (2026-10-04)
+
+| Slug | Title | Category | Images |
+|------|-------|----------|--------|
+| `delta-carry-on-size-2026` | delta carry-on size 2026 | Carry-On Size | blogHome-delta-carry-on-size-2026-card.webp, blog-delta-carry-on-size-2026-hero.webp, blog-delta-carry-on-size-2026-inArticle-1.webp, blog-delta-carry-on-size-2026-inArticle-2.webp |
+| `jetblue-carry-on-size-2026` | jetblue carry-on size 2026 | Carry-On Size | blogHome-jetblue-carry-on-size-2026-card.webp, blog-jetblue-carry-on-size-2026-hero.webp, blog-jetblue-carry-on-size-2026-inArticle-1.webp, blog-jetblue-carry-on-size-2026-inArticle-2.webp |
+| `american-airlines-carry-on-size-2026` | american-airlines carry-on size 2026 | Carry-On Size | blogHome-american-airlines-carry-on-size-2026-card.webp, blog-american-airlines-carry-on-size-2026-hero.webp, blog-american-airlines-carry-on-size-2026-inArticle-1.webp, blog-american-airlines-carry-on-size-2026-inArticle-2.webp |
+| `alaska-airlines-carry-on-size-2026` | alaska-airlines carry-on size 2026 | Carry-On Size | blogHome-alaska-airlines-carry-on-size-2026-card.webp, blog-alaska-airlines-carry-on-size-2026-hero.webp, blog-alaska-airlines-carry-on-size-2026-inArticle-1.webp, blog-alaska-airlines-carry-on-size-2026-inArticle-2.webp |
+| `southwest-carry-on-size-2026` | southwest carry-on size 2026 | Carry-On Size | blogHome-southwest-carry-on-size-2026-card.webp, blog-southwest-carry-on-size-2026-hero.webp, blog-southwest-carry-on-size-2026-inArticle-1.webp, blog-southwest-carry-on-size-2026-inArticle-2.webp |
+| `frontier-carry-on-size-2026` | frontier carry-on size 2026 | Carry-On Size | blogHome-frontier-carry-on-size-2026-card.webp, blog-frontier-carry-on-size-2026-hero.webp, blog-frontier-carry-on-size-2026-inArticle-1.webp, blog-frontier-carry-on-size-2026-inArticle-2.webp |
+
+Source file for these six bodies: `carryon_pages.js` (SVG size diagrams generated from the numbers).

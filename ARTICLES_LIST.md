@@ -1,6 +1,6 @@
 # canitakethis.co: articles list
 
-Generated 2026-10-02 from the built `blog/<slug>/index.html` pages (33 articles). All live at `https://canitakethis.co<URL>`. Regenerate when an article is added (read titles from the built pages or `GUIDES` in `build.js`).
+Generated 2026-10-02 from the built `blog/<slug>/index.html` pages (39 articles). All live at `https://canitakethis.co<URL>`. Regenerate when an article is added (read titles from the built pages or `GUIDES` in `build.js`).
 
 | # | Category | Title | URL | First commit | ~Words |
 |---|---|---|---|---|---|
@@ -79,6 +79,13 @@ Generated 2026-10-02 from the built `blog/<slug>/index.html` pages (33 articles)
 | 31 | Airline Fees | American Airlines Baggage Fees 2026: Bag, Overweight and Basic Economy Prices | `/blog/american-airlines-baggage-fees-2026/` | 2026-10-03 | 804 |
 | 32 | Airline Fees | Delta Baggage Fees 2026: What You Pay for Checked, Overweight and Oversize Bags | `/blog/delta-baggage-fees-2026/` | 2026-10-03 | 824 |
 | 33 | Airline Fees | JetBlue Baggage Fees 2026: Peak vs Off-Peak Prices and Blue Basic Rules | `/blog/jetblue-baggage-fees-2026/` | 2026-10-03 | 1,100 |
+| 34 | Carry-On Size | delta carry-on size 2026 | `/blog/delta-carry-on-size-2026/` | 2026-10-04 | 330 |
+| 35 | Carry-On Size | jetblue carry-on size 2026 | `/blog/jetblue-carry-on-size-2026/` | 2026-10-04 | 330 |
+| 36 | Carry-On Size | american-airlines carry-on size 2026 | `/blog/american-airlines-carry-on-size-2026/` | 2026-10-04 | 330 |
+| 37 | Carry-On Size | alaska-airlines carry-on size 2026 | `/blog/alaska-airlines-carry-on-size-2026/` | 2026-10-04 | 330 |
+| 38 | Carry-On Size | southwest carry-on size 2026 | `/blog/southwest-carry-on-size-2026/` | 2026-10-04 | 330 |
+| 39 | Carry-On Size | frontier carry-on size 2026 | `/blog/frontier-carry-on-size-2026/` | 2026-10-04 | 330 |
+
 
 ## Programmatic pages (not articles)
 
