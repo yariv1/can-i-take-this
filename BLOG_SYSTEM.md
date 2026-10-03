@@ -293,3 +293,6 @@ See Step 5 above. Always delivered in same message as preview. Always one entry 
 | Slug | Title | Category | Images |
 |------|-------|----------|--------|
 | `vapes-country-rules-2026` | Flying with a Vape: The Country-by-Country Minefield | Vapes & E-Cigs | blog-vapes-country-rules-2026-hero.webp, blog-vapes-country-rules-2026-inArticle-1.webp, blog-vapes-country-rules-2026-inArticle-2.webp |
+
+## Content uniqueness (HARD)
+Read CONTENT_UNIQUENESS_RULES.md before writing any article or sibling page set; run `node audit_duplicates.js` as the gate.

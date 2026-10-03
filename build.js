@@ -18,7 +18,7 @@ const CHK_STYLE = CHK_STYLE_M ? CHK_STYLE_M[1] : '';
 const CHK_SCRIPT_M = (()=>{var all=[...html.matchAll(/<script>([\s\S]*?)<\/script>/g)];return all[all.length-1]||null;})();
 let CHK_SCRIPT = CHK_SCRIPT_M ? CHK_SCRIPT_M[1] : '';
 const CHK_BODY = CHK_STYLE_M && CHK_SCRIPT_M
-  ? html.slice(CHK_STYLE_M.index + CHK_STYLE_M[0].length, CHK_SCRIPT_M.index).trim().replace(/^<\/head><body>\s*/,'')
+  ? html.slice(CHK_STYLE_M.index + CHK_STYLE_M[0].length, CHK_SCRIPT_M.index).trim().replace(/^<\/head><body>\s*/,'').replace(/<div class="seo">[\s\S]*?<\/footer>\s*<\/div>/,'')
   : '';
 // persist theme changes made from the homepage checker's own toggle, and pick up
 // whatever the head-guard script already set on <html> instead of forcing 'dark'
@@ -952,8 +952,16 @@ function run(){
   });
 
   // ---------- 4. HOME, SITEMAP, ROBOTS ----------
-  const allAir=AIRLINES.map(a=>`<a href="/airline/${slug(a.name)}/baggage-allowance/" data-n="${esc(a.name).toLowerCase()}">${esc(a.name)}</a>`).join("");
-  const topCo=COUNTRIES.slice(0,24).map(c=>`<a href="/country/${slug(c.name)}/">${esc(c.name)}</a>`).join('');
+  // display order on the homepage only (data arrays stay untouched): most popular first, American airlines first
+  const AIR_ORDER=['Delta','American Airlines','United','Southwest','JetBlue','Alaska Airlines','Frontier','Air Canada','Aeromexico','Ryanair','easyJet','British Airways','Lufthansa','Air France','KLM','Wizz Air','Turkish Airlines','Iberia','Vueling','Emirates','Qatar Airways','Etihad Airways','Singapore Airlines','Cathay Pacific','Qantas','Japan Airlines','ANA','Korean Air','Air India','IndiGo','Thai Airways','SAS','Norwegian','Swiss','Austrian','TAP Air Portugal','Aer Lingus','Finnair','ITA Airways','Brussels Airlines','Eurowings','Transavia','Air Europa','LOT Polish','Aegean','Pegasus','SunExpress','Icelandair','LATAM','Avianca','Copa Airlines','GOL','Azul','Malaysia Airlines','Vietnam Airlines','Philippine Airlines','China Southern','China Eastern','Air China','Asiana','Air New Zealand','Virgin Australia','Saudia','flydubai','Gulf Air','Oman Air','Kuwait Airways','Royal Jordanian','Middle East Airlines','EgyptAir','Air Arabia','El Al','Arkia','Israir','Ethiopian Airlines','South African Airways','Kenya Airways','Royal Air Maroc'];
+  const airRank=n=>{const i=AIR_ORDER.indexOf(n);return i<0?9999:i;};
+  const airSorted=AIRLINES.slice().sort((x,y)=>airRank(x.name)-airRank(y.name));
+  if(airSorted.length!==AIRLINES.length||airSorted.some(a=>airRank(a.name)===9999))throw new Error('AIR_ORDER incomplete');
+  const allAir=airSorted.map(a=>`<a href="/airline/${slug(a.name)}/baggage-allowance/" data-n="${esc(a.name).toLowerCase()}">${esc(a.name)}</a>`).join("");
+  const CO_ORDER=['United States','United Kingdom','Canada','Australia','Japan','France','Germany','Italy','Spain','Thailand','United Arab Emirates','India','Turkey','Greece','Netherlands','Switzerland','Singapore','South Korea','China','Qatar','Saudi Arabia','Egypt','Cyprus','Israel'];
+  const top24=COUNTRIES.slice(0,24);
+  if(top24.length!==CO_ORDER.length||top24.some(c=>!CO_ORDER.includes(c.name)))throw new Error('CO_ORDER mismatch');
+  const topCo=CO_ORDER.map(n=>top24.find(c=>c.name===n)).map(c=>`<a href="/country/${slug(c.name)}/">${esc(c.name)}</a>`).join('');
   write('index.html', `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-0HQ16GNH78"></script>
