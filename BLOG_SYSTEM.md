@@ -318,3 +318,7 @@ Read CONTENT_UNIQUENESS_RULES.md before writing any article or sibling page set;
 | `frontier-carry-on-size-2026` | frontier carry-on size 2026 | Carry-On Size | blogHome-frontier-carry-on-size-2026-card.webp, blog-frontier-carry-on-size-2026-hero.webp, blog-frontier-carry-on-size-2026-inArticle-1.webp, blog-frontier-carry-on-size-2026-inArticle-2.webp |
 
 Source file for these six bodies: `carryon_pages.js` (SVG size diagrams generated from the numbers).
+
+## Visual article rule (HARD, 2026-10-04)
+Articles must not be walls of text: hero + inline photos, stat strip, tables with icons (not data in prose), icon bullets / checklists, callouts, and a to-scale SVG diagram where the data is a size. Icons are mandatory (DESIGN_SYSTEM 8.8). Airline carry-on bodies are generated from `carryon_pages.js` (`bagSvg()` draws the size diagrams from the numbers); fees articles are BODY_*FEES_ARTICLE vars in build.js.
+Hub sections now: Medications, Batteries & Electronics, **Airline Fees & Policies** (American featured card + Southwest, Delta, JetBlue), **Carry-On Size by Airline** (6 cards), Packing Rules, Customs & Money, Food & Agriculture.

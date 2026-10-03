@@ -101,3 +101,12 @@ Add each new airport to this list, with the facts seen in the photos.
 ## 9. Known open work
 
 - Food list article (`food-you-can-take-on-a-plane-list-2026`, Madrid, Denver, LAX, Toronto) and earlier articles were made before section 5 and section 6, and probably repeat the generic look. Re-research and regenerate if the user asks.
+
+## 10. Rules added 2026-10-03/04 (user feedback, HARD)
+
+- **Naming is never improvised.** Exactly `blogHome-<slug>-card.webp`, `blog-<slug>-hero.webp`, `blog-<slug>-inArticle-1.webp`, `blog-<slug>-inArticle-2.webp`. Four images per article, all four prompts every time (also on revisions), in that order. Slug = the article slug (e.g. `delta-carry-on-size-2026`).
+- **Airline articles: the airline's real logo/livery appears in every scene** (counter sign, tail, gate podium, uniform, kiosk). Verify the logo's real colours/shape by search first. Known: Southwest = blue "Southwest" wordmark + tricolour heart (blue/red/yellow diagonal lines), blue-belly 737 with red-yellow tail stripes; American = red/blue eagle "Flight Symbol" + grey "American", silver body with red-blue tail stripes; Delta = red 3D triangle "widget" + navy "DELTA", red widget on tail; JetBlue = navy lowercase "jetBlue", tail patterns in blues; Alaska = white plane, deep-blue "Alaska" wordmark, tail with a face in a fur-trimmed parka; Frontier = green wordmark, green-and-white livery with an animal on the tail.
+- **No patterns in casting:** no religious headwear (hijab/kufi/turban/headscarf) image after image (default none), not mostly elderly people: spread ages 20s-50s, at most one person 60+ per article. Tally the people before sending prompts; append them to the people registry (memory `reference_image_people_registry`).
+- **Aircraft cabin geometry:** camera at the front looking toward the rear shows seat FRONTS, passenger faces and knees. Never ask for seat-back pockets, tray tables or safety cards in that shot (the generator mixes seat directions). To show seat backs, put the camera at the rear looking forward.
+- **Airports:** some airports in the 2026-10-03 prompts were NOT checked against real reference photos (Wikimedia Commons had almost no usable interior photos for BWI/MDW/OAK/HOU/PHL/DFW/MIA/DCA/LGA/DTW/JFK). Verified from photos: BWI gate area, SLC check-in hall. Say so openly in the reply when a prompt rests on text facts only.
+- **Preview before deploy:** images exist -> alt texts must match the final prompts -> real localhost link -> wait for "deploy".
