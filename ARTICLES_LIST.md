@@ -1,6 +1,6 @@
 # canitakethis.co: articles list
 
-Generated 2026-10-02 from the built `blog/<slug>/index.html` pages (29 articles). All live at `https://canitakethis.co<URL>`. Regenerate when an article is added (read titles from the built pages or `GUIDES` in `build.js`).
+Generated 2026-10-02 from the built `blog/<slug>/index.html` pages (32 articles). All live at `https://canitakethis.co<URL>`. Regenerate when an article is added (read titles from the built pages or `GUIDES` in `build.js`).
 
 | # | Category | Title | URL | First commit | ~Words |
 |---|---|---|---|---|---|
@@ -75,6 +75,9 @@ Generated 2026-10-02 from the built `blog/<slug>/index.html` pages (29 articles)
 | 27 | Liquids & Packing | Is It a Liquid? TSA Rules for 90+ Products: Toothpaste, Mascara, Lotion & More (2026) | `/blog/is-it-a-liquid-tsa-list-2026/` | 2026-10-02 | 1,500 |
 | 28 | Liquids & Packing | How Many Ounces Can You Bring on a Plane? 3.4 oz Carry-On Limit, Size Chart & Checked Bags (2026) | `/blog/how-many-ounces-can-you-bring-on-a-plane-2026/` | 2026-10-02 | 1,000 |
 | 29 | Liquids & Packing | How Much Liquid Can You Put in a Checked Bag? Limits, Banned Items & Packing Tips (2026) | `/blog/how-much-liquid-can-you-put-in-checked-bag-2026/` | 2026-10-02 | 1,700 |
+| 30 | Airline Fees | Southwest Baggage Fees 2026: $45 First Bag and Who Pays $0 | `/blog/southwest-baggage-fees-2026/` | 2026-10-03 | 833 |
+| 31 | Airline Fees | American Airlines Baggage Fees 2026: Bag, Overweight and Basic Economy Prices | `/blog/american-airlines-baggage-fees-2026/` | 2026-10-03 | 804 |
+| 32 | Airline Fees | Delta Baggage Fees 2026: What You Pay for Checked, Overweight and Oversize Bags | `/blog/delta-baggage-fees-2026/` | 2026-10-03 | 824 |
 
 ## Programmatic pages (not articles)
 

@@ -296,3 +296,11 @@ See Step 5 above. Always delivered in same message as preview. Always one entry 
 
 ## Content uniqueness (HARD)
 Read CONTENT_UNIQUENESS_RULES.md before writing any article or sibling page set; run `node audit_duplicates.js` as the gate.
+
+## Airline baggage fees articles (2026-10-03)
+
+| Slug | Title | Category | Images |
+|------|-------|----------|--------|
+| `southwest-baggage-fees-2026` | southwest baggage fees 2026 | Airline Fees | blogHome-southwest-baggage-fees-2026-card.webp, blog-southwest-baggage-fees-2026-hero.webp, blog-southwest-baggage-fees-2026-inArticle-1.webp, blog-southwest-baggage-fees-2026-inArticle-2.webp |
+| `american-airlines-baggage-fees-2026` | american-airlines baggage fees 2026 | Airline Fees | blogHome-american-airlines-baggage-fees-2026-card.webp, blog-american-airlines-baggage-fees-2026-hero.webp, blog-american-airlines-baggage-fees-2026-inArticle-1.webp, blog-american-airlines-baggage-fees-2026-inArticle-2.webp |
+| `delta-baggage-fees-2026` | delta baggage fees 2026 | Airline Fees | blogHome-delta-baggage-fees-2026-card.webp, blog-delta-baggage-fees-2026-hero.webp, blog-delta-baggage-fees-2026-inArticle-1.webp, blog-delta-baggage-fees-2026-inArticle-2.webp |
