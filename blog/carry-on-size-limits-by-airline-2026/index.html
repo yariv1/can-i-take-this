@@ -45,11 +45,7 @@ footer{margin-top:2.4em;color:var(--muted);font-size:.82rem;border-top:1px solid
 .prose a{color:var(--accent);text-decoration:none}
 .prose a:hover{text-decoration:underline}
 /* horizontal scrollers in articles share the home-page carousel scrollbar (DESIGN_SYSTEM 8.10) */
-.prose div:has(>table),.prose .scroll-x{scrollbar-width:thin;scrollbar-color:var(--accent) var(--surface)}
-.prose div:has(>table)::-webkit-scrollbar,.prose .scroll-x::-webkit-scrollbar{height:8px}
-.prose div:has(>table)::-webkit-scrollbar-track,.prose .scroll-x::-webkit-scrollbar-track{background:var(--surface);border-radius:999px}
-.prose div:has(>table)::-webkit-scrollbar-thumb,.prose .scroll-x::-webkit-scrollbar-thumb{background:var(--muted);border-radius:999px}
-.prose div:has(>table)::-webkit-scrollbar-thumb:hover,.prose .scroll-x::-webkit-scrollbar-thumb:hover{background:var(--accent)}
+.prose div:has(>table)::-webkit-scrollbar,.prose .scroll-x::-webkit-scrollbar{height:16px}.prose div:has(>table)::-webkit-scrollbar-track,.prose .scroll-x::-webkit-scrollbar-track{background:var(--surface);border-radius:999px}.prose div:has(>table)::-webkit-scrollbar-thumb,.prose .scroll-x::-webkit-scrollbar-thumb{background:#2F416A;border:4px solid transparent;background-clip:padding-box;border-radius:999px}.prose div:has(>table)::-webkit-scrollbar-thumb:hover,.prose .scroll-x::-webkit-scrollbar-thumb:hover{background:var(--accent);background-clip:padding-box}.prose div:has(>table)::-webkit-scrollbar-button:single-button,.prose .scroll-x::-webkit-scrollbar-button:single-button{display:block;width:16px;height:16px}.prose div:has(>table)::-webkit-scrollbar-button:single-button:horizontal:decrement,.prose .scroll-x::-webkit-scrollbar-button:single-button:horizontal:decrement{background:center/16px 16px no-repeat url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2716%27 height=%2716%27 viewBox=%270 0 16 16%27%3E%3Cpath d=%27M10%203%205%208l5%205%27 fill=%27none%27 stroke=%27%232F416A%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27/%3E%3C/svg%3E")}.prose div:has(>table)::-webkit-scrollbar-button:single-button:horizontal:increment,.prose .scroll-x::-webkit-scrollbar-button:single-button:horizontal:increment{background:center/16px 16px no-repeat url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2716%27 height=%2716%27 viewBox=%270 0 16 16%27%3E%3Cpath d=%27M6%203l5%205-5%205%27 fill=%27none%27 stroke=%27%232F416A%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27/%3E%3C/svg%3E")}.prose div:has(>table)::-webkit-scrollbar-button:single-button:horizontal:decrement:hover,.prose .scroll-x::-webkit-scrollbar-button:single-button:horizontal:decrement:hover{background:center/16px 16px no-repeat url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2716%27 height=%2716%27 viewBox=%270 0 16 16%27%3E%3Cpath d=%27M10%203%205%208l5%205%27 fill=%27none%27 stroke=%27%234CC2FF%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27/%3E%3C/svg%3E")}.prose div:has(>table)::-webkit-scrollbar-button:single-button:horizontal:increment:hover,.prose .scroll-x::-webkit-scrollbar-button:single-button:horizontal:increment:hover{background:center/16px 16px no-repeat url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2716%27 height=%2716%27 viewBox=%270 0 16 16%27%3E%3Cpath d=%27M6%203l5%205-5%205%27 fill=%27none%27 stroke=%27%234CC2FF%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27/%3E%3C/svg%3E")}[data-theme="light"] .prose div:has(>table)::-webkit-scrollbar-button:single-button:horizontal:decrement:hover,[data-theme="light"] .prose .scroll-x::-webkit-scrollbar-button:single-button:horizontal:decrement:hover{background:center/16px 16px no-repeat url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2716%27 height=%2716%27 viewBox=%270 0 16 16%27%3E%3Cpath d=%27M10%203%205%208l5%205%27 fill=%27none%27 stroke=%27%231E86D6%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27/%3E%3C/svg%3E")}[data-theme="light"] .prose div:has(>table)::-webkit-scrollbar-button:single-button:horizontal:increment:hover,[data-theme="light"] .prose .scroll-x::-webkit-scrollbar-button:single-button:horizontal:increment:hover{background:center/16px 16px no-repeat url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2716%27 height=%2716%27 viewBox=%270 0 16 16%27%3E%3Cpath d=%27M6%203l5%205-5%205%27 fill=%27none%27 stroke=%27%231E86D6%27 stroke-width=%272%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27/%3E%3C/svg%3E")}@supports not selector(::-webkit-scrollbar){.prose div:has(>table),.prose .scroll-x{scrollbar-width:thin;scrollbar-color:#2F416A var(--surface)}}
 /* ── hub page hero ── */
 .hub-head{margin:0 0 2em}
 .hub-head h1{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:2rem;line-height:1.1;margin:0 0 .3em}
@@ -206,8 +202,20 @@ footer{margin-top:2.4em;color:var(--muted);font-size:.82rem;border-top:1px solid
 .sec-more a b{text-transform:uppercase;font-weight:600}
 .sec-more a:hover{text-decoration:underline}
 .sec-more a:focus-visible,.tag-link:focus-visible,.sec-back:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px}
-.bcard-scroll{display:flex;gap:1em;overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x proximity;margin:0 -18px 2.2em;padding:2px 18px 14px;scroll-padding-inline:18px;scrollbar-width:thin;scrollbar-color:var(--accent) var(--surface)}
-.bcard-scroll::-webkit-scrollbar{height:8px}.bcard-scroll::-webkit-scrollbar-track{background:var(--surface);border-radius:999px}.bcard-scroll::-webkit-scrollbar-thumb{background:var(--muted);border-radius:999px}.bcard-scroll::-webkit-scrollbar-thumb:hover{background:var(--accent)}
+.hs{margin:0 0 2.2em}
+.bcard-scroll{display:flex;gap:1em;overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x proximity;margin:0 -18px;padding:2px 18px 10px;scroll-padding-inline:18px;scrollbar-width:none}
+.bcard-scroll::-webkit-scrollbar{display:none}
+.hs-bar{display:flex;align-items:center;gap:6px;height:16px;margin-top:4px}
+.hs-btn{flex:none;width:16px;height:16px;padding:0;border:0;background:none;color:#2F416A;cursor:pointer;display:grid;place-items:center}
+.hs-btn svg{width:16px;height:16px}
+.hs-btn:hover:not(:disabled){color:var(--accent)}
+.hs-btn:disabled{opacity:.35;cursor:default}
+.hs-btn:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px}
+.hs-track{position:relative;flex:1;height:16px;border-radius:999px;background:var(--surface);cursor:pointer}
+.hs-thumb{position:absolute;top:4px;height:8px;border-radius:999px;background:#2F416A;cursor:grab;touch-action:none}
+.hs-thumb:hover,.hs-thumb.drag{background:var(--accent)}
+@media(hover:none){.hs-bar{display:none}}
+.hs.hs-fit .hs-bar{display:none}
 .bcard-scroll .bcard{flex:0 0 200px;scroll-snap-align:start}
 @media(min-width:640px){.bcard-scroll .bcard{flex-basis:230px}}
 .bcard-scroll .bcard .bcard-img-wrap{height:120px;overflow:hidden}

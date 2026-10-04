@@ -322,6 +322,7 @@ Read CONTENT_UNIQUENESS_RULES.md before writing any article or sibling page set;
 | `clear-vs-tsa-precheck-2026` | clear vs tsa precheck | US Travel Programs | blogHome-clear-vs-tsa-precheck-2026-card.webp, blog-clear-vs-tsa-precheck-2026-hero.webp, blog-clear-vs-tsa-precheck-2026-inArticle-1.webp, blog-clear-vs-tsa-precheck-2026-inArticle-2.webp | pending images |
 | `can-you-fly-without-a-real-id-2026` | can you fly without a real id | US Travel Programs | blogHome-can-you-fly-without-a-real-id-2026-card.webp, blog-can-you-fly-without-a-real-id-2026-hero.webp, blog-can-you-fly-without-a-real-id-2026-inArticle-1.webp, blog-can-you-fly-without-a-real-id-2026-inArticle-2.webp | pending images |
 | `etias-travel-authorization-2026` | etias travel authorization | Entry Permits | blogHome-etias-travel-authorization-2026-card.webp, blog-etias-travel-authorization-2026-hero.webp, blog-etias-travel-authorization-2026-inArticle-1.webp, blog-etias-travel-authorization-2026-inArticle-2.webp | pending images |
+| `uk-eta-for-us-citizens-2026` | uk eta for us citizens | Entry Permits | blogHome-uk-eta-for-us-citizens-2026-card.webp, blog-uk-eta-for-us-citizens-2026-hero.webp, blog-uk-eta-for-us-citizens-2026-inArticle-1.webp, blog-uk-eta-for-us-citizens-2026-inArticle-2.webp | pending images |
 
 Source file for these six bodies: `carryon_pages.js` (SVG size diagrams generated from the numbers).
 

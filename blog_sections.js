@@ -10,7 +10,7 @@ const INTROS = {
   'airline-fees-policies': 'Baggage fees by airline, checked on each airline\'s own website and dated.',
   'carry-on-size-by-airline': 'Carry-on and personal item size limits for each airline, with the fee when a bag is too big.',
   'us-travel-programs': 'TSA PreCheck, Global Entry, CLEAR and REAL ID: costs, how to apply and which one is worth it, from official sources.',
-  'entry-permits': 'Online travel authorizations such as ETIAS: who needs them, what they cost and how to apply on the official site.',
+  'entry-permits': 'Online travel authorizations such as ETIAS and the UK ETA: who needs them, what they cost and how to apply on the official site.',
   'packing-rules': 'Liquids, aerosols, vapes and everyday items: what you can pack and how much, in cabin and checked bags.',
   'customs-money': 'Cash declarations, duty-free allowances and customs forms by country.',
   'food-agriculture': 'Food on planes and across borders: what is allowed, biosecurity rules and fines.'
@@ -22,8 +22,21 @@ const CSS = [
   '.sec-more a b{text-transform:uppercase;font-weight:600}',
   '.sec-more a:hover{text-decoration:underline}',
   '.sec-more a:focus-visible,.tag-link:focus-visible,.sec-back:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px}',
-  '.bcard-scroll{display:flex;gap:1em;overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x proximity;margin:0 -18px 2.2em;padding:2px 18px 14px;scroll-padding-inline:18px;scrollbar-width:thin;scrollbar-color:var(--accent) var(--surface)}',
-  '.bcard-scroll::-webkit-scrollbar{height:8px}.bcard-scroll::-webkit-scrollbar-track{background:var(--surface);border-radius:999px}.bcard-scroll::-webkit-scrollbar-thumb{background:var(--muted);border-radius:999px}.bcard-scroll::-webkit-scrollbar-thumb:hover{background:var(--accent)}',
+  '.hs{margin:0 0 2.2em}',
+  '.bcard-scroll{display:flex;gap:1em;overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x proximity;margin:0 -18px;padding:2px 18px 10px;scroll-padding-inline:18px;scrollbar-width:none}',
+  '.bcard-scroll::-webkit-scrollbar{display:none}',
+  // custom bar: arrows jump one card, bar aligns with the card column (hidden on touch, where swiping is natural)
+  '.hs-bar{display:flex;align-items:center;gap:6px;height:16px;margin-top:4px}',
+  '.hs-btn{flex:none;width:16px;height:16px;padding:0;border:0;background:none;color:#2F416A;cursor:pointer;display:grid;place-items:center}',
+  '.hs-btn svg{width:16px;height:16px}',
+  '.hs-btn:hover:not(:disabled){color:var(--accent)}',
+  '.hs-btn:disabled{opacity:.35;cursor:default}',
+  '.hs-btn:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px}',
+  '.hs-track{position:relative;flex:1;height:16px;border-radius:999px;background:var(--surface);cursor:pointer}',
+  '.hs-thumb{position:absolute;top:4px;height:8px;border-radius:999px;background:#2F416A;cursor:grab;touch-action:none}',
+  '.hs-thumb:hover,.hs-thumb.drag{background:var(--accent)}',
+  '@media(hover:none){.hs-bar{display:none}}',
+  '.hs.hs-fit .hs-bar{display:none}',
   '.bcard-scroll .bcard{flex:0 0 200px;scroll-snap-align:start}',
   '@media(min-width:640px){.bcard-scroll .bcard{flex-basis:230px}}',
   '.bcard-scroll .bcard .bcard-img-wrap{height:120px;overflow:hidden}',
@@ -33,6 +46,19 @@ const CSS = [
   '.sec-back:hover{text-decoration:underline}',
   '.tag-link:hover{color:var(--accent)}'
 ].join('\n') + '\n';
+
+const CHEV = d => '<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="' + d + '"/></svg>';
+const SWIPE_BAR = '<div class="hs-bar"><button type="button" class="hs-btn" data-d="-1" aria-label="Previous articles">' + CHEV('M10 3 5 8l5 5') + '</button><div class="hs-track"><div class="hs-thumb"></div></div><button type="button" class="hs-btn" data-d="1" aria-label="Next articles">' + CHEV('M6 3l5 5-5 5') + '</button></div>';
+// One script for all rows: arrows jump one card, thumb shows/drags the position, track click jumps to that spot.
+const SWIPE_JS = '<script>(function(){document.querySelectorAll(".hs").forEach(function(hs){var row=hs.querySelector(".bcard-scroll"),track=hs.querySelector(".hs-track"),th=hs.querySelector(".hs-thumb"),b=hs.querySelectorAll(".hs-btn");' +
+  'function max(){return row.scrollWidth-row.clientWidth}' +
+  'function step(){var c=row.querySelector(".bcard");var g=parseFloat(getComputedStyle(row).columnGap)||16;return c.getBoundingClientRect().width+g}' +
+  'function upd(){var m=max();hs.classList.toggle("hs-fit",m<=1);var tw=track.clientWidth,w=Math.max(40,tw*row.clientWidth/row.scrollWidth);th.style.width=w+"px";th.style.left=(m>0?row.scrollLeft/m*(tw-w):0)+"px";b[0].disabled=row.scrollLeft<=1;b[1].disabled=row.scrollLeft>=m-1}' +
+  'b.forEach(function(x){x.addEventListener("click",function(){row.scrollTo({left:Math.round(row.scrollLeft/step())*step()+(+x.dataset.d)*step(),behavior:"smooth"})})});' +
+  'row.addEventListener("scroll",upd,{passive:true});window.addEventListener("resize",upd);' +
+  'track.addEventListener("click",function(e){if(e.target===th)return;var r=track.getBoundingClientRect(),f=(e.clientX-r.left-th.offsetWidth/2)/(r.width-th.offsetWidth);row.scrollTo({left:Math.max(0,Math.min(1,f))*max(),behavior:"smooth"})});' +
+  'th.addEventListener("pointerdown",function(e){e.preventDefault();th.setPointerCapture(e.pointerId);th.classList.add("drag");var x0=e.clientX,s0=row.scrollLeft,k=max()/(track.clientWidth-th.offsetWidth);row.style.scrollSnapType="none";function mv(ev){row.scrollLeft=s0+(ev.clientX-x0)*k}function up(){th.classList.remove("drag");row.style.scrollSnapType="";th.removeEventListener("pointermove",mv);th.removeEventListener("pointerup",up)}th.addEventListener("pointermove",mv);th.addEventListener("pointerup",up)});' +
+  'upd();setTimeout(upd,300)})})();</script>\n';
 
 const decode = s => s.replace(/&amp;/g, '&').replace(/&nbsp;/g, ' ').replace(/&#39;|&rsquo;/g, "'");
 const stripTags = s => s.replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim();
@@ -79,7 +105,7 @@ function build(hub, guides) {
     // hub: label, featured, "More on", swipe row without "Read article"
     hubBody += '<div class="cat-label">' + s.label + '</div>\n\n' + featHtml + '\n\n';
     hubBody += '<div class="sec-more"><a href="/blog/' + s.slug + '/">More on <b>' + esc(s.name) + '</b> →</a></div>\n\n';
-    if (rest.length) hubBody += '<div class="bcard-scroll">\n' + rest.map(r => r.html.replace(/\s*<div class="bcard-read">[\s\S]*?<\/div>/, '')).join('\n') + '\n</div>\n\n';
+    if (rest.length) hubBody += '<div class="hs"><div class="bcard-scroll">\n' + rest.map(r => r.html.replace(/\s*<div class="bcard-read">[\s\S]*?<\/div>/, '')).join('\n') + '\n</div>' + SWIPE_BAR + '</div>\n\n';
     // section page: featured + full-width grid with the original cards
     pages.push({
       url: '/blog/' + s.slug + '/', slug: 'blog-section-' + s.slug, sec: true,
@@ -94,6 +120,7 @@ function build(hub, guides) {
     if (!slug) return html;
     return html.replace(/(class="art-meta"[^>]*>\s*)<span class="tag tag-neutral">([\s\S]*?)<\/span>/, '$1<a class="tag tag-neutral tag-link" href="/blog/' + slug + '/">$2</a>');
   };
+  hubBody += SWIPE_JS;
   return { hub: hubBody, pages, linkTag, sections, urlToSec };
 }
 

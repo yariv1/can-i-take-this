@@ -2,6 +2,17 @@
 
 Every article has exactly four images. They are made by the user in an image generator from prompts written here. Every rule below came from a real mistake that the user rejected. Read this file before writing any image prompt, and update it when a new rule is learned.
 
+## 00. MANDATORY CONTEXT GATE (HARD RULE, cannot be skipped, 2026-10-04)
+
+Before ANY image prompt is written or handed off (first draft, revision, any article), run this gate. Skipping it is a rule violation. The user had to ask for it twice (ETIAS, then UK ETA, where the arrivals-hall image first had nothing visible tied to the article).
+
+1. Re-read the BUILT article body, not memory of it.
+2. For each of the 4 images, write down: (a) the section it sits in, (b) the exact article sentence it proves, quoted, (c) what in the picture visibly shows that sentence (a sign, note, screen text, number, object), (d) why it differs from the other three.
+3. Reject and redo the prompt if: the sentence is not visible in the picture (a generic airport, hug or passport could illustrate any article); the picture holds an element of another topic; the generator cannot render it; two images share a composition type; the sign or screen text is invented marketing wording instead of article facts.
+4. Put the article text into the scene itself (sign, note, board, screen).
+5. Show the 4 check lines (section, quoted sentence, visible proof, difference) in the reply BEFORE the four prompts, every time. A reply with prompts but without these lines is incomplete.
+6. Alt texts must be updated to match the final prompts, then rebuild and run the QA gate.
+
 ## 0. Core principles (these are the rules; everything below is detail and EXAMPLES)
 
 1. **Different items in every image** unless there is a specific reason for a repeat (for example the article is about one product that must appear). Props, products, bags and food differ in type, shape, colour and brand from image to image.
