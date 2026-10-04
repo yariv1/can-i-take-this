@@ -124,7 +124,7 @@
     + '[data-theme="light"] .units-toggle .ut-menu button[aria-checked="true"]{background:#1B2233;color:#fff}'
     + '[data-theme="light"] .units-toggle .ut-menu button[aria-checked="true"] .ut-short{color:#fff}'
     + '.units-toggle button:focus-visible{outline:2px solid var(--accent,#4CC2FF);outline-offset:2px}'
-    + '@media(max-width:420px){.units-toggle .ut-trigger{padding:6px 8px;gap:4px}.brand h1{display:none}#themeToggle #themeLabel{display:none}#themeToggle{padding:7px 9px}}';
+    + '@media(max-width:640px){.brand h1{display:none}}@media(max-width:420px){.units-toggle .ut-trigger{padding:6px 8px;gap:4px}#themeToggle #themeLabel{display:none}#themeToggle{padding:7px 9px}}';
 
   var mode = 'imp', orig = typeof WeakMap === 'function' ? new WeakMap() : null, observer = null;
   var SKIP = /^(SCRIPT|STYLE|NOSCRIPT|TEXTAREA|INPUT|SELECT|OPTION|CODE|PRE|TITLE)$/;
