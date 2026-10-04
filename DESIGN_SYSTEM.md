@@ -147,10 +147,19 @@ Three card types share one hover behavior. **All three are the source of truth f
 ### 5.1 Structure
 - **Featured** (`.bcard-featured`) — `<a>`. Grid: image left half / text right half ≥580px.
   Body: tag → title → excerpt → "Read article →". Radius 16px.
-- **Regular** (`.bcard`) — `<a>`. Column: image (140px) → body. Radius 13px. *(Currently unused
-  on the live hub; reserved for future real articles.)*
+- **Regular** (`.bcard`) — `<a>`. Column: image (140px) → body. Radius 13px. Used in the section
+  swipe rows (image 120px, no "Read article →", see 5.4) and in the section-page grid (full card).
 - **Soon** (`.bcard-soon`) — non-link placeholder. Dashed border. Column: image/placeholder
   (140px) → body (tag → title → "Coming soon" date). Radius 13px.
+
+### 5.1b Hub section layout (HARD, user design 2026-10-04; code: `blog_sections.js`, CSS `BLOGSEC.CSS`)
+Each blog hub section, top to bottom:
+1. `.cat-label` (icon + section name, unchanged).
+2. **Featured card** (`.bcard-featured`, see 5.1) = the first card of the section.
+3. `.sec-more`: right-aligned accent link "More on **SECTION NAME** →" (name uppercase, 0.92rem, 600) to `/blog/<section-slug>/`. Shown for EVERY section, also with one article (SEO, future growth).
+4. `.bcard-scroll`: horizontal swipe row of all remaining cards. Card width 200px (230px ≥640px), image 120px (forced, overrides the inline 140px), title up to 4 lines, **no "Read article →"**, scroll-snap, bleeds to the screen edge (margin -18px), carousel scrollbar per 8.10 (thin, accent track colours as `.hg-row`). Hidden when the section has one article.
+Section page `/blog/<slug>/`: title, "← All articles" link, intro line (INTROS in blog_sections.js), featured card, then `.bcard-grid` of the remaining full cards (one column on phones). Sitemap priority 0.8. No duplicate cat-label (the h1 is the name).
+Article meta tag (`.art-meta .tag`) is auto-converted to `a.tag.tag-neutral.tag-link` to its section page (hover: accent colour, focus ring). Never hand-write that link.
 
 ### 5.2 Colors (locked this session)
 | Element | Color | Notes |
@@ -277,6 +286,7 @@ Bordered card, icon left column, `tl-when` in `var(--muted)` Space Mono. Use for
 Left border `var(--accent)`, background `var(--surface)`, text `var(--muted)`.
 
 ### 8.7 Article meta
+(The category tag is turned into a link to its blog section page at build time by `blog_sections.js`; write it as a plain span.)
 
 ```html
 <div class="art-meta">

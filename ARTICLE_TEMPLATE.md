@@ -71,6 +71,8 @@ Example: slug `liquids-2026-traps` → `BODY_LIQUIDS_2026`
 </a>
 ```
 
+### HUB STRUCTURE (updated 2026-10-04): add the article as a regular `.bcard` inside its section's card list in BODY_BLOG_INDEX (the wire script clones the previous card). The FIRST card of a section is shown as the featured card automatically (excerpt = the article's `desc`), the rest go into the swipe row, and `/blog/<section>/` lists everything. A new section needs a `cat-label` plus an `INTROS` entry in `blog_sections.js`. The tag in the article meta bar is linked to the section page automatically; its text should still match the hub card tag. See DESIGN_SYSTEM.md 5.1b and BLOG_SYSTEM.md.
+
 ### Or add as regular bcard (when 2+ articles exist in category):
 ```html
 <a class="bcard" href="/blog/[slug]/">
