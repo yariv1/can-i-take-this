@@ -330,7 +330,7 @@ Icons make articles scannable. Humans do not consume content as walls of text. *
   Hover: icon + border → `--accent`. Active: bg `--surface-2`. Focus-visible: 2px `--accent` outline.
 - Behavior (inline `onclick`): same-origin referrer + history → `history.back()` (browser restores
   the previous page's scroll position); otherwise follows `href` (`/`, or `/blog/` on articles).
-- ≤420px: h1 shrinks to 16px, no wrap; ≤370px: theme label hidden (icon only).
+- Phone header sizing (wordmark hidden ≤640px, theme button icon only ≤420px) is now owned by `units.js` — see "Unit switch" below. This older ≤420px/≤370px note is superseded.
 - New blog articles must copy the topbar from an existing article so they inherit it.
 
 ## Unit switch (`units.js`) — HARD RULE, every page, every template
@@ -338,7 +338,11 @@ Icons make articles scannable. Humans do not consume content as walls of text. *
 Site-wide length/weight switch. One shared file, `/units.js`, loaded with `<script src="/units.js" defer></script>` right after `/feedback.js` in **every** page template (home/app, airShell, countryShell, airPlaneShell, guideShell, blog hub). A new template without that line is a bug.
 
 - **Control:** a dropdown pill "in · lb ▾" injected into `.topbar-right`, just before the theme button (a template must keep a `.topbar-right` with `#themeToggle`). Menu rows: "Inches · pounds", "Centimetres · kilograms". Inch first (US audience first). Not a two-segment toggle — it was too wide on phones.
-- **Phones (<=420px):** the Light/Dark button is icon only (sun in dark theme, moon in light theme, inline SVG in each template's `__lbl`). The label is hidden by `units.js` CSS.
+- **Phones, header (HARD RULE, set by the user 2026-10-04):** the header must fit the back button, logo mark, Blog pill, unit dropdown and theme button at 360-412px wide (Galaxy S22 is the reference device) with no overlap and no horizontal scroll.
+  - **<=640px:** the wordmark (`.brand h1`, "can i take this?") is hidden on every phone; the logo mark stays. Tablet and desktop show it.
+  - **<=420px:** the unit trigger gets tighter padding and the Light/Dark button is icon only (sun in dark theme, moon in light theme, inline SVG written in each template's `__lbl` and initial markup). The label is hidden by `units.js` CSS.
+  - Both rules live in the CSS string inside `units.js` (not in the templates). A new template must still have `.brand h1` for the wordmark, `.topbar-right` and `#themeToggle`, and must be checked at 360px, 412px and 640px before deploy.
+- **Regression check:** `node audit_units.js` converts every built page in both modes and lists leftovers, stat strips with the unit in the label, and false positives. Run it after changing `units.js` or adding a new page type. Known false positives in its output: the word "in" in the imperial-left-in-metric list ("17 in the UK"), and dual forms that intentionally keep both units.
 - **Choice:** saved in `localStorage['citt-units']` ('imp' | 'met'). First visit: browser language region (US, LR, MM = imperial), else timezone, else imperial. No IP lookup. `<html data-units>` mirrors it.
 - **Scope:** length (cm/in) and weight (kg/lb) only. NOT volume (ml/oz), grams or currency.
 - **How content converts:** at runtime `units.js` rewrites visible text nodes (and anything the app draws later, via MutationObserver). Authored HTML is never changed, so search engines see the original. Write content normally in the airline's own unit; do not pre-convert.
