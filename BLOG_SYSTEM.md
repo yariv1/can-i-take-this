@@ -333,3 +333,9 @@ Hub sections now: Medications, Batteries & Electronics, **Airline Fees & Policie
 Every article page loads `/units.js` (already in `guideShell`). Write numbers in the airline's own unit; the reader's in·lb / cm·kg dropdown in the header converts them. In stat strips keep the number in `.stat-num` and the unit word first in `.stat-label`. For SVG size diagrams labels convert automatically. Do not add manual converted copies except the dual form "22 × 14 × 9 in (56 × 36 × 23 cm)" which `units.js` reorders. Full rules: DESIGN_SYSTEM.md "Unit switch".
 
 - **QA gate (2026-10-04):** every new article must pass `node audit_article_qa.js <slug>` before the preview link and again before deploy; see ARTICLE_QA.md.
+
+## Blog hub sections and section pages (2026-10-04, user design)
+- `blog_sections.js` parses `BODY_BLOG_INDEX` in build.js at build time. Per section the hub shows: label, featured card (the FIRST card of the section; non-Medications sections get an excerpt from the article `desc`), "More on <SECTION> →", then a swipe row of the other cards WITHOUT "Read article →". Every section also gets `/blog/<section-slug>/` (featured + full-width grid, same cards) and is in the sitemap.
+- Adding an article: add the card to its section in BODY_BLOG_INDEX as before (wire script). New section = new `cat-label` + an entry in `INTROS` in blog_sections.js (build throws otherwise). Section slug = lowercase name, "&" dropped, hyphens.
+- Article tag (art-meta) is linked to its section page automatically. Articles missing from the hub (aerosols, carry-on-size-limits-by-airline, duty-free-bag-extra-carry-on, is-deodorant-a-liquid, liquids-100ml-rule, vapes-country-rules) have no section/link: known gap, ask before adding.
+- Gate: audit_article_qa.js checks the tag link; section dirs are skipped.

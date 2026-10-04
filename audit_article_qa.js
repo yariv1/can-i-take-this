@@ -15,7 +15,7 @@ const only = process.argv[2];
 const dec = s => s.replace(/&nbsp;/g, ' ').replace(/&ndash;/g, '–').replace(/&mdash;/g, '—').replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/&#39;|&rsquo;|&lsquo;/g, "'").replace(/&euro;/g, '€').replace(/&pound;/g, '£');
 const read = f => fs.existsSync(f) ? fs.readFileSync(f, 'utf8') : '';
 const hub = read('blog/index.html'), list = read('ARTICLES_LIST.md'), sys = read('BLOG_SYSTEM.md'), sitemap = read('sitemap.xml');
-const slugs = fs.readdirSync('blog', { withFileTypes: true }).filter(e => e.isDirectory() && fs.existsSync('blog/' + e.name + '/index.html')).map(e => e.name).filter(s => !only || s === only);
+const slugs = fs.readdirSync('blog', { withFileTypes: true }).filter(e => e.isDirectory() && fs.existsSync('blog/' + e.name + '/index.html')).map(e => e.name).filter(s => /-20\d\d$/.test(s)).filter(s => !only || s === only); // section pages (/blog/medications/ ...) are not articles
 const SYM = { USD: '$', EUR: '€', GBP: '£' };
 const EXEMPT = /customs|duty-free|declaration|-by-country/i; // identical to EXEMPT_PATH in currency.js: legal-limit pages are never converted
 const RX = /(?<![A-Za-z0-9$€£])(?<!(?:AUD|CAD|NZD|SGD|HKD|MXN|BRL|ARS|COP|CLP)\s?)(US\$|\$|€|£)\s?(\d{1,3}(?:,\d{3})*|\d+)/g;
@@ -90,6 +90,7 @@ async function runtimeCurrency(slug, fail) {
       if (f.startsWith('blog-') && !html.includes(f)) fail.push('image not used in page: ' + f);
     }
     if (!hub.includes('blogHome-' + slug + '-card.webp')) fail.push('hub card missing in blog/index.html');
+    if (!/class="art-meta"[^>]*>\s*<a class="tag tag-neutral tag-link" href="\/blog\/[a-z0-9-]+\/"/.test(html)) fail.push('article tag does not link to its blog section page');
     for (const m of html.matchAll(/<img\b[^>]*>/gi)) {
       if (/class="fimg"|width="26"|flagcdn\.com|gstatic\.com/.test(m[0])) continue;
       const alt = (m[0].match(/\balt="([^"]*)"/) || [])[1];

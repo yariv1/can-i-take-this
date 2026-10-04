@@ -201,6 +201,21 @@ footer{margin-top:2.4em;color:var(--muted);font-size:.82rem;border-top:1px solid
 .ico-ok{display:inline-block;width:1.3em;height:1.3em;vertical-align:-.3em;border-radius:.3em;background:#6FD08C url('data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2016%2016%27%3E%3Cpath%20d%3D%27M3.6%208.6l3%203%205.9-6.6%27%20fill%3D%27none%27%20stroke%3D%27%230B2A18%27%20stroke-width%3D%272.3%27%20stroke-linecap%3D%27round%27%20stroke-linejoin%3D%27round%27%2F%3E%3C%2Fsvg%3E') center/78% no-repeat}
 .num-ic{display:inline-flex;align-items:center;justify-content:center;width:1.4em;height:1.4em;border-radius:.3em;background:var(--accent);color:#08111f;font:700 .85em/1 Inter,sans-serif;vertical-align:-.2em}
 [data-theme="light"] .num-ic{color:#fff}
+.sec-more{display:flex;justify-content:flex-end;margin:-.4em 0 .8em}
+.sec-more a{color:var(--accent);font-size:.92rem;font-weight:600;text-decoration:none;text-transform:none}
+.sec-more a b{text-transform:uppercase;font-weight:600}
+.sec-more a:hover{text-decoration:underline}
+.sec-more a:focus-visible,.tag-link:focus-visible,.sec-back:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px}
+.bcard-scroll{display:flex;gap:1em;overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x proximity;margin:0 -18px 2.2em;padding:2px 18px 14px;scroll-padding-inline:18px;scrollbar-width:thin;scrollbar-color:var(--accent) var(--surface)}
+.bcard-scroll::-webkit-scrollbar{height:8px}.bcard-scroll::-webkit-scrollbar-track{background:var(--surface);border-radius:999px}.bcard-scroll::-webkit-scrollbar-thumb{background:var(--muted);border-radius:999px}.bcard-scroll::-webkit-scrollbar-thumb:hover{background:var(--accent)}
+.bcard-scroll .bcard{flex:0 0 200px;scroll-snap-align:start}
+@media(min-width:640px){.bcard-scroll .bcard{flex-basis:230px}}
+.bcard-scroll .bcard .bcard-img-wrap{height:120px;overflow:hidden}
+.bcard-scroll .bcard .bcard-img-wrap img{height:100% !important}
+.bcard-scroll .bcard .bcard-title{-webkit-line-clamp:4;font-size:1rem}
+.sec-back{display:inline-block;color:var(--accent);font-weight:600;text-decoration:none;margin-bottom:.6em}
+.sec-back:hover{text-decoration:underline}
+.tag-link:hover{color:var(--accent)}
 </style></head><body>
 <div class="wrap">
 <div class="topbar"><div class="topbar-left"><a class="back-btn" href="/" aria-label="Go back" onclick="if(history.length>1&&document.referrer.indexOf(location.origin)==0){history.back();return false}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M12 19l-7-7 7-7"/></svg></a><a class="brand" href="/" aria-label="canitakethis.co home"><span class="mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.8 19.2 16 11l3.5-3.5a2.1 2.1 0 0 0-3-3L13 8 4.8 6.2a.5.5 0 0 0-.5.8l3.9 4.3-2 2-2.2-.4a.5.5 0 0 0-.5.8L6 17l2.7 2.4a.5.5 0 0 0 .8-.5l-.4-2.2 2-2 4.3 3.9a.5.5 0 0 0 .8-.5Z"/></svg></span><h1>can i take this?</h1></a></div><div class="topbar-right"><a href="/blog/" class="hdr-blog-link">Blog</a><button class="theme-toggle" id="themeToggle" onclick="__tt()"><span class="ico" id="themeIcon"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></span><span id="themeLabel">Light</span></button></div></div>
@@ -224,61 +239,56 @@ footer{margin-top:2.4em;color:var(--muted);font-size:.82rem;border-top:1px solid
   </div>
 </a>
 
-<div class="bcard-grid">
-  <a class="bcard" href="/blog/ozempic-glp1-travel-rules-2026/">
+<div class="sec-more"><a href="/blog/medications/">More on <b>Medications</b> →</a></div>
+
+<div class="bcard-scroll">
+<a class="bcard" href="/blog/ozempic-glp1-travel-rules-2026/">
     <div class="bcard-img-wrap"><img src="/assets/blog/blogHome-ozempic-glp1-travel-rules-2026-card.webp" alt="GLP-1 injection pen and insulated cooling pouch packed for travel" style="width:100%;height:140px;object-fit:cover;display:block"></div>
     <div class="bcard-body">
       <span class="tag tag-neutral bcard-tag">Injectables</span>
       <div class="bcard-title">Flying with Ozempic &amp; Injectable Medications (2026)</div>
-      <div class="bcard-read">Read article →</div>
     </div>
   </a>
-  <a class="bcard" href="/blog/cbd-medical-cannabis-travel-2026/">
+<a class="bcard" href="/blog/cbd-medical-cannabis-travel-2026/">
     <div class="bcard-img-wrap"><img src="/assets/blog/blogHome-cbd-medical-cannabis-travel-2026-card.webp" alt="CBD oil bottle and lab certificate packed beside a passport" style="width:100%;height:140px;object-fit:cover;display:block"></div>
     <div class="bcard-body">
       <span class="tag tag-neutral bcard-tag">CBD &amp; Cannabis</span>
       <div class="bcard-title">Flying with CBD &amp; Medical Cannabis (2026)</div>
-      <div class="bcard-read">Read article →</div>
     </div>
   </a>
-  <a class="bcard" href="/blog/pill-organizers-vs-original-bottles-2026/">
+<a class="bcard" href="/blog/pill-organizers-vs-original-bottles-2026/">
     <div class="bcard-img-wrap"><img src="/assets/blog/blogHome-pill-organizers-vs-original-bottles-2026-card.webp" alt="Weekly pill organizer beside original prescription bottles" style="width:100%;height:140px;object-fit:cover;display:block"></div>
     <div class="bcard-body">
       <span class="tag tag-neutral bcard-tag">Pill Organizers</span>
       <div class="bcard-title">Pill Organizers vs. Original Prescription Bottles</div>
-      <div class="bcard-read">Read article →</div>
     </div>
   </a>
-  <a class="bcard" href="/blog/liquid-medication-exemption-2026/">
+<a class="bcard" href="/blog/liquid-medication-exemption-2026/">
     <div class="bcard-img-wrap"><img src="/assets/blog/blogHome-liquid-medication-exemption-2026-card.webp" alt="Large liquid medication bottle beside a security tray" style="width:100%;height:140px;object-fit:cover;display:block"></div>
     <div class="bcard-body">
       <span class="tag tag-neutral bcard-tag">Liquid Meds</span>
       <div class="bcard-title">The 3-1-1 Liquid Medication Exemption</div>
-      <div class="bcard-read">Read article →</div>
     </div>
   </a>
-  <a class="bcard" href="/blog/syringes-epipens-insulin-ice-packs-2026/">
+<a class="bcard" href="/blog/syringes-epipens-insulin-ice-packs-2026/">
     <div class="bcard-img-wrap"><img src="/assets/blog/blogHome-syringes-epipens-insulin-ice-packs-2026-card.webp" alt="Auto-injector pen, syringes, and a gel ice pack in a travel medical kit" style="width:100%;height:140px;object-fit:cover;display:block"></div>
     <div class="bcard-body">
       <span class="tag tag-neutral bcard-tag">Sharps &amp; Injectables</span>
       <div class="bcard-title">Syringes, EpiPens, Insulin &amp; Gel Ice Packs</div>
-      <div class="bcard-read">Read article →</div>
     </div>
   </a>
-  <a class="bcard" href="/blog/controlled-substances-painkillers-abroad-2026/">
+<a class="bcard" href="/blog/controlled-substances-painkillers-abroad-2026/">
     <div class="bcard-img-wrap"><img src="/assets/blog/blogHome-controlled-substances-painkillers-abroad-2026-card.webp" alt="Labelled prescription pill bottles beside a doctor's letter and a passport" style="width:100%;height:140px;object-fit:cover;display:block"></div>
     <div class="bcard-body">
       <span class="tag tag-neutral bcard-tag">Controlled Substances</span>
       <div class="bcard-title">Controlled Substances &amp; Painkillers Across Borders</div>
-      <div class="bcard-read">Read article →</div>
     </div>
   </a>
-  <a class="bcard" href="/blog/medication-time-zones-2026/">
+<a class="bcard" href="/blog/medication-time-zones-2026/">
     <div class="bcard-img-wrap"><img src="/assets/blog/blogHome-medication-time-zones-2026-card.webp" alt="Pill organizer, watches set to different time zones, and a passport on a packing table" style="width:100%;height:140px;object-fit:cover;display:block"></div>
     <div class="bcard-body">
       <span class="tag tag-neutral bcard-tag">Time Zones</span>
       <div class="bcard-title">Managing Time-Sensitive Medications Across Time Zones</div>
-      <div class="bcard-read">Read article →</div>
     </div>
   </a>
 </div>
@@ -297,13 +307,14 @@ footer{margin-top:2.4em;color:var(--muted);font-size:.82rem;border-top:1px solid
   </div>
 </a>
 
-<div class="bcard-grid">
-  <a class="bcard" href="/blog/power-bank-rules-by-airline-2026/">
+<div class="sec-more"><a href="/blog/batteries-electronics/">More on <b>Batteries &amp; Electronics</b> →</a></div>
+
+<div class="bcard-scroll">
+<a class="bcard" href="/blog/power-bank-rules-by-airline-2026/">
     <div class="bcard-img-wrap"><img src="/assets/blog/blogHome-power-bank-rules-by-airline-2026-card.webp" alt="Gate agent at gate C5 of Hamad International Airport in Doha holding up a power bank label to a passenger beside a sign reading power banks carry-on bag only" style="width:100%;height:140px;object-fit:cover;display:block"></div>
     <div class="bcard-body">
       <span class="tag tag-neutral bcard-tag">Batteries &amp; Electronics <span class="bcard-new">New</span></span>
       <div class="bcard-title">Power Bank Rules by Airline (2026): 33 Airlines Compared</div>
-      <div class="bcard-read">Read article →</div>
     </div>
   </a>
 </div>
@@ -322,217 +333,178 @@ footer{margin-top:2.4em;color:var(--muted);font-size:.82rem;border-top:1px solid
   </div>
 </a>
 
-<div class="bcard-grid">
-  <a class="bcard" href="/blog/southwest-baggage-fees-2026/">
+<div class="sec-more"><a href="/blog/airline-fees-policies/">More on <b>Airline Fees &amp; Policies</b> →</a></div>
+
+<div class="bcard-scroll">
+<a class="bcard" href="/blog/southwest-baggage-fees-2026/">
     <div class="bcard-img-wrap"><img src="/assets/blog/blogHome-southwest-baggage-fees-2026-card.webp" alt="Southwest gate agent at a Baltimore/Washington gate pointing with a traveler to a sign showing checked bags $45 first and $55 second" style="width:100%;height:140px;object-fit:cover;display:block"></div>
     <div class="bcard-body">
       <span class="tag tag-neutral bcard-tag">Baggage Fees <span class="bcard-new">New</span></span>
       <div class="bcard-title">Southwest Baggage Fees 2026: $45 First Bag and Who Pays $0</div>
-      <div class="bcard-read">Read article →</div>
     </div>
   </a>
-  <a class="bcard" href="/blog/delta-baggage-fees-2026/">
+<a class="bcard" href="/blog/delta-baggage-fees-2026/">
     <div class="bcard-img-wrap"><img src="/assets/blog/blogHome-delta-baggage-fees-2026-card.webp" alt="Colombian-American woman handing a pink suitcase to a Delta curbside agent at LaGuardia Terminal C under a sign showing bags $45 and $55 each way" style="width:100%;height:140px;object-fit:cover;display:block"></div>
     <div class="bcard-body">
       <span class="tag tag-neutral bcard-tag">Baggage Fees <span class="bcard-new">New</span></span>
       <div class="bcard-title">Delta Baggage Fees 2026</div>
-      <div class="bcard-read">Read article →</div>
     </div>
   </a>
-  <a class="bcard" href="/blog/jetblue-baggage-fees-2026/">
+<a class="bcard" href="/blog/jetblue-baggage-fees-2026/">
     <div class="bcard-img-wrap"><img src="/assets/blog/blogHome-jetblue-baggage-fees-2026-card.webp" alt="Haitian-American traveler pointing at a sign showing checked bags $45 and $59 off-peak while a JetBlue agent tags a turquoise suitcase at Fort Lauderdale airport" style="width:100%;height:140px;object-fit:cover;display:block"></div>
     <div class="bcard-body">
       <span class="tag tag-neutral bcard-tag">Baggage Fees <span class="bcard-new">New</span></span>
       <div class="bcard-title">JetBlue Baggage Fees 2026: Peak vs Off-Peak Prices</div>
-      <div class="bcard-read">Read article →</div>
     </div>
   </a>
 </div>
 
 <div class="cat-label">🧳 Carry-On Size by Airline</div>
 
-<div class="bcard-grid">
-  <a class="bcard" href="/blog/delta-carry-on-size-2026/">
-    <div class="bcard-img-wrap"><img src="/assets/blog/blogHome-delta-carry-on-size-2026-card.webp" alt="Fijian-Indian woman pushing a navy roller bag into the bag sizer frame at the Delta check-in in Los Angeles Terminal 3 under a sign showing the 22 x 14 x 9 inch limit" style="width:100%;height:140px;object-fit:cover;display:block"></div>
-    <div class="bcard-body">
-      <span class="tag tag-neutral bcard-tag">Carry-On Size <span class="bcard-new">New</span></span>
-      <div class="bcard-title">Delta Carry-On Size 2026: 22 x 14 x 9 in</div>
-      <div class="bcard-read">Read article →</div>
-    </div>
-  </a>
-  <a class="bcard" href="/blog/jetblue-carry-on-size-2026/">
+<a class="bcard-featured" href="/blog/delta-carry-on-size-2026/">
+  <div class="bcard-img-wrap">
+    <img src="/assets/blog/blogHome-delta-carry-on-size-2026-card.webp" alt="Fijian-Indian woman pushing a navy roller bag into the bag sizer frame at the Delta check-in in Los Angeles Terminal 3 under a sign showing the 22 x 14 x 9 inch limit" width="800" height="400">
+  </div>
+  <div class="bcard-body">
+    <span class="tag tag-neutral bcard-tag">Carry-On Size <span class="bcard-new">New</span></span>
+    <h2 class="bcard-title">Delta Carry-On Size 2026: 22 x 14 x 9 in</h2>
+    <p class="bcard-excerpt">Delta carry-on bag size is 22 x 14 x 9 inches (56 x 35 x 23 cm) with a 45 linear inch total. What counts, the personal item, and the small-plane exception.</p>
+    <span class="bcard-read">Read article →</span>
+  </div>
+</a>
+
+<div class="sec-more"><a href="/blog/carry-on-size-by-airline/">More on <b>Carry-On Size by Airline</b> →</a></div>
+
+<div class="bcard-scroll">
+<a class="bcard" href="/blog/jetblue-carry-on-size-2026/">
     <div class="bcard-img-wrap"><img src="/assets/blog/blogHome-jetblue-carry-on-size-2026-card.webp" alt="Woman holding a small black backpack against the personal item size sign at the JetBlue gate in Boston Logan Terminal C" style="width:100%;height:140px;object-fit:cover;display:block"></div>
     <div class="bcard-body">
       <span class="tag tag-neutral bcard-tag">Carry-On Size <span class="bcard-new">New</span></span>
       <div class="bcard-title">JetBlue Carry-On Size 2026: Personal Item 17 x 13 x 8 in</div>
-      <div class="bcard-read">Read article →</div>
     </div>
   </a>
-  <a class="bcard" href="/blog/american-airlines-carry-on-size-2026/">
+<a class="bcard" href="/blog/american-airlines-carry-on-size-2026/">
     <div class="bcard-img-wrap"><img src="/assets/blog/blogHome-american-airlines-carry-on-size-2026-card.webp" alt="Man placing a charcoal roller bag into the sizer frame at the American Airlines gate in Charlotte while the agent talks to him" style="width:100%;height:140px;object-fit:cover;display:block"></div>
     <div class="bcard-body">
       <span class="tag tag-neutral bcard-tag">Carry-On Size <span class="bcard-new">New</span></span>
       <div class="bcard-title">American Airlines Carry-On Size 2026</div>
-      <div class="bcard-read">Read article →</div>
     </div>
   </a>
-  <a class="bcard" href="/blog/alaska-airlines-carry-on-size-2026/">
+<a class="bcard" href="/blog/alaska-airlines-carry-on-size-2026/">
     <div class="bcard-img-wrap"><img src="/assets/blog/blogHome-alaska-airlines-carry-on-size-2026-card.webp" alt="Man reading the carry-on size sign at the Alaska Airlines gate in Seattle while the gate agent talks to him" style="width:100%;height:140px;object-fit:cover;display:block"></div>
     <div class="bcard-body">
       <span class="tag tag-neutral bcard-tag">Carry-On Size <span class="bcard-new">New</span></span>
       <div class="bcard-title">Alaska Airlines Carry-On Size 2026</div>
-      <div class="bcard-read">Read article →</div>
     </div>
   </a>
-  <a class="bcard" href="/blog/southwest-carry-on-size-2026/">
+<a class="bcard" href="/blog/southwest-carry-on-size-2026/">
     <div class="bcard-img-wrap"><img src="/assets/blog/blogHome-southwest-carry-on-size-2026-card.webp" alt="Woman fitting a large grey roller bag into the sizer frame at the Southwest gate in Denver beside a sign showing the 24 x 16 x 10 inch limit" style="width:100%;height:140px;object-fit:cover;display:block"></div>
     <div class="bcard-body">
       <span class="tag tag-neutral bcard-tag">Carry-On Size <span class="bcard-new">New</span></span>
       <div class="bcard-title">Southwest Carry-On Size 2026: 24 x 16 x 10 in</div>
-      <div class="bcard-read">Read article →</div>
     </div>
   </a>
-  <a class="bcard" href="/blog/frontier-carry-on-size-2026/">
+<a class="bcard" href="/blog/frontier-carry-on-size-2026/">
     <div class="bcard-img-wrap"><img src="/assets/blog/blogHome-frontier-carry-on-size-2026-card.webp" alt="Man holding a bulging backpack against the personal item size sign at the Frontier gate in Cleveland while the agent looks at it" style="width:100%;height:140px;object-fit:cover;display:block"></div>
     <div class="bcard-body">
       <span class="tag tag-neutral bcard-tag">Carry-On Size <span class="bcard-new">New</span></span>
       <div class="bcard-title">Frontier Carry-On Size 2026: Why It Is a Paid Bag</div>
-      <div class="bcard-read">Read article →</div>
     </div>
   </a>
 </div>
 
 <div class="cat-label">🛂 US Travel Programs</div>
 
-<div class="bcard-grid">
-  <a class="bcard" href="/blog/tsa-precheck-vs-global-entry-vs-clear-2026/">
-    <div class="bcard-img-wrap"><img src="/assets/blog/blogHome-tsa-precheck-vs-global-entry-vs-clear-2026-card.webp" alt="Man in a tan jacket handing his boarding pass to a TSA officer at the TSA PreCheck lane entrance of Fort Lauderdale Terminal 2, with a CLEAR+ lane and the standard queue beside it" style="width:100%;height:140px;object-fit:cover;display:block"></div>
-    <div class="bcard-body">
-      <span class="tag tag-neutral bcard-tag">US Travel Programs <span class="bcard-new">New</span></span>
-      <div class="bcard-title">TSA PreCheck vs Global Entry vs CLEAR (2026): Cost, Speed and Which to Get</div>
-      <div class="bcard-read">Read article →</div>
-    </div>
-  </a>
-  <a class="bcard" href="/blog/tsa-precheck-cost-how-to-apply-2026/">
+<a class="bcard-featured" href="/blog/tsa-precheck-vs-global-entry-vs-clear-2026/">
+  <div class="bcard-img-wrap">
+    <img src="/assets/blog/blogHome-tsa-precheck-vs-global-entry-vs-clear-2026-card.webp" alt="Man in a tan jacket handing his boarding pass to a TSA officer at the TSA PreCheck lane entrance of Fort Lauderdale Terminal 2, with a CLEAR+ lane and the standard queue beside it" width="800" height="400">
+  </div>
+  <div class="bcard-body">
+    <span class="tag tag-neutral bcard-tag">US Travel Programs <span class="bcard-new">New</span></span>
+    <h2 class="bcard-title">TSA PreCheck vs Global Entry vs CLEAR (2026): Cost, Speed and Which to Get</h2>
+    <p class="bcard-excerpt">TSA PreCheck costs $79.75 to $85, Global Entry $120 (PreCheck included), CLEAR+ $219 a year. What each does, who can apply and which one to get.</p>
+    <span class="bcard-read">Read article →</span>
+  </div>
+</a>
+
+<div class="sec-more"><a href="/blog/us-travel-programs/">More on <b>US Travel Programs</b> →</a></div>
+
+<div class="bcard-scroll">
+<a class="bcard" href="/blog/tsa-precheck-cost-how-to-apply-2026/">
     <div class="bcard-img-wrap"><img src="/assets/blog/blogHome-tsa-precheck-cost-how-to-apply-2026-card.webp" alt="Woman placing four fingers on a fingerprint scanner at a TSA PreCheck enrollment appointment while a silver-haired enrollment agent watches the monitor" style="width:100%;height:140px;object-fit:cover;display:block"></div>
     <div class="bcard-body">
       <span class="tag tag-neutral bcard-tag">US Travel Programs <span class="bcard-new">New</span></span>
       <div class="bcard-title">TSA PreCheck Cost and How to Apply (2026): Fees by Provider, Steps and Renewal</div>
-      <div class="bcard-read">Read article →</div>
     </div>
   </a>
-  <a class="bcard" href="/blog/global-entry-cost-application-interview-2026/">
+<a class="bcard" href="/blog/global-entry-cost-application-interview-2026/">
     <div class="bcard-img-wrap"><img src="/assets/blog/blogHome-global-entry-cost-application-interview-2026-card.webp" alt="Man in an orange quarter-zip at a Global Entry kiosk at New Orleans airport with his passport face-down in the slot and his hand on the green fingerprint reader" style="width:100%;height:140px;object-fit:cover;display:block"></div>
     <div class="bcard-body">
       <span class="tag tag-neutral bcard-tag">US Travel Programs <span class="bcard-new">New</span></span>
       <div class="bcard-title">Global Entry Cost, Application and Interview (2026): Step by Step to Renewal</div>
-      <div class="bcard-read">Read article →</div>
     </div>
   </a>
-  <a class="bcard" href="/blog/clear-vs-tsa-precheck-2026/">
+<a class="bcard" href="/blog/clear-vs-tsa-precheck-2026/">
     <div class="bcard-img-wrap"><img src="/assets/blog/blogHome-clear-vs-tsa-precheck-2026-card.webp" alt="Two parents and a young daughter walking together through a CLEAR+ lane at Baltimore airport while the mother scans her phone boarding pass" style="width:100%;height:140px;object-fit:cover;display:block"></div>
     <div class="bcard-body">
       <span class="tag tag-neutral bcard-tag">US Travel Programs <span class="bcard-new">New</span></span>
       <div class="bcard-title">CLEAR vs TSA PreCheck (2026): What Each Does and Is CLEAR+ Worth It</div>
-      <div class="bcard-read">Read article →</div>
     </div>
   </a>
-  <a class="bcard" href="/blog/can-you-fly-without-a-real-id-2026/">
+<a class="bcard" href="/blog/can-you-fly-without-a-real-id-2026/">
     <div class="bcard-img-wrap"><img src="/assets/blog/blogHome-can-you-fly-without-a-real-id-2026-card.webp" alt="Woman holding a folder and a ticket stub in a driver license office waiting room, looking up at a Now Serving screen and a poster that lists the documents needed for a REAL ID" style="width:100%;height:140px;object-fit:cover;display:block"></div>
     <div class="bcard-body">
       <span class="tag tag-neutral bcard-tag">US Travel Programs <span class="bcard-new">New</span></span>
       <div class="bcard-title">Can You Fly Without a REAL ID? (2026): The $45 ConfirmID Fee and Accepted IDs</div>
-      <div class="bcard-read">Read article →</div>
     </div>
   </a>
 </div>
 
 <div class="cat-label">🛃 Entry Permits</div>
 
-<div class="bcard-grid">
-  <a class="bcard" href="/blog/etias-travel-authorization-2026/">
-    <div class="bcard-img-wrap"><img src="/assets/blog/blogHome-etias-travel-authorization-2026-card.webp" alt="Woman at a kitchen table in an Athens apartment sticking a handwritten note that says ETIAS not open yet, passport only onto a printed trip itinerary beside a U.S. passport" style="width:100%;height:140px;object-fit:cover;display:block"></div>
-    <div class="bcard-body">
-      <span class="tag tag-neutral bcard-tag">Entry Permits <span class="bcard-new">New</span></span>
-      <div class="bcard-title">ETIAS Travel Authorization (2026): What It Is, Start Date and How to Apply</div>
-      <div class="bcard-read">Read article →</div>
-    </div>
-  </a>
-</div>
+<a class="bcard-featured" href="/blog/etias-travel-authorization-2026/">
+  <div class="bcard-img-wrap">
+    <img src="/assets/blog/blogHome-etias-travel-authorization-2026-card.webp" alt="Woman at a kitchen table in an Athens apartment sticking a handwritten note that says ETIAS not open yet, passport only onto a printed trip itinerary beside a U.S. passport" width="800" height="400">
+  </div>
+  <div class="bcard-body">
+    <span class="tag tag-neutral bcard-tag">Entry Permits <span class="bcard-new">New</span></span>
+    <h2 class="bcard-title">ETIAS Travel Authorization (2026): What It Is, Start Date and How to Apply</h2>
+    <p class="bcard-excerpt">ETIAS is not live yet and has no confirmed start date. The EU fee will be €20, valid 3 years, for 30 countries. How to apply once it opens and how to spot fake sites.</p>
+    <span class="bcard-read">Read article →</span>
+  </div>
+</a>
+
+<div class="sec-more"><a href="/blog/entry-permits/">More on <b>Entry Permits</b> →</a></div>
 
 <div class="cat-label">📋 Packing Rules</div>
 
-<div class="bcard-grid">
-  <a class="bcard" href="/blog/how-much-liquid-can-you-put-in-checked-bag-2026/">
-    <div class="bcard-img-wrap"><img src="/assets/blog/blogHome-how-much-liquid-can-you-put-in-checked-bag-2026-card.webp" alt="Native Hawaiian man and his daughter at the Honolulu airport checking the label on a bottle of spiced rum before packing it, beside a sign about the 5 liter alcohol limit" style="width:100%;height:140px;object-fit:cover;display:block"></div>
-    <div class="bcard-body">
-      <span class="tag tag-neutral bcard-tag">Liquids <span class="bcard-new">New</span></span>
-      <div class="bcard-title">How Much Liquid Can You Put in a Checked Bag?</div>
-      <div class="bcard-read">Read article →</div>
-    </div>
-  </a>
-  <a class="bcard" href="/blog/how-many-ounces-can-you-bring-on-a-plane-2026/">
+<a class="bcard-featured" href="/blog/how-much-liquid-can-you-put-in-checked-bag-2026/">
+  <div class="bcard-img-wrap">
+    <img src="/assets/blog/blogHome-how-much-liquid-can-you-put-in-checked-bag-2026-card.webp" alt="Native Hawaiian man and his daughter at the Honolulu airport checking the label on a bottle of spiced rum before packing it, beside a sign about the 5 liter alcohol limit" width="800" height="400">
+  </div>
+  <div class="bcard-body">
+    <span class="tag tag-neutral bcard-tag">Liquids <span class="bcard-new">New</span></span>
+    <h2 class="bcard-title">How Much Liquid Can You Put in a Checked Bag?</h2>
+    <p class="bcard-excerpt">No 3.4 oz limit in a checked bag, but toiletries and aerosols are capped at 500 ml each and alcohol over 24% at 5 L. Search 46 liquids to see what is allowed, limited or…</p>
+    <span class="bcard-read">Read article →</span>
+  </div>
+</a>
+
+<div class="sec-more"><a href="/blog/packing-rules/">More on <b>Packing Rules</b> →</a></div>
+
+<div class="bcard-scroll">
+<a class="bcard" href="/blog/how-many-ounces-can-you-bring-on-a-plane-2026/">
     <div class="bcard-img-wrap"><img src="/assets/blog/blogHome-how-many-ounces-can-you-bring-on-a-plane-2026-card.webp" alt="Woman at a shop in Minneapolis-Saint Paul Terminal 1 reading the size on a 3.4 fl oz sunscreen bottle held next to a bigger 5 fl oz bottle" style="width:100%;height:140px;object-fit:cover;display:block"></div>
     <div class="bcard-body">
       <span class="tag tag-neutral bcard-tag">Liquids <span class="bcard-new">New</span></span>
       <div class="bcard-title">How Many Ounces Can You Bring on a Plane?</div>
-      <div class="bcard-read">Read article →</div>
     </div>
   </a>
-  <a class="bcard" href="/blog/is-it-a-liquid-tsa-list-2026/">
+<a class="bcard" href="/blog/is-it-a-liquid-tsa-list-2026/">
     <div class="bcard-img-wrap"><img src="/assets/blog/blogHome-is-it-a-liquid-tsa-list-2026-card.webp" alt="Woman on a bench in Chicago O'Hare Terminal 1 squeezing hand cream from an open tube onto her fingertip under the arched skylight and the B gates sign" style="width:100%;height:140px;object-fit:cover;display:block"></div>
     <div class="bcard-body">
       <span class="tag tag-neutral bcard-tag">Liquids <span class="bcard-new">New</span></span>
       <div class="bcard-title">Is It a Liquid? TSA Rules for 90+ Products</div>
-      <div class="bcard-read">Read article →</div>
-    </div>
-  </a>
-  <a class="bcard-soon" href="/blog/liquids-100ml-rule-2026/">
-    <div class="bcard-ph"><img src="/assets/blog/blog-liquids-100ml-rule-2026-card.webp" alt="Liquids 100ml rule" style="width:100%;height:140px;object-fit:cover;display:block"></div>
-    <div class="bcard-body">
-      <span class="tag tag-neutral bcard-tag">Liquids</span>
-      <div class="bcard-title">How Many ml Can You Take on a Plane? The 100ml Liquids Rule (2026)</div>
-      <div class="bcard-read">Read article →</div>
-    </div>
-  </a>
-  <a class="bcard-soon" href="/blog/vapes-country-rules-2026/">
-    <div class="bcard-ph"><img src="/assets/blog/blog-vapes-country-rules-hero.webp" alt="Vapes country rules" style="width:100%;height:140px;object-fit:cover;display:block"></div>
-    <div class="bcard-body">
-      <span class="tag tag-neutral bcard-tag">Vapes</span>
-      <div class="bcard-title">Can You Bring a Vape on a Plane?</div>
-      <div class="bcard-read">Read article →</div>
-    </div>
-  </a>
-  <a class="bcard-soon" href="/blog/carry-on-size-limits-by-airline-2026/">
-    <div class="bcard-ph"><img src="/assets/blog/blogHome-carry-on-size-limits-by-airline-2026-card.webp" alt="Rolling carry-on suitcase inside an airport bag sizer frame" style="width:100%;height:140px;object-fit:cover;display:block"></div>
-    <div class="bcard-body">
-      <span class="tag tag-neutral bcard-tag">Carry-on</span>
-      <div class="bcard-title">Carry-On Size &amp; Dimensions by Airline (2026): US Airlines First</div>
-      <div class="bcard-read">Read article →</div>
-    </div>
-  </a>
-  <a class="bcard-soon" href="/blog/aerosols-on-a-plane-2026/">
-    <div class="bcard-ph"><img src="/assets/blog/blogHome-aerosols-on-a-plane-2026-card.webp" alt="Spray sunscreen can beside a clear liquids bag at security" style="width:100%;height:140px;object-fit:cover;display:block"></div>
-    <div class="bcard-body">
-      <span class="tag tag-neutral bcard-tag">Aerosols</span>
-      <div class="bcard-title">Can You Bring Aerosols on a Plane? (2026 TSA Rules)</div>
-      <div class="bcard-read">Read article →</div>
-    </div>
-  </a>
-  <a class="bcard-soon" href="/blog/is-deodorant-a-liquid-2026/">
-    <div class="bcard-ph"><img src="/assets/blog/blogHome-is-deodorant-a-liquid-2026-card.webp" alt="Gel deodorant, stick deodorant, mascara and toothpaste on a bathroom shelf" style="width:100%;height:140px;object-fit:cover;display:block"></div>
-    <div class="bcard-body">
-      <span class="tag tag-neutral bcard-tag">Cosmetics</span>
-      <div class="bcard-title">Is Gel Deodorant, Mascara, or Toothpaste a Liquid?</div>
-      <div class="bcard-read">Read article →</div>
-    </div>
-  </a>
-  <a class="bcard-soon" href="/blog/duty-free-bag-extra-carry-on-2026/">
-    <div class="bcard-ph"><img src="/assets/blog/blogHome-duty-free-bag-extra-carry-on-2026-card.webp" alt="Traveller carrying a duty-free shopping bag through an airport departure lounge" style="width:100%;height:140px;object-fit:cover;display:block"></div>
-    <div class="bcard-body">
-      <span class="tag tag-neutral bcard-tag">Duty-Free</span>
-      <div class="bcard-title">Is a Duty-Free Bag an Extra Carry-On? The Real Rules</div>
-      <div class="bcard-read">Read article →</div>
     </div>
   </a>
 </div>
@@ -551,45 +523,42 @@ footer{margin-top:2.4em;color:var(--muted);font-size:.82rem;border-top:1px solid
   </div>
 </a>
 
-<div class="bcard-grid">
-  <a class="bcard" href="/blog/duty-free-allowance-by-country-2026/">
+<div class="sec-more"><a href="/blog/customs-money/">More on <b>Customs &amp; Money</b> →</a></div>
+
+<div class="bcard-scroll">
+<a class="bcard" href="/blog/duty-free-allowance-by-country-2026/">
     <div class="bcard-img-wrap"><img src="/assets/blog/blogHome-duty-free-allowance-by-country-2026-card.webp" alt="Couple pushing a shopping trolley past a wall of spirits bottles in an airport duty-free shop" style="width:100%;height:140px;object-fit:cover;display:block"></div>
     <div class="bcard-body">
       <span class="tag tag-neutral bcard-tag">Duty-Free</span>
       <div class="bcard-title">Duty-Free Allowance by Country (2026)</div>
-      <div class="bcard-read">Read article &rarr;</div>
     </div>
   </a>
-  <a class="bcard" href="/blog/duty-free-tobacco-allowance-by-country-2026/">
+<a class="bcard" href="/blog/duty-free-tobacco-allowance-by-country-2026/">
     <div class="bcard-img-wrap"><img src="/assets/blog/blogHome-duty-free-tobacco-allowance-by-country-2026-card.webp" alt="Cartons of cigarettes on a duty-free shop shelf in an airport" style="width:100%;height:140px;object-fit:cover;display:block"></div>
     <div class="bcard-body">
       <span class="tag tag-neutral bcard-tag">Duty-Free</span>
       <div class="bcard-title">Duty-Free Tobacco Allowance by Country (2026)</div>
-      <div class="bcard-read">Read article &rarr;</div>
     </div>
   </a>
-  <a class="bcard" href="/blog/duty-free-alcohol-allowance-by-country-2026/">
+<a class="bcard" href="/blog/duty-free-alcohol-allowance-by-country-2026/">
     <div class="bcard-img-wrap"><img src="/assets/blog/blogHome-duty-free-alcohol-allowance-by-country-2026-card.webp" alt="Woman holding three different spirit bottles in the duty-free shop at Auckland Airport" style="width:100%;height:140px;object-fit:cover;display:block"></div>
     <div class="bcard-body">
       <span class="tag tag-neutral bcard-tag">Duty-Free</span>
       <div class="bcard-title">Duty-Free Alcohol Allowance by Country (2026)</div>
-      <div class="bcard-read">Read article &rarr;</div>
     </div>
   </a>
-  <a class="bcard" href="/blog/japan-customs-declaration-2026/">
+<a class="bcard" href="/blog/japan-customs-declaration-2026/">
     <div class="bcard-img-wrap"><img src="/assets/blog/blogHome-japan-customs-declaration-2026-card.webp" alt="Traveller holding a phone with a QR code up to an electronic customs declaration gate at a Japanese airport" style="width:100%;height:140px;object-fit:cover;display:block"></div>
     <div class="bcard-body">
       <span class="tag tag-neutral bcard-tag">Customs &amp; Money</span>
       <div class="bcard-title">Japan Customs Declaration (2026): QR Code or Paper Form?</div>
-      <div class="bcard-read">Read article &rarr;</div>
     </div>
   </a>
-  <a class="bcard" href="/blog/customs-declaration-forms-by-country-2026/">
+<a class="bcard" href="/blog/customs-declaration-forms-by-country-2026/">
     <div class="bcard-img-wrap"><img src="/assets/blog/blogHome-customs-declaration-forms-by-country-2026-card.webp" alt="Biosecurity officer with a detector dog checking a traveller's luggage trolley at an Australian airport" style="width:100%;height:140px;object-fit:cover;display:block"></div>
     <div class="bcard-body">
       <span class="tag tag-neutral bcard-tag">Customs &amp; Money</span>
       <div class="bcard-title">Customs Declaration Forms by Country (2026)</div>
-      <div class="bcard-read">Read article &rarr;</div>
     </div>
   </a>
 </div>
@@ -608,32 +577,33 @@ footer{margin-top:2.4em;color:var(--muted);font-size:.82rem;border-top:1px solid
   </div>
 </a>
 
-<div class="bcard-grid">
-  <a class="bcard" href="/blog/baby-food-pouches-on-a-plane-2026/">
+<div class="sec-more"><a href="/blog/food-agriculture/">More on <b>Food &amp; Agriculture</b> →</a></div>
+
+<div class="bcard-scroll">
+<a class="bcard" href="/blog/baby-food-pouches-on-a-plane-2026/">
     <div class="bcard-img-wrap"><img src="/assets/blog/blogHome-baby-food-pouches-on-a-plane-2026-card.webp" alt="Father feeding a toddler from a puree pouch at a gate in Helsinki Airport, with a stackable formula dispenser and a canister of baby puffs on the seat" style="width:100%;height:140px;object-fit:cover;display:block"></div>
     <div class="bcard-body">
       <span class="tag tag-neutral bcard-tag">Baby Food <span class="bcard-new">New</span></span>
       <div class="bcard-title">Baby Food Pouches on a Plane: TSA Rules for Pur&eacute;es, Formula &amp; Toddler Snacks</div>
-      <div class="bcard-read">Read article &rarr;</div>
     </div>
   </a>
-  <a class="bcard" href="/blog/food-you-can-take-on-a-plane-list-2026/">
+<a class="bcard" href="/blog/food-you-can-take-on-a-plane-list-2026/">
     <div class="bcard-img-wrap"><img src="/assets/blog/blogHome-food-you-can-take-on-a-plane-list-2026-card.webp" alt="Traveller unwrapping a baguette sandwich at a gate in Madrid-Barajas airport beside a clear bag holding a block of cheese, crackers and a small 100 ml honey jar" style="width:100%;height:140px;object-fit:cover;display:block"></div>
     <div class="bcard-body">
       <span class="tag tag-neutral bcard-tag">Food List <span class="bcard-new">New</span></span>
       <div class="bcard-title">Food You Can Take on a Plane: Full List for TSA &amp; International Flights</div>
-      <div class="bcard-read">Read article &rarr;</div>
     </div>
   </a>
-  <a class="bcard" href="/blog/food-tsa-vs-customs-2026/">
+<a class="bcard" href="/blog/food-tsa-vs-customs-2026/">
     <div class="bcard-img-wrap"><img src="/assets/blog/blogHome-food-tsa-vs-customs-2026-card.webp" alt="Jar of peanut butter and a wrapped sandwich in an airport security tray" style="width:100%;height:140px;object-fit:cover;display:block"></div>
     <div class="bcard-body">
       <span class="tag tag-neutral bcard-tag">TSA vs Customs</span>
       <div class="bcard-title">Food on a Plane: What Passes TSA vs. International Customs</div>
-      <div class="bcard-read">Read article &rarr;</div>
     </div>
   </a>
 </div>
+
+
 </main>
 <footer>Guidance, not legal advice — always confirm with your airline or customs authority before you travel. Updated 2026.<nav class="tlinks"><a href="/guides/">All Guides</a><a href="/guides/liquids/">Liquids 100ml Rule</a><a href="/guides/power-banks/">Power Bank Rules</a><a href="/guides/vapes/">Vape &amp; E-Cig Guide</a><a href="/blog/">Blog</a></nav><nav class="tlinks"><a href="/about/">About</a><a href="/contact/">Contact</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a></nav></footer>
 </div>
