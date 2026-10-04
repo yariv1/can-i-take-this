@@ -20,7 +20,7 @@ Generated 2026-10-02 from the built `blog/<slug>/index.html` pages (39 articles)
 | 14 | Medications | Pill Organizers vs. Original Prescription Bottles: TSA & Customs Rules (2026) | `/blog/pill-organizers-vs-original-bottles-2026/` | 2026-09-24 | 854 |
 | 15 | Medications | Flying with Syringes, EpiPens, Insulin & Gel Ice Packs (2026) | `/blog/syringes-epipens-insulin-ice-packs-2026/` | 2026-09-24 | 1008 |
 | 16 | Packing Rules | Can You Bring Aerosols on a Plane? (2026 TSA Rules) | `/blog/aerosols-on-a-plane-2026/` | 2026-09-25 | 973 |
-| 17 | Packing Rules | Carry-On Size Limits by Airline (2026): The Real Chart | `/blog/carry-on-size-limits-by-airline-2026/` | 2026-09-25 | 1210 |
+| 17 | Packing Rules | Carry-On Size & Dimensions by Airline (2026): US Airlines First | `/blog/carry-on-size-limits-by-airline-2026/` | 2026-09-25 | 1210 |
 | 18 | Packing Rules | Is a Duty-Free Bag an Extra Carry-On? The Real Rules (2026) | `/blog/duty-free-bag-extra-carry-on-2026/` | 2026-09-28 | 899 |
 | 19 | Customs & Money | Duty-Free Allowance by Country (2026): Alcohol, Tobacco & Cash Limits | `/blog/duty-free-allowance-by-country-2026/` | 2026-09-30 | 1646 |
 | 20 | Food & Agriculture | Baby Food Pouches on a Plane: TSA Rules for Purées, Formula & Toddler Snacks (2026) | `/blog/baby-food-pouches-on-a-plane-2026/` | 2026-10-01 | 1579 |
@@ -70,7 +70,7 @@ Generated 2026-10-02 from the built `blog/<slug>/index.html` pages (39 articles)
 **Packing Rules (4)**
 - Is Deodorant a Liquid? TSA Rules for Deodorant, Mascara & Toothpaste (2026) (`is-deodorant-a-liquid-2026`)
 - Can You Bring Aerosols on a Plane? (2026 TSA Rules) (`aerosols-on-a-plane-2026`)
-- Carry-On Size Limits by Airline (2026): The Real Chart (`carry-on-size-limits-by-airline-2026`)
+- Carry-On Size & Dimensions by Airline (2026): US Airlines First (`carry-on-size-limits-by-airline-2026`)
 - Is a Duty-Free Bag an Extra Carry-On? The Real Rules (2026) (`duty-free-bag-extra-carry-on-2026`)
 | 27 | Liquids & Packing | Is It a Liquid? TSA Rules for 90+ Products: Toothpaste, Mascara, Lotion & More (2026) | `/blog/is-it-a-liquid-tsa-list-2026/` | 2026-10-02 | 1,500 |
 | 28 | Liquids & Packing | How Many Ounces Can You Bring on a Plane? 3.4 oz Carry-On Limit, Size Chart & Checked Bags (2026) | `/blog/how-many-ounces-can-you-bring-on-a-plane-2026/` | 2026-10-02 | 1,000 |

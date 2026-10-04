@@ -137,3 +137,18 @@ Updated US airline matrix (queries with volume, per airline template; start with
 | check in online | >1000 (Delta, Frontier) | Hard (brand intent) |
 
 Recommended starting set: baggage fees, carry-on size, seat selection for the big US airlines.
+
+## Carry-on pillar keyword check (Ahrefs free tool, 2026-10-04, user screenshots)
+| Keyword | Volume | KD |
+|---|---|---|
+| carry on size by airline | <100 | Hard |
+| carry on size by airline chart | <100 | N/A |
+| carry on size chart (12 ideas total) | <100 | Hard |
+| airline carry on size chart | >100 | Hard |
+| carry on size cm (40 ideas) | <100 | Easy |
+| delta carry on size cm | <100 | Easy |
+| carry on dimensions (1,265 ideas) | >1000 | Hard |
+| airline carry on dimensions | >1000 | Easy |
+| delta / southwest / american airlines carry on dimensions | >1000 each | Easy |
+| united / jetblue carry on dimensions | >1000 each | Medium |
+Earlier: `carry on size` >10,000 Easy; `tsa carry on size` >1000 Easy; `<airline> carry on size` >10,000 each (Delta, Southwest, United, Frontier, JetBlue). Learning: "chart", "by airline", "cm" are NOT searched (<100). "dimensions" and the bare head term are. Lead the pillar title with Carry-On Size / Dimensions; put inches/cm in the body and unit toggle, not as a keyword.

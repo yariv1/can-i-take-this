@@ -171,4 +171,6 @@ pages['frontier'] = {
     CHK + SRC([['https://www.flyfrontier.com/travel/travel-info/bag-options/', 'Frontier &mdash; Bag options'], ['https://faq.flyfrontier.com/help/bags-seats-general-info-what-are-the-sizes-and-weight-limits-for-bags', 'Frontier &mdash; Bag size limits']])
 };
 
+// helpers are shared with the pillar page (carryon_pillar.js); non-enumerable so the per-airline loop in build.js ignores them
+Object.defineProperty(pages, '__helpers', { value: { CSS, T, SRC, CHK, stat, callout, cl, faq, meta, hero, fig, bagSvg }, enumerable: false });
 module.exports = pages;
