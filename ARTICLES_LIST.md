@@ -88,6 +88,7 @@ Generated 2026-10-02 from the built `blog/<slug>/index.html` pages (39 articles)
 | 40 | US Travel Programs | TSA PreCheck vs Global Entry vs CLEAR (2026): Cost, Speed and Which to Get | `/blog/tsa-precheck-vs-global-entry-vs-clear-2026/` | 2026-10-04 | 900 |
 | 41 | US Travel Programs | TSA PreCheck Cost and How to Apply (2026): Fees by Provider, Steps and Renewal | `/blog/tsa-precheck-cost-how-to-apply-2026/` | 2026-10-04 | 850 |
 | 42 | US Travel Programs | Global Entry Cost, Application and Interview (2026): Step by Step to Renewal | `/blog/global-entry-cost-application-interview-2026/` | 2026-10-04 | 900 |
+| 43 | US Travel Programs | CLEAR vs TSA PreCheck (2026): What Each Does and Is CLEAR+ Worth It | `/blog/clear-vs-tsa-precheck-2026/` | 2026-10-04 | 900 |
 
 
 ## Programmatic pages (not articles)
