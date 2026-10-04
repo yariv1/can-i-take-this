@@ -90,6 +90,7 @@ Generated 2026-10-02 from the built `blog/<slug>/index.html` pages (39 articles)
 | 42 | US Travel Programs | Global Entry Cost, Application and Interview (2026): Step by Step to Renewal | `/blog/global-entry-cost-application-interview-2026/` | 2026-10-04 | 900 |
 | 43 | US Travel Programs | CLEAR vs TSA PreCheck (2026): What Each Does and Is CLEAR+ Worth It | `/blog/clear-vs-tsa-precheck-2026/` | 2026-10-04 | 900 |
 | 44 | US Travel Programs | Can You Fly Without a REAL ID? (2026): The $45 ConfirmID Fee and Accepted IDs | `/blog/can-you-fly-without-a-real-id-2026/` | 2026-10-04 | 900 |
+| 45 | Entry Permits | ETIAS Travel Authorization (2026): What It Is, Start Date and How to Apply | `/blog/etias-travel-authorization-2026/` | 2026-10-04 | 900 |
 
 
 ## Programmatic pages (not articles)

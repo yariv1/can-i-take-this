@@ -321,6 +321,7 @@ Read CONTENT_UNIQUENESS_RULES.md before writing any article or sibling page set;
 | `global-entry-cost-application-interview-2026` | global entry application interview | US Travel Programs | blogHome-global-entry-cost-application-interview-2026-card.webp, blog-global-entry-cost-application-interview-2026-hero.webp, blog-global-entry-cost-application-interview-2026-inArticle-1.webp, blog-global-entry-cost-application-interview-2026-inArticle-2.webp | pending images |
 | `clear-vs-tsa-precheck-2026` | clear vs tsa precheck | US Travel Programs | blogHome-clear-vs-tsa-precheck-2026-card.webp, blog-clear-vs-tsa-precheck-2026-hero.webp, blog-clear-vs-tsa-precheck-2026-inArticle-1.webp, blog-clear-vs-tsa-precheck-2026-inArticle-2.webp | pending images |
 | `can-you-fly-without-a-real-id-2026` | can you fly without a real id | US Travel Programs | blogHome-can-you-fly-without-a-real-id-2026-card.webp, blog-can-you-fly-without-a-real-id-2026-hero.webp, blog-can-you-fly-without-a-real-id-2026-inArticle-1.webp, blog-can-you-fly-without-a-real-id-2026-inArticle-2.webp | pending images |
+| `etias-travel-authorization-2026` | etias travel authorization | Entry Permits | blogHome-etias-travel-authorization-2026-card.webp, blog-etias-travel-authorization-2026-hero.webp, blog-etias-travel-authorization-2026-inArticle-1.webp, blog-etias-travel-authorization-2026-inArticle-2.webp | pending images |
 
 Source file for these six bodies: `carryon_pages.js` (SVG size diagrams generated from the numbers).
 
@@ -330,3 +331,5 @@ Hub sections now: Medications, Batteries & Electronics, **Airline Fees & Policie
 
 ## Units (applies to every article)
 Every article page loads `/units.js` (already in `guideShell`). Write numbers in the airline's own unit; the reader's in·lb / cm·kg dropdown in the header converts them. In stat strips keep the number in `.stat-num` and the unit word first in `.stat-label`. For SVG size diagrams labels convert automatically. Do not add manual converted copies except the dual form "22 × 14 × 9 in (56 × 36 × 23 cm)" which `units.js` reorders. Full rules: DESIGN_SYSTEM.md "Unit switch".
+
+- **QA gate (2026-10-04):** every new article must pass `node audit_article_qa.js <slug>` before the preview link and again before deploy; see ARTICLE_QA.md.

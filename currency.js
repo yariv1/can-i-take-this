@@ -126,7 +126,7 @@
     return false;
   }
   function transform(text, node) {
-    if (cur === 'USD' || !rates || exempt || (node && skipCur(node))) { if (node && spansOf) spansOf.delete(node); return text; }
+    if (!rates || exempt || (node && skipCur(node))) { if (node && spansOf) spansOf.delete(node); return text; }
     var r = convertText(text, cur, rates);
     if (node && spansOf) { if (r.spans.length) spansOf.set(node, r.spans); else spansOf.delete(node); }
     return r.text;
@@ -185,7 +185,7 @@
     return null;
   }
   function findAmount(x, y) {
-    if (cur === 'USD' || !spansOf) return null;
+    if (!spansOf) return null;
     var c = caretAt(x, y);
     if (!c || !c.node || c.node.nodeType !== 3) return null;
     var list = spansOf.get(c.node);
@@ -207,12 +207,11 @@
   function bindTip() {
     var raf = 0;
     document.addEventListener('mousemove', function (e) {
-      if (raf || cur === 'USD') return;
+      if (raf) return;
       var x = e.clientX, y = e.clientY;
       raf = requestAnimationFrame(function () { raf = 0; var o = findAmount(x, y); if (o) showTip(x, y, o); else hideTip(); });
     });
     document.addEventListener('click', function (e) {
-      if (cur === 'USD') return;
       var o = findAmount(e.clientX, e.clientY);
       clearTimeout(tipTimer);
       if (o) { showTip(e.clientX, e.clientY, o); tipTimer = setTimeout(hideTip, 4000); } else hideTip();
@@ -340,7 +339,7 @@
             rates = j.rates; ratesDate = j.date; setCurrency(s, false);
           }).catch(function () { setCurrency('USD', false); });
         } else {
-          fetch('/rates.json').then(function (r) { return r.json(); }).then(function (j) { rates = j.rates; ratesDate = j.date; }).catch(function () {});
+          fetch('/rates.json').then(function (r) { return r.json(); }).then(function (j) { rates = j.rates; ratesDate = j.date; if (window.cittUnits && window.cittUnits.refresh) window.cittUnits.refresh(); }).catch(function () {});
         }
       };
       start();

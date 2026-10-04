@@ -231,3 +231,6 @@ Place in `/assets/blog/` in repo root.
 
 ## Units
 Numbers with cm/in or kg/lb convert automatically via /units.js (loaded by the page shell). Use the airline's own unit; keep stat strips as number in .stat-num and unit word first in .stat-label. See DESIGN_SYSTEM.md "Unit switch".
+
+## QA before preview
+Run `node audit_article_qa.js <slug>` (ARTICLE_QA.md). It must print PASS.
