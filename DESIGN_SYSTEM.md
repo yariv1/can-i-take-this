@@ -332,3 +332,18 @@ Icons make articles scannable. Humans do not consume content as walls of text. *
   the previous page's scroll position); otherwise follows `href` (`/`, or `/blog/` on articles).
 - ≤420px: h1 shrinks to 16px, no wrap; ≤370px: theme label hidden (icon only).
 - New blog articles must copy the topbar from an existing article so they inherit it.
+
+## Unit switch (`units.js`) — HARD RULE, every page, every template
+
+Site-wide length/weight switch. One shared file, `/units.js`, loaded with `<script src="/units.js" defer></script>` right after `/feedback.js` in **every** page template (home/app, airShell, countryShell, airPlaneShell, guideShell, blog hub). A new template without that line is a bug.
+
+- **Control:** a dropdown pill "in · lb ▾" injected into `.topbar-right`, just before the theme button (a template must keep a `.topbar-right` with `#themeToggle`). Menu rows: "Inches · pounds", "Centimetres · kilograms". Inch first (US audience first). Not a two-segment toggle — it was too wide on phones.
+- **Phones (<=420px):** the Light/Dark button is icon only (sun in dark theme, moon in light theme, inline SVG in each template's `__lbl`). The label is hidden by `units.js` CSS.
+- **Choice:** saved in `localStorage['citt-units']` ('imp' | 'met'). First visit: browser language region (US, LR, MM = imperial), else timezone, else imperial. No IP lookup. `<html data-units>` mirrors it.
+- **Scope:** length (cm/in) and weight (kg/lb) only. NOT volume (ml/oz), grams or currency.
+- **How content converts:** at runtime `units.js` rewrites visible text nodes (and anything the app draws later, via MutationObserver). Authored HTML is never changed, so search engines see the original. Write content normally in the airline's own unit; do not pre-convert.
+- **Dual forms** "22 × 14 × 9 in (56 × 36 × 23 cm)" and "22 in / 56 cm" are recognised and reordered so the chosen unit comes first. Different quantities in brackets (e.g. "10 kg (55 × 40 × 24 cm)") both convert.
+- **Stat strips:** put the number in `.stat-num` and the unit word first in `.stat-label` ("inches, carry-on bag"); `units.js` converts the pair.
+- **Opt-out:** `data-units="keep"` on an element, and any table whose header row names both inches and centimetres (explicit two-column tables stay as written).
+- **Bare "in"** is only treated as inches after a dimension (`9 in` after `x`) or before punctuation/total/max/etc. Amounts after `$ £ € ¥` are ignored. Thousands (10,000) are not touched.
+- **Checks before deploy:** `node -c units.js`; load one airline page, one article and the app; switch both ways. Audit scripts compare converted text in both modes.

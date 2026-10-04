@@ -322,3 +322,6 @@ Source file for these six bodies: `carryon_pages.js` (SVG size diagrams generate
 ## Visual article rule (HARD, 2026-10-04)
 Articles must not be walls of text: hero + inline photos, stat strip, tables with icons (not data in prose), icon bullets / checklists, callouts, and a to-scale SVG diagram where the data is a size. Icons are mandatory (DESIGN_SYSTEM 8.8). Airline carry-on bodies are generated from `carryon_pages.js` (`bagSvg()` draws the size diagrams from the numbers); fees articles are BODY_*FEES_ARTICLE vars in build.js.
 Hub sections now: Medications, Batteries & Electronics, **Airline Fees & Policies** (American featured card + Southwest, Delta, JetBlue), **Carry-On Size by Airline** (6 cards), Packing Rules, Customs & Money, Food & Agriculture.
+
+## Units (applies to every article)
+Every article page loads `/units.js` (already in `guideShell`). Write numbers in the airline's own unit; the reader's in·lb / cm·kg dropdown in the header converts them. In stat strips keep the number in `.stat-num` and the unit word first in `.stat-label`. For SVG size diagrams labels convert automatically. Do not add manual converted copies except the dual form "22 × 14 × 9 in (56 × 36 × 23 cm)" which `units.js` reorders. Full rules: DESIGN_SYSTEM.md "Unit switch".

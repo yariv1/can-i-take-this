@@ -228,3 +228,6 @@ Place in `/assets/blog/` in repo root.
 - ✅ `width` and `height` attributes always on every `<img>`
 - ✅ Excerpt in hub card ≤ 2 sentences, matches article opening tone
 
+
+## Units
+Numbers with cm/in or kg/lb convert automatically via /units.js (loaded by the page shell). Use the airline's own unit; keep stat strips as number in .stat-num and unit word first in .stat-label. See DESIGN_SYSTEM.md "Unit switch".
