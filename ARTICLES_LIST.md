@@ -86,6 +86,7 @@ Generated 2026-10-02 from the built `blog/<slug>/index.html` pages (39 articles)
 | 38 | Carry-On Size | southwest carry-on size 2026 | `/blog/southwest-carry-on-size-2026/` | 2026-10-04 | 330 |
 | 39 | Carry-On Size | frontier carry-on size 2026 | `/blog/frontier-carry-on-size-2026/` | 2026-10-04 | 330 |
 | 40 | US Travel Programs | TSA PreCheck vs Global Entry vs CLEAR (2026): Cost, Speed and Which to Get | `/blog/tsa-precheck-vs-global-entry-vs-clear-2026/` | 2026-10-04 | 900 |
+| 41 | US Travel Programs | TSA PreCheck Cost and How to Apply (2026): Fees by Provider, Steps and Renewal | `/blog/tsa-precheck-cost-how-to-apply-2026/` | 2026-10-04 | 850 |
 
 
 ## Programmatic pages (not articles)
