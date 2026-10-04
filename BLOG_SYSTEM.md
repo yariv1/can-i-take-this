@@ -320,6 +320,7 @@ Read CONTENT_UNIQUENESS_RULES.md before writing any article or sibling page set;
 | `tsa-precheck-cost-how-to-apply-2026` | tsa precheck cost how to apply | US Travel Programs | blogHome-tsa-precheck-cost-how-to-apply-2026-card.webp, blog-tsa-precheck-cost-how-to-apply-2026-hero.webp, blog-tsa-precheck-cost-how-to-apply-2026-inArticle-1.webp, blog-tsa-precheck-cost-how-to-apply-2026-inArticle-2.webp | pending images |
 | `global-entry-cost-application-interview-2026` | global entry application interview | US Travel Programs | blogHome-global-entry-cost-application-interview-2026-card.webp, blog-global-entry-cost-application-interview-2026-hero.webp, blog-global-entry-cost-application-interview-2026-inArticle-1.webp, blog-global-entry-cost-application-interview-2026-inArticle-2.webp | pending images |
 | `clear-vs-tsa-precheck-2026` | clear vs tsa precheck | US Travel Programs | blogHome-clear-vs-tsa-precheck-2026-card.webp, blog-clear-vs-tsa-precheck-2026-hero.webp, blog-clear-vs-tsa-precheck-2026-inArticle-1.webp, blog-clear-vs-tsa-precheck-2026-inArticle-2.webp | pending images |
+| `can-you-fly-without-a-real-id-2026` | can you fly without a real id | US Travel Programs | blogHome-can-you-fly-without-a-real-id-2026-card.webp, blog-can-you-fly-without-a-real-id-2026-hero.webp, blog-can-you-fly-without-a-real-id-2026-inArticle-1.webp, blog-can-you-fly-without-a-real-id-2026-inArticle-2.webp | pending images |
 
 Source file for these six bodies: `carryon_pages.js` (SVG size diagrams generated from the numbers).
 
