@@ -124,14 +124,16 @@
     + '[data-theme="light"] .units-toggle .ut-menu button[aria-checked="true"]{background:#1B2233;color:#fff}'
     + '[data-theme="light"] .units-toggle .ut-menu button[aria-checked="true"] .ut-short{color:#fff}'
     + '.units-toggle button:focus-visible{outline:2px solid var(--accent,#4CC2FF);outline-offset:2px}'
+    /* every pill in the header (blog link, currency, units, theme) shares one height */
+    + '.topbar-right .hdr-blog-link,.topbar-right .theme-toggle,.topbar-right #themeToggle,.units-toggle .ut-trigger,.cur-toggle .ut-trigger{box-sizing:border-box;height:34px;display:inline-flex;align-items:center;justify-content:center;padding-top:0;padding-bottom:0;line-height:1}'
     + '@media(max-width:640px){.brand h1{display:none}}@media(max-width:420px){.units-toggle .ut-trigger{padding:6px 8px;gap:4px}#themeToggle #themeLabel{display:none}#themeToggle{padding:7px 9px}}';
 
-  var mode = 'imp', orig = typeof WeakMap === 'function' ? new WeakMap() : null, observer = null;
+  var mode = 'imp', orig = typeof WeakMap === 'function' ? new WeakMap() : null, observer = null, xforms = [];
   var SKIP = /^(SCRIPT|STYLE|NOSCRIPT|TEXTAREA|INPUT|SELECT|OPTION|CODE|PRE|TITLE)$/;
 
   function skipNode(n) {
     for (var p = n.parentNode; p && p.nodeType === 1; p = p.parentNode) {
-      if (SKIP.test(p.nodeName) || p.classList.contains('units-toggle') || p.getAttribute('data-units') === 'keep') return true;
+      if (SKIP.test(p.nodeName) || p.classList.contains('units-toggle') || p.classList.contains('cur-toggle') || p.getAttribute('data-units') === 'keep') return true;
       if (p.nodeName === 'TABLE') {
         if (p.__uk === undefined) {
           var h = (p.querySelector('thead') || p.rows[0] || p).textContent;
@@ -145,6 +147,7 @@
   function processText(n) {
     var base = orig.has(n) ? orig.get(n) : n.nodeValue;
     var next = convertText(base, mode);
+    for (var xi = 0; xi < xforms.length; xi++) next = xforms[xi](next, n);
     if (next !== base) { orig.set(n, base); if (n.nodeValue !== next) n.nodeValue = next; }
     else if (orig.has(n)) { if (n.nodeValue !== base) n.nodeValue = base; orig.delete(n); }
   }
@@ -242,7 +245,10 @@
       }
     };
     if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', go); else go();
-    window.cittUnits = { get: function () { return mode; }, set: function (m) { setMode(m, true); } };
+    window.cittUnits = { get: function () { return mode; }, set: function (m) { setMode(m, true); },
+      /* other switches (currency.js) add a text transform and ask for a re-walk */
+      addTransform: function (fn) { xforms.push(fn); },
+      refresh: function () { walk(document.body); statBoxes(document); } };
   }
   return { init: init, convertText: convertText, detect: detect };
 });
