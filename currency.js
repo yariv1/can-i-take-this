@@ -102,7 +102,7 @@
       if (!usable(src, n1) || (n2 !== null && !usable(src2, n2))) continue;
       if (!rates[src] || !rates[target] || (src2 && !rates[src2])) continue;
       var v1 = n1 / rates[src] * rates[target];
-      var rep = '~' + money(v1, target, true);
+      var rep = money(v1, target, true);
       if (n2 !== null) {
         var v2 = n2 / rates[src2] * rates[target];
         rep += m[4] + money(v2, target, !!m[5] || !!m[2]);
