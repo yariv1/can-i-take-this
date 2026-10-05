@@ -11,6 +11,7 @@ const INTROS = {
   'carry-on-size-by-airline': 'Carry-on and personal item size limits for each airline, with the fee when a bag is too big.',
   'us-travel-programs': 'TSA PreCheck, Global Entry, CLEAR and REAL ID: costs, how to apply and which one is worth it, from official sources.',
   'entry-permits': 'Online travel authorizations such as ETIAS and the UK ETA: who needs them, what they cost and how to apply on the official site.',
+  'travel-safety': 'Government travel warnings and advisory levels by country, from official data and updated automatically.',
   'packing-rules': 'Liquids, aerosols, vapes and everyday items: what you can pack and how much, in cabin and checked bags.',
   'customs-money': 'Cash declarations, duty-free allowances and customs forms by country.',
   'food-agriculture': 'Food on planes and across borders: what is allowed, biosecurity rules and fines.'
