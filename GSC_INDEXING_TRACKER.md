@@ -12,6 +12,7 @@ Last GSC check: 2026-10-05 (Page indexing 1,924 indexed / 89 not indexed as of 2
 
 | # | URL | Published | Status |
 |---|---|---|---|
+| 50 | https://canitakethis.co/blog/travel-warning-caribbean-2026/ | not live yet | TO REQUEST |
 | 49 | https://canitakethis.co/blog/is-turks-and-caicos-safe-2026/ | 2026-10-06 | TO REQUEST |
 | 48 | https://canitakethis.co/blog/travel-warning-by-country-2026/ | 2026-10-06 | TO REQUEST |
 | 47 | https://canitakethis.co/blog/tsa-precheck-touchless-id-2026/ | 2026-10-05 | TO REQUEST |

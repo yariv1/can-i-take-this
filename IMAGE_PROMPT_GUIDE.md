@@ -14,6 +14,9 @@ Before ANY image prompt is written or handed off (first draft, revision, any art
 6. Show the 4 check lines (section, quoted sentence, visible proof, difference) in the reply BEFORE the four prompts, every time. A reply with prompts but without these lines is incomplete.
 7. Alt texts must be updated to match the final prompts, then rebuild and run the QA gate.
 
+
+**PRIMARY-SUBJECT RULE (added 2026-10-06, Caribbean article, user asked three times):** the context gate and the risk test are checked against the article's MAIN CLAIM (the title's promise), not against a side section. The hero and the hub card must stage that main claim (for a "which islands have a warning, compared across governments" article: people comparing the US/UK/Canada levels for an island). Only the two inline images may stage side risks (crime, storm). Before any hand-off, write the one-line main claim, then for each image the page sentence it proves; if the image proves only a side section, it can be inArticle, never hero or card. Do this BEFORE showing prompts, without being asked.
+
 ## 0. Core principles (these are the rules; everything below is detail and EXAMPLES)
 
 1. **Different items in every image** unless there is a specific reason for a repeat (for example the article is about one product that must appear). Props, products, bags and food differ in type, shape, colour and brand from image to image.

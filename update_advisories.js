@@ -33,7 +33,14 @@ function get1(url) {
 }
 
 // Our 85 countries (ISO code + name) come from the homepage data; load them the same way build.js does.
-const EXTRA = [{ code: 'TC', name: 'Turks and Caicos Islands' }];
+const EXTRA = [{ code: 'TC', name: 'Turks and Caicos Islands' },
+  // Caribbean islands and territories for the Caribbean article (names follow the State Dept titles so they match by name)
+  { code: 'AI', name: 'Anguilla' }, { code: 'AG', name: 'Antigua and Barbuda' }, { code: 'AW', name: 'Aruba' }, { code: 'BS', name: 'Bahamas' },
+  { code: 'BB', name: 'Barbados' }, { code: 'VG', name: 'British Virgin Islands' }, { code: 'KY', name: 'Cayman Islands' }, { code: 'CW', name: 'Curaçao' },
+  { code: 'DM', name: 'Dominica' }, { code: 'GD', name: 'Grenada' }, { code: 'GP', name: 'Guadeloupe' }, { code: 'HT', name: 'Haiti' },
+  { code: 'MQ', name: 'Martinique' }, { code: 'MS', name: 'Montserrat' }, { code: 'BL', name: 'Saint Barthelemy' }, { code: 'KN', name: 'Saint Kitts and Nevis' },
+  { code: 'LC', name: 'Saint Lucia' }, { code: 'MF', name: 'French Saint Martin' }, { code: 'VC', name: 'Saint Vincent and the Grenadines' },
+  { code: 'SX', name: 'Sint Maarten' }, { code: 'TT', name: 'Trinidad and Tobago' }];
 function loadCountries() {
   const { JSDOM } = require('jsdom');
   const html = fs.readFileSync(path.join(__dirname, 'canitakethis.html'), 'utf8');
@@ -50,7 +57,7 @@ const plain = h => String(h || '').replace(/<[^>]+>/g, ' ').replace(/&[a-z#0-9]+
 const clip = (s, n) => { s = s.trim(); if (s.length <= n) return s; const c = s.slice(0, n - 1); const i = Math.max(c.lastIndexOf('. '), c.lastIndexOf(' ')); return c.slice(0, i > n * 0.6 ? i : n - 1).replace(/[,;:.]$/, '') + '...'; };
 const norm = s => String(s).toLowerCase().replace(/&/g, 'and').replace(/[^a-z0-9]+/g, ' ').trim();
 // GOV.UK slugs that differ from our country names
-const UK_ALIAS = { 'united states': 'usa', 'czechia': 'czech-republic', 'south korea': 'south-korea', 'hong kong': 'hong-kong', 'united arab emirates': 'united-arab-emirates', 'russia': 'russia', 'turkey': 'turkey', 'ireland': 'ireland' };
+const UK_ALIAS = { 'saint barthelemy': 'st-martin-and-st-barthelemy', 'french saint martin': 'st-martin-and-st-barthelemy', 'sint maarten': 'st-maarten', 'saint lucia': 'st-lucia', 'saint kitts and nevis': 'st-kitts-and-nevis', 'saint vincent and the grenadines': 'st-vincent-and-the-grenadines', 'united states': 'usa', 'czechia': 'czech-republic', 'south korea': 'south-korea', 'hong kong': 'hong-kong', 'united arab emirates': 'united-arab-emirates', 'russia': 'russia', 'turkey': 'turkey', 'ireland': 'ireland' };
 
 // The State Dept feed tags countries with FIPS codes (not ISO), so countries are matched by the name in the advisory title.
 const US_ALIAS = { 'kingdom of denmark': 'denmark', 'the bahamas': 'bahamas', 'turkiye': 'turkey', 'burma': 'myanmar', 'the gambia': 'gambia', 'the netherlands': 'netherlands', 'czech republic': 'czechia', 'hong kong sar': 'hong kong' };

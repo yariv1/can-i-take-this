@@ -238,3 +238,10 @@ Numbers with cm/in or kg/lb convert automatically via /units.js (loaded by the p
 
 ## QA before preview
 Run `node audit_article_qa.js <slug>` (ARTICLE_QA.md). It must print PASS.
+
+## SEO checklist (added 2026-10-06, HARD: run for every article)
+- Title, H1 and slug use the winning Ahrefs phrase in its exact word order; title tag starts with it. Meta description 120-160 chars with the phrase.
+- `guideShell` now adds BreadcrumbList (all guide pages), Article + `og:image` (first `/assets/blog/` image in the body, i.e. the hero) + `twitter:card` for blog articles, and FAQPage built from the Quick answers markup (`<h3 class="cox-q">` + `<p>`). Keep FAQ in that exact markup or the schema is lost.
+- Put the target phrase and its close variants (the Hard/other-order phrases from Ahrefs) in one H2 and in the FAQ questions, naturally.
+- Link to 2+ sibling articles and any country/airline pages; add the hub card; add the URL to `GSC_INDEXING_TRACKER.md`.
+- Live-data articles: stat numbers and lists that depend on levels must be refreshed client-side (see `caribbean_shared.js`), never baked-only.

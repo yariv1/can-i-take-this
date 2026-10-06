@@ -130,6 +130,7 @@ const body = CSS + CSS2 + meta + hero +
   '<script>var TWC=' + JSON.stringify({ USN: US_NAMES, CAN: CA_NAMES, UKS: UK_ST }) + ';' + fs.readFileSync(path.join(__dirname, 'travel_warning_client.js'), 'utf8') + '</' + 'script>';
 
 module.exports = {
+  __css: CSS2,
   slug: SLUG,
   title: 'Travel Warning by Country (2026): Current US, UK and Canada Advisory Levels | canitakethis.co',
   desc: 'Current travel warning levels for ' + N + ' countries from the US State Department, UK FCDO and Canada, side by side. What each level means, with a country search and update dates.',

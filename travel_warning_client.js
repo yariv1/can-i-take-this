@@ -12,7 +12,7 @@
   function filter() {
     var v = q.value.trim().toLowerCase(), n = 0;
     rows.forEach(function (r) { var m = (!v || r.getAttribute('data-n').indexOf(v) > -1) && (!ct || r.getAttribute('data-ct') === ct); r.hidden = !m; if (m) n++; });
-    cnt.textContent = n + (n === 1 ? ' country' : ' countries');
+    cnt.textContent = n + ' ' + (n === 1 ? (cnt.getAttribute('data-one') || 'country') : (cnt.getAttribute('data-many') || 'countries'));
     none.style.display = n ? 'none' : 'block';
   }
   q.addEventListener('input', filter);
