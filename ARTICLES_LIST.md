@@ -97,6 +97,7 @@ Generated 2026-10-02 from the built `blog/<slug>/index.html` pages (39 articles)
 | 49 | Travel Safety | Is Turks and Caicos Safe? Current US, UK and Canada Advisory Levels (2026) | `/blog/is-turks-and-caicos-safe-2026/` | 2026-10-06 | 1000 |
 | 50 | Travel Safety | Travel Warning Caribbean (2026): Which Islands Have a US, UK or Canada Advisory | `/blog/travel-warning-caribbean-2026/` | 2026-10-06 | 1000 |
 | 51 | Travel Safety | Level 4 Travel Advisory Countries (2026): Live List of US Do Not Travel Countries | `/blog/level-4-travel-advisory-countries-2026/` | 2026-10-06 | 1000 |
+| 52 | Travel Safety | Travel Warning Mexico (2026): State-by-State US, UK and Canada Advisory Levels | `/blog/travel-warning-mexico-2026/` | 2026-10-06 | 1000 |
 
 
 ## Programmatic pages (not articles)

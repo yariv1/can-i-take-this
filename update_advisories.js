@@ -236,6 +236,81 @@ async function runLevel4() {
   } catch (e) { console.warn('LEVEL4 FAILED, level4.json kept as is:', e.message); }
 }
 
+
+// ---- Mexico regional advisories (article /blog/travel-warning-mexico-2026/) -> mexico.json ----
+// UK: the "State of X" blocks of the FCDO warnings page (GOV.UK content API). Canada: the "Regional Advisory - Avoid non-essential travel" list of
+// travel.gc.ca/destinations/mexico. The US state levels are NOT here: travel.state.gov blocks scripts (bot check), see mexico_us.json.
+const MX_OUT = path.join(__dirname, 'mexico.json');
+const MX_STATE_KEYS = {}; ['Aguascalientes', 'Baja California', 'Baja California Sur', 'Campeche', 'Chiapas', 'Chihuahua', 'Coahuila', 'Colima', 'Durango', 'Guanajuato', 'Guerrero', 'Hidalgo', 'Jalisco', 'Mexico City', 'Estado de Mexico', 'Michoacan', 'Morelos', 'Nayarit', 'Nuevo Leon', 'Oaxaca', 'Puebla', 'Queretaro', 'Quintana Roo', 'San Luis Potosi', 'Sinaloa', 'Sonora', 'Tabasco', 'Tamaulipas', 'Tlaxcala', 'Veracruz', 'Yucatan', 'Zacatecas'].forEach(n => { MX_STATE_KEYS[n.toLowerCase()] = 1; });
+function getHtml(url) {
+  return new Promise((resolve, reject) => {
+    https.get(url, { headers: { 'User-Agent': UA } }, res => {
+      if (res.statusCode !== 200) { res.resume(); return reject(new Error(url + ' -> HTTP ' + res.statusCode)); }
+      const chunks = []; res.on('data', c => chunks.push(c)); res.on('end', () => resolve(Buffer.concat(chunks).toString('utf8')));
+    }).on('error', reject).setTimeout(45000, function () { this.destroy(new Error('timeout ' + url)); });
+  });
+}
+async function mexicoUK() {
+  const d = await get('https://www.gov.uk/api/content/foreign-travel-advice/mexico');
+  const wp = ((d.details && d.details.parts) || []).find(p => p.slug === 'warnings-and-insurance');
+  const body = String(wp && wp.body || '');
+  const marks = []; body.replace(/<h\d[^>]*>\s*State of ([^<]+?)\s*<\/h\d>/gi, (m, name, idx) => { marks.push({ name: name.trim(), at: idx, len: m.length }); return m; });
+  const end = body.search(/Find out more about why FCDO advises|Before you travel/i);
+  const states = {};
+  marks.forEach((mk, i) => {
+    const sec = body.slice(mk.at + mk.len, i + 1 < marks.length ? marks[i + 1].at : (end > mk.at ? end : body.length));
+    const lines = [];
+    sec.replace(/<p[^>]*>([\s\S]*?)<\/p>\s*(<ul[\s\S]*?<\/ul>)?/gi, (m, p, ul) => {
+      const t = plain(p); if (!/^FCDO advises/.test(t)) return m;
+      let line = t.replace(/\.$/, '');
+      if (ul) { const li = []; ul.replace(/<li[^>]*>([\s\S]*?)<\/li>/gi, (x, l) => { li.push(plain(l)); return x; }); line += ' ' + li.join('; '); }
+      lines.push(line.trim()); return m;
+    });
+    if (!lines.length) return;
+    const key = nrm(mk.name);
+    states[key] = { name: mk.name, whole: lines.some(l => new RegExp('to the state of ' + mk.name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'i').test(l)), lines };
+  });
+  if (!Object.keys(states).length) throw new Error('UK Mexico: no State blocks found');
+  return { date: (d.public_updated_at || '').slice(0, 10), status: (d.details && d.details.alert_status) || [], states };
+}
+async function mexicoCA() {
+  const { JSDOM } = require('jsdom');
+  const html = await getHtml('https://travel.gc.ca/destinations/mexico');
+  const dom = new JSDOM(html);
+  const doc = dom.window.document;
+  const states = {}; let last = '';
+  [['AvoidAll', 4], ['AvoidNonEssential', 3]].forEach(([cls, level]) => {
+    const box = doc.querySelector('.RegionalAdv.' + cls); const ul = box && box.querySelector('ul'); if (!ul) return;
+    [...ul.children].forEach(li => {
+      const own = [...li.childNodes].filter(n => n.nodeType === 3 || (n.nodeType === 1 && n.tagName !== 'UL')).map(n => n.textContent).join(' ').replace(/\s+/g, ' ').trim().replace(/[:,]$/, '');
+      const sub = [...li.querySelectorAll(':scope > ul > li')].map(x => x.textContent.replace(/\s+/g, ' ').trim());
+      let name = own.split(',')[0].trim(); const text = own + (sub.length ? ': ' + sub.join('; ') : '');
+      if (/Zempoala/i.test(own)) name = 'Morelos';
+      const k = nrm(name);
+      // the source HTML sometimes closes a nested list early, which turns exclusions into top-level items: attach them to the previous state
+      if (!MX_STATE_KEYS[k] && last) { states[last].text = clip(states[last].text + '; ' + text, 600); return; }
+      states[k] = { name, level, text: clip(text, 600) }; last = k;
+    });
+  });
+  if (!Object.keys(states).length) throw new Error('Canada Mexico: no regional advisory list found');
+  const sec = doc.body.textContent.match(/Still valid[\s\S]{0,5}/); // unused
+  return { states };
+}
+async function runMexico() {
+  let prev = {}; try { prev = JSON.parse(fs.readFileSync(MX_OUT, 'utf8')); } catch (e) {}
+  try {
+    const [ukd, cad, adv] = [await mexicoUK(), await mexicoCA(), null];
+    const j = await get('https://data.international.gc.ca/travel-voyage/index-alpha-eng.json');
+    const r = j.data.MX; const cadate = r && r['date-published'] && r['date-published'].date ? r['date-published'].date.slice(0, 10) : '';
+    cad.date = cadate;
+    const now = new Date().toISOString();
+    const res = { updated: now, uk: ukd, ca: cad };
+    const stale = !prev.updated || (Date.parse(now) - Date.parse(prev.updated)) > 24 * 3600 * 1000;
+    if (stale || JSON.stringify(prev.uk) !== JSON.stringify(ukd) || JSON.stringify(prev.ca) !== JSON.stringify(cad)) { fs.writeFileSync(MX_OUT, JSON.stringify(res)); console.log('mexico.json updated: UK', Object.keys(ukd.states).length, 'states, Canada', Object.keys(cad.states).length, 'states'); }
+    else console.log('mexico.json unchanged');
+  } catch (e) { console.warn('MEXICO FAILED, mexico.json kept as is:', e.message); }
+}
+
 (async () => {
   const countries = loadCountries();
   let prev = {};
@@ -271,4 +346,5 @@ async function runLevel4() {
   if (changed) { fs.writeFileSync(OUT, JSON.stringify(res)); console.log('advisories.json updated'); }
   else console.log('advisories.json unchanged');
   await runLevel4();
+  await runMexico();
 })().catch(e => { console.error('update_advisories failed:', e.message); process.exit(1); });

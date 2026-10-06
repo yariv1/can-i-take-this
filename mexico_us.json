@@ -1,0 +1,223 @@
+{
+ "_about": "US State Department Mexico advisory, state by state. travel.state.gov blocks scripts (bot check), so the 6-hour job cannot refresh this file: it was read by hand from the official page (in a normal browser) and is re-read at every site update. If the US national advisory date in advisories.json differs from feedDate the page shows a warning.",
+ "checked": "2026-10-06",
+ "issued": "2026-05-29",
+ "feedDate": "2026-05-28",
+ "url": "https://travel.state.gov/en/international-travel/travel-advisories/mexico.html",
+ "national": {
+  "restrictions": [
+   "May not travel between cities after dark.",
+   "Must rely on dispatched vehicles from regulated taxi stands or app-based services like Uber or Cabify and may not wave down taxis on the street.",
+   "Should avoid traveling alone, especially in remote areas.",
+   "May not drive between Mexican border cities and the interior of Mexico, with limited exceptions."
+  ],
+  "citizens": "Due to security risks, U.S. citizens should follow the same restrictions as U.S. government employees while traveling."
+ },
+ "states": [
+  {
+   "k": "colima",
+   "n": "Colima",
+   "l": 4,
+   "r": "terrorism, crime, and kidnapping"
+  },
+  {
+   "k": "guerrero",
+   "n": "Guerrero",
+   "l": 4,
+   "r": "terrorism, crime and kidnapping"
+  },
+  {
+   "k": "michoacan",
+   "n": "Michoacán",
+   "l": 4,
+   "r": "terrorism and crime"
+  },
+  {
+   "k": "sinaloa",
+   "n": "Sinaloa",
+   "l": 4,
+   "r": "terrorism and crime"
+  },
+  {
+   "k": "tamaulipas",
+   "n": "Tamaulipas",
+   "l": 4,
+   "r": "terrorism, crime, and kidnapping"
+  },
+  {
+   "k": "zacatecas",
+   "n": "Zacatecas",
+   "l": 4,
+   "r": "terrorism and crime"
+  },
+  {
+   "k": "baja california",
+   "n": "Baja California",
+   "l": 3,
+   "r": "terrorism, crime, and kidnapping"
+  },
+  {
+   "k": "chiapas",
+   "n": "Chiapas",
+   "l": 3,
+   "r": "terrorism and crime"
+  },
+  {
+   "k": "chihuahua",
+   "n": "Chihuahua",
+   "l": 3,
+   "r": "terrorism, crime, and kidnapping"
+  },
+  {
+   "k": "guanajuato",
+   "n": "Guanajuato",
+   "l": 3,
+   "r": "terrorism, crime and kidnapping"
+  },
+  {
+   "k": "jalisco",
+   "n": "Jalisco",
+   "l": 3,
+   "r": "terrorism, crime, and kidnapping"
+  },
+  {
+   "k": "morelos",
+   "n": "Morelos",
+   "l": 3,
+   "r": "terrorism and crime"
+  },
+  {
+   "k": "sonora",
+   "n": "Sonora",
+   "l": 3,
+   "r": "terrorism and crime"
+  },
+  {
+   "k": "aguascalientes",
+   "n": "Aguascalientes",
+   "l": 2,
+   "r": "terrorism and crime"
+  },
+  {
+   "k": "baja california sur",
+   "n": "Baja California Sur",
+   "l": 2,
+   "r": "terrorism and crime"
+  },
+  {
+   "k": "coahuila",
+   "n": "Coahuila",
+   "l": 2,
+   "r": "terrorism and crime",
+   "flag": "The State Department lists Coahuila under Level 2, but the state's own text on that page begins \"Reconsider travel\" (Level 3 wording). Check the page."
+  },
+  {
+   "k": "durango",
+   "n": "Durango",
+   "l": 2,
+   "r": "terrorism and crime"
+  },
+  {
+   "k": "hidalgo",
+   "n": "Hidalgo",
+   "l": 2,
+   "r": "terrorism and crime"
+  },
+  {
+   "k": "mexico city",
+   "n": "Mexico City",
+   "l": 2,
+   "r": "terrorism and crime"
+  },
+  {
+   "k": "estado de mexico",
+   "n": "State of Mexico (Estado de México)",
+   "l": 2,
+   "r": "terrorism and crime"
+  },
+  {
+   "k": "nayarit",
+   "n": "Nayarit",
+   "l": 2,
+   "r": "terrorism and crime"
+  },
+  {
+   "k": "nuevo leon",
+   "n": "Nuevo León",
+   "l": 2,
+   "r": "terrorism, crime and kidnapping"
+  },
+  {
+   "k": "oaxaca",
+   "n": "Oaxaca",
+   "l": 2,
+   "r": "terrorism and crime"
+  },
+  {
+   "k": "puebla",
+   "n": "Puebla",
+   "l": 2,
+   "r": "terrorism and crime"
+  },
+  {
+   "k": "queretaro",
+   "n": "Querétaro",
+   "l": 2,
+   "r": "terrorism and crime"
+  },
+  {
+   "k": "quintana roo",
+   "n": "Quintana Roo",
+   "l": 2,
+   "r": "terrorism and crime"
+  },
+  {
+   "k": "san luis potosi",
+   "n": "San Luis Potosí",
+   "l": 2,
+   "r": "terrorism and crime"
+  },
+  {
+   "k": "tabasco",
+   "n": "Tabasco",
+   "l": 2,
+   "r": "terrorism and crime"
+  },
+  {
+   "k": "tlaxcala",
+   "n": "Tlaxcala",
+   "l": 2,
+   "r": "terrorism and crime"
+  },
+  {
+   "k": "veracruz",
+   "n": "Veracruz",
+   "l": 2,
+   "r": "terrorism and crime"
+  },
+  {
+   "k": "campeche",
+   "n": "Campeche",
+   "l": 1,
+   "r": ""
+  },
+  {
+   "k": "yucatan",
+   "n": "Yucatán",
+   "l": 1,
+   "r": ""
+  }
+ ],
+ "notes": {
+  "quintana roo": "Shootings between rival gangs have injured and killed innocent bystanders. U.S. citizens have been the victims of both non-violent and violent crimes in tourist and non-tourist areas. Pay attention to your surroundings after dark. Remain in well-lit pedestrian streets and tourist zones.",
+  "baja california sur": "There are no specific restrictions on travel for U.S. government employees in Baja California Sur state.",
+  "mexico city": "Both violent and non-violent crimes occur throughout Mexico City. Exercise extra caution, especially at night, outside of popular tourist areas where police patrol more frequently. Petty crime occurs frequently in both tourist and non-tourist areas.",
+  "jalisco": "In Guadalajara, battles between criminal groups have happened in tourist areas. Shootings between these groups have injured or killed innocent bystanders. There are no restrictions on travel in the Guadalajara Metropolitan area, Puerto Vallarta (including neighboring Riviera Nayarit), Chapala, and Ajijic.",
+  "oaxaca": "There are no restrictions on travel for Oaxaca City, Monte Alban, Puerto Escondido, or Huatulco.",
+  "sinaloa": "U.S. government employees may travel to Mazatlan by air or sea only: travel is limited to the historic town center from Avenida Gutierrez Najera to the ocean. U.S. government employees may not travel to other areas in the state of Sinaloa.",
+  "guerrero": "U.S. government employees may not travel to any area in the state of Guerrero, including tourist areas Acapulco, Zihuatanejo, Taxco, and Ixtapa.",
+  "baja california": "There are high homicide numbers in the non-tourist areas of Tijuana. There are no additional travel restrictions for U.S. government employees in Baja California state, including in Tijuana, Ensenada, and Rosarito.",
+  "yucatan": "Exercise normal precautions.",
+  "campeche": "Exercise normal precautions."
+ }
+}

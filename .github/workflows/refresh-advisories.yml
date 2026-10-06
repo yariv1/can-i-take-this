@@ -1,7 +1,7 @@
 name: Refresh travel advisories
 
-# Re-reads the official US, UK and Canada advisory feeds every 6 hours and commits advisories.json and level4.json when something changed
-# (or at least once a day, so the "checked" time on the page stays recent). Only those two data files are touched.
+# Re-reads the official US, UK and Canada advisory feeds every 6 hours and commits advisories.json, level4.json and mexico.json when something changed
+# (or at least once a day, so the "checked" time on the page stays recent). Only those data files are touched.
 on:
   schedule:
     - cron: '17 */6 * * *'
@@ -27,13 +27,13 @@ jobs:
       - run: node update_advisories.js
       - name: Commit if changed
         run: |
-          if git diff --quiet -- advisories.json level4.json; then
+          if git diff --quiet -- advisories.json level4.json mexico.json; then
             echo "advisory data unchanged"
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add advisories.json level4.json
+          git add advisories.json level4.json mexico.json
           git commit -m "Refresh travel advisories data"
           git pull --rebase origin main
           git push origin main

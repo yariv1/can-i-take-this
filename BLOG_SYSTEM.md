@@ -328,6 +328,7 @@ Read CONTENT_UNIQUENESS_RULES.md before writing any article or sibling page set;
 | `is-turks-and-caicos-safe-2026` | is turks and caicos safe | Travel Safety | blogHome-is-turks-and-caicos-safe-2026-card.webp, blog-is-turks-and-caicos-safe-2026-hero.webp, blog-is-turks-and-caicos-safe-2026-inArticle-1.webp, blog-is-turks-and-caicos-safe-2026-inArticle-2.webp | pending images |
 | `travel-warning-caribbean-2026` | travel warning caribbean | Travel Safety | blogHome-travel-warning-caribbean-2026-card.webp, blog-travel-warning-caribbean-2026-hero.webp, blog-travel-warning-caribbean-2026-inArticle-1.webp, blog-travel-warning-caribbean-2026-inArticle-2.webp | pending images |
 | `level-4-travel-advisory-countries-2026` | level 4 travel advisory countries | Travel Safety | blogHome-level-4-travel-advisory-countries-2026-card.webp, blog-level-4-travel-advisory-countries-2026-hero.webp, blog-level-4-travel-advisory-countries-2026-inArticle-1.webp, blog-level-4-travel-advisory-countries-2026-inArticle-2.webp | pending images |
+| `travel-warning-mexico-2026` | travel warning mexico | Travel Safety | blogHome-travel-warning-mexico-2026-card.webp, blog-travel-warning-mexico-2026-hero.webp, blog-travel-warning-mexico-2026-inArticle-1.webp, blog-travel-warning-mexico-2026-inArticle-2.webp | pending images |
 
 Source file for these six bodies: `carryon_pages.js` (SVG size diagrams generated from the numbers).
 
