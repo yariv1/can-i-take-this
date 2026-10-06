@@ -15,11 +15,13 @@ node audit_article_qa.js <slug>      # must print PASS, exit code 0
 5. **Typography:** no inline font-size below 0.85rem in the article.
 6. **Structure:** exactly one article `<h1>`, an official sources block, a "Checked <Month Year>" line, no NaN/undefined/[object].
 
+7. **Card grids:** a flex-column `*-card` in the article CSS must have its footer pinned with `margin-top:auto` (DESIGN_SYSTEM 8.11).
+
 Old articles (pre-ETIAS) still show legacy FAILs in the all-articles run (missing BLOG_SYSTEM rows, old image names). Those are known documentation gaps; the gate for a NEW article must be clean. A currency FAIL anywhere is always real.
 
 ## What the gate cannot see (do it in the browser pane, then say so)
 - 360px width (Galaxy S22 class), light and dark theme, header fits.
-- Looking at the finished page: stat strips, tables, grids, flag images load.
+- Looking at the finished page: stat strips, tables, grids, flag images load. In a card grid, check that the footers of neighbouring cards sit on the same line (measure with JS `bottom - footer.bottom`, it must be equal for all cards).
 - Images: view each at full size; read every sign/board/note text; compare with the article claim (IMAGE_PROMPT_GUIDE section 12).
 
 ## Incident log

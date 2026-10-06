@@ -81,10 +81,15 @@ async function usRss() {
   if (!out.length) throw new Error('RSS had no items');
   return out;
 }
+let US_LIST = null;
+async function usList() {
+  if (US_LIST) return US_LIST;
+  try { US_LIST = await get('https://cadataapi.state.gov/api/TravelAdvisories', 2); }
+  catch (e) { console.warn('US data API failed (' + e.message + '), using the State Dept RSS feed'); US_LIST = await usRss(); }
+  return US_LIST;
+}
 async function us(countries, prev) {
-  let list;
-  try { list = await get('https://cadataapi.state.gov/api/TravelAdvisories', 2); }
-  catch (e) { console.warn('US data API failed (' + e.message + '), using the State Dept RSS feed'); list = await usRss(); }
+  const list = await usList();
   const byName = {};
   list.forEach(a => {
     const m = /Level (\d)/.exec(a.Title || ''); if (!m) return;
@@ -139,6 +144,98 @@ async function uk(countries) {
   return out;
 }
 
+// ---- Level 4 / "do not travel" watch list (article /blog/level-4-travel-advisory-countries-2026/) -> level4.json ----
+// Every destination the State Dept rates Level 3 or 4 (so a country that moves up appears automatically), plus the UK and Canada status for
+// each, with the US reason (the advisory's own "due to ..." line and its risk sections). Written separately from advisories.json.
+const L4_OUT = path.join(__dirname, 'level4.json');
+// Region chips for the Level 4 article. ISO code -> region; anything not listed falls into Americas only if listed, else 'Other'.
+const REGION_OF = {};
+[['Africa', 'DZ AO BJ BW BF BI CM CV CF TD KM CG CD CI DJ EG GQ ER SZ ET GA GM GH GN GW KE LS LR LY MG MW ML MR MU MA MZ NA NE NG RW ST SN SC SL SO ZA SS SD TZ TG TN UG ZM ZW'],
+  ['Middle East', 'BH IR IQ IL JO KW LB OM PS QA SA SY AE YE TR'],
+  ['Asia', 'AF AM AZ BD BT BN KH CN GE HK IN ID JP KZ KG LA MO MY MV MN MM NP KP PK PH SG KR LK TW TJ TH TL TM UZ VN'],
+  ['Europe', 'AL AD AT BY BE BA BG HR CY CZ DK EE FI FR DE GR HU IS IE IT XK LV LI LT LU MT MD MC ME NL MK NO PL PT RO RU SM RS SK SI ES SE CH UA GB VA'],
+  ['Americas', 'AG AR BS BB BZ BO BR CA CL CO CR CU DM DO EC SV GD GT GY HT HN JM MX NI PA PY PE KN LC VC SR TT US UY VE'],
+  ['Oceania', 'AU FJ KI MH FM NR NZ PW PG WS SB TO TV VU']].forEach(r => r[1].split(' ').forEach(c => { REGION_OF[c] = r[0]; }));
+const ALIAS = { 'burma': ['myanmar', 'myanmar burma'], 'gaza': ['israel and palestine', 'palestine'], 'macau': ['macao'], 'democratic republic of the congo': ['democratic republic of congo kinshasa', 'democratic republic of the congo'], 'republic of the congo': ['republic of congo brazzaville', 'congo'], 'north korea': ['north korea', 'korea north', 'democratic peoples republic of korea'], 'south korea': ['south korea', 'korea south'], 'turkiye': ['turkey', 'turkiye'], 'the bahamas': ['bahamas'], 'the gambia': ['gambia'], 'ivory coast': ['cote d ivoire', 'ivory coast'], 'cote d ivoire': ['cote d ivoire', 'ivory coast'], 'czech republic': ['czechia'], 'eswatini': ['eswatini', 'swaziland'], 'west bank': ['israel and palestine', 'palestine'], 'israel': ['israel and palestine'], 'israel the west bank and gaza': ['israel', 'occupied palestinian territories'], 'timor leste': ['timor leste', 'east timor'], 'micronesia': ['micronesia', 'micronesia federated states of'] };
+const noAcc = s => String(s).normalize('NFD').replace(/[̀-ͯ]/g, '');
+const nrm = s => norm(noAcc(s));
+function usDetail(a) {
+  const html = String(a.Summary || '');
+  // headline = the first paragraph: "Do not travel to X (for any reason) due to <b>risk</b>, <b>risk</b> ..."
+  const firstP = html.split(/<\/p>/i)[0];
+  const lead = plain(firstP).replace(/\s*Read (the )?(entire|full) Travel Advisory\.?/i, '').replace(/\.\s*$/, '');
+  const m = /\bdue to\b\s*(.+)$/i.exec(lead);
+  let reason = m ? m[1].replace(/^(the )?risk of\s+/i, '').replace(/^\s*,\s*/, '').trim() : '';
+  reason = reason.replace(/\.\s*Please read.*$/i, '').replace(/\s*Read the full.*$/i, '').trim();
+  const rest = plain(html.slice(firstP.length)).replace(/\s*Read (the )?(entire|full) Travel Advisory\.?/i, '');
+  // headings get glued to the next sentence by plain(): strip the usual ones
+  const HEAD = /^(Advisory Summary:?|Restrictions on U\.S\. Government Personnel Movement|U\.S\. government employee travel restrictions|U\.S\. government employee travel restrictions|Travel restrictions for government employees|U\.S\. embassy operations|Unrest|Do not travel to [A-Z][A-Za-z .'’-]+? for any reason|For Americans in [A-Z][a-z]+)\s+/i;
+  const strip = x => { let y = x.trim(), n = 0; while (HEAD.test(y) && n++ < 3) y = y.replace(HEAD, ''); return y; };
+  const sents = rest.split(/(?<=[a-z0-9)”"'’])\.\s+(?=[A-Z])/).map(strip).filter(Boolean);
+  const helpRe = /no U\.S\. embassy|embassy[^.]*(suspended|closed|reduced|is open)|limited ability|unable to (provide|offer)|cannot (offer|provide)|leave immediately|protecting power|consular access|not allowed to travel|prohibited from travel|only essential/i;
+  let help = sents.filter(x => helpRe.test(x) && !/@|^(Review|Visit|Refer|Check|Read|Contact|If you)/.test(x)).slice(0, 2).map(x => clip(x.replace(/\.$/, '') + '.', 260));
+  // when the headline is not a clean "due to" list (e.g. Mali), fall back to the risk headings the advisory itself uses
+  if (!reason || /family members|employees/i.test(reason)) {
+    const RISK = ['crime', 'terrorism', 'kidnapping', 'unrest', 'armed conflict', 'health', 'landmines', 'wrongful detention'];
+    const found = [];
+    html.replace(/<h[2-5][^>]*>([\s\S]*?)<\/h[2-5]>|<b>([^<]{3,40})<\/b>|<span class='header-paragraph'>([^<]{3,40})<\/span>/gi, (x, h, bb, hp) => { const t = plain(h || bb || hp).toLowerCase().replace(/[:.]$/, ''); RISK.forEach(r => { if (t.indexOf(r) === 0 && found.indexOf(r) < 0) found.push(r); }); return x; });
+    if (found.length) reason = found.length > 1 ? found.slice(0, -1).join(', ') + ' and ' + found[found.length - 1] : found[0];
+  }
+  // entry / passport rules the advisory states on top of the advice (e.g. DRC Ebola flight rule, North Korea passport validation)
+  const rules = sents.filter(x => /passports? cannot be used|not be allowed to board|prevent U\.S\. citizens[^.]*boarding|must remain outside/i.test(x)).slice(0, 2).map(x => clip(x.replace(/\.$/, '') + '.', 300));
+  return { reason: clip(reason, 330), help, rules };
+}
+async function level4(prevL4) {
+  const list = await usList();
+  const ca = await get('https://data.international.gc.ca/travel-voyage/index-alpha-eng.json');
+  const caList = Object.keys(ca.data).map(k => ca.data[k]);
+  const caByName = {}; caList.forEach(r => { caByName[nrm(r['country-eng'])] = r; });
+  const idx = await get('https://www.gov.uk/api/content/foreign-travel-advice');
+  const ukKids = idx.links.children.map(k => ({ slug: k.base_path.split('/').pop(), name: k.details && k.details.country && k.details.country.name, updated: k.public_updated_at }));
+  const ukByName = {}; ukKids.forEach(k => { if (k.name) ukByName[nrm(k.name)] = k; ukByName[nrm(k.slug.replace(/-/g, ' '))] = k; });
+  const find = (map, name) => { const n = nrm(name); const c = [n].concat(ALIAS[n] || []); for (const x of c) if (map[x]) return map[x]; return null; };
+  const out = {}, unmatched = [];
+  for (const a of list) {
+    const m = /Level (\d)/.exec(a.Title || ''); if (!m || +m[1] < 3) continue;
+    const name = (a.Title || '').split(/ - Level| Travel Advisory/)[0].trim();
+    const key = nrm(name).replace(/ /g, '-');
+    const rec = { name, us: Object.assign({ level: +m[1], date: (a.Updated || a.Published || '').slice(0, 10), url: a.Link }, usDetail(a)) };
+    if (+m[1] < 4) { rec.us.help = []; rec.us.rules = []; }
+    const cr = find(caByName, name);
+    if (cr) { rec.code = cr['country-iso']; rec.ca = { level: cr['advisory-state'] + 1, regional: !!cr['has-regional-advisory'], date: (cr['date-published'] && cr['date-published'].date || '').slice(0, 10), slug: cr.eng && cr.eng['url-slug'] }; }
+    else unmatched.push('CA:' + name);
+    const uk = find(ukByName, name);
+    if (uk) {
+      try {
+        const d = await get('https://www.gov.uk/api/content/foreign-travel-advice/' + uk.slug);
+        const st = (d.details && d.details.alert_status) || [];
+        const wp = ((d.details && d.details.parts) || []).find(p => p.slug === 'warnings-and-insurance');
+        const paras = []; String(wp && wp.body || '').replace(/<p[^>]*>([\s\S]*?)<\/p>/gi, (x, t) => { paras.push(plain(t)); return x; });
+        const sents = paras.filter(x => /^FCDO advises against (?:all but essential travel|all travel) (?:to|within)/.test(x)).slice(0, 2).map(x => clip(x.replace(/\.$/, ''), 300));
+        rec.uk = { status: st, date: (d.public_updated_at || uk.updated || '').slice(0, 10), slug: uk.slug, summary: sents.join(' ') };
+      } catch (e) { console.warn('UK', name, e.message); if (prevL4 && prevL4.countries && prevL4.countries[key] && prevL4.countries[key].uk) rec.uk = prevL4.countries[key].uk; }
+    } else unmatched.push('UK:' + name);
+    if (out[key] && (out[key].us.reason || !rec.us.reason)) continue;
+    if (key === 'gaza') rec.code = 'PS';
+    rec.region = REGION_OF[rec.code] || 'Other';
+    out[key] = rec;
+  }
+  if (unmatched.length) console.warn('level4: no UK/CA match for', unmatched.join(', '));
+  if (!Object.keys(out).length) throw new Error('no Level 3/4 advisories found');
+  return out;
+}
+async function runLevel4() {
+  let prev = {}; try { prev = JSON.parse(fs.readFileSync(L4_OUT, 'utf8')); } catch (e) {}
+  try {
+    const countries = await level4(prev);
+    const now = new Date().toISOString();
+    const res = { updated: now, countries };
+    const stale = !prev.updated || (Date.parse(now) - Date.parse(prev.updated)) > 24 * 3600 * 1000;
+    if (stale || JSON.stringify(prev.countries) !== JSON.stringify(countries)) { fs.writeFileSync(L4_OUT, JSON.stringify(res)); console.log('level4.json updated:', Object.keys(countries).length, 'destinations at US Level 3 or 4'); }
+    else console.log('level4.json unchanged');
+  } catch (e) { console.warn('LEVEL4 FAILED, level4.json kept as is:', e.message); }
+}
+
 (async () => {
   const countries = loadCountries();
   let prev = {};
@@ -173,4 +270,5 @@ async function uk(countries) {
   const changed = !prev.countries || strip(prev) !== strip(res) || stale;
   if (changed) { fs.writeFileSync(OUT, JSON.stringify(res)); console.log('advisories.json updated'); }
   else console.log('advisories.json unchanged');
+  await runLevel4();
 })().catch(e => { console.error('update_advisories failed:', e.message); process.exit(1); });

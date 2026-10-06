@@ -112,6 +112,10 @@ async function runtimeCurrency(slug, fail) {
       if (px < 13.6) { fail.push('font below 0.85rem: ' + m[0]); break; }
     }
 
+    // 4b. EQUAL-HEIGHT CARD GRIDS: a flex-column card needs its footer/link pinned to the bottom (margin-top:auto), DESIGN_SYSTEM 8.11
+    const cssAll = (html.match(/<style[\s\S]*?<\/style>/gi) || []).join('');
+    if (/\.[a-z0-9-]+-card\{[^}]*flex-direction:column/.test(cssAll) && !/margin-top:auto/.test(cssAll)) fail.push('card grid with no footer pinned to the bottom (add margin-top:auto to the footer, DESIGN_SYSTEM 8.11)');
+
     // 5. STRUCTURE
     const h1s = (html.match(/<h1 class="guide-h1"/g) || []).length + (artHtml.match(/<h1\b(?! class="guide-h1")/g) || []).length;
     if (h1s !== 1) fail.push('h1 count ' + h1s + ' (want 1)');

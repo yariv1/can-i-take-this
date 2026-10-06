@@ -245,3 +245,6 @@ Run `node audit_article_qa.js <slug>` (ARTICLE_QA.md). It must print PASS.
 - Put the target phrase and its close variants (the Hard/other-order phrases from Ahrefs) in one H2 and in the FAQ questions, naturally.
 - Link to 2+ sibling articles and any country/airline pages; add the hub card; add the URL to `GSC_INDEXING_TRACKER.md`.
 - Live-data articles: stat numbers and lists that depend on levels must be refreshed client-side (see `caribbean_shared.js`), never baked-only.
+
+## Card grids (HARD, DESIGN_SYSTEM 8.11)
+Cards that sit in a grid are flex columns whose last element (date, links, read-more) has `margin-top:auto`, so every footer in a row is on the same line at the bottom. Copy `.l4-card` / `.l4-foot` from `level4_guide.js`. The QA gate fails articles without it. Region/continent chips above a long card list or table are expected when the list has more than ~12 items (see `level4_shared.js` chips, `travel_warning_guide.js` continent chips).
