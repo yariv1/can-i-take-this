@@ -37,7 +37,7 @@ const ukCell = o => {
 
 const CONT = {"FR":"Europe","DE":"Europe","IT":"Europe","ES":"Europe","GR":"Europe","NL":"Europe","CH":"Europe","PT":"Europe","AT":"Europe","BE":"Europe","PL":"Europe","IE":"Europe","SE":"Europe","NO":"Europe","DK":"Europe","FI":"Europe","IS":"Europe","CZ":"Europe","HU":"Europe","RO":"Europe","BG":"Europe","HR":"Europe","SI":"Europe","SK":"Europe","RS":"Europe","UA":"Europe","RU":"Europe","MT":"Europe","LU":"Europe","EE":"Europe","LV":"Europe","LT":"Europe","GB":"Europe","IL":"Asia","JP":"Asia","AE":"Asia","TH":"Asia","TR":"Asia","IN":"Asia","CN":"Asia","KR":"Asia","QA":"Asia","SA":"Asia","CY":"Asia","GE":"Asia","SG":"Asia","JO":"Asia","LB":"Asia","KW":"Asia","BH":"Asia","OM":"Asia","ID":"Asia","MY":"Asia","PH":"Asia","VN":"Asia","KH":"Asia","LK":"Asia","NP":"Asia","HK":"Asia","TW":"Asia","MV":"Asia","EG":"Africa","ZA":"Africa","MA":"Africa","KE":"Africa","NG":"Africa","ET":"Africa","MU":"Africa","SC":"Africa","US":"North America","CA":"North America","MX":"North America","CR":"North America","PA":"North America","DO":"North America","JM":"North America","CU":"North America","BR":"South America","AR":"South America","CL":"South America","CO":"South America","PE":"South America","AU":"Oceania","NZ":"Oceania","FJ":"Oceania"};
 const CONT_ORDER = ['Europe', 'Asia', 'Africa', 'North America', 'South America', 'Oceania'];
-const codes = Object.keys(A.countries);
+const codes = Object.keys(A.countries).filter(c => !A.countries[c].extra);
 const unknown = codes.filter(c => !CONT[c]);
 if (unknown.length) throw new Error('travel_warning_guide: no continent for ' + unknown.join(', '));
 const rows = codes.map(c => A.countries[c]).sort((a, b) => a.name.localeCompare(b.name));
@@ -89,7 +89,7 @@ const body = CSS + CSS2 + meta + hero +
   '<p class="tw-none" id="tw-none">No country matches that name.</p>' +
   '<div class="cox-tw"><table class="tw-t" id="tw-table"><thead><tr><th scope="col">Country</th><th scope="col">US State Department</th><th scope="col">UK FCDO</th><th scope="col">Canada</th></tr></thead><tbody>' + rowsHtml + '</tbody></table></div>' +
   '<p class="tw-d" id="tw-note">Official feeds last checked <strong id="tw-updated">' + esc(stamp(A.updated)) + '</strong>. The date under each level is when that government last updated its advice. &ldquo;No advisory for itself&rdquo; means a government does not rate its own country. Colors compare severity inside one system only: a yellow in one column is not the same warning as a yellow in another.</p>' +
-  '<script type="application/json" id="tw-data">' + JSON.stringify({ countries: A.countries }).replace(/</g, '\\u003c') + '</' + 'script>' +
+  '<script type="application/json" id="tw-data">' + JSON.stringify({ countries: Object.fromEntries(codes.map(c => [c, A.countries[c]])) }).replace(/</g, '\\u003c') + '</' + 'script>' +
   '<h2>📖 What the levels mean in each country&rsquo;s system</h2>' +
   '<p>The three governments use different scales, so the same destination can look different depending on who you ask.</p>' +
   SYS +

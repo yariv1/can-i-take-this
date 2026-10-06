@@ -1,4 +1,6 @@
 # Article Template — canitakethis.co Blog
+
+> **INTENT CHECK (HARD RULE, 2026-10-06, cannot be skipped):** before building ANY article, and whenever there is even a small doubt about what it should cover, research the searcher's intent online: search the exact title phrase, read several top results, write a one-line intent statement ("someone typing this wants to know ...") and a list of 6-10 expected sections, and build from that. The data we hold (feeds, official pages, striking facts) serves the intent and never decides the angle. After building, re-read the built H2s against the intent statement. Origin: the Turks and Caicos travel advisory article was built around a live levels panel and the ammunition law instead of the real intent, "what are the risks of traveling there" (crime, robbery, hurricanes, terrorism, health, roads).
 *Copy this file. Fill in the blanks. Never start from scratch.*
 
 ---

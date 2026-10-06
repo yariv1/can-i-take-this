@@ -33,12 +33,15 @@ function get1(url) {
 }
 
 // Our 85 countries (ISO code + name) come from the homepage data; load them the same way build.js does.
+const EXTRA = [{ code: 'TC', name: 'Turks and Caicos Islands' }];
 function loadCountries() {
   const { JSDOM } = require('jsdom');
   const html = fs.readFileSync(path.join(__dirname, 'canitakethis.html'), 'utf8');
   const dom = new JSDOM(html, { runScripts: 'dangerously', pretendToBeVisual: true, url: 'https://canitakethis.co/' });
   const c = dom.window.COUNTRIES.map(x => ({ code: x.code, name: x.name }));
   dom.window.close();
+  // extra destinations with their own article (not in the 85-country table); flagged so the table article skips them
+  EXTRA.forEach(e => { if (!c.some(x => x.code === e.code)) c.push({ code: e.code, name: e.name, extra: true }); });
   return c;
 }
 
@@ -84,7 +87,7 @@ async function us(countries, prev) {
     const li = lead.search(/(Exercise normal precautions?|Exercise increased caution|Reconsider travel|Do not travel)/i);
     if (li > 0) lead = lead.slice(li);
     lead = lead.replace(/^(.{5,40}?)\s+\1\b/i, '$1');
-    lead = lead.split(/(?<=[a-z0-9)])\.\s+(?=[A-Z])/).slice(0, 2).join('. ');
+    lead = lead.split(/(?<=[a-z0-9)])\.\s+(?=[A-Z])/).filter((s, i) => i === 0 || !/^[A-Z][a-z]+ [A-Z]/.test(s)).slice(0, 2).join('. ');
     if (lead && !/[.!?]$/.test(lead)) lead += '.';
     byName[n] = { level: +m[1], date: (a.Updated || a.Published || '').slice(0, 10), url: a.Link, summary: clip(lead, 300) };
   });
@@ -154,7 +157,7 @@ async function uk(countries) {
   // the page shows ONE "checked" time: the oldest source, so a source that keeps failing makes the date honestly old
   res.updated = Object.keys(res.sources).map(k => res.sources[k].checked).sort()[0] || now;
   countries.forEach(c => {
-    res.countries[c.code] = { name: c.name };
+    res.countries[c.code] = c.extra ? { name: c.name, extra: true } : { name: c.name };
     ['us', 'uk', 'ca'].forEach(k => { if (data[k][c.code]) res.countries[c.code][k] = data[k][c.code]; });
   });
   // only rewrite the file when a value changed, or at least once a day so the visible "checked" time stays recent (keeps scheduled commits quiet)

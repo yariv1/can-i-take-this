@@ -8,10 +8,11 @@ Before ANY image prompt is written or handed off (first draft, revision, any art
 
 1. Re-read the BUILT article body, not memory of it.
 2. For each of the 4 images, write down: (a) the section it sits in, (b) the exact article sentence it proves, quoted, (c) what in the picture visibly shows that sentence (a sign, note, screen text, number, object), (d) why it differs from the other three.
-3. Reject and redo the prompt if: the sentence is not visible in the picture (a generic airport, hug or passport could illustrate any article); the picture holds an element of another topic; the generator cannot render it; two images share a composition type; the sign or screen text is invented marketing wording instead of article facts.
-4. Put the article text into the scene itself (sign, note, board, screen).
-5. Show the 4 check lines (section, quoted sentence, visible proof, difference) in the reply BEFORE the four prompts, every time. A reply with prompts but without these lines is incomplete.
-6. Alt texts must be updated to match the final prompts, then rebuild and run the QA gate.
+3. **RISK TEST (added 2026-10-06, Turks and Caicos article, user furious):** ask what the READER needs to understand or fear from this article. If the article is about a risk (crime, arrest, hurricane, outbreak, fine, scam), each picture must show that risk happening or about to happen: the moment of theft, the scam in progress, the arrest-causing object in an officer's hand, the storm arriving. A calm adjacent scene (person reading about it, hotel safe, lobby with a tablet, tourist on a beach with a phone) FAILS even if it sits in the right section. Write one line per image: "the risk it shows: ...". If a picture could illustrate a normal vacation article, redo it.
+4. Reject and redo the prompt if: the sentence is not visible in the picture (a generic airport, hug or passport could illustrate any article); the picture holds an element of another topic; the generator cannot render it; two images share a composition type; the sign or screen text is invented marketing wording instead of article facts.
+5. Put the article text into the scene itself (sign, note, board, screen).
+6. Show the 4 check lines (section, quoted sentence, visible proof, difference) in the reply BEFORE the four prompts, every time. A reply with prompts but without these lines is incomplete.
+7. Alt texts must be updated to match the final prompts, then rebuild and run the QA gate.
 
 ## 0. Core principles (these are the rules; everything below is detail and EXAMPLES)
 
