@@ -74,7 +74,7 @@ Canonical values. A blank light cell means the token isn't redefined in light mo
 
 **Font families** (imported from Google Fonts):
 - **Space Grotesk** — weights 500/600/700 — headings, titles, brand, card titles.
-- **Inter** — weights 400/500/600 — body, UI, chips/tabs. Base `body` font.
+- **Inter** — weights 300/400/500/600 — body, UI, chips/tabs. Base `body` font. Weight 300 is loaded for the light-text rule below.
 - **Space Mono** — weights 400/700 — labels, tags, dates, category labels, badges.
 
 **Base:** `body{font-size:16px;line-height:1.55}` (guide/air/country shells use Inter;
@@ -97,6 +97,8 @@ the simple `shell()` uses the system sans stack at `16px/1.55`).
 | Card tag (`.bcard-tag`) | Space Mono | `.7rem` | 700 (inherited from `.tag`) | — |
 | Category label | Space Mono | `.72rem` | 700 | letter-spacing 1.5px, uppercase |
 | Soon card date | Space Mono | `.72rem` | 400 | — |
+
+**LIGHT TEXT AFTER A BOLD LEAD (HARD RULE, added 2026-10-06):** body text inside checklist items (`.cl-item`) and descriptive table cells (`.cox-t td`) is Inter **300**; the bold lead-in / labels inside them (`<strong>`, `<b>`, row-header `th`) stay **600**. Reason: 400 on the dark background reads too heavy next to a bold lead. Any new list/table component of this kind must follow it. The CSS lives in `build.js` (`.cl-item>div:last-child`) and `carryon_pages.js` (`.cox-t td`). Keep contrast at WCAG AA (colour is unchanged).
 
 ---
 
@@ -214,6 +216,7 @@ The **only** hover effect is a background color change:
 
 ## 7. Changelog
 
+- **2026-10-06:** light text (Inter 300) after a bold lead in checklist items and table cells (§2).
 - **2026-10-01:** added §8.10 — article scrollbars must match the home-page carousel scrollbar (`:has(>table)` + `.scroll-x` in guideShell CSS).
 
 - **This session:** featured excerpt → `var(--text)`; soon title weight → 400; soon tag →
