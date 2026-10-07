@@ -37,6 +37,7 @@ function slug(s){return s.toLowerCase().replace(/&/g,'and').replace(/[^a-z0-9]+/
 function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
 const BAGD=require('./baggage_detail.js');
 const TOPICS=require('./airline_topics.js');
+const CVAPE=require('./country_vape.js');
 // ---- title / meta description helpers (2026-10-07 title batch, see TITLE_BATCH.md) ----
 // Meta descriptions must name the subject (airline / country) and carry the real answer; titles carry the key number only when the page data has it.
 function cutDesc(str, n){ str=String(str||'').replace(/\s+/g,' ').trim(); n=n||158; if(str.length<=n) return str; var c=str.slice(0,n); var d=c.lastIndexOf('. '); if(d>n*0.55) return c.slice(0,d+1); var i=c.lastIndexOf(' '); c=c.slice(0,i>n*0.6?i:n-1).replace(/[,;:\-\s]+$/,''); return c+'\u2026'; }
@@ -298,6 +299,7 @@ function countryShell(o){/*data-country4*/
   } else {
     main=card(o.v,true);
   }
+  if(o.extra) main+=o.extra;
   var taBlock='',taScript='';/*ta-inject*/
   if(o.cat==='food'||o.cat==='med'){/*ta-hoist*/
     var _isMed=o.cat==='med';
@@ -310,6 +312,7 @@ function countryShell(o){/*data-country4*/
   }
 
   var faqLd={"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":o.h1||('What can I bring into '+cn+'?'),"acceptedAnswer":{"@type":"Answer","text":o.faqA||''}}]};
+  if(o.faqExtra) o.faqExtra.forEach(function(q){faqLd.mainEntity.push({"@type":"Question","name":q[0],"acceptedAnswer":{"@type":"Answer","text":q[1]}});});
   var bread={"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":BASE+"/"},{"@type":"ListItem","position":2,"name":cn+" customs","item":canonical}]};
 
   return '<!doctype html><html lang="en"><head>\n'
@@ -921,10 +924,12 @@ function run(){
       setS({mode:'country',cat:cc.cat,country:cn,detail:null});
       const v=w.verdict(); if(!v) return;
       const url=`/country/${slug(cn)}/${cc.url}/`;
+      const CV=(cc.cat==='vape')?CVAPE.build(c):null;
       write(url+'index.html', countryShell({
         mode:'cat', url, c, cat:cc.cat, v,
-        title:`${batchTitle(cc.cat, cn, v, cc.t(cn))} | canitakethis.co`,
-        desc:batchDesc(({alcohol:cn+' duty-free alcohol allowance 2026',cash:cn+' cash declaration limit 2026',tobacco:cn+' duty-free tobacco allowance 2026',plants:'Bringing plants or seeds into '+cn+' (2026)',vape:'Vaping in '+cn+' 2026'})[cc.cat]||cn, cc.cat==='plants'?{head:v.head,lines:[String((v.lines||[]).filter(Boolean)[0]||'').replace(' for biosecurity','')]}:v, cc.cat==='tobacco'||cc.cat==='alcohol'||cc.cat==='cash'),
+        extra:CV?CV.html:'', faqExtra:CV?CV.faq:null,
+        title:CV?(CV.ttl+' | canitakethis.co'):`${batchTitle(cc.cat, cn, v, cc.t(cn))} | canitakethis.co`,
+        desc:CV?CV.desc:batchDesc(({alcohol:cn+' duty-free alcohol allowance 2026',cash:cn+' cash declaration limit 2026',tobacco:cn+' duty-free tobacco allowance 2026',plants:'Bringing plants or seeds into '+cn+' (2026)',vape:'Vaping in '+cn+' 2026'})[cc.cat]||cn, cc.cat==='plants'?{head:v.head,lines:[String((v.lines||[]).filter(Boolean)[0]||'').replace(' for biosecurity','')]}:v, cc.cat==='tobacco'||cc.cat==='alcohol'||cc.cat==='cash'),
         h1:cc.q(cn), faqA:`${v.head} ${(v.lines||[]).filter(Boolean).join(' ')}`
       }));
       pages.push({url,changefreq:'monthly'});

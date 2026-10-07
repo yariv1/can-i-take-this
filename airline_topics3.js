@@ -1,5 +1,54 @@
 // Topic entries, batch 3 (read on each airline's OWN pages on 2026-10-08).
 module.exports = {
+  "China Eastern": {
+    vape: {
+      ttl: "China Eastern Vape & E-Cigarette Rules: Carry-On Only, No Charging",
+      desc: "China Eastern vape rules: e-cigarettes with lithium batteries only in carry-on baggage, never charged on the aircraft, with measures against accidental activation. Max 2 power banks.",
+      answer: "China Eastern's Regulations on Safe Transportation of Lithium Batteries say electronic cigarettes containing lithium batteries are permitted for transport in carry-on baggage only and may not be charged on the aircraft, and that additional measures must be taken to prevent accidental activation. Power banks are limited to two per person, carried in carry-on only, up to 100 Wh (100 to 160 Wh with airline approval).",
+      sections: [
+        { h: "🚭 What China Eastern says about e-cigarettes", p: "From China Eastern's Regulations on Safe Transportation of Lithium Batteries (article 10).",
+          table: { head: ["Question", "China Eastern rule"], rows: [
+            ["Carry-on baggage", "Permitted (carry-on baggage only)"],
+            ["Checked baggage", "Not permitted"],
+            ["Charging on the aircraft", "Not permitted"],
+            ["Accidental activation", "Additional measures must be taken to prevent it"] ] },
+          list: ["<strong>Power banks:</strong> carry-on only; 100 Wh or less allowed; over 100 Wh and up to 160 Wh with airline approval; a maximum of two per passenger.",
+            "<strong>On board:</strong> do not charge power banks or spare lithium batteries from aircraft power; do not use them to charge other devices; keep any switch off; do not place them in overhead bins, but in carry-on baggage under the seat or the seat-back pocket.",
+            "<strong>Domestic flights in China:</strong> from 28 June 2025, power banks without a 3C mark, with an unclear 3C mark, or of recalled models or batches are prohibited."] }
+      ],
+      faq: [
+        ["Can I take a vape on China Eastern?", "Yes, in carry-on baggage only. Electronic cigarettes with lithium batteries are not permitted in checked baggage."],
+        ["Can I charge my e-cigarette on a China Eastern flight?", "No. China Eastern says electronic cigarettes containing lithium batteries may not be charged on the aircraft."],
+        ["How many power banks can I take on China Eastern?", "A maximum of two per passenger, in carry-on baggage only, 100 Wh or less (up to 160 Wh with airline approval), and not in overhead bins."],
+        ["Do power banks need a 3C mark on China Eastern flights?", "On domestic flights in China, from 28 June 2025 power banks without a 3C mark, with an unclear mark, or of recalled models are prohibited."]
+      ],
+      sources: [["https://www.ceair.com/global/en_static/Announcement/BaggageService/RegulationsonSafeTransportationofLithiumBatteries/", "China Eastern &mdash; Regulations on safe transportation of lithium batteries"]]
+    }
+  },
+  "Air Europa": {
+    vape: {
+      ttl: "Air Europa Vape & E-Cigarette Rules: Hand Luggage, Never Checked",
+      desc: "Air Europa vape rules: electronic cigarettes must go in your hand luggage, never in checked baggage, because of the overheating risk, and the same applies to batteries and vaporizers.",
+      answer: "Air Europa says that if you transport electronic cigarettes they must go in your hand luggage, never in checked baggage, because these items present a potential risk of overheating that can cause the baggage holding them to ignite. The airline says the same risk applies to parts used with electronic cigarettes, such as batteries, resistors and vaporizers.",
+      sections: [
+        { h: "🚭 What Air Europa says about e-cigarettes", p: "From Air Europa's Prohibited Items on Board page.",
+          table: { head: ["Question", "Air Europa rule"], rows: [
+            ["Hand luggage", "Yes: electronic cigarettes must go in your hand luggage"],
+            ["Checked baggage", "Never"],
+            ["Why", "Potential risk of overheating, which can make the baggage holding it ignite"],
+            ["Parts", "The same applies to batteries, resistors and vaporizers"] ] },
+          list: ["<strong>Smart luggage:</strong> luggage with non-removable lithium batteries above 0.3 g lithium metal or 2.7 Wh lithium-ion is listed among prohibited items.",
+            "<strong>Flammable liquids:</strong> Air Europa's prohibited list includes petrol, diesel, methanol, paints, solvents and alcohol (as flammable liquids); check its pages for how this applies to retail drinks."] }
+      ],
+      faq: [
+        ["Can I take a vape on Air Europa?", "Yes, in your hand luggage. Air Europa says electronic cigarettes must go in hand luggage, never in checked baggage."],
+        ["Can I put my e-cigarette in checked baggage on Air Europa?", "No. Air Europa says never, because of the potential risk of overheating."],
+        ["Do the batteries and vaporizers of my e-cigarette follow the same rule on Air Europa?", "Yes. Air Europa says the risk also applies to parts and devices used with electronic cigarettes, such as batteries, resistors and vaporizers."],
+        ["Are smart suitcases allowed on Air Europa?", "Luggage with non-removable lithium batteries that exceed 0.3 g lithium metal or 2.7 Wh lithium-ion is listed among Air Europa's prohibited items."]
+      ],
+      sources: [["https://www.aireuropa.com/us/en/aea/travel-information/security/forbidden-articles.html", "Air Europa &mdash; Prohibited items on board"]]
+    }
+  },
   "Lufthansa": {
     vape: {
       ttl: "Lufthansa Vape & E-Cigarette Rules: Cabin Only, No Use or Charging",
