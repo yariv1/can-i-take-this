@@ -35,6 +35,18 @@ setTimeout(run, 300);
 
 function slug(s){return s.toLowerCase().replace(/&/g,'and').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');}
 function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+// ---- title / meta description helpers (2026-10-07 title batch, see TITLE_BATCH.md) ----
+// Meta descriptions must name the subject (airline / country) and carry the real answer; titles carry the key number only when the page data has it.
+function cutDesc(str, n){ str=String(str||'').replace(/\s+/g,' ').trim(); n=n||158; if(str.length<=n) return str; var c=str.slice(0,n); var d=c.lastIndexOf('. '); if(d>n*0.55) return c.slice(0,d+1); var i=c.lastIndexOf(' '); c=c.slice(0,i>n*0.6?i:n-1).replace(/[,;:\-\s]+$/,''); return c+'\u2026'; }
+function batchDesc(subject, v, skipHead){ var lines=(v.lines||[]).filter(Boolean); return cutDesc(subject+': '+(skipHead?'':(v.head||'')+' ')+(lines[0]||'')); }
+function fitTitle(long, short){ return long.length<=64 ? long : short; }
+function batchTitle(cat, cn, v, old){
+  var txt=(v.head||'')+' '+((v.lines||[]).filter(Boolean)[0]||''), m;
+  if(cat==='plants') return fitTitle('Can You Bring Seeds & Plants into '+cn+'? Permit Rules (2026)', 'Seeds & Plants into '+cn+': Permit Rules 2026');
+  if(cat==='tobacco'){ var l0=(v.lines||[]).filter(Boolean)[0]||''; m=/often|set amount|~/i.test(l0)?null:/(\d[\d,]*)\s*cigarettes/i.exec(l0); if(m) return fitTitle(cn+' Duty-Free Tobacco Allowance 2026: '+m[1]+' Cigarettes', cn+' Duty-Free Tobacco 2026: '+m[1]+' Cigarettes'); return old; }
+  if(cat==='cash'){ m=/declare (?:more than )?(\S*\d[\d,.]*)/i.exec(v.head||''); if(m && /^[^\d]{0,3}\d/.test(m[1])) return fitTitle(cn+' Cash Limit 2026: Declare '+m[1]+' or More', cn+' Cash Limit 2026: Declare '+m[1]); return old; }
+  return old;
+}
 function fareTiers(label){var L=String(label).toLowerCase();var noPE=L.replace(/premium\s+economy/g,' ');var peSrc=L.replace(/saga premium/g,' ');var first=/\bfirst\b|suites|premi\u00E8re|premiere/.test(L);var biz=/business|\bclub\b|crown|\bmint\b|bizclass|cloud nine|prestige|\bpremier\b|aerspace|delta one|polaris|royal silk|business select|saga premium|clase premier/.test(L);var pe=/premium/.test(peSrc);var econ=/economy|\u00E9conomy|b\u00E1sica|cl\u00E1sica|econo/.test(noPE);var t=[];if(econ||!(first||biz||pe))t.push('Economy');if(pe)t.push('Premium Economy');if(biz)t.push('Business');if(first)t.push('First');return t.join(' / ');}
 function ensure(d){fs.mkdirSync(d,{recursive:true});}
 function write(rel, content){const p=path.join(OUT,rel);ensure(path.dirname(p));fs.writeFileSync(p,content);}
@@ -487,8 +499,20 @@ function airPlaneShell(o){
     vape:{h1:'Vapes & e-cigarettes on '+a.name+' (2026)',ttl:a.name+' Vape & E-Cigarette Rules 2026'}
   };
   var meta=CATMETA[cat];
+  (function(){
+    var NOUN={liquids:'liquids',perfume:'perfume and aerosol',alcohol:'alcohol',power:'power bank',vape:'vape and e-cigarette'};
+    var txt=(vdef.head||'')+' '+((vdef.lines||[]).filter(Boolean)[0]||'');
+    if(cat==='power'){
+      var m1=/Max (\d+) power banks?, (\d+) Wh/i.exec(txt)||/Only (\d+) power bank[^,]*, (\d+) Wh/i.exec(txt), m2=/(?:Under|up to)?\s*(\d+) Wh or less/i.exec(txt)||/Under (\d+) Wh/i.exec(txt);
+      if(m1) meta.ttl=fitTitle(a.name+' Power Bank Rules (2026): Max '+m1[1]+', '+m1[2]+' Wh', a.name+' Power Banks 2026: Max '+m1[1]+', '+m1[2]+' Wh');
+      else if(m2) meta.ttl=fitTitle(a.name+' Power Bank Rules (2026): '+m2[1]+' Wh Limit', a.name+' Power Banks 2026: '+m2[1]+' Wh Limit');
+    } else if(cat==='liquids'){
+      meta.ttl=fitTitle(a.name+' Liquids Rules (2026): 100 ml Limit, Carry-On & Checked', a.name+' Liquids 2026: 100 ml Carry-On Limit');
+    }
+    meta.desc=cutDesc(a.name+' '+NOUN[cat]+' rules 2026: '+txt.replace(/\s+/g,' ').trim()+(cat==='vape'?'':' Check carry-on vs checked bag.'));
+  })();
   var faqA=(vdef.head||'')+' '+((vdef.lines||[]).filter(Boolean).join(' '));
-  var desc=((vdef.head||'')+' '+((vdef.lines||[]).filter(Boolean)[0]||'')).slice(0,155);
+  var desc=meta.desc||((vdef.head||'')+' '+((vdef.lines||[]).filter(Boolean)[0]||'')).slice(0,155);
   var LOGOSRC='https://www.gstatic.com/flights/airline_logos/70px/'+a.iata+'.png';
   var logo='<span class="logo" style="background:#fff"><span>'+esc(a.iata)+'</span><img class="logo-img" data-srcs="'+LOGOSRC+'" data-i="0" src="'+LOGOSRC+'" alt=""></span>';
   var t=airTabs(sl,cat);
@@ -888,8 +912,8 @@ function run(){
       const url=`/country/${slug(cn)}/${cc.url}/`;
       write(url+'index.html', countryShell({
         mode:'cat', url, c, cat:cc.cat, v,
-        title:`${cc.t(cn)} | canitakethis.co`,
-        desc:`${v.head} ${(v.lines||[]).filter(Boolean)[0]||''}`.slice(0,155),
+        title:`${batchTitle(cc.cat, cn, v, cc.t(cn))} | canitakethis.co`,
+        desc:batchDesc(({alcohol:cn+' duty-free alcohol allowance 2026',cash:cn+' cash declaration limit 2026',tobacco:cn+' duty-free tobacco allowance 2026',plants:'Bringing plants or seeds into '+cn+' (2026)',vape:'Vaping in '+cn+' 2026'})[cc.cat]||cn, cc.cat==='plants'?{head:v.head,lines:[String((v.lines||[]).filter(Boolean)[0]||'').replace(' for biosecurity','')]}:v, cc.cat==='tobacco'||cc.cat==='alcohol'||cc.cat==='cash'),
         h1:cc.q(cn), faqA:`${v.head} ${(v.lines||[]).filter(Boolean).join(' ')}`
       }));
       pages.push({url,changefreq:'monthly'});
@@ -987,7 +1011,7 @@ function run(){
     write(url+'index.html', countryShell({
       mode:'stack', url, c, cat:'food', items,
       title:`Can I Bring Food into ${c.name}? Meat, Dairy, Fruit Rules 2026 | canitakethis.co`,
-      desc:`What food you can bring into ${c.name} — meat, dairy, fresh fruit, eggs, honey and packaged food. 2026 biosecurity rules. When unsure, declare it.`,
+      desc:cutDesc(`Can you bring food into ${c.name}? Meat, dairy, fresh fruit, eggs, honey and packaged food checked one by one for 2026: ${worst==='stop'?'some are banned':worst==='warn'?'some need a declaration or permit':'most are allowed'}. When unsure, declare it.`),
       h1:`Can I bring food into ${c.name}? (2026)`,
       lead:`Some foods are fine, others are restricted or destroyed on arrival in ${c.name}.`,
       faqA:`In ${c.name}, sealed packaged food is usually fine, while meat, dairy and fresh produce are often restricted or banned. Always declare food on arrival.`

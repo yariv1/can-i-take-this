@@ -335,11 +335,32 @@ Icons make articles scannable. Humans do not consume content as walls of text. *
 
 Any grid of cards inside an article (country cards, island cards, risk cards, anything in a CSS grid where the cards stretch to the tallest one) follows the same rule as the blog hub cards (BLOG_SYSTEM): the card is a flex column (`display:flex;flex-direction:column`) and its LAST element (date line, "Read the full advisory" links, read-more) gets `margin-top:auto`, so the footers of all cards in a row sit on one line at the bottom edge and never float in the middle of a card with empty space under them. The user had to point this out on the Level 4 countries article (Burkina Faso card next to a longer card). Reference implementation: `.l4-card` + `.l4-foot` in `level4_guide.js`. `audit_article_qa.js` fails an article whose CSS has a flex-column `*-card` and no `margin-top:auto`.
 
-**Exception: masonry (bento) card grids (2026-10-07).** When the cards have very different amounts of text (the Mexico destination cards), use a masonry layout instead of an equal-height grid: `column-width:290px;column-count:2` on the wrapper and `break-inside:avoid;margin:0 0 12px` on each card. Cards then hug their content, heights are unequal on purpose, and there are no empty areas inside a card. Do not use `margin-top:auto` footers in a masonry grid. Reference: `.mx-grid` / `.mx-card` in `mexico_guide.js`. Equal-height grids (country cards in the Level 4 article) keep the pinned-footer rule above.
+**Exception:** cards with very different amounts of text use the bento grid in section 8.13 instead (no pinned footers there).
 
 ### 8.12 Table cells: no sentences in a row header, no accidental horizontal scroll (HARD RULE, 2026-10-07)
 
 `.tw-t th[scope=row]` is nowrap. Never put a note or sentence in a row header: one long note in the Coahuila row stretched the State column of the Mexico table to 1,027px and pushed all other columns off screen. Put notes in a normal cell (they wrap), keep row headers to a short name, give the table a `min-width` no wider than its container at 900px, and let `td` wrap (`white-space:normal`). Check in the browser: at a 1000px and a 900px viewport the table wrapper's `scrollWidth` must not exceed its `clientWidth` (a scrollbar only on phone widths).
+
+### 8.13 Bento (masonry) card grid: cards hug their content (added 2026-10-07)
+
+**When to use:** a set of cards whose text lengths differ a lot (destination cards, region cards, case cards). An equal-height grid would leave big empty areas inside the short cards. **When not to use:** short, uniform cards (stat boxes, country cards with the same fields): use the equal-height grid with pinned footers (8.11).
+
+**Behaviour:** two columns on desktop, one column on phone. Every card is exactly as tall as its own content, so heights are unequal on purpose and the columns interlock like a bento box. No empty space inside a card, no `margin-top:auto` footer, no stretching to match a neighbour. Cards flow down column 1, then column 2 (reading order is top-to-bottom per column, so put the most important card first).
+
+**CSS (copy this, do not use `display:grid` for it):**
+```css
+.bento{display:block;column-width:290px;column-count:2;column-gap:12px;margin:1em 0}
+.bento-card{break-inside:avoid;-webkit-column-break-inside:avoid;margin:0 0 12px;
+  border:1px solid var(--line);border-radius:14px;background:var(--surface);padding:14px;
+  display:flex;flex-direction:column;gap:10px}
+```
+Three-up variant for short cards (national overview): `column-width:250px;column-count:3` on the wrapper. `column-width` makes it collapse to one column on a phone by itself (verified at 375px: one column, no horizontal scroll).
+
+**Card content pattern (Mexico destination cards):** `h3` title, muted one-line context ("State: ..."), the status pill, one sentence of reason, a quoted official sentence with a bold source lead, then one labelled block per extra source (label in muted bold 0.9rem, pill, one short sentence). Body text Inter 300 (8.x light-text rule), min font 0.95rem, pills as in 8.x components.
+
+**Rules:** a card must never be split across columns (`break-inside:avoid`); live-refreshed cards are re-rendered by script into the same wrapper, so the wrapper is the element carrying the column CSS; check at 900px and 375px that the page has no horizontal scroll (`scrollWidth <= innerWidth`) and that left offsets show two columns at 900px and one at 375px.
+
+**Reference implementation:** `.mx-grid` / `.mx-card` in `mexico_guide.js`, rendered by `mexico_shared.js`.
 
 ### 8.10 Horizontal scrollbars (HARD RULE — same everywhere)
 - **Updated 2026-10-04 (user):** all scrollbars come from ONE generator, `scrollbar_css.js` (`.h(selector)` horizontal, `.v(selector)` vertical). Default colour for the thumb AND both arrows is **#2F416A** (calm); the light-blue accent appears ONLY on hover, and left arrow / thumb / right arrow each highlight separately. Track `var(--surface)`, bar 16px, thumb 8px visible, chevron arrows via `::-webkit-scrollbar-button` (Firefox gets `scrollbar-color:#2F416A`, no arrows). Never set `scrollbar-color`/`scrollbar-width` in Chromium-targeted rules (it disables the custom arrows). Used by `.hg-row`, `.bcard-scroll`, article table wrappers (`.prose div:has(>table)`, `.prose .scroll-x`) and `.cur-toggle .cu-list`; new scrollers must call the generator.

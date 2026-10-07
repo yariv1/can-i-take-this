@@ -248,3 +248,6 @@ Run `node audit_article_qa.js <slug>` (ARTICLE_QA.md). It must print PASS.
 
 ## Card grids (HARD, DESIGN_SYSTEM 8.11)
 Cards that sit in a grid are flex columns whose last element (date, links, read-more) has `margin-top:auto`, so every footer in a row is on the same line at the bottom. Copy `.l4-card` / `.l4-foot` from `level4_guide.js`. The QA gate fails articles without it. Region/continent chips above a long card list or table are expected when the list has more than ~12 items (see `level4_shared.js` chips, `travel_warning_guide.js` continent chips).
+
+## Bento (masonry) card grid (DESIGN_SYSTEM 8.13)
+Use it when cards in a set differ a lot in text length (destination cards, regions). Two columns on desktop and one on phone via `column-width:290px;column-count:2`; each card has `break-inside:avoid;margin:0 0 12px` and hugs its content, so heights are unequal on purpose and there are no empty areas inside a card. No `margin-top:auto` footer in a bento grid. For uniform short cards use the equal-height grid with pinned footers instead (DESIGN_SYSTEM 8.11). Copy the CSS from DESIGN_SYSTEM 8.13 or `.mx-grid` / `.mx-card` in `mexico_guide.js`.

@@ -21,6 +21,7 @@ Old articles (pre-ETIAS) still show legacy FAILs in the all-articles run (missin
 
 ## What the gate cannot see (do it in the browser pane, then say so)
 - 360px width (Galaxy S22 class), light and dark theme, header fits.
+- Bento grids (DESIGN_SYSTEM 8.13): at 900px the cards show two column offsets, at 375px one, with unequal heights and no horizontal scroll.
 - Tables: at a 900px viewport the table wrapper must not scroll horizontally (`wrap.scrollWidth <= wrap.clientWidth`); row headers are short names only (DESIGN_SYSTEM 8.12).
 - Looking at the finished page: stat strips, tables, grids, flag images load. In a card grid, check that the footers of neighbouring cards sit on the same line (measure with JS `bottom - footer.bottom`, it must be equal for all cards).
 - Images: view each at full size; read every sign/board/note text; compare with the article claim (IMAGE_PROMPT_GUIDE section 12).
