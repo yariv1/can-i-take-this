@@ -250,4 +250,5 @@ function render(a, d) {
 Object.assign(DETAIL, require('./baggage_detail2.js'));
 Object.assign(DETAIL, require('./baggage_detail3.js'));
 Object.assign(DETAIL, require('./baggage_detail3b.js'));
+Object.assign(DETAIL, require('./baggage_detail4.js'));
 module.exports = { DETAIL, render, CHECKED };
