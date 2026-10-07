@@ -1,0 +1,15 @@
+# Airline baggage detail pages (baggage_detail.js)
+
+**Why:** GSC (2026-10-07) showed ~517 baggage queries ("X baggage allowance", position 45-75, 0 clicks). Competitors are 1,000-2,600 word guides; our pages were 76-255 words. Airlines with an entry in `baggage_detail.js` get a full reference page (answer, stat strip, tables, FAQ with FAQPage markup, sources, "Checked <date>"); all other airlines keep the short fare-block page.
+
+**Done (checked 7 October 2026, read on the airline's own pages):** Wizz Air, Lufthansa, Singapore Airlines, Air China, Air New Zealand.
+
+**Rules (HARD):**
+- Add an airline only after reading its OWN baggage pages (cabin, checked, fees). Never type a number from a third-party blog. If the airline's site blocks scripts, read it in a normal browser (Claude in Chrome) as done for these five; PDFs: download and extract text.
+- State only what the page says. Where fees vary by date/route, give the airline's own range and say so. Do not paraphrase into a rule the airline did not state (an inference once slipped into a label and was removed).
+- Every entry: `title`, `desc` (about 150 chars, with the numbers), `answer`, 4 `stats`, `sections` (h2 with emoji, optional p, table, list), 6 FAQ (include the exact query phrasings from GSC: baggage allowance, cabin size, weight limit, fees), `sources` (the pages read).
+- Re-read the sources when the airline changes its rules (the page says "Checked <date>").
+
+**Next candidates by GSC impressions (not yet done):** Etihad, Qatar, KLM, China Southern, Aer Lingus, Virgin Australia, Icelandair, Eurowings, Japan Airlines, Philippine Airlines, Turkish, Emirates.
+
+**Measure:** compare clicks/impressions for `/airline/<slug>/baggage-allowance/` against `gsc_baseline_pages_2026-10-07.csv` after 3-4 weeks.

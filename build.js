@@ -35,6 +35,7 @@ setTimeout(run, 300);
 
 function slug(s){return s.toLowerCase().replace(/&/g,'and').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');}
 function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+const BAGD=require('./baggage_detail.js');
 // ---- title / meta description helpers (2026-10-07 title batch, see TITLE_BATCH.md) ----
 // Meta descriptions must name the subject (airline / country) and carry the real answer; titles carry the key number only when the page data has it.
 function cutDesc(str, n){ str=String(str||'').replace(/\s+/g,' ').trim(); n=n||158; if(str.length<=n) return str; var c=str.slice(0,n); var d=c.lastIndexOf('. '); if(d>n*0.55) return c.slice(0,d+1); var i=c.lastIndexOf(' '); c=c.slice(0,i>n*0.6?i:n-1).replace(/[,;:\-\s]+$/,''); return c+'\u2026'; }
@@ -158,7 +159,8 @@ function airShell({url,title,desc,a,fares}){
   const srcs=['https://www.gstatic.com/flights/airline_logos/70px/'+a.iata+'.png'];
   const logo='<span class="logo" style="background:#fff"><span>'+esc(a.iata)+'</span><img class="logo-img" data-srcs="'+srcs.join('|')+'" data-i="0" src="'+srcs[0]+'" alt=""></span>';
   const NOTICE=/no checked bag|for a fee|not included|not sold|add one|add a|add 1/i;
-  const faqLd={"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is "+a.name+"'s baggage allowance?","acceptedAnswer":{"@type":"Answer","text":a.name+" economy: "+fares[0].cabin+" "+fares[0].checked}}]};
+  const BD=BAGD.DETAIL[a.name];
+  const faqLd={"@context":"https://schema.org","@type":"FAQPage","mainEntity":BD?BD.faq.map(q=>({"@type":"Question","name":q[0],"acceptedAnswer":{"@type":"Answer","text":q[1]}})):[{"@type":"Question","name":"What is "+a.name+"'s baggage allowance?","acceptedAnswer":{"@type":"Answer","text":a.name+" economy: "+fares[0].cabin+" "+fares[0].checked}}]};
   const bread={"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":BASE+"/"},{"@type":"ListItem","position":2,"name":a.name+" baggage","item":canonical}]};
   const _at=airTabs(slug(a.name),'baggage');
   const tabsHtml=_at.tabHtml;
@@ -239,7 +241,7 @@ function airShell({url,title,desc,a,fares}){
 +'<div class="airhead">'+logo+'<h2>'+esc(a.name)+' <span class="muted">Airline Rules</span></h2></div>\n'
 +'<nav class="tabs">'+tabsHtml+'</nav>\n'
 +moreBlock+'\n'
-+'<main>'+blocks+'</main>\n'+blogReadBlock('baggage')
++'<main>'+(BD?BAGD.render(a,BD):blocks)+'</main>\n'+blogReadBlock('baggage')
 +'<footer>Rules change and vary by nationality, route and fare. This is guidance, not legal advice \u2014 always confirm with the airline or the official customs authority before you travel. Updated 2026.<nav class="tlinks"><a href="/guides/">All Guides</a><a href="/guides/liquids/">Liquids 100ml Rule</a><a href="/guides/power-banks/">Power Bank Rules</a><a href="/guides/vapes/">Vape &amp; E-Cig Guide</a><a href="/blog/">Blog</a></nav><nav class="tlinks"><a href="/about/">About</a><a href="/contact/">Contact</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a></nav></footer>\n'
 +'</div>\n'
 +'<script>function advLogo(im){var l=(im.dataset.srcs||"").split("|"),i=parseInt(im.dataset.i||"0",10)+1;if(i<l.length){im.dataset.i=i;im.src=l[i];}else{im.style.display="none";}}document.querySelectorAll("img.logo-img").forEach(function(im){im.onerror=function(){advLogo(im);};if(im.complete&&im.naturalWidth===0)advLogo(im);});</scr'+'ipt>\n'
@@ -821,8 +823,8 @@ function run(){
     ];
     write(url+'index.html', airShell({
       url,
-      title:`${a.name} Baggage Allowance 2026 — Cabin & Checked | canitakethis.co`,
-      desc, a, fares:f
+      title:BAGD.DETAIL[a.name]?BAGD.DETAIL[a.name].title+' | canitakethis.co':`${a.name} Baggage Allowance 2026 — Cabin & Checked | canitakethis.co`,
+      desc:BAGD.DETAIL[a.name]?BAGD.DETAIL[a.name].desc:desc, a, fares:f
     }));
     pages.push({url,changefreq:'weekly'});
 
