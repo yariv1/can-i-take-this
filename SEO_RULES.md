@@ -16,3 +16,6 @@
 **When you add a page type:** add its URL pattern to `type()` in `audit_seo.js` and its related links to `related()` in `seo_post.js`; run the audit; it must show 0 in the hard columns.
 
 **Known and accepted:** many hand-written blog titles are over 70 characters and 28 blog descriptions are over 165 (Google truncates, nothing breaks); shorten them when an article is next edited.
+
+## Identical-rule groups: master page + canonical (added 2026-10-08)
+Where one official rule is identical for every page of a group (the EU 27 for tobacco, alcohol, plants and seeds, cash), the country pages keep their URL and a short country section but their `rel=canonical` points at one master page (`/country/european-union/<topic>/`, built by `eu_master.js`), and they are left out of the sitemap. `audit_dup.js` ignores pages whose canonical points elsewhere. Do the same for any new identical-rule group; never write 27 near-identical pages.

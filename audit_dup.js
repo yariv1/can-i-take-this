@@ -30,7 +30,14 @@ for (const [label, dir, sub] of TYPES) {
   const files = [];
   for (const slug of fs.readdirSync(base)) {
     const f = sub ? path.join(base, slug, sub, 'index.html') : path.join(base, slug, 'index.html');
-    if (fs.existsSync(f)) files.push([slug, f]);
+    if (fs.existsSync(f)) {
+      // pages that point their canonical at another URL (e.g. the EU country pages -> EU master page) are consolidated, so they do not count as duplicates
+      const head = fs.readFileSync(f, 'utf8').slice(0, 6000);
+      const m = head.match(/<link rel="canonical" href="https:\/\/canitakethis\.co([^"]*)"/);
+      const own = '/' + path.relative(ROOT, path.dirname(f)).split(path.sep).join('/') + '/';
+      if (m && m[1] !== own) continue;
+      files.push([slug, f]);
+    }
   }
   if (files.length < 5) continue;
   const cnt = new Map(), per = [];
@@ -39,20 +46,20 @@ for (const [label, dir, sub] of TYPES) {
     const ss = sentences(f).map(s => s.toLowerCase().split(name).join('X'));
     per.push([slug, ss]); for (const s of new Set(ss)) cnt.set(s, (cnt.get(s) || 0) + 1);
   }
-  const n = files.length; let shared = 0, tot = 0; const worst = [];
+  const n = files.length; let shared = 0, tot = 0, cl = 0; const worst = [];
   for (const [slug, ss] of per) {
-    let sh = 0, to = 0;
-    for (const s of ss) { const w = s.split(' ').length; to += w; if (cnt.get(s) >= Math.max(3, n * 0.5)) sh += w; }
-    shared += sh; tot += to; worst.push([slug, Math.round(100 * sh / Math.max(to, 1)), to]);
+    let sh = 0, to = 0, cs = 0;
+    for (const s of ss) { const w = s.split(' ').length; to += w; if (cnt.get(s) >= Math.max(3, n * 0.5)) sh += w; if (cnt.get(s) >= 5) cs += w; }
+    shared += sh; cl += cs; tot += to; worst.push([slug, Math.round(100 * sh / Math.max(to, 1)), to]);
   }
   worst.sort((a, b) => b[1] - a[1]);
-  report.push({ label, n, pct: Math.round(100 * shared / Math.max(tot, 1)), avgWords: Math.round(tot / n), worst: worst.slice(0, 2) });
+  report.push({ label, n, pct: Math.round(100 * shared / Math.max(tot, 1)), clusterPct: Math.round(100 * cl / Math.max(tot, 1)), avgWords: Math.round(tot / n), worst: worst.slice(0, 2) });
 }
-console.log('type'.padEnd(22) + 'pages  shared%  avg words  limit ' + MAX + '%');
+console.log('type'.padEnd(22) + 'pages  shared%  cluster%  avg words  limit ' + MAX + '% (cluster% = words repeated on 5+ pages)');
 let bad = 0;
 for (const r of report) {
-  const over = r.pct > MAX; if (over) bad++;
-  console.log(r.label.padEnd(22) + String(r.n).padEnd(7) + String(r.pct + '%').padEnd(10) + String(r.avgWords).padEnd(11) + (over ? 'OVER' : 'ok'));
+  const over = r.pct > MAX || r.clusterPct > MAX; if (over) bad++;
+  console.log(r.label.padEnd(22) + String(r.n).padEnd(7) + String(r.pct + '%').padEnd(10) + String(r.clusterPct + '%').padEnd(10) + String(r.avgWords).padEnd(11) + (over ? 'OVER' : 'ok'));
 }
 console.log(bad + ' of ' + report.length + ' page types over the limit');
 if (FAIL && bad) process.exit(1);
