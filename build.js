@@ -39,7 +39,7 @@ const BAGD=require('./baggage_detail.js');
 // ---- title / meta description helpers (2026-10-07 title batch, see TITLE_BATCH.md) ----
 // Meta descriptions must name the subject (airline / country) and carry the real answer; titles carry the key number only when the page data has it.
 function cutDesc(str, n){ str=String(str||'').replace(/\s+/g,' ').trim(); n=n||158; if(str.length<=n) return str; var c=str.slice(0,n); var d=c.lastIndexOf('. '); if(d>n*0.55) return c.slice(0,d+1); var i=c.lastIndexOf(' '); c=c.slice(0,i>n*0.6?i:n-1).replace(/[,;:\-\s]+$/,''); return c+'\u2026'; }
-function batchDesc(subject, v, skipHead){ var lines=(v.lines||[]).filter(Boolean); return cutDesc(subject+': '+(skipHead?'':(v.head||'')+' ')+(lines[0]||'')); }
+function batchDesc(subject, v, skipHead){ var lines=(v.lines||[]).filter(Boolean); var d=subject+': '+(skipHead?'':(v.head||'')+' ')+(lines[0]||''); if(d.length<125) d+=' Based on official rules, checked 2026. Confirm before you travel.'; return cutDesc(d); }
 function fitTitle(long, short){ return long.length<=64 ? long : short; }
 function batchTitle(cat, cn, v, old){
   var txt=(v.head||'')+' '+((v.lines||[]).filter(Boolean)[0]||''), m;
@@ -50,7 +50,10 @@ function batchTitle(cat, cn, v, old){
 }
 function fareTiers(label){var L=String(label).toLowerCase();var noPE=L.replace(/premium\s+economy/g,' ');var peSrc=L.replace(/saga premium/g,' ');var first=/\bfirst\b|suites|premi\u00E8re|premiere/.test(L);var biz=/business|\bclub\b|crown|\bmint\b|bizclass|cloud nine|prestige|\bpremier\b|aerspace|delta one|polaris|royal silk|business select|saga premium|clase premier/.test(L);var pe=/premium/.test(peSrc);var econ=/economy|\u00E9conomy|b\u00E1sica|cl\u00E1sica|econo/.test(noPE);var t=[];if(econ||!(first||biz||pe))t.push('Economy');if(pe)t.push('Premium Economy');if(biz)t.push('Business');if(first)t.push('First');return t.join(' / ');}
 function ensure(d){fs.mkdirSync(d,{recursive:true});}
-function write(rel, content){const p=path.join(OUT,rel);ensure(path.dirname(p));fs.writeFileSync(p,content);}
+const SEO=require('./seo_post.js');
+function write(rel, content){const p=path.join(OUT,rel);ensure(path.dirname(p));
+  if(/(^|[\\/])index\.html$/.test(rel)&&typeof content==='string'){const u='/'+rel.replace(/\\/g,'/').replace(/^\//,'').replace(/index\.html$/,'');content=SEO.post(u,content);}
+  fs.writeFileSync(p,content);}
 
 const pages=[]; // {url,title,changefreq}
 
@@ -806,6 +809,7 @@ function setS(o){Object.assign(w.S,o);}
 function run(){
   ensure(OUT);
   const AIRLINES=w.AIRLINES, COUNTRIES=w.COUNTRIES, FARES=w.FARES;
+  SEO.setLists({airlines:AIRLINES.map(a=>({name:a.name})),countries:COUNTRIES.map(c=>({name:c.name}))});
 
   // ---------- 1. AIRLINE BAGGAGE PAGES ----------
   AIRLINES.forEach(a=>{
@@ -870,7 +874,7 @@ function run(){
     const url=`/plane/${pc.url}/`;
     write(url+'index.html', shell({
       url, title:`${pc.t} | canitakethis.co`,
-      desc:`${v.head} ${(v.lines||[]).filter(Boolean)[0]||''}`.slice(0,155),
+      desc:batchDesc(pc.t.replace(/ \u2014 /g,': '), v),
       h1:pc.q, badge:v.status, answer:v.head, lines:v.lines,
       source:{label:'Standard IATA / aviation-security rules',url:null},
       intro:'This rule is set by aviation security and is the same on every airline worldwide.',
@@ -954,7 +958,7 @@ function run(){
       write(url+'index.html', countryShell({
         mode:'stack', url, c, cat:'med', items:[v],
         title:`Is ${m.brand} Legal in ${c.name}? Travel Rules 2026 | canitakethis.co`,
-        desc:`${v.head} ${(v.lines||[]).filter(Boolean)[0]||''}`.slice(0,155),
+        desc:batchDesc(`${m.brand} (${m.ing}) in ${c.name}`, v),
         h1:`Can I bring ${m.brand} into ${c.name}? (2026)`,
         lead:`${m.brand} contains ${m.ing}${m.brands!==m.brand?' (also sold as '+m.brands+')':''}. Carry it in original packaging with your prescription or a doctor's letter.`,
         faqA:`${v.head} ${(v.lines||[]).filter(Boolean).join(' ')}`
@@ -988,7 +992,7 @@ function run(){
     write(url+'index.html', countryShell({
       mode:'stack', url, c, cat:'pets', items:[vd,vc],
       title:`Can I Bring a Dog or Cat into ${c.name}? Pet Import Rules 2026 | canitakethis.co`,
-      desc:`${vd.head} ${(vd.lines||[]).filter(Boolean)[0]||''}`.slice(0,155),
+      desc:batchDesc(`Bringing a dog or cat into ${c.name} (2026)`, vd),
       h1:`Can I bring a dog into ${c.name}? (2026 pet import)`,
       lead:`Pet import into ${c.name} is time-sensitive — some steps (microchip, rabies titre test, permits) take months. Start early.`,
       faqA:`${vd.head} ${(vd.lines||[]).filter(Boolean).join(' ')}`
@@ -1315,8 +1319,9 @@ ${CHK_BODY}
     pages.push({url:g.url,changefreq:changefreq,priority:priority});
   });
 
+  ['/about/','/contact/','/privacy/','/terms/'].forEach(u=>{ if(!pages.some(x=>x.url===u)) pages.push({url:u,changefreq:'yearly'}); });
   const sm=`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n`+
-    pages.map(p=>`<url><loc>${BASE}${p.url}</loc><changefreq>${p.changefreq}</changefreq>${p.priority?`<priority>${p.priority}</priority>`:''}</url>`).join('\n')+`\n</urlset>\n`;
+    pages.map(p=>`<url><loc>${BASE}${p.url}</loc><lastmod>${SEO.mod(p.url)}</lastmod><changefreq>${p.changefreq}</changefreq>${p.priority?`<priority>${p.priority}</priority>`:''}</url>`).join('\n')+`\n</urlset>\n`;
   write('sitemap.xml', sm);
   write('robots.txt', `User-agent: *\nAllow: /\nSitemap: ${BASE}/sitemap.xml\n`);
 

@@ -6,7 +6,7 @@ const CHECKED = '7 October 2026';
 
 const DETAIL = {
   'Wizz Air': {
-    title: 'Wizz Air Baggage Allowance 2026: Cabin Bag 40x30x20 cm, Checked Bag Prices',
+    title: 'Wizz Air Baggage Allowance 2026: Cabin 40x30x20 cm, Fees',
     desc: 'Wizz Air baggage allowance 2026: free bag 40 x 30 x 20 cm and 10 kg, trolley bag 55 x 40 x 23 cm with WIZZ Priority, checked bag 10-32 kg and what each costs.',
     answer: 'Wizz Air gives every passenger one free cabin bag of 40 x 30 x 20 cm and 10 kg that must fit under the seat. A trolley bag of 55 x 40 x 23 cm and 10 kg needs WIZZ Priority. The basic fare has no checked bag; WIZZ Go and WIZZ Plus bundles include one, and you can buy 10, 20, 26 or 32 kg bags.',
     stats: [['40 x 30 x 20 cm', 'free under-seat bag, 10 kg'], ['55 x 40 x 23 cm', 'trolley bag with WIZZ Priority, 10 kg'], ['32 kg', 'heaviest checked bag (149 x 119 x 171 cm)'], ['6 bags', 'most checked bags per passenger']],
@@ -52,7 +52,7 @@ const DETAIL = {
   },
 
   'Lufthansa': {
-    title: 'Lufthansa Baggage Allowance 2026: Carry-On 8 kg, Free Checked Bags by Class',
+    title: 'Lufthansa Baggage Allowance 2026: Carry-On 8 kg, Checked by Class',
     desc: 'Lufthansa baggage allowance 2026: carry-on 55 x 40 x 23 cm and 8 kg, free checked bags by class (23 kg Economy, 32 kg Business), 158 cm limit and gate fees.',
     answer: 'Lufthansa allows a carry-on of 55 x 40 x 23 cm and 8 kg plus a personal item of 40 x 30 x 15 cm, except on short and medium-haul Economy Basic, which includes the personal item only. Free checked bags depend on the class: Economy 1 bag of 23 kg, Business 2 bags of 32 kg, First 3 bags of 32 kg, each up to 158 cm.',
     stats: [['55 x 40 x 23 cm', 'carry-on, 8 kg'], ['23 kg', 'Economy checked bag'], ['32 kg', 'heaviest bag Lufthansa accepts'], ['158 cm', 'width + height + depth per bag']],
@@ -95,7 +95,7 @@ const DETAIL = {
   },
 
   'Singapore Airlines': {
-    title: 'Singapore Airlines Baggage Allowance 2026: Cabin 7 kg, Checked 25-50 kg by Fare',
+    title: 'Singapore Airlines Baggage Allowance 2026: 7 kg Cabin, 25-50 kg Checked',
     desc: 'Singapore Airlines baggage allowance 2026: cabin bag 7 kg, checked 25 kg Lite and Value, 30 kg Standard and Flexi, 2 x 23 kg to the USA and Canada.',
     answer: 'Singapore Airlines allows one cabin bag of up to 7 kg (115 cm total) in Economy and Premium Economy, and two in Business and First. Checked baggage is by weight on most routes: 25 kg Lite and Value, 30 kg Standard and Flexi, 35 kg Premium Economy, 40 kg Business, 50 kg Suites and First. Flights to and from the USA and Canada use pieces: 2 bags of 23 kg in Economy.',
     stats: [['7 kg', 'cabin bag, 115 cm total'], ['25 / 30 kg', 'Economy Lite and Value / Standard and Flexi'], ['2 x 23 kg', 'Economy to and from the USA and Canada'], ['32 kg', 'most any single checked bag may weigh']],
@@ -140,7 +140,7 @@ const DETAIL = {
   },
 
   'Air China': {
-    title: 'Air China Baggage Allowance 2026: Carry-On 5 kg, Checked 1-2 Pieces of 23 kg by Route',
+    title: 'Air China Baggage Allowance 2026: Carry-On 5 kg, Checked by Route',
     desc: 'Air China baggage allowance 2026: carry-on 5 kg Economy, 8 kg Business, checked 23 kg pieces by route and fare, 20 kg on domestic China flights.',
     answer: 'Air China allows one carry-on of up to 5 kg in Economy and two of up to 8 kg in First and Business, each up to 55 x 40 x 20 cm, plus one personal item. Checked baggage on international flights is by pieces and depends on the route and fare: Economy is 1 or 2 pieces of 23 kg, Business and First 2 pieces of 32 kg. Domestic China flights are by weight: 20 kg Economy.',
     stats: [['5 kg', 'Economy carry-on, 55 x 40 x 20 cm'], ['2 x 23 kg', 'Economy to and from the Americas, most fares'], ['2 x 32 kg', 'Business and First, international'], ['20 / 30 / 40 kg', 'Economy / Business / First, domestic China']],
@@ -185,7 +185,7 @@ const DETAIL = {
   },
 
   'Air New Zealand': {
-    title: 'Air New Zealand Baggage Allowance 2026: Carry-On 7 kg, Checked 23 kg by Fare',
+    title: 'Air New Zealand Baggage Allowance 2026: Carry-On 7 kg, Checked 23 kg',
     desc: 'Air New Zealand baggage allowance 2026: carry-on 55 x 40 x 23 cm and 7 kg, checked bags by fare (1 Economy, 2 Premium Economy, 3 Business), 23 kg and 158 cm.',
     answer: 'Air New Zealand allows one carry-on of up to 7 kg (55 x 40 x 23 cm) plus one small personal item in Economy, even on Seat fares. Checked bags are up to 23 kg and 158 cm: international Economy fares include 1 bag, Premium Economy 2 and Business Premier 3. Seat-only fares include no checked bag. You can add prepaid extra bags up to a total of three.',
     stats: [['55 x 40 x 23 cm', 'carry-on size, 7 kg in Economy'], ['23 kg', 'checked bag before fees'], ['158 cm', 'length + width + height per checked bag'], ['3 bags', 'most checked bags per passenger']],
@@ -241,10 +241,11 @@ const CSS = '<style>.bd-lead{font-size:1.05rem;margin:.2em 0 1em}.bd-stats{displ
 function render(a, d) {
   return CSS + '<p class="bd-lead"><strong>' + esc(d.answer) + '</strong></p>' +
     '<div class="bd-stats">' + d.stats.map(s => '<div class="bd-stat"><b>' + esc(s[0]) + '</b><span>' + esc(s[1]) + '</span></div>').join('') + '</div>' +
-    d.sections.map(s => '<section class="bd-sec"><h2>' + s.h + '</h2>' + (s.p ? '<p>' + s.p + '</p>' : '') + (s.table ? table(s.table) : '') + (s.list ? '<ul>' + s.list.map(l => '<li>' + l + '</li>').join('') + '</ul>' : '') + '</section>').join('') +
+    d.sections.map(s => '<section class="bd-sec"><h2>' + s.h + '</h2>' + (s.p ? '<p>' + s.p + '</p>' : '') + (s.table ? table(s.table) : '') + (s.table2 ? table(s.table2) : '') + (s.table3 ? table(s.table3) : '') + (s.list ? '<ul>' + s.list.map(l => '<li>' + l + '</li>').join('') + '</ul>' : '') + '</section>').join('') +
     '<section class="bd-faq"><h2>❓ Quick answers</h2>' + d.faq.map(q => '<h3>' + esc(q[0]) + '</h3><p>' + esc(q[1]) + '</p>').join('') + '</section>' +
     '<p class="bd-chk">Checked ' + CHECKED + ' on the airline\'s own pages. Baggage rules change by route, fare and date: the allowance on your ticket is the one that applies.</p>' +
     '<div class="bd-src"><div class="h">🔗 Official sources</div>' + d.sources.map(s => '<a href="' + s[0] + '" target="_blank" rel="noopener noreferrer">' + s[1] + '</a>').join('') + '</div>';
 }
 
+Object.assign(DETAIL, require('./baggage_detail2.js'));
 module.exports = { DETAIL, render, CHECKED };

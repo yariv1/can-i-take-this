@@ -17,6 +17,8 @@ node audit_article_qa.js <slug>      # must print PASS, exit code 0
 
 7. **Card grids:** a flex-column `*-card` in the article CSS must have its footer pinned with `margin-top:auto` (DESIGN_SYSTEM 8.11).
 
+8. **SEO, site-wide:** `node audit_seo.js --fail` must pass (see SEO_RULES.md): one real H1, title and description rules, social tags, WebPage/Article schema with dateModified, sitemap lastmod, related links. The rules live in `seo_post.js`, not in articles.
+
 Old articles (pre-ETIAS) still show legacy FAILs in the all-articles run (missing BLOG_SYSTEM rows, old image names). Those are known documentation gaps; the gate for a NEW article must be clean. A currency FAIL anywhere is always real.
 
 ## What the gate cannot see (do it in the browser pane, then say so)

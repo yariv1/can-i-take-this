@@ -3,7 +3,7 @@
 **CURRENT DEPLOY SEQUENCE (2026-10, supersedes the zip flow below):** only after the user says "deploy":
 1. `git pull --rebase --autostash origin main` (the scheduled job commits `advisories.json` to main every 6 hours; pull first so the push is not rejected; if `advisories.json` conflicts, take the remote copy and re-run step 2).
 2. `node update_rates.js` then `node update_advisories.js` (do not call it repeatedly: the State Dept data API rate-limits; the script falls back to the State Dept RSS feed).
-3. `node build.js`, then `node audit_article_qa.js <slug>` must PASS.
+3. `node build.js`, then `node audit_article_qa.js <slug>` must PASS, and `node audit_seo.js --fail` must pass for the whole site (SEO_RULES.md).
 4. `git add -u` plus explicit `git add` of new files (never `git add -A`, never `.claude/`), commit, `git push origin main`.
 5. Verify the live URL returns 200 (1-2 min), update `GSC_INDEXING_TRACKER.md` (new URLs as TO REQUEST) and list them in the reply.
 6. Scheduled job: `.github/workflows/refresh-advisories.yml` (every 6 hours, runs `update_advisories.js`, commits only `advisories.json`). Trigger by hand with `gh workflow run refresh-advisories.yml` and read the run with `gh run list --workflow refresh-advisories.yml`.
