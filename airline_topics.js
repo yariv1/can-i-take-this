@@ -9,6 +9,7 @@ const CHECKED = '8 October 2026';
 const TOPICS = {};
 Object.assign(TOPICS, require('./airline_topics1.js'));
 Object.assign(TOPICS, require('./airline_topics2.js'));
+Object.assign(TOPICS, require('./airline_topics3.js'));
 
 function render(a, T) {
   return '<div class="bd-wrap">' + CSS + '<p class="bd-lead"><strong>' + esc(T.answer) + '</strong></p>' +
