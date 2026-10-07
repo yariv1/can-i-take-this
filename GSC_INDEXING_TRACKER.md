@@ -87,3 +87,11 @@ Last GSC check: 2026-10-05 (Page indexing 1,924 indexed / 89 not indexed as of 2
 |---|---|---|
 | https://canitakethis.co/contact/ (rewritten, form) | 2026-10-05 | TO REQUEST (optional) |
 | https://canitakethis.co/about/ (rewritten) | 2026-10-05 | TO REQUEST (optional) |
+
+## Programmatic master pages (added 2026-10-08), newest first
+| URL | Status |
+|---|---|
+| https://canitakethis.co/country/european-union/cash/ | TO REQUEST |
+| https://canitakethis.co/country/european-union/plants-seeds/ | TO REQUEST |
+| https://canitakethis.co/country/european-union/alcohol/ | TO REQUEST |
+| https://canitakethis.co/country/european-union/tobacco/ | TO REQUEST |
