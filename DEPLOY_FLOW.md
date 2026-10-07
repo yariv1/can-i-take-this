@@ -80,3 +80,7 @@ New URLs this deploy: [list them here or write "none"]
 - If images are too large for the zip, note them separately and instruct CC to copy them manually from Downloads.
 - Deploy zip is re-delivered after any fix in the same session — always use the latest zip.
 
+
+
+## IndexNow (added 2026-10-08)
+After `git push` and once the pages are live, run `node indexnow.js` (submits only the index.html URLs changed by the last commit to Bing/Yandex via IndexNow; key file `d57956b5441116130de0656c374107ac.txt` is at the site root). `--all` submits the whole sitemap, `--dry` lists what would be sent. The build no longer submits (it used a placeholder key and ran before pages were live). Google ignores IndexNow: use the sitemap and Search Console.

@@ -36,6 +36,7 @@ setTimeout(run, 300);
 function slug(s){return s.toLowerCase().replace(/&/g,'and').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');}
 function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
 const BAGD=require('./baggage_detail.js');
+const TOPICS=require('./airline_topics.js');
 // ---- title / meta description helpers (2026-10-07 title batch, see TITLE_BATCH.md) ----
 // Meta descriptions must name the subject (airline / country) and carry the real answer; titles carry the key number only when the page data has it.
 function cutDesc(str, n){ str=String(str||'').replace(/\s+/g,' ').trim(); n=n||158; if(str.length<=n) return str; var c=str.slice(0,n); var d=c.lastIndexOf('. '); if(d>n*0.55) return c.slice(0,d+1); var i=c.lastIndexOf(' '); c=c.slice(0,i>n*0.6?i:n-1).replace(/[,;:\-\s]+$/,''); return c+'\u2026'; }
@@ -516,12 +517,16 @@ function airPlaneShell(o){
     }
     meta.desc=cutDesc(a.name+' '+NOUN[cat]+' rules 2026: '+txt.replace(/\s+/g,' ').trim()+(cat==='vape'?'':' Check carry-on vs checked bag.'));
   })();
+  var TOP=(TOPICS.TOPICS[a.name]||{})[cat]||null;
+  if(TOP){ if(TOP.ttl) meta.ttl=TOP.ttl; if(TOP.desc) meta.desc=TOP.desc; }
   var faqA=(vdef.head||'')+' '+((vdef.lines||[]).filter(Boolean).join(' '));
   var desc=meta.desc||((vdef.head||'')+' '+((vdef.lines||[]).filter(Boolean)[0]||'')).slice(0,155);
   var LOGOSRC='https://www.gstatic.com/flights/airline_logos/70px/'+a.iata+'.png';
   var logo='<span class="logo" style="background:#fff"><span>'+esc(a.iata)+'</span><img class="logo-img" data-srcs="'+LOGOSRC+'" data-i="0" src="'+LOGOSRC+'" alt=""></span>';
   var t=airTabs(sl,cat);
   var faqLd={"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":meta.h1,"acceptedAnswer":{"@type":"Answer","text":faqA}}]};
+  if(TOP&&TOP.faq) TOP.faq.forEach(function(q){faqLd.mainEntity.push({"@type":"Question","name":q[0],"acceptedAnswer":{"@type":"Answer","text":q[1]}});});
+  if(TOP&&TOP.faq) TOP.faq.forEach(function(q){faqLd.mainEntity.push({"@type":"Question","name":q[0],"acceptedAnswer":{"@type":"Answer","text":q[1]}});});
   var bread={"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":BASE+"/"},{"@type":"ListItem","position":2,"name":a.name+" "+cat,"item":canonical}]};
   return '<!doctype html><html lang="en"><head>\n'
 +'<!-- Google tag (gtag.js) -->\n'
@@ -657,7 +662,7 @@ function airPlaneShell(o){
 +'<div class="airhead">'+logo+'<h2>'+esc(a.name)+' <span class="muted">Airline Rules</span></h2></div>\n'
 +'<nav class="tabs">'+t.tabHtml+'</nav>\n'
 +t.moreBlock+'\n'
-+'<main>'+bagToggle+pickerHtml+'<div id="planeCard">'+initCard+'</div></main>\n'+clientScript+blogReadBlock(cat==='alcohol'?'airalcohol':cat)
++'<main>'+bagToggle+pickerHtml+'<div id="planeCard">'+initCard+'</div>'+(TOP?TOPICS.render(a,TOP):'')+'</main>\n'+clientScript+blogReadBlock(cat==='alcohol'?'airalcohol':cat)
 +'<footer>Rules change and vary by nationality, route and fare. This is guidance, not legal advice \u2014 always confirm with the airline or the official customs authority before you travel. Updated 2026.<nav class="tlinks"><a href="/guides/">All Guides</a><a href="/guides/liquids/">Liquids 100ml Rule</a><a href="/guides/power-banks/">Power Bank Rules</a><a href="/guides/vapes/">Vape &amp; E-Cig Guide</a><a href="/blog/">Blog</a></nav><nav class="tlinks"><a href="/about/">About</a><a href="/contact/">Contact</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a></nav></footer>\n'
 +'</div>\n'
 +'<script>function advLogo(im){var l=(im.dataset.srcs||"").split("|"),i=parseInt(im.dataset.i||"0",10)+1;if(i<l.length){im.dataset.i=i;im.src=l[i];}else{im.style.display="none";}}document.querySelectorAll("img.logo-img").forEach(function(im){im.onerror=function(){advLogo(im);};if(im.complete&&im.naturalWidth===0)advLogo(im);});</scr'+'ipt>\n'
@@ -1332,22 +1337,7 @@ ${CHK_BODY}
   console.log('PAGES GENERATED:', pages.length);
   console.log('airlines:', AIRLINES.length, 'countries:', COUNTRIES.length);
 
-  /* ===== INDEXNOW:START ===== */
-  (function(){
-    try{
-      var _fs=require('fs'),_https=require('https');
-      var _KEY='YOUR_INDEXNOW_KEY';
-      var _HOST='canitakethis.co';
-      var _sm=_fs.readFileSync('sitemap.xml','utf8');
-      var _urls=(_sm.match(/<loc>([^<]+)<\/loc>/g)||[]).map(function(m){return m.replace(/<\/?loc>/g,'').trim();});
-      if(!_urls.length){console.log('IndexNow: no <loc> URLs — skipped.');return;}
-      var _payload=JSON.stringify({host:_HOST,key:_KEY,keyLocation:'https://'+_HOST+'/'+_KEY+'.txt',urlList:_urls});
-      var _req=_https.request({hostname:'api.indexnow.org',path:'/indexnow',method:'POST',headers:{'Content-Type':'application/json; charset=utf-8','Content-Length':Buffer.byteLength(_payload)}},function(res){console.log('IndexNow: submitted '+_urls.length+' URLs -> HTTP '+res.statusCode);res.resume();});
-      _req.on('error',function(e){console.log('IndexNow: skipped (network) - '+e.message);});
-      _req.write(_payload);_req.end();
-    }catch(e){console.log('IndexNow: skipped - '+e.message);}
-  })();
-  /* ===== INDEXNOW:END ===== */
+  /* IndexNow: no longer submitted from the build (it ran before the pages were live and used a placeholder key). Run `node indexnow.js` after `git push`. */
 
   dom.window.close();
 }
