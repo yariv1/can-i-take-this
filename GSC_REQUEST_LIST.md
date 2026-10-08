@@ -63,3 +63,7 @@ Other country vaping pages: thailand, india, australia, singapore, japan, mexico
 5. /country/south-korea/plants-seeds/
 6. /country/thailand/plants-seeds/
 7. /country/brazil/plants-seeds/ and 8. /country/mexico/plants-seeds/ (never requested)
+
+## Added 2026-10-08 (second deploy)
+9. /airline/sas/baggage-allowance/
+10. /airline/qantas/baggage-allowance/
