@@ -362,6 +362,12 @@ Three-up variant for short cards (national overview): `column-width:250px;column
 
 **Reference implementation:** `.mx-grid` / `.mx-card` in `mexico_guide.js`, rendered by `mexico_shared.js`.
 
+### 8.14 Country page links: flag + name, never a button (HARD RULE, 2026-10-08)
+
+A link to a country page is always shown ONE way everywhere on the site: the country flag (flagcdn.com img, left, about 22x15, 2px radius) followed by the country name, in the accent colour, underline on hover. No button shape: no background, no border, no pill, no padding box. Layout is either a multi-column list (the `.eu-cl` grid) or a cloud (items one after another, wrapping to the next line). Implementations: `eu_master.js` (`.eu-cl`) and the `a.rc` links in the `relnav` block of `seo_post.js`. Any new template or component that links to a country page must reuse this pattern.
+
+**General rule: design consistency first.** The same kind of thing is presented the same way on every page. Before adding a component, check whether the site already has one for that job and reuse it; never invent a second style for the same thing.
+
 ### 8.10 Horizontal scrollbars (HARD RULE — same everywhere)
 - **Updated 2026-10-04 (user):** all scrollbars come from ONE generator, `scrollbar_css.js` (`.h(selector)` horizontal, `.v(selector)` vertical). Default colour for the thumb AND both arrows is **#2F416A** (calm); the light-blue accent appears ONLY on hover, and left arrow / thumb / right arrow each highlight separately. Track `var(--surface)`, bar 16px, thumb 8px visible, chevron arrows via `::-webkit-scrollbar-button` (Firefox gets `scrollbar-color:#2F416A`, no arrows). Never set `scrollbar-color`/`scrollbar-width` in Chromium-targeted rules (it disables the custom arrows). Used by `.hg-row`, `.bcard-scroll`, article table wrappers (`.prose div:has(>table)`, `.prose .scroll-x`) and `.cur-toggle .cu-list`; new scrollers must call the generator.
 - **Blog hub swipe rows (`.hs` > `.bcard-scroll` + `.hs-bar`, blog_sections.js):** custom bar, native scrollbar hidden. Prev/next buttons jump exactly ONE card (card width + gap), thumb draggable, track click jumps, arrows disabled at the ends, bar spans the card column (same left/right edge as the featured card), hidden on touch (`hover:none`) and when nothing overflows. Colours #2F416A default, accent on hover per part. `.hg-row` (home) keeps its floating arrows and uses the thumb-only native bar (`SBCSS.h(sel,true)`).
