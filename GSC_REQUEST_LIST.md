@@ -67,3 +67,7 @@ Other country vaping pages: thailand, india, australia, singapore, japan, mexico
 ## Added 2026-10-08 (second deploy)
 9. /airline/sas/baggage-allowance/
 10. /airline/qantas/baggage-allowance/
+
+## Added 2026-10-08 (third deploy edafe74fe), request FIRST on the next request day
+11. /plane/cigarettes/ (NEW page, highest demand: Ahrefs >1000 for "can you bring cigarettes on a plane")
+12. /country/australia/alcohol/ (rebuilt from the Australian Border Force page)

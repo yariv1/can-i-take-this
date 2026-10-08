@@ -110,3 +110,5 @@ REQUESTED 2026-10-08: /country/european-union/tobacco/, /country/european-union/
 | https://canitakethis.co/country/mexico/plants-seeds/ | TO REQUEST |
 | https://canitakethis.co/airline/sas/baggage-allowance/ | TO REQUEST |
 | https://canitakethis.co/airline/qantas/baggage-allowance/ | TO REQUEST |
+| https://canitakethis.co/plane/cigarettes/ | TO REQUEST |
+| https://canitakethis.co/country/australia/alcohol/ | TO REQUEST |
