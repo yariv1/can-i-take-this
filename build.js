@@ -40,6 +40,7 @@ const TOPICS=require('./airline_topics.js');
 const CVAPE=require('./country_vape.js');
 const CTOB=require('./country_tobacco.js');
 const CPLANT=require('./country_plants.js');
+const CALC=require('./country_alcohol.js');
 const EUM=require('./eu_master.js');
 // ---- title / meta description helpers (2026-10-07 title batch, see TITLE_BATCH.md) ----
 // Meta descriptions must name the subject (airline / country) and carry the real answer; titles carry the key number only when the page data has it.
@@ -930,7 +931,7 @@ function run(){
       setS({mode:'country',cat:cc.cat,country:cn,detail:null});
       const v=w.verdict(); if(!v) return;
       const url=`/country/${slug(cn)}/${cc.url}/`;
-      const CV=(cc.cat==='vape')?CVAPE.build(c):(cc.cat==='tobacco'?CTOB.build(c):(cc.cat==='plants'?CPLANT.build(c):null));
+      const CV=(cc.cat==='vape')?CVAPE.build(c):(cc.cat==='tobacco'?CTOB.build(c):(cc.cat==='plants'?CPLANT.build(c):(cc.cat==='alcohol'?CALC.build(c):null)));
       const EUC=EUM.isEU(cn)&&EUM.CATS.indexOf(cc.cat)>=0;
       write(url+'index.html', countryShell({
         mode:'cat', url, c, cat:cc.cat, v,

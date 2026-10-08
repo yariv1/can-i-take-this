@@ -1,17 +1,23 @@
-# PRIORITY QUEUE (user rule 2026-10-08): work ONLY in this order, highest demand first. Nothing else.
-Source: GSC top 1,000 queries by impressions, 3 months to 2026-10-08 (GSC_QUERY_ANALYSIS.md). Each item: official source only, rebuild page, audit_seo + audit_dup, preview, wait for "deploy".
+# PRIORITY QUEUE (user rule 2026-10-08): work ONLY from this file, highest demand first. Nothing else.
+Source: GSC top 1,000 queries by impressions, 3 months to 2026-10-08 (GSC_QUERY_ANALYSIS.md). Each item: official source only (read by me, never from a search summary), rebuild page, audit_seo + audit_dup, preview link, wait for "deploy".
 
+## STEP 0 (agreed with the user at the end of session 17, NOT STARTED): DEMAND DISCOVERY PASS
+GSC only shows queries we already appeared for (~10% of 102K impressions). Before building more pages, find the high-demand topics where we have NO page or a weak one:
+1. Check demand for ~10 seed topics around what the site covers ("can you bring X on a plane", "vape in [country]", "[airline] baggage", duty free / cash limits, liquids, power bank, medication, pets) with the free Ahrefs keyword tool (use 2-3 word seeds + Questions tab, see reference_ahrefs_free_tool_limits) and Google autocomplete; Google Trends only as a disclosed stand-in (throttling how-to in memory).
+2. Compare with our existing pages (do we have a page? is it rebuilt?).
+3. Output ONE ranked list (demand high to low) of: (a) queries with no page, (b) queries where our page is weak/ignored. That list REPLACES the order below. The user wants the discovery result in a short table, then decides.
+Until the list exists, pause the airline pages and Turkey page (each is only ~15-30 impressions).
+
+## Items (demand = GSC impressions in 3 months, pos = average position)
 | # | Page(s) | Impr | Pos | Status |
 |---|---------|------|-----|--------|
-| 1 | Egypt vaping /country/egypt/vaping/ | 873 | 62 | BUILT 2026-10-08 (undeployed): title matches query, customs decree 430/2021 section via country_vape_extra.js; no official traveller vape rule exists |
-| 2 | Generic liquids answer ("how many ml allowed on a plane", "is 50 ml allowed") | 509 | 76 | DONE 2026-10-08 (undeployed): pillar already matched queries; added FAQPage schema (build.js guideShell, site-wide for cl-num markup) + guides/liquids now links to the 3 answer pages |
-| 3 | Airline baggage not yet rebuilt, by GSC impressions (Ryanair, ANA, Ethiopian, Austrian, Transavia, Cathay, Oman, Pegasus, Kenya, Air Europa, Vietnam, Turkish ...) + re-check the 8 rebuilt big ones after re-index | ~4,500 total | 45-80 | NEXT |
-| 4 | Duty free by country: Bulgaria (pos 25), Australia, generic | ~310 | 25-43 | todo |
-| 5 | Turkey vaping 79 (pos 45), Cuba disposable vapes 57 (pos 28) | 136 | | todo |
+| 1 | Egypt vaping /country/egypt/vaping/ | 873 | 62 | DEPLOYED 2026-10-08 (20c882fef). Title "Can You Vape in Egypt? 2026 Law and Customs Rules", customs decree 430/2021 section (country_vape_extra.js). No official Egyptian traveller rule on vapes exists; the page says so |
+| 2 | Generic liquids ("how many ml allowed on a plane", "is 50 ml allowed") | 509 | 76 | DEPLOYED. Pillar blog/liquids-100ml-rule-2026 already matched queries; FAQPage schema added site-wide for cl-num markup; guides/liquids links to the 3 answer pages. Position depends on competition |
+| 3 | Airline baggage pages | ~4,500 total | 45-80 | Rebuilt so far 38/78: the earlier 34 + Ryanair, Turkish Airlines, SAS, Qantas (all DEPLOYED). British Airways SKIPPED: cabin sizes and per-cabin checked allowances exist only inside BA's JS calculator; only extras/fees/infant/overweight are readable; revisit if the calculator can be read. Remaining by demand (baggage/all topics): Transavia 30/54, Oman Air 27/49, Emirates 23/39, Cathay 16/50, LOT 15/37, TAP 11, Air France 22, Finnair 19, Kuwait 14, Vietnam 18, Alaska 8. Already top 10 (skip): Ethiopian, Austrian, Pegasus, ANA, Air Europa |
+| 4 | Duty free by country | ~310 | 25-43 | Australia BUILT (country_alcohol.js, /country/australia/alcohol/, UNDEPLOYED). Bulgaria BLOCKED: customs.bg refuses connections (WebFetch and Chrome); the Bulgarian figures were seen only in a search summary, so not used; user decided "we wait". Bulgaria stays on the EU master. Turkey (28 impr), Spain (25), France (13) still to do: add to DATA in country_alcohol.js |
+| 5 | Turkey vaping 79 (pos 45), Cuba disposable vapes 57 (pos 28) | 136 | | todo (add to country_vape_extra.js from an official source) |
 | 6 | Power bank: Singapore 69 (pos 40); Ethiopian/Icelandair already top 10 | | | todo |
-Parked (low demand): plants & seeds for more countries, EU/other country tobacco/cash, medication, pets, food.
-Done and live: Korea/Thailand plants (built, undeployed), see handoff.
+Parked (low demand): plants & seeds for more countries (Korea and Thailand done), EU/other country tobacco/cash, medication, pets, food.
 
-## #3 detail: airline baggage pages still NOT rebuilt, by GSC impressions (baggage-phrased / all topics, avg pos), read 2026-10-08
-1 Ryanair 58/119 pos53 | 2 Turkish 47/100 pos32 | 3 British Airways 39/39 pos81 | 4 SAS 33/59 | 5 Qantas 29/29 | 6 Transavia 30/54 | 7 Oman Air 27/49 | 8 Emirates 23/39 | 9 Cathay 16/50 | 10 LOT 15/37 | 11 TAP 11 | 12 Air France 22 | 13 Finnair 19 | 14 Kuwait 14 | 15 Vietnam 18. Skip (already top 10, other topics): Ethiopian, Austrian, Pegasus, ANA, Air Europa.
-Status: #3.1 Ryanair BUILT 2026-10-08 (baggage_detail5.js, undeployed). #3.2 Turkish Airlines BUILT (baggage_detail5b.js, undeployed). #3.3 British Airways SKIPPED 2026-10-08: cabin sizes and per-cabin checked allowances exist only inside BA JS baggage calculator, not as readable page text (only extras/fees/infant/overweight are readable); revisit if the calculator can be read. #3.4 SAS BUILT (baggage_detail5c.js, undeployed). #3.5 Qantas BUILT (baggage_detail5d.js, undeployed). NEXT #3.6 Transavia, Qantas, Transavia, Oman Air.
+## Rebuilt-page checklist (how each item is done)
+Official page read by me in full (Chrome if WebFetch fails) -> add data module entry -> `node build.js` -> `node audit_seo.js --fail` -> `node audit_dup.js` -> preview link (localhost:5055) -> user says "deploy".
