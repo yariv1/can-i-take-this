@@ -475,15 +475,15 @@ function airTabs(sl, active){
   return {tabHtml:tabHtml, moreBlock:moreBlock};
 }
 function airPlaneShell(o){
-  var a=o.a, cat=o.cat, url=o.url, sl=slug(a.name), canonical=BASE+url;
-  var VOL=(cat==='liquids'||cat==='perfume'||cat==='alcohol'), POWER=(cat==='power'), VAPE=(cat==='vape');
+  var a=o.a, cat=o.cat, url=o.url, sl=slug(a.name), canonical=BASE+url, G=!!o.generic;
+  var VOL=(cat==='liquids'||cat==='perfume'||cat==='alcohol'), POWER=(cat==='power'), VAPE=(cat==='vape'||cat==='lighter'||cat==='sharp');
   var VICON={go:'<path d="M20 6 9 17l-5-5"/>',warn:'<path d="M12 9v4m0 4h.01M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"/>',stop:'<circle cx="12" cy="12" r="9"/><path d="M8 12h8"/>',info:'<circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v4h1"/>'};
   var VLABEL={go:'Allowed',warn:'Check first',stop:'Not allowed',info:'Check the source'};
   var PSRC=null;
   function help(){ if(PSRC) return '<div class="help"><div class="help-h">Official source</div><a class="hitem" href="'+esc(PSRC.url)+'" target="_blank" rel="noopener"><span class="hi-ic">\uD83C\uDF10</span><span class="hi-l">'+esc(PSRC.label)+'<small>'+esc(PSRC.sub||'Power bank rules')+'</small></span><span class="hi-go">\u2197</span></a><div class="hnote">To be 100% sure, we always recommend confirming with the official channels.</div></div>'; if(!a.site) return ''; return '<div class="help"><div class="help-h">Helpful sources</div><a class="hitem" href="https://www.'+esc(a.site)+'" target="_blank" rel="noopener"><span class="hi-ic">\uD83C\uDF10</span><span class="hi-l">'+esc(a.name)+' website<small>Baggage & rules</small></span><span class="hi-go">\u2197</span></a><div class="hnote">To be 100% sure, we always recommend confirming with the official channels.</div></div>'; }
   function card(v,bagLabel){ PSRC=(v&&v.source&&v.source.url)?v.source:null;
     var lines=(v.lines||[]).filter(Boolean).map(function(l){return '<li>'+esc(l)+'</li>';}).join('');
-    var route='<div class="route"><span>&#9992; <b>'+esc(a.name)+'</b></span><span>'+bagLabel+'</span></div>';
+    var route='<div class="route"><span>&#9992; <b>'+esc(G?'Any airline':a.name)+'</b></span><span>'+bagLabel+'</span></div>';
     return '<div class="pass '+v.status+' print"><div class="strip"><div class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">'+VICON[v.status]+'</svg></div><div><div class="verdict">'+VLABEL[v.status]+'</div><div class="vsub">On the plane</div></div></div><div class="perf"></div><div class="body">'+route+'<p class="headline">'+esc(v.head||'')+'</p><ul class="detail">'+lines+'</ul>'+help()+'<div class="src">'+esc(v.src||'')+'</div></div></div>';
   }
   /*AIRPLANE_TOGGLE_V2*/
@@ -492,9 +492,9 @@ function airPlaneShell(o){
   var carryMap={}, vdef=null;
   opts.forEach(function(id){ setS({mode:'plane',bag:'carry',cat:cat,detail:id,airline:a.name}); var v=w.verdict(); carryMap[id]=card(v,'CARRY-ON'); if(id===def)vdef=v; });
   var carryVape='';
-  if(VAPE){ setS({mode:'plane',bag:'carry',cat:cat,detail:null,airline:a.name}); vdef=w.verdict(); carryVape=card(vdef,'CARRY-ON'); }
+  if(VAPE){ setS({mode:'plane',bag:'carry',cat:cat,detail:null,airline:a.name}); vdef=(o.vCarry||w.verdict()); carryVape=card(vdef,'CARRY-ON'); }
   setS({mode:'plane',bag:'checked',cat:cat,detail:(VOL?'100':(POWER?'lo':null)),airline:a.name});
-  var checkedCard=card(w.verdict(),'CHECKED');
+  var checkedCard=card(o.vChecked||w.verdict(),'CHECKED');
   var initCard=VAPE?carryVape:carryMap[def];
   var bagToggle='<div class="slab">Where in your bags?</div><div class="bag2" id="bagSeg"><button data-bag="carry" class="on">Carry-on <small>Trolley, backpack, under-seat</small></button><button data-bag="checked">Checked <small>Goes in the hold</small></button></div>';
   var pickerHtml='';
@@ -512,8 +512,8 @@ function airPlaneShell(o){
     power:{h1:'Power banks on '+a.name+' (2026)',ttl:a.name+' Power Bank Rules 2026 \u2014 Wh Limits'},
     vape:{h1:'Vapes & e-cigarettes on '+a.name+' (2026)',ttl:a.name+' Vape & E-Cigarette Rules 2026'}
   };
-  var meta=CATMETA[cat];
-  (function(){
+  var meta=G?{h1:o.h1,ttl:o.ttl,desc:o.desc}:CATMETA[cat];
+  if(!G)(function(){
     var NOUN={liquids:'liquids',perfume:'perfume and aerosol',alcohol:'alcohol',power:'power bank',vape:'vape and e-cigarette'};
     var txt=(vdef.head||'')+' '+((vdef.lines||[]).filter(Boolean)[0]||'');
     if(cat==='power'){
@@ -535,7 +535,7 @@ function airPlaneShell(o){
   var faqLd={"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":meta.h1,"acceptedAnswer":{"@type":"Answer","text":faqA}}]};
   if(TOP&&TOP.faq) TOP.faq.forEach(function(q){faqLd.mainEntity.push({"@type":"Question","name":q[0],"acceptedAnswer":{"@type":"Answer","text":q[1]}});});
   if(TOP&&TOP.faq) TOP.faq.forEach(function(q){faqLd.mainEntity.push({"@type":"Question","name":q[0],"acceptedAnswer":{"@type":"Answer","text":q[1]}});});
-  var bread={"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":BASE+"/"},{"@type":"ListItem","position":2,"name":a.name+" "+cat,"item":canonical}]};
+  var bread={"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":BASE+"/"},{"@type":"ListItem","position":2,"name":(G?o.h1:a.name+" "+cat),"item":canonical}]};
   return '<!doctype html><html lang="en"><head>\n'
 +'<!-- Google tag (gtag.js) -->\n'
 +'<script async src="https://www.googletagmanager.com/gtag/js?id=G-0HQ16GNH78"></scr'+'ipt>\n'
@@ -668,10 +668,8 @@ function airPlaneShell(o){
 +'<div class="wrap">\n'
 +'<div class="topbar"><div class="topbar-left"><a class="back-btn" href="/" aria-label="Go back" onclick="if(history.length>1&&document.referrer.indexOf(location.origin)==0){history.back();return false}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M12 19l-7-7 7-7"/></svg></a><a class="brand" href="/" aria-label="canitakethis.co home"><span class="mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.8 19.2 16 11l3.5-3.5a2.1 2.1 0 0 0-3-3L13 8 4.8 6.2a.5.5 0 0 0-.5.8l3.9 4.3-2 2-2.2-.4a.5.5 0 0 0-.5.8L6 17l2.7 2.4a.5.5 0 0 0 .8-.5l-.4-2.2 2-2 4.3 3.9a.5.5 0 0 0 .8-.5Z"/></svg></span><h1>can i take this?</h1></a></div>'
 +'<div class="topbar-right"><a href="/blog/" class="hdr-blog-link">Blog</a><button class="theme-toggle" id="themeToggle" onclick="__tt()"><span class="ico" id="themeIcon"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></span><span id="themeLabel">Light</span></button></div></div>\n'
-+'<div class="airhead">'+logo+'<h2>'+esc(a.name)+' <span class="muted">Airline Rules</span></h2></div>\n'
-+'<nav class="tabs">'+t.tabHtml+'</nav>\n'
-+t.moreBlock+'\n'
-+'<main>'+bagToggle+pickerHtml+'<div id="planeCard">'+initCard+'</div>'+(TOP?TOPICS.render(a,TOP):'')+'</main>\n'+clientScript+blogReadBlock(cat==='alcohol'?'airalcohol':cat)
++(G?'<div class="airhead"><span class="logo" style="background:var(--surface-2);color:var(--text);font-size:20px">&#9992;</span><h2>'+esc(o.head)+' <span class="muted">All airlines</span></h2></div>\n':'<div class="airhead">'+logo+'<h2>'+esc(a.name)+' <span class="muted">Airline Rules</span></h2></div>\n<nav class="tabs">'+t.tabHtml+'</nav>\n'+t.moreBlock+'\n')
++'<main>'+bagToggle+pickerHtml+'<div id="planeCard">'+initCard+'</div>'+(TOP?TOPICS.render(a,TOP):'')+(o.extra||'')+'</main>\n'+clientScript+blogReadBlock(cat==='alcohol'?'airalcohol':cat)
 +'<footer>Rules change and vary by nationality, route and fare. This is guidance, not legal advice \u2014 always confirm with the airline or the official customs authority before you travel. Updated 2026.<nav class="tlinks"><a href="/guides/">All Guides</a><a href="/guides/liquids/">Liquids 100ml Rule</a><a href="/guides/power-banks/">Power Bank Rules</a><a href="/guides/vapes/">Vape &amp; E-Cig Guide</a><a href="/blog/">Blog</a></nav><nav class="tlinks"><a href="/about/">About</a><a href="/contact/">Contact</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a></nav></footer>\n'
 +'</div>\n'
 +'<script>function advLogo(im){var l=(im.dataset.srcs||"").split("|"),i=parseInt(im.dataset.i||"0",10)+1;if(i<l.length){im.dataset.i=i;im.src=l[i];}else{im.style.display="none";}}document.querySelectorAll("img.logo-img").forEach(function(im){im.onerror=function(){advLogo(im);};if(im.complete&&im.naturalWidth===0)advLogo(im);});</scr'+'ipt>\n'
@@ -876,46 +874,24 @@ function run(){
 
   // ---------- 2. UNIVERSAL PLANE CATEGORY PAGES ----------
   const planeCats=[
-    {cat:'liquids',detail:'100',url:'liquids',q:'Can I bring liquids in my carry-on? (2026 rules)',t:'Liquids in Carry-On 2026 — 100ml Rule Explained'},
-    {cat:'perfume',detail:'100',url:'perfume-aerosols',q:'Can I take perfume and aerosols on a plane? (2026)',t:'Perfume & Aerosols on a Plane 2026'},
-    {cat:'power',detail:'lo',url:'power-bank',q:'Can I bring a power bank on a plane? (2026 rules)',t:'Power Banks on a Plane 2026 — Wh Limits'},
-    {cat:'vape',detail:null,url:'vape-e-cigarette',q:'Can I take a vape or e-cigarette on a plane? (2026)',t:'Vapes & E-Cigarettes on a Plane 2026'},
-    {cat:'alcohol',detail:'100',url:'alcohol',q:'Can I bring alcohol on a plane? (2026 rules)',t:'Alcohol on a Plane 2026 — Carry-On & Checked'},
-    {cat:'lighter',detail:null,url:'lighter',q:'Can I bring a lighter on a plane? (2026)',t:'Lighters on a Plane 2026'}
+    {cat:'liquids',url:'liquids',head:'Liquids in carry-on',q:'Can I bring liquids in my carry-on? (2026 rules)',t:'Liquids in Carry-On 2026 — 100ml Rule Explained'},
+    {cat:'perfume',url:'perfume-aerosols',head:'Perfume and aerosols',q:'Can I take perfume and aerosols on a plane? (2026)',t:'Perfume & Aerosols on a Plane 2026'},
+    {cat:'power',url:'power-bank',head:'Power banks',q:'Can I bring a power bank on a plane? (2026 rules)',t:'Power Banks on a Plane 2026 — Wh Limits'},
+    {cat:'vape',url:'vape-e-cigarette',head:'Vapes and e-cigarettes',q:'Can I take a vape or e-cigarette on a plane? (2026)',t:'Vapes & E-Cigarettes on a Plane 2026'},
+    {cat:'alcohol',url:'alcohol',head:'Alcohol',q:'Can I bring alcohol on a plane? (2026 rules)',t:'Alcohol on a Plane 2026 — Carry-On & Checked'},
+    {cat:'lighter',url:'lighter',head:'Lighters',q:'Can I bring a lighter on a plane? (2026)',t:'Lighters on a Plane 2026'},
+    {cat:'sharp',url:'sharp-objects',head:'Sharp objects',vCarry:{status:'warn',head:'Blades over about 6 cm and most tools must go in checked baggage.',lines:['Small grooming items such as small scissors, safety razors, nail clippers and tweezers are usually fine in the cabin.','See the item list below for each item.']},vChecked:{status:'go',head:'Knives, box cutters and tools: pack them in checked baggage.',lines:['See the item list below for each item.']},q:'What sharp objects can I take on a plane? (2026)',t:'Sharp Objects on a Plane 2026 — Knives, Scissors, Razors',
+     desc:'What sharp objects you can take in carry-on vs checked: knives, scissors, razors, nail clippers, tools and more — 2026 aviation-security rules.',
+     extra:()=>{const td='<td style="padding:10px 12px;border-top:1px solid var(--line)"';const rows=w.SHARP_DB.map(it=>{const s=STATUS[it.carry]||STATUS.info;return `<tr>${td}>${esc(it.n)}</td>${td.slice(0,-1)};color:${s.c};font-weight:700">${s.w} in cabin</td>${td}>${esc(it.note)}</td></tr>`;}).join('');return `<h2 style="font-size:1.2rem;margin:1.6em 0 .5em">Item by item</h2><div style="overflow-x:auto;border:1px solid var(--line);border-radius:14px;background:var(--surface)"><table style="width:100%;border-collapse:collapse"><thead><tr><th align="left" style="padding:10px 12px">Item</th><th align="left" style="padding:10px 12px">Cabin?</th><th align="left" style="padding:10px 12px">Note</th></tr></thead><tbody>${rows}</tbody></table></div>`;}}
   ];
+  const PLANE_RULES=[['liquids','Liquids in carry-on'],['perfume-aerosols','Perfume and aerosols on a plane'],['power-bank','Power banks on a plane'],['vape-e-cigarette','Vapes and e-cigarettes on a plane'],['alcohol','Alcohol on a plane'],['lighter','Lighters on a plane'],['sharp-objects','Sharp objects on a plane'],['cigarettes','Cigarettes on a plane']];
   planeCats.forEach(pc=>{
-    setS({mode:'plane',bag:'carry',cat:pc.cat,detail:pc.detail,airline:'your airline'});
-    const v=w.verdict()||{status:'info',head:'',lines:[]};
+    setS({mode:'plane',bag:'carry',cat:pc.cat,detail:(pc.cat==='sharp'||pc.cat==='lighter'||pc.cat==='vape')?null:(pc.cat==='power'?'lo':'100'),airline:'your airline'});
+    const v=pc.vCarry||w.verdict()||{status:'info',head:'',lines:[]};
     const url=`/plane/${pc.url}/`;
-    write(url+'index.html', shell({
-      url, title:`${pc.t} | canitakethis.co`,
-      desc:batchDesc(pc.t.replace(/ \u2014 /g,': '), v),
-      h1:pc.q, badge:v.status, answer:v.head, lines:v.lines,
-      source:{label:'Standard IATA / aviation-security rules',url:null},
-      intro:'This rule is set by aviation security and is the same on every airline worldwide.',
-      related:[{url:'/plane/liquids/',t:'Liquids'},{url:'/plane/power-bank/',t:'Power banks'},{url:'/plane/vape-e-cigarette/',t:'Vapes'},{url:'/plane/alcohol/',t:'Alcohol'},{url:'/plane/lighter/',t:'Lighters'},{url:'/plane/sharp-objects/',t:'Sharp objects'},{url:'/plane/cigarettes/',t:'Cigarettes'}].filter(r=>r.url!==url),
-      faq:{q:pc.q,a:`${v.head} ${(v.lines||[]).filter(Boolean).join(' ')}`}
-    }));
+    write(url+'index.html', airPlaneShell({a:{name:'your airline',iata:''},cat:pc.cat,url,generic:true,head:pc.head,h1:pc.q,ttl:pc.t,desc:pc.desc||batchDesc(pc.t.replace(/ — /g,': '), v),vCarry:pc.vCarry,vChecked:pc.vChecked,extra:(pc.extra?pc.extra():'')+'<nav class="readmore" aria-label="More airport rules"><h2>More airport rules</h2><ul>'+PLANE_RULES.filter(r=>r[0]!==pc.url).map(r=>'<li><a href="/plane/'+r[0]+'/">'+r[1]+'</a></li>').join('')+'</ul></nav>'}));
     pages.push({url,changefreq:'monthly'});
   });
-
-  // sharp objects — item examples from SHARP_DB (real per-item cabin rule)
-  {
-    const url='/plane/sharp-objects/';
-    const rows=w.SHARP_DB.map(it=>{const s=STATUS[it.carry]||STATUS.info;return `<tr><td>${esc(it.n)}</td><td style="color:${s.c};font-weight:700">${s.w} in cabin</td><td>${esc(it.note)}</td></tr>`;}).join('');
-    const table=`<table style="width:100%;border-collapse:collapse;margin:1em 0"><thead><tr><th align="left">Item</th><th align="left">Cabin?</th><th align="left">Note</th></tr></thead><tbody>${rows}</tbody></table>`;
-    write(url+'index.html', shell({
-      url, title:'Sharp Objects on a Plane 2026 — Knives, Scissors, Razors | canitakethis.co',
-      desc:'What sharp objects you can take in carry-on vs checked: knives, scissors, razors, nail clippers, tools and more — 2026 aviation-security rules.',
-      h1:'What sharp objects can I take on a plane? (2026)', badge:'warn',
-      answer:'Blades over ~6 cm and most tools must go in checked baggage; small grooming items are usually fine in the cabin.',
-      lines:null, source:{label:'Standard aviation-security rules',url:null},
-      intro:'These rules are set by aviation security and are the same on every airline.',
-      related:[{url:'/plane/liquids/',t:'Liquids'},{url:'/plane/lighter/',t:'Lighters'},{url:'/plane/power-bank/',t:'Power banks'}],
-      faq:{q:'What sharp objects can I take on a plane?',a:'Blades over about 6 cm and most tools must be checked; small scissors, razors, nail clippers and tweezers are usually allowed in the cabin.'}
-    }).replace('<a class="cta"', table+'<a class="cta"'));
-    pages.push({url,changefreq:'monthly'});
-  }
 
   // ---------- 3. COUNTRY CUSTOMS PAGES ----------
   const countryCats=[
@@ -1064,7 +1040,7 @@ function run(){
   const CO_ORDER=['United States','United Kingdom','Canada','Australia','Japan','France','Germany','Italy','Spain','Thailand','United Arab Emirates','India','Turkey','Greece','Netherlands','Switzerland','Singapore','South Korea','China','Qatar','Saudi Arabia','Egypt','Cyprus','Israel'];
   const top24=COUNTRIES.slice(0,24);
   if(top24.length!==CO_ORDER.length||top24.some(c=>!CO_ORDER.includes(c.name)))throw new Error('CO_ORDER mismatch');
-  const topCo=CO_ORDER.map(n=>top24.find(c=>c.name===n)).map(c=>`<a href="/country/${slug(c.name)}/">${esc(c.name)}</a>`).join('');
+  const topCo=CO_ORDER.map(n=>top24.find(c=>c.name===n)).map(c=>`<a href="/country/${slug(c.name)}/"><img src="https://flagcdn.com/${String(c.code).toLowerCase()}.svg" alt="" width="22" height="15" loading="lazy">${esc(c.name)}</a>`).join('');
   write('index.html', `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-0HQ16GNH78"></script>
@@ -1090,6 +1066,7 @@ body{margin:0;font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,
 .seo{max-width:820px;margin:0 auto;padding:24px 18px 60px}
 .seo h1{font-size:1.7rem}
 .seo .grid a{display:inline-block;background:var(--surface);border:1px solid var(--line);margin:4px;padding:8px 12px;border-radius:10px;text-decoration:none;color:var(--text);font-size:.92rem}
+.seo .grid.cc a{background:none;border:0;padding:4px 0;margin:2px 14px 2px 0;border-radius:0;color:var(--accent);display:inline-flex;align-items:center;gap:8px}.seo .grid.cc a:hover{text-decoration:underline}.seo .grid.cc img{width:22px;height:15px;border-radius:2px;object-fit:cover;flex:none}.seo .grid.pl a{display:inline-flex;align-items:center;gap:8px}.seo .grid.pl .ico{font-size:1.05rem;line-height:1}
 .seo h2{margin-top:1.6em;font-size:1.1rem}
 .seo .sub{color:var(--muted);font-size:.9rem;margin:.2em 0 .6em}
 .seo .airsearch{width:100%;box-sizing:border-box;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:var(--surface);color:var(--text);font-size:.95rem;margin:.4em 0 .6em}
@@ -1110,8 +1087,8 @@ ${CHK_BODY}
 <input class="airsearch" id="airq" type="text" placeholder="Type an airline name..." autocomplete="off" aria-label="Search airlines">
 <div class="grid allair" id="allair">${allAir}</div>
 <p class="nomatch" id="airnm">No airline matches that name.</p>
-<h2>Country customs rules</h2><div class="grid">${topCo}</div>
-<h2>On the plane</h2><div class="grid"><a href="/plane/liquids/">Liquids</a><a href="/plane/power-bank/">Power banks</a><a href="/plane/vape-e-cigarette/">Vapes</a><a href="/plane/alcohol/">Alcohol</a><a href="/plane/lighter/">Lighters</a><a href="/plane/sharp-objects/">Sharp objects</a><a href="/plane/cigarettes/">Cigarettes</a></div>
+<h2>Country customs rules</h2><div class="grid cc">${topCo}</div>
+<h2>On the plane</h2><div class="grid pl"><a href="/plane/liquids/"><span class="ico" aria-hidden="true">💧</span>Liquids</a><a href="/plane/power-bank/"><span class="ico" aria-hidden="true">🔋</span>Power banks</a><a href="/plane/vape-e-cigarette/"><span class="ico" aria-hidden="true">💨</span>Vapes</a><a href="/plane/alcohol/"><span class="ico" aria-hidden="true">🍷</span>Alcohol</a><a href="/plane/lighter/"><span class="ico" aria-hidden="true">🔥</span>Lighters</a><a href="/plane/sharp-objects/"><span class="ico" aria-hidden="true">🔪</span>Sharp objects</a><a href="/plane/cigarettes/"><span class="ico" aria-hidden="true">🚬</span>Cigarettes</a></div>
 <p style="color:var(--muted);font-size:.82rem;margin-top:2em">Guidance, not legal advice. Confirm with the airline or customs authority before you travel. Updated 2026.</p>
 <footer style="margin-top:1.4em;color:var(--muted);font-size:.82rem;border-top:1px solid var(--line);padding-top:1em"><nav class="tlinks"><a href="/guides/">All Guides</a><a href="/guides/liquids/">Liquids 100ml Rule</a><a href="/guides/power-banks/">Power Bank Rules</a><a href="/guides/vapes/">Vape &amp; E-Cig Guide</a><a href="/blog/">Blog</a></nav><nav class="tlinks"><a href="/about/">About</a><a href="/contact/">Contact</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a></nav></footer>
 </div>
