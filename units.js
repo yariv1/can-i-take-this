@@ -126,8 +126,8 @@
     + '.units-toggle button:focus-visible{outline:2px solid var(--accent,#4CC2FF);outline-offset:2px}'
     /* every pill in the header (blog link, currency, units, theme) shares one height */
     + '.topbar-right .hdr-blog-link,.topbar-right .theme-toggle,.topbar-right #themeToggle,.units-toggle .ut-trigger,.cur-toggle .ut-trigger{box-sizing:border-box;height:34px;display:inline-flex;align-items:center;justify-content:center;padding-top:0;padding-bottom:0;line-height:1}'
-    + '.topbar{container-type:inline-size}@container (max-width:540px){.brand h1{display:none}}'
-    + '@media(max-width:640px){.brand h1{display:none}}@media(max-width:420px){.units-toggle .ut-trigger{padding:6px 8px;gap:4px}#themeToggle #themeLabel{display:none}#themeToggle{padding:7px 9px}}';
+    + '.topbar{container-type:inline-size}@container (max-width:540px){.brand h1,.brand .bn{display:none}}'
+    + '@media(max-width:640px){.brand h1,.brand .bn{display:none}}@media(max-width:420px){.units-toggle .ut-trigger{padding:6px 8px;gap:4px}#themeToggle #themeLabel{display:none}#themeToggle{padding:7px 9px}}';
 
   var mode = 'imp', orig = typeof WeakMap === 'function' ? new WeakMap() : null, observer = null, xforms = [];
   var SKIP = /^(SCRIPT|STYLE|NOSCRIPT|TEXTAREA|INPUT|SELECT|OPTION|CODE|PRE|TITLE)$/;
