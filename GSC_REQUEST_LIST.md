@@ -54,3 +54,12 @@ https://canitakethis.co/blog/can-you-fly-without-a-real-id-2026/
 Other rebuilt baggage pages: aer-lingus, klm, qatar-airways, latam, air-canada, air-india, american-airlines, aegean, swiss, jetblue, norwegian, malaysia-airlines, aeromexico, frontier, indigo, thai-airways, el-al, easyjet, korean-air, iberia, japan-airlines, eurowings (URL pattern /airline/<slug>/baggage-allowance/).
 Other airline vape/alcohol pages: pegasus, qatar-airways, etihad-airways, klm, sas, china-eastern, air-europa, turkish-airlines (alcohol), emirates (alcohol).
 Other country vaping pages: thailand, india, australia, singapore, japan, mexico, brazil (URL pattern /country/<slug>/vaping/); non-EU plants pages: united-kingdom, canada, japan, singapore, switzerland.
+
+## Added 2026-10-08 (deploy 20c882fef), request in this order
+1. /country/egypt/vaping/ (rebuilt, re-request even though requested before)
+2. /airline/ryanair/baggage-allowance/
+3. /airline/turkish-airlines/baggage-allowance/
+4. /blog/liquids-100ml-rule-2026/ (FAQ schema added)
+5. /country/south-korea/plants-seeds/
+6. /country/thailand/plants-seeds/
+7. /country/brazil/plants-seeds/ and 8. /country/mexico/plants-seeds/ (never requested)

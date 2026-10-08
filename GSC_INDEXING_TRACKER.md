@@ -98,3 +98,13 @@ Last GSC check: 2026-10-05 (Page indexing 1,924 indexed / 89 not indexed as of 2
 
 ## Requested in GSC 2026-10-08
 REQUESTED 2026-10-08: /country/european-union/tobacco/, /country/european-union/alcohol/, /country/european-union/plants-seeds/, /country/egypt/vaping/, /airline/wizz-air/baggage-allowance/, /airline/lufthansa/baggage-allowance/, /airline/singapore-airlines/baggage-allowance/, /airline/air-china/baggage-allowance/, /airline/air-new-zealand/baggage-allowance/. Quota exceeded on /airline/china-southern/baggage-allowance/ (first on the next list).
+
+## Deploy 2026-10-08 (20c882fef): TO REQUEST
+| https://canitakethis.co/country/egypt/vaping/ | TO REQUEST (rebuilt) |
+| https://canitakethis.co/airline/ryanair/baggage-allowance/ | TO REQUEST |
+| https://canitakethis.co/airline/turkish-airlines/baggage-allowance/ | TO REQUEST |
+| https://canitakethis.co/blog/liquids-100ml-rule-2026/ | TO REQUEST (FAQ schema) |
+| https://canitakethis.co/country/south-korea/plants-seeds/ | TO REQUEST |
+| https://canitakethis.co/country/thailand/plants-seeds/ | TO REQUEST |
+| https://canitakethis.co/country/brazil/plants-seeds/ | TO REQUEST |
+| https://canitakethis.co/country/mexico/plants-seeds/ | TO REQUEST |
