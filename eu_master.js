@@ -17,8 +17,9 @@ const EC_PLANT = 'https://food.ec.europa.eu/plants/plant-health-and-biosecurity/
 const EC_SEED = 'https://food.ec.europa.eu/plants/plant-reproductive-material/eu-seed-fraud-network/unsolicited-seed-packages_en';
 const EFSA = 'https://www.efsa.europa.eu/en/plh4l/travelling-and-plants';
 
-const countryLinks = cat => '<section class="bd-sec"><h2>🌍 Country pages</h2><p>Every EU member state applies this rule. Open your country for its own page.</p><ul style="columns:2;list-style:none;padding-left:0">' +
-  EU.map(c => '<li><a href="/country/' + slug(c) + '/' + SEG[cat] + '/">' + esc(c) + '</a></li>').join('') + '</ul></section>';
+const CODE = { Austria: 'at', Belgium: 'be', Bulgaria: 'bg', Croatia: 'hr', Cyprus: 'cy', Czechia: 'cz', Denmark: 'dk', Estonia: 'ee', Finland: 'fi', France: 'fr', Germany: 'de', Greece: 'gr', Hungary: 'hu', Ireland: 'ie', Italy: 'it', Latvia: 'lv', Lithuania: 'lt', Luxembourg: 'lu', Malta: 'mt', Netherlands: 'nl', Poland: 'pl', Portugal: 'pt', Romania: 'ro', Slovakia: 'sk', Slovenia: 'si', Spain: 'es', Sweden: 'se' };
+const countryLinks = cat => '<section class="bd-sec"><h2>\uD83C\uDF0D Country pages</h2><p>Every EU member state applies this rule. Open your country for its own page.</p>' + '<style>.eu-cl{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:4px 16px}.eu-cl a,.eu-cl a:visited{display:inline-flex;align-items:center;gap:9px;padding:6px 0;color:var(--accent);text-decoration:none;font-weight:500}.eu-cl a:hover{text-decoration:underline}.eu-cl .fimg{height:15px;width:22px;object-fit:cover;border-radius:2px;box-shadow:0 0 0 1px rgba(0,0,0,.18);flex:none}</style>' + '<ul class="eu-cl">' +
+  EU.map(c => '<li><a href="/country/' + slug(c) + '/' + SEG[cat] + '/"><img class="fimg" src="https://flagcdn.com/' + CODE[c] + '.svg" alt="" loading="lazy">' + esc(c) + '</a></li>').join('') + '</ul></section>';
 
 function wrap(lead, sections, faq, sources, chk) {
   return '<div class="bd-wrap">' + CSS + '<p class="bd-lead"><strong>' + esc(lead) + '</strong></p>' + sections +

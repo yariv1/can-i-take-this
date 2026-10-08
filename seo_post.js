@@ -70,27 +70,27 @@ function related(url) {
   } else if ((m = /^\/country\/([^/]+)\/(alcohol|cash|tobacco|plants-seeds|vaping)\/$/.exec(url))) {
     const c = LISTS.countries.find(x => slugify(x.name) === m[1]); if (!c) return groups; const cat = m[2];
     add('More about ' + c.name, [{ u: '/country/' + m[1] + '/', t: 'All ' + c.name + ' customs rules' }].concat(Object.keys(CC_LABEL).filter(k => k !== cat).map(k => ({ u: '/country/' + m[1] + '/' + k + '/', t: c.name + ' ' + CC_LABEL[k] }))).concat([{ u: '/food/' + m[1] + '/', t: 'Food into ' + c.name }, { u: '/medication/into/' + m[1] + '/', t: 'Medication into ' + c.name }, { u: '/pets/' + m[1] + '/', t: 'Pets into ' + c.name }]));
-    add(CC_LABEL[cat].charAt(0).toUpperCase() + CC_LABEL[cat].slice(1) + ' in other countries', neighbours(LISTS.countries, c.name, 6).map(x => ({ u: '/country/' + slugify(x.name) + '/' + cat + '/', t: x.name })));
+    add(CC_LABEL[cat].charAt(0).toUpperCase() + CC_LABEL[cat].slice(1) + ' in other countries', neighbours(LISTS.countries, c.name, 6).map(x => ({ u: '/country/' + slugify(x.name) + '/' + cat + '/', t: x.name, c: x.code })));
     const g = { alcohol: [guideLink('duty-free-alcohol-allowance-by-country-2026', 'Duty-free alcohol allowance by country'), guideLink('duty-free-allowance-by-country-2026', 'Duty-free allowance by country')], tobacco: [guideLink('duty-free-tobacco-allowance-by-country-2026', 'Duty-free tobacco allowance by country')], cash: [guideLink('customs-cash-declaration', 'Cash declaration rules'), guideLink('customs-forms-by-country', 'Customs forms by country')], 'plants-seeds': [guideLink('australia-nz-biosecurity-fines', 'Biosecurity fines: Australia and New Zealand')], vaping: [guideLink('vapes-country-rules-2026', 'Vape rules by country')] }[cat] || [];
     add('Guides', g);
   } else if ((m = /^\/food\/([^/]+)\/$/.exec(url))) {
     const c = LISTS.countries.find(x => slugify(x.name) === m[1]); if (!c) return groups;
     add('More about ' + c.name, [{ u: '/country/' + m[1] + '/', t: 'All ' + c.name + ' customs rules' }, { u: '/country/' + m[1] + '/plants-seeds/', t: 'Plants and seeds into ' + c.name }, { u: '/medication/into/' + m[1] + '/', t: 'Medication into ' + c.name }, { u: '/pets/' + m[1] + '/', t: 'Pets into ' + c.name }]);
-    add('Food rules in other countries', neighbours(LISTS.countries, c.name, 6).map(x => ({ u: '/food/' + slugify(x.name) + '/', t: x.name })));
+    add('Food rules in other countries', neighbours(LISTS.countries, c.name, 6).map(x => ({ u: '/food/' + slugify(x.name) + '/', t: x.name, c: x.code })));
     add('Guides', [guideLink('food-you-can-take-on-a-plane-list-2026', 'Food you can take on a plane'), guideLink('food-tsa-vs-customs', 'Food: TSA vs customs')]);
   } else if ((m = /^\/pets\/([^/]+)\/$/.exec(url))) {
     const c = LISTS.countries.find(x => slugify(x.name) === m[1]); if (!c) return groups;
     add('More about ' + c.name, [{ u: '/country/' + m[1] + '/', t: 'All ' + c.name + ' customs rules' }, { u: '/food/' + m[1] + '/', t: 'Food into ' + c.name }, { u: '/medication/into/' + m[1] + '/', t: 'Medication into ' + c.name }]);
-    add('Pet rules in other countries', neighbours(LISTS.countries, c.name, 6).map(x => ({ u: '/pets/' + slugify(x.name) + '/', t: x.name })));
+    add('Pet rules in other countries', neighbours(LISTS.countries, c.name, 6).map(x => ({ u: '/pets/' + slugify(x.name) + '/', t: x.name, c: x.code })));
   } else if ((m = /^\/medication\/([^/]+)\/([^/]+)\/$/.exec(url)) && m[1] !== 'into') {
     const c = LISTS.countries.find(x => slugify(x.name) === m[2]); if (!c) return groups;
     add('More about ' + c.name, [{ u: '/medication/into/' + m[2] + '/', t: 'All medication rules for ' + c.name }, { u: '/country/' + m[2] + '/', t: 'All ' + c.name + ' customs rules' }, { u: '/food/' + m[2] + '/', t: 'Food into ' + c.name }]);
-    add('The same medication in other countries', neighbours(LISTS.countries, c.name, 6).map(x => ({ u: '/medication/' + m[1] + '/' + slugify(x.name) + '/', t: x.name })));
+    add('The same medication in other countries', neighbours(LISTS.countries, c.name, 6).map(x => ({ u: '/medication/' + m[1] + '/' + slugify(x.name) + '/', t: x.name, c: x.code })));
     add('Guides', [guideLink('banned-medications-by-country-2026', 'Banned medications by country'), guideLink('medication-time-zones', 'Medication across time zones')]);
   } else if ((m = /^\/medication\/into\/([^/]+)\/$/.exec(url))) {
     const c = LISTS.countries.find(x => slugify(x.name) === m[1]); if (!c) return groups;
     add('More about ' + c.name, [{ u: '/country/' + m[1] + '/', t: 'All ' + c.name + ' customs rules' }, { u: '/food/' + m[1] + '/', t: 'Food into ' + c.name }, { u: '/pets/' + m[1] + '/', t: 'Pets into ' + c.name }]);
-    add('Medication rules in other countries', neighbours(LISTS.countries, c.name, 6).map(x => ({ u: '/medication/into/' + slugify(x.name) + '/', t: x.name })));
+    add('Medication rules in other countries', neighbours(LISTS.countries, c.name, 6).map(x => ({ u: '/medication/into/' + slugify(x.name) + '/', t: x.name, c: x.code })));
     add('Guides', [guideLink('banned-medications-by-country-2026', 'Banned medications by country')]);
   }
   return groups;
@@ -115,10 +115,10 @@ function relatedBlog(url) {
   if (fs.existsSync(path.join(__dirname, 'blog', SECTION_SLUG(me.section), 'index.html'))) out.push({ h: 'Browse', l: [{ u: hub, t: 'All ' + me.section + ' articles' }, { u: '/blog/', t: 'All articles' }] });
   return out.filter(g => g.l.length);
 }
-const REL_CSS = '<style>.relnav{margin:2em 0 0;border-top:1px solid var(--line);padding-top:1em}.relnav h2{font-size:1.05rem;margin:0 0 .5em}.relnav h3{font-size:.95rem;margin:1em 0 .4em;color:var(--muted)}.relnav ul{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:8px}.relnav a{display:inline-block;background:var(--surface);border:1px solid var(--line);padding:7px 12px;border-radius:10px;text-decoration:none;color:var(--text);font-size:.95rem}.relnav a:hover{color:var(--accent);border-color:var(--accent)}</style>';
+const REL_CSS = '<style>.relnav{margin:2em 0 0;border-top:1px solid var(--line);padding-top:1em}.relnav h2{font-size:1.05rem;margin:0 0 .5em}.relnav h3{font-size:.95rem;margin:1em 0 .4em;color:var(--muted)}.relnav ul{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:8px}.relnav a{display:inline-block;background:var(--surface);border:1px solid var(--line);padding:7px 12px;border-radius:10px;text-decoration:none;color:var(--text);font-size:.95rem}.relnav a:hover{color:var(--accent);border-color:var(--accent)}.relnav a.rc{display:inline-flex;align-items:center;gap:8px;color:var(--accent)}.relnav a.rc .fimg{height:14px;width:20px;object-fit:cover;border-radius:2px;box-shadow:0 0 0 1px rgba(0,0,0,.18);flex:none}.relnav a.rc:hover{text-decoration:underline}</style>';
 function relatedHtml(url) {
   const g = related(url); if (!g.length) return '';
-  return '<nav class="relnav" aria-label="Related pages"><h2>Related rules and guides</h2>' + g.map(x => '<h3>' + esc(x.h) + '</h3><ul>' + x.l.map(l => '<li><a href="' + l.u + '">' + esc(l.t) + '</a></li>').join('') + '</ul>').join('') + '</nav>';
+  return '<nav class="relnav" aria-label="Related pages"><h2>Related rules and guides</h2>' + g.map(x => '<h3>' + esc(x.h) + '</h3><ul>' + x.l.map(l => '<li><a href="' + l.u + '"' + (l.c ? ' class="rc"' : '') + '>' + (l.c ? '<img class="fimg" src="https://flagcdn.com/' + String(l.c).toLowerCase() + '.svg" alt="" loading="lazy">' : '') + esc(l.t) + '</a></li>').join('') + '</ul>').join('') + '</nav>';
 }
 
 // ---------- the post-processor ----------

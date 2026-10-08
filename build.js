@@ -820,7 +820,7 @@ function setS(o){Object.assign(w.S,o);}
 function run(){
   ensure(OUT);
   const AIRLINES=w.AIRLINES, COUNTRIES=w.COUNTRIES, FARES=w.FARES;
-  SEO.setLists({airlines:AIRLINES.map(a=>({name:a.name})),countries:COUNTRIES.map(c=>({name:c.name}))});
+  SEO.setLists({airlines:AIRLINES.map(a=>({name:a.name})),countries:COUNTRIES.map(c=>({name:c.name,code:c.code}))});
 
   // ---------- 1. AIRLINE BAGGAGE PAGES ----------
   AIRLINES.forEach(a=>{
