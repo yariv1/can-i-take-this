@@ -71,3 +71,6 @@ Other country vaping pages: thailand, india, australia, singapore, japan, mexico
 ## Added 2026-10-08 (third deploy edafe74fe), request FIRST on the next request day
 11. /plane/cigarettes/ (NEW page, highest demand: Ahrefs >1000 for "can you bring cigarettes on a plane")
 12. /country/australia/alcohol/ (rebuilt from the Australian Border Force page)
+
+## Added 2026-10-08 (fourth deploy 87f41bf23): 7 plane pages rebuilt in the new style, re-request AFTER the items above
+13. /plane/liquids/  14. /plane/vape-e-cigarette/  15. /plane/power-bank/  16. /plane/alcohol/  17. /plane/lighter/  18. /plane/perfume-aerosols/  19. /plane/sharp-objects/

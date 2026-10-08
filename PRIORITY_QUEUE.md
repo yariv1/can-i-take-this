@@ -21,3 +21,6 @@ Parked (low demand): plants & seeds for more countries (Korea and Thailand done)
 
 ## Rebuilt-page checklist (how each item is done)
 Official page read by me in full (Chrome if WebFetch fails) -> add data module entry -> `node build.js` -> `node audit_seo.js --fail` -> `node audit_dup.js` -> preview link (localhost:5055) -> user says "deploy".
+
+## TEMPLATE DEBT (found by the user 2026-10-08)
+The 78 airline hub pages /airline/<name>/ still use the OLD shell() template: no global header, 'Related checks' chips, no answer card. Plane pages (7) were converted (airPlaneShell generic mode, 87f41bf23). Plan for hubs (~25 min): airline header + tabs + economy baggage card + topic tile grid; run audit_dup so hubs differ by airline data. Decision pending: user chose to deploy the plane pages first.
