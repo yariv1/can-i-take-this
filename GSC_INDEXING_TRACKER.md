@@ -95,3 +95,6 @@ Last GSC check: 2026-10-05 (Page indexing 1,924 indexed / 89 not indexed as of 2
 | https://canitakethis.co/country/european-union/plants-seeds/ | TO REQUEST |
 | https://canitakethis.co/country/european-union/alcohol/ | TO REQUEST |
 | https://canitakethis.co/country/european-union/tobacco/ | TO REQUEST |
+
+## Requested in GSC 2026-10-08
+REQUESTED 2026-10-08: /country/european-union/tobacco/, /country/european-union/alcohol/, /country/european-union/plants-seeds/, /country/egypt/vaping/, /airline/wizz-air/baggage-allowance/, /airline/lufthansa/baggage-allowance/, /airline/singapore-airlines/baggage-allowance/, /airline/air-china/baggage-allowance/, /airline/air-new-zealand/baggage-allowance/. Quota exceeded on /airline/china-southern/baggage-allowance/ (first on the next list).

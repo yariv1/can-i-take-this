@@ -151,6 +151,47 @@ module.exports = {
     ],
     src: [["https://www.blw.admin.ch/en/importing-plants", "Swiss Federal Office for Agriculture &mdash; Importing plants"]]
   },
+  "Brazil": {
+    date: "MAPA page updated 19 March 2026",
+    ttl: "Brazil Plants & Seeds 2026: Declare Plant Parts, Certificate",
+    desc: "Bringing plants or plant parts into Brazil: fresh or dried plant parts need a phytosanitary certificate and must be declared on the e-DBV and shown to Vigiagro; products are seized and destroyed otherwise.",
+    lead: "Brazil's Ministry of Agriculture (MAPA) says fresh or dried plant parts, such as leaves, branches, stems, pollen and flowers, may enter Brazil in a traveller's baggage with a phytosanitary certificate issued by the federal agricultural authority of the country of origin and with no signs of pests. The traveller must declare them on the declaration of goods (e-DBV) and present themselves to Vigiagro through the 'Bens a Declarar' channel; otherwise the products are seized and destroyed.",
+    rows: [
+      ["Fresh or dried plant parts (leaves, branches, stems, pollen, flowers)", "May enter with a phytosanitary certificate from the federal agricultural authority of the country of origin"],
+      ["Condition on the goods", "No signs of pests"],
+      ["Declaration", "Declare on the traveller's declaration of goods (e-DBV) and present to Vigiagro (International Agricultural Surveillance) via the 'Bens a Declarar' channel"],
+      ["If the rules are not met", "Seizure and destruction of the products; return to origin applies only to road travel and is subject to review by the Brazilian authorities"]
+    ],
+    notes: ["<strong>Seeds, seedlings and whole plants:</strong> the MAPA page we read covers plant parts only and points to a separate list of permitted and prohibited goods, which we could not open without a login, so we do not state a rule for them.", "<strong>Legal basis:</strong> MAPA Portaria 872/2025 consolidates the rules for the agricultural inspection of travellers' baggage; check the current list on the Vigiagro page before you travel."],
+    faq: [
+      ["Do I need to declare plants when entering Brazil?", "Yes for goods with entry requirements: MAPA says to declare fresh or dried plant parts on the e-DBV and present them to Vigiagro through the 'Bens a Declarar' channel."],
+      ["Can I bring flowers or leaves into Brazil?", "MAPA says fresh or dried plant parts such as leaves, branches, stems, pollen and flowers may enter with a phytosanitary certificate from the country of origin and no signs of pests."],
+      ["What happens if I do not declare plant products in Brazil?", "MAPA lists seizure and destruction of the products, and return to origin for road travel, subject to review by the Brazilian authorities."],
+      ["Can I bring seeds into Brazil?", "The MAPA page we read does not cover seeds. Check the official Vigiagro list of permitted and prohibited goods before you travel."]
+    ],
+    src: [["https://www.gov.br/agricultura/pt-br/assuntos/vigilancia-agropecuaria/viajantes-e-bagagens/lista-de-bens-agropecuarios-que-podem-ou-nao-ingressar-no-brasil/vegetais-e-suas-partes-frutas-folhas-flores-graos/partes-de-plantas-frescas-ou-secas", "MAPA &mdash; Fresh or dried plant parts (Vigiagro, travellers and baggage)"]]
+  },
+  "Mexico": {
+    date: "SENASICA notice published 19 December 2014 (the page itself warns that requirements change)",
+    ttl: "Mexico Plants & Seeds 2026: Regulated, Soil Prohibited",
+    desc: "Bringing seeds or plants into Mexico: SENASICA treats propagative plant material and cut flowers as regulated goods that must meet phytosanitary requirements; soil is prohibited; declare at the entry point.",
+    lead: "Mexico's agri-food health authority SENASICA classifies propagative plant material (seeds, bulbs, cuttings) and cut flowers and plants as regulated goods that must meet the requirements in its phytosanitary consultation module, while soil, straw, hay and palm are on its prohibited list. Travellers must find out the requirements before the trip and declare what they carry at the point of entry.",
+    rows: [
+      ["Seeds, bulbs, cuttings (propagative plant material)", "Regulated: must meet the phytosanitary requirements in SENASICA's consultation module"],
+      ["Cut flowers and plants", "Regulated: same module applies"],
+      ["Soil, straw, hay, palm", "Prohibited"],
+      ["Declaration", "Travellers must inform themselves before the trip and declare the products they carry at the point of entry"],
+      ["Inspection", "SENASICA reinforced inspection at ports, airports and borders"]
+    ],
+    notes: ["<strong>Date of the source:</strong> the SENASICA notice we read is from 2014 and itself says the health status of countries changes constantly, so confirm the current requirements in SENASICA's phytosanitary consultation module before you bring any plant material."],
+    faq: [
+      ["Can I bring seeds into Mexico?", "SENASICA lists propagative plant material such as seeds, bulbs and cuttings as regulated: it must meet the requirements in its phytosanitary consultation module, and you must declare it at the point of entry."],
+      ["Can I bring plants or flowers into Mexico?", "SENASICA lists cut flowers and plants as regulated goods that must meet its phytosanitary requirements."],
+      ["Is soil allowed into Mexico?", "No. SENASICA's notice lists soil, straw, hay and palm among prohibited products."],
+      ["Do I have to declare plant products in Mexico?", "Yes. SENASICA says travellers should inform themselves before the trip and declare the products they carry at the entry point."]
+    ],
+    src: [["https://www.gob.mx/senasica/prensa/recomienda-senasica-a-viajeros-informarse-sobre-restricciones-en-el-ingreso-de-productos-agroalimentarios-a-mexico", "SENASICA &mdash; Travellers: restrictions on bringing agri-food products into Mexico"]]
+  },
   "Norway": {
     date: "Tolletaten page last updated 27 November 2025",
     ttl: "Norway Plants & Seeds 2026: Up to 50 Seed Packets Without Permit",
