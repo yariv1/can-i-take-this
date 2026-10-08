@@ -13,8 +13,22 @@ const SOURCES = [
   ['https://www.efsa.europa.eu/en/plh4l/travelling-and-plants', 'EFSA &mdash; Travelling and plants']
 ];
 
+const DATA = require('./country_plants_data.js');
+
+function buildCountry(cn, D) {
+  const faq = D.faq;
+  const html = '<div class="bd-wrap">' + CSS + '<p class="bd-lead"><strong>' + esc(D.lead) + '</strong></p>' +
+    '<section class="bd-sec"><h2>\uD83C\uDF31 Plants and seeds: what the official source says for ' + esc(cn) + '</h2><p>' + esc(D.date) + '.</p>' + table({ head: ['Item', 'Official rule in ' + cn], rows: D.rows }) +
+    '<ul>' + D.notes.map(x => '<li>' + x + '</li>').join('') + '</ul></section>' +
+    '<section class="bd-faq"><h2>\u2753 Quick answers</h2>' + faq.map(q => '<h3>' + esc(q[0]) + '</h3><p>' + esc(q[1]) + '</p>').join('') + '</section>' +
+    '<p class="bd-chk">Read ' + READ + '. Rules change: confirm with the plant health or customs authority of ' + esc(cn) + ' before you bring plants or seeds.</p>' +
+    '<div class="bd-src"><div class="h">\uD83D\uDD17 Official source' + (D.src.length > 1 ? 's' : '') + '</div>' + D.src.map(x => '<a href="' + x[0] + '" target="_blank" rel="noopener noreferrer">' + x[1] + '</a>').join('') + '</div></div>';
+  return { ttl: D.ttl, desc: D.desc, html, faq };
+}
+
 function build(c) {
-  const cn = c.name; if (!EU.includes(cn)) return null;
+  const cn = c.name;
+  if (!EU.includes(cn)) return DATA[cn] ? buildCountry(cn, DATA[cn]) : null;
   const lead = 'Entering ' + cn + ' from a non-EU country, the European Commission says it is prohibited to bring plants, plant products and other objects in personal luggage unless a phytosanitary (plant health) certificate accompanies them: that includes plants to be planted, fruits, vegetables and cut flowers, and seeds for non-commercial use are only allowed with a phytosanitary certificate. The Commission lists one exception: no certificate is needed for fruits of pineapple, coconut, durian, banana or date. Between EU countries the rules cover plants and plant products grown in an EU country and free from pests or disease.';
   const rows = [
     ['Plants for planting, cut flowers, other plants and plant products', 'Prohibited in personal luggage unless a phytosanitary certificate accompanies them'],
