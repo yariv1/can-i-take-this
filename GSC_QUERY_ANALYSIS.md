@@ -26,3 +26,13 @@ Power bank: "<airline> power bank rules" / "battery policy" for Singapore, KLM, 
 3. "Rules/policy" and year phrasings: titles and H2s must use "can you ... on <airline>" and the year.
 4. Country: vaping Egypt/Cuba/Turkey, seeds by country, duty free by country (Bulgaria, Australia, Turkey, Spain), pets by country; these pages are ~200 words.
 5. Generic liquids answer pages ("how many ml are you allowed on a plane") rank at ~78.
+
+## Demand clusters, re-read 2026-10-08 (top 1,000 queries by impressions, 3 months, 9,852 impr; entity / topic, impressions, avg position)
+We HAVE a page for each of these; Google shows them at position 40-80 because they were thin/duplicated. Rebuild in this order:
+1. Egypt vaping 873 (pos 62, 18 queries: "can you vape in egypt", "is vaping legal in egypt", year variants) - biggest single cluster; page = /country/egypt/vaping/
+2. Generic liquids answer ("how many ml are you allowed on a plane", "is 50 ml allowed") 509 (pos 76) - liquids pillar/ounces pages
+3. Airline baggage (already rebuilt, awaiting re-index): Lufthansa 464, Air China 435, Singapore 365, Wizz 293, Air NZ 222, Etihad 172, China Southern 165, Aer Lingus 145. Not yet rebuilt: see handoff list (Ryanair etc.).
+4. Duty free by country: unnamed 147 (pos 43), Australia 98 (pos 40), Bulgaria 64 (pos 25 - closest to page 1)
+5. Turkey vaping 79 (pos 45), Cuba disposable vapes 57 (pos 28)
+6. Power bank: Ethiopian 75 (pos 8), Icelandair 64 (pos 9), Singapore 69 (pos 40) - already near page 1
+Plants/seeds is small (India 64 at pos 8 is already top 10).

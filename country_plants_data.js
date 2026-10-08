@@ -214,5 +214,56 @@ module.exports = {
       ["Do I need a phytosanitary certificate in Norway?", "For amounts above the personal-use limits, yes. Larger quantities require a phytosanitary certificate."]
     ],
     src: [["https://www.toll.no/en/goods/plants-and-seeds/regulations-for-fruits-vegetables-plants-flowers-and-seeds", "Tolletaten (Norwegian Customs) &mdash; Regulations for fruits, vegetables, plants, flowers and seeds"]]
+  },
+  "South Korea": {
+    date: "APQA traveller page (undated; it still uses the agency's former QIA name, so treat it as a general guide)",
+    ttl: "South Korea Plants & Seeds 2026: Declare All Plants, Fines Up to 1 Million Won",
+    desc: "Bringing plants or seeds into South Korea: the plant quarantine agency says all plants must be declared and inspected, including seeds, seedlings and bulbs; soil is not allowed; undeclared plants risk a fine up to 1,000,000 won.",
+    lead: "The Animal and Plant Quarantine Agency (APQA) tells arriving travellers to declare all plants and plant products before customs: fruit, vegetables, seeds, seedlings, flower bulbs, grains and herbal-medicine ingredients. Carrying plants without declaring them can bring a fine of up to 1,000,000 won. Some propagative material, such as fruit-tree seedlings and flower bulbs, is kept in an isolated plot for a set period before release.",
+    rows: [
+      ["Fruit, vegetables, seeds, seedlings, flower bulbs, grains, herbal-medicine ingredients", "Must be declared and go through plant quarantine"],
+      ["Disease-causing organisms, insects (including pet insects), soil", "Must be declared; soil and soil-covered plants are not accepted"],
+      ["Some propagative plants (fruit-tree seedlings, flower bulbs) and some plants for planting", "Kept in an isolated plot for a period for inspection"],
+      ["Tropical and subtropical fresh fruit", "On APQA's prohibited map as a worldwide ban"],
+      ["Potatoes and chilli peppers", "On APQA's prohibited map as a worldwide ban"],
+      ["Pear, peach and grape seedlings", "On APQA's prohibited map as a worldwide ban"],
+      ["Not declaring plants", "Fine of up to 1,000,000 won"]
+    ],
+    notes: ["<strong>The page is an image:</strong> APQA publishes this traveller guide as a single picture, undated and in Korean. We read it and list only what is clearly legible. Its prohibited-plants map lists more regions and products than shown here, and refers to the full list in the enforcement rules (Annex 1), so check the current list before you pack plant material.", "<strong>Declaring is separate from the X-ray:</strong> the page says passing the customs X-ray does not replace plant quarantine, and you must declare plants separately.", "<strong>Declaring is not permission:</strong> fruit you declare can only be taken into Korea if it passes the quarantine inspection."],
+    faq: [
+      ["Can I bring seeds into South Korea?", "You must declare them. APQA lists seeds among the plant products every traveller has to declare and put through plant quarantine."],
+      ["Do I need to declare small plants or seedlings in South Korea?", "Yes. APQA says living seedlings and saplings, and also non-living farm produce such as fruit and sesame, count as plants and must be declared."],
+      ["Does the customs X-ray count as a declaration?", "No. APQA states that the X-ray is separate from plant quarantine and you must still declare plants."],
+      ["What is the fine for not declaring plants in South Korea?", "APQA's page says up to 1,000,000 won."],
+      ["Can I bring soil into South Korea?", "No. APQA's page says plants with soil are not accepted and asks travellers to declare soil."]
+    ],
+    src: [["https://www.apqa.go.kr/popup/pop_travel.html", "APQA &mdash; Plant quarantine guide for overseas travellers (Korean image)"]]
+  },
+  "Thailand": {
+    date: "Airports of Thailand page for international passengers (undated), setting out the Department of Agriculture's plant quarantine rules",
+    ttl: "Thailand Plants & Seeds 2026: Seeds and Cuttings Banned, Others Need a Certificate",
+    desc: "Bringing plants or seeds into Thailand: seeds and cuttings of crops such as rice, corn, coffee and cassava are prohibited, ornamental plants need a phytosanitary certificate and declaration; penalty up to 1 year or 20,000 baht.",
+    lead: "Airports of Thailand, citing the Department of Agriculture's Plant Quarantine Act rules, says passengers on international flights may not bring in propagating material (seeds, cuttings) of crops such as orange, pineapple, tea, papaya, coconut, oil palm, cassava, cocoa, corn, coffee, cotton, rice, para rubber and physic nut. Ornamental plants, fresh vegetables and seed or grain such as wheat, oat, barley, sesame and sunflower may be brought in only if you declare them to a plant quarantine officer, hold a phytosanitary certificate and they are found free from pests and diseases.",
+    rows: [
+      ["All fresh fruits (kiwi, orange, lime, lemon, apple, banana, papaya, cherry, plum, peach, pear, grape, pitaya and others)", "Prohibited, from all countries"],
+      ["Propagating material (seed, cuttings) of orange, pineapple, tea, papaya, coconut, oil palm, cassava, cocoa, corn, coffee, cotton, rice, para rubber, physic nut and others", "Prohibited, from all countries"],
+      ["Soil, organic fertiliser, agricultural micro-organisms, earthworms, insects, mites, nematodes, snails, slugs, weeds, parasites, predators", "Prohibited, from all countries"],
+      ["Fresh vegetables", "Allowed if declared, with a phytosanitary certificate, and found free of pests and diseases"],
+      ["Ornamental plants (orchid, rose, lily, chrysanthemum, tulip, carnation and others)", "Same: declare, phytosanitary certificate, pest-free"],
+      ["Seed or grain (wheat, oat, barley, sesame, castor bean, sunflower, white rice and others)", "Same: declare, phytosanitary certificate, pest-free"],
+      ["Other items (dry tea leaves, broken rice, fresh coffee beans, mushrooms, dry ornamental plants)", "Same: declare, phytosanitary certificate, pest-free"],
+      ["Plants for propagation", "A non-GMO certificate is also required"],
+      ["Plants covered by CITES", "A CITES permit is also required"],
+      ["Penalty under the Plant Quarantine Act (Section 21)", "Up to one year in prison, a fine of up to 20,000 baht, or both"]
+    ],
+    notes: ["<strong>Confiscation:</strong> the page says prohibited items are confiscated and destroyed without reimbursement.", "<strong>Date:</strong> the page is undated. The lists are examples (&ldquo;e.g.&rdquo;), not complete lists, so ask the Plant Quarantine office if your plant or seed is not named. The page gives the Office of Agricultural Regulation contact: +66 2 940 6573 ext. 128.", "<strong>Restricted plants table:</strong> the page also lists some products (for example kiwi, cherry, peach, apple and grape fresh fruit) that need an import permit from specific origin countries. Those entries are for trade imports and are not summarised here."],
+    faq: [
+      ["Can I bring seeds into Thailand?", "Seeds and cuttings of crops such as rice, corn, coffee, cassava, cotton and tea are prohibited. Other seed or grain, such as wheat, sesame and sunflower, may come in if declared, with a phytosanitary certificate, and found free of pests and diseases."],
+      ["Can I bring plants or flowers into Thailand?", "Ornamental plants such as orchids, roses and tulips are allowed if you declare them to a plant quarantine officer, hold a phytosanitary certificate and they are found pest-free."],
+      ["Can I bring fruit into Thailand?", "No. Airports of Thailand lists all fresh fruits as prohibited from all countries, with kiwi, orange, apple, grape and pear among the examples."],
+      ["Is soil allowed into Thailand?", "No. Soil is on the prohibited list with organic fertiliser, insects and weeds."],
+      ["What is the penalty for bringing prohibited plants into Thailand?", "Under Section 21 of the Plant Quarantine Act, up to one year in prison, a fine of up to 20,000 baht, or both, and the items are confiscated and destroyed."]
+    ],
+    src: [["https://suvarnabhumi.airportthai.co.th/service/airport-guide/detail/ProhibitedPlantforImport", "Airports of Thailand (Suvarnabhumi) &mdash; Prohibited Plant for Import"]]
   }
 };

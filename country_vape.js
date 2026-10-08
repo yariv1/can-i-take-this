@@ -3,6 +3,7 @@
 // We state only what the WHO table says; we never turn it into a customs allowance.
 const DATA = require('./country_vape_who.json');
 const BAGD = require('./baggage_detail.js');
+const EXTRA = require('./country_vape_extra.js');
 const { CSS, table, esc } = BAGD;
 const READ = '8 October 2026';
 
@@ -67,6 +68,8 @@ function build(c) {
     ['Can I vape in public places in ' + cn + '?', indoorText(cn, D)],
     ['What is the minimum age to buy a vape in ' + cn + '?', D.minAge ? 'WHO reports a minimum age of sale of ' + D.minAge + ' for e-cigarettes in ' + cn + '.' : 'WHO\'s profile does not report a minimum age of sale for e-cigarettes in ' + cn + '.']
   ];
+  const X = EXTRA[c.code];
+  if (X) X.faq.forEach(q => faq.push(q));
   const list = [];
   if (D.note) list.push('<strong>WHO note:</strong> ' + esc(D.note));
   list.push('<strong>How old is this:</strong> the WHO report is dated 2023 and its e-cigarette rows are as at 2022; laws can change, so check the current rule with the authority below.');
@@ -74,15 +77,18 @@ function build(c) {
   const html = '<div class="bd-wrap">' + CSS + '<p class="bd-lead"><strong>' + esc(lead) + '</strong></p>' +
     '<section class="bd-sec"><h2>🚭 What WHO reports for ' + esc(cn) + '</h2><p>From the WHO report on the global tobacco epidemic 2023, country profile for ' + esc(cn) + ', table "Regulation of ENDS and ENNDS" (nicotine e-cigarettes).</p>' +
     table({ head: ['WHO item', 'Reported for ' + cn], rows }) + '<ul>' + list.map(x => '<li>' + x + '</li>').join('') + '</ul></section>' +
+    (X ? X.sections.map(sc => '<section class="bd-sec"><h2>' + sc.h + '</h2><p>' + esc(sc.p) + '</p>' + (sc.table ? table(sc.table) : '') + (sc.list ? '<ul>' + sc.list.map(x => '<li>' + x + '</li>').join('') + '</ul>' : '') + '</section>').join('') : '') +
     '<section class="bd-faq"><h2>❓ Quick answers</h2>' + faq.map(q => '<h3>' + esc(q[0]) + '</h3><p>' + esc(q[1]) + '</p>').join('') + '</section>' +
     '<p class="bd-chk">WHO profile read ' + READ + '. This is guidance, not a customs allowance: confirm with the customs authority of ' + esc(cn) + ' before you travel.</p>' +
-    '<div class="bd-src"><div class="h">🔗 Official source</div><a href="' + D.pdf + '" target="_blank" rel="noopener noreferrer">WHO report on the global tobacco epidemic 2023: country profile, ' + esc(cn) + '</a></div></div>';
+    '<div class="bd-src"><div class="h">🔗 Official source</div><a href="' + D.pdf + '" target="_blank" rel="noopener noreferrer">WHO report on the global tobacco epidemic 2023: country profile, ' + esc(cn) + '</a>' + (X ? X.src.map(u => '<a href="' + u[0] + '" target="_blank" rel="noopener noreferrer">' + esc(u[1]) + '</a>').join('') : '') + '</div></div>';
   let ttl = 'Vaping in ' + cn + ' 2026: ' + status;
   if (ttl.length > 62) ttl = 'Vaping in ' + cn + ' 2026: ' + (A.none ? 'No General Ban' : A.hasImport ? 'Import Banned' : status);
   if (ttl.length > 62) ttl = 'Vaping in ' + cn + ' 2026: Is It Legal?';
   let desc = 'Is vaping legal in ' + cn + '? ' + (A.none ? 'WHO lists no general ban on e-cigarettes' : 'WHO lists: ' + A.g) + '; use in indoor public places: ' + (D.indoor === 'None' ? 'no ban reported' : lc(D.indoor)) + '.';
   if (desc.length > 158) desc = 'Is vaping legal in ' + cn + '? WHO (2023 report, 2022 data): ' + (A.none ? 'no general ban on e-cigarettes' : A.g) + '.';
   if (desc.length > 158) desc = desc.slice(0, 155).replace(/\s+\S*$/, '') + '...';
+  if (X && X.ttl) ttl = X.ttl;
+  if (X && X.desc) desc = X.desc;
   return { ttl, desc, html, faq };
 }
 

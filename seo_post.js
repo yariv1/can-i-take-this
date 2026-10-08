@@ -116,8 +116,10 @@ function relatedBlog(url) {
   return out.filter(g => g.l.length);
 }
 const REL_CSS = '<style>.relnav{margin:2em 0 0;border-top:1px solid var(--line);padding-top:1em}.relnav h2{font-size:1.05rem;margin:0 0 .5em}.relnav h3{font-size:.95rem;margin:1em 0 .4em;color:var(--muted)}.relnav ul{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:8px}.relnav li:has(>a.rc){margin-right:14px}.relnav a{display:inline-block;background:var(--surface);border:1px solid var(--line);padding:7px 12px;border-radius:10px;text-decoration:none;color:var(--text);font-size:.95rem}.relnav a:hover{color:var(--accent);border-color:var(--accent)}.relnav a.rc,.relnav a.rc:visited{display:inline-flex;align-items:center;gap:9px;background:none;border:0;border-radius:0;padding:6px 0;color:var(--accent);font-weight:500}.relnav a.rc .fimg{height:14px;width:20px;object-fit:cover;border-radius:2px;box-shadow:0 0 0 1px rgba(0,0,0,.18);flex:none}.relnav a.rc:hover{text-decoration:underline}</style>';
+const READMORE_FALLBACK_CSS = ".readmore{margin:22px 0 0;padding:14px 16px;background:var(--surface);border:1px solid var(--line);border-radius:14px}.readmore h2{font-family:'Space Mono',monospace;font-size:.85rem;letter-spacing:1px;text-transform:uppercase;color:var(--muted);margin:0 0 8px;font-weight:700}.readmore ul{list-style:none;margin:0;padding:0}.readmore li{margin:0 0 6px;display:flex;gap:8px;align-items:baseline}.readmore li:before{content:'\\1F4A1';flex:none;font-size:.95rem}.readmore li:last-child{margin:0}.readmore a{color:var(--text);font-size:1rem;font-weight:300;text-decoration:none;border-bottom:1px solid transparent}.readmore a:hover{color:var(--accent);border-bottom-color:var(--accent)}[data-theme=\"dark\"] .readmore a{color:#B1BDD5}[data-theme=\"dark\"] .readmore a:hover{color:var(--accent)}";
+let _guides = [];
 function relatedHtml(url) {
-  const g = related(url); if (!g.length) return '';
+  const all = related(url); _guides = (all.find(x => x.h === 'Guides') || { l: [] }).l; const g = all.filter(x => x.h !== 'Guides'); if (!g.length) return '';
   return '<nav class="relnav" aria-label="Related pages"><h2>Related rules and guides</h2>' + g.map(x => '<h3>' + esc(x.h) + '</h3><ul>' + x.l.map(l => '<li><a href="' + l.u + '"' + (l.c ? ' class="rc"' : '') + '>' + (l.c ? '<img class="fimg" src="https://flagcdn.com/' + String(l.c).toLowerCase() + '.svg" alt="" loading="lazy">' : '') + esc(l.t) + '</a></li>').join('') + '</ul>').join('') + '</nav>';
 }
 
@@ -161,6 +163,22 @@ function post(url, html) {
   if (rel) {
     const i = h.lastIndexOf('</main>');
     if (i >= 0) h = h.slice(0, i) + rel + h.slice(i); else { const j = h.indexOf('<footer'); if (j >= 0) h = h.slice(0, j) + rel + h.slice(j); }
+  }
+  // 7. every article link lives in ONE block, "Read the full guide" (user rule 2026-10-08): the old 'Guides' chip group is merged into it
+  if (_guides.length) {
+    const rows = loadArticleRows();
+    const items = _guides.map(l => { const r = rows.find(x => x.url === l.u); return { u: l.u, t: r ? r.title : l.t }; });
+    const li = x => '<li><a href="' + x.u + '">' + esc(unesc(x.t)) + '</a></li>';
+    const m2 = /(<nav class="readmore"[^>]*><h2>Read the full guide<\/h2><ul>)([\s\S]*?)(<\/ul><\/nav>)/.exec(h);
+    if (m2) {
+      const add2 = items.filter(x => m2[2].indexOf('href="' + x.u + '"') < 0);
+      if (add2.length) h = h.replace(m2[0], () => m2[1] + m2[2] + add2.map(li).join('') + m2[3]);
+    } else {
+      const nav = (h.indexOf('.readmore{') < 0 ? '<style>' + READMORE_FALLBACK_CSS + '</style>' : '') + '<nav class="readmore" aria-label="Related guides"><h2>Read the full guide</h2><ul>' + items.map(li).join('') + '</ul></nav>\n';
+      let k = h.indexOf('<nav class="relnav"'); if (k < 0) k = h.lastIndexOf('</main>'); if (k < 0) k = h.indexOf('<footer');
+      if (k >= 0) h = h.slice(0, k) + nav + h.slice(k);
+    }
+    _guides = [];
   }
   const body = h.replace(/<script[\s\S]*?<\/script>/gi, '').replace(/<style[\s\S]*?<\/style>/gi, '');
   const n1 = (body.match(/<h1\b/gi) || []).length;

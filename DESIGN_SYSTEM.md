@@ -424,3 +424,12 @@ Site-wide length/weight switch. One shared file, `/units.js`, loaded with `<scri
 - **Wordmark hides when the header is narrow.** `units.js` makes `.topbar` an inline-size container and hides `.brand h1` ("can i take this?") when the topbar is narrower than 540px (home and app column is ~404px wide even on desktop, articles ~724px keep the wordmark), in addition to the ≤640px viewport rule.
 
 - **USD also converts € and £ (2026-10-04, user request):** currency.js no longer skips conversion in USD mode; € / £ / EUR / GBP amounts become "$" with the published-price tooltip. Rates load async, then `cittUnits.refresh()`. Same exemptions apply (>=3,000, /country/, data-currency="keep").
+
+### 8.15 Space below the verdict card (HARD RULE, 2026-10-08)
+The verdict card (`.pass`, "Check first" etc.) must always have 24px of space below it before the next text. Implemented in build.js as `#taOriginal>.pass{margin-bottom:24px}` in `countryShell` and `airPlaneShell`; any new page template with a verdict card must keep at least 15-20px.
+
+### 8.16 One block for article links: "Read the full guide" (HARD RULE, 2026-10-08)
+Links to blog articles and guides appear ONLY in the "Read the full guide" block (`.readmore`). There is no separate "Guides" chip group in the related-links block. `seo_post.js` merges any 'Guides' group into the readmore block (creating it if the page has none) using the article's full title from ARTICLES_LIST.md. Titles are never double-escaped (no literal &amp; on screen).
+
+### 8.17 Header wordmark hides in the narrow topbar (HARD RULE, regression fixed 2026-10-08)
+The wordmark ("can i take this?") is hidden when the topbar is narrower than 540px (home and app column is ~404px) so the logo, Blog, currency, units and theme buttons fit. Since the SEO overhaul `seo_post.js` renders the wordmark as `<span class="bn">`, not `<h1>`, so every hide rule in `units.js` must target BOTH `.brand h1` and `.brand .bn`. Any new selector for the wordmark must cover both.
