@@ -74,3 +74,5 @@ Other country vaping pages: thailand, india, australia, singapore, japan, mexico
 
 ## Added 2026-10-08 (fourth deploy 87f41bf23): 7 plane pages rebuilt in the new style, re-request AFTER the items above
 13. /plane/liquids/  14. /plane/vape-e-cigarette/  15. /plane/power-bank/  16. /plane/alcohol/  17. /plane/lighter/  18. /plane/perfume-aerosols/  19. /plane/sharp-objects/
+
+## Added 2026-10-09 (fifth deploy): 78 airline hub pages /airline/<slug>/ rebuilt in the new style. LOW priority, request last. Start with the biggest airlines: /airline/lufthansa/, /airline/air-china/, /airline/singapore-airlines/, /airline/wizz-air/, /airline/ryanair/, /airline/turkish-airlines/, then the rest. Never validate "Page with redirect".
