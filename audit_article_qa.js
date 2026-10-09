@@ -62,6 +62,9 @@ async function runtimeCurrency(slug, fail) {
   for (const slug of slugs) {
     const html = read('blog/' + slug + '/index.html');
     const fail = [], warn = [];
+    // DS 8.16: article links use ONE card (.readmore), never the old chip block 'Related rules and guides' (.relnav)
+    if (/class="relnav"/.test(html)) fail.push('old chip block (relnav) on an article: article links must use the .readmore card (DS 8.16)');
+    if ((html.match(/class="readmore"/g) || []).length > 1) fail.push('more than one readmore block (DS 8.16: one block)');
     const body = html.replace(/<script[\s\S]*?<\/script>/gi, '').replace(/<style[\s\S]*?<\/style>/gi, '').replace(/<head[\s\S]*?<\/head>/i, '');
     const visible = body.replace(/<[^>]*data-currency="keep"[^>]*>[\s\S]*?<\/(div|span|p|td|li)>/gi, '');
 

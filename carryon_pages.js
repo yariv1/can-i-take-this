@@ -173,4 +173,47 @@ pages['frontier'] = {
 
 // helpers are shared with the pillar page (carryon_pillar.js); non-enumerable so the per-airline loop in build.js ignores them
 Object.defineProperty(pages, '__helpers', { value: { CSS, T, SRC, CHK, stat, callout, cl, faq, meta, hero, fig, bagSvg }, enumerable: false });
+// ---------------- UNITED ----------------
+// Source: united.com "Carry-on bags" page, read 9 October 2026 (the page carries no date). Demand: Ahrefs ">10,000" for "united carry on size".
+pages['united'] = {
+  title: 'United Carry-On Size 2026: 22 x 14 x 9 in, Personal Item 17 x 10 x 9 in | canitakethis.co',
+  desc: 'United carry-on size is 22 x 14 x 9 in, personal item 17 x 10 x 9 in. Most Basic Economy tickets get the personal item only; exceptions and gate-check rules.',
+  h1: 'United Carry-On Size 2026: 22 x 14 x 9 in, Personal Item 17 x 10 x 9 in',
+  body: CSS + meta(4) +
+    hero('united', 'United gate agent at San Francisco Terminal 3 pointing to an easel sign that reads Basic Economy, personal item only, 17 x 10 x 9 in, while a man with a small grey backpack looks at it', 'Basic Economy: the personal item, 17 x 10 x 9 in, may be all you get.') +
+    `<p>United&rsquo;s limits are <strong>22 &times; 14 &times; 9 inches</strong> for the carry-on and <strong>17 &times; 10 &times; 9 inches</strong> for the personal item. The catch: on most Basic Economy tickets you only get the personal item.</p>` +
+    stat([['22×14×9', 'inches, carry-on bag'], ['17×10×9', 'inches, personal item'], ['Personal item', 'only, on most Basic Economy trips'], ['$75', 'Basic Economy bag at the gate, tickets from 3 April 2026']]) +
+    bagSvg({ h: 22, w: 14, d: 9, label: 'Carry-on', second: { h: 17, w: 10, d: 9, label: 'Personal item' }, alt: 'United carry-on bag 22 by 14 by 9 inches next to the personal item 17 by 10 by 9 inches, drawn to scale', cap: 'United\'s carry-on (blue) and personal item (green) side by side, to scale.' }) +
+    '<h2>📏 Both limits at a glance</h2>' +
+    T(['', 'Where it goes', 'Inches', 'Centimetres'], [['🧳 Carry-on bag', 'Overhead bin', '22 × 14 × 9', '56 × 35 × 23'], ['🎒 Personal item', 'Under the seat in front of you', '17 × 10 × 9', '43 × 25 × 22']]) +
+    '<p>United says to include the handle and wheels when you measure. Purses, backpacks and laptop bags are its examples of personal items. At the airport, United has bag sizers you can use to check a bag.</p>' +
+    '<h2>🚫 Basic Economy: the personal item may be all you get</h2>' +
+    callout('⚠️', '<strong>On most trips in Basic Economy you can bring one personal item and no carry-on bag.</strong> Every other bag has to be checked.') +
+    cl([['✅', '<strong>Flights to South America, across the Atlantic or across the Pacific:</strong> a carry-on is allowed in Basic Economy.'], ['⭐', '<strong>Premier status, or travelling with a Premier member:</strong> one free carry-on bag.'], ['💳', '<strong>Primary cardholder of a qualifying MileagePlus credit card, or Star Alliance Gold:</strong> one free carry-on bag.'], ['❌', '<strong>The United Gateway and MileagePlus Select cards do not qualify</strong> for a free carry-on in Basic Economy.']]) +
+    '<p>If you turn up with a carry-on you are not entitled to, it is a checked bag, and the fee depends on when you bought the ticket:</p>' +
+    T(['Ticket bought', 'Prepaid online', 'At the lobby', 'At the gate'], [['Before 3 April 2026', 'from $35', 'from $40', 'from $65'], ['On or after 3 April 2026', 'from $45', 'from $50', 'from $75']]) +
+    fig('united', 'Man at a United check-in kiosk at Washington Dulles, seen from behind, with the screen showing Basic Economy checked bag prices from $45 prepaid to from $75 at the gate', 'Basic Economy: check the bag rules before you reach the airport.') +
+    '<h2>✈️ Gate-checks and United Express</h2>' +
+    '<p>United may gate-check your carry-on if the overhead bins are full, if the bag is over the size limit, or if you have more than your allowance.</p>' +
+    callout('⚠️', '<strong>CommutAir:</strong> only one personal item is allowed. <strong>Other United Express carriers</strong> allow carry-on bags but have limited space, which is why bags are most often gate-checked on those flights.') +
+    '<p>On most United flights, a gate-checked bag comes back at baggage claim at your final destination. On United Express flights, you may get it at baggage claim or on the jet bridge after you land.</p>' +
+    fig('united', 'United ground agent at Newark Terminal C tagging a silver carry-on at the jet bridge door of a United Express regional jet while the passenger watches', 'On United Express, the bag may be tagged at the door and returned on the jet bridge.', 2) +
+    '<h2>👜 What rides free besides the two bags</h2>' +
+    cl([['🧥', 'A jacket or coat.'], ['☂️', 'An umbrella and something to read.'], ['🛍️', 'Food or other items bought at the airport.'], ['♿', 'Mobility devices: wheelchairs, canes and crutches.'], ['👶', 'A car seat, child safety harness or stroller, and a diaper bag with a breast pump (even without your child).'], ['📷', 'A camera.']]) +
+    '<p>Small purses and extra small bags are not allowed on top of your personal item and carry-on.</p>' +
+    '<h2>🎒 Items with their own rules</h2>' +
+    cl([['🔋', '<strong>Smart bags:</strong> the lithium batteries must be removed before the bag comes on board.'], ['🎻', '<strong>Musical instruments:</strong> a small instrument in a hard case counts as your carry-on in the overhead bin, or as your personal item under the seat.'], ['💊', '<strong>Medication, vapes, e-cigarettes and keys:</strong> pack them in your personal item, in case the carry-on is gate-checked. Medical syringes are allowed; ask a flight attendant to help you dispose of them.'], ['💧', '<strong>Liquids:</strong> containers up to 3.4 oz (100 mL), in a quart-size clear bag. <strong>Powders:</strong> TSA recommends checked bags, but United says up to 12 oz (350 mL) is allowed in a carry-on on domestic US flights.'], ['🪑', '<strong>Fragile or bulky items:</strong> if the item is too fragile or bulky to check, you can buy a ticket (a seat) for it.']]) +
+    '<h2>⛔ Devices United does not allow on board</h2>' +
+    '<p>United bans devices that attach to, block or interfere with seats, tray tables, windows, aisles or cabin access. Its examples: inflatable child beds, seat recline blockers, baby hammocks, non-medical attached foot or leg rests, non-medical travel pods, window-mounted drink holders, full-face helmets and tents.</p>' +
+    '<p>Checked-bag details: <a href="/airline/united/baggage-allowance/">United baggage allowance</a> &middot; Other airlines: <a href="/blog/carry-on-size-limits-by-airline-2026/">carry-on size by airline</a>.</p>' +
+    '<h2>❓ Quick answers</h2>' + faq([
+      ['What size carry-on does United allow?', 'United\'s carry-on bag must fit in the overhead bin and be no larger than 9 x 14 x 22 inches (23 x 35 x 56 cm), including the handle and wheels.'],
+      ['What is United\'s personal item size?', 'The personal item must fit under the seat in front of you and be no larger than 9 x 10 x 17 inches (22 x 25 x 43 cm). United gives purses, backpacks and laptop bags as examples.'],
+      ['How strict is United about carry-on size?', 'United\'s page does not describe how strictly sizes are enforced. It says to check your bag against its size limits before the airport, that bag sizers are available at the airport, and that bags over the limit, or beyond your allowance, must be checked and may carry a fee. Bags can also be gate-checked when the overhead bins fill up.'],
+      ['Can I bring a carry-on in United Basic Economy?', 'On most trips, no: you can bring one personal item only. A carry-on is allowed on flights to South America, across the Atlantic or across the Pacific, and for MileagePlus Premier members, people travelling with a Premier member, primary holders of a qualifying MileagePlus credit card and Star Alliance Gold members.'],
+      ['Can I bring a carry-on on a United Express flight?', 'Most United Express carriers allow carry-on bags but have limited space, so gate-checks are common. On CommutAir flights only a personal item is allowed.']
+    ]) +
+    CHK + SRC([['https://www.united.com/en/us/fly/baggage/carry-on-bags.html', 'United &mdash; Carry-on bags']])
+};
+
 module.exports = pages;

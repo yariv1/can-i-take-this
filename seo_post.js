@@ -117,8 +117,10 @@ function relatedBlog(url) {
 }
 const REL_CSS = '<style>.relnav{margin:2em 0 0;border-top:1px solid var(--line);padding-top:1em}.relnav h2{font-size:1.05rem;margin:0 0 .5em}.relnav h3{font-size:.95rem;margin:1em 0 .4em;color:var(--muted)}.relnav ul{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:8px}.relnav li:has(>a.rc){margin-right:14px}.relnav a{display:inline-block;background:var(--surface);border:1px solid var(--line);padding:7px 12px;border-radius:10px;text-decoration:none;color:var(--text);font-size:.95rem}.relnav a:hover{color:var(--accent);border-color:var(--accent)}.relnav a.rc,.relnav a.rc:visited{display:inline-flex;align-items:center;gap:9px;background:none;border:0;border-radius:0;padding:6px 0;color:var(--accent);font-weight:500}.relnav a.rc .fimg{height:14px;width:20px;object-fit:cover;border-radius:2px;box-shadow:0 0 0 1px rgba(0,0,0,.18);flex:none}.relnav a.rc:hover{text-decoration:underline}</style>';
 const READMORE_FALLBACK_CSS = ".readmore{margin:22px 0 0;padding:14px 16px;background:var(--surface);border:1px solid var(--line);border-radius:14px}.readmore h2{font-family:'Space Mono',monospace;font-size:.85rem;letter-spacing:1px;text-transform:uppercase;color:var(--muted);margin:0 0 8px;font-weight:700}.readmore ul{list-style:none;margin:0;padding:0}.readmore li{margin:0 0 6px;display:flex;gap:8px;align-items:baseline}.readmore li:before{content:'\\1F4A1';flex:none;font-size:.95rem}.readmore li:last-child{margin:0}.readmore a{color:var(--text);font-size:1rem;font-weight:300;text-decoration:none;border-bottom:1px solid transparent}.readmore a:hover{color:var(--accent);border-bottom-color:var(--accent)}[data-theme=\"dark\"] .readmore a{color:#B1BDD5}[data-theme=\"dark\"] .readmore a:hover{color:var(--accent)}";
-let _guides = [];
+let _guides = [], _blogMore = null;
 function relatedHtml(url) {
+  _blogMore = null;
+  if (/^\/blog\/[^/]+\/$/.test(url)) { const bg = related(url); const mo = bg.find(x => x.h.indexOf('More in ') === 0), br = bg.find(x => x.h === 'Browse'); if (mo) _blogMore = { h: mo.h, l: mo.l.concat(br ? br.l : []) }; return ''; }
   const all = related(url); _guides = (all.find(x => x.h === 'Guides') || { l: [] }).l; const g = all.filter(x => x.h !== 'Guides'); if (!g.length) return '';
   return '<nav class="relnav" aria-label="Related pages"><h2>Related rules and guides</h2>' + g.map(x => '<h3>' + esc(x.h) + '</h3><ul>' + x.l.map(l => '<li><a href="' + l.u + '"' + (l.c ? ' class="rc"' : '') + '>' + (l.c ? '<img class="fimg" src="https://flagcdn.com/' + String(l.c).toLowerCase() + '.svg" alt="" loading="lazy">' : '') + esc(l.t) + '</a></li>').join('') + '</ul>').join('') + '</nav>';
 }
@@ -163,6 +165,15 @@ function post(url, html) {
   if (rel) {
     const i = h.lastIndexOf('</main>');
     if (i >= 0) h = h.slice(0, i) + rel + h.slice(i); else { const j = h.indexOf('<footer'); if (j >= 0) h = h.slice(0, j) + rel + h.slice(j); }
+  }
+  // 6b. blog articles: the article links use the same card as 'Read the full guide' (DS 8.16), titled 'More in <section>'
+  if (_blogMore && _blogMore.l.length) {
+    const rows6 = loadArticleRows();
+    const li6 = x => { const r = rows6.find(q => q.url === x.u); return '<li><a href="' + x.u + '">' + esc(unesc(r ? r.title : x.t)) + '</a></li>'; };
+    const nav6 = (h.indexOf('.readmore{') < 0 ? '<style>' + READMORE_FALLBACK_CSS + '</style>' : '') + '<nav class="readmore" aria-label="' + esc(_blogMore.h) + '"><h2>' + esc(_blogMore.h) + '</h2><ul>' + _blogMore.l.map(li6).join('') + '</ul></nav>\n';
+    let k6 = h.lastIndexOf('</main>'); if (k6 < 0) k6 = h.indexOf('<footer');
+    if (k6 >= 0) h = h.slice(0, k6) + nav6 + h.slice(k6);
+    _blogMore = null;
   }
   // 7. every article link lives in ONE block, "Read the full guide" (user rule 2026-10-08): the old 'Guides' chip group is merged into it
   if (_guides.length) {
