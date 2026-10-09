@@ -433,5 +433,7 @@ Links to blog articles and guides appear ONLY in the "Read the full guide" block
 
 **Blog articles (added 2026-10-09, user furious: the 52 articles still showed the old chip block "Related rules and guides"):** the other articles of the same section appear in the SAME card, titled "More in <section>" (same `.readmore` card as "Read the full guide"), each link showing the article's FULL title from ARTICLES_LIST.md (never a slug or a short label). `seo_post.js` (`_blogMore`) builds it; the `.relnav` chip block no longer exists on any blog article. `audit_article_qa.js` fails an article that has `relnav` or more than one `.readmore`. Every new ARTICLES_LIST row must carry the full page title.
 
+Hover on card links = ONE underline (the border-bottom). `.readmore ul li a` must set `text-decoration:none`, otherwise `.prose a:hover` adds a second one (fixed 2026-10-09; QA gate checks it).
+
 ### 8.17 Header wordmark hides in the narrow topbar (HARD RULE, regression fixed 2026-10-08)
 The wordmark ("can i take this?") is hidden when the topbar is narrower than 540px (home and app column is ~404px) so the logo, Blog, currency, units and theme buttons fit. Since the SEO overhaul `seo_post.js` renders the wordmark as `<span class="bn">`, not `<h1>`, so every hide rule in `units.js` must target BOTH `.brand h1` and `.brand .bn`. Any new selector for the wordmark must cover both.

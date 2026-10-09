@@ -63,6 +63,8 @@ async function runtimeCurrency(slug, fail) {
     const html = read('blog/' + slug + '/index.html');
     const fail = [], warn = [];
     // DS 8.16: article links use ONE card (.readmore), never the old chip block 'Related rules and guides' (.relnav)
+    // DS 8.16: hover = ONE underline (border-bottom); text-decoration must be none, else .prose a:hover doubles it
+    if (/class="readmore"/.test(html) && html.indexOf('.readmore ul li a:hover{text-decoration:none}')<0) fail.push('readmore card can show a double underline on hover (DS 8.16)');
     if (/class="relnav"/.test(html)) fail.push('old chip block (relnav) on an article: article links must use the .readmore card (DS 8.16)');
     if ((html.match(/class="readmore"/g) || []).length > 1) fail.push('more than one readmore block (DS 8.16: one block)');
     const body = html.replace(/<script[\s\S]*?<\/script>/gi, '').replace(/<style[\s\S]*?<\/style>/gi, '').replace(/<head[\s\S]*?<\/head>/i, '');

@@ -79,3 +79,6 @@ Other country vaping pages: thailand, india, australia, singapore, japan, mexico
 
 ## Added 2026-10-09 (sixth deploy d2509e355), request FIRST with the cigarettes page
 20. /blog/united-carry-on-size-2026/ (NEW, demand: Ahrefs >10,000 for "united carry on size"). Re-check later: the 52 blog articles got the new "More in <section>" card (low priority, no request needed).
+
+Added 2026-10-09 (United baggage rebuild)
+- /airline/united/baggage-allowance/ (rebuilt, request again)
