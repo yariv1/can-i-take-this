@@ -24,3 +24,6 @@ Official page read by me in full (Chrome if WebFetch fails) -> add data module e
 
 ## TEMPLATE DEBT (found by the user 2026-10-08)
 The 78 airline hub pages /airline/<name>/ still use the OLD shell() template: no global header, 'Related checks' chips, no answer card. Plane pages (7) were converted (airPlaneShell generic mode, 87f41bf23). Plan for hubs (~25 min): airline header + tabs + economy baggage card + topic tile grid; run audit_dup so hubs differ by airline data. Decision pending: user chose to deploy the plane pages first.
+
+## UPDATE 2026-10-09 (session 18)
+Ahrefs (US buckets): 'carry on size' >10,000 for Delta, American, Southwest, United, Frontier, JetBlue; 'baggage allowance' >1000 per airline (BA, Emirates, Turkish, Qatar, Delta, Southwest, Lufthansa); 'checked baggage' >1000. DONE: /blog/united-carry-on-size-2026/ (d2509e355). Food rebuild DROPPED (food list article is new, first impressions at pos 4.5). NEXT: (1) rebuild /airline/united/baggage-allowance/ (thin, 205 words) from united.com checked-bag pages; (2) airlines with >1000 baggage demand and no rebuild: Emirates, Qatar; BA parked; (3) other >10,000 carry-on airlines with no page of their own (check Spirit, Hawaiian, Allegiant are not in our airline list). Re-check food list + cigarettes + carry-on articles in GSC on 2026-11-01.

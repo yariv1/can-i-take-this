@@ -86,6 +86,8 @@ Verified facts so far (EXAMPLES of the level of detail required; research each n
 - **Vancouver YVR international arrivals:** aqua-blue patterned carpet, blue stanchion belts, two carved red-cedar Welcome Figures (Susan A. Point), stone-clad columns, wood ceiling, deep-green bilingual English/French overhead signs, Canada flags, white self-serve kiosks, CBSA navy uniforms.
 - **Still to research when used:** Madrid-Barajas T4, Denver, LAX T4, Toronto Pearson T1, Heathrow, JFK, CDG, HKG, Schiphol, Dubai, Istanbul, Malé, Mauritius, Sydney, Auckland, Tokyo.
 
+- **United carry-on article (2026-10-09), text facts only, no reference photos:** Houston IAH Terminal C gate (polished grey floor, black gate seats, windows with United jets), SFO Terminal 3 gate with easel sign, Washington Dulles main ticketing hall (slanted glass wall, curved concrete ceiling, United kiosks), Newark Terminal C jet bridge (beige corrugated walls, ribbed rubber floor). United logo: blue globe + "UNITED" wordmark; livery white upper, grey belly, blue tail globe.
+
 Add each new airport to this list, with the facts seen in the photos.
 
 ## 6. Props must look real, not AI

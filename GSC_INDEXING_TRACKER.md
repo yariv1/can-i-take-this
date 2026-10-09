@@ -112,3 +112,4 @@ REQUESTED 2026-10-08: /country/european-union/tobacco/, /country/european-union/
 | https://canitakethis.co/airline/qantas/baggage-allowance/ | TO REQUEST |
 | https://canitakethis.co/plane/cigarettes/ | TO REQUEST |
 | https://canitakethis.co/country/australia/alcohol/ | TO REQUEST |
+| https://canitakethis.co/blog/united-carry-on-size-2026/ | TO REQUEST |

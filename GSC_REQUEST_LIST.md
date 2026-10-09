@@ -76,3 +76,6 @@ Other country vaping pages: thailand, india, australia, singapore, japan, mexico
 13. /plane/liquids/  14. /plane/vape-e-cigarette/  15. /plane/power-bank/  16. /plane/alcohol/  17. /plane/lighter/  18. /plane/perfume-aerosols/  19. /plane/sharp-objects/
 
 ## Added 2026-10-09 (fifth deploy): 78 airline hub pages /airline/<slug>/ rebuilt in the new style. LOW priority, request last. Start with the biggest airlines: /airline/lufthansa/, /airline/air-china/, /airline/singapore-airlines/, /airline/wizz-air/, /airline/ryanair/, /airline/turkish-airlines/, then the rest. Never validate "Page with redirect".
+
+## Added 2026-10-09 (sixth deploy d2509e355), request FIRST with the cigarettes page
+20. /blog/united-carry-on-size-2026/ (NEW, demand: Ahrefs >10,000 for "united carry on size"). Re-check later: the 52 blog articles got the new "More in <section>" card (low priority, no request needed).
