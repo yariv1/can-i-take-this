@@ -82,3 +82,7 @@ Other country vaping pages: thailand, india, australia, singapore, japan, mexico
 
 Added 2026-10-09 (United baggage rebuild)
 - /airline/united/baggage-allowance/ (rebuilt, request again)
+
+Added 2026-10-10 (Emirates and Qatar baggage rebuilds)
+- /airline/emirates/baggage-allowance/ (rebuilt)
+- /airline/qatar-airways/baggage-allowance/ (rebuilt)
