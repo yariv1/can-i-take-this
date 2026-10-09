@@ -280,7 +280,8 @@ async function mexicoCA() {
   const doc = dom.window.document;
   const states = {}; let last = '';
   [['AvoidAll', 4], ['AvoidNonEssential', 3]].forEach(([cls, level]) => {
-    const box = doc.querySelector('.RegionalAdv.' + cls); const ul = box && box.querySelector('ul'); if (!ul) return;
+    // Canada sometimes adds a temporary box (for example a hurricane notice) with the same class and no list: use the first box that has a list
+    const box = [...doc.querySelectorAll('.RegionalAdv.' + cls)].find(b => b.querySelector('ul')); const ul = box && box.querySelector('ul'); if (!ul) return;
     [...ul.children].forEach(li => {
       const own = [...li.childNodes].filter(n => n.nodeType === 3 || (n.nodeType === 1 && n.tagName !== 'UL')).map(n => n.textContent).join(' ').replace(/\s+/g, ' ').trim().replace(/[:,]$/, '');
       const sub = [...li.querySelectorAll(':scope > ul > li')].map(x => x.textContent.replace(/\s+/g, ' ').trim());
