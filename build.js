@@ -475,7 +475,7 @@ function airTabs(sl, active){
   return {tabHtml:tabHtml, moreBlock:moreBlock};
 }
 function airPlaneShell(o){
-  var a=o.a, cat=o.cat, url=o.url, sl=slug(a.name), canonical=BASE+url, G=!!o.generic;
+  var a=o.a, cat=o.cat, url=o.url, sl=slug(a.name), canonical=BASE+url, G=!!o.generic, H=!!o.hub;
   var VOL=(cat==='liquids'||cat==='perfume'||cat==='alcohol'), POWER=(cat==='power'), VAPE=(cat==='vape'||cat==='lighter'||cat==='sharp');
   var VICON={go:'<path d="M20 6 9 17l-5-5"/>',warn:'<path d="M12 9v4m0 4h.01M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"/>',stop:'<circle cx="12" cy="12" r="9"/><path d="M8 12h8"/>',info:'<circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v4h1"/>'};
   var VLABEL={go:'Allowed',warn:'Check first',stop:'Not allowed',info:'Check the source'};
@@ -484,7 +484,7 @@ function airPlaneShell(o){
   function card(v,bagLabel){ PSRC=(v&&v.source&&v.source.url)?v.source:null;
     var lines=(v.lines||[]).filter(Boolean).map(function(l){return '<li>'+esc(l)+'</li>';}).join('');
     var route='<div class="route"><span>&#9992; <b>'+esc(G?'Any airline':a.name)+'</b></span><span>'+bagLabel+'</span></div>';
-    return '<div class="pass '+v.status+' print"><div class="strip"><div class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">'+VICON[v.status]+'</svg></div><div><div class="verdict">'+VLABEL[v.status]+'</div><div class="vsub">On the plane</div></div></div><div class="perf"></div><div class="body">'+route+'<p class="headline">'+esc(v.head||'')+'</p><ul class="detail">'+lines+'</ul>'+help()+'<div class="src">'+esc(v.src||'')+'</div></div></div>';
+    return '<div class="pass '+v.status+' print"><div class="strip"><div class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">'+VICON[v.status]+'</svg></div><div><div class="verdict">'+esc(v.label||VLABEL[v.status])+'</div><div class="vsub">'+esc(v.sub||'On the plane')+'</div></div></div><div class="perf"></div><div class="body">'+route+'<p class="headline">'+esc(v.head||'')+'</p><ul class="detail">'+lines+'</ul>'+help()+'<div class="src">'+esc(v.src||'')+'</div></div></div>';
   }
   /*AIRPLANE_TOGGLE_V2*/
   var opts=VOL?['50','100','300','500']:(POWER?['lo','mid','hi']:[]);
@@ -494,8 +494,8 @@ function airPlaneShell(o){
   var carryVape='';
   if(VAPE){ setS({mode:'plane',bag:'carry',cat:cat,detail:null,airline:a.name}); vdef=(o.vCarry||w.verdict()); carryVape=card(vdef,'CARRY-ON'); }
   setS({mode:'plane',bag:'checked',cat:cat,detail:(VOL?'100':(POWER?'lo':null)),airline:a.name});
-  var checkedCard=card(o.vChecked||w.verdict(),'CHECKED');
-  var initCard=VAPE?carryVape:carryMap[def];
+  var checkedCard=H?'':card(o.vChecked||w.verdict(),'CHECKED'); if(H)vdef=o.vCarry;
+  var initCard=H?card(o.vCarry,'ECONOMY'):(VAPE?carryVape:carryMap[def]);
   var bagToggle='<div class="slab">Where in your bags?</div><div class="bag2" id="bagSeg"><button data-bag="carry" class="on">Carry-on <small>Trolley, backpack, under-seat</small></button><button data-bag="checked">Checked <small>Goes in the hold</small></button></div>';
   var pickerHtml='';
   if(!VAPE){ var list=VOL?w.DETAILS.vol:w.DETAILS.wh; var lbl=POWER?'Battery capacity?':'How much?'; pickerHtml='<div class="slab">'+lbl+'</div><div class="chips" id="detChips">'+list.map(function(d){return '<button class="chip sm'+(d.id===def?' on':'')+'" data-d="'+d.id+'">'+esc(d.label)+'</button>';}).join('')+'</div>'; }
@@ -505,6 +505,7 @@ function airPlaneShell(o){
   } else {
     clientScript='<scr'+'ipt>(function(){var CARRY='+JSON.stringify(carryMap)+',CH='+JSON.stringify(checkedCard)+';var box=document.getElementById("planeCard"),bag="carry",det='+JSON.stringify(def)+';var bb=document.querySelectorAll("#bagSeg button"),ch=document.querySelectorAll("#detChips .chip");function r(){box.innerHTML=bag==="checked"?CH:CARRY[det];}[].forEach.call(bb,function(b){b.onclick=function(){bag=b.dataset.bag;[].forEach.call(bb,function(x){x.classList.toggle("on",x===b);});r();};});[].forEach.call(ch,function(c){c.onclick=function(){det=c.dataset.d;[].forEach.call(ch,function(x){x.classList.toggle("on",x===c);});r();};});})();</scr'+'ipt>\n';
   }
+  if(H){bagToggle='';pickerHtml='';clientScript='';}
   var CATMETA={
     liquids:{h1:'Can I bring liquids on '+a.name+'? (2026)',ttl:a.name+' Liquids Rules 2026 \u2014 Carry-On & Checked'},
     perfume:{h1:'Perfume & aerosols on '+a.name+' (2026)',ttl:a.name+' Perfume & Aerosol Rules 2026'},
@@ -512,8 +513,8 @@ function airPlaneShell(o){
     power:{h1:'Power banks on '+a.name+' (2026)',ttl:a.name+' Power Bank Rules 2026 \u2014 Wh Limits'},
     vape:{h1:'Vapes & e-cigarettes on '+a.name+' (2026)',ttl:a.name+' Vape & E-Cigarette Rules 2026'}
   };
-  var meta=G?{h1:o.h1,ttl:o.ttl,desc:o.desc}:CATMETA[cat];
-  if(!G)(function(){
+  var meta=(G||H)?{h1:o.h1,ttl:o.ttl,desc:o.desc}:CATMETA[cat];
+  if(!G&&!H)(function(){
     var NOUN={liquids:'liquids',perfume:'perfume and aerosol',alcohol:'alcohol',power:'power bank',vape:'vape and e-cigarette'};
     var txt=(vdef.head||'')+' '+((vdef.lines||[]).filter(Boolean)[0]||'');
     if(cat==='power'){
@@ -535,7 +536,7 @@ function airPlaneShell(o){
   var faqLd={"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":meta.h1,"acceptedAnswer":{"@type":"Answer","text":faqA}}]};
   if(TOP&&TOP.faq) TOP.faq.forEach(function(q){faqLd.mainEntity.push({"@type":"Question","name":q[0],"acceptedAnswer":{"@type":"Answer","text":q[1]}});});
   if(TOP&&TOP.faq) TOP.faq.forEach(function(q){faqLd.mainEntity.push({"@type":"Question","name":q[0],"acceptedAnswer":{"@type":"Answer","text":q[1]}});});
-  var bread={"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":BASE+"/"},{"@type":"ListItem","position":2,"name":(G?o.h1:a.name+" "+cat),"item":canonical}]};
+  var bread={"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":BASE+"/"},{"@type":"ListItem","position":2,"name":((G||H)?o.h1:a.name+" "+cat),"item":canonical}]};
   return '<!doctype html><html lang="en"><head>\n'
 +'<!-- Google tag (gtag.js) -->\n'
 +'<script async src="https://www.googletagmanager.com/gtag/js?id=G-0HQ16GNH78"></scr'+'ipt>\n'
@@ -669,7 +670,7 @@ function airPlaneShell(o){
 +'<div class="topbar"><div class="topbar-left"><a class="back-btn" href="/" aria-label="Go back" onclick="if(history.length>1&&document.referrer.indexOf(location.origin)==0){history.back();return false}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M12 19l-7-7 7-7"/></svg></a><a class="brand" href="/" aria-label="canitakethis.co home"><span class="mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.8 19.2 16 11l3.5-3.5a2.1 2.1 0 0 0-3-3L13 8 4.8 6.2a.5.5 0 0 0-.5.8l3.9 4.3-2 2-2.2-.4a.5.5 0 0 0-.5.8L6 17l2.7 2.4a.5.5 0 0 0 .8-.5l-.4-2.2 2-2 4.3 3.9a.5.5 0 0 0 .8-.5Z"/></svg></span><h1>can i take this?</h1></a></div>'
 +'<div class="topbar-right"><a href="/blog/" class="hdr-blog-link">Blog</a><button class="theme-toggle" id="themeToggle" onclick="__tt()"><span class="ico" id="themeIcon"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></span><span id="themeLabel">Light</span></button></div></div>\n'
 +(G?'<div class="airhead"><span class="logo" style="background:var(--surface-2);color:var(--text);font-size:20px">&#9992;</span><h2>'+esc(o.head)+' <span class="muted">All airlines</span></h2></div>\n':'<div class="airhead">'+logo+'<h2>'+esc(a.name)+' <span class="muted">Airline Rules</span></h2></div>\n<nav class="tabs">'+t.tabHtml+'</nav>\n'+t.moreBlock+'\n')
-+'<main>'+bagToggle+pickerHtml+'<div id="planeCard">'+initCard+'</div>'+(TOP?TOPICS.render(a,TOP):'')+(o.extra||'')+'</main>\n'+clientScript+blogReadBlock(cat==='alcohol'?'airalcohol':cat)
++'<main>'+bagToggle+pickerHtml+'<div id="planeCard">'+initCard+'</div>'+(TOP?TOPICS.render(a,TOP):'')+(o.extra||'')+'</main>\n'+clientScript+blogReadBlock(H?'baggage':(cat==='alcohol'?'airalcohol':cat))
 +'<footer>Rules change and vary by nationality, route and fare. This is guidance, not legal advice \u2014 always confirm with the airline or the official customs authority before you travel. Updated 2026.<nav class="tlinks"><a href="/guides/">All Guides</a><a href="/guides/liquids/">Liquids 100ml Rule</a><a href="/guides/power-banks/">Power Bank Rules</a><a href="/guides/vapes/">Vape &amp; E-Cig Guide</a><a href="/blog/">Blog</a></nav><nav class="tlinks"><a href="/about/">About</a><a href="/contact/">Contact</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a></nav></footer>\n'
 +'</div>\n'
 +'<script>function advLogo(im){var l=(im.dataset.srcs||"").split("|"),i=parseInt(im.dataset.i||"0",10)+1;if(i<l.length){im.dataset.i=i;im.src=l[i];}else{im.style.display="none";}}document.querySelectorAll("img.logo-img").forEach(function(im){im.onerror=function(){advLogo(im);};if(im.complete&&im.naturalWidth===0)advLogo(im);});</scr'+'ipt>\n'
@@ -847,20 +848,22 @@ function run(){
 
     // airline hub
     const hub=`/airline/${slug(a.name)}/`;
-    write(hub+'index.html', shell({
-      url:hub, title:`Flying ${a.name}? Baggage & Cabin Rules 2026 | canitakethis.co`,
-      desc:`What you can bring on ${a.name}: baggage allowance, liquids, power banks, vapes, sharp objects and more — 2026 rules.`,
-      h1:`What can I bring on ${a.name}? (2026)`, badge:'info',
-      answer:`${a.name} baggage plus the standard aviation-security rules for liquids, batteries, vapes and sharp items.`,
-      lines:['Baggage allowance is set by your fare class — see the baggage page.','Liquids, power banks, vapes, alcohol, lighters and sharp objects follow international aviation-security rules that are the same on every airline.'],
-      source:null, intro:null,
-      related:[
-        {url:`/airline/${slug(a.name)}/baggage-allowance/`,t:`${a.name} baggage allowance`},
-        {url:'/plane/liquids/',t:'Liquids'},{url:'/plane/power-bank/',t:'Power banks'},
-        {url:'/plane/vape-e-cigarette/',t:'Vapes'},{url:'/plane/sharp-objects/',t:'Sharp objects'},{url:'/plane/alcohol/',t:'Alcohol'}
-      ],
-      faq:{q:`What can I bring on ${a.name}?`,a:`${a.name} sets baggage by fare class; liquids, batteries, vapes and sharp items follow standard aviation-security rules.`}
-    }));
+    {
+      const _f=f[0]||{label:'Economy',cabin:'',checked:''};
+      const _tiles=[{seg:'baggage-allowance',cat:null,t:'Baggage allowance',s:_f.label+': '+_f.cabin}]
+        .concat([{seg:'liquids',cat:'liquids',t:'Liquids',d:'100'},{seg:'power-bank',cat:'power',t:'Power banks',d:'lo'},{seg:'vape-e-cigarette',cat:'vape',t:'Vapes and e-cigarettes',d:null},{seg:'perfume-aerosols',cat:'perfume',t:'Perfume and aerosols',d:'100'},{seg:'alcohol',cat:'alcohol',t:'Alcohol',d:'100'}].map(x=>{
+          setS({mode:'plane',bag:'carry',cat:x.cat,detail:x.d,airline:a.name});
+          const vv=w.verdict()||{head:''};
+          return Object.assign({},x,{s:vv.head||''});
+        }));
+      const _grid='<style>.hub-h{font-size:1.2rem;margin:1.8em 0 .6em}.hub-g{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}.hub-t{display:block;border:1px solid var(--line);border-radius:14px;background:var(--surface);padding:12px 14px;text-decoration:none;color:var(--text)}.hub-t:hover{border-color:var(--accent)}.hub-t b{display:block;color:var(--accent);margin-bottom:4px}.hub-t span{display:block;font-size:.92rem;color:var(--muted);line-height:1.4}</style><h2 class="hub-h">All '+esc(a.name)+' rules</h2><div class="hub-g">'+_tiles.map(x=>'<a class="hub-t" href="/airline/'+slug(a.name)+'/'+x.seg+'/"><b>'+esc(x.t)+'</b><span>'+esc(x.s)+'</span></a>').join('')+'</div>';
+      write(hub+'index.html', airPlaneShell({a:a,cat:'hub',url:hub,hub:true,
+        h1:`What can I bring on ${a.name}? (2026)`,
+        ttl:`Flying ${a.name}? Baggage & Cabin Rules 2026`,
+        desc:`What you can bring on ${a.name}: baggage allowance, liquids, power banks, vapes, sharp objects and more \u2014 2026 rules.`,
+        vCarry:{status:'info',label:'Baggage allowance',sub:_f.label,head:_f.cabin,lines:['Checked: '+_f.checked,'Liquids, power banks, vapes and other items follow aviation-security rules; see each topic below.']},
+        extra:_grid}));
+    }
     pages.push({url:hub,changefreq:'monthly'});
 
     /*AIRPLANE_GEN_V1*/
