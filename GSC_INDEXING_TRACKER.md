@@ -123,3 +123,5 @@ REQUESTED 2026-10-08: /country/european-union/tobacco/, /country/european-union/
 2026-10-10: /airline/ryanair/baggage-allowance/ retitled, leads with carry-on size + inches (TO REQUEST again)
 
 2026-10-10: /country/turkey/vaping/ rebuilt with Ministry of Trade circulars (TO REQUEST again, after deploy)
+
+2026-10-10: /airline/singapore-airlines/power-bank/ rebuilt with SIA and CAAS official rules (TO REQUEST again, after deploy)

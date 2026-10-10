@@ -49,6 +49,38 @@ module.exports = {
         ["How many power banks can I take on Singapore Airlines?", "A maximum of 2 power banks per passenger, up to 100 Wh without prior approval, in cabin baggage only, not in the overhead compartments, and not used or charged during the flight."]
       ],
       sources: [["https://www.singaporeair.com/en_UK/us/travel-info/baggage/baggage-restrictions/", "Singapore Airlines &mdash; Baggage restrictions"]]
+    },
+    power: {
+      ttl: "Singapore Airlines Power Bank Rules 2026: Max 2, 100 Wh, No Use On Board",
+      desc: "Singapore Airlines power bank rules: maximum 2 per passenger, 100 Wh without approval, cabin baggage only, no use or charging on board. Changi rules (CAAS) apply to every flight out of Singapore.",
+      answer: "Singapore Airlines lets you carry a maximum of 2 power banks per passenger, up to 100 Wh each without prior approval, in cabin baggage only. You cannot use or charge a power bank at any point in the flight, and it should not be stored in the overhead lockers. Singapore's civil aviation authority (CAAS) applies the same two-power-bank limit to every flight leaving Singapore.",
+      sections: [
+        { h: "🔋 What Singapore Airlines says about power banks", p: "From Singapore Airlines' Baggage Restrictions page.",
+          table: { head: ["Question", "Singapore Airlines rule"], rows: [
+            ["How many", "Maximum of 2 power banks per passenger. Any additional power banks are not allowed: you must store or dispose of them before boarding"],
+            ["Up to 100 Wh", "Allowed without prior approval"],
+            ["100 Wh to 160 Wh", "Prior approval required: contact Singapore Airlines with a picture of the power bank showing its power and voltage rating and documentary proof of UN Manual of Tests and Criteria, Part III, subsection 38.3 testing"],
+            ["Where to carry it", "Cabin baggage on all SIA flights; not permitted in checked baggage"],
+            ["Using or charging it", "Not allowed throughout the flight"],
+            ["Where to keep it", "Easily accessible places such as the seat-back pocket or under the seat in front; not in the overhead compartments"],
+            ["Spare batteries", "Up to 20 spare batteries per passenger, protected from damage and short circuit"] ] },
+          list: ["<strong>Protect the terminals:</strong> power banks and spare batteries must be protected from damage and short circuit."] },
+        { h: "🛫 The Changi rule applies on any airline leaving Singapore",
+          p: "The Civil Aviation Authority of Singapore (CAAS) sets the power bank rules for passengers on all flights, not only Singapore Airlines. These are the figures on its Pack for your flight page.",
+          table: { head: ["Power bank rating", "CAAS rule"], rows: [
+            ["Up to 100 Wh (about 27,000 mAh)", "Allowed. Maximum of two power banks per person on board"],
+            ["Over 100 Wh up to 160 Wh (about 27,000 to 43,000 mAh)", "Allowed subject to your airline's approval, arranged before you reach the airport. Maximum of two per person"],
+            ["Over 160 Wh", "Not allowed"] ] },
+          list: ["<strong>Cabin only:</strong> CAAS lists power banks under items that must be hand-carried on board.", "<strong>Not charged on board:</strong> power banks must not be charged on the aircraft, and CAAS advises not using them to charge devices during the flight.", "<strong>Prevent short circuits:</strong> keep each power bank in its original retail packaging, or in a separate plastic bag or pouch, or tape over the exposed terminals.", "<strong>Read the Wh label:</strong> CAAS gives mAh only as an approximation (27,000 mAh is about 100 Wh), so use the watt-hour rating printed on the power bank."] }
+      ],
+      faq: [
+        ["Can I take a power bank on a Singapore Airlines flight?", "Yes, in cabin baggage only. Maximum 2 per passenger, up to 100 Wh each without approval. You cannot use or charge it during the flight."],
+        ["How many power banks can I carry in Singapore?", "A maximum of two per person on board flights, according to the Civil Aviation Authority of Singapore (CAAS). Any extra power banks must be left behind."],
+        ["Can I use my power bank on a Singapore Airlines flight?", "No. Singapore Airlines does not allow usage or charging of power banks throughout the flight."],
+        ["Can I put a power bank in checked baggage on Singapore Airlines?", "No. Power banks and spare batteries must be carried in cabin baggage on all SIA flights."],
+        ["Can I bring a 160 Wh power bank on Singapore Airlines?", "Only with prior approval from Singapore Airlines, which needs the power and voltage rating and proof of UN 38.3 testing. CAAS does not allow anything over 160 Wh."]
+      ],
+      sources: [["https://www.singaporeair.com/en_UK/sg/travel-info/baggage/baggage-restrictions/", "Singapore Airlines &mdash; Baggage restrictions"], ["https://www.caas.gov.sg/resources/safety-tips-for-air-travel/pack-for-your-flight/", "Civil Aviation Authority of Singapore &mdash; Pack for your flight"]]
     }
   },
   "Pegasus": {
