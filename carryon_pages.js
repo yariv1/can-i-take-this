@@ -216,4 +216,50 @@ pages['united'] = {
     CHK + SRC([['https://www.united.com/en/us/fly/baggage/carry-on-bags.html', 'United &mdash; Carry-on bags']])
 };
 
+// ---------------- HAWAIIAN ----------------
+// Source: hawaiianairlines.com "Carry-on luggage" + "Exceptions to our carry-on luggage policies" + "Optional Services and Fees", read 10 October 2026
+// (the pages are shared with Alaska Airlines). Demand: Ahrefs ">1000" for "hawaiian airlines carry on size" (US, 2026-10-10). Spirit dropped (ceased operations 2 May 2026), Allegiant blocked by Cloudflare.
+pages['hawaiian-airlines'] = {
+  title: 'Hawaiian Airlines Carry-On Size 2026: 22 x 14 x 9 in (45 Linear Inches) | canitakethis.co',
+  desc: 'Hawaiian Airlines carry-on size: 22 x 14 x 9 in with wheels and handles, 45 linear inches, free. What does not count toward it and what checked bags cost, inter-island too.',
+  h1: 'Hawaiian Airlines Carry-On Size 2026: 22 x 14 x 9 in (45 Linear Inches)',
+  body: CSS + meta(4) +
+    hero('hawaiian-airlines', 'Hawaiian Airlines check-in agent at a Honolulu counter while a woman checks her suitcase on the counter scale and her teal carry-on fits inside the sizer marked 22 x 14 x 9 in beside it', 'The limit is the same on every aircraft: 22 x 14 x 9 in, wheels and handles included.') +
+    `<p>Hawaiian&rsquo;s carry-on limit is <strong>22 &times; 14 &times; 9 inches</strong>, wheels and handles included, which is <strong>45 linear inches</strong> in total. One carry-on bag is free, and you also get one personal item.</p>` +
+    `<p>Hawaiian Airlines now shares its baggage pages with Alaska Airlines, so these are the same numbers you would see for Alaska. What this page adds is what Hawaiian lets you bring on top of the bag, and what a checked bag costs, inter-island flights included.</p>` +
+    stat([['22×14×9', 'inches, carry-on, wheels and handles included'], ['45', 'linear inches, length + height + width'], ['Free', 'one carry-on bag, plus a personal item'], ['$30', 'first checked bag wholly within Hawaii']]) +
+    bagSvg({ h: 22, w: 14, d: 9, label: 'Carry-on', alt: 'Hawaiian Airlines carry-on bag 22 by 14 by 9 inches drawn to scale', cap: 'The Hawaiian Airlines carry-on limit, drawn to scale.' }) +
+    '<h2>📏 How to measure it the way Hawaiian does</h2>' +
+    T(['', 'Where it goes', 'Inches', 'Centimetres'], [['🧳 Carry-on bag', 'Overhead bin', '22 × 14 × 9', '56 × 36 × 23'], ['🎒 Personal item', 'Under the seat in front of you', 'No size given', 'No size given']]) +
+    '<p>Hawaiian says to measure the body of the bag <em>with</em> the wheels and handles, and that all three measurements added together (length + height + width) may not be more than 45 inches. Its example of a personal item is a purse, briefcase or laptop bag. The page gives no size for the personal item, only that it must fit under the seat in front of you.</p>' +
+    cl([['📐', '<strong>Soft-sided or expandable bag:</strong> measure it again once it is packed, because it may no longer fit.'], ['💪', '<strong>Lifting:</strong> you must be able to lift your own bag into the overhead bin.'], ['🪑', '<strong>Under the seat:</strong> at least one of your two items should go under the seat in front of you.'], ['✈️', '<strong>Bag sizers:</strong> many airport locations have a sizer with the 22 x 14 x 9 in dimensions, so you can test the bag before you board.']]) +
+    '<p>No weight limit for the carry-on appears on the pages I read.</p>' +
+    fig('hawaiian-airlines', 'Man at a Kahului airport gate in Maui pressing a soft grey backpack into a bag sizer marked 22 x 14 x 9 in while a Hawaiian Airlines agent watches', 'A soft-sided bag can grow once packed, so test it in the sizer before you board.') +
+    '<h2>🎁 What Hawaiian lets you bring on top</h2>' +
+    '<p>Hawaiian splits its extras into two lists. Items on the first list can be your one carry-on even if they are bigger than 22 x 14 x 9 in, as long as they can be safely stowed:</p>' +
+    cl([['🫀', 'Human organs'], ['🖼️', 'Art or advertising portfolios, and paintings'], ['🔬', 'Delicate scientific equipment'], ['🎣', 'Fishing poles'], ['🎻', 'Small musical instruments']]) +
+    '<p>Items on the second list do not count toward your carry-on limit at all:</p>' +
+    cl([['🧥', 'Coats, hats and umbrellas (compact enough to fit in the bin, under the seat or in a suitcase).'], ['😴', 'A pillow for personal use.'], ['🥪', 'Food for immediate consumption, and a reasonable amount of reading material.'], ['👶', 'An FAA-approved child or infant seat to be used by a child, and strollers. Stroller space depends on availability, and is guaranteed only with a ticket for the infant.'], ['🐕', 'Properly documented service animals.'], ['♿', 'Wheelchairs, canes, crutches, CPAP machines, approved portable oxygen concentrators, breast pumps and similar devices.'], ['💊', 'Prescription medication and the devices needed to give it, such as syringes and auto-injectors.']]) +
+    callout('⚠️', '<strong>Medication and medical devices only.</strong> To count as an exception to the carry-on limit, the bag may contain only medication and medical devices, nothing else.') +
+    '<p>Smart bags, self-propelled bags and bags that charge devices have their own battery rules. Hawaiian sends you to its Batteries and Electronics page for them.</p>' +
+    '<h2>🧳 What a checked bag costs</h2>' +
+    '<p>If the carry-on does not fit, it becomes a checked bag. Hawaiian&rsquo;s fee page lists these prices for Main Cabin and Saver guests travelling in North America:</p>' +
+    T(['Route', '1st checked bag', '2nd checked bag'], [['North America', '$45', '$55'], ['Wholly within Hawaii (inter-island)', '$30', '$40']]) +
+    '<p>A checked bag is up to 50 lb and 62 linear inches on those fares. The fee page also says Hawaiian and Alaska may sell a flight under their own flight number that another airline operates; on those flights the other airline&rsquo;s fees can differ.</p>' +
+    fig('hawaiian-airlines', 'Hawaiian Airlines agent at a Lihue check-in desk in Kauai while a man stands beside his large green suitcase on the floor-level scale belt, next to a sign showing inter-island checked bags 1st $30, 2nd $40', 'Inter-island flights have their own, lower, checked bag fees.', 2) +
+    '<h2>🆓 Who checks bags for free</h2>' +
+    cl([['💳', '<strong>Atmos Rewards Visa cardholders:</strong> a free checked bag when the flight is bought with an eligible card (terms apply).'], ['⭐', '<strong>Atmos Rewards status holders</strong> also get free bags.'], ['🏝️', '<strong>Huaka&lsquo;i members travelling wholly within Hawaii:</strong> free up to 50 lb.'], ['💺', '<strong>First or Business Class:</strong> 2 free bags at 70 lb each.']]) +
+    '<p>Club 49 members, Hawaiian Airlines World Elite Mastercard primary cardmembers and active-duty U.S. military each have their own rows in the fee table, with their own limits.</p>' +
+    '<p>Same rules, sister airline: <a href="/blog/alaska-airlines-carry-on-size-2026/">Alaska Airlines carry-on size</a> &middot; Other airlines: <a href="/blog/carry-on-size-limits-by-airline-2026/">carry-on size by airline</a>.</p>' +
+    '<h2>❓ Quick answers</h2>' + faq([
+      ['What size is a Hawaiian Airlines carry-on?', 'The carry-on limit is 22 x 14 x 9 inches (56 x 36 x 23 cm) including wheels and handles, which is 45 linear inches in total, on all aircraft types.'],
+      ['Is a carry-on free on Hawaiian Airlines?', 'Hawaiian says one piece of carry-on-sized luggage of up to 22 x 14 x 9 in is allowed free of charge, plus one personal item.'],
+      ['What is the Hawaiian Airlines personal item size?', 'Hawaiian does not give dimensions on its carry-on page. The item, such as a purse, briefcase or laptop bag, must fit under the seat in front of you.'],
+      ['Is the Hawaiian carry-on size the same as Alaska Airlines?', 'Yes. The two airlines now publish their baggage pages together, and the carry-on limit is the same 22 x 14 x 9 in.'],
+      ['How much is a checked bag on Hawaiian Airlines?', 'For Main Cabin and Saver guests in North America it is $45 for the first bag and $55 for the second. Wholly within Hawaii it is $30 and $40. Fees differ by fare and traveller.'],
+      ['What can I bring on Hawaiian without it counting as my carry-on?', 'Coats, hats, compact umbrellas, a pillow, food for immediate consumption, reading material, child seats, strollers, service animals, mobility and medical devices, and prescription medication with the devices to give it.']
+    ]) +
+    CHK + SRC([['https://www.hawaiianairlines.com/content/travel-info/baggage/carry-on-luggage', 'Hawaiian Airlines &mdash; Carry-on luggage'], ['https://www.hawaiianairlines.com/content/travel-info/baggage/carry-on-luggage/exceptions', 'Hawaiian Airlines &mdash; Carry-on exceptions'], ['https://www.hawaiianairlines.com/content/travel-info/optional-services-fees', 'Hawaiian Airlines &mdash; Optional services and fees']])
+};
+
 module.exports = pages;

@@ -117,3 +117,5 @@ REQUESTED 2026-10-08: /country/european-union/tobacco/, /country/european-union/
 2026-10-09: /airline/united/baggage-allowance/ rebuilt (TO REQUEST again)
 
 2026-10-10: /airline/emirates/baggage-allowance/ and /airline/qatar-airways/baggage-allowance/ rebuilt (TO REQUEST)
+
+2026-10-10: /blog/hawaiian-airlines-carry-on-size-2026/ NEW (TO REQUEST); /airline/air-canada/baggage-allowance/ retitled (TO REQUEST again)

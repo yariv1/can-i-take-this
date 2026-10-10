@@ -131,8 +131,8 @@ module.exports = {
     sources: [["https://www.latamairlines.com/us/en/help-center/faq/baggage/included/dimensions-weight", "LATAM &mdash; Baggage dimensions and weight"], ["https://www.latamairlines.com/us/en/help-center/faq/purchases/asistance/ticket-fares", "LATAM &mdash; Basic, Light, Plus and Top fares"], ["https://www.latamairlines.com/us/en/help-center/faq/baggage/included/allowed-trip", "LATAM &mdash; Allowed baggage for my trip"]]
   },
   "Air Canada": {
-    title: "Air Canada Baggage Allowance: Carry-On, Checked Bag Fees 2026",
-    desc: "Air Canada baggage allowance: standard carry-on 55 x 40 x 23 cm, personal item only on Basic within North America, first checked bag CA/US$45 on Basic.",
+    title: "Air Canada Carry-On Size 2026: 55 x 40 x 23 cm, Checked Bag Fees",
+    desc: "Air Canada carry-on size 2026: standard bag 55 x 40 x 23 cm (no weight limit), personal item 43 x 33 x 16 cm, Basic fares personal item only, first checked bag CA/US$45.",
     answer: "Air Canada's standard carry-on is 55 x 40 x 23 cm with no weight limit, plus a personal item of 43 x 33 x 16 cm. Economy Basic tickets bought on or after 3 January 2025 allow only a personal item within Canada, to and from the U.S. and to and from Mexico, Central America and the Caribbean. Checked bags are up to 23 kg (50 lb) and 158 cm: on tickets bought from 13 April 2026 on those routes the first bag is CA/US$45 on Basic and Standard and free on Flex, and the second bag is CA/US$60.",
     stats: [["55 x 40 x 23 cm", "standard carry-on, no weight limit"], ["CA/US$45", "first bag, Basic and Standard, North America"], ["23 kg", "most a standard checked bag may weigh"], ["CA/US$90", "first bag, Basic, Europe and other long-haul"]],
     sections: [

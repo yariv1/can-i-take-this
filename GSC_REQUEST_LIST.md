@@ -86,3 +86,7 @@ Added 2026-10-09 (United baggage rebuild)
 Added 2026-10-10 (Emirates and Qatar baggage rebuilds)
 - /airline/emirates/baggage-allowance/ (rebuilt)
 - /airline/qatar-airways/baggage-allowance/ (rebuilt)
+
+Added 2026-10-10 (Hawaiian carry-on article + Air Canada retitle)
+- /blog/hawaiian-airlines-carry-on-size-2026/ (new)
+- /airline/air-canada/baggage-allowance/ (retitled: leads with carry-on size, request again)
