@@ -35,3 +35,15 @@ Old articles (pre-ETIAS) still show legacy FAILs in the all-articles run (missin
 - **Fix:** USD mode now converts € and £ to "~$" with the published-price tooltip; rates load async, then `cittUnits.refresh()`.
 - **Prevention:** `audit_article_qa.js` (runtime currency check in USD/EUR/GBP). Verified: with the old guard restored the gate fails with four "€ shown unconverted" lines; with the fix it passes.
 - **Process lesson:** a rule that says "X is handled automatically" is not proof. Test the actual rendered page in each mode (USD, EUR, GBP) for every new article, with a script, before showing the user a link.
+
+## AIRLINE NAMES ALWAYS GET THE AIRLINE LOGO (HARD, user order 2026-10-10)
+Whenever an airline name starts a list item, checklist line or table row in an article, the marker next to it is that airline's real logo (gstatic flights logo by IATA code), never a generic emoji or coloured dot. Implemented once in build.js (`airLogoIcons` inside `decorateIcons`, name-to-IATA map `LOGO_AIR`), so every article gets it automatically; add a new airline to `LOGO_AIR` when an article names one that is not listed. Tables use the `logo()` helper. Check the preview: no emoji next to an airline name.
+
+## AIRLINE LOGO LAYOUT IN TABLES (HARD, user order 2026-10-10)
+Every airline cell in a table or list is built the same way: the logo in a fixed 32 x 32 px box (object-fit: contain, so wide logos and square logos take the same space), then the airline name to its right on the same line, never the name stacked under the logo. Done once in build.js (`TBL_LOGO_RE` inside `airLogoIcons`), which rewrites the `logo(code, name)` helper output on every page. Keep using `logo(code, name)` in new article files; never hand-build a different layout.
+
+## NO DASHED LINES IN ILLUSTRATIONS (HARD, user order 2026-10-10)
+Size illustrations (`bagSvg`) never draw a dashed reference outline. To compare two sizes, draw two solid bags side by side with `second: { h, w, d, label }`. The helper ignores `refH`/`refW` and the `.ref` dashed style is not used. When a new illustration helper is written, no dashed or dotted guide lines either.
+
+## LOGO ROWS ARE VERTICALLY CENTRED (HARD, user order 2026-10-10)
+In lists, the airline logo and its text are centred on the same horizontal axis (the logo list item uses align-items:center and the marker has no top padding). Implemented once in build.js `airLogoIcons` (it rewrites the whole `cl-item` opening). Never put a hand-made `<img>` into a `cl()` marker: use any short placeholder (a bullet) and let `airLogoIcons` swap it by the airline name that starts the item. After a build, measure in the browser: logo centre minus text centre must be within 1 px.

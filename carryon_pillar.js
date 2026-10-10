@@ -43,7 +43,7 @@ const body = CSS + meta +
   ]) +
   '<h2>🇺🇸 US airlines: carry-on and personal item</h2>' +
   US +
-  bagSvg({ h: 22, w: 14, d: 9, refH: 24, refW: 16, label: 'Standard', alt: 'The standard 22 by 14 by 9 inch carry-on drawn to scale inside the dashed 24 by 16 by 10 inch Southwest and Frontier size', cap: 'Solid: the 22 x 14 x 9 inch standard. Dashed: the 24 x 16 x 10 inch size at Southwest and Frontier.' }) +
+  bagSvg({ h: 22, w: 14, d: 9, label: 'Standard', second: { h: 24, w: 16, d: 10, label: 'Southwest, Frontier' }, alt: 'The standard 22 by 14 by 9 inch carry-on next to the 24 by 16 by 10 inch Southwest and Frontier size, drawn to scale', cap: 'The 22 x 14 x 9 inch standard next to the 24 x 16 x 10 inch size at Southwest and Frontier, to scale.' }) +
   `<figure class="art-fig"><img src="/assets/blog/blog-carry-on-size-limits-by-airline-2026-inArticle-1.webp" alt="Traveller with a visible face lifting a rolling suitcase into a metal carry-on sizer frame at a US airport gate" width="800" height="450"><figcaption>The frame at the gate is the only measurement that counts, not the spec sheet from the store.</figcaption></figure>` +
   '<h2>📏 What counts when they measure</h2>' +
   cl([

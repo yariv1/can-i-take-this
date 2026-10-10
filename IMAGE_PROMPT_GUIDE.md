@@ -2,6 +2,10 @@
 
 Every article has exactly four images. They are made by the user in an image generator from prompts written here. Every rule below came from a real mistake that the user rejected. Read this file before writing any image prompt, and update it when a new rule is learned.
 
+## 0000. RULE ZERO (HARD, NEVER TO BE VIOLATED, user order 2026-10-10 after the personal item article)
+
+For every topic: (1) read AT LEAST THREE sources (official first) and make 100% sure you understand in full what the article must be about, including definitions and what people really carry or do (the personal item article was written without checking that a personal item is any under-seat item, not a backpack, so all four images were wrong); (2) write the article content and pass the QA gate; (3) ONLY THEN write the fully detailed image prompts under all the hard rules below. Never write image prompts in the same step as a first draft of a new topic.
+
 ## 000. THREE RULES NEVER TO BE VIOLATED UNDER ANY CIRCUMSTANCES (HARD, user order 2026-10-10, after an hour of rejected Hawaiian images)
 
 These three override everything else in this file. They apply to every image prompt, first draft and every revision, with no exception and no argument. The user may be a he or a she; write people neutrally.
@@ -188,3 +192,5 @@ Add each new airport to this list, with the facts seen in the photos.
 - **Advisory screens = map with a side list** (map of the country shaded by level on the left, list of the states or countries per level on the right), different from the maps in the previous images; after generation re-check every shaded state against the data. Where the generator cannot shade exactly, say so and use a list-only graphic instead.
 - **Props must be things that exist in real life:** a poster of state levels pinned in a hostel does not. Real carriers of advisories: a phone, a tablet, a laptop, an airport gate TV with a news graphic, a handwritten note. Check "would this exist?" before writing the prompt.
 - Gate check line to add: "logic: who is this, where, why, does the place fit the activity?"
+
+- **CABIN SEAT GEOMETRY (HARD, 2026-10-10, personal item article: a sideways aisle-profile prompt produced seats facing each other like a subway):** every aircraft-cabin prompt must spell out the layout, never leave it to the generator: narrow-body 3-3 rows with ONE central aisle, EVERY seat row faces forward toward the front of the plane, seats are in straight rows one behind the other (never sideways, never facing each other), camera at the REAR of the cabin or in the aisle behind the person looking toward the front at no more than 30 degrees off the aisle axis, so rows recede toward the front and we see seat backs, headrests, latched tray tables, overhead bins, round windows, and the bag at floor level through the gap under the seat ahead. Never a camera at 90 degrees across a seat. Reference look: a plain economy cabin photographed from the rear (blue or grey seat backs with headrest covers, rows receding). The user supplies the reference photos when a cabin keeps failing.

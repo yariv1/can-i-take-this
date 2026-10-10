@@ -129,3 +129,5 @@ REQUESTED 2026-10-08: /country/european-union/tobacco/, /country/european-union/
 2026-10-10: /country/turkey/alcohol/ rebuilt from Ministry of Trade customs guide (TO REQUEST again, after deploy)
 
 2026-10-10: /country/spain/alcohol/ and /country/france/alcohol/ now own indexed pages with official national figures (TO REQUEST, after deploy)
+
+2026-10-10: /blog/personal-item-size-by-airline-2026/ NEW (TO REQUEST, after deploy and images)

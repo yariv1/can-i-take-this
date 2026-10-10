@@ -16,8 +16,8 @@ const fig = (k, alt, cap, n) => `<figure class="art-fig"><img src="/assets/blog/
 // to-scale front view of a bag: h x w inches (depth in the label); dashed outline = a reference size to compare with
 function bagSvg(o) {
   const pad = 52, items = [o].concat(o.second ? [o.second] : []);
-  const W = Math.max(o.w, o.refW || 0) * U + pad * 2 + (o.second ? o.second.w * U + 44 : 0), H = Math.max(o.h, o.refH || 0, o.second ? o.second.h : 0) * U + pad * 2;
-  const style = '<style>.bg{fill:var(--surface-2)}.ln{fill:none;stroke:#1E86D6;stroke-width:3}[data-theme="dark"] .ln{stroke:#4CC2FF}.ln2{fill:none;stroke:#2FCF9B;stroke-width:3}.ref{fill:none;stroke:var(--muted);stroke-width:2;stroke-dasharray:6 5}.t1{font-family:Inter,sans-serif;font-size:15px;font-weight:700;fill:var(--text)}.t2{font-family:Inter,sans-serif;font-size:14px;fill:var(--muted)}</style>';
+  const W = o.w * U + pad * 2 + (o.second ? o.second.w * U + 44 : 0), H = Math.max(o.h, o.second ? o.second.h : 0) * U + pad * 2;
+  const style = '<style>.bg{fill:var(--surface-2)}.ln{fill:none;stroke:#1E86D6;stroke-width:3}[data-theme="dark"] .ln{stroke:#4CC2FF}.ln2{fill:none;stroke:#2FCF9B;stroke-width:3}.t1{font-family:Inter,sans-serif;font-size:15px;font-weight:700;fill:var(--text)}.t2{font-family:Inter,sans-serif;font-size:14px;fill:var(--muted)}</style>';
   const g = (b, x, cls, label) => {
     const bw = b.w * U, bh = b.h * U, top = H - pad - bh;
     return '<rect class="bg" x="' + x + '" y="' + top + '" width="' + bw + '" height="' + bh + '" rx="10"/><rect class="' + cls + '" x="' + x + '" y="' + top + '" width="' + bw + '" height="' + bh + '" rx="10"/>' +
@@ -28,7 +28,7 @@ function bagSvg(o) {
       '<text class="t1" x="' + (x + bw / 2) + '" y="' + (H - pad + 24) + '" text-anchor="middle">' + b.w + ' in</text>';
   };
   let body = '';
-  if (o.refW) body += '<rect class="ref" x="' + pad + '" y="' + (H - pad - o.refH * U) + '" width="' + (o.refW * U) + '" height="' + (o.refH * U) + '" rx="10"/>';
+  /* NO dashed reference outline, ever (DESIGN_SYSTEM.md): compare two sizes with `second` */
   body += g(o, pad, 'ln', o.label);
   if (o.second) body += g(o.second, pad + o.w * U + 44, 'ln2', o.second.label);
   return '<figure class="cox-dia"><svg viewBox="0 0 ' + W + ' ' + H + '" width="' + W + '" role="img" aria-label="' + o.alt + '" xmlns="http://www.w3.org/2000/svg">' + style + body + '</svg><figcaption>' + o.cap + '</figcaption></figure>';
@@ -133,7 +133,7 @@ pages['southwest'] = {
     hero('southwest', 'Southwest agent at the Nashville gate pointing to a large roller bag beside the carry-on size sign with the heart logo', 'Southwest allows a bigger carry-on than Delta, American, JetBlue and Alaska.') +
     `<p>Southwest has the roomiest carry-on of the big US airlines.</p>` +
     stat([['24×16×10', 'inches, Southwest carry-on'], ['22×14×9', 'inches, Delta, American, JetBlue, Alaska'], ['+2 / +2 / +1', 'inches longer, wider, deeper'], ['1 + 1', 'carry-on and personal item']]) +
-    bagSvg({ h: 24, w: 16, d: 10, label: 'Southwest', refH: 22, refW: 14, alt: 'Southwest carry-on 24 by 16 by 10 inches against the standard 22 by 14 by 9 inch size', cap: 'Solid: Southwest, 24 x 16 x 10 in. Dashed: the 22 x 14 x 9 in standard.' }) +
+    bagSvg({ h: 24, w: 16, d: 10, label: 'Southwest', second: { h: 22, w: 14, d: 9, label: 'Standard' }, alt: 'Southwest carry-on 24 by 16 by 10 inches next to the standard 22 by 14 by 9 inch size, drawn to scale', cap: 'Southwest, 24 x 16 x 10 in, next to the 22 x 14 x 9 in standard, to scale.' }) +
     '<h2>📐 What counts toward the size</h2>' +
     cl([['🛞', 'Wheels'], ['🤚', 'Handles'], ['📎', 'Any attachments on the bag']]) +
     fig('southwest', 'Woman on a Southwest plane at Dallas Love Field lifting a large gray roller bag into the overhead bin', 'Southwest\'s 24-inch bag still has to fit the bin.') +
@@ -156,7 +156,7 @@ pages['frontier'] = {
     `<p>On Frontier only the <strong>personal item is free</strong>. The big carry-on is a paid bag.</p>` +
     stat([['14×18×8', 'inches (H × W × D), free personal item'], ['24×16×10', 'inches, paid carry-on'], ['35 lb', 'carry-on weight limit'], ['62 in / 40 lb', 'checked bag']]) +
     bagSvg({ h: 24, w: 16, d: 10, label: 'Carry-on (paid)', second: { h: 14, w: 18, d: 8, label: 'Personal (free)' }, alt: 'Frontier paid carry-on 24 by 16 by 10 inches and free personal item 14 by 18 by 8 inches drawn to scale', cap: 'Frontier: paid carry-on (24 x 16 x 10 in) and free personal item (14 high x 18 wide x 8 deep).' }) +
-    T(['', 'Size', 'Weight', 'Cost'], [['🎒 Personal item', '14 × 18 × 8 in', 'not stated', 'Free'], ['🧳 Carry-on', '24 × 16 × 10 in', 'up to 35 lb', 'Paid or in a bundle'], ['📦 Checked bag', '62 linear in', 'up to 40 lb', 'Paid']]) +
+    T(['', 'Size', 'Weight', 'Cost'], [['🎒 Personal item', '14 × 18 × 8 in', 'up to 35 lb (Bag Options page)', 'Free'], ['🧳 Carry-on', '24 × 16 × 10 in', 'up to 35 lb', 'Paid or in a bundle'], ['📦 Checked bag', '62 linear in', 'up to 40 lb', 'Paid']]) +
     '<h2>📏 The personal item gets measured</h2>' +
     callout('⚠️', 'Frontier says personal item size is checked at boarding. An item over 14 × 18 × 8 inches is charged.') +
     fig('frontier', 'Woman at the Frontier gate in Orlando squeezing a pink tote bag into the personal item sizer', 'Handles, wheels and straps count toward the size.') +
