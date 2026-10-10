@@ -2,9 +2,9 @@
 // Ryanair: Help Centre "Ryanair's Bag Policy", the bag-rules articles, and the Help Centre "Fees" page, all read 2026-10-08.
 module.exports = {
   "Ryanair": {
-    title: "Ryanair Baggage Allowance 2026: Free 40x30x20 Bag, 10/20/23 kg Fees",
-    desc: "Ryanair baggage allowance: free small bag 40 x 30 x 20 cm, 10 kg cabin bag 55 x 40 x 20 cm with Priority, checked 10, 20 or 23 kg from €/£10.49.",
-    answer: "Every Ryanair fare includes one small personal bag of 40 x 30 x 20 cm that must fit under the seat in front of you. A 10 kg cabin bag (55 x 40 x 20 cm) comes with Priority & 2 Cabin Bags, and checked bags of 10, 20 or 23 kg are paid add-ons. Online prices run from €/£10.49 for a 10 kg checked bag to €/£80.99 for a 23 kg one, depending on the route and date.",
+    title: "Ryanair Carry-On Size 2026: 40 x 30 x 20 cm (15.7 x 11.8 x 7.9 in), Fees",
+    desc: "Ryanair carry-on size: free small bag 40 x 30 x 20 cm (15.7 x 11.8 x 7.9 in), 10 kg cabin bag 55 x 40 x 20 cm (21.7 x 15.7 x 7.9 in) with Priority, checked 10, 20 or 23 kg from €/£10.49.",
+    answer: "Every Ryanair fare includes one small personal bag of 40 x 30 x 20 cm (15.7 x 11.8 x 7.9 in) that must fit under the seat in front of you. A 10 kg cabin bag (55 x 40 x 20 cm, 21.7 x 15.7 x 7.9 in) comes with Priority & 2 Cabin Bags, and checked bags of 10, 20 or 23 kg are paid add-ons. Online prices run from €/£10.49 for a 10 kg checked bag to €/£80.99 for a 23 kg one, depending on the route and date.",
     stats: [
       ["40 x 30 x 20 cm", "free small bag, under the seat"],
       ["10 kg", "cabin bag (55 x 40 x 20 cm) with Priority & 2 Cabin Bags"],
