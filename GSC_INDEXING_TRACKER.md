@@ -125,3 +125,7 @@ REQUESTED 2026-10-08: /country/european-union/tobacco/, /country/european-union/
 2026-10-10: /country/turkey/vaping/ rebuilt with Ministry of Trade circulars (TO REQUEST again, after deploy)
 
 2026-10-10: /airline/singapore-airlines/power-bank/ rebuilt with SIA and CAAS official rules (TO REQUEST again, after deploy)
+
+2026-10-10: /country/turkey/alcohol/ rebuilt from Ministry of Trade customs guide (TO REQUEST again, after deploy)
+
+2026-10-10: /country/spain/alcohol/ and /country/france/alcohol/ now own indexed pages with official national figures (TO REQUEST, after deploy)

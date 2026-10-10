@@ -911,7 +911,7 @@ function run(){
       const v=w.verdict(); if(!v) return;
       const url=`/country/${slug(cn)}/${cc.url}/`;
       const CV=(cc.cat==='vape')?CVAPE.build(c):(cc.cat==='tobacco'?CTOB.build(c):(cc.cat==='plants'?CPLANT.build(c):(cc.cat==='alcohol'?CALC.build(c):null)));
-      const EUC=EUM.isEU(cn)&&EUM.CATS.indexOf(cc.cat)>=0;
+      const EUC=EUM.isEU(cn)&&EUM.CATS.indexOf(cc.cat)>=0&&!(cc.cat==='alcohol'&&CALC.has(c));
       write(url+'index.html', countryShell({
         mode:'cat', url, c, cat:cc.cat, v,
         canonical:EUC?(BASE+EUM.url(cc.cat)):null,
