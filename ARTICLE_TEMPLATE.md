@@ -263,3 +263,6 @@ Size illustrations (`bagSvg`) never draw a dashed reference outline. To compare 
 
 ## LOGO ROWS ARE VERTICALLY CENTRED (HARD, user order 2026-10-10)
 In lists, the airline logo and its text are centred on the same horizontal axis (the logo list item uses align-items:center and the marker has no top padding). Implemented once in build.js `airLogoIcons` (it rewrites the whole `cl-item` opening). Never put a hand-made `<img>` into a `cl()` marker: use any short placeholder (a bullet) and let `airLogoIcons` swap it by the airline name that starts the item. After a build, measure in the browser: logo centre minus text centre must be within 1 px.
+
+## TO-DO LISTS (HARD, user order 2026-10-10)
+A "Before you fly" style step list is a to-do list: the heading has NO checkbox icon (never a big green check before a title) and every step starts with a small CHECKED checkbox (18 px, green #2FCF9B fill, dark #08111f checkmark, `todo-box`), not a number. Done once in build.js `todoLists` (it strips the heading check mark and swaps numeric `cl()` markers that follow a check-mark heading). In article files write the heading as `<h2>✅ Title</h2>` and the steps as `cl([['1', ...], ...])`; the generator does the rest. Heading check marks on any other heading are stripped too.
