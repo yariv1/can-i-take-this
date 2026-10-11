@@ -113,15 +113,15 @@ REQUESTED 2026-10-08: /country/european-union/tobacco/, /country/european-union/
 | https://canitakethis.co/country/mexico/plants-seeds/ | TO REQUEST |
 | https://canitakethis.co/airline/sas/baggage-allowance/ | TO REQUEST |
 | https://canitakethis.co/airline/qantas/baggage-allowance/ | TO REQUEST |
-| https://canitakethis.co/plane/cigarettes/ | TO REQUEST |
+| https://canitakethis.co/plane/cigarettes/ | REQUESTED 2026-10-11 |
 | https://canitakethis.co/country/australia/alcohol/ | TO REQUEST |
-| https://canitakethis.co/blog/united-carry-on-size-2026/ | TO REQUEST |
+| https://canitakethis.co/blog/united-carry-on-size-2026/ | REQUESTED 2026-10-11 |
 
 2026-10-09: /airline/united/baggage-allowance/ rebuilt (TO REQUEST again)
 
 2026-10-10: /airline/emirates/baggage-allowance/ and /airline/qatar-airways/baggage-allowance/ rebuilt (TO REQUEST)
 
-2026-10-10: /blog/hawaiian-airlines-carry-on-size-2026/ NEW (TO REQUEST); /airline/air-canada/baggage-allowance/ retitled (TO REQUEST again)
+2026-10-10: /blog/hawaiian-airlines-carry-on-size-2026/ NEW (REQUESTED 2026-10-11); /airline/air-canada/baggage-allowance/ retitled (TO REQUEST again)
 
 2026-10-10: /airline/ryanair/baggage-allowance/ retitled, leads with carry-on size + inches (TO REQUEST again)
 
@@ -133,15 +133,15 @@ REQUESTED 2026-10-08: /country/european-union/tobacco/, /country/european-union/
 
 2026-10-10: /country/spain/alcohol/ and /country/france/alcohol/ now own indexed pages with official national figures (TO REQUEST, after deploy)
 
-2026-10-10: /blog/personal-item-size-by-airline-2026/ NEW (TO REQUEST, after deploy and images)
+2026-10-10: /blog/personal-item-size-by-airline-2026/ NEW (REQUESTED 2026-10-11, after deploy and images)
 
-2026-10-10: /blog/basic-economy-carry-on-rules-2026/ NEW (TO REQUEST, after deploy and images)
-2026-10-11: /blog/do-i-need-a-passport-canada-mexico-bahamas-puerto-rico-2026/ NEW (TO REQUEST, after deploy and images)
-2026-10-11: /blog/delayed-flight-compensation-us-airlines-2026/ NEW (TO REQUEST, after deploy and images)
-2026-10-11: /blog/overbooked-flight-compensation-us-airlines-2026/ NEW (TO REQUEST, after deploy and images)
-2026-10-11: /blog/eu261-compensation-explained-us-travelers-2026/ NEW (TO REQUEST, after deploy and images)
-2026-10-11: /blog/cancelled-flight-compensation-refund-us-airlines-2026/ NEW (TO REQUEST, after deploy and images)
-2026-10-11: /airline/american-airlines/compensation/ NEW (TO REQUEST, after deploy)
+2026-10-10: /blog/basic-economy-carry-on-rules-2026/ NEW (REQUESTED 2026-10-11, after deploy and images)
+2026-10-11: /blog/do-i-need-a-passport-canada-mexico-bahamas-puerto-rico-2026/ NEW (REQUESTED 2026-10-11, after deploy and images)
+2026-10-11: /blog/delayed-flight-compensation-us-airlines-2026/ NEW (REQUESTED 2026-10-11, after deploy and images)
+2026-10-11: /blog/overbooked-flight-compensation-us-airlines-2026/ NEW (REQUESTED 2026-10-11, after deploy and images)
+2026-10-11: /blog/eu261-compensation-explained-us-travelers-2026/ NEW (REQUESTED 2026-10-11, after deploy and images)
+2026-10-11: /blog/cancelled-flight-compensation-refund-us-airlines-2026/ NEW (REQUESTED 2026-10-11, after deploy and images)
+2026-10-11: /airline/american-airlines/compensation/ NEW (REQUESTED 2026-10-11, after deploy)
 2026-10-11: /airline/delta/compensation/ NEW (TO REQUEST, after deploy)
 2026-10-11: /airline/united/compensation/ NEW (TO REQUEST, after deploy)
 2026-10-11: /airline/southwest/compensation/ NEW (TO REQUEST, after deploy)
@@ -154,3 +154,5 @@ REQUESTED 2026-10-08: /country/european-union/tobacco/, /country/european-union/
 2026-10-11: /airline/klm/compensation/ NEW (TO REQUEST, after deploy)
 2026-10-11: /airline/wizz-air/compensation/ NEW (TO REQUEST, after deploy)
 2026-10-11: /airline/aer-lingus/compensation/ NEW (TO REQUEST, after deploy)
+
+REQUESTED 2026-10-11 (user): /blog/united-carry-on-size-2026/, /blog/personal-item-size-by-airline-2026/, /plane/cigarettes/, /blog/basic-economy-carry-on-rules-2026/, /blog/delayed-flight-compensation-us-airlines-2026/, /blog/eu261-compensation-explained-us-travelers-2026/, /blog/do-i-need-a-passport-canada-mexico-bahamas-puerto-rico-2026/, /blog/overbooked-flight-compensation-us-airlines-2026/, /blog/cancelled-flight-compensation-refund-us-airlines-2026/, /blog/hawaiian-airlines-carry-on-size-2026/, /airline/american-airlines/compensation/
