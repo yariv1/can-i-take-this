@@ -1,5 +1,8 @@
 # GSC "Request indexing" list (2026-10-08), about 10 URLs a day, in priority order
 
+> SUPERSEDED 2026-10-11: use GSC_PRIORITY.md (ranked tiers and a day plan). This file is history only.
+
+
 Rule: new URLs and the pages with the most search demand that we rebuilt come first. Do NOT request the 27 EU country pages for tobacco, alcohol, plants and cash: their canonical now points to the EU master pages. After each deploy also resubmit https://canitakethis.co/sitemap.xml.
 
 ## Day 1 (REQUESTED 2026-10-08: first 9; China Southern hit the quota and moved to Day 2)
