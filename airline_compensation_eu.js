@@ -973,5 +973,132 @@ module.exports = function (render) {
     };
   }
 
+  // ---------------- IBERIA ----------------
+  // Read 11 Oct 2026: iberia.com/gb/passengers-rights (denied boarding, cancellation, delay, downgrade, baggage time limits, UK complaint routes) and iberia.com/gb/claims-receipts (claim types, FAQ: reply time, refund of cancelled flight, claim for someone else). The printable rights PDF and the claim forms themselves were NOT read.
+  {
+    const IBR = ['https://www.iberia.com/gb/passengers-rights/', 'Iberia: Passengers\' rights', 'Denied boarding, cancellation, delay, downgrade'];
+    const IBC = ['https://www.iberia.com/gb/claims-receipts/', 'Iberia: Claims and receipts', 'Claim types and FAQ'];
+
+    const SCEN = [
+      {
+        id: 'delay', label: 'Flight delayed', status: 'go', verdict: 'Meals, calls, hotel if overnight', sub: 'Delay beyond scheduled departure', first: true,
+        head: 'Free meals and two calls once Iberia expects a delay of 2, 3 or 4 hours, by distance.',
+        lines: [
+          'When Iberia expects a delay of <b>2 hours or more</b> on flights up to 1,500 km, <b>3 hours or more</b> on intra-EU flights over 1,500 km and other flights between 1,500 and 3,500 km, or <b>4 hours or more</b> on all others, it offers meals and refreshments in reasonable relation to the waiting time, and two phone calls, telex or fax messages, or emails.',
+          'If you must spend the night: accommodation where appropriate, and transport between the airport and the hotel.',
+          'Iberia gives these as a right under the EU rules for passengers with a confirmed booking who checked in on time (at least 45 minutes before departure if no time is on the ticket).'
+        ],
+        sources: [IBR]
+      },
+      {
+        id: 'late', label: 'I arrived 3 hours or more late', status: 'warn', verdict: 'EU law says 250, 400 or 600 euros', sub: 'Cash for a long arrival delay',
+        head: 'Iberia\'s rights page does not list a cash amount for delays, so this card shows the EU rule.',
+        lines: [
+          'Iberia\'s passengers\' rights page lists assistance for delays, but we did not find a delay compensation amount on it (it lists amounts for denied boarding and cancellation).',
+          'Under the EU rules (Your Europe): <b>250 euros</b> up to 1,500 km, <b>400 euros</b> for intra-EU flights over 1,500 km and other flights between 1,500 and 3,500 km, <b>600 euros</b> for longer flights, when you arrive 3 hours or more late and the cause was within the airline\'s control.',
+          'Iberia has a "Delayed flight" claim form on its claims page. We did not open the form.'
+        ],
+        sources: [YEU, IBC]
+      },
+      {
+        id: 'delay5', label: 'Delay of more than 5 hours', status: 'go', verdict: 'Refund within 7 days', sub: 'You decide not to travel',
+        head: 'A refund for the part you did not make, and a return flight if the trip no longer serves its purpose.',
+        lines: [
+          'When the delay is more than five hours you may choose reimbursement within 7 days for the part or parts of the journey not made (and for parts already made if the flight no longer serves any purpose in your original plan), plus a return flight to the first point of departure.',
+          'To start the refund, Iberia says the ticket purchaser should contact the office, agency or point of sale where the ticket was bought.',
+          'You still get the meals and calls while you wait.'
+        ],
+        sources: [IBR]
+      },
+      {
+        id: 'cancel', label: 'Flight cancelled', status: 'go', verdict: '125 to 600 euros, or refund', sub: 'Cancellation by Iberia',
+        head: 'Refund or re-routing, care, and cash unless one of the exceptions applies.',
+        lines: [
+          'You choose between carriage to your final destination as soon as possible or on a later date at your convenience (depending on seats), or reimbursement within 7 days plus a return flight to the first departure point where relevant.',
+          'Free meals and refreshments, two calls or emails, and if you must stay overnight: accommodation where appropriate and transport.',
+          'No compensation if: you were told at least two weeks before; or told 7 to 14 days before and offered a re-routing that leaves no more than 2 hours earlier and arrives no more than 4 hours later; or told less than 7 days before and offered one that leaves no more than 1 hour earlier and arrives less than 2 hours later; or Iberia proves extraordinary circumstances.',
+          'Otherwise Iberia lists: <b>125 euros</b> (flights under 1,500 km, re-routing arrives within 2 hours of the original) or <b>250 euros</b> if later; <b>200 euros</b> (intra-EU over 1,500 km and 1,500 to 3,500 km, within 3 hours) or <b>400 euros</b> if later; <b>300 euros</b> (other flights, within 4 hours) or <b>600 euros</b> if later.',
+          'To refund a cancelled flight you did not accept an alternative for, use the "Flight cancellations, delays and changes" claim on its claims page with the booking code and ticket number.'
+        ],
+        sources: [IBR, IBC]
+      },
+      {
+        id: 'weather', label: 'Weather, security risk or a strike', status: 'stop', verdict: 'No cash compensation', sub: 'Extraordinary circumstances',
+        head: 'Iberia lists the causes it treats as extraordinary; care and the refund choice still apply.',
+        lines: [
+          'Iberia\'s page says there is no compensation when it can prove the cancellation was due to extraordinary circumstances that could not have been avoided even with all reasonable measures, and names political instability, weather incompatible with the flight, security risks, unexpected flight-safety shortcomings beyond its control, and strikes or other industrial action affecting an operating carrier.',
+          'The refund or re-routing choice and the care (meals, calls, hotel when you are stuck overnight) are listed separately and do not depend on the cause.',
+          'Ask for the reason in writing: the airline has to prove it.'
+        ],
+        sources: [IBR]
+      },
+      {
+        id: 'denied', label: 'Denied boarding (overbooked)', status: 'go', verdict: '250, 400 or 600 euros', sub: 'Involuntary denied boarding',
+        head: 'Iberia first asks for volunteers; if you are bumped against your will you get cash and assistance.',
+        lines: [
+          'If more passengers hold a confirmed booking than there are seats and you checked in on time, Iberia asks for volunteers in exchange for agreed compensation and assistance. If too few volunteer, passengers denied boarding against their will are entitled to compensation and assistance.',
+          '<b>250 euros</b> under 1,500 km, <b>400 euros</b> for intra-EU flights over 1,500 km and others between 1,500 and 3,500 km, <b>600 euros</b> for other flights. It is reduced by 50% if the alternative flight arrives within 2, 3 or 4 hours (by those three distance bands) of the original arrival.',
+          'Payment is in cash, bank transfer, bank order or cheque, or with your signed agreement a travel voucher (MCO). Iberia\'s electronic vouchers can be exchanged for cash or a higher-value travel voucher.',
+          'Assistance: your choice of carriage to the final destination, now or later, or a refund within 7 days plus a return flight; meals, two calls, and a hotel and transport if overnight.',
+          'No compensation if boarding is denied for a justified reason, such as safety, behaviour, state of health or missing travel documents.'
+        ],
+        sources: [IBR]
+      },
+      {
+        id: 'downgrade', label: 'Moved to a lower class', status: 'go', verdict: '30%, 50% or 75% back', sub: 'Downgrade',
+        head: 'A refund of part of the fare within 7 days.',
+        lines: [
+          'If you are placed in a class lower than the one you paid for, Iberia says it reimburses within 7 days: <b>30%</b> for flights of 1,500 km or less, <b>50%</b> for intra-EU flights over 1,500 km and others between 1,500 and 3,500 km, and <b>75%</b> for the rest.',
+          'Start the request where you bought the ticket.'
+        ],
+        sources: [IBR]
+      },
+      {
+        id: 'bags', label: 'Bag delayed or damaged', status: 'warn', verdict: 'Written claim, short deadlines', sub: 'Baggage problems',
+        head: 'Iberia lists the time limits; the baggage rules themselves we did not read.',
+        lines: [
+          'Iberia\'s page lists the periods to lodge a claim: <b>delay 21 days</b>, <b>misplacement 21 days</b>, <b>damage 7 days</b>, and the right to take action expires after two years (Montreal Convention).',
+          'For expenses caused by delayed baggage Iberia\'s FAQ asks for the PIR (Property Irregularity Report) number, flight and passenger details, a description of the expenses and the receipts.',
+          'Iberia has a separate "Delayed baggage" claim form. We did not read the baggage compensation rules, so no amounts are given here.'
+        ],
+        sources: [IBR, IBC]
+      },
+      {
+        id: 'claim', label: 'How to claim', status: 'warn', verdict: 'Online form on iberia.com', sub: 'Filing a claim',
+        head: 'Pick the claim type, fill in the form, and expect a reply by email.',
+        lines: [
+          'On its claims page Iberia has forms for delayed baggage, cancelled flight and delayed flight, and claim types for cancellations, delays, missed connections, denied boarding and schedule changes.',
+          'Iberia says it aims to reply within 7 business days, and up to 21 days for complex claims. The reply comes by email and you can follow the status on its claims page.',
+          'You can claim for someone else with their authorisation, entering the flight and passenger details. Forms are processed in Spanish, Catalan, Portuguese, English, French, German, Italian, Chinese and Japanese.',
+          'Keep your booking code, ticket number, boarding pass and receipts.'
+        ],
+        sources: [IBC, IBR]
+      },
+      {
+        id: 'refused', label: 'Iberia refused or ignored my claim', status: 'warn', verdict: 'Escalate', sub: 'Complaint not resolved',
+        head: 'The EU online dispute route, or the UK CAA for flights from or to the UK.',
+        lines: [
+          'Iberia points to the European Commission\'s Online Dispute Resolution service for sending a claim.',
+          'For flights from or to the United Kingdom it names the UK CAA\'s Passenger Advice and Complaints Team (PACT), through the online form on the CAA website.',
+          'For flights from Spain, the enforcement body is the one in the country you departed from; Iberia\'s page does not name it, so see our EU261 guide.'
+        ],
+        sources: [IBR, YEU]
+      }
+    ];
+
+    out['iberia'] = {
+      ttl: 'Iberia Compensation 2026: Delay, Cancelled, How to Claim',
+      desc: 'What Iberia owes you for a delayed or cancelled flight: meals, refund within 7 days, 125 to 600 euros for cancellations, denied boarding amounts and how to claim, case by case.',
+      h1: 'Iberia compensation: pick what happened',
+      answer: 'Iberia gives free meals and two calls from a 2, 3 or 4 hour delay by distance, a hotel if you are stuck overnight, a refund within 7 days after a delay of more than 5 hours or a cancellation, and 125 to 600 euros for a late cancellation or 250 to 600 euros for denied boarding. You claim through the forms on its claims page; it aims to reply in 7 business days.',
+      faq: [
+        ['How much compensation does Iberia pay for a cancelled flight?', 'Iberia lists 125 euros (under 1,500 km) up to 300 euros if the re-routing arrives within 2, 3 or 4 hours of the original arrival, and 250, 400 or 600 euros if the arrival is later, unless you were told at least two weeks ahead or extraordinary circumstances apply.'],
+        ['How do I claim from Iberia?', 'Use the forms on its claims page (delayed flight, cancelled flight, delayed baggage). Iberia aims to reply within 7 business days and up to 21 days for complex claims.'],
+        ['What if Iberia refuses my claim?', 'Iberia points to the European Commission\'s Online Dispute Resolution service, and for UK flights to the CAA\'s Passenger Advice and Complaints Team.']
+      ],
+      render: a => render(a, SCEN, 'From Iberia\'s own published passengers\' rights and claims pages, and EU rules, checked October 2026. Rules change, so confirm with the airline before you fly.')
+    };
+  }
+
   return out;
 };
