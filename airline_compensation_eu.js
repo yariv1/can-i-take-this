@@ -527,5 +527,451 @@ module.exports = function (render) {
     };
   }
 
+  // ---------------- AIR FRANCE ----------------
+  // Read directly on wwws.airfrance.us/information/legal/assistance-et-indemnisation ("Passengers rights": cancellation, delay, denied boarding, downgrading, claims, national bodies).
+  {
+    const AF = ['https://wwws.airfrance.us/information/legal/assistance-et-indemnisation', 'Air France: passengers rights', 'Assistance, vouchers and cash compensation'];
+    const VOUCHER = '<b>Voucher or cash, your choice:</b> non-refundable transportation credit voucher of <b>350 euros</b> (flights up to 1,500 km), <b>500 euros</b> (within the EU over 1,500 km and other flights between 1,500 and 3,500 km) or <b>800 euros</b> (all other flights); or cash of <b>250, 400 or 600 euros</b>.';
+    const CARE = 'Free: meals and refreshments in reasonable relation to the waiting time, a hotel if an overnight stay or an extra stay becomes necessary (transport included), and one prepaid phone card or the cost of two calls of up to 5 minutes each, or two faxes or emails.';
+
+    const SCEN = [
+      {
+        id: 'delay', label: 'Flight delayed 2 hours or more', status: 'go', verdict: 'Meals, hotel and phone', sub: 'Delay beyond the scheduled departure', first: true,
+        head: 'Air France offers care free of charge from a 2 hour delay.',
+        lines: [
+          CARE,
+          'The assistance applies if the flight is delayed beyond its scheduled departure time for 2 hours or more.',
+          'Delayed by at least 5 hours and you do not want to continue: a refund for the unused and the completed segments, and if applicable rerouting at Air France\'s expense to your departure point.',
+          'These rights apply to flights departing from an EU airport. From a non-EU airport they apply only on an EU carrier arriving in the EU, and only if no local regulation applies.'
+        ],
+        sources: [AF]
+      },
+      {
+        id: 'late', label: 'I arrived 3 hours or more late', status: 'go', verdict: 'Voucher or cash owed', sub: 'Arrival delay at the final destination',
+        head: 'Cash of 250, 400 or 600 euros, or a larger non-refundable voucher.',
+        lines: [
+          'Owed if you arrive 3 hours or more after the scheduled arrival time, except when the delay is caused by extraordinary circumstances that could not have been anticipated and the airline took all reasonable measures.',
+          VOUCHER,
+          'The compensation cannot be paid at the airport: contact the customer service team.',
+          'For flights of 3,500 km and more, the amount can be reduced by 50% if you landed 3 to 4 hours late.'
+        ],
+        sources: [AF, YEU]
+      },
+      {
+        id: 'cancel', label: 'Flight cancelled', status: 'go', verdict: 'Reroute or refund, and maybe cash', sub: 'Cancellation by Air France',
+        head: 'You choose reroute or refund, with care, and compensation unless an exception applies.',
+        lines: [
+          'You may choose to be rerouted to your final destination under comparable conditions as soon as possible, or at a later date at your convenience subject to seats, or to obtain a refund for the unused and the completed segments if you return to your departure point.',
+          CARE,
+          'Compensation is owed unless: it is caused by unavoidable extraordinary circumstances; you were told at least 2 weeks before; you were told 2 weeks to 7 days before and your new flight departs no more than 2 hours earlier and arrives less than 4 hours later; or you were told less than 7 days before and the new flight departs no more than 1 hour earlier and arrives less than 2 hours later.',
+          VOUCHER,
+          'Cancellation compensation cannot be paid at the airport: contact the customer service team.'
+        ],
+        sources: [AF]
+      },
+      {
+        id: 'weather', label: 'Weather, air traffic control or unforeseen events', status: 'stop', verdict: 'No cash compensation', sub: 'Extraordinary circumstances',
+        head: 'Air France is not required to pay compensation, but care and a reroute or refund still apply.',
+        lines: [
+          'The airline operating the flight is not required to pay compensation if the cancellation or delay is caused by extraordinary circumstances which could not have been anticipated and it has taken all reasonable measures to avoid it.',
+          'Assistance (meals, hotel if needed, phone) and the choice between rerouting and a refund for a cancellation are separate from compensation.',
+          'The airline has to prove the circumstance. Ask for the reason in writing.'
+        ],
+        sources: [AF, YEU]
+      },
+      {
+        id: 'denied', label: 'Denied boarding (overbooked)', status: 'go', verdict: 'Paid at the airport', sub: 'Involuntary denied boarding',
+        head: 'The only one paid at the airport, as a voucher or cash.',
+        lines: [
+          'In an overbooked flight Air France first calls for volunteers who give up their reservation for an agreed compensation in Transportation Credit Vouchers.',
+          'If you are denied boarding against your will and you followed the check-in rules: assistance (reroute or refund, meals, hotel with transport, phone) and compensation, unless the denial is for health, safety, security or inadequate documents.',
+          'The compensation is issued at the airport, as a non-refundable voucher (350, 500 or 800 euros) or cash (250, 400 or 600 euros), reduced by 50% if your alternative flight arrives within 2, 3 or 4 hours of the original arrival time.'
+        ],
+        sources: [AF]
+      },
+      {
+        id: 'downgrade', label: 'Put in a lower class', status: 'go', verdict: '30%, 50% or 75% back', sub: 'Involuntary downgrade',
+        head: 'A share of the segment price, depending on distance.',
+        lines: [
+          'If you are involuntarily placed in a lower class you may request reimbursement of 30% of the price of the flight segment for flights of 1,500 km or less; 50% for flights within the EU over 1,500 km and other flights between 1,500 and 3,500 km; 75% for all other flights.',
+          'It is the price of that segment, not the whole ticket.'
+        ],
+        sources: [AF]
+      },
+      {
+        id: 'claim', label: 'How to claim', status: 'warn', verdict: 'Contact customer service', sub: 'Compensation and refund requests',
+        head: 'Requests go to the carrier that actually operated the flight.',
+        lines: [
+          'You can get a refund for the unused and the completed segments through Air France customer service, whose contact details are in the Contact us section of its website.',
+          'All requests for reimbursement and compensation must be addressed to the carrier that actually operated, or was supposed to operate, the flight. On a codeshare that may be a partner airline.',
+          'Air France and KLM share the same customer service team for these requests.',
+          'Cancellation and delay compensation cannot be paid at the airport; denied boarding compensation can.'
+        ],
+        sources: [AF]
+      },
+      {
+        id: 'appeal', label: 'Air France refused or ignored me', status: 'warn', verdict: 'Go to the enforcement body', sub: 'National designated bodies',
+        head: 'Each EU country has a body for these rules.',
+        lines: [
+          'Each EU member state has designated a body responsible for the assistance and compensation rules. Air France links the European Commission\'s list of these National Enforcement Bodies.',
+          'For flights departing outside the EU to an EU country, local regulations and other compensation schemes may apply.',
+          'Our EU261 guide explains the steps and the time limits.'
+        ],
+        sources: [AF, YEU]
+      }
+    ];
+
+    out['air-france'] = {
+      ttl: 'Air France Compensation 2026: Delay, Cancelled, Voucher or Cash',
+      desc: 'What Air France owes you for a delayed, cancelled or overbooked flight: meals, hotel, voucher of 350/500/800 euros or cash of 250/400/600 euros, case by case.',
+      h1: 'Air France compensation: pick what happened',
+      answer: 'Air France offers meals, a hotel and phone credit from a 2 hour delay, and owes compensation for an arrival 3 hours or more late or a late cancellation, as a non-refundable voucher (350, 500 or 800 euros) or cash (250, 400 or 600 euros). Denied boarding compensation is paid at the airport; the other kinds are not.',
+      faq: [
+        ['How much compensation does Air France pay?', 'You choose between a non-refundable transportation credit voucher of 350, 500 or 800 euros, or cash of 250, 400 or 600 euros, depending on distance, for an arrival delay of 3 hours or more, a cancellation told late, or involuntary denied boarding, unless extraordinary circumstances apply.'],
+        ['Does Air France pay compensation at the airport?', 'Only for denied boarding. Delay and cancellation compensation cannot be paid at the airport; you contact customer service.'],
+        ['Who do I claim from if my Air France flight was operated by a partner?', 'From the carrier that actually operated the flight or was supposed to operate it, as all requests for reimbursement and compensation must be addressed to that carrier.']
+      ],
+      render: a => render(a, SCEN, 'From Air France\'s own published passenger rights page, and EU rules, checked October 2026. Rules change, so confirm with the airline before you fly.')
+    };
+  }
+
+  // ---------------- KLM ----------------
+  // Read directly on klm.com: "Compensation and reimbursement" (information/refund-compensation/compensation) and "Passenger rights" (information/legal/passenger-rights).
+  {
+    const KC = ['https://www.klm.com/information/refund-compensation/compensation', 'KLM: compensation and reimbursement', 'Vouchers, cash, criteria'];
+    const KR = ['https://www.klm.com/information/legal/passenger-rights', 'KLM: passenger rights', 'Assistance and compensation rules'];
+
+    const SCEN = [
+      {
+        id: 'criteria', label: 'Do I get fixed compensation?', status: 'warn', verdict: 'Check the 3 criteria', sub: 'KLM fixed compensation', first: true,
+        head: 'Cancelled or more than 3 hours late, a European flight, and no special circumstances.',
+        lines: [
+          'KLM says you may get a fixed amount if your flight was cancelled, or it was delayed and you arrived more than 3 hours later than initially scheduled.',
+          'And you travelled to or from a European destination.',
+          'And the delay or cancellation was not caused by special circumstances, such as extreme weather, political instability or third-party strikes.',
+          'You request it on KLM\'s website, and you can enter your last name and booking code to see the status of a request.'
+        ],
+        sources: [KC]
+      },
+      {
+        id: 'amounts', label: 'How much, voucher or cash', status: 'go', verdict: '250 to 800 euros', sub: 'Type A, B and C amounts',
+        head: 'Three distance types, each with a voucher value and a cash value.',
+        lines: [
+          '<b>Type A</b> (1,500 km or less): voucher of EUR 350 (non-refundable) or EUR 250 (cash).',
+          '<b>Type B</b> (within the EU longer than 1,500 km, or outside the EU between 1,500 and 3,500 km): EUR 500 (non-refundable) or EUR 400 (cash).',
+          '<b>Type C</b> (outside the EU, longer than 3,500 km): EUR 800 (non-refundable) or EUR 600 (cash).',
+          'Your voucher is either non-refundable or provided as a cash payment; the travel voucher you receive says which. A cash payment can be spent on a new flight or extras, or exchanged for cash. If you use it for a new flight or extras, the higher non-refundable value applies.',
+          'Reduction: if you arrived less than 2 hours (type A), 3 hours (type B) or 4 hours (type C) after the original arrival time, the compensation is reduced.'
+        ],
+        sources: [KC, KR]
+      },
+      {
+        id: 'delay', label: 'Flight delayed 2 hours or more', status: 'go', verdict: 'Meals, hotel and phone', sub: 'Delay beyond the scheduled departure',
+        head: 'Free meals and refreshments, a hotel if needed and phone calls.',
+        lines: [
+          'KLM offers free of charge, from a delay of 2 hours or more: meals and refreshments in reasonable relation to the waiting time, hotel accommodation if a stay becomes necessary (transport included), and 1 prepaid phone card or the cost of 2 calls (up to 5 minutes each), or 2 faxes or emails.',
+          'Delayed by at least 5 hours and you do not want to continue: a refund of the unused and completed segments and, if applicable, rerouting at KLM\'s expense to your point of departure.',
+          'Delay compensation (arrival 3 hours or more late) is not paid at the airport: contact customer service.'
+        ],
+        sources: [KR]
+      },
+      {
+        id: 'cancel', label: 'Flight cancelled', status: 'go', verdict: 'Reroute or refund', sub: 'Cancellation by KLM',
+        head: 'A reroute now or later, or a refund, plus a meal voucher, hotel and phone card.',
+        lines: [
+          'Reroute to your final destination under comparable conditions as soon as possible, or at a later date at your convenience, or obtain a refund for the unused and completed segments if you decide not to continue.',
+          'Complimentary: a meals and refreshments voucher in reasonable relation to the waiting time, a hotel if a stay becomes necessary (transport included), 1 prepaid phone card or 2 calls up to 5 minutes each, or 2 faxes or emails.',
+          'Compensation unless: extraordinary circumstances; told at least 2 weeks before; told 2 weeks to 7 days before with a new flight departing no more than 2 hours earlier and arriving less than 4 hours later; told less than 7 days before with a new flight departing no more than 1 hour earlier and arriving less than 2 hours later.',
+          'Cancellation compensation cannot be paid at the airport: contact customer service.'
+        ],
+        sources: [KR, KC]
+      },
+      {
+        id: 'expenses', label: 'I paid for meals or a call', status: 'warn', verdict: 'Request reimbursement', sub: 'Unforeseen expenses',
+        head: 'KLM reimburses extra costs caused by a delay or cancellation, such as a meal or a phone call.',
+        lines: [
+          'You can request reimbursement if your flight delay or cancellation caused extra costs, such as meals or a phone call. This is separate from fixed compensation.',
+          'Use the request reimbursement option on KLM\'s page and keep your receipts.'
+        ],
+        sources: [KC]
+      },
+      {
+        id: 'voucher', label: 'I got a KLM voucher', status: 'warn', verdict: 'Valid 1 year', sub: 'Using or cashing your voucher',
+        head: 'The voucher works on four airlines, and a refundable one can be exchanged for cash.',
+        lines: [
+          'You receive an email with a 13-digit voucher number starting with 074, also in your profile. The voucher is valid for 1 year after you received it.',
+          'You can use one or more vouchers at checkout for a new KLM, Air France, Delta Air Lines or Virgin Atlantic ticket and extra options. Unused credit comes back as a new voucher.',
+          'You cannot use a voucher to pay for KLM Holidays or taxes on Flying Blue reward tickets.',
+          'A refundable voucher can be exchanged for cash: you can request the cash refund within one year of receiving it.'
+        ],
+        sources: [KC]
+      },
+      {
+        id: 'weather', label: 'Weather, political instability or a third-party strike', status: 'stop', verdict: 'No fixed compensation', sub: 'Special circumstances',
+        head: 'KLM does not pay fixed compensation for special circumstances.',
+        lines: [
+          'KLM says the delay or cancellation must not have been caused by special circumstances, such as extreme weather, political instability or third-party strikes, to qualify.',
+          'The assistance (meals, hotel, phone card) and the reroute or refund choice for a cancellation are separate rights.',
+          'The airline has to show the circumstance was unavoidable.'
+        ],
+        sources: [KC, KR]
+      },
+      {
+        id: 'claim', label: 'How to claim', status: 'warn', verdict: 'On KLM\'s website', sub: 'Requesting compensation',
+        head: 'File online; the claim goes to the carrier that operated the flight.',
+        lines: [
+          'KLM says you request compensation on its website, after checking that you meet the criteria.',
+          'Delay and cancellation compensation cannot be paid at the airport; contact the customer service team. Requests must go to the carrier that operated, or was supposed to operate, the flight.',
+          'KLM\'s passenger rights page uses the same rules text as Air France\'s.',
+          'If the answer is unsatisfactory, the national enforcement bodies are listed by the European Commission; see our EU261 guide.'
+        ],
+        sources: [KC, KR, YEU]
+      }
+    ];
+
+    out['klm'] = {
+      ttl: 'KLM Compensation 2026: Delay, Cancelled, Voucher or Cash',
+      desc: 'What KLM owes you for a delayed or cancelled flight: meals, hotel, voucher or cash of 250 to 800 euros, how vouchers work and how to claim, case by case.',
+      h1: 'KLM compensation: pick what happened',
+      answer: 'KLM offers meals, a hotel and phone credit from a 2 hour delay, and pays fixed compensation for a cancellation or an arrival more than 3 hours late on a European flight, as a voucher of 350, 500 or 800 euros or cash of 250, 400 or 600 euros, unless special circumstances apply.',
+      faq: [
+        ['How much compensation does KLM pay for a delayed flight?', 'KLM lists three types by distance: voucher of 350 euros or cash of 250 for flights up to 1,500 km, 500 or 400 for medium flights, 800 or 600 for flights outside the EU over 3,500 km, when you arrive more than 3 hours late on a European flight and no special circumstance applies.'],
+        ['How long is a KLM voucher valid?', 'One year from when you received it. It can be used for KLM, Air France, Delta Air Lines or Virgin Atlantic tickets, and a refundable voucher can be exchanged for cash within a year.'],
+        ['What does KLM give me when my flight is delayed?', 'From a delay of 2 hours: free meals and refreshments, a hotel if a stay becomes necessary, and a prepaid phone card or two calls. After 5 hours you can ask for a refund if you do not want to continue.']
+      ],
+      render: a => render(a, SCEN, 'From KLM\'s own published pages, and EU rules, checked October 2026. Rules change, so confirm with the airline before you fly.')
+    };
+  }
+
+  // ---------------- WIZZ AIR ----------------
+  // Read directly on wizzair.com/en-gb/help-centre: "EC261 Regulation" (claims-and-compensation/ec261-regulation) and the "Delay, Cancellation and Refund" index page. Wizz's care details (cancelled flight page etc.) were NOT read.
+  {
+    const WZ = ['https://www.wizzair.com/en-gb/help-centre/my-wizz-account/claims-and-compensation/ec261-regulation', 'Wizz Air: EC261 regulation', 'Compensation, claims, third parties'];
+    const WZI = ['https://www.wizzair.com/en-gb/help-centre/delay-cancellation-and-refund', 'Wizz Air: delay, cancellation and refund', 'Help centre index'];
+    const AMOUNTS = '<b>250 euros</b> for flights up to 1,500 km; <b>400 euros</b> for flights between 1,500 and 3,500 km (all intra-EU/EEA flights over 1,500 km too); <b>600 euros</b> for flights over 3,500 km on non-intra-EU/EEA routes.';
+    const HALF = 'The amount is reduced by 50% if you are offered a new flight that arrives no more than 2 hours (up to 1,500 km), 3 hours (1,500 to 3,500 km) or 4 hours (over 3,500 km) after the original arrival time.';
+
+    const SCEN = [
+      {
+        id: 'cancel', label: 'Flight cancelled by Wizz Air', status: 'go', verdict: 'Rebook or refund, and cash', sub: 'Cancellation by Wizz Air', first: true,
+        head: 'Rebook, alternative transport or a refund, plus Article 7 compensation unless told in time.',
+        lines: [
+          'You can rebook onto the next available flight on the same or a similar route, arrange alternative transportation under similar conditions, or cancel your reservation and request a refund.',
+          'Wizz Air also pays compensation under Article 7 of the Regulation: ' + AMOUNTS,
+          HALF,
+          'No compensation if you were told 2 weeks before the scheduled departure; or between 2 weeks and 7 days before and offered a Wizz Air flight departing no more than 2 hours earlier and arriving less than 4 hours after the scheduled arrival; or less than 7 days before and offered one departing no more than 1 hour earlier and arriving less than 2 hours after.'
+        ],
+        sources: [WZ, WZI]
+      },
+      {
+        id: 'delay5', label: 'Flight delayed 5 hours or more', status: 'go', verdict: 'Rebook or refund', sub: 'Long delay caused by Wizz Air',
+        head: 'After 5 hours you can rebook, travel another way or cancel and be refunded.',
+        lines: [
+          'If your flight was delayed by Wizz Air 5 hours or more, you can rebook onto the next available flight on the same or a similar route, arrange alternative transportation under similar conditions, or cancel your reservation and request a refund.',
+          'The care you are owed while waiting is on Wizz\'s delayed flight page, which we did not read. The EU rule is meals after 2 or 3 hours and a hotel if you leave the next day (Your Europe).'
+        ],
+        sources: [WZ, YEU]
+      },
+      {
+        id: 'late', label: 'I arrived more than 3 hours late', status: 'go', verdict: '250, 400 or 600 euros', sub: 'Arrival delay',
+        head: 'Wizz Air says passengers delayed more than three hours on arrival are entitled to compensation.',
+        lines: [
+          'Entitled to compensation under Article 7 unless the delay was caused by extraordinary circumstances: ' + AMOUNTS,
+          HALF,
+          'Claim through Wizz\'s online Complaints form; it says it will respond within 30 days.'
+        ],
+        sources: [WZ]
+      },
+      {
+        id: 'weather', label: 'Weather, air traffic control or a strike', status: 'stop', verdict: 'No compensation', sub: 'Extraordinary circumstances',
+        head: 'Wizz Air lists air traffic control, weather, industrial action, terrorist alerts and airport closure.',
+        lines: [
+          'Wizz Air says there is no compensation obligation if the cancellation is due to extraordinary circumstances beyond reasonable control, including air traffic control, weather, industrial action, terrorist alerts and airport closure. Each case is evaluated individually.',
+          'You can still rebook, travel another way or cancel and request a refund after a cancellation.',
+          'The airline has to prove the circumstance; our EU261 guide explains which causes the EU accepts.'
+        ],
+        sources: [WZ, YEU]
+      },
+      {
+        id: 'denied', label: 'Denied boarding', status: 'go', verdict: 'Cash and a choice', sub: 'Denied boarding by Wizz Air',
+        head: 'Rebook, alternative transport or refund, plus compensation by distance and arrival delay.',
+        lines: [
+          'You can rebook onto the next available flight on the same or a similar route, arrange alternative transportation, or cancel your reservation and request a refund.',
+          'Compensation under Article 7 based on distance and the delay in arrival: 250 euros up to 1,500 km (reduced by 50% if you arrive no more than 2 hours late), 400 euros for 1,500 to 3,500 km (3 hours), 600 euros over 3,500 km (4 hours).'
+        ],
+        sources: [WZ]
+      },
+      {
+        id: 'diverted', label: 'Flight diverted', status: 'warn', verdict: 'Wizz arranges transport', sub: 'Diversion',
+        head: 'Wizz Air says it will arrange necessary alternative transportation.',
+        lines: [
+          'In case of a diversion, Wizz Air says it will arrange the necessary alternative transportation. Details are on its Diverted flight page, which we did not read.',
+          'The EU rules on assistance (meals, a hotel if needed) apply to the delay that results.'
+        ],
+        sources: [WZI, YEU]
+      },
+      {
+        id: 'claim', label: 'How to claim', status: 'warn', verdict: 'Online Complaints form', sub: 'Claims under Regulation 261/2004',
+        head: 'Submit through the form; Wizz Air responds within 30 days.',
+        lines: [
+          'If you are entitled to compensation, submit your claim via the online Complaints form.',
+          'Another passenger from the same booking can claim on your behalf if you give proper evidence of authorisation.',
+          'Wizz Air says it will respond to your claim within 30 days.',
+          'For non-urgent requests, its help centre also offers a claim form and a phone line.'
+        ],
+        sources: [WZ, WZI]
+      },
+      {
+        id: 'thirdparty', label: 'A claims company wants to claim for me', status: 'warn', verdict: 'Strict conditions', sub: 'Third-party and assigned claims',
+        head: 'Wizz Air will not process a third party\'s claim unless you or your booking already claimed directly.',
+        lines: [
+          'Wizz Air does not process any claim from a third party unless you or the passengers in your booking previously submitted a claim directly to it. It says this does not stop you consulting legal advisers.',
+          'You can assign your claim to a third party, which means selling your right to the compensation. Wizz handles assigned claims only with a signed written notice of the assignment (reservation number, basis of the claim, flight date and number).',
+          'It deducts an Assignment Administration Fee of 50 euros from compensation paid on an assigned claim.',
+          'Documents of representation or assignment must be signed by hand, or signed by two witnesses, under the Hungarian Code of Civil Procedure.'
+        ],
+        sources: [WZ]
+      },
+      {
+        id: 'israel', label: 'Flight to or from Israel', status: 'warn', verdict: 'Israeli law may apply', sub: 'Flights departing or arriving in Israel',
+        head: 'Wizz Air points to Israel\'s Aviation Services Law for long delays, cancellations and denied boarding.',
+        lines: [
+          'If your flight departing or arriving in Israel was advanced or delayed by more than eight hours, cancelled, or you were denied boarding against your will, Wizz Air says you may be entitled to compensation under Israel\'s Aviation Services Law (Compensation and Assistance for Flight Cancellations and Changes in Conditions), 5772-2012.',
+          'We did not read the Israeli law, so amounts are not listed here.'
+        ],
+        sources: [WZI]
+      },
+      {
+        id: 'refused', label: 'Wizz Air refused my claim', status: 'warn', verdict: 'National enforcement body', sub: 'Complaint not resolved',
+        head: 'Complain to the enforcement body of the country you departed from.',
+        lines: [
+          'Wizz Air says that for complaints about your rights under the Regulation you may contact the National Enforcement Body in accordance with your place of departure; it links the European Commission\'s list.',
+          'Time limits to go to court depend on national law. See our EU261 guide.'
+        ],
+        sources: [WZ, YEU]
+      }
+    ];
+
+    out['wizz-air'] = {
+      ttl: 'Wizz Air Compensation 2026: Delay, Cancelled, How to Claim',
+      desc: 'What Wizz Air owes you for a delayed or cancelled flight: rebook or refund, 250/400/600 euros under EC261, the 50 euro claims-company fee and how to claim, case by case.',
+      h1: 'Wizz Air compensation: pick what happened',
+      answer: 'Wizz Air lets you rebook, travel another way or take a refund after a cancellation or a delay of 5 hours or more, and pays 250, 400 or 600 euros for an arrival more than 3 hours late or a late cancellation unless extraordinary circumstances apply. You claim through its online form, and it answers within 30 days.',
+      faq: [
+        ['How much compensation does Wizz Air pay?', 'Under Article 7 of the Regulation: 250 euros up to 1,500 km, 400 euros between 1,500 and 3,500 km, 600 euros over 3,500 km, halved if you are offered a flight arriving within 2, 3 or 4 hours of the original arrival. No compensation for extraordinary circumstances.'],
+        ['How do I claim from Wizz Air?', 'Through its online Complaints form; Wizz Air says it responds within 30 days. A passenger in the same booking can claim for you with proof of authorisation.'],
+        ['Can a claims company claim from Wizz Air for me?', 'Only if you or someone in your booking already claimed directly. If you assign the claim, Wizz Air deducts a 50 euro Assignment Administration Fee and requires a signed written notice of the assignment.']
+      ],
+      render: a => render(a, SCEN, 'From Wizz Air\'s own published help centre, and EU rules, checked October 2026. Rules change, so confirm with the airline before you fly.')
+    };
+  }
+
+  // ---------------- AER LINGUS ----------------
+  // Read: Aer Lingus "EU Regulation 261/2004" page (aerlingus.com/legal/regulation) and its Delay Notice and Flight Cancellation Notice PDFs (LEGALDELAY.pdf, LEGALCANCELLATION.pdf). Denied boarding notice NOT read; expenses form page NOT read.
+  {
+    const ALR = ['https://www.aerlingus.com/legal/regulation/', 'Aer Lingus: EU Regulation 261/2004', 'Claim compensation, expenses, group claims'];
+    const ALD = ['https://www.aerlingus.com/media/pdfs/LEGALDELAY.pdf', 'Aer Lingus delay notice', 'Assistance and compensation for delays'];
+    const ALC = ['https://www.aerlingus.com/media/pdfs/LEGALCANCELLATION.pdf', 'Aer Lingus flight cancellation notice', 'Choices, assistance, compensation'];
+
+    const SCEN = [
+      {
+        id: 'delay', label: 'Flight delayed', status: 'go', verdict: 'Meals, calls, and a hotel if overnight', sub: 'Delay beyond scheduled departure', first: true,
+        head: 'Free meals and two calls once the delay reaches 2, 3 or 4 hours, by distance.',
+        lines: [
+          'When Aer Lingus reasonably expects a delay of 2 hours or more for flights up to 1,500 km, 3 hours or more for intra-EU flights over 1,500 km and other flights between 1,500 and 3,500 km, or 4 hours or more for longer flights, it offers free meals and refreshments in reasonable relation to the waiting time and two phone calls, faxes or emails.',
+          'If the expected departure is at least the day after the one announced: a hotel (a stay of one or more nights, or an extra stay) and transport between the airport and the hotel.',
+          'The notice applies to flights departing from an EU airport, and flights operated by an EU carrier departing from a third country into the EU, if you checked in on time (or at least 45 minutes before departure if no time was given) on a fare available to the public or a frequent flyer ticket.',
+          'The assistance can be deducted from further compensation you might claim under other law, such as package travel rules.'
+        ],
+        sources: [ALD]
+      },
+      {
+        id: 'late', label: 'I arrived more than 3 hours late', status: 'go', verdict: '250, 400 or 600 euros', sub: 'Arrival delay at the final destination',
+        head: 'Compensation when the delay arises from causes within Aer Lingus\'s control.',
+        lines: [
+          'You can claim compensation if you arrive more than three hours late at your final destination and the delay arises from causes within Aer Lingus\'s control, not extraordinary circumstances that could not have been avoided by all reasonable measures.',
+          '<b>EUR 250</b> for flights of 1,500 km or less; <b>EUR 400</b> for intra-EU flights over 1,500 km and other flights between 1,500 and 3,500 km; <b>EUR 600</b> for all other flights.',
+          'For flights longer than 3,500 km the amount is reduced by 50% if re-routing gets you there within 4 hours of the original scheduled arrival.',
+          'Claim on Aer Lingus\'s regulation page (button "Claim Compensation"). It adds that claims are only if applicable.'
+        ],
+        sources: [ALD, ALR]
+      },
+      {
+        id: 'delay5', label: 'Delay of 5 hours or more', status: 'go', verdict: 'Refund within 7 days', sub: 'You decide not to travel',
+        head: 'A full refund within seven days, and a return flight if applicable.',
+        lines: [
+          'If the delay is at least five hours and you decide not to travel on the delayed flight: reimbursement within seven days of the full cost of the ticket for the part or parts not made, and for parts already made if the flight no longer serves any purpose, together with a return flight to the first point of departure at the earliest opportunity.',
+          'Payment is in cash, by bank transfer, bank order or cheque, or, with your signed agreement, travel vouchers or other services.',
+          'You still get the meals and communication assistance.'
+        ],
+        sources: [ALD]
+      },
+      {
+        id: 'cancel', label: 'Flight cancelled', status: 'go', verdict: 'Three choices and maybe cash', sub: 'Cancellation by Aer Lingus',
+        head: 'Refund within 7 days, re-routing now, or re-routing later.',
+        lines: [
+          'Choose between: reimbursement within seven days of the full ticket cost (and a return flight where relevant); re-routing to your final destination under comparable conditions at the earliest opportunity; or re-routing at a later date at your convenience, subject to seats.',
+          'Free meals and refreshments and two phone calls, faxes or emails. If the new flight leaves at least the day after the cancelled one: a hotel and transport to it.',
+          'Compensation of EUR 250, 400 or 600 by distance unless: you were told at least two weeks before; or told 2 weeks to 7 days before and offered a re-routing that departs no more than 2 hours earlier and arrives less than 4 hours later; or told less than 7 days before and offered one departing no more than 1 hour earlier and arriving less than 2 hours later; or Aer Lingus proves unavoidable extraordinary circumstances.'
+        ],
+        sources: [ALC, ALR]
+      },
+      {
+        id: 'weather', label: 'Weather, air traffic control or a strike', status: 'stop', verdict: 'No cash compensation', sub: 'Extraordinary circumstances',
+        head: 'Compensation only covers causes within Aer Lingus\'s control.',
+        lines: [
+          'Aer Lingus says you may be eligible under EU Regulation 261/2004 for a cancellation or delay of more than 3 hours on arrival only for reasons within the airline\'s control.',
+          'Care and the refund or re-routing choice for a cancellation do not depend on the cause.',
+          'It has to prove that the cause was extraordinary and could not have been avoided by taking all reasonable measures.'
+        ],
+        sources: [ALR, ALC]
+      },
+      {
+        id: 'denied', label: 'Denied boarding', status: 'warn', verdict: 'Compensation if within its control', sub: 'Denied boarding',
+        head: 'Aer Lingus lists denied boarding among the cases; we did not read its denied boarding notice.',
+        lines: [
+          'Aer Lingus says you may be eligible for compensation or expenses under EU Regulation 261/2004 if you are denied boarding for reasons within the airline\'s control.',
+          'The EU amounts are 250, 400 or 600 euros by distance, with a choice between refund and re-routing (Your Europe).',
+          'Ask for the written notice of rights at the airport.'
+        ],
+        sources: [ALR, YEU]
+      },
+      {
+        id: 'claim', label: 'How to claim', status: 'warn', verdict: 'Use the right form', sub: 'Compensation, expenses and groups',
+        head: 'Three separate claim routes on Aer Lingus\'s regulation page.',
+        lines: [
+          '<b>Claim Compensation:</b> for the delay or cancellation of your flight, only if applicable.',
+          '<b>Claim Expenses:</b> accommodation, meals or transport costs incurred because of the delay or cancellation, only if applicable.',
+          '<b>Group bookings:</b> a separate route to claim compensation for delay or cancellations of group bookings, and to claim reimbursement of fees or costs on them.',
+          'It also invites you to view the options if Aer Lingus cancelled your flight before you claim.'
+        ],
+        sources: [ALR]
+      },
+      {
+        id: 'refused', label: 'Aer Lingus refused my claim', status: 'warn', verdict: 'Irish Aviation Authority', sub: 'National enforcement body',
+        head: 'In Ireland, the enforcement body is the Irish Aviation Authority.',
+        lines: [
+          'Aer Lingus\'s notices name the Irish Aviation Authority as the national enforcement body in Ireland for Regulation EC 261/2004, and give its Dublin address, phone +353 1 603 1100, email apr@iaa.ie and website iaa.ie.',
+          'For other EU countries it points to the European Commission\'s list of enforcement bodies.',
+          'Our EU261 guide explains the steps and time limits.'
+        ],
+        sources: [ALD, YEU]
+      }
+    ];
+
+    out['aer-lingus'] = {
+      ttl: 'Aer Lingus Compensation 2026: Delay, Cancelled, How to Claim',
+      desc: 'What Aer Lingus owes you for a delayed or cancelled flight: meals, hotel, refund within 7 days, EUR 250/400/600 and which form to use, case by case.',
+      h1: 'Aer Lingus compensation: pick what happened',
+      answer: 'Aer Lingus offers free meals and two calls from a 2, 3 or 4 hour delay by distance, a hotel if you leave the next day, a refund within 7 days after a 5 hour delay or a cancellation, and EUR 250, 400 or 600 if you arrive more than 3 hours late or are told of a cancellation late for reasons within its control.',
+      faq: [
+        ['How much compensation does Aer Lingus pay?', 'EUR 250 for flights of 1,500 km or less, EUR 400 for intra-EU flights over 1,500 km and other flights up to 3,500 km, and EUR 600 for longer flights, for an arrival delay of more than 3 hours or a cancellation told late, when the cause is within its control.'],
+        ['How do I claim from Aer Lingus?', 'On its EU Regulation 261/2004 page there are separate routes for compensation, for expenses such as accommodation, meals or transport, and for group bookings.'],
+        ['Who do I complain to if Aer Lingus refuses?', 'In Ireland, the Irish Aviation Authority, which Aer Lingus names as the national enforcement body.']
+      ],
+      render: a => render(a, SCEN, 'From Aer Lingus\'s own published notices, and EU rules, checked October 2026. Rules change, so confirm with the airline before you fly.')
+    };
+  }
+
   return out;
 };

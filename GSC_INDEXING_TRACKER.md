@@ -147,3 +147,7 @@ REQUESTED 2026-10-08: /country/european-union/tobacco/, /country/european-union/
 2026-10-11: /airline/easyjet/compensation/ NEW (TO REQUEST, after deploy)
 2026-10-11: /airline/lufthansa/compensation/ NEW (TO REQUEST, after deploy)
 2026-10-11: /airline/british-airways/compensation/ NEW (TO REQUEST, after deploy)
+2026-10-11: /airline/air-france/compensation/ NEW (TO REQUEST, after deploy)
+2026-10-11: /airline/klm/compensation/ NEW (TO REQUEST, after deploy)
+2026-10-11: /airline/wizz-air/compensation/ NEW (TO REQUEST, after deploy)
+2026-10-11: /airline/aer-lingus/compensation/ NEW (TO REQUEST, after deploy)
