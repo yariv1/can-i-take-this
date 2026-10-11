@@ -25,7 +25,7 @@ This file replaces the day lists in `GSC_REQUEST_LIST.md` (kept only as history)
 
 ## TIER 2: airline Compensation pages (new page type; the vision: authority for airline info)
 Day A (american-airlines REQUESTED 2026-10-11; next is delta): /airline/american-airlines/compensation/, /airline/delta/compensation/, /airline/united/compensation/, /airline/southwest/compensation/, /airline/jetblue/compensation/ (US, each phrase over 100), then /airline/ryanair/compensation/, /airline/easyjet/compensation/, /airline/british-airways/compensation/, /airline/lufthansa/compensation/, /airline/air-france/compensation/
-Day B: /airline/klm/compensation/, /airline/wizz-air/compensation/, /airline/aer-lingus/compensation/, /airline/iberia/compensation/
+Day B: /airline/klm/compensation/, /airline/wizz-air/compensation/, /airline/aer-lingus/compensation/, /airline/iberia/compensation/, /airline/turkish-airlines/customer-service/
 
 ## TIER 3: rebuilt pages that already have impressions (re-request so Google re-reads the new content)
 /airline/lufthansa/baggage-allowance/, /airline/singapore-airlines/baggage-allowance/, /airline/air-canada/baggage-allowance/, /airline/wizz-air/baggage-allowance/, /airline/qatar-airways/baggage-allowance/, /airline/united/baggage-allowance/, /airline/emirates/baggage-allowance/, /airline/ryanair/baggage-allowance/, /country/turkey/vaping/, /country/egypt/vaping/, /country/spain/alcohol/, /country/france/alcohol/, /country/turkey/alcohol/, /country/australia/alcohol/

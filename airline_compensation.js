@@ -6,17 +6,18 @@
 const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 const ICON = { go: '<path d="M20 6 9 17l-5-5"/>', warn: '<path d="M12 9v4m0 4h.01M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"/>', stop: '<circle cx="12" cy="12" r="9"/><path d="M8 12h8"/>' };
 
-function render(a, SCEN, SRC_NOTE) {
+function render(a, SCEN, SRC_NOTE, O) {
+  O = O || {};
   const card = s => {
     const lines = s.lines.map(l => '<li>' + l + '</li>').join('');
     const src = s.sources.map(x => '<a class="hitem" href="' + esc(x[0]) + '" target="_blank" rel="noopener"><span class="hi-ic">🌐</span><span class="hi-l">' + esc(x[1]) + '<small>' + esc(x[2]) + '</small></span><span class="hi-go">↗</span></a>').join('');
-    return '<div class="cc" id="cc-' + s.id + '"' + (s.first ? '' : ' hidden') + '><div class="pass ' + s.status + ' print"><div class="strip"><div class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">' + ICON[s.status] + '</svg></div><div><div class="verdict">' + esc(s.verdict) + '</div><div class="vsub">' + esc(s.sub) + '</div></div></div><div class="perf"></div><div class="body"><div class="route"><span>✈ <b>' + esc(a.name) + '</b></span><span>COMPENSATION</span></div><p class="headline">' + esc(s.head) + '</p><ul class="detail">' + lines + '</ul><div class="help"><div class="help-h">Official source</div>' + src + '<div class="hnote">To be 100% sure, we always recommend confirming with the official channels.</div></div><div class="src">' + esc(SRC_NOTE) + '</div></div></div></div>';
+    return '<div class="cc" id="cc-' + s.id + '"' + (s.first ? '' : ' hidden') + '><div class="pass ' + s.status + ' print"><div class="strip"><div class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">' + ICON[s.status] + '</svg></div><div><div class="verdict">' + esc(s.verdict) + '</div><div class="vsub">' + esc(s.sub) + '</div></div></div><div class="perf"></div><div class="body"><div class="route"><span>✈ <b>' + esc(a.name) + '</b></span><span>' + esc(O.tag || 'COMPENSATION') + '</span></div><p class="headline">' + esc(s.head) + '</p><ul class="detail">' + lines + '</ul><div class="help"><div class="help-h">Official source</div>' + src + '<div class="hnote">To be 100% sure, we always recommend confirming with the official channels.</div></div><div class="src">' + esc(SRC_NOTE) + '</div></div></div></div>';
   };
   const chips = SCEN.map((s, i) => '<button class="chip' + (i === 0 ? ' on' : '') + '" data-c="' + s.id + '">' + esc(s.label) + '</button>').join('');
-  const legend = '<p class="cc-legend"><span class="cc-dot cc-g"></span> Green: you are owed something. <span class="cc-dot cc-y"></span> Yellow: it depends, check with the airline. <span class="cc-dot cc-r"></span> Red: nothing owed for this case.</p>';
+  const legend = O.legend || '<p class="cc-legend"><span class="cc-dot cc-g"></span> Green: you are owed something. <span class="cc-dot cc-y"></span> Yellow: it depends, check with the airline. <span class="cc-dot cc-r"></span> Red: nothing owed for this case.</p>';
   const css = '<style>.cc[hidden]{display:none}.cc-legend{font-size:.9rem;color:var(--muted);margin:14px 4px 0;line-height:1.7}.cc-dot{display:inline-block;width:11px;height:11px;border-radius:50%;margin:0 4px 0 8px;vertical-align:middle}.cc-dot:first-child{margin-left:0}.cc-g{background:#2FCF9B}.cc-y{background:#F5B841}.cc-r{background:#FF6B6B}.cc-picker .chip{font-size:14px}</style>';
   const script = '<script>(function(){var cs=document.querySelectorAll(".cc-picker .chip"),cc=document.querySelectorAll(".cc");function go(id){[].forEach.call(cc,function(x){x.hidden=x.id!=="cc-"+id;});[].forEach.call(cs,function(x){x.classList.toggle("on",x.dataset.c===id);});}[].forEach.call(cs,function(b){b.onclick=function(){go(b.dataset.c);};});var h=location.hash.slice(1);if(h&&document.getElementById("cc-"+h))go(h);})();</scr' + 'ipt>';
-  return css + '<div class="slab">What happened?</div><div class="chips cc-picker">' + chips + '</div>' + SCEN.map(card).join('') + legend + script;
+  return css + '<div class="slab">' + esc(O.slab || 'What happened?') + '</div><div class="chips cc-picker">' + chips + '</div>' + SCEN.map(card).join('') + legend + script;
 }
 
 const out = {};
@@ -863,4 +864,5 @@ const out = {};
 
 Object.assign(out, require('./airline_compensation_eu.js')(render));
 
+Object.defineProperty(out, '__render', { value: render, enumerable: false });
 module.exports = out;

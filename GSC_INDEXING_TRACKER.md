@@ -157,3 +157,4 @@ REQUESTED 2026-10-08: /country/european-union/tobacco/, /country/european-union/
 
 REQUESTED 2026-10-11 (user): /blog/united-carry-on-size-2026/, /blog/personal-item-size-by-airline-2026/, /plane/cigarettes/, /blog/basic-economy-carry-on-rules-2026/, /blog/delayed-flight-compensation-us-airlines-2026/, /blog/eu261-compensation-explained-us-travelers-2026/, /blog/do-i-need-a-passport-canada-mexico-bahamas-puerto-rico-2026/, /blog/overbooked-flight-compensation-us-airlines-2026/, /blog/cancelled-flight-compensation-refund-us-airlines-2026/, /blog/hawaiian-airlines-carry-on-size-2026/, /airline/american-airlines/compensation/
 2026-10-11: /airline/iberia/compensation/ NEW (TO REQUEST, after deploy)
+2026-10-11: /airline/turkish-airlines/customer-service/ NEW (TO REQUEST, after deploy)
