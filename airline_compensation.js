@@ -861,4 +861,6 @@ const out = {};
   };
 }
 
+Object.assign(out, require('./airline_compensation_eu.js')(render));
+
 module.exports = out;

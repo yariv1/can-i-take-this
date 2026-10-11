@@ -143,3 +143,7 @@ REQUESTED 2026-10-08: /country/european-union/tobacco/, /country/european-union/
 2026-10-11: /airline/united/compensation/ NEW (TO REQUEST, after deploy)
 2026-10-11: /airline/southwest/compensation/ NEW (TO REQUEST, after deploy)
 2026-10-11: /airline/jetblue/compensation/ NEW (TO REQUEST, after deploy)
+2026-10-11: /airline/ryanair/compensation/ NEW (TO REQUEST, after deploy)
+2026-10-11: /airline/easyjet/compensation/ NEW (TO REQUEST, after deploy)
+2026-10-11: /airline/lufthansa/compensation/ NEW (TO REQUEST, after deploy)
+2026-10-11: /airline/british-airways/compensation/ NEW (TO REQUEST, after deploy)
