@@ -23,11 +23,13 @@ Rule: articles only where measured demand exists (Ahrefs free keyword generator,
 
 Rejected (under 100): prohibited items on a plane, airport security rules, minimum layover time, flying without ID (over 100 head, Real ID article covers it), musical instruments.
 
+## STATUS 2026-10-11 (end of session 20): #1 DONE (/blog/personal-item-size-by-airline-2026/) and #2 DONE (/blog/basic-economy-carry-on-rules-2026/), both deployed (b39c16428, b1e3bd932). NEXT = #3 passport article (US citizens: Canada, Mexico, Bahamas, Puerto Rico).
+
 ## Build order
 
-1. **Personal item size by airline (2026)**: pillar. Title leads "Personal Item Size", all major airlines in one table with cm and inches, official airline pages only. Then per-airline pages only for Frontier, American, Delta, United if the pillar shows impressions (avoid clones of the carry-on articles: different structure, personal-item rules, under-seat fit, fees).
-2. **Basic economy carry-on: what each US airline allows**: separate intent from carry-on size (fare rules, gate-check fees), United, Delta, American, plus Alaska, JetBlue, Southwest, Frontier from their own fare pages.
-3. **Do I need a passport to go to Canada, Mexico, the Bahamas, Puerto Rico (US citizens)**: borders pillar, State Department, CBP and territory pages; air versus land and sea; Puerto Rico is domestic.
+1. **DONE: Personal item size by airline (2026)**: pillar. Title leads "Personal Item Size", all major airlines in one table with cm and inches, official airline pages only. Then per-airline pages only for Frontier, American, Delta, United if the pillar shows impressions (avoid clones of the carry-on articles: different structure, personal-item rules, under-seat fit, fees).
+2. **DONE: Basic economy carry-on (title: Basic Economy Carry-On 2026: Does United, Delta or American Allow One?)**: separate intent from carry-on size (fare rules, gate-check fees), United, Delta, American, plus Alaska, JetBlue, Southwest, Frontier from their own fare pages.
+3. **DONE 2026-10-11 (/blog/do-i-need-a-passport-canada-mexico-bahamas-puerto-rico-2026/): Do I need a passport to go to Canada, Mexico, the Bahamas, Puerto Rico (US citizens)**: borders pillar, State Department, CBP and territory pages; air versus land and sea; Puerto Rico is domestic.
 4. **Flight delay compensation: US rules versus EU and UK**: US Department of Transportation and the EU/UK rules, what an airline owes by delay length, official pages only.
 5. **How early to arrive at the airport**: domestic and international, from airport and airline official guidance.
 6. **Flying with a baby**: ID, lap infant, formula and gear, TSA and airline pages.
@@ -37,4 +39,6 @@ Rejected (under 100): prohibited items on a plane, airport security rules, minim
 TSA wait times (live data), lost luggage store intent, single-item buttons for the app (all under 1,000).
 
 ## Open work from the queue (not articles)
-Turkey, Spain, France duty free done. Cuba vapes parked until an official text exists.
+Turkey, Spain, France duty free done. Cuba vapes parked until an official text exists. Workflow per article: see memory project_blog_roadmap.md section 4.
+
+## STATUS 2026-10-11 (session 21): #3 DONE and deployed (4 photos + 3 graphics). NEXT = #4 flight delay compensation US vs EU/UK.

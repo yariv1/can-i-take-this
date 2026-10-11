@@ -86,7 +86,8 @@ async function runtimeCurrency(slug, fail) {
     }
 
     // 2. IMAGES
-    const need = [['blogHome-' + slug + '-card.webp', 800, 400], ['blog-' + slug + '-hero.webp', 800, 400], ['blog-' + slug + '-inArticle-1.webp', 800, 320], ['blog-' + slug + '-inArticle-2.webp', 800, 320]];
+    // visuals are decided per article (user order 2026-10-11): card + hero always; inline photos only when the page references them (diagrams/tables/graphics may replace them)
+    const need = [['blogHome-' + slug + '-card.webp', 800, 400], ['blog-' + slug + '-hero.webp', 800, 400]].concat([1, 2].map(n => ['blog-' + slug + '-inArticle-' + n + '.webp', 800, 320]).filter(x => html.includes(x[0])));
     for (const [f, w, h] of need) {
       const p = 'assets/blog/' + f;
       if (!fs.existsSync(p)) { fail.push('image missing: ' + f); continue; }

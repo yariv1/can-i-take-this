@@ -35,3 +35,6 @@ Ahrefs 2026-10-10 'X carry on size' buckets: US: Spirit >1000 (DROPPED: ceased o
 2. Then, only if wanted: easyJet inches (low, >100), then remaining GSC-impression baggage rebuilds (Transavia 30, Oman 27, Air France 22, Finnair 19, Vietnam 18, Cathay 16, LOT 15, Kuwait 14, TAP 11, Alaska 8): LOW demand, after everything above.
 3. Then Turkey vaping, Cuba disposable vapes, Singapore power bank, Turkey/Spain/France duty free.
 Re-check GSC for food list, cigarettes, carry-on articles, rebuilt hubs and baggage pages on 2026-11-01.
+
+## UPDATE 2026-10-11 (session 20) - CURRENT ORDER
+Deployed: Ryanair retitle, Turkey vaping, Singapore Airlines power bank, Turkey/Spain/France duty free (Spain/France now self-canonical), pillar /blog/personal-item-size-by-airline-2026/, pillar /blog/basic-economy-carry-on-rules-2026/. origin/main b1e3bd932. Cuba vapes PARKED (no official text). The demand-ranked work list is now BLOG_ROADMAP.md: NEXT = #3 "Do I need a passport to go to Canada / Mexico / Bahamas / Puerto Rico" (US citizens), then #4 flight delay compensation, #5 how early to arrive, #6 flying with a baby. Low: remaining GSC-impression baggage rebuilds, easyJet inches. Re-check GSC on 2026-11-01.
