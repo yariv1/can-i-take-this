@@ -38,3 +38,5 @@ Re-check GSC for food list, cigarettes, carry-on articles, rebuilt hubs and bagg
 
 ## UPDATE 2026-10-11 (session 20) - CURRENT ORDER
 Deployed: Ryanair retitle, Turkey vaping, Singapore Airlines power bank, Turkey/Spain/France duty free (Spain/France now self-canonical), pillar /blog/personal-item-size-by-airline-2026/, pillar /blog/basic-economy-carry-on-rules-2026/. origin/main b1e3bd932. Cuba vapes PARKED (no official text). The demand-ranked work list is now BLOG_ROADMAP.md: NEXT = #3 "Do I need a passport to go to Canada / Mexico / Bahamas / Puerto Rico" (US citizens), then #4 flight delay compensation, #5 how early to arrive, #6 flying with a baby. Low: remaining GSC-impression baggage rebuilds, easyJet inches. Re-check GSC on 2026-11-01.
+
+## ADDENDUM 2026-10-11 (session 21, user order): the blog roadmap in BLOG_ROADMAP.md (STATUS END OF SESSION 21 block) is the active work list. Vision: the AUTHORITY for airline info and country entry rules; next = compensation articles (bumped / overbooked, cancelled), then airline "Compensation" pages + button where reliable official data exists.

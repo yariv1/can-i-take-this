@@ -45,3 +45,13 @@ Turkey, Spain, France duty free done. Cuba vapes parked until an official text e
 
 ## UPDATE 2026-10-11 (user): VISION + COMPENSATION PLAN
 Vision: the AUTHORITY for airline info and country customs/entry rules, all in one place. Roadmap #4 is replaced by: (1) Delayed Flight Compensation 2026: What US Airlines Owe You (/blog/delayed-flight-compensation-us-airlines-2026/; EU/UK only a short box); (2) Bumped / overbooked / denied boarding compensation (DOT cash rules); (3) Cancelled flight compensation; (4) airline "Compensation" pages (delayed, overbooking, cancelled) for the most popular US, European, Asian and Arab airlines, button visible ONLY where reliable official data exists. Demand (Ahrefs US): delayed flight compensation >1000, american airlines delayed >1000; Delta/United/Southwest/JetBlue delayed >100; cancelled, bumped, overbooked, denied boarding generic >100.
+
+## STATUS END OF SESSION 21 (2026-10-11) - READ THIS BLOCK FIRST
+- DEPLOYED this session: /blog/do-i-need-a-passport-canada-mexico-bahamas-puerto-rico-2026/ (commit b34df43a6, roadmap #3) and /blog/delayed-flight-compensation-us-airlines-2026/ (commit 45318d0c0, compensation article #1). origin/main = 45318d0c0, nothing unpushed.
+- NEXT = compensation article #2: bumped / overbooked / denied boarding (DOT cash rules; AMOUNTS MUST BE READ ON DOT PAGES AND EACH AIRLINE'S OWN PLAN BEFORE USE, not from search summaries). Then #3 cancelled flight compensation, then #4 airline "Compensation" pages + button (visible only where reliable official data exists; sections: delayed, overbooking, cancelled). Remaining original roadmap: how early to arrive at the airport, flying with a baby, ESTA, pet policy per airline, overweight fees per airline.
+- Demand (Ahrefs US buckets): bumped flight compensation >100, overbooked flight compensation >100, denied boarding compensation >100 (airline variants <100); cancelled flight compensation >100 (american, delta >100); delayed flight compensation >1000.
+- Visual mix is decided PER ARTICLE by relevance (4 photos + graphs is fine; 2 photos + 3 graphics is fine); QA gate requires only card + hero; see IMAGE_PROMPT_GUIDE.md end.
+
+## STATUS END OF SESSION 22 (2026-10-11)
+- DONE compensation article #2: `/blog/overbooked-flight-compensation-us-airlines-2026/` (file `overbooked_compensation_pillar.js`; title leads with "overbooked" because Ahrefs showed that family biggest; 3 photos card+hero+inline-1 and graphics). Sources: DOT bumping page, eCFR 250.5 ($1,075/$2,150), contracts of American, Delta, United, Southwest, JetBlue, Your Europe, UK CAA. Reported American memo (30 Sep 2026) NOT used. Alaska/Frontier not checked.
+- NEXT: compensation article #3 "cancelled flight compensation", then airline Compensation pages + button.
