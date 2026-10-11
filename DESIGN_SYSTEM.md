@@ -110,6 +110,7 @@ the simple `shell()` uses the system sans stack at `16px/1.55`).
 - `12px` — CTA, callouts, most panels
 - `10px` — logo mark, small inputs
 - `999px` — pills (chips, tabs, blog header link, theme toggle)
+- `8px` — verdict chips in article tables and flows (`.pp-y`, `.pp-n`, `.pp-p`, visual_helpers.js). User rule 2026-10-11: a full capsule only suits one or two words; longer text wraps and needs the smaller radius, so all verdict chips use 8px.
 
 **Layout widths:** `.wrap` max-width `720px` (simple shell) / `760px` (guide/air/country shells).
 
@@ -266,7 +267,7 @@ Left accent border `var(--accent)`, background `var(--surface)`. Use for key war
   <div class="stat-box"><div class="stat-num">100ml</div><div class="stat-label">Description</div></div>
 </div>
 ```
-Auto-fill grid. `stat-num` in `var(--accent)`, large. Use for 2–4 key facts.
+Auto-fill grid. `stat-num` in `var(--accent)`, large. Use for 2–4 key facts. **Text is left-aligned (user rule 2026-10-11): never centre paragraph text inside cards, it is hard to read.**
 
 ### 8.5 Timeline
 

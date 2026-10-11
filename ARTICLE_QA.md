@@ -50,3 +50,7 @@ In lists, the airline logo and its text are centred on the same horizontal axis 
 
 ## TO-DO LISTS (HARD, user order 2026-10-10)
 A "Before you fly" style step list is a to-do list: the heading has NO checkbox icon (never a big green check before a title) and every step starts with a small CHECKED checkbox (18 px, green #2FCF9B fill, dark #08111f checkmark, `todo-box`), not a number. Done once in build.js `todoLists` (it strips the heading check mark and swaps numeric `cl()` markers that follow a check-mark heading). In article files write the heading as `<h2>✅ Title</h2>` and the steps as `cl([['1', ...], ...])`; the generator does the rest. Heading check marks on any other heading are stripped too.
+
+- **SVG text size at phone width (session 22, user rule font floor + the EU261 diagram rendered 12 px):** in every inline SVG with viewBox width 360, the source font size must be 17 px or more (it is scaled by about 0.87 at 375 px); measure in the preview at 375 px with getBoundingClientRect (text height x svgWidth/360) and confirm every label stays inside the width. Wide SVGs (viewBox 520) need 20 px or more. Check before every preview.
+- **Meta description under about 160 characters** (audit_article_qa.js warns above that).
+- **Voucher/credit/refund wording:** quote the DOT page's own numbers and note when the DOT page contradicts itself (the Refunds page says both 20 calendar days and 20 business days).

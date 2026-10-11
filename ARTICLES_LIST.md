@@ -93,6 +93,7 @@ Generated 2026-10-02 from the built `blog/<slug>/index.html` pages (39 articles)
 | 58 | Airline Fees | Delayed Flight Compensation 2026: What US Airlines Owe You | `/blog/delayed-flight-compensation-us-airlines-2026/` | 2026-10-11 | 1700 |
 | 59 | Airline Fees | Overbooked Flight Compensation 2026: What US Airlines Owe You for Bumping and Denied Boarding | `/blog/overbooked-flight-compensation-us-airlines-2026/` | 2026-10-11 | 2000 |
 | 60 | Airline Fees | EU261 Compensation 2026: Does It Apply to Your Flight, How Much, and How to Claim | `/blog/eu261-compensation-explained-us-travelers-2026/` | 2026-10-11 | 2200 |
+| 61 | Airline Fees | Cancelled Flight Compensation 2026: Refund Rights and What US Airlines Owe You | `/blog/cancelled-flight-compensation-refund-us-airlines-2026/` | 2026-10-11 | 2000 |
 | 40 | US Travel Programs | TSA PreCheck vs Global Entry vs CLEAR (2026): Cost, Speed and Which to Get | `/blog/tsa-precheck-vs-global-entry-vs-clear-2026/` | 2026-10-04 | 900 |
 | 41 | US Travel Programs | TSA PreCheck Cost and How to Apply (2026): Fees by Provider, Steps and Renewal | `/blog/tsa-precheck-cost-how-to-apply-2026/` | 2026-10-04 | 850 |
 | 42 | US Travel Programs | Global Entry Cost, Application and Interview (2026): Step by Step to Renewal | `/blog/global-entry-cost-application-interview-2026/` | 2026-10-04 | 900 |
