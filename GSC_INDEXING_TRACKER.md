@@ -138,3 +138,8 @@ REQUESTED 2026-10-08: /country/european-union/tobacco/, /country/european-union/
 2026-10-11: /blog/overbooked-flight-compensation-us-airlines-2026/ NEW (TO REQUEST, after deploy and images)
 2026-10-11: /blog/eu261-compensation-explained-us-travelers-2026/ NEW (TO REQUEST, after deploy and images)
 2026-10-11: /blog/cancelled-flight-compensation-refund-us-airlines-2026/ NEW (TO REQUEST, after deploy and images)
+2026-10-11: /airline/american-airlines/compensation/ NEW (TO REQUEST, after deploy)
+2026-10-11: /airline/delta/compensation/ NEW (TO REQUEST, after deploy)
+2026-10-11: /airline/united/compensation/ NEW (TO REQUEST, after deploy)
+2026-10-11: /airline/southwest/compensation/ NEW (TO REQUEST, after deploy)
+2026-10-11: /airline/jetblue/compensation/ NEW (TO REQUEST, after deploy)

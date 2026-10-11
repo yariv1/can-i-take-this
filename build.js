@@ -71,6 +71,7 @@ var BLOG_LINKS={
   liquids:[['/blog/how-much-liquid-can-you-put-in-checked-bag-2026/','How Much Liquid Can You Put in a Checked Bag? Limits, Banned Items & Packing Tips (2026)'],['/blog/how-many-ounces-can-you-bring-on-a-plane-2026/','How Many Ounces Can You Bring on a Plane? 3.4 oz Carry-On Limit, Size Chart & Checked Bags (2026)'],['/blog/is-it-a-liquid-tsa-list-2026/','Is It a Liquid? TSA Rules for 90+ Products: Toothpaste, Mascara, Lotion & More (2026)'],['/blog/liquids-100ml-rule-2026/','How Many ml Can You Take on a Plane? The 100ml Liquids Rule (2026)'],['/blog/is-deodorant-a-liquid-2026/','Is Deodorant a Liquid? TSA Rules for Deodorant, Mascara & Toothpaste (2026)']],
   perfume:[['/blog/aerosols-on-a-plane-2026/','Can You Bring Aerosols on a Plane? (2026 TSA Rules)'],['/blog/liquids-100ml-rule-2026/','How Many ml Can You Take on a Plane? The 100ml Liquids Rule (2026)']],
   power:[['/blog/power-bank-rules-by-airline-2026/','Power Bank Rules by Airline (2026): 33 Airlines Compared'],['/blog/power-bank-rules-2026-crackdown/','Can You Bring a Power Bank on a Plane? TSA & Airline Rules (2026)']],
+  compensation:[['/blog/cancelled-flight-compensation-refund-us-airlines-2026/','Cancelled Flight Compensation 2026: Refund Rights and What US Airlines Owe You'],['/blog/delayed-flight-compensation-us-airlines-2026/','Delayed Flight Compensation 2026: What US Airlines Owe You'],['/blog/overbooked-flight-compensation-us-airlines-2026/','Overbooked Flight Compensation 2026: What US Airlines Owe You for Bumping and Denied Boarding'],['/blog/eu261-compensation-explained-us-travelers-2026/','EU261 Compensation 2026: Does It Apply to Your Flight, How Much, and How to Claim']],
   baggage:[['/blog/carry-on-size-limits-by-airline-2026/','Carry-On Size &amp; Dimensions by Airline (2026): US Airlines First'],['/blog/duty-free-bag-extra-carry-on-2026/','Is a Duty-Free Bag an Extra Carry-On? The Real Rules (2026)']],
   airalcohol:[['/blog/duty-free-bag-extra-carry-on-2026/','Is a Duty-Free Bag an Extra Carry-On? The Real Rules (2026)'],['/blog/liquids-100ml-rule-2026/','How Many ml Can You Take on a Plane? The 100ml Liquids Rule (2026)']],
   alcohol:[['/blog/duty-free-alcohol-allowance-by-country-2026/','Duty-Free Alcohol Allowance by Country (2026): Litres of Wine, Beer & Spirits You Can Bring'],['/blog/duty-free-allowance-by-country-2026/','Duty-Free Allowance by Country (2026)']],
@@ -216,12 +217,12 @@ function airShell({url,title,desc,a,fares}){
 +'.airhead h2{font-family:\'Space Grotesk\',\'Inter\',sans-serif;font-size:1.7rem;line-height:1.15;margin:0;font-weight:700}\n'
 +'.airhead h2 .muted{color:var(--muted);font-weight:600}\n'
 +'.tabs{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 8px}\n'
-+'.tab{background:var(--surface);border:1px solid var(--line);border-radius:999px;color:var(--text);text-decoration:none;font-weight:500;font-size:13.5px;padding:9px 15px;transition:.14s;display:inline-flex;align-items:center;gap:6px}\n'
++'.tab{background:var(--surface);border:1px solid var(--line);border-radius:999px;color:var(--text);text-decoration:none;font-weight:500;font-size:13.6px;padding:9px 15px;transition:.14s;display:inline-flex;align-items:center;gap:6px}\n'
 +'.tab:hover{border-color:var(--surface-2)}\n'
 +'.tab.on{background:var(--sel-bg);color:var(--sel-text);border-color:var(--sel-bg);font-weight:600}\n'
 +'.tab.back{color:var(--muted)}\n'
 +'.more{margin:0 0 26px}\n'
-+'.more summary{list-style:none;display:inline-flex;align-items:center;gap:5px;cursor:pointer;color:var(--muted);font-size:13.5px;font-weight:600;padding:6px 10px;border-radius:8px;user-select:none;transition:.14s}\n'
++'.more summary{list-style:none;display:inline-flex;align-items:center;gap:5px;cursor:pointer;color:var(--muted);font-size:13.6px;font-weight:600;padding:6px 10px;border-radius:8px;user-select:none;transition:.14s}\n'
 +'.more summary::-webkit-details-marker{display:none}\n'
 +'.more summary:hover{color:var(--text);background:var(--surface)}\n'
 +'.more summary .chev{width:15px;height:15px;transition:transform .18s}\n'
@@ -268,24 +269,20 @@ function countryShell(o){/*data-country4*/
   var flag=flagFromCode(o.c.code);
   var VICON={go:'<path d="M20 6 9 17l-5-5"/>',warn:'<path d="M12 9v4m0 4h.01M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"/>',stop:'<circle cx="12" cy="12" r="9"/><path d="M8 12h8"/>',info:'<circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v4h1"/>'};
   var VLABEL={go:'Allowed',warn:'Check first',stop:'Not allowed',info:'Check the source'};
-  var visible=[
-    {t:'\u2039 All rules',u:'/',back:true},
+  /* one scrollable tab row, same as airline pages (DESIGN_SYSTEM.md): no 'All rules', no 'Show more' */
+  var tabs=[
     {t:'Duty-free',u:'/country/'+sl+'/alcohol/',key:'alcohol'},
     {t:'Vapes',u:'/country/'+sl+'/vaping/',key:'vape'},
     {t:'Tobacco',u:'/country/'+sl+'/tobacco/',key:'tobacco'},
-    {t:'Medication',u:'/medication/into/'+sl+'/',key:'med'}
-  ];
-  var more=[
+    {t:'Medication',u:'/medication/into/'+sl+'/',key:'med'},
     {t:'Pets',u:'/pets/'+sl+'/',key:'pets'},
     {t:'Food',u:'/food/'+sl+'/',key:'food'},
     {t:'Cash',u:'/country/'+sl+'/cash/',key:'cash'},
     {t:'Plants',u:'/country/'+sl+'/plants-seeds/',key:'plants'}
   ];
   var act=o.cat||null;
-  var tabHtml=visible.map(function(t){return '<a class="tab'+(t.key&&t.key===act?' on':'')+(t.back?' back':'')+'" href="'+t.u+'">'+esc(t.t)+'</a>';}).join('');
-  var moreHtml=more.map(function(t){return '<a class="tab'+(t.key&&t.key===act?' on':'')+'" href="'+t.u+'">'+esc(t.t)+'</a>';}).join('');
-  var moreActive=more.some(function(t){return t.key&&t.key===act;});
-  var moreBlock='<details class="more" data-country2'+(moreActive?' open':'')+'><summary><span class="mlabel"></span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></summary><div class="morerow">'+moreHtml+'</div></details>';
+  var tabHtml=tabs.map(function(t){return '<a class="tab'+(t.key&&t.key===act?' on':'')+'" href="'+t.u+'">'+esc(t.t)+'</a>';}).join('');
+  var moreBlock=tabRowBlock();
 
   var main;
   var SICON={web:'\uD83C\uDF10'};
@@ -356,12 +353,12 @@ function countryShell(o){/*data-country4*/
 +'.airhead h2{font-family:\'Space Grotesk\',\'Inter\',sans-serif;font-size:1.7rem;line-height:1.15;margin:0;font-weight:700}\n'
 +'.airhead h2 .muted{color:var(--muted);font-weight:600}\n'
 +'.tabs{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 8px}\n'
-+'.tab{background:var(--surface);border:1px solid var(--line);border-radius:999px;color:var(--text);text-decoration:none;font-weight:500;font-size:13.5px;padding:9px 15px;transition:.14s;display:inline-flex;align-items:center;gap:6px}\n'
++'.tab{background:var(--surface);border:1px solid var(--line);border-radius:999px;color:var(--text);text-decoration:none;font-weight:500;font-size:13.6px;padding:9px 15px;transition:.14s;display:inline-flex;align-items:center;gap:6px}\n'
 +'.tab:hover{border-color:var(--surface-2)}\n'
 +'.tab.on{background:var(--sel-bg);color:var(--sel-text);border-color:var(--sel-bg);font-weight:600}\n'
 +'.tab.back{color:var(--muted)}\n'
 +'.more{margin:0 0 26px}\n'
-+'.more summary{list-style:none;display:inline-flex;align-items:center;gap:5px;cursor:pointer;color:var(--more-t);font-size:13.5px;font-weight:600;padding:6px 10px;border-radius:8px;user-select:none;transition:.14s}\n'
++'.more summary{list-style:none;display:inline-flex;align-items:center;gap:5px;cursor:pointer;color:var(--more-t);font-size:13.6px;font-weight:600;padding:6px 10px;border-radius:8px;user-select:none;transition:.14s}\n'
 +'.more summary::-webkit-details-marker{display:none}\n'
 +'.more summary:hover{color:var(--more-th);background:var(--more-hbg)}\n'
 +'.more summary .chev{width:15px;height:15px;transition:transform .18s}\n'
@@ -377,13 +374,13 @@ function countryShell(o){/*data-country4*/
 +'.strip .badge{width:34px;height:34px;border-radius:10px;display:grid;place-items:center;background:rgba(0,0,0,.16)}\n'
 +'.strip .badge svg{width:19px;height:19px}\n'
 +'.strip .verdict{font-family:\'Space Grotesk\',sans-serif;font-weight:700;font-size:20px;letter-spacing:-.4px;line-height:1}\n'
-+'.strip .vsub{font-family:\'Space Mono\',monospace;font-size:9.5px;letter-spacing:1px;text-transform:uppercase;opacity:.75;margin-top:3px}\n'
++'.strip .vsub{font-family:\'Space Mono\',monospace;font-size:13.6px;letter-spacing:1px;text-transform:uppercase;opacity:.75;margin-top:3px}\n'
 +'.go .strip{background:var(--go)}.warn .strip{background:var(--warn)}.stop .strip{background:var(--stop)}.info .strip{background:var(--info)}.nomatch .strip{background:#363F52;color:#EDF0F7}\n'
 +'.perf{position:relative;height:0;border-top:2px dashed var(--card-line)}\n'
 +'.perf::before,.perf::after{content:"";position:absolute;top:-11px;width:22px;height:22px;border-radius:50%;background:var(--card-notch);transition:background .25s}\n'
 +'.perf::before{left:-11px}.perf::after{right:-11px}\n'
 +'.body{padding:16px 18px 18px}\n'
-+'.route{font-family:\'Space Mono\',monospace;font-size:10.5px;letter-spacing:.5px;color:var(--card-muted);display:flex;flex-wrap:wrap;gap:6px 10px;margin-bottom:12px}\n'
++'.route{font-family:\'Space Mono\',monospace;font-size:13.6px;letter-spacing:.5px;color:var(--card-muted);display:flex;flex-wrap:wrap;gap:6px 10px;margin-bottom:12px}\n'
 +'.route b{color:var(--card-text)}\n'
 +'.headline{font-family:\'Space Grotesk\',sans-serif;font-weight:600;font-size:18px;line-height:1.3;margin:0 0 10px;color:var(--card-text)}\n'
 +'.detail{list-style:none;margin:0;padding:0}\n'
@@ -396,7 +393,7 @@ function countryShell(o){/*data-country4*/
 +'.qgrid{display:flex;flex-direction:column;gap:10px}\n'
 +'.qcard{display:flex;align-items:stretch;gap:0;background:var(--card);border-radius:14px;overflow:hidden;text-decoration:none;box-shadow:0 12px 30px rgba(0,0,0,.22);transition:transform .12s}\n'
 +'.qcard:hover{transform:translateY(-1px)}\n'
-+'.qcard .qv{flex:none;width:96px;display:flex;align-items:center;justify-content:center;text-align:center;padding:12px 8px;font-family:\'Space Grotesk\',sans-serif;font-weight:700;font-size:13px;line-height:1.15;color:#08111f}\n'
++'.qcard .qv{flex:none;width:96px;display:flex;align-items:center;justify-content:center;text-align:center;padding:12px 8px;font-family:\'Space Grotesk\',sans-serif;font-weight:700;font-size:13.6px;line-height:1.15;color:#08111f}\n'
 +'.qcard.go .qv{background:var(--go)}.qcard.warn .qv{background:var(--warn)}.qcard.stop .qv{background:var(--stop)}.qcard.info .qv{background:var(--info)}\n'
 +'.qcard .ql{padding:11px 14px;color:var(--card-text);display:flex;flex-direction:column;justify-content:center;gap:3px}\n'
 +'.qcard .ql b{font-family:\'Space Grotesk\',sans-serif;font-weight:600;font-size:16px}\n'
@@ -416,7 +413,7 @@ function countryShell(o){/*data-country4*/
 +'.sug:last-child{border-bottom:0}\n'
 +'.sug:hover{background:var(--surface-2)}\n'
 +'.sug.anyway{color:var(--accent);font-weight:600}\n'
-+'.sug .ing{font-family:\'Space Mono\',monospace;font-size:10.5px;color:var(--muted);align-self:center;font-weight:400}\n'
++'.sug .ing{font-family:\'Space Mono\',monospace;font-size:13.6px;color:var(--muted);align-self:center;font-weight:400}\n'
 +'.tagrow{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:11px}\n'
 +'.tag{font-family:\'Space Mono\',monospace;font-size:13px;letter-spacing:.4px;padding:5px 9px;border-radius:7px}\n'
 +'.tag-neutral{background:rgba(140,150,170,.16);color:var(--tg-neutral)}\n'
@@ -424,14 +421,14 @@ function countryShell(o){/*data-country4*/
 +'.tag-amber{background:rgba(245,184,65,.18);color:var(--tg-amber);font-weight:700}\n'
 +'.tag-stop{background:rgba(255,107,107,.18);color:var(--tg-stop);font-weight:700}\n'
 +'.help{margin-top:13px;background:var(--card-sub);border-radius:12px;padding:12px 13px}\n'
-+'.help-h{font-family:\'Space Mono\',monospace;font-size:13px;letter-spacing:1.2px;text-transform:uppercase;color:var(--card-muted);margin-bottom:9px}\n'
++'.help-h{font-family:\'Space Mono\',monospace;font-size:13.6px;letter-spacing:1.2px;text-transform:uppercase;color:var(--card-muted);margin-bottom:9px}\n'
 +'.hitem{display:flex;align-items:center;gap:10px;padding:9px 11px;border-radius:9px;background:var(--card);text-decoration:none;color:var(--card-text);margin-bottom:6px;border:1px solid var(--card-sub-line)}\n'
 +'a.hitem:hover{border-color:var(--accent)}\n'
 +'.hi-ic{width:20px;text-align:center;font-size:14px;flex:none}\n'
-+'.hi-l{font-size:13px;font-weight:600;line-height:1.25;display:flex;flex-direction:column;min-width:0}\n'
-+'.hi-l small{font-weight:400;font-size:11px;color:var(--card-muted);margin-top:1px}\n'
++'.hi-l{font-size:13.6px;font-weight:600;line-height:1.25;display:flex;flex-direction:column;min-width:0}\n'
++'.hi-l small{font-weight:400;font-size:13.6px;color:var(--card-muted);margin-top:1px}\n'
 +'.hi-go{margin-left:auto;color:var(--card-muted)}\n'
-+'.hnote{font-size:13px;color:var(--card-muted);line-height:1.4;margin-top:8px}\n'
++'.hnote{font-size:13.6px;color:var(--card-muted);line-height:1.4;margin-top:8px}\n'
 +'.toproute{margin-bottom:8px}\n'
 +'.tlinks{margin-top:.7em;text-align:center;line-height:2}.tlinks a{color:#8A96B8;text-decoration:none}.tlinks a:hover{color:var(--accent)}.tlinks a+a::before{content:"\u2022";color:#8A96B8;margin:0 10px}\n'
 +'footer{margin-top:2.4em;color:var(--muted);font-size:.82rem;border-top:1px solid var(--line);padding-top:1em;line-height:1.55}\n'
@@ -455,23 +452,20 @@ function countryShell(o){/*data-country4*/
 
 /*AIRPLANE_PAGES_V1*/
 const CARRYON_PAGES=require('./carryon_pages.js');
+function tabRowBlock(){return '<style>.tabs{flex-wrap:nowrap;overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:none;-webkit-overflow-scrolling:touch;scroll-behavior:smooth;margin:0 0 22px}.tabs::-webkit-scrollbar{display:none}.tabs .tab{flex:none;white-space:nowrap}.tabs-wrap{position:relative}.tabs-arrow{position:absolute;top:0;bottom:22px;width:44px;border:0;cursor:pointer;display:none;align-items:center;color:var(--text);padding:0}.tabs-arrow svg{width:18px;height:18px;flex:none}.tabs-arrow.l{left:0;justify-content:flex-start;background:linear-gradient(90deg,var(--bg) 55%,transparent)}.tabs-arrow.r{right:0;justify-content:flex-end;background:linear-gradient(270deg,var(--bg) 55%,transparent)}.tabs-arrow.on{display:flex}@media (hover:none){.tabs-arrow{display:none!important}}</style><script src="/airtabs.js" defer></scr'+'ipt>';}
+const AIRCOMP=require('./airline_compensation.js');
 function airTabs(sl, active){
-  var visible=[
-    {t:'\u2039 All rules',u:'/',back:true},
+  /* one horizontally scrollable row (YouTube-style filter chips): no 'All rules' tab (the header has Back), no 'Show more', Compensation always LAST (user order 2026-10-11) */
+  var tabs=[
     {t:'Baggage',u:'/airline/'+sl+'/baggage-allowance/',key:'baggage'},
     {t:'Liquids',u:'/airline/'+sl+'/liquids/',key:'liquids'},
     {t:'Power bank',u:'/airline/'+sl+'/power-bank/',key:'power'},
-    {t:'Vape',u:'/airline/'+sl+'/vape-e-cigarette/',key:'vape'}
-  ];
-  if(CARRYON_PAGES[sl]) visible.splice(2,0,{t:'Carry-on',u:'/blog/'+sl+'-carry-on-size-2026/',key:'carryon'});
-  var more=[
+    {t:'Vape',u:'/airline/'+sl+'/vape-e-cigarette/',key:'vape'},
     {t:'Perfume',u:'/airline/'+sl+'/perfume-aerosols/',key:'perfume'},
     {t:'Alcohol',u:'/airline/'+sl+'/alcohol/',key:'alcohol'}
-  ];
-  var tabHtml=visible.map(function(t){return '<a class="tab'+(t.key&&t.key===active?' on':'')+(t.back?' back':'')+'" href="'+t.u+'">'+esc(t.t)+'</a>';}).join('');
-  var moreHtml=more.map(function(t){return '<a class="tab'+(t.key&&t.key===active?' on':'')+'" href="'+t.u+'">'+esc(t.t)+'</a>';}).join('');
-  var moreActive=more.some(function(t){return t.key===active;});
-  var moreBlock='<details class="more" data-airmore'+(moreActive?' open':'')+'><summary><span class="mlabel"></span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></summary><div class="morerow">'+moreHtml+'</div></details>';
+  ].concat(AIRCOMP[sl]?[{t:'Compensation',u:'/airline/'+sl+'/compensation/',key:'compensation'}]:[]);
+  var tabHtml=tabs.map(function(t){return '<a class="tab'+(t.key&&t.key===active?' on':'')+'" href="'+t.u+'">'+esc(t.t)+'</a>';}).join('');
+  var moreBlock=tabRowBlock();
   return {tabHtml:tabHtml, moreBlock:moreBlock};
 }
 function airPlaneShell(o){
@@ -495,7 +489,7 @@ function airPlaneShell(o){
   if(VAPE){ setS({mode:'plane',bag:'carry',cat:cat,detail:null,airline:a.name}); vdef=(o.vCarry||w.verdict()); carryVape=card(vdef,'CARRY-ON'); }
   setS({mode:'plane',bag:'checked',cat:cat,detail:(VOL?'100':(POWER?'lo':null)),airline:a.name});
   var checkedCard=H?'':card(o.vChecked||w.verdict(),'CHECKED'); if(H)vdef=o.vCarry;
-  var initCard=H?card(o.vCarry,'ECONOMY'):(VAPE?carryVape:carryMap[def]);
+  var initCard=o.comp?'':H?card(o.vCarry,'ECONOMY'):(VAPE?carryVape:carryMap[def]);
   var bagToggle='<div class="slab">Where in your bags?</div><div class="bag2" id="bagSeg"><button data-bag="carry" class="on">Carry-on <small>Trolley, backpack, under-seat</small></button><button data-bag="checked">Checked <small>Goes in the hold</small></button></div>';
   var pickerHtml='';
   if(!VAPE){ var list=VOL?w.DETAILS.vol:w.DETAILS.wh; var lbl=POWER?'Battery capacity?':'How much?'; pickerHtml='<div class="slab">'+lbl+'</div><div class="chips" id="detChips">'+list.map(function(d){return '<button class="chip sm'+(d.id===def?' on':'')+'" data-d="'+d.id+'">'+esc(d.label)+'</button>';}).join('')+'</div>'; }
@@ -534,7 +528,7 @@ function airPlaneShell(o){
   var logo='<span class="logo" style="background:#fff"><span>'+esc(a.iata)+'</span><img class="logo-img" data-srcs="'+LOGOSRC+'" data-i="0" src="'+LOGOSRC+'" alt=""></span>';
   var t=airTabs(sl,cat);
   var faqLd={"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":meta.h1,"acceptedAnswer":{"@type":"Answer","text":faqA}}]};
-  if(TOP&&TOP.faq) TOP.faq.forEach(function(q){faqLd.mainEntity.push({"@type":"Question","name":q[0],"acceptedAnswer":{"@type":"Answer","text":q[1]}});});
+  if(o.faq) o.faq.forEach(function(q){faqLd.mainEntity.push({"@type":"Question","name":q[0],"acceptedAnswer":{"@type":"Answer","text":q[1]}});});
   if(TOP&&TOP.faq) TOP.faq.forEach(function(q){faqLd.mainEntity.push({"@type":"Question","name":q[0],"acceptedAnswer":{"@type":"Answer","text":q[1]}});});
   var bread={"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":BASE+"/"},{"@type":"ListItem","position":2,"name":((G||H)?o.h1:a.name+" "+cat),"item":canonical}]};
   return '<!doctype html><html lang="en"><head>\n'
@@ -574,12 +568,12 @@ function airPlaneShell(o){
 +'.airhead h2{font-family:\'Space Grotesk\',\'Inter\',sans-serif;font-size:1.7rem;line-height:1.15;margin:0;font-weight:700}\n'
 +'.airhead h2 .muted{color:var(--muted);font-weight:600}\n'
 +'.tabs{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 8px}\n'
-+'.tab{background:var(--surface);border:1px solid var(--line);border-radius:999px;color:var(--text);text-decoration:none;font-weight:500;font-size:13.5px;padding:9px 15px;transition:.14s;display:inline-flex;align-items:center;gap:6px}\n'
++'.tab{background:var(--surface);border:1px solid var(--line);border-radius:999px;color:var(--text);text-decoration:none;font-weight:500;font-size:13.6px;padding:9px 15px;transition:.14s;display:inline-flex;align-items:center;gap:6px}\n'
 +'.tab:hover{border-color:var(--surface-2)}\n'
 +'.tab.on{background:var(--sel-bg);color:var(--sel-text);border-color:var(--sel-bg);font-weight:600}\n'
 +'.tab.back{color:var(--muted)}\n'
 +'.more{margin:0 0 26px}\n'
-+'.more summary{list-style:none;display:inline-flex;align-items:center;gap:5px;cursor:pointer;color:var(--more-t);font-size:13.5px;font-weight:600;padding:6px 10px;border-radius:8px;user-select:none;transition:.14s}\n'
++'.more summary{list-style:none;display:inline-flex;align-items:center;gap:5px;cursor:pointer;color:var(--more-t);font-size:13.6px;font-weight:600;padding:6px 10px;border-radius:8px;user-select:none;transition:.14s}\n'
 +'.more summary::-webkit-details-marker{display:none}\n'
 +'.more summary:hover{color:var(--more-th);background:var(--more-hbg)}\n'
 +'.more summary .chev{width:15px;height:15px;transition:transform .18s}\n'
@@ -595,13 +589,13 @@ function airPlaneShell(o){
 +'.strip .badge{width:34px;height:34px;border-radius:10px;display:grid;place-items:center;background:rgba(0,0,0,.16)}\n'
 +'.strip .badge svg{width:19px;height:19px}\n'
 +'.strip .verdict{font-family:\'Space Grotesk\',sans-serif;font-weight:700;font-size:20px;letter-spacing:-.4px;line-height:1}\n'
-+'.strip .vsub{font-family:\'Space Mono\',monospace;font-size:9.5px;letter-spacing:1px;text-transform:uppercase;opacity:.75;margin-top:3px}\n'
++'.strip .vsub{font-family:\'Space Mono\',monospace;font-size:13.6px;letter-spacing:1px;text-transform:uppercase;opacity:.75;margin-top:3px}\n'
 +'.go .strip{background:var(--go)}.warn .strip{background:var(--warn)}.stop .strip{background:var(--stop)}.info .strip{background:var(--info)}.nomatch .strip{background:#363F52;color:#EDF0F7}\n'
 +'.perf{position:relative;height:0;border-top:2px dashed var(--card-line)}\n'
 +'.perf::before,.perf::after{content:"";position:absolute;top:-11px;width:22px;height:22px;border-radius:50%;background:var(--card-notch);transition:background .25s}\n'
 +'.perf::before{left:-11px}.perf::after{right:-11px}\n'
 +'.body{padding:16px 18px 18px}\n'
-+'.route{font-family:\'Space Mono\',monospace;font-size:10.5px;letter-spacing:.5px;color:var(--card-muted);display:flex;flex-wrap:wrap;gap:6px 10px;margin-bottom:12px}\n'
++'.route{font-family:\'Space Mono\',monospace;font-size:13.6px;letter-spacing:.5px;color:var(--card-muted);display:flex;flex-wrap:wrap;gap:6px 10px;margin-bottom:12px}\n'
 +'.route b{color:var(--card-text)}\n'
 +'.headline{font-family:\'Space Grotesk\',sans-serif;font-weight:600;font-size:18px;line-height:1.3;margin:0 0 10px;color:var(--card-text)}\n'
 +'.detail{list-style:none;margin:0;padding:0}\n'
@@ -614,7 +608,7 @@ function airPlaneShell(o){
 +'.qgrid{display:flex;flex-direction:column;gap:10px}\n'
 +'.qcard{display:flex;align-items:stretch;gap:0;background:var(--card);border-radius:14px;overflow:hidden;text-decoration:none;box-shadow:0 12px 30px rgba(0,0,0,.22);transition:transform .12s}\n'
 +'.qcard:hover{transform:translateY(-1px)}\n'
-+'.qcard .qv{flex:none;width:96px;display:flex;align-items:center;justify-content:center;text-align:center;padding:12px 8px;font-family:\'Space Grotesk\',sans-serif;font-weight:700;font-size:13px;line-height:1.15;color:#08111f}\n'
++'.qcard .qv{flex:none;width:96px;display:flex;align-items:center;justify-content:center;text-align:center;padding:12px 8px;font-family:\'Space Grotesk\',sans-serif;font-weight:700;font-size:13.6px;line-height:1.15;color:#08111f}\n'
 +'.qcard.go .qv{background:var(--go)}.qcard.warn .qv{background:var(--warn)}.qcard.stop .qv{background:var(--stop)}.qcard.info .qv{background:var(--info)}\n'
 +'.qcard .ql{padding:11px 14px;color:var(--card-text);display:flex;flex-direction:column;justify-content:center;gap:3px}\n'
 +'.qcard .ql b{font-family:\'Space Grotesk\',sans-serif;font-weight:600;font-size:16px}\n'
@@ -634,7 +628,7 @@ function airPlaneShell(o){
 +'.sug:last-child{border-bottom:0}\n'
 +'.sug:hover{background:var(--surface-2)}\n'
 +'.sug.anyway{color:var(--accent);font-weight:600}\n'
-+'.sug .ing{font-family:\'Space Mono\',monospace;font-size:10.5px;color:var(--muted);align-self:center;font-weight:400}\n'
++'.sug .ing{font-family:\'Space Mono\',monospace;font-size:13.6px;color:var(--muted);align-self:center;font-weight:400}\n'
 +'.tagrow{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:11px}\n'
 +'.tag{font-family:\'Space Mono\',monospace;font-size:13px;letter-spacing:.4px;padding:5px 9px;border-radius:7px}\n'
 +'.tag-neutral{background:rgba(140,150,170,.16);color:var(--tg-neutral)}\n'
@@ -642,35 +636,35 @@ function airPlaneShell(o){
 +'.tag-amber{background:rgba(245,184,65,.18);color:var(--tg-amber);font-weight:700}\n'
 +'.tag-stop{background:rgba(255,107,107,.18);color:var(--tg-stop);font-weight:700}\n'
 +'.help{margin-top:13px;background:var(--card-sub);border-radius:12px;padding:12px 13px}\n'
-+'.help-h{font-family:\'Space Mono\',monospace;font-size:13px;letter-spacing:1.2px;text-transform:uppercase;color:var(--card-muted);margin-bottom:9px}\n'
++'.help-h{font-family:\'Space Mono\',monospace;font-size:13.6px;letter-spacing:1.2px;text-transform:uppercase;color:var(--card-muted);margin-bottom:9px}\n'
 +'.hitem{display:flex;align-items:center;gap:10px;padding:9px 11px;border-radius:9px;background:var(--card);text-decoration:none;color:var(--card-text);margin-bottom:6px;border:1px solid var(--card-sub-line)}\n'
 +'a.hitem:hover{border-color:var(--accent)}\n'
 +'.hi-ic{width:20px;text-align:center;font-size:14px;flex:none}\n'
-+'.hi-l{font-size:13px;font-weight:600;line-height:1.25;display:flex;flex-direction:column;min-width:0}\n'
-+'.hi-l small{font-weight:400;font-size:11px;color:var(--card-muted);margin-top:1px}\n'
++'.hi-l{font-size:13.6px;font-weight:600;line-height:1.25;display:flex;flex-direction:column;min-width:0}\n'
++'.hi-l small{font-weight:400;font-size:13.6px;color:var(--card-muted);margin-top:1px}\n'
 +'.hi-go{margin-left:auto;color:var(--card-muted)}\n'
-+'.hnote{font-size:13px;color:var(--card-muted);line-height:1.4;margin-top:8px}\n'
++'.hnote{font-size:13.6px;color:var(--card-muted);line-height:1.4;margin-top:8px}\n'
 +'.toproute{margin-bottom:8px}\n'
 +'.tlinks{margin-top:.7em;text-align:center;line-height:2}.tlinks a{color:#8A96B8;text-decoration:none}.tlinks a:hover{color:var(--accent)}.tlinks a+a::before{content:"\u2022";color:#8A96B8;margin:0 10px}\n'
 +'footer{margin-top:2.4em;color:var(--muted);font-size:.82rem;border-top:1px solid var(--line);padding-top:1em;line-height:1.55}\n'
 +'.airhead .logo{position:relative;width:40px;height:40px;border-radius:9px;overflow:hidden;display:inline-grid;place-items:center;color:#1B2233;background:#fff;font-family:\'Space Mono\',monospace;font-size:11px;font-weight:700;flex:none}\n'
 +'.airhead .logo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}\n'
-+'.slab{font-family:\'Space Mono\',monospace;font-size:9.5px;letter-spacing:1.6px;text-transform:uppercase;color:var(--muted);margin:16px 4px 10px}\n'
++'.slab{font-family:\'Space Mono\',monospace;font-size:13.6px;letter-spacing:1.6px;text-transform:uppercase;color:var(--muted);margin:16px 4px 10px}\n'
 +'.chips{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 14px}\n'
-+'.chip{background:var(--surface);border:1px solid var(--line);border-radius:999px;color:var(--text);cursor:pointer;font-family:\'Inter\',sans-serif;font-weight:500;font-size:13.5px;padding:9px 14px;transition:.14s;display:inline-flex;align-items:center;gap:7px}\n'
++'.chip{background:var(--surface);border:1px solid var(--line);border-radius:999px;color:var(--text);cursor:pointer;font-family:\'Inter\',sans-serif;font-weight:500;font-size:13.6px;padding:9px 14px;transition:.14s;display:inline-flex;align-items:center;gap:7px}\n'
 +'.chip:hover{border-color:var(--surface-2)}\n'
 +'.chip.on{background:var(--sel-bg);color:var(--sel-text);border-color:var(--sel-bg);font-weight:600}\n'
-+'.chip.sm{font-family:\'Space Mono\',monospace;font-size:12.5px;font-weight:700;padding:8px 13px}\n'
++'.chip.sm{font-family:\'Space Mono\',monospace;font-size:13.6px;font-weight:700;padding:8px 13px}\n'
 +'.bag2{display:grid;grid-template-columns:1fr 1fr;gap:9px;align-items:stretch;margin:0 0 14px}\n'
-+'.bag2 button{background:var(--surface);border:1px solid var(--line);border-radius:13px;color:var(--text);cursor:pointer;font-family:\'Inter\',sans-serif;font-weight:600;font-size:13.5px;padding:13px 12px;text-align:left;transition:.15s;line-height:1.22;display:flex;flex-direction:column;justify-content:flex-start}\n'
-+'.bag2 button small{display:block;font-weight:400;font-size:11px;color:var(--muted);margin-top:3px}\n'
++'.bag2 button{background:var(--surface);border:1px solid var(--line);border-radius:13px;color:var(--text);cursor:pointer;font-family:\'Inter\',sans-serif;font-weight:600;font-size:13.6px;padding:13px 12px;text-align:left;transition:.15s;line-height:1.22;display:flex;flex-direction:column;justify-content:flex-start}\n'
++'.bag2 button small{display:block;font-weight:400;font-size:13.6px;color:var(--muted);margin-top:3px}\n'
 +'.bag2 button.on{border-color:var(--sel-bg);background:var(--surface);box-shadow:inset 0 0 0 1px var(--sel-bg)}\n'
 +READMORE_CSS+'</style></head><body>\n'
 +'<div class="wrap">\n'
 +'<div class="topbar"><div class="topbar-left"><a class="back-btn" href="/" aria-label="Go back" onclick="if(history.length>1&&document.referrer.indexOf(location.origin)==0){history.back();return false}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M12 19l-7-7 7-7"/></svg></a><a class="brand" href="/" aria-label="canitakethis.co home"><span class="mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.8 19.2 16 11l3.5-3.5a2.1 2.1 0 0 0-3-3L13 8 4.8 6.2a.5.5 0 0 0-.5.8l3.9 4.3-2 2-2.2-.4a.5.5 0 0 0-.5.8L6 17l2.7 2.4a.5.5 0 0 0 .8-.5l-.4-2.2 2-2 4.3 3.9a.5.5 0 0 0 .8-.5Z"/></svg></span><h1>can i take this?</h1></a></div>'
 +'<div class="topbar-right"><a href="/blog/" class="hdr-blog-link">Blog</a><button class="theme-toggle" id="themeToggle" onclick="__tt()"><span class="ico" id="themeIcon"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></span><span id="themeLabel">Light</span></button></div></div>\n'
 +(G?'<div class="airhead"><span class="logo" style="background:var(--surface-2);color:var(--text);font-size:20px">&#9992;</span><h2>'+esc(o.head)+' <span class="muted">All airlines</span></h2></div>\n':'<div class="airhead">'+logo+'<h2>'+esc(a.name)+' <span class="muted">Airline Rules</span></h2></div>\n<nav class="tabs">'+t.tabHtml+'</nav>\n'+t.moreBlock+'\n')
-+'<main>'+bagToggle+pickerHtml+'<div id="planeCard">'+initCard+'</div>'+(TOP?TOPICS.render(a,TOP):'')+(o.extra||'')+'</main>\n'+clientScript+blogReadBlock(H?'baggage':(cat==='alcohol'?'airalcohol':cat))
++'<main>'+bagToggle+pickerHtml+'<div id="planeCard">'+initCard+'</div>'+(TOP?TOPICS.render(a,TOP):'')+(o.extra||'')+'</main>\n'+clientScript+blogReadBlock(o.readKey||(H?'baggage':(cat==='alcohol'?'airalcohol':cat)))
 +'<footer>Rules change and vary by nationality, route and fare. This is guidance, not legal advice \u2014 always confirm with the airline or the official customs authority before you travel. Updated 2026.<nav class="tlinks"><a href="/guides/">All Guides</a><a href="/guides/liquids/">Liquids 100ml Rule</a><a href="/guides/power-banks/">Power Bank Rules</a><a href="/guides/vapes/">Vape &amp; E-Cig Guide</a><a href="/blog/">Blog</a></nav><nav class="tlinks"><a href="/about/">About</a><a href="/contact/">Contact</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a></nav></footer>\n'
 +'</div>\n'
 +'<script>function advLogo(im){var l=(im.dataset.srcs||"").split("|"),i=parseInt(im.dataset.i||"0",10)+1;if(i<l.length){im.dataset.i=i;im.src=l[i];}else{im.style.display="none";}}document.querySelectorAll("img.logo-img").forEach(function(im){im.onerror=function(){advLogo(im);};if(im.complete&&im.naturalWidth===0)advLogo(im);});</scr'+'ipt>\n'
@@ -863,6 +857,12 @@ function run(){
       desc:BAGD.DETAIL[a.name]?BAGD.DETAIL[a.name].desc:desc, a, fares:f
     }));
     pages.push({url,changefreq:'weekly'});
+
+    if(AIRCOMP[slug(a.name)]){
+      const C=AIRCOMP[slug(a.name)], curl=`/airline/${slug(a.name)}/compensation/`;
+      write(curl+'index.html', airPlaneShell({a:a,cat:'compensation',url:curl,hub:true,comp:true,h1:C.h1,ttl:C.ttl,desc:C.desc,faq:C.faq,vCarry:{status:'info',head:C.answer,lines:[]},extra:C.render(a),readKey:'compensation'}));
+      pages.push({url:curl,changefreq:'monthly'});
+    }
 
     // airline hub
     const hub=`/airline/${slug(a.name)}/`;
