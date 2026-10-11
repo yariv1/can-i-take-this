@@ -863,6 +863,7 @@ const out = {};
 }
 
 Object.assign(out, require('./airline_compensation_eu.js')(render));
+Object.assign(out, require('./airline_compensation_other.js')(render));
 
 Object.defineProperty(out, '__render', { value: render, enumerable: false });
 module.exports = out;
