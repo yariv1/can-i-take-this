@@ -90,6 +90,7 @@ Generated 2026-10-02 from the built `blog/<slug>/index.html` pages (39 articles)
 | 55 | Carry-On Size | Personal Item Size by Airline 2026: Official Limits in Inches and cm | `/blog/personal-item-size-by-airline-2026/` | 2026-10-10 | 900 |
 | 56 | Carry-On Size | Basic Economy Carry-On 2026: Does United, Delta or American Allow One? | `/blog/basic-economy-carry-on-rules-2026/` | 2026-10-10 | 1000 |
 | 57 | Entry Permits | Do You Need a Passport to Go to Canada, Mexico, the Bahamas or Puerto Rico? (US Citizens 2026) | `/blog/do-i-need-a-passport-canada-mexico-bahamas-puerto-rico-2026/` | 2026-10-11 | 1300 |
+| 58 | Airline Fees | Delayed Flight Compensation 2026: What US Airlines Owe You | `/blog/delayed-flight-compensation-us-airlines-2026/` | 2026-10-11 | 1700 |
 | 40 | US Travel Programs | TSA PreCheck vs Global Entry vs CLEAR (2026): Cost, Speed and Which to Get | `/blog/tsa-precheck-vs-global-entry-vs-clear-2026/` | 2026-10-04 | 900 |
 | 41 | US Travel Programs | TSA PreCheck Cost and How to Apply (2026): Fees by Provider, Steps and Renewal | `/blog/tsa-precheck-cost-how-to-apply-2026/` | 2026-10-04 | 850 |
 | 42 | US Travel Programs | Global Entry Cost, Application and Interview (2026): Step by Step to Renewal | `/blog/global-entry-cost-application-interview-2026/` | 2026-10-04 | 900 |

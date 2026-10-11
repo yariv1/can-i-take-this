@@ -42,3 +42,6 @@ TSA wait times (live data), lost luggage store intent, single-item buttons for t
 Turkey, Spain, France duty free done. Cuba vapes parked until an official text exists. Workflow per article: see memory project_blog_roadmap.md section 4.
 
 ## STATUS 2026-10-11 (session 21): #3 DONE and deployed (4 photos + 3 graphics). NEXT = #4 flight delay compensation US vs EU/UK.
+
+## UPDATE 2026-10-11 (user): VISION + COMPENSATION PLAN
+Vision: the AUTHORITY for airline info and country customs/entry rules, all in one place. Roadmap #4 is replaced by: (1) Delayed Flight Compensation 2026: What US Airlines Owe You (/blog/delayed-flight-compensation-us-airlines-2026/; EU/UK only a short box); (2) Bumped / overbooked / denied boarding compensation (DOT cash rules); (3) Cancelled flight compensation; (4) airline "Compensation" pages (delayed, overbooking, cancelled) for the most popular US, European, Asian and Arab airlines, button visible ONLY where reliable official data exists. Demand (Ahrefs US): delayed flight compensation >1000, american airlines delayed >1000; Delta/United/Southwest/JetBlue delayed >100; cancelled, bumped, overbooked, denied boarding generic >100.
