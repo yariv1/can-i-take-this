@@ -4,6 +4,7 @@
 1. `git pull --rebase --autostash origin main` (the scheduled job commits `advisories.json` to main every 6 hours; pull first so the push is not rejected; if `advisories.json` conflicts, take the remote copy and re-run step 2).
 2. `node update_rates.js` then `node update_advisories.js` (do not call it repeatedly: the State Dept data API rate-limits; the script falls back to the State Dept RSS feed).
 3. `node build.js`, then `node audit_article_qa.js <slug>` must PASS, and `node audit_seo.js --fail` must pass for the whole site (SEO_RULES.md).
+3a. **`node audit_bag_selector.js` must pass (HARD, 2026-10-12):** the Carry-on / Checked selector is one component with fixed texts on every page (DESIGN_SYSTEM.md 8.18).
 3b. **`node audit_seo_change_scope.js` must pass (HARD, 2026-10-12).** It blocks the commit when more than 40 existing pages change a title, description, H1, canonical, robots, schema or related-links block versus what is live. Never override without the user's explicit written approval (SEO_RULES.md CHANGE CONTROL, SEO_INCIDENT_2026-10-07.md).
 4. `git add -u` plus explicit `git add` of new files (never `git add -A`, never `.claude/`), commit, `git push origin main`.
 5. Verify the live URL returns 200 (1-2 min), update `GSC_INDEXING_TRACKER.md` (new URLs as TO REQUEST) and list them in the reply.

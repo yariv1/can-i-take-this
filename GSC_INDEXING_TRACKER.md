@@ -192,3 +192,6 @@ https://canitakethis.co/food/romania/
 https://canitakethis.co/food/iceland/
 https://canitakethis.co/food/argentina/
 https://canitakethis.co/food/serbia/
+
+## 2026-10-12 baggage pages: chip-to-selector cards (existing URLs, TO REQUEST re-index, top ones first)
+airline/<slug>/baggage-allowance/ for delta, southwest, american-airlines, united, british-airways, ryanair, emirates, lufthansa, air-canada, jetblue (the rest follow)

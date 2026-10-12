@@ -10,7 +10,7 @@ module.exports = {
   ],
   "United": [
     { label: "Basic Economy", cabin: "Personal item only.", checked: "A carry-on checked for a fee starts at $50 in the lobby, $75 at the gate." },
-    { label: "Economy and above", cabin: "Whether a checked bag is free depends on your ticket, route and MileagePlus status.", checked: "Up to 62 total inches (30 × 20 × 12 in); 50 lb in Economy and Premium Economy, 70 lb in Business, First, Polaris." }
+    { label: "Economy and above", cabin: "See the detail below.", checked: "Free or paid depends on your ticket, route and MileagePlus status. Up to 62 total inches (30 × 20 × 12 in); 50 lb in Economy and Premium Economy, 70 lb in Business, First, Polaris." }
   ],
   "Emirates": [
     { label: "Economy", cabin: "1 carry-on 7 kg, 55 × 38 × 22 cm.", checked: "Weight routes: Special 20 kg, Saver 25 kg, Flex 30 kg, Flex Plus 35 kg. Americas and Africa: mostly 2 bags of 23 kg." },

@@ -177,7 +177,7 @@ function airShell({url,title,desc,a,fares}){
   const _at=airTabs(slug(a.name),'baggage');
   const tabsHtml=_at.tabHtml;
   const moreBlock=_at.moreBlock;
-  const blocks=((BD&&BCARDS[a.name])||fares).map((fr,_i,_arr)=>{
+  const _oldBlocks=((BD&&BCARDS[a.name])||fares).map((fr,_i,_arr)=>{
     if(/^Same( cabin allowance| cabin| as above)?\.?$/i.test(fr.cabin)&&_i>0){fr=Object.assign({},fr,{cabin:_arr[_i-1].cabin});}
     const notice=NOTICE.test(fr.checked)?'<div class="notice"><div class="ntitle">Please notice</div><div class="ntext">'+esc(fr.checked)+'</div></div>':'';
     return '<section class="fblock"><h2>'+esc(fr.label)+' <span class="tier">'+esc(fareTiers(fr.label))+'</span> <span class="tag tag-neutral">PER PASSENGER</span></h2>'
@@ -185,6 +185,7 @@ function airShell({url,title,desc,a,fares}){
       +'<div class="sub-h">Checked in</div><p class="sub-p">'+esc(fr.checked)+'</p>'
       +notice+'</section>';
   }).join('');
+  const blocks=(BD&&BCARDS[a.name])?BAGD.pickerBag(a,BCARDS[a.name]):_oldBlocks;
   return '<!doctype html><html lang="en"><head>\n'
 +'<!-- Google tag (gtag.js) -->\n'
 +'<script async src="https://www.googletagmanager.com/gtag/js?id=G-0HQ16GNH78"></scr'+'ipt>\n'
@@ -233,6 +234,34 @@ function airShell({url,title,desc,a,fares}){
 +'.more summary .mlabel::before{content:"Show more"}\n'
 +'.more[open] summary .mlabel::before{content:"Show less"}\n'
 +'.morerow{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 0}\n'
++'.pass{position:relative;background:var(--card);color:var(--card-text);border-radius:18px;overflow:hidden;box-shadow:0 20px 50px rgba(0,0,0,.30);transition:background .25s,color .25s}\n'
++'.pass.print{animation:print .5s cubic-bezier(.2,.9,.25,1) both}\n'
++'@keyframes print{from{opacity:0;transform:translateY(14px) scale(.97)}to{opacity:1;transform:none}}\n'
++'.strip{padding:15px 18px;display:flex;align-items:center;gap:12px;color:#08111f}\n'
++'.strip .badge{width:34px;height:34px;border-radius:10px;display:grid;place-items:center;background:rgba(0,0,0,.16)}\n'
++'.strip .badge svg{width:19px;height:19px}\n'
++'.strip .verdict{font-family:\'Space Grotesk\',sans-serif;font-weight:700;font-size:20px;letter-spacing:-.4px;line-height:1}\n'
++'.strip .vsub{font-family:\'Space Mono\',monospace;font-size:13.6px;letter-spacing:1px;text-transform:uppercase;opacity:.75;margin-top:3px}\n'
++'.go .strip{background:var(--go)}.warn .strip{background:var(--warn)}.stop .strip{background:var(--stop)}.info .strip{background:var(--info)}.nomatch .strip{background:#363F52;color:#EDF0F7}\n'
++'.perf{position:relative;height:0;border-top:2px dashed var(--card-line)}\n'
++'.perf::before,.perf::after{content:"";position:absolute;top:-11px;width:22px;height:22px;border-radius:50%;background:var(--card-notch);transition:background .25s}\n'
++'.perf::before{left:-11px}.perf::after{right:-11px}\n'
++'.body{padding:16px 18px 18px}\n'
++'.route{font-family:\'Space Mono\',monospace;font-size:13.6px;letter-spacing:.5px;color:var(--card-muted);display:flex;flex-wrap:wrap;gap:6px 10px;margin-bottom:12px}\n'
++'.route b{color:var(--card-text)}\n'
++'.headline{font-family:\'Space Grotesk\',sans-serif;font-weight:600;font-size:18px;line-height:1.3;margin:0 0 10px;color:var(--card-text)}\n'
++'.detail{list-style:none;margin:0;padding:0}\n'
++'.detail li{position:relative;padding-left:18px;font-size:16px;line-height:1.5;color:var(--card-text);opacity:.92;margin-bottom:6px}\n'
++'.detail li::before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%;background:var(--card-text);opacity:.4}\n'
++'.slab{font-family:\'Space Mono\',monospace;font-size:13.6px;letter-spacing:1.6px;text-transform:uppercase;color:var(--muted);margin:16px 4px 10px}\n'
++'.chips{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 14px}\n'
++'.chip{background:var(--surface);border:1px solid var(--line);border-radius:999px;color:var(--text);cursor:pointer;font-family:\'Inter\',sans-serif;font-weight:500;font-size:13.6px;padding:9px 14px;transition:.14s;display:inline-flex;align-items:center;gap:7px}\n'
++'.chip:hover{border-color:var(--surface-2)}\n'
++'.chip.on{background:var(--sel-bg);color:var(--sel-text);border-color:var(--sel-bg);font-weight:600}\n'
++'.bag2{display:grid;grid-template-columns:1fr 1fr;gap:9px;align-items:stretch;margin:0 0 14px}\n'
++'.bag2 button{background:var(--surface);border:1px solid var(--line);border-radius:13px;color:var(--text);cursor:pointer;font-family:\'Inter\',sans-serif;font-weight:600;font-size:13.6px;padding:13px 12px;text-align:left;transition:.15s;line-height:1.22;display:flex;flex-direction:column;justify-content:flex-start}\n'
++'.bag2 button small{display:block;font-weight:400;font-size:13.6px;color:var(--muted);margin-top:3px}\n'
++'.bag2 button.on{border-color:var(--sel-bg);background:var(--surface);box-shadow:inset 0 0 0 1px var(--sel-bg)}\n'
 +'.fblock{margin:0 0 34px}\n'
 +'.fblock h2{font-family:\'Space Grotesk\',\'Inter\',sans-serif;font-size:1.32rem;font-weight:700;margin:0 0 14px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}\n'
 +'.tag{display:inline-flex;align-items:center;height:24px;padding:0 6px;border-radius:8px;font-family:\'Space Mono\',monospace;font-size:14px;font-weight:700;letter-spacing:.4px;text-transform:uppercase}\n'
@@ -494,7 +523,7 @@ function airPlaneShell(o){
   setS({mode:'plane',bag:'checked',cat:cat,detail:(VOL?'100':(POWER?'lo':null)),airline:a.name});
   var checkedCard=H?'':card(o.vChecked||w.verdict(),'CHECKED'); if(H)vdef=o.vCarry;
   var initCard=o.comp?'':H?card(o.vCarry,'ECONOMY'):(VAPE?carryVape:carryMap[def]);
-  var bagToggle='<div class="slab">Where in your bags?</div><div class="bag2" id="bagSeg"><button data-bag="carry" class="on">Carry-on <small>Trolley, backpack, under-seat</small></button><button data-bag="checked">Checked <small>Goes in the hold</small></button></div>';
+  var bagToggle='<div class="slab">Where in your bags?</div><div class="bag2" id="bagSeg"><button data-bag="carry" class="on">Carry-on <small>Goes on the plane with you</small></button><button data-bag="checked">Checked <small>Suitcases and bags you check in</small></button></div>';
   var pickerHtml='';
   if(!VAPE){ var list=VOL?w.DETAILS.vol:w.DETAILS.wh; var lbl=POWER?'Battery capacity?':'How much?'; pickerHtml='<div class="slab">'+lbl+'</div><div class="chips" id="detChips">'+list.map(function(d){return '<button class="chip sm'+(d.id===def?' on':'')+'" data-d="'+d.id+'">'+esc(d.label)+'</button>';}).join('')+'</div>'; }
   var clientScript;
