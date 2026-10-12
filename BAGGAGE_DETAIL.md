@@ -21,3 +21,5 @@ Batch 4 (`baggage_detail4.js`, checked 7 October 2026, own pages): Air Arabia, C
 **Measure:** compare clicks/impressions for `/airline/<slug>/baggage-allowance/` against `gsc_baseline_pages_2026-10-07.csv` after 3-4 weeks.
 
 Batch 7 (`baggage_detail7.js`, checked 12 October 2026, own pages): Virgin Atlantic (new airline; topics in `airline_topics4.js`).
+
+Batch 8 (`baggage_detail8.js`, checked 12 October 2026, own pages): Hawaiian Airlines (new airline; topics in `airline_topics5.js`).
