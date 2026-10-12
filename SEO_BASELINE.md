@@ -36,3 +36,8 @@ Recovery log (add a row each check; see SEO_INCIDENT_2026-10-07.md section 6):
 | Check date | Impressions/day (last full days) | Clicks/day | Notes |
 |---|---|---|---|
 | 2026-10-12 | about 5-19 (Oct 7-9) | 0 | text restore deployed d40804f0a; sitemap resubmit + top-page indexing requests asked of the user |
+
+## Check 2026-10-12 (early recheck)
+- GSC performance: data still ends Oct 9 (Oct 7: 16, Oct 8: 19, Oct 9: 5 impressions; 0 clicks). No recovery visible yet (GSC lags 2-3 days; restore deployed Oct 12).
+- GSC sitemaps: sitemap.xml Success, last read Oct 9, 1,967 discovered. Resubmit via the form produced no visible change (already registered).
+- GA, Sep 14 - Oct 11: 1,003 sessions; Direct 556, Organic Search 441, AI Assistant small. Home card last 7 days: 176 active users (+15.8%), Singapore 83 (likely bot traffic).
