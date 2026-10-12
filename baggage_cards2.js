@@ -136,5 +136,23 @@ module.exports = {
   "Asiana": [
     { label: "Economy", cabin: "1 carry-on (115 cm total, 10 kg) plus a personal item (40 × 30 × 20 cm), free.", checked: "U.S. routes 2 bags of 23 kg free; other routes 1 bag of 23 kg free." },
     { label: "Business", cabin: "2 carry-ons (10 kg each) plus a personal item, free.", checked: "2 bags of 32 kg free." }
+  ],
+  "Vueling": [
+    { label: "Fly Light", cabin: "Personal item only is free (underseat bag 40 × 30 × 20 cm). The 10 kg overhead bag costs extra.", checked: "Not included. Add one online from 10 to 120 EUR depending on weight and route." },
+    { label: "Fly", cabin: "Underseat bag free, plus your choice of a 10 kg overhead bag (55 × 40 × 20 cm) or a checked bag.", checked: "A 25 kg bag, if you choose it instead of the overhead bag." },
+    { label: "Fly Pro", cabin: "Underseat bag plus a 10 kg overhead bag (55 × 40 × 20 cm), free.", checked: "Not included. Add one online from 10 to 120 EUR." },
+    { label: "Fly Grande", cabin: "Underseat bag plus a 10 kg overhead bag, free.", checked: "1 bag of 25 kg included." }
+  ],
+  "Transavia": [
+    { label: "Basic", cabin: "Personal item only is free (40 × 30 × 20 cm). A cabin bag (55 × 40 × 25 cm) costs extra.", checked: "Not included. Add one online from 29.99 euro for 15 kg." },
+    { label: "Smart", cabin: "Hand luggage plus a cabin bag (55 × 40 × 25 cm), free, 10 kg together.", checked: "Not included. Add one online from 29.99 euro for 15 kg." },
+    { label: "Plus", cabin: "Personal item only is free (40 × 30 × 20 cm). A cabin bag (55 × 40 × 25 cm) costs extra.", checked: "1 bag of 20 kg included." },
+    { label: "Max", cabin: "Hand luggage plus a cabin bag (55 × 40 × 25 cm), free, 10 kg together.", checked: "1 bag of 30 kg included." }
+  ],
+  "GOL": [
+    { label: "Basic", cabin: "Personal item only is free (32 × 43 × 22 cm, 10 kg). The small bag is not on this fare.", checked: "Not included. Add a bag for a fee." },
+    { label: "Light", cabin: "Personal item plus a small bag (55 × 35 × 25 cm, 12 kg), free.", checked: "Not included. Add a bag for a fee." },
+    { label: "Classic and Flex", cabin: "Personal item plus a small bag (55 × 35 × 25 cm, 12 kg), free.", checked: "1st bag of 23 kg included." },
+    { label: "Premium Economy and Business", cabin: "Personal item plus a small bag on international flights, free.", checked: "Premium Economy 1 bag of 23 kg; Business 2 bags of 23 kg." }
   ]
 };
