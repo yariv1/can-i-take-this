@@ -266,4 +266,6 @@ Object.assign(DETAIL, require('./baggage_detail13.js'));
 Object.assign(DETAIL, require('./baggage_detail14.js'));
 Object.assign(DETAIL, require('./baggage_detail15.js'));
 Object.assign(DETAIL, require('./baggage_detail16.js'));
+Object.assign(DETAIL, require('./baggage_detail17.js'));
+Object.assign(DETAIL, require('./baggage_detail18.js'));
 module.exports = { DETAIL, render, CHECKED, CSS, table, esc };

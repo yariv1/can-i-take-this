@@ -176,3 +176,6 @@ ana, austrian, tap-air-portugal, brussels-airlines, lot-polish, ita-airways, peg
 
 ## 2026-10-12 baggage batch 3 (TO REQUEST re-index)
 flydubai, oman-air: https://canitakethis.co/airline/<slug>/baggage-allowance/
+
+## 2026-10-12 baggage batch 4 (TO REQUEST re-index)
+ethiopian-airlines, kenya-airways, south-african-airways, royal-air-maroc, royal-jordanian: https://canitakethis.co/airline/<slug>/baggage-allowance/
