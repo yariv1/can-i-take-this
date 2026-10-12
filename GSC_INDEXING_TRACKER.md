@@ -179,3 +179,6 @@ flydubai, oman-air: https://canitakethis.co/airline/<slug>/baggage-allowance/
 
 ## 2026-10-12 baggage batch 4 (TO REQUEST re-index)
 ethiopian-airlines, kenya-airways, south-african-airways, royal-air-maroc, royal-jordanian: https://canitakethis.co/airline/<slug>/baggage-allowance/
+
+## 2026-10-12 baggage batch 5
+avianca: https://canitakethis.co/airline/avianca/baggage-allowance/

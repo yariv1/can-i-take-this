@@ -34,3 +34,5 @@ Batches 11-15 (checked 12 October 2026, own pages, slim format, files baggage_de
 Batches 16-18 (checked 12 October 2026, own pages, baggage_detail16-18.js): flydubai, Oman Air, Ethiopian Airlines, Kenya Airways, South African Airways, Royal Air Maroc, Royal Jordanian (all deployed).
 
 **STILL ON THE SHORT PAGE (end of 12 Oct 2026, 15 airlines) and why:** alaska-airlines (error page to automation), vueling (403), cathay-pacific (calculator only), sunexpress, egyptair, middle-east-airlines (Cloudflare blocks automation), saudia (fares page loads by JS), kuwait-airways (site timeout), copa-airlines (JS app, empty text), gulf-air (adult allowance not stated on the page), vietnam-airlines and asiana (route/cabin labels of the piece tables do not load), transavia (hold baggage page not read), avianca, azul, gol, arkia, israir (not tried). Blocked ones need the user to open the page in his Chrome, or a different route. Do not publish thin pages for them.
+
+Batch 19 (baggage_detail19.js): Avianca deployed. Tried and skipped: azul (error page), gol (conflicting carry-on rules and unlabelled fees). Not tried: arkia, israir.
