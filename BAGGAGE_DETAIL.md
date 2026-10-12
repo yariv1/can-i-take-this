@@ -25,3 +25,5 @@ Batch 7 (`baggage_detail7.js`, checked 12 October 2026, own pages): Virgin Atlan
 Batch 8 (`baggage_detail8.js`, checked 12 October 2026, own pages): Hawaiian Airlines (new airline; topics in `airline_topics5.js`).
 
 Batch 9 (`baggage_detail9.js`, checked 12 October 2026, own pages): WestJet (new airline; topics in `airline_topics6.js`).
+
+Batch 10 (`baggage_detail10.js`, checked 12 October 2026, own pages): Volaris (new airline; topics in `airline_topics7.js`).

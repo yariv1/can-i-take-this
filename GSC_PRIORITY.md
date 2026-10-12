@@ -61,6 +61,12 @@ https://canitakethis.co/airline/westjet/power-bank/
 https://canitakethis.co/airline/westjet/vape-e-cigarette/
 https://canitakethis.co/airline/westjet/perfume-aerosols/
 https://canitakethis.co/airline/westjet/alcohol/
+https://canitakethis.co/airline/volaris/baggage-allowance/
+https://canitakethis.co/airline/volaris/liquids/
+https://canitakethis.co/airline/volaris/power-bank/
+https://canitakethis.co/airline/volaris/vape-e-cigarette/
+https://canitakethis.co/airline/volaris/perfume-aerosols/
+https://canitakethis.co/airline/volaris/alcohol/
 then Tier 4 (older articles), then Tier 5. New pages from later deploys are appended to GSC_INDEXING_TRACKER.md as TO REQUEST.
 
 ## What GSC shows today (read from Search Console in Chrome, 2026-10-11)
