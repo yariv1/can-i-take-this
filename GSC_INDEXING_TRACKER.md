@@ -163,3 +163,10 @@ REQUESTED 2026-10-11 (user): /blog/united-carry-on-size-2026/, /blog/personal-it
 2026-10-12: /airline/hawaiian-airlines/baggage-allowance/ + /liquids/ + /power-bank/ + /vape-e-cigarette/ + /perfume-aerosols/ + /alcohol/ NEW (TO REQUEST, after deploy)
 2026-10-12: /airline/westjet/baggage-allowance/ + /liquids/ + /power-bank/ + /vape-e-cigarette/ + /perfume-aerosols/ + /alcohol/ NEW (TO REQUEST, after deploy)
 2026-10-12: /airline/volaris/baggage-allowance/ + /liquids/ + /power-bank/ + /vape-e-cigarette/ + /perfume-aerosols/ + /alcohol/ NEW (TO REQUEST, after deploy)
+
+## 2026-10-12 baggage rebuilds (existing URLs, TO REQUEST re-index)
+- https://canitakethis.co/airline/delta/baggage-allowance/
+- https://canitakethis.co/airline/southwest/baggage-allowance/
+- https://canitakethis.co/airline/british-airways/baggage-allowance/
+- https://canitakethis.co/airline/finnair/baggage-allowance/
+- https://canitakethis.co/airline/air-france/baggage-allowance/
