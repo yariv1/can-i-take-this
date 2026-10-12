@@ -27,3 +27,6 @@ Batch 8 (`baggage_detail8.js`, checked 12 October 2026, own pages): Hawaiian Air
 Batch 9 (`baggage_detail9.js`, checked 12 October 2026, own pages): WestJet (new airline; topics in `airline_topics6.js`).
 
 Batch 10 (`baggage_detail10.js`, checked 12 October 2026, own pages): Volaris (new airline; topics in `airline_topics7.js`).
+
+
+Batches 11-15 (checked 12 October 2026, own pages, slim format, files baggage_detail11-15.js): Delta, Southwest, British Airways, Finnair, Air France, ANA, Austrian, TAP Air Portugal, Brussels Airlines, LOT Polish, ITA Airways, Pegasus, Air Europa. Blocked, need the user's Chrome: Alaska (error page), Vueling (403), Cathay Pacific (calculator only), SunExpress (Cloudflare challenge).

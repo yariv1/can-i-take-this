@@ -170,3 +170,6 @@ REQUESTED 2026-10-11 (user): /blog/united-carry-on-size-2026/, /blog/personal-it
 - https://canitakethis.co/airline/british-airways/baggage-allowance/
 - https://canitakethis.co/airline/finnair/baggage-allowance/
 - https://canitakethis.co/airline/air-france/baggage-allowance/
+
+## 2026-10-12 baggage rebuilds batch 2 (existing URLs, TO REQUEST re-index)
+ana, austrian, tap-air-portugal, brussels-airlines, lot-polish, ita-airways, pegasus, air-europa: https://canitakethis.co/airline/<slug>/baggage-allowance/
