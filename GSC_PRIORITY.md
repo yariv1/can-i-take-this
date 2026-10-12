@@ -2,6 +2,67 @@
 
 This file replaces the day lists in `GSC_REQUEST_LIST.md` (kept only as history). Request about 10 URLs per day in GSC > URL inspection > Request indexing, in THIS order. After each day, mark the URLs here as `REQUESTED <date>` and mirror them in `GSC_INDEXING_TRACKER.md`.
 
+## NEXT REQUESTS (updated 2026-10-12, one block per day, full URLs; this block supersedes the day plan below)
+Done: Day 1 (2026-10-11): Tier 1 (10) + american-airlines compensation. Note: `/airline/<slug>/` overview URLs now redirect to the Baggage page and must NOT be requested.
+
+### Day 2
+https://canitakethis.co/airline/delta/compensation/
+https://canitakethis.co/airline/united/compensation/
+https://canitakethis.co/airline/southwest/compensation/
+https://canitakethis.co/airline/jetblue/compensation/
+https://canitakethis.co/airline/ryanair/compensation/
+https://canitakethis.co/airline/easyjet/compensation/
+https://canitakethis.co/airline/british-airways/compensation/
+https://canitakethis.co/airline/lufthansa/compensation/
+https://canitakethis.co/airline/air-france/compensation/
+https://canitakethis.co/airline/klm/compensation/
+
+### Day 3
+https://canitakethis.co/airline/wizz-air/compensation/
+https://canitakethis.co/airline/aer-lingus/compensation/
+https://canitakethis.co/airline/iberia/compensation/
+https://canitakethis.co/airline/turkish-airlines/compensation/
+https://canitakethis.co/airline/turkish-airlines/customer-service/
+https://canitakethis.co/airline/virgin-atlantic/baggage-allowance/
+https://canitakethis.co/airline/hawaiian-airlines/baggage-allowance/
+https://canitakethis.co/airline/lufthansa/baggage-allowance/
+https://canitakethis.co/airline/singapore-airlines/baggage-allowance/
+https://canitakethis.co/airline/air-canada/baggage-allowance/
+
+### Day 4
+https://canitakethis.co/airline/wizz-air/baggage-allowance/
+https://canitakethis.co/airline/qatar-airways/baggage-allowance/
+https://canitakethis.co/airline/united/baggage-allowance/
+https://canitakethis.co/airline/emirates/baggage-allowance/
+https://canitakethis.co/airline/ryanair/baggage-allowance/
+https://canitakethis.co/country/turkey/vaping/
+https://canitakethis.co/country/egypt/vaping/
+https://canitakethis.co/country/spain/alcohol/
+https://canitakethis.co/country/france/alcohol/
+https://canitakethis.co/country/turkey/alcohol/
+
+### Day 5
+https://canitakethis.co/country/australia/alcohol/
+https://canitakethis.co/airline/virgin-atlantic/liquids/
+https://canitakethis.co/airline/virgin-atlantic/power-bank/
+https://canitakethis.co/airline/virgin-atlantic/vape-e-cigarette/
+https://canitakethis.co/airline/virgin-atlantic/perfume-aerosols/
+https://canitakethis.co/airline/virgin-atlantic/alcohol/
+https://canitakethis.co/airline/hawaiian-airlines/liquids/
+https://canitakethis.co/airline/hawaiian-airlines/power-bank/
+https://canitakethis.co/airline/hawaiian-airlines/vape-e-cigarette/
+https://canitakethis.co/airline/hawaiian-airlines/perfume-aerosols/
+
+### Day 6 and later
+https://canitakethis.co/airline/hawaiian-airlines/alcohol/
+https://canitakethis.co/airline/westjet/baggage-allowance/
+https://canitakethis.co/airline/westjet/liquids/
+https://canitakethis.co/airline/westjet/power-bank/
+https://canitakethis.co/airline/westjet/vape-e-cigarette/
+https://canitakethis.co/airline/westjet/perfume-aerosols/
+https://canitakethis.co/airline/westjet/alcohol/
+then Tier 4 (older articles), then Tier 5. New pages from later deploys are appended to GSC_INDEXING_TRACKER.md as TO REQUEST.
+
 ## What GSC shows today (read from Search Console in Chrome, 2026-10-11)
 - Last 28 days: 408 clicks, 58.2K impressions (data lags about 44 hours).
 - Only 5 blog articles appear in the top 1,000 pages by impressions (is-deodorant-a-liquid, banned-medications, customs-cash-declaration, carry-on-size-limits-by-airline, vapes-country-rules). Every newer article and every compensation page has NO impressions yet: not indexed, or too new. This is why the order below matters.

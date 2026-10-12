@@ -459,3 +459,7 @@ A "Before you fly" style step list is a to-do list: the heading has NO checkbox 
 - **No "More rules for <airline>" block (user order 2026-10-12):** the Related-links group "More rules for <airline>" (All X rules / X power bank rules / X liquids rules) was removed from every airline page in `seo_post.js` `related()`. Airline pages keep "Compare ... on other airlines" and the single "Read the full guide" block. Do not re-add.
 
 - **Airline overview page removed (user order 2026-10-12):** `/airline/<slug>/` was an orphan page (nothing linked to it, no tab matched it). It is now a redirect (meta refresh + JS + canonical) to `/airline/<slug>/baggage-allowance/` and is not in the sitemap. Every airline URL a user can reach must open a page whose tab is selected. Do not rebuild an overview page.
+
+- **Stat cards are one component everywhere (user order 2026-10-12):** the airline baggage page stat strip (`.bd-stat` in `baggage_detail.js`) now uses exactly the article `.stat-box` look: left-aligned, padding .9em, number in Space Grotesk 700 1.25rem in the accent colour (`var(--accent)`), label 1rem in `var(--muted)`. Never style a stat card differently on airline pages and article pages.
+
+- **Stat number size (user order 2026-10-12):** the accent-blue number in stat cards is 1.25rem on BOTH article pages (`.stat-num` in build.js) and airline pages (`.bd-stat b` in baggage_detail.js).

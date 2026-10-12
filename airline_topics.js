@@ -12,6 +12,7 @@ Object.assign(TOPICS, require('./airline_topics2.js'));
 Object.assign(TOPICS, require('./airline_topics3.js'));
 Object.assign(TOPICS, require('./airline_topics4.js'));
 Object.assign(TOPICS, require('./airline_topics5.js'));
+Object.assign(TOPICS, require('./airline_topics6.js'));
 
 function render(a, T) {
   return '<div class="bd-wrap">' + CSS + '<p class="bd-lead"><strong>' + esc(T.answer) + '</strong></p>' +

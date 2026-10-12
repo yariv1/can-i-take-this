@@ -159,5 +159,6 @@ REQUESTED 2026-10-11 (user): /blog/united-carry-on-size-2026/, /blog/personal-it
 2026-10-11: /airline/iberia/compensation/ NEW (TO REQUEST, after deploy)
 2026-10-11: /airline/turkish-airlines/customer-service/ NEW (TO REQUEST, after deploy)
 2026-10-11: /airline/turkish-airlines/compensation/ NEW (TO REQUEST, after deploy)
-2026-10-12: /airline/virgin-atlantic/ + /baggage-allowance/ + /liquids/ + /power-bank/ + /vape-e-cigarette/ + /perfume-aerosols/ + /alcohol/ NEW (TO REQUEST, after deploy)
+2026-10-12: /airline/virgin-atlantic/baggage-allowance/ (overview URL is a redirect, do not request) +  + /liquids/ + /power-bank/ + /vape-e-cigarette/ + /perfume-aerosols/ + /alcohol/ NEW (TO REQUEST, after deploy)
 2026-10-12: /airline/hawaiian-airlines/baggage-allowance/ + /liquids/ + /power-bank/ + /vape-e-cigarette/ + /perfume-aerosols/ + /alcohol/ NEW (TO REQUEST, after deploy)
+2026-10-12: /airline/westjet/baggage-allowance/ + /liquids/ + /power-bank/ + /vape-e-cigarette/ + /perfume-aerosols/ + /alcohol/ NEW (TO REQUEST, after deploy)
