@@ -182,3 +182,13 @@ ethiopian-airlines, kenya-airways, south-african-airways, royal-air-maroc, royal
 
 ## 2026-10-12 baggage batch 5
 avianca: https://canitakethis.co/airline/avianca/baggage-allowance/
+
+## 2026-10-12 food test group (TO REQUEST re-index)
+https://canitakethis.co/food/south-korea/
+https://canitakethis.co/food/norway/
+https://canitakethis.co/food/mauritius/
+https://canitakethis.co/food/taiwan/
+https://canitakethis.co/food/romania/
+https://canitakethis.co/food/iceland/
+https://canitakethis.co/food/argentina/
+https://canitakethis.co/food/serbia/

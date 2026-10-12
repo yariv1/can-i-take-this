@@ -36,6 +36,8 @@ setTimeout(run, 300);
 function slug(s){return s.toLowerCase().replace(/&/g,'and').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');}
 function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
 const BAGD=require('./baggage_detail.js');
+const BCARDS=Object.assign({},require('./baggage_cards1.js'),require('./baggage_cards2.js'));
+const FOODD=require('./food_detail.js');
 const TOPICS=require('./airline_topics.js');
 const CVAPE=require('./country_vape.js');
 const CTOB=require('./country_tobacco.js');
@@ -175,7 +177,8 @@ function airShell({url,title,desc,a,fares}){
   const _at=airTabs(slug(a.name),'baggage');
   const tabsHtml=_at.tabHtml;
   const moreBlock=_at.moreBlock;
-  const blocks=fares.map(fr=>{
+  const blocks=((BD&&BCARDS[a.name])||fares).map((fr,_i,_arr)=>{
+    if(/^Same( cabin allowance| cabin| as above)?\.?$/i.test(fr.cabin)&&_i>0){fr=Object.assign({},fr,{cabin:_arr[_i-1].cabin});}
     const notice=NOTICE.test(fr.checked)?'<div class="notice"><div class="ntitle">Please notice</div><div class="ntext">'+esc(fr.checked)+'</div></div>':'';
     return '<section class="fblock"><h2>'+esc(fr.label)+' <span class="tier">'+esc(fareTiers(fr.label))+'</span> <span class="tag tag-neutral">PER PASSENGER</span></h2>'
       +'<div class="sub-h">On the plain</div><p class="sub-p">'+esc(fr.cabin)+'</p>'
@@ -251,7 +254,7 @@ function airShell({url,title,desc,a,fares}){
 +'<div class="airhead">'+logo+'<h2>'+esc(a.name)+' <span class="muted">Airline Rules</span></h2></div>\n'
 +'<nav class="tabs">'+tabsHtml+'</nav>\n'
 +moreBlock+'\n'
-+'<main>'+(BD?BAGD.render(a,BD):blocks)+'</main>\n'+blogReadBlock('baggage')
++'<main>'+(BD?blocks+BAGD.render(a,BD,{cards:!!BCARDS[a.name]}):blocks)+'</main>\n'+blogReadBlock('baggage')
 +'<footer>Rules change and vary by nationality, route and fare. This is guidance, not legal advice \u2014 always confirm with the airline or the official customs authority before you travel. Updated 2026.<nav class="tlinks"><a href="/guides/">All Guides</a><a href="/guides/liquids/">Liquids 100ml Rule</a><a href="/guides/power-banks/">Power Bank Rules</a><a href="/guides/vapes/">Vape &amp; E-Cig Guide</a><a href="/blog/">Blog</a></nav><nav class="tlinks"><a href="/about/">About</a><a href="/contact/">Contact</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a></nav></footer>\n'
 +'</div>\n'
 +'<script>function advLogo(im){var l=(im.dataset.srcs||"").split("|"),i=parseInt(im.dataset.i||"0",10)+1;if(i<l.length){im.dataset.i=i;im.src=l[i];}else{im.style.display="none";}}document.querySelectorAll("img.logo-img").forEach(function(im){im.onerror=function(){advLogo(im);};if(im.complete&&im.naturalWidth===0)advLogo(im);});</scr'+'ipt>\n'
@@ -296,13 +299,13 @@ function countryShell(o){/*data-country4*/
     main='<div class="hubintro">'+topRoute+'<p class="hublead">'+esc(o.lead||('What you can bring into '+cn+' at a glance. Tap a topic for the exact rule.'))+'</p></div><div class="qgrid">'+cards+'</div>';
   } else if(o.mode==='stack'){
     var stack=o.items.map(function(v){return card(v,false);}).join('');
-    main='<div class="hubintro">'+topRoute+(o.lead?'<p class="hublead">'+esc(o.lead)+'</p>':'')+'</div><div class="stack">'+stack+'</div>';
+    main='<div class="hubintro">'+topRoute+(o.lead?'<p class="hublead">'+esc(o.lead)+'</p>':'')+'</div><div class="stack">'+stack+'</div>'+(o.detail||'');
   } else {
     main=card(o.v,true);
   }
   if(o.extra) main+=o.extra;
   var taBlock='',taScript='';/*ta-inject*/
-  if(o.cat==='food'||o.cat==='med'){/*ta-hoist*/
+  if((o.cat==='food'||o.cat==='med')&&!o.detail){/*ta-hoist*/
     var _isMed=o.cat==='med';
     /*SRC_LINKS_V1B*/var _auth=_isMed?(w.MED_AUTH[cn]||{label:cn+' health & customs authority',url:null}):(w.FOOD_AUTH[cn]||{label:cn+' customs / biosecurity authority',url:null});
     var _D={cn:cn,isMed:_isMed,db:_isMed?w.MED_DB:w.FOOD_DB,auth:_auth,foodRules:_isMed?null:(w.FOOD_RULES[cn]||w.FOOD_RULES.def),medRules:_isMed?w.MED_RULES:null,catname:w.CATNAME};
@@ -1032,12 +1035,14 @@ function run(){
       return v;
     });
     write(url+'index.html', countryShell({
-      mode:'stack', url, c, cat:'food', items,
+      mode:'stack', url, c, cat:'food', items:(FOODD.cards(c.name)||items),
       title:`Can I Bring Food into ${c.name}? Meat, Dairy, Fruit Rules 2026 | canitakethis.co`,
       desc:cutDesc(`Can you bring food into ${c.name}? Meat, dairy, fresh fruit, eggs, honey and packaged food checked one by one for 2026: ${worst==='stop'?'some are banned':worst==='warn'?'some need a declaration or permit':'most are allowed'}. When unsure, declare it.`),
       h1:`Can I bring food into ${c.name}? (2026)`,
-      lead:`Some foods are fine, others are restricted or destroyed on arrival in ${c.name}.`,
-      faqA:`In ${c.name}, sealed packaged food is usually fine, while meat, dairy and fresh produce are often restricted or banned. Always declare food on arrival.`
+      lead:FOODD.cards(c.name)?'':`Some foods are fine, others are restricted or destroyed on arrival in ${c.name}.`,
+      faqA:FOODD.DETAIL[c.name]?FOODD.DETAIL[c.name].answer:`In ${c.name}, sealed packaged food is usually fine, while meat, dairy and fresh produce are often restricted or banned. Always declare food on arrival.`,
+      detail:FOODD.DETAIL[c.name]?FOODD.render(c,FOODD.DETAIL[c.name]):null,
+      faqExtra:FOODD.DETAIL[c.name]?FOODD.DETAIL[c.name].faq:undefined
     }));
     pages.push({url,changefreq:'monthly'});
   });

@@ -41,3 +41,10 @@ Recovery log (add a row each check; see SEO_INCIDENT_2026-10-07.md section 6):
 - GSC performance: data still ends Oct 9 (Oct 7: 16, Oct 8: 19, Oct 9: 5 impressions; 0 clicks). No recovery visible yet (GSC lags 2-3 days; restore deployed Oct 12).
 - GSC sitemaps: sitemap.xml Success, last read Oct 9, 1,967 discovered. Resubmit via the form produced no visible change (already registered).
 - GA, Sep 14 - Oct 11: 1,003 sessions; Direct 556, Organic Search 441, AI Assistant small. Home card last 7 days: 176 active users (+15.8%), Singapore 83 (likely bot traffic).
+
+## TEST GROUP: food pages rebuilt from official sources (deployed 2026-10-12)
+- Change (content only; title, description, H1 unchanged): 8 of the 85 /food/<country>/ pages replaced the generic 7-card template with a chip + card page built from the country's OWN official pages (food_detail*.js, food_topics*.js). Pages: south-korea, norway, mauritius, taiwan, romania, iceland, argentina, serbia. Control: the other 77 food pages (untouched).
+- Why: the food template said the same generic sentence for every country (default rule in canitakethis.html FOOD_RULES.def); Google's Sept 2026 spam update (24 Sep to ~8 Oct) coincides with the traffic collapse (SEO_INCIDENT_2026-10-07.md).
+- Baseline (GSC, 90 days to Oct 9, clicks/impressions): norway 9/1001, mauritius 9/493, south-korea 8/1844, taiwan 5/1195, romania 4/293, serbia 4/508, iceland 3/181, argentina 3/55. Last 3 days (Oct 7-9) near zero everywhere.
+- Rollback: delete a country's entry in food_detail*.js / food_topics*.js (build falls back to the template page) or revert to git tag pre-food-rebuild-2026-10-12.
+- Measure: compare impressions/clicks of the 8 vs the 77 on 2026-10-26 and 2026-11-09. If the 8 recover first, extend to more countries; if not, the cause is elsewhere.
