@@ -871,25 +871,9 @@ function run(){
       pages.push({url:curl,changefreq:'monthly'});
     }
 
-    // airline hub
-    const hub=`/airline/${slug(a.name)}/`;
-    {
-      const _f=f[0]||{label:'Economy',cabin:'',checked:''};
-      const _tiles=[{seg:'baggage-allowance',cat:null,t:'Baggage allowance',s:_f.label+': '+_f.cabin}]
-        .concat([{seg:'liquids',cat:'liquids',t:'Liquids',d:'100'},{seg:'power-bank',cat:'power',t:'Power banks',d:'lo'},{seg:'vape-e-cigarette',cat:'vape',t:'Vapes and e-cigarettes',d:null},{seg:'perfume-aerosols',cat:'perfume',t:'Perfume and aerosols',d:'100'},{seg:'alcohol',cat:'alcohol',t:'Alcohol',d:'100'}].map(x=>{
-          setS({mode:'plane',bag:'carry',cat:x.cat,detail:x.d,airline:a.name});
-          const vv=w.verdict()||{head:''};
-          return Object.assign({},x,{s:vv.head||''});
-        }));
-      const _grid='<style>.hub-h{font-size:1.2rem;margin:1.8em 0 .6em}.hub-g{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}.hub-t{display:block;border:1px solid var(--line);border-radius:14px;background:var(--surface);padding:12px 14px;text-decoration:none;color:var(--text)}.hub-t:hover{border-color:var(--accent)}.hub-t b{display:block;color:var(--accent);margin-bottom:4px}.hub-t span{display:block;font-size:.92rem;color:var(--muted);line-height:1.4}</style><h2 class="hub-h">All '+esc(a.name)+' rules</h2><div class="hub-g">'+_tiles.map(x=>'<a class="hub-t" href="/airline/'+slug(a.name)+'/'+x.seg+'/"><b>'+esc(x.t)+'</b><span>'+esc(x.s)+'</span></a>').join('')+'</div>';
-      write(hub+'index.html', airPlaneShell({a:a,cat:'hub',url:hub,hub:true,
-        h1:`What can I bring on ${a.name}? (2026)`,
-        ttl:`Flying ${a.name}? Baggage & Cabin Rules 2026`,
-        desc:`What you can bring on ${a.name}: baggage allowance, liquids, power banks, vapes, sharp objects and more \u2014 2026 rules.`,
-        vCarry:{status:'info',label:'Baggage allowance',sub:_f.label,head:_f.cabin,lines:['Checked: '+_f.checked,'Liquids, power banks, vapes and other items follow aviation-security rules; see each topic below.']},
-        extra:_grid}));
-    }
-    pages.push({url:hub,changefreq:'monthly'});
+    // airline overview page: removed as a destination (user order 2026-10-12). Nothing links to it and no tab matches it, so /airline/<slug>/ is a redirect to the Baggage page and is NOT in the sitemap.
+    const hub=`/airline/${slug(a.name)}/`, hubTo=`/airline/${slug(a.name)}/baggage-allowance/`;
+    write(hub+'index.html','<!doctype html><html lang="en"><head><meta charset="utf-8"><title>'+esc(a.name)+' baggage and cabin rules | canitakethis.co</title><meta name="description" content="'+esc(a.name)+' baggage and cabin rules: baggage allowance, liquids, power banks, vapes, perfume and alcohol."><link rel="canonical" href="'+BASE+hubTo+'"><meta http-equiv="refresh" content="0; url='+hubTo+'"><script>location.replace("'+hubTo+'")</scr'+'ipt></head><body><h1><a href="'+hubTo+'">'+esc(a.name)+' baggage and cabin rules</a></h1></body></html>');
 
     /*AIRPLANE_GEN_V1*/
     var _airCats=[{seg:'liquids',cat:'liquids'},{seg:'perfume-aerosols',cat:'perfume'},{seg:'alcohol',cat:'alcohol'},{seg:'power-bank',cat:'power'},{seg:'vape-e-cigarette',cat:'vape'}];
