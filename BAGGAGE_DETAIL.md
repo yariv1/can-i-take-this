@@ -19,3 +19,5 @@ Batch 4 (`baggage_detail4.js`, checked 7 October 2026, own pages): Air Arabia, C
 **How to read hard sites (learned in batch 2):** web fetch is blocked or times out on most airline sites; use Claude in Chrome. If `get_page_text` returns only a title, the content is in accordions or tabs: read `document.body` text nodes with a TreeWalker (skip SCRIPT/STYLE) so hidden accordion text is included, and print in slices of about 950 characters (longer outputs are truncated; strings that look like cookie/query data are blocked, so strip `=`, `&`, `?`). A table whose merged cells flatten badly (China Southern carry-on) must be checked with a screenshot. Where an airline publishes several tables by ticket issue date or promo (Etihad Business and First), give only the figures that are stable and tell the reader to use the allowance on the ticket.
 
 **Measure:** compare clicks/impressions for `/airline/<slug>/baggage-allowance/` against `gsc_baseline_pages_2026-10-07.csv` after 3-4 weeks.
+
+Batch 7 (`baggage_detail7.js`, checked 12 October 2026, own pages): Virgin Atlantic (new airline; topics in `airline_topics4.js`).
