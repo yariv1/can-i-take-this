@@ -2,6 +2,8 @@
 
 This file replaces the day lists in `GSC_REQUEST_LIST.md` (kept only as history). Request about 10 URLs per day in GSC > URL inspection > Request indexing, in THIS order. After each day, mark the URLs here as `REQUESTED <date>` and mirror them in `GSC_INDEXING_TRACKER.md`.
 
+**2026-10-12 PRIORITY NOTE:** after the Oct 7 traffic collapse (SEO_INCIDENT_2026-10-07.md) the user was asked to resubmit the sitemap and request indexing for the restored top earners first: /food/south-korea/, /food/colombia/, /medication/into/dominican-republic/, /airline/ethiopian-airlines/liquids/, /airline/pegasus/power-bank/, /food/taiwan/, /food/kenya/, /country/india/plants-seeds/. Recheck GSC on Oct 15 and Oct 20.
+
 ## NEXT REQUESTS (updated 2026-10-12, one block per day, full URLs; this block supersedes the day plan below)
 Done: Day 1 (2026-10-11): Tier 1 (10) + american-airlines compensation. Note: `/airline/<slug>/` overview URLs now redirect to the Baggage page and must NOT be requested.
 

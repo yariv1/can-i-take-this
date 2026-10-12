@@ -1,5 +1,14 @@
 # Blog roadmap (written 2026-10-10, session 20)
 
+## SESSION 24 STATE (end of session 24, 2026-10-12): READ THIS FIRST
+- **Live: origin/main `d40804f0a` (+ the docs commit that follows it).** Site = 82 airlines, 85 countries.
+- **THE SEO INCIDENT (top priority context): read `SEO_INCIDENT_2026-10-07.md`.** Google traffic collapsed from about 2,400 impressions/day to about 16 starting Oct 7, right after the site-wide SEO batch (`75cfe3397`, `e8119662a`). Cause not proven. On Oct 12 the ORIGINAL title + meta description text of 1,260 pages was restored (`seo_restore.json`, deployed `d40804f0a`). **Recheck GSC + GA on Oct 15 and Oct 20 (read via the user's Chrome) and log the numbers in `SEO_BASELINE.md`.** Decision tree is in the incident file section 6. NEW HARD rules: `SEO_RULES.md` CHANGE CONTROL, `node audit_seo_change_scope.js` in `DEPLOY_FLOW.md` step 3b. No site-wide SEO changes while recovering.
+- **Shipped in session 24:** Iberia Compensation; Turkish Airlines Compensation + Customer Service (new "Customer Service" tab, always last, official contact info only); Virgin Atlantic, Hawaiian Airlines, WestJet, Volaris (6 pages each); airline overview pages removed (redirect to Baggage); "More rules for <airline>" block removed; stat cards unified (accent number 1.25rem); GSC lists rebuilt (`GSC_PRIORITY.md` NEXT REQUESTS, Day 2 to Day 6, full URLs; the user requests about 10 per day by hand).
+- **European compensation run STOPPED:** Ahrefs showed "<carrier> compensation" phrases are under 100 searches for European carriers (Turkish: all under 100, refund policy over 100). Remaining EU carriers get a Compensation page only if the user asks.
+- **NEXT WORK (user order of priority): (1) SEO recovery monitoring (above). (2) Airline expansion: next = Viva Aerobus (see `AIRLINE_EXPANSION.md`: ranking, procedure, models). (3) Customer Service pages for other airlines only after measuring demand and finding official contact pages (Turkish is the model; Delta/American are KD Hard).**
+- Still true: demand first, official sources only, deploy only on "deploy", zero narration between tool calls, one short question at the end.
+
+
 Rule: articles only where measured demand exists (Ahrefs free keyword generator, US, buckets only), official sources only, intent check + 3 title passes before locking each title, image workflow after. Update this file after each article ships.
 
 ## Measured demand (US, monthly search bucket of the top phrasing)

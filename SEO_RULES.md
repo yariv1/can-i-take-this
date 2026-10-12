@@ -21,3 +21,14 @@
 Where one official rule is identical for every page of a group (the EU 27 for tobacco, alcohol, plants and seeds, cash), the country pages keep their URL and a short country section but their `rel=canonical` points at one master page (`/country/european-union/<topic>/`, built by `eu_master.js`), and they are left out of the sitemap. `audit_dup.js` ignores pages whose canonical points elsewhere. Do the same for any new identical-rule group; never write 27 near-identical pages.
 
 - **Oct 12 2026 text restore (user order):** after the traffic drop that started Oct 7 (the site-wide title/H1/description batch), the ORIGINAL title and meta description text of 1,260 pages that earned impressions (medication, food, pets, country cash and tobacco, airline liquids and power bank) is restored at build time from `seo_restore.json` by `seo_post.js`. Text only. Never run a site-wide title or description rewrite again without a baseline and a small test group first.
+
+## CHANGE CONTROL (HARD, added 2026-10-12 after the Oct 7 incident: read `SEO_INCIDENT_2026-10-07.md`)
+A cross-site SEO change = any change to MORE THAN 40 existing pages in: title, meta description, H1, canonical, robots, schema, internal-link blocks, sitemap structure, URLs or redirects. The Oct 7 2026 batch (titles + descriptions + H1 + schema + related links + lastmod on thousands of pages, from a rule and without per-page data) coincided with Google impressions falling from about 2,400 a day to about 16.
+1. **Justify with data:** name the GSC query / Ahrefs bucket / measured defect per page type. "The audit flagged it" is not enough. Never say "matched to searches" unless it was.
+2. **Baseline first:** update `SEO_BASELINE.md` (GSC daily clicks/impressions, top pages) before the change.
+3. **Small test:** at most 20 pages of ONE page type, wait 14 days, compare with untouched pages of the same type. Only then widen.
+4. **One change type at a time**, never titles + H1 + schema + links + sitemap together; never on the same day as other site-wide changes.
+5. **Rollback written before deploy** (which files restore the old state; `seo_restore.json` is the mechanism for title/description text).
+6. **User's explicit written approval** naming scope, test group and rollback.
+7. **Mechanical guard:** `node audit_seo_change_scope.js` must pass before every commit (blocks when more than 40 existing pages change an SEO field vs HEAD). `ALLOW_MASS_SEO=1` only after rule 6.
+New pages and single-page content work are not cross-site changes and are allowed.

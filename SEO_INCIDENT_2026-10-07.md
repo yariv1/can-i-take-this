@@ -1,0 +1,52 @@
+# SEO incident: traffic collapse after the Oct 7 2026 site-wide SEO batch (written 2026-10-12)
+
+**Read this before ANY change that touches titles, descriptions, H1s, schema, canonicals, internal links, sitemap, redirects or URLs on more than a handful of pages.**
+
+## 1. What the user saw
+The site had started to get small but consistent Google traffic. From about Oct 7 it went flat: in Search Console AND Google Analytics.
+
+## 2. The evidence (all read by Claude on 2026-10-12 from the user's Chrome)
+- **GSC performance, daily (28-day report, Web):** Oct 6: 13 clicks / 1,965 impressions. Oct 5: 14 / 2,364. Oct 4: 18 / 2,793. Oct 3: 26 / 2,621. Sep 25 to Oct 2: 8 to 27 clicks, 2,200 to 2,750 impressions every day. **Oct 7: 0 clicks / 16 impressions. Oct 8: 0 / 19. Oct 9: 0 / 5.** (Report totals stayed 408 clicks / 58.2K impressions: GSC data ends Oct 9.)
+- **Oct 7-9 by page:** 40 impressions in total across 26 pages (etias article 6, korean-air baggage 4, tsa-precheck-cost 4, ...). Even pages that ranked about position 5 (e.g. /food/thailand/) got 1 impression. The loss is site-wide: food, medication, airline, country, blog.
+- **GA (home cards, last 7 days vs previous 7):** active users 176 (+15.8%, inflated by a Singapore spike of 83 users, bot-like); sessions Direct 256 (+54%), **Organic Search 48 (-69.8%)**; users google/organic 38 (-72.9%). Real Google traffic is down about 70% week on week.
+- **Live SERP check (Chrome, gl=us):** query "can i bring food into south korea": canitakethis.co is NOT in the first 9 results. Before the batch /food/south-korea/ averaged position 8.7 (1,165 impressions in 28 days). `site:canitakethis.co food south korea` still lists our pages.
+- **What is fine:** Page indexing report (last update 10/9): Indexed 1.97K, Not indexed 88 (2 page with redirect, 85 discovered-not-indexed, 1 crawled-not-indexed), no new category. Manual actions: none. Crawl stats (last update 10/9): 4.16K requests/90 days, 99% 200, 77 ms, no spike of errors. robots.txt allows all; no noindex; canonicals correct; live pages return 200.
+- **Where the traffic came from (GSC 28 days, before the drop):** programmatic pages, not blog: /medication/into/dominican-republic/ (245 impressions, 9 clicks, position 8.4), /food/colombia/ (231, 8, 7.0), /food/south-korea/ (1,165, 6, 8.7), /food/seychelles/, /country/thailand/plants-seeds/, /airline/pegasus/power-bank/ (155, 5, 6.2), /food/kenya/, /airline/ethiopian-airlines/liquids/ (555, 4, 7.4), /food/taiwan/, medication/into/peru, country india and indonesia plants-seeds, food/malaysia. Airline overview (hub) pages had about 0 clicks (not the cause).
+- No evidence of a Google core update in October 2026 was found (search returned only March and May 2026 updates). Not ruled out.
+
+## 3. What Claude changed on Oct 7 (the suspected cause; timing matches within hours)
+Local time (Israel, UTC+3) 2026-10-07 20:49 to 23:52, then continuing Oct 8:
+- `75cfe3397` (20:49): title + meta description batch for airline category, country category and food pages ("name the subject and carry the real answer", verified numbers in power bank / liquids / plants / tobacco / cash titles).
+- `e8119662a` (22:35): "Site-wide SEO": exactly one real H1 per page (the brand "can i take this?" stopped being the H1 and became `span.bn`), title and description RULES (keyword/number first; ` | canitakethis.co` suffix only if the title is 60 chars or less), unique subject-specific descriptions, og/twitter tags, WebPage/Article schema with dateModified, sitemap lastmod, trust pages, related-links blocks ("Related rules and guides") on every page type. Code: `seo_post.js` (new, 199 lines), `audit_seo.js`, `SEO_RULES.md`.
+- Same evening: baggage pages rebuilt as full reference pages for many airlines (9c3dd3443, 39474d6b3, cbb062786); Oct 8: `ads.txt`, plane pages rebuilt, homepage links changed, many country pages rebuilt from official sources.
+- **Why it was done:** the audit (`audit_seo.js`) flagged brand H1 on every page, generic titles, duplicate descriptions; the user's standing order was to fix SEO site-wide through templates; GSC showed ~517 baggage queries at positions 45-75 with 0 clicks. **It was NOT based on per-page query data**: the query analysis (`GSC_QUERY_ANALYSIS.md`) was created on Oct 8, AFTER the batch. Claude later wrongly told the user the titles had been matched to searched phrases; that was false and was corrected in the session.
+- For the biggest earners the title TEXT barely changed (e.g. food/colombia: only ` | canitakethis.co` dropped; H1 changed brand -> subject). The airline and country pages got the larger rewrites (e.g. "Pegasus Power Bank Rules 2026 — Wh Limits | canitakethis.co" became "Pegasus Power Bank Rules (2026): 100 Wh Limit").
+- Pages whose title or description changed vs the Oct 7 13:18 build (`100471d26`): 2,061 (medication 765, food 85, pets 85, plants-seeds 85, country tobacco 62 / alcohol 18 / cash 44 / vaping 83 titles, airline rules pages 38 to 78 per category, airline baggage 78, blog 58 titles).
+
+## 4. Hypotheses, ranked (cause NOT proven)
+1. The mass rewrite (titles + descriptions + H1 + schema + related links + lastmod) in one evening triggered a site-wide re-evaluation. A drop of about 99% from a title rewrite alone is unusual, so combine with 2.
+2. The H1 brand -> subject swap and/or the new related-links blocks and schema changed how Google reads the template across all programmatic pages (affects every page type at once, which matches the site-wide pattern).
+3. A Google quality/helpful-content re-evaluation of templated programmatic pages that coincided with the batch (the AdSense concern in the mission: suspected cause of rejection was duplicated templated pages). Cannot be separated from 1 and 2.
+4. A GSC/Google pipeline gap (data after Oct 6 incomplete). Weakened by GA organic -70% and the live SERP check, but only a recheck after the data refreshes closes it.
+
+## 5. What was done (2026-10-12)
+- **Text restore, deployed `d40804f0a`:** original title and meta description text (from the Oct 7 13:18 build) restored at build time for **1,260 pages that earned impressions and whose content was not rebuilt since**: medication 765, food 85, pets 85, country cash 85, country tobacco 85, airline liquids 78, airline power-bank 77 (Singapore Airlines power-bank excluded: new content from Oct 10). Mechanism: `seo_restore.json` {url: {t, d}} read by `seo_post.js` (step 2b, runs after the title suffix rule, before og/twitter tags are derived). Text only: design, schema, related-links blocks and the brand-not-H1 rule were NOT reverted. Side effects: for airline and country pages the H1 equals the title, so the visible H1 text was restored too; the old descriptions bring back 475 pages with repeated descriptions (15 groups, mostly medication), which is how they were when they earned traffic.
+- NOT restored (content rebuilt after Oct 7, old text no longer fits): plants-seeds, vaping, alcohol country pages, airline baggage pages, new airlines, blog titles, airline vape/perfume/alcohol pages.
+- Guard added: `audit_seo_change_scope.js` (see section 7). Rules added: `SEO_RULES.md` CHANGE CONTROL, `DEPLOY_FLOW.md` step 3b, memory `feedback_no_sitewide_seo_rewrites.md`.
+- Asked the user to resubmit the sitemap and request indexing for a few top earners in GSC (only the user can).
+
+## 6. Recovery plan and decision tree (the new session continues here)
+- **Baseline to beat:** about 2,400 impressions and 13-27 clicks per day (Sep 18 to Oct 6).
+- **Check dates:** Oct 15 and Oct 20 (read GSC via Chrome: `https://search.google.com/search-console/performance/search-analytics?resource_id=sc-domain%3Acanitakethis.co&num_of_days=28&breakdown=date`, table rows; pages: click the Pages tab; also GA home cards). Record the numbers in this file.
+- If impressions return toward baseline on the restored pages: keep everything, change nothing site-wide.
+- If NOT back by about Oct 20: next experiment, ONE at a time and on a small test group first (about 20 pages, wait 14 days): (a) restore the brand H1 + subject h2 structure on the test pages; (b) remove the related-links blocks on the test pages; (c) remove the added schema. Pick the order by what changed for the pages that earned the traffic (H1 first).
+- Do not stack other site-wide changes while recovering. New pages (new airlines, compensation, customer service) are separate URLs and are allowed, but keep them out of the shared templates.
+- Open question to settle with data: did pages that were NOT touched (e.g. blog pages with no title change, pages with new content) also drop? From the Oct 7-9 data everything dropped, including untouched titles.
+
+## 7. Rules for next time (also in SEO_RULES.md "CHANGE CONTROL")
+1. **Definition:** a cross-site SEO change is any change to more than 40 existing pages in: title, meta description, H1, canonical, robots, schema, internal link blocks, sitemap structure, URLs or redirects.
+2. **Before:** (a) name the DATA that justifies it (a GSC query, an Ahrefs bucket, a measured defect) per page type; "the audit flagged it" or "it is cleaner" is NOT enough; (b) save a baseline (GSC clicks/impressions per page type, date) in `SEO_BASELINE.md`; (c) test on at most 20 pages of ONE type, wait 14 days, compare against untouched pages of the same type; (d) write the rollback (what exact files restore the old state); (e) get the user's explicit written approval naming scope, test group and rollback.
+3. **One change type at a time.** Never combine titles + H1 + schema + links + sitemap in one deploy. Never deploy a cross-site SEO change on the same day as other site-wide changes.
+4. **Mechanical guard:** `node audit_seo_change_scope.js` (default base HEAD = live) must pass before every commit; it blocks if more than 40 existing pages change an SEO field. Override (`ALLOW_MASS_SEO=1`) only after the user's explicit approval of that scope.
+5. **Never claim "matched to searches"** unless it was; say what the data was.
+6. Content improvements on single pages (new official data, new sections) are fine: the guard does not count new pages and only counts SEO-field changes.
