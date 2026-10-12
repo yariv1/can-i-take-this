@@ -19,3 +19,5 @@
 
 ## Identical-rule groups: master page + canonical (added 2026-10-08)
 Where one official rule is identical for every page of a group (the EU 27 for tobacco, alcohol, plants and seeds, cash), the country pages keep their URL and a short country section but their `rel=canonical` points at one master page (`/country/european-union/<topic>/`, built by `eu_master.js`), and they are left out of the sitemap. `audit_dup.js` ignores pages whose canonical points elsewhere. Do the same for any new identical-rule group; never write 27 near-identical pages.
+
+- **Oct 12 2026 text restore (user order):** after the traffic drop that started Oct 7 (the site-wide title/H1/description batch), the ORIGINAL title and meta description text of 1,260 pages that earned impressions (medication, food, pets, country cash and tobacco, airline liquids and power bank) is restored at build time from `seo_restore.json` by `seo_post.js`. Text only. Never run a site-wide title or description rewrite again without a baseline and a small test group first.

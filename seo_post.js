@@ -125,6 +125,7 @@ function relatedHtml(url) {
 }
 
 // ---------- the post-processor ----------
+const RESTORE = (() => { try { return JSON.parse(require('fs').readFileSync(require('path').join(__dirname, 'seo_restore.json'), 'utf8')); } catch (e) { return {}; } })();
 function post(url, html) {
   if (!/^<!doctype html/i.test(html)) return html;
   let h = html;
@@ -133,6 +134,8 @@ function post(url, html) {
   h = h.replace(/<h1>can i take this\?<\/h1>/g, '<span class="bn">can i take this?</span>');
   // 2. title: ' | canitakethis.co' only when the title is short enough to show in full
   h = h.replace(/<title>([\s\S]*?)<\/title>/, (m, t) => { const clean = t.replace(/ \| canitakethis\.co$/, ''); const full = t; const out = (full.length <= 60 || !/ \| canitakethis\.co$/.test(full)) ? full : clean; return '<title>' + out + '</title>'; });
+  // 2b. Oct 12 2026 restore: pages that earned impressions before the Oct 7 SEO batch keep their ORIGINAL title and description text (seo_restore.json, taken from the Oct 7 13:18 build). Text only; structure untouched.
+  const R = RESTORE[url]; if (R) { h = h.replace(/<title>[\s\S]*?<\/title>/, () => '<title>' + R.t + '</title>'); h = h.replace(/<meta name="description" content="[^"]*"/, () => '<meta name="description" content="' + R.d + '"'); }
   const title = unesc((/<title>([\s\S]*?)<\/title>/.exec(h) || [0, ''])[1]);
   const desc = unesc((/<meta name="description" content="([^"]*)"/.exec(h) || [0, ''])[1]);
   const canonical = (/<link rel="canonical" href="([^"]+)"/.exec(h) || [0, BASE + url])[1];
