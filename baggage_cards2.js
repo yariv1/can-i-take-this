@@ -117,5 +117,15 @@ module.exports = {
   "Avianca": [
     { label: "Light (international)", cabin: "Carry-on 55 × 35 × 25 cm, 10 kg, plus a personal item 45 × 35 × 20 cm.", checked: "Not on the Light fare." },
     { label: "Classic and Business Classic", cabin: "Same cabin allowance.", checked: "Classic 1 bag of 23 kg; Business Classic 2 bags of 32 kg." }
+  ],
+  "Israir": [
+    { label: "International flights", cabin: "Personal item only is free (40 × 30 × 20 cm). A trolley (55 × 40 × 25 cm, 10 kg) is $30 each way when bought in advance.", checked: "First bag (23 kg) is $65 each way when bought in advance; more at the airport." },
+    { label: "Flights to New York", cabin: "Economy and Premium 1 carry-on, Business 2 carry-ons, all included.", checked: "Economy 1 bag of 23 kg included; Premium 2 bags of 23 kg; Business 2 bags of 32 kg." },
+    { label: "Domestic flights", cabin: "Personal item and a trolley (55 × 40 × 25 cm, 10 kg) are both free.", checked: "First bag (23 kg) is for a fee: 20 NIS each way when paid in advance." }
+  ],
+  "Arkia": [
+    { label: "International flights", cabin: "Personal item only is free (40 × 30 × 20 cm). The 8 kg trolley is not included unless your reservation says so.", checked: "Not included unless your reservation says so; add one for a fee." },
+    { label: "Flights to the U.S.", cabin: "Hand bag plus an 8 kg trolley (56 × 45 × 25 cm) for tickets ordered from 21 February 2025, all included.", checked: "1 bag of 23 kg included." },
+    { label: "Domestic flights", cabin: "Personal item only is free (hand bag 40 × 30 × 20 cm). The 8 kg trolley is included only on a ticket at the maximum regulated price.", checked: "Not included unless your ticket is at the maximum regulated price; max 20 kg per bag." }
   ]
 };

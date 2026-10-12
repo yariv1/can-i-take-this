@@ -66,8 +66,8 @@
 
   /* ---------- text conversion (pure, shared with audit_currency.js) ---------- */
   var AMT = '\\d{1,3}(?:,\\d{3})+(?:\\.\\d+)?|\\d+(?:\\.\\d+)?';
-  var RE = new RegExp('(?<![A-Za-z0-9$€£])(?<!(?:AUD|CAD|NZD|SGD|HKD|MXN|BRL|ARS|COP|CLP)\\s?)(?:(US\\$|\\$|€|£)\\s?|\\b(USD|EUR|GBP)\\s)(' + AMT + ')(?:(\\s?[–-]\\s?)(?:(US\\$|\\$|€|£)\\s?)?(' + AMT + '))?(?![\\d,]*\\d)(?!\\s?(?:million|billion|thousand|[kKmMbB]\\b))', 'g');
-  var SYM_CUR = { '$': 'USD', 'US$': 'USD', '€': 'EUR', '£': 'GBP' };
+  var RE = new RegExp('(?<![A-Za-z0-9$€£])(?<!(?:AUD|CAD|NZD|SGD|HKD|MXN|BRL|ARS|COP|CLP)\\s?)(?:(US\\$|\\$|€\\/£|€|£)\\s?|\\b(USD|EUR|GBP)\\s)(' + AMT + ')(?:(\\s?[–-]\\s?)(?:(US\\$|\\$|€\\/£|€|£)\\s?)?(' + AMT + '))?(?![\\d,]*\\d)(?!\\s?(?:million|billion|thousand|[kKmMbB]\\b))', 'g');
+  var SYM_CUR = { '$': 'USD', 'US$': 'USD', '€': 'EUR', '€/£': 'EUR', '£': 'GBP' };
   var fmtCache = {};
   function nf(cur, d) {
     var k = cur + d;
