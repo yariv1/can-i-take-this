@@ -314,4 +314,5 @@ Object.assign(DETAIL, require('./baggage_detail18.js'));
 Object.assign(DETAIL, require('./baggage_detail19.js'));
 Object.assign(DETAIL, require('./baggage_detail20.js'));
 Object.assign(DETAIL, require('./baggage_detail21.js'));
+Object.assign(DETAIL, require('./baggage_detail22.js'));
 module.exports = { DETAIL, render, CHECKED, CSS, table, esc, pickerBag };

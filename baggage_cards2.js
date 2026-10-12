@@ -127,5 +127,14 @@ module.exports = {
     { label: "International flights", cabin: "Personal item only is free (40 × 30 × 20 cm). The 8 kg trolley is not included unless your reservation says so.", checked: "Not included unless your reservation says so; add one for a fee." },
     { label: "Flights to the U.S.", cabin: "Hand bag plus an 8 kg trolley (56 × 45 × 25 cm) for tickets ordered from 21 February 2025, all included.", checked: "1 bag of 23 kg included." },
     { label: "Domestic flights", cabin: "Personal item only is free (hand bag 40 × 30 × 20 cm). The 8 kg trolley is included only on a ticket at the maximum regulated price.", checked: "Not included unless your ticket is at the maximum regulated price; max 20 kg per bag." }
+  ],
+  "Vietnam Airlines": [
+    { label: "Economy, Vietnam and Asia", cabin: "1 carry-on piece up to 10 kg (56 × 36 × 23 cm) plus 1 accessory (40 × 30 × 15 cm), free. 10 kg in total.", checked: "1 piece of 23 kg free. Your fare can differ: check your booking." },
+    { label: "Economy, US, Australia, Europe", cabin: "1 carry-on piece up to 10 kg plus 1 accessory, free. 12 kg in total.", checked: "1 piece of 23 kg free (Europe, Australia); the Americas 2 pieces of 23 kg free. Your fare can differ: check your booking." },
+    { label: "Business", cabin: "2 carry-on pieces up to 10 kg each plus 1 accessory, free (18 kg in total on long routes).", checked: "2 pieces of 32 kg free on long routes; 1 piece of 32 kg on Vietnam domestic and Southeast Asia. Your fare can differ: check your booking." }
+  ],
+  "Asiana": [
+    { label: "Economy", cabin: "1 carry-on (115 cm total, 10 kg) plus a personal item (40 × 30 × 20 cm), free.", checked: "U.S. routes 2 bags of 23 kg free; other routes 1 bag of 23 kg free." },
+    { label: "Business", cabin: "2 carry-ons (10 kg each) plus a personal item, free.", checked: "2 bags of 32 kg free." }
   ]
 };
