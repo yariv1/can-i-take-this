@@ -30,3 +30,7 @@ Batch 10 (`baggage_detail10.js`, checked 12 October 2026, own pages): Volaris (n
 
 
 Batches 11-15 (checked 12 October 2026, own pages, slim format, files baggage_detail11-15.js): Delta, Southwest, British Airways, Finnair, Air France, ANA, Austrian, TAP Air Portugal, Brussels Airlines, LOT Polish, ITA Airways, Pegasus, Air Europa. Blocked, need the user's Chrome: Alaska (error page), Vueling (403), Cathay Pacific (calculator only), SunExpress (Cloudflare challenge).
+
+Batches 16-18 (checked 12 October 2026, own pages, baggage_detail16-18.js): flydubai, Oman Air, Ethiopian Airlines, Kenya Airways, South African Airways, Royal Air Maroc, Royal Jordanian (all deployed).
+
+**STILL ON THE SHORT PAGE (end of 12 Oct 2026, 15 airlines) and why:** alaska-airlines (error page to automation), vueling (403), cathay-pacific (calculator only), sunexpress, egyptair, middle-east-airlines (Cloudflare blocks automation), saudia (fares page loads by JS), kuwait-airways (site timeout), copa-airlines (JS app, empty text), gulf-air (adult allowance not stated on the page), vietnam-airlines and asiana (route/cabin labels of the piece tables do not load), transavia (hold baggage page not read), avianca, azul, gol, arkia, israir (not tried). Blocked ones need the user to open the page in his Chrome, or a different route. Do not publish thin pages for them.
