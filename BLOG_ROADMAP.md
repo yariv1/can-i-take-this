@@ -1,5 +1,11 @@
 # Blog roadmap (written 2026-10-10, session 20)
 
+## SESSION 27 ADDENDUM (later the same day, 2026-10-13): READ THIS BEFORE THE SESSION 27 BLOCK BELOW
+- **Live: origin/main `8d2e335fd` (+ docs commits). 28 Wi-Fi pages LIVE** (the session 27 block below says 11: outdated). Batch 3 = airlines WITHOUT a per-aircraft list, same cards NOT split by aircraft (`addN(cfg)` in `airline_wifi.js`): United, Southwest, WestJet, Alaska + Hawaiian (official newsroom release June 2026; Alaska's own page errors), Frontier + Ryanair (official: no Wi-Fi), Turkish, Lufthansa, British Airways, Air France, Iberia, KLM, Air Europa, Icelandair, Swiss, Aegean. Full list and facts: memory `project_blog_roadmap.md` section 3 item 6 and `project_wifi_pilot.md`.
+- **User order:** most popular airlines first: all American (US/Canada, DONE) -> most European -> Latin America -> Asia/Middle East/Oceania. **NEXT = next European batch: LOT, Eurowings, Aer Lingus (page text unreadable), Vueling, Transavia, Wizz, easyJet, Pegasus, Brussels (none yet).** Read each official Wi-Fi page fully; no reliable page = no tab; show locally; wait for "deploy"; add URLs to `GSC_INDEXING_TRACKER.md`.
+- **Indexing:** the user requested Delta, American, Air Canada, Finnair, TAP (Wi-Fi); then "Quota exceeded". Not done: jetblue, sas, norwegian, ita-airways, austrian, virgin-atlantic, then the 17 batch-3 pages (order in the tracker and memory section 5).
+- **Dates unchanged:** GSC+GA rechecks 2026-10-15 and 2026-10-20; food test 2026-10-26 and 2026-11-09; Wi-Fi pilot 2026-11-03. Still unanswered: "what other ideas did you bring?" (ask once after the next batch is shown).
+
 ## SESSION 27 STATE (end of session 27, 2026-10-13, same day as session 26): READ THIS FIRST
 - **Live: origin/main `06d0ff4ae` + docs commits (DEPLOY_FLOW, this handoff).** Full handoff = memory file `project_blog_roadmap.md` (session 27); this block is the repo copy. Site = 82 airlines, 85 countries, 11 Wi-Fi pages.
 - **User order this session:** content RELIABILITY (official, verified) matters most; same page structure on all pages is fine. Wording/facts/tables only, NO structural change; the card-style quick answer stays; nothing is changed without telling him first and him understanding it; never invent. Purpose of everything = traffic from what people really search (check intent, measure, test before expanding).
