@@ -230,3 +230,10 @@ https://canitakethis.co/airline/austrian/wifi/
 https://canitakethis.co/airline/virgin-atlantic/wifi/
 https://canitakethis.co/airline/sas/wifi/
 https://canitakethis.co/airline/norwegian/wifi/
+
+## 2026-10-13 Wi-Fi pages: user indexing requests (user report)
+REQUESTED OK: /airline/delta/wifi/, american-airlines, air-canada, finnair, tap-air-portugal. Then GSC said "Quota exceeded".
+NOT DONE YET (request when quota resets, in this order): jetblue, sas, norwegian, ita-airways, austrian, virgin-atlantic (all /airline/<slug>/wifi/), then every Wi-Fi page built after this (list them here at each deploy).
+
+## 2026-10-13 Wi-Fi pages batch 3 (built locally for the user's "deploy"; request in this popularity order after the NOT DONE list above)
+United, Southwest, Turkish Airlines, Alaska, Hawaiian, WestJet, Lufthansa, British Airways, Air France, Iberia, KLM, Frontier, Ryanair, Swiss, Icelandair, Aegean, Air Europa (all https://canitakethis.co/airline/<slug>/wifi/ with slugs united, southwest, turkish-airlines, alaska-airlines, hawaiian-airlines, westjet, lufthansa, british-airways, air-france, iberia, klm, frontier, ryanair, swiss, icelandair, aegean, air-europa).

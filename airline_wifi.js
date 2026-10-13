@@ -378,4 +378,421 @@ const steps = (list) => '<section class="bd-sec"><h2>🔌 How to connect</h2><ol
   });
 }
 
+// =====================================================================================
+// Airlines WITHOUT a per-aircraft list (user order 2026-10-13): the official info they publish, same card style, NOT split by aircraft.
+// =====================================================================================
+const LEGEND2 = '<p class="cc-legend"><span class="cc-dot cc-g"></span> Green: free. <span class="cc-dot cc-y"></span> Yellow: depends on your membership, ticket or flight, or paid. <span class="cc-dot cc-r"></span> Red: no Wi-Fi.</p>';
+const addN = cfg => add(Object.assign({ legend: LEGEND2, slab: cfg.slab || 'Which one fits you?', checked: '13 October 2026' }, cfg));
+
+// ---------------- UNITED ----------------
+// Read 13 October 2026 on united.com: In-Flight Wi-Fi page (united.com/en/us/fly/travel-experience/inflight-wifi.html).
+{
+  const PG = ['https://www.united.com/en/us/fly/travel-experience/inflight-wifi.html', 'United: In-flight Wi-Fi', 'Pricing, benefits and subscriptions'];
+  addN({
+    slug: 'united', slab: 'Which flight are you on?',
+    h1: 'Is United WiFi Free? Cost, Starlink and How to Connect (2026)',
+    desc: 'Is United WiFi free? Free messaging for everyone, and Starlink on select flights for MileagePlus members. Without Starlink, WiFi is $8 or 800 miles for MileagePlus members and $10 for others. From United\'s own page, checked 13 October 2026.',
+    answer: 'Free messaging works for everyone, and so does united.com and the United app. Starlink WiFi is on select flights for MileagePlus members. On domestic and short-haul international flights without Starlink, WiFi costs $8 or 800 miles for MileagePlus members and $10 for everyone else.',
+    srcNote: 'From United\'s own in-flight Wi-Fi page, last checked 13 October 2026. Whether your flight has Wi-Fi depends on where you fly, the plane and its provider, so confirm with United before you fly.',
+    scen: [
+      card('free', 'Free options', 'go', 'Free messaging', 'Even if you do not pay for Wi-Fi', 'United says that even if you do not pay for Wi-Fi you can activate free messaging and use united.com and the United app, including its entertainment options.', ['Free messaging works in apps such as iMessage, WhatsApp and Messages by Google.', 'On most flights Wi-Fi is available from takeoff to landing.'], PG, true),
+      card('starlink', 'Flight with Starlink', 'warn', 'Select flights', 'For MileagePlus members', 'United says Starlink Wi-Fi, which it calls the fastest Wi-Fi in the sky, is available now on select flights for MileagePlus members. It plans to add it to the entire fleet over the next few years.', ['United\'s page does not say what non-members pay on Starlink flights.', 'Whether your flight has Wi-Fi depends on where you are flying, the plane you are on and the service provider your plane uses.'], PG),
+      card('short', 'No Starlink: US domestic and short-haul international', 'warn', 'Paid Wi-Fi', '$8 or 800 miles (MileagePlus); $10 others', 'On US domestic and short-haul international flights without Starlink, United lists Wi-Fi at $8 or 800 miles for MileagePlus members and $10 for everyone else.', ['Surf and stream: United says you can even stream video on select flights.', 'You cannot use miles to pay for Wi-Fi on enabled regional jets (E175, E170, CRJ 550 and CRJ 700).'], PG),
+      card('long', 'Long-haul international', 'warn', 'Price depends on the flight', 'Depends on where you go and how long the flight is', 'On long-haul international flights without Starlink, United says prices depend on where you are headed and how long your flight is.', ['United\'s page does not list a single price for these flights.'], PG),
+      card('sub', 'Wi-Fi subscription', 'warn', 'From $49 a month', 'Or 7,500 miles a month with MileagePlus', 'A United Wi-Fi subscription gives unlimited in-flight Wi-Fi for one flat monthly fee, starting at $49 or 7,500 miles a month with a MileagePlus account.', ['You choose a region: North America and Central America, or global.', 'MileagePlus cardholders get 25% back on United Wi-Fi subscription purchases.', 'Subscriptions are nonrefundable and non-transferrable and only apply to flights operated by United or United Express.'], PG)
+    ],
+    faq: [
+      ['Is United WiFi free?', 'Messaging is free for everyone, and you can use united.com and the United app for free. Starlink WiFi is on select flights for MileagePlus members. Other WiFi is paid: $8 or 800 miles for MileagePlus members and $10 for others on US domestic and short-haul international flights without Starlink.'],
+      ['How much does United WiFi cost?', 'On US domestic and short-haul international flights without Starlink: $8 or 800 miles for MileagePlus members and $10 for everyone else. On long-haul international flights the price depends on where you are going and how long the flight is. A monthly subscription starts at $49 or 7,500 miles.'],
+      ['How do I connect to United WiFi?', 'Download the United app before boarding. After boarding, turn on airplane mode and connect to the Wi-Fi network. Go to unitedwifi.com and pay with a credit card or miles. If it will not load, turn off private relay first.'],
+      ['Does every United flight have WiFi?', 'No. United says Wi-Fi is available on most flights, but whether yours has it depends on where you are flying, the plane and the service provider.']
+    ],
+    tableHead: ['Question', 'What United says'], tableTitle: 'What United says about WiFi',
+    rows: [['Free messaging', 'Yes, for everyone (iMessage, WhatsApp, Messages by Google)'], ['united.com and the United app', 'Free'], ['Starlink', 'Select flights, for MileagePlus members'], ['US domestic and short-haul international, no Starlink', '$8 or 800 miles (MileagePlus); $10 others'], ['Long-haul international', 'Price depends on destination and flight length'], ['Subscription', 'From $49 or 7,500 miles a month with MileagePlus'], ['Miles on regional jets (E175, E170, CRJ 550/700)', 'Not accepted']],
+    extra: steps(['Download the United app before boarding.', 'After boarding, turn on airplane mode and connect to the Wi-Fi network.', 'Go to unitedwifi.com (turn off private relay if it will not load).', 'Choose your option and pay with a credit card or miles, or use the free messaging.'])
+  });
+}
+
+// ---------------- SOUTHWEST ----------------
+// Read 13 October 2026 on support.southwest.com: Southwest Wifi & Food Experience.
+{
+  const PG = ['https://support.southwest.com/helpcenter/article/onboard-experience-and-wifi', 'Southwest: Onboard experience and WiFi', 'Free WiFi for Rapid Rewards Members'];
+  addN({
+    slug: 'southwest', slab: 'Which one fits you?',
+    h1: 'Is Southwest WiFi Free? Cost and Entertainment (2026)',
+    desc: 'Is Southwest WiFi free? Free for Rapid Rewards Members thanks to T-Mobile. Others can buy WiFi for $8 per device where available. No seatback screens. From Southwest\'s own page, checked 13 October 2026.',
+    answer: 'Free for Rapid Rewards Members, thanks to T-Mobile. Not a Member: you can join for free, or where available buy WiFi for $8 per device from takeoff to landing. Southwest has no seatback screens, so bring your own device and headphones.',
+    srcNote: 'From Southwest\'s own help page, last checked 13 October 2026. Southwest does not list WiFi by aircraft there, so confirm with the airline before you fly.',
+    scen: [
+      card('member', 'Rapid Rewards Member', 'go', 'Free WiFi', 'Thanks to T-Mobile', 'Southwest says Rapid Rewards Members get access to free WiFi thanks to T-Mobile.', ['On aircraft with Starlink WiFi you can use it to stream from your favorite services, browse and stay connected across multiple devices.', 'On aircraft with Starlink WiFi, entertainment through Southwest\'s onboard portal is not available.'], PG, true),
+      card('nonmember', 'Not a Member', 'warn', 'Join free or pay $8', 'Where available', 'Southwest says that if you are not a Member you can join Rapid Rewards for free, or where available buy WiFi for $8 per device from takeoff to landing.', ['Southwest says it may prohibit access to certain high-bandwidth applications, websites and video conferencing services.'], PG),
+      card('ent', 'Entertainment and headphones', 'warn', 'No seatback screens', 'Bring your own device', 'Southwest says it does not have seatback screens or devices for rent and does not sell headphones onboard.', ['Headphones are required whenever a passenger is listening to any audio.'], PG)
+    ],
+    faq: [
+      ['Is Southwest WiFi free?', 'Free for Rapid Rewards Members, thanks to T-Mobile. If you are not a Member you can join for free, or where available buy WiFi for $8 per device from takeoff to landing.'],
+      ['How much does Southwest WiFi cost?', 'Southwest says where available WiFi is $8 per device from takeoff to landing for passengers who are not Rapid Rewards Members.'],
+      ['Does Southwest have in-flight entertainment?', 'Southwest says it does not have seatback screens or devices for rent. On aircraft with Starlink WiFi the onboard entertainment portal is not available, and you can use free WiFi to stream from your own services. Headphones are required for audio.']
+    ],
+    tableHead: ['Question', 'What Southwest says'], tableTitle: 'What Southwest says about WiFi',
+    rows: [['Rapid Rewards Members', 'Free WiFi, thanks to T-Mobile'], ['Not a Member', 'Join for free, or $8 per device where available'], ['Seatback screens', 'None'], ['Headphones', 'Required for audio; not sold onboard'], ['Aircraft with Starlink WiFi', 'Onboard entertainment portal not available; stream with free WiFi']]
+  });
+}
+
+// ---------------- WESTJET ----------------
+// Read 13 October 2026 on westjet.com: WestJet Wifi (help).
+{
+  const PG = ['https://www.westjet.com/en-ca/help/westjet-wifi', 'WestJet: WestJet Wi-Fi', 'WestJet Wi-Fi and WestJet Connect'];
+  addN({
+    slug: 'westjet', slab: 'Which one fits you?',
+    h1: 'Is WestJet WiFi Free? WestJet Rewards and 737 Aircraft (2026)',
+    desc: 'Is WestJet WiFi free? Free high-speed WiFi presented by TELUS for WestJet Rewards members on over 100 aircraft across the 737 fleet. Otherwise WiFi is for a fee. From WestJet\'s own page, checked 13 October 2026.',
+    answer: 'Free for WestJet Rewards members: WestJet says WestJet Wi-Fi presented by TELUS is available in over 100 aircraft across its 737 fleet. WestJet Connect gives free entertainment and flight information, and its Wi-Fi is for a fee.',
+    srcNote: 'From WestJet\'s own help page, last checked 13 October 2026. WestJet does not list aircraft, so check your flight with its Flight Guide.',
+    scen: [
+      card('rewards', 'WestJet Rewards member', 'go', 'Free WiFi', 'Presented by TELUS', 'WestJet says WestJet Wi-Fi presented by TELUS brings free, high-speed internet to every WestJet Rewards member.', ['It is available in over 100 aircraft across the 737 fleet, so not every flight has it.', 'WestJet says members can stream, work and connect to what matters most.'], PG, true),
+      card('connect', 'WestJet Connect', 'warn', 'Free entertainment, Wi-Fi for a fee', 'The other service', 'WestJet Connect is the free in-flight service that gives your smartphone, tablet or laptop access to entertainment on demand and flight information. WestJet says its Wi-Fi is available for a fee.', ['WestJet describes this as different from WestJet Wi-Fi presented by TELUS.'], PG),
+      card('check', 'Check your flight', 'warn', 'Use the Flight Guide', 'Before you fly', 'WestJet says you can check Wi-Fi availability on your flight using its Flight Guide.', ['WestJet\'s page does not list which aircraft have Wi-Fi.'], PG)
+    ],
+    faq: [
+      ['Is WestJet WiFi free?', 'Free for WestJet Rewards members on WestJet Wi-Fi presented by TELUS, which WestJet says is available in over 100 aircraft across its 737 fleet. Otherwise WiFi is for a fee.'],
+      ['What is the difference between WestJet Connect and WestJet Wi-Fi?', 'WestJet Connect is a free in-flight service for entertainment on demand and flight information, and its Wi-Fi is for a fee. WestJet Wi-Fi presented by TELUS offers fast, free, high-speed internet for WestJet Rewards members.'],
+      ['How do I know if my WestJet flight has WiFi?', 'WestJet says to check Wi-Fi availability on your flight using its Flight Guide.']
+    ],
+    tableHead: ['Question', 'What WestJet says'], tableTitle: 'What WestJet says about WiFi',
+    rows: [['WestJet Wi-Fi presented by TELUS', 'Free for WestJet Rewards members'], ['Where', 'Over 100 aircraft across the 737 fleet'], ['WestJet Connect', 'Free entertainment on demand and flight information'], ['Other Wi-Fi', 'For a fee']]
+  });
+}
+
+// ---------------- ALASKA AIRLINES ----------------
+// Read 13 October 2026 on news.alaskaair.com (official Alaska/Hawaiian newsroom, release of 25 June 2026 with FAQ). Alaska's own Wi-Fi page returns an error page.
+{
+  const PG = ['https://news.alaskaair.com/guest-experience/atmos-rewards-members-unlock-free-inflight-wi-fi-on-alaska-hawaiian-airlines-thanks-to-t-mobile/', 'Alaska Airlines newsroom: free inflight Wi-Fi for Atmos Rewards members', 'Release and FAQ (June 2026)'];
+  const mk = (slug, name, h1, desc) => addN({
+    slug, slab: 'Who are you?', h1, desc,
+    answer: 'Yes for Atmos Rewards members (joining is free): inflight WiFi on Starlink-equipped ' + name + ' aircraft is complimentary thanks to T-Mobile. Guests under 18 connect free after entering their reservation details. The release does not say what other guests pay.',
+    srcNote: 'From the Alaska Airlines and Hawaiian Airlines newsroom release of June 2026 and its FAQ (Alaska\'s own Wi-Fi page was not readable), last checked 13 October 2026. Starlink is still rolling out, so confirm before you fly.',
+    scen: [
+      card('member', 'Atmos Rewards member', 'go', 'Free WiFi', 'Thanks to T-Mobile, on Starlink aircraft', 'The release says that on Starlink-equipped aircraft, inflight Wi-Fi is complimentary for Atmos Rewards members, thanks to T-Mobile.', ['Existing members connect automatically through a streamlined portal. Enrollment in Atmos Rewards is free and takes seconds, before or during travel.', 'With Starlink you can stream live sports, movies and shows, browse, use apps, play video games and send messages, gate to gate.'], PG, true),
+      card('join', 'Not a member yet', 'warn', 'Join free to connect', 'Guests 16 and older can join online', 'The release says that from June on select flights, and on all flights by mid-July, guests need Atmos Rewards to access the complimentary Starlink Wi-Fi.', ['Guests 16 and older can join Atmos Rewards online. For guests under 16 a parent or legal guardian completes enrollment by contacting Alaska Airlines.', 'The release does not say what a guest who does not join pays.'], PG),
+      card('minor', 'Under 18', 'go', 'Free after entering reservation details', 'Parents are encouraged to enroll', 'The FAQ says guests under 18 are connected to free Wi-Fi after they enter their reservation details.', ['Parents or guardians should make sure children\'s devices have the right parental controls before connecting.'], PG),
+      card('rollout', 'Which aircraft', 'warn', 'Not on every aircraft yet', 'Rollout in progress', 'The release says Alaska expects to finish Starlink on the remaining mainline fleet by 2027, and to have its entire widebody fleet done this fall, including the Boeing 787-9.', ['Alaska and Hawaiian published an installation tracker. The release does not list individual aircraft types.'], PG)
+    ],
+    faq: [
+      ['Is ' + name + ' WiFi free?', 'Yes for Atmos Rewards members: on Starlink-equipped aircraft inflight Wi-Fi is complimentary thanks to T-Mobile, and enrollment in Atmos Rewards is free. The release does not say what other guests pay.'],
+      ['Do I need to be an Atmos Rewards member for ' + name + ' WiFi?', 'The release says that from June on select flights and on all flights by mid-July, guests need Atmos Rewards to access the complimentary Starlink Wi-Fi. Guests under 18 can connect free by entering their reservation details.'],
+      ['Which ' + name + ' planes have Starlink?', 'Not every aircraft yet. Alaska says it expects to finish the remaining mainline fleet by 2027 and publishes an installation tracker. The release does not list aircraft types.']
+    ],
+    tableHead: ['Question', 'What Alaska and Hawaiian say'], tableTitle: 'What the release says',
+    rows: [['Starlink-equipped aircraft', 'Complimentary for Atmos Rewards members, thanks to T-Mobile'], ['Joining Atmos Rewards', 'Free; guests 16 and older online, under 16 via a parent or guardian'], ['Guests under 18', 'Free after entering reservation details'], ['Remaining mainline fleet', 'Expected to finish by 2027']]
+  });
+  mk('alaska-airlines', 'Alaska Airlines', 'Is Alaska Airlines WiFi Free? Atmos Rewards and Starlink (2026)', 'Is Alaska Airlines WiFi free? Free Starlink WiFi for Atmos Rewards members, thanks to T-Mobile, on Starlink-equipped aircraft. How to join and what the airline says about rollout. From Alaska\'s own newsroom, checked 13 October 2026.');
+  mk('hawaiian-airlines', 'Hawaiian Airlines', 'Is Hawaiian Airlines WiFi Free? Atmos Rewards and Starlink (2026)', 'Is Hawaiian Airlines WiFi free? Free Starlink WiFi for Atmos Rewards members, thanks to T-Mobile, on Starlink-equipped aircraft. How to join and what the airline says about rollout. From the airline\'s own newsroom, checked 13 October 2026.');
+}
+
+// ---------------- FRONTIER ----------------
+// Read 13 October 2026 on faq.flyfrontier.com (article last modified 07/14/2026).
+{
+  const PG = ['https://faq.flyfrontier.com/help/do-you-offer-wi-fi-tv-movies-or-other-in-flight-entertainment', 'Frontier help: In-flight entertainment, Wi-Fi and media', 'Last modified 14 July 2026'];
+  addN({
+    slug: 'frontier', slab: 'What do you want to know?',
+    h1: 'Does Frontier Have WiFi or In-Flight Entertainment? (2026)',
+    desc: 'Does Frontier have WiFi? No. Frontier says its flights do not offer Wi-Fi, TV, movies or other in-flight entertainment, and have no electrical outlets. Starlink is planned from early 2027. From Frontier\'s own help page, checked 13 October 2026.',
+    answer: 'No. Frontier says its flights do not currently offer Wi-Fi, TV, movies or other in-flight entertainment options, and there are no electrical outlets on board. It says it will start installing Starlink in early 2027.',
+    srcNote: 'From Frontier\'s own help article (last modified 14 July 2026), last checked 13 October 2026. This can change when Starlink is installed.',
+    scen: [
+      card('now', 'Wi-Fi and entertainment today', 'stop', 'No WiFi', 'No TV, movies or entertainment either', 'Frontier says its flights do not currently offer Wi-Fi, TV, movies or other in-flight entertainment options.', ['Bring your own downloaded content and headphones.'], PG, true),
+      card('power', 'Power outlets', 'stop', 'No outlets', 'Charge before you fly', 'Frontier says there are no electrical outlets on board.', ['Frontier\'s power bank limits and rules are on the Frontier power bank page.'], PG),
+      card('plan', 'What is planned', 'warn', 'Starlink from early 2027', 'Not yet installed', 'Frontier says it will be installing Starlink, the fastest Wi-Fi in the sky, starting in early 2027.', ['The article does not say which aircraft or whether it will be free.'], PG)
+    ],
+    faq: [
+      ['Does Frontier have WiFi?', 'No. Frontier says its flights do not currently offer Wi-Fi, TV, movies or other in-flight entertainment, and there are no electrical outlets on board.'],
+      ['Will Frontier get WiFi?', 'Frontier says it will be installing Starlink, the fastest Wi-Fi in the sky, starting in early 2027.'],
+      ['Does Frontier have power outlets?', 'No. Frontier says there are no electrical outlets on board.']
+    ],
+    tableHead: ['Question', 'What Frontier says'], tableTitle: 'What Frontier says',
+    rows: [['Wi-Fi', 'Not offered'], ['TV, movies, in-flight entertainment', 'Not offered'], ['Electrical outlets', 'None on board'], ['Starlink', 'Installation planned from early 2027']]
+  });
+}
+
+// ---------------- TURKISH AIRLINES ----------------
+// Read 13 October 2026 on turkishairlines.com (US site): Connectivity | Wi-Fi on Board.
+{
+  const PG = ['https://www.turkishairlines.com/en-us/flights/fly-different/inflight-connectivity/', 'Turkish Airlines: Wi-Fi on Board', 'Passes, quotas and fees'];
+  addN({
+    slug: 'turkish-airlines', slab: 'Who are you?',
+    h1: 'Is Turkish Airlines WiFi Free? Free Quota and Price (2026)',
+    desc: 'Is Turkish Airlines WiFi free? Free unlimited internet on 103 selected narrow-body aircraft, and free quotas for Business Class and Miles&Smiles members. Paid passes from 3 USD. From Turkish\'s own page, checked 13 October 2026.',
+    answer: 'It depends. On 103 selected narrow-body aircraft (A321, 737-800, 737-900ER) all passengers get free unlimited internet. On international flights Business Class and Miles&Smiles members get free quotas, and other passengers can buy passes during the flight: unlimited internet 25 USD on long-distance flights and 13 USD on short-distance flights.',
+    srcNote: 'From Turkish Airlines\' own Wi-Fi page (US site), last checked 13 October 2026. Passes and coverage can vary by flight and aircraft type, so confirm before you fly.',
+    scen: [
+      card('narrow', 'Selected narrow-body aircraft', 'go', 'Free unlimited internet', 'For all passengers: 103 aircraft (A321, B737-800, B737-900ER)', 'Turkish says all passengers on selected narrow-body aircraft get complimentary, unlimited internet: 103 aircraft of the A321, B737-800 and B737-900ER types.', ['This applies on its international and domestic flights, on the selected aircraft.', 'Turkish says internet passes may vary by aircraft.'], PG, true),
+      card('members', 'International: Miles&Smiles and Business', 'warn', 'Free quota by tier', 'Business Class and Miles&Smiles members', 'On international flights Turkish gives free quotas: Business Class with Miles&Smiles Elite or Elite Plus gets unlimited internet; Business Class gets 1 GB and unlimited messaging; Elite or Elite Plus members get 400 MB and unlimited messaging; Classic Plus members get 250 MB and unlimited messaging; Classic members get unlimited messaging.', ['Passengers who are not yet members can create a Miles&Smiles membership before or during the flight on the internet login page and enjoy unlimited messaging.'], PG),
+      card('paid', 'Everyone else: paid passes', 'warn', 'Buy during the flight', 'Long-distance and short-distance prices', 'Long-distance flights: unlimited internet 25 USD, 1 GB 20 USD, 500 MB 15 USD, 250 MB 9 USD, unlimited messaging 3 USD. Short-distance flights: unlimited internet 13 USD, 250 MB 9 USD, unlimited messaging 3 USD.', ['Passes can only be purchased during the flight. Turkish says internet passes may vary by aircraft.'], PG),
+      card('domestic', 'Domestic flights in Turkey', 'warn', 'Free messaging, paid internet', 'Prices in Turkish lira', 'On domestic flights Business Class passengers and Miles&Smiles members get complimentary messaging. Everyone else can buy passes: unlimited messaging 150 TL, unlimited internet 350 TL.', ['All taxes are included in the pass prices. Passengers on the selected narrow-body aircraft above get free unlimited internet.'], PG)
+    ],
+    faq: [
+      ['Is Turkish Airlines WiFi free?', 'On 103 selected narrow-body aircraft (A321, B737-800, B737-900ER) all passengers get free unlimited internet. Otherwise Business Class and Miles&Smiles members get free quotas on international flights, and other passengers can buy passes.'],
+      ['How much does Turkish Airlines WiFi cost?', 'On long-distance flights: unlimited internet 25 USD, 1 GB 20 USD, 500 MB 15 USD, 250 MB 9 USD, unlimited messaging 3 USD. On short-distance flights: unlimited internet 13 USD, 250 MB 9 USD, unlimited messaging 3 USD. Domestic: unlimited messaging 150 TL, unlimited internet 350 TL. Passes are bought during the flight.'],
+      ['Do I get free WiFi on Turkish Airlines with Miles&Smiles?', 'Yes, a quota by tier on international flights: Classic unlimited messaging; Classic Plus 250 MB and unlimited messaging; Elite or Elite Plus 400 MB and unlimited messaging. Business Class gets 1 GB and unlimited messaging, and Business Class with Elite or Elite Plus gets unlimited internet.']
+    ],
+    tableHead: ['Who', 'Free on international flights'], tableTitle: 'Turkish\'s free quota table',
+    tableNote: 'Copied from the table on Turkish Airlines\' Wi-Fi page (international flights).',
+    rows: [['Business Class with Miles&Smiles Elite or Elite Plus', 'Unlimited internet'], ['Business Class', '1 GB and unlimited messaging'], ['Miles&Smiles Elite or Elite Plus', '400 MB and unlimited messaging'], ['Miles&Smiles Classic Plus', '250 MB and unlimited messaging'], ['Miles&Smiles Classic', 'Unlimited messaging'], ['All passengers on 103 selected narrow-body aircraft (A321, B737-800, B737-900ER)', 'Unlimited internet']]
+  });
+}
+
+// ---------------- LUFTHANSA ----------------
+// Read 13 October 2026 on lufthansa.com: FlyNet on board (US site) and Lufthansa Group Wi-Fi.
+{
+  const FN = ['https://www.lufthansa.com/us/en/flynet', 'Lufthansa: FlyNet on board', 'FlyNet tariffs'];
+  const LG = ['https://www.lufthansa.com/de/en/during-your-trip/lhg-wifi', 'Lufthansa Group Wi-Fi', 'Free Wi-Fi with Travel ID or Miles & More'];
+  addN({
+    slug: 'lufthansa', slab: 'Which service?',
+    h1: 'Is Lufthansa WiFi Free? FlyNet and Lufthansa Group WiFi (2026)',
+    desc: 'Is Lufthansa WiFi free? Messaging is free for Travel ID and Miles & More members, and Lufthansa Group WiFi (Starlink) is free on selected aircraft. FlyNet Premium costs EUR 6 or 8. From Lufthansa\'s own pages, checked 13 October 2026.',
+    answer: 'Messaging is free for Travel ID and Miles & More members. Lufthansa Group Wi-Fi powered by Starlink is free in every class with a Travel ID or Miles & More login, but only on selected aircraft so far. On FlyNet, Premium costs EUR 6 (up to 90 minutes) or EUR 8, or 2,000 or 2,600 miles.',
+    srcNote: 'From Lufthansa\'s own FlyNet and Lufthansa Group Wi-Fi pages, last checked 13 October 2026. Lufthansa says you cannot yet check Starlink availability before your flight.',
+    scen: [
+      card('group', 'Lufthansa Group Wi-Fi (Starlink)', 'warn', 'Free on selected aircraft', 'With a Travel ID or Miles & More login', 'Lufthansa says Lufthansa Group Wi-Fi powered by Starlink is free of charge and available in every travel class, with your Travel ID or Miles & More membership.', ['At the start of the rollout it is only on selected aircraft, so you cannot yet check availability before your flight. Lufthansa says the first Airbus A320neo with it takes off in mid-August and the rest of the fleet will be equipped gradually.', 'One login works across all Lufthansa Group airlines on equipped flights.'], LG, true),
+      card('msg', 'FlyNet free messaging', 'go', 'Free messaging', 'For Travel ID and Miles & More members', 'Travel ID and Miles & More members get free, unlimited messaging throughout the flight by logging in to the FlyNet portal.', ['Lufthansa says its FlyNet Wi-Fi is already available on most of its aircraft.'], FN),
+      card('prem', 'FlyNet Premium', 'warn', 'EUR 6 or EUR 8', 'Or 2,000 or 2,600 miles', 'FlyNet Premium suits social media, browsing, streaming and VPN, with speed up to 4 Mbit/s: EUR 6 or 2,000 miles for flights up to 90 minutes, EUR 8 or 2,600 miles for longer flights.', ['HON Circle members and connecting First Class passengers get free premium access when they log in with Miles & More or Travel ID on FlyNet.', 'These are the short and medium-haul prices on Lufthansa\'s page. Buy in advance for a discounted rate.'], FN)
+    ],
+    faq: [
+      ['Is Lufthansa WiFi free?', 'Messaging is free for Travel ID and Miles & More members. Lufthansa Group Wi-Fi powered by Starlink is free in every class with a Travel ID or Miles & More login, but only on selected aircraft so far. FlyNet Premium is paid.'],
+      ['How much does Lufthansa WiFi cost?', 'FlyNet Premium on short and medium-haul flights costs EUR 6 or 2,000 miles for flights up to 90 minutes and EUR 8 or 2,600 miles for longer flights. FlyNet Messaging is free for Travel ID and Miles & More members.'],
+      ['Which Lufthansa planes have Starlink WiFi?', 'Lufthansa says it is only on selected aircraft at the start, with the first Airbus A320neo (D-AINM) in mid-August and the rest of the fleet equipped gradually. You cannot yet check availability before your flight.']
+    ],
+    tableHead: ['Service', 'What Lufthansa says'], tableTitle: 'What Lufthansa says about WiFi',
+    rows: [['Lufthansa Group Wi-Fi (Starlink)', 'Free in all classes with a Travel ID or Miles & More login; selected aircraft'], ['FlyNet Messaging', 'Free for Travel ID and Miles & More members'], ['FlyNet Premium, up to 90 minutes', 'EUR 6 or 2,000 miles'], ['FlyNet Premium, over 90 minutes', 'EUR 8 or 2,600 miles'], ['HON Circle and connecting First Class', 'Free premium access']]
+  });
+}
+
+// ---------------- BRITISH AIRWAYS ----------------
+// Read 13 October 2026 on britishairways.com: Onboard Wi-Fi.
+{
+  const PG = ['https://www.britishairways.com/content/information/entertainment/wifi-on-board', 'British Airways: Onboard Wi-Fi', 'Packages and prices'];
+  addN({
+    slug: 'british-airways', slab: 'Which package?',
+    h1: 'Is British Airways WiFi Free? Messaging, Stream and Starlink (2026)',
+    desc: 'Is British Airways WiFi free? Messaging is free for British Airways Club members, and Stream is free in First. Other prices from GBP 1.99. Starlink is rolling out from the 787-8. From BA\'s own page, checked 13 October 2026.',
+    answer: 'Messaging is free for members of The British Airways Club (joining is free), and Stream is free for customers in First. Non-members pay GBP 1.99 to 2.99 for messaging on short-haul and GBP 2.99 to 4.99 on long-haul. BA says WiFi is on most aircraft and Starlink is rolling out, starting with the 787-8.',
+    srcNote: 'From British Airways\' own Wi-Fi page, last checked 13 October 2026. BA says Wi-Fi is available on most aircraft, so confirm with the airline before you fly.',
+    scen: [
+      card('msg', 'Messaging package', 'go', 'Free for Club members', 'Joining The British Airways Club is free', 'BA says messaging lets you use instant messaging apps and text-based emails without attachments, and there is no charge for members of The British Airways Club.', ['Non-members pay GBP 1.99 to GBP 2.99 on short-haul flights and GBP 2.99 to GBP 4.99 on long-haul flights.'], PG, true),
+      card('stream', 'Stream package', 'warn', 'Free in First; paid otherwise', 'Browse, download and stream', 'BA says the Stream package covers messaging, browsing, larger emails and streaming music, video and films. It is free for customers travelling in First.', ['Otherwise GBP 4.99 to GBP 11.99 on short-haul flights and GBP 4.99 to GBP 21.99 on long-haul flights.'], PG),
+      card('starlink', 'Starlink rollout', 'warn', 'Rolling out', 'Starting with the 787-8', 'BA says it is rolling out onboard Wi-Fi powered by Starlink, starting with its 787-8s and with more aircraft to follow over the coming months, and calls it fast, free Wi-Fi.', ['BA says its Wi-Fi service is available on most aircraft. The page does not list which aircraft have which service.'], PG)
+    ],
+    faq: [
+      ['Is British Airways WiFi free?', 'Messaging is free for members of The British Airways Club (joining is free), and the Stream package is free for customers in First. Otherwise messaging costs GBP 1.99 to GBP 2.99 on short-haul and GBP 2.99 to GBP 4.99 on long-haul, and Stream costs GBP 4.99 up to GBP 11.99 (short-haul) or GBP 21.99 (long-haul).'],
+      ['Does British Airways have Starlink WiFi?', 'BA says it is rolling out onboard Wi-Fi powered by Starlink, starting with its 787-8s, with more aircraft to follow over the coming months.'],
+      ['How do I connect to British Airways WiFi?', 'On a Wi-Fi enabled aircraft your crew will tell you when you can connect. Join the "BAWi-Fi" network, enable flight mode once cruising above 10,000 ft, open your browser (or go to shop.ba.com), and choose the free messaging banner with your Club login, or buy a package.']
+    ],
+    tableHead: ['Package', 'Free for', 'Price otherwise'], tableTitle: 'BA\'s packages',
+    tableNote: 'Copied from the package prices on British Airways\' Wi-Fi page.',
+    rows: [['Messaging', 'Members of The British Airways Club', 'GBP 1.99 to GBP 2.99 (short-haul); GBP 2.99 to GBP 4.99 (long-haul)'], ['Stream', 'Customers travelling in First', 'GBP 4.99 to GBP 11.99 (short-haul); GBP 4.99 to GBP 21.99 (long-haul)']],
+    extra: steps(['On a Wi-Fi enabled aircraft, wait for your crew to say you can connect.', 'Join the "BAWi-Fi" network and, once cruising above 10,000 ft, enable flight mode.', 'Open your browser. If the page does not load, go to shop.ba.com.', 'Use the free messaging banner with your British Airways Club login, or choose and buy a package.'])
+  });
+}
+
+// ---------------- AIR FRANCE ----------------
+// Read 13 October 2026 on airfrance.us: Inflight wifi: connectivity and options.
+{
+  const PG = ['https://wwws.airfrance.us/information/prepare/divertissements-wifi-presse/wifi-a-bord', 'Air France: Inflight wifi', 'Connectivity and options'];
+  addN({
+    slug: 'air-france', slab: 'Which one fits you?',
+    h1: 'Is Air France WiFi Free? Flying Blue and Starlink (2026)',
+    desc: 'Is Air France WiFi free? Free, unlimited high-speed Starlink WiFi for Flying Blue members on aircraft being progressively equipped. Others get a free Message Pass or a paid Wifi Pass. From Air France\'s own page, checked 13 October 2026.',
+    answer: 'Free and unlimited high-speed Starlink WiFi is reserved for Flying Blue members (joining is free), on aircraft Air France is progressively equipping. On aircraft not yet equipped there is a free Message Pass and a paid Wifi Pass. You cannot confirm at booking which wifi your flight will have.',
+    srcNote: 'From Air France\'s own wifi page (US site), last checked 13 October 2026. The aircraft can change until the day of departure, so confirm with the airline before you fly.',
+    scen: [
+      card('starlink', 'Starlink wifi', 'warn', 'Free for Flying Blue members', 'On aircraft being equipped', 'Air France says it is progressively equipping its aircraft to offer free and unlimited high-speed wifi with Starlink, reserved for its Flying Blue members. Joining is easy and free.', ['Air France says the aircraft assigned to a flight may change until the day of departure, so it cannot confirm at booking which wifi service you will have.', 'You can create a Flying Blue account at any time, including on board. Keep your login handy.'], PG, true),
+      card('other', 'Aircraft not yet equipped', 'warn', 'Free Message Pass, paid Wifi Pass', 'The earlier offer', 'Air France says that if your aircraft is not yet equipped with high-speed wifi, its offer includes the free Message Pass and the paid Wifi Pass.', ['Air France\'s page does not show the Wifi Pass price in the text we read.'], PG)
+    ],
+    faq: [
+      ['Is Air France WiFi free?', 'Free and unlimited Starlink wifi is reserved for Flying Blue members, which is free to join, on aircraft that have it. On aircraft not yet equipped there is a free Message Pass and a paid Wifi Pass.'],
+      ['How do I connect to Air France WiFi?', 'Select the "AirFranceWifi" network in your device settings with airplane mode on (turn your VPN off), go to the login portal or type wifi.airfrance.com, and enter your Flying Blue email or number and password.'],
+      ['Can I book an Air France flight with Starlink WiFi?', 'No, not with certainty. Air France says the aircraft can change until the day of departure, so it cannot confirm which wifi service you will have at booking.']
+    ],
+    tableHead: ['Question', 'What Air France says'], tableTitle: 'What Air France says about wifi',
+    rows: [['Starlink wifi', 'Free and unlimited for Flying Blue members, on aircraft being equipped'], ['Aircraft not yet equipped', 'Free Message Pass and paid Wifi Pass'], ['Not a Flying Blue member', 'Join free, also possible on board'], ['VPN', 'Allowed, but turn it off while connecting']],
+    extra: steps(['Select the "AirFranceWifi" network in your device settings and check airplane mode is on. Turn off any VPN.', 'Go to the "AirFranceWifi" login portal. If it does not open, type wifi.airfrance.com into your browser.', 'Enter your Flying Blue login (email or membership number) and password.'])
+  });
+}
+
+// ---------------- IBERIA ----------------
+// Read 13 October 2026 on iberia.com (US site): WiFi.
+{
+  const PG = ['https://www.iberia.com/us/on-board/wifi/', 'Iberia: WiFi on board', 'Options, coverage and Starlink'];
+  addN({
+    slug: 'iberia', slab: 'Which one fits you?',
+    h1: 'Is Iberia WiFi Free? Messaging, Business and Starlink (2026)',
+    desc: 'Is Iberia WiFi free? Free messaging, and free WiFi all flight for Business, Iberia Club members and anyone who registers on board. Iberia says 96% of aircraft have WiFi. From Iberia\'s own page, checked 13 October 2026.',
+    answer: 'Iberia says 96% of its aircraft have WiFi. Free connectivity for messaging apps is offered, and the whole flight is free for customers in Business, Iberia Club members and anyone who registers with the programme during the flight. Payment packages cover browsing, streaming and email. Iberia Regional Air Nostrum aircraft have no WiFi.',
+    srcNote: 'From Iberia\'s own WiFi page (US site), last checked 13 October 2026. Connectivity comes from three different suppliers, so it can differ from one flight to another.',
+    scen: [
+      card('msg', 'Free messaging', 'go', 'Free messaging', 'WhatsApp, Messenger, Telegram', 'Iberia offers free connectivity for messaging apps such as WhatsApp, Messenger and Telegram.', ['Iberia says it offers WiFi on 96% of its aircraft, with global coverage by satellite or ground, and the signal may get weaker at some moments.'], PG, true),
+      card('free', 'Business, Iberia Club', 'go', 'Free all flight', 'Business cabin, Iberia Club members, or register on board', 'Iberia says the free service throughout the flight is for customers travelling in Business, Iberia Club members, and anyone who registers with the programme during the flight.', ['If you are an Iberia Club member remember your password: you cannot reset it during the flight.'], PG),
+      card('paid', 'Payment packages', 'warn', 'Paid', 'Browsing, streaming, email, documents', 'Iberia sells payment packages for internet browsing, streaming, email, messaging, and downloading and sending documents. Fares depend on the route.', ['Connect once you are on board to choose the plan.'], PG),
+      card('starlink', 'Starlink', 'warn', 'Being added', 'Free high-speed WiFi', 'Iberia says it is incorporating free high-speed WiFi (Starlink) into its fleet.', ['Iberia\'s page does not list which aircraft have it.'], PG),
+      card('regional', 'Iberia Regional Air Nostrum', 'stop', 'No WiFi', 'Regional Play instead', 'Iberia says Iberia Regional Air Nostrum aircraft do not have wifi service on board.', ['Regional Play is a digital onboard entertainment platform that lets passengers access movies, series, news and games free from their own devices.'], PG)
+    ],
+    faq: [
+      ['Is Iberia WiFi free?', 'Messaging apps are free, and the whole flight is free for customers in Business, Iberia Club members and anyone who registers with the programme during the flight. Browsing, streaming and email packages are paid.'],
+      ['Does Iberia have WiFi on all flights?', 'Iberia says it offers WiFi on 96% of its aircraft. Iberia Regional Air Nostrum aircraft do not have wifi service on board.'],
+      ['How do I connect to Iberia WiFi?', 'Enable flight mode, select the "Iberia WiFi" network, and the captive portal should open. If it does not, scan the QR code on your seat or type shop.iberia.com into your browser.']
+    ],
+    tableHead: ['Question', 'What Iberia says'], tableTitle: 'What Iberia says about WiFi',
+    rows: [['Aircraft with WiFi', '96% of its aircraft'], ['Messaging apps', 'Free'], ['Business, Iberia Club, or register on board', 'Free all flight'], ['Browsing, streaming, email, documents', 'Paid packages; fares depend on the route'], ['Iberia Regional Air Nostrum', 'No wifi; Regional Play entertainment']],
+    extra: steps(['Enable flight mode on your device.', 'Select the "Iberia WiFi" network. The captive portal should open by itself.', 'If not, scan the QR code on your seat or type shop.iberia.com into your browser.'])
+  });
+}
+
+// ---------------- KLM ----------------
+// Read 13 October 2026 on klm.com: WiFi on board your KLM flight.
+{
+  const PG = ['https://www.klm.com/information/travel-class-extra-options/inflight-wifi', 'KLM: WiFi on board', 'Message Pass and WiFi Pass'];
+  addN({
+    slug: 'klm', slab: 'Which pass?',
+    h1: 'Is KLM WiFi Free? Message Pass and WiFi Pass (2026)',
+    desc: 'Is KLM WiFi free? Sending messages is usually free with the Message Pass. Email, social media and streaming need the paid WiFi Pass. Not all KLM aircraft have WiFi. From KLM\'s own page, checked 13 October 2026.',
+    answer: 'Sending messages via WiFi is usually free with the Message Pass. To check email and social media or stream music and films you buy the paid WiFi Pass. KLM says not all aircraft have inflight WiFi: look for the WiFi symbol while booking, or check My Trip or the app.',
+    srcNote: 'From KLM\'s own WiFi page, last checked 13 October 2026. KLM does not list aircraft there, so check your flight in My Trip or the app.',
+    scen: [
+      card('msg', 'Message Pass', 'go', 'Usually free', 'Messaging', 'KLM says sending messages via WiFi is usually free with the Message Pass.', ['KLM\'s page does not say more about the Message Pass conditions.'], PG, true),
+      card('pass', 'WiFi Pass', 'warn', 'Paid', 'Email, social media, streaming', 'To check your email and social media, or stream music and films, KLM says you buy its paid WiFi Pass.', ['If something goes wrong you can request a refund for your purchased pass.'], PG),
+      card('check', 'Does my flight have WiFi?', 'warn', 'Not every aircraft', 'Check before you fly', 'KLM says not all aircraft have inflight WiFi. If you see a WiFi symbol during booking, your flight will have WiFi. You can also check in My Trip or in the app.', ['KLM\'s page does not list aircraft types.'], PG)
+    ],
+    faq: [
+      ['Is KLM WiFi free?', 'Sending messages via WiFi is usually free with the Message Pass. Email, social media and streaming need the paid WiFi Pass.'],
+      ['Does every KLM flight have WiFi?', 'No. KLM says not all aircraft have inflight WiFi. A WiFi symbol during booking means your flight will have WiFi, and you can also check in My Trip or the app.'],
+      ['Can I get a refund on KLM WiFi?', 'KLM says that when something goes wrong you can request a refund for your purchased WiFi Pass.']
+    ],
+    tableHead: ['Question', 'What KLM says'], tableTitle: 'What KLM says about WiFi',
+    rows: [['Message Pass', 'Usually free'], ['WiFi Pass', 'Paid: email, social media, streaming'], ['Does my flight have WiFi?', 'WiFi symbol while booking, or My Trip and the app'], ['Refund', 'You can request one for a purchased WiFi Pass']]
+  });
+}
+
+// ---------------- AIR EUROPA ----------------
+// Read 13 October 2026 on aireuropa.com: Onboard Wi-Fi.
+{
+  const PG = ['https://www.aireuropa.com/es/en/aea/aexperience/services/onboard-wifi.html', 'Air Europa: Onboard Wi-Fi', 'Packages and routes'];
+  addN({
+    slug: 'air-europa', slab: 'Which package?',
+    h1: 'Does Air Europa Have WiFi? Packages, Price and Routes (2026)',
+    desc: 'Does Air Europa have WiFi? Yes on a large part of its fleet on transoceanic flights, with CHAT, BROWSE and BROWSE PRO packages priced by flight length (prices shown include EUR 2 to EUR 30). From Air Europa\'s own page, checked 13 October 2026.',
+    answer: 'Air Europa says its Wi-Fi is available on a large part of its fleet on transoceanic flights, on routes it lists. Packages: CHAT (messaging), BROWSE and BROWSE PRO, priced by flight duration (prices shown on its page include EUR 2 to EUR 30). None of the packages allows video streaming.',
+    srcNote: 'From Air Europa\'s own Wi-Fi page, last checked 13 October 2026. The service is subject to change, and the page does not show every price, so confirm with the airline before you fly.',
+    scen: [
+      card('chat', 'CHAT', 'warn', 'Paid: messaging', 'WhatsApp, Messenger, iMessage', 'Air Europa\'s CHAT package lets you message friends and family on WhatsApp, Messenger, iMessage and more. It does not allow browsing or video streaming.', ['Prices shown on the page include EUR 2 and EUR 6, depending on flight duration.'], PG, true),
+      card('browse', 'BROWSE', 'warn', 'Paid: browse and email', 'Social media, email, chat', 'BROWSE lets you browse the internet, check social media, chat and manage email. It does not allow VPN connections or video streaming.', ['Prices shown on the page include EUR 5 and EUR 21, depending on flight duration.'], PG),
+      card('pro', 'BROWSE PRO', 'warn', 'Paid: high speed with VPN', 'Music and online games', 'BROWSE PRO is high-speed browsing with a VPN connection, email, chat, music playback and online games. It does not allow video streaming.', ['Prices shown on the page include EUR 12 and EUR 30, depending on flight duration.'], PG),
+      card('routes', 'Which flights', 'warn', 'Transoceanic routes it lists', 'Ask the crew for other routes', 'Air Europa says the service is available on a large part of its fleet on transoceanic flights with origin or destination in cities it lists, such as Madrid, New York, Miami, Bogota and Tel Aviv.', ['If your flight has a different origin or destination, the page says to ask the onboard crew whether the service is available.'], PG)
+    ],
+    faq: [
+      ['Does Air Europa have WiFi?', 'Yes, on a large part of its fleet on transoceanic flights between the cities it lists. For other routes Air Europa says to ask the onboard crew.'],
+      ['How much does Air Europa WiFi cost?', 'Air Europa prices each package by flight duration (under 3 hours, 3 to 7 hours, over 7 hours). Prices shown on its page include CHAT EUR 2 and EUR 6, BROWSE EUR 5 and EUR 21, and BROWSE PRO EUR 12 and EUR 30. Confirm the price for your flight.'],
+      ['Can I stream video on Air Europa WiFi?', 'No. Air Europa says none of its CHAT, BROWSE and BROWSE PRO packages allows video streaming.']
+    ],
+    tableHead: ['Package', 'What it allows', 'Price range on Air Europa\'s page'], tableTitle: 'Air Europa\'s packages',
+    tableNote: 'Air Europa prices each package by flight duration. We show the prices that appear on its page.',
+    rows: [['CHAT', 'Messaging (WhatsApp, Messenger, iMessage). No browsing or video streaming', 'EUR 2 and EUR 6 (by flight duration)'], ['BROWSE', 'Browsing, social media, email, chat. No VPN or video streaming', 'EUR 5 and EUR 21 (by flight duration)'], ['BROWSE PRO', 'High-speed browsing with VPN, email, chat, music, online games. No video streaming', 'EUR 12 and EUR 30 (by flight duration)']]
+  });
+}
+
+// ---------------- RYANAIR ----------------
+// Read 13 October 2026 on help.ryanair.com: "Will there be Wi-Fi on board?"
+{
+  const PG = ['https://help.ryanair.com/hc/en-us/articles/12890696574609-Will-there-be-Wi-Fi-on-board', 'Ryanair help: Will there be Wi-Fi on board?', 'Official answer'];
+  addN({
+    slug: 'ryanair', slab: 'What do you want to know?',
+    h1: 'Does Ryanair Have WiFi? (2026)',
+    desc: 'Does Ryanair have WiFi? No. Ryanair\'s help centre says it does not currently offer Wi-Fi on its flights. From Ryanair\'s own page, checked 13 October 2026.',
+    answer: 'No. Ryanair\'s help centre says: "Currently, we do not offer Wi-Fi on our flights."',
+    srcNote: 'From Ryanair\'s own help centre, last checked 13 October 2026. This can change, so confirm with the airline.',
+    scen: [card('no', 'Wi-Fi on board', 'stop', 'No WiFi', 'Ryanair does not offer it', 'Ryanair\'s help centre answers "Will there be Wi-Fi on board?" with: no, currently it does not offer Wi-Fi on its flights.', ['Download what you need before you fly.'], PG, true)],
+    faq: [['Does Ryanair have WiFi?', 'No. Ryanair\'s help centre says it does not currently offer Wi-Fi on its flights.']],
+    tableHead: ['Question', 'What Ryanair says'], tableTitle: 'What Ryanair says',
+    rows: [['Wi-Fi on board', 'Not offered']]
+  });
+}
+
+// ---------------- ICELANDAIR ----------------
+// Read 13 October 2026 on icelandair.com (US site): Internet on your flight.
+{
+  const PG = ['https://www.icelandair.com/flights/internet/', 'Icelandair: Internet on your flight', 'Wi-Fi on board and prices'];
+  addN({
+    slug: 'icelandair', slab: 'Which aircraft?',
+    h1: 'Does Icelandair Have WiFi? Aircraft, Price and Free Access (2026)',
+    desc: 'Does Icelandair have WiFi? Yes on the A321, 757, 767 and 737. EUR 6 to EUR 24 for Economy; free for Saga Premium and Saga Gold. Not on domestic or Greenland flights. From Icelandair\'s own page, checked 13 October 2026.',
+    answer: 'Icelandair says Wi-Fi is on its Airbus A321 and Boeing 757, 767 and 737 aircraft, gate to gate. Economy passengers pay for one device; Saga Premium, Saga Premium Flex and Saga Gold members get 2 devices free. Wi-Fi is not available on domestic flights and flights to Greenland.',
+    srcNote: 'From Icelandair\'s own page (US site), last checked 13 October 2026. Its service differs by aircraft type, so confirm for your flight.',
+    scen: [
+      card('a321', 'A321LR / 737 MAX', 'warn', 'Paid for Economy', 'EUR 12 Iceland to Europe; EUR 24 to USA or Canada', 'On the Airbus A321LR and Boeing 737 MAX, Icelandair lists Wi-Fi for web browsing, email and streaming at EUR 12 (Iceland to Europe) and EUR 24 (Iceland to USA or Canada).', ['You can also pay with Saga Points in the Wi-Fi portal.'], PG, true),
+      card('b757', '757 / 767', 'warn', 'Paid for Economy', 'EUR 6 Iceland to Europe; EUR 12 to USA or Canada', 'On the Boeing 757 and 767, Icelandair lists Wi-Fi for web browsing and email at EUR 6 (Iceland to Europe) and EUR 12 (Iceland to USA or Canada).', ['Streaming is not listed for the 757 and 767.'], PG),
+      card('free', 'Free access', 'go', 'Free for 2 devices', 'Saga Premium, Saga Premium Flex, Saga Gold', 'Passengers flying Saga Premium and Saga Premium Flex, and Icelandair Saga Gold members, receive complimentary Wi-Fi access for 2 devices.', ['Economy passengers can buy access to Wi-Fi on a single device for a small fee. Saga Club members can pay with Saga Points.'], PG),
+      card('none', 'Domestic and Greenland flights', 'stop', 'No WiFi', 'Because of the aircraft used', 'Icelandair says Wi-Fi is not available on domestic flights and flights to Greenland, due to the aircraft serving these destinations.', ['This is the footnote on its Wi-Fi availability statement.'], PG)
+    ],
+    faq: [
+      ['Does Icelandair have WiFi?', 'Yes, on its Airbus A321 and Boeing 757, 767 and 737 aircraft, from boarding until you are back in the airport. Not on domestic flights and flights to Greenland.'],
+      ['Is Icelandair WiFi free?', 'Saga Premium and Saga Premium Flex passengers, and Saga Gold members, get complimentary Wi-Fi for 2 devices. Economy passengers pay for one device.'],
+      ['How much does Icelandair WiFi cost?', 'On the A321LR and 737 MAX: EUR 12 Iceland to Europe, EUR 24 Iceland to USA or Canada (browsing, email, streaming). On the 757 and 767: EUR 6 and EUR 12 (browsing, email).']
+    ],
+    tableHead: ['Aircraft', 'Iceland to Europe', 'Iceland to USA/Canada', 'What it covers'], tableTitle: 'Icelandair\'s Wi-Fi prices by aircraft',
+    tableNote: 'Copied from the price table on Icelandair\'s page.',
+    rows: [['Airbus A321LR, Boeing 737 MAX', 'EUR 12', 'EUR 24', 'Web browsing, email, streaming'], ['Boeing 757 / 767', 'EUR 6', 'EUR 12', 'Web browsing, email']]
+  });
+}
+
+// ---------------- SWISS ----------------
+// Read 13 October 2026 on swiss.com (US site): SWISS Connect.
+{
+  const PG = ['https://www.swiss.com/us/en/fly/on-board/swiss-connect', 'SWISS: SWISS Connect', 'Packages and prices'];
+  addN({
+    slug: 'swiss', slab: 'Which package?',
+    h1: 'Is SWISS WiFi Free? SWISS Connect Messaging and Price (2026)',
+    desc: 'Is SWISS WiFi free? Free unlimited messaging, SWISS First and HON Circle get free internet, and Wi-Fi Premium is from CHF 25 on long-haul. All long-haul aircraft are equipped. From SWISS\'s own page, checked 13 October 2026.',
+    answer: 'Messaging is free and unlimited on SWISS Connect (on selected flights you log in with a Travel ID or Miles & More account). SWISS First guests, and HON Circle members, get free internet. On long-haul, where all aircraft are equipped, Wi-Fi Premium is from CHF 25 / EUR 27 / USD 30 for up to 4 hours or from CHF 35 / EUR 37 / USD 40 for the full flight.',
+    srcNote: 'From SWISS\'s own SWISS Connect page (US site), last checked 13 October 2026. Short-haul Wi-Fi is still rolling out.',
+    scen: [
+      card('msg', 'Free messaging', 'go', 'Free and unlimited', 'Throughout your flight', 'SWISS says free, unlimited messaging is available throughout your flight by logging in to the SWISS Connect portal.', ['On selected flights, logging in with a Travel ID or Miles & More account is required.', 'Messaging covers sending and receiving messages and photos on messaging apps.'], PG, true),
+      card('long', 'Long-haul Wi-Fi Premium', 'warn', 'Paid, from CHF 25', 'Up to 4 hours or the full flight', 'SWISS says all of its long-haul aircraft are equipped with SWISS Connect. Wi-Fi Premium (social media, browsing, audio streaming, VPN) is from CHF 25 / EUR 27 / USD 30 for up to 4 hours, and from CHF 35 / EUR 37 / USD 40 for the full flight.', ['SWISS First guests enjoy complimentary internet on SWISS-operated flights.', 'HON Circle members enjoy complimentary internet access when logging in with Miles & More or Travel ID.'], PG),
+      card('short', 'Short-haul', 'warn', 'Rolling out', 'Free messaging; Premium paid', 'SWISS says it is continuously rolling out its Wi-Fi offering on its short-haul fleet. Free messaging is offered, and Wi-Fi Premium is paid.', ['SWISS\'s short-haul prices are on its page; we did not read them, so we do not list them here.'], PG)
+    ],
+    faq: [
+      ['Is SWISS WiFi free?', 'Messaging is free and unlimited on SWISS Connect, and SWISS First guests and HON Circle members get free internet. Wi-Fi Premium is paid.'],
+      ['How much does SWISS WiFi cost?', 'On long-haul, Wi-Fi Premium is from CHF 25 / EUR 27 / USD 30 for up to 4 hours and from CHF 35 / EUR 37 / USD 40 for the full flight. Messaging is free.'],
+      ['Do all SWISS planes have WiFi?', 'SWISS says all of its long-haul aircraft are equipped with SWISS Connect, and it is continuously rolling out Wi-Fi on its short-haul fleet.']
+    ],
+    tableHead: ['Package', 'Price'], tableTitle: 'SWISS\'s long-haul packages',
+    tableNote: 'Copied from the long-haul table on SWISS\'s page.',
+    rows: [['Free Messaging', 'Complimentary (on selected aircraft, a Travel ID or Miles & More login may be required)'], ['Wi-Fi Premium, up to 4 hours', 'From CHF 25 / EUR 27 / USD 30'], ['Wi-Fi Premium, full flight', 'From CHF 35 / EUR 37 / USD 40']]
+  });
+}
+
+// ---------------- AEGEAN ----------------
+// Read 13 October 2026 on aegeanair.com: Free Wi-Fi for all!
+{
+  const PG = ['https://en.aegeanair.com/travel-info/travelling-with-aegean/on-board/wifi-onboard/', 'Aegean: Wi-Fi onboard', 'Free Wi-Fi bundles'];
+  addN({
+    slug: 'aegean', slab: 'Who are you?',
+    h1: 'Is Aegean WiFi Free? Miles+Bonus, Business and Bundles (2026)',
+    desc: 'Is Aegean WiFi free? Free for Miles+Bonus members and Business Class on aircraft with Wi-Fi. Stream is EUR 12 for Economy. A free bundle covers flights within Greece. From Aegean\'s own page, checked 13 October 2026.',
+    answer: 'Aegean says all you need is a Miles+Bonus membership or a Business Class flight to enjoy free Wi-Fi, on aircraft equipped with Wi-Fi technology, on European routes. Stream costs EUR 12 or 3,600 miles for Economy and is free for Miles+Bonus Gold and Business. Flights within Greece get a free bundle at up to 600 kbps.',
+    srcNote: 'From Aegean\'s own Wi-Fi page, last checked 13 October 2026. Aegean does not list aircraft there, so check whether your flight offers Wi-Fi when you book.',
+    scen: [
+      card('free', 'Miles+Bonus or Business Class', 'go', 'Free bundle', 'Log in to the AEGEAN Wi-Fi portal', 'Aegean says all you need is a Miles+Bonus membership or a Business Class flight for free Wi-Fi: log in with your Miles+Bonus credentials, or your booking reference if you have a Business Class ticket (trips from or to Greece), and activate the free internet bundle.', ['It is available on all aircraft equipped with Wi-Fi technology. Internet coverage includes only European routes, and a free bundle is available for low coverage international routes.', 'If you do not have an account yet you can sign up before or during your flight.'], PG, true),
+      card('stream', 'Stream bundle', 'warn', 'EUR 12 in Economy', 'Free for Miles+Bonus Gold and Business', 'Aegean lists the Stream bundle (up to 15 Mbps, for audio and video streaming) at EUR 12 or 3,600 miles for Economy, free for Miles+Bonus Gold and free for Business.', ['Aegean also lists a Surf bundle (up to 1.5 Mbps for basic browsing, email and social media) at EUR 6 for Economy.'], PG),
+      card('greece', 'Flights within Greece', 'go', 'Free bundle', 'Up to 600 kbps', 'For flights within Greece, Aegean says a "Free Wi-Fi" bundle is available with speed of up to 600 kbps, offering instant messaging through chatting apps, basic web browsing and social media access.', ['You can pre-purchase a Wi-Fi bundle and check whether your flight offers Wi-Fi onboard before you fly.'], PG)
+    ],
+    faq: [
+      ['Is Aegean WiFi free?', 'Aegean says Miles+Bonus members and Business Class passengers get free Wi-Fi on aircraft equipped with Wi-Fi technology, on European routes. Flights within Greece have a free bundle at up to 600 kbps. Stream is paid for Economy.'],
+      ['How much does Aegean WiFi cost?', 'The Stream bundle is EUR 12 or 3,600 miles for Economy, free for Miles+Bonus Gold and Business. The Surf bundle is EUR 6 for Economy.'],
+      ['How do I connect to Aegean WiFi?', 'Enter the AEGEAN Wi-Fi portal and log in with your Miles+Bonus credentials, or with your booking reference if you have a Business Class ticket (trips from or to Greece), then activate the free internet bundle.']
+    ],
+    tableHead: ['Bundle', 'Who gets it free', 'Price otherwise'], tableTitle: 'Aegean\'s bundles',
+    tableNote: 'Copied from the bundle table on Aegean\'s page.',
+    rows: [['Free Wi-Fi bundle (flights within Greece, up to 600 kbps)', 'Messaging, basic browsing, social media', 'Free'], ['Surf (up to 1.5 Mbps)', 'Listed on Aegean\'s page for Economy and Miles+Bonus Blue or Silver', 'EUR 6'], ['Stream (up to 15 Mbps)', 'Free for Miles+Bonus Gold and Business', 'EUR 12 or 3,600 miles for Economy']]
+  });
+}
+
 module.exports = out;
