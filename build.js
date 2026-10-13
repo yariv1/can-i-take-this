@@ -487,6 +487,7 @@ const CARRYON_PAGES=require('./carryon_pages.js');
 function tabRowBlock(){return '<style>.tabs{flex-wrap:nowrap;overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:none;-webkit-overflow-scrolling:touch;scroll-behavior:smooth;margin:0 0 22px}.tabs::-webkit-scrollbar{display:none}.tabs .tab{flex:none;white-space:nowrap}.tabs-wrap{position:relative}.tabs-arrow{position:absolute;top:0;bottom:22px;width:44px;border:0;cursor:pointer;display:none;align-items:center;color:var(--text);padding:0}.tabs-arrow svg{width:18px;height:18px;flex:none}.tabs-arrow.l{left:0;justify-content:flex-start;background:linear-gradient(90deg,var(--bg) 55%,transparent)}.tabs-arrow.r{right:0;justify-content:flex-end;background:linear-gradient(270deg,var(--bg) 55%,transparent)}.tabs-arrow.on{display:flex}@media (hover:none){.tabs-arrow{display:none!important}}</style><script src="/airtabs.js" defer></scr'+'ipt>';}
 const AIRCOMP=require('./airline_compensation.js');
 const AIRCS=require('./airline_customer_service.js');
+const AIRWIFI=require('./airline_wifi.js');
 function airTabs(sl, active){
   /* one horizontally scrollable row (YouTube-style filter chips): no 'All rules' tab (the header has Back), no 'Show more', Compensation second to last, Customer Service always LAST (user orders 2026-10-11) */
   var tabs=[
@@ -496,7 +497,7 @@ function airTabs(sl, active){
     {t:'Vape',u:'/airline/'+sl+'/vape-e-cigarette/',key:'vape'},
     {t:'Perfume',u:'/airline/'+sl+'/perfume-aerosols/',key:'perfume'},
     {t:'Alcohol',u:'/airline/'+sl+'/alcohol/',key:'alcohol'}
-  ].concat(AIRCOMP[sl]?[{t:'Compensation',u:'/airline/'+sl+'/compensation/',key:'compensation'}]:[]).concat(AIRCS[sl]?[{t:'Customer Service',u:'/airline/'+sl+'/customer-service/',key:'customer-service'}]:[]);
+  ].concat(AIRWIFI[sl]?[{t:'Wi-Fi',u:'/airline/'+sl+'/wifi/',key:'wifi'}]:[]).concat(AIRCOMP[sl]?[{t:'Compensation',u:'/airline/'+sl+'/compensation/',key:'compensation'}]:[]).concat(AIRCS[sl]?[{t:'Customer Service',u:'/airline/'+sl+'/customer-service/',key:'customer-service'}]:[]);
   var tabHtml=tabs.map(function(t){return '<a class="tab'+(t.key&&t.key===active?' on':'')+'" href="'+t.u+'">'+esc(t.t)+'</a>';}).join('');
   var moreBlock=tabRowBlock();
   return {tabHtml:tabHtml, moreBlock:moreBlock};
@@ -895,6 +896,12 @@ function run(){
       const C=AIRCOMP[slug(a.name)], curl=`/airline/${slug(a.name)}/compensation/`;
       write(curl+'index.html', airPlaneShell({a:a,cat:'compensation',url:curl,hub:true,comp:true,h1:C.h1,ttl:C.ttl,desc:C.desc,faq:C.faq,vCarry:{status:'info',head:C.answer,lines:[]},extra:C.render(a),readKey:'compensation'}));
       pages.push({url:curl,changefreq:'monthly'});
+    }
+
+    if(AIRWIFI[slug(a.name)]){
+      const C=AIRWIFI[slug(a.name)], curl=`/airline/${slug(a.name)}/wifi/`;
+      write(curl+'index.html', airPlaneShell({a:a,cat:'wifi',url:curl,hub:true,comp:true,h1:C.h1,ttl:C.ttl,desc:C.desc,faq:C.faq,vCarry:{status:'info',head:C.answer,lines:[]},extra:C.render(a),readKey:'wifi'}));
+      pages.push({url:curl,changefreq:'weekly'});
     }
 
     if(AIRCS[slug(a.name)]){

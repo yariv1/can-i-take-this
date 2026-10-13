@@ -215,3 +215,6 @@ https://canitakethis.co/airline/easyjet/perfume-aerosols/
 https://canitakethis.co/airline/virgin-australia/vape-e-cigarette/
 https://canitakethis.co/airline/virgin-australia/perfume-aerosols/
 Liquids wording fixes (Aer Lingus, Iberia): https://canitakethis.co/airline/aer-lingus/liquids/ , https://canitakethis.co/airline/iberia/liquids/
+
+## 2026-10-13 new page: Wi-Fi pilot (TO REQUEST, high priority: this is the pilot test, check Search Console 2026-11-03)
+https://canitakethis.co/airline/delta/wifi/
