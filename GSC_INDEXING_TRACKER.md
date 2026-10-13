@@ -218,3 +218,15 @@ Liquids wording fixes (Aer Lingus, Iberia): https://canitakethis.co/airline/aer-
 
 ## 2026-10-13 new page: Wi-Fi pilot (TO REQUEST, high priority: this is the pilot test, check Search Console 2026-11-03)
 https://canitakethis.co/airline/delta/wifi/
+
+## 2026-10-13 Wi-Fi pages, batch 2 (TO REQUEST after the delta/wifi page; pilot test 2026-11-03)
+https://canitakethis.co/airline/american-airlines/wifi/
+https://canitakethis.co/airline/jetblue/wifi/
+https://canitakethis.co/airline/air-canada/wifi/
+https://canitakethis.co/airline/finnair/wifi/
+https://canitakethis.co/airline/tap-air-portugal/wifi/
+https://canitakethis.co/airline/ita-airways/wifi/
+https://canitakethis.co/airline/austrian/wifi/
+https://canitakethis.co/airline/virgin-atlantic/wifi/
+https://canitakethis.co/airline/sas/wifi/
+https://canitakethis.co/airline/norwegian/wifi/

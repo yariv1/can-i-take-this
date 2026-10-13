@@ -23,3 +23,7 @@ Risks: Starlink rollouts change lists monthly; some airlines' own pages contradi
 ## Pilot test (agreed with the user 2026-10-13)
 Page: /airline/delta/wifi/ (title "Is Delta WiFi Free? Free WiFi by Aircraft Type (2026)"). Target queries: is delta wifi free, delta wifi cost, how to connect to delta wifi, delta wifi free, t mobile delta wifi.
 Check Search Console on 2026-11-03 (impressions and clicks for the page and those queries). If it gets impressions: expand in order of demand (American, Alaska, then Cathay, EgyptAir, Air New Zealand after reading each official page in full). If nothing after about 3 weeks: stop, build no more Wi-Fi pages. The site is still demoted, so judge impressions, not only clicks.
+
+## Built locally 2026-10-13 (after reading each official page in full), pending the user's "deploy"
+US/Canada: American, JetBlue (every plane free; region chips), Air Canada (own per-aircraft equipped table). Europe: Finnair, TAP, ITA, Austrian, Virgin Atlantic (A350 + A330neo pages only), SAS (own table), Norwegian. Delta already live.
+Read and NOT qualifying: Alaska (error page even in Chrome), Southwest (no per-aircraft list), WestJet (only "over 100 aircraft across the 737 fleet"), KLM (no list, "check My Trip"), Air Europa (route-based, "a large part of our fleet"), Aer Lingus (page content not readable), United (page not reachable). Not read (screening said rollout/no per-type list): Hawaiian, Lufthansa, BA, Air France, Swiss, Iberia, Eurowings.
