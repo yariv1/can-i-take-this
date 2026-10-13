@@ -237,3 +237,6 @@ NOT DONE YET (request when quota resets, in this order): jetblue, sas, norwegian
 
 ## 2026-10-13 Wi-Fi pages batch 3 (built locally for the user's "deploy"; request in this popularity order after the NOT DONE list above)
 United, Southwest, Turkish Airlines, Alaska, Hawaiian, WestJet, Lufthansa, British Airways, Air France, Iberia, KLM, Frontier, Ryanair, Swiss, Icelandair, Aegean, Air Europa (all https://canitakethis.co/airline/<slug>/wifi/ with slugs united, southwest, turkish-airlines, alaska-airlines, hawaiian-airlines, westjet, lufthansa, british-airways, air-france, iberia, klm, frontier, ryanair, swiss, icelandair, aegean, air-europa).
+
+## 2026-10-14 Wi-Fi pages batch 4 (European, deployed): TO REQUEST after batch 3, in this order
+Eurowings, LOT (slug lot-polish), Aer Lingus, Vueling, easyJet (unofficial-source notice), Wizz Air, Transavia (all https://canitakethis.co/airline/<slug>/wifi/).

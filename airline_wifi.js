@@ -85,7 +85,7 @@ const out = {};
 function add(cfg) {
   out[cfg.slug] = {
     h1: cfg.h1, ttl: cfg.h1, desc: cfg.desc, answer: cfg.answer, faq: cfg.faq,
-    render: a => COMP.__render(a, cfg.scen, cfg.srcNote, { slab: cfg.slab || 'Which aircraft are you flying on?', tag: 'WI-FI', legend: cfg.legend || LEGEND }) +
+    render: a => COMP.__render(a, cfg.scen, cfg.srcNote, { slab: cfg.slab || 'Which aircraft are you flying on?', tag: 'WI-FI', legend: cfg.legend || LEGEND, unofficial: cfg.unofficial }) +
       '<div class="bd-wrap">' + CSS + '<section class="bd-sec"><h2>📶 ' + esc(cfg.tableTitle) + '</h2>' + (cfg.tableNote ? '<p>' + cfg.tableNote + '</p>' : '') +
       table({ head: cfg.tableHead, rows: cfg.rows }) + '</section>' + (cfg.extra || '') +
       '<p class="bd-chk">Last checked ' + cfg.checked + ' on the airline\'s own pages. We re-check regularly because Wi-Fi rollouts change often.</p></div>'
@@ -792,6 +792,196 @@ const addN = cfg => add(Object.assign({ legend: LEGEND2, slab: cfg.slab || 'Whic
     tableHead: ['Bundle', 'Who gets it free', 'Price otherwise'], tableTitle: 'Aegean\'s bundles',
     tableNote: 'Copied from the bundle table on Aegean\'s page.',
     rows: [['Free Wi-Fi bundle (flights within Greece, up to 600 kbps)', 'Messaging, basic browsing, social media', 'Free'], ['Surf (up to 1.5 Mbps)', 'Listed on Aegean\'s page for Economy and Miles+Bonus Blue or Silver', 'EUR 6'], ['Stream (up to 15 Mbps)', 'Free for Miles+Bonus Gold and Business', 'EUR 12 or 3,600 miles for Economy']]
+  });
+}
+
+// ---------------- LOT ----------------
+// Read 14 October 2026 on lot.com (US site): Wi-Fi on board.
+{
+  const PG = ['https://www.lot.com/us/en/journey/on-board/inflight-wifi', 'LOT: Wi-Fi on board', 'Available internet packages on board'];
+  addN({
+    slug: 'lot-polish', slab: 'Who are you?', checked: '14 October 2026',
+    h1: 'Is LOT WiFi Free? Cost and Which Planes Have It (2026)',
+    desc: 'Is LOT WiFi free? Free for Business Class and Miles & More Senator and HON Circle members. Others pay $29 for full internet or $7 for chat. Only on selected Boeing 787s. From LOT\'s own page, checked 14 October 2026.',
+    answer: 'WiFi is free for LOT Business Class passengers and Miles & More members with Senator or HON Circle status. Everyone else can buy the full Streaming package for $29 or the Chat package for $7. WiFi is only on selected Boeing 787 Dreamliner aircraft.',
+    srcNote: 'From LOT\'s own WiFi page, last checked 14 October 2026. LOT says WiFi is on selected routes and the connection quality may be limited on some flights.',
+    scen: [
+      card('free', 'Business Class or Senator / HON Circle', 'go', 'Free full internet', 'On scheduled flights', 'LOT says Business Class passengers and Miles & More members with Senator and HON Circle status travelling on scheduled flights get full internet access as part of their ticket.', ['LOT says the WiFi is only on selected Boeing 787 Dreamliner aircraft. Look for the WiFi sign on board.'], PG, true),
+      card('stream', 'Streaming package', 'warn', '$29', 'Unlimited internet for the flight', 'LOT lists the Streaming Internet Package at $29: unlimited internet access for work, streaming, travel planning and communication.', ['LOT accepts Visa, MasterCard, American Express, Apple Pay and Google Pay. Payment is in USD only.', 'You cannot buy it in advance. It can only be purchased on board.'], PG),
+      card('chat', 'Chat package', 'warn', '$7', 'Messaging apps only', 'LOT lists the Chat Package at $7 for WhatsApp, Messenger, iMessage, Signal, Viber, Line, Kakao and Telegram. Sending photos, videos and other multimedia files is not available with this package.', ['You can use one package on one device at a time, and swap it to another device.'], PG)
+    ],
+    faq: [
+      ['Is LOT WiFi free?', 'WiFi is free for LOT Business Class passengers and Miles & More members with Senator or HON Circle status. For everyone else it is paid: $29 for the Streaming package or $7 for the Chat package.'],
+      ['Which LOT planes have WiFi?', 'LOT says WiFi is available on selected Boeing 787 Dreamliner aircraft, on selected routes. Look for the WiFi sign on board and check whether FlyLOT Wi-Fi appears in your network list.'],
+      ['How do I connect to LOT WiFi?', 'Turn on airplane mode, then turn on WiFi. Select FlyLot Wi-Fi, open wi-fi.lot.com if the login page does not appear, and choose your internet option. The service is provided by Viasat.']
+    ],
+    tableHead: ['Package', 'Who gets it free', 'Price otherwise'], tableTitle: 'LOT\'s WiFi packages',
+    tableNote: 'Copied from LOT\'s WiFi page.',
+    rows: [['Streaming (full internet)', 'Business Class; Miles & More Senator and HON Circle', '$29'], ['Chat (messaging apps)', 'Not listed as free', '$7']],
+    extra: steps(['Turn on airplane mode, then turn on WiFi.', 'Select FlyLot Wi-Fi from the list of networks.', 'If the login page does not open, go to wi-fi.lot.com (only works on board).', 'Choose your internet option.'])
+  });
+}
+
+// ---------------- EUROWINGS ----------------
+// Read 14 October 2026 on eurowings.com: Internet & in-flight entertainment on Eurowings flights.
+{
+  const PG = ['https://www.eurowings.com/en/information/on-board/in-flight-entertainment.html', 'Eurowings: Internet and in-flight entertainment', 'Wings Connect packages'];
+  addN({
+    slug: 'eurowings', slab: 'Which package?', checked: '14 October 2026',
+    h1: 'Does Eurowings Have WiFi? Wings Connect Cost (2026)',
+    desc: 'Does Eurowings have WiFi? Wings Connect is on selected flights and aircraft. Chat from EUR 2.90, Connect Premium with entertainment from EUR 7.90. Eurowings\' own page, checked 14 October 2026.',
+    answer: 'Eurowings offers WiFi through Wings Connect, only on selected flights and aircraft. It is paid: Chat from EUR 2.90, Connect 30 or 60 minutes from EUR 3.90, Connect Premium for the full flight from EUR 7.90. You can browse eurowings.com free of charge on aircraft with Wings Connect.',
+    srcNote: 'From Eurowings\' own page, last checked 14 October 2026. Eurowings says internet depends on the route and availability and may not be available on some A319, A320, A321 and B737 aircraft.',
+    scen: [
+      card('free', 'Free on board', 'go', 'eurowings.com is free', 'On aircraft with Wings Connect', 'Eurowings says you can surf its homepage eurowings.com free of charge on all aircraft with the Wings Connect service. The Wings Connect portal also shows flight information and partner offers free of charge.', ['Wings Entertainment (films, series, music) is part of Connect Premium, so it is not free.'], PG, true),
+      card('chat', 'Chat package', 'warn', 'EUR 2.90 or 3.90', 'Messaging apps for the full flight', 'Eurowings lists Chat at EUR 2.90 for flights under 2 hours and EUR 3.90 for longer flights, for instant messaging apps.', ['Only on selected aircraft and routes.'], PG),
+      card('c30', 'Connect 30 / Connect 60', 'warn', 'EUR 3.90 or 6.90', 'Internet for 30 or 60 minutes', 'Eurowings lists internet access for 30 or 60 minutes at EUR 3.90 for flights under 2 hours and EUR 6.90 for longer flights.', ['Only on selected aircraft and routes.'], PG),
+      card('premium', 'Connect Premium', 'warn', 'EUR 7.90 or 9.90', 'Full flight plus Wings Entertainment', 'Eurowings lists Connect Premium at EUR 7.90 for flights under 2 hours and EUR 9.90 for longer flights: internet for the full flight plus on-board entertainment.', ['Payment is by credit card (Visa, MasterCard, AmEx, Diners Club or JCB) or PayPal.'], PG)
+    ],
+    faq: [
+      ['Does Eurowings have WiFi?', 'Yes, on selected flights and aircraft through Wings Connect. Eurowings says internet depends on the route and availability and may not be available on some A319, A320, A321 and B737 aircraft.'],
+      ['Is Eurowings WiFi free?', 'No. You can surf eurowings.com free of charge on aircraft with Wings Connect, but internet is paid: Chat from EUR 2.90, Connect 30 or 60 minutes from EUR 3.90, Connect Premium from EUR 7.90.'],
+      ['How much does Eurowings WiFi cost?', 'Prices depend on flight time. Under 2 hours: Chat EUR 2.90, Connect 30/60 EUR 3.90, Connect Premium EUR 7.90. Over 2 hours: EUR 3.90, EUR 6.90 and EUR 9.90.']
+    ],
+    tableHead: ['Package', 'Flight under 2 hours', 'Flight over 2 hours'], tableTitle: 'Eurowings\' Wings Connect packages',
+    tableNote: 'Copied from the price table and footnotes on Eurowings\' page.',
+    rows: [['Chat (messaging apps)', 'EUR 2.90', 'EUR 3.90'], ['Connect 30 / Connect 60', 'EUR 3.90', 'EUR 6.90'], ['Connect Premium (full flight and entertainment)', 'EUR 7.90', 'EUR 9.90']]
+  });
+}
+
+// ---------------- EASYJET (NOT from the airline's own site: user-approved exception 2026-10-14) ----------------
+// easyJet's own pages say nothing current about Wi-Fi (help page: nothing; media centre: only 2017 stories). Source = press release of its equipment partner AirFi, 22 May 2023, read in full (text pasted by the user because airfi.aero blocks automated reads).
+// Rule for such pages: only an airline/partner/regulator release read in full, never blogs or AI summaries; the page says plainly it is not from the airline's own site.
+{
+  const PG = ['https://airfi.aero/airfi-completes-deployment-of-portable-streaming-solution-across-entire-easyjet-fleet/', 'AirFi press release, 22 May 2023 (easyJet\'s equipment partner)', 'Not easyJet\'s own site'];
+  addN({
+    slug: 'easyjet', unofficial: 'easyJet\'s own website has no current WiFi information. This source is unofficial: a press release by easyJet\'s equipment partner.', slab: 'What do you want to do?', checked: '14 October 2026',
+    h1: 'Is There WiFi on easyJet? What You Get on Board (2026)',
+    desc: 'Is there WiFi on easyJet? easyJet planes have a free on-board WiFi portal with games, flight info and the shop menu. Not from easyJet\'s own site: from the press release of its equipment partner AirFi, checked 14 October 2026.',
+    answer: 'Not from easyJet\'s own website: this comes from a press release by AirFi, the company that supplies easyJet\'s system. AirFi says it is installed on all 327 easyJet aircraft and gives free access to games, journey-specific content, airline information and the shop menu on your own phone, tablet or laptop, through a local WiFi network on board. The release does not say that the internet itself is available.',
+    srcNote: '⚠ This information is not from easyJet\'s own website. easyJet\'s pages say nothing current about WiFi, so we used a press release by its equipment partner AirFi (22 May 2023), read in full on 14 October 2026. It may be out of date, so confirm with easyJet before you fly.',
+    scen: [
+      card('portal', 'On-board portal', 'warn', 'Free on-board WiFi portal', 'Games, flight info and the shop menu', 'AirFi says its system is installed on all 327 easyJet aircraft and creates a local WiFi network on board. Access to the content is free.', ['The portal gives games, journey-specific content, airline information and the in-flight shop menu on your own phone, tablet or laptop.', 'AirFi says you do not need to download an app before the flight or share personal information to connect.', 'Not from easyJet\'s own website. The release is from May 2023.'], PG, true),
+      card('net', 'Internet access', 'warn', 'Not described', 'Release does not mention the internet', 'The AirFi release describes a local network that serves content. It does not say passengers can browse the internet, use messaging apps or stream from outside services.', ['Neither easyJet nor AirFi says in the sources we read that internet access is offered, and neither says it is not.'], PG)
+    ],
+    faq: [
+      ['Is there WiFi on easyJet planes?', 'According to AirFi, easyJet\'s equipment partner, all 327 easyJet aircraft have a free on-board WiFi network with a portal for games, flight information and the shop menu. The release does not say the internet itself is available. This is not from easyJet\'s own website.'],
+      ['Is easyJet WiFi free?', 'AirFi says access to the on-board content is free, with no app download and no personal information needed. It does not describe any paid internet service.'],
+      ['How do I connect to easyJet WiFi?', 'AirFi says you connect to a local WiFi network created on board, using your own phone, tablet or laptop, with no app needed beforehand.']
+    ],
+    tableHead: ['Question', 'What AirFi says (not easyJet\'s own site)'], tableTitle: 'What the AirFi release says',
+    tableNote: 'Copied from AirFi\'s press release of 22 May 2023. easyJet\'s own pages do not give this information.',
+    rows: [['Which aircraft', 'All 327 easyJet aircraft, according to the release'], ['Cost', 'Access to the content is free'], ['What you can use', 'Games, journey-specific content, airline information, in-flight shop menu'], ['App or personal details needed', 'No'], ['Internet access', 'Not mentioned in the release']]
+  });
+}
+
+// ---------------- WIZZ AIR ----------------
+// Read 14 October 2026 on wizzair.com (news pages): Starlink release 8 June 2026; Immfly and gateretail release 25 March 2026.
+{
+  const P1 = ['https://www.wizzair.com/en-gb/information-and-services/about-us/news/2026/06/08/wizz-air-declares-the-beginning-of-the-end-for-airplane-mode', 'Wizz Air: Starlink connectivity launching in 2027 (8 June 2026)', 'Wizz Air news'];
+  const P2 = ['https://www.wizzair.com/en-gb/information-and-services/about-us/news/2026/03/25/wizz-air-launches-integrated-digital-cabin-ecosystem-with-immfly-and-gateretail', 'Wizz Air: digital cabin ecosystem with Immfly and gateretail (25 March 2026)', 'Wizz Air news'];
+  addN({
+    slug: 'wizz-air', slab: 'What do you want to know?', checked: '14 October 2026',
+    h1: 'Does Wizz Air Have WiFi? Starlink Plans and What Works Now (2026)',
+    desc: 'Does Wizz Air have WiFi? Not yet on regular flights: Wizz Air says Starlink installations begin in 2027. A six-month trial runs on five UK aircraft. From Wizz Air\'s own news pages, checked 14 October 2026.',
+    answer: 'Not yet. Wizz Air announced in June 2026 that Starlink installations begin in 2027. Today it runs a six-month connectivity trial on five UK-based aircraft, and in-seat ordering from your phone works across its Airbus A320 and A321 fleet without internet.',
+    srcNote: 'From Wizz Air\'s own news pages, last checked 14 October 2026. Wizz Air publishes no price for Starlink yet, and the plan may change.',
+    scen: [
+      card('now', 'Regular flights today', 'stop', 'No in-flight internet yet', 'Starlink planned from 2027', 'Wizz Air says it will roll out Starlink connectivity across its fleet, with installations beginning in 2027.', ['Wizz Air says every new generation aircraft is expected to be Starlink-equipped.', 'The pages we read do not describe any other in-flight internet service on regular flights, and do not say if Starlink will be free or paid.'], P1, true),
+      card('trial', 'Five UK aircraft', 'warn', 'Limited trial', 'Six months, five UK-based aircraft', 'Wizz Air launched a six-month proof of concept on five UK-based aircraft, using Immfly\'s Equilux server and Iridium\'s satellite network.', ['The trial covers wireless inflight entertainment purchases (movies, TV shows, podcasts, music, games and content for kids), inflight WhatsApp messaging, in-seat ordering and real-time flight and destination information.', 'Wizz Air says the solution may be expanded to more aircraft if the tests succeed. It does not give a price.'], P2),
+      card('seat', 'In-seat ordering', 'warn', 'Works without internet', 'Needs the Wizz Air app downloaded first', 'Wizz Air says passengers who download its mobile app before travelling can browse and buy food, drinks and boutique products on their own device, even without internet access.', ['Orders are sent by Bluetooth to the cabin crew. Wizz Air says it is deployed across its fleet of more than 260 Airbus A320 and A321 aircraft.'], P2)
+    ],
+    faq: [
+      ['Does Wizz Air have WiFi?', 'Not on regular flights yet. Wizz Air announced in June 2026 that Starlink installations begin in 2027. A six-month connectivity trial runs on five UK-based aircraft.'],
+      ['Will Wizz Air WiFi be free?', 'Wizz Air has not said. Its Starlink announcement gives no price and does not say whether the service will be free or paid.'],
+      ['Can I order food on Wizz Air without internet?', 'Yes. Wizz Air says passengers who download its mobile app before travelling can browse and buy food, drinks and boutique products from their own device, even without internet. Orders are sent by Bluetooth to the cabin crew.']
+    ],
+    tableHead: ['What', 'What Wizz Air says'], tableTitle: 'What Wizz Air says about connectivity',
+    tableNote: 'Copied from Wizz Air\'s news releases of 8 June 2026 and 25 March 2026.',
+    rows: [['Starlink', 'Announced; installations begin in 2027'], ['Starlink price', 'Not published'], ['Trial', 'Six months, five UK-based aircraft (Immfly Equilux server, Iridium satellite network)'], ['Trial services', 'Entertainment purchases, WhatsApp messaging, in-seat ordering, flight and destination information'], ['In-seat ordering', 'Across the fleet of more than 260 A320 and A321 aircraft; works without internet']]
+  });
+}
+
+// ---------------- AER LINGUS ----------------
+// Read 14 October 2026 on aerlingus.com: Wi-Fi in the Sky, Onboard Wi-Fi (plans, FAQ), Starlink Wi-Fi (FAQ).
+{
+  const OB = ['https://www.aerlingus.com/experience/onboard-features/wifi-in-the-sky/on-board-wifi/', 'Aer Lingus: Onboard Wi-Fi', 'Plans, aircraft and FAQ'];
+  const SL = ['https://www.aerlingus.com/experience/onboard-features/wifi-in-the-sky/starlink-wifi/', 'Aer Lingus: Starlink Wi-Fi', 'Free Wi-Fi and FAQ'];
+  const PRICES = 'Plans are priced by how long and what for, and the prices vary by route: Chat for an hour from EUR 3.49 / $3.99 / GBP 2.99, Keep chatting from EUR 5.99 / $6.99 / GBP 4.99, Stay connected from EUR 13.49 / $16.49 / GBP 11.99, Don\'t miss a thing (whole flight) from EUR 20.49 / $24.99 / GBP 17.99.';
+  add({
+    slug: 'aer-lingus', checked: '14 October 2026',
+    h1: 'Is Aer Lingus WiFi Free? WiFi by Aircraft (2026)',
+    desc: 'Is Aer Lingus WiFi free? Free on A330s with Starlink, and for Business Class and AerClub Concierge members. Otherwise paid plans from EUR 3.49 on the A330 and A321LR/XLR. Aer Lingus\'s own pages, checked 14 October 2026.',
+    answer: 'It depends on the aircraft. Aer Lingus offers WiFi on all A330 and all A321neoLR and A321XLR aircraft. It is free on A330s that have Starlink (some A330s on select routes), and free for Business Class and AerClub Concierge members. Otherwise you buy a plan, from EUR 3.49 for an hour of chat.',
+    srcNote: 'From Aer Lingus\'s own WiFi pages, last checked 14 October 2026. Aer Lingus says it is rolling out free Starlink gradually and that on some flights WiFi may still need to be purchased.',
+    scen: [
+      Object.assign(card('a330', 'A330', 'warn', 'Free on Starlink, otherwise paid', 'Starlink on some A330s, select routes', 'Aer Lingus says all A330 aircraft have WiFi, and some A330s on a select number of routes now have Starlink, which is free.', ['Starlink WiFi: free from gate to gate, streaming allowed, no set limit on devices. Aer Lingus says it is gradually rolling out free WiFi and it is not yet on every plane.', 'On A330s without Starlink you buy a plan. ' + PRICES, 'WiFi is complimentary for Business Class customers and AerClub Concierge members. A330s also have the AeroMobile network for texts and data at standard roaming rates.'], OB, true), { sources: [OB, SL] }),
+      card('a321', 'A321neoLR / A321XLR', 'warn', 'Paid WiFi', 'Free for Business Class and AerClub Concierge', 'Aer Lingus says all A321neoLR and A321XLR aircraft have WiFi, with WiFi only and no mobile network.', [PRICES, 'WiFi is complimentary for Business Class customers and AerClub Concierge members.', 'Aer Lingus\'s pages say Starlink is on some A330s. They do not say it is on the A321.'], OB)
+    ],
+    faq: [
+      ['Is Aer Lingus WiFi free?', 'On A330s with Starlink (some A330s on select routes) it is free for everyone. Otherwise it is paid, except for Business Class customers and AerClub Concierge members, for whom Aer Lingus says it is complimentary.'],
+      ['Which Aer Lingus planes have WiFi?', 'Aer Lingus says WiFi is available on all A330 aircraft and all A321neoLR and A321XLR aircraft. Its pages do not list WiFi on its other aircraft.'],
+      ['How much does Aer Lingus WiFi cost?', 'Prices vary by route. Chat for an hour from EUR 3.49, Keep chatting from EUR 5.99, Stay connected from EUR 13.49 and Don\'t miss a thing (whole flight) from EUR 20.49. Dollar and pound prices are listed on Aer Lingus\'s page.'],
+      ['How do I connect to Aer Lingus WiFi?', 'Enable WiFi on your device and launch your browser. On aircraft with a paid plan, buy a voucher on the Aer Lingus WiFi page that appears. On Starlink aircraft, connect to the Aer Lingus WiFi network and follow the prompts.']
+    ],
+    tableHead: ['Aircraft', 'WiFi on Aer Lingus'], tableTitle: 'Aer Lingus\'s aircraft with WiFi',
+    tableNote: 'Copied from Aer Lingus\'s Onboard Wi-Fi page. Aer Lingus does not list WiFi on its other aircraft.',
+    rows: [['All A330', 'WiFi, texts and data. Starlink (free) on some A330s on select routes'], ['All A321neoLR and A321XLR', 'WiFi only. Plans from EUR 3.49; free for Business Class and AerClub Concierge']],
+    extra: steps(['Enable WiFi on your device and launch your browser.', 'On a Starlink flight, connect to the Aer Lingus WiFi network and follow the prompts.', 'On other aircraft, buy a plan on the Aer Lingus WiFi page. Business Class and AerClub Concierge members get it free.', 'You can use one purchased session on one device at a time.'])
+  });
+}
+
+// ---------------- VUELING ----------------
+// Read 14 October 2026 on vueling.com: Onboard Wi-Fi page; help.vueling.com: Wi-Fi service.
+{
+  const PG = ['https://www.vueling.com/en/on-board/wifi-and-entertainment/', 'Vueling: Onboard Wi-Fi', 'Options, how to connect and FAQs'];
+  addN({
+    slug: 'vueling', slab: 'Which option?', checked: '14 October 2026',
+    h1: 'Is Vueling WiFi Free? 15 Free Minutes and Prices (2026)',
+    desc: 'Is Vueling WiFi free? Yes for 15 minutes if you watch a short ad, then paid packages from EUR 0.99. Most of the fleet has WiFi. From Vueling\'s own page, checked 14 October 2026.',
+    answer: 'Partly. Vueling says most of its fleet has WiFi. Watch a short ad and you get 15 minutes free, once per flight, with no speed restrictions. After that, packages start from EUR 0.99, depending on flight duration and route. WiFi works above 10,000 feet over mainland Europe, and is limited over large bodies of water.',
+    srcNote: 'From Vueling\'s own WiFi page and help article, last checked 14 October 2026. Vueling does not list WiFi by aircraft, so look for the signage on board.',
+    scen: [
+      card('free', 'Free WiFi', 'go', '15 minutes free', 'Watch a short ad, once per flight', 'Vueling says you can watch a short ad and enjoy 15 minutes of complimentary WiFi to browse, message or check social media, with no speed restrictions.', ['The 15 free minutes are offered once per flight and cannot currently be extended by watching another ad.', 'You can see your remaining time in the WiFi portal.'], PG, true),
+      card('paid', 'Paid packages', 'warn', 'From EUR 0.99', 'Depends on flight duration and route', 'Vueling lists WiFi packages from EUR 0.99, depending on the flight duration and route coverage.', ['WiFi can only be bought once you are on board, through the onboard WiFi portal. You cannot buy it before your flight.', 'Payment: Google Pay, Apple Pay, or a Visa or Mastercard credit card.'], PG),
+      card('where', 'Where it works', 'warn', 'Limited over water', 'Above 10,000 feet over mainland Europe', 'Vueling says WiFi is available when the aircraft is above 10,000 feet and over mainland Europe. When flying over large bodies of water, the connection is limited.', ['Vueling says most of its fleet has WiFi. Once on board, signage at the entrance and on your seat shows whether your aircraft has it, and the crew will tell you.'], PG)
+    ],
+    faq: [
+      ['Is Vueling WiFi free?', 'For 15 minutes, once per flight, if you watch a short ad. After that WiFi is paid, from EUR 0.99 depending on flight duration and route.'],
+      ['Does every Vueling plane have WiFi?', 'No. Vueling says most of its fleet has WiFi. Once on board, look for the signage at the entrance and on your seat, or ask the crew.'],
+      ['How do I connect to Vueling WiFi?', 'Turn on airplane mode, go to WiFi settings and connect to the "Vueling Wi-Fi" network. The portal opens automatically: follow the steps to connect.'],
+      ['Can I buy Vueling WiFi before my flight?', 'No. WiFi can only be purchased on board, through the onboard WiFi portal, with Google Pay, Apple Pay or a Visa or Mastercard.']
+    ],
+    tableHead: ['Question', 'What Vueling says'], tableTitle: 'What Vueling says about WiFi',
+    tableNote: 'Copied from Vueling\'s Onboard Wi-Fi page.',
+    rows: [['Free WiFi', '15 minutes after a short ad, once per flight, no speed restrictions'], ['Paid packages', 'From EUR 0.99, depending on flight duration and route'], ['Which aircraft', 'Most of the fleet; check the signage on board'], ['Where it works', 'Above 10,000 feet over mainland Europe; limited over large bodies of water'], ['Buy before the flight', 'No, only on board'], ['Payment', 'Google Pay, Apple Pay, Visa or Mastercard']],
+    extra: steps(['Turn on airplane mode on your device.', 'In WiFi settings, connect to the "Vueling Wi-Fi" network.', 'The portal opens automatically.', 'Follow the steps in the portal to connect.'])
+  });
+}
+
+// ---------------- TRANSAVIA ----------------
+// Read 14 October 2026 on transavia.com: "Making everyday journeys feel special" (inspiration article, one line says no Wi-Fi), "Offline together" campaign page. No help page or fleet statement on Wi-Fi found.
+{
+  const P1 = ['https://www.transavia.com/inspiration/en-nl/making-everyday-journeys-feel-special', 'Transavia: Making everyday journeys feel special', 'Article, section "Sit back. Switch off. Enjoy."'];
+  const P2 = ['https://www.transavia.com/en-NL/offlinetogether/', 'Transavia: Offline together', 'Campaign page'];
+  addN({
+    slug: 'transavia', slab: 'What do you want to know?', checked: '14 October 2026',
+    h1: 'Does Transavia Have WiFi? What Transavia Says (2026)',
+    desc: 'Does Transavia have WiFi? Transavia\'s own website says "No Wi-Fi" on board and invites you to put your phone in airplane mode. From Transavia\'s own pages, checked 14 October 2026.',
+    answer: 'No. Transavia\'s own website says "No Wi-Fi, no deadlines, no need to rush" about its flights, and its Offline together campaign tells passengers to put their phone in airplane mode. Transavia has no help page about WiFi that we could find, so this comes from two of its own pages that are not formal service descriptions.',
+    srcNote: 'From Transavia\'s own website, last checked 14 October 2026. The statement is in an inspiration article, not in a help page, and Transavia publishes no WiFi page or aircraft list, so confirm with Transavia before you fly.',
+    scen: [
+      card('none', 'On board', 'stop', 'No WiFi', 'Says Transavia\'s own website', 'Transavia\'s article about its in-flight experience says "No Wi-Fi, no deadlines, no need to rush."', ['The line is in an inspiration article, not a help page. We found no Transavia page that lists WiFi by aircraft or says otherwise.', 'Transavia gives passengers its in-flight magazine Enjoy in the seat pocket, and an onboard shop collection to browse.'], P1, true),
+      card('offline', 'Offline together', 'warn', 'Airplane mode', 'Transavia asks you to switch off', 'Transavia\'s Offline together campaign invites passengers to put their phone in airplane mode and enjoy an offline holiday.', ['It is a campaign page, not a service rule. It does not describe WiFi on the aircraft.'], P2)
+    ],
+    faq: [
+      ['Does Transavia have WiFi?', 'No, according to Transavia\'s own website: an article about its in-flight experience says "No Wi-Fi", and its Offline together campaign invites passengers to put their phone in airplane mode. Transavia has no formal WiFi help page that we could find.'],
+      ['What is there to do on a Transavia flight?', 'Transavia says each seat pocket holds the Enjoy in-flight magazine, and the same article shows an onboard shop collection you can browse.'],
+      ['Can I use my phone on a Transavia flight?', 'Transavia\'s Offline together page asks passengers to put their phone in airplane mode. We did not read a formal device rule, so check with Transavia.']
+    ],
+    tableHead: ['Question', 'What Transavia says'], tableTitle: 'What Transavia\'s website says',
+    tableNote: 'Copied from Transavia\'s own article and campaign page. Transavia has no WiFi help page we could find.',
+    rows: [['WiFi on board', '"No Wi-Fi" (inspiration article)'], ['Phone use', 'Offline together campaign: put your phone in airplane mode'], ['Aircraft list', 'Not published'], ['In-flight reading', 'Enjoy magazine in the seat pocket']]
   });
 }
 
