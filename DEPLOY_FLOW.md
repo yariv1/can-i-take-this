@@ -86,3 +86,6 @@ New URLs this deploy: [list them here or write "none"]
 
 ## IndexNow (added 2026-10-08)
 After `git push` and once the pages are live, run `node indexnow.js` (submits only the index.html URLs changed by the last commit to Bing/Yandex via IndexNow; key file `d57956b5441116130de0656c374107ac.txt` is at the site root). `--all` submits the whole sitemap, `--dry` lists what would be sent. The build no longer submits (it used a placeholder key and ran before pages were live). Google ignores IndexNow: use the sitemap and Search Console.
+
+## Pages build check (added 2026-10-13)
+GitHub Pages runs Jekyll on every .md in the repo: ONE invalid UTF-8 byte in any .md (a latin1-mangled euro sign in BLOG_ROADMAP.md) failed the build and nothing deployed until fixed. After every push run `gh run list --limit 1` and confirm "completed success"; when writing .md files with node, never use latin1 (use utf8). Quick check: python reading each *.md with .decode("utf-8").
