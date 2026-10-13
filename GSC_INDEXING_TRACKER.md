@@ -195,3 +195,7 @@ https://canitakethis.co/food/serbia/
 
 ## 2026-10-12 baggage pages: chip-to-selector cards (existing URLs, TO REQUEST re-index, top ones first)
 airline/<slug>/baggage-allowance/ for delta, southwest, american-airlines, united, british-airways, ryanair, emirates, lufthansa, air-canada, jetblue (the rest follow)
+
+## 2026-10-13 manual requests (user report)
+REQUESTED OK: united, vueling, asiana, avianca, austrian (all /airline/<slug>/baggage-allowance/). Already indexed from before: tap-air-portugal, brussels-airlines. Request failed (GSC: We had a problem submitting your indexing request, twice): air-europa, pegasus. NOT DONE YET: ethiopian-airlines, gulf-air.
+Still TO REQUEST (in order): 8 food test pages (south-korea, norway, mauritius, taiwan, romania, iceland, argentina, serbia; Norway last crawled 2026-09-07 = old version), homepage, new baggage pages (israir, arkia, vietnam-airlines, transavia, gol), food united-arab-emirates, costa-rica, slovenia, blog duty-free-allowance-by-country-2026, duty-free-bag-extra-carry-on-2026.

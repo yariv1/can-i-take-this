@@ -30,12 +30,15 @@ function bagChecked(url) {
   const slug = s => s.toLowerCase().replace(/&/g, 'and').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
   return names.some(n => slug(n) === m[1]) ? '2026-10-07' : null;
 }
+// Real content-change dates per URL (rebuilt baggage pages, food test pages, homepage), approved by the user 2026-10-13.
+let LASTMOD_OV = {};
+try { LASTMOD_OV = JSON.parse(fs.readFileSync(path.join(__dirname, 'lastmod_overrides.json'), 'utf8')); } catch (e) {}
 // dateModified / sitemap lastmod, honest: the date the page content last changed, not the build date (except live pages that refresh every 6 hours)
 function mod(url) {
   const m = /^\/blog\/([^/]+)\/$/.exec(url);
   if (m && LIVE_SLUGS.has(m[1])) return CUR();
   if (m) return loadArticleDates()[url] || SITE_REVIEWED;
-  return bagChecked(url) || SITE_REVIEWED;
+  return LASTMOD_OV[url] || bagChecked(url) || SITE_REVIEWED;
 }
 function published(url) { return /^\/blog\/[^/]+\/$/.test(url) ? loadArticleDates()[url] || null : null; }
 

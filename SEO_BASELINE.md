@@ -48,3 +48,7 @@ Recovery log (add a row each check; see SEO_INCIDENT_2026-10-07.md section 6):
 - Baseline (GSC, 90 days to Oct 9, clicks/impressions): norway 9/1001, mauritius 9/493, south-korea 8/1844, taiwan 5/1195, romania 4/293, serbia 4/508, iceland 3/181, argentina 3/55. Last 3 days (Oct 7-9) near zero everywhere.
 - Rollback: delete a country's entry in food_detail*.js / food_topics*.js (build falls back to the template page) or revert to git tag pre-food-rebuild-2026-10-12.
 - Measure: compare impressions/clicks of the 8 vs the 77 on 2026-10-26 and 2026-11-09. If the 8 recover first, extend to more countries; if not, the cause is elsewhere.
+
+### Check 13 Oct 2026 (user request, before the planned Oct 15)
+GSC (newest data Oct 10): Oct 7: 16, Oct 8: 19, Oct 9: 5, Oct 10: 8 impressions, 0 clicks; before Oct 7: 1,965-2,793 impressions/day, 12-26 clicks/day. No recovery.
+GA traffic acquisition: Sep 29-Oct 5: 317 sessions (Direct 161, Organic Search 154, AI Assistant 2). Oct 6-12: 318 sessions (Direct 273, Organic Search 45). Oct 9-12: 170 sessions (Direct 153, Organic 17). Oct 12 alone: 48 sessions (Direct 35, Organic 13, Unassigned 6). Organic fell about 70% week on week; Direct rose (likely bots/unattributed).
