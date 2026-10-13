@@ -199,3 +199,19 @@ airline/<slug>/baggage-allowance/ for delta, southwest, american-airlines, unite
 ## 2026-10-13 manual requests (user report)
 REQUESTED OK: united, vueling, asiana, avianca, austrian (all /airline/<slug>/baggage-allowance/). Already indexed from before: tap-air-portugal, brussels-airlines. Request failed (GSC: We had a problem submitting your indexing request, twice): air-europa, pegasus. NOT DONE YET: ethiopian-airlines, gulf-air.
 Still TO REQUEST (in order): 8 food test pages (south-korea, norway, mauritius, taiwan, romania, iceland, argentina, serbia; Norway last crawled 2026-09-07 = old version), homepage, new baggage pages (israir, arkia, vietnam-airlines, transavia, gol), food united-arab-emirates, costa-rica, slovenia, blog duty-free-allowance-by-country-2026, duty-free-bag-extra-carry-on-2026.
+
+## 2026-10-13 airline rule pages with airline-specific detail (TO REQUEST after the food pages; existing URLs, wording + official sources only, layout unchanged)
+https://canitakethis.co/airline/qantas/vape-e-cigarette/
+https://canitakethis.co/airline/qantas/alcohol/
+https://canitakethis.co/airline/qantas/perfume-aerosols/
+https://canitakethis.co/airline/philippine-airlines/vape-e-cigarette/
+https://canitakethis.co/airline/philippine-airlines/alcohol/
+https://canitakethis.co/airline/philippine-airlines/perfume-aerosols/
+https://canitakethis.co/airline/thai-airways/vape-e-cigarette/
+https://canitakethis.co/airline/thai-airways/alcohol/
+https://canitakethis.co/airline/thai-airways/perfume-aerosols/
+https://canitakethis.co/airline/easyjet/alcohol/
+https://canitakethis.co/airline/easyjet/perfume-aerosols/
+https://canitakethis.co/airline/virgin-australia/vape-e-cigarette/
+https://canitakethis.co/airline/virgin-australia/perfume-aerosols/
+Liquids wording fixes (Aer Lingus, Iberia): https://canitakethis.co/airline/aer-lingus/liquids/ , https://canitakethis.co/airline/iberia/liquids/
