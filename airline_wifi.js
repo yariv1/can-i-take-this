@@ -1102,4 +1102,229 @@ const addN = cfg => add(Object.assign({ legend: LEGEND2, slab: cfg.slab || 'Whic
   });
 }
 
+// ---------------- PHILIPPINE AIRLINES ----------------
+// Read 14 October 2026 on philippineairlines.com: myPAL Wi-Fi.
+{
+  const PG = ['https://www.philippineairlines.com/ph/en/mypal-travel-boost/mypal-wifi.html', 'Philippine Airlines: myPAL Wi-Fi', 'Plans, FAQs and how to connect'];
+  addN({
+    slug: 'philippine-airlines', slab: 'Who are you?', checked: '14 October 2026',
+    h1: 'Is Philippine Airlines WiFi Free? myPAL WiFi Plans and Prices (2026)',
+    desc: 'Is Philippine Airlines WiFi free? A 10 MB plan is free for all passengers and more is free for Mabuhay Miles members and Business Class. Paid plans from USD 9.98. Select international flights only. PAL\'s own page, checked 14 October 2026.',
+    answer: 'Partly. Philippine Airlines lists a 10 MB plan free for all passengers, free messaging for Mabuhay Miles members, and a 100 MB plan free for Business Class and Million Milers. Paid plans are USD 9.98 for one hour, USD 15.98 for three hours and USD 24.98 unlimited. myPAL WiFi is only on select international flights and select aircraft.',
+    srcNote: 'From Philippine Airlines\' own myPAL Wi-Fi page, last checked 14 October 2026. PAL says rates may change without notice and does not list the aircraft on this page.',
+    scen: [
+      card('all', 'Every passenger', 'go', '10 MB free', 'Good for browsing and messaging', 'Philippine Airlines says a 10 MB plan, good for web browsing and messaging, is available free to all passengers.', ['PAL says all myPAL Wi-Fi plans are valid for single use and can only be used during the flight.', 'The plans are available on select international flights and aircraft types.'], PG, true),
+      card('members', 'Mabuhay Miles members, Business Class', 'go', 'More free', 'Free chat, and 100 MB for Business Class', 'PAL lists UNLI CHAT (iMessage, Viber, WhatsApp and similar) free for all Mabuhay Miles members, and a 100 MB plan free for Business Class passengers and Mabuhay Miles Million Milers in any class.', ['The code is provided in flight.', 'PAL\'s FAQ also says Mabuhay Miles members, Business Class and Premium Economy passengers get unlimited free access. Its plan table does not say this, so check the portal on board.'], PG),
+      card('paid', 'Everyone else', 'warn', 'From USD 9.98', 'Light, Standard or Unlimited', 'PAL lists the Light plan (1 hour) at USD 9.98, the Standard plan (3 hours) at USD 15.98 and the Unlimited plan at USD 24.98.', ['You buy on board: connect to the PAL_WiFi network and choose a plan in the portal.', 'PAL says audio and video calls are not supported.'], PG)
+    ],
+    faq: [
+      ['Is Philippine Airlines WiFi free?', 'Partly. A 10 MB plan is free for all passengers. Mabuhay Miles members get free messaging, and Business Class passengers and Million Milers get a free 100 MB plan. Other plans are paid.'],
+      ['How much does Philippine Airlines WiFi cost?', 'USD 9.98 for a 1-hour Light plan, USD 15.98 for a 3-hour Standard plan and USD 24.98 for Unlimited. PAL says rates may change without notice.'],
+      ['Which Philippine Airlines flights have WiFi?', 'PAL says myPAL Wi-Fi is available on select international flights only and on select aircraft. This page does not list the aircraft.'],
+      ['How do I connect to Philippine Airlines WiFi?', 'Put your device in Airplane Mode, turn on WiFi and select the PAL_WiFi network. The portal opens, or go to wifi.philippineairlines.com. Choose your plan.']
+    ],
+    tableHead: ['Plan', 'Who gets it', 'Price'], tableTitle: 'Philippine Airlines\' myPAL Wi-Fi plans',
+    tableNote: 'Copied from the plan table on Philippine Airlines\' myPAL Wi-Fi page.',
+    rows: [['100 MB plan', 'Business Class and Mabuhay Miles Million Milers (any class)', 'Free in flight'], ['UNLI CHAT', 'All Mabuhay Miles members', 'Free in flight'], ['10 MB plan', 'All passengers', 'Free in flight'], ['Unlimited plan', 'Everyone', 'USD 24.98'], ['Standard plan (3 hours)', 'Everyone', 'USD 15.98'], ['Light plan (1 hour)', 'Everyone', 'USD 9.98']],
+    extra: steps(['Put your device in Airplane Mode.', 'Turn on WiFi and select the "PAL_WiFi" network.', 'You are sent to the myPAL Wi-Fi portal, or go to wifi.philippineairlines.com.', 'Choose your plan and connect.'])
+  });
+}
+
+// ---------------- VIRGIN AUSTRALIA ----------------
+// Read 14 October 2026 on virginaustralia.com (US site): Get connected.
+{
+  const PG = ['https://www.virginaustralia.com/us/en/travel-info/onboard-experience/inflight-connectivity/', 'Virgin Australia: Get connected', 'Wi-Fi Onboard, passes and FAQs'];
+  addN({
+    slug: 'virgin-australia', slab: 'Who are you?', checked: '14 October 2026',
+    h1: 'Is Virgin Australia WiFi Free? Who Gets It and How to Connect (2026)',
+    desc: 'Is Virgin Australia WiFi free? Free for Business Class and Velocity Platinum and Platinum Plus members. Everyone else buys a pass. Free entertainment portal for all. Not on F100, A320 or 737-700. From Virgin Australia\'s own page, checked 14 October 2026.',
+    answer: 'Free for Business Class and Velocity Platinum and Platinum Plus members. Everyone else can buy a 30-minute or full-flight pass with a credit card. The entertainment portal with over 400 hours of movies, TV and podcasts is free for all. WiFi is not on F100, A320 or 737-700 aircraft, and Virgin Australia cannot guarantee your aircraft has it yet.',
+    srcNote: 'From Virgin Australia\'s own connectivity page (US site), last checked 14 October 2026. The page gives no pass prices. Other Virgin Australia pages mention Starlink on some long-haul flights, which we did not read.',
+    scen: [
+      card('free', 'Business Class, Velocity Platinum and Platinum Plus', 'go', 'Free WiFi', 'Complimentary access', 'Virgin Australia says Virgin Australia, Velocity Platinum, Platinum Plus and Business Class guests enjoy complimentary access to its inflight internet, which is provided by WiFi Onboard.', ['Virgin Australia sponsors the complimentary internet. WiFi Onboard may share your name, seat number and flight information with Virgin Australia to check you are eligible.', 'Virgin Australia says typical speeds are between 5 and 15 Mbps, and satellite coverage and connections vary with geography and weather.'], PG, true),
+      card('ent', 'Everyone: entertainment', 'go', 'Free entertainment', 'Over 400 hours on your own device', 'Virgin Australia says you can watch over 400 hours of movies, TV shows and podcasts from its entertainment portal on your own device, and that no internet purchase is required for this.', ['If you cannot reach the portal, type boardconnect.aero into your browser.'], PG),
+      card('paid', 'Everyone else: internet pass', 'warn', 'Paid pass', '30 minutes or full flight', 'Virgin Australia says you can buy a 30-minute or full-flight internet pass from WiFi Onboard in the entertainment portal, paying by credit card.', ['Accepted cards: MasterCard, VISA, American Express and Discover. Cash is not accepted on board.', 'Virgin Australia\'s page does not list pass prices.'], PG),
+      card('fleet', 'Which aircraft', 'warn', 'Not on every aircraft', 'Not F100, A320 or 737-700', 'Virgin Australia says the rollout does not include F100, A320 or B737-700 aircraft, and that while WiFi Onboard is being activated across the fleet it cannot guarantee your aircraft will have the service.', ['Voice calls and video conferencing are not allowed on board.'], PG)
+    ],
+    faq: [
+      ['Is Virgin Australia WiFi free?', 'It is free for Business Class guests and Velocity Platinum and Platinum Plus members. Everyone else can buy a 30-minute or full-flight pass. The entertainment portal is free for all.'],
+      ['Which Virgin Australia planes have WiFi?', 'Virgin Australia is rolling out WiFi Onboard across its fleet and cannot guarantee that your aircraft has it. It says the rollout does not include F100, A320 or B737-700 aircraft.'],
+      ['How do I connect to Virgin Australia WiFi?', 'Switch your device to flight mode, turn WiFi on and select the VirginAustralia in-cabin network. If the page does not load, type wifi.virginaustralia.com (http, not https) into your browser, and make sure any VPN is off.']
+    ],
+    tableHead: ['Question', 'What Virgin Australia says'], tableTitle: 'What Virgin Australia says about WiFi',
+    tableNote: 'Copied from Virgin Australia\'s Get connected page.',
+    rows: [['Free internet', 'Business Class, Velocity Platinum and Platinum Plus'], ['Free entertainment portal', 'Everyone, over 400 hours, no internet purchase needed'], ['Paid internet', '30-minute or full-flight pass by credit card; prices not listed'], ['Aircraft not included', 'F100, A320, B737-700'], ['Typical speed', '5 to 15 Mbps'], ['Calls', 'Voice and video conferencing not allowed']],
+    extra: steps(['In device settings, switch to flight mode, then turn WiFi on.', 'Select the "VirginAustralia" in-cabin network.', 'You are directed to the entertainment portal. If not, type wifi.virginaustralia.com.', 'Choose free entertainment or buy an internet pass.'])
+  });
+}
+
+// ---------------- THAI AIRWAYS ----------------
+// Read 14 October 2026 on thaiairways.com: In-flight connectivity (Australia site) and Complimentary In-flight Wi-Fi Service on THAI (Royal Orchid Plus).
+{
+  const PG = ['https://www.thaiairways.com/en-au/content/in-flight-experience/in-flight-connectivity/', 'Thai Airways: In-flight connectivity (THAI Sky Connect)', 'Aircraft and WiFi packages'];
+  const RP = ['https://www.thaiairways.com/en-th/content/offers-Promotions/royal-orchid-plus/Complimentary-In-flight-Wi-Fi/', 'Thai Airways: Complimentary In-flight Wi-Fi (Royal Orchid Plus)', 'Free allowance by membership'];
+  addN({
+    slug: 'thai-airways', slab: 'Who are you?', checked: '14 October 2026',
+    h1: 'Is Thai Airways WiFi Free? THAI Sky Connect Prices (2026)',
+    desc: 'Is Thai Airways WiFi free? Unlimited for Royal First Class and Royal Orchid Plus Platinum, 60 minutes for Royal Silk and Gold, 30 minutes for Silver and Basic. Paid from USD 0.99. Thai Airways\' own pages, checked 14 October 2026.',
+    answer: 'Partly. Thai Airways gives unlimited free WiFi to Royal First Class passengers and Royal Orchid Plus Platinum members, 60 minutes to Royal Silk Class and Gold members, and 30 minutes to Silver and Basic members. Others pay: USD 0.99 chat, USD 14.99 surfing, USD 39.99 streaming. It is on selected aircraft only.',
+    srcNote: 'From Thai Airways\' own pages, last checked 14 October 2026. Prices on the Australia site are in US dollars and may differ on other country sites.',
+    scen: [
+      card('unlimited', 'Royal First Class, Royal Orchid Plus Platinum', 'go', 'Free, unlimited', 'Complimentary WiFi', 'Thai Airways says Royal First Class passengers and Royal Orchid Plus Platinum members get unlimited complimentary WiFi through THAI Sky Connect.', ['A WiFi code is included on your boarding pass at check-in. Then log in through the WiFi portal on board.', 'Sign up for Royal Orchid Plus at least 24 hours before your flight to activate the complimentary WiFi.'], RP, true),
+      card('timed', 'Royal Silk Class, Gold, Silver, Basic', 'warn', 'Free for 30 or 60 minutes', 'Then a charge applies', 'Thai Airways says Royal Silk Class passengers and Royal Orchid Plus Gold members get 60 minutes free, and Silver and Basic members get 30 minutes free, after which a charge applies.', ['This applies from 1 May 2025, on selected flights on the A350-900, B787-8, B787-9 and B777-300ER, per Thai Airways\' membership page.', 'Sign up for Royal Orchid Plus at least 24 hours before your flight.'], RP),
+      card('paid', 'Everyone else', 'warn', 'From USD 0.99', 'Chat, Surfing or Streaming', 'Thai Airways lists Unlimited Chatting at USD 0.99 (messaging apps, no multimedia files), Unlimited Surfing at USD 14.99 (web, social media, email) and Unlimited Streaming at USD 39.99.', ['Thai Airways says WiFi does not support phone calls over the internet.'], PG),
+      card('fleet', 'Which aircraft', 'warn', 'Selected aircraft only', 'Six aircraft types listed', 'Thai Airways says THAI Sky Connect is available on selected aircraft: Boeing 777-300ER, Airbus A350-900, Airbus A330-300, Boeing 787-9, Boeing 787-8 and Airbus A321neo.', ['Availability and performance vary by aircraft, route and satellite coverage, and the service can be temporarily unavailable.', 'The membership page lists only the A350-900, B787-8, B787-9 and B777-300ER for the free allowance.'], PG)
+    ],
+    faq: [
+      ['Is Thai Airways WiFi free?', 'For some passengers. Royal First Class and Royal Orchid Plus Platinum members get unlimited free WiFi. Royal Silk Class and Gold members get 60 minutes, and Silver and Basic members get 30 minutes. Everyone else pays.'],
+      ['How much does Thai Airways WiFi cost?', 'On Thai Airways\' Australia site: Unlimited Chatting USD 0.99, Unlimited Surfing USD 14.99, Unlimited Streaming USD 39.99. Prices may differ on other country sites.'],
+      ['Which Thai Airways planes have WiFi?', 'Selected Boeing 777-300ER, Airbus A350-900, Airbus A330-300, Boeing 787-9, Boeing 787-8 and Airbus A321neo aircraft.'],
+      ['How do I get my free Thai Airways WiFi?', 'Join Royal Orchid Plus at least 24 hours before your flight. A WiFi code is on your boarding pass at check-in, and you log in through the WiFi portal on board.']
+    ],
+    tableHead: ['Who', 'WiFi on Thai Airways'], tableTitle: 'Thai Airways\' WiFi by membership and package',
+    tableNote: 'Copied from Thai Airways\' connectivity page and Royal Orchid Plus page.',
+    rows: [['Royal First Class, Royal Orchid Plus Platinum', 'Unlimited, free'], ['Royal Silk Class, Royal Orchid Plus Gold', '60 minutes free, then a charge'], ['Royal Orchid Plus Silver and Basic', '30 minutes free, then a charge'], ['Unlimited Chatting', 'USD 0.99'], ['Unlimited Surfing', 'USD 14.99'], ['Unlimited Streaming', 'USD 39.99']]
+  });
+}
+
+// ---------------- ETHIOPIAN AIRLINES ----------------
+// Read 14 October 2026 on ethiopianairlines.com (US site): Sheba SkyConnect On-board WiFi.
+{
+  const PG = ['https://www.ethiopianairlines.com/us/services/add-on-services/on-board-wifi', 'Ethiopian Airlines: ShebaSkyConnect on-board WiFi', 'Packages and FAQs'];
+  addN({
+    slug: 'ethiopian-airlines', slab: 'Who are you?', checked: '14 October 2026',
+    h1: 'Is Ethiopian Airlines WiFi Free? ShebaSkyConnect Prices (2026)',
+    desc: 'Is Ethiopian Airlines WiFi free? Free for Business Class, and 1 hour free for Platinum ShebaMiles members. Passes from USD 5. All A350s and most 777s and 787s. Ethiopian\'s own page, checked 14 October 2026.',
+    answer: 'Free for Business Class travellers, and Platinum ShebaMiles members get a complimentary 1-hour package. Everyone else buys a pass: USD 5 for 1 hour, USD 10 for 2 hours, USD 25 for the full flight. All A350s have WiFi, and most B777 and B787 are being equipped.',
+    srcNote: 'From Ethiopian Airlines\' own ShebaSkyConnect page (US site), last checked 14 October 2026. Prices may differ on other country sites.',
+    scen: [
+      card('free', 'Business Class, Platinum ShebaMiles', 'go', 'Free WiFi', 'Business Class free; Platinum gets 1 hour', 'Ethiopian says WiFi is free for Business Class travellers and that Platinum ShebaMiles members are entitled to a complimentary 1-hour WiFi package.', ['The cabin crew announce at the start of the flight whether the aircraft has WiFi and which type of service it has.'], PG, true),
+      card('paid', 'Everyone else', 'warn', 'From USD 5', '1 hour, 2 hours or full flight', 'Ethiopian lists a 1-hour pass at USD 5, a 2-hour pass at USD 10 and a full-flight pass at USD 25.', ['You can buy at Ethiopian ticket offices, the check-in counter, the boarding gate, or from the cabin crew on board. Ethiopian accepts Visa, Mastercard, American Express, Diners Club, Discover, JCB, China UnionPay, Maestro and PayPal.', 'A purchased session can be used on one device at a time. If the aircraft is changed, the access code works on other WiFi-enabled Ethiopian flights for one year.'], PG),
+      card('fleet', 'Which aircraft', 'warn', 'All A350, most 777 and 787', 'Others are being equipped', 'Ethiopian says all its A350 aircraft have WiFi and most of its B777 and B787 are currently being equipped.', ['Coverage is not available in extreme polar regions, and satellite outages can happen because of regulations, weather and satellite switching.', 'If you paid but cannot get online because of a technical problem, Ethiopian says you will be refunded.'], PG)
+    ],
+    faq: [
+      ['Is Ethiopian Airlines WiFi free?', 'It is free for Business Class travellers, and Platinum ShebaMiles members get a complimentary 1-hour package. Everyone else buys a pass.'],
+      ['How much does Ethiopian Airlines WiFi cost?', 'USD 5 for 1 hour, USD 10 for 2 hours and USD 25 for a full flight, on Ethiopian\'s US site.'],
+      ['Which Ethiopian planes have WiFi?', 'All A350 aircraft, and most B777 and B787 aircraft are being equipped. The crew announce at the start of the flight whether yours has WiFi.'],
+      ['How do I connect to Ethiopian Airlines WiFi?', 'Switch your device to Airplane mode, turn WiFi on and select the ETInternet network. You are redirected to the portal.']
+    ],
+    tableHead: ['Pass', 'Price'], tableTitle: 'Ethiopian Airlines\' ShebaSkyConnect passes',
+    tableNote: 'Copied from Ethiopian Airlines\' ShebaSkyConnect page (US site).',
+    rows: [['1 hour pass', 'USD 5'], ['2 hours pass', 'USD 10'], ['Full flight pass', 'USD 25'], ['Business Class', 'Free'], ['Platinum ShebaMiles members', '1-hour package free']],
+    extra: steps(['Go to settings and switch your device to Airplane mode.', 'Turn WiFi on and select the "ETInternet" network.', 'You are redirected to the portal page.', 'Buy a pass, or use your free access.'])
+  });
+}
+
+// ---------------- MALAYSIA AIRLINES ----------------
+// Read 14 October 2026 on malaysiaairlines.com (global site): Wi-Fi (MHconnect).
+{
+  const PG = ['https://www.malaysiaairlines.com/hq/en/experience/in-flight-offerings/wi-fi.html', 'Malaysia Airlines: Stay online with MHconnect', 'Aircraft, how to connect and terms'];
+  addN({
+    slug: 'malaysia-airlines', slab: 'Which aircraft?', checked: '14 October 2026',
+    h1: 'Is Malaysia Airlines WiFi Free? MHconnect on A350, 737-8 and A330 (2026)',
+    desc: 'Is Malaysia Airlines WiFi free? Yes, unlimited and free in every cabin on all A350-900 and Boeing 737-8 aircraft and selected A330s, for messaging and social media. Malaysia Airlines\' own page, checked 14 October 2026.',
+    answer: 'Yes. Malaysia Airlines says MHconnect gives unlimited complimentary WiFi, for messaging and social media apps, from Business Suite to Economy, on all A350-900 and Boeing 737-8 aircraft and on selected A330 aircraft. You register with your email address on board.',
+    srcNote: 'From Malaysia Airlines\' own global WiFi page, last checked 14 October 2026. Its page says MHconnect is being brought to more of the A330 fleet, so check your flight.',
+    scen: [
+      card('yes', 'A350-900, Boeing 737-8', 'go', 'Free, unlimited WiFi', 'All aircraft, every cabin', 'Malaysia Airlines says unlimited complimentary WiFi with MHconnect is available on all A350-900 and Boeing 737-8 aircraft, from Business Suite to Economy Class.', ['It is described for messaging and social media apps. The page also mentions browsing the web, emails and collaboration tools.', 'To connect, follow the steps on screen and give your email address. Register on board so any unused data carries forward to your next flight for up to 30 days.'], PG, true),
+      card('a330', 'Airbus A330', 'warn', 'Selected aircraft', 'More being added', 'Malaysia Airlines says MHconnect is on selected A330 aircraft and that it is working to bring it to the rest of the A330 fleet.', ['A pop-up on the in-flight entertainment screen after take-off tells you when WiFi is available.', 'Mobile roaming services are on selected A350 and A330 aircraft. Roaming charges are set by your mobile provider.'], PG),
+      card('terms', 'What to expect', 'warn', 'No guarantee', 'Speeds vary', 'Malaysia Airlines says internet speeds and capacities in the cabin may differ from the ground, that it does not guarantee a glitch-free connection and may suspend service during the flight for security or other reasons.', ['Refunds are considered case by case.', 'Malaysia Airlines recommends turning off auto-updates and background apps before connecting.'], PG)
+    ],
+    faq: [
+      ['Is Malaysia Airlines WiFi free?', 'Yes, on aircraft that have MHconnect. Malaysia Airlines says it is unlimited and complimentary, for messaging and social media apps, in every cabin from Business Suite to Economy.'],
+      ['Which Malaysia Airlines planes have WiFi?', 'All A350-900 and Boeing 737-8 aircraft, and selected A330 aircraft.'],
+      ['How do I connect to Malaysia Airlines WiFi?', 'Enable Airplane Mode before take-off. At cruising altitude, open your WiFi settings and connect to "MHconnect". Follow the steps on screen and enter your email address.']
+    ],
+    tableHead: ['Aircraft', 'MHconnect WiFi'], tableTitle: 'Malaysia Airlines\' MHconnect aircraft',
+    tableNote: 'Copied from Malaysia Airlines\' WiFi page and terms.',
+    rows: [['Airbus A350-900', 'All aircraft, free in every cabin'], ['Boeing 737-8', 'All aircraft, free in every cabin'], ['Airbus A330', 'Selected aircraft'], ['Mobile roaming', 'Selected A350 and A330 aircraft']],
+    extra: steps(['Enable "Airplane Mode" on your device before take-off.', 'At cruising altitude, open your WiFi settings and connect to "MHconnect".', 'Insert your email address and follow the steps on screen.'])
+  });
+}
+
+// ---------------- AIR INDIA ----------------
+// Read 14 October 2026 on airindia.com: Inflight Wi-Fi Services and Connectivity.
+{
+  const PG = ['https://www.airindia.com/in/en/experience/in-air/whats-on-my-ai/inflight-wi-fi.html', 'Air India: Inflight Wi-Fi Services and Connectivity', 'Plans, Maharaja Club benefits and aircraft'];
+  addN({
+    slug: 'air-india', slab: 'Who are you?', checked: '14 October 2026',
+    h1: 'Is Air India WiFi Free? Plans, Prices and Maharaja Club Benefits (2026)',
+    desc: 'Is Air India WiFi free? Free streaming in First Class, 1 hour of browsing in Business, and by Maharaja Club tier. Paid plans from INR 299. A350-900, select 777-300, 787-9 and A321neo. Air India\'s own page, checked 14 October 2026.',
+    answer: 'It depends on your class and Maharaja Club tier. First Class gets free full-flight streaming, Business gets 1 hour of browsing plus full-flight chat, and Platinum members get free unrestricted WiFi. Everyone else buys a plan, from INR 299. WiFi is on the A350-900, select B777-300, B787-9 and A321neo only.',
+    srcNote: 'From Air India\'s own inflight WiFi page, last checked 14 October 2026. Availability can change at the last minute, so check the Wi-Fi Onboard icon on the Flight Status page.',
+    scen: [
+      card('first', 'First Class', 'go', 'Free streaming', 'Full flight', 'Air India says First Class customers enjoy complimentary full-flight streaming access.', ['Link your Maharaja Club ID through Manage Booking or Web Check-in to get your benefits.'], PG, true),
+      card('business', 'Business Class', 'warn', '1 hour free browsing', 'Plus full-flight chat', 'Air India says Business Class customers enjoy complimentary WiFi for 1 hour of browsing along with full-flight chat access.', ['Link your Maharaja Club ID through Manage Booking or Web Check-in.'], PG),
+      card('tiers', 'Maharaja Club members', 'warn', 'Free by tier', 'Platinum: everything free', 'Air India lists: Red and Silver tiers free 1-hour WiFi for chat; Gold tier free 1-hour browsing and unrestricted chat; Platinum tier free unrestricted browsing, chat and streaming.', ['The higher your tier, the more you save.', 'Link your Maharaja Club ID through Manage Booking or Web Check-in.'], PG),
+      card('paid', 'Everyone else', 'warn', 'From INR 299', 'Chat, Browsing or Streaming', 'Air India lists Chat and Text full flight at INR 399, Basic Browsing at INR 299 (1 hour), INR 699 (3 hours) or INR 1,199 (full flight), and Streaming full flight at INR 2,699.', ['You can pay with UPI apps, and with international credit or debit cards that do not require an OTP.', 'WiFi is on select flights shown on the Flight Status page, on the A350-900, select B777-300, B787-9 and A321neo, on domestic and international routes.'], PG)
+    ],
+    faq: [
+      ['Is Air India WiFi free?', 'For some. First Class gets free full-flight streaming. Business Class gets 1 hour of browsing plus full-flight chat. Maharaja Club members get free WiFi by tier, and Platinum gets everything free. Everyone else pays.'],
+      ['How much does Air India WiFi cost?', 'Chat INR 399 for the full flight. Browsing INR 299 for 1 hour, INR 699 for 3 hours, INR 1,199 for the full flight. Streaming INR 2,699 for the full flight.'],
+      ['Which Air India planes have WiFi?', 'The A350-900, select B777-300, B787-9 and A321neo, on domestic and international routes. Look for the "Wi-Fi Onboard" icon on the Flight Status page or during web check-in.'],
+      ['How do I connect to Air India WiFi?', 'Turn on flight mode and connect to "Air India Wi-Fi". The portal opens, or go to wifi.airindia.com. Sign in with your last name, booking reference or last 4 digits of your ticket number, email and phone, then pick a plan.']
+    ],
+    tableHead: ['Plan', 'Price'], tableTitle: 'Air India\'s inflight WiFi plans',
+    tableNote: 'Copied from Air India\'s inflight WiFi page.',
+    rows: [['Chat and Text, full flight', 'INR 399'], ['Basic Browsing, 1 hour', 'INR 299'], ['Basic Browsing, 3 hours', 'INR 699'], ['Basic Browsing, full flight', 'INR 1,199'], ['Streaming, full flight', 'INR 2,699'], ['Maharaja Club Platinum', 'Free browsing, chat and streaming']],
+    extra: steps(['Turn on flight mode and connect to "Air India Wi-Fi".', 'The login page opens, or go to wifi.airindia.com.', 'Enter your last name, booking reference (or last 4 digits of your ticket number), email and phone, then verify.', 'Choose your plan and pay if needed.'])
+  });
+}
+
+// ---------------- ETIHAD ----------------
+// Read 14 October 2026 on etihad.com (US site): Wi-Fi and entertainment.
+{
+  const PG = ['https://www.etihad.com/en-us/plan/fly-with-etihad/onboard-services/wifi-and-entertainment', 'Etihad: Wi-Fi and entertainment', 'Complimentary and paid Wi-Fi'];
+  addN({
+    slug: 'etihad-airways', slab: 'Who are you?', checked: '14 October 2026',
+    h1: 'Is Etihad WiFi Free? Free Chat, Packages and Prices (2026)',
+    desc: 'Is Etihad WiFi free? Free chat for Etihad Guest members, unlimited data in First and on Business Deluxe, Business Comfort and Economy Deluxe fares. Otherwise paid from USD 3.99. Etihad\'s own page, checked 14 October 2026.',
+    answer: 'Partly. Etihad gives free chat to all Etihad Guest members and unlimited data to First, Business Deluxe, Business Comfort and Economy Deluxe tickets, plus Emerald and Platinum members. Everyone else buys: Chat USD 3.99, Surf from USD 9.99, Stream from USD 14.99. You buy on board only.',
+    srcNote: 'From Etihad\'s own WiFi page (US site), last checked 14 October 2026. Etihad does not list WiFi by aircraft on this page.',
+    scen: [
+      card('fares', 'First, Business Deluxe, Business Comfort, Economy Deluxe', 'go', 'Free, unlimited data', 'By cabin and fare', 'Etihad says you get unlimited data when you travel in First, or book a Business Deluxe, Business Comfort or Economy Deluxe fare.', ['Etihad Guest Emerald and Platinum members also receive unlimited data.'], PG, true),
+      card('member', 'Etihad Guest member', 'go', 'Free chat', 'Chat access for all members', 'Etihad says chat access is complimentary for all Etihad Guest members. Gold members get 25% off WiFi packages.', ['Emerald and Platinum members get unlimited data.'], PG),
+      card('paid', 'Everyone else', 'warn', 'From USD 3.99', 'Chat, Surf or Stream', 'Etihad lists Chat (text only) at USD 3.99. Surf (unlimited data) is USD 9.99 or 1,200 miles under 7 hours and USD 24.99 or 3,000 miles over 7 hours. Stream is USD 14.99 or 1,800 miles under 7 hours and USD 29.99 or 3,600 miles over 7 hours.', ['You can only buy on board, after the seatbelt signs are off. Etihad accepts major credit cards, PayPal, Apple Pay, Alipay and Etihad Guest Miles.', 'Connect to the "Etihad Wi-Fly" network, then choose your package.'], PG)
+    ],
+    faq: [
+      ['Is Etihad WiFi free?', 'Partly. Chat is free for Etihad Guest members, and unlimited data is free in First, on Business Deluxe, Business Comfort and Economy Deluxe fares, and for Emerald and Platinum members. Everyone else pays.'],
+      ['How much does Etihad WiFi cost?', 'Chat USD 3.99. Surf: USD 9.99 or 1,200 miles under 7 hours, USD 24.99 or 3,000 miles over 7 hours. Stream: USD 14.99 or 1,800 miles under 7 hours, USD 29.99 or 3,600 miles over 7 hours.'],
+      ['Can I buy Etihad WiFi before my flight?', 'No. Etihad says you can only buy WiFi packages on board, when the seatbelt signs are off.'],
+      ['How do I connect to Etihad WiFi?', 'Enable WiFi and connect to the "Etihad Wi-Fly" network, then choose your package.']
+    ],
+    tableHead: ['Package', 'Under 7 hours', 'Over 7 hours'], tableTitle: 'Etihad\'s WiFi packages',
+    tableNote: 'Copied from the package table on Etihad\'s WiFi page.',
+    rows: [['Chat (text only)', 'USD 3.99', 'USD 3.99'], ['Surf (unlimited data)', 'USD 9.99 or 1,200 miles', 'USD 24.99 or 3,000 miles'], ['Stream', 'USD 14.99 or 1,800 miles', 'USD 29.99 or 3,600 miles']]
+  });
+}
+
+// ---------------- LATAM ----------------
+// Read 14 October 2026 on latamairlines.com (UK site): Onboard Wi-Fi.
+{
+  const PG = ['https://www.latamairlines.com/gb/en/experience/during-flight/onboard-entertainment/onboard-connectivity', 'LATAM: Onboard Wi-Fi', 'Who gets it, paid plans and where'];
+  addN({
+    slug: 'latam', slab: 'Who are you?', checked: '14 October 2026',
+    h1: 'Is LATAM WiFi Free? Free Messaging, Elite Benefits and Prices (2026)',
+    desc: 'Is LATAM WiFi free? Free messaging for LATAM Pass members and free browsing for Gold, Platinum and Black members, on single-aisle flights within South America. Paid plans from USD 2. LATAM\'s own page, checked 14 October 2026.',
+    answer: 'On flights within South America on single-aisle aircraft: free text messaging for LATAM Pass members, and free unlimited browsing and messages for Gold, Platinum, Black and Black Signature members. Others pay: USD 2 for messaging, USD 5 for 1 hour of browsing, USD 8 full flight. Not on twin-aisle aircraft or other routes.',
+    srcNote: 'From LATAM\'s own onboard Wi-Fi page (UK site), last checked 14 October 2026. Prices are references in US dollars and may vary with the local exchange rate. Service is subject to availability.',
+    scen: [
+      card('elite', 'Gold, Platinum, Black, Black Signature', 'go', 'Free browsing and messages', 'Within South America, single-aisle aircraft', 'LATAM says Gold, Platinum, Black or Black Signature LATAM Pass members enjoy free and unlimited access to internet browsing and messages on flights within South America on single-aisle aircraft.', ['Elite members do not have to buy paid WiFi plans.'], PG, true),
+      card('member', 'LATAM Pass member', 'go', 'Free messaging', 'WhatsApp and similar', 'LATAM says LATAM Pass members enjoy free text messaging on apps such as WhatsApp on flights within South America on single-aisle aircraft.', ['If you are not yet a member, you can register and get free text messaging on your next flight.'], PG),
+      card('paid', 'Everyone: paid plans', 'warn', 'From USD 2', 'Messaging, browsing or streaming', 'LATAM lists text messaging (WhatsApp, Viber, iMessage) at USD 2, browsing at USD 5 for 1 hour and USD 8 for the full flight, streaming at USD 9 for 1 hour and USD 12 for the full flight, and monthly plans at USD 28 (browsing) and USD 49.50 (streaming).', ['You can only pay by credit card.', 'Fees depend on the route and the aircraft.'], PG),
+      card('where', 'Where it works', 'warn', 'Single-aisle, South America only', 'Not on twin-aisle aircraft', 'LATAM says onboard WiFi is only available on domestic flights within South America or between South American countries, on single-aisle aircraft, subject to availability.', ['LATAM says it has WiFi on its whole single-aisle fleet in Brazil and on most single-aisle aircraft in Chile, Colombia, Ecuador and Peru.', 'Twin-aisle aircraft have individual touch screens instead.'], PG)
+    ],
+    faq: [
+      ['Is LATAM WiFi free?', 'On single-aisle flights within South America: free text messaging for LATAM Pass members, and free browsing and messages for Gold, Platinum, Black and Black Signature members. Everything else is paid.'],
+      ['How much does LATAM WiFi cost?', 'Messaging USD 2. Browsing USD 5 for 1 hour or USD 8 for the full flight. Streaming USD 9 for 1 hour or USD 12 for the full flight. Monthly browsing USD 28, monthly streaming USD 49.50.'],
+      ['Does LATAM have WiFi on international flights?', 'LATAM says onboard WiFi is only available on flights within South America or between South American countries, on single-aisle aircraft.'],
+      ['How do I connect to LATAM WiFi?', 'Turn on Airplane Mode, connect to the "LATAM Play" WiFi network, scan the QR code on your seat or go to play.latam.com, choose messaging, streaming or browsing, and register for LATAM Pass or start your session.']
+    ],
+    tableHead: ['Plan', 'Price (USD, reference)'], tableTitle: 'LATAM\'s paid WiFi plans',
+    tableNote: 'Copied from LATAM\'s onboard WiFi page. Values are references and may vary with the local exchange rate.',
+    rows: [['Text messaging (WhatsApp, Viber, iMessage)', '2'], ['Browsing, 1 hour', '5'], ['Browsing, full flight', '8'], ['Streaming, 1 hour', '9'], ['Streaming, full flight', '12'], ['Monthly browsing plan', '28'], ['Monthly streaming plan', '49.50']],
+    extra: steps(['Turn on Airplane Mode on your device.', 'Connect to the "LATAM Play" WiFi network.', 'Scan the QR code on your seat or go to play.latam.com.', 'Choose messaging, streaming or browsing, then register for LATAM Pass or start your session.'])
+  });
+}
+
 module.exports = out;

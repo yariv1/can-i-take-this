@@ -243,3 +243,6 @@ Eurowings, LOT (slug lot-polish), Aer Lingus, Vueling, easyJet (unofficial-sourc
 
 ## 2026-10-14 Wi-Fi pages batch 5 (Asia/Oceania, deployed): TO REQUEST after batch 4
 Singapore Airlines (singapore-airlines), Cathay Pacific (cathay-pacific), Qantas (qantas), Air New Zealand (air-new-zealand) (all https://canitakethis.co/airline/<slug>/wifi/).
+
+## 2026-10-14 Wi-Fi pages batch 6 (deployed): TO REQUEST after batch 5
+Philippine Airlines (philippine-airlines), Virgin Australia (virgin-australia), Thai Airways (thai-airways), Ethiopian Airlines (ethiopian-airlines), Malaysia Airlines (malaysia-airlines), Air India (air-india), Etihad (etihad-airways), LATAM (latam) (all https://canitakethis.co/airline/<slug>/wifi/).
