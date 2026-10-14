@@ -1327,4 +1327,451 @@ const addN = cfg => add(Object.assign({ legend: LEGEND2, slab: cfg.slab || 'Whic
   });
 }
 
+// ---------------- EMIRATES ----------------
+// Read 14 October 2026 on emirates.com: Onboard Wi-Fi.
+{
+  const PG = ['https://www.emirates.com/english/experience/inflight-entertainment/onboard-wifi/', 'Emirates: Onboard Wi-Fi', 'Starlink, plans and free options for Skywards members'];
+  addN({
+    slug: 'emirates', slab: 'Which flight?', checked: '14 October 2026',
+    h1: 'Is Emirates WiFi Free? Starlink, Plans and Skywards Benefits (2026)',
+    desc: 'Is Emirates WiFi free? Starlink WiFi is free for everyone on selected flights. Elsewhere it is free by Skywards status, or paid from USD 2.99. Emirates\' own page, checked 14 October 2026.',
+    answer: 'Free for everyone on selected Starlink flights. On other flights it depends on your Emirates Skywards status: free for First and Business members and Platinum members in any cabin, free chat for Blue, Silver and Gold members in Premium Economy and Economy. Everyone else pays from USD 2.99.',
+    srcNote: 'From Emirates\' own onboard WiFi page, last checked 14 October 2026. Emirates says Starlink is rolling out across the fleet and prices may vary on some routes.',
+    scen: [
+      card('starlink', 'Starlink flights', 'go', 'Free for everyone', 'On selected flights', 'Emirates says Starlink WiFi is free for everyone and is on selected flights. You can stream, game, video call, work or browse.', ['Emirates says more announcements will come as it rolls out Starlink across the fleet.', 'Emirates does not list on this page which aircraft or routes have Starlink.'], PG, true),
+      card('skywards', 'Emirates Skywards members', 'go', 'Free by status', 'Other flights (OnAir WiFi)', 'Emirates says Skywards members in First or Business Class get free WiFi throughout the flight, and Platinum members get it in any cabin. Blue, Silver and Gold members in Premium Economy and Economy get free unlimited chat on WhatsApp, Messenger and other messaging services.', ['Skywards Skysurfers are not eligible for free or paid WiFi.', 'Add your Skywards number to your booking before the flight. You then log in with your date of birth and your seat number.'], PG),
+      card('paid', 'Everyone else', 'warn', 'From USD 2.99', 'Chat, whole flight or Easy connect', 'Emirates lists unlimited chat at USD 2.99 to USD 5.99 depending on flight length, WiFi internet for the whole flight at USD 9.99 to USD 19.99, and Easy connect at USD 9.99 for 30 minutes with no data limit in selected regions.', ['To buy: connect to the OnAir WiFi network after take-off, log in if you are a Skywards member, choose a plan and pay online.', 'Emirates says media streaming and some sync services are restricted on this service because of limited bandwidth.'], PG)
+    ],
+    faq: [
+      ['Is Emirates WiFi free?', 'On selected Starlink flights it is free for everyone. On other flights it depends on your Skywards status: free in First and Business for members, free for Platinum members in any cabin, free chat for Blue, Silver and Gold members in Premium Economy and Economy. Everyone else pays.'],
+      ['How much does Emirates WiFi cost?', 'Chat USD 2.99 to 5.99, WiFi for the whole flight USD 9.99 to 19.99, depending on flight length. Easy connect is USD 9.99 for 30 minutes in selected regions.'],
+      ['Which Emirates planes have Starlink WiFi?', 'Emirates says Starlink is on selected flights and rolling out across the fleet. Its page does not list the aircraft.'],
+      ['How do I connect to Emirates WiFi?', 'On Starlink flights, connect to the Starlink WiFi. On other flights, connect to the OnAir WiFi network after take-off, log in if you are a Skywards member, choose a plan and pay online.']
+    ],
+    tableHead: ['Who', 'WiFi on Emirates'], tableTitle: 'Emirates\' WiFi by status and plan',
+    tableNote: 'Copied from Emirates\' onboard WiFi page.',
+    rows: [['Everyone, on Starlink flights', 'Free'], ['Skywards members in First or Business Class', 'Free WiFi all flight'], ['Skywards Platinum members, any cabin', 'Free WiFi all flight'], ['Skywards Blue, Silver, Gold in Premium Economy and Economy', 'Free unlimited chat'], ['Unlimited chat', 'USD 2.99 to 5.99'], ['WiFi internet, whole flight', 'USD 9.99 to 19.99'], ['Easy connect (selected regions)', 'USD 9.99 for 30 minutes']]
+  });
+}
+
+// ---------------- GULF AIR ----------------
+// Read 14 October 2026 on gulfair.com: Connectivity.
+{
+  const PG = ['https://www.gulfair.com/connectivity', 'Gulf Air: Connectivity', 'Starlink, Falcon Wi-Fi and available fleet'];
+  add({
+    slug: 'gulf-air', checked: '14 October 2026',
+    h1: 'Is Gulf Air WiFi Free? Starlink and Falcon WiFi by Aircraft (2026)',
+    desc: 'Is Gulf Air WiFi free? Falcon WiFi is complimentary in all cabins on the Boeing 787-9 and Airbus A321neo, and Starlink is on the A320neo. Gulf Air\'s own list, checked 14 October 2026.',
+    answer: 'Gulf Air lists Starlink on the Airbus A320neo, and Falcon WiFi on the Boeing 787-9 Dreamliner and the Airbus A321neo. It says Falcon WiFi is complimentary in all cabins on aircraft awaiting Starlink. Gulf Air\'s page does not state a price for Starlink.',
+    srcNote: 'From Gulf Air\'s own connectivity page, last checked 14 October 2026. Starlink is "currently available on select aircraft and destinations".',
+    scen: [
+      card('a320', 'Airbus A320neo', 'warn', 'Starlink', 'Select aircraft and destinations', 'Gulf Air lists Starlink on the Airbus A320neo, with speeds up to 500 Mbps, and says it is currently available on select aircraft and destinations.', ['To connect: turn on WiFi while in Airplane mode and select "Gulf Air Starlink".', 'Gulf Air\'s page does not say whether Starlink is free.'], PG, true),
+      card('b787', 'Boeing 787-9 Dreamliner', 'go', 'Free Falcon WiFi', 'Complimentary in all cabins', 'Gulf Air lists Falcon WiFi on the Boeing 787-9 Dreamliner and says on aircraft awaiting Starlink it provides complimentary access in all cabins.', ['Gulf Air says you can browse, work and stay in touch throughout your journey.'], PG),
+      card('a321', 'Airbus A321neo', 'go', 'Free Falcon WiFi', 'Complimentary in all cabins', 'Gulf Air lists Falcon WiFi on the Airbus A321neo and says on aircraft awaiting Starlink it provides complimentary access in all cabins.', ['Gulf Air says you can browse, work and stay in touch throughout your journey.'], PG)
+    ],
+    faq: [
+      ['Is Gulf Air WiFi free?', 'Gulf Air says Falcon WiFi is complimentary in all cabins on aircraft awaiting Starlink. It lists Falcon WiFi on the Boeing 787-9 and Airbus A321neo. It does not state a price for Starlink.'],
+      ['Which Gulf Air planes have WiFi?', 'Starlink on the Airbus A320neo, and Falcon WiFi on the Boeing 787-9 Dreamliner and Airbus A321neo, according to Gulf Air\'s page.'],
+      ['How do I connect to Gulf Air WiFi?', 'For Starlink, turn on WiFi while in Airplane mode and select "Gulf Air Starlink" in your settings.']
+    ],
+    tableHead: ['Aircraft', 'WiFi on Gulf Air'], tableTitle: 'Gulf Air\'s aircraft with connectivity',
+    tableNote: 'Copied from the "Available Fleet" list on Gulf Air\'s connectivity page.',
+    rows: [['Airbus A320neo', 'Starlink'], ['Boeing 787-9 Dreamliner', 'Falcon WiFi'], ['Airbus A321neo', 'Falcon WiFi']]
+  });
+}
+
+// ---------------- VIETNAM AIRLINES ----------------
+// Read 14 October 2026 on vietnamairlines.com (global site): Wi-Fi onboard.
+{
+  const PG = ['https://www.vietnamairlines.com/go/en/experience/wifi-onboard', 'Vietnam Airlines: Wi-Fi onboard', 'Fares and how to connect'];
+  addN({
+    slug: 'vietnam-airlines', slab: 'Which plan?', checked: '14 October 2026',
+    h1: 'Is Vietnam Airlines WiFi Free? 15 Free Minutes and Prices (2026)',
+    desc: 'Is Vietnam Airlines WiFi free? 15 minutes of free messaging on domestic and international flights, then paid plans from USD 5. Full-flight internet USD 18 to USD 25 by route. Vietnam Airlines\' own page, checked 14 October 2026.',
+    answer: 'Partly. Vietnam Airlines gives 15 minutes of free messaging on domestic and international flights. After that, paid plans depend on your route: messaging for the whole flight USD 5 to 7, a 1-hour internet plan USD 8 to 12, and a full-flight internet plan USD 18 to 25.',
+    srcNote: 'From Vietnam Airlines\' own WiFi page (global site), last checked 14 October 2026. The page does not list which aircraft have WiFi.',
+    scen: [
+      card('free', 'Everyone', 'go', '15 minutes free messaging', 'Domestic and international flights', 'Vietnam Airlines says you get an exclusive 15 minutes of free messaging on domestic and international flights.', ['The page does not list which aircraft have WiFi.'], PG, true),
+      card('paid', 'After the free period', 'warn', 'From USD 5', 'Depends on the route', 'Vietnam Airlines lists four plans by round-trip route: the free 15-minute messaging plan, a messaging plan for the entire flight, a 1-hour internet plan and a full-flight internet plan.', ['Vietnam to the United States: messaging USD 7, 1 hour USD 12, full flight USD 25.', 'Vietnam to Europe or Australia: messaging USD 5, 1 hour USD 10, full flight USD 20. Other routes: messaging USD 5, 1 hour USD 8, full flight USD 18.'], PG)
+    ],
+    faq: [
+      ['Is Vietnam Airlines WiFi free?', 'For 15 minutes of messaging on domestic and international flights. After that you buy a plan.'],
+      ['How much does Vietnam Airlines WiFi cost?', 'Messaging for the entire flight: USD 5 to 7. One hour of internet: USD 8 to 12. Full-flight internet: USD 18 to 25. The price depends on the route.'],
+      ['How do I connect to Vietnam Airlines WiFi?', 'Enable WiFi on your device and connect to the "LotusConnect" network. The service page opens automatically, or scan the QR code on the entertainment screen. Choose a plan and pay, or enter a voucher code.']
+    ],
+    tableHead: ['Route (round trip)', 'Free 15-minute messaging', 'Entire flight messaging', '1-hour internet', 'Full flight internet'], tableTitle: 'Vietnam Airlines\' WiFi fares',
+    tableNote: 'Copied from the fares table on Vietnam Airlines\' WiFi page.',
+    rows: [['Vietnam - United States', 'Free', 'USD 7', 'USD 12', 'USD 25'], ['Vietnam - Europe/Australia', 'Free', 'USD 5', 'USD 10', 'USD 20'], ['Other routes', 'Free', 'USD 5', 'USD 8', 'USD 18']],
+    extra: steps(['Enable WiFi on your device and connect to the "LotusConnect" network.', 'The service page opens automatically, or scan the QR code on the entertainment screen.', 'Select a plan and pay, or enter a voucher code.'])
+  });
+}
+
+// ---------------- ROYAL JORDANIAN ----------------
+// Read 14 October 2026 on rj.com: Economy Class In-Flight Entertainment.
+{
+  const PG = ['https://www.rj.com/en/fly-rj/economy-class/economy-in-flight-entertainment', 'Royal Jordanian: Economy Class in-flight entertainment', 'Wi-Fi access'];
+  addN({
+    slug: 'royal-jordanian', slab: 'Who are you?', checked: '14 October 2026',
+    h1: 'Is Royal Jordanian WiFi Free? 15 Free Minutes and Price (2026)',
+    desc: 'Is Royal Jordanian WiFi free? The first 15 minutes are free for everyone, and it is free all flight for Crown Class and Platinum Hawk and Gold Sparrow members. About USD 10 to extend. Royal Jordanian\'s own page, checked 14 October 2026.',
+    answer: 'Partly. Royal Jordanian says the majority of its aircraft now offer WiFi, with the first 15 minutes free of charge. After that you can extend for the rest of the flight for about USD 10. It is complimentary for Crown Class and Platinum Hawk and Gold Sparrow Frequent Flyer members.',
+    srcNote: 'From Royal Jordanian\'s own economy in-flight entertainment page, last checked 14 October 2026. The page does not list which aircraft have WiFi.',
+    scen: [
+      card('free', 'Crown Class, Platinum Hawk, Gold Sparrow', 'go', 'Free WiFi', 'Complimentary', 'Royal Jordanian says WiFi is complimentary for Crown Class and Platinum Hawk and Gold Sparrow Frequent Flyer members.', ['The page does not list which aircraft have WiFi.'], PG, true),
+      card('first', 'Everyone', 'go', '15 minutes free', 'The rest of the flight costs about USD 10', 'Royal Jordanian says it provides your first 15 minutes of WiFi completely free of charge, and that after the complimentary period you can extend your connection for the rest of your flight for about USD 10.', ['Payment is by Visa, MasterCard or PayPal.', 'Multiple devices can be connected under a single session.'], PG)
+    ],
+    faq: [
+      ['Is Royal Jordanian WiFi free?', 'The first 15 minutes are free for everyone. It is complimentary all flight for Crown Class and Platinum Hawk and Gold Sparrow Frequent Flyer members.'],
+      ['How much does Royal Jordanian WiFi cost?', 'About USD 10 to extend your connection for the rest of the flight after the 15 free minutes. Payment is by Visa, MasterCard or PayPal.'],
+      ['Which Royal Jordanian planes have WiFi?', 'Royal Jordanian says the majority of its aircraft now offer WiFi access. Its page does not list them.']
+    ],
+    tableHead: ['Who or what', 'WiFi on Royal Jordanian'], tableTitle: 'What Royal Jordanian says about WiFi',
+    tableNote: 'Copied from Royal Jordanian\'s economy in-flight entertainment page.',
+    rows: [['Crown Class; Platinum Hawk and Gold Sparrow members', 'Complimentary'], ['Everyone: first 15 minutes', 'Free'], ['Rest of the flight', 'About USD 10'], ['Devices', 'Multiple devices under a single session'], ['Payment', 'Visa, MasterCard, PayPal']]
+  });
+}
+
+// ---------------- INDIGO (entertainment network only; the page does not describe internet access) ----------------
+// Read 14 October 2026 on goindigo.in: In-flight entertainment.
+{
+  const PG = ['https://www.goindigo.in/in-flight-entertainment.html', 'IndiGo: In-flight entertainment', 'How it works and FAQs'];
+  addN({
+    slug: 'indigo', slab: 'What do you want to know?', checked: '14 October 2026',
+    h1: 'Does IndiGo Have WiFi? The Free Hello6E Network Explained (2026)',
+    desc: 'Does IndiGo have WiFi? IndiGo offers a free in-flight entertainment network called Hello6E on selected routes and fleets, through the IndiGo app. Its page does not describe internet access. IndiGo\'s own page, checked 14 October 2026.',
+    answer: 'IndiGo offers free in-flight entertainment over a WiFi network called Hello6E, free of charge for all customers on selected routes and fleets. You need the IndiGo app, and it works on phones and tablets, not laptops. IndiGo\'s page does not say whether general internet access is offered.',
+    srcNote: 'From IndiGo\'s own in-flight entertainment page, last checked 14 October 2026. The page describes an entertainment network and does not mention internet access either way.',
+    scen: [
+      card('ent', 'On selected routes and fleets', 'warn', 'Free entertainment network', 'Hello6E, with the IndiGo app', 'IndiGo says its in-flight entertainment is available free of charge for all customers on selected routes and fleets, over a WiFi network called Hello6E.', ['You need the IndiGo app on your device. You can stream movies, TV shows, music and games, but you cannot download them.', 'You can use a phone, tablet or iPad, not a laptop. VPNs do not work. Live TV is not available. Several devices can be used at the same time.'], PG, true),
+      card('net', 'Internet access', 'warn', 'Not described', 'The page does not mention it', 'IndiGo\'s page describes a controlled entertainment network. It does not say whether passengers can browse the internet or message.', ['Codeshare flights operated by partner airlines may have their own WiFi and entertainment, so IndiGo\'s entertainment is not available on them.'], PG)
+    ],
+    faq: [
+      ['Does IndiGo have WiFi?', 'IndiGo has a free entertainment network called Hello6E on selected routes and fleets. Its page does not say whether general internet access is offered.'],
+      ['Is IndiGo in-flight entertainment free?', 'Yes. IndiGo says it is available free of charge for all customers on selected routes and fleets.'],
+      ['How do I connect to IndiGo\'s in-flight entertainment?', 'Download the IndiGo app, turn on Airplane mode, turn on WiFi and connect to the "Hello6E" network, then start streaming.']
+    ],
+    tableHead: ['Question', 'What IndiGo says'], tableTitle: 'What IndiGo says about in-flight entertainment',
+    tableNote: 'Copied from the FAQs on IndiGo\'s in-flight entertainment page.',
+    rows: [['Network name', 'Hello6E'], ['Cost', 'Free for all customers'], ['Where', 'Selected routes and fleets'], ['IndiGo app needed', 'Yes'], ['Devices', 'Phone, tablet, iPad; no laptop'], ['Downloads', 'Streaming only, no downloads'], ['VPN', 'Not accessible'], ['Live TV', 'Not available'], ['Internet access', 'Not mentioned']],
+    extra: steps(['Download the IndiGo app.', 'Turn on Airplane mode.', 'Switch on WiFi and connect to "Hello6E".', 'Start streaming movies, music and more.'])
+  });
+}
+
+// ---------------- EGYPTAIR ----------------
+// Read 14 October 2026 on egyptair.com: Entertainment (Onboard WIFI section).
+{
+  const PG = ['https://www.egyptair.com/en/fly/entertainments/Pages/default.aspx', 'EGYPTAIR: Entertainment, onboard WIFI', 'Onboard WIFI and data packages'];
+  addN({
+    slug: 'egyptair', slab: 'What do you need?', checked: '14 October 2026',
+    h1: 'Is EgyptAir WiFi Free? Free Texting, Browsing and Data Packages (2026)',
+    desc: 'Is EgyptAir WiFi free? Free texting all flight, plus free browsing, email and VoIP for 1 hour (flights up to 10 hours) or 2 hours. Paid data packages USD 16 and USD 26. EgyptAir\'s own page, checked 14 October 2026.',
+    answer: 'Partly. EgyptAir says WiFi is on A350-900, B787-9, A320neo, A321 and B737MAX8 aircraft. Texting is free for the whole flight, and free VoIP calls, email and browsing last 1 hour on flights up to 10 hours or 2 hours on longer flights. Paid data packages: 300 MB for USD 16 and 500 MB for USD 26.',
+    srcNote: 'From EgyptAir\'s own entertainment page, last checked 14 October 2026. EgyptAir says a Fair Usage Policy may apply.',
+    scen: [
+      card('free', 'Free', 'go', 'Free texting and 1 to 2 hours of browsing', 'Texting free all flight', 'EgyptAir says texting and messages are free throughout the whole flight, and free VoIP calls, email access and browsing are free for 1 hour on flights up to 10 hours, or 2 hours on flights of more than 10 hours.', ['EgyptAir says a Fair Usage Policy may apply.', 'You connect after the aircraft reaches 10,000 feet.'], PG, true),
+      card('paid', 'Paid data', 'warn', 'USD 16 or USD 26', '300 MB or 500 MB', 'EgyptAir lists a 300 MB data package for USD 16 and a 500 MB data package for USD 26.', ['EgyptAir says calls made on the onboard mobile network are charged by your home mobile provider at international roaming rates.'], PG),
+      card('fleet', 'Which aircraft', 'warn', 'Five aircraft types', 'Streaming on the 737 MAX 8 only', 'EgyptAir says WiFi is available on the A350-900, B787-9, A320neo, A321 and B737MAX8. Video streaming is available on the Boeing 737 MAX 8.', ['Protected (DRM) videos need Chrome on laptops and Android, and the Cabin Media Player app, downloaded beforehand, on iPhone and iPad.'], PG)
+    ],
+    faq: [
+      ['Is EgyptAir WiFi free?', 'Partly. Texting is free for the whole flight. Free VoIP calls, email and browsing last 1 hour on flights up to 10 hours or 2 hours on longer flights. Larger data packages are paid.'],
+      ['How much does EgyptAir WiFi cost?', 'A 300 MB data package is USD 16 and a 500 MB package is USD 26.'],
+      ['Which EgyptAir planes have WiFi?', 'The A350-900, B787-9, A320neo, A321 and B737MAX8. Video streaming is on the Boeing 737 MAX 8.'],
+      ['How do I connect to EgyptAir WiFi?', 'After the aircraft reaches 10,000 feet, activate WiFi on your phone, choose the "EGYPTAIR" network, then open your browser and go to wifi-pax.egyptair.com to choose a package.']
+    ],
+    tableHead: ['What', '0 to 10 hours', 'More than 10 hours'], tableTitle: 'EgyptAir\'s WiFi by flight length',
+    tableNote: 'Copied from the table on EgyptAir\'s entertainment page.',
+    rows: [['Free texting', 'Free', 'Free'], ['Free VoIP, email and browsing', '1 hour', '2 hours'], ['Paid data package (300 MB)', 'USD 16', 'USD 16'], ['Paid data package (500 MB)', 'USD 26', 'USD 26']],
+    extra: steps(['After the aircraft reaches 10,000 feet, activate WiFi on your phone.', 'Choose the "EGYPTAIR" WiFi network.', 'Open your browser and go to wifi-pax.egyptair.com.', 'Choose from the available internet packages.'])
+  });
+}
+
+// ---------------- QATAR AIRWAYS ----------------
+// Read 14 October 2026 on qatarairways.com (US site): Stay connected with Starlink.
+{
+  const PG = ['https://www.qatarairways.com/en-us/onboard/connectivity.html', 'Qatar Airways: Stay connected with Starlink', 'Starlink, destinations and purchased Wi-Fi'];
+  addN({
+    slug: 'qatar-airways', slab: 'Which flight?', checked: '14 October 2026',
+    h1: 'Is Qatar Airways WiFi Free? Starlink, Privilege Club and Prices (2026)',
+    desc: 'Is Qatar Airways WiFi free? Starlink WiFi is free: 45 minutes for everyone, and the whole flight for Privilege Club members. On the B777, A350 and B787 to over 130 destinations. Qatar Airways\' own page, checked 14 October 2026.',
+    answer: 'Yes on Starlink flights. Qatar Airways says Starlink is free: you get 45 minutes of access, or join Privilege Club (free to join) to stay connected the whole flight. It is on the B777, A350 and B787 on select routes, to over 130 destinations. If your aircraft has no Starlink, you can still buy WiFi.',
+    srcNote: 'From Qatar Airways\' own Starlink page (US site), last checked 14 October 2026. Starlink is subject to equipment changes, so check your flight.',
+    scen: [
+      card('starlink', 'Starlink flights', 'go', 'Free WiFi', '45 minutes, or all flight for Privilege Club members', 'Qatar Airways says Starlink is free: enjoy access for 45 minutes, or join Privilege Club to be connected for the full duration of your flight, from gate to gate at select airports.', ['Connect to the "Oryx Comms" WiFi network, then join Privilege Club or enter your email address if you are already a member.', 'Starlink is on the B777, A350 and B787 on select routes, subject to equipment changes. Qatar Airways lists over 130 destinations, in Africa, the Americas, Asia and the Pacific, Europe and the Middle East.'], PG, true),
+      card('paid', 'No Starlink on your aircraft', 'warn', 'Paid WiFi', 'Pre-purchase saves up to 20%', 'Qatar Airways says if the aircraft is not equipped with Starlink you can still purchase on-board WiFi, and save up to 20% when you pre-purchase.', ['Qatar Airways says purchased WiFi is on its A380 fleet and select B777 and 787-9 aircraft. Its page does not list prices.', 'Privilege Club members get one hour of complimentary on-board WiFi, and Student Club members get unlimited WiFi throughout their flights.'], PG)
+    ],
+    faq: [
+      ['Is Qatar Airways WiFi free?', 'Starlink WiFi is free: 45 minutes for everyone, and the whole flight for Privilege Club members, which is free to join. On aircraft without Starlink, WiFi is paid, with one hour free for Privilege Club members.'],
+      ['Which Qatar Airways planes have Starlink?', 'The B777, A350 and B787 on select routes, subject to equipment changes. Qatar Airways says Starlink is available when flying to over 130 destinations.'],
+      ['How do I connect to Qatar Airways WiFi?', 'Connect to the "Oryx Comms" WiFi network once on board, then join Privilege Club or enter your email address if you are already a member.']
+    ],
+    tableHead: ['Who or what', 'WiFi on Qatar Airways'], tableTitle: 'What Qatar Airways says about WiFi',
+    tableNote: 'Copied from Qatar Airways\' Starlink page.',
+    rows: [['Starlink, everyone', 'Free for 45 minutes'], ['Starlink, Privilege Club members', 'Free for the whole flight'], ['Starlink aircraft', 'B777, A350, B787 on select routes (over 130 destinations)'], ['No Starlink', 'Paid WiFi on A380 and select B777 and 787-9; one hour free for Privilege Club members'], ['Student Club members', 'Unlimited WiFi']]
+  });
+}
+
+// ---------------- ANA ----------------
+// Read 14 October 2026 on ana.co.jp: ANA Wi-Fi Service (International Flights).
+{
+  const PG = ['https://www.ana.co.jp/en/jp/guide/inflight/service/international/wifi/', 'ANA: Wi-Fi Service (International Flights)', 'Available aircraft, pricing and FAQ'];
+  addN({
+    slug: 'ana', slab: 'Which aircraft and cabin?', checked: '14 October 2026',
+    h1: 'Is ANA WiFi Free? International Flights by Aircraft and Cabin (2026)',
+    desc: 'Is ANA WiFi free? On international flights it is free in First and Business on the A380, B787 and B777, with free messaging in Premium Economy and Economy. B767 and A320 are free. ANA\'s own page, checked 14 October 2026.',
+    answer: 'On international flights, ANA says WiFi is complimentary on the B767 for all classes, and on the A320 while flying over Japan. On the A380, B787 and B777, First and Business are free, Premium Economy and Economy get free text messaging, and web browsing costs USD 6.95 for 30 minutes, USD 16.95 for 3 hours or USD 21.95 for the full flight.',
+    srcNote: 'From ANA\'s own international WiFi page, last checked 14 October 2026. This page covers international flights only, not ANA\'s domestic WiFi.',
+    scen: [
+      card('wide', 'A380, B787, B777', 'warn', 'Free in First and Business', 'Free messaging for others; browsing costs', 'ANA says First and Business Class passengers have complimentary access, and Premium Economy and Economy passengers can send and receive text messages free of charge. Web browsing is for a fee.', ['Passengers who have registered an email address get a free voucher code by email at least two hours before departure. ANA Mileage Club members also get it in the ANA app.', 'Paid plans: 30 minutes USD 6.95, 3 hours USD 16.95, full flight (up to 24 hours) USD 21.95. Payment is by credit card, Apple Pay or Google Pay; cash and debit cards are not accepted.', 'The plan is valid only on the flight where you buy or activate it, and only one device at a time.'], PG, true),
+      card('b767', 'B767', 'go', 'Free WiFi', 'No voucher code needed', 'ANA says WiFi on the B767 is complimentary and a voucher code is not required for connection.', ['The service is available from about 5 minutes after take-off until 5 minutes before landing.'], PG),
+      card('a320', 'A320', 'warn', 'Free over Japan', 'Only while flying over Japan', 'ANA says WiFi on the A320 is complimentary and available while flying over Japan. A voucher code is not required.', ['ANA says flights to Europe are rerouted because of the situation in Russia and Ukraine, and the internet can be unavailable for 1 to 2 hours over the Arctic.'], PG)
+    ],
+    faq: [
+      ['Is ANA WiFi free?', 'On international flights: free in First and Business on the A380, B787 and B777, free on the B767, and free on the A320 over Japan. Premium Economy and Economy on the A380, B787 and B777 get free text messaging, and web browsing is paid.'],
+      ['How much does ANA WiFi cost?', 'USD 6.95 for 30 minutes, USD 16.95 for 3 hours and USD 21.95 for the full flight (up to 24 hours), on the A380, B787 and B777.'],
+      ['How do I get ANA\'s free voucher code?', 'Register your email address for your booking. First and Business passengers get a free voucher code by email at least two hours before departure. ANA Mileage Club members also get it in the ANA app.']
+    ],
+    tableHead: ['Aircraft', 'WiFi on ANA (international)'], tableTitle: 'ANA\'s international WiFi by aircraft',
+    tableNote: 'Copied from the "Available Aircrafts" and pricing sections of ANA\'s international WiFi page.',
+    rows: [['A380, B787, B777', 'First and Business free; free text messaging in Premium Economy and Economy; web browsing USD 6.95 (30 min), USD 16.95 (3 h), USD 21.95 (full flight)'], ['B767', 'Complimentary, no voucher code'], ['A320', 'Complimentary while flying over Japan, no voucher code']]
+  });
+}
+
+// ---------------- JAL ----------------
+// Read 14 October 2026 on jal.co.jp (US site): International Flights Free Wi-Fi Service.
+{
+  const PG = ['https://www.jal.co.jp/en-us/jal-experience/wifi.html', 'JAL: International flights, free inflight Wi-Fi', 'Who gets it, plans and how to connect'];
+  addN({
+    slug: 'japan-airlines', slab: 'Which cabin?', checked: '14 October 2026',
+    h1: 'Is JAL WiFi Free? International Flights by Cabin (2026)',
+    desc: 'Is JAL WiFi free? On international flights JAL says it is free on any aircraft: unlimited in First and Business, one free hour in Premium Economy and Economy, unlimited in every cabin on the 737-800. JAL\'s own page, checked 14 October 2026.',
+    answer: 'Yes, in part. JAL says its inflight WiFi can be used free on any aircraft on international flights. First and Business Class get free unlimited access, Premium Economy and Economy get one free hour, and on the Boeing 737-800 every cabin gets free unlimited access. After the free hour, a 3-hour plan costs USD 14.40 and a flight plan USD 18.80.',
+    srcNote: 'From JAL\'s own international WiFi page (US site), last checked 14 October 2026. This page covers international flights, not JAL\'s domestic WiFi.',
+    scen: [
+      card('premium', 'First and Business Class', 'go', 'Free, unlimited', 'Every international aircraft', 'JAL says First Class and Business Class passengers have free unlimited access. Free coupons are available; see the onboard leaflet.', ['The service is available from about five minutes after take-off to five minutes before landing, once the plane reaches 10,000 feet.'], PG, true),
+      card('economy', 'Premium Economy and Economy', 'warn', 'One free hour', 'Then paid plans', 'JAL says Premium Economy and Economy passengers have free access for one hour.', ['After that: 3-hour plan USD 14.40, flight plan (24 hours) USD 18.80, or USD 12.95 and USD 16.80 with a JAL CARD. Payment is by Visa, MasterCard, American Express, Diners Club or JCB, charged in US dollars.', 'Times count from your first login.'], PG),
+      card('b738', 'Boeing 737-800', 'go', 'Free, unlimited, every cabin', 'JAL 737-800 aircraft', 'JAL says on 737-800 aircraft, passengers in all cabin classes have free unlimited access.', ['JAL says the 737-800 (738/73H) V40 aircraft are equipped with a WiFi system.'], PG),
+      card('limits', 'Where it does not work well', 'warn', 'Not everywhere', 'Arctic and North America', 'JAL says WiFi relies on satellites, so there are regions where the connection is unstable or unavailable: around the Arctic, and over North America at certain times of day.', ['Disruptions may last from several minutes to several hours. The service does not support VoIP apps such as Skype for voice or video calls.'], PG)
+    ],
+    faq: [
+      ['Is JAL WiFi free?', 'On international flights, yes in part. First and Business get free unlimited access, Premium Economy and Economy get one free hour, and on the Boeing 737-800 every cabin gets free unlimited access.'],
+      ['How much does JAL WiFi cost after the free hour?', 'USD 14.40 for 3 hours or USD 18.80 for a 24-hour flight plan. With a JAL CARD, USD 12.95 and USD 16.80.'],
+      ['How do I connect to JAL WiFi?', 'Turn on Airplane Mode, turn on WiFi and select "Japan Airlines" or "JAL-WiFi", or tap "Connect to Inflight Wi-Fi" in the JAL app. If it does not open, go to jal-wifi.com.']
+    ],
+    tableHead: ['Cabin or aircraft', 'WiFi on JAL (international)'], tableTitle: 'JAL\'s international WiFi by cabin',
+    tableNote: 'Copied from JAL\'s international WiFi page.',
+    rows: [['First and Business Class', 'Free, unlimited'], ['Premium Economy and Economy', 'Free for one hour'], ['Boeing 737-800, all cabins', 'Free, unlimited'], ['3-hour plan', 'USD 14.40 (USD 12.95 with JAL CARD)'], ['Flight plan (24 hours)', 'USD 18.80 (USD 16.80 with JAL CARD)']],
+    extra: steps(['Turn on Airplane Mode and turn on WiFi.', 'Select "Japan Airlines" or "JAL-WiFi" as the network, or use "Connect to Inflight Wi-Fi" in the JAL app.', 'If the portal does not open, go to jal-wifi.com.', 'Follow the instructions, and pay if you need a paid plan.'])
+  });
+}
+
+// ---------------- ASIANA ----------------
+// Read 14 October 2026 on flyasiana.com: Notice on Launch of Starlink In-flight Wi-Fi Service (11 Sep 2026) and In-flight Wi-Fi page.
+{
+  const SN = ['https://flyasiana.com/C/US/EN/customer/notice/detail?id=CM202609030002530345', 'Asiana: Starlink in-flight Wi-Fi launch notice (September 2026)', 'Free on A350-900 and A330-300'];
+  const PG = ['https://flyasiana.com/C/KR/EN/contents/cabin-wi-fi', 'Asiana: In-flight Wi-Fi', 'Paid plans on the A350'];
+  addN({
+    slug: 'asiana', slab: 'Which aircraft?', checked: '14 October 2026',
+    h1: 'Is Asiana WiFi Free? Free Starlink and Paid Plans (2026)',
+    desc: 'Is Asiana WiFi free? Starlink WiFi is complimentary for all passengers on select routes on A350-900 and A330-300 aircraft, since 15 September 2026. Paid plans from USD 11.95 on other A350s. Asiana\'s own pages, checked 14 October 2026.',
+    answer: 'Yes on Starlink flights. Asiana says Starlink in-flight WiFi launched on 15 September 2026, free for all passengers, on select routes operated by A350-900 and A330-300 aircraft. Its older WiFi page lists paid plans on the A350: 1 hour USD 11.95, 3 hours USD 16.95, unlimited USD 21.95.',
+    srcNote: 'From Asiana\'s own pages (launch notice of 11 September 2026 and its in-flight WiFi page), last checked 14 October 2026. The paid page may not reflect the Starlink launch.',
+    scen: [
+      card('starlink', 'Starlink flights', 'go', 'Free for all passengers', 'Select routes, A350-900 and A330-300', 'Asiana says Starlink in-flight WiFi launched on 15 September 2026, complimentary for all passengers, gate to gate, on select routes operated by A350-900 and A330-300 aircraft.', ['To connect: Airplane Mode on, WiFi on, select the wifi.flyasiana.com network, tap Connect Wi-Fi (iOS) or Copy Link (Android), agree to the etiquette and watch the required ad.', 'No sign-up or verification is needed, there are no device restrictions, and streaming and gaming are supported. Voice and video calls are not allowed, and using power banks while connected to WiFi is prohibited.'], SN, true),
+      card('paid', 'Other A350 flights', 'warn', 'Paid plans', 'From USD 11.95', 'Asiana\'s in-flight WiFi page lists the A350 as the aircraft with WiFi and plans of 1 hour for USD 11.95, 3 hours for USD 16.95 and unlimited use for USD 21.95, bought through your device after boarding.', ['Connect to the "OZ Wi-Fi" network, open the browser, click Go Online, choose a plan and pay. Time starts after payment.', 'This page does not mention Starlink, so confirm with Asiana which service your flight has.'], PG)
+    ],
+    faq: [
+      ['Is Asiana WiFi free?', 'Starlink WiFi is complimentary for all passengers on select routes operated by A350-900 and A330-300 aircraft, since 15 September 2026. Asiana\'s older page lists paid plans on the A350.'],
+      ['How much does Asiana WiFi cost?', 'Starlink flights: free. Paid plan on the A350 (older page): 1 hour USD 11.95, 3 hours USD 16.95, unlimited USD 21.95.'],
+      ['How do I connect to Asiana Starlink WiFi?', 'Switch to Airplane Mode, turn on WiFi and select the wifi.flyasiana.com network. Tap Connect Wi-Fi (iOS) or Copy Link (Android), agree to the etiquette and watch the required ad.']
+    ],
+    tableHead: ['Service', 'WiFi on Asiana'], tableTitle: 'Asiana\'s WiFi services',
+    tableNote: 'Copied from Asiana\'s Starlink launch notice and in-flight WiFi page.',
+    rows: [['Starlink (from 15 Sep 2026)', 'Free for all passengers on select routes, A350-900 and A330-300'], ['Paid WiFi on the A350, 1 hour', 'USD 11.95'], ['Paid WiFi on the A350, 3 hours', 'USD 16.95'], ['Paid WiFi on the A350, unlimited', 'USD 21.95']]
+  });
+}
+
+// ---------------- KOREAN AIR ----------------
+// Read 14 October 2026 on news.koreanair.com (Korean Air's own newsroom, Korean-language release of 11 Sep 2026).
+{
+  const PG = ['https://news.koreanair.com/%EB%8C%80%ED%95%9C%ED%95%AD%EA%B3%B5-9%EC%9B%94-15%EC%9D%BC%EB%B6%80%ED%84%B0-%EC%8A%A4%ED%83%80%EB%A7%81%ED%81%AC-%EA%B8%B0%EB%B0%98-%EA%B8%B0%EB%82%B4-%EC%99%80%EC%9D%B4%ED%8C%8C%EC%9D%B4-%EC%84%9C/', 'Korean Air newsroom: Starlink in-flight Wi-Fi from 15 September (Korean)', 'Press release of 11 September 2026'];
+  addN({
+    slug: 'korean-air', slab: 'Which aircraft?', checked: '14 October 2026',
+    h1: 'Is Korean Air WiFi Free? Free Starlink on Select Flights (2026)',
+    desc: 'Is Korean Air WiFi free? Korean Air says Starlink WiFi is free in all cabins from 15 September 2026, on three A350-900 and one 777-300ER at first. Korean Air\'s own newsroom release, checked 14 October 2026.',
+    answer: 'On Starlink aircraft, yes. Korean Air says its Starlink in-flight WiFi is free in all seat classes from 15 September 2026, starting with three A350-900 and one 777-300ER, and it plans most of its fleet by the end of 2027. Aircraft not yet converted follow the existing paid WiFi policy for now.',
+    srcNote: 'From Korean Air\'s own newsroom release (Korean language) of 11 September 2026, last checked 14 October 2026. The release does not give the paid WiFi prices.',
+    scen: [
+      card('starlink', 'Starlink aircraft', 'go', 'Free in all cabins', 'Three A350-900 and one 777-300ER at first', 'Korean Air says its Starlink-based in-flight WiFi is free in all seat classes, starting with some flights, with the official service from 15 September 2026. It applies first to three converted A350-900 and one 777-300ER.', ['These aircraft go first on medium and long-haul routes to the Americas, Europe and Southeast Asia, and some on shorter routes.', 'Korean Air plans to extend it to most of its operating aircraft by the end of 2027.'], PG, true),
+      card('connect', 'How to connect', 'go', 'No sign-up', 'Name, seat number and an ad', 'Korean Air says to switch to Airplane Mode, connect to the in-cabin network (wifi.koreanair.com), enter the passenger name and seat number from your boarding pass in the Korean Air Wi-Fi portal, and watch an ad. No membership registration is needed.', ['Streaming, video, music, online games, messaging and cloud tools work. Internet voice or video calls and live-streaming to social media are restricted by airline policy.'], PG),
+      card('other', 'Aircraft not yet converted', 'warn', 'Existing paid policy', 'For now', 'Korean Air says aircraft that have not been converted temporarily follow its existing paid in-flight WiFi policy.', ['The release does not state the paid plans or their prices.'], PG)
+    ],
+    faq: [
+      ['Is Korean Air WiFi free?', 'On Starlink aircraft, yes, in all cabins, from 15 September 2026. It starts with three A350-900 and one 777-300ER. Other aircraft follow the existing paid policy for now.'],
+      ['Which Korean Air planes have free WiFi?', 'Three converted Airbus A350-900 and one Boeing 777-300ER at first, on long-haul and some shorter routes. Korean Air plans most of its fleet by the end of 2027.'],
+      ['How do I connect to Korean Air WiFi?', 'Switch to Airplane Mode, connect to the in-cabin network (wifi.koreanair.com), enter your name and seat number from your boarding pass in the portal, and watch an ad. No sign-up is needed.']
+    ],
+    tableHead: ['Question', 'What Korean Air says'], tableTitle: 'What Korean Air says about WiFi',
+    tableNote: 'Copied from Korean Air\'s newsroom release (Korean) of 11 September 2026.',
+    rows: [['Starlink WiFi cost', 'Free in all seat classes'], ['Start', '15 September 2026'], ['Aircraft at first', 'Three A350-900 and one 777-300ER'], ['Plan', 'Most of the operating fleet by the end of 2027'], ['Not yet converted aircraft', 'Existing paid WiFi policy, for now'], ['Calls and live streaming', 'Restricted']]
+  });
+}
+
+// ---------------- OMAN AIR ----------------
+// Read 14 October 2026 on omanair.com (US site): Inflight Connectivity.
+{
+  const PG = ['https://www.omanair.com/en_us/inflight-connectivity', 'Oman Air: Inflight Connectivity', 'Packages and aircraft'];
+  addN({
+    slug: 'oman-air', slab: 'Who are you?', checked: '14 October 2026',
+    h1: 'Is Oman Air WiFi Free? Packages and Prices (2026)',
+    desc: 'Is Oman Air WiFi free? Free for 3 hours (up to 40 MB) for Business Studio guests. Others buy packages from USD 6. Only on Boeing 787 aircraft. Oman Air\'s own page, checked 14 October 2026.',
+    answer: 'Only for Business Studio guests: Oman Air says they get free WiFi for 3 hours with up to 40 MB of data. Everyone else buys a package: USD 6 for 30 minutes (5 MB), USD 12 for 120 minutes (10 MB), USD 19 for 1 hour (20 MB) or USD 29 for 3 hours (40 MB). WiFi is currently only on Boeing 787 aircraft.',
+    srcNote: 'From Oman Air\'s own inflight connectivity page (US site), last checked 14 October 2026. USD 6 is an introductory offer on selected flights only; terms and conditions apply.',
+    scen: [
+      card('studio', 'Business Studio', 'go', 'Free for 3 hours', 'Up to 40 MB of data', 'Oman Air says Business Studio guests receive free WiFi connectivity for 3 hours with up to 40 MB data allowance.', ['WiFi is currently only available on Boeing 787 aircraft.'], PG, true),
+      card('paid', 'Everyone else', 'warn', 'From USD 6', 'Four packages', 'Oman Air lists Speedy Social at USD 6 (30 minutes, 5 MB), Stay Social at USD 12 (120 minutes, 10 MB), Quick Connect at USD 19 (1 hour, 20 MB) and Easy Connect at USD 29 (3 hours, 40 MB).', ['The 5 MB and 10 MB packages are for the most popular social media apps. The 20 MB and 40 MB packages are to connect, browse and play.', 'Oman Air says its introductory offer, from USD 6, is on selected flights only.'], PG),
+      card('tips', 'Data is limited', 'warn', 'Packages have a data cap', 'Keep video to a minimum', 'Oman Air says WiFi performs best if you keep video streaming and photo sharing to a minimum, use apps instead of browsers, turn off background apps and avoid VPNs.', ['Keep your device off or in airplane mode during take-off and landing.'], PG)
+    ],
+    faq: [
+      ['Is Oman Air WiFi free?', 'Only for Business Studio guests, who get 3 hours with up to 40 MB of data. Everyone else buys a package from USD 6.'],
+      ['How much does Oman Air WiFi cost?', 'USD 6 for 30 minutes (5 MB), USD 12 for 120 minutes (10 MB), USD 19 for 1 hour (20 MB), USD 29 for 3 hours (40 MB). USD 6 is an introductory offer on selected flights.'],
+      ['Which Oman Air planes have WiFi?', 'Oman Air says on-board WiFi is currently only available on Boeing 787 aircraft.']
+    ],
+    tableHead: ['Package', 'Price', 'Duration', 'Data'], tableTitle: 'Oman Air\'s WiFi packages',
+    tableNote: 'Copied from the package table on Oman Air\'s page.',
+    rows: [['Speedy Social', 'USD 6', '30 minutes', '5 MB (social apps)'], ['Stay Social', 'USD 12', '120 minutes', '10 MB (social apps)'], ['Quick Connect', 'USD 19', '1 hour', '20 MB'], ['Easy Connect', 'USD 29', '3 hours', '40 MB']]
+  });
+}
+
+// ---------------- EL AL ----------------
+// Read 14 October 2026 on elal.com: In-flight entertainment (Wi-Fi on EL AL flights).
+{
+  const PG = ['https://www.elal.com/eng/onboard/flight-entertainment', 'EL AL: In-flight entertainment, Wi-Fi on EL AL flights', 'Plans and prices'];
+  addN({
+    slug: 'el-al', slab: 'Which plan?', checked: '14 October 2026',
+    h1: 'Is El Al WiFi Free? Plans and Prices (2026)',
+    desc: 'Is El Al WiFi free? Mostly paid: Basic from USD 3.99, Social from USD 6.99, Business from USD 12.99, per flight segment. Free Business plan for Top Platinum members. El Al\'s own page, checked 14 October 2026.',
+    answer: 'Mostly paid. El Al lists three plans per passenger per flight segment: Basic from USD 3.99, Social from USD 6.99 and Business from USD 12.99, or pay with Matmid points. Business Class passengers to or from North America and Thailand get the Business plan as part of their service, and Top Platinum members get it in all classes. It is on flights to and from Europe, the Middle East and North America.',
+    srcNote: 'From El Al\'s own in-flight entertainment page, last checked 14 October 2026. WiFi is on all 787 aircraft, on 777 aircraft and on some 737 aircraft.',
+    scen: [
+      card('free', 'Business Class (North America, Thailand), Top Platinum', 'go', 'Free Business plan', 'Part of the service', 'El Al says Business Class passengers to or from North America and Thailand can enjoy the Business browsing plan as part of their in-flight service, and Top Platinum passengers can enjoy it in all service classes on all destinations on planes where the service is offered.', ['WiFi is not available for a limited period while flying over Indian airspace, because of local regulations.'], PG, true),
+      card('basic', 'Basic plan', 'warn', 'USD 3.99 or 5.99', 'Messaging, email, browsing', 'El Al lists the Basic plan at USD 3.99 for Europe and the Middle East and USD 5.99 for North America and Thailand, per passenger per flight segment: instant messaging, email and web browsing on El Al and other sites, on tablets and smartphones.', ['In Matmid points: 750 points (Europe and the Middle East) or 1,000 points (North America and Thailand); 500 and 750 points for FLY CARD holders.'], PG),
+      card('social', 'Social plan', 'warn', 'USD 6.99 to 14.99', 'Unrestricted browsing, short videos', 'El Al lists the Social plan at USD 6.99 (Europe and the Middle East short-haul), USD 9.99 (Europe long-haul) and USD 14.99 (North America and Thailand): messaging, email, unrestricted browsing and short videos up to three minutes, on tablets and smartphones.', ['In Matmid points: 1,250, 1,500 or 2,250 points.'], PG),
+      card('business', 'Business plan', 'warn', 'USD 12.99 to 24.99', 'Apps, videos, music, VPN, laptops', 'El Al lists the Business plan at USD 12.99 (Europe and the Middle East short-haul), USD 19.99 (Europe long-haul) and USD 24.99 (North America and Thailand): everything in Social plus apps, videos, music and a VPN connection, on tablets, smartphones and laptops.', ['In Matmid points: 2,000, 3,000 or 3,750 points.', 'Short-haul means flights under four hours, such as Athens, Rome, Vienna and Dubai.'], PG)
+    ],
+    faq: [
+      ['Is El Al WiFi free?', 'Mostly not. Business Class passengers to or from North America and Thailand get the Business plan, and Top Platinum members get it in all classes. Everyone else pays per flight segment.'],
+      ['How much does El Al WiFi cost?', 'Basic USD 3.99 to 5.99, Social USD 6.99 to 14.99, Business USD 12.99 to 24.99, depending on the route and flight length. Or pay with Matmid frequent flyer points.'],
+      ['Which El Al planes have WiFi?', 'All 787 aircraft, 777 aircraft and some 737 aircraft, on flights to and from Europe, the Middle East and North America.']
+    ],
+    tableHead: ['Plan', 'Europe and Middle East (short-haul)', 'Europe (long-haul)', 'North America and Thailand'], tableTitle: 'El Al\'s WiFi plans (per passenger per flight segment)',
+    tableNote: 'Copied from El Al\'s WiFi plan tables. The Basic plan is USD 3.99 for Europe and the Middle East and USD 5.99 for North America and Thailand.',
+    rows: [['Basic', 'USD 3.99', 'USD 3.99', 'USD 5.99'], ['Social', 'USD 6.99', 'USD 9.99', 'USD 14.99'], ['Business', 'USD 12.99', 'USD 19.99', 'USD 24.99']]
+  });
+}
+
+// ---------------- AVIANCA ----------------
+// Read 14 October 2026 on avianca.com: Onboard entertainment / connectivity.
+{
+  const PG = ['https://www.avianca.com/en/avianca-experience/onboard/connectivity', 'Avianca: Onboard connectivity', 'Avianca On Air, FAQs and terms'];
+  addN({
+    slug: 'avianca', slab: 'What do you want to know?', checked: '14 October 2026',
+    h1: 'Does Avianca Have WiFi? Avianca On Air Explained (2026)',
+    desc: 'Does Avianca have WiFi? Avianca is rolling out WiFi across its fleet, so not every aircraft has it yet. Entertainment on Avianca On Air is free. Packages for messaging, browsing and streaming. Avianca\'s own page, checked 14 October 2026.',
+    answer: 'On some aircraft. Avianca says WiFi is being rolled out progressively across its fleet and not all aircraft have it yet, so check at the airport counter. Movies, series and music on Avianca On Air are free. For WiFi you choose a package: messaging, browsing or streaming. Avianca\'s page does not list prices.',
+    srcNote: 'From Avianca\'s own connectivity page, last checked 14 October 2026. The page does not list prices or which aircraft have WiFi.',
+    scen: [
+      card('ent', 'Entertainment', 'go', 'Free on Avianca On Air', 'Movies, series and music', 'Avianca says a selection of movies, series and music is available at no extra charge through Avianca On Air.', ['Headphone service is only available on wide-body aircraft (A330 and B787).'], PG, true),
+      card('wifi', 'WiFi packages', 'warn', 'Paid packages', 'Messaging, browsing, streaming', 'Avianca says passengers can reach onboard WiFi through Avianca On Air, with options for messaging, browsing and streaming, depending on availability and compatibility during the flight.', ['You choose the package that fits your flight and pay. Avianca\'s page does not list prices.'], PG),
+      card('fleet', 'Which aircraft', 'warn', 'Rolling out', 'Not every aircraft yet', 'Avianca says WiFi is being rolled out progressively across its fleet, not all aircraft are equipped yet, and to check at the airport counter whether your aircraft has it.', [], PG)
+    ],
+    faq: [
+      ['Does Avianca have WiFi?', 'On some aircraft. Avianca is rolling out WiFi across its fleet and says not all aircraft are equipped yet.'],
+      ['Is Avianca WiFi free?', 'The entertainment on Avianca On Air is free. WiFi is sold in packages for messaging, browsing and streaming. Avianca\'s page does not list prices.'],
+      ['How do I connect to Avianca WiFi?', 'Turn on airplane mode and connect to the onboard WiFi network. In your browser go to aviancaonair.com, choose your content and select the WiFi package you want to buy.']
+    ],
+    tableHead: ['Question', 'What Avianca says'], tableTitle: 'What Avianca says about WiFi',
+    tableNote: 'Copied from Avianca\'s connectivity page.',
+    rows: [['Entertainment on Avianca On Air', 'Free'], ['WiFi', 'Packages for messaging, browsing and streaming'], ['Prices', 'Not listed'], ['Aircraft', 'Rolling out; not all aircraft yet']],
+    extra: steps(['Turn on airplane mode and connect to the onboard WiFi network.', 'In your browser, go to aviancaonair.com.', 'Choose your content and select the WiFi package you want to buy.'])
+  });
+}
+
+// ---------------- BRUSSELS AIRLINES ----------------
+// Read 14 October 2026 on press.brusselsairlines.com: release of 13 January 2026 (Lufthansa Group and Starlink).
+{
+  const PG = ['https://press.brusselsairlines.com/brussels-airlines-and-lufthansa-group-will-roll-out-free-high-speed-wi-fi-together-with-starlink', 'Brussels Airlines press release: free high-speed Wi-Fi with Starlink (13 January 2026)', 'Rollout plan'];
+  addN({
+    slug: 'brussels-airlines', slab: 'What do you want to know?', checked: '14 October 2026',
+    h1: 'Does Brussels Airlines Have WiFi? Free Starlink Rollout Plan (2026)',
+    desc: 'Does Brussels Airlines have WiFi? Brussels Airlines announced in January 2026 it is rolling out free Starlink WiFi, starting with the Airbus A320 and the long-haul fleet later. Brussels Airlines\' own release, checked 14 October 2026.',
+    answer: 'Brussels Airlines announced on 13 January 2026 that it starts rolling out WiFi across its fleet with Starlink, free for all status customers and Travel ID users in all travel classes. A first number of Airbus A320 aircraft come first, and the long-haul fleet follows in a second phase. The release does not say which flights have it today.',
+    srcNote: 'From Brussels Airlines\' own press release of 13 January 2026, last checked 14 October 2026. It is a rollout announcement, so check with Brussels Airlines whether your flight has WiFi.',
+    scen: [
+      card('plan', 'Rollout plan', 'warn', 'Free WiFi coming', 'Announced for 2026', 'Brussels Airlines says it starts rolling out WiFi across its fleet, using the Lufthansa Group agreement with Starlink. The first aircraft with free, high-speed WiFi enter the Lufthansa Group fleet in the course of 2026.', ['A first number of Airbus A320 aircraft will soon receive the necessary adjustments. The long-haul fleet follows in a second phase.', 'The release does not say which Brussels Airlines flights have WiFi today.'], PG, true),
+      card('cost', 'Who gets it free', 'go', 'Free', 'Status customers and Travel ID users', 'Brussels Airlines says the new internet service will be free of charge for all status customers and Travel ID users, across all travel classes.', ['The release does not say what other passengers will pay.'], PG)
+    ],
+    faq: [
+      ['Does Brussels Airlines have WiFi?', 'Brussels Airlines announced a fleet-wide rollout of Starlink WiFi in January 2026, starting with some Airbus A320 aircraft, with the long-haul fleet later. Its release does not say which flights have it today.'],
+      ['Will Brussels Airlines WiFi be free?', 'Brussels Airlines says the new service will be free for all status customers and Travel ID users, in all travel classes. It does not say what other passengers will pay.'],
+      ['Which Brussels Airlines planes get WiFi first?', 'A first number of Airbus A320 aircraft. The long-haul fleet follows in a second phase.']
+    ],
+    tableHead: ['Question', 'What Brussels Airlines says'], tableTitle: 'What Brussels Airlines says about WiFi',
+    tableNote: 'Copied from Brussels Airlines\' press release of 13 January 2026.',
+    rows: [['Technology', 'Starlink, through the Lufthansa Group agreement'], ['First aircraft', 'A first number of Airbus A320'], ['Long-haul fleet', 'Second phase'], ['Free for', 'All status customers and Travel ID users, all travel classes'], ['Timing', 'First aircraft in the course of 2026']]
+  });
+}
+
+// ---------------- GOL ----------------
+// Read 14 October 2026 on voegol.com.br (English): GOL Online.
+{
+  const PG = ['https://www.voegol.com.br/en/servicos-gol/gol-online', 'GOL: GOL Online', 'Internet packages and free entertainment'];
+  addN({
+    slug: 'gol', slab: 'Which option?', checked: '14 October 2026',
+    h1: 'Is GOL WiFi Free? Free Messaging, GOL Online and Packages (2026)',
+    desc: 'Is GOL WiFi free? Free text messaging on WiFi-enabled flights and free entertainment on GOL Online. Max internet packages cost $36 to $103 by flight length. GOL\'s own page, checked 14 October 2026.',
+    answer: 'Partly. On WiFi-enabled flights GOL says you can send free text messages on WhatsApp, Facebook Messenger and iMessage, with no audio, photos or video. Entertainment on GOL Online is free. For streaming, social media, VPN and email you buy a Max package: $36.00 for 1 hour, or $41.00 to $103.00 for the full flight depending on flight length.',
+    srcNote: 'From GOL\'s own English GOL Online page, last checked 14 October 2026. The page shows the prices with a $ sign and does not name the currency.',
+    scen: [
+      card('msg', 'Messaging', 'go', 'Free text messages', 'On WiFi-enabled flights', 'GOL says on Wi-Fi-enabled flights you can send free text messages through select messaging apps: WhatsApp, Facebook Messenger and iMessage. It is only on mobile devices and does not include audio messages, photos or videos.', ['None of GOL\'s packages include voice or video calls.'], PG, true),
+      card('ent', 'Entertainment', 'go', 'Free on GOL Online', 'Movies, series, live TV, music', 'GOL says you can enjoy movies, series, live TV and more throughout your journey, with free content including shows, music and travel channels.', ['GOL recommends bringing your own headphones.'], PG),
+      card('max', 'Max packages', 'warn', 'From $36', 'Streaming, social media, VPN, email', 'GOL lists the Max 1 Hour package at $36.00 (any flight duration) and the Max Full Flight package at $41.00 for flights up to 2 hours, $61.00 for 2 to 4 hours, $77.00 for 4 to 6 hours and $103.00 for flights over 6 hours.', ['GOL says Max gives streaming, social media, VPN, email and more.', 'The page does not name the currency.'], PG)
+    ],
+    faq: [
+      ['Is GOL WiFi free?', 'Text messaging on WhatsApp, Facebook Messenger and iMessage is free on WiFi-enabled flights, and the GOL Online entertainment is free. Streaming, social media and email need a paid Max package.'],
+      ['How much does GOL WiFi cost?', 'Max 1 Hour is $36.00. Max Full Flight is $41.00 (up to 2 hours), $61.00 (2 to 4 hours), $77.00 (4 to 6 hours) or $103.00 (over 6 hours). GOL\'s page does not name the currency.'],
+      ['Can I make calls on GOL WiFi?', 'No. GOL says none of its packages include voice or video calls.']
+    ],
+    tableHead: ['Package', 'Price (as shown on GOL\'s page)'], tableTitle: 'GOL\'s internet packages',
+    tableNote: 'Copied from GOL\'s GOL Online page. The page shows a $ sign and does not name the currency.',
+    rows: [['Free messaging (WhatsApp, Messenger, iMessage)', 'Free'], ['Max 1 Hour', '$36.00'], ['Max Full Flight, up to 2 hours', '$41.00'], ['Max Full Flight, 2 to 4 hours', '$61.00'], ['Max Full Flight, 4 to 6 hours', '$77.00'], ['Max Full Flight, over 6 hours', '$103.00']]
+  });
+}
+
+// ---------------- VOLARIS (entertainment network only) ----------------
+// Read 14 October 2026 on cms.volaris.com: press release "Volaris lanza Volaris TV" (14 April 2025, Spanish).
+{
+  const PG = ['https://cms.volaris.com/es/informacion-util/sala-de-prensa/volaris-tv/', 'Volaris: Volaris lanza Volaris TV (press release, 14 April 2025, Spanish)', 'Volaris TV'];
+  addN({
+    slug: 'volaris', slab: 'Which fare?', checked: '14 October 2026',
+    h1: 'Does Volaris Have WiFi? Volaris TV Explained (2026)',
+    desc: 'Does Volaris have WiFi? Volaris has Volaris TV, an on-board streaming network on over 85% of its aircraft: unlimited with the PLUS fare, MXN 20 on board for Basic and Zero. Volaris\' own release of April 2025, checked 14 October 2026.',
+    answer: 'Volaris offers Volaris TV, a streaming entertainment network you join over WiFi, not an internet service. Volaris says it is on over 85% of its aircraft. Customers with the PLUS fare get unlimited access, and Basic and Zero customers can buy it on board for MXN 20. The release does not say whether general internet access is offered.',
+    srcNote: 'From Volaris\' own press release of 14 April 2025 (Spanish), last checked 14 October 2026. The figures may have changed since then.',
+    scen: [
+      card('plus', 'PLUS fare', 'go', 'Unlimited Volaris TV', 'Included', 'Volaris says customers who buy the PLUS fare have unlimited access to Volaris TV.', ['Volaris TV has streaming movies, series, documentaries, games, an interactive flight map and the V magazine.'], PG, true),
+      card('basic', 'Basic and Zero fares', 'warn', 'MXN 20 on board', 'Promotional price', 'Volaris says Basic and Zero fare customers can buy Volaris TV on board aircraft equipped with it for a promotional price of 20 Mexican pesos, from the cabin crew or directly on the platform.', ['To connect: use a mobile device with a browser, turn on airplane mode and WiFi, join the Volaris TV network and open airfi.aero in Chrome (Android) or Safari (iPhone).'], PG),
+      card('net', 'Internet access', 'warn', 'Not described', 'The release does not mention it', 'Volaris describes a streaming entertainment platform. The release does not say whether passengers can browse the internet or message.', ['Volaris said in April 2025 that Volaris TV was on more than 85% of its fleet and that it planned to cover all aircraft.'], PG)
+    ],
+    faq: [
+      ['Does Volaris have WiFi?', 'Volaris has Volaris TV, a streaming entertainment network you join over WiFi. Its release does not say whether general internet access is offered.'],
+      ['Is Volaris TV free?', 'It is included with the PLUS fare. Basic and Zero fare customers can buy it on board for MXN 20 on aircraft equipped with it.'],
+      ['How do I connect to Volaris TV?', 'With a mobile device that has a browser, turn on airplane mode and WiFi, join the Volaris TV network and type airfi.aero in Chrome (Android) or Safari (iPhone).']
+    ],
+    tableHead: ['Question', 'What Volaris says'], tableTitle: 'What Volaris says about Volaris TV',
+    tableNote: 'Copied from Volaris\' press release of 14 April 2025 (Spanish).',
+    rows: [['PLUS fare', 'Unlimited Volaris TV'], ['Basic and Zero fares', 'MXN 20 on board (promotional price)'], ['Aircraft', 'More than 85% of the fleet in April 2025, planned for all'], ['Internet access', 'Not mentioned']],
+    extra: steps(['Use a mobile device with a browser. Turn on airplane mode and WiFi.', 'Join the "Volaris TV" network.', 'Open airfi.aero in Chrome (Android) or Safari (iPhone).'])
+  });
+}
+
 module.exports = out;
