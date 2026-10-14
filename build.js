@@ -36,7 +36,7 @@ setTimeout(run, 300);
 function slug(s){return s.toLowerCase().replace(/&/g,'and').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');}
 function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
 const BAGD=require('./baggage_detail.js');
-const BCARDS=Object.assign({},require('./baggage_cards1.js'),require('./baggage_cards2.js'));
+const BCARDS=Object.assign({},require('./baggage_cards1.js'),require('./baggage_cards2.js'),require('./baggage_cards3.js'));
 const FOODD=require('./food_detail.js');
 const TOPICS=require('./airline_topics.js');
 const CVAPE=require('./country_vape.js');
@@ -185,7 +185,7 @@ function airShell({url,title,desc,a,fares}){
       +'<div class="sub-h">Checked in</div><p class="sub-p">'+esc(fr.checked)+'</p>'
       +notice+'</section>';
   }).join('');
-  const blocks=(BD&&BCARDS[a.name])?BAGD.pickerBag(a,BCARDS[a.name],BD.sources):_oldBlocks;
+  const blocks=(BD&&BCARDS[a.name])?BAGD.pickerBag(a,BCARDS[a.name],BD.sources,BD.unofficial):_oldBlocks;
   return '<!doctype html><html lang="en"><head>\n'
 +'<!-- Google tag (gtag.js) -->\n'
 +'<script async src="https://www.googletagmanager.com/gtag/js?id=G-0HQ16GNH78"></scr'+'ipt>\n'

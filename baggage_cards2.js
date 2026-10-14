@@ -154,5 +154,18 @@ module.exports = {
     { label: "Light", cabin: "Personal item plus a small bag (55 × 35 × 25 cm, 12 kg), free.", checked: "Not included. Add a bag for a fee." },
     { label: "Classic and Flex", cabin: "Personal item plus a small bag (55 × 35 × 25 cm, 12 kg), free.", checked: "1st bag of 23 kg included." },
     { label: "Premium Economy and Business", cabin: "Personal item plus a small bag on international flights, free.", checked: "Premium Economy 1 bag of 23 kg; Business 2 bags of 23 kg." }
+  ],
+  "Alaska Airlines": [
+    { label: "Most fares", cabin: "1 carry-on up to 22 × 14 × 9 in plus a personal item, free.", checked: "Domestic: 1st bag $45, 2nd $55, 3rd+ $200. Up to 50 lb and 62 in. Free for First Class, elites and active-duty military." }
+  ],
+  "SunExpress": [
+    { label: "SunLight", cabin: "Underseat bag up to 4 kg, 30 × 40 × 20 cm. An 8 kg hand bag can be added from 19.99 EUR.", checked: "Not included. Extra baggage from 19.99 EUR for 5 kg when booking." },
+    { label: "SunValue", cabin: "1 bag up to 8 kg, 55 × 40 × 23 cm.", checked: "International 20 kg, domestic 15 kg." },
+    { label: "SunEco+", cabin: "1 bag up to 8 kg, 55 × 40 × 23 cm.", checked: "International 30 kg (20 kg to or from Antalya, Bodrum, Dalaman), domestic 15 kg." },
+    { label: "SunComfort", cabin: "1 bag up to 8 kg, 55 × 40 × 23 cm.", checked: "International 35 kg (25 kg to or from Antalya, Bodrum, Dalaman), domestic 25 kg." }
+  ],
+  "EgyptAir": [
+    { label: "Economy", cabin: "1 piece up to 8 kg, 118 cm in total (55 + 40 + 23 cm).", checked: "International: pieces by fare rules, up to 23 kg each. Domestic: 1 piece. Up to 158 cm." },
+    { label: "Business", cabin: "2 pieces, 8 kg as stated on the page, 118 cm in total each.", checked: "International: 2 pieces up to 32 kg each. Domestic: 1 piece. Up to 158 cm." }
   ]
 };
