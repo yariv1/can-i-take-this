@@ -245,7 +245,7 @@ function render(a, d, opts) {
     d.sections.map(s => '<section class="bd-sec"><h2>' + s.h + '</h2>' + (s.p ? '<p>' + s.p + '</p>' : '') + (s.table ? table(s.table) : '') + (s.table2 ? table(s.table2) : '') + (s.table3 ? table(s.table3) : '') + (s.list ? '<ul>' + s.list.map(l => '<li>' + l + '</li>').join('') + '</ul>' : '') + '</section>').join('') +
     '<section class="bd-faq"><h2>❓ Quick answers</h2>' + d.faq.map(q => '<h3>' + esc(q[0]) + '</h3><p>' + esc(q[1]) + '</p>').join('') + '</section>' +
     '<p class="bd-chk">Checked ' + CHECKED + ' on the airline\'s own pages. Baggage rules change by route, fare and date: the allowance on your ticket is the one that applies.</p>' +
-    '<div class="bd-src"><div class="h">✓ Official sources</div>' + d.sources.map(s => '<a href="' + s[0] + '" target="_blank" rel="noopener noreferrer">' + s[1] + '</a>').join('') + '</div>';
+    (noTop ? '' : '<div class="bd-src"><div class="h">✓ Official sources</div>' + d.sources.map(s => '<a href="' + s[0] + '" target="_blank" rel="noopener noreferrer">' + s[1] + '</a>').join('') + '</div>');
 }
 
 // ---- Chip + card quick answers (Carry-on / Checked bag), same pattern as the Compensation and food pages (user, 2026-10-12). Built from the fare cards in baggage_cards*.js. ----
@@ -272,7 +272,7 @@ function bpStatus(t, kind) {
   const k = r[1] === 'Included' ? 'go' : r[1] === 'Not included' ? 'stop' : r[1] === 'Paid' ? 'paid' : r[1] === 'Personal item only' ? 'personal' : 'see';
   return [r[0], BP_TAG[kind][k]];
 }
-function pickerBag(a, cards) {
+function pickerBag(a, cards, sources) {
   const mk = (kind, label, head) => {
     const scen = cards.map((c, ci) => { let txt = kind === 'cabin' ? c.cabin : c.checked; if (ci > 0 && /^\s*Same( cabin allowance| cabin| as above)?\.?\s*$/i.test(txt)) txt = kind === 'cabin' ? cards[ci - 1].cabin : cards[ci - 1].checked; const st = bpStatus(txt, kind); return { when: c.label, status: st[0], tag: st[1], lines: String(txt).split(/(?<=[.!?])\s+/).filter(Boolean) }; });
     const sts = scen.map(x => x.status);
@@ -283,8 +283,9 @@ function pickerBag(a, cards) {
   const topics = [mk('cabin', 'Carry-on', a.name + ': what you can bring in the cabin.'), mk('checked', 'Checked', a.name + ': what the hold includes, and what costs extra.')];
   const SUB = { cabin: 'Goes on the plane with you', checked: 'Suitcases and bags you check in' };
   const chips = topics.map((t, i) => '<button data-c="' + t.id + '"' + (i === 0 ? ' class="on"' : '') + '>' + esc(t.label) + ' <small>' + SUB[t.id] + '</small></button>').join('');
+  const srcBlock = (sources && sources.length ? '<div class="help src-ok"><div class="help-h">\u2713 Official source</div>' + sources.map(x => '<a class="hitem" href="' + esc(x[0]) + '" target="_blank" rel="noopener"><span class="hi-ic">\uD83C\uDF10</span><span class="hi-l">' + x[1] + '<small>Baggage rules</small></span><span class="hi-go">\u2197</span></a>').join('') + '<div class="hnote">To be 100% sure, we always recommend confirming with the official channels.</div></div>' : '') + '<div class="src">From ' + esc(a.name) + '\'s own published baggage rules, checked October 2026. Rules change, so confirm with the airline before you fly.</div>';
   const card = (t, i) => '<div class="cc" id="cc-' + t.id + '"' + (i === 0 ? '' : ' hidden') + '><div class="pass ' + t.status + ' print"><div class="strip"><div class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">' + BP_ICON[t.status] + '</svg></div><div><div class="verdict">' + esc(t.verdict) + '</div><div class="vsub">' + esc(t.label) + '</div></div></div><div class="perf"></div><div class="body"><div class="route"><span>\u2708 <b>' + esc(a.name) + '</b></span><span>PER PASSENGER</span></div><p class="headline">' + esc(t.head) + '</p>' +
-    t.scen.map(x => '<div class="fsc"><div class="fsc-h"><span class="fsc-b fsc-' + x.status + '">' + esc(x.tag) + '</span><span>' + esc(x.when) + '</span></div><ul class="detail">' + x.lines.map(l => '<li>' + esc(l) + '</li>').join('') + '</ul></div>').join('') + '</div></div></div>';
+    t.scen.map(x => '<div class="fsc"><div class="fsc-h"><span class="fsc-b fsc-' + x.status + '">' + esc(x.tag) + '</span><span>' + esc(x.when) + '</span></div><ul class="detail">' + x.lines.map(l => '<li>' + esc(l) + '</li>').join('') + '</ul></div>').join('') + srcBlock + '</div></div></div>';
   const css = '<style>.cc[hidden]{display:none}.fsc{border-top:1px solid var(--line);margin-top:14px;padding-top:12px}.fsc-h{display:flex;align-items:center;gap:10px;font-weight:700;margin-bottom:6px;flex-wrap:wrap}.fsc-b{font-size:.85rem;font-weight:700;padding:3px 10px;border-radius:8px;color:#08111f}.fsc-go{background:#2FCF9B}.fsc-warn{background:#F5B841}.fsc-stop{background:#FF6B6B}</style>';
   const script = '<script>(function(){var cs=document.querySelectorAll(".cc-picker button"),cc=document.querySelectorAll(".cc");function go(id){[].forEach.call(cc,function(x){x.hidden=x.id!=="cc-"+id;});[].forEach.call(cs,function(x){x.classList.toggle("on",x.dataset.c===id);});}[].forEach.call(cs,function(b){b.onclick=function(){go(b.dataset.c);};});var h=location.hash.slice(1);if(h&&document.getElementById("cc-"+h))go(h);})();</scr' + 'ipt>';
   return css + '<div class="slab">Where in your bags?</div><div class="bag2 cc-picker">' + chips + '</div>' + topics.map(card).join('') + script;

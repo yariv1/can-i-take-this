@@ -185,7 +185,7 @@ function airShell({url,title,desc,a,fares}){
       +'<div class="sub-h">Checked in</div><p class="sub-p">'+esc(fr.checked)+'</p>'
       +notice+'</section>';
   }).join('');
-  const blocks=(BD&&BCARDS[a.name])?BAGD.pickerBag(a,BCARDS[a.name]):_oldBlocks;
+  const blocks=(BD&&BCARDS[a.name])?BAGD.pickerBag(a,BCARDS[a.name],BD.sources):_oldBlocks;
   return '<!doctype html><html lang="en"><head>\n'
 +'<!-- Google tag (gtag.js) -->\n'
 +'<script async src="https://www.googletagmanager.com/gtag/js?id=G-0HQ16GNH78"></scr'+'ipt>\n'
@@ -246,6 +246,18 @@ function airShell({url,title,desc,a,fares}){
 +'.perf{position:relative;height:0;border-top:2px dashed var(--card-line)}\n'
 +'.perf::before,.perf::after{content:"";position:absolute;top:-11px;width:22px;height:22px;border-radius:50%;background:var(--card-notch);transition:background .25s}\n'
 +'.perf::before{left:-11px}.perf::after{right:-11px}\n'
++'.src{margin-top:12px;padding-top:11px;border-top:1px solid var(--card-line);font-family:\'Space Mono\',monospace;font-size:14px;letter-spacing:.3px;color:var(--card-muted);line-height:1.5}\n'
++'.help{margin-top:13px;background:var(--card-sub);border-radius:12px;padding:12px 13px}\n'
++'.help-h{font-family:\'Space Mono\',monospace;font-size:13.6px;letter-spacing:1.2px;text-transform:uppercase;color:var(--card-muted);margin-bottom:9px}\n'
++'.help.src-ok .help-h{color:var(--tg-green);font-weight:700}\n'
++'.help.src-un .help-h{color:var(--tg-amber);font-weight:700}\n'
++'.hitem{display:flex;align-items:center;gap:10px;padding:9px 11px;border-radius:9px;background:var(--card);text-decoration:none;color:var(--card-text);margin-bottom:6px;border:1px solid var(--card-sub-line)}\n'
++'a.hitem:hover{border-color:var(--accent)}\n'
++'.hi-ic{width:20px;text-align:center;font-size:14px;flex:none}\n'
++'.hi-l{font-size:13.6px;font-weight:600;line-height:1.25;display:flex;flex-direction:column;min-width:0}\n'
++'.hi-l small{font-weight:400;font-size:13.6px;color:var(--card-muted);margin-top:1px}\n'
++'.hi-go{margin-left:auto;color:var(--card-muted)}\n'
++'.hnote{font-size:13.6px;color:var(--card-muted);line-height:1.4;margin-top:8px}\n'
 +'.body{padding:16px 18px 18px}\n'
 +'.route{font-family:\'Space Mono\',monospace;font-size:13.6px;letter-spacing:.5px;color:var(--card-muted);display:flex;flex-wrap:wrap;gap:6px 10px;margin-bottom:12px}\n'
 +'.route b{color:var(--card-text)}\n'
