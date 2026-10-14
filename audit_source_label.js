@@ -27,3 +27,16 @@ for (const a of fs.readdirSync('airline')) {
 console.log('Wi-Fi pages checked: ' + pages + ' (official blocks ' + ok + ', unofficial blocks ' + un + ')');
 if (bad.length) { console.log('SOURCE LABEL VIOLATIONS (DESIGN_SYSTEM.md 8.21):'); bad.slice(0, 30).forEach(x => console.log(' ', x)); process.exit(1); }
 console.log('OK source labels');
+
+// Whole site: no old-style Official source headings left anywhere.
+(function walk(d) {
+  for (const f of fs.readdirSync(d, { withFileTypes: true })) {
+    if (f.name === 'node_modules' || f.name.startsWith('.')) continue;
+    const p = path.join(d, f.name);
+    if (f.isDirectory()) walk(p);
+    else if (f.name === 'index.html') {
+      const s = fs.readFileSync(p, 'utf8');
+      if (/class="help-h">Official source|class="h">🔗 Official|art-sources-head">🔗 Official/.test(s)) { console.log('OLD SOURCE HEADING (DS 8.21): ' + p); process.exitCode = 1; }
+    }
+  }
+})('.');

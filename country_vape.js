@@ -80,7 +80,7 @@ function build(c) {
     (X ? X.sections.map(sc => '<section class="bd-sec"><h2>' + sc.h + '</h2><p>' + esc(sc.p) + '</p>' + (sc.table ? table(sc.table) : '') + (sc.list ? '<ul>' + sc.list.map(x => '<li>' + x + '</li>').join('') + '</ul>' : '') + '</section>').join('') : '') +
     '<section class="bd-faq"><h2>❓ Quick answers</h2>' + faq.map(q => '<h3>' + esc(q[0]) + '</h3><p>' + esc(q[1]) + '</p>').join('') + '</section>' +
     '<p class="bd-chk">WHO profile read ' + READ + '. This is guidance, not a customs allowance: confirm with the customs authority of ' + esc(cn) + ' before you travel.</p>' +
-    '<div class="bd-src"><div class="h">🔗 Official source</div><a href="' + D.pdf + '" target="_blank" rel="noopener noreferrer">WHO report on the global tobacco epidemic 2023: country profile, ' + esc(cn) + '</a>' + (X ? X.src.map(u => '<a href="' + u[0] + '" target="_blank" rel="noopener noreferrer">' + esc(u[1]) + '</a>').join('') : '') + '</div></div>';
+    '<div class="bd-src"><div class="h">✓ Official source</div><a href="' + D.pdf + '" target="_blank" rel="noopener noreferrer">WHO report on the global tobacco epidemic 2023: country profile, ' + esc(cn) + '</a>' + (X ? X.src.map(u => '<a href="' + u[0] + '" target="_blank" rel="noopener noreferrer">' + esc(u[1]) + '</a>').join('') : '') + '</div></div>';
   let ttl = 'Vaping in ' + cn + ' 2026: ' + status;
   if (ttl.length > 62) ttl = 'Vaping in ' + cn + ' 2026: ' + (A.none ? 'No General Ban' : A.hasImport ? 'Import Banned' : status);
   if (ttl.length > 62) ttl = 'Vaping in ' + cn + ' 2026: Is It Legal?';

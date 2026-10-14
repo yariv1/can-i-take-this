@@ -144,7 +144,7 @@ function build(c) {
     '<ul>' + D.notes.map(x => '<li>' + x + '</li>').join('') + '</ul></section>' +
     '<section class="bd-faq"><h2>❓ Quick answers</h2>' + D.faq.map(q => '<h3>' + esc(q[0]) + '</h3><p>' + esc(q[1]) + '</p>').join('') + '</section>' +
     '<p class="bd-chk">Read ' + READ + '. Rules change: confirm with the customs authority of ' + esc(cn) + ' before you travel.</p>' +
-    '<div class="bd-src"><div class="h">🔗 Official source</div>' + D.src.map(x => '<a href="' + x[0] + '" target="_blank" rel="noopener noreferrer">' + x[1] + '</a>').join('') + '</div></div>';
+    '<div class="bd-src"><div class="h">✓ Official source</div>' + D.src.map(x => '<a href="' + x[0] + '" target="_blank" rel="noopener noreferrer">' + x[1] + '</a>').join('') + '</div></div>';
   return { ttl: D.ttl, desc: D.desc, html, faq: D.faq };
 }
 

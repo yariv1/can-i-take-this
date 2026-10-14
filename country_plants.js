@@ -22,7 +22,7 @@ function buildCountry(cn, D) {
     '<ul>' + D.notes.map(x => '<li>' + x + '</li>').join('') + '</ul></section>' +
     '<section class="bd-faq"><h2>\u2753 Quick answers</h2>' + faq.map(q => '<h3>' + esc(q[0]) + '</h3><p>' + esc(q[1]) + '</p>').join('') + '</section>' +
     '<p class="bd-chk">Read ' + READ + '. Rules change: confirm with the plant health or customs authority of ' + esc(cn) + ' before you bring plants or seeds.</p>' +
-    '<div class="bd-src"><div class="h">\uD83D\uDD17 Official source' + (D.src.length > 1 ? 's' : '') + '</div>' + D.src.map(x => '<a href="' + x[0] + '" target="_blank" rel="noopener noreferrer">' + x[1] + '</a>').join('') + '</div></div>';
+    '<div class="bd-src"><div class="h">✓ Official source' + (D.src.length > 1 ? 's' : '') + '</div>' + D.src.map(x => '<a href="' + x[0] + '" target="_blank" rel="noopener noreferrer">' + x[1] + '</a>').join('') + '</div></div>';
   return { ttl: D.ttl, desc: D.desc, html, faq };
 }
 
@@ -49,7 +49,7 @@ function build(c) {
     '<ul><li><strong>Bulbs and cuttings:</strong> the pages we read do not list bulbs or cuttings separately; EFSA treats parts of a plant (leaves, twigs, roots) as plants and plant products.</li><li><strong>Posted seeds:</strong> the Commission warns that seed packages ordered online and sent by post were misdeclared and lacked the required certificate.</li><li><strong>Exact list:</strong> the Commission refers to Annex XI of Implementing Regulation (EU) 2019/2072 for the full list of covered commodities.</li></ul></section>' +
     '<section class="bd-faq"><h2>❓ Quick answers</h2>' + faq.map(q => '<h3>' + esc(q[0]) + '</h3><p>' + esc(q[1]) + '</p>').join('') + '</section>' +
     '<p class="bd-chk">Read ' + READ + '. This is the EU-wide rule that ' + esc(cn) + ' applies; ask the plant health or customs authority of ' + esc(cn) + ' before you bring plants or seeds.</p>' +
-    '<div class="bd-src"><div class="h">🔗 Official sources</div>' + SOURCES.map(s => '<a href="' + s[0] + '" target="_blank" rel="noopener noreferrer">' + s[1] + '</a>').join('') + '</div></div>';
+    '<div class="bd-src"><div class="h">✓ Official sources</div>' + SOURCES.map(s => '<a href="' + s[0] + '" target="_blank" rel="noopener noreferrer">' + s[1] + '</a>').join('') + '</div></div>';
   const ttl = cn + ' Plants & Seeds 2026: Certificate Required';
   const desc = 'Can you bring seeds or plants into ' + cn + '? From outside the EU you need a phytosanitary certificate; fruits like banana or pineapple are exempt.';
   return { ttl, desc, html, faq };

@@ -45,7 +45,7 @@ function render(c, d) {
       (s.list ? '<ul>' + s.list.map(x => '<li>' + x + '</li>').join('') + '</ul>' : '') + '</section>').join('') +
     '<section class="bd-faq"><h2>❓ Quick answers</h2>' + d.faq.map(q => '<h3>' + esc(q[0]) + '</h3><p>' + esc(q[1]) + '</p>').join('') + '</section>' +
     '<p class="bd-chk">Checked ' + CHECKED + ' on ' + esc(c.name) + "'s official government pages (listed below). Food import rules change with animal and plant disease outbreaks: confirm with the authority before you travel.</p>" +
-    '<div class="bd-src"><div class="h">🔗 Official sources</div>' + d.sources.map(s => '<a href="' + s[0] + '" target="_blank" rel="noopener noreferrer">' + s[1] + '</a>').join('') + '</div>';
+    '<div class="bd-src"><div class="h">✓ Official sources</div>' + d.sources.map(s => '<a href="' + s[0] + '" target="_blank" rel="noopener noreferrer">' + s[1] + '</a>').join('') + '</div>';
 }
 
 module.exports = { DETAIL, render, cards };

@@ -52,7 +52,7 @@ function build(COUNTRIES, slug) {
     '<section class="bd-faq"><h2>❓ Quick answers</h2>' + FAQ.map(q => '<h3 class="cox-q">' + esc(q[0]) + '</h3><p>' + esc(q[1]) + '</p>').join('') + '</section>' +
     '<section class="bd-sec"><h2>Related airport rules</h2><ul><li><a href="/plane/vape-e-cigarette/">Vapes and e-cigarettes on a plane</a></li><li><a href="/plane/lighter/">Lighters on a plane</a></li><li><a href="/plane/liquids/">Liquids in carry-on</a></li></ul></section>' +
     '<p class="bd-chk">Read 8 October 2026. TSA rules and customs limits change: check the TSA "What can I bring" tool and the customs authority of your destination before you fly.</p>' +
-    '<div class="bd-src"><div class="h">🔗 Official sources</div>' +
+    '<div class="bd-src"><div class="h">✓ Official sources</div>' +
     '<a href="https://www.tsa.gov/travel/security-screening/whatcanibring/items/cigarettes" target="_blank" rel="noopener noreferrer">TSA: Cigarettes</a>' +
     '<a href="https://www.tsa.gov/travel/security-screening/whatcanibring/items/cigars" target="_blank" rel="noopener noreferrer">TSA: Cigars</a>' +
     '<a href="https://www.ecfr.gov/current/title-14/chapter-II/subchapter-F/part-252" target="_blank" rel="noopener noreferrer">14 CFR Part 252: Smoking aboard aircraft (eCFR)</a></div></div>';

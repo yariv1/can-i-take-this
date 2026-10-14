@@ -25,7 +25,7 @@ function wrap(lead, sections, faq, sources, chk) {
   return '<div class="bd-wrap">' + CSS + '<p class="bd-lead"><strong>' + esc(lead) + '</strong></p>' + sections +
     '<section class="bd-faq"><h2>❓ Quick answers</h2>' + faq.map(q => '<h3>' + esc(q[0]) + '</h3><p>' + esc(q[1]) + '</p>').join('') + '</section>' +
     '<p class="bd-chk">' + chk + ' Read ' + READ + '. Confirm with the customs authority of the EU country you enter before you travel.</p>' +
-    '<div class="bd-src"><div class="h">🔗 Official sources</div>' + sources.map(s => '<a href="' + s[0] + '" target="_blank" rel="noopener noreferrer">' + s[1] + '</a>').join('') + '</div></div>';
+    '<div class="bd-src"><div class="h">✓ Official sources</div>' + sources.map(s => '<a href="' + s[0] + '" target="_blank" rel="noopener noreferrer">' + s[1] + '</a>').join('') + '</div></div>';
 }
 
 const M = {};

@@ -57,7 +57,7 @@ function build(c) {
     '<ul><li><strong>Mixing products:</strong> the allowances are listed as alternatives ("or"); ask customs before combining products.</li><li><strong>Travel between EU countries:</strong> the EU guideline levels may not be lower than 800 cigarettes, 400 cigarillos (cigars up to 3 g each), 200 cigars or 1 kg of tobacco.</li><li><strong>Under 17:</strong> no duty-free tobacco or alcohol allowance.</li></ul></section>' +
     '<section class="bd-faq"><h2>❓ Quick answers</h2>' + faq.map(q => '<h3>' + esc(q[0]) + '</h3><p>' + esc(q[1]) + '</p>').join('') + '</section>' +
     '<p class="bd-chk">Read ' + READ + '. Allowances can change: confirm with the customs authority of ' + esc(cn) + ' before you travel.</p>' +
-    '<div class="bd-src"><div class="h">🔗 Official source</div><a href="' + SRC + '" target="_blank" rel="noopener noreferrer">Your Europe: Alcohol, tobacco and excise duties</a></div></div>';
+    '<div class="bd-src"><div class="h">✓ Official source</div><a href="' + SRC + '" target="_blank" rel="noopener noreferrer">Your Europe: Alcohol, tobacco and excise duties</a></div></div>';
   return { ttl, desc, html, faq };
 }
 

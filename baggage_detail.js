@@ -236,7 +236,7 @@ const CSS = '<style>.bd-lead{font-size:1.05rem;margin:.2em 0 1em}.bd-stats{displ
   '.bd-sec h2{font-size:1.2rem;margin:1.6em 0 .5em}.bd-sec p{margin:.4em 0;font-weight:300}.bd-sec ul{margin:.6em 0;padding-left:1.15em}.bd-sec li{margin:.4em 0;font-weight:300}.bd-sec li strong{font-weight:600}' +
   '.bd-tw{border:1px solid var(--line);border-radius:14px;background:var(--surface);margin:.8em 0;overflow:hidden}.bd-t{width:100%;border-collapse:collapse;font-size:.95rem;line-height:1.4}.bd-t th,.bd-t td{padding:10px 12px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}.bd-t thead th{font-size:.9rem;color:var(--muted);font-weight:700}.bd-t tbody th{font-weight:700}.bd-t td{font-weight:300}.bd-t tbody tr:last-child th,.bd-t tbody tr:last-child td{border-bottom:0}' +
   '@media(max-width:760px){.bd-t thead{display:none}.bd-t,.bd-t tbody,.bd-t tr,.bd-t th,.bd-t td{display:block;width:100%}.bd-t tr{padding:10px 12px;border-bottom:1px solid var(--line)}.bd-t tbody tr:last-child{border-bottom:0}.bd-t th,.bd-t td{border:0;padding:3px 0}.bd-t td:before{content:attr(data-label);display:block;font-size:.85rem;color:var(--muted);font-weight:600}.bd-t td.bd-e{display:none}}' +
-  '.bd-faq h2{font-size:1.2rem;margin:1.6em 0 .4em}.bd-faq h3{font-size:1.02rem;margin:1em 0 .2em}.bd-faq p{margin:.2em 0;font-weight:300}.bd-src{margin:1.4em 0 .4em}.bd-src .h{font-weight:700;font-size:.95rem}.bd-src a{display:block;margin:.3em 0;color:var(--accent);font-size:.95rem}.bd-chk{color:var(--muted);font-size:.9rem;margin:1em 0}</style>';
+  '.bd-faq h2{font-size:1.2rem;margin:1.6em 0 .4em}.bd-faq h3{font-size:1.02rem;margin:1em 0 .2em}.bd-faq p{margin:.2em 0;font-weight:300}.bd-src{margin:1.4em 0 .4em}.bd-src .h{font-weight:700;font-size:.95rem;color:var(--tg-green)}.bd-src a{display:block;margin:.3em 0;color:var(--accent);font-size:.95rem}.bd-chk{color:var(--muted);font-size:.9rem;margin:1em 0}</style>';
 
 function render(a, d, opts) {
   const noTop = opts && opts.cards; /* the quick-answer cards above already say this: no repeat (user rule 2026-10-12) */
@@ -245,7 +245,7 @@ function render(a, d, opts) {
     d.sections.map(s => '<section class="bd-sec"><h2>' + s.h + '</h2>' + (s.p ? '<p>' + s.p + '</p>' : '') + (s.table ? table(s.table) : '') + (s.table2 ? table(s.table2) : '') + (s.table3 ? table(s.table3) : '') + (s.list ? '<ul>' + s.list.map(l => '<li>' + l + '</li>').join('') + '</ul>' : '') + '</section>').join('') +
     '<section class="bd-faq"><h2>❓ Quick answers</h2>' + d.faq.map(q => '<h3>' + esc(q[0]) + '</h3><p>' + esc(q[1]) + '</p>').join('') + '</section>' +
     '<p class="bd-chk">Checked ' + CHECKED + ' on the airline\'s own pages. Baggage rules change by route, fare and date: the allowance on your ticket is the one that applies.</p>' +
-    '<div class="bd-src"><div class="h">🔗 Official sources</div>' + d.sources.map(s => '<a href="' + s[0] + '" target="_blank" rel="noopener noreferrer">' + s[1] + '</a>').join('') + '</div>';
+    '<div class="bd-src"><div class="h">✓ Official sources</div>' + d.sources.map(s => '<a href="' + s[0] + '" target="_blank" rel="noopener noreferrer">' + s[1] + '</a>').join('') + '</div>';
 }
 
 // ---- Chip + card quick answers (Carry-on / Checked bag), same pattern as the Compensation and food pages (user, 2026-10-12). Built from the fare cards in baggage_cards*.js. ----

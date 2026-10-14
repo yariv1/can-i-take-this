@@ -22,7 +22,7 @@ function render(a, T) {
       (s.table ? table(s.table) : '') + (s.list ? '<ul>' + s.list.map(x => '<li>' + x + '</li>').join('') + '</ul>' : '') + '</section>').join('') +
     (T.faq ? '<section class="bd-faq"><h2>❓ Quick answers</h2>' + T.faq.map(q => '<h3>' + esc(q[0]) + '</h3><p>' + esc(q[1]) + '</p>').join('') + '</section>' : '') +
     '<p class="bd-chk">Checked ' + CHECKED + ' on the airline\'s own terms and pages. Rules change: confirm with ' + esc(a.name) + ' before you fly.</p>' +
-    (T.sources ? '<div class="bd-src"><div class="h">🔗 Official sources</div>' + T.sources.map(s => '<a href="' + s[0] + '" target="_blank" rel="noopener noreferrer">' + s[1] + '</a>').join('') + '</div>' : '') +
+    (T.sources ? '<div class="bd-src"><div class="h">✓ Official sources</div>' + T.sources.map(s => '<a href="' + s[0] + '" target="_blank" rel="noopener noreferrer">' + s[1] + '</a>').join('') + '</div>' : '') +
     '</div>';
 }
 
