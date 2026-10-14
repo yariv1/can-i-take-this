@@ -71,7 +71,7 @@ const out = {};
       ['Which Delta planes do not have free WiFi?', 'Delta lists paid Wi-Fi on select 717, CRJ-700, CRJ-900, ERJ-170 and ERJ-175 aircraft, run by Wi-Fi Onboard (formerly Gogo). Aircraft Delta does not list on its Wi-Fi page are not described by Delta.'],
       ['How do I know if my Delta flight has free WiFi?', 'Look for the "Fast, Free Wi-Fi for SkyMiles Members" badge in delta.com search results, in your pre-flight email, or on the decal near the boarding door.']
     ],
-    render: a => COMP.__render(a, SCEN, 'From Delta\'s own list of Wi-Fi service by aircraft, last checked 13 October 2026. Wi-Fi rollouts change often, so confirm with Delta before you fly.', { slab: 'Which aircraft are you flying on?', tag: 'WI-FI', legend: LEGEND }) +
+    render: a => COMP.__render(a, SCEN, 'From Delta\'s own list of Wi-Fi service by aircraft, last checked 13 October 2026. Wi-Fi rollouts change often, so confirm with Delta before you fly.', { slab: 'Which aircraft are you flying on?', tag: 'WI-FI', legend: LEGEND, srcKind: 'ok', checked: '13 October 2026' }) +
       '<div class="bd-wrap">' + CSS + '<section class="bd-sec"><h2>📶 Delta\'s full list by aircraft</h2><p>Copied from Delta\'s "Wi-Fi Service by Aircraft" list. Delta marks 717, CRJ and ERJ with an asterisk: available on select aircraft.</p>' +
       table({ head: ['Aircraft', 'Wi-Fi on Delta'], rows: ROWS }) + '</section>' +
       '<section class="bd-sec"><h2>🔌 How to connect to Delta WiFi</h2><ol><li>Once the boarding door closes, switch your device to Airplane Mode and turn Wi-Fi on.</li><li>Choose "DeltaWiFi.com" from the list of networks.</li><li>On an aircraft with Delta Sync you are redirected to a page where you log in to your SkyMiles account, join SkyMiles for free, or pay for a Wi-Fi flight pass. On a Wi-Fi Onboard (formerly Gogo) aircraft you buy a flight pass or choose free messaging.</li><li>If the page does not load by itself, type deltawifi.com into your browser.</li></ol></section>' +
@@ -85,10 +85,10 @@ const out = {};
 function add(cfg) {
   out[cfg.slug] = {
     h1: cfg.h1, ttl: cfg.h1, desc: cfg.desc, answer: cfg.answer, faq: cfg.faq,
-    render: a => COMP.__render(a, cfg.scen, cfg.srcNote, { slab: cfg.slab || 'Which aircraft are you flying on?', tag: 'WI-FI', legend: cfg.legend || LEGEND, unofficial: cfg.unofficial }) +
+    render: a => COMP.__render(a, cfg.scen, cfg.srcNote, { slab: cfg.slab || 'Which aircraft are you flying on?', tag: 'WI-FI', legend: cfg.legend || LEGEND, unofficial: cfg.unofficial, srcKind: 'ok', checked: cfg.checked }) +
       '<div class="bd-wrap">' + CSS + '<section class="bd-sec"><h2>📶 ' + esc(cfg.tableTitle) + '</h2>' + (cfg.tableNote ? '<p>' + cfg.tableNote + '</p>' : '') +
       table({ head: cfg.tableHead, rows: cfg.rows }) + '</section>' + (cfg.extra || '') +
-      '<p class="bd-chk">Last checked ' + cfg.checked + ' on the airline\'s own pages. We re-check regularly because Wi-Fi rollouts change often.</p></div>'
+      '<p class="bd-chk">Last checked ' + cfg.checked + (cfg.unofficial ? '. This page uses an unofficial source, named above.' : ' on the airline\'s own pages.') + ' We re-check regularly because Wi-Fi rollouts change often.</p></div>'
   };
 }
 const card = (id, label, status, verdict, sub, head, lines, src, first) => ({ id, label, status, verdict, sub, head, lines, sources: [src], first: !!first });
@@ -859,9 +859,9 @@ const addN = cfg => add(Object.assign({ legend: LEGEND2, slab: cfg.slab || 'Whic
     h1: 'Is There WiFi on easyJet? What You Get on Board (2026)',
     desc: 'Is there WiFi on easyJet? easyJet planes have a free on-board WiFi portal with games, flight info and the shop menu. Not from easyJet\'s own site: from the press release of its equipment partner AirFi, checked 14 October 2026.',
     answer: 'Not from easyJet\'s own website: this comes from a press release by AirFi, the company that supplies easyJet\'s system. AirFi says it is installed on all 327 easyJet aircraft and gives free access to games, journey-specific content, airline information and the shop menu on your own phone, tablet or laptop, through a local WiFi network on board. The release does not say that the internet itself is available.',
-    srcNote: '⚠ This information is not from easyJet\'s own website. easyJet\'s pages say nothing current about WiFi, so we used a press release by its equipment partner AirFi (22 May 2023), read in full on 14 October 2026. It may be out of date, so confirm with easyJet before you fly.',
+    srcNote: 'easyJet\'s pages say nothing current about WiFi, so we used a press release by its equipment partner AirFi (22 May 2023), read in full on 14 October 2026. It may be out of date, so confirm with easyJet before you fly.',
     scen: [
-      card('portal', 'On-board portal', 'warn', 'Free on-board WiFi portal', 'Games, flight info and the shop menu', 'AirFi says its system is installed on all 327 easyJet aircraft and creates a local WiFi network on board. Access to the content is free.', ['The portal gives games, journey-specific content, airline information and the in-flight shop menu on your own phone, tablet or laptop.', 'AirFi says you do not need to download an app before the flight or share personal information to connect.', 'Not from easyJet\'s own website. The release is from May 2023.'], PG, true),
+      card('portal', 'On-board portal', 'warn', 'Free on-board WiFi portal', 'Games, flight info and the shop menu', 'AirFi says its system is installed on all 327 easyJet aircraft and creates a local WiFi network on board. Access to the content is free.', ['The portal gives games, journey-specific content, airline information and the in-flight shop menu on your own phone, tablet or laptop.', 'AirFi says you do not need to download an app before the flight or share personal information to connect.'], PG, true),
       card('net', 'Internet access', 'warn', 'Not described', 'Release does not mention the internet', 'The AirFi release describes a local network that serves content. It does not say passengers can browse the internet, use messaging apps or stream from outside services.', ['Neither easyJet nor AirFi says in the sources we read that internet access is offered, and neither says it is not.'], PG)
     ],
     faq: [
@@ -1771,6 +1771,161 @@ const addN = cfg => add(Object.assign({ legend: LEGEND2, slab: cfg.slab || 'Whic
     tableNote: 'Copied from Volaris\' press release of 14 April 2025 (Spanish).',
     rows: [['PLUS fare', 'Unlimited Volaris TV'], ['Basic and Zero fares', 'MXN 20 on board (promotional price)'], ['Aircraft', 'More than 85% of the fleet in April 2025, planned for all'], ['Internet access', 'Not mentioned']],
     extra: steps(['Use a mobile device with a browser. Turn on airplane mode and WiFi.', 'Join the "Volaris TV" network.', 'Open airfi.aero in Chrome (Android) or Safari (iPhone).'])
+  });
+}
+
+// =====================================================================================
+// UNOFFICIAL-SOURCE pages (user order 2026-10-14): where an airline's own site gives nothing readable, a news or trade report of the airline's announcement,
+// read in full, named and dated, with the explicit "unofficial source" notice on the page (airline_compensation.js render option `unofficial`).
+// =====================================================================================
+
+// ---------------- CHINA EASTERN ----------------
+// Read 14 October 2026: Global Times (citing the airline's announcement), published 2 July 2026.
+{
+  const PG = ['https://www.globaltimes.cn/page/202607/1364959.shtml', 'Global Times: China Eastern announces free in-flight Wi-Fi on all wide-body flights (2 July 2026)', 'News report, not China Eastern\'s own site'];
+  addN({
+    slug: 'china-eastern', slab: 'What do you want to know?', checked: '14 October 2026',
+    unofficial: 'China Eastern\'s own English WiFi pages are out of date and its new announcement would not load for us. This is from a news report in the Global Times. It is an unofficial source.',
+    h1: 'Is China Eastern WiFi Free? Wide-Body Flights Since July 2026',
+    desc: 'Is China Eastern WiFi free? The Global Times reported that from 3 July 2026 WiFi is free on all wide-body flights of China Eastern and Shanghai Airlines, in every cabin. Not from China Eastern\'s own site; checked 14 October 2026.',
+    answer: 'Not from China Eastern\'s own website: this is from a Global Times report. It says in-flight WiFi became completely free, from 3 July 2026, on all wide-body aircraft operated by China Eastern and its subsidiary Shanghai Airlines, on global routes and in every cabin class. The report does not cover narrow-body aircraft.',
+    srcNote: 'We used a report by the Global Times, published 2 July 2026, read in full on 14 October 2026. Confirm with China Eastern before you fly.',
+    scen: [
+      card('wide', 'Wide-body flights', 'go', 'Free WiFi', 'All cabins, from 3 July 2026', 'The Global Times reports that China Eastern announced in-flight WiFi is completely free on all wide-body aircraft operated by China Eastern and Shanghai Airlines, regardless of route length, region or cabin class.', ['The free service covers global routes in the Americas, Europe, Africa, the Middle East, Central Asia and South Asia.'], PG, true),
+      card('other', 'Narrow-body flights', 'warn', 'Not covered by the report', 'Check with China Eastern', 'The report says China Eastern expanded free WiFi on domestic "Air Express" routes in August 2025 from first and business class to premium economy and select economy seats.', ['The report does not say what applies to other narrow-body flights.'], PG)
+    ],
+    faq: [
+      ['Is China Eastern WiFi free?', 'According to a Global Times report, yes on all wide-body aircraft of China Eastern and Shanghai Airlines since 3 July 2026, in every cabin and on global routes. This is not from China Eastern\'s own website.'],
+      ['Which China Eastern planes have free WiFi?', 'All wide-body aircraft, according to the Global Times report. It does not cover narrow-body aircraft in general.']
+    ],
+    tableHead: ['Question', 'What the Global Times reports (not China Eastern\'s own site)'], tableTitle: 'What the news report says',
+    tableNote: 'From the Global Times, 2 July 2026. China Eastern\'s own pages could not be used.',
+    rows: [['Wide-body aircraft', 'Free WiFi from 3 July 2026'], ['Cabins', 'All cabin classes'], ['Routes', 'Global, including the Americas, Europe, Africa, the Middle East, Central Asia and South Asia'], ['Narrow-body aircraft', 'Not covered by the report']]
+  });
+}
+
+// ---------------- COPA ----------------
+// Read 14 October 2026: Future Travel Experience (trade press), July 2026, reporting Copa's announcement.
+{
+  const PG = ['https://www.futuretravelexperience.com/2026/07/copa-airlines-becomes-first-in-latin-america-to-offer-starlink-inflight-connectivity/', 'Future Travel Experience: Copa Airlines introduces Starlink inflight connectivity (July 2026)', 'Trade press report, not Copa\'s own site'];
+  addN({
+    slug: 'copa-airlines', slab: 'Who are you?', checked: '14 October 2026',
+    unofficial: 'Copa\'s own Starlink page would not load for us, and its help page says only that Starlink is being introduced. This is from a trade-press report of Copa\'s announcement. It is an unofficial source.',
+    h1: 'Is Copa Airlines WiFi Free? Starlink Rollout and Who Gets It Free (2026)',
+    desc: 'Is Copa Airlines WiFi free? Starlink WiFi is free for Business Class and ConnectMiles PreferMember Gold, Platinum and Presidential members. Others pay. Rollout to finish in early 2027. Not from Copa\'s own site; checked 14 October 2026.',
+    answer: 'Not from Copa\'s own website: this is from a trade-press report (Future Travel Experience, July 2026). Copa is rolling out Starlink WiFi, to finish in the first quarter of 2027. It is free for Business Class passengers and ConnectMiles PreferMember Gold, Platinum and Presidential members, and for Starlink Residential and Roam subscribers. Everyone else buys access.',
+    srcNote: 'We used a Future Travel Experience report (July 2026), read in full on 14 October 2026. Prices are not given in the report. Confirm with Copa before you fly.',
+    scen: [
+      card('free', 'Business Class, PreferMember Gold, Platinum, Presidential', 'go', 'Free Starlink WiFi', 'On equipped aircraft', 'The report says complimentary access to Starlink WiFi will be available on equipped aircraft for ConnectMiles PreferMember Gold, Platinum and Presidential members, and for passengers travelling in Business Class. Starlink Residential and Roam subscribers also get free access.', ['The report says Starlink allows streaming, browsing, cloud-based work applications, online gaming and messaging.'], PG, true),
+      card('paid', 'Everyone else', 'warn', 'Paid', 'Price not stated', 'The report says all other passengers will be able to purchase internet access through Starlink\'s onboard portal.', ['The report does not give prices.'], PG),
+      card('fleet', 'Which aircraft', 'warn', 'Rolling out', 'To finish in Q1 2027', 'The report says Copa is introducing Starlink across its fleet, with the rollout expected to be completed during the first quarter of 2027.', ['The report does not list aircraft types.'], PG)
+    ],
+    faq: [
+      ['Is Copa Airlines WiFi free?', 'According to a trade-press report, Starlink WiFi is free for Business Class passengers and ConnectMiles PreferMember Gold, Platinum and Presidential members. Everyone else buys access. This is not from Copa\'s own website.'],
+      ['When will Copa have Starlink on all aircraft?', 'The report says the rollout is expected to be completed during the first quarter of 2027.']
+    ],
+    tableHead: ['Who', 'What the report says (not Copa\'s own site)'], tableTitle: 'What the news report says',
+    tableNote: 'From Future Travel Experience, July 2026. Copa\'s own page could not be used.',
+    rows: [['Business Class', 'Free'], ['ConnectMiles PreferMember Gold, Platinum, Presidential', 'Free'], ['Starlink Residential and Roam subscribers', 'Free'], ['Everyone else', 'Can buy access in the Starlink portal'], ['Rollout', 'To be completed in Q1 2027']]
+  });
+}
+
+// ---------------- SAUDIA ----------------
+// Read 14 October 2026: AeroTime, 2 November 2025.
+{
+  const PG = ['https://www.aerotime.aero/articles/saudia-operates-first-flight-offering-free-high-speed-wifi', 'AeroTime: Saudia operates first flight with free high-speed WiFi (2 November 2025)', 'News report, not Saudia\'s own site'];
+  addN({
+    slug: 'saudia', slab: 'What do you want to know?', checked: '14 October 2026',
+    unofficial: 'Saudia\'s own WiFi page is currently replaced by a "work in progress" notice. This is from a news report in AeroTime. It is an unofficial source.',
+    h1: 'Is Saudia WiFi Free? The Free High-Speed WiFi Pilot (2026)',
+    desc: 'Is Saudia WiFi free? AeroTime reported that Saudia launched free high-speed WiFi on 1 November 2025 for all passengers in every class, in a pilot on nearly 20 aircraft. Not from Saudia\'s own site; checked 14 October 2026.',
+    answer: 'Not from Saudia\'s own website: this is from an AeroTime report of 2 November 2025. Saudia launched free high-speed WiFi for all passengers in every travel class on 1 November 2025, in a pilot phase with speeds up to 300 Mbps. Nearly 20 aircraft were equipped then, with plans for the whole fleet.',
+    srcNote: 'We used an AeroTime report of 2 November 2025, read in full on 14 October 2026. It may be out of date. Confirm with Saudia before you fly.',
+    scen: [
+      card('pilot', 'Pilot flights', 'go', 'Free WiFi', 'All travel classes', 'AeroTime reports Saudia introduced its first fully internet-enabled flight on 1 November 2025, providing free high-speed WiFi to all passengers across every travel class, in a pilot phase with speeds of up to 300 Mbps.', ['You can use several devices, browse, stream and attend virtual meetings, according to the report.'], PG, true),
+      card('fleet', 'Which aircraft', 'warn', 'Nearly 20 aircraft (Nov 2025)', 'More to come', 'AeroTime reports nearly 20 aircraft in Saudia\'s fleet had been equipped, with plans to extend to the entire fleet and new aircraft once legal procedures are finalised, and to upgrade to 800 Mbps in future rollouts.', ['The report does not list aircraft types or routes. Saudia\'s older WiFi page is not readable now, so we cannot say which aircraft have WiFi today.'], PG)
+    ],
+    faq: [
+      ['Is Saudia WiFi free?', 'According to an AeroTime report of November 2025, Saudia launched free high-speed WiFi for all passengers in every class, in a pilot phase. This is not from Saudia\'s own website and may be out of date.'],
+      ['Which Saudia planes have WiFi?', 'The report says nearly 20 aircraft had been equipped in November 2025, with plans to extend it to the entire fleet. It does not list the types.']
+    ],
+    tableHead: ['Question', 'What AeroTime reports (not Saudia\'s own site)'], tableTitle: 'What the news report says',
+    tableNote: 'From AeroTime, 2 November 2025.',
+    rows: [['Cost', 'Free for all passengers'], ['Cabins', 'Every travel class'], ['Status', 'Pilot phase from 1 November 2025'], ['Speed', 'Up to 300 Mbps; 800 Mbps planned'], ['Aircraft', 'Nearly 20 equipped (November 2025); whole fleet planned']]
+  });
+}
+
+// ---------------- ROYAL AIR MAROC ----------------
+// Read 14 October 2026: One Mile at a Time (quoting Royal Air Maroc's announcement of 7 October 2026).
+{
+  const PG = ['https://onemileatatime.com/news/royal-air-maroc-free-starlink-wi-fi/', 'One Mile at a Time: Royal Air Maroc to offer free Starlink Wi-Fi from early 2027', 'Travel news report, not Royal Air Maroc\'s own site'];
+  addN({
+    slug: 'royal-air-maroc', slab: 'What do you want to know?', checked: '14 October 2026',
+    unofficial: 'Royal Air Maroc\'s own site gives no WiFi page. This is from a travel-news report that quotes the airline\'s announcement of 7 October 2026. It is an unofficial source.',
+    h1: 'Does Royal Air Maroc Have WiFi? Free Starlink Planned for 2027',
+    desc: 'Does Royal Air Maroc have WiFi? Not on most aircraft yet. Royal Air Maroc announced on 7 October 2026 that it will install Starlink on 41 aircraft from early 2027, free for Safar Flyer members. Not from its own site; checked 14 October 2026.',
+    answer: 'Not on most aircraft today. Not from Royal Air Maroc\'s own website: this is from a One Mile at a Time report quoting the airline\'s announcement of 7 October 2026. Royal Air Maroc will equip 41 aircraft with Starlink, with installation starting in early 2027. It will be free for all Safar Flyer members.',
+    srcNote: 'We used a One Mile at a Time report quoting the airline\'s announcement, read in full on 14 October 2026. Confirm with Royal Air Maroc before you fly.',
+    scen: [
+      card('now', 'Today', 'warn', 'No WiFi on most aircraft', 'Per the report', 'The report says Royal Air Maroc currently does not offer any WiFi on a vast majority of its aircraft.', ['The report does not say which aircraft, if any, have it today.'], PG, true),
+      card('starlink', 'From early 2027', 'go', 'Free Starlink for Safar Flyer', '41 aircraft planned', 'The report says Royal Air Maroc plans to equip 41 aircraft with Starlink WiFi, with installation expected from early 2027, free of charge to all members of its Safar Flyer frequent flyer programme.', ['The report says it is not clear whether you need your frequent flyer number on the reservation, and that it remains to be seen when the rollout will be completed.', 'The report does not say which of the 41 aircraft will be fitted.'], PG)
+    ],
+    faq: [
+      ['Does Royal Air Maroc have WiFi?', 'According to a news report, not on a vast majority of its aircraft today. Royal Air Maroc announced Starlink for 41 aircraft from early 2027. This is not from Royal Air Maroc\'s own website.'],
+      ['Will Royal Air Maroc WiFi be free?', 'The report says Starlink will be free for all members of its Safar Flyer programme. It does not say what other passengers will pay.']
+    ],
+    tableHead: ['Question', 'What the report says (not Royal Air Maroc\'s own site)'], tableTitle: 'What the news report says',
+    tableNote: 'From One Mile at a Time, quoting Royal Air Maroc\'s announcement of 7 October 2026.',
+    rows: [['Today', 'No WiFi on a vast majority of aircraft'], ['Starlink', 'Announced 7 October 2026'], ['Aircraft', '41 planned'], ['Start', 'Early 2027'], ['Free for', 'All Safar Flyer members']]
+  });
+}
+
+// ---------------- FLYDUBAI ----------------
+// Read 14 October 2026: The National, 18 November 2025 (flydubai statement at the Dubai Airshow).
+{
+  const PG = ['https://www.thenationalnews.com/business/aviation/2025/11/18/flydubai-joins-emirates-in-adding-starlink-for-superfast-inflight-wi-fi/', 'The National: flydubai joins Emirates in adding Starlink (18 November 2025)', 'News report, not flydubai\'s own site'];
+  addN({
+    slug: 'flydubai', slab: 'What do you want to know?', checked: '14 October 2026',
+    unofficial: 'We found no WiFi page on flydubai\'s own site that we could read. This is from a news report in The National that quotes flydubai\'s statement. It is an unofficial source.',
+    h1: 'Does flydubai Have WiFi? Free Starlink Rollout Plan (2026)',
+    desc: 'Does flydubai have WiFi? flydubai said in November 2025 it will install free Starlink WiFi on 100 Boeing 737s in 2026. Whether your flight has it is not confirmed. From a news report, not flydubai\'s own site; checked 14 October 2026.',
+    answer: 'Not from flydubai\'s own website: this is from a report in The National of 18 November 2025. flydubai said it will install free Starlink WiFi on its Boeing 737 fleet, 100 planes in 2026, and expects the majority of its fleet to have it that year. We found no report confirming that a specific flight has it today.',
+    srcNote: 'We used a report in The National (18 November 2025), read in full on 14 October 2026. Confirm with flydubai before you fly.',
+    scen: [
+      card('plan', 'Rollout plan', 'warn', 'Free Starlink planned', '100 Boeing 737s in 2026', 'The National reports flydubai said at the Dubai Airshow it will install Starlink on its Boeing 737 fleet to offer free and fast WiFi, with installation on 100 planes in 2026, and expects the service on the majority of its fleet that year.', ['flydubai said the service will deliver high-speed, low-latency internet capable of supporting streaming, online gaming and video calls.'], PG, true),
+      card('now', 'Today', 'warn', 'Not confirmed', 'Check your flight', 'The report is an announcement of a rollout. It does not say which flights have WiFi.', ['We found no flydubai page we could read that says whether WiFi is on board today.'], PG)
+    ],
+    faq: [
+      ['Does flydubai have WiFi?', 'flydubai announced in November 2025 that it will install free Starlink WiFi on its Boeing 737 fleet, 100 planes in 2026. We found no source confirming that a given flight has it today.'],
+      ['Will flydubai WiFi be free?', 'According to The National, flydubai said the service will be free.']
+    ],
+    tableHead: ['Question', 'What the report says (not flydubai\'s own site)'], tableTitle: 'What the news report says',
+    tableNote: 'From The National, 18 November 2025.',
+    rows: [['Technology', 'Starlink'], ['Aircraft', 'Boeing 737 fleet; 100 planes in 2026'], ['Cost', 'Free'], ['Status today', 'Not confirmed']]
+  });
+}
+
+// ---------------- MIDDLE EAST AIRLINES ----------------
+// Read 14 October 2026: PaxEx.Aero, 2020 (MEA takes first A321neo with Panasonic Avionics WiFi).
+{
+  const PG = ['https://paxex.aero/mea-first-a321neo-panasonic-avionics-wifi-on-board/', 'PaxEx.Aero: MEA takes first A321neo, brings Panasonic Avionics WiFi on board (2020)', 'Trade report, not MEA\'s own site'];
+  addN({
+    slug: 'middle-east-airlines', slab: 'What do you want to know?', checked: '14 October 2026',
+    unofficial: 'MEA\'s own site blocks our connection, so we could not read its WiFi page. This is from a 2020 trade report. It is an unofficial source and it is old.',
+    h1: 'Does MEA Have WiFi? A321neo and Panasonic WiFi',
+    desc: 'Does Middle East Airlines have WiFi? A 2020 trade report says MEA\'s nine A321neo aircraft were its first with WiFi, using Panasonic eXConnect. No price found. Not from MEA\'s own site; checked 14 October 2026.',
+    answer: 'Not from MEA\'s own website: this is from a 2020 PaxEx.Aero report. It says MEA\'s nine new Airbus A321neo aircraft would be its first ever to offer inflight WiFi, using Panasonic Avionics eXConnect. We found no price and no current list of aircraft.',
+    srcNote: '⚠ This information is not from MEA\'s own website, and the report is from 2020. We could not read MEA\'s own WiFi page. Confirm with MEA before you fly.',
+    scen: [
+      card('a321', 'Airbus A321neo', 'warn', 'WiFi on the A321neo', 'Panasonic eXConnect, per a 2020 report', 'PaxEx.Aero reported in 2020 that MEA\'s nine A321neo aircraft would be the airline\'s first ever to offer inflight WiFi, with Panasonic Avionics eXConnect connectivity fitted at the Airbus factory.', ['The report does not say if the WiFi is free or paid, or what it costs.'], PG, true),
+      card('other', 'Other aircraft', 'warn', 'Not covered', 'Check with MEA', 'The report covers only the A321neo.', ['We could not read MEA\'s own WiFi page, so we cannot say which other aircraft have WiFi today.'], PG)
+    ],
+    faq: [
+      ['Does MEA have WiFi?', 'A 2020 trade report says MEA\'s A321neo aircraft were its first to offer inflight WiFi, with Panasonic Avionics. This is not from MEA\'s own website. We found no price or current aircraft list.']
+    ],
+    tableHead: ['Question', 'What the report says (not MEA\'s own site)'], tableTitle: 'What the 2020 report says',
+    tableNote: 'From PaxEx.Aero, 2020. MEA\'s own page could not be read.',
+    rows: [['Aircraft', 'Nine Airbus A321neo'], ['WiFi', 'Panasonic Avionics eXConnect'], ['Price', 'Not stated']]
   });
 }
 

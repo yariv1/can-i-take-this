@@ -249,3 +249,6 @@ Philippine Airlines (philippine-airlines), Virgin Australia (virgin-australia), 
 
 ## 2026-10-14 Wi-Fi pages batch 7 (deployed): TO REQUEST after batch 6
 Emirates (emirates), Qatar Airways (qatar-airways), Gulf Air (gulf-air), Royal Jordanian (royal-jordanian), Vietnam Airlines (vietnam-airlines), EgyptAir (egyptair), IndiGo (indigo), Korean Air (korean-air), Asiana (asiana), ANA (ana), JAL (japan-airlines), Oman Air (oman-air), El Al (el-al), Avianca (avianca), Brussels Airlines (brussels-airlines), GOL (gol), Volaris (volaris) (all https://canitakethis.co/airline/<slug>/wifi/).
+
+## 2026-10-14 Wi-Fi pages batch 8 (deployed, UNOFFICIAL-source pages with the Unofficial label): TO REQUEST after batch 7
+China Eastern (china-eastern), Copa (copa-airlines), Saudia (saudia), Royal Air Maroc (royal-air-maroc), flydubai (flydubai), Middle East Airlines (middle-east-airlines) (all https://canitakethis.co/airline/<slug>/wifi/).

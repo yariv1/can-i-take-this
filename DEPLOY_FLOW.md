@@ -89,3 +89,6 @@ After `git push` and once the pages are live, run `node indexnow.js` (submits on
 
 ## Pages build check (added 2026-10-13)
 GitHub Pages runs Jekyll on every .md in the repo: ONE invalid UTF-8 byte in any .md (a latin1-mangled euro sign in BLOG_ROADMAP.md) failed the build and nothing deployed until fixed. After every push run `gh run list --limit 1` and confirm "completed success"; when writing .md files with node, never use latin1 (use utf8). Quick check: python reading each *.md with .decode("utf-8").
+
+## Source label gate (added 2026-10-14, DESIGN_SYSTEM.md 8.21)
+Before every deploy: `node audit_source_label.js` must print "OK source labels" (every Wi-Fi page source block is labelled Official or Unofficial, unofficial blocks have the explanation line).
