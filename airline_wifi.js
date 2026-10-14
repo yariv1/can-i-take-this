@@ -985,4 +985,121 @@ const addN = cfg => add(Object.assign({ legend: LEGEND2, slab: cfg.slab || 'Whic
   });
 }
 
+// ---------------- SINGAPORE AIRLINES ----------------
+// Read 14 October 2026 on singaporeair.com (German-language version of the Inflight Connectivity page; the English version redirects to krisworld.singaporeair.com or a login page).
+{
+  const PG = ['https://www.singaporeair.com/de_DE/de/flying-withus/entertainment/inflight-connectivity/', 'Singapore Airlines: Inflight connectivity (German-language version)', 'Free Wi-Fi, packages, coverage'];
+  addN({
+    slug: 'singapore-airlines', slab: 'Which cabin and membership?', checked: '14 October 2026',
+    h1: 'Is Singapore Airlines WiFi Free? Who Gets It and Prices (2026)',
+    desc: 'Is Singapore Airlines WiFi free? Unlimited and free for premium cabins and for KrisFlyer members in every cabin. Packages from USD 3.99. Not on the Boeing 737-800 NG. From Singapore Airlines\' own page, checked 14 October 2026.',
+    answer: 'Free and unlimited for passengers in Suites, First, Business, PPS Club members, and KrisFlyer members in every cabin. In Premium Economy and Economy you add your KrisFlyer number to your booking; joining is free. Singapore Airlines has WiFi on all aircraft except the Boeing 737-800 NG.',
+    srcNote: 'From Singapore Airlines\' own Inflight Connectivity page (German-language version; its English version would not load for us), last checked 14 October 2026. Onboard prices can change, so check the WiFi portal on the day.',
+    scen: [
+      card('premium', 'Suites, First, Business, PPS Club', 'go', 'Free, unlimited', 'Premium cabins and PPS Club', 'Singapore Airlines says unlimited free WiFi is offered to passengers in Suites, First Class and Business Class, to PPS Club members and supplementary cardholders, and to KrisFlyer members.', ['After you reach cruising altitude, connect to the KrisWorld network, then enter your details under "Complimentary Wi-Fi" in the WiFi portal.', 'Instructions are on the WiFi card in the seat pocket and in the WiFi video on KrisWorld TV.'], PG, true),
+      card('member', 'KrisFlyer member, Premium Economy or Economy', 'go', 'Free, unlimited', 'Add your KrisFlyer number to your booking', 'Singapore Airlines says KrisFlyer members in Premium Economy and Economy get unlimited free WiFi.', ['Before the flight, add your KrisFlyer number in Manage Booking on singaporeair.com or the SingaporeAir app, or tell the check-in staff.', 'Then, at cruising altitude, connect to the KrisWorld network and enter your details under "Complimentary Wi-Fi".'], PG),
+      card('nonmember', 'Not a KrisFlyer member, Premium Economy or Economy', 'warn', 'Not free until you join', 'Joining KrisFlyer is free', 'Singapore Airlines marks free WiFi as "not applicable" for non-members in Premium Economy and Economy, and says to become a KrisFlyer member to get free WiFi on board.', ['Register for KrisFlyer, then add your KrisFlyer number to your booking.', 'The page also lists paid packages: 1 hour for USD 3.99, 3 hours for USD 8.99 and a Full Flight package for USD 15.99. A package is only valid on the flight leg where you buy it. Onboard prices can change.'], PG),
+      card('limits', 'Where it does not work', 'warn', 'Not on every plane or route', 'Boeing 737-800 NG has none', 'Singapore Airlines says it offers WiFi on all aircraft except the Boeing 737-800 NG.', ['On the A380, the A350-900 medium-haul and selected Boeing 777-300ER aircraft, WiFi is not available over India, Iran and Turkey, because of satellite coverage and regulation.', 'WiFi works above 10,000 feet. Streaming is not supported.', 'Some flights may have no service because of weather, territorial rules, satellite coverage, equipment changes or technical problems.'], PG)
+    ],
+    faq: [
+      ['Is Singapore Airlines WiFi free?', 'Yes for passengers in Suites, First and Business Class, PPS Club members and KrisFlyer members in every cabin. In Premium Economy and Economy, add your KrisFlyer number to your booking; joining KrisFlyer is free.'],
+      ['How much does Singapore Airlines WiFi cost?', 'Singapore Airlines lists 1 hour at USD 3.99, 3 hours at USD 8.99 and a Full Flight package at USD 15.99. Onboard prices can change. A package is only valid on the flight leg where you buy it.'],
+      ['Which Singapore Airlines planes have WiFi?', 'All of them except the Boeing 737-800 NG, according to Singapore Airlines. On the A380, A350-900 medium-haul and selected 777-300ER aircraft it does not work over India, Iran and Turkey.'],
+      ['How do I connect to Singapore Airlines WiFi?', 'After reaching cruising altitude, connect to the KrisWorld network, then enter your details in the "Complimentary Wi-Fi" section of the WiFi portal. Streaming is not supported.']
+    ],
+    tableHead: ['Who', 'WiFi on Singapore Airlines'], tableTitle: 'Singapore Airlines\' WiFi by cabin and membership',
+    tableNote: 'Copied from the table on Singapore Airlines\' Inflight Connectivity page (German-language version).',
+    rows: [['Suites / First Class', 'Free, unlimited'], ['Business Class', 'Free, unlimited'], ['PPS Club members and supplementary cardholders', 'Free, unlimited'], ['KrisFlyer member, Premium Economy or Economy', 'Free, unlimited (add your number to your booking)'], ['Not a member, Premium Economy or Economy', 'Not applicable: become a KrisFlyer member for free WiFi'], ['Packages', '1 hour USD 3.99; 3 hours USD 8.99; Full Flight USD 15.99']],
+    extra: steps(['Before the flight, add your KrisFlyer number to your booking (Manage Booking, the app, or at check-in).', 'At cruising altitude, connect to the KrisWorld network.', 'Enter your details under "Complimentary Wi-Fi" in the WiFi portal.'])
+  });
+}
+
+// ---------------- CATHAY PACIFIC ----------------
+// Read 14 October 2026 on flights.cathaypacific.com: Wi-Fi and connectivity.
+{
+  const PG = ['https://flights.cathaypacific.com/en_US/flying-with-us/wifi/connectivity.html', 'Cathay Pacific: Wi-Fi and connectivity', 'Connectivity options and internet access packages'];
+  addN({
+    slug: 'cathay-pacific', slab: 'Who are you?', checked: '14 October 2026',
+    h1: 'Is Cathay Pacific WiFi Free? Who Gets It and Prices (2026)',
+    desc: 'Is Cathay Pacific WiFi free? Free for First and Business Class, Diamond and Gold members, and members in Premium Economy. Others pay from USD 7.95. WiFi across the fleet. From Cathay Pacific\'s own page, checked 14 October 2026.',
+    answer: 'Cathay Pacific says it has high-speed WiFi across its fleet. It invites First and Business Class passengers, Diamond and Gold members, and Cathay members in Premium Economy to enjoy complimentary WiFi. Everyone else buys a package, from USD 7.95 for three hours. Visiting cathaypacific.com on board is free for all.',
+    srcNote: 'From Cathay Pacific\'s own WiFi page, last checked 14 October 2026. Prices depend on the route flown.',
+    scen: [
+      card('free', 'First, Business, Diamond, Gold, Premium Economy members', 'go', 'Complimentary WiFi', 'Members add their number to the booking', 'Cathay Pacific says its Diamond and Gold members, First class and Business class passengers, and Cathay members in Premium Economy are invited to enjoy complimentary inflight WiFi.', ['To get it, Cathay members add their membership number when they make their booking or during check-in. Not yet a member: you can sign up.', 'Cathay Pacific\'s page does not say what complimentary covers beyond this. Check the WiFi portal on board.'], PG, true),
+      card('all', 'Everyone', 'go', 'Free to browse cathaypacific.com', 'And to shop on lifestyle.asiamiles.com', 'Cathay Pacific says it is free to visit all pages on cathaypacific.com and to shop thousands of curated products on lifestyle.asiamiles.com while in the air.', ['This is separate from the internet packages below.'], PG),
+      card('paid', 'Paid packages', 'warn', 'From USD 7.95', 'Price depends on the route', 'Cathay Pacific lists a package for flight times of six hours or less at USD 12.95, one for flights above six hours from USD 19.95 to USD 24.95, and three-hour continuous use from USD 7.95 to USD 9.95.', ['On flights of six hours or less a Message Pass is USD 3.95 for WhatsApp, iMessage, Facebook Messenger, LINE and WeChat.', 'Pricing is determined by the route flown. WiFi is available once the aircraft is at or above 10,000 feet.'], PG),
+      card('limits', 'When it may not work', 'warn', 'Not everywhere', 'Polar routes and weak coverage', 'Cathay Pacific says it may not connect you over the northern polar region or areas without coverage, during "beam switching" between satellites, in poor weather or below the minimum altitude.', ['Polar routes from the East Coast of North America might have a long outage.', 'SMS and data roaming are available on A350 aircraft only, and not in the United States.'], PG)
+    ],
+    faq: [
+      ['Is Cathay Pacific WiFi free?', 'Cathay Pacific invites First and Business Class passengers, Diamond and Gold members, and Cathay members in Premium Economy to enjoy complimentary WiFi. Members add their membership number to the booking. Everyone can browse cathaypacific.com free. Other WiFi is paid.'],
+      ['How much does Cathay Pacific WiFi cost?', 'Flights of six hours or less: USD 12.95. Flights above six hours: from USD 19.95 to USD 24.95. Three-hour continuous use: from USD 7.95 to USD 9.95. A Message Pass on flights of six hours or less is USD 3.95. Prices depend on the route.'],
+      ['Does every Cathay Pacific plane have WiFi?', 'Cathay Pacific says it has 100% high-speed inflight connectivity across its fleet.'],
+      ['How do I connect to Cathay Pacific WiFi?', 'Switch on airplane mode, enable WiFi and connect to the "Cathay Pacific" network. A portal opens; if it does not, go to wifi.cathaypacific.com. Pick your package and start browsing.']
+    ],
+    tableHead: ['Who or what', 'WiFi on Cathay Pacific'], tableTitle: 'Cathay Pacific\'s WiFi options',
+    tableNote: 'Copied from Cathay Pacific\'s WiFi page. Prices depend on the route flown.',
+    rows: [['First and Business Class; Diamond and Gold members; members in Premium Economy', 'Complimentary (members add their number to the booking)'], ['cathaypacific.com and lifestyle.asiamiles.com', 'Free for everyone'], ['Flights of six hours or less', 'USD 12.95'], ['Flights above six hours', 'From USD 19.95 to USD 24.95'], ['Three-hour continuous use', 'From USD 7.95 to USD 9.95'], ['Message Pass (flights of six hours or less)', 'USD 3.95']],
+    extra: steps(['Switch on airplane mode and enable WiFi.', 'Connect to the "Cathay Pacific" network.', 'A portal opens. If it does not, type wifi.cathaypacific.com.', 'Select your internet package and start browsing.'])
+  });
+}
+
+// ---------------- QANTAS ----------------
+// Read 14 October 2026 on qantas.com (US site): Inflight Wi-Fi.
+{
+  const PG = ['https://www.qantas.com/en-us/onboard/entertainment/wifi', 'Qantas: Inflight Wi-Fi', 'Wi-Fi-connected fleet, coverage and FAQs'];
+  const FREE = 'Qantas says its Wi-Fi is free across all cabins on Wi-Fi-connected aircraft, with unlimited data that lets you stream.';
+  const CHK = 'Qantas recommends checking the Qantas app 24 to 48 hours before you travel: add your flight to My Trips and select View onboard experience.';
+  add({
+    slug: 'qantas', checked: '14 October 2026',
+    h1: 'Is Qantas WiFi Free? WiFi by Aircraft Type (2026)',
+    desc: 'Is Qantas WiFi free? Yes, in all cabins on connected aircraft: A321XLR, A220-300, 787, A330 and most 737-800s. A380 installation is in progress. Qantas\'s own list, checked 14 October 2026.',
+    answer: 'Yes, on aircraft with WiFi. Qantas says its WiFi is free across all cabins with unlimited data. It is on all A321XLR, A220-300, 787 and A330-200 aircraft, and on most 737-800 and A330-300 aircraft. A380 installation is in progress. Outside Australia and New Zealand the connection varies.',
+    srcNote: 'From Qantas\'s own WiFi page, last checked 14 October 2026. WiFi can change with late aircraft swaps, so check the Qantas app before you fly.',
+    scen: [
+      card('all', 'A321XLR, A220-300, 787, A330-200', 'go', 'Free WiFi on every aircraft', 'All cabins, unlimited data', 'Qantas lists all Airbus A321XLR, all Airbus A220-300, all Boeing 787 and all Airbus A330-200 aircraft as Wi-Fi connected.', [FREE, 'Qantas says WiFi is available on QantasLink flights operated by A220-300 aircraft.', CHK], PG, true),
+      card('most', '737-800, A330-300', 'warn', 'Free on most aircraft', 'The rest are being enabled', 'Qantas lists the majority of its Boeing 737-800 and Airbus A330-300 aircraft as Wi-Fi connected, with the remaining aircraft being enabled. It lists the A330Y as being enabled.', [FREE, 'So check your flight in the Qantas app: not every 737-800 or A330-300 has WiFi yet.', CHK], PG),
+      card('a380', 'A380', 'warn', 'Installation in progress', 'Not listed as connected yet', 'Qantas says Airbus A380 installation is in progress. It does not list the A380 as Wi-Fi connected.', [CHK], PG),
+      card('route', 'Which route', 'warn', 'Best in Australia and New Zealand', 'Varies on other international flights', 'Qantas says flights across Australia and New Zealand get fast WiFi that supports browsing and streaming. On international flights outside Australia and New Zealand you currently get a varied connection.', ['A varied connection keeps you connected for the essentials and may not support video streaming. Qantas says coverage is currently not available over China, India, the South Pacific Ocean or the Indian Ocean.', 'Qantas says voice and video calls are not permitted, and data roaming is not permitted.'], PG)
+    ],
+    faq: [
+      ['Is Qantas WiFi free?', 'Yes. Qantas says its WiFi is free across all cabins on WiFi-connected aircraft, with unlimited data that lets you stream.'],
+      ['Which Qantas planes have WiFi?', 'All A321XLR, A220-300, Boeing 787 and A330-200 aircraft, and the majority of Boeing 737-800 and A330-300 aircraft, with the rest being enabled. A380 installation is in progress. QantasLink A220-300 flights have WiFi.'],
+      ['How do I check if my Qantas flight has WiFi?', 'Open the Qantas app, add your flight to My Trips and select View onboard experience. Qantas recommends checking 24 to 48 hours before you travel.'],
+      ['How do I connect to Qantas WiFi?', 'Enable Flight Mode, select the "Qantas Free Wi-Fi" network in your device settings and follow the prompts. If the page does not load, type wifi.qantas.com into your browser.']
+    ],
+    tableHead: ['Aircraft', 'WiFi on Qantas'], tableTitle: 'Qantas\'s Wi-Fi-connected fleet',
+    tableNote: 'Copied from the fleet list on Qantas\'s WiFi page.',
+    rows: [['Airbus A321XLR', 'All aircraft'], ['Airbus A220-300', 'All aircraft'], ['Boeing 737-800', 'Majority; the rest are being enabled'], ['Boeing 787', 'All aircraft'], ['Airbus A330-200', 'All aircraft'], ['Airbus A330-300', 'Majority; the A330Y is being enabled'], ['Airbus A380', 'Installation in progress']],
+    extra: steps(['Enable Flight Mode.', 'Select the "Qantas Free Wi-Fi" network in your device settings.', 'Follow the prompts on the "You\'re connected" screen.', 'If the page does not load, type wifi.qantas.com into your browser.'])
+  });
+}
+
+// ---------------- AIR NEW ZEALAND ----------------
+// Read 14 October 2026 on airnewzealand.com: Free Inflight Wi-Fi.
+{
+  const PG = ['https://www.airnewzealand.com/wifi', 'Air New Zealand: Free Inflight Wi-Fi', 'Wi-Fi enabled aircraft and how to connect'];
+  const NOTE = 'Air New Zealand says to check for the Wi-Fi icon next to your flight in the Air NZ app, and to check again on the day of your flight because of late aircraft changes.';
+  add({
+    slug: 'air-new-zealand', checked: '14 October 2026',
+    h1: 'Is Air New Zealand WiFi Free? WiFi by Aircraft (2026)',
+    desc: 'Is Air New Zealand WiFi free? Yes on the 777-300ER, 787-9, A321neo and A320neo international aircraft, in all cabins. Not on the 777-367ER or domestic aircraft yet. Air New Zealand\'s own list, checked 14 October 2026.',
+    answer: 'Yes, on international aircraft that have it. Air New Zealand says WiFi is free in all cabin classes on its Boeing 777-300ER, 787-9, Airbus A321neo and A320neo international aircraft. It is not enabled on the Boeing 777-367ER, and not yet on its domestic fleet.',
+    srcNote: 'From Air New Zealand\'s own WiFi page, last checked 14 October 2026. Aircraft can change late, so check the Air NZ app on the day.',
+    scen: [
+      card('yes', '777-300ER, 787-9, A321neo, A320neo (international)', 'go', 'Free WiFi', 'In all cabin classes', 'Air New Zealand lists the Boeing 777-300ER, all Boeing 787-9 versions, the Airbus A321neo and the Airbus A320neo on its international fleet as Wi-Fi enabled in all cabin classes.', ['It is free until the aircraft prepares for landing, and available only after take-off and before descent.', NOTE, 'You can browse the web, send emails and messages and check social media. Air New Zealand blocks or limits some high-data services, and voice calls are not allowed.'], PG, true),
+      card('no777', 'Boeing 777-367ER', 'stop', 'No WiFi', 'Not enabled', 'Air New Zealand lists the Boeing 777-367ER, including its V2 version, as international fleet where Wi-Fi is not enabled.', [NOTE], PG),
+      card('domestic', 'Domestic aircraft', 'stop', 'Not yet enabled', 'A321neo, A320, ATR 72 and Q300', 'Air New Zealand lists its domestic Airbus A321neo and A320, the ATR 72 and the de Havilland Q300 as Wi-Fi not yet enabled.', [NOTE], PG)
+    ],
+    faq: [
+      ['Is Air New Zealand WiFi free?', 'Yes. Air New Zealand says its inflight WiFi is free on the international aircraft where it is enabled, in all cabin classes, until the aircraft prepares for landing.'],
+      ['Which Air New Zealand planes have WiFi?', 'The Boeing 777-300ER, the Boeing 787-9 (all versions), the Airbus A321neo and the Airbus A320neo on international flights. Not the Boeing 777-367ER, and not yet the domestic A321neo, A320, ATR 72 or Q300.'],
+      ['How do I connect to Air New Zealand WiFi?', 'Switch to Flight Mode, wait a few minutes after take-off, turn on WiFi, join the "AirNZ_InflightWiFi" network and go to wifi.airnz.com to register.']
+    ],
+    tableHead: ['Aircraft', 'WiFi on Air New Zealand'], tableTitle: 'Air New Zealand\'s aircraft and WiFi',
+    tableNote: 'Copied from the fleet lists on Air New Zealand\'s WiFi page.',
+    rows: [['Boeing 777-300ER', 'Wi-Fi enabled in all cabin classes'], ['Boeing 787-9 (V1 to V5)', 'Wi-Fi enabled in all cabin classes'], ['Airbus A321neo and A320neo (international)', 'Wi-Fi enabled in all cabin classes'], ['Boeing 777-367ER (and V2)', 'Wi-Fi not enabled'], ['Airbus A321neo and A320 (domestic), ATR 72, de Havilland Q300', 'Wi-Fi not yet enabled']],
+    extra: steps(['Switch your device to Flight Mode and wait a few minutes after take-off.', 'Turn on WiFi while staying in Flight Mode.', 'Join the "AirNZ_InflightWiFi" network.', 'Go to wifi.airnz.com, register and follow the instructions.'])
+  });
+}
+
 module.exports = out;

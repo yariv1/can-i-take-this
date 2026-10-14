@@ -240,3 +240,6 @@ United, Southwest, Turkish Airlines, Alaska, Hawaiian, WestJet, Lufthansa, Briti
 
 ## 2026-10-14 Wi-Fi pages batch 4 (European, deployed): TO REQUEST after batch 3, in this order
 Eurowings, LOT (slug lot-polish), Aer Lingus, Vueling, easyJet (unofficial-source notice), Wizz Air, Transavia (all https://canitakethis.co/airline/<slug>/wifi/).
+
+## 2026-10-14 Wi-Fi pages batch 5 (Asia/Oceania, deployed): TO REQUEST after batch 4
+Singapore Airlines (singapore-airlines), Cathay Pacific (cathay-pacific), Qantas (qantas), Air New Zealand (air-new-zealand) (all https://canitakethis.co/airline/<slug>/wifi/).
