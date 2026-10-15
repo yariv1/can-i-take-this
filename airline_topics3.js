@@ -100,6 +100,34 @@ module.exports = {
         ["How many power banks can I bring on KLM?", "Up to 2; they count as spare batteries, must stay with you, and cannot go in the overhead bin or be used or charged on board."]
       ],
       sources: [["https://www.klm.com/information/baggage/restricted-items-hand-baggage", "KLM &mdash; Restricted and prohibited items in hand baggage"]]
+    },
+    power: {
+      ttl: "KLM Power Bank Rules 2026: Max 2, 100 Wh, No Overhead Bin, No Use On Board",
+      desc: "KLM power bank rules: up to 2 power banks, 100 Wh or less without permission, 100 to 160 Wh with permission, keep it with you, not in the overhead bin, no use or charging on board.",
+      answer: "KLM lets you bring up to 2 power banks in your hand baggage; they count as spare batteries. Each should be 100 Wh or less, and the capacity in Wh must be listed on the power bank, otherwise you may not be able to bring it. A power bank between 100 Wh and 160 Wh needs KLM's permission first, and one over 160 Wh is never allowed. Keep your power bank with you: it is not allowed in the overhead bin, and using or charging it on board is not allowed.",
+      sections: [
+        { h: "🔋 What KLM says about power banks", p: "From KLM's Restricted and prohibited items in hand baggage page.",
+          table: { head: ["Question", "KLM rule"], rows: [
+            ["How many", "Up to 2 power banks; they count as spare batteries"],
+            ["Up to 100 Wh", "Allowed in hand baggage"],
+            ["100 Wh to 160 Wh", "You must ask for permission first"],
+            ["Over 160 Wh", "Never allowed"],
+            ["Capacity label", "The capacity in Wh must be listed on the power bank; if it is not, you may not be able to bring it"],
+            ["Where to keep it", "Always with you; not allowed in the overhead bin"],
+            ["Using or charging it", "Not allowed on board"],
+            ["Damaged or recalled", "Damaged, defective or recalled devices and batteries must not be brought"],
+            ["Spare batteries", "Up to 20, each packed separately in original packaging or with the contact points covered with non-conductive tape"] ] },
+          list: ["<strong>Your devices:</strong> up to 15 electronic devices per person, each with a lithium battery of 100 Wh or less.",
+            "<strong>Not read:</strong> KLM's checked-baggage page and its permission request process for 100 to 160 Wh batteries. Contact KLM before you fly with a battery in that range."] }
+      ],
+      faq: [
+        ["Can I take a power bank on a KLM flight?", "Yes, in your hand baggage: up to 2, each 100 Wh or less with the Wh rating listed. You cannot use or charge it on board."],
+        ["How many power banks can I bring on KLM?", "Up to 2. They count as spare batteries, and you can bring up to 20 spare batteries in total."],
+        ["Can I put a power bank in the overhead bin on KLM?", "No. KLM says always keep your power bank with you; it is not allowed in the overhead bin."],
+        ["Can I use or charge my power bank on a KLM flight?", "No. KLM says using or charging a power bank on board is not allowed."],
+        ["Does KLM allow a 100 to 160 Wh power bank?", "Only with permission, which you must ask for first. Batteries over 160 Wh are never allowed."]
+      ],
+      sources: [["https://www.klm.com/information/baggage/restricted-items-hand-baggage", "KLM &mdash; Restricted and prohibited items in hand baggage"]]
     }
   },
   "SAS": {

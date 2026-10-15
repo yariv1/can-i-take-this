@@ -15,6 +15,7 @@ Object.assign(TOPICS, require('./airline_topics5.js'));
 Object.assign(TOPICS, require('./airline_topics6.js'));
 Object.assign(TOPICS, require('./airline_topics7.js'));
 { const T8 = require('./airline_topics8.js'); for (const a of Object.keys(T8)) TOPICS[a] = Object.assign(TOPICS[a] || {}, T8[a]); }
+{ const T9 = require('./airline_topics9.js'); for (const a of Object.keys(T9)) { TOPICS[a] = TOPICS[a] || {}; if (!TOPICS[a].power) TOPICS[a].power = T9[a].power; } }
 
 function render(a, T) {
   return '<div class="bd-wrap">' + CSS + '<p class="bd-lead"><strong>' + esc(T.answer) + '</strong></p>' +

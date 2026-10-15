@@ -92,6 +92,7 @@ GitHub Pages runs Jekyll on every .md in the repo: ONE invalid UTF-8 byte in any
 
 ## Source label gate (added 2026-10-14, DESIGN_SYSTEM.md 8.21)
 Before every deploy: `node audit_source_label.js` must print "OK source labels" (every Wi-Fi page source block is labelled Official or Unofficial, unofficial blocks have the explanation line).
+Before every deploy: `node audit_global_ui.js` must print "OK global ui" (global_ui.css injected into every page, DS 8.22).
 
 ## Card token gate (added 2026-10-14)
 `node audit_card_tokens.js` must print "OK card tokens": every template that renders the ticket card (.pass/.perf) defines the --card colour tokens (the airline Baggage template lacked them, so its ticket looked different from all other pages).

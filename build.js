@@ -59,8 +59,9 @@ function batchTitle(cat, cn, v, old){
 function fareTiers(label){var L=String(label).toLowerCase();var noPE=L.replace(/premium\s+economy/g,' ');var peSrc=L.replace(/saga premium/g,' ');var first=/\bfirst\b|suites|premi\u00E8re|premiere/.test(L);var biz=/business|\bclub\b|crown|\bmint\b|bizclass|cloud nine|prestige|\bpremier\b|aerspace|delta one|polaris|royal silk|business select|saga premium|clase premier/.test(L);var pe=/premium/.test(peSrc);var econ=/economy|\u00E9conomy|b\u00E1sica|cl\u00E1sica|econo/.test(noPE);var t=[];if(econ||!(first||biz||pe))t.push('Economy');if(pe)t.push('Premium Economy');if(biz)t.push('Business');if(first)t.push('First');return t.join(' / ');}
 function ensure(d){fs.mkdirSync(d,{recursive:true});}
 const SEO=require('./seo_post.js');
+const GLOBAL_UI_CSS=fs.readFileSync(path.join(__dirname,'global_ui.css'),'utf8').replace(/\/\*[\s\S]*?\*\//g,'').replace(/\s*[\r\n]+\s*/g,'');
 function write(rel, content){const p=path.join(OUT,rel);ensure(path.dirname(p));
-  if(/(^|[\\/])index\.html$/.test(rel)&&typeof content==='string'){const u='/'+rel.replace(/\\/g,'/').replace(/^\//,'').replace(/index\.html$/,'');content=SEO.post(u,content);}
+  if(/(^|[\\/])index\.html$/.test(rel)&&typeof content==='string'){const u='/'+rel.replace(/\\/g,'/').replace(/^\//,'').replace(/index\.html$/,'');content=SEO.post(u,content);content=content.replace('</head>','<style id="citt-global-ui">'+GLOBAL_UI_CSS+'</style></head>');}
   fs.writeFileSync(p,content);}
 
 const pages=[]; // {url,title,changefreq}
@@ -1173,7 +1174,7 @@ ${CHK_BODY}
 
   // copy the interactive app to /app/
   fs.copyFileSync(SRC, path.join(OUT,'app.html'));
-  ensure(path.join(OUT,'app')); fs.copyFileSync(SRC, path.join(OUT,'app','index.html'));
+  ensure(path.join(OUT,'app')); fs.writeFileSync(path.join(OUT,'app','index.html'), fs.readFileSync(SRC,'utf8').replace('</head>','<style id="citt-global-ui">'+GLOBAL_UI_CSS+'</style></head>'));
 
 
   // ---------- GUIDES SECTION ----------

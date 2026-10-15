@@ -1,0 +1,9 @@
+/* Global UI rules (DESIGN_SYSTEM.md 8.22). build.js write() injects this file into EVERY generated index.html. Selectors start with "html body" so they win over any template CSS, wherever that CSS sits in the page. Never fix these per template. */
+/* 1. Source headings: same capital mono heading as the ticket "OFFICIAL SOURCE" (the neutral "Helpful sources" heading keeps its colour). */
+html body .help-h,html body .bd-src .h,html body .art-sources-head{font-family:'Space Mono',monospace;font-size:14px;letter-spacing:1.2px;text-transform:uppercase}
+html body .bd-src .h,html body .art-sources-head{font-weight:700;color:var(--tg-green);margin:0 0 9px}
+/* 2. Carry-on / Checked choice buttons: titles 16px, the grey line under them 14px, same as the homepage. */
+html body .bag2 button,html body .bagsolo{font-size:16px}
+html body .bag2 button small,html body .bagsolo small{font-size:14px}
+/* 3. Space below every ticket card: 24px before the next text (DS 8.15 made global). */
+html body .pass{margin-bottom:24px}
