@@ -110,7 +110,7 @@
   function saved() { try { var v = localStorage.getItem(KEY); return v === 'imp' || v === 'met' ? v : null; } catch (e) { return null; } }
 
   var CSS = '.units-toggle{position:relative;display:inline-flex}'
-    + '.units-toggle .ut-trigger{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line,#2A3A5E);background:var(--surface,#161F3A);color:var(--text,#EDF0F7);font:600 .85rem/1.2 Inter,system-ui,sans-serif;padding:6px 10px;border-radius:999px;cursor:pointer;white-space:nowrap}'
+    + '.units-toggle .ut-trigger{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line,#2A3A5E);background:var(--surface,#161F3A);color:var(--text,#EDF0F7);font:600 14px/1.2 Inter,system-ui,sans-serif;padding:6px 10px;border-radius:999px;cursor:pointer;white-space:nowrap}'
     + '.units-toggle .ut-trigger:hover{border-color:var(--accent,#4CC2FF)}'
     + '.units-toggle .ut-trigger svg{flex:none}'
     + '.units-toggle .ut-menu{position:absolute;top:calc(100% + 6px);right:0;z-index:100;min-width:250px;padding:6px;border:1px solid var(--line,#2A3A5E);border-radius:14px;background:var(--surface,#161F3A);box-shadow:0 12px 32px rgba(0,0,0,.35)}'
@@ -118,7 +118,7 @@
     + '.units-toggle .ut-menu button{display:flex;width:100%;align-items:center;justify-content:space-between;gap:14px;border:0;background:transparent;color:var(--text,#EDF0F7);font:500 .9rem/1.3 Inter,system-ui,sans-serif;padding:9px 10px;border-radius:9px;cursor:pointer;text-align:left}'
     + '.units-toggle .ut-menu button:hover{background:var(--surface-2,#22304F)}'
     + '.units-toggle .ut-name{white-space:nowrap}'
-    + '.units-toggle .ut-short{white-space:nowrap;color:var(--muted,#8A96B8);font-weight:600;font-size:.85rem}'
+    + '.units-toggle .ut-short{white-space:nowrap;color:var(--muted,#8A96B8);font-weight:600;font-size:14px}'
     + '.units-toggle .ut-menu button[aria-checked="true"]{background:#4CC2FF;color:#08111f}'
     + '.units-toggle .ut-menu button[aria-checked="true"] .ut-short{color:#08111f}'
     + '[data-theme="light"] .units-toggle .ut-menu button[aria-checked="true"]{background:#1B2233;color:#fff}'
