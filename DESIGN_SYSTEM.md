@@ -485,3 +485,9 @@ Exception: a block headed "Helpful sources" (general links, not the authority fo
 
 ### 8.22 Global UI rules live in ONE file: `global_ui.css` (HARD RULE, 2026-10-15)
 `build.js` `write()` injects `global_ui.css` into EVERY generated `index.html` (after the page CSS, selectors start with `html body` so template CSS cannot override them). A UI order that applies "everywhere" is written there once and nowhere else; never fix it per template. Current rules: (1) every source heading (`.help-h`, `.bd-src .h`, `.art-sources-head`) = capital Space Mono 14px like the ticket's "OFFICIAL SOURCE"; (2) the Carry-on / Checked choice buttons (`.bag2 button`, `.bagsolo`) = title 16px, grey line 14px, same as the homepage; (3) every ticket card `.pass` = 24px space below before the next text (8.15 made global). Guard: `audit_global_ui.js` (injection present on every page, no template CSS beats it). No text smaller than 14px on the homepage (units, currency, feedback scripts included).
+
+## 8.23 Country tab row starts with Overview (2026-10-15, user order)
+Every country-section page (hub, Duty-free, Vapes, Tobacco, Medication, Pets, Food, Cash, Plants) shows the tab row `Overview | Food | Plants | Duty-free | Tobacco | Medication | Cash | Vapes | Pets` (order by Search Console impressions of the country tab pages, 90 days to 2026-10-15, clicks as a check; re-measure before changing). Overview = the country hub (`/country/<slug>/`, the "at a glance" cards) and is the active tab there, so a visitor who lands on the hub from the homepage can always return to it. The European Union master pages have no hub and therefore no Overview tab. Generated in `countryShell` (build.js). Guard: `audit_country_tabs.js`.
+
+## 8.22b Heading flag/logo aligned to the top (2026-10-15)
+`.airhead` uses `align-items:flex-start` (global_ui.css rule 4): the flag or logo stays level with the first line of the title on every tab, even when one tab's title wraps to two lines.

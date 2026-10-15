@@ -7,3 +7,6 @@ html body .bag2 button,html body .bagsolo{font-size:16px}
 html body .bag2 button small,html body .bagsolo small{font-size:14px}
 /* 3. Space below every ticket card: 24px before the next text (DS 8.15 made global). */
 html body .pass{margin-bottom:24px}
+/* 4. Page heading: the flag/logo sits at the top-left, aligned with the first line of the title, so it does not jump when a title wraps to two lines on another tab. */
+html body .airhead{align-items:flex-start}
+html body .airhead .cflag,html body .airhead .logo{margin-top:1px}

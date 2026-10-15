@@ -316,16 +316,18 @@ function countryShell(o){/*data-country4*/
   var VLABEL={go:'Allowed',warn:'Check first',stop:'Not allowed',info:'Check the source'};
   /* one scrollable tab row, same as airline pages (DESIGN_SYSTEM.md): no 'All rules', no 'Show more' */
   var tabs=[
+    {t:'Overview',u:'/country/'+sl+'/',key:'hub'},
+    {t:'Food',u:'/food/'+sl+'/',key:'food'},
+    {t:'Plants',u:'/country/'+sl+'/plants-seeds/',key:'plants'},
     {t:'Duty-free',u:'/country/'+sl+'/alcohol/',key:'alcohol'},
-    {t:'Vapes',u:'/country/'+sl+'/vaping/',key:'vape'},
     {t:'Tobacco',u:'/country/'+sl+'/tobacco/',key:'tobacco'},
     {t:'Medication',u:'/medication/into/'+sl+'/',key:'med'},
-    {t:'Pets',u:'/pets/'+sl+'/',key:'pets'},
-    {t:'Food',u:'/food/'+sl+'/',key:'food'},
     {t:'Cash',u:'/country/'+sl+'/cash/',key:'cash'},
-    {t:'Plants',u:'/country/'+sl+'/plants-seeds/',key:'plants'}
+    {t:'Vapes',u:'/country/'+sl+'/vaping/',key:'vape'},
+    {t:'Pets',u:'/pets/'+sl+'/',key:'pets'}
   ];
-  var act=o.cat||null;
+  if(sl==='european-union')tabs.shift(); /* the EU master has no overview page */
+  var act=o.mode==='hub'?'hub':(o.cat||null);
   var tabHtml=tabs.map(function(t){return '<a class="tab'+(t.key&&t.key===act?' on':'')+'" href="'+t.u+'">'+esc(t.t)+'</a>';}).join('');
   var moreBlock=tabRowBlock();
 
