@@ -96,3 +96,5 @@ Before every deploy: `node audit_global_ui.js` must print "OK global ui" (global
 
 ## Card token gate (added 2026-10-14)
 `node audit_card_tokens.js` must print "OK card tokens": every template that renders the ticket card (.pass/.perf) defines the --card colour tokens (the airline Baggage template lacked them, so its ticket looked different from all other pages).
+
+**Note 2026-10-15:** `node audit_seo_change_scope.js` now takes more than 110 s: run it with `timeout 280`. Cross-page UI rules live in `global_ui.css` (DS 8.22), never per template.

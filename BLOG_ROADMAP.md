@@ -1,5 +1,17 @@
 # Blog roadmap (written 2026-10-10, session 20)
 
+## SESSION 29 STATE (end of session 29, 2026-10-15): READ THIS FIRST
+- **Live: origin/main `a370e8669` (+ this docs commit).** Full handoff = memory file `project_blog_roadmap.md` (session 29); this block is the repo copy. Site = 82 airlines, 85 countries, 2,010 sitemap URLs, 70 airline Wi-Fi pages (7 Unofficial), 15 Compensation pages.
+- **USER FOCUS (2026-10-15):** all blog articles have 0 clicks, so the focus is improving the APP and the info about airlines and countries (anything users want to find). Blogs are not a priority.
+- **Done in session 29:** 8 more airline Baggage pages in ticket style (Alaska UNOFFICIAL via LugLess, SunExpress, EgyptAir, Azul, Copa, Cathay, Saudia, Gulf Air); Kuwait Airways and MEA stay on the old layout until their sites are readable (user decision); source rule widened (official first, else a reliable familiar source with the Unofficial label, `unofficial` field in `baggage_detail*.js`); `global_ui.css` injected into every page by `build.js write()` (DS 8.22: capital source heading, 16px Carry-on/Checked titles, 24px under ticket cards, guard `audit_global_ui.js`); homepage stretched to 820px and no text under 14px; `GSC_REQUEST_QUEUE.md` (319 URLs, tier 0 = 84 confirmed "Discovered not indexed" first); power-bank DETAIL sections on 23 airlines (`airline_topics3.js` KLM, `airline_topics9.js` the rest) = TEST GROUP; `NOTEBOOKLM_PROMPT.md`.
+- **Findings:** blogs are indexed and healthy (URL inspection ok, canonical ok) but 0 clicks and 161 impressions in 90 days: site-wide demotion since Oct 7, not a bottleneck. Demand by query theme (90 days impressions): baggage 5,661, power bank 1,756, vape 1,716, carry-on 1,512, liquid 1,005, alcohol 752. Ahrefs free shows "<100" for every power-bank phrasing.
+- **NEXT:** (1) log the Oct 15 GSC + GA recheck in `SEO_BASELINE.md` (not done), again Oct 20; (2) ask which addition next (recommended: baggage FEES on the Baggage pages, 14 real queries); (3) power-bank detail for the other ~47 airlines only after the 2026-10-29 test check and his approval (list in the memory file `project_power_bank_detail_test.md`); (4) open: 14px floor outside the homepage, mobile table repeated labels (he decides, untouched), Kuwait/MEA baggage when readable.
+- **Dates:** 2026-10-20 GSC+GA recheck; 2026-10-26 and 2026-11-09 food compare; 2026-10-29 power-bank test check; 2026-11-03 Wi-Fi pilot check.
+- **Deploy recipe additions:** `node audit_global_ui.js`; `audit_seo_change_scope.js` needs `timeout 280`.
+
+---
+(Older block below, kept as history.)
+
 ## SESSION 28 STATE (end of session 28, 2026-10-14): READ THIS FIRST
 - **Live: origin/main `edfbc7006` (+ this docs commit).** Full handoff = memory file `project_blog_roadmap.md` (session 28); this block is the repo copy. Site = 82 airlines, 85 countries, 2,014 pages, **70 airline Wi-Fi pages** (7 with the Unofficial label: easyjet, china-eastern, copa-airlines, saudia, royal-air-maroc, flydubai, middle-east-airlines).
 - **NEXT TASK (user order): rebuild the 10 old-layout airline Baggage pages in the ticket style:** alaska-airlines, azul, cathay-pacific, copa-airlines, egyptair, gulf-air, kuwait-airways, middle-east-airlines, saudia, sunexpress (no entry yet in `baggage_detail*.js` / `baggage_cards*.js`; read their OWN pages in Chrome; unofficial label if only news exists; see `BAGGAGE_DETAIL.md`). Then, not yet approved: baggage FEES sections (14 real queries), check other templates for ticket-style differences.
