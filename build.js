@@ -328,8 +328,8 @@ function countryShell(o){/*data-country4*/
     {t:'Pets',u:'/pets/'+sl+'/',key:'pets'}
   ];
   if(sl==='european-union')tabs.shift(); /* the EU master has no overview page */
-  var act=o.mode==='hub'?'hub':(o.cat||null);
-  var tabHtml=tabs.map(function(t){return '<a class="tab'+(t.key&&t.key===act?' on':'')+'" href="'+t.u+'">'+esc(t.t)+'</a>';}).join('');
+  /* a tab is selected ONLY on its own landing page (URL equals the tab URL); item pages (one medicine etc.) select none */
+  var tabHtml=tabs.map(function(t){return '<a class="tab'+(o.url===t.u?' on':'')+'" href="'+t.u+'">'+esc(t.t)+'</a>';}).join('');
   var moreBlock=tabRowBlock();
 
   var main;

@@ -494,3 +494,6 @@ Every country-section page (hub, Duty-free, Vapes, Tobacco, Medication, Pets, Fo
 
 ## 8.24 Verdict badge labels (2026-10-15, user order)
 Amber = "Some rules apply" on every page type (country, food, pets, medication, homepage answer); other labels: **Allowed**, **Not allowed**, **Check the source**, **No matches found**. Airline cards keep their own specific verdict headlines. The amber label never names one kind of condition (not "allowance", not "check first"): yes, but a limit, declaration, permit, document or restriction applies, and the card headline says which.
+
+### 8.23b Which tab is selected (2026-10-15)
+A country tab is selected ONLY on its own landing page (page URL == tab URL). Item pages (one medicine, the EU-to-UK page, ...) select no tab, and never two. The Medication tab goes to `/medication/into/<country>/`, which selects Medication (not Overview). Guard: `audit_country_tabs.js` (landing pages must select their tab, item pages none, hub exists).
