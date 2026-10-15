@@ -253,3 +253,5 @@ Emirates (emirates), Qatar Airways (qatar-airways), Gulf Air (gulf-air), Royal J
 
 ## 2026-10-14 Wi-Fi pages batch 8 (deployed, UNOFFICIAL-source pages with the Unofficial label): TO REQUEST after batch 7
 China Eastern (china-eastern), Copa (copa-airlines), Saudia (saudia), Royal Air Maroc (royal-air-maroc), flydubai (flydubai), Middle East Airlines (middle-east-airlines) (all https://canitakethis.co/airline/<slug>/wifi/).
+
+- TO REQUEST (2026-10-15, built, not yet deployed): https://canitakethis.co/country/united-kingdom/duty-free-from-eu/ (new page: duty-free allowance from the EU to the UK)

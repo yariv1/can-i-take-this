@@ -44,6 +44,7 @@ const CTOB=require('./country_tobacco.js');
 const CPLANT=require('./country_plants.js');
 const CALC=require('./country_alcohol.js');
 const EUM=require('./eu_master.js');
+const UKFE=require('./uk_from_eu.js');
 // ---- title / meta description helpers (2026-10-07 title batch, see TITLE_BATCH.md) ----
 // Meta descriptions must name the subject (airline / country) and carry the real answer; titles carry the key number only when the page data has it.
 function cutDesc(str, n){ str=String(str||'').replace(/\s+/g,' ').trim(); n=n||158; if(str.length<=n) return str; var c=str.slice(0,n); var d=c.lastIndexOf('. '); if(d>n*0.55) return c.slice(0,d+1); var i=c.lastIndexOf(' '); c=c.slice(0,i>n*0.6?i:n-1).replace(/[,;:\-\s]+$/,''); return c+'\u2026'; }
@@ -313,7 +314,7 @@ function countryShell(o){/*data-country4*/
   function flagFromCode(cc){var c=String(cc).toLowerCase();return '<img class="fimg" src="https://flagcdn.com/'+c+'.svg" alt="'+esc(String(cc).toUpperCase())+'" loading="lazy">';}
   var flag=flagFromCode(o.c.code);
   var VICON={go:'<path d="M20 6 9 17l-5-5"/>',warn:'<path d="M12 9v4m0 4h.01M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"/>',stop:'<circle cx="12" cy="12" r="9"/><path d="M8 12h8"/>',info:'<circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v4h1"/>'};
-  var VLABEL={go:'Allowed',warn:'Check first',stop:'Not allowed',info:'Check the source'};
+  var VLABEL={go:'Allowed',warn:'Some rules apply',stop:'Not allowed',info:'Check the source'};
   /* one scrollable tab row, same as airline pages (DESIGN_SYSTEM.md): no 'All rules', no 'Show more' */
   var tabs=[
     {t:'Overview',u:'/country/'+sl+'/',key:'hub'},
@@ -524,7 +525,7 @@ function airPlaneShell(o){
   var a=o.a, cat=o.cat, url=o.url, sl=slug(a.name), canonical=BASE+url, G=!!o.generic, H=!!o.hub;
   var VOL=(cat==='liquids'||cat==='perfume'||cat==='alcohol'), POWER=(cat==='power'), VAPE=(cat==='vape'||cat==='lighter'||cat==='sharp');
   var VICON={go:'<path d="M20 6 9 17l-5-5"/>',warn:'<path d="M12 9v4m0 4h.01M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"/>',stop:'<circle cx="12" cy="12" r="9"/><path d="M8 12h8"/>',info:'<circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v4h1"/>'};
-  var VLABEL={go:'Allowed',warn:'Check first',stop:'Not allowed',info:'Check the source'};
+  var VLABEL={go:'Allowed',warn:'Some rules apply',stop:'Not allowed',info:'Check the source'};
   var PSRC=null;
   function help(){ if(PSRC) return '<div class="help src-ok"><div class="help-h">✓ Official source</div><a class="hitem" href="'+esc(PSRC.url)+'" target="_blank" rel="noopener"><span class="hi-ic">\uD83C\uDF10</span><span class="hi-l">'+esc(PSRC.label)+'<small>'+esc(PSRC.sub||'Power bank rules')+'</small></span><span class="hi-go">\u2197</span></a><div class="hnote">To be 100% sure, we always recommend confirming with the official channels.</div></div>'; if(!a.site) return ''; return '<div class="help"><div class="help-h">Helpful sources</div><a class="hitem" href="https://www.'+esc(a.site)+'" target="_blank" rel="noopener"><span class="hi-ic">\uD83C\uDF10</span><span class="hi-l">'+esc(a.name)+' website<small>Baggage & rules</small></span><span class="hi-go">\u2197</span></a><div class="hnote">To be 100% sure, we always recommend confirming with the official channels.</div></div>'; }
   function card(v,bagLabel){ PSRC=(v&&v.source&&v.source.url)?v.source:null;
@@ -984,7 +985,7 @@ function run(){
       write(url+'index.html', countryShell({
         mode:'cat', url, c, cat:cc.cat, v,
         canonical:EUC?(BASE+EUM.url(cc.cat)):null,
-        extra:(CV?CV.html:'')+(EUC?EUM.note(cn,cc.cat):''), faqExtra:CV?CV.faq:null,
+        extra:(CV?CV.html:'')+(EUC?EUM.note(cn,cc.cat):'')+(cn==='United Kingdom'&&(cc.cat==='alcohol'||cc.cat==='tobacco')?UKFE.note():''), faqExtra:CV?CV.faq:null,
         title:CV?(CV.ttl+' | canitakethis.co'):`${batchTitle(cc.cat, cn, v, cc.t(cn))} | canitakethis.co`,
         desc:CV?CV.desc:batchDesc(({alcohol:cn+' duty-free alcohol allowance 2026',cash:cn+' cash declaration limit 2026',tobacco:cn+' duty-free tobacco allowance 2026',plants:'Bringing plants or seeds into '+cn+' (2026)',vape:'Vaping in '+cn+' 2026'})[cc.cat]||cn, cc.cat==='plants'?{head:v.head,lines:[String((v.lines||[]).filter(Boolean)[0]||'').replace(' for biosecurity','')]}:v, cc.cat==='tobacco'||cc.cat==='alcohol'||cc.cat==='cash'),
         h1:cc.q(cn), faqA:`${v.head} ${(v.lines||[]).filter(Boolean).join(' ')}`
@@ -1013,6 +1014,16 @@ function run(){
     }));
     pages.push({url:M.url,changefreq:'monthly'});
   });
+
+  // UK as destination, arriving from an EU country (GOV.UK, Great Britain vs Northern Ireland)
+  (function(){
+    var P=UKFE.page(), ukc=COUNTRIES.find(function(x){return x.name==='United Kingdom';});
+    write(P.url+'index.html', countryShell({
+      mode:'cat', url:P.url, c:ukc, cat:'alcohol', v:{status:'warn',head:P.head,lines:P.lines,src:'Official GOV.UK pages'},
+      extra:P.html, faqExtra:P.faq, title:P.ttl+' | canitakethis.co', desc:P.desc, h1:P.h1, faqA:P.head+' '+P.lines.join(' ')
+    }));
+    pages.push({url:P.url,changefreq:'monthly'});
+  })();
 
   // ---------- 3b. MEDICATION INTO COUNTRY (high-friction) ----------
   const medEntries=[

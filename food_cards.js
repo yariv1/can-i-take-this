@@ -1,6 +1,6 @@
 // Quick-answer verdict cards for the food test group (the pass/warn/stop cards at the top of /food/<country>/), 2026-10-12.
 // Each card is a REAL country-specific answer from the official pages listed in food_detail*.js; no generic text.
-// status: go = Allowed, warn = Check first, stop = Not allowed, info = Check the source. `skip` = indexes of detail sections that would only repeat the cards.
+// status: go = Allowed, warn = Some rules apply, stop = Not allowed, info = Check the source. `skip` = indexes of detail sections that would only repeat the cards.
 module.exports = {
   "South Korea": {
     skip: [3],

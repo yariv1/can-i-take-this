@@ -491,3 +491,6 @@ Every country-section page (hub, Duty-free, Vapes, Tobacco, Medication, Pets, Fo
 
 ## 8.22b Heading flag/logo aligned to the top (2026-10-15)
 `.airhead` uses `align-items:flex-start` (global_ui.css rule 4): the flag or logo stays level with the first line of the title on every tab, even when one tab's title wraps to two lines.
+
+## 8.24 Verdict badge labels (2026-10-15, user order)
+Amber = "Some rules apply" on every page type (country, food, pets, medication, homepage answer); other labels: **Allowed**, **Not allowed**, **Check the source**, **No matches found**. Airline cards keep their own specific verdict headlines. The amber label never names one kind of condition (not "allowance", not "check first"): yes, but a limit, declaration, permit, document or restriction applies, and the card headline says which.
