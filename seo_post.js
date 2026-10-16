@@ -87,7 +87,7 @@ function related(url) {
   } else if ((m = /^\/medication\/([^/]+)\/([^/]+)\/$/.exec(url)) && m[1] !== 'into') {
     const c = LISTS.countries.find(x => slugify(x.name) === m[2]); if (!c) return groups;
     add('More about ' + c.name, [{ u: '/medication/into/' + m[2] + '/', t: 'All medication rules for ' + c.name }, { u: '/country/' + m[2] + '/', t: 'All ' + c.name + ' customs rules' }, { u: '/food/' + m[2] + '/', t: 'Food into ' + c.name }]);
-    add('The same medication in other countries', neighbours(LISTS.countries, c.name, 6).map(x => ({ u: '/medication/' + m[1] + '/' + slugify(x.name) + '/', t: x.name, c: x.code })));
+    const mp = global.__medPages && global.__medPages[m[1]]; /* medicines that exist only for countries with a verified rule */ add('The same medication in other countries', neighbours(LISTS.countries, c.name, 6).filter(x => !mp || mp.indexOf(slugify(x.name)) > -1).map(x => ({ u: '/medication/' + m[1] + '/' + slugify(x.name) + '/', t: x.name, c: x.code })));
     add('Guides', [guideLink('banned-medications-by-country-2026', 'Banned medications by country'), guideLink('medication-time-zones', 'Medication across time zones')]);
   } else if ((m = /^\/medication\/into\/([^/]+)\/$/.exec(url))) {
     const c = LISTS.countries.find(x => slugify(x.name) === m[1]); if (!c) return groups;
@@ -95,6 +95,7 @@ function related(url) {
     add('Medication rules in other countries', neighbours(LISTS.countries, c.name, 6).map(x => ({ u: '/medication/into/' + slugify(x.name) + '/', t: x.name, c: x.code })));
     add('Guides', [guideLink('banned-medications-by-country-2026', 'Banned medications by country')]);
   }
+  if (url.indexOf('/country/european-union/') === 0) { const ok = /^\/country\/european-union\/(alcohol|cash|tobacco|plants-seeds)\/$/; groups.forEach(g => { g.l = g.l.filter(x => !/european-union/.test(x.u) || ok.test(x.u)); }); return groups.filter(g => g.l.length); } /* EU master: only link to pages that exist */
   return groups;
 }
 let articleRows = null;
