@@ -1,5 +1,17 @@
 # Blog roadmap (written 2026-10-10, session 20)
 
+## SESSION 30 STATE (end of session 30, 2026-10-16): READ THIS FIRST
+- **Live: origin/main `176d5ff91` (+ this docs commit).** Full handoff = memory file `project_blog_roadmap.md` (session 30); this block is the repo copy.
+- **Done and deployed in session 30:** country pages tab row `Overview | Food | Plants | Duty-free | Tobacco | Medication | Cash | Vapes | Pets` (Overview = the country hub, order = Search Console impressions of the tab pages, DS 8.23); a tab is selected ONLY on its own landing page, item pages select none (DS 8.23b, `audit_country_tabs.js`); heading flag top-aligned (global_ui.css rule 4, DS 8.22b); amber verdict label is now "Some rules apply" on all page types except airline cards (DS 8.24, `audit_verdict_label.js`); new page `/country/united-kingdom/duty-free-from-eu/` (module `uk_from_eu.js`, GOV.UK, Great Britain vs Northern Ireland) linked from the UK Duty-free and Tobacco pages; Morocco and Ukraine duty-free limits from official pages.
+- **BUILT BUT NOT DEPLOYED (working tree, backup patch `.claude/session30_other_goods_uncommitted.patch`):** "other goods" value line on the Duty-free cards of UK, US, Japan, New Zealand, Singapore, Mauritius, Fiji, Morocco (`CUST_DATA` in `canitakethis.html`) + EU master section/FAQ (`eu_master.js`). Give preview links, wait for "deploy".
+- **OPEN UI decisions:** the line under the badge ("At the border"; proposal "Read the rule below."), the footer source line (proposal: green "OFFICIAL SOURCE" / amber "UNOFFICIAL SOURCE" pattern of DS 8.21 with name and checked date), sub-lines that still say "check first", the 27 px tab-row jump between tabs, mobile table labels (his decision), 14px floor.
+- **Duty-free work waiting:** 14 country pages still vague (Argentina, Cambodia, Colombia, Cuba, Ethiopia, Jordan, Kuwait, Lebanon, Malaysia, Nepal, Nigeria, Panama, Qatar, Russia; official sites unreadable; unofficial figures agree only for Russia 3 L, Malaysia 1 L, Kuwait banned, Qatar banned); "from the UK to the EU" = a line on the EU master page (unanswered); US/Canada origin lines; connecting-flight pointer. **Seat power per airline:** research done (intent strong, Ahrefs <100), plan = list airlines that publish it on their own pages, test group of 15-20, not built.
+- **HARD rules added:** always preview links written in the message text (his Chrome) + server verified before any "deploy?" question; QA and debug before handoff (test every page type and the real click path, add a guard with a negative test).
+- **Dates:** the Oct 15 GSC + GA recheck was never logged; 2026-10-20 again; 2026-10-26 / 2026-11-09 food compare; 2026-10-29 power-bank test check; 2026-11-03 Wi-Fi pilot check.
+
+---
+(Older block below, kept as history.)
+
 ## SESSION 29 STATE (end of session 29, 2026-10-15): READ THIS FIRST
 - **Live: origin/main `a370e8669` (+ this docs commit).** Full handoff = memory file `project_blog_roadmap.md` (session 29); this block is the repo copy. Site = 82 airlines, 85 countries, 2,010 sitemap URLs, 70 airline Wi-Fi pages (7 Unofficial), 15 Compensation pages.
 - **USER FOCUS (2026-10-15):** all blog articles have 0 clicks, so the focus is improving the APP and the info about airlines and countries (anything users want to find). Blogs are not a priority.
