@@ -98,3 +98,10 @@ Before every deploy: `node audit_global_ui.js` must print "OK global ui" (global
 `node audit_card_tokens.js` must print "OK card tokens": every template that renders the ticket card (.pass/.perf) defines the --card colour tokens (the airline Baggage template lacked them, so its ticket looked different from all other pages).
 
 **Note 2026-10-15:** `node audit_seo_change_scope.js` now takes more than 110 s: run it with `timeout 280`. Cross-page UI rules live in `global_ui.css` (DS 8.22), never per template.
+
+
+## Additions from session 32 (2026-10-16)
+- New guards that must print OK before every deploy: `node audit_source_state.js` (source-state label vs links on medication/food/pets/country cards, medication OFFICIAL only on verified/confirm-sentence cards, no "not checked" wording, no country-specific claim on unverified medication cards) and `node audit_internal_links.js` (every internal href on medication/country/food/pets pages resolves to a built page). Also `audit_source_links.js`, `audit_source_label.js`, `audit_font_floor.js`, `audit_verdict_label.js`, `audit_country_tabs.js`, `audit_card_tokens.js`, `audit_capsules.js`, `audit_bag_selector.js`, `audit_currency.js`, `audit_global_ui.js`, `audit_seo.js --fail`, `timeout 280 node audit_seo_change_scope.js`.
+- New files must be added SEPARATELY: after `git add -u`, `git add <each new medication/<drug>/ dir and new scripts>`; never `git add .claude/`.
+- The 6-hourly bot pushes advisories.json / level4.json / mexico.json: if `git push` is rejected, `git pull --rebase origin main`; on conflicts in those three json files take upstream (`git checkout --ours <file>` during the rebase, then `git add`, `GIT_EDITOR=true git rebase --continue`), rerun `node build.js` (should show no diff), push again, then poll `gh run list --limit 1 --json headSha,status,conclusion` until the NEW sha is completed/success (until-loop), then `node indexnow.js`, then fetch one live page.
+- Medication work: see MEDICATION_WORKFLOW.md and MEDICATION_COUNTRIES.md (status per country).
