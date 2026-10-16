@@ -34,3 +34,6 @@ html body .relnav h2+h3{margin-top:0}
 /* 11. Ticket card inner spacing (DS 8.27): 26px below the perforation, 23px above "Helpful sources", 28px below the last line. */
 html body .pass .body{padding-top:26px;padding-bottom:28px}
 html body .pass .help{margin-top:23px}
+/* 12. PREVIEW (not yet a DS rule): card footer line names the source status in the same capital label as 8.21. */
+html body .pass .src b.src-ok{color:var(--tg-green);letter-spacing:1.2px}
+html body .pass .src b.src-no,html body .pass .src b.src-un{color:var(--tg-amber);letter-spacing:1.2px}

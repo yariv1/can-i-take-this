@@ -510,3 +510,11 @@ The first sub-heading under a section title sits at the same distance as a parag
 
 ### 8.27 Ticket card inner spacing (HARD, 2026-10-16, global_ui.css rule 11)
 Inside every verdict/ticket card (`.pass`): **26px** between the perforation line and the first row ("ENTERING ..."), **23px** between the bullet list and the "Helpful sources" box, **28px** between the last line (source text) and the card's bottom edge. Set only in `global_ui.css`; templates never set padding on `.pass .body` or margin on `.pass .help`. `audit_global_ui.js` fails if a page lacks these values.
+
+### 8.28 Source status on country cards: three states, and a named source ALWAYS has its link (HARD, 2026-10-16)
+The footer line of every country customs card (alcohol, tobacco, cash, plants, vape; `srcFoot()` in build.js) shows exactly one of:
+1. **✓ OFFICIAL SOURCE** (green): the facts come from the authority (customs, government, EU, WHO). The EU country pages inherit the EU "Your Europe" source of the EU master page.
+2. **⚠ UNOFFICIAL SOURCE** (amber; the third party is named in the links box, with a date, see 8.21): facts come from a third party.
+3. **BASED ON GLOBAL RULES** (amber) + "We did not find a source specific to <country>..." : no source at all. Never shown as a source label.
+**HARD RULE: whenever the footer says OFFICIAL or UNOFFICIAL SOURCE, the same card must show the link(s) in its "Helpful sources" box** (sources that live only lower in the page body are lifted into the box by `bodySources()`). The amber badge sub-line is "Read the rule below." (not "At the border"). Guard: `audit_source_links.js` (negative test done: fails when the links are removed). Food, pets and medication cards keep their own footer for now.
+The footer never repeats the source name: the name lives only in the "Helpful sources" box (user, 2026-10-16).

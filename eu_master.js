@@ -112,4 +112,6 @@ function note(cn, cat) {
 
 function master(cat) { const r = M[cat](); r.url = url(cat); return r; }
 
-module.exports = { CATS, url, isEU, master, note };
+const SRC = { alcohol: [{ label: "EU Your Europe — alcohol, tobacco and cash", url: YE }], tobacco: [{ label: "EU Your Europe — alcohol, tobacco and cash", url: YE }], cash: [{ label: "EU Your Europe — carrying cash", url: YE_CASH }], plants: [{ label: "EU Your Europe — plants and plant products", url: YE_PLANT }] };
+const src = cat => SRC[cat] || null;
+module.exports = { CATS, url, isEU, master, note, src };
