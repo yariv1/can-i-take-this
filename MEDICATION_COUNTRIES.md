@@ -16,7 +16,7 @@ How to continue: read MEDICATION_WORKFLOW.md, take a NOT DONE country, find its 
 | Thailand | CATEGORY NOTE (MED_NOTE) | https://en.fda.moph.go.th/entrepreneurs-narcotic-drugs-and-psychotropic-substances/category/guidance-for-travelers-under-treatment-carrying-personal-medications-containing-narcotic-drugs-into-/ | rows NOT added: current FDA page gives schedules + quantities (used as MED_NOTE) but no ingredient list; the permit portal drug check is a dynamic app |
 | Australia | PER-MEDICINE ROWS (MED_VER) | https://www.odc.gov.au/travellers/travelling-or-australia-medicines-and-medical-devices |  |
 | Canada | PER-MEDICINE ROWS (MED_VER) | https://www.canada.ca/en/health-canada/services/health-concerns/controlled-substances-precursor-chemicals/controlled-substances/compliance-monitoring/travelling-into-and-out-of-canada-with-prescription-medication-containing-controlled-substances.html |  |
-| Italy | CATEGORY NOTE (MED_NOTE) | https://conslondra.esteri.it/wp-content/uploads/2022/08/02_AssistenzaSociale_quantitativi_massimi_farmaci.doc |  |
+| Italy | CATEGORY NOTE (MED_NOTE) | https://conslondra.esteri.it/wp-content/uploads/2022/08/02_AssistenzaSociale_quantitativi_massimi_farmaci.doc | 2026-10-16 re-check: salute.gov.it page unreadable (504 / bot validation), text from session 32 NOT re-verified |
 | Spain | CATEGORY NOTE (MED_NOTE) | https://www.aemps.gob.es/industria-farmaceutica/comercio-exterior/medicamentos-destinados-al-tratamiento-de-los-viajeros/ |  |
 | Greece | NOT DONE |  | no traveller page found (EOF/AADE) |
 | Turkey | CATEGORY NOTE (MED_NOTE) | https://www.mfa.gov.tr/turkiye_ye-ait-gumruk-bilgileri.en.mfa |  |
