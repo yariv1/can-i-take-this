@@ -367,7 +367,7 @@ Three-up variant for short cards (national overview): `column-width:250px;column
 
 ### 8.14 Country page links: flag + name, never a button (HARD RULE, 2026-10-08)
 
-A link to a country page is always shown ONE way everywhere on the site: the country flag (flagcdn.com img, left, about 22x15, 2px radius) followed by the country name, in the accent colour, underline on hover. No button shape: no background, no border, no pill, no padding box. Layout is either a multi-column list (the `.eu-cl` grid) or a cloud (items one after another, wrapping to the next line). Implementations: `eu_master.js` (`.eu-cl`) and the `a.rc` links in the `relnav` block of `seo_post.js`. Any new template or component that links to a country page must reuse this pattern.
+A link to a country page is always shown ONE way everywhere on the site: the country flag (flagcdn.com img, left, about 22x15, 2px radius) followed by the country name, in the accent colour, underline on hover. No button shape: no background, no border, no pill, no padding box. Layout is ALWAYS a cloud (items one after another, wrapping to the next line); never a grid or column list (2026-10-16: the EU master `.eu-cl` list was a 3-column grid, fixed, guard `audit_font_floor.js`). Implementations: `eu_master.js` (`.eu-cl`) and the `a.rc` links in the `relnav` block of `seo_post.js`. Any new template or component that links to a country page must reuse this pattern.
 
 **General rule: design consistency first.** The same kind of thing is presented the same way on every page. Before adding a component, check whether the site already has one for that job and reuse it; never invent a second style for the same thing.
 
@@ -497,3 +497,16 @@ Amber = "Some rules apply" on every page type (country, food, pets, medication, 
 
 ### 8.23b Which tab is selected (2026-10-15)
 A country tab is selected ONLY on its own landing page (page URL == tab URL). Item pages (one medicine, the EU-to-UK page, ...) select no tab, and never two. The Medication tab goes to `/medication/into/<country>/`, which selects Medication (not Overview). Guard: `audit_country_tabs.js` (landing pages must select their tab, item pages none, hub exists).
+
+### 8.25 Global UI rules, session 31 (HARD, 2026-10-16; all live in `global_ui.css` rules 5-9, `font_floor.js`, guard `audit_font_floor.js`)
+- **Font floor 14px:** NO text on the site is smaller than 14px (footer, tabs, badges, tables, articles, header, everything). `font_floor.js` raises every smaller `font-size` in `<style>` blocks and `style=""` attributes of every generated page (build.js `write()`, app.html, app/index.html); runtime-injected CSS (currency.js) must also stay at 14px or more. `audit_font_floor.js` fails on any smaller value.
+- **Inline text links** (`a` without class inside p/li/dd/td, not in a nav) use `var(--accent)`, visited too; never the browser blue/purple.
+- **No divider under the "Helpful sources" box** (`.help + .src`), **no divider below a ticket card** (`.relnav` on pages with a `.pass`), and 3em above `.relnav`, 1.8em above its h3, 2.4em above "Read the full guide".
+- **Country links: one cloud everywhere** (see 8.14).
+
+### 8.26 Section titles (HARD, 2026-10-16, global_ui.css rule 10)
+Every section title (h2 in `.bd-sec`, `.bd-faq`, `.relnav`, article `.prose`) is **20px**, line-height 1.3, 0 above inside its section, .6em below. Every section (`.bd-sec`, `.bd-faq`, `.relnav`, `.readmore`) has **40px** above it; article h2 has 40px above. Never set a size or top margin on a section title in a template. The "Read the full guide" box label and the source labels are small capital labels (14px mono), not section titles. No emoji flags in titles (Windows shows them as the letters "EU"); the title of the EU-to-UK link block is plain text: "Travelling to the UK from the EU?".
+The first sub-heading under a section title sits at the same distance as a paragraph would (`.relnav h2 + h3` has 0 above); later sub-headings keep 1.8em.
+
+### 8.27 Ticket card inner spacing (HARD, 2026-10-16, global_ui.css rule 11)
+Inside every verdict/ticket card (`.pass`): **26px** between the perforation line and the first row ("ENTERING ..."), **23px** between the bullet list and the "Helpful sources" box, **28px** between the last line (source text) and the card's bottom edge. Set only in `global_ui.css`; templates never set padding on `.pass .body` or margin on `.pass .help`. `audit_global_ui.js` fails if a page lacks these values.

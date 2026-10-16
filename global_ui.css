@@ -10,3 +10,27 @@ html body .pass{margin-bottom:24px}
 /* 4. Page heading: the flag/logo sits at the top-left, aligned with the first line of the title, so it does not jump when a title wraps to two lines on another tab. */
 html body .airhead{align-items:flex-start}
 html body .airhead .cflag,html body .airhead .logo{margin-top:1px}
+/* 5. Inline text links use the accent colour (never the browser's default blue or purple). Chips, cards and nav blocks keep their own style. */
+html body :is(p,li,dd,td) a:not([class]):not(nav a),html body :is(p,li,dd,td) a:not([class]):not(nav a):visited{color:var(--accent)}
+/* 6. "Helpful sources" box: no divider line under it before the source text (the box already ends the section). */
+html body .help+.src{border-top:0;padding-top:0}
+/* 7. No divider below a ticket card (it is redundant), and more air between the sections under it. */
+html body main:has(.pass) .relnav{border-top:0;padding-top:0}
+html body .relnav{margin-top:3em}
+html body .relnav h3{margin:1.8em 0 .6em}
+html body .readmore{margin-top:2.4em}
+/* 8. Country links are ONE cloud everywhere: flag + name, wrapping line after line (never a grid or column list). DS 8.14 */
+html body ul.eu-cl{display:flex;flex-wrap:wrap;gap:4px 14px}
+/* 9. Font floor: nothing under 14px. build.js raises every smaller font-size through font_floor.js; audit_font_floor.js checks it (DS 8.25). */
+html body .tlinks a,html body footer{font-size:14px}
+/* 10. Section titles (h2) are ONE size, 20px, with the same gap above (40px) and below on every page; no emoji flags in titles. DS 8.26 */
+html body .bd-sec h2,html body .bd-faq h2,html body .relnav h2,html body .prose h2{font-size:20px;line-height:1.3;margin:0 0 .6em;padding:0}
+html body .bd-sec,html body .bd-faq,html body .relnav{margin-top:40px;margin-bottom:0}
+html body .relnav{margin-top:40px}
+html body .readmore{margin-top:40px}
+html body .prose h2{margin:40px 0 .6em}
+html body .prose .readmore h2,html body .readmore h2{font-size:14px;margin:0 0 8px}
+html body .relnav h2+h3{margin-top:0}
+/* 11. Ticket card inner spacing (DS 8.27): 26px below the perforation, 23px above "Helpful sources", 28px below the last line. */
+html body .pass .body{padding-top:26px;padding-bottom:28px}
+html body .pass .help{margin-top:23px}

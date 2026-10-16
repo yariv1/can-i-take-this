@@ -10,6 +10,7 @@ let bad = 0, n = 0;
       const s = fs.readFileSync(p, 'latin1');
       if (!/<\/head>/.test(s)) continue;
       n++;
+      if (s.includes('id="citt-global-ui"') && !(s.includes('.pass .body{padding-top:26px;padding-bottom:28px}') && s.includes('.pass .help{margin-top:23px}'))) { console.log('MISSING ticket spacing rule (DS 8.27): ' + p); bad++; }
       if (!s.includes('id="citt-global-ui"')) { console.log('MISSING global_ui.css: ' + p); bad++; }
     }
   }

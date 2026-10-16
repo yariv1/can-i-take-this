@@ -53,7 +53,7 @@ function page() {
 
 // short block on the UK Duty-free and Tobacco pages pointing here
 function note() {
-  return '<div class="bd-wrap">' + CSS + '<section class="bd-sec"><h2>🇪🇺 Coming from an EU country?</h2><p>See the allowance for travellers arriving from the EU, with the Great Britain and Northern Ireland rules: <a href="' + URL + '">Duty-free allowance from the EU to the UK</a>.</p></section></div>';
+  return '<div class="bd-wrap">' + CSS + '<section class="bd-sec"><h2>Travelling to the UK from the EU?</h2><p>See the allowance for travellers arriving from the EU, with the Great Britain and Northern Ireland rules: <a href="' + URL + '">Duty-free allowance from the EU to the UK</a>.</p></section></div>';
 }
 
 module.exports = { URL, page, note };
