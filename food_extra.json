@@ -2076,5 +2076,86 @@
     ]
    }
   ]
+ },
+ "Czechia": {
+  "checked": "17 October 2026",
+  "answer": "The Czech Customs Administration says that, under Commission Delegated Regulation (EU) 2019/2122, it is prohibited to import consignments of meat and milk products into the Union. Personal-consumption imports are allowed only from Andorra, Iceland, Liechtenstein, Norway, San Marino and Switzerland, and from the Faeroe Islands and Greenland in limited quantities of up to 10 kg per person.",
+  "sources": [
+   [
+    "https://celnisprava.gov.cz/en/dalsi-kompetence/informace-pro-fyzicke-osoby/Pages/veterinary-goods.aspx",
+    "Czech Customs Administration — Veterinary goods (personal consumption imports)"
+   ]
+  ],
+  "faq": [
+   [
+    "Can I bring meat or milk products into Czechia from a non-EU country?",
+    "No. The customs page says it is prohibited to import meat and milk products into the Union, with personal-consumption imports allowed only from Andorra, Iceland, Liechtenstein, Norway, San Marino and Switzerland."
+   ],
+   [
+    "Is anything allowed from the Faeroe Islands or Greenland?",
+    "Yes, in limited quantities of up to 10 kg per person."
+   ],
+   [
+    "Where do I find the rules on baby food, fish and penalties?",
+    "The page does not cover infant food, fish or penalties; it directs readers to the customs helpdesk and contact centre listed on the site."
+   ],
+   [
+    "Which regulation applies?",
+    "Commission Delegated Regulation (EU) 2019/2122, as cited by the Czech Customs Administration."
+   ]
+  ],
+  "topics": [
+   {
+    "id": "meat",
+    "label": "Meat & milk",
+    "status": "stop",
+    "verdict": "Not allowed",
+    "head": "Meat and milk products cannot be imported from outside the EU.",
+    "scen": [
+     {
+      "when": "From most non-EU countries",
+      "status": "stop",
+      "tag": "Not allowed",
+      "lines": [
+       "It is prohibited to import in the Union any consignments of meat and milk products, under Delegated Regulation (EU) 2019/2122."
+      ]
+     },
+     {
+      "when": "From Andorra, Iceland, Liechtenstein, Norway, San Marino, Switzerland",
+      "status": "go",
+      "tag": "Allowed",
+      "lines": [
+       "Personal-consumption imports are allowed from these six places."
+      ]
+     },
+     {
+      "when": "From the Faeroe Islands and Greenland",
+      "status": "warn",
+      "tag": "Up to 10 kg",
+      "lines": [
+       "Allowed in limited quantities, up to 10 kg per person."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "notread",
+    "label": "Not read",
+    "status": "warn",
+    "verdict": "Ask the helpdesk",
+    "head": "The page does not cover baby food, fish, fruit, vegetables, penalties or how to declare.",
+    "scen": [
+     {
+      "when": "What we could not confirm",
+      "status": "warn",
+      "tag": "Ask first",
+      "lines": [
+       "The page does not mention infant food, fish, penalties or how to declare these goods, and nothing on fruit, vegetables or plants.",
+       "It directs readers to the customs helpdesk and the contact centre listed on its site."
+      ]
+     }
+    ]
+   }
+  ]
  }
 }

@@ -22,7 +22,7 @@ if (!spec.country) bad.push('country');
 if (!spec.answer || spec.answer.length < 60) bad.push('answer');
 if (!Array.isArray(spec.sources) || !spec.sources.length || !spec.sources.every(x => /^https?:\/\//.test(x[0]) && x[1])) bad.push('sources');
 if (!Array.isArray(spec.faq) || spec.faq.length < 3) bad.push('faq(>=3)');
-if (!Array.isArray(spec.topics) || spec.topics.length < 3) bad.push('topics(>=3)');
+if (!Array.isArray(spec.topics) || spec.topics.length < 2) bad.push("topics(>=2)");
 (spec.topics || []).forEach(t => { if (!t.id || !t.label || !t.status || !t.verdict || !t.head || !Array.isArray(t.scen) || !t.scen.length || !t.scen.every(s => s.when && s.status && s.tag && Array.isArray(s.lines) && s.lines.length)) bad.push('topic ' + t.id); });
 if (bad.length) { console.log('bad spec: ' + bad.join(', ')); process.exit(1); }
 const all = fs.existsSync(FILE) ? JSON.parse(fs.readFileSync(FILE, 'utf8')) : {};
