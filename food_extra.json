@@ -1,0 +1,477 @@
+{
+ "United Kingdom": {
+  "checked": "17 October 2026",
+  "answer": "For Great Britain (England, Scotland, Wales), GOV.UK says you cannot bring meat, meat products, milk or dairy from outside the EU, with a few exceptions such as up to 2kg of powdered infant milk. From the EU, Switzerland, Norway and a few other places fish, poultry and eggs are allowed but most meat and all dairy are not. Undeclared banned products can mean a fine of up to £5,000 or prosecution.",
+  "sources": [
+   [
+    "https://www.gov.uk/bringing-food-into-great-britain",
+    "GOV.UK — Bringing food into Great Britain"
+   ]
+  ],
+  "faq": [
+   [
+    "Can I bring cheese or milk into Great Britain?",
+    "GOV.UK says no for dairy such as cheese, milk, butter and yoghurt, from the EU, Switzerland, Norway, Iceland, Liechtenstein, the Faroe Islands and Greenland as well as from other countries. The exception is up to 2kg of powdered infant milk, infant food or special medical food."
+   ],
+   [
+    "Can I bring meat into Great Britain?",
+    "Not from outside the EU. From the EU and the other listed places, pork, beef, lamb, mutton, goat, venison and products made from them, such as sausages, are not allowed, but poultry is."
+   ],
+   [
+    "Can I bring fruit and vegetables into Great Britain?",
+    "From the EU, Switzerland or Liechtenstein, yes for personal use. From other countries most need a phytosanitary certificate; without one you can bring only the items GOV.UK lists, such as pineapple, citrus fruit, banana, mango, dates and guava."
+   ],
+   [
+    "What happens if I do not declare banned food?",
+    "Border Force destroys declared banned products. If you do not declare them, GOV.UK says you could be fined up to £5,000 (in England) or prosecuted."
+   ]
+  ],
+  "topics": [
+   {
+    "id": "meat",
+    "label": "Meat & dairy",
+    "status": "stop",
+    "verdict": "Not allowed",
+    "head": "Meat and dairy from outside the EU are banned; from the EU, cheese, milk and most meat are banned too.",
+    "scen": [
+     {
+      "when": "From outside the EU",
+      "status": "stop",
+      "tag": "Not allowed",
+      "lines": [
+       "You cannot bring meat or meat products, or milk or milk-based products.",
+       "Exceptions: up to 2kg per person of powdered infant milk, infant food or special food needed for medical reasons, in branded unopened packaging and not needing refrigeration."
+      ]
+     },
+     {
+      "when": "From the EU, Switzerland, Norway, Iceland, Liechtenstein, the Faroe Islands or Greenland",
+      "status": "warn",
+      "tag": "Part allowed",
+      "lines": [
+       "No pork, beef, lamb, mutton, goat, venison or products made from them, such as sausages.",
+       "No cheese, milk, butter or yoghurt.",
+       "Poultry and its products, and other animal products such as eggs and honey, are allowed for personal use."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "fish",
+    "label": "Fish & seafood",
+    "status": "warn",
+    "verdict": "Up to 20 kg",
+    "head": "From outside the EU you can bring up to 20 kg of fish in total.",
+    "scen": [
+     {
+      "when": "From outside the EU",
+      "status": "warn",
+      "tag": "Max 20 kg",
+      "lines": [
+       "Up to 20kg per person in total of fresh fish (gutted), fish products, processed fish (dried, cooked, cured or smoked), lobsters and prawns.",
+       "Up to 2kg per person of honey, live mussels or oysters, snails, frogs’ legs and insect protein.",
+       "Caviar needs a CITES permit."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "fruit",
+    "label": "Fruit, veg & nuts",
+    "status": "warn",
+    "verdict": "Depends where from",
+    "head": "Free from the EU; from elsewhere most need a plant health certificate.",
+    "scen": [
+     {
+      "when": "From the EU, Switzerland or Liechtenstein",
+      "status": "go",
+      "tag": "Allowed",
+      "lines": [
+       "Fruit, vegetables, nuts and seeds are allowed for personal use."
+      ]
+     },
+     {
+      "when": "From other countries",
+      "status": "warn",
+      "tag": "Certificate needed",
+      "lines": [
+       "Most fruit and vegetables need a phytosanitary certificate from the authorities of the country you leave.",
+       "Without one you may bring only pineapple, kiwi, coconut, citrus fruits, kumquat, persimmon, durian, curry leaves, banana and plantain, mango, dates, passion fruit and guava.",
+       "Processed and packaged plant products, peeled and processed nuts or nut butters, and certain grains such as rice are also allowed."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "packaged",
+    "label": "Packaged food",
+    "status": "go",
+    "verdict": "Allowed",
+    "head": "Bread, biscuits, pasta and similar items can come from any country.",
+    "scen": [
+     {
+      "when": "From any country, no restrictions",
+      "status": "go",
+      "tag": "Allowed",
+      "lines": [
+       "Bread (not sandwiches filled with meat or dairy), cakes without fresh cream, biscuits, chocolate and confectionery (not with a lot of unprocessed dairy), pasta and noodles (not meat-filled), packaged soup, stocks and flavourings.",
+       "Processed and packaged plant products, and food supplements with small amounts of an animal product such as fish oil capsules."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "petfood",
+    "label": "Pet food",
+    "status": "warn",
+    "verdict": "Limited",
+    "head": "Pet food is mostly banned from outside the EU; 2 kg only for health reasons.",
+    "scen": [
+     {
+      "when": "From the EU and the other listed places",
+      "status": "warn",
+      "tag": "Max 2 kg",
+      "lines": [
+       "Pet food with pig, cow, sheep, goat or deer meat or animal products is not allowed.",
+       "Other pet food, such as chicken, is allowed if commercially packaged with the maker’s name and address, up to 2kg per person."
+      ]
+     },
+     {
+      "when": "From outside the EU",
+      "status": "warn",
+      "tag": "Health only",
+      "lines": [
+       "Not allowed unless your pet needs it for health reasons, then up to 2kg per person, unopened and branded, not needing refrigeration.",
+       "Your pet must travel with you and you should carry evidence such as a vet’s letter. For more than 2kg, email imports@apha.gov.uk."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "penalty",
+    "label": "If you break the rules",
+    "status": "stop",
+    "verdict": "Fine up to £5,000",
+    "head": "Banned items are destroyed; undeclared ones can mean a fine of up to £5,000.",
+    "scen": [
+     {
+      "when": "At the border",
+      "status": "stop",
+      "tag": "Fine",
+      "lines": [
+       "Declared banned products are taken away and destroyed by Border Force.",
+       "If you do not declare them, you could be fined up to £5,000 (in England) or prosecuted.",
+       "Border Force can also seize products that are cross-contaminated, for example with meat blood; contaminated clothing or bags are destroyed. You can appeal if you think products were wrongly seized."
+      ]
+     },
+     {
+      "when": "Not covered",
+      "status": "warn",
+      "tag": "Ask first",
+      "lines": [
+       "Northern Ireland has different rules, which this page does not cover."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "Canada": {
+  "checked": "17 October 2026",
+  "answer": "The Canadian Food Inspection Agency says you must declare all food products you bring into Canada, and most foods are capped at 20 kg (or 20 L for liquids) for personal use. Rules differ by origin: meat from the US is allowed if retail packaged, while from other countries only commercially prepared, cooked, shelf-stable meat in sealed containers is allowed. Eggs from outside the US are not permitted.",
+  "sources": [
+   [
+    "https://inspection.canada.ca/en/food-safety-consumers/bring-food-personal-use",
+    "Canadian Food Inspection Agency — Bring food into Canada for personal use"
+   ]
+  ],
+  "faq": [
+   [
+    "Do I have to declare food when entering Canada?",
+    "Yes. The CFIA says that when travelling you must declare all food products you bring with you, and the Canada Border Services Agency may inspect them at the point of entry."
+   ],
+   [
+    "How much food can I bring into Canada?",
+    "For personal use only, with caps such as 20 kg for meat, dairy, fruit and vegetables, 5 dozen eggs from the US, 50 L of non-alcoholic drinks and 50 L of food-grade oils. Most other foods are capped at 20 kg, or 20 L for liquids."
+   ],
+   [
+    "Can I bring meat into Canada?",
+    "From the US, retail packaged or labelled meat with proof of origin, up to 20 kg. From other countries, fresh, dried and cured meats such as ham and sausage are not permitted; only commercially prepared, cooked, shelf-stable products in sealed containers, up to 20 kg."
+   ],
+   [
+    "Can I bring eggs into Canada?",
+    "Retail-packaged eggs labelled Product of the USA, up to 5 dozen, from the US. Eggs from other countries are not permitted."
+   ]
+  ],
+  "topics": [
+   {
+    "id": "meat",
+    "label": "Meat",
+    "status": "warn",
+    "verdict": "Depends where from",
+    "head": "From the US retail-packaged meat is allowed; from elsewhere only cooked, sealed products.",
+    "scen": [
+     {
+      "when": "From the United States",
+      "status": "warn",
+      "tag": "Max 20 kg",
+      "lines": [
+       "Only if you bring it with you, not by mail or courier, retail packaged or labelled, with proof of country of origin.",
+       "Farm or backyard meat that is not retail packaged is not permitted. Limit: 20 kg (44.09 lbs)."
+      ]
+     },
+     {
+      "when": "From other countries",
+      "status": "stop",
+      "tag": "Mostly banned",
+      "lines": [
+       "Fresh, dried and cured meats such as hams and sausages are not permitted.",
+       "Only commercially prepared, cooked, shelf-stable products in sealed containers, brought with you, up to 20 kg. Beef only from countries of negligible BSE risk."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "dairy",
+    "label": "Dairy",
+    "status": "warn",
+    "verdict": "Max 20 kg or L",
+    "head": "Up to 20 kg or 20 L; from outside the US only certain dairy products.",
+    "scen": [
+     {
+      "when": "From the United States",
+      "status": "go",
+      "tag": "Allowed",
+      "lines": [
+       "No specific restrictions are listed for cheese, yogurt, butter, milk, ice cream and kashk.",
+       "Limit: 20 kg (44.09 lbs) or 20 L (5.28 US gal)."
+      ]
+     },
+     {
+      "when": "From other countries",
+      "status": "warn",
+      "tag": "Limited list",
+      "lines": [
+       "Only ice cream, yogurt, kashk and pasteurized cheese are permitted from any country.",
+       "Unpasteurized cheese only from countries free of certain animal diseases. Limit 20 kg or 20 L."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "eggs",
+    "label": "Eggs",
+    "status": "warn",
+    "verdict": "US only",
+    "head": "Retail-packaged eggs from the US only, up to 5 dozen.",
+    "scen": [
+     {
+      "when": "From the United States",
+      "status": "warn",
+      "tag": "5 dozen",
+      "lines": [
+       "Must be retail packaged, for human consumption, and labelled Product of the USA. Farm or backyard eggs are not permitted.",
+       "Processed egg products: up to 20 kg or 20 L."
+      ]
+     },
+     {
+      "when": "From other countries",
+      "status": "stop",
+      "tag": "Not allowed",
+      "lines": [
+       "Eggs are not permitted."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "fruit",
+    "label": "Fruit & veg",
+    "status": "warn",
+    "verdict": "Check AIRS",
+    "head": "Up to 20 kg each; fresh produce from outside the US may be restricted.",
+    "scen": [
+     {
+      "when": "From the United States",
+      "status": "warn",
+      "tag": "Max 20 kg",
+      "lines": [
+       "Fresh produce is subject to the Automated Import Reference System (AIRS).",
+       "Potatoes must be commercially packaged and graded US No.1. Limits: fruits 20 kg, vegetables 20 kg."
+      ]
+     },
+     {
+      "when": "From other countries",
+      "status": "warn",
+      "tag": "May be banned",
+      "lines": [
+       "Fresh produce is subject to AIRS and may be restricted or prohibited depending on the country of origin; if permitted, 20 kg of fruit and 20 kg of vegetables.",
+       "Processed produce: 20 kg or 20 L."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "other",
+    "label": "Drinks, oils & others",
+    "status": "go",
+    "verdict": "Allowed within limits",
+    "head": "Most other foods are fine within the quantity caps.",
+    "scen": [
+     {
+      "when": "Quantity caps",
+      "status": "go",
+      "tag": "Within limits",
+      "lines": [
+       "Non-alcoholic beverages 50 L, food-grade oils 50 L, maple syrup 20 L, maple products 4 kg.",
+       "Most other foods, such as baked goods, confectionery, honey, spices, tea, coffee and grain foods: 20 kg, or 20 L for liquids."
+      ]
+     },
+     {
+      "when": "Duties and alcohol",
+      "status": "warn",
+      "tag": "Check limits",
+      "lines": [
+       "Duties and taxes may apply above the personal exemption limits.",
+       "Alcohol and tobacco follow Canada Border Services Agency limits, which this page links to."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "Japan": {
+  "checked": "17 October 2026",
+  "answer": "Japan's Animal Quarantine Service requires every traveller bringing in meat, organs, eggs or processed products such as jerky, ham, sausages and bacon to be inspected at the counter in the baggage claim area, and these items need a government inspection certificate from the exporting country. Without one they cannot enter, even as souvenirs. Bringing them in illegally is punishable by up to 3 years in prison or a fine of up to 3 million yen.",
+  "sources": [
+   [
+    "https://www.maff.go.jp/aqs/english/product/import.html",
+    "MAFF Animal Quarantine Service — importing animal products"
+   ]
+  ],
+  "faq": [
+   [
+    "Can I bring meat or sausages into Japan?",
+    "Meat, organs and processed products such as jerky, ham, sausages and bacon need a government-issued inspection certificate from the exporting country. Without one they cannot be brought in, even as souvenirs or for personal use."
+   ],
+   [
+    "Can I bring eggs into Japan?",
+    "Eggs, including eggshells, are subject to animal quarantine and need the same inspection certificate."
+   ],
+   [
+    "Do I have to go through inspection when I arrive in Japan?",
+    "Yes: travellers must undergo import inspection at the Animal Quarantine Service counter in the baggage claim area of the arrival airport or seaport."
+   ],
+   [
+    "What is the penalty for bringing animal products into Japan illegally?",
+    "A custodial sentence of up to 3 years or a fine of up to 3 million yen (up to 50 million yen for businesses). The fine maximum was raised from 1 million yen on 1 July 2020."
+   ]
+  ],
+  "topics": [
+   {
+    "id": "meat",
+    "label": "Meat & sausage",
+    "status": "stop",
+    "verdict": "Certificate needed",
+    "head": "Meat and processed meat need a government certificate from the exporting country.",
+    "scen": [
+     {
+      "when": "Meat, organs and processed products",
+      "status": "stop",
+      "tag": "Not without papers",
+      "lines": [
+       "Meat, organs, eggs (including eggshells) and processed products are subject to quarantine. Examples named: jerky, ham, sausages, bacon and meat buns.",
+       "Items need a government-issued inspection certificate from the exporting country; without one they cannot be brought in, even as souvenirs or for personal use."
+      ]
+     },
+     {
+      "when": "Vacuum-sealed, heat-processed or duty-free",
+      "status": "stop",
+      "tag": "Still not allowed",
+      "lines": [
+       "Vacuum-sealed, heat-processed, duty-free and small personal quantities are still not allowed if they are banned or lack a certificate."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "eggs",
+    "label": "Eggs",
+    "status": "stop",
+    "verdict": "Certificate needed",
+    "head": "Eggs, shells included, are subject to animal quarantine.",
+    "scen": [
+     {
+      "when": "Eggs and egg products",
+      "status": "stop",
+      "tag": "Not without papers",
+      "lines": [
+       "Eggs, including eggshells, need the same government inspection certificate.",
+       "Items from countries or regions with suspended imports cannot be brought in."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "fish",
+    "label": "Dried fish",
+    "status": "warn",
+    "verdict": "Usually exempt",
+    "head": "Dried fish without livestock meat or eggs is not subject to inspection.",
+    "scen": [
+     {
+      "when": "Dried fish",
+      "status": "warn",
+      "tag": "May be checked",
+      "lines": [
+       "Dried fish without livestock meat or eggs is not subject to inspection, but an officer may check it on arrival."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "fruit",
+    "label": "Fruit & veg",
+    "status": "stop",
+    "verdict": "Illegal",
+    "head": "The page states fruits and vegetables are illegal to bring in.",
+    "scen": [
+     {
+      "when": "Fresh fruit, vegetables",
+      "status": "stop",
+      "tag": "Not allowed",
+      "lines": [
+       "The animal quarantine page states that bringing in fruits, vegetables and similar items is illegal, and links to a separate plant quarantine page that we did not read.",
+       "Check the plant protection pages of MAFF before you travel with any plant product."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "inspection",
+    "label": "Inspection & fines",
+    "status": "warn",
+    "verdict": "Counter at arrival",
+    "head": "You are inspected at the Animal Quarantine counter; breaking the rules can mean prison.",
+    "scen": [
+     {
+      "when": "At the airport",
+      "status": "warn",
+      "tag": "Inspection",
+      "lines": [
+       "Travellers must undergo import inspection at the Animal Quarantine Service counter in the baggage claim area, and officers can ask whether you carry animal products and inspect your luggage."
+      ]
+     },
+     {
+      "when": "If you break the rules",
+      "status": "stop",
+      "tag": "Prison or fine",
+      "lines": [
+       "Bringing in meat or animal products illegally is punishable by a custodial sentence of up to 3 years or a fine of up to 3 million yen.",
+       "Failing to declare meat or animal products found in your luggage is also punishable, and officers may dispose of them."
+      ]
+     }
+    ]
+   }
+  ]
+ }
+}

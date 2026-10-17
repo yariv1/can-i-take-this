@@ -25,6 +25,9 @@ function cards(name) {
 
 const ICON = { go: '<path d="M20 6 9 17l-5-5"/>', warn: '<path d="M12 9v4m0 4h.01M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"/>', stop: '<circle cx="12" cy="12" r="9"/><path d="M8 12h8"/>' };
 const TOPICS = Object.assign({ Romania: require('./food_topics_romania.js') }, require('./food_topics.js'));
+// Session 34: countries added with food_add_country.js live in food_extra.json (answer, faq, sources, checked, topics)
+const EXTRA = (function () { try { return JSON.parse(require('fs').readFileSync(require('path').join(__dirname, 'food_extra.json'), 'utf8')); } catch (e) { return {}; } })();
+Object.keys(EXTRA).forEach(function (k) { const e = EXTRA[k]; DETAIL[k] = { answer: e.answer, stats: [], sections: [], faq: e.faq, sources: e.sources, checked: e.checked }; TOPICS[k] = { slab: 'What are you bringing?', topics: e.topics }; });
 
 // Source block inside every verified card: links first, then the OFFICIAL SOURCE footer (DESIGN_SYSTEM.md 8.28)
 function srcBlock(c) {
@@ -53,7 +56,7 @@ function render(c, d) {
     (TOPICS[c.name] ? [] : d.sections.filter((s, i) => skip.indexOf(i) < 0)).map(s => '<section class="bd-sec"><h2>' + s.h + '</h2>' + (s.p ? '<p>' + s.p + '</p>' : '') + (s.table ? table(s.table) : '') +
       (s.list ? '<ul>' + s.list.map(x => '<li>' + x + '</li>').join('') + '</ul>' : '') + '</section>').join('') +
     '<section class="bd-faq"><h2>❓ Quick answers</h2>' + d.faq.map(q => '<h3>' + esc(q[0]) + '</h3><p>' + esc(q[1]) + '</p>').join('') + '</section>' +
-    '<p class="bd-chk">Checked ' + CHECKED + ' on ' + esc(c.name) + "'s official government pages (linked in the cards above). Food import rules change with animal and plant disease outbreaks: confirm with the authority before you travel.</p>" +
+    '<p class="bd-chk">Checked ' + (d.checked || CHECKED) + ' on ' + esc(c.name) + "'s official government pages (linked in the cards above). Food import rules change with animal and plant disease outbreaks: confirm with the authority before you travel.</p>" +
     (TOPICS[c.name] ? '' : '<div class="bd-src"><div class="h">✓ Official sources</div>' + d.sources.map(s => '<a href="' + s[0] + '" target="_blank" rel="noopener noreferrer">' + s[1] + '</a>').join('') + '</div>');
 }
 
