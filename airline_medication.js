@@ -1,7 +1,7 @@
 // Airline Medication pages (pilot, 2026-10-17): /airline/<slug>/medication/ + a "Medication" tab, shown ONLY for airlines listed here.
 // Rule (user order 2026-10-17, same standard as the Wi-Fi pilot): an airline is listed ONLY when its OWN published pages were READ and say something about medication.
 // Everything on the cards comes from those airline pages plus TSA (US government). Anything an airline does not publish is said as "not published", never filled from third-party sources.
-// Pilot airlines: Delta, American, United, Southwest, then Ryanair, Emirates, Air Canada, Lufthansa, then JetBlue, KLM, easyJet, Air France, Turkish, then Qantas, Singapore Airlines, Cathay Pacific, Vueling, Finnair, Iberia, SAS (non-US carriers use their own pages; Air Canada also uses CATSA, Canada's screening authority). Alaska Airlines is NOT listed (pages unreadable): British Airways (the medicines section did not load), Qatar Airways (no readable medication page), alaskaair.com returned only an error page from every browser tried on 2026-10-17 (summaries are not reading).
+// Pilot airlines: Delta, American, United, Southwest, then Ryanair, Emirates, Air Canada, Lufthansa, then JetBlue, KLM, easyJet, Air France, Turkish, then Qantas, Singapore Airlines, Cathay Pacific, Vueling, Finnair, Iberia, SAS, then Etihad, Air India, LATAM, Air New Zealand, Aer Lingus, TAP (non-US carriers use their own pages; Air Canada also uses CATSA, Canada's screening authority). Alaska Airlines is NOT listed (pages unreadable): British Airways (the medicines section did not load), Qatar Airways (no readable medication page), alaskaair.com returned only an error page from every browser tried on 2026-10-17 (summaries are not reading).
 const COMP = require('./airline_compensation.js');
 const BAGD = require('./baggage_detail.js');
 const { CSS, table } = BAGD;
@@ -1179,6 +1179,317 @@ const NP = 'Not published on the pages we read';
       ['Medical approval?', 'MEDIF form for some conditions, up to 7 days']
     ],
     extra: steps(['Consult your doctor before booking if you take medication.', 'Complete and upload a MEDIF form if your situation needs one, well before you leave.', 'Bring a cooler for medication that must stay cold.', 'Bring your allergy medication on board with you.'])
+  });
+}
+
+// ---------------- ETIHAD ----------------
+// Read 17 October 2026 on etihad.com: How to request special assistance on your flight (Medication, Diabetes, Allergies, Medical equipment).
+{
+  const PG = ['https://www.etihad.com/en-us/help/faq/special-assistance', 'Etihad: How to request special assistance', 'Medication, diabetes, allergies, equipment'];
+  add({
+    slug: 'etihad-airways', name: 'Etihad Airways',
+    h1: 'Etihad Medication Policy: Medicines, Insulin, Needles & Medical Devices (2026)',
+    desc: 'Can you bring medication on Etihad? Yes, in your cabin baggage with a prescription or doctor\'s letter. Etihad cannot refrigerate medication. Dispose of needles through the cabin crew. Checked 17 October 2026.',
+    answer: 'Yes. Etihad says to always carry medication, including insulin, in your cabin baggage with a prescription or a letter from your doctor. Medication cannot be refrigerated onboard, and needles and syringes must be disposed of by telling a cabin crew member.',
+    srcNote: 'From Etihad\'s own page, last checked 17 October 2026. Rules change, so confirm with the airline before you fly.',
+    scen: [
+      card('pills', 'Pills & tablets', 'go', 'Cabin bag with prescription', 'Keep it with you', 'Etihad says to always carry medication in your cabin baggage with a prescription or letter from your doctor.', [
+        'Etihad: always carry medication in your cabin baggage with a prescription or letter from your doctor.',
+        'Etihad: regulations vary depending on the country you visit, so always check what medication you can or cannot take on your trip.',
+        'Etihad (asthma): always carry your medication in your cabin baggage.'
+      ], [PG], true),
+      card('liquids', 'Liquid medication', 'warn', 'Not published', 'Over 100 ml (3.4 oz)', 'The Etihad page we read gives no liquid limit for medication.', [
+        'The liquid limit for medication is set by the security rules at the airport you fly from: check them before you pack.'
+      ], [PG]),
+      card('needles', 'Insulin & syringes', 'warn', 'Prescription or letter', 'Needles, syringes, insulin', 'Carry insulin in your cabin baggage with a prescription or letter, and dispose of needles through the crew.', [
+        'Etihad (diabetes): always carry medication, including insulin, appropriately packaged in your cabin baggage with a prescription or letter from your doctor.',
+        'Etihad: dispose of needles and syringes responsibly by telling a member of the cabin crew.',
+        'Etihad: you do not need medical clearance to fly with diabetes. If you need a specific meal or treatment during the flight, tell Etihad at least 24 hours before. You may need clearance if your condition is unstable or you were recently admitted to hospital.'
+      ], [PG]),
+      card('cold', 'Cold medication', 'warn', 'No fridge on board', 'Medication that must stay cold', 'Etihad says medication cannot be refrigerated onboard.', [
+        'Etihad: medication cannot be refrigerated onboard.'
+      ], [PG]),
+      card('devices', 'Medical devices', 'warn', 'FAA label and batteries', 'CPAP, other devices', 'Medical devices used on board must be tested to US FAA requirements and run on battery.', [
+        'Etihad: medical devices intended for use on board must be labelled by the manufacturer to show they meet US Federal Aviation Administration / Department of Transportation requirements for medical portable electronic devices, or you provide a manufacturer\'s compliance letter or certificate.',
+        'Etihad: all medical devices must be dry-cell battery operated with a battery supply for 1.5 times the flight duration.'
+      ], [PG]),
+      card('allergy', 'Allergy medication', 'warn', 'Letter not older than 3 months', 'Auto-injectors (EpiPen)', 'If you are at risk of anaphylaxis, carry an auto-injector and a doctor\'s letter.', [
+        'Etihad: carry an auto-injector device (for example an EpiPen) or a syringe in your cabin baggage and make sure you or an escort are willing and capable of using it. Carry enough medication for the flight.',
+        'Etihad: present a medical certificate or doctor\'s letter confirming your need for the auto-injector, not older than three months from the date of travel.',
+        'Etihad: ask your doctor for preventative treatment and complete a MEDIF for clearance to fly.'
+      ], [PG]),
+      card('uae', 'Flying to the UAE', 'warn', 'Check UAE rules', 'Abu Dhabi and the UAE', 'The UAE has its own rules for controlled medication.', [
+        'Etihad\'s page does not state the UAE rules itself. See our <a href="/medication/adderall/united-arab-emirates/">UAE medication rules</a> from the official UAE sources.'
+      ].concat(ABROAD_LINES.slice(1)), [PG])
+    ],
+    faq: [
+      ['Can I bring medication on an Etihad flight?', 'Yes. Etihad says to always carry medication in your cabin baggage with a prescription or letter from your doctor, and to check which medication you can take to the country you visit.'],
+      ['Does Etihad refrigerate medication?', 'No. Etihad says medication cannot be refrigerated onboard.'],
+      ['Can I bring insulin on Etihad?', 'Yes. Etihad says to carry insulin appropriately packaged in your cabin baggage with a prescription or doctor\'s letter, and to dispose of needles and syringes by telling a cabin crew member. You do not need medical clearance with diabetes unless your condition is unstable.'],
+      ['Can I bring an EpiPen on Etihad?', 'Yes. Etihad says to carry the auto-injector in your cabin baggage, with a medical certificate or doctor\'s letter not older than three months, and to complete a MEDIF for clearance.']
+    ],
+    tableTitle: 'Etihad medication rules at a glance',
+    tableNote: 'What Etihad\'s own page says.',
+    rows: [
+      ['Where should medication go?', 'Cabin baggage, with prescription or doctor\'s letter'],
+      ['Can it be over 100 ml?', NP],
+      ['Insulin and needles?', 'Cabin baggage with letter; dispose via cabin crew'],
+      ['Fridge on board?', 'No'],
+      ['Medical devices?', 'FAA label or letter; battery for 1.5 times the flight'],
+      ['Auto-injector?', 'Cabin baggage, doctor\'s letter under 3 months old']
+    ],
+    extra: steps(['Carry all medication, including insulin, in your cabin baggage with a prescription or doctor\'s letter.', 'Tell the cabin crew if you used needles so you can dispose of them safely.', 'Bring your auto-injector with a doctor\'s letter not older than three months.', 'Check the rules of the country you fly to.'])
+  });
+}
+
+// ---------------- AIR INDIA ----------------
+// Read 17 October 2026 on airindia.com: Restricted Baggage & Prohibited Items Guidelines (medical needs, diabetes-related supplies).
+{
+  const PG = ['https://www.airindia.com/in/en/travel-information/baggage-guidelines/restricted-baggage.html', 'Air India: Restricted baggage and prohibited items', 'Medical needs, diabetes supplies'];
+  add({
+    slug: 'air-india', name: 'Air India',
+    h1: 'Air India Medication Policy: Medicines, Insulin, Syringes & Liquids over 100 ml (2026)',
+    desc: 'Can you bring medication on Air India? Yes. Medicines over 100 ml may be accepted if needed for the journey, with proof of authenticity. Insulin, pens, pumps and syringes are allowed after inspection. Checked 17 October 2026.',
+    answer: 'Yes. Air India lists diabetes supplies (insulin, pens, infusers, unused syringes with insulin, pumps) as allowed in cabin and checked baggage after inspection. For domestic passengers, medicines over 100 ml may be accepted if essential for the journey, with proof of authenticity and a doctor\'s note for prescription medication.',
+    srcNote: 'From Air India\'s own restricted baggage page, last checked 17 October 2026. Rules change, so confirm with the airline before you fly.',
+    scen: [
+      card('pills', 'Pills & tablets', 'go', 'Allowed with a note', 'Prescription and over-the-counter', 'Prescription medication needs a matching label and a doctor\'s note on request.', [
+        'Air India: the name on the label of prescription medication should match the name on the boarding pass, and the passenger should be able to produce a note from the doctor.',
+        'Air India: for over-the-counter medication, the quantity should be just enough for the duration of the journey.',
+        'Air India: nitroglycerine pills or spray for medical use are allowed in cabin and checked baggage if properly marked with a professionally printed label identifying the medication or the manufacturer\'s name or a pharmaceutical label.'
+      ], [PG], true),
+      card('liquids', 'Liquid medication', 'warn', 'Allowed if essential', 'Over 100 ml (3.4 oz)', 'For domestic passengers, medicines over 100 ml may be acceptable if essential for the journey.', [
+        'Air India (exceptions for domestic passengers): medicines with a total volume over 100 ml, prescribed or over the counter, may be acceptable if it is essential to carry them during the journey and the amount is no more than needed for the journey.',
+        'Air India: proof of authenticity must be shown for the liquids. Substances used for medical purposes that are not medicines, such as ice, are permitted.'
+      ], [PG]),
+      card('needles', 'Insulin & syringes', 'go', 'Allowed after inspection', 'Insulin, pens, syringes, pumps', 'Diabetes supplies are allowed in cabin and checked baggage once inspected.', [
+        'Air India: diabetes-related supplies and equipment are allowed in cabin and checked baggage. This includes insulin and insulin-loaded dispensing products, vials or boxes of individual vials, jet injectors, pens, infusers, preloaded syringes, an unlimited number of unused syringes (when accompanied by insulin), lancets, blood glucose meters and test strips, insulin pumps and pump supplies.',
+        'Air India: these can be carried only after inspection to make sure prohibited items are not concealed.'
+      ], [PG]),
+      card('cold', 'Cold medication', 'warn', 'Ice allowed', 'Medication that must stay cold', 'Ice for medical purposes is permitted for domestic passengers; Air India\'s page gives no fridge rule.', [
+        'Air India: substances used for medical purposes that are not medicines, such as ice, are permitted (exceptions for domestic passengers).',
+        'The page we read does not say whether crew can chill or store medication, so plan to carry your own cooling.'
+      ], [PG]),
+      card('abroad', 'Flying abroad', 'warn', 'Check the destination', 'International flights', 'Your destination country sets its own medication rules.', ABROAD_LINES, [PG])
+    ],
+    faq: [
+      ['Can I bring medication on an Air India flight?', 'Yes. Air India says the name on the label of prescription medication should match the boarding pass and you should be able to produce a doctor\'s note. For over-the-counter medication, bring just enough for the journey.'],
+      ['Can I carry more than 100 ml of liquid medicine on Air India?', 'For domestic passengers, Air India says medicines over 100 ml, prescribed or over the counter, may be acceptable if essential for the journey and no more than needed, with proof of authenticity.'],
+      ['Can I bring insulin and syringes on Air India?', 'Yes. Air India lists insulin, pens, infusers, preloaded syringes, an unlimited number of unused syringes when accompanied by insulin, lancets, glucose meters, insulin pumps and supplies as allowed in cabin and checked baggage, after inspection.']
+    ],
+    tableTitle: 'Air India medication rules at a glance',
+    tableNote: 'What Air India\'s own page says.',
+    rows: [
+      ['Prescription medication?', 'Label name matches boarding pass; doctor\'s note on request'],
+      ['Can it be over 100 ml?', 'Domestic: yes if essential, with proof of authenticity'],
+      ['Insulin, pens, syringes, pumps?', 'Allowed in cabin and checked, after inspection'],
+      ['Ice for medical use?', 'Permitted (domestic exceptions)'],
+      ['Fridge on board?', NP]
+    ],
+    extra: steps(['Keep medication in its labelled packaging, with the name matching your boarding pass.', 'Carry a doctor\'s note for prescription medication.', 'Pack syringes together with the insulin they are for.', 'Bring only as much over-the-counter medication as the journey needs.'])
+  });
+}
+
+// ---------------- LATAM ----------------
+// Read 17 October 2026 on latamairlines.com: Can I take medication on the trip? (help center).
+{
+  const PG = ['https://www.latamairlines.com/ca/en/help-center/faq/baggage/restricted-articles/medications', 'LATAM: Can I take medication on the trip?', 'Medication, prescription, cold chain'];
+  add({
+    slug: 'latam', name: 'LATAM',
+    h1: 'LATAM Medication Policy: Can You Bring Medication on a LATAM Flight? (2026)',
+    desc: 'Can you bring medication on LATAM? Yes, but you may be asked for a prescription that certifies its use during the trip. LATAM has no cold chain service for medication: use your own container. Checked 17 October 2026.',
+    answer: 'Yes. LATAM says you can bring medication, but you may be asked to provide a medical prescription certifying its use during your trip, considering flight times and connections. LATAM does not offer cold chain service: carry cold medication in your own suitable container.',
+    srcNote: 'From LATAM\'s own help center, last checked 17 October 2026. Rules change, so confirm with the airline before you fly.',
+    scen: [
+      card('pills', 'Pills & tablets', 'go', 'Allowed, keep the prescription', 'Carry them with you', 'LATAM says you can bring your medication, but you may be asked for a prescription.', [
+        'LATAM: you can bring your medication on the trip, but you may be asked to provide a medical prescription that certifies its use during your trip, considering flight times and connections.'
+      ], [PG], true),
+      card('liquids', 'Liquid medication', 'warn', 'Not published', 'Over 100 ml (3.4 oz)', 'The LATAM page we read gives no liquid limit for medication.', [
+        'The liquid limit for medication is set by the security rules at the airport you fly from: check them before you pack.'
+      ], [PG]),
+      card('needles', 'Insulin & syringes', 'warn', 'Not published', 'Needles, syringes, injections', 'The LATAM page we read gives no rule for syringes or needles.', [
+        'Bring the prescription that certifies your treatment. Security rules for needles depend on the airports you fly from and to.'
+      ], [PG]),
+      card('cold', 'Cold medication', 'warn', 'No cold chain service', 'Medication that must stay cold', 'LATAM has no cold chain service: carry cold medication in your own container.', [
+        'LATAM: it does not offer cold chain service for the transportation of medications.',
+        'LATAM: to transport such medication you must carry it in an appropriate container that stays under your care during the entire trip and complies with the carry-on baggage and dangerous goods standards.'
+      ], [PG]),
+      card('abroad', 'Flying abroad', 'warn', 'Check the destination', 'International flights', 'Your destination country sets its own medication rules.', ABROAD_LINES, [PG])
+    ],
+    faq: [
+      ['Can I bring medication on a LATAM flight?', 'Yes. LATAM says you can bring medication, but you may be asked to provide a medical prescription certifying its use during your trip, considering flight times and connections.'],
+      ['Does LATAM have a fridge or cold chain for medication?', 'No. LATAM says it does not offer cold chain service for the transport of medications. You must carry it in an appropriate container that stays under your care for the whole trip and meets carry-on and dangerous goods standards.']
+    ],
+    tableTitle: 'LATAM medication rules at a glance',
+    tableNote: 'What LATAM\'s own help center says. Where LATAM is silent we say so.',
+    rows: [
+      ['Can I bring medication?', 'Yes. You may be asked for a prescription'],
+      ['Can it be over 100 ml?', NP],
+      ['Needles and syringes?', NP],
+      ['Cold medication?', 'No cold chain service. Use your own container, kept with you']
+    ],
+    extra: steps(['Carry your medication with the prescription that certifies its use for the length of your trip and connections.', 'Keep cold medication in your own suitable container, under your care for the whole trip.', 'Check the rules of the countries you fly to and through.'])
+  });
+}
+
+// ---------------- AIR NEW ZEALAND ----------------
+// Read 17 October 2026 on airnewzealand.com: Flying with medical conditions (Medications section).
+{
+  const PG = ['https://www.airnewzealand.com/special-assistance-flying-with-medical-conditions', 'Air New Zealand: Flying with medical conditions', 'Medications, syringes, equipment'];
+  add({
+    slug: 'air-new-zealand', name: 'Air New Zealand',
+    h1: 'Air New Zealand Medication Policy: Medicines, Syringes, Liquids & Cooling (2026)',
+    desc: 'Can you bring medication on Air New Zealand? Yes, in your carry-on, with a pharmacy-printed label. A doctor\'s letter is recommended for syringes and liquids over 100 ml. Crew cannot store medication in fridges. Checked 17 October 2026.',
+    answer: 'Yes. Air New Zealand says to pack medication you might need in your carry-on, with a pharmacy-printed label. It recommends a doctor\'s letter for syringes and for liquids in containers over 100 mL. Crew cannot store medication in refrigerators: bring a container and coolant.',
+    srcNote: 'From Air New Zealand\'s own page, last checked 17 October 2026. Rules change, so confirm with the airline before you fly.',
+    scen: [
+      card('pills', 'Pills & tablets', 'go', 'Carry-on, labelled', 'Keep it with you', 'Air New Zealand says to pack medication you might need in your carry-on, with a pharmacy-printed label.', [
+        'Air New Zealand: pack medications you might need at the airport, on the plane or on arrival at your destination in your carry-on baggage.',
+        'Air New Zealand: civil aviation rules now require medicines to have a pharmacy-printed label.',
+        'Air New Zealand: if you change time zones, ask your doctor how to adjust your doses, particularly for diabetes, epilepsy and other serious conditions.'
+      ], [PG], true),
+      card('liquids', 'Liquid medication', 'warn', 'Doctor\'s letter over 100 ml', 'Over 100 ml (3.4 oz)', 'Air New Zealand recommends a doctor\'s letter for liquids in containers over 100 ml.', [
+        'Air New Zealand: for liquids in containers over 100 mL, it recommends you also carry a letter from your doctor.'
+      ], [PG]),
+      card('needles', 'Syringes & sharps', 'warn', 'Doctor\'s letter recommended', 'Syringes and needles', 'Carry a doctor\'s letter saying you need your syringes.', [
+        'Air New Zealand: if you carry syringes for medical use, it recommends you also carry a letter from your doctor saying you need them.',
+        'Air New Zealand: all its aircraft have sharps containers for safe disposal of needles, syringes and vials. Ask the cabin crew.'
+      ], [PG]),
+      card('cold', 'Cold medication', 'warn', 'Bring a container and coolant', 'Medication that must stay cold', 'Air New Zealand crew cannot store medication in refrigerators.', [
+        'Air New Zealand: cabin crew are not able to take care of medication or store it in refrigerators. If your medication has to be kept chilled, arrange a suitable container and coolant, and talk to your doctor or pharmacist.',
+        'Air New Zealand: if you use dry ice, contact the baggage team.'
+      ], [PG]),
+      card('devices', 'Medical equipment', 'warn', 'Clearance (MEDA) needed', 'CPAP, oxygen, nebuliser, syringe pump', 'Special medical equipment needs medical clearance before you fly.', [
+        'Air New Zealand: clearance is required if you travel with special medical equipment, including CPAP/VPAP, medical oxygen (concentrator or bottles), nebulisers, syringe pumps, stretchers and ventilators.',
+        'Air New Zealand: use the Medical Fitness for Air Travel form (MEDA). Where possible, submit it 3 to 14 days before travel; if it is submitted within three days of travel, approval before departure cannot be guaranteed.'
+      ], [PG]),
+      card('abroad', 'Flying abroad', 'warn', 'Check the destination', 'International flights', 'Your destination country sets its own medication rules.', ABROAD_LINES, [PG])
+    ],
+    faq: [
+      ['Can I bring medication on an Air New Zealand flight?', 'Yes. Air New Zealand says to pack the medication you might need at the airport, on the plane or on arrival in your carry-on baggage, with a pharmacy-printed label.'],
+      ['Do I need a doctor\'s letter for syringes on Air New Zealand?', 'Air New Zealand recommends it. If you carry syringes for medical use, it suggests a letter from your doctor saying you need them. All its aircraft carry sharps containers.'],
+      ['Does Air New Zealand store medication in a fridge?', 'No. Air New Zealand says cabin crew cannot take care of medication or store it in refrigerators. Arrange a suitable container and coolant.'],
+      ['Can I bring a CPAP machine on Air New Zealand?', 'CPAP/VPAP and other special medical equipment need medical clearance with the MEDA form, ideally submitted 3 to 14 days before travel.']
+    ],
+    tableTitle: 'Air New Zealand medication rules at a glance',
+    tableNote: 'What Air New Zealand\'s own page says.',
+    rows: [
+      ['Where should medication go?', 'Carry-on, with a pharmacy-printed label'],
+      ['Can it be over 100 ml?', 'Doctor\'s letter recommended for containers over 100 mL'],
+      ['Needles and syringes?', 'Doctor\'s letter recommended; sharps containers on every aircraft'],
+      ['Fridge on board?', 'No. Bring a container and coolant'],
+      ['Medical equipment?', 'Medical clearance (MEDA) 3 to 14 days ahead']
+    ],
+    extra: steps(['Pack your medication in your carry-on, with the pharmacy-printed label.', 'Carry a doctor\'s letter for syringes and for liquids over 100 mL.', 'Bring a suitable container and coolant for cold medication.', 'Submit a MEDA form 3 to 14 days before travel if you bring special medical equipment.'])
+  });
+}
+
+// ---------------- AER LINGUS ----------------
+// Read 17 October 2026 on aerlingus.com: Medical Conditions (Carriage of Medication table, Allergies and EpiPens, Carriage of Medical Devices).
+{
+  const PG = ['https://www.aerlingus.com/support/special-assistance/medical-conditions/', 'Aer Lingus: Medical Conditions', 'Carriage of medication'];
+  add({
+    slug: 'aer-lingus', name: 'Aer Lingus',
+    h1: 'Aer Lingus Medication Policy: Insulin, Needles, Liquids, Tablets & EpiPens (2026)',
+    desc: 'Can you bring medication on Aer Lingus? Yes: tablets, liquids, insulin, EpiPens and hypodermic needles are permitted. Carry insulin in the cabin so it does not freeze. Liquid medicine can exceed 100 ml. Checked 17 October 2026.',
+    answer: 'Yes. Aer Lingus lists tablets, capsules, liquid medication, insulin, inhalers, EpiPens and hypodermic needles as permitted in carry-on, for use on board and in checked baggage. Carry insulin in the cabin because it may freeze in the hold. Liquid medicine can exceed the usual limit and need not go in the clear bag.',
+    srcNote: 'From Aer Lingus\' own page, last checked 17 October 2026. Rules change, so confirm with the airline before you fly.',
+    scen: [
+      card('pills', 'Pills & tablets', 'go', 'Allowed', 'Tablets and capsules', 'Tablets and capsules are permitted in carry-on or checked baggage.', [
+        'Aer Lingus: you can take tablets and capsules in your carry-on baggage (with a doctor\'s note or prescription) or in your checked baggage.',
+        'Aer Lingus: asthma inhalers are permitted in carry-on or checked baggage.',
+        'Aer Lingus: it allows the carriage and use of prescribed medication onboard.'
+      ], [PG], true),
+      card('liquids', 'Liquid medication', 'go', 'Allowed over 100 ml', 'Over 100 ml (3.4 oz)', 'Liquid medicine needed during the flight can exceed the usual limit and stays out of the clear bag.', [
+        'Aer Lingus: if needed during your flight, place liquid medication in your carry-on baggage. You can carry as much as you need, even if it exceeds the usual limit on liquids.',
+        'Aer Lingus: liquid medicine does not need to fit in the transparent bag for carrying liquids, but have it ready for inspection by airport security.'
+      ], [PG]),
+      card('needles', 'Insulin & syringes', 'warn', 'Doctor\'s note or prescription', 'Insulin, EpiPens, hypodermic needles', 'Insulin, EpiPens and hypodermic needles are permitted; carry insulin in the cabin.', [
+        'Aer Lingus: insulin is permitted in carry-on, for use on board and in checked baggage. Carry it in your carry-on because it may freeze in the hold. It should be in its original packaging, easily identifiable and accessible during the flight.',
+        'Aer Lingus: EpiPens and hypodermic needles are permitted in carry-on baggage (with a doctor\'s note or prescription) or in checked baggage.',
+        'Aer Lingus: your epinephrine/adrenaline auto-injector should be in your carry-on, accompanied by a letter from your doctor or a copy of your prescription to show airport security.'
+      ], [PG]),
+      card('cold', 'Cold medication', 'warn', 'Not published', 'Medication that must stay cold', 'The Aer Lingus page we read does not say whether it can store medication cold.', [
+        'The page we read does not say whether crew can chill or store medication, so plan to carry your own cooling.'
+      ], [PG]),
+      card('devices', 'Medical devices', 'go', 'Most are permitted', 'Insulin pumps, CGMs, CPAP, nebulisers', 'Insulin pumps and glucose monitors are permitted in cabin, in checked baggage and for use on board.', [
+        'Aer Lingus: insulin pumps or continuous glucose monitors are permitted in carry-on, checked baggage and for use on board, provided they can be placed in Flight Mode.',
+        'Aer Lingus: nebulisers, infusion pumps, TENS machines and ventilators are permitted in carry-on, checked baggage and for use on board. Some devices, such as humidifiers, oximeters, portable dialysis machines and suction units, may be carried but not used in the cabin.',
+        'Aer Lingus: portable oxygen concentrators must be FAA-approved and show an approval label. Due to safety requirements some devices may not be used on Aer Lingus Regional flights.'
+      ], [PG]),
+      card('abroad', 'Flying abroad', 'warn', 'Check the destination', 'Controlled substances', 'In some countries certain medications are controlled substances, even with a prescription.', [
+        'Aer Lingus: in some countries certain medications may be classified as controlled substances that would not be permitted, even with a prescription. Check that it is legal to take your medication to the country you fly to or connect through.'
+      ].concat(ABROAD_LINES.slice(1)), [PG])
+    ],
+    faq: [
+      ['Can I bring medication on an Aer Lingus flight?', 'Yes. Aer Lingus allows the carriage and use of prescribed medication onboard: tablets and capsules, liquid medication, insulin, inhalers, EpiPens and hypodermic needles.'],
+      ['Can I bring liquid medicine over 100 ml on Aer Lingus?', 'Yes. Aer Lingus says to place liquid medication needed during the flight in your carry-on and you can carry as much as you need, even above the usual limit. It does not need to fit in the transparent bag, but have it ready for inspection by security.'],
+      ['Where should I keep insulin on Aer Lingus?', 'In your carry-on, because it may freeze in the hold. Aer Lingus says insulin should be in its original packaging, easily identifiable and accessible during the flight.'],
+      ['Can I bring an insulin pump or glucose monitor on Aer Lingus?', 'Yes. Aer Lingus says insulin pumps and continuous glucose monitors are permitted in carry-on, checked baggage and for use on board, provided they can be placed in Flight Mode.']
+    ],
+    tableTitle: 'Aer Lingus medication rules at a glance',
+    tableNote: 'What Aer Lingus\' own page says.',
+    rows: [
+      ['Tablets and capsules?', 'Carry-on (doctor\'s note or prescription) or checked'],
+      ['Liquid medication?', 'Carry-on; as much as you need, even over the usual limit'],
+      ['Insulin?', 'Carry-on, original packaging; it may freeze in the hold'],
+      ['EpiPens and hypodermic needles?', 'Carry-on with doctor\'s note or prescription, or checked'],
+      ['Insulin pumps and CGMs?', 'Permitted, in Flight Mode'],
+      ['Fridge on board?', NP]
+    ],
+    extra: steps(['Keep tablets, liquids and insulin in your carry-on, in the original packaging.', 'Carry a doctor\'s note or prescription for EpiPens and hypodermic needles.', 'Have liquid medicine ready for inspection; it does not go in the clear bag.', 'Check that your medication is legal in the country you fly to or connect through.'])
+  });
+}
+
+// ---------------- TAP AIR PORTUGAL ----------------
+// Read 17 October 2026 on flytap.com: Health problems and assistance (Medication and medical devices).
+{
+  const PG = ['https://www.flytap.com/en-us/information/special-needs/health-problems', 'TAP: Health problems and assistance', 'Medication and medical devices'];
+  add({
+    slug: 'tap-air-portugal', name: 'TAP Air Portugal',
+    h1: 'TAP Air Portugal Medication Policy: Medicines, Insulin, Prescriptions & Devices (2026)',
+    desc: 'Can you bring medication on TAP Air Portugal? Yes: carry your usual medication in hand baggage, enough for longer than the trip, with the written prescription for injectables such as insulin. Checked 17 October 2026.',
+    answer: 'Yes. TAP says to carry your usual prescribed medication in your hand baggage, including emergency medication such as asthma inhalers, enough for longer than the expected trip. For injectable medication such as insulin carry enough medication and accessories plus the written medical prescription.',
+    srcNote: 'From TAP\'s own page (US site), last checked 17 October 2026. Rules change, so confirm with the airline before you fly.',
+    scen: [
+      card('pills', 'Pills & tablets', 'go', 'Hand baggage', 'Enough for longer than the trip', 'TAP says to carry your usual prescribed medication in your hand baggage, enough for longer than the trip.', [
+        'TAP: carry any usual medication prescribed by your doctor in your hand baggage, including emergency medication such as asthma inhalers.',
+        'TAP: the medication must be enough for a period of time longer than the expected duration of the trip.'
+      ], [PG], true),
+      card('liquids', 'Liquid medication', 'warn', 'Not published', 'Over 100 ml (3.4 oz)', 'The TAP page we read gives no liquid limit for medication.', [
+        'The liquid limit for medication is set by the security rules at the airport you fly from: check them before you pack.'
+      ], [PG]),
+      card('needles', 'Insulin & syringes', 'warn', 'Written prescription', 'Injectable medication', 'For injectable medication such as insulin, carry enough medication, accessories and the written prescription.', [
+        'TAP: if you use injectable medication, such as insulin, make sure you carry enough medication and accessories for your trip and stay, as well as the corresponding written medical prescription.'
+      ], [PG]),
+      card('cold', 'Cold medication', 'warn', 'Not published', 'Medication that must stay cold', 'The TAP page we read does not say whether it can store medication cold.', [
+        'The page we read does not say whether crew can chill or store medication, so plan to carry your own cooling.'
+      ], [PG]),
+      card('devices', 'Medical devices', 'warn', 'Contact TAP early', 'POC, CPAP, other devices', 'You can carry or use medical devices on TAP flights; contact TAP as soon as possible.', [
+        'TAP: if you need to use or carry medical devices, especially fragile ones or those that need batteries or a power connection, such as a portable oxygen concentrator (POC) or a CPAP machine, you can on TAP flights, but contact TAP as soon as possible to find out the conditions.',
+        'TAP: for a serious or disabling illness, your doctor must fill in the MEDIF form and you send it to TAP at least 72 hours before the trip.'
+      ], [PG]),
+      card('allergy', 'Allergy medication', 'warn', 'Carry it with you', 'Allergies', 'If you have allergies, carry the appropriate medication in your hand baggage.', [
+        'TAP: if you have allergies, check with your doctor before travelling and carry the appropriate medication in your hand baggage. TAP cannot guarantee the cabin is free of allergens.'
+      ], [PG]),
+      card('abroad', 'Flying abroad', 'warn', 'Check the destination', 'International flights', 'Your destination country sets its own medication rules.', ABROAD_LINES, [PG])
+    ],
+    faq: [
+      ['Can I bring medication on a TAP Air Portugal flight?', 'Yes. TAP says to carry your usual prescribed medication in your hand baggage, including emergency medication such as asthma inhalers, in a quantity enough for longer than the expected trip.'],
+      ['Can I bring insulin on TAP?', 'Yes. TAP says if you use injectable medication such as insulin, carry enough medication and accessories for your trip and stay, and the corresponding written medical prescription.'],
+      ['Can I use a CPAP or oxygen concentrator on TAP?', 'TAP says you can carry or use devices such as a portable oxygen concentrator or CPAP on its flights, but you should contact TAP as soon as possible to find out the conditions.']
+    ],
+    tableTitle: 'TAP medication rules at a glance',
+    tableNote: 'What TAP\'s own page says. Where TAP is silent we say so.',
+    rows: [
+      ['Where should medication go?', 'Hand baggage'],
+      ['How much?', 'Enough for longer than the expected trip'],
+      ['Can it be over 100 ml?', NP],
+      ['Insulin and injectables?', 'Enough medication and accessories, with the written prescription'],
+      ['Fridge on board?', NP],
+      ['Medical devices?', 'Allowed; contact TAP early']
+    ],
+    extra: steps(['Carry your usual medication in your hand baggage, enough for longer than your trip.', 'Carry the written prescription for injectable medication such as insulin.', 'Contact TAP early if you bring a POC, CPAP or other powered device.'])
   });
 }
 
