@@ -1,0 +1,1001 @@
+{
+ "New Zealand": {
+  "date": "MPI page read 18 October 2026",
+  "ttl": "Seeds & Plants into New Zealand: Permit Rules 2026",
+  "desc": "Bringing plants or seeds into New Zealand (2026): High-risk - usually needs a permit. Live plants, seeds, soil and cuttings are tightly controlled.",
+  "lead": "New Zealand's Ministry for Primary Industries treats plants and plant products as biosecurity risk goods: every traveller fills in the New Zealand Traveller Declaration, and all plant material must be declared or put in an amnesty bin before inspection. Failing to declare can bring an instant NZD 400 fine, and some plant products are prohibited outright.",
+  "rows": [
+   [
+    "Which plant items count",
+    "Fruit, flowers, seeds, bulbs, wood, bark, leaves, nuts, vegetables, plant parts, fungi, cane, bamboo or straw, including items meant for religious offerings or medicinal use"
+   ],
+   [
+    "Declaration",
+    "Everyone entering completes the New Zealand Traveller Declaration, free online or in the NZTD app, with a paper form on arrival for people who cannot go online; this applies even if you carry nothing to declare"
+   ],
+   [
+    "Amnesty bins",
+    "Risk goods you do not want inspected can be thrown into the marked bins at arrival to avoid a search or a fine"
+   ],
+   [
+    "What happens to declared plants",
+    "An MPI officer asks questions or inspects the item and may check the matching import health standard; items can be cleared, treated or, in some cases, confiscated or destroyed"
+   ],
+   [
+    "No import health standard",
+    "In general, if no import health standard covers an item, it cannot be brought into the country"
+   ],
+   [
+    "Soil and used gardening gear",
+    "Soil and equipment used with plants or outdoors are also listed as risk goods to declare"
+   ],
+   [
+    "Fine for not declaring",
+    "NZD 400 instant fine, even for an accident"
+   ],
+   [
+    "Smuggling a prohibited or risk item",
+    "MPI lists a fine of up to NZD 100,000, up to 5 years in prison and deportation"
+   ]
+  ],
+  "notes": [
+   "<strong>Tool:</strong> MPI offers a \"Check if you can bring or send an item to NZ\" tool that also shows any weight or quantity limits; the page we read does not list limits for plants or seeds itself.",
+   "<strong>Not read:</strong> the detailed list of banned plant products and the seed-specific import health standards are on other MPI pages that we did not read."
+  ],
+  "faq": [
+   [
+    "Can I bring seeds into New Zealand?",
+    "Seeds are listed by MPI as plant products you must declare. Whether a given seed is allowed depends on an import health standard, and an item with no standard cannot come in, so declare them and let an officer decide."
+   ],
+   [
+    "Do I have to declare plants at the New Zealand border?",
+    "Yes. All plant material, including flowers, bulbs, leaves and wood, must be declared on the New Zealand Traveller Declaration or put in an amnesty bin."
+   ],
+   [
+    "What is the fine for not declaring plants in New Zealand?",
+    "MPI says an undeclared biosecurity risk item, even by accident, can bring an instant NZD 400 fine; smuggling a prohibited or risk item can mean up to NZD 100,000, up to 5 years in prison and deportation."
+   ],
+   [
+    "Can I bring soil to New Zealand?",
+    "Soil is named as a risk item to declare, and used gardening or outdoor equipment must be declared as well."
+   ]
+  ],
+  "src": [
+   [
+    "https://www.mpi.govt.nz/bring-send-to-nz/bringing-and-posting-items-to-nz/how-to-declare-items-when-arriving-in-nz",
+    "MPI &mdash; How to declare items when arriving in NZ"
+   ]
+  ],
+  "keepSchema": true,
+  "card": {
+   "status": "stop",
+   "head": "Declare every plant item.",
+   "lines": [
+    "Seeds, bulbs, flowers and soil are biosecurity risk goods: declare them or bin them, or risk an NZD 400 fine."
+   ]
+  }
+ },
+ "Chile": {
+  "date": "SAG procedure page read 18 October 2026",
+  "ttl": "Can You Bring Seeds & Plants into Chile? Permit Rules (2026)",
+  "desc": "Bringing plants or seeds into Chile (2026): High-risk - usually needs a permit. Live plants, seeds, soil and cuttings are tightly controlled.",
+  "lead": "Chile's agriculture service SAG requires everyone aged 18 or over to complete a sworn declaration on entry that lists live plants and plant parts, all grains and seeds, and soil or soil-containing products. Declaring does not guarantee entry: an SAG inspector decides whether each item meets the rules, and false information can be fined.",
+  "rows": [
+   [
+    "Live plants and plant parts",
+    "Must be declared: leaves, stems, roots, cuttings and bulbs, plus flowers, wood and cones"
+   ],
+   [
+    "Grains and seeds",
+    "Every kind must be declared, including seeds that can be eaten or sown"
+   ],
+   [
+    "Soil",
+    "Soil, or any product that contains soil, must be declared"
+   ],
+   [
+    "Who completes the form",
+    "People aged 18 or over entering Chile, including diplomats and official staff; if you travel with a minor under 18, their luggage goes on your form"
+   ],
+   [
+    "When and how",
+    "Online up to one day before arrival at dj.sag.gob.cl or ingresoachile.cl, with a new form for each entry; the paper form is available at the border post if you cannot use the digital one"
+   ],
+   [
+    "Digital option at",
+    "Santiago airport (Arturo Merino Benítez), Diego Aracena, Pehuenche, Hua Hum, Cardenal Samoré, San Sebastián and Integración Austral"
+   ],
+   [
+    "After declaring",
+    "An SAG inspector reviews the products; answering yes is not an authorisation to bring them in"
+   ],
+   [
+    "False information",
+    "Can lead to a fine; the page gives no amount"
+   ]
+  ],
+  "notes": [
+   "<strong>Not read:</strong> import conditions for particular species and any phytosanitary certificate requirement are not on the page we read, so check SAG before carrying specific seeds or plants."
+  ],
+  "faq": [
+   [
+    "Can I bring seeds into Chile?",
+    "Seeds of every kind, whether for eating or sowing, must be declared on the SAG sworn declaration, and an SAG inspector then decides if they can enter."
+   ],
+   [
+    "Do I need to declare plants when entering Chile?",
+    "Yes. Live plants and plant parts such as leaves, stems, roots, cuttings and bulbs must be declared, as must flowers, wood and cones."
+   ],
+   [
+    "Can I fill in the Chile declaration before the flight?",
+    "Yes, the online form can be completed up to one day before arrival, and a new form is needed every time you enter Chile."
+   ],
+   [
+    "What if I travel with a child?",
+    "Anyone responsible for a minor under 18 must list the contents of the child's luggage on their own form."
+   ]
+  ],
+  "src": [
+   [
+    "https://www.sag.gob.cl/tramites/declaracion-jurada-sag-sobre-ingreso-de-productos-de-origen-vegetal-o-animal-chile",
+    "SAG &mdash; Declaraci&oacute;n jurada sobre ingreso de productos de origen vegetal o animal"
+   ]
+  ],
+  "keepSchema": true,
+  "card": {
+   "status": "warn",
+   "head": "Declare plants, seeds and soil.",
+   "lines": [
+    "Complete the SAG sworn declaration online up to a day before arrival; an inspector decides what may enter."
+   ]
+  }
+ },
+ "Hong Kong": {
+  "date": "AFCD page dated 23 February 2026, read 18 October 2026",
+  "ttl": "Can You Bring Seeds & Plants into Hong Kong? Permit Rules (2026)",
+  "desc": "Bringing plants or seeds into Hong Kong (2026): High-risk - usually needs a permit. Live plants, seeds, soil and cuttings are tightly controlled.",
+  "lead": "Under Hong Kong's Plant (Importation and Pest Control) Ordinance, a plant needs a Plant Import Licence from AFCD plus a valid phytosanitary certificate from the country of origin. Seeds are the easier case: no licence is needed if a valid phytosanitary certificate accompanies them. Several everyday items need neither document, including cut flowers and fruit or vegetables for eating.",
+  "rows": [
+   [
+    "Plants in general",
+    "Plant Import Licence from AFCD and a valid phytosanitary certificate from the exporting country's authority"
+   ],
+   [
+    "Seeds",
+    "No import licence if a valid phytosanitary certificate comes with them"
+   ],
+   [
+    "Certain crops (rubber, cocoa, maize, tea and others)",
+    "Licence, certificate, fumigation or disinfection in the country of origin, and observation in post-entry quarantine"
+   ],
+   [
+    "Pineapple, citrus, sweet potato, banana, cotton, groundnut, rice",
+    "Licence, certificate and compliance with the extra quarantine conditions for these plants"
+   ],
+   [
+    "No licence or certificate needed",
+    "Cut flowers; fruit and vegetables for eating; grains, pulses, seeds and spices for human or animal consumption or industrial use; timber, rattan and bamboo; dried tobacco; plants grown elsewhere in China and imported from there"
+   ],
+   [
+    "Soil, sand, clay, peat and plant pests",
+    "Need authorisation from the Director of Agriculture, Fisheries and Conservation; soil from elsewhere in China is exempt"
+   ],
+   [
+    "Penalty",
+    "Breaking the Ordinance without reasonable excuse is an offence: a fine of HK$10,000 and 6 months in prison"
+   ],
+   [
+    "Protected species",
+    "Plants controlled under the Protection of Endangered Species of Animals and Plants Ordinance must also meet that law"
+   ]
+  ],
+  "notes": [
+   "<strong>Not on the page:</strong> AFCD does not state quantity limits, rules written specifically for travellers or inspection steps on this page; contact the Plant & Pesticides Regulatory Division, tel. 2150 7000."
+  ],
+  "faq": [
+   [
+    "Can I bring seeds into Hong Kong?",
+    "Seeds need no Plant Import Licence when they come with a valid phytosanitary certificate from the country of origin. Seeds for eating or industrial use are exempt from both."
+   ],
+   [
+    "Do I need a permit to bring a plant into Hong Kong?",
+    "Yes, a Plant Import Licence from AFCD and a valid phytosanitary certificate are required for plants in general."
+   ],
+   [
+    "Can I bring cut flowers or fruit to Hong Kong?",
+    "AFCD lists cut flowers and fruit and vegetables for consumption among the items that need no licence or certificate."
+   ],
+   [
+    "Can I import soil into Hong Kong?",
+    "Soil, including earth, sand, clay and peat, needs authorisation from the Director of Agriculture, Fisheries and Conservation, except soil from other places in China."
+   ]
+  ],
+  "src": [
+   [
+    "https://www.afcd.gov.hk/english/quarantine/qua_plants/qua_plants_pq/qua_plants_pq_imp/qua_plants_pq_imp.html",
+    "AFCD &mdash; Import of plants (plant quarantine)"
+   ]
+  ],
+  "keepSchema": true,
+  "card": {
+   "status": "warn",
+   "head": "Plants need a licence and a certificate.",
+   "lines": [
+    "Seeds only need a phytosanitary certificate; cut flowers and fruit for eating are exempt."
+   ]
+  }
+ },
+ "Iceland": {
+  "date": "MAST page read 18 October 2026",
+  "ttl": "Can You Bring Seeds & Plants into Iceland? Permit Rules (2026)",
+  "desc": "Bringing plants or seeds into Iceland (2026): A phytosanitary certificate is generally required.",
+  "lead": "Iceland's food and veterinary authority MAST allows plants in only with a phytosanitary certificate from the exporting country (Regulation 189/1990), but travellers may carry small amounts of cut flowers, bulbs and indoor plants without one. Wild plants, woody plants, bonsai and potatoes fall outside that allowance, and a list of tree species is banned entirely.",
+  "rows": [
+   [
+    "Plants in general",
+    "Allowed only if a phytosanitary certificate from the exporting country accompanies them"
+   ],
+   [
+    "Plants grown in a third country",
+    "Need a copy of the certificate that travelled with them to the exporting country, plus a special re-export certificate"
+   ],
+   [
+    "Travellers: cut flowers",
+    "Bouquets of cut flowers and branches, up to 25 plants, with no certificate"
+   ],
+   [
+    "Travellers: bulbs, corms, tubers",
+    "From Europe, in unopened commercial packaging, up to 2 kg"
+   ],
+   [
+    "Travellers: indoor plants",
+    "A few potted indoor plants from Europe, up to 3 pieces; up to 30 pieces for a household moving from a European country"
+   ],
+   [
+    "Not covered by that allowance",
+    "Wild plants collected in the open, woody plants with or without roots (bonsai included) and potatoes"
+   ],
+   [
+    "Banned plants",
+    "Elm, birch, pine, spruce, larch, willow and poplar; fir for planting; other conifers from outside Europe; wild plants gathered in the open; rooted cucumber, pepper, tomato and lettuce plants; Elodea; rhododendron from regions where Phytophthora ramorum has been found"
+   ],
+   [
+    "Seeds",
+    "Not on the banned list; the page only says Iceland applies EC seed legislation and gives no traveller quantity or certificate rule for seeds"
+   ]
+  ],
+  "notes": [
+   "<strong>Not read:</strong> MAST's page gives no personal-allowance rule for seeds and does not cover import permits, so ask MAST before carrying seeds in larger amounts."
+  ],
+  "faq": [
+   [
+    "Can I bring seeds into Iceland?",
+    "MAST does not list seeds among the banned plants, but its plant import page gives no traveller allowance for them either. It says only that Iceland applies EC seed legislation, so ask MAST before bringing more than a small personal amount."
+   ],
+   [
+    "Can I bring flowers to Iceland?",
+    "Yes, bouquets of cut flowers and branches up to 25 plants can travel with you without a phytosanitary certificate."
+   ],
+   [
+    "Can I bring a potted plant to Iceland?",
+    "A few potted indoor plants from Europe, up to 3 pieces, can come without a certificate; woody plants and bonsai are excluded from that allowance."
+   ],
+   [
+    "Which plants are banned in Iceland?",
+    "MAST lists elm, birch, pine, spruce, larch, willow and poplar, fir for planting, other conifers from outside Europe and wild-collected plants, among others."
+   ]
+  ],
+  "src": [
+   [
+    "https://www.mast.is/en/import-export/import-of-plants",
+    "MAST &mdash; Import of plants (Icelandic Food and Veterinary Authority)"
+   ]
+  ],
+  "keepSchema": true,
+  "card": {
+   "status": "warn",
+   "head": "Small amounts only, otherwise a certificate.",
+   "lines": [
+    "Up to 25 cut flowers and 2 kg of bulbs travel free; potatoes, bonsai and many trees are excluded."
+   ]
+  }
+ },
+ "Mauritius": {
+  "date": "MRA customs page read 18 October 2026",
+  "ttl": "Can You Bring Seeds & Plants into Mauritius? Permit Rules (2026)",
+  "desc": "Bringing plants or seeds into Mauritius (2026): Plants, seeds and fresh produce must be declared and cleared.",
+  "lead": "The Mauritius Revenue Authority says plant products, soil and soil-containing items are under phytosanitary control: you declare them to Customs or the Ministry of Agro-Industry and Food Security, and the Ministry has to clear listed goods before Customs releases them. The list covers plants, cuttings, bulbs, cut flowers and seeds, even commercially packaged ones.",
+  "rows": [
+   [
+    "Plants, cuttings, roots and bulbs",
+    "Declare; Ministry clearance needed before release"
+   ],
+   [
+    "Live ornamentals, cut foliage and flowers, fresh cuttings",
+    "Rooted or unrooted: declare; Ministry clearance needed"
+   ],
+   [
+    "Seeds",
+    "Including commercially packaged seeds and spices: declare; Ministry clearance needed"
+   ],
+   [
+    "Fruit and vegetables",
+    "All fresh ones, and dried ones that contain seeds or fruit skin: declare; Ministry clearance needed"
+   ],
+   [
+    "Soil and soil-containing products",
+    "Under phytosanitary control and declared"
+   ],
+   [
+    "Dried plant material, dried flower arrangements, pot pourri, wood with bark",
+    "Also on the clearance list"
+   ],
+   [
+    "Herbal remedies",
+    "Medicines containing herbs, seeds, fungi, bark or dried plant material are listed too"
+   ],
+   [
+    "Endangered plants (CITES)",
+    "Aloes except aloe vera, cacti and euphorbias, orchids and cycads can be restricted and need CITES permits"
+   ]
+  ],
+  "notes": [
+   "<strong>Not read:</strong> the page does not say which of these goods are banned, which can be cleared, or how clearance is requested; contact the Ministry of Agro-Industry and Food Security."
+  ],
+  "faq": [
+   [
+    "Can I bring seeds into Mauritius?",
+    "Seeds, including commercially packaged ones, are on the MRA list of goods you declare and that the Ministry of Agro-Industry and Food Security must clear before Customs releases them."
+   ],
+   [
+    "Can I bring plants or cuttings to Mauritius?",
+    "Plants, cuttings, roots, bulbs and live ornamentals must be declared and cleared by the Ministry; the page does not say how to apply."
+   ],
+   [
+    "Is fruit allowed into Mauritius?",
+    "All fresh fruit and vegetables are on the declaration and clearance list, as are dried ones that contain seeds or skin."
+   ],
+   [
+    "Do orchids and cacti need a permit in Mauritius?",
+    "They can be restricted under CITES, which works with import and export permits."
+   ]
+  ],
+  "src": [
+   [
+    "https://www.mra.mu/customs1/travellers/13-customs/150-import-restrictions",
+    "Mauritius Revenue Authority &mdash; Customs: import restrictions"
+   ]
+  ],
+  "keepSchema": true,
+  "card": {
+   "status": "warn",
+   "head": "Declare; the Ministry must clear it.",
+   "lines": [
+    "Plants, seeds, cut flowers, fruit and soil all need clearance from the Ministry before Customs lets them through."
+   ]
+  }
+ },
+ "Fiji": {
+  "date": "BAF page read 18 October 2026",
+  "ttl": "Can You Bring Seeds & Plants into Fiji? Permit Rules (2026)",
+  "desc": "Bringing plants or seeds into Fiji (2026): High-risk - usually needs a permit. Live plants, seeds, soil and cuttings are tightly controlled.",
+  "lead": "The Biosecurity Authority of Fiji tells arriving passengers to declare plants and plant products, and seed, propagation and planting material, on the arrival card, which it calls a legal document. A false or incorrect declaration can mean fines, penalties including imprisonment, or both.",
+  "rows": [
+   [
+    "Plants and plant products",
+    "Must be declared on the arrival card"
+   ],
+   [
+    "Seed, propagation and planting material",
+    "Must be declared"
+   ],
+   [
+    "Food and used gardening or farming equipment",
+    "Also on the declaration list"
+   ],
+   [
+    "Prohibited items",
+    "The page says to avoid bringing prohibited items but does not list them"
+   ],
+   [
+    "Failing to declare",
+    "Heavy fines and penalties for undeclared regulated items"
+   ],
+   [
+    "False or incorrect declaration",
+    "Fines, penalties including imprisonment, or both"
+   ],
+   [
+    "Approved seed sources",
+    "The page links a 2025 list of approved seed sources under import requirements; the list itself is not on the page"
+   ]
+  ],
+  "notes": [
+   "<strong>Not read:</strong> BAF's page gives no list of banned or allowed plants, no quantity limits and no soil or fruit rule. Email info@baf.com.fj or call +679 331 2512 about specific items."
+  ],
+  "faq": [
+   [
+    "Do I have to declare seeds in Fiji?",
+    "Yes. Seed, propagation and planting material must be declared on the arrival card, according to the Biosecurity Authority of Fiji."
+   ],
+   [
+    "Can I bring plants into Fiji?",
+    "Plants and plant products must be declared; the BAF page does not say which ones are allowed, so ask BAF before you travel."
+   ],
+   [
+    "What happens if I do not declare plants in Fiji?",
+    "BAF warns of heavy fines and penalties, and a false declaration can lead to imprisonment."
+   ]
+  ],
+  "src": [
+   [
+    "https://baf.com.fj/plant-plant-products/",
+    "Biosecurity Authority of Fiji &mdash; Plant and plant products"
+   ]
+  ],
+  "keepSchema": true,
+  "card": {
+   "status": "warn",
+   "head": "Declare plants and seeds on arrival.",
+   "lines": [
+    "BAF treats the arrival card as a legal document; false declarations can mean fines or prison."
+   ]
+  }
+ },
+ "Sri Lanka": {
+  "date": "Department of Agriculture page read 18 October 2026",
+  "ttl": "Can You Bring Seeds & Plants into Sri Lanka? Permit Rules (2026)",
+  "desc": "Bringing plants or seeds into Sri Lanka (2026): High-risk - usually needs a permit. Live plants, seeds, soil and cuttings are tightly controlled.",
+  "lead": "Sri Lanka's National Plant Quarantine Service says it is prohibited to bring any plant or plant product into the country without prior permission. Arriving air passengers declare plants and plant products on the customs form, tell the Plant Quarantine Officer at Bandaranaike International Airport, and need a valid import permit, with clearance given only after inspection.",
+  "rows": [
+   [
+    "Plants and unprocessed plant products",
+    "Need a valid import permit from the National Plant Quarantine Service plus the supporting documents"
+   ],
+   [
+    "Without prior permission",
+    "Prohibited under the Plant Protection Act No 35 of 1999"
+   ],
+   [
+    "On arrival",
+    "Declare everything on the customs declaration form and inform the Plant Quarantine Officer at the arrival terminal of Bandaranaike International Airport, Katunayake"
+   ],
+   [
+    "Clearance",
+    "Given only after each item is inspected, the documents are checked and the import conditions are confirmed"
+   ],
+   [
+    "Fee",
+    "Rs. 150.00 per consignment for clearance"
+   ],
+   [
+    "Pests, permit breaches or false documents",
+    "The officer can detain the consignment and decide between destruction and re-export"
+   ],
+   [
+    "Airport contact",
+    "Passenger terminal line 011-2264568"
+   ]
+  ],
+  "notes": [
+   "<strong>Not read:</strong> the passenger section does not mention seeds separately, set quantity limits or say how to apply for the permit; ask the National Plant Quarantine Service before you fly."
+  ],
+  "faq": [
+   [
+    "Can I bring seeds into Sri Lanka?",
+    "The passenger page does not treat seeds separately. It says any plant or plant product needs a valid import permit from the National Plant Quarantine Service, and bringing them without prior permission is prohibited."
+   ],
+   [
+    "Do I have to declare plants at Colombo airport?",
+    "Yes. Declare plants and plant products on the customs form and tell the Plant Quarantine Officer at the arrival terminal."
+   ],
+   [
+    "What happens to plants without a permit in Sri Lanka?",
+    "The Plant Quarantine Officer can detain them and decide on destruction or re-export; the Plant Protection Act No 35 of 1999 is cited for violations."
+   ],
+   [
+    "How much does plant clearance cost in Sri Lanka?",
+    "The page lists a fee of Rs. 150.00 for each consignment cleared."
+   ]
+  ],
+  "src": [
+   [
+    "https://doa.gov.lk/?p=59706",
+    "Department of Agriculture &mdash; National Plant Quarantine Service: passengers at Bandaranaike Airport"
+   ]
+  ],
+  "keepSchema": true,
+  "card": {
+   "status": "stop",
+   "head": "A permit is needed for any plant item.",
+   "lines": [
+    "Declare on the customs form and show the Plant Quarantine Officer; plants without a permit can be destroyed or sent back."
+   ]
+  }
+ },
+ "Jamaica": {
+  "date": "Ministry notices of September 2020, read 18 October 2026",
+  "ttl": "Can You Bring Seeds & Plants into Jamaica? Permit Rules (2026)",
+  "desc": "Bringing plants or seeds into Jamaica (2026): High-risk - usually needs a permit. Live plants, seeds, soil and cuttings are tightly controlled.",
+  "lead": "Jamaica's Plant Quarantine and Inspection Branch reminded all travellers that a permit is required to import plants and plant products. The Ministry has also put amnesty bins for plants, plant products and animal products at Norman Manley and Sangster airports, and illegal importation attracts a fine under the Customs Act.",
+  "rows": [
+   [
+    "Plants and plant products",
+    "A permit is required to import them, and the notice is addressed to all travellers"
+   ],
+   [
+    "How to get the permit",
+    "Register as an importer on the Ministry's online trade site, then apply, pay and receive the permit online; no office visit is needed"
+   ],
+   [
+    "Help with the process",
+    "Plant Quarantine and Inspection Branch, 876-977-6401"
+   ],
+   [
+    "Declaration",
+    "Travellers are asked to declare plants, animals, and animal and plant products"
+   ],
+   [
+    "Amnesty bins",
+    "At Norman Manley International (Kingston) and Sangster International (Montego Bay) airports for plants, plant products and animal products"
+   ],
+   [
+    "Illegal importation",
+    "Attracts a fine under the Jamaica Customs Act; no amount is given"
+   ]
+  ],
+  "notes": [
+   "<strong>Not read:</strong> the two Ministry notices are from September 2020 and do not mention seeds, fruit, quantities or exemptions, so confirm with the Branch before you travel."
+  ],
+  "faq": [
+   [
+    "Can I bring seeds into Jamaica?",
+    "The Ministry notices do not mention seeds separately. They say a permit is needed to import plants and plant products, so ask the Plant Quarantine and Inspection Branch."
+   ],
+   [
+    "Do I need a permit to bring plants into Jamaica?",
+    "Yes. The Branch says a permit is required, applied for and paid online after registering as an importer."
+   ],
+   [
+    "Are there amnesty bins at Jamaican airports?",
+    "Yes, the Ministry installed them at Norman Manley and Sangster airports for plants, plant products and animal products."
+   ],
+   [
+    "What is the penalty for bringing plants into Jamaica illegally?",
+    "The Ministry says it attracts a fine under the Jamaica Customs Act and gives no amount."
+   ]
+  ],
+  "src": [
+   [
+    "https://jis.gov.jm/permit-required-to-import-plants-and-plant-products/",
+    "JIS / Ministry of Agriculture &mdash; Permit required to import plants and plant products"
+   ],
+   [
+    "https://www.moa.gov.jm/content/plants-and-animal-products-amnesty-bins-installed-international-airports",
+    "Ministry of Agriculture &mdash; Amnesty bins at international airports"
+   ]
+  ],
+  "keepSchema": true,
+  "card": {
+   "status": "warn",
+   "head": "A permit is required for plants.",
+   "lines": [
+    "Apply online through the Ministry; amnesty bins at Kingston and Montego Bay airports let you hand items in."
+   ]
+  }
+ },
+ "Argentina": {
+  "date": "SENASA traveller page read 18 October 2026",
+  "ttl": "Can You Bring Seeds & Plants into Argentina? Permit Rules (2026)",
+  "desc": "Bringing plants or seeds into Argentina (2026): High-risk - usually needs a permit. Live plants, seeds, soil and cuttings are tightly controlled.",
+  "lead": "Argentina's agriculture health service SENASA lists fresh fruit and vegetables, garden flowers and plants, fruit, ornamental and forestry plants, and plant parts such as seeds, roots and buds under the products travellers may not bring in. SENASA staff can seize anything that lacks the required authorisation, and the page points to Resolution 295/1999 for the full rules.",
+  "rows": [
+   [
+    "Fresh fruit and vegetables",
+    "Listed as not permitted"
+   ],
+   [
+    "Flowers and garden plants",
+    "Listed as not permitted"
+   ],
+   [
+    "Fruit, ornamental and forestry plants",
+    "Listed as not permitted"
+   ],
+   [
+    "Plant parts: seeds, roots, buds and similar",
+    "Listed as not permitted"
+   ],
+   [
+    "Items without the proper authorisation",
+    "SENASA staff may confiscate them"
+   ],
+   [
+    "Where the detailed rules are",
+    "Resolution 295/1999, for bringing in food, animals, plants and farm products"
+   ]
+  ],
+  "notes": [
+   "<strong>Not read:</strong> the page does not describe a declaration step, any exception for small amounts or the content of Resolution 295/1999 itself. Check with SENASA before carrying plant material."
+  ],
+  "faq": [
+   [
+    "Can I bring seeds into Argentina?",
+    "SENASA lists plant parts such as seeds, roots and buds among the products that are not permitted for travellers, and its staff can confiscate items without the proper authorisation."
+   ],
+   [
+    "Can I bring plants or flowers to Argentina?",
+    "Garden flowers and plants, and fruit, ornamental and forestry plants, are on the not-permitted list on SENASA's traveller page."
+   ],
+   [
+    "Can I bring fruit and vegetables to Argentina?",
+    "Fresh fruit and vegetables are on the same not-permitted list."
+   ],
+   [
+    "Which rule governs food and plants entering Argentina?",
+    "SENASA names Resolution 295/1999 for the requirements on bringing in food, animals, plants and agricultural products."
+   ]
+  ],
+  "src": [
+   [
+    "https://www.argentina.gob.ar/senasa/informacion-al-viajero/ingresar-o-regresar-al-pais",
+    "SENASA &mdash; Informaci&oacute;n al viajero: ingresar o regresar al pa&iacute;s"
+   ]
+  ],
+  "keepSchema": true,
+  "card": {
+   "status": "stop",
+   "head": "Seeds and plants are not permitted.",
+   "lines": [
+    "SENASA lists seeds, garden plants, flowers and fresh produce as products travellers may not bring in."
+   ]
+  }
+ },
+ "China": {
+  "date": "GACC passenger guide read 18 October 2026",
+  "ttl": "Can You Bring Seeds & Plants into China? Permit Rules (2026)",
+  "desc": "Bringing plants or seeds into China (2026): High-risk - usually needs a permit. Live plants, seeds, soil and cuttings are tightly controlled.",
+  "lead": "China Customs tells inbound passengers carrying animals and plants, or animal and plant products, to use the red channel (goods to declare), and those items are dealt with under current regulations. The same guide bans fruit, solanaceous vegetables, soil, plant pests, genetically modified organisms and other quarantine objects from countries or regions with prevalent animal or plant diseases.",
+  "rows": [
+   [
+    "Plants and plant products",
+    "Passengers carrying them choose the red channel \"goods to declare\" and fill in the declaration form; they are dealt with according to current regulations"
+   ],
+   [
+    "Fruit and solanaceous vegetables",
+    "Listed among articles prohibited from import"
+   ],
+   [
+    "Soil",
+    "Listed among articles prohibited from import"
+   ],
+   [
+    "Plants, pathogens, pests and other quarantine objects",
+    "Prohibited when they come from countries or regions with prevalent animal or plant diseases"
+   ],
+   [
+    "Genetically modified organisms",
+    "Prohibited"
+   ],
+   [
+    "Unsure what to do",
+    "Ask the officers or simply use the red channel"
+   ],
+   [
+    "Quantity",
+    "Baggage and personal articles must be for personal use and in reasonable quantity"
+   ],
+   [
+    "Leaving China",
+    "Endangered and rare plants with their seeds and reproductive materials may not be taken out"
+   ]
+  ],
+  "notes": [
+   "<strong>Not read:</strong> this guide does not list which plants or seeds are allowed, nor the quarantine permit steps; the list of countries with prevalent plant diseases changes, so ask China Customs before bringing seeds or plants."
+  ],
+  "faq": [
+   [
+    "Can I bring seeds into China?",
+    "The GACC passenger guide puts plants and plant products in the red-channel declaration group and says they are dealt with under current regulations; it does not list seeds individually, so ask China Customs before you travel."
+   ],
+   [
+    "Can I bring fruit into China?",
+    "The guide lists fruit and solanaceous vegetables among articles prohibited from importation."
+   ],
+   [
+    "Can I bring soil into China?",
+    "Soil is on the same prohibited list."
+   ],
+   [
+    "Which channel should I use with plants at Chinese customs?",
+    "The red channel, \"goods to declare\", because plants and plant products must be declared."
+   ]
+  ],
+  "src": [
+   [
+    "http://english.customs.gov.cn/statics/88707c1e-aa4e-40ca-a968-bdbdbb565e4f.html",
+    "GACC &mdash; Customs Clearance Guide for International Passengers"
+   ]
+  ],
+  "keepSchema": true,
+  "card": {
+   "status": "stop",
+   "head": "Declare plants; fruit and soil are banned.",
+   "lines": [
+    "Use the red channel for plants and plant products; the GACC guide prohibits fruit, solanaceous vegetables and soil."
+   ]
+  }
+ },
+ "South Africa": {
+  "date": "Department statement of 26 December 2024, read 18 October 2026",
+  "ttl": "Seeds & Plants into South Africa: Permit Rules 2026",
+  "desc": "Bringing plants or seeds into South Africa (2026): High-risk - usually needs a permit. Live plants, seeds, soil and cuttings are tightly controlled.",
+  "lead": "South Africa's Department of Agriculture warned travellers in December 2024 that plants and plant products need a plant health import permit, obtainable from its Food Import and Export Standards directorate. The statement lists plants and plant products, growth medium and soil among prohibited agricultural products and says an import permit or certificate is needed unless the product has been exempted.",
+  "rows": [
+   [
+    "Plants and plant products",
+    "Need a plant health import permit"
+   ],
+   [
+    "Where to get the permit",
+    "The department's Directorate: Food Import and Export Standards"
+   ],
+   [
+    "Growth medium and soil",
+    "Listed among the prohibited agricultural products"
+   ],
+   [
+    "Exemptions",
+    "An import permit or certificate is required unless the product has been exempted; the statement does not say which items are exempt"
+   ],
+   [
+    "If you do not comply",
+    "Products can be confiscated at the port of entry"
+   ],
+   [
+    "Who is responsible",
+    "The importer must make sure products meet South African sanitary and phytosanitary requirements"
+   ],
+   [
+    "Stock remedies and fertilisers",
+    "Must be declared to inspectors at ports of entry"
+   ]
+  ],
+  "notes": [
+   "<strong>Not read:</strong> the statement does not mention seeds or fruit separately, gives no quantity allowance and no application steps; ask the department before you travel."
+  ],
+  "faq": [
+   [
+    "Can I bring seeds into South Africa?",
+    "The Department of Agriculture statement does not name seeds, but it says plants and plant products need a plant health import permit unless they are exempted."
+   ],
+   [
+    "Where do I get a plant health import permit for South Africa?",
+    "From the department's Directorate: Food Import and Export Standards, according to the statement."
+   ],
+   [
+    "Can I bring soil to South Africa?",
+    "Growth medium and soil are on the department's list of prohibited agricultural products."
+   ],
+   [
+    "What happens to plants without a permit in South Africa?",
+    "They can be confiscated at the port of entry."
+   ]
+  ],
+  "src": [
+   [
+    "https://www.sanews.gov.za/node/72499",
+    "SAnews (South African Government News Agency) &mdash; Travellers urged to comply with biosecurity import requirements"
+   ]
+  ],
+  "keepSchema": true,
+  "card": {
+   "status": "stop",
+   "head": "A plant health import permit is needed.",
+   "lines": [
+    "Soil and growth medium are prohibited; products without a permit can be confiscated at the border."
+   ]
+  }
+ },
+ "Israel": {
+  "date": "Tax Authority guide updated 30 July 2026, read 18 October 2026",
+  "ttl": "Can You Bring Seeds & Plants into Israel? Permit Rules (2026)",
+  "desc": "Bringing plants or seeds into Israel (2026): Plants and seeds need a plant protection certificate.",
+  "lead": "The Israel Tax Authority's guide for tourists lists plants and seeds among the goods whose import depends on approval from the Ministry of Agriculture's plant protection service. A licence has to be in hand before the goods reach Israel, and importing without one is an offence that can lead to a fine.",
+  "rows": [
+   [
+    "Plants and seeds",
+    "Import is conditional on approval from the competent authority, the Ministry of Agriculture (plant protection certificate)"
+   ],
+   [
+    "Licence versus approval",
+    "A licence must be obtained before the item arrives in Israel; an approval can come before or after arrival, but customs releases the item only once a valid approval is shown"
+   ],
+   [
+    "Importing without it",
+    "An offence that may lead to penalties: a fine or a monetary composition"
+   ],
+   [
+    "Where to ask",
+    "Ministry of Agriculture plant protection office at Beit Dagan, tel. 03-9681587, public reception on Wednesday 8:30 to 15:00"
+   ],
+   [
+    "Not sure which channel",
+    "Go through the red channel"
+   ],
+   [
+    "Check in advance",
+    "The guide advises asking the relevant authority about the criteria and whether a permit or licence is needed, and points to the Personal Importation Calculator"
+   ]
+  ],
+  "notes": [
+   "<strong>Not read:</strong> the guide does not describe which plants or seeds qualify, any small-quantity exception or the permit steps; these are handled by the Ministry of Agriculture."
+  ],
+  "faq": [
+   [
+    "Can I bring seeds into Israel?",
+    "The Tax Authority guide says importing plants and seeds is conditional on approval from the Ministry of Agriculture's plant protection service, so ask the Ministry before you travel."
+   ],
+   [
+    "Do I need a permit to bring plants into Israel?",
+    "Yes, the guide lists plants and seeds among the items needing approval or a licence from the competent authority, here the Ministry of Agriculture."
+   ],
+   [
+    "What happens if I import plants into Israel without a licence?",
+    "The guide calls it an offence that may lead to penalties, meaning a fine or a monetary composition."
+   ],
+   [
+    "Who do I contact about plant imports in Israel?",
+    "The Ministry of Agriculture plant protection office at Beit Dagan, tel. 03-9681587."
+   ]
+  ],
+  "src": [
+   [
+    "https://www.gov.il/en/pages/guide-tourist-customs",
+    "Israel Tax Authority &mdash; Customs guide for tourists and foreign residents"
+   ]
+  ],
+  "keepSchema": true,
+  "card": {
+   "status": "stop",
+   "head": "Plants and seeds need Ministry approval.",
+   "lines": [
+    "Get the Ministry of Agriculture's licence before you arrive; importing without it is an offence."
+   ]
+  }
+ },
+ "Maldives": {
+  "date": "Maldives Customs page read 18 October 2026",
+  "ttl": "Can You Bring Seeds & Plants into Maldives? Permit Rules (2026)",
+  "desc": "Bringing plants or seeds into Maldives (2026): All plants need a certificate and inspection.",
+  "lead": "Maldives Customs puts live plants on its list of restricted goods: all plants need a valid phytosanitary certificate and must be inspected and approved by the Ministry of Fisheries and Agriculture. The page does not name seeds or soil.",
+  "rows": [
+   [
+    "Plants",
+    "All plants require a valid phytosanitary or sanitary certificate"
+   ],
+   [
+    "Inspection",
+    "Plants must also be inspected and approved by the Ministry of Fisheries and Agriculture"
+   ],
+   [
+    "Category",
+    "Listed under restricted goods, meaning goods that need a specific permit or document to be imported"
+   ],
+   [
+    "Not on the page",
+    "No separate rule for seeds, soil, cut flowers or fruit, and no quantity allowance"
+   ],
+   [
+    "Prohibited goods list",
+    "Narcotics and psychotropic substances, pornographic material, religious material offensive to Islam, live pigs and idols for worship; plants are not in that list"
+   ]
+  ],
+  "notes": [
+   "<strong>Not read:</strong> the Customs page covers live plants only in one line; ask the Ministry of Fisheries and Agriculture about seeds and other plant material before you travel."
+  ],
+  "faq": [
+   [
+    "Can I bring plants into the Maldives?",
+    "Plants are restricted: each needs a valid phytosanitary or sanitary certificate and must be inspected and approved by the Ministry of Fisheries and Agriculture."
+   ],
+   [
+    "Can I bring seeds into the Maldives?",
+    "The Customs page does not mention seeds separately, so ask the Ministry of Fisheries and Agriculture before you travel."
+   ],
+   [
+    "Are plants prohibited in the Maldives?",
+    "No, Customs lists them as restricted goods needing a certificate and approval, not as prohibited goods."
+   ]
+  ],
+  "src": [
+   [
+    "https://www.customs.gov.mv/Individuals/Items%20for%20Personal%20Use/Individual-Prohibited-and-Restricted-Items-for-Import",
+    "Maldives Customs Service &mdash; Prohibited and restricted items for import"
+   ]
+  ],
+  "keepSchema": true,
+  "card": {
+   "status": "warn",
+   "head": "Plants need a certificate and approval.",
+   "lines": [
+    "A phytosanitary certificate plus inspection by the Ministry of Fisheries and Agriculture is required for all plants."
+   ]
+  }
+ },
+ "Turkey": {
+  "date": "Ministry plant quarantine pages read 18 October 2026",
+  "ttl": "Can You Bring Seeds & Plants into Turkey? Permit Rules (2026)",
+  "desc": "Bringing plants or seeds into Turkey (2026): High-risk - usually needs a permit. Live plants, seeds, soil and cuttings are tightly controlled.",
+  "lead": "The Turkish Ministry of Agriculture and Forestry allows passengers to carry up to 3 kg of fresh or dried fruit and vegetables for their own use and one flower bouquet and one wreath, but bans seeds, tubers, seedlings, saplings and cuttings in passenger luggage whatever the quantity. Those items can only come in as imports under the Plant Quarantine Regulation.",
+  "rows": [
+   [
+    "Fruit and vegetables, fresh or dried",
+    "Up to 3 kg per passenger for personal consumption; more than that is subject to import procedures"
+   ],
+   [
+    "Flowers",
+    "One bouquet and one wreath for non-commercial use; extra is subject to import procedures"
+   ],
+   [
+    "Seeds, tubers, seedlings, saplings, cuttings",
+    "Not allowed with passengers, whatever the quantity; they can be imported under the Plant Quarantine Regulation"
+   ],
+   [
+    "Agricultural soil and natural fertiliser",
+    "Prohibited (growing media are excluded from the soil ban)"
+   ],
+   [
+    "Certain woods and bark",
+    "Bark of chestnut, oak, sycamore and poplar, conifer wood for fuel and raw cotton are on the prohibited list"
+   ],
+   [
+    "Some palms and Agave americana",
+    "Banned from the countries listed in Annex 3; fruit and seeds, and planting plants with a base stem over 5 cm, are excluded"
+   ],
+   [
+    "Entry points",
+    "Only through authorised gates, with complete and correct documents; land borders allow transit only"
+   ],
+   [
+    "Ministry notice of 29 October 2021",
+    "Says seed material may travel with a Phytosanitary Certificate yet repeats that carrying it with passengers is banned; the page does not reconcile the two"
+   ]
+  ],
+  "notes": [
+   "<strong>Not read:</strong> the pages do not name the certificate for fruit or plants, and the annex lists of quarantine pests are on other pages; ask the plant quarantine directorate at your border gate."
+  ],
+  "faq": [
+   [
+    "Can I bring seeds into Turkey?",
+    "The Ministry says seeds, tubers, seedlings, saplings and cuttings cannot be carried with a passenger whatever the quantity; they can only be imported under the Plant Quarantine Regulation."
+   ],
+   [
+    "How much fruit can I bring into Turkey?",
+    "Up to 3 kg of fresh or dried fruit and vegetables for personal consumption; more is subject to import procedures."
+   ],
+   [
+    "Can I bring flowers to Turkey?",
+    "One bouquet and one wreath for non-commercial purposes; any excess is subject to import procedures."
+   ],
+   [
+    "Can I bring soil to Turkey?",
+    "Agricultural soil is prohibited, although growing media are excluded from that ban."
+   ]
+  ],
+  "src": [
+   [
+    "https://zkm.tarimorman.gov.tr/hatay/Menu/54/Ithalat-On-Izinler-Yasaklar",
+    "Ministry of Agriculture and Forestry (Hatay Plant Quarantine Directorate) &mdash; Import pre-permits and prohibitions"
+   ]
+  ],
+  "keepSchema": true,
+  "card": {
+   "status": "stop",
+   "head": "Seeds and cuttings are banned in luggage.",
+   "lines": [
+    "Up to 3 kg of fruit and vegetables and one bouquet are allowed; seeds, seedlings and cuttings are not, whatever the amount."
+   ]
+  }
+ }
+}

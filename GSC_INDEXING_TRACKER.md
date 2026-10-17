@@ -408,3 +408,19 @@ Pilot check 2026-11-14 (impressions/clicks vs Wi-Fi pilot). Alaska Airlines not 
 22. https://canitakethis.co/food/belgium/
 23. https://canitakethis.co/food/singapore/
 24. https://canitakethis.co/food/united-arab-emirates/
+
+## Plants & seeds rebuilt from official pages (session 35, 2026-10-18): OPTIONAL re-index requests, not deployed yet
+1. https://canitakethis.co/country/new-zealand/plants-seeds/
+2. https://canitakethis.co/country/chile/plants-seeds/
+3. https://canitakethis.co/country/hong-kong/plants-seeds/
+4. https://canitakethis.co/country/iceland/plants-seeds/
+5. https://canitakethis.co/country/mauritius/plants-seeds/
+6. https://canitakethis.co/country/fiji/plants-seeds/
+7. https://canitakethis.co/country/sri-lanka/plants-seeds/
+8. https://canitakethis.co/country/jamaica/plants-seeds/
+9. https://canitakethis.co/country/argentina/plants-seeds/
+10. https://canitakethis.co/country/china/plants-seeds/
+11. https://canitakethis.co/country/south-africa/plants-seeds/
+12. https://canitakethis.co/country/israel/plants-seeds/
+13. https://canitakethis.co/country/maldives/plants-seeds/
+14. https://canitakethis.co/country/turkey/plants-seeds/
