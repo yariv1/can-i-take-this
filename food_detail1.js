@@ -3,10 +3,10 @@
 // NOT read: the APQA site itself (qia.go.kr redirected to a Korean home page), the current list of prohibited regions, any rule for sealed packaged food.
 module.exports = {
   "South Korea": {
-    answer: "South Korea bans almost all fresh fruit and vegetables. Meat, poultry, processed meat, eggs and dairy must be declared, and animal products need a valid quarantine or heat-treatment certificate issued by the country you travel from; anything from a prohibited region is banned. Dried or fresh agricultural products, nuts, seeds and medicinal herbs must also be reported and inspected. Prohibited items are confiscated, and a traveler found carrying one can be punished under Korean customs law.",
+    answer: "South Korea bans all fresh fruit and vegetables. Meat, poultry, processed meat, eggs and dairy must be declared, and animal products need a valid quarantine or heat-treatment certificate issued by the country you travel from; anything from a prohibited region is banned. Dried or fresh agricultural products, nuts, seeds and medicinal herbs must also be reported and inspected. Prohibited items are confiscated, and a traveler found carrying one can be punished under Korean customs law.",
     stats: [
       ["Declare", "meat, processed meat, eggs, dairy"],
-      ["Banned", "almost all fresh fruit and vegetables"],
+      ["Banned", "all fresh fruit and vegetables"],
       ["Certificate", "quarantine or heat-treatment certificate for animal products"],
       ["5 kg / 40 kg", "tax-free limit per farm, livestock or fishery product / in total"]
     ],
@@ -25,7 +25,7 @@ module.exports = {
       { h: "🍎 Fruit, vegetables and plant products",
         p: "Travelers carrying plants, fruits, vegetables, seeds, orchids, nursery stock, cut flowers, soil and similar items must report to customs and the items undergo inspection.",
         table: { head: ["Item", "Status on Korea's page"], rows: [
-          ["Almost all fresh fruits and vegetables", "Prohibited"],
+          ["All fresh fruits and vegetables", "Prohibited"],
           ["Rice plant, rice husks, rice straw and related products", "Prohibited (polished rice grains are the exception)"],
           ["Unshelled walnuts, unripe beans, unpeeled potatoes and sweet potatoes", "Prohibited"],
           ["Planted crops (ginseng, mushrooms and similar) and planted saplings", "Prohibited"],
@@ -43,7 +43,7 @@ module.exports = {
           "If a packaged product contains meat, dairy, egg or plant material, treat it under that category above and declare it. When unsure, declare it: the pages we read describe penalties for carrying prohibited items, and none for declaring."] }
     ],
     faq: [
-      ["Can I bring fresh fruit into South Korea?", "No. South Korea's plant quarantine list prohibits almost all fresh fruits and vegetables; dried or fresh agricultural products that are not prohibited must be declared and inspected."],
+      ["Can I bring fresh fruit into South Korea?", "No. South Korea's plant quarantine list prohibits all fresh fruits and vegetables; dried or fresh agricultural products that are not prohibited must be declared and inspected."],
       ["Can I bring meat or cheese into South Korea?", "They must be declared, and animal products must come with a valid quarantine or heat-treatment certificate issued by the country you travel from. Items from a prohibited region are banned."],
       ["What happens if I do not declare food in South Korea?", "Prohibited items are confiscated, and you can be punished under Korean customs law. Goods above the tax exemption that are not declared face an additional 40% tax (60% for repeat cases within 2 years)."],
       ["How much food can I bring into South Korea tax-free?", "The customs page lists, for agricultural, livestock and fishery products, up to 5 kg of each good and 40 kg in total, within the US$800 total taxable value."],
