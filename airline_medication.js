@@ -1,7 +1,7 @@
 // Airline Medication pages (pilot, 2026-10-17): /airline/<slug>/medication/ + a "Medication" tab, shown ONLY for airlines listed here.
 // Rule (user order 2026-10-17, same standard as the Wi-Fi pilot): an airline is listed ONLY when its OWN published pages were READ and say something about medication.
 // Everything on the cards comes from those airline pages plus TSA (US government). Anything an airline does not publish is said as "not published", never filled from third-party sources.
-// Pilot airlines: Delta, American, United, Southwest, then Ryanair, Emirates, Air Canada, Lufthansa, then JetBlue, KLM, easyJet, Air France, Turkish, then Qantas, Singapore Airlines, Cathay Pacific, Vueling, Finnair, Iberia, SAS, then Etihad, Air India, LATAM, Air New Zealand, Aer Lingus, TAP (non-US carriers use their own pages; Air Canada also uses CATSA, Canada's screening authority). Alaska Airlines is NOT listed (pages unreadable): British Airways (the medicines section did not load), Qatar Airways (no readable medication page), alaskaair.com returned only an error page from every browser tried on 2026-10-17 (summaries are not reading).
+// Pilot airlines: Delta, American, United, Southwest, then Ryanair, Emirates, Air Canada, Lufthansa, then JetBlue, KLM, easyJet, Air France, Turkish, then Qantas, Singapore Airlines, Cathay Pacific, Vueling, Finnair, Iberia, SAS, then Etihad, Air India, LATAM, Air New Zealand, Aer Lingus, TAP, then Avianca, SWISS, Austrian, Brussels Airlines, Norwegian (non-US carriers use their own pages; Air Canada also uses CATSA, Canada's screening authority). Alaska Airlines is NOT listed (pages unreadable): British Airways (the medicines section did not load), Qatar Airways (no readable medication page), alaskaair.com returned only an error page from every browser tried on 2026-10-17 (summaries are not reading).
 const COMP = require('./airline_compensation.js');
 const BAGD = require('./baggage_detail.js');
 const { CSS, table } = BAGD;
@@ -36,8 +36,8 @@ const ABROAD_LINES = [
 // ---------- anti-duplication polish (user order 2026-10-17: no generic, repeated text across airline pages) ----------
 // 1) Cards whose only content is "the page does not say" are merged into ONE airline-specific card ("Not published") instead of 3-4 identical cards.
 // 2) The "Flying abroad" card names the airline and links to the medication rules of its home country; the generic sentences are not repeated.
-const HOME = { delta: 'united-states', 'american-airlines': 'united-states', united: 'united-states', southwest: 'united-states', jetblue: 'united-states', ryanair: 'ireland', 'aer-lingus': 'ireland', emirates: 'united-arab-emirates', 'etihad-airways': 'united-arab-emirates', 'air-canada': 'canada', lufthansa: 'germany', klm: 'netherlands', easyjet: 'united-kingdom', 'air-france': 'france', 'turkish-airlines': 'turkey', qantas: 'australia', 'singapore-airlines': 'singapore', 'cathay-pacific': 'hong-kong', vueling: 'spain', iberia: 'spain', finnair: 'finland', sas: 'sweden', 'air-india': 'india', latam: 'chile', 'air-new-zealand': 'new-zealand', 'tap-air-portugal': 'portugal' };
-const HOMENAME = { 'united-states': 'the United States', ireland: 'Ireland', 'united-arab-emirates': 'the UAE', canada: 'Canada', germany: 'Germany', netherlands: 'the Netherlands', 'united-kingdom': 'the UK', france: 'France', turkey: 'Turkey', australia: 'Australia', singapore: 'Singapore', 'hong-kong': 'Hong Kong', spain: 'Spain', finland: 'Finland', sweden: 'Sweden', india: 'India', chile: 'Chile', 'new-zealand': 'New Zealand', portugal: 'Portugal' };
+const HOME = { delta: 'united-states', 'american-airlines': 'united-states', united: 'united-states', southwest: 'united-states', jetblue: 'united-states', ryanair: 'ireland', 'aer-lingus': 'ireland', emirates: 'united-arab-emirates', 'etihad-airways': 'united-arab-emirates', 'air-canada': 'canada', lufthansa: 'germany', klm: 'netherlands', easyjet: 'united-kingdom', 'air-france': 'france', 'turkish-airlines': 'turkey', qantas: 'australia', 'singapore-airlines': 'singapore', 'cathay-pacific': 'hong-kong', vueling: 'spain', iberia: 'spain', finnair: 'finland', sas: 'sweden', 'air-india': 'india', latam: 'chile', 'air-new-zealand': 'new-zealand', 'tap-air-portugal': 'portugal', avianca: 'colombia', swiss: 'switzerland', austrian: 'austria', 'brussels-airlines': 'belgium', norwegian: 'norway' };
+const HOMENAME = { 'united-states': 'the United States', ireland: 'Ireland', 'united-arab-emirates': 'the UAE', canada: 'Canada', germany: 'Germany', netherlands: 'the Netherlands', 'united-kingdom': 'the UK', france: 'France', turkey: 'Turkey', australia: 'Australia', singapore: 'Singapore', 'hong-kong': 'Hong Kong', spain: 'Spain', finland: 'Finland', sweden: 'Sweden', india: 'India', chile: 'Chile', 'new-zealand': 'New Zealand', portugal: 'Portugal', colombia: 'Colombia', switzerland: 'Switzerland', austria: 'Austria', belgium: 'Belgium', norway: 'Norway' };
 const SLUG = a => a.name.toLowerCase().replace(/&/g, 'and').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 const GENERIC_LINE = /not say|does not say|do not say|set by the security rules|gives no|give no|plan to carry your own cooling|depend on the airports|does not cover|do not cover|did not display|not state/i;
 const UNK = { liquids: 'the liquid limit for medication', needles: 'the rule for needles and syringes', cold: 'cold storage or a fridge', devices: 'the rule for medical equipment', allergy: 'allergy medication' };
@@ -1528,6 +1528,259 @@ const NP = 'Not published on the pages we read';
       ['Medical devices?', 'Allowed; contact TAP early']
     ],
     extra: steps(['Carry your usual medication in your hand baggage, enough for longer than your trip.', 'Carry the written prescription for injectable medication such as insulin.', 'Contact TAP early if you bring a POC, CPAP or other powered device.'])
+  });
+}
+
+// ---------------- AVIANCA ----------------
+// Read 17 October 2026 on ayuda.avianca.com: Can I bring medications on board?; Can I bring liquids in my carry-on baggage?
+{
+  const MD = ['https://ayuda.avianca.com/hc/en-us/articles/43737509334427-Can-I-bring-medications-on-board', 'Avianca Help Center: Can I bring medications on board?', 'Permitted medications, documents'];
+  const LQ = ['https://ayuda.avianca.com/hc/en-us/articles/13083098505627-Can-I-bring-liquids-in-my-carry-on-baggage', 'Avianca Help Center: Can I bring liquids in my carry-on baggage?', 'Liquids rule'];
+  add({
+    slug: 'avianca', name: 'Avianca',
+    h1: 'Avianca Medication Policy: Tablets, Syrups, Insulin, Syringes & Controlled Medication (2026)',
+    desc: 'Can you bring medication on Avianca? Yes, in your carry-on. Insulin, syringes, liquids over 100 ml and controlled medication need a prescription or medical certificate. Crew cannot give you medication. Checked 17 October 2026.',
+    answer: 'Yes. Avianca says medication goes in your carry-on and must be for personal use. You need a prescription or medical certificate for insulin and other injectables, syringes and needles, liquid medication over 100 ml, controlled medication and medical devices used in flight. Avianca staff cannot help you give medication.',
+    srcNote: 'From Avianca\'s own help center, last checked 17 October 2026. Rules change, so confirm with the airline before you fly.',
+    scen: [
+      card('pills', 'Pills & tablets', 'go', 'Carry-on, personal use', 'Tablets, capsules, inhalers', 'Tablets, capsules, syrups and inhalers go in your carry-on, for personal use.', [
+        'Avianca: you can bring medication on the plane. Carry it in your carry-on baggage and, if applicable, show your prescription or medical certificate at security.',
+        'Avianca lists tablets or capsules, syrups or liquids (which may exceed 100 ml if for medical use) and inhalers or medical aerosols as permitted medications.',
+        'Avianca: medications must be for personal use. If they exceed 100 ml or are injectable, extra verification may be required.'
+      ], [MD], true),
+      card('liquids', 'Liquid medication', 'warn', 'Prescription over 100 ml', 'Over 100 ml (3.4 oz)', 'Liquid medication over 100 ml is allowed for medical use, with a prescription or certificate.', [
+        'Avianca: syrups or liquids may exceed 100 ml if for medical use, and liquid medication over 100 ml needs a prescription or medical certificate.',
+        'Avianca\'s general liquids rule is 100 ml containers in one transparent bag of up to 1 litre, and its exceptions list covers medical needs. Airport security and customs rules vary by airport, including where you connect.'
+      ], [MD, LQ]),
+      card('needles', 'Insulin & syringes', 'warn', 'Prescription or certificate', 'Injectables, syringes, needles', 'Insulin, other injectables, syringes and needles need a prescription or medical certificate.', [
+        'Avianca: you need a prescription or medical certificate when you carry insulin or other injectable medications, and syringes or needles.',
+        'Avianca: its staff are not authorised to help give medication, carry out medical procedures or operate medical equipment during the flight.'
+      ], [MD]),
+      card('controlled', 'Controlled medication', 'warn', 'Prescription or certificate', 'Controlled and special medication', 'Controlled medication needs a prescription or medical certificate.', [
+        'Avianca: you need a prescription or medical certificate when carrying controlled medications and medical devices you will use during the flight.',
+        'Avianca points to its page on medical certificates for the full details.'
+      ], [MD]),
+      card('abroad', 'Flying abroad', 'warn', 'Check the destination', 'International flights', 'Your destination country sets its own medication rules.', ABROAD_LINES, [MD])
+    ],
+    faq: [
+      ['Can I bring medication on an Avianca flight?', 'Yes. Avianca says to carry medication in your carry-on baggage, for personal use, and to show your prescription or medical certificate at security if asked.'],
+      ['Do I need a prescription for insulin and syringes on Avianca?', 'Yes. Avianca says you need a prescription or medical certificate when carrying insulin or other injectable medications, and syringes or needles.'],
+      ['Can I bring liquid medication over 100 ml on Avianca?', 'Yes, if it is for medical use and you carry a prescription or medical certificate. Avianca lists syrups or liquids as allowed above 100 ml for medical use.'],
+      ['Will Avianca crew help me take my medication?', 'No. Avianca says its team is not authorised to assist with giving medication, medical procedures or operating medical equipment during the flight.']
+    ],
+    tableTitle: 'Avianca medication rules at a glance',
+    tableNote: 'What Avianca\'s own help center says.',
+    rows: [
+      ['Where should medication go?', 'Carry-on, for personal use'],
+      ['Can it be over 100 ml?', 'Yes for medical use, with a prescription or certificate'],
+      ['Insulin, syringes and needles?', 'Prescription or medical certificate'],
+      ['Controlled medication?', 'Prescription or medical certificate'],
+      ['Help with medication on board?', 'Crew cannot assist'],
+      ['Fridge on board?', NP]
+    ],
+    extra: steps(['Carry medication in your carry-on and keep it for personal use.', 'Bring a prescription or medical certificate for insulin, syringes, liquids over 100 ml and controlled medication.', 'Check the security rules of every airport on your route, including connections.'])
+  });
+}
+
+// ---------------- SWISS ----------------
+// Read 17 October 2026 on swiss.com: Medication, pacemakers and implants (medical services).
+{
+  const PG = ['https://www.swiss.com/medicalservices/en/health/medical-equipment-and-care/medication-pacemakers-and-implants', 'SWISS: Medication, pacemakers and implants', 'Carry-on, security, cooling'];
+  add({
+    slug: 'swiss', name: 'SWISS',
+    h1: 'SWISS Medication Policy: Carrying Medicines, Syringes, Insulin & Time Zones (2026)',
+    desc: 'Can you bring medication on SWISS? Yes. Carry 1.5 to 2 times what you expect to need in your hand baggage, with an English medical certificate for medication and syringes. SWISS cannot refrigerate medication. Checked 17 October 2026.',
+    answer: 'Yes. SWISS advises carrying 1.5 to 2 times the amount of regular medication you expect to need in your carry-on baggage, because flights can be diverted or delayed. For security, bring a medical certificate in English confirming that medication and syringes are for your personal use. SWISS cannot refrigerate medication.',
+    srcNote: 'From SWISS\'s own medical services page, last checked 17 October 2026. Rules change, so confirm with the airline before you fly.',
+    scen: [
+      card('pills', 'Pills & tablets', 'go', 'Take extra in hand baggage', 'Regular medication', 'SWISS advises taking 1.5 to 2 times the amount you expect to need in your carry-on.', [
+        'SWISS: if you take regular medication, take 1.5 to 2 times the amount you expect to need in your carry-on baggage, since flights can be diverted and sometimes suffer substantial delays even once you are seated.',
+        'SWISS: if you take medication at regular intervals and fly across time zones, consult your doctor before the flight. For insulin, SWISS has a separate section for diabetics.',
+        'SWISS: ask your doctor for a document with key health data and the names of your medication, including the active agents and the doses, in case you lose it, and carry the papers you may need to get treatment or a prescription abroad.'
+      ], [PG], true),
+      card('liquids', 'Liquid medication', 'warn', 'Not published', 'Over 100 ml (3.4 oz)', 'The SWISS page we read gives no liquid limit for medication.', [
+        'The liquid limit for medication is set by the security rules at the airport you fly from: check them before you pack.'
+      ], [PG]),
+      card('needles', 'Insulin & syringes', 'warn', 'English medical certificate', 'Medication and syringes at security', 'SWISS advises an English medical certificate for medication and syringes.', [
+        'SWISS: if you have medication or syringes in your carry-on baggage, it is advisable to carry a medical certificate in English confirming that they are medical supplies you need for personal use.'
+      ], [PG]),
+      card('cold', 'Cold medication', 'warn', 'Bring a cool bag or flask', 'Medication that must stay cold', 'SWISS cannot refrigerate medication for you.', [
+        'SWISS: it cannot refrigerate medication for you. If your medication must be kept cool, a cool bag or vacuum flask may be appropriate, or discuss the options with your pharmacist.'
+      ], [PG]),
+      card('devices', 'Pacemakers & implants', 'warn', 'Certificate before security', 'Pacemaker, metal implants', 'A pacemaker or metal implant needs a medical certificate in English before the security check.', [
+        'SWISS: if you have a heart pacemaker or a metal implant (an artificial joint, or metal wires or screws for a fracture), produce a medical certificate in English confirming this before the security check.'
+      ], [PG]),
+      card('abroad', 'Flying abroad', 'warn', 'Check the destination', 'International flights', 'Your destination country sets its own medication rules.', ABROAD_LINES, [PG])
+    ],
+    faq: [
+      ['Can I bring medication on a SWISS flight?', 'Yes. SWISS advises taking 1.5 to 2 times the amount of regular medication you expect to need in your carry-on baggage.'],
+      ['Do I need a medical certificate for syringes on SWISS?', 'SWISS advises it: carry a medical certificate in English confirming that your medication and syringes are medical supplies for your personal use.'],
+      ['Does SWISS refrigerate medication?', 'No. SWISS says it cannot refrigerate medication. It suggests a cool bag or vacuum flask, or asking your pharmacist about options.'],
+      ['What if I lose my medication on a SWISS trip?', 'SWISS recommends a document from your doctor stating your key health data, the names and active agents of your medication and your doses, plus the papers needed to get treatment or a prescription abroad.']
+    ],
+    tableTitle: 'SWISS medication rules at a glance',
+    tableNote: 'What SWISS\'s own medical services page says.',
+    rows: [
+      ['How much to carry?', '1.5 to 2 times what you expect to need, in the carry-on'],
+      ['Can it be over 100 ml?', NP],
+      ['Medication and syringes at security?', 'Medical certificate in English advised'],
+      ['Fridge on board?', 'No. Cool bag or vacuum flask'],
+      ['Pacemaker or metal implant?', 'Medical certificate in English before security']
+    ],
+    extra: steps(['Pack 1.5 to 2 times the medication you expect to need in your carry-on.', 'Carry an English medical certificate for medication and syringes.', 'Ask your doctor for a list of your medication, active agents and doses in case you lose it.', 'Use a cool bag or vacuum flask for medication that must stay cold.'])
+  });
+}
+
+// ---------------- AUSTRIAN ----------------
+// Read 17 October 2026 on austrian.com: FAQs Flying and Health (Medical care on board).
+{
+  const PG = ['https://www.austrian.com/us/en/faq-medizinische-fragen', 'Austrian Airlines: FAQs Flying and Health', 'Medical care on board'];
+  add({
+    slug: 'austrian', name: 'Austrian Airlines',
+    h1: 'Austrian Airlines Medication Policy: Hand Luggage, Syringes, Cooling & Lost Medication (2026)',
+    desc: 'Can you bring medication on Austrian Airlines? Yes, spread across your hand luggage, 1.5 to 2 times what you need. Medication cannot be refrigerated on board; a cooling pack or dry ice can be used. Bring a medical certificate for medication and syringes. Checked 17 October 2026.',
+    answer: 'Yes. Austrian Airlines recommends spreading your medication across different pieces of hand luggage and taking 1.5 to 2 times what you need. Medication cannot be refrigerated on board, but it can be cooled with a cooling pack or dry ice. For medication and syringes in your hand luggage, a medical certificate is advisable.',
+    srcNote: 'From Austrian Airlines\' own FAQ page, last checked 17 October 2026. Rules change, so confirm with the airline before you fly.',
+    scen: [
+      card('pills', 'Pills & tablets', 'go', 'Spread across hand luggage', 'Regular medication', 'Austrian recommends distributing your medication across different pieces of hand luggage.', [
+        'Austrian Airlines: pack medication so it resists impact and, as far as possible, distribute your needs across different pieces of hand luggage.',
+        'Austrian Airlines: take 1.5 to 2 times the medicine you need in your hand luggage, in case your flight is unexpectedly diverted or departure is delayed for a long time, even once you are in the aircraft.',
+        'Austrian Airlines: if you take medication at regular intervals and fly across one or more time zones, consult your doctor before the flight.'
+      ], [PG], true),
+      card('liquids', 'Liquid medication', 'warn', 'Not published', 'Over 100 ml (3.4 oz)', 'The Austrian page we read gives no liquid limit for medication.', [
+        'The liquid limit for medication is set by the security rules at the airport you fly from: check them before you pack.'
+      ], [PG]),
+      card('needles', 'Insulin & syringes', 'warn', 'Medical certificate advised', 'Medication and syringes in hand luggage', 'Austrian advises a medical certificate for medication and syringes in your hand luggage.', [
+        'Austrian Airlines: when you take medication and syringes in your hand luggage, it is advisable to carry a medical certificate confirming that it is your essential personal medication.'
+      ], [PG]),
+      card('cold', 'Cold medication', 'warn', 'Cooling pack or dry ice', 'Medication that must stay cold', 'Austrian cannot refrigerate medication, but allows a cooling pack or dry ice.', [
+        'Austrian Airlines: your medication cannot be refrigerated on board. It can be cooled on board with a cooling pack or with dry ice.'
+      ], [PG]),
+      card('lost', 'If you lose medication', 'warn', 'Carry a doctor\'s note', 'Lost medication', 'Carry a doctor\'s note with your blood type, doses and the generic name of your medication.', [
+        'Austrian Airlines: in case your medication is lost on your trip or at your destination, get a note from your doctor with a summary of your blood type and other important health information, including the dosage of your medication and its generic (international non-proprietary) name.',
+        'Austrian Airlines: also take the documents you need to get a prescription in a foreign country.'
+      ], [PG]),
+      card('abroad', 'Flying abroad', 'warn', 'Check the destination', 'International flights', 'Your destination country sets its own medication rules.', ABROAD_LINES, [PG])
+    ],
+    faq: [
+      ['Can I bring medication on an Austrian Airlines flight?', 'Yes. Austrian Airlines recommends distributing your medication across different pieces of hand luggage and taking 1.5 to 2 times the amount you need.'],
+      ['Can I keep medication cold on Austrian Airlines?', 'Medication cannot be refrigerated on board, but Austrian says it can be cooled with a cooling pack or with dry ice.'],
+      ['Do I need a medical certificate for syringes on Austrian Airlines?', 'Austrian advises it: when taking medication and syringes in your hand luggage, carry a medical certificate confirming it is your essential personal medication.'],
+      ['What should I carry in case I lose my medication?', 'A note from your doctor with your blood type and other key health information, the dose of your medication and its generic name, plus the documents you need to obtain a prescription abroad.']
+    ],
+    tableTitle: 'Austrian Airlines medication rules at a glance',
+    tableNote: 'What Austrian Airlines\' own FAQ page says.',
+    rows: [
+      ['How much to carry?', '1.5 to 2 times what you need, spread across hand luggage'],
+      ['Can it be over 100 ml?', NP],
+      ['Medication and syringes?', 'Medical certificate advised'],
+      ['Fridge on board?', 'No. Cooling pack or dry ice is possible'],
+      ['If you lose it?', 'Doctor\'s note with doses and generic names']
+    ],
+    extra: steps(['Spread your medication across several pieces of hand luggage, packed to resist impact.', 'Carry 1.5 to 2 times the amount you need.', 'Carry a medical certificate for medication and syringes.', 'Pack a cooling pack or dry ice for cold medication.'])
+  });
+}
+
+// ---------------- BRUSSELS AIRLINES ----------------
+// Read 17 October 2026 on brusselsairlines.com: Medication & Medical devices (special assistance).
+{
+  const PG = ['https://www.brusselsairlines.com/cv/en/special-care/special-assistance/medication-and-medical-devices', 'Brussels Airlines: Medication & Medical devices', 'Medication, CPAP, dialysis, oxygen'];
+  add({
+    slug: 'brussels-airlines', name: 'Brussels Airlines',
+    h1: 'Brussels Airlines Medication Policy: Pills, Syringes, CPAP, Dialysis & Oxygen (2026)',
+    desc: 'Can you bring medication on Brussels Airlines? Yes: pills, syringes and small devices in your carry-on, with a doctor\'s note. On flights from Belgium the Cube refrigerated box keeps medication cool. Medical oxygen costs EUR 250 or 400. Checked 17 October 2026.',
+    answer: 'Yes. Brussels Airlines lets you carry small portable medical devices (such as an insulin tester) and medication (pills, syringes) in your carry-on if needed during the flight, and recommends a doctor\'s note. On flights from Belgium it offers the Cube, a refrigerated box, for medication that must stay cool.',
+    srcNote: 'From Brussels Airlines\' own page, last checked 17 October 2026. Rules change, so confirm with the airline before you fly.',
+    scen: [
+      card('pills', 'Pills & tablets', 'go', 'Carry-on, doctor\'s note', 'Pills, syringes', 'Medication and syringes are allowed in your carry-on if you need them during the flight.', [
+        'Brussels Airlines: you may carry small, portable medical devices (for example an insulin tester) or medication (for example pills and syringes) in your carry-on baggage if needed during the flight.',
+        'Brussels Airlines recommends a sufficient supply, in case of flight delays or other irregularities, and a doctor\'s note that names the medication, says it is for personal use and that you need it with you at all times.'
+      ], [PG], true),
+      card('liquids', 'Liquid medication', 'warn', 'Not published', 'Over 100 ml (3.4 oz)', 'The Brussels Airlines page we read gives no liquid limit for medication.', [
+        'The liquid limit for medication is set by the security rules at the airport you fly from: check them before you pack.'
+      ], [PG]),
+      card('cold', 'Cold medication', 'go', 'The Cube from Belgium', 'Medication that must stay cold', 'On flights from Belgium the Cube refrigerated box keeps medication cool.', [
+        'Brussels Airlines: on its flights from Belgium it offers the Cube service, a refrigerated box you take on board as hand luggage to keep your medication cool for the whole trip.',
+        'The page we read does not describe cold storage on other routes.'
+      ], [PG]),
+      card('devices', 'CPAP & dialysis', 'warn', 'Conditions apply', 'CPAP, kidney dialysis machines, CAPD bags', 'CPAP machines are accepted under conditions; dialysis machines cannot be used on board.', [
+        'Brussels Airlines: CPAP devices are accepted on board and can be used if switched off and stowed for take-off and landing and whenever the crew requires. A lithium battery must not exceed 160 Wh, and you cannot charge the CPAP from the aircraft power outlets. Charge it for the whole flight plus a margin for irregularities.',
+        'Brussels Airlines: a CPAP that does not fit in your carry-on and weighs up to 3 kg can be brought separately in addition to your carry-on.',
+        'Brussels Airlines: kidney dialysis machines and CAPD bags can travel as carry-on or checked baggage, but using a dialysis machine on board is not allowed.'
+      ], [PG]),
+      card('oxygen', 'Oxygen', 'warn', 'Request at booking', 'Medical oxygen, POC', 'Medical oxygen must be requested and paid for at booking.', [
+        'Brussels Airlines: notify its special assistance team at booking if you want to request or bring oxygen; your doctor fills in the MEDIF form.',
+        'Brussels Airlines can supply up to 5.2 litres of oxygen per minute. Fee: EUR 250 on short-haul and EUR 400 on long-haul flights, paid at booking.'
+      ], [PG]),
+      card('abroad', 'Flying abroad', 'warn', 'Check the destination', 'International flights', 'Your destination country sets its own medication rules.', ABROAD_LINES, [PG])
+    ],
+    faq: [
+      ['Can I bring medication on a Brussels Airlines flight?', 'Yes. Brussels Airlines allows small portable medical devices and medication (pills, syringes) in your carry-on if needed during the flight, and recommends a doctor\'s note naming the medication.'],
+      ['Does Brussels Airlines have a fridge for medication?', 'On flights from Belgium it offers the Cube, a refrigerated box you carry on board as hand luggage. The page we read does not describe cold storage on other routes.'],
+      ['Can I use a CPAP on Brussels Airlines?', 'Yes, under conditions: switched off and stowed during take-off, landing and when the crew requires, with a lithium battery of at most 160 Wh, and not charged from the aircraft outlets.'],
+      ['How much does medical oxygen cost on Brussels Airlines?', 'EUR 250 on short-haul and EUR 400 on long-haul flights, requested and paid at booking, up to 5.2 litres per minute.']
+    ],
+    tableTitle: 'Brussels Airlines medication rules at a glance',
+    tableNote: 'What Brussels Airlines\' own page says.',
+    rows: [
+      ['Where should medication go?', 'Carry-on, if needed during the flight'],
+      ['Doctor\'s note?', 'Recommended: medication name, personal use, needed at all times'],
+      ['Can it be over 100 ml?', NP],
+      ['Cold medication?', 'The Cube on flights from Belgium'],
+      ['CPAP?', 'Accepted; battery max 160 Wh; no aircraft charging'],
+      ['Medical oxygen?', 'EUR 250 short-haul, EUR 400 long-haul']
+    ],
+    extra: steps(['Carry your medication and syringes in your carry-on, with a doctor\'s note.', 'Ask about the Cube for cold medication on flights from Belgium.', 'Charge your CPAP fully and bring a battery margin.', 'Request medical oxygen at booking.'])
+  });
+}
+
+// ---------------- NORWEGIAN ----------------
+// Read 17 October 2026 on norwegian.com (UK site): Travelling with medical conditions (Medication, Medical equipment, Allergies).
+{
+  const PG = ['https://www.norwegian.com/uk/travel-info/special-needs-assistance/medical-conditions/', 'Norwegian: Travelling with medical conditions', 'Medication, equipment, allergies'];
+  add({
+    slug: 'norwegian', name: 'Norwegian',
+    h1: 'Norwegian Medication Policy: Medicines in Hand Baggage, Equipment & Allergies (2026)',
+    desc: 'Can you bring medication on Norwegian? Yes: it strongly recommends hand baggage with the prescription and original packaging. Crew cannot give or cool your medication. Respirator, POC and CPAP users need 150% battery. Checked 17 October 2026.',
+    answer: 'Yes. Norwegian strongly recommends packing necessary medication in your hand baggage, with your prescription if relevant and in its original packaging if possible. Cabin crew cannot give your medication or store it in a cool place. Respirators, POCs and CPAP machines need enough battery for 150% of the flight.',
+    srcNote: 'From Norwegian\'s own page (UK site), last checked 17 October 2026. Rules change, so confirm with the airline before you fly.',
+    scen: [
+      card('pills', 'Pills & tablets', 'go', 'Hand baggage with prescription', 'Keep it with you', 'Norwegian strongly recommends packing medication in your hand baggage.', [
+        'Norwegian: strongly recommended: pack any necessary medication in your hand baggage, along with your prescription if relevant and, if possible, in its original packaging.',
+        'Norwegian: cabin crew cannot administer your medication or store it in a cool place.'
+      ], [PG], true),
+      card('liquids', 'Liquid medication', 'warn', 'Not published', 'Over 100 ml (3.4 oz)', 'The Norwegian page we read gives no liquid limit for medication.', [
+        'The liquid limit for medication is set by the security rules at the airport you fly from: check them before you pack.'
+      ], [PG]),
+      card('needles', 'Insulin & syringes', 'warn', 'Not published', 'Needles, syringes, injections', 'The Norwegian page we read gives no rule for syringes or needles.', [
+        'The page we read covers medication in general and does not mention needles or syringes. Security rules depend on the airports you fly from and to.'
+      ], [PG]),
+      card('devices', 'Medical equipment', 'warn', 'Tell Norwegian, 150% battery', 'Respirator, ventilator, POC, CPAP', 'Tell Norwegian about a respirator, ventilator, POC or CPAP at the airport, and bring enough battery.', [
+        'Norwegian: tell the airport staff about your respirator, ventilator, portable oxygen concentrator or CPAP. If you will use the device on board you may need a medical certificate confirming you are fit to fly.',
+        'Norwegian: the certificate must be less than 10 days old and, on international flights, in English.',
+        'Norwegian: bring enough battery for 150% of the flight, because devices cannot be charged on board.'
+      ], [PG]),
+      card('allergy', 'Allergy medication', 'warn', 'Keep it easy to reach', 'Allergy medicine', 'Bring your allergy medicine on board in an easy-to-reach place.', [
+        'Norwegian: bring your allergy medicine on board and keep it in an easy-to-access place in your hand luggage.',
+        'Norwegian: tell the cabin crew about a nut allergy when you board; it cannot guarantee that traces of nuts are absent from meals, snacks or anywhere on the aircraft.'
+      ], [PG]),
+      card('abroad', 'Flying abroad', 'warn', 'Check the destination', 'International flights', 'Your destination country sets its own medication rules.', ABROAD_LINES, [PG])
+    ],
+    faq: [
+      ['Can I bring medication on a Norwegian flight?', 'Yes. Norwegian strongly recommends packing any necessary medication in your hand baggage, with your prescription if relevant and in its original packaging if possible.'],
+      ['Will Norwegian cabin crew give me or cool my medication?', 'No. Norwegian says cabin crew cannot administer medication or store it in a cool place.'],
+      ['Can I use a CPAP or oxygen concentrator on Norwegian?', 'Tell the airport staff about the device. If you use it on board you may need a medical certificate less than 10 days old (in English on international flights), and enough battery for 150% of the flight, since it cannot be charged on board.']
+    ],
+    tableTitle: 'Norwegian medication rules at a glance',
+    tableNote: 'What Norwegian\'s own page says. Where Norwegian is silent we say so.',
+    rows: [
+      ['Where should medication go?', 'Hand baggage, with the prescription, in original packaging'],
+      ['Can it be over 100 ml?', NP],
+      ['Needles and syringes?', NP],
+      ['Fridge or cooler on board?', 'Crew cannot store medication in a cool place'],
+      ['Respirator, POC or CPAP?', 'Tell the airport; certificate under 10 days old; 150% battery']
+    ],
+    extra: steps(['Pack your medication in your hand baggage with the prescription, in its original packaging.', 'Tell the airport staff about a respirator, ventilator, POC or CPAP.', 'Bring a medical certificate under 10 days old (English on international flights) and battery for 150% of the flight.', 'Keep allergy medicine somewhere easy to reach.'])
   });
 }
 
