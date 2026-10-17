@@ -2770,5 +2770,137 @@
     ]
    }
   ]
+ },
+ "Singapore": {
+  "checked": "17 October 2026",
+  "answer": "The Singapore Food Agency sets a limit and an approved-source list for each kind of food you bring for private consumption: beef up to 5 kg from listed countries, 30 shell eggs from listed countries, any fish products, fruit and vegetables in a small hand-carry quantity, and processed food up to 5 kg or 5 litres with a total value of no more than $100 per traveller. Chilled shucked raw oysters and chilled crabmeat are not allowed from any source. Products not listed in the tables are not permitted.",
+  "sources": [
+   [
+    "https://sfa.gov.sg/bringing-food-for-personal-use-from-overseas/list-of-food--food-products-allowed",
+    "Singapore Food Agency — List of food and food products allowed"
+   ],
+   [
+    "https://www.sfa.gov.sg/bringing-food-for-private-consumption-from-overseas/general-rule-to-bring-food-into-singapore-non-commercial",
+    "Singapore Food Agency — General rule to bring food into Singapore (non-commercial)"
+   ]
+  ],
+  "faq": [
+   [
+    "How much processed food can I bring into Singapore?",
+    "All other processed food, such as biscuits, ice cream, jam, kimchi, milk, mooncakes, nuts and wine, from any country: a combined weight of no more than 5 kg or 5 litres and a total value not exceeding $100 per traveller. Cleaned dried bird's nest is limited to 1 kg with no value limit."
+   ],
+   [
+    "Can I bring meat into Singapore?",
+    "Only from the approved countries the SFA lists for each type. Beef is limited to 5 kg; the table gives no weight limit for mutton, pork and poultry, but they must come from approved countries."
+   ],
+   [
+    "Can I bring eggs into Singapore?",
+    "Up to 30 chicken shell eggs from approved countries such as Australia, Japan, Malaysia (West), the USA, Thailand and others. Egg products not listed, such as free-range and processed eggs, are not allowed."
+   ],
+   [
+    "Can I bring fruit and vegetables into Singapore?",
+    "Yes, from any country, in a small, reasonable (hand-carry size) quantity for private consumption. The SFA gives no numeric limit."
+   ]
+  ],
+  "topics": [
+   {
+    "id": "meat",
+    "label": "Meat",
+    "status": "warn",
+    "verdict": "Approved sources only",
+    "head": "Meat is allowed only from approved countries; beef is limited to 5 kg.",
+    "scen": [
+     {
+      "when": "Beef, mutton, pork, poultry",
+      "status": "warn",
+      "tag": "Approved countries",
+      "lines": [
+       "Beef: 5 kg, from countries such as Argentina, Australia, Brazil, Canada, France, Germany, Japan, New Zealand, Spain, the UK, USA and others on the SFA list.",
+       "Mutton, pork and poultry: no weight limit is stated in the table, but each has its own approved-country list. The page says meat includes all food products containing meat."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "fish",
+    "label": "Fish & seafood",
+    "status": "warn",
+    "verdict": "Mostly allowed",
+    "head": "Fish products from all countries; some shellfish are limited or banned.",
+    "scen": [
+     {
+      "when": "Fish and shellfish",
+      "status": "warn",
+      "tag": "Check limits",
+      "lines": [
+       "Fish products (live fish, fillets, canned tuna, dried fish) from all countries, with no limit stated.",
+       "Frozen cooked crabmeat and prawn meat from all countries: 5 kg in total, of which no more than 2 kg crabmeat and prawn meat. Live or frozen oysters only from approved countries.",
+       "Chilled shucked raw oysters and chilled crabmeat are not allowed from any source."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "eggs",
+    "label": "Eggs",
+    "status": "warn",
+    "verdict": "30 shell eggs",
+    "head": "Up to 30 chicken shell eggs from approved countries.",
+    "scen": [
+     {
+      "when": "Shell eggs",
+      "status": "warn",
+      "tag": "Max 30",
+      "lines": [
+       "30 chicken shell eggs, from approved countries including Australia, Brunei, Denmark, Finland, Indonesia, Ireland, Japan, Malaysia (West), the Netherlands, New Zealand, Poland, Spain, Sweden, Korea, Thailand, Ukraine, Turkiye and the USA.",
+       "Egg products that are not listed, such as free-range and processed eggs, are not allowed."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "fruit",
+    "label": "Fruit & veg",
+    "status": "go",
+    "verdict": "Small amount",
+    "head": "Fruit and vegetables from any country in a small hand-carry quantity.",
+    "scen": [
+     {
+      "when": "Fresh produce",
+      "status": "go",
+      "tag": "Small quantity",
+      "lines": [
+       "From all countries and regions, a small, reasonable quantity, meaning hand-carry size, for private consumption. No numeric limit is given."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "processed",
+    "label": "Processed food",
+    "status": "warn",
+    "verdict": "5 kg / $100",
+    "head": "Processed food: 5 kg or 5 litres and $100 in total per traveller.",
+    "scen": [
+     {
+      "when": "Biscuits, milk, nuts, wine and more",
+      "status": "warn",
+      "tag": "Max 5 kg / $100",
+      "lines": [
+       "Combined weight no more than 5 kg or 5 litres, and total value no more than $100 per traveller.",
+       "The page has no separate dairy category: milk counts as processed food. Cleaned dried bird’s nest: 1 kg with no value limit."
+      ]
+     },
+     {
+      "when": "Not read",
+      "status": "warn",
+      "tag": "Ask first",
+      "lines": [
+       "The SFA says the current rules continue to apply while the Food Safety and Security Act is phased in; its page dates are inconsistent, so check the live page before you travel."
+      ]
+     }
+    ]
+   }
+  ]
  }
 }
