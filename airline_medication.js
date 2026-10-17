@@ -32,16 +32,54 @@ const ABROAD_LINES = [
   'Medicines that count as controlled substances can be restricted or need a permit or prescription in the country you fly to. Check the destination country\'s medication rules before you fly.'
 ];
 
+
+// ---------- anti-duplication polish (user order 2026-10-17: no generic, repeated text across airline pages) ----------
+// 1) Cards whose only content is "the page does not say" are merged into ONE airline-specific card ("Not published") instead of 3-4 identical cards.
+// 2) The "Flying abroad" card names the airline and links to the medication rules of its home country; the generic sentences are not repeated.
+const HOME = { delta: 'united-states', 'american-airlines': 'united-states', united: 'united-states', southwest: 'united-states', jetblue: 'united-states', ryanair: 'ireland', 'aer-lingus': 'ireland', emirates: 'united-arab-emirates', 'etihad-airways': 'united-arab-emirates', 'air-canada': 'canada', lufthansa: 'germany', klm: 'netherlands', easyjet: 'united-kingdom', 'air-france': 'france', 'turkish-airlines': 'turkey', qantas: 'australia', 'singapore-airlines': 'singapore', 'cathay-pacific': 'hong-kong', vueling: 'spain', iberia: 'spain', finnair: 'finland', sas: 'sweden', 'air-india': 'india', latam: 'chile', 'air-new-zealand': 'new-zealand', 'tap-air-portugal': 'portugal' };
+const HOMENAME = { 'united-states': 'the United States', ireland: 'Ireland', 'united-arab-emirates': 'the UAE', canada: 'Canada', germany: 'Germany', netherlands: 'the Netherlands', 'united-kingdom': 'the UK', france: 'France', turkey: 'Turkey', australia: 'Australia', singapore: 'Singapore', 'hong-kong': 'Hong Kong', spain: 'Spain', finland: 'Finland', sweden: 'Sweden', india: 'India', chile: 'Chile', 'new-zealand': 'New Zealand', portugal: 'Portugal' };
+const SLUG = a => a.name.toLowerCase().replace(/&/g, 'and').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+const GENERIC_LINE = /not say|does not say|do not say|set by the security rules|gives no|give no|plan to carry your own cooling|depend on the airports|does not cover|do not cover|did not display|not state/i;
+const UNK = { liquids: 'the liquid limit for medication', needles: 'the rule for needles and syringes', cold: 'cold storage or a fridge', devices: 'the rule for medical equipment', allergy: 'allergy medication' };
+function polish(scen, a) {
+  const sl = SLUG(a), home = HOME[sl], HN = home && HOMENAME[home], name = a.name;
+  const merged = [], keep = [];
+  for (const c of scen) {
+    if (c.verdict === 'Not published' && UNK[c.id] && c.lines.every(l => GENERIC_LINE.test(l))) merged.push(c); else keep.push(c);
+  }
+  let out = keep.slice();
+  if (merged.length) {
+    const labels = merged.map(c => UNK[c.id]);
+    const titles = [...new Set(merged.map(c => String(c.sources[0][1]).replace(/^[^:]+: /, '')))];
+    const srcs = []; const seen = new Set();
+    merged.forEach(c => c.sources.forEach(x => { if (!seen.has(x[0])) { seen.add(x[0]); srcs.push(x); } }));
+    const list = labels.length > 1 ? labels.slice(0, -1).join(', ') + ' and ' + labels[labels.length - 1] : labels[0];
+    const card = { id: 'unknown', label: 'Not published', status: 'warn', verdict: 'Not published', sub: 'What ' + name + ' does not say',
+      head: name + '\'s pages we read do not state ' + list + '.',
+      lines: ['Page read: ' + titles.join('; ') + '.', 'Where an airline is silent, the rule of the airport you fly from applies: check its security rules, or ask ' + name + ' before you rely on it.'], sources: srcs, first: false };
+    const ai = out.findIndex(c => c.id === 'abroad' || c.id === 'uae');
+    if (ai < 0) out.push(card); else out.splice(ai, 0, card);
+  }
+  out = out.map(c => {
+    if (c.id !== 'abroad') return c;
+    const rest = c.lines.filter(l => l !== ABROAD_LINES[0] && l !== ABROAD_LINES[1]);
+    const last = HN ? name + ' does not list destination rules for medication. For ' + HN + ' see <a href="/medication/into/' + home + '/">our medication rules for ' + HN.replace(/^the /, 'the ') + '</a>; for other countries check the destination\'s rules first, because controlled medicines (strong painkillers, ADHD or sleep medication, for example) are restricted in many places.' : ABROAD_LINES[1];
+    return Object.assign({}, c, { head: 'The country you fly to sets the rules for your medication, not ' + name + '.', lines: rest.concat([last]) });
+  });
+  out.forEach((c, i) => { c.first = i === 0; });
+  return out;
+}
+
 const out = {};
 const card = (id, label, status, verdict, sub, head, lines, sources, first) => ({ id, label, status, verdict, sub, head, lines, sources, first: !!first });
 
 function add(cfg) {
   out[cfg.slug] = {
     h1: cfg.h1, ttl: cfg.h1, desc: cfg.desc, answer: cfg.answer, faq: cfg.faq,
-    render: a => COMP.__render(a, cfg.scen, cfg.srcNote, { slab: 'What are you bringing?', tag: 'MEDICATION', legend: LEGEND, srcKind: 'ok', checked: CHECKED, medStyle: true }) +
+    render: a => COMP.__render(a, polish(cfg.scen, a), cfg.srcNote, { slab: 'What are you bringing?', tag: 'MEDICATION', legend: LEGEND, srcKind: 'ok', checked: CHECKED, medStyle: true }) +
       '<div class="bd-wrap">' + CSS + '<section class="bd-sec"><h2>💊 ' + esc(cfg.tableTitle) + '</h2><p>' + cfg.tableNote + '</p>' +
       table({ head: ['Question', cfg.name + ' says'], rows: cfg.rows }) + '</section>' + (cfg.extra || '') +
-      '<p class="bd-chk">Last checked ' + CHECKED + ' on the airline\'s own pages and on tsa.gov. We re-check regularly because airline and TSA rules change.</p></div>'
+      '<p class="bd-chk">Last checked ' + CHECKED + ' on ' + esc(cfg.name) + '\'s own pages' + (/tsa\.gov/.test(JSON.stringify(cfg.scen)) ? ' and on tsa.gov' : (/catsa/.test(JSON.stringify(cfg.scen)) ? ' and on catsa-acsta.gc.ca' : '')) + '. We re-check regularly because airline' + (/tsa\.gov/.test(JSON.stringify(cfg.scen)) ? ' and TSA' : '') + ' rules change.</p></div>'
   };
 }
 const steps = list => '<section class="bd-sec"><h2>🧳 How to pack your medication</h2><ol>' + list.map(x => '<li>' + x + '</li>').join('') + '</ol></section>';
