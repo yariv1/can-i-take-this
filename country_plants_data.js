@@ -46,6 +46,7 @@ module.exports = {
     src: [["https://www.gov.uk/bringing-plants-and-wood-into-great-britain/from-outside-the-eu", "GOV.UK &mdash; Bringing plants and wood into Great Britain: from outside the EU"], ["https://www.gov.uk/bringing-plants-and-wood-into-great-britain/from-eu-switzerland-liechtenstein", "GOV.UK &mdash; Bringing plants and wood into Great Britain: from the EU, Switzerland and Liechtenstein"]]
   },
   "Australia": {
+    card: {"status":"warn","head":"Seeds need a certificate - check BICON first.","lines":["Most seeds need a phytosanitary certificate and must meet the conditions in BICON; seeds that do not meet them are not permitted entry."]},
     date: "DAFF seeds page, read 8 October 2026",
     ttl: "Australia Plants & Seeds 2026: Certificate and BICON Check",
     desc: "Bringing seeds into Australia: import conditions depend on the species and country, most seeds need a phytosanitary certificate, packed pest-proof and labelled with the botanical name.",
@@ -68,6 +69,7 @@ module.exports = {
     src: [["https://www.agriculture.gov.au/biosecurity-trade/import/goods/plant-products/seeds-for-sowing", "Australian Government Department of Agriculture &mdash; Importing seeds for planting"]]
   },
   "Canada": {
+    card: {"status":"warn","head":"Declare all plants and seeds.","lines":["Make sure they are not a regulated pest or an invasive species."]},
     date: "CFIA traveller guide, date modified 8 December 2023",
     ttl: "Canada Plants & Seeds 2026: Declare All Seeds, Invasive Species Check",
     desc: "Bringing seeds or plants into Canada: declare all plant products including seeds, and make sure they are not a regulated pest or invasive species. CFIA's page gives no personal quantity limit.",
@@ -152,6 +154,7 @@ module.exports = {
     src: [["https://www.blw.admin.ch/en/importing-plants", "Swiss Federal Office for Agriculture &mdash; Importing plants"]]
   },
   "Brazil": {
+    card: {"status":"warn","head":"Plant parts need a certificate and a declaration.","lines":["Declare them on the e-DBV; if the rules are not met they are seized and destroyed."]},
     date: "MAPA page updated 19 March 2026",
     ttl: "Brazil Plants & Seeds 2026: Declare Plant Parts, Certificate",
     desc: "Bringing plants or plant parts into Brazil: fresh or dried plant parts need a phytosanitary certificate and must be declared on the e-DBV and shown to Vigiagro; products are seized and destroyed otherwise.",

@@ -10,6 +10,23 @@ One list, in the order to request indexing: **tier 0 first** (Google confirmed i
 
 **Finding (90 days):** no Wi-Fi page, no Compensation page, no Customer Service page and only 2 of 72 blog articles appear in the Pages report.
 
+## 2026-10-17 status (read this first)
+REQUESTED 2026-10-17 (done): blog/duty-free-alcohol-allowance-by-country-2026, blog/duty-free-tobacco-allowance-by-country-2026, blog/duty-free-allowance-by-country-2026, blog/duty-free-bag-extra-carry-on-2026, blog/is-turks-and-caicos-safe-2026, blog/travel-warning-by-country-2026, blog/level-4-travel-advisory-countries-2026, blog/carry-on-size-by-airline, airline/gulf-air/baggage-allowance, airline/pegasus/baggage-allowance
+
+NEXT QUOTA, in this order (checked with GSC URL inspection 2026-10-17: Page indexing "Discovered/Crawled, not indexed"):
+1. https://canitakethis.co/airline/ethiopian-airlines/baggage-allowance/
+2. https://canitakethis.co/airline/air-europa/baggage-allowance/
+3. https://canitakethis.co/airline/avianca/baggage-allowance/
+4. https://canitakethis.co/airline/asiana/baggage-allowance/
+5. https://canitakethis.co/medication/benadryl/japan/
+6. https://canitakethis.co/medication/benadryl/italy/
+7. https://canitakethis.co/medication/benadryl/australia/
+8. https://canitakethis.co/country/hong-kong/tobacco/
+9. https://canitakethis.co/country/brazil/tobacco/
+10. https://canitakethis.co/food/united-arab-emirates/
+
+Already on Google (URL inspection 2026-10-17, do not request): airline/united, austrian, vueling, tap-air-portugal, brussels-airlines baggage; medication/into/japan, thailand, italy; country/india/tobacco was listed earlier but inspects as on Google; blog/duty-free-allowance-by-country-2026.
+
 ## Tier 0 CONFIRMED NOT INDEXED by Google (Search Console Page indexing, Oct 9 report: "Discovered, currently not indexed"), most-searched first (84)
 https://canitakethis.co/airline/ethiopian-airlines/baggage-allowance/
 https://canitakethis.co/airline/pegasus/baggage-allowance/

@@ -357,7 +357,7 @@ function countryShell(o){/*data-country4*/
     var lab={ok:'<b class="src-ok">✓ OFFICIAL SOURCE</b>',un:'<b class="src-un">⚠ UNOFFICIAL SOURCE</b>',no:'<b class="src-no">BASED ON GLOBAL RULES</b>'}[state];
     var sent=state==='no'?(isCard?T.no:NO):T[state];
     return lab+' '+esc(sent)+' '+esc(T.base);}
-  function helpBlock(au){var arr=(au&&au.length)?au:(au&&au.url?[au]:[]);var rows='';for(var _i=0;_i<arr.length;_i++){var a=arr[_i];if(a&&a.url)rows+=linkRow(a.label,a.unofficial?'Unofficial guidance':'Official guidance',a.url);}if(!rows)return '';return '<div class="help"><div class="help-h">Helpful sources</div>'+rows+'<div class="hnote">To be 100% sure, we always recommend confirming with the official channels.</div></div>';}
+  function helpBlock(au){var arr=(au&&au.length)?au:(au&&au.url?[au]:[]);var rows='';for(var _i=0;_i<arr.length;_i++){var a=arr[_i];if(a&&a.url)rows+=linkRow(a.label,'Official guidance',a.url);}if(!rows)return '';return '<div class="help"><div class="help-h">Helpful sources</div>'+rows+'<div class="hnote">To be 100% sure, we always recommend confirming with the official channels.</div></div>';}
   function tagsRow(tags){return (tags&&tags.length)?'<div class="tagrow">'+tags.map(function(t){return '<span class="tag tag-'+t.k+'">'+esc(t.t)+'</span>';}).join('')+'</div>':'';}
   function bodySources(){var t=String((o.extra||'')+(o.detail||'')),i=t.search(/✓ Official sources?<\/div>/);if(i<0)return null;var r=[],re=/^<a href="([^"]+)"[^>]*>([^<]*)<\/a>/,s=t.slice(i).replace(/^[^>]*>/,'');for(var m;(m=re.exec(s));){r.push({label:m[2].replace(/&amp;/g,'&').replace(/&mdash;/g,'—'),url:m[1].replace(/&amp;/g,'&')});s=s.slice(m[0].length);}return r.length?r:null;}
   function card(v,showRoute){if(!v.source&&(o.mode==='cat'||(o.cat==='food'&&v.verified))){var _bs=bodySources();if(_bs)v=Object.assign({},v,{source:_bs});}if(o.canonical&&o.cat&&EUM.isEU(cn)&&EUM.src&&EUM.src(o.cat))v=Object.assign({},v,{source:EUM.src(o.cat)});var lines=(v.lines||[]).filter(Boolean).map(function(l){return '<li>'+esc(l)+'</li>';}).join('');var route=showRoute?'<div class="route"><span>&#128706; ENTERING</span><span><b>'+esc(cn)+'</b> '+flag+'</span></div>':'';return '<div class="pass '+v.status+' print"><div class="strip"><div class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">'+VICON[v.status]+'</svg></div><div><div class="verdict">'+VLABEL[v.status]+'</div><div class="vsub">'+(v.status==='warn'?'Read the rule below.':'At the border')+'</div></div></div><div class="perf"></div><div class="body">'+route+tagsRow(v.tags)+'<p class="headline">'+esc(v.head||'')+'</p><ul class="detail">'+lines+'</ul>'+helpBlock(v.source)+'<div class="src">'+srcFoot(v)+'</div></div></div>';}
@@ -1002,10 +1002,11 @@ function run(){
     const cn=c.name;
     countryCats.forEach(cc=>{
       setS({mode:'country',cat:cc.cat,country:cn,detail:null});
-      const v=w.verdict(); if(!v) return;
+      let v=w.verdict(); if(!v) return;
       const url=`/country/${slug(cn)}/${cc.url}/`;
       const CV=(cc.cat==='vape')?CVAPE.build(c):(cc.cat==='tobacco'?CTOB.build(c):(cc.cat==='plants'?CPLANT.build(c):(cc.cat==='alcohol'?CALC.build(c):null)));
       const EUC=EUM.isEU(cn)&&EUM.CATS.indexOf(cc.cat)>=0&&!(cc.cat==='alcohol'&&CALC.has(c));
+      if(CV&&CV.card) v=Object.assign({},v,CV.card);
       write(url+'index.html', countryShell({
         mode:'cat', url, c, cat:cc.cat, v,
         canonical:EUC?(BASE+EUM.url(cc.cat)):null,
@@ -1018,7 +1019,7 @@ function run(){
     });
     // country hub
     const hub=`/country/${slug(cn)}/`;
-    const hubCards=countryCats.map(cc=>{setS({mode:'country',cat:cc.cat,country:cn,detail:null});const v=w.verdict();return {u:`/country/${slug(cn)}/${cc.url}/`,label:cc.q(cn).replace(' (2026)',''),status:v.status,head:v.head};});
+    const hubCards=countryCats.map(cc=>{setS({mode:'country',cat:cc.cat,country:cn,detail:null});let v=w.verdict();const _cv=(cc.cat==='vape')?CVAPE.build(c):(cc.cat==='plants'?CPLANT.build(c):null);if(_cv&&_cv.card)v=Object.assign({},v,_cv.card);return {u:`/country/${slug(cn)}/${cc.url}/`,label:cc.q(cn).replace(' (2026)',''),status:v.status,head:v.head};});
     write(hub+'index.html', countryShell({
       mode:'hub', url:hub, c, cat:null, cards:hubCards,
       title:`Travelling to ${cn}? Customs & What You Can Bring 2026 | canitakethis.co`,
@@ -1112,7 +1113,7 @@ function run(){
       title:`Can I Bring a Dog or Cat into ${c.name}? Pet Import Rules 2026 | canitakethis.co`,
       desc:batchDesc(`Bringing a dog or cat into ${c.name} (2026)`, vd),
       h1:`Can I bring a dog into ${c.name}? (2026 pet import)`,
-      lead:`Pet import into ${c.name} can be time-sensitive: vaccinations, paperwork and any permits can take weeks or months. Start early.`,
+      lead:`Pet import into ${c.name} is time-sensitive — steps such as the microchip, rabies vaccination and health certificate take time, and some countries add a titre test or permit. Start early.`,
       faqA:`${vd.head} ${(vd.lines||[]).filter(Boolean).join(' ')}`
     }));
     pages.push({url,changefreq:'monthly'});

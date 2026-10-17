@@ -17,10 +17,10 @@ Last GSC check: 2026-10-05 (Page indexing 1,924 indexed / 89 not indexed as of 2
 | # | URL | Published | Status |
 |---|---|---|---|
 | 52 | https://canitakethis.co/blog/travel-warning-mexico-2026/ | 2026-10-06 | TO REQUEST |
-| 51 | https://canitakethis.co/blog/level-4-travel-advisory-countries-2026/ | 2026-10-06 | TO REQUEST |
+| 51 | https://canitakethis.co/blog/level-4-travel-advisory-countries-2026/ | 2026-10-06 | REQUESTED 2026-10-17 |
 | 50 | https://canitakethis.co/blog/travel-warning-caribbean-2026/ | 2026-10-06 | TO REQUEST |
-| 49 | https://canitakethis.co/blog/is-turks-and-caicos-safe-2026/ | 2026-10-06 | TO REQUEST |
-| 48 | https://canitakethis.co/blog/travel-warning-by-country-2026/ | 2026-10-06 | TO REQUEST |
+| 49 | https://canitakethis.co/blog/is-turks-and-caicos-safe-2026/ | 2026-10-06 | REQUESTED 2026-10-17 |
+| 48 | https://canitakethis.co/blog/travel-warning-by-country-2026/ | 2026-10-06 | REQUESTED 2026-10-17 |
 | 47 | https://canitakethis.co/blog/tsa-precheck-touchless-id-2026/ | 2026-10-05 | TO REQUEST |
 | 46 | https://canitakethis.co/blog/uk-eta-for-us-citizens-2026/ | 2026-10-04 | TO REQUEST |
 | 45 | https://canitakethis.co/blog/etias-travel-authorization-2026/ | 2026-10-04 | TO REQUEST |
@@ -267,3 +267,28 @@ China Eastern (china-eastern), Copa (copa-airlines), Saudia (saudia), Royal Air 
 - TO REQUEST (2026-10-16, built, not yet deployed): 3 new medication pages (France): https://canitakethis.co/medication/morphine/france/, https://canitakethis.co/medication/oxycontin/france/, https://canitakethis.co/medication/suboxone/france/
 
 - TO REQUEST (2026-10-16, built, not yet deployed): 1 new medication pages (Netherlands): https://canitakethis.co/medication/valium/netherlands/
+
+
+## Priority batch requested 2026-10-17 (user, manual in GSC)
+- REQUESTED 2026-10-17: https://canitakethis.co/blog/duty-free-alcohol-allowance-by-country-2026/
+- REQUESTED 2026-10-17: https://canitakethis.co/blog/duty-free-tobacco-allowance-by-country-2026/
+- REQUESTED 2026-10-17: https://canitakethis.co/blog/duty-free-allowance-by-country-2026/
+- REQUESTED 2026-10-17: https://canitakethis.co/blog/duty-free-bag-extra-carry-on-2026/
+- REQUESTED 2026-10-17: https://canitakethis.co/blog/is-turks-and-caicos-safe-2026/
+- REQUESTED 2026-10-17: https://canitakethis.co/blog/travel-warning-by-country-2026/
+- REQUESTED 2026-10-17: https://canitakethis.co/blog/level-4-travel-advisory-countries-2026/
+- REQUESTED 2026-10-17: https://canitakethis.co/blog/carry-on-size-by-airline/
+- REQUESTED 2026-10-17: https://canitakethis.co/airline/gulf-air/baggage-allowance/
+- REQUESTED 2026-10-17: https://canitakethis.co/airline/pegasus/baggage-allowance/
+
+## NEXT QUOTA (request in this order)
+1. https://canitakethis.co/airline/ethiopian-airlines/baggage-allowance/
+2. https://canitakethis.co/airline/air-europa/baggage-allowance/
+3. https://canitakethis.co/airline/avianca/baggage-allowance/
+4. https://canitakethis.co/airline/asiana/baggage-allowance/
+5. https://canitakethis.co/medication/benadryl/japan/
+6. https://canitakethis.co/medication/benadryl/italy/
+7. https://canitakethis.co/medication/benadryl/australia/
+8. https://canitakethis.co/country/hong-kong/tobacco/
+9. https://canitakethis.co/country/brazil/tobacco/
+10. https://canitakethis.co/food/united-arab-emirates/

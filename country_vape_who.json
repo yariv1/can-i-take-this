@@ -77,7 +77,7 @@
    "indoor": "None",
    "ads": "Partial ban",
    "minAge": 18,
-   "flavours": "Some are restricted",
+   "flavours": "Some are banned",
    "note": null,
    "pdf": "https://cdn.who.int/media/docs/default-source/country-profiles/tobacco/gtcr-2023/tobacco-2023-deu.pdf"
   },
@@ -484,7 +484,7 @@
    "indoor": "Partial ban",
    "ads": "Partial ban",
    "minAge": 18,
-   "flavours": "Some are restricted",
+   "flavours": "Some are allowed",
    "note": null,
    "pdf": "https://cdn.who.int/media/docs/default-source/country-profiles/tobacco/gtcr-2023/tobacco-2023-dnk.pdf"
   },
@@ -528,7 +528,7 @@
    "indoor": "Partial ban",
    "ads": "Partial ban",
    "minAge": 18,
-   "flavours": "All are banned All are banned",
+   "flavours": "All are banned",
    "note": null,
    "pdf": "https://cdn.who.int/media/docs/default-source/country-profiles/tobacco/gtcr-2023/tobacco-2023-hun.pdf"
   },
@@ -660,7 +660,7 @@
    "indoor": "Partial ban",
    "ads": "Partial ban",
    "minAge": 18,
-   "flavours": "Some are restricted",
+   "flavours": "Some are allowed",
    "note": null,
    "pdf": "https://cdn.who.int/media/docs/default-source/country-profiles/tobacco/gtcr-2023/tobacco-2023-est.pdf"
   },
@@ -682,7 +682,7 @@
    "indoor": "Partial ban",
    "ads": "Partial ban",
    "minAge": 18,
-   "flavours": "All are banned1 All are banned",
+   "flavours": "All are banned",
    "note": null,
    "pdf": "https://cdn.who.int/media/docs/default-source/country-profiles/tobacco/gtcr-2023/tobacco-2023-ltu.pdf"
   },
@@ -830,7 +830,7 @@
    "pdf": "https://cdn.who.int/media/docs/default-source/country-profiles/tobacco/gtcr-2023/tobacco-2023-mdv.pdf"
   },
   "MU": {
-   "general": "Ban on sale, manufacture, import, distribution, offer for sale (including e-liquids, devices and accessories sold or marketed for use in or with ENDS) Ban on sale, manufacture, import, distribution, offer for sale (including e-liquids, devices and accessories sold or marketed for use in or with ENNDS)",
+   "general": "Ban on sale, manufacture, import, distribution, offer for sale (including e-liquids, devices and accessories sold or marketed for use in or with ENDS)",
    "ennds_only_ban": false,
    "laws": "Yes",
    "indoor": "Complete ban",
