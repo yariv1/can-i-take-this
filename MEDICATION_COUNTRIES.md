@@ -1,6 +1,6 @@
 # Medication coverage by country (updated end of session 33, 2026-10-17)
 
-**56 of 85 countries have rules read from official pages.** PER-MEDICINE = ingredient-level rows (pages /medication/<drug>/<country>/ exist for the brands in MED_PAGE). CATEGORY NOTE = the official page describes controlled substances as a category (country-level rule shown on every medication card of that country). NOT DONE = still on the general-rules wording; the reason column says what blocked it or that it was never tried.
+**82 of 85 countries have rules read from official pages.** PER-MEDICINE = ingredient-level rows (pages /medication/<drug>/<country>/ exist for the brands in MED_PAGE). CATEGORY NOTE = the official page describes controlled substances as a category (country-level rule shown on every medication card of that country). NOT DONE = still on the general-rules wording; the reason column says what blocked it or that it was never tried.
 
 How to continue: read MEDICATION_WORKFLOW.md, take a NOT DONE country, find its official traveller page (WebSearch with allowed_domains, then read the page IN FULL with the built-in browser pane: mcp__Claude_Browser__navigate + javascript_tool document.body.innerText), then `node med_add_country.js note|verified spec.json`.
 
@@ -18,7 +18,7 @@ How to continue: read MEDICATION_WORKFLOW.md, take a NOT DONE country, find its 
 | Canada | PER-MEDICINE ROWS (MED_VER) | https://www.canada.ca/en/health-canada/services/health-concerns/controlled-substances-precursor-chemicals/controlled-substances/compliance-monitoring/travelling-into-and-out-of-canada-with-prescription-medication-containing-controlled-substances.html |  |
 | Italy | CATEGORY NOTE (MED_NOTE) | https://conslondra.esteri.it/wp-content/uploads/2022/08/02_AssistenzaSociale_quantitativi_massimi_farmaci.doc |  |
 | Spain | CATEGORY NOTE (MED_NOTE) | https://www.aemps.gob.es/industria-farmaceutica/comercio-exterior/medicamentos-destinados-al-tratamiento-de-los-viajeros/ |  |
-| Greece | NOT DONE |  | EOF/AADE: only approval-to-import via prefecture, no traveller page |
+| Greece | CATEGORY NOTE (MED_NOTE) | EUR-Lex Schengen decision SCH/Com-ex (94) 28 (Schengen certificate only; no Greek traveller page found) |  |
 | Turkey | CATEGORY NOTE (MED_NOTE) | https://www.mfa.gov.tr/turkiye_ye-ait-gumruk-bilgileri.en.mfa |  |
 | Netherlands | PER-MEDICINE ROWS (MED_VER) | https://www.government.nl/documents/question-and-answer/can-i-take-my-medication-abroad |  |
 | Switzerland | CATEGORY NOTE (MED_NOTE) | https://www.swissmedic.ch/swissmedic/en/home/news/focus/einreise-in-die-schweiz-mit-medikamenten.html |  |
@@ -27,8 +27,8 @@ How to continue: read MEDICATION_WORKFLOW.md, take a NOT DONE country, find its 
 | China | PER-MEDICINE ROWS (MED_VER) | https://english.shanghai.gov.cn/en-ImmigrationCustoms/20240516/632357dc3fbe483c923a5c296795b618.html |  |
 | South Korea | CATEGORY NOTE (MED_NOTE) | https://www.mfds.go.kr/eng/brd/m_60/view.do?seq=75669 |  |
 | Qatar | CATEGORY NOTE (MED_NOTE) | https://hukoomi.gov.qa/en/News/MOPH-Launches-Electronic-System-for-Controlled-Medicines-for-Travelers |  |
-| Saudi Arabia | NOT DONE |  | 2026-10-17: SFDA has a traveller clearance-permit service (CDS portal, news 4292351) but sfda.gov.sa is denied/reset from this machine; not read |
-| Egypt | NOT DONE |  | EDA pages cover outbound travel only (arrival rule not found) |
+| Saudi Arabia | CATEGORY NOTE (MED_NOTE) | https://sfda.gov.sa/en/news/4292351 (via Internet Archive copy, 14 Aug 2025) |  |
+| Egypt | CATEGORY NOTE (MED_NOTE) | customs.gov.eg Decree 430/2021 Art. 73 (medicine for personal use at the discretion of the control authority) |  |
 | Cyprus | CATEGORY NOTE (MED_NOTE) | https://www.moh.gov.cy/moh/phs/phs.nsf/drugsphych_en/drugsphych_en |  |
 | Portugal | CATEGORY NOTE (MED_NOTE) | https://www.infarmed.pt/web/infarmed/legislacao/legislacao-farmaceutica-compilada/titulo-iii-medicamentos/capitulo-iii-estupefacientes-e-psicotropicos |  |
 | Austria | CATEGORY NOTE (MED_NOTE) | https://www.sozialministerium.gv.at/Themen/Gesundheit/Drogen-und-Sucht/Suchtmittel-NPS-Drogenausgangsstoffe/Suchtmittelhaltige-Arzneimittel-im-Reiseverkehr.html |  |
@@ -37,12 +37,12 @@ How to continue: read MEDICATION_WORKFLOW.md, take a NOT DONE country, find its 
 | Mexico | CATEGORY NOTE (MED_NOTE) | https://www.anam.gob.mx/equipaje-y-franquicia/ |  |
 | Brazil | CATEGORY NOTE (MED_NOTE) | https://www.gov.br/anvisa/pt-br/assuntos/paf/regras-de-bagagem |  |
 | Argentina | CATEGORY NOTE (MED_NOTE) | https://www.argentina.gob.ar/justicia/derechofacil/leysimple/mercosur-traslado-de-medicamentos |  |
-| Chile | NOT DONE |  | ispch.gob.cl denied/times out |
+| Chile | CATEGORY NOTE (MED_NOTE) | https://www.ispch.gob.cl/anamed/importacion-y-exportacion/guia-para-ingresar-medicamentos-a-chile-en-el-equipaje/ |  |
 | Colombia | CATEGORY NOTE (MED_NOTE) | https://www.minsalud.gov.co/Normatividad_Nuevo/RESOLUCI%C3%93N%200826%20DE%202003.pdf |  |
-| Peru | NOT DONE |  | SUNAT page only says medicines are part of baggage, no controlled-substance rule |
+| Peru | CATEGORY NOTE (MED_NOTE) | INCB country table (government-submitted) |  |
 | South Africa | CATEGORY NOTE (MED_NOTE) | https://www.sars.gov.za/guide-to-duty-free-allowances-for-travellers/ |  |
-| Morocco | NOT DONE |  | douane.gov.ma blocks the pane ("Request Rejected"); search snippets only, not read |
-| Kenya | NOT DONE |  | PPB pages cover commercial import authorisation only |
+| Morocco | CATEGORY NOTE (MED_NOTE) | INCB country table (government-submitted) |  |
+| Kenya | CATEGORY NOTE (MED_NOTE) | INCB country table (government-submitted) |  |
 | Nigeria | NOT DONE |  | NAFDAC pages are commercial import permits only |
 | Ethiopia | CATEGORY NOTE (MED_NOTE) | http://www.efda.gov.et/wp-content/uploads/2023/06/Guideline-on-Medical-Products-Special-import-permit.pdf |  |
 | New Zealand | PER-MEDICINE ROWS (MED_VER) | https://www.medsafe.govt.nz/consumers/miet/importmedicines.asp |  |
@@ -54,28 +54,28 @@ How to continue: read MEDICATION_WORKFLOW.md, take a NOT DONE country, find its 
 | Iceland | CATEGORY NOTE (MED_NOTE) | https://www.ima.is/medicinal-products/medicines-in-luggage-and-postal-shipments/ |  |
 | Czechia | CATEGORY NOTE (MED_NOTE) | https://celnisprava.gov.cz/cz/dalsi-kompetence/informace-pro-fyzicke-osoby/Stranky/dovoz-vyvoz-a-pruvoz-navykovych-latek-a-leku.aspx |  |
 | Hungary | CATEGORY NOTE (MED_NOTE) | https://ogyei.gov.hu/travelling_with_medicine |  |
-| Romania | NOT DONE |  | customs.ro behind Cloudflare; ANM has no traveller page |
-| Bulgaria | NOT DONE |  | 2026-10-17: customs.bg page on narcotic medicines (30 days, Art. 58) exists but is unreachable from here; not read |
+| Romania | CATEGORY NOTE (MED_NOTE) | https://www.customs.ro/calatori/intrarea-in-romania-dintr-un-stat-neunional (declaration only) |  |
+| Bulgaria | CATEGORY NOTE (MED_NOTE) | https://customs.bg/wps/portal/agency/home/info-citizens/faq-citizens (via Internet Archive copy) |  |
 | Croatia | CATEGORY NOTE (MED_NOTE) | https://carina.gov.hr/featured/information-for-passengers-natural-persons/bringing-in-medicine-and-narcotics/6745 |  |
 | Slovenia | CATEGORY NOTE (MED_NOTE) | https://www.fu.gov.si/en/life_events_individuals/import_of_medications |  |
-| Slovakia | NOT DONE |  | SUKL page is a glossary entry about travelling OUT (certificate from regional pharmacist) |
+| Slovakia | CATEGORY NOTE (MED_NOTE) | INCB country table (government-submitted) |  |
 | Serbia | CATEGORY NOTE (MED_NOTE) | https://www.carina.rs/en/passengers/passenger-custom-clerance/useful-information-for-passengers.html |  |
-| Ukraine | NOT DONE |  | dls.gov.ua has no traveller page |
+| Ukraine | CATEGORY NOTE (MED_NOTE) | INCB country table (government-submitted) |  |
 | Georgia | CATEGORY NOTE (MED_NOTE) | https://www.rs.ge/Media/Default/Images/CustomsBrochures/Prohibited%20and%20Permitted%20Medicines.pdf |  |
-| Russia | NOT DONE |  | 2026-10-17: customs.gov.ru lekarstvennye-sredstva page exists but connection refused from here; not read |
-| Malta | NOT DONE |  | Medicines Authority page covers Maltese residents travelling out only |
-| Luxembourg | NOT DONE |  | only forms and generic customs pages, no readable traveller rule |
+| Russia | CATEGORY NOTE (MED_NOTE) | https://customs.gov.ru/fiz/pravila-peremeshheniya-tovarov/lekarstvennye-sredstva (read via Internet Archive copy, page dated 2021) |  |
+| Malta | CATEGORY NOTE (MED_NOTE) | INCB country table (government-submitted) |  |
+| Luxembourg | CATEGORY NOTE (MED_NOTE) | INCB country table (government-submitted) |  |
 | Estonia | CATEGORY NOTE (MED_NOTE) | https://www.emta.ee/en/private-client/consignments-travel-moving/travel/prohibited-and-restricted-goods |  |
 | Latvia | CATEGORY NOTE (MED_NOTE) | https://www.zva.gov.lv/en/patients-and-public/medicines/purchase-medicines-pharmacy/carrying-medicines-and-out-country-and-receiving-them-post |  |
-| Lithuania | NOT DONE |  | 2026-10-17: vvkt.lt behind Cloudflare; only a 2018 customs leaflet found, not read |
-| Jordan | NOT DONE |  | JFDA/customs pages found cover import permits for businesses only |
-| Lebanon | NOT DONE |  | MoPH pages are registration/COVID notices, no traveller rule |
-| Kuwait | NOT DONE |  | only a Dec 2025 news item on a new ministerial decision, no quantities/periods published |
-| Bahrain | NOT DONE |  | NHRA pages are pharmacy/dispensing rules and old parcel rules, no traveller page |
-| Oman | NOT DONE |  | moh.gov.om not reachable from here (DNS/denied) on 2026-10-16 |
+| Lithuania | CATEGORY NOTE (MED_NOTE) | https://lrmuitine.lt/web/guest/keleiviams/vaistai (via Internet Archive copy) |  |
+| Jordan | CATEGORY NOTE (MED_NOTE) | INCB country table (government-submitted) |  |
+| Lebanon | CATEGORY NOTE (MED_NOTE) | INCB country table (government-submitted) |  |
+| Kuwait | CATEGORY NOTE (MED_NOTE) | INCB country table (government-submitted) |  |
+| Bahrain | CATEGORY NOTE (MED_NOTE) | INCB country table (government-submitted) |  |
+| Oman | CATEGORY NOTE (MED_NOTE) | INCB country table (government-submitted) |  |
 | Indonesia | CATEGORY NOTE (MED_NOTE) | https://www.pom.go.id/storage/katabpom-dokumen/LXqn7aHCBH2EjRm5s5I3vofa67UQfnG8BENemKwd.pdf |  |
 | Malaysia | CATEGORY NOTE (MED_NOTE) | https://www.tourismmalaysia.or.jp/pdf/medicine.pdf |  |
-| Philippines | NOT DONE |  | customs.gov.ph returns 403 (BOC guide 2026 and PDEA guideline not read) |
+| Philippines | CATEGORY NOTE (MED_NOTE) | DOH-FDA-BOC Joint Circular No. 1 (2015), copy on importlicensing.wto.org |  |
 | Vietnam | CATEGORY NOTE (MED_NOTE) | https://kv16.customs.gov.vn/index.jsp?aid=1644&cid=46&pageId=2 |  |
 | Cambodia | NOT DONE |  | customs lists MoH certificate for drugs, no traveller rule |
 | Sri Lanka | CATEGORY NOTE (MED_NOTE) | https://www.nmra.gov.lk/announcements/bringing-personal-medicines-into-sri-lanka |  |
@@ -84,10 +84,10 @@ How to continue: read MEDICATION_WORKFLOW.md, take a NOT DONE country, find its 
 | Taiwan | CATEGORY NOTE (MED_NOTE) | https://web.customs.gov.tw/etaipei/singlehtml/3396?cntId=1c1ab06901934524b5c7494c42251bf7 |  |
 | Maldives | CATEGORY NOTE (MED_NOTE) | https://www.customs.gov.mv/Individuals/Items%20for%20Personal%20Use/Individual-Prohibited-and-Restricted-Items-for-Import |  |
 | Mauritius | CATEGORY NOTE (MED_NOTE) | https://www.mra.mu/index.php/customs1/travellers/13-customs/150-import-restrictions |  |
-| Seychelles | NOT DONE |  | only prohibited-goods regulations, no traveller medicine rule |
+| Seychelles | CATEGORY NOTE (MED_NOTE) | INCB country table (government-submitted) |  |
 | Fiji | CATEGORY NOTE (MED_NOTE) | https://www.health.gov.fj/wp-content/uploads/2024/05/Import-Permit-Guidelines-240305.pdf |  |
-| Costa Rica | NOT DONE |  | ministeriodesalud.go.cr returns 403 / security block (JVD traveller document not read) |
-| Panama | NOT DONE |  | no traveller page on minsa.gob.pa; INCB table not used (checkbox layout ambiguous) |
+| Costa Rica | CATEGORY NOTE (MED_NOTE) | Ministry of Health JVD requirements PDF (via Internet Archive copy) |  |
+| Panama | CATEGORY NOTE (MED_NOTE) | INCB country table (government-submitted) |  |
 | Dominican Republic | CATEGORY NOTE (MED_NOTE) | https://www.aduanas.gob.do/manual-del-viajero/ |  |
-| Jamaica | NOT DONE |  | customs/MOH pages found: permit for controlled substances only, no traveller rule |
-| Cuba | NOT DONE |  | aduana.gob.cu FAQ covers duty exemption only, no traveller medicine rule |
+| Jamaica | CATEGORY NOTE (MED_NOTE) | JCA FAQ + MFAFT 2016 page (permit via Ministry of Health) |  |
+| Cuba | CATEGORY NOTE (MED_NOTE) | INCB country table (Cuba, 2022, Spanish) |  |
