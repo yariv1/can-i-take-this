@@ -33,3 +33,11 @@ Japan Sudafed: not banned, needs permission if >10% pseudoephedrine (official li
 - Japan rows not verified: Vicks inhaler (shown as general-rule text), Benadryl, CBD (unknown).
 - Mexico, Malaysia, Saudi Arabia, USA (DEA), Italy ministry page, Thailand drug lists, Finland, Bulgaria, Philippines, Brazil, Chile, Argentina, Vietnam are blocked/unreadable from here (reasons in the table); try again with a different route (another official domain, embassy page, PDF link inside the page) before giving up.
 - Food: 8 countries verified (South Korea, Norway, Mauritius, Taiwan, Romania, Iceland, Argentina, Serbia) with their own source block; all other food pages show global-rules or a link with the "general rule" sentence. Pets: no country verified (ANIMAL_AUTH links only). Next after medication: food and pets per-country official sources the same way.
+
+## Header vs footer (session 33)
+A note country must show its official note on every controlled card, CBD included (fix in `medCountryVerdict`: unknown level + controlled -> `medNoteApply`). Guard in `audit_source_state.js`. Remaining "Check the source" + OFFICIAL SOURCE pages (CBD in per-medicine countries with no CBD row) are intentional: no rule found, link to the official source.
+
+**8.28 addendum 2 (session 33):** a non-controlled medicine card in a country with official medicine lines (MED_NOTE `o`) must not show the generic "Allowed" / "No prescription needed" header: it shows "Some rules apply", the tag "See the official rule" and the head "The official rule for medicines is below." (function `medNoteApply`). Guard: `audit_source_state.js` (note country with official lines showing the generic header). Countries whose note has no `o` lines still show the general-rule card, with the "general rule most countries follow" footer.
+
+## CBD rows (session 33)
+CBD rows added to per-medicine countries from official pages: Hong Kong (banned), Canada (Health Canada permit), Japan (cannabis products banned, depends on plant part), United Kingdom (Home Office licence unless exempt), Australia (traveller's exemption, prescription, 3 months), New Zealand (prescription, 3 months). UAE and China still show 'Check the source': no CBD-specific traveller rule found on an official page.

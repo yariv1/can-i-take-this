@@ -5,6 +5,7 @@ const mv=html.slice(html.indexOf('MED_VER_V1'));
 const verified=new Set();
 {const re=/(?:MED_VER=\{|\}\)\(\),)\s*'?([A-Za-z ]+?)'?:\(function/g;let m;while((m=re.exec(mv)))verified.add(m[1].trim().toLowerCase().replace(/ /g,'-'));}
 const foodVerified=new Set(Object.keys(require('./food_detail.js').DETAIL).map(x=>x.toLowerCase().replace(/ /g,'-')));
+const noteC=new Set(),noteO=new Set();{const a=html.indexOf('var MED_NOTE={'),b=html.indexOf('\n};',a);const re=/^'?([A-Za-z ]+?)'?:\{c:\[/gm;let m;const seg=html.slice(a,b);while((m=re.exec(seg))){const k=m[1].trim().toLowerCase().replace(/ /g,'-');noteC.add(k);const ne=seg.indexOf('\n',m.index);const ln=seg.slice(m.index,ne<0?seg.length:ne);if(!/,o:\[\]\}/.test(ln))noteO.add(k);}}
 const bad=[];let n=0;
 function walk(d){for(const e of fs.readdirSync(d,{withFileTypes:true})){if(e.name.startsWith('.')||e.name==='node_modules')continue;const p=path.join(d,e.name);if(e.isDirectory())walk(p);else if(e.name==='index.html')chk(p);}}
 function chk(p){const t=fs.readFileSync(p,'utf8').replace(/<script[\s\S]*?<\/script>/g,'');const re=/<div class="pass [^"]*print">([\s\S]*?)<div class="src">([\s\S]*?)<\/div><\/div><\/div>/g;let m;
@@ -13,6 +14,8 @@ function chk(p){const t=fs.readFileSync(p,'utf8').replace(/<script[\s\S]*?<\/scr
   if(parts[0]==='medication'&&parts[1]!=='into'){ if(lab==='none')bad.push(p+' medication card without source state'); if(lab==='ok'&&!links)bad.push(p+' OFFICIAL without link'); if(lab==='no'&&links)bad.push(p+' global rules but has a link'); if(lab==='ok'&&!verified.has(parts[2])&&!/Confirm the rule for/.test(foot))bad.push(p+' OFFICIAL on an unverified rule without the confirm sentence'); if(lab==='un')bad.push(p+' unofficial unexpected'); if(lab==='no'&&/(controlled|banned|prohibited) in [A-Z]/.test(body.replace(/<[^>]+>/g,' ')))bad.push(p+' unverified card states a country-specific fact'); }
   else if(parts[0]==='food'||parts[0]==='pets'){ if(lab==='none')bad.push(p+' card without source state'); if(lab==='ok'&&!links)bad.push(p+' OFFICIAL without link'); if(lab==='no'&&links)bad.push(p+' global rules but has a link'); if(lab==='un')bad.push(p+' unofficial unexpected'); if(lab==='ok'&&!(parts[0]==='food'&&foodVerified.has(parts[1]))&&!/Confirm the rule for/.test(foot))bad.push(p+' OFFICIAL on an unverified rule without the confirm sentence'); }
   else if(parts[0]==='country'){ if((lab==='ok'||lab==='un')&&!links)bad.push(p+' '+lab+' without link'); if(lab==='no'&&links)bad.push(p+' global rules but has a link'); }
+  if(parts[0]==='medication'&&parts[1]!=='into'&&noteC.has(parts[parts.length-2])&&/We don.t have verified info/.test(body))bad.push(p+' note country shows "Check the source" instead of its official note');
+  if(parts[0]==='medication'&&parts[1]!=='into'&&noteO.has(parts[parts.length-2])&&/No prescription needed|Usually fine to bring in/.test(body)&&!/Check if controlled/.test(body))bad.push(p+' note country with official medicine lines still shows the generic Allowed / No prescription needed header');
   if(/not checked|have not checked/i.test(foot))bad.push(p+' forbidden wording "not checked"');
  }}
 walk('.');
