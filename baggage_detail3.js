@@ -26,25 +26,21 @@ module.exports = {
           "<strong>Infants:</strong> an infant not occupying a seat gets 3 special infant items; an infant with their own seat gets 3 items, plus 1 x 23 kg on every fare except Lite. A pram, portable cot, car seat and baby capsule are examples of infant items.",
           "<strong>Wheelchairs and mobility aids</strong> for personal use are always carried free of charge.",
           "<strong>Partner flights and codeshares:</strong> Velocity Silver, Gold and Platinum extras vary with the operating carrier; for Virgin Australia codeshare bookings, Virgin Australia refers you to the non-member allowance."] },
-      { h: "💲 Virgin Australia extra and overweight bag fees", p: "Prices are per piece (maximum 23 kg) and per sector, in the booking currency. Peak pricing applies on the dates listed below the table; every other date is off-peak.",
-        table: { head: ["Domestic fee (per bag)", "Under 3 hours", "3+ hours"], rows: [
-          ["Off-peak, online at flight booking", "$67", "$72"],
-          ["Off-peak, online after booking", "$77", "$82"],
-          ["Off-peak, online check-in", "$82", "$92"],
-          ["Peak, online at flight booking", "$72", "$77"],
-          ["Peak, online after booking", "$82", "$87"],
-          ["At the airport (peak or off-peak)", "$120", "$170"] ] },
-        list: ["<strong>Peak dates:</strong> 12 Dec 2025 to 27 Jan 2026, 3 to 19 Apr 2026, 27 Jun to 19 Jul 2026, 19 Sep to 11 Oct 2026, and 12 Dec 2026 to 27 Jan 2027.",
-          "<strong>How many you can add:</strong> on domestic flights up to two extra bags can be bought online or through the Guest Contact Centre; more can be requested at the airport but are not guaranteed.",
-          "<strong>Overweight:</strong> a bag over 23 kg and up to 32 kg is charged at the airport on the day of departure, $65 per piece on domestic flights, and AUD 110 (or NZD 110 from New Zealand) on international short haul flights departing Australia (or New Zealand), per piece, per one-way journey.",
-          "<strong>International extra bags</strong> on short haul from Australia: AUD 87 online at flight booking, AUD 107 online after booking, AUD 112 or AUD 122 through the Guest Contact Centre, and AUD 170 at the airport. Virgin Australia publishes separate prices for New Zealand, Bali, Fiji, Vanuatu and Samoa, and may change its fees at any time."] }
+      { h: "💲 Virgin Australia extra and overweight bag fees", p: "Prices are per piece (maximum 23 kg) and per sector, in the booking currency. Virgin Australia publishes a range, and the price you pay depends on flight length, travel date and when and where you buy.",
+        table: { head: ["Domestic extra bag (per bag)", "Price range"], rows: [
+          ["Pre-purchase before the airport (current)", "$67 to $102"],
+          ["Pre-purchase for bookings made on or after 28 October 2026", "$77 to $107"],
+          ["At the airport", "$120 to $170"] ] },
+        list: ["<strong>How many you can add:</strong> an additional two bags may be purchased online or through the Guest Contact Centre.",
+          "<strong>Overweight:</strong> a bag over 23 kg and up to 32 kg is charged at the airport, $65 per piece on domestic flights, and AUD 110 (or NZD 110 from New Zealand) on international short haul flights, per piece. Anything over 32 kg goes as freight.",
+          "<strong>International extra bags:</strong> Virgin Australia publishes separate prices by departure country on its checked baggage page, and may change its fees at any time. We did not copy them here."] }
     ],
     faq: [
       ["What is the Virgin Australia baggage allowance?", "Economy: one carry-on bag up to 8 kg (56 x 36 x 23 cm) plus one personal item (45 x 33 x 20 cm). Checked baggage by fare: Lite none, Choice and Flex 1 x 23 kg, Business 2 x 32 kg, with extra bags for Velocity members."],
       ["What is the Virgin Australia carry-on size and weight?", "The standard bag is up to 8 kg and L56 x W36 x H23 cm; the personal item is L45 x W33 x H20 cm and must fit under the seat in front. Business, Economy X and Gold, Platinum and Platinum Plus members can take up to 14 kg combined, no single bag over 8 kg."],
       ["Does Virgin Australia Lite include checked baggage?", "No. Lite includes no checked baggage for anyone, including Velocity Red, Silver, Gold, Platinum and Platinum Plus members. Choice and Flex include 1 x 23 kg for non-members and Red members."],
       ["What is the Virgin Australia checked baggage weight limit?", "No single item can weigh more than 32 kg, and each bag must be no more than 140 cm in length + width + height. A bag over 23 kg and up to 32 kg pays an overweight fee at the airport; $65 per piece domestically."],
-      ["How much is an extra bag on Virgin Australia domestic flights?", "From $67 per bag online at flight booking off-peak on flights under 3 hours, up to $170 at the airport on flights of 3 hours or more. Peak pricing applies on the dates Virgin Australia lists."],
+      ["How much is an extra bag on Virgin Australia domestic flights?", "Virgin Australia publishes a range: $67 to $102 to pre-purchase before the airport and $120 to $170 at the airport, per bag per sector. From 28 October 2026 the pre-purchase range is $77 to $107."],
       ["Can Velocity members carry more on Virgin Australia?", "Gold, Platinum and Platinum Plus members get the 14 kg carry-on allowance; Red and Silver members receive the standard Economy allowance. For checked bags on Choice and Flex, Silver and Gold get 2 x 23 kg, Platinum 3 x 23 kg and Platinum Plus 5 x 32 kg."]
     ],
     sources: [["https://www.virginaustralia.com/au/en/travel-info/baggage/carry-on-baggage/", "Virgin Australia &mdash; Carry-on baggage"], ["https://www.virginaustralia.com/au/en/travel-info/baggage/checked-baggage/", "Virgin Australia &mdash; Checked baggage"]]

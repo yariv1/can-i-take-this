@@ -67,7 +67,7 @@ module.exports = {
           ["2 pieces, up to 32 kg (70 lb) each", "158 cm (62 in)"],
           ["2 pieces up to 30 kg each, or 1 piece up to 30 kg to other destinations", "158 cm (62 in)"],
           ["Infants: 1 checked piece up to 23 kg", "115 cm (45 in)"] ] },
-        list: ["<strong>Heavy bags:</strong> bags weighing between 23 kg and 32 kg pay an excess weight charge; over 32 kg up to 45 kg and sizes over 203 cm (80 in) up to 250 cm (100 in) have their own charges, and extra bags are paid at the airport.",
+        list: ["<strong>Heavy bags:</strong> bags weighing between 23 kg and 32 kg pay an excess weight charge, and extra bags are paid at the airport.",
           "<strong>Savings:</strong> up to 25% on excess baggage bought online, up to 15% through RJ sales offices or a travel agent.",
           "<strong>Not read:</strong> which fares and destinations each line applies to, and the price list; check your ticket on rj.com." ] }
     ],

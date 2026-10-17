@@ -26,14 +26,14 @@ module.exports = {
           ["Carry-on plus personal item", "—", "20 kg combined"],
           ["Checked bag", "158 cm (length + width + height)", "15 kg or 25 kg depending on the fare; a bag bought separately up to 25 kg"] ] },
         list: ["<strong>Personal item examples:</strong> a handbag, briefcase, laptop bag or small backpack.",
-          "<strong>Maximum per piece:</strong> 45 kg including excess weight. Musical instruments up to 200 linear cm, sports equipment up to 280 linear cm."] },
+          "<strong>Maximum per piece:</strong> 45 kg including excess weight. Sports equipment up to 25 kg and 250 linear cm; musical instruments up to 25 kg and 158 linear cm (or in the cabin up to 130 linear cm and 10 kg)."] },
       { h: "➕ Adding bags and what they cost (flights between Mexico and the US)",
         p: "Volaris publishes these as \"up to\" prices in US dollars in its Additional Service Fees document, so the price you see at booking can be lower. Booking early is cheapest.",
         table: { head: ["Item", "When booking", "Pre-flight (My Trips, app)", "At the airport"], rows: [
           ["First checked bag", "Up to $180", "Up to $174", "Up to $228"],
           ["Extra checked bag", "Up to $144", "Up to $180", "Up to $264"],
           ["Carry-on (Zero and Basic only)", "Up to $102", "Up to $140", "Up to $168 at the counter, up to $180 at the gate"] ] },
-        list: ["<strong>Overweight checked bag (airport only):</strong> 16 to 25 kg up to $180; 26 to 35 kg up to $204; 36 to 45 kg up to $276.",
+        list: ["<strong>Fee source:</strong> these prices come from the Volaris fee PDF. We could not re-open that PDF on 16 October 2026, so check the current fee on volaris.com before you buy.","<strong>Overweight checked bag (airport only):</strong> 16 to 25 kg up to $180; 26 to 35 kg up to $204; 36 to 45 kg up to $276.",
           "<strong>Sports equipment:</strong> up to 25 kg and 250 cm in total, up to $170 when booking or pre-flight and up to $240 at the airport. If you bought an extra checked bag you can check sports equipment instead at no extra cost, within your weight allowance and 158 cm.",
           "<strong>Ways to add a bag:</strong> when booking, in My Trips, in the Volaris app, before check-in, at the airport (airport rates apply) or through the call center. Up to 5 checked bags per passenger.",
           "<strong>Carry-on too big?</strong> Volaris says a carry-on over the allowed size must be checked, and if you already checked a bag you pay for an additional one." ] },
@@ -48,7 +48,7 @@ module.exports = {
       ["How much does a checked bag cost on Volaris between Mexico and the US?", "Volaris lists up to $180 for the first checked bag when booking, up to $174 pre-flight and up to $228 at the airport. An extra bag is up to $144, $180 and $264."],
       ["How heavy can a Volaris checked bag be?", "Up to 15 kg on Basic and 25 kg on Plus or when bought separately, and up to 158 linear cm. A bag can weigh at most 45 kg including excess weight, with overweight fees."],
       ["How many bags can I check on Volaris?", "Up to five checked bags per passenger, for a fee beyond your fare's included bag."],
-      ["Can I take sports equipment on Volaris?", "Yes, as checked baggage within your weight allowance and 158 cm, in place of an extra bag you bought. Larger equipment up to 280 linear cm has its own fee."]
+      ["Can I take sports equipment on Volaris?", "Yes, as checked baggage within your weight allowance and 158 cm, in place of an extra bag you bought. Volaris lists sports equipment up to 25 kg and 250 linear cm."]
     ],
     sources: [
       ["https://cms.volaris.com/en/travel-info/baggage-policy/", "Volaris &mdash; Baggage Policy"],

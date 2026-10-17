@@ -103,7 +103,7 @@ module.exports = {
     { label: "Business", cabin: "2 cabin pieces, 18 kg in total.", checked: "Pieces of 32 kg by route." }
   ],
   "South African Airways": [
-    { label: "Economy", cabin: "See the detail below.", checked: "Piece system: 1 piece of 23 kg (some routes more), 158 cm. Weight system: 20 kg." },
+    { label: "Economy", cabin: "See the detail below.", checked: "Piece system: 1 piece of 23 kg (some routes more), 158 cm. Star Alliance Round-the-World travellers: weight system, Economy 20 kg." },
     { label: "Business / First", cabin: "See the detail below.", checked: "Business 2 pieces of 32 kg (weight system 30 kg); First 40 kg on the weight system." }
   ],
   "Royal Air Maroc": [

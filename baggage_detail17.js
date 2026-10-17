@@ -81,11 +81,11 @@ module.exports = {
   "South African Airways": {
     title: "South African Airways Baggage Allowance 2026: Checked Bags 23 kg and 32 kg, 158 cm, Extra Pieces",
     desc: "South African Airways checked baggage allowance 2026: 1 or 2 pieces of 23 kg in Economy and 2 pieces of 32 kg in Business, 158 cm per piece, domestic weight system, extra pieces for members, bags over 32 kg as cargo.",
-    answer: "South African Airways checked baggage is counted in pieces on most routes: 1 piece of up to 23 kg (50 lb) in Economy and 2 pieces of up to 32 kg (70 lb) in Business, each within 158 cm (62 in), with some routes giving 2 or 3 pieces. On the weight system listed for some routes, First Class gets 2 pieces with a combined weight of 40 kg, Business 2 pieces with 30 kg and Economy 1 piece with 20 kg. A bag over 32 kg must travel as cargo.",
+    answer: "South African Airways checked baggage is counted in pieces on most routes: 1 piece of up to 23 kg (50 lb) in Economy and 2 pieces of up to 32 kg (70 lb) in Business, each within 158 cm (62 in), with some routes giving 2 or 3 pieces. For Star Alliance Round-the-World travellers the page lists a weight system: First Class gets 2 pieces with a combined weight of 40 kg, Business 2 pieces with 30 kg and Economy 1 piece with 20 kg. A bag over 32 kg must travel as cargo.",
     stats: [
       ["23 / 32 kg", "checked piece, Economy / Business (piece system)"],
       ["158 cm", "per piece, 62 in"],
-      ["20 / 30 / 40 kg", "weight system: Economy / Business / First, combined"],
+      ["20 / 30 / 40 kg", "Star Alliance Round-the-World weight system: Economy / Business / First, combined"],
       ["3 pieces", "most you can bring in total, with fees above your allowance"]
     ],
     sections: [
@@ -93,7 +93,7 @@ module.exports = {
         table: { head: ["System", "Allowance printed on SAA's page"], rows: [
           ["Piece system, Business", "2 pieces not exceeding 32 kg (70 lb) per piece, 158 cm each"],
           ["Piece system, Economy", "1 piece of 23 kg (50 lb), 158 cm; some routes 2 or 3 pieces"],
-          ["Weight system", "First 2 pieces, 40 kg combined; Business 2 pieces, 30 kg combined; Economy 1 piece, 20 kg combined"] ] },
+          ["Star Alliance Round-the-World travellers (weight system)", "First 2 pieces, 40 kg combined; Business 2 pieces, 30 kg combined; Economy 1 piece, 20 kg combined"] ] },
         list: ["<strong>Extra pieces:</strong> members get 1 extra piece of 23 kg or 32 kg (or based on the booked cabin), and some tiers 2 extra pieces of 32 kg, on SAA-operated flights.",
           "<strong>Children and infants</strong> paying at least 50% of the adult fare get the adult allowance; an infant without a seat gets 1 bag up to 23 kg plus a collapsible pram or buggy and a car seat free.",
           "<strong>Total:</strong> up to 3 pieces per passenger; beyond your carry-on and checked free allowance, excess baggage charges apply.",
