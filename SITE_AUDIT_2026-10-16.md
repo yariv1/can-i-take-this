@@ -343,3 +343,43 @@ Method: each cited official link opened in the browser pane, page text compared 
 | lufthansa | power-bank | verified | (Lufthansa Group notice) |
 
 Totals (156 rows): verified 100, fixed 25, unreadable 20, generic 11.
+
+
+---
+## Country customs pages A to F, line by line against the official page (session 34, 2026-10-17)
+Method: each source link opened in the browser pane (or the PDF read as text) and every number/rule compared. verified = found on the page; fixed = changed, see note; unreadable = page could not be read; global = no source specific to the category, the page now says BASED ON GLOBAL RULES.
+
+Engine fix (affects all countries): generic fallback text ("often ~1 L", "typical limits", "high-risk plants", "often restricted") no longer carries the country's customs link and no longer shows OFFICIAL. Before, e.g. Argentina alcohol/tobacco/plants/vaping were labelled OFFICIAL with the ARCA cash page as source. Vape and plant pages that have their own WHO/official body now show a top card written from that body (WHO status, CFIA/DAFF/MAPA rule) instead of the generic line.
+
+| Country | Alcohol | Tobacco | Cash | Plants | Vaping (WHO table) |
+|---|---|---|---|---|---|
+| Argentina | global | global | fixed (form is OM 2249A; under US$10,000 free, higher needs declaration; exit above limit by bank transfer) | global | verified |
+| Australia | verified (ABF: 2.25 L) | fixed (ABF tobacco page: one unopened packet up to 25 cigarettes or 25 g, plus one open packet) | verified (AUSTRAC) , wording "penalties" | verified (DAFF) | verified |
+| Austria, Belgium, Czechia, Cyprus, Denmark, Finland | verified (EU Your Europe, last checked 21/09/2026) | verified | verified (EU cash page), "seizure" removed | verified (EU master) | verified |
+| Bulgaria, Croatia | verified | verified (lower limit land/sea) | verified | verified | verified |
+| Estonia | verified | verified (lower limit all travellers) | verified | verified | fixed (WHO flavours: "Some are allowed", was "restricted") |
+| France | verified (douane.gouv.fr read in full: 430 EUR, 1 L / 2 L, 4 L wine, 16 L beer, under-17) | verified | verified | verified | verified |
+| European Union master | verified | verified | verified | verified | n/a |
+| Bahrain | verified (customs.gov.bh) | verified | verified (no limit, may be asked to prove source) | global | verified |
+| Brazil | fixed (baggage exemption is 12 L; 24 units is the arrival Free Shop limit) | fixed (10 packs, 25 cigars, 250 g tobacco; Free Shop 20 packs) | verified; "excess held or seized" removed (not on page) | verified (MAPA) | verified |
+| Cambodia, Cuba, Ethiopia | global | global | global | global | verified |
+| Canada | verified | verified | verified | verified (CFIA) | verified |
+| Chile | verified (2.5 L) | verified | fixed ("more than US$10,000", as the page says) | global | verified |
+| China | verified | fixed (cigars: 100 or more) | verified | global | verified |
+| Colombia | global | global | verified (DIAN: above US$10,000) | global | verified |
+| Costa Rica | verified | verified | verified (US$10,000 cash, US$50,000 securities, held) | global | verified |
+| Dominican Republic | verified (DGA manual) | verified | verified | global | verified |
+| Egypt | verified (decree 430/2021 + customs page: 1 L spirits) | verified (200 / 25 / 200 g, noted in passport: in the decree) | global (no passenger cash rule found) | global | fixed (customs travel page lists e-cigarettes as needing control-authority approval; page said customs never mention vapes) |
+| Fiji | verified (FRCS, updated 18 Sep 2025) | verified | verified | global | verified |
+
+Sources changed: Canada now uses the CBSA "visitors" pages (the old link was the guide for returning residents); Australia adds the ABF tobacco page and AUSTRAC; Brazil adds the Receita quota page; Egypt adds the English decree.
+Vape table: all 26 WHO country PDFs downloaded and compared with country_vape_who.json (general ban, laws, indoor, ads, minimum age, flavours): 25 match, Denmark and Estonia flavours fixed. Other countries with "Some are restricted" in the JSON (DE, SA, NZ, UA, PH, CN, EG): CN and EG match the PDF; DE, SA, NZ, UA, PH are for the G-Z sessions to re-check against their PDFs, same error as Denmark/Estonia possible.
+
+### Food and pets A to F
+- Argentina food: SENASA page matches every row; removed "draw up a record and destroy in front of the traveller" (not on the page).
+- Australia food: DAFF page does not ban meat, honey, nuts or fresh produce outright (meat has strict conditions and BICON, honey is permitted and inspected, approved nuts allowed, fresh produce not covered); those categories now say "declare it". Whole eggs without permit stay "Not allowed" (page says so).
+- Canada food: CFIA lists items with limits (20 kg etc.), so the "Generally accepted" packaged-food claim was removed: all categories say "declare it".
+- France + Austria, Belgium, Bulgaria, Croatia, Cyprus, Czechia, Denmark, Estonia, Finland food: Your Europe says from non-EU countries no meat or dairy; these now say "Not allowed" for meat and dairy and "declare it" for the rest, with the two EU links (before: generic, 9 of them without a source).
+- Australia pets: DAFF "how to import" page: permit required, rabies vaccination/antibody-testing rules, post-entry quarantine (Mickleham). Removed "microchip, blood-titre test" claims that the page does not state; link now points to the how-to page instead of the home page.
+- All pets pages: intro no longer lists "microchip, rabies titre test, permits".
+- Other countries' food and pets: generic rule, no source, state BASED ON GLOBAL RULES (unchanged).
