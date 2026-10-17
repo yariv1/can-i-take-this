@@ -312,3 +312,12 @@ Pilot check 2026-11-14 (impressions/clicks vs Wi-Fi pilot). Alaska Airlines not 
 11. https://canitakethis.co/airline/easyjet/medication/
 12. https://canitakethis.co/airline/air-france/medication/
 13. https://canitakethis.co/airline/turkish-airlines/medication/
+
+## 2026-10-17 airline Medication pilot, batch 4 — TO REQUEST (not yet requested; not yet deployed)
+14. https://canitakethis.co/airline/qantas/medication/
+15. https://canitakethis.co/airline/singapore-airlines/medication/
+16. https://canitakethis.co/airline/cathay-pacific/medication/
+17. https://canitakethis.co/airline/vueling/medication/
+18. https://canitakethis.co/airline/finnair/medication/
+19. https://canitakethis.co/airline/iberia/medication/
+20. https://canitakethis.co/airline/sas/medication/

@@ -1,7 +1,7 @@
 // Airline Medication pages (pilot, 2026-10-17): /airline/<slug>/medication/ + a "Medication" tab, shown ONLY for airlines listed here.
 // Rule (user order 2026-10-17, same standard as the Wi-Fi pilot): an airline is listed ONLY when its OWN published pages were READ and say something about medication.
 // Everything on the cards comes from those airline pages plus TSA (US government). Anything an airline does not publish is said as "not published", never filled from third-party sources.
-// Pilot airlines: Delta, American, United, Southwest, then Ryanair, Emirates, Air Canada, Lufthansa, then JetBlue, KLM, easyJet, Air France, Turkish (non-US carriers use their own pages; Air Canada also uses CATSA, Canada's screening authority). Alaska Airlines is NOT listed (pages unreadable): British Airways (the medicines section did not load), Qatar Airways (no readable medication page), alaskaair.com returned only an error page from every browser tried on 2026-10-17 (summaries are not reading).
+// Pilot airlines: Delta, American, United, Southwest, then Ryanair, Emirates, Air Canada, Lufthansa, then JetBlue, KLM, easyJet, Air France, Turkish, then Qantas, Singapore Airlines, Cathay Pacific, Vueling, Finnair, Iberia, SAS (non-US carriers use their own pages; Air Canada also uses CATSA, Canada's screening authority). Alaska Airlines is NOT listed (pages unreadable): British Airways (the medicines section did not load), Qatar Airways (no readable medication page), alaskaair.com returned only an error page from every browser tried on 2026-10-17 (summaries are not reading).
 const COMP = require('./airline_compensation.js');
 const BAGD = require('./baggage_detail.js');
 const { CSS, table } = BAGD;
@@ -815,6 +815,370 @@ const NP = 'Not published on the pages we read';
       ['Fridge or cooler on board?', NP]
     ],
     extra: steps(['Put the medicines you may need in your hand baggage.', 'Keep your prescription with you if you take medication other than for diabetes.', 'Keep liquid medicine under 100 ml where you can.', 'Carry your own epinephrine auto-injector if you have a severe allergy.'])
+  });
+}
+
+// ---------------- QANTAS ----------------
+// Read 17 October 2026 on qantas.com: Taking medical equipment and medications onboard; help.qantas.com: Taking medication and needles inflight.
+{
+  const PG = ['https://www.qantas.com/en-au/travel-information/specific-needs-assistance/medical-equipment-medications-onboard', 'Qantas: Taking medical equipment and medications onboard', 'Medications, needles, insulin'];
+  const HP = ['https://help.qantas.com/support/s/article/Taking-medication-and-needles-inflight', 'Qantas Help: Taking medication and needles inflight', 'Medical certificate, packaging'];
+  add({
+    slug: 'qantas', name: 'Qantas',
+    h1: 'Qantas Medication Policy: Pills, Insulin, Needles & Medical Equipment (2026)',
+    desc: 'Can you bring medication on Qantas? Yes, in your carry-on in original packaging. Declare needles at screening and carry a doctor\'s letter. Qantas cannot refrigerate insulin: bring a small cooler and crew add ice. Checked 17 October 2026.',
+    answer: 'Yes. Qantas says to carry all medication in your carry-on, in its original labelled packaging, and to bring only what you need. Declare needles at airport screening and carry a doctor\'s letter. Qantas cannot refrigerate insulin or other drugs: bring a small cooler and the crew will replenish the ice.',
+    srcNote: 'From Qantas\' own pages, last checked 17 October 2026. Rules change, so confirm with the airline before you fly.',
+    scen: [
+      card('pills', 'Pills & tablets', 'go', 'Carry-on, labelled', 'Keep it with you', 'Qantas says to carry all your medication in your carry-on, in its original labelled packaging.', [
+        'Qantas: carry all medication in your carry-on baggage. Bring only the amount needed for your trip.',
+        'Qantas: keep medication in its original packaging, so it is clearly labelled with the medication, the manufacturer\'s name or pharmaceutical label, your name and the dosage.',
+        'Qantas: you may need a medical certificate, with your name, date of birth and details of the prescribed medication. Carry or enclose a letter from your doctor with the details of the medication, how much you take with you, and that it is for personal use.'
+      ], [PG, HP], true),
+      card('liquids', 'Liquid medication', 'warn', 'Not published', 'Over 100 ml (3.4 oz)', 'Qantas\' medication pages we read give no liquid limit for medication.', [
+        'The liquid limit for medication is set by the security rules at the airport you fly from: check them before you pack.'
+      ], [PG]),
+      card('needles', 'Needles & syringes', 'warn', 'Declare and carry proof', 'Insulin needles, syringes, injections', 'Declare hypodermic needles at the screening point and carry proof of your medical need.', [
+        'Qantas: hypodermic needles must be declared at the screening point. Under Australian law they are prohibited items in an aircraft cabin unless you can show a genuine need to have them, so carry documentation and identification confirming that the needles are required for a medical condition.',
+        'Qantas lets you carry needles on board for the period from initial uplift until you are reunited with your checked baggage, and does not object to a small additional supply in the cabin as a contingency. Supplies beyond your inflight needs belong in checked baggage.',
+        'Qantas: not all airport screening points are managed by Qantas and screening authorities may have different policies. Qantas accepts no responsibility if needles are confiscated.'
+      ], [PG, HP]),
+      card('cold', 'Cold medication', 'warn', 'Bring a small cooler', 'Insulin and other cold medication', 'Qantas cannot refrigerate insulin or other drugs onboard.', [
+        'Qantas: it is not able to refrigerate insulin or other drugs onboard.',
+        'If your medication requires refrigeration you can carry a small cooler on board. Cabin crew can replenish the cooler with ice as required.'
+      ], [PG]),
+      card('devices', 'Medical equipment', 'warn', 'Clearance and inspection', 'CPAP, other devices', 'Equipment used onboard needs a Travel Clearance Form and must be inspected before departure.', [
+        'Qantas: to use medical support equipment onboard, give Qantas a Travel Clearance Form (PDF) and your equipment must be authorised as safe for use on its aircraft. You must inform Qantas up to 72 hours before your flight.',
+        'Qantas: equipment to be used onboard must be made available for inspection a few hours before departure. Your device can be an extra standard piece of carry-on baggage without charge. Any equipment used on domestic services must be battery operated.',
+        'Qantas: CPAP and PAP machines do not need approval to travel or be used on board, but Qantas recommends a letter from a medical professional. In-seat power is not available in all cabins or on all aircraft and cannot be guaranteed: bring enough batteries for the whole journey.',
+        'Qantas: lithium batteries over 160 Wh are forbidden on any Qantas aircraft.'
+      ], [PG]),
+      card('abroad', 'Flying to or from Australia', 'warn', 'Check the destination', 'International flights', 'Your destination country sets its own medication rules.', ['Qantas: contact the embassy of the country you are visiting to check that your medication is legal there.', 'Qantas: a visitor to Australia may generally bring up to 3 months\' supply of prescribed medication without an import approval or permit. Some medications need permits or an import licence, and the Therapeutic Goods Administration (TGA) issues approvals for those or for more than 3 months\' supply.', 'Qantas: it is illegal to take medication subsidised by the Pharmaceutical Benefits Scheme out of Australia for reasons other than personal use.'].concat(ABROAD_LINES), [PG])
+    ],
+    faq: [
+      ['Can I bring medication on a Qantas flight?', 'Yes. Qantas says to carry all medication in your carry-on baggage, in its original labelled packaging, and to bring only the amount you need for your trip.'],
+      ['Can I bring needles and syringes on Qantas?', 'Yes, if you can show a medical need. Qantas says hypodermic needles must be declared at the screening point and you must carry documentation and identification confirming the needles are for a medical condition. Supplies beyond your inflight needs should go in checked baggage.'],
+      ['Does Qantas refrigerate insulin?', 'No. Qantas says it cannot refrigerate insulin or other drugs onboard. Carry a small cooler; cabin crew can replenish it with ice.'],
+      ['Can I use a CPAP machine on Qantas?', 'Yes. Qantas says CPAP and PAP machines do not need approval to be used on board, though a letter from a medical professional is recommended. In-seat power is not available on every aircraft, so bring enough batteries.'],
+      ['How much medication can I bring into Australia?', 'Qantas says a visitor may generally bring up to 3 months\' supply of prescribed medication without an import approval or permit, but some medications need permits or an import licence from the TGA.']
+    ],
+    tableTitle: 'Qantas medication rules at a glance',
+    tableNote: 'What Qantas\' own pages say.',
+    rows: [
+      ['Where should medication go?', 'Carry-on, in original labelled packaging'],
+      ['Can it be over 100 ml?', NP],
+      ['Needles and syringes?', 'Declare them; carry a doctor\'s letter and ID'],
+      ['Fridge on board?', 'No. Bring a small cooler; crew add ice'],
+      ['Medical equipment?', 'Travel Clearance Form, 72 hours notice; CPAP needs no approval'],
+      ['Into Australia?', 'Up to 3 months\' supply without a permit; some medications need one']
+    ],
+    extra: steps(['Pack all medication in your carry-on, in its original labelled packaging.', 'Carry a doctor\'s letter with your name, date of birth, the medication and quantity, and that it is for personal use.', 'Declare needles at the screening point and carry proof of your medical need.', 'Bring a small cooler if your medication must stay cold; ask the crew for ice.'])
+  });
+}
+
+// ---------------- SINGAPORE AIRLINES ----------------
+// Read 17 October 2026 on singaporeair.com: Health Regulations (medical information).
+{
+  const PG = ['https://www.singaporeair.com/en_UK/sg/travel-info/special-assistance/medical-information/', 'Singapore Airlines: Health Regulations', 'Syringes, medication, diabetes, equipment'];
+  add({
+    slug: 'singapore-airlines', name: 'Singapore Airlines',
+    h1: 'Singapore Airlines Medication Policy: Medicines, Syringes, Diabetes & Equipment (2026)',
+    desc: 'Can you bring medication on Singapore Airlines? Yes, in your hand luggage, with a letter from your physician. Syringes and hypodermic needles need a prescription or physician\'s note. Checked 17 October 2026.',
+    answer: 'Yes. Singapore Airlines says to bring enough medication for your trip in your hand luggage (not checked in) with a letter from your physician outlining your condition and medications. To carry syringes or hypodermic needles you need a prescription or note from a registered physician.',
+    srcNote: 'From Singapore Airlines\' own page, last checked 17 October 2026. Rules change, so confirm with the airline before you fly.',
+    scen: [
+      card('pills', 'Pills & tablets', 'go', 'Hand luggage with letter', 'Keep it with you', 'Bring enough medication for your trip in your hand luggage, not checked in.', [
+        'Singapore Airlines: bring sufficient medication for your trip, which you should keep in your hand luggage (not checked in).',
+        'Singapore Airlines: also have a letter from your physician outlining your condition and medication(s).',
+        'Singapore Airlines: if you have a medical condition, consult your physician on your fitness to travel. Some conditions may need medical clearance before you fly.'
+      ], [PG], true),
+      card('liquids', 'Liquid medication', 'warn', 'Not published', 'Over 100 ml (3.4 oz)', 'The page we read gives no liquid limit for medication.', [
+        'The liquid limit for medication is set by the security rules at the airport you fly from: check them before you pack.'
+      ], [PG]),
+      card('needles', 'Insulin & syringes', 'warn', 'Prescription or note needed', 'Syringes and hypodermic needles', 'You need a prescription or a note from a registered physician to carry syringes or hypodermic needles.', [
+        'Singapore Airlines: you are required to carry a prescription or note from a registered physician to carry syringes or hypodermic needles on board.',
+        'Singapore Airlines: do not dispose of used syringes or needles in the seat pockets or without the protective caps. If you need to use them during the flight, ask the cabin crew for safe disposal.',
+        'Singapore Airlines (diabetes): have your insulin shots and meals on time. Diabetics are advised to stay on home time throughout the journey and readjust to local time on arrival.'
+      ], [PG]),
+      card('cold', 'Cold medication', 'warn', 'Not published', 'Medication that must stay cold', 'The page we read does not say whether Singapore Airlines can store medication cold.', [
+        'The page we read does not say whether crew can chill or store medication, so plan to carry your own cooling.'
+      ], [PG]),
+      card('devices', 'Medical equipment', 'warn', 'Approval required', 'Electrical and electronic equipment', 'Electrical and electronic medical equipment needs approval before use on board.', [
+        'Singapore Airlines: approval is mandatory for electrical and electronic medical equipment to be used on board, so it does not interfere with the aircraft navigation and communication systems. Crew may ask you to turn it off if it causes interference.',
+        'Singapore Airlines: you must operate your own medical equipment without the help of cabin crew.',
+        'Singapore Airlines: for a stretcher, supplementary oxygen or when fitness to travel is in doubt you need medical clearance from a doctor. Inform Singapore Airlines at least 5 working days before the flight.'
+      ], [PG]),
+      card('allergy', 'Allergy medication', 'warn', 'Carry it with your plan', 'Auto-injectors', 'Carry allergy medication and your written emergency plan in your carry-on.', [
+        'Singapore Airlines: always carry your allergy medication and written emergency plan in your carry-on baggage, easily accessible during the flight.',
+        'Carry a prescription for the auto-injector and an emergency plan signed by your doctor, if requested at airport security.'
+      ], [PG]),
+      card('abroad', 'Flying abroad', 'warn', 'Check the destination', 'International flights', 'Your destination country sets its own medication rules.', ABROAD_LINES, [PG])
+    ],
+    faq: [
+      ['Can I bring medication on a Singapore Airlines flight?', 'Yes. Singapore Airlines says to bring sufficient medication for your trip in your hand luggage, not in checked baggage, with a letter from your physician outlining your condition and medication.'],
+      ['Do I need a letter for syringes on Singapore Airlines?', 'Yes. Singapore Airlines says you are required to carry a prescription or note from a registered physician to carry syringes or hypodermic needles on board.'],
+      ['Can I use my medical device on Singapore Airlines?', 'Electrical and electronic medical equipment needs approval before use on board, and you must operate it yourself. The cabin crew may ask you to turn it off if it interferes with aircraft systems.']
+    ],
+    tableTitle: 'Singapore Airlines medication rules at a glance',
+    tableNote: 'What Singapore Airlines\' own page says.',
+    rows: [
+      ['Where should medication go?', 'Hand luggage, not checked in'],
+      ['Can it be over 100 ml?', NP],
+      ['Needles and syringes?', 'Prescription or physician\'s note required'],
+      ['Fridge or cooler on board?', NP],
+      ['Electrical medical equipment?', 'Approval mandatory']
+    ],
+    extra: steps(['Keep your medication in your hand luggage, not in checked baggage.', 'Carry a letter from your physician listing your condition and medications, and a prescription or note for syringes.', 'Ask the cabin crew for safe disposal of used needles.', 'Get approval before you use electrical medical equipment on board.'])
+  });
+}
+
+// ---------------- CATHAY PACIFIC ----------------
+// Read 17 October 2026 on cathaypacific.com: Medications and needles (Medical assistance).
+{
+  const PG = ['https://www.cathaypacific.com/cx/en_AU/prepare-trip/help-for-passengers/medical-assistance/medications-and-needles.html', 'Cathay Pacific: Medications and needles', 'Medication, needles, refrigeration'];
+  add({
+    slug: 'cathay-pacific', name: 'Cathay Pacific',
+    h1: 'Cathay Pacific Medication Policy: Medicines, Needles, Syringes & Cooling (2026)',
+    desc: 'Can you bring medication on Cathay Pacific? Yes, medication and needles for your condition are generally permitted onboard. Carry a doctor\'s letter. Cathay cannot refrigerate medication: use a cool bag or flask. Checked 17 October 2026.',
+    answer: 'Yes. Cathay Pacific says passengers are generally permitted to carry medications and supplies, including needles, syringes and auto-injectors, for their medical conditions onboard. Carry a doctor\'s letter and label everything. Cathay cannot refrigerate medication: bring a cool bag or vacuum flask.',
+    srcNote: 'From Cathay Pacific\'s own page, last checked 17 October 2026. Rules change, so confirm with the airline before you fly.',
+    scen: [
+      card('pills', 'Pills & tablets', 'go', 'Allowed with a letter', 'Carry them with you', 'Cathay says passengers are generally permitted to carry medications and supplies onboard.', [
+        'Cathay Pacific: generally passengers are permitted to carry medications and associated supplies for the treatment and control of their medical conditions onboard.',
+        'Cathay recommends a letter from your doctor confirming your need for the medication, with the medication clearly labelled along with its generic name if possible.',
+        'Cathay advice: carry medicines in a correctly labelled pharmacy container and a copy of all prescriptions, with generic names, along with the medication in your hand luggage, especially for controlled substances and injectables. Carry adequate supplies in both carry-on and checked luggage.',
+        'Cathay: contact Customer Care or your travel agent at least 48 hours before the flight to tell them about any special medical requirements.'
+      ], [PG], true),
+      card('liquids', 'Liquid medication', 'warn', 'Not published', 'Over 100 ml (3.4 oz)', 'The page we read gives no liquid limit for medication.', [
+        'The liquid limit for medication is set by the security rules at the airport you fly from: check them before you pack.'
+      ], [PG]),
+      card('needles', 'Needles & syringes', 'warn', 'Label them or carry a letter', 'Syringes, injectables, auto-injectors', 'Carry syringes and injectable medication together, labelled with your name, or bring a doctor\'s letter.', [
+        'Cathay Pacific: bringing needles on board may be subject to the local country\'s safety and security clearance procedures, beyond the airline\'s control. Check with the security and customs agencies of the countries you pass through.',
+        'Cathay recommends carrying syringes and injectable medications together, clearly labelled with your name and the medication, or a medical certificate or supporting letter from your doctor with your name and the medication.',
+        'Cathay: used syringes go in the sharps box carried on all its flights; ask the cabin crew.',
+        'Cathay: on flights departing Australia, hypodermic needles can be packed in carry-on bags but you must have proof that they are medically necessary.'
+      ], [PG]),
+      card('cold', 'Cold medication', 'warn', 'Cool bag or flask', 'Medication that must stay cold', 'Cathay cannot refrigerate medication for hygiene reasons.', [
+        'Cathay Pacific: for hygiene reasons it cannot refrigerate your medication.',
+        'Pack medication that needs cooling in a cool bag or vacuum flask with dry ice of less than 2.5 kg (5.5 lbs), packed so the carbon dioxide gas can escape. Tell airport staff at check-in that you are bringing dry ice.',
+        'Ice gel packs (each not more than 100 ml, subject to security control of liquids, aerosols and gels) may also be used in flight.'
+      ], [PG]),
+      card('abroad', 'Flying abroad', 'warn', 'Check the destination', 'Controlled medication', 'The legal status of medicines differs by country.', ['Cathay Pacific: the legal status of different types of medicine, over-the-counter and prescription, varies from country to country, and carriage requirements are not consistently enforced.', 'Cathay advises you to review medication regulations with the relevant authorities, especially for controlled drugs.'].concat(ABROAD_LINES), [PG])
+    ],
+    faq: [
+      ['Can I bring medication on a Cathay Pacific flight?', 'Yes. Cathay Pacific says passengers are generally permitted to carry medications and associated supplies, including needles, syringes and auto-injectors, for their medical conditions onboard. A doctor\'s letter and clear labels are recommended.'],
+      ['Does Cathay Pacific refrigerate medication?', 'No. Cathay cannot refrigerate medication for hygiene reasons. It suggests a cool bag or vacuum flask with less than 2.5 kg of dry ice (tell airport staff at check-in), or ice gel packs of up to 100 ml each, which are subject to security control.'],
+      ['How should I carry syringes on Cathay Pacific?', 'Cathay recommends carrying syringes and injectable medications together, labelled with your name and the medication, or carrying a medical certificate or doctor\'s letter. Used syringes go in the sharps box; ask the cabin crew.']
+    ],
+    tableTitle: 'Cathay Pacific medication rules at a glance',
+    tableNote: 'What Cathay Pacific\'s own page says.',
+    rows: [
+      ['Can I carry medication?', 'Generally yes, with a doctor\'s letter and labels'],
+      ['Can it be over 100 ml?', NP],
+      ['Needles and syringes?', 'Carry together and labelled, or a doctor\'s letter'],
+      ['Fridge on board?', 'No. Cool bag or flask; dry ice under 2.5 kg'],
+      ['Used syringes?', 'Sharps box on every flight']
+    ],
+    extra: steps(['Carry medication in labelled pharmacy containers, with copies of the prescriptions that give generic names.', 'Carry syringes and injectable medication together, labelled with your name and the medication.', 'Pack cold medication in a cool bag or vacuum flask; tell airport staff if you use dry ice.', 'Check the rules of the countries you fly through, especially for controlled drugs.'])
+  });
+}
+
+// ---------------- VUELING ----------------
+// Read 17 October 2026 on help.vueling.com: Medicine and Medical Equipment; Liquids in Hand Luggage; Diabetes.
+{
+  const ME = ['https://help.vueling.com/hc/en-gb/articles/19798835871377-Medicine-and-Medical-Equipment', 'Vueling: Medicine and Medical Equipment', 'Cabin bag, certificate'];
+  const LQ = ['https://help.vueling.com/hc/en-gb/articles/19798809556113-Liquids-in-Hand-Luggage', 'Vueling: Liquids in Hand Luggage', 'Medication and syringes'];
+  const DB = ['https://help.vueling.com/hc/en-gb/articles/24407123976849-Diabetes', 'Vueling: Diabetes', 'Diabetes kit'];
+  add({
+    slug: 'vueling', name: 'Vueling',
+    h1: 'Vueling Medication Policy: Medicines, Syringes, Diabetes Kits & Liquids (2026)',
+    desc: 'Can you bring medication on Vueling? Yes, in your cabin bag or hold. Liquid or injectable medication over 100 ml and diabetes kits need a medical certificate shown at the airport. Checked 17 October 2026.',
+    answer: 'Yes. Vueling says you can carry medication in your cabin or checked baggage, though it recommends keeping it with you. In the cabin, medication goes in the transparent bag with each container up to 100 ml. If it is over 100 ml or injectable (such as a diabetes kit) you must show a medical certificate at the airport.',
+    srcNote: 'From Vueling\'s own help pages, last checked 17 October 2026. Rules change, so confirm with the airline before you fly.',
+    scen: [
+      card('pills', 'Pills & tablets', 'go', 'Cabin or hold', 'Keep it with you', 'Vueling says you can carry medication in your cabin or checked baggage, and recommends keeping it with you.', [
+        'Vueling: you can carry your medication in your cabin baggage or checked baggage, although it recommends keeping it with you whenever possible.',
+        'Vueling: if you carry it in the cabin it must be kept in a transparent bag and each container must not exceed 100 ml.'
+      ], [ME], true),
+      card('liquids', 'Liquid medication', 'warn', 'Certificate over 100 ml', 'Over 100 ml (3.4 oz)', 'Liquid medication over 100 ml needs a medical certificate shown at the airport.', [
+        'Vueling: if the medication exceeds 100 ml, or is injectable (such as a diabetes kit), you must present a medical certificate at the airport to take it on board.',
+        'Vueling: under EU Regulation 185/2010, ordinary liquids go in containers of up to 100 ml in one transparent sealable bag of up to 1 litre. It is also permitted to carry diet products and medication (liquids or semi-solids) to be used on board, and necessary medical instruments such as syringes, with a certificate of authenticity at security when required.'
+      ], [ME, LQ]),
+      card('needles', 'Insulin & syringes', 'warn', 'Certificate needed', 'Diabetes kit, syringes', 'Syringes and diabetes kits need a medical certificate.', [
+        'Vueling: to bring your diabetes kit on board (lancets, glucose meter, ice packs and so on) you must show a medical certificate at the airport on the day of your flight.',
+        'Vueling: syringes are allowed as necessary medical instruments; provide a certificate of authenticity at security when required.'
+      ], [DB, LQ]),
+      card('cold', 'Cold medication', 'warn', 'Ice packs with a certificate', 'Medication that must stay cold', 'Ice packs in a diabetes kit are allowed with a medical certificate.', [
+        'Vueling: ice packs belonging to a diabetes kit may be carried on board if you show a medical certificate at the airport on the day of your flight.',
+        'Vueling\'s pages we read do not say whether crew can chill or store medication.'
+      ], [DB]),
+      card('abroad', 'Flying abroad', 'warn', 'Check the destination', 'International flights', 'Your destination country sets its own medication rules.', ABROAD_LINES, [ME])
+    ],
+    faq: [
+      ['Can I bring medication on a Vueling flight?', 'Yes. Vueling says you can carry medication in your cabin or checked baggage, although it recommends keeping it with you. In the cabin it must be in a transparent bag with each container up to 100 ml.'],
+      ['Do I need a medical certificate for medication on Vueling?', 'Yes if the medication exceeds 100 ml or is injectable (such as a diabetes kit): Vueling says you must present a medical certificate at the airport.'],
+      ['Can I bring a diabetes kit on Vueling?', 'Yes. Vueling says to bring your diabetes kit on board (lancets, glucose meter, ice packs and so on) you must show a medical certificate at the airport on the day of your flight.'],
+      ['Can I bring syringes on Vueling?', 'Yes. Vueling permits necessary medical instruments such as syringes, and asks for a certificate of authenticity at security when required.']
+    ],
+    tableTitle: 'Vueling medication rules at a glance',
+    tableNote: 'What Vueling\'s own help pages say.',
+    rows: [
+      ['Where should medication go?', 'Cabin or hold; Vueling recommends the cabin'],
+      ['Can it be over 100 ml?', 'Yes with a medical certificate shown at the airport'],
+      ['Needles and syringes?', 'Allowed; certificate at security when required'],
+      ['Diabetes kit and ice packs?', 'Medical certificate on the day of the flight'],
+      ['Fridge on board?', NP]
+    ],
+    extra: steps(['Keep medication in a transparent bag, with each container up to 100 ml.', 'Bring a medical certificate for liquid or injectable medication over 100 ml, syringes and diabetes kits.', 'Show the certificate at the airport on the day of your flight.'])
+  });
+}
+
+// ---------------- FINNAIR ----------------
+// Read 17 October 2026 on finnair.com: Can I take my medication along as carry-on baggage?; I have diabetes, can I carry my medication on board?
+{
+  const CB = ['https://www.finnair.com/en/frequently-asked-questions/special-assistance-and-health/can-i-take-my-medication-along-as-carry-on-baggage--1889994', 'Finnair: Can I take my medication along as carry-on baggage?', 'Packing and prescriptions'];
+  const DB = ['https://www.finnair.com/fi-en/frequently-asked-questions/special-assistance-and-health/i-have-diabetes--can-i-carry-my-medication-on-board--4163800', 'Finnair: I have diabetes, can I carry my medication on board?', 'Insulin pens, needles, monitors'];
+  add({
+    slug: 'finnair', name: 'Finnair',
+    h1: 'Finnair Medication Policy: Medicines in Carry-On, Insulin, Needles & Prescriptions (2026)',
+    desc: 'Can you bring medication on Finnair? Yes, take what you need in your carry-on, in a separate bag with prescriptions in English. Insulin pens, needles and glucose monitors are allowed in the cabin; Finnair cannot refrigerate medication. Checked 17 October 2026.',
+    answer: 'Yes. Finnair recommends you always take the medication you may need during and after your flight in your carry-on, in a separate bag, preferably in the original packaging, with prescriptions in English. You can take insulin pens, needles and glucose monitors into the cabin. Finnair cannot store medication in the aircraft refrigerators.',
+    srcNote: 'From Finnair\'s own FAQ pages, last checked 17 October 2026. Rules change, so confirm with the airline before you fly.',
+    scen: [
+      card('pills', 'Pills & tablets', 'go', 'Carry-on, separate bag', 'Keep it with you', 'Finnair recommends carrying all the medication you need during and after the flight in your carry-on.', [
+        'Finnair: take all the necessary medication you might need during and after your flight in your carry-on baggage, in a separate bag, preferably in the original packaging.',
+        'Finnair: bring prescriptions in English for any prescription medications, especially if you need injectable medication. This makes inspections easier at customs and security checkpoints. Security staff will tell you whether you need to show your medication or prescriptions; policies differ by situation and country.',
+        'Finnair: you may also transport medication in checked baggage, but it does not recommend that for medication you might need after your flight, in case your bag is delayed.'
+      ], [CB], true),
+      card('liquids', 'Liquid medication', 'warn', 'Not published', 'Over 100 ml (3.4 oz)', 'The Finnair pages we read give no liquid limit for medication.', [
+        'The liquid limit for medication is set by the security rules at the airport you fly from: check them before you pack.'
+      ], [CB]),
+      card('needles', 'Insulin & diabetes', 'go', 'Allowed in the cabin', 'Insulin pens, needles, glucose monitors', 'You can take diabetes injection supplies into the cabin.', [
+        'Finnair: you can take diabetes injection supplies, such as insulin pens and needles and glucose monitors, into the cabin.',
+        'Finnair: bring prescriptions in English, especially for injectable medication, to make inspections easier at customs and security checkpoints.',
+        'Finnair: glucose monitors, for example, should not be exposed to X-rays. Check your device\'s instructions and inform security personnel about your devices.'
+      ], [DB]),
+      card('cold', 'Cold medication', 'warn', 'No fridge on board', 'Medication that must stay cold', 'Finnair cannot store medication in the aircraft refrigerators.', [
+        'Finnair: it cannot store medication in the aircraft\'s refrigerators.',
+        'Finnair: if your medication needs to be kept cool, talk to your pharmacist about different options.'
+      ], [DB]),
+      card('abroad', 'Flying abroad', 'warn', 'Check the destination', 'International flights', 'Your destination country sets its own medication rules.', ['Finnair: if you are travelling abroad, check the regulations of your destination country on the import of medication.'].concat(ABROAD_LINES.slice(1)), [CB])
+    ],
+    faq: [
+      ['Can I bring medication on a Finnair flight?', 'Yes. Finnair recommends you always take all the medication you might need during and after your flight in your carry-on, in a separate bag, preferably in the original packaging, with prescriptions in English.'],
+      ['Can I bring insulin and needles on Finnair?', 'Yes. Finnair says you can take diabetes injection supplies such as insulin pens, needles and glucose monitors into the cabin. It asks you to bring prescriptions in English and to inform security personnel about your devices.'],
+      ['Does Finnair keep medication in a fridge?', 'No. Finnair says it cannot store medication in the aircraft\'s refrigerators. Talk to your pharmacist about options for keeping medication cool.'],
+      ['Can I put medication in checked baggage on Finnair?', 'You may, but Finnair does not recommend it for medication you might need after the flight, because a delayed bag would leave you without it.']
+    ],
+    tableTitle: 'Finnair medication rules at a glance',
+    tableNote: 'What Finnair\'s own FAQ pages say.',
+    rows: [
+      ['Where should medication go?', 'Carry-on, in a separate bag, original packaging'],
+      ['Prescriptions?', 'In English, especially for injectables'],
+      ['Can it be over 100 ml?', NP],
+      ['Insulin pens, needles, monitors?', 'Allowed in the cabin'],
+      ['Fridge on board?', 'No']
+    ],
+    extra: steps(['Put the medication you need in a separate bag in your carry-on, in its original packaging.', 'Bring prescriptions in English, especially for injectable medication.', 'Tell security staff about glucose monitors and other devices; do not expose monitors to X-rays.', 'Ask your pharmacist how to keep cold medication cool.'])
+  });
+}
+
+// ---------------- IBERIA ----------------
+// Read 17 October 2026 on iberia.com (US site): Health and special requirements (Bringing medication; Hypodermic needles and EpiPens).
+{
+  const PG = ['https://www.iberia.com/us/fly-with-iberia/special-needs/', 'Iberia: Health and special requirements', 'Bringing medication, needles'];
+  add({
+    slug: 'iberia', name: 'Iberia',
+    h1: 'Iberia Medication Policy: Medicines, Syringes, Needles & Liquids over 100 ml (2026)',
+    desc: 'Can you bring medication on Iberia? Yes, in your hand luggage. Injectable treatment or liquid medication over 100 ml needs a medical certificate. Hypodermic needles and EpiPens are allowed. Iberia cannot refrigerate medication. Checked 17 October 2026.',
+    answer: 'Yes. Iberia recommends carrying liquid medicines and solid doses in your hand luggage. If you need injections or liquid medication over 100 ml you need a medical certificate for the syringes, needles and medication. Hypodermic needles and EpiPens are allowed. Iberia cannot refrigerate medication.',
+    srcNote: 'From Iberia\'s own page (US site), last checked 17 October 2026. Rules change, so confirm with the airline before you fly.',
+    scen: [
+      card('pills', 'Pills & tablets', 'go', 'Hand luggage', 'Keep it with you', 'Iberia recommends carrying both liquid medicines and solid doses in your hand luggage.', [
+        'Iberia: carry both liquid medicines and solid doses in your hand luggage.',
+        'Iberia: if you have a chronic illness, bring more than you need to cover your stay. Bring your doctor\'s prescription, which should always give the generic name of the drug.'
+      ], [PG], true),
+      card('liquids', 'Liquid medication', 'warn', 'Certificate over 100 ml', 'Over 100 ml (3.4 oz)', 'Liquid medication over the 100 ml limit needs a medical certificate.', [
+        'Iberia: if you need liquid medication exceeding the permitted 100 ml, or injectable treatment, you will need a medical certificate to take the syringes, needles and necessary medication on board.'
+      ], [PG]),
+      card('needles', 'Insulin & syringes', 'warn', 'Prescription or report', 'Hypodermic needles and EpiPens', 'You can take hypodermic needles and EpiPens on board.', [
+        'Iberia: you can take hypodermic needles and EpiPen auto-injectors on board. It recommends carrying them in your hand luggage, but you can check them in.',
+        'Iberia: remember to bring your prescription or medical report.',
+        'Iberia: if you need injectable treatment (diabetes, for example) you need a medical certificate for the syringes, needles and medication.'
+      ], [PG]),
+      card('cold', 'Cold medication', 'warn', 'No fridge on board', 'Medication that must stay cold', 'Iberia cannot refrigerate medication on board.', [
+        'Iberia: it will not be able to refrigerate on board any medicines that require cold storage. It recommends discussing alternatives with your doctor.'
+      ], [PG]),
+      card('abroad', 'Flying abroad', 'warn', 'Check the destination', 'International flights', 'Your destination country sets its own medication rules.', ['Iberia: a doctor\'s prescription is also useful in case you need to buy medication at the destination, especially if you travel abroad.'].concat(ABROAD_LINES), [PG])
+    ],
+    faq: [
+      ['Can I bring medication on an Iberia flight?', 'Yes. Iberia recommends carrying both liquid medicines and solid doses in your hand luggage, with your doctor\'s prescription showing the generic name of the drug.'],
+      ['Do I need a medical certificate for syringes on Iberia?', 'Yes if you need injectable treatment (such as diabetes) or liquid medication over 100 ml: Iberia says you need a medical certificate to take the syringes, needles and necessary medication on board.'],
+      ['Can I bring an EpiPen on Iberia?', 'Yes. Iberia says you can take hypodermic needles and EpiPen auto-injectors on board. It recommends hand luggage, and asks you to bring your prescription or medical report.'],
+      ['Does Iberia refrigerate medication?', 'No. Iberia says it cannot refrigerate medicines that need cold storage on board and recommends discussing alternatives with your doctor.']
+    ],
+    tableTitle: 'Iberia medication rules at a glance',
+    tableNote: 'What Iberia\'s own page says.',
+    rows: [
+      ['Where should medication go?', 'Hand luggage'],
+      ['Can it be over 100 ml?', 'Yes with a medical certificate'],
+      ['Needles and syringes?', 'Allowed; medical certificate, prescription or report'],
+      ['EpiPens?', 'Allowed in hand luggage or checked'],
+      ['Fridge on board?', 'No']
+    ],
+    extra: steps(['Carry liquid medicines and solid doses in your hand luggage.', 'Bring a medical certificate for injectable treatment or liquid medication over 100 ml.', 'Bring your prescription or medical report, with the generic drug name.', 'Discuss cold storage alternatives with your doctor.'])
+  });
+}
+
+// ---------------- SAS ----------------
+// Read 17 October 2026 on flysas.com (US site): Health & Medical Conditions (FAQ).
+{
+  const PG = ['https://www.flysas.com/us-en/travel-info/assistance/health-medical', 'SAS: Health & Medical Conditions', 'Medication, equipment, fridge'];
+  add({
+    slug: 'sas', name: 'SAS',
+    h1: 'SAS Medication Policy: Medication, Medical Equipment & Cold Storage (2026)',
+    desc: 'Can you bring medication on SAS? Yes. SAS cannot store personal medication on board, so bring a cooler. CPAP and dialysis machines travel free. Allergy medication belongs on board with you. Checked 17 October 2026.',
+    answer: 'Yes. SAS says to consult your doctor before booking if you take medication, and to bring allergy medication on board with you. SAS cannot store personal medication on board: bring a cooler. CPAP and dialysis machines are carried free of charge.',
+    srcNote: 'From SAS\' own page (US site), last checked 17 October 2026. Rules change, so confirm with the airline before you fly.',
+    scen: [
+      card('pills', 'Pills & tablets', 'go', 'Consult your doctor', 'Keep it with you', 'SAS advises talking to your doctor before booking if you take medication.', [
+        'SAS: if you have a medical condition, physical impairment or take medication, consult your doctor before booking. For some conditions you must notify SAS and get medical approval.',
+        'SAS: you may need to complete a medical information form (MEDIF), for example if you need medical oxygen or other medical equipment on board, are travelling for medical treatment, have an unstable condition or were recently ill, injured or operated on. Upload it for approval before you leave; approval can take up to 7 days.',
+        'SAS: its pages we read give no separate rule for where to pack medication.'
+      ], [PG], true),
+      card('liquids', 'Liquid medication', 'warn', 'Not published', 'Over 100 ml (3.4 oz)', 'The SAS page we read gives no liquid limit for medication.', [
+        'The liquid limit for medication is set by the security rules at the airport you fly from: check them before you pack.'
+      ], [PG]),
+      card('needles', 'Insulin & syringes', 'warn', 'Not published', 'Needles, syringes, injections', 'The SAS page we read gives no rule for syringes or needles.', [
+        'The page we read does not cover needles or syringes. Security rules depend on the airports you fly from and to.'
+      ], [PG]),
+      card('cold', 'Cold medication', 'warn', 'Bring a cooler', 'Medication that must stay cold', 'SAS cannot store personal medication on board.', [
+        'SAS: it cannot store personal medication on board. It suggests you keep your medication in a cooler that you bring with you.'
+      ], [PG]),
+      card('devices', 'Medical equipment', 'go', 'CPAP and dialysis free', 'CPAP, dialysis machine', 'SAS carries CPAP and dialysis machines free of charge.', [
+        'SAS: you can bring medical equipment like a CPAP or dialysis machine free of charge on all SAS flights. Contact SAS if you have questions.'
+      ], [PG]),
+      card('allergy', 'Allergy medication', 'warn', 'Bring it on board', 'Severe allergies', 'Bring your allergy medication on board with you.', [
+        'SAS: if you have a severe peanut allergy, tell the cabin crew when you board. Bring any allergy medications on board with you.'
+      ], [PG]),
+      card('abroad', 'Flying abroad', 'warn', 'Check the destination', 'International flights', 'Your destination country sets its own medication rules.', ABROAD_LINES, [PG])
+    ],
+    faq: [
+      ['Can I store medication in the fridge on SAS?', 'No. SAS says it cannot store personal medication on board and suggests you keep your medication in a cooler that you bring with you.'],
+      ['Can I bring a CPAP or dialysis machine on SAS?', 'Yes. SAS says you can bring medical equipment like a CPAP or dialysis machine free of charge on all SAS flights.'],
+      ['Do I need medical approval to fly with SAS?', 'For some conditions. SAS says you may need to complete a MEDIF form if you need medical oxygen or other medical equipment on board, travel for medical treatment, have an unstable condition or were recently ill, injured or operated on. Approval can take up to 7 days.']
+    ],
+    tableTitle: 'SAS medication rules at a glance',
+    tableNote: 'What SAS\' own page says. Where SAS is silent we say so.',
+    rows: [
+      ['Where should medication go?', NP],
+      ['Can it be over 100 ml?', NP],
+      ['Needles and syringes?', NP],
+      ['Fridge on board?', 'No. Bring your own cooler'],
+      ['CPAP or dialysis machine?', 'Carried free of charge'],
+      ['Medical approval?', 'MEDIF form for some conditions, up to 7 days']
+    ],
+    extra: steps(['Consult your doctor before booking if you take medication.', 'Complete and upload a MEDIF form if your situation needs one, well before you leave.', 'Bring a cooler for medication that must stay cold.', 'Bring your allergy medication on board with you.'])
   });
 }
 
