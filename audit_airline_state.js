@@ -17,7 +17,7 @@ function chk(p) {
   while ((m = re.exec(t))) {
     n++;
     const body = m[1], foot = m[2];
-    const ok = /class="help src-ok"/.test(body), un = /class="help src-un"/.test(body), no = /class="src-no"/.test(foot);
+    const ok = /class="help src-ok"/.test(body) || /class="src-ok"/.test(foot), un = /class="help src-un"/.test(body), no = /class="src-no"/.test(foot);
     const links = /class="hitem" href="http/.test(body);
     if (!ok && !un && !no) bad.push(p + ' card without a source state');
     if (no && links) bad.push(p + ' global rules but has a link');

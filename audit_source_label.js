@@ -6,7 +6,7 @@
 const fs = require('fs'), path = require('path');
 const bad = [];
 let pages = 0, ok = 0, un = 0;
-for (const [a, kind] of fs.readdirSync('airline').flatMap(x => ['wifi', 'medication'].map(k => [x, k]))) {
+for (const [a, kind] of fs.readdirSync('airline').flatMap(x => ['wifi'].map(k => [x, k]))) {
   const p = path.join('airline', a, kind, 'index.html');
   if (!fs.existsSync(p)) continue;
   pages++;
@@ -24,8 +24,27 @@ for (const [a, kind] of fs.readdirSync('airline').flatMap(x => ['wifi', 'medicat
   if (unBlocks && !/unofficial source, named above/.test(s)) bad.push(p + ': unofficial page footer line missing');
   if (/class="help src-ok"/.test(s) && unBlocks) bad.push(p + ': page mixes official and unofficial blocks');
 }
-console.log('Wi-Fi and Medication pages checked: ' + pages + ' (official blocks ' + ok + ', unofficial blocks ' + un + ')');
+console.log('Wi-Fi pages checked: ' + pages + ' (official blocks ' + ok + ', unofficial blocks ' + un + ')');
 if (bad.length) { console.log('SOURCE LABEL VIOLATIONS (DESIGN_SYSTEM.md 8.21):'); bad.slice(0, 30).forEach(x => console.log(' ', x)); process.exit(1); }
+// Airline Medication pages use the COUNTRY medication card (DS 8.30): heading "Helpful sources", links with "Official guidance", footer = green OFFICIAL SOURCE label + sentence + the medication original text.
+let medPages = 0;
+for (const a of fs.readdirSync('airline')) {
+  const p = path.join('airline', a, 'medication', 'index.html');
+  if (!fs.existsSync(p)) continue;
+  medPages++;
+  const s = fs.readFileSync(p, 'utf8').replace(/<script[\s\S]*?<\/script>/g, '');
+  const cards = s.split('<div class="cc" id="cc-').slice(1);
+  if (!cards.length) bad.push(p + ': no cards');
+  for (const c of cards) {
+    if (!/<div class="help"><div class="help-h">Helpful sources<\/div>/.test(c)) bad.push(p + ': medication card without the country-style "Helpful sources" block');
+    if (/class="help src-/.test(c)) bad.push(p + ': medication card uses the Wi-Fi style source heading');
+    if (!/<div class="src"><b class="src-ok">✓ OFFICIAL SOURCE<\/b> /.test(c)) bad.push(p + ': medication card footer without the OFFICIAL SOURCE label');
+    if (!c.includes('Medication rules vary by country and can change. This is guidance, not legal advice - carry your prescription and confirm with the official authority before you fly.')) bad.push(p + ': medication card footer lost the original medication text');
+    if (!/Official guidance<\/small>/.test(c)) bad.push(p + ': medication source links without the "Official guidance" label');
+  }
+}
+if (bad.length) { console.log('SOURCE LABEL VIOLATIONS (medication pages, DS 8.30):'); bad.slice(0, 30).forEach(x => console.log(' ', x)); process.exit(1); }
+console.log('Medication pages checked: ' + medPages);
 console.log('OK source labels');
 
 // Whole site: no old-style Official source headings left anywhere.
