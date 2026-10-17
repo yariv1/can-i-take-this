@@ -971,5 +971,601 @@
     ]
    }
   ]
+ },
+ "Germany": {
+  "checked": "17 October 2026",
+  "answer": "Germany's Federal Ministry of Food says it is prohibited as a matter of principle to bring meat, milk and products derived from them into the EU from non-EU countries. Small amounts are allowed: up to 2 kg of infant milk, baby food and medically required food, up to 2 kg of other animal products such as honey, and up to 20 kg of fish. Goods that do not comply must go to a veterinary border inspection post or be surrendered on arrival.",
+  "sources": [
+   [
+    "https://www.bmleh.de/EN/topics/consumer-protection/food-hygiene-safety/importation-products-animal-origin.html",
+    "Federal Ministry of Food (BMLEH) — Importation of products of animal origin for personal consumption"
+   ]
+  ],
+  "faq": [
+   [
+    "Can I bring meat or cheese into Germany from a non-EU country?",
+    "No, as a matter of principle. The ministry says it is prohibited to bring meat, milk and products derived from them into the EU, with the exceptions listed on its page."
+   ],
+   [
+    "How much fish and honey can I bring into Germany?",
+    "Up to 20 kg of fish and fishery products, or one fish that may be heavier, and up to 2 kg of other animal products such as honey."
+   ],
+   [
+    "Is bread or chocolate allowed?",
+    "Yes, with no quantity limit: bread, cake, cookies, chocolate and confectionery, unless mixed or filled with meat. Pasta and noodles, pre-packaged supplements and soup aromas are also listed without limits."
+   ],
+   [
+    "What happens to goods that do not comply?",
+    "They must be presented to a veterinary border inspection post for import controls, or surrendered on arrival in the EU for official disposal at the importer's expense. Failing to register such products may result in a fine, but the page gives no amount."
+   ]
+  ],
+  "topics": [
+   {
+    "id": "meat",
+    "label": "Meat & dairy",
+    "status": "stop",
+    "verdict": "Not allowed",
+    "head": "Meat, milk and their products from non-EU countries are banned as a principle.",
+    "scen": [
+     {
+      "when": "From non-EU countries",
+      "status": "stop",
+      "tag": "Not allowed",
+      "lines": [
+       "It is prohibited as a matter of principle to bring meat, milk and products derived from them into the EU.",
+       "The rules do not apply to personal imports of animal products from Andorra, Liechtenstein, San Marino or Switzerland."
+      ]
+     },
+     {
+      "when": "Faroe Islands, Greenland and Iceland",
+      "status": "warn",
+      "tag": "Up to 10 kg",
+      "lines": [
+       "Larger personal amounts are allowed, from 10 to 20 kg depending on the product category.",
+       "Meat, milk and their derivatives are capped at 10 kg combined per person."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "fish",
+    "label": "Fish & honey",
+    "status": "warn",
+    "verdict": "Small limits",
+    "head": "Up to 20 kg of fish and 2 kg of other animal products such as honey.",
+    "scen": [
+     {
+      "when": "Allowed in small amounts",
+      "status": "warn",
+      "tag": "Max 20 kg / 2 kg",
+      "lines": [
+       "Fish and fishery products: up to 20 kg, or one single fish that may be heavier.",
+       "Other animal products, such as honey: up to 2 kg.",
+       "Fishery products for personal use from the Faroe Islands or Iceland are exempt from the limit."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "infant",
+    "label": "Baby & medical food",
+    "status": "warn",
+    "verdict": "Up to 2 kg",
+    "head": "Infant milk, baby food and medically required food are allowed up to 2 kg.",
+    "scen": [
+     {
+      "when": "Special foods",
+      "status": "warn",
+      "tag": "Max 2 kg",
+      "lines": [
+       "Powdered infant milk, baby food and medically necessary special food: maximum 2 kg.",
+       "Medically necessary special pet food: maximum 2 kg."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "free",
+    "label": "Foods with no limit",
+    "status": "go",
+    "verdict": "Allowed",
+    "head": "Bread, biscuits, chocolate and pasta come in without a quantity limit.",
+    "scen": [
+     {
+      "when": "No quantity limits",
+      "status": "go",
+      "tag": "Allowed",
+      "lines": [
+       "Bread, cake, cookies, chocolate and confectionery, unless mixed or filled with meat.",
+       "Pasta and noodles unless mixed or filled with meat, pre-packaged dietary supplements, meat extracts and concentrates, fish-filled olives, and pre-packaged consommé and soup aromas.",
+       "Other foods containing no fresh or processed meat, milk or dairy and less than 50% egg or fish products."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "breach",
+    "label": "If it does not comply",
+    "status": "warn",
+    "verdict": "Present or surrender",
+    "head": "Show it at a veterinary border post or surrender it for disposal.",
+    "scen": [
+     {
+      "when": "Non-conforming goods",
+      "status": "warn",
+      "tag": "At your cost",
+      "lines": [
+       "They must be presented to a veterinary border inspection post for import controls, or surrendered on arrival in the EU for official disposal at the importer’s expense.",
+       "Failing to register such products may result in a fine; the page does not give an amount."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "France": {
+  "checked": "17 October 2026",
+  "answer": "French Customs says meat and dairy products, and products made from them, are banned from most non-EU countries, with small exceptions for personal baggage and small parcels. Fish is allowed up to 20 kg, and powdered infant milk, medical food and other animal products such as honey up to 2 kg. If you exceed the limits or carry banned products, customs seizes and systematically destroys the goods.",
+  "sources": [
+   [
+    "https://www.douane.gouv.fr/particuliers/vous-voyagez/denrees-alimentaires",
+    "French Customs (Douane) — Food products when you travel"
+   ]
+  ],
+  "faq": [
+   [
+    "Can I bring meat or cheese into France from outside the EU?",
+    "No: customs says meat, milk and their products are banned from most non-EU countries. From the Faroe Islands and Greenland you may bring up to 10 kg combined."
+   ],
+   [
+    "What can I bring into France in small quantities?",
+    "Fish up to 20 kg, powdered infant milk, infant food and medically required food up to 2 kg, and other animal products such as honey or snails up to 2 kg per person."
+   ],
+   [
+    "Do I have to declare these products to French Customs?",
+    "Yes. Travellers must declare these products to customs and present them."
+   ],
+   [
+    "What does French Customs do with banned or excess food?",
+    "It seizes and systematically destroys the goods. Above the limits, postal and express freight clearance is not allowed."
+   ]
+  ],
+  "topics": [
+   {
+    "id": "meat",
+    "label": "Meat & dairy",
+    "status": "stop",
+    "verdict": "Not allowed",
+    "head": "Meat, milk and their products are banned from most non-EU countries.",
+    "scen": [
+     {
+      "when": "From most non-EU countries",
+      "status": "stop",
+      "tag": "Not allowed",
+      "lines": [
+       "Meat, milk, and meat- or milk-based products are banned.",
+       "If you carry them, customs seizes and systematically destroys the goods."
+      ]
+     },
+     {
+      "when": "From the Faroe Islands or Greenland",
+      "status": "warn",
+      "tag": "Up to 10 kg",
+      "lines": [
+       "Meat, milk and their products: up to 10 kg per traveller, combined."
+      ]
+     },
+     {
+      "when": "From Andorra, Iceland, Norway, San Marino, Switzerland, Liechtenstein or Northern Ireland",
+      "status": "go",
+      "tag": "No limit",
+      "lines": [
+       "Travellers from these places can bring animal-origin foods with no quantity limit."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "fish",
+    "label": "Fish",
+    "status": "warn",
+    "verdict": "Up to 20 kg",
+    "head": "Up to 20 kg of fresh, prepared or processed fish; unlimited from the Faroe Islands and Greenland.",
+    "scen": [
+     {
+      "when": "Fish and shellfish",
+      "status": "warn",
+      "tag": "Max 20 kg",
+      "lines": [
+       "Fresh, gutted, prepared or processed fish: up to 20 kg per person from most non-EU countries.",
+       "From the Faroe Islands and Greenland the amount is unlimited."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "special",
+    "label": "Infant, medical & other",
+    "status": "warn",
+    "verdict": "Up to 2 kg",
+    "head": "Powdered infant milk, medical food and other animal products such as honey: up to 2 kg.",
+    "scen": [
+     {
+      "when": "Allowed in small quantities",
+      "status": "warn",
+      "tag": "Max 2 kg",
+      "lines": [
+       "Powdered infant milk, infant food and medically required special food: up to 2 kg (10 kg from the Faroe Islands and Greenland).",
+       "Medically required pet food, and other animal products such as honey or snails: up to 2 kg."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "declare",
+    "label": "Declare & fines",
+    "status": "warn",
+    "verdict": "Declare it",
+    "head": "You must declare and present these products to customs.",
+    "scen": [
+     {
+      "when": "At the border",
+      "status": "warn",
+      "tag": "Declare it",
+      "lines": [
+       "Travellers must declare these products to customs and present them. For postal or express imports within the limits the declaration needs tariff provision Y058.",
+       "Above the thresholds, postal or express clearance is not allowed; larger amounts must go through commercial freight."
+      ]
+     },
+     {
+      "when": "Not read",
+      "status": "warn",
+      "tag": "Ask first",
+      "lines": [
+       "The page covers animal-origin products only; it says nothing about fruit, vegetables or plants, and describes no fines beyond seizure and destruction."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "Ireland": {
+  "checked": "17 October 2026",
+  "answer": "The Food Safety Authority of Ireland says meat and milk products are not allowed from third countries other than the Faroe Islands and Greenland, where up to 10 kg combined is allowed. Powdered infant milk and special medical food are allowed up to 2 kg, fish up to 20 kg and other animal products such as honey up to 2 kg. Non-animal foods are allowed in luggage, with import controls for products listed in Regulation (EU) 2019/1793 above 5 kg per fresh product and 2 kg per other product. The UK, apart from Northern Ireland, counts as a third country.",
+  "sources": [
+   [
+    "https://www.fsai.ie/enforcement-and-legislation/legislation/food-legislation/imports/personal-imports",
+    "Food Safety Authority of Ireland — Personal imports of food from third countries"
+   ]
+  ],
+  "faq": [
+   [
+    "Can I bring meat or cheese into Ireland from the UK or the USA?",
+    "No. The FSAI says meat and milk products are not allowed from third countries, which include the UK (not Northern Ireland), except up to 10 kg combined from the Faroe Islands or Greenland."
+   ],
+   [
+    "How much fish, honey and infant milk can I bring into Ireland?",
+    "Fish and shellfish up to 20 kg (or the weight of one fish if higher), other animal products such as honey up to 2 kg, and powdered infant milk or special medical food up to 2 kg combined."
+   ],
+   [
+    "Can I bring fruit, vegetables and nuts into Ireland?",
+    "They are allowed in luggage. Products listed in Regulation (EU) 2019/1793 are subject to import controls unless within 5 kg per fresh product and 2 kg per other product; products not on that list have no weight limit."
+   ],
+   [
+    "Do the rules apply to food from other EU countries?",
+    "No. The FSAI says the animal-product rules do not apply to products moved between EU Member States, or from Andorra, Iceland, Liechtenstein, Norway, San Marino or Switzerland."
+   ]
+  ],
+  "topics": [
+   {
+    "id": "meat",
+    "label": "Meat & dairy",
+    "status": "stop",
+    "verdict": "Not allowed",
+    "head": "Meat and milk products are not allowed from third countries, the UK included.",
+    "scen": [
+     {
+      "when": "From third countries",
+      "status": "stop",
+      "tag": "Not allowed",
+      "lines": [
+       "Meat and milk products are not allowed from third countries; the only exception is up to 10 kg combined from the Faroe Islands or Greenland.",
+       "The UK, other than Northern Ireland, counts as a third country. The rule does not apply to products from EU states, Andorra, Iceland, Liechtenstein, Norway, San Marino or Switzerland."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "fish",
+    "label": "Fish & honey",
+    "status": "warn",
+    "verdict": "Small limits",
+    "head": "Fish up to 20 kg and other animal products such as honey up to 2 kg.",
+    "scen": [
+     {
+      "when": "Allowed in small amounts",
+      "status": "warn",
+      "tag": "Max 20 kg / 2 kg",
+      "lines": [
+       "Fish and shellfish, such as prawns, lobsters and eviscerated fish: 20 kg, or the weight of one fish if higher; no limit from the Faroe Islands or Greenland.",
+       "Other animal products, such as honey, live oysters and snails: maximum 2 kg for personal use (10 kg combined from the Faroe Islands or Greenland)."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "infant",
+    "label": "Baby & medical food",
+    "status": "warn",
+    "verdict": "Up to 2 kg",
+    "head": "Powdered infant milk and special medical food are allowed up to 2 kg combined.",
+    "scen": [
+     {
+      "when": "Special foods",
+      "status": "warn",
+      "tag": "Max 2 kg",
+      "lines": [
+       "Powdered infant milk, other infant formula and special foods for medical reasons: up to 2 kg combined, sealed and branded, needing no refrigeration before opening.",
+       "They must be in luggage, not sent by post. Special medical pet food has the same 2 kg limit."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "plant",
+    "label": "Fruit, veg & nuts",
+    "status": "warn",
+    "verdict": "Allowed with limits",
+    "head": "Allowed in luggage, with limits on products under EU import controls.",
+    "scen": [
+     {
+      "when": "Non-animal foods",
+      "status": "warn",
+      "tag": "5 kg / 2 kg",
+      "lines": [
+       "Fruit, vegetables, nuts, cereals, tea and spices are allowed in luggage.",
+       "Products listed in Regulation (EU) 2019/1793 are subject to import controls unless within 5 kg per fresh product and 2 kg per other product. The limits apply per product; products not on the list have no weight limit."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "breach",
+    "label": "If it does not comply",
+    "status": "warn",
+    "verdict": "Official controls",
+    "head": "Food that does not meet the rules is treated as an import.",
+    "scen": [
+     {
+      "when": "Non-compliance",
+      "status": "warn",
+      "tag": "Official controls",
+      "lines": [
+       "If food does not meet these criteria it is subject to official controls and you are treated as an official importer.",
+       "For large quantities the page points to Revenue and Customs (ecustoms@revenue.ie). It does not describe penalties or a declaration procedure."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "Switzerland": {
+  "checked": "17 October 2026",
+  "answer": "Switzerland's customs authority (BAZG) says ready-to-eat food and soft drinks for the travel day can be brought in duty-free. It states that taking meat and dairy products, and most fruit and many vegetables, from non-EU countries into Switzerland is prohibited, and refers to the Federal Food Safety and Veterinary Office (BLV) for details. VAT applies to other goods above a total value of CHF 150.",
+  "sources": [
+   [
+    "https://www.bazg.admin.ch/de/allgemeine-informationen-zu-freimengen-und-wertfreigrenzen",
+    "Federal Office for Customs and Border Security (BAZG) — General information on duty-free quantities and value limits"
+   ]
+  ],
+  "faq": [
+   [
+    "Can I bring a sandwich or snack into Switzerland?",
+    "Yes: BAZG says ready-to-eat food and non-alcoholic drinks for the travel day can be brought in duty-free."
+   ],
+   [
+    "Can I bring meat or cheese into Switzerland from a non-EU country?",
+    "No. BAZG says taking meat and dairy products, and most fruit and many vegetables, from non-EU countries is prohibited."
+   ],
+   [
+    "Where do I find the detailed rules for food?",
+    "BAZG refers to the Federal Food Safety and Veterinary Office (BLV) for details, and to a separate page for food, alcohol and tobacco quantities."
+   ],
+   [
+    "When does VAT apply?",
+    "For other goods, VAT is due from a total value of CHF 150."
+   ]
+  ],
+  "topics": [
+   {
+    "id": "snacks",
+    "label": "Travel-day food",
+    "status": "go",
+    "verdict": "Duty-free",
+    "head": "Ready-to-eat food and soft drinks for the travel day come in duty-free.",
+    "scen": [
+     {
+      "when": "Travel provisions",
+      "status": "go",
+      "tag": "Allowed",
+      "lines": [
+       "Ready-to-eat foods and non-alcoholic drinks for the travel day can be brought in duty-free."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "meat",
+    "label": "Meat & dairy",
+    "status": "stop",
+    "verdict": "Not allowed",
+    "head": "Meat and dairy products from non-EU countries are prohibited.",
+    "scen": [
+     {
+      "when": "From non-EU countries",
+      "status": "stop",
+      "tag": "Not allowed",
+      "lines": [
+       "Taking meat and dairy products from third countries (non-EU states) into Switzerland is prohibited.",
+       "For details the page refers to the Federal Food Safety and Veterinary Office (BLV)."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "fruit",
+    "label": "Fruit & veg",
+    "status": "stop",
+    "verdict": "Mostly banned",
+    "head": "Most fruit and many vegetables from non-EU countries are prohibited.",
+    "scen": [
+     {
+      "when": "From non-EU countries",
+      "status": "stop",
+      "tag": "Not allowed",
+      "lines": [
+       "Taking most fruit and many vegetables from third countries into Switzerland is prohibited.",
+       "The page gives no list of exceptions; BLV has the details."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "value",
+    "label": "Limits & VAT",
+    "status": "warn",
+    "verdict": "CHF 150",
+    "head": "VAT applies to other goods above a total value of CHF 150.",
+    "scen": [
+     {
+      "when": "Other goods",
+      "status": "warn",
+      "tag": "VAT above CHF 150",
+      "lines": [
+       "For other goods VAT is due from a total value of CHF 150."
+      ]
+     },
+     {
+      "when": "Not read",
+      "status": "warn",
+      "tag": "Ask first",
+      "lines": [
+       "The page does not give exact quantity limits for food; it points to a sub-page on food, alcohol and tobacco quantities that we did not read."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "Netherlands": {
+  "checked": "17 October 2026",
+  "answer": "The Dutch government says that from outside the EU there are strict requirements for animal products and food, and you will almost always need a health certificate from the authorities of the country where the products are bought. The certificate states the product, weight, country of origin and EU destination country. From other EU countries you may bring animal products such as meat or dairy for your own use. Dutch Customs keeps a list of animal products that do not need a certificate.",
+  "sources": [
+   [
+    "https://www.government.nl/topics/travelling-outside-the-netherlands/customs-declarations/transport-of-animal-products-to-the-netherlands",
+    "Government of the Netherlands — Transport of animal products to the Netherlands"
+   ]
+  ],
+  "faq": [
+   [
+    "Can I bring meat or cheese into the Netherlands from outside the EU?",
+    "You will almost always need a health certificate. The Dutch government says there are strict requirements, with a few exceptions listed on the Dutch Customs website."
+   ],
+   [
+    "Can I bring meat or cheese from another EU country?",
+    "Yes, if it is for your own use. If you want to resell it or do not use it yourself, the conditions for the import of animal products apply."
+   ],
+   [
+    "What must the health certificate say?",
+    "The type of product, its weight, its country of origin and the EU country of destination. You get it from the authorities in the country where you buy the products."
+   ],
+   [
+    "Do protected species need permits?",
+    "Yes. You may not bring CITES-protected species or their products from outside the EU without the right permits, and some products, such as elephant ivory, are banned entirely."
+   ]
+  ],
+  "topics": [
+   {
+    "id": "eu",
+    "label": "From other EU countries",
+    "status": "go",
+    "verdict": "Allowed for own use",
+    "head": "Meat and dairy from other EU countries are fine for your own use.",
+    "scen": [
+     {
+      "when": "Inside the EU",
+      "status": "go",
+      "tag": "Allowed",
+      "lines": [
+       "You may bring animal products such as meat or dairy from other EU countries if you want to use them yourself.",
+       "If you want to resell them or do not plan to use them yourself, the conditions for the import of animal products apply."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "outside",
+    "label": "From outside the EU",
+    "status": "stop",
+    "verdict": "Certificate needed",
+    "head": "Strict requirements: you will almost always need a health certificate.",
+    "scen": [
+     {
+      "when": "Animal products and food",
+      "status": "stop",
+      "tag": "Certificate needed",
+      "lines": [
+       "The Dutch government says there are strict requirements for animal products and food from outside the EU, and as a general rule you need a health certificate.",
+       "Apply for it from the authorities in the country where the products are bought; the Dutch embassy there can tell you who to contact."
+      ]
+     },
+     {
+      "when": "The certificate",
+      "status": "warn",
+      "tag": "Must state",
+      "lines": [
+       "The type of product, its weight, its country of origin and the EU country of destination.",
+       "Dutch Customs (douane.nl) lists the animal products that do not need a health certificate; we did not read that list."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "cites",
+    "label": "Protected species",
+    "status": "stop",
+    "verdict": "Permit needed",
+    "head": "CITES-protected species and their products need permits; some are banned.",
+    "scen": [
+     {
+      "when": "Endangered species",
+      "status": "stop",
+      "tag": "Permit needed",
+      "lines": [
+       "You may not bring endangered species protected by the CITES Convention, or their parts and products, from outside the EU without the correct permits.",
+       "Some products are banned entirely, such as elephant ivory. For the most endangered species you need CITES EU certificates; check the RVO website."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "notread",
+    "label": "Not read",
+    "status": "warn",
+    "verdict": "Ask first",
+    "head": "The page gives no weight limits or penalties.",
+    "scen": [
+     {
+      "when": "What we could not confirm",
+      "status": "warn",
+      "tag": "Ask first",
+      "lines": [
+       "The page does not list exact weight or quantity limits, fruit and vegetable rules, honey, or penalties for breaking the rules.",
+       "Check Dutch Customs (douane.nl) before you bring food from outside the EU."
+      ]
+     }
+    ]
+   }
+  ]
  }
 }
