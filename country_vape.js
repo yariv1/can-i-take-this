@@ -30,27 +30,27 @@ function indoorText(cn, D) {
 function build(c) {
   const D = DATA.c[c.code]; if (!D) return null;
   const cn = c.name, A = analyse(D);
-  let status, lead, travel;
+  let status, lead, travel, card;
   if (A.none) {
-    status = 'No General Ban';
+    status = 'No General Ban'; card = { status: 'warn', head: 'WHO lists no general ban - check customs.' };
     lead = 'WHO\'s 2023 country profile for ' + cn + ' (data as at 2022) lists no general ban on e-cigarettes' +
       (D.laws === 'Yes' ? ' and says national laws or regulations regulate them' : ' and says no national law regulates them') + '. ' + indoorText(cn, D) +
       ' That is the law on e-cigarette products: it does not say how many devices or how much e-liquid customs lets you carry in a bag, so check with the customs authority before you travel.';
     travel = 'WHO lists no general ban on e-cigarettes in ' + cn + ', but its profile does not publish a traveller allowance. Check the customs rules for ' + cn + ', and on the plane keep the device in your cabin baggage as airlines require.';
   } else if (A.presc) {
-    status = 'Prescription Needed';
+    status = 'Prescription Needed'; card = { status: 'warn', head: 'Needs a prescription (WHO) - check customs.' };
     lead = 'WHO\'s 2023 country profile for ' + cn + ' (data as at 2022) lists the sale and import of nicotine e-cigarettes as banned without a doctor\'s prescription. ' + indoorText(cn, D) + ' Treat nicotine vapes and e-liquid as items you cannot simply pack for ' + cn + ' and check the customs and health rules first.';
     travel = 'WHO\'s wording for ' + cn + ' is "' + A.g + '", so nicotine e-cigarettes are not freely sold or imported. Check the rules for travellers with the customs and health authorities before you pack one.';
   } else if (A.hasImport && A.except) {
-    status = 'Import Banned, Personal Use Exception';
+    status = 'Import Banned, Personal Use Exception'; card = { status: 'warn', head: 'Import banned, personal-use exception (WHO).' };
     lead = 'WHO\'s 2023 country profile for ' + cn + ' (data as at 2022) lists "' + A.g + '". ' + indoorText(cn, D) + ' The personal-use exception is WHO\'s wording; the profile gives no quantity, so confirm what is allowed with the customs authority.';
     travel = 'WHO lists a ban on importing e-cigarettes into ' + cn + ' with an exception for personal use, and gives no quantity. Confirm with customs before you pack one.';
   } else if (A.hasImport) {
-    status = A.hasUse ? 'Use, Sale and Import Banned' : 'Sale and Import Banned';
+    status = A.hasUse ? 'Use, Sale and Import Banned' : 'Sale and Import Banned'; card = { status: 'stop', head: 'Import banned (WHO) - leave it at home.' };
     lead = 'WHO\'s 2023 country profile for ' + cn + ' (data as at 2022) lists "' + A.g + '" for e-cigarettes. ' + indoorText(cn, D) + ' Treat vapes, pods and e-liquid as items not to pack for ' + cn + ' unless the customs authority confirms otherwise.';
     travel = 'WHO lists a ban on importing e-cigarettes into ' + cn + ' ("' + A.g + '"). Do not pack a vape or e-liquid unless the customs authority confirms in writing that you may.';
   } else {
-    status = 'Sale Restricted';
+    status = 'Sale Restricted'; card = { status: 'warn', head: 'Sale restricted (WHO) - check customs.' };
     lead = 'WHO\'s 2023 country profile for ' + cn + ' (data as at 2022) lists "' + A.g + '" for e-cigarettes. ' + indoorText(cn, D) + ' It does not mention importing, so check the customs rules for travellers before you pack one.';
     travel = 'WHO lists "' + A.g + '" for ' + cn + ' but does not list an import ban. It also publishes no traveller allowance, so check with the customs authority.';
   }
@@ -89,7 +89,8 @@ function build(c) {
   if (desc.length > 158) desc = desc.slice(0, 155).replace(/\s+\S*$/, '') + '...';
   if (X && X.ttl) ttl = X.ttl;
   if (X && X.desc) desc = X.desc;
-  return { ttl, desc, html, faq };
+  card.lines = [travel];
+  return { ttl, desc, html, faq, card };
 }
 
 module.exports = { build };

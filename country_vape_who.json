@@ -484,7 +484,7 @@
    "indoor": "Partial ban",
    "ads": "Partial ban",
    "minAge": 18,
-   "flavours": "Some are restricted",
+   "flavours": "Some are allowed",
    "note": null,
    "pdf": "https://cdn.who.int/media/docs/default-source/country-profiles/tobacco/gtcr-2023/tobacco-2023-dnk.pdf"
   },
@@ -660,7 +660,7 @@
    "indoor": "Partial ban",
    "ads": "Partial ban",
    "minAge": 18,
-   "flavours": "Some are restricted",
+   "flavours": "Some are allowed",
    "note": null,
    "pdf": "https://cdn.who.int/media/docs/default-source/country-profiles/tobacco/gtcr-2023/tobacco-2023-est.pdf"
   },

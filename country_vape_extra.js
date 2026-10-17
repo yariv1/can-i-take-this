@@ -3,7 +3,7 @@
 module.exports = {
   EG: {
     ttl: 'Can You Vape in Egypt? 2026 Law and Customs Rules',
-    desc: 'Can you vape in Egypt? WHO lists no general ban, indoor use is banned, minimum age 18. Egypt\'s customs rules never mention vapes: what it means for travellers.',
+    desc: 'Can you vape in Egypt? WHO lists no general ban, indoor use is banned, minimum age 18. The passenger-allowance decree does not mention vapes, but the customs travel page lists e-cigarettes as needing control-authority approval.',
     sections: [{
       h: '🛃 What Egyptian customs says travellers can bring',
       p: 'Egypt\'s passenger allowances are set in the Executive Regulations of the Customs Law, Minister of Finance Decree No. 430 of 2021 (Customs Law No. 207 of 2020). We searched the full English text of the decree: it does not mention e-cigarettes, vapes or e-liquid anywhere. It sets these allowances for arriving passengers:',
@@ -13,13 +13,13 @@ module.exports = {
         ['New items for personal use', 'Up to 10,000 Egyptian pounds in value, not brought for trade; the excess is subject to customs taxes'],
         ['Duty-free shop purchases', 'Objects bought for personal use from the free markets in customs areas within 48 hours of arrival are exempt, up to US$ 200']
       ] },
-      list: ['<strong>What this means for a vape:</strong> because the decree is silent on e-cigarettes, we cannot tell you that a device or e-liquid has an allowance. Do not assume the cigarette allowance covers it.', '<strong>Ask before you pack:</strong> confirm with the Egyptian Customs Authority (customs.gov.eg) or your airline, especially for nicotine e-liquid or several devices.']
+      list: ['<strong>What this means for a vape:</strong> the decree is silent on e-cigarettes, so it gives no allowance for a device or e-liquid. Do not assume the cigarette allowance covers it. The Egyptian Customs Authority\'s travel and tourism page lists e-cigarettes among items that need the approval of the relevant control authorities (it names the General Organization for Export and Import Control as an example).', '<strong>Ask before you pack:</strong> confirm with the Egyptian Customs Authority (customs.gov.eg) or your airline, especially for nicotine e-liquid or several devices.']
     }],
     faq: [
-      ['Does Egyptian customs allow vapes?', 'The customs regulations (Decree No. 430 of 2021) set allowances for cigarettes, cigars, tobacco and liquor but do not mention e-cigarettes, so there is no published allowance for vapes. Confirm with the Egyptian Customs Authority before you travel.'],
+      ['Does Egyptian customs allow vapes?', 'The customs regulations (Decree No. 430 of 2021) set allowances for cigarettes, cigars, tobacco and liquor but do not mention e-cigarettes, so there is no published allowance for vapes. The Customs Authority\'s travel page lists e-cigarettes as needing the approval of the control authorities. Confirm with the Egyptian Customs Authority before you travel.'],
       ['How many cigarettes can I bring into Egypt?', 'One carton of 200 cigarettes, or 25 cigars, or 200 grams of tobacco, and the quantity is recorded in your passport, according to Decree No. 430 of 2021.']
     ],
-    src: [['https://customs.gov.eg/Upload/ECAAdminace/2c2777f7-499b-4ce9-8171-78deb005de42.pdf', 'Egyptian Customs Authority: Minister of Finance Decree No. 430 of 2021 (Executive Regulations of the Customs Law, English)']]
+    src: [['https://customs.gov.eg/Upload/ECAAdminace/2c2777f7-499b-4ce9-8171-78deb005de42.pdf', 'Egyptian Customs Authority: Minister of Finance Decree No. 430 of 2021 (Executive Regulations of the Customs Law, English)'], ['https://customs.gov.eg/Legislations/TravelAndTourism?travelAndTourismId=1', 'Egyptian Customs Authority: Travel and tourism (Arabic)']]
   },
   TR: {
     ttl: 'Can You Vape in Turkey? 2026 Law and Customs Limits',

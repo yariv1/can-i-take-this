@@ -1002,10 +1002,11 @@ function run(){
     const cn=c.name;
     countryCats.forEach(cc=>{
       setS({mode:'country',cat:cc.cat,country:cn,detail:null});
-      const v=w.verdict(); if(!v) return;
+      let v=w.verdict(); if(!v) return;
       const url=`/country/${slug(cn)}/${cc.url}/`;
       const CV=(cc.cat==='vape')?CVAPE.build(c):(cc.cat==='tobacco'?CTOB.build(c):(cc.cat==='plants'?CPLANT.build(c):(cc.cat==='alcohol'?CALC.build(c):null)));
       const EUC=EUM.isEU(cn)&&EUM.CATS.indexOf(cc.cat)>=0&&!(cc.cat==='alcohol'&&CALC.has(c));
+      if(CV&&CV.card) v=Object.assign({},v,CV.card);
       write(url+'index.html', countryShell({
         mode:'cat', url, c, cat:cc.cat, v,
         canonical:EUC?(BASE+EUM.url(cc.cat)):null,
@@ -1018,7 +1019,7 @@ function run(){
     });
     // country hub
     const hub=`/country/${slug(cn)}/`;
-    const hubCards=countryCats.map(cc=>{setS({mode:'country',cat:cc.cat,country:cn,detail:null});const v=w.verdict();return {u:`/country/${slug(cn)}/${cc.url}/`,label:cc.q(cn).replace(' (2026)',''),status:v.status,head:v.head};});
+    const hubCards=countryCats.map(cc=>{setS({mode:'country',cat:cc.cat,country:cn,detail:null});let v=w.verdict();const _cv=(cc.cat==='vape')?CVAPE.build(c):(cc.cat==='plants'?CPLANT.build(c):null);if(_cv&&_cv.card)v=Object.assign({},v,_cv.card);return {u:`/country/${slug(cn)}/${cc.url}/`,label:cc.q(cn).replace(' (2026)',''),status:v.status,head:v.head};});
     write(hub+'index.html', countryShell({
       mode:'hub', url:hub, c, cat:null, cards:hubCards,
       title:`Travelling to ${cn}? Customs & What You Can Bring 2026 | canitakethis.co`,
@@ -1112,7 +1113,7 @@ function run(){
       title:`Can I Bring a Dog or Cat into ${c.name}? Pet Import Rules 2026 | canitakethis.co`,
       desc:batchDesc(`Bringing a dog or cat into ${c.name} (2026)`, vd),
       h1:`Can I bring a dog into ${c.name}? (2026 pet import)`,
-      lead:`Pet import into ${c.name} is time-sensitive — some steps (microchip, rabies titre test, permits) take months. Start early.`,
+      lead:`Pet import into ${c.name} is time-sensitive — some steps can take months. Start early.`,
       faqA:`${vd.head} ${(vd.lines||[]).filter(Boolean).join(' ')}`
     }));
     pages.push({url,changefreq:'monthly'});

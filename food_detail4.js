@@ -44,7 +44,7 @@ module.exports = {
     ]
   },
   "Argentina": {
-    answer: "Argentina's food and agriculture authority (SENASA) lets travellers bring in only certain packaged foods: they must be packaged and labelled by the producer under official sanitary control, in quantities consistent with personal consumption. Meat of any species, sausages, ham, honey, homemade foods, unlabelled foods, fresh fruit and vegetables, plants and seeds are listed as not permitted. Products that do not comply can be seized, and SENASA staff can draw up a record and destroy them in front of the traveller.",
+    answer: "Argentina's food and agriculture authority (SENASA) lets travellers bring in only certain packaged foods: they must be packaged and labelled by the producer under official sanitary control, in quantities consistent with personal consumption. Meat of any species, sausages, ham, honey, homemade foods, unlabelled foods, fresh fruit and vegetables, plants and seeds are listed as not permitted. SENASA staff can seize products that do not comply.",
     stats: [
       ["Allowed", "packaged, labelled processed foods (canned fish, pasteurised dairy, jam, juices...)"],
       ["Not allowed", "meat, sausages, honey, fresh fruit and vegetables, homemade food"],
