@@ -299,3 +299,9 @@ China Eastern (china-eastern), Copa (copa-airlines), Saudia (saudia), Royal Air 
 3. https://canitakethis.co/airline/united/medication/
 4. https://canitakethis.co/airline/southwest/medication/
 Pilot check 2026-11-14 (impressions/clicks vs Wi-Fi pilot). Alaska Airlines not built: alaskaair.com unreadable.
+
+## 2026-10-17 airline Medication pilot, batch 2 — TO REQUEST (not yet requested; not yet deployed)
+5. https://canitakethis.co/airline/ryanair/medication/
+6. https://canitakethis.co/airline/emirates/medication/
+7. https://canitakethis.co/airline/air-canada/medication/
+8. https://canitakethis.co/airline/lufthansa/medication/
