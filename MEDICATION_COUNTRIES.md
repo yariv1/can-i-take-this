@@ -27,7 +27,7 @@ How to continue: read MEDICATION_WORKFLOW.md, take a NOT DONE country, find its 
 | China | PER-MEDICINE ROWS (MED_VER) | https://english.shanghai.gov.cn/en-ImmigrationCustoms/20240516/632357dc3fbe483c923a5c296795b618.html |  |
 | South Korea | CATEGORY NOTE (MED_NOTE) | https://www.mfds.go.kr/eng/brd/m_60/view.do?seq=75669 |  |
 | Qatar | CATEGORY NOTE (MED_NOTE) | https://hukoomi.gov.qa/en/News/MOPH-Launches-Electronic-System-for-Controlled-Medicines-for-Travelers |  |
-| Saudi Arabia | NOT DONE |  | SFDA and my.gov.sa block automated access (permit via Controlled Drugs System; not read) |
+| Saudi Arabia | NOT DONE | | 2026-10-17: SFDA has a traveller clearance-permit service (CDS portal, news 4292351) but sfda.gov.sa is denied/reset from this machine; not read |
 | Egypt | NOT DONE | | EDA pages cover outbound travel only (arrival rule not found) |
 | Cyprus | CATEGORY NOTE (MED_NOTE) | https://www.moh.gov.cy/moh/phs/phs.nsf/drugsphych_en/drugsphych_en |  |
 | Portugal | CATEGORY NOTE (MED_NOTE) | https://www.infarmed.pt/web/infarmed/legislacao/legislacao-farmaceutica-compilada/titulo-iii-medicamentos/capitulo-iii-estupefacientes-e-psicotropicos | session 34, 2026-10-16 |
@@ -55,19 +55,19 @@ How to continue: read MEDICATION_WORKFLOW.md, take a NOT DONE country, find its 
 | Czechia | CATEGORY NOTE (MED_NOTE) | https://celnisprava.gov.cz/cz/dalsi-kompetence/informace-pro-fyzicke-osoby/Stranky/dovoz-vyvoz-a-pruvoz-navykovych-latek-a-leku.aspx |  |
 | Hungary | CATEGORY NOTE (MED_NOTE) | https://ogyei.gov.hu/travelling_with_medicine |  |
 | Romania | NOT DONE | | customs.ro behind Cloudflare; ANM has no traveller page |
-| Bulgaria | NOT DONE |  | customs.bg times out; MFA page is outbound only |
+| Bulgaria | NOT DONE | | 2026-10-17: customs.bg page on narcotic medicines (30 days, Art. 58) exists but is unreachable from here; not read |
 | Croatia | CATEGORY NOTE (MED_NOTE) | https://carina.gov.hr/featured/information-for-passengers-natural-persons/bringing-in-medicine-and-narcotics/6745 |  |
 | Slovenia | CATEGORY NOTE (MED_NOTE) | https://www.fu.gov.si/en/life_events_individuals/import_of_medications |  |
 | Slovakia | NOT DONE | | SUKL page is a glossary entry about travelling OUT (certificate from regional pharmacist) |
 | Serbia | CATEGORY NOTE (MED_NOTE) | https://www.carina.rs/en/passengers/passenger-custom-clerance/useful-information-for-passengers.html | session 34, 2026-10-16 |
 | Ukraine | NOT DONE | | dls.gov.ua has no traveller page |
 | Georgia | CATEGORY NOTE (MED_NOTE) | https://www.rs.ge/Media/Default/Images/CustomsBrochures/Prohibited%20and%20Permitted%20Medicines.pdf | session 34, 2026-10-16 |
-| Russia | NOT DONE |  | no traveller page found (Roszdravnadzor permits only) |
+| Russia | NOT DONE | | 2026-10-17: customs.gov.ru lekarstvennye-sredstva page exists but connection refused from here; not read |
 | Malta | NOT DONE | | Medicines Authority page covers Maltese residents travelling out only |
 | Luxembourg | NOT DONE | | only forms and generic customs pages, no readable traveller rule |
 | Estonia | NOT DONE | | Ravimiamet page covers Estonians travelling out only |
 | Latvia | CATEGORY NOTE (MED_NOTE) | https://www.zva.gov.lv/en/patients-and-public/medicines/purchase-medicines-pharmacy/carrying-medicines-and-out-country-and-receiving-them-post | session 34, 2026-10-16 |
-| Lithuania | NOT DONE | | vvkt.lt behind Cloudflare; 2018 customs leaflet only |
+| Lithuania | NOT DONE | | 2026-10-17: vvkt.lt behind Cloudflare; only a 2018 customs leaflet found, not read |
 | Jordan | NOT DONE | | JFDA/customs pages found cover import permits for businesses only |
 | Lebanon | NOT DONE | | MoPH pages are registration/COVID notices, no traveller rule |
 | Kuwait | NOT DONE | | only a Dec 2025 news item on a new ministerial decision, no quantities/periods published |
@@ -76,7 +76,7 @@ How to continue: read MEDICATION_WORKFLOW.md, take a NOT DONE country, find its 
 | Indonesia | CATEGORY NOTE (MED_NOTE) | https://www.pom.go.id/storage/katabpom-dokumen/LXqn7aHCBH2EjRm5s5I3vofa67UQfnG8BENemKwd.pdf |  |
 | Malaysia | NOT DONE | | pharmacy.moh.gov.my connection refused (guide: 1 month, not read in full) |
 | Philippines | NOT DONE | | customs.gov.ph returns 403 (BOC guide 2026 and PDEA guideline not read) |
-| Vietnam | NOT DONE |  | customs.gov.vn page loads empty |
+| Vietnam | NOT DONE | | 2026-10-17: customs.gov.vn pages load empty in the pane (Decree 163/2025 per search snippets; not read) |
 | Cambodia | NOT DONE | | customs lists MoH certificate for drugs, no traveller rule |
 | Sri Lanka | CATEGORY NOTE (MED_NOTE) | https://www.nmra.gov.lk/announcements/bringing-personal-medicines-into-sri-lanka |  |
 | Nepal | NOT DONE | | no traveller page found (customs tia.customs.gov.np, DDA) |
