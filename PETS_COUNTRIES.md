@@ -5,3 +5,4 @@ Tried, not done: Turkey (tarimorman.gov.tr blocks the pane), South Korea (qia.go
 
 Session 34 batch 2 (official pages read 2026-10-17): Finland (Ruokavirasto), Ireland (pettravel.gov.ie), Sweden (Jordbruksverket, documented-rabies list), Denmark (Fødevarestyrelsen dog breed ban only; import page not yet read).
 Batch 3 (2026-10-17): Austria (BMF customs PDF), Switzerland (BLV). Skipped: Norway (only Ukraine page official), Belgium (outbound page only), Greece (no current official page found).
+Batch 4: Hong Kong (AFCD), Chile (ChileAtiende/SAG).
