@@ -1113,7 +1113,7 @@ function run(){
       title:`Can I Bring a Dog or Cat into ${c.name}? Pet Import Rules 2026 | canitakethis.co`,
       desc:batchDesc(`Bringing a dog or cat into ${c.name} (2026)`, vd),
       h1:`Can I bring a dog into ${c.name}? (2026 pet import)`,
-      lead:`Pet import into ${c.name} is time-sensitive — some steps can take months. Start early.`,
+      lead:`Pet import into ${c.name} is time-sensitive — steps such as the microchip, rabies vaccination and health certificate take time, and some countries add a titre test or permit. Start early.`,
       faqA:`${vd.head} ${(vd.lines||[]).filter(Boolean).join(' ')}`
     }));
     pages.push({url,changefreq:'monthly'});
