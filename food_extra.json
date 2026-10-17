@@ -473,5 +473,503 @@
     ]
    }
   ]
+ },
+ "United States": {
+  "checked": "17 October 2026",
+  "answer": "USDA APHIS says every traveller entering the United States must declare all agricultural and wildlife products to U.S. Customs and Border Protection, and that if you declare everything you face no penalties even when an item cannot enter. Almost all fresh and frozen fruits and vegetables are prohibited, meat depends on the animal diseases in the country it comes from (50 pounds is the limit per item), and butter and solid cheeses may enter from any country.",
+  "sources": [
+   [
+    "https://www.aphis.usda.gov/traveling-with-ag-products/another-country",
+    "USDA APHIS — Traveling from another country with food or agricultural products"
+   ],
+   [
+    "https://www.aphis.usda.gov/traveling-with-ag-products/fruits-vegetables",
+    "USDA APHIS — International traveler: fruits and vegetables"
+   ],
+   [
+    "https://www.aphis.usda.gov/traveling-with-ag-products/milk-dairy-eggs",
+    "USDA APHIS — International traveler: milk, dairy and egg products"
+   ]
+  ],
+  "faq": [
+   [
+    "Do I have to declare food when entering the United States?",
+    "Yes. APHIS says travellers must declare all agricultural or wildlife products to CBP, and must also say if they visited a farm or touched animals before the trip. As long as you declare everything you will not face any penalties, even if an inspector decides an item cannot enter."
+   ],
+   [
+    "Can I bring fresh fruit and vegetables into the United States?",
+    "Almost all fresh and frozen fruits and vegetables, whole or cut, are prohibited, including ones given to you on a plane or cruise ship. Commercially canned ones are allowed if declared; home-canned products are not."
+   ],
+   [
+    "Can I bring cheese and butter into the United States?",
+    "Butter, butter oil and solid hard or soft cheeses may enter from any country if the cheese has no meat and does not pour like a liquid, such as ricotta or cottage cheese."
+   ],
+   [
+    "How much meat can I bring into the United States?",
+    "From countries without certain livestock diseases, with proof of origin, no more than 50 pounds of an item. Cured hams and salami from France, Germany, Italy and Spain may not be brought in by travellers."
+   ]
+  ],
+  "topics": [
+   {
+    "id": "declare",
+    "label": "Declare it",
+    "status": "warn",
+    "verdict": "Always declare",
+    "head": "Declare all agricultural products; declared items bring no penalty even if refused.",
+    "scen": [
+     {
+      "when": "At Customs and Border Protection",
+      "status": "warn",
+      "tag": "Declare it",
+      "lines": [
+       "Travellers must declare all agricultural and wildlife products to CBP, and tell them if they visited a farm or were in contact with animals.",
+       "Inspectors have the final say. Keep receipts and original packaging as proof of the country of origin.",
+       "As long as you declare everything you will not face any penalties, even if an inspector decides the items cannot enter."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "fruit",
+    "label": "Fruit & veg",
+    "status": "stop",
+    "verdict": "Mostly banned",
+    "head": "Almost all fresh and frozen fruit and vegetables are prohibited.",
+    "scen": [
+     {
+      "when": "Fresh or frozen",
+      "status": "stop",
+      "tag": "Not allowed",
+      "lines": [
+       "Almost all fresh and frozen fruits and vegetables, whole or cut, are prohibited, including those given to you on an airplane or cruise ship. Plan to leave them behind."
+      ]
+     },
+     {
+      "when": "Canned or dried",
+      "status": "warn",
+      "tag": "Declare it",
+      "lines": [
+       "Commercially canned fruit and vegetables are allowed if declared on your customs form; home-canned products are not.",
+       "Most dried fruit and vegetables are not allowed. Generally allowed if declared: beans, dates, figs, nuts (not chestnuts or acorns), okra, peas, raisins and Szechwan peppercorns."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "meat",
+    "label": "Meat & poultry",
+    "status": "warn",
+    "verdict": "Depends on origin",
+    "head": "Allowed from disease-free countries with proof of origin, up to 50 pounds of an item.",
+    "scen": [
+     {
+      "when": "Beef, pork, lamb, goat",
+      "status": "warn",
+      "tag": "Max 50 lb",
+      "lines": [
+       "Most is not allowed from countries with foot-and-mouth disease, BSE, swine vesicular disease, classical swine fever or African swine fever.",
+       "From countries without these diseases, fresh, cooked, cured or dried meat is allowed with proof of origin such as a label, receipt, passport or flight origin. Not more than 50 pounds of an item.",
+       "Cured hams (prosciutto, Serrano, Iberian) and salami from France, Germany, Italy and Spain may not be brought in by travellers."
+      ]
+     },
+     {
+      "when": "Poultry",
+      "status": "warn",
+      "tag": "Depends on origin",
+      "lines": [
+       "Most poultry is not allowed from countries with highly pathogenic avian influenza or Newcastle disease.",
+       "Commercially packaged, cooked, shelf-stable poultry in unopened packages from affected countries is allowed, up to 50 pounds per item."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "dairy",
+    "label": "Dairy & eggs",
+    "status": "warn",
+    "verdict": "Cheese and butter yes",
+    "head": "Butter and solid cheeses are allowed from any country; other dairy and eggs depend on origin.",
+    "scen": [
+     {
+      "when": "Dairy",
+      "status": "warn",
+      "tag": "Part allowed",
+      "lines": [
+       "Most milk and dairy from countries with foot-and-mouth disease is not allowed, except small quantities of infant liquid milk and formula, and commercially packaged, cooked, shelf-stable finished foods.",
+       "Butter, butter oil and solid hard or soft cheese (no meat, and not pourable like ricotta) may enter from any country."
+      ]
+     },
+     {
+      "when": "Eggs",
+      "status": "warn",
+      "tag": "Depends on origin",
+      "lines": [
+       "Most eggs and egg products from countries with avian influenza or Newcastle disease are not allowed.",
+       "From other countries, eggs are allowed with proof of origin. Clean decorated eggshells without egg white or yolk: up to 12 per person."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "seafood",
+    "label": "Seafood",
+    "status": "go",
+    "verdict": "Mostly not regulated",
+    "head": "APHIS does not regulate most seafood; other agencies do.",
+    "scen": [
+     {
+      "when": "Fish and shellfish",
+      "status": "go",
+      "tag": "Not APHIS",
+      "lines": [
+       "APHIS only regulates breaded seafood whose breading contains milk or eggs.",
+       "For other seafood contact the U.S. Fish and Wildlife Service or the Food and Drug Administration, whose numbers are on the page."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "New Zealand": {
+  "checked": "17 October 2026",
+  "answer": "The Ministry for Primary Industries says you must declare all food, animal products, plants and other risk goods on your New Zealand Traveller Declaration, and that any food, cooked, uncooked, fresh, preserved, packaged or dried, counts as a risk good. Failing to declare is a strict liability offence with a NZD$400 instant fine, and deliberate smuggling can mean up to NZD$100,000 and 5 years in prison.",
+  "sources": [
+   [
+    "https://www.mpi.govt.nz/bring-send-to-nz/bringing-and-posting-items-to-nz/how-to-declare-items-when-arriving-in-nz/",
+    "Ministry for Primary Industries — How to declare items when arriving in NZ"
+   ],
+   [
+    "https://www.mpi.govt.nz/bring-send-to-nz/bringing-and-posting-items-to-nz/what-happens-if-you-fail-to-declare",
+    "Ministry for Primary Industries — What happens if you fail to declare"
+   ]
+  ],
+  "faq": [
+   [
+    "Do I have to declare all food in New Zealand?",
+    "Yes. MPI says to declare all food, animal products, plants and other specific items on your New Zealand Traveller Declaration (NZTD), free online or in the app. It counts any food, cooked, uncooked, fresh, preserved, packaged or dried, as a risk good."
+   ],
+   [
+    "What if I forget to declare something?",
+    "It is still an offence. MPI calls it a strict liability offence, even if you forgot or did not know the rules. The penalty is a NZD$400 infringement fee, with no criminal conviction."
+   ],
+   [
+    "What is the penalty for deliberate smuggling?",
+    "If you are convicted of deliberate smuggling you could be fined up to NZD$100,000 and sentenced to up to 5 years in prison."
+   ],
+   [
+    "Can I throw food away instead of declaring it?",
+    "MPI says you can dispose of undeclared risk goods in the marked amnesty bins on arrival, to avoid being searched or fined."
+   ]
+  ],
+  "topics": [
+   {
+    "id": "declare",
+    "label": "Declare it",
+    "status": "warn",
+    "verdict": "Declare all food",
+    "head": "Declare all food and animal or plant products; there is no excuse for forgetting.",
+    "scen": [
+     {
+      "when": "On the New Zealand Traveller Declaration",
+      "status": "warn",
+      "tag": "Declare it",
+      "lines": [
+       "Declare all risk goods like food, plants, wooden products, soil, water, outdoor equipment and animal products, even if you have nothing in your bags to declare you must still complete the declaration.",
+       "Declared items may be inspected. Dispose of undeclared risk goods in the marked amnesty bins on arrival to avoid being searched or fined."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "food",
+    "label": "Any food",
+    "status": "warn",
+    "verdict": "Counts as risk",
+    "head": "MPI treats any food, cooked, fresh, packaged or dried, as a risk good.",
+    "scen": [
+     {
+      "when": "Examples MPI gives",
+      "status": "warn",
+      "tag": "Declare it",
+      "lines": [
+       "Any food: cooked, uncooked, fresh, preserved, packaged or dried.",
+       "Animals or animal products: meat, dairy products, fish, honey, bee products, eggs, feathers, shells, raw wool, skins, bones or insects.",
+       "Plants or plant products: fruit, flowers, seeds, bulbs, wood, bark, leaves, nuts, vegetables, fungi, cane, bamboo or straw, including for religious offerings or medicinal use."
+      ]
+     },
+     {
+      "when": "Not listed",
+      "status": "warn",
+      "tag": "Use the tool",
+      "lines": [
+       "MPI says it cannot list every risk good, because risk depends on the country, ingredients and packaging.",
+       "Use its Check if you can bring or send an item to NZ tool for specific foods and weight limits; we did not read that tool."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "gear",
+    "label": "Outdoor gear",
+    "status": "warn",
+    "verdict": "Declare it",
+    "head": "Items used outdoors or on farms must be declared too.",
+    "scen": [
+     {
+      "when": "Used outdoor items",
+      "status": "warn",
+      "tag": "Declare it",
+      "lines": [
+       "Equipment used with animals, plants or water, and items used for outdoor or farming activities, including footwear, tents, camping, hunting, hiking, golf or sports equipment.",
+       "Other risk items include animal medicines, herbal medicines, biological cultures, organisms, soil and water."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "fine",
+    "label": "Fines",
+    "status": "stop",
+    "verdict": "NZD$400",
+    "head": "Forgetting is no excuse: NZD$400 instant fine, up to NZD$100,000 for smuggling.",
+    "scen": [
+     {
+      "when": "If you fail to declare",
+      "status": "stop",
+      "tag": "NZD$400 fine",
+      "lines": [
+       "The penalty for a false declaration is an NZD$400 infringement fee, an instant fine, with no criminal conviction. It applies even if you forgot, were careless or did not know the rules or what was in your baggage.",
+       "You can pay within 14 days, ask for a waiver, or request a court hearing."
+      ]
+     },
+     {
+      "when": "Deliberate concealment",
+      "status": "stop",
+      "tag": "Prosecution",
+      "lines": [
+       "If you deliberately make an incorrect or false declaration to conceal items and are convicted of smuggling, you could be fined up to NZD$100,000 and sentenced to up to 5 years in prison."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "Australia": {
+  "checked": "17 October 2026",
+  "answer": "Australia's Department of Agriculture says that by law you must declare if you are carrying certain food, plant material or animal products when you travel to Australia, and that goods are assessed by a biosecurity officer and may be inspected. Its list of foods to check covers items such as meat, dairy, eggs, rice, honey, nuts and fruit preserves, with detailed conditions in its BICON system. Footwear, clothing and equipment used in rural areas must be cleaned and declared.",
+  "sources": [
+   [
+    "https://www.agriculture.gov.au/travelling/bringing-mailing-goods",
+    "Department of Agriculture, Fisheries and Forestry — Bringing or mailing goods to Australia"
+   ]
+  ],
+  "faq": [
+   [
+    "Do I have to declare food when I arrive in Australia?",
+    "Yes. The department says that by law you must declare if you are carrying certain food, plant material or animal products. You can take declared goods to the clearance point for assessment, or voluntarily dispose of them in the terminal bins."
+   ],
+   [
+    "Where do I find the detailed rules for each food in Australia?",
+    "In the department's Biosecurity Import Conditions system (BICON). Its food and drink list covers items such as meat, cheese and dairy, eggs, honey, rice, nuts, noodles, spices, pet food and infant formula, but it says the list is not exhaustive."
+   ],
+   [
+    "What if my shoes or equipment were used on a farm?",
+    "All footwear, clothing and equipment used in rural areas or near animals must be thoroughly cleaned and declared on arrival."
+   ],
+   [
+    "What happens to goods that do not meet the import conditions?",
+    "They will be directed for treatment or exported at the importer's expense, or the traveller can voluntarily dispose of them."
+   ]
+  ],
+  "topics": [
+   {
+    "id": "declare",
+    "label": "Declare it",
+    "status": "warn",
+    "verdict": "Required by law",
+    "head": "You must declare certain food, plant material and animal products.",
+    "scen": [
+     {
+      "when": "When you travel to Australia",
+      "status": "warn",
+      "tag": "Declare it",
+      "lines": [
+       "By law you must declare if you are carrying certain food, plant material or animal products.",
+       "You can take declared goods to the clearance point, where a biosecurity officer assesses them and they may be inspected. Or you can voluntarily dispose of them in the bins in the terminal."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "foods",
+    "label": "Food on the list",
+    "status": "warn",
+    "verdict": "Check BICON",
+    "head": "The department lists food types to check before you travel.",
+    "scen": [
+     {
+      "when": "Food and drink listed",
+      "status": "warn",
+      "tag": "Check first",
+      "lines": [
+       "Biscuits, bread, cakes and pastries; cheese, butter and dairy; chocolate; coffee; fish; honey; infant formula; juice; meat items; noodles and pasta; nuts; oil; preserved fruit and vegetables; rice; sauces; seafood; spices; tea; wheat; whole eggs and more.",
+       "The page says the list is not exhaustive, and the conditions for each item are in the Biosecurity Import Conditions system (BICON), which we did not read."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "rural",
+    "label": "Farm items",
+    "status": "warn",
+    "verdict": "Clean and declare",
+    "head": "Footwear, clothing and equipment used on farms must be cleaned and declared.",
+    "scen": [
+     {
+      "when": "Used in rural areas",
+      "status": "warn",
+      "tag": "Declare it",
+      "lines": [
+       "All footwear, clothing and equipment used in rural areas or near animals must be thoroughly cleaned and declared on arrival."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "mail",
+    "label": "Mail & rejected goods",
+    "status": "warn",
+    "verdict": "Described on the label",
+    "head": "Mailed goods must be described accurately; goods that fail conditions are treated or exported.",
+    "scen": [
+     {
+      "when": "Goods that do not meet the conditions",
+      "status": "warn",
+      "tag": "At your expense",
+      "lines": [
+       "Goods that do not meet import conditions will be directed for treatment or exported at the importer’s expense, or you can voluntarily dispose of them.",
+       "Goods sent by mail must be accurately described on the postal declaration label."
+      ]
+     },
+     {
+      "when": "Not read",
+      "status": "warn",
+      "tag": "Ask first",
+      "lines": [
+       "We did not read the penalty amounts for failing to declare; check the department’s page on penalties before you travel."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "Hong Kong": {
+  "checked": "17 October 2026",
+  "answer": "Hong Kong's Imported Game, Meat, Poultry and Eggs Regulations require every consignment of game, meat, poultry and eggs, whether for personal use or not, to carry a health certificate or written permission from the Food and Environmental Hygiene Department. Breaking the rule is punishable by a fine of HK$50,000 and 6 months in prison, and the Centre for Food Safety had brought 774 prosecutions against inbound travellers by 20 June 2024.",
+  "sources": [
+   [
+    "https://www.info.gov.hk/gia/general/202406/21/P2024062100547.htm",
+    "Hong Kong Government (Customs and Centre for Food Safety) — joint operation against illegal import of regulated food"
+   ]
+  ],
+  "faq": [
+   [
+    "Can I bring meat, poultry or eggs into Hong Kong?",
+    "Only with a health certificate from the place of origin or written permission from the Food and Environmental Hygiene Department. The law applies whether the food is for personal use or not."
+   ],
+   [
+    "What is the penalty for bringing regulated food into Hong Kong illegally?",
+    "On conviction, a maximum fine of HK$50,000 and six months' imprisonment under Cap. 132AK."
+   ],
+   [
+    "Does food from the Mainland need papers?",
+    "Yes: food from the Mainland needs a health certificate from Mainland Customs showing it comes from a registered plant recognised by the Mainland authority."
+   ],
+   [
+    "How common are prosecutions?",
+    "The Centre for Food Safety had brought 774 prosecutions against inbound persons for illegally bringing game, meat, poultry and eggs by 20 June 2024."
+   ]
+  ],
+  "topics": [
+   {
+    "id": "meat",
+    "label": "Meat, poultry, game",
+    "status": "stop",
+    "verdict": "Certificate needed",
+    "head": "Every consignment needs a health certificate or written permission, even for personal use.",
+    "scen": [
+     {
+      "when": "Game, meat, poultry and eggs",
+      "status": "stop",
+      "tag": "Not without papers",
+      "lines": [
+       "Each consignment must be accompanied by a health certificate from the issuing entity of the place of origin, or by written permission from the Food and Environmental Hygiene Department (FEHD).",
+       "The rule applies whether the food is for personal use or not. Food from the Mainland needs a health certificate from Mainland Customs showing it is from a registered plant recognised for supplying Hong Kong."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "eggs",
+    "label": "Eggs",
+    "status": "stop",
+    "verdict": "Certificate needed",
+    "head": "Eggs are regulated food with the same health certificate rule.",
+    "scen": [
+     {
+      "when": "Raw eggs",
+      "status": "stop",
+      "tag": "Not without papers",
+      "lines": [
+       "The release names raw meat, poultry and eggs as its examples of illegal imports of regulated food.",
+       "Importing regulated food needs a recognised health certificate, FEHD written permission, or an import licence."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "fine",
+    "label": "Penalty",
+    "status": "stop",
+    "verdict": "HK$50,000",
+    "head": "A fine of HK$50,000 and six months in prison on conviction.",
+    "scen": [
+     {
+      "when": "If you are caught",
+      "status": "stop",
+      "tag": "Prosecution",
+      "lines": [
+       "Maximum penalty on conviction is a fine of $50,000 and six months’ imprisonment under Cap. 132AK.",
+       "Between 18 and 21 June 2024 a joint operation at Lo Wu, Lok Ma Chau Spur Line, Shenzhen Bay and Heung Yuen Wai found 15 cases; by 20 June the Centre for Food Safety had instituted 774 prosecutions that year."
+      ]
+     },
+     {
+      "when": "Reporting",
+      "status": "warn",
+      "tag": "Hotline",
+      "lines": [
+       "The public can report suspected smuggling to the Customs 24-hour hotline, 2545 6182, or to crimereport@customs.gov.hk."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "notread",
+    "label": "Not read",
+    "status": "warn",
+    "verdict": "Check the CFS",
+    "head": "The release does not list other foods such as fruit or dairy.",
+    "scen": [
+     {
+      "when": "Other foods",
+      "status": "warn",
+      "tag": "Ask first",
+      "lines": [
+       "This government release covers regulated food: game, meat, poultry and eggs. It does not list rules for fruit, vegetables, dairy or packaged food, so check the Centre for Food Safety (cfs.gov.hk) before you bring them."
+      ]
+     }
+    ]
+   }
+  ]
  }
 }
