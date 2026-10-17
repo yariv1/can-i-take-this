@@ -1567,5 +1567,514 @@
     ]
    }
   ]
+ },
+ "Spain": {
+  "checked": "17 October 2026",
+  "answer": "Spain's tax agency says meat, meat products, milk and dairy products are banned from non-EU countries, with small exceptions: up to 2 kg combined of infant milk, baby food and medically required food, up to 2 kg of other animal products, and up to 20 kg of fish. Animal products from Andorra, Iceland, Liechtenstein, Norway, San Marino, Switzerland and Great Britain are not subject to the restrictions. Ceuta and Melilla are outside the EU customs territory, so national rules apply there.",
+  "sources": [
+   [
+    "https://sede.agenciatributaria.gob.es/Sede/viajeros-trabajadores-desplazados-fronterizos/viajeros/alimentos-origen-animal.html",
+    "Agencia Tributaria (Spanish Tax Agency) — Foods of animal origin for travellers"
+   ]
+  ],
+  "faq": [
+   [
+    "Can I bring ham or cheese into Spain from outside the EU?",
+    "No: the agency says meat, meat products, milk and dairy products are banned, apart from the exceptions listed. Animal products from Andorra, Iceland, Liechtenstein, Norway, San Marino, Switzerland and Great Britain are not subject to these restrictions."
+   ],
+   [
+    "How much fish can I bring into Spain?",
+    "Fresh eviscerated, prepared or processed fish: 20 kg combined or, if more than 20 kg, the weight of one fish. From the Faroe Islands or Greenland, fish products are exempt."
+   ],
+   [
+    "What about baby milk and pet food?",
+    "Infant milk, baby food, medically necessary special foods and pet food needed for health reasons: 2 kg combined, branded, retail-packaged and intact, needing no refrigeration. The pet food must be for the accompanying pet."
+   ],
+   [
+    "Do the rules apply to Ceuta and Melilla?",
+    "They are outside the EU customs territory, so national rules apply. The agency points to the Ministry of Health or the territorial services in both cities."
+   ]
+  ],
+  "topics": [
+   {
+    "id": "meat",
+    "label": "Meat & dairy",
+    "status": "stop",
+    "verdict": "Not allowed",
+    "head": "Meat, meat products, milk and dairy are banned from non-EU countries.",
+    "scen": [
+     {
+      "when": "From non-EU countries",
+      "status": "stop",
+      "tag": "Not allowed",
+      "lines": [
+       "The introduction of meat and meat products, milk and dairy products is prohibited, with the exceptions below.",
+       "Items that qualify under the exceptions are exempt from official controls at border posts."
+      ]
+     },
+     {
+      "when": "From Andorra, Iceland, Liechtenstein, Norway, San Marino, Switzerland, Great Britain",
+      "status": "go",
+      "tag": "Not restricted",
+      "lines": [
+       "Animal products from these places are not subject to the restrictions.",
+       "Shipments between EU member states are not subject to them either."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "fish",
+    "label": "Fish",
+    "status": "warn",
+    "verdict": "Up to 20 kg",
+    "head": "Fresh eviscerated, prepared or processed fish: 20 kg combined.",
+    "scen": [
+     {
+      "when": "Fish and fishery products",
+      "status": "warn",
+      "tag": "Max 20 kg",
+      "lines": [
+       "20 kg combined, or, if more than 20 kg, the weight of one fish.",
+       "Fish products from the Faroe Islands or Greenland are exempt; the page gives no weight limit for them."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "special",
+    "label": "Baby, medical & pet food",
+    "status": "warn",
+    "verdict": "Up to 2 kg",
+    "head": "2 kg combined for infant milk, baby food, medical foods and health-related pet food.",
+    "scen": [
+     {
+      "when": "Special foods",
+      "status": "warn",
+      "tag": "Max 2 kg",
+      "lines": [
+       "Infant milk, infant food and medically necessary special foods: 2 kg combined, branded, retail-packaged, in an intact package unless already being consumed, and needing no refrigeration before opening.",
+       "Pet food needed for health reasons: within the same 2 kg, for the accompanying pet, long-life, branded and in an intact package."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "other",
+    "label": "Other animal products",
+    "status": "warn",
+    "verdict": "Up to 2 kg",
+    "head": "Other animal goods not in the banned list are limited to 2 kg combined.",
+    "scen": [
+     {
+      "when": "Other goods",
+      "status": "warn",
+      "tag": "Max 2 kg",
+      "lines": [
+       "Other goods not covered above and not listed in Part 2 of Annex I of Delegated Regulation (EU) 2019/2122: 2 kg combined.",
+       "From the Faroe Islands or Greenland, other goods (not plants for planting or fish products): 10 kg combined."
+      ]
+     },
+     {
+      "when": "Ceuta and Melilla",
+      "status": "warn",
+      "tag": "National rules",
+      "lines": [
+       "They are outside the EU customs territory, so national rules apply; check the Ministry of Health or the territorial Agriculture, Fisheries and Border Health services in each city."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "notread",
+    "label": "Not read",
+    "status": "warn",
+    "verdict": "Ask first",
+    "head": "The page does not cover honey, eggs, penalties or where to declare.",
+    "scen": [
+     {
+      "when": "What we could not confirm",
+      "status": "warn",
+      "tag": "Ask first",
+      "lines": [
+       "The page does not mention honey or eggs, penalties, or where to declare at customs, and says nothing about fruit and vegetables.",
+       "It gives African swine fever, avian flu and Ebola as reasons for the controls."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "Finland": {
+  "checked": "17 October 2026",
+  "answer": "The Finnish Food Authority says food cannot be freely imported into Finland from outside the EU, and online orders follow the same rules. From outside the EU, meat, meat products, milk, dairy and fresh fruit and vegetables without a phytosanitary certificate are prohibited. Allowed in small amounts: up to 2 kg of infant formula and medical food, 20 kg of fish and up to 2 kg of other animal products such as honey and eggs. Processed plant foods such as coffee, tea, nuts and canned fruit come in freely.",
+  "sources": [
+   [
+    "https://www.ruokavirasto.fi/en/foodstuffs/instructions-for-consumers/bringing-food-for-private-use/",
+    "Ruokavirasto (Finnish Food Authority) — Bringing food for private use"
+   ]
+  ],
+  "faq": [
+   [
+    "Can I bring meat or cheese into Finland from outside the EU?",
+    "No. The Finnish Food Authority lists meat and meat products, milk and dairy products as prohibited from outside the EU. Norway, Iceland and Switzerland follow the same rules as EU member states for animal-origin food."
+   ],
+   [
+    "How much fish and honey can I bring into Finland?",
+    "Fish, shellfish and roe: 20 kg in total, or one gutted fish. Other animal-origin products such as honey, frog legs, snails and eggs: up to 2 kg."
+   ],
+   [
+    "Can I bring fruit and vegetables into Finland?",
+    "Fresh produce from outside the EU needs a phytosanitary certificate, which the page says is difficult for travellers to obtain; this also applies to Norway and Iceland. Processed plant foods such as canned fruit and vegetables, nuts, coffee, tea and spices are allowed freely."
+   ],
+   [
+    "What if I bring a banned product by mistake?",
+    "The page says to dispose of the product and its scraps thoroughly as mixed waste."
+   ]
+  ],
+  "topics": [
+   {
+    "id": "meat",
+    "label": "Meat & dairy",
+    "status": "stop",
+    "verdict": "Not allowed",
+    "head": "Meat and milk products from outside the EU are prohibited.",
+    "scen": [
+     {
+      "when": "From outside the EU",
+      "status": "stop",
+      "tag": "Not allowed",
+      "lines": [
+       "Meat and meat products, milk and dairy products are prohibited; online orders and mail follow the same rules.",
+       "Norway, Iceland and Switzerland: animal-origin foods follow the same rules as EU member states."
+      ]
+     },
+     {
+      "when": "Within the EU",
+      "status": "warn",
+      "tag": "African swine fever",
+      "lines": [
+       "Food can generally be brought in, but pork and wild boar products from areas with African swine fever, which the page says includes Estonia, Latvia, Lithuania and many other European countries, are allowed only with the oval EU identification mark on the package.",
+       "The Food Authority recommends not importing pork or wild boar products from ASF countries, and a wild boar caught on a hunting trip cannot be brought in from ASF areas."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "fish",
+    "label": "Fish & honey",
+    "status": "warn",
+    "verdict": "Small limits",
+    "head": "Fish up to 20 kg; honey, eggs, snails and frog legs up to 2 kg.",
+    "scen": [
+     {
+      "when": "From outside the EU",
+      "status": "warn",
+      "tag": "Max 20 kg / 2 kg",
+      "lines": [
+       "Fish, shellfish and roe, fresh or processed: 20 kg in total, or one gutted fish.",
+       "Other animal-origin products, including honey, frog legs, snails and eggs: up to 2 kg.",
+       "Infant formula, baby food and foods for specific medical reasons: up to 2 kg."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "fruit",
+    "label": "Fruit & veg",
+    "status": "stop",
+    "verdict": "Certificate needed",
+    "head": "Fresh produce from outside the EU needs a phytosanitary certificate.",
+    "scen": [
+     {
+      "when": "Fresh produce",
+      "status": "stop",
+      "tag": "Certificate needed",
+      "lines": [
+       "Fresh fruit, berries, vegetables and root vegetables from outside the EU need a phytosanitary certificate, which is hard for travellers to get. This also applies to Norway and Iceland.",
+       "Fruit and vegetables from Switzerland can be imported without restrictions; fruit and vegetables from the Canary Islands need a certificate."
+      ]
+     },
+     {
+      "when": "Freely importable",
+      "status": "go",
+      "tag": "Allowed",
+      "lines": [
+       "Processed plant foods such as coffee, tea, spices, dried herbs, canned fruit and vegetables, nuts, seeds and flour.",
+       "Pineapples, bananas, durians, coconuts and dates; edible mushrooms up to 10 kg."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "other",
+    "label": "Other foods",
+    "status": "go",
+    "verdict": "Allowed",
+    "head": "Any food without fresh or processed meat or milk can be brought in.",
+    "scen": [
+     {
+      "when": "Named on the page",
+      "status": "go",
+      "tag": "Allowed",
+      "lines": [
+       "Any other food that contains no fresh or processed meat or milk.",
+       "Fish-stuffed olives, coffee, tea or maté extracts, coffee substitutes, miso and soy sauce with a little fish stock, packaged soup stocks and flavourings, packaged supplements with processed animal products (glucosamine, chondroitin, chitosan), and liqueurs and cordials."
+      ]
+     },
+     {
+      "when": "Not read",
+      "status": "warn",
+      "tag": "Ask first",
+      "lines": [
+       "The page does not cover pet food, frozen foods, confectionery beyond the general rules, or penalties for violations."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "Sweden": {
+  "checked": "17 October 2026",
+  "answer": "The Swedish Board of Agriculture says you may bring any food for personal use from other EU countries, and from Northern Ireland, Switzerland and Liechtenstein. Animal-origin products are allowed from San Marino, Andorra, Iceland, Norway, the Faroe Islands and Greenland (10 kg cap for the last two), but most animal products from other non-EU countries are prohibited, apart from up to 2 kg of honey, eggs and similar items, up to 2 kg of infant milk and medical food, and up to 20 kg of fish. You are responsible for checking that your product falls under an exception.",
+  "sources": [
+   [
+    "https://jordbruksverket.se/languages/english/swedish-board-of-agriculture/food-and-beverages/bringing-in-or-ordering-food-and-drinks-to-sweden-as-a-private-individual",
+    "Jordbruksverket (Swedish Board of Agriculture) — Bringing in or ordering food and drinks to Sweden as a private individual"
+   ]
+  ],
+  "faq": [
+   [
+    "Can I bring any food from another EU country to Sweden?",
+    "Yes, for personal use. Fresh plants from the Canary Islands, Ceuta, Melilla and some French overseas territories count as non-EU for plant health."
+   ],
+   [
+    "Can I bring meat or milk from outside the EU into Sweden?",
+    "Mostly prohibited. Allowed from San Marino, Andorra, Iceland, Norway, the Faroe Islands and Greenland (10 kg total for the last two). Shelf-stable products without meat such as chocolate, pasta, bread and biscuits are also allowed."
+   ],
+   [
+    "How much honey, eggs and fish can I bring from a non-EU country?",
+    "Up to 2 kg of honey, insects, eggs, snails, live oysters, frog legs and similar products, and up to 20 kg (or the weight of one fish, whichever is higher) of eviscerated fresh, prepared or processed fishery products."
+   ],
+   [
+    "What happens if Customs stops my food?",
+    "Stopped products are returned to the sender or destroyed, and Customs decides which. The page describes no fines. If you are unsure, do not bring the product: the Board does not answer questions about individual products."
+   ]
+  ],
+  "topics": [
+   {
+    "id": "eu",
+    "label": "From EU countries",
+    "status": "go",
+    "verdict": "Allowed",
+    "head": "Any food for personal use is allowed from other EU countries.",
+    "scen": [
+     {
+      "when": "Within the EU",
+      "status": "go",
+      "tag": "Allowed",
+      "lines": [
+       "You may bring any type of food product for personal use from EU Member States.",
+       "Fresh plants from the Canary Islands, Ceuta, Melilla and several French overseas territories follow non-EU plant rules."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "meat",
+    "label": "Meat & dairy",
+    "status": "stop",
+    "verdict": "Mostly banned",
+    "head": "From most non-EU countries animal products are prohibited.",
+    "scen": [
+     {
+      "when": "Allowed countries",
+      "status": "go",
+      "tag": "Allowed",
+      "lines": [
+       "All food types: Northern Ireland, Switzerland and Liechtenstein.",
+       "Animal-origin products such as milk, eggs and meat: San Marino, Andorra, Iceland, Norway, the Faroe Islands and Greenland.",
+       "The Faroe Islands and Greenland have a limit of 10 kg of animal products in total, and customs charges may apply."
+      ]
+     },
+     {
+      "when": "From other non-EU countries",
+      "status": "stop",
+      "tag": "Mostly banned",
+      "lines": [
+       "Most animal-origin products are prohibited.",
+       "Exceptions: shelf-stable foods without meat such as chocolate, sweets, pasta, cereals, bread and biscuits, coffee and tea extracts and liqueur; they must meet Article 3.1 of Delegated Regulation (EU) 2021/630."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "small",
+    "label": "Honey, fish & baby food",
+    "status": "warn",
+    "verdict": "Small limits",
+    "head": "2 kg of honey and similar, 2 kg of infant milk, 20 kg of fish.",
+    "scen": [
+     {
+      "when": "From other non-EU countries",
+      "status": "warn",
+      "tag": "Max 2 kg / 20 kg",
+      "lines": [
+       "Up to 2 kg of honey, insects, eggs, snails, live oysters, frog legs and other products not otherwise prohibited.",
+       "Up to 2 kg of powdered infant milk, infant formula and special medical food, unopened, branded, needing no refrigeration and for your own use.",
+       "Up to 20 kg, or the weight of one fish if higher, of eviscerated fresh, prepared or processed fishery products."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "plants",
+    "label": "Fruit, veg & plants",
+    "status": "warn",
+    "verdict": "Certificate needed",
+    "head": "Fresh produce from outside the EU generally needs a phytosanitary certificate.",
+    "scen": [
+     {
+      "when": "Plant products",
+      "status": "warn",
+      "tag": "Certificate needed",
+      "lines": [
+       "Fresh fruit, vegetables, herbs and living plant parts generally need a phytosanitary certificate, except from Northern Ireland, Switzerland and Liechtenstein.",
+       "No certificate for fresh pineapple, banana, dates, durian or coconut, or for dried, frozen or processed products such as coffee, tea, spices, juice, jam or flour.",
+       "Some plants are banned outright, including potatoes and grape leaves."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "stopped",
+    "label": "If it is stopped",
+    "status": "warn",
+    "verdict": "Returned or destroyed",
+    "head": "Customs returns or destroys stopped products; you must check the exceptions yourself.",
+    "scen": [
+     {
+      "when": "Enforcement",
+      "status": "warn",
+      "tag": "Customs decides",
+      "lines": [
+       "Swedish Customs stops prohibited products and products over a weight limit, and returns them to the sender or destroys them.",
+       "You are responsible for ensuring the product is covered by the exceptions; the Board does not answer questions about individual products, and if you are unsure you should not bring it in. The page describes no fines."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "Austria": {
+  "checked": "17 October 2026",
+  "answer": "Austrian Customs says imports of meat, dairy and other animal products, including in transit, are subject to official checks to prevent animal diseases from entering the EU, and that personal-use amounts are limited by a separate veterinary rules document. Because African swine fever cases have been found near Austria's borders, it asks travellers not to bring meat products, especially pork or wild boar from private production or home slaughter. Importing more than the personal-use amount needs certificates and is possible only at certain customs offices.",
+  "sources": [
+   [
+    "https://www.bmf.gv.at/themen/zoll/reise/einfuhrverbote-einfuhrbeschraenkungen/mengenbegrenzungen-lebensmittel.html",
+    "Austrian Federal Ministry of Finance (Zoll) — Meat, dairy and other animal products: quantity limits"
+   ]
+  ],
+  "faq": [
+   [
+    "Can I bring meat products into Austria?",
+    "Austrian Customs says to avoid it: travellers are asked not to bring meat or meat products, especially pork or wild boar products from private production or home slaughter, because African swine fever cases have been recorded near the border."
+   ],
+   [
+    "Are there quantity limits for animal products?",
+    "Yes. The page says limits apply and refers to a separate veterinary rules document listing the amounts that need no official control; we could not read the exact figures."
+   ],
+   [
+    "Can I bring larger quantities?",
+    "Only with the proper certificates, and only through certain customs offices that carry out the official control."
+   ],
+   [
+    "Can import bans change suddenly?",
+    "Yes. If an animal disease breaks out in your holiday country, authorities can impose import bans at short notice."
+   ]
+  ],
+  "topics": [
+   {
+    "id": "meat",
+    "label": "Meat & dairy",
+    "status": "warn",
+    "verdict": "Limits apply",
+    "head": "Quantities are limited; do not bring pork or wild boar from private production.",
+    "scen": [
+     {
+      "when": "Animal products",
+      "status": "warn",
+      "tag": "Official checks",
+      "lines": [
+       "Imports of meat, meat products, milk, dairy and other animal products, including transit, are subject to official checks to prevent animal diseases from entering the EU.",
+       "The page says quantity limits apply and refers to a separate PDF (Veterinärbestimmungen für Waren tierischen Ursprungs für den persönlichen Verbrauch), whose exact kg values we could not read."
+      ]
+     },
+     {
+      "when": "Larger quantities",
+      "status": "stop",
+      "tag": "Certificates needed",
+      "lines": [
+       "More than the personal-use amount needs the right certificates, and the import is possible only at customs offices that carry out the official control."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "asf",
+    "label": "African swine fever",
+    "status": "stop",
+    "verdict": "Do not bring pork",
+    "head": "Austrian Customs asks you not to bring meat from private production.",
+    "scen": [
+     {
+      "when": "Pork and wild boar",
+      "status": "stop",
+      "tag": "Avoid",
+      "lines": [
+       "Cases of African swine fever have been recorded near Austria’s borders, and Customs is checking more intensively.",
+       "Travellers are asked not to bring meat or meat products, especially pork or wild boar from private production or home slaughter.",
+       "Do not dispose of food scraps carelessly; the page recommends buying from approved Austrian retailers or controlled farm-gate sellers."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "bans",
+    "label": "Sudden import bans",
+    "status": "warn",
+    "verdict": "Check before you go",
+    "head": "Authorities can impose import bans at short notice after an outbreak.",
+    "scen": [
+     {
+      "when": "Disease outbreaks",
+      "status": "warn",
+      "tag": "Can change fast",
+      "lines": [
+       "If an animal disease breaks out in your holiday country, import bans can be imposed at short notice.",
+       "Wildlife and species protection rules may also apply."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "notread",
+    "label": "Not read",
+    "status": "warn",
+    "verdict": "Ask first",
+    "head": "The page gives no kg figures, exempt countries or penalties.",
+    "scen": [
+     {
+      "when": "What we could not confirm",
+      "status": "warn",
+      "tag": "Ask first",
+      "lines": [
+       "The page does not mention fish, exempt countries or penalties, and does not give kg figures; the separate PDF it refers to was not readable here.",
+       "Check the Zoll travel pages or the customs hotline before you travel with animal products."
+      ]
+     }
+    ]
+   }
+  ]
  }
 }
