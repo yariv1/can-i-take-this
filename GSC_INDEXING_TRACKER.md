@@ -382,3 +382,28 @@ Pilot check 2026-11-14 (impressions/clicks vs Wi-Fi pilot). Alaska Airlines not 
 42. https://canitakethis.co/pets/united-states/
 43. https://canitakethis.co/pets/australia/
 44. https://canitakethis.co/pets/new-zealand/
+
+## 2026-10-17 country Food pages rebuilt from official pages (existing URLs, content + FAQ text rewritten) — RE-INDEX REQUEST OPTIONAL (pending deploy)
+1. https://canitakethis.co/food/united-kingdom/
+2. https://canitakethis.co/food/canada/
+3. https://canitakethis.co/food/japan/
+4. https://canitakethis.co/food/united-states/
+5. https://canitakethis.co/food/new-zealand/
+6. https://canitakethis.co/food/australia/
+7. https://canitakethis.co/food/hong-kong/
+8. https://canitakethis.co/food/germany/
+9. https://canitakethis.co/food/france/
+10. https://canitakethis.co/food/ireland/
+11. https://canitakethis.co/food/switzerland/
+12. https://canitakethis.co/food/netherlands/
+13. https://canitakethis.co/food/spain/
+14. https://canitakethis.co/food/finland/
+15. https://canitakethis.co/food/sweden/
+16. https://canitakethis.co/food/austria/
+17. https://canitakethis.co/food/czechia/
+18. https://canitakethis.co/food/chile/
+19. https://canitakethis.co/food/thailand/
+20. https://canitakethis.co/food/croatia/
+21. https://canitakethis.co/food/latvia/
+22. https://canitakethis.co/food/belgium/
+23. https://canitakethis.co/food/singapore/
