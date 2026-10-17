@@ -407,3 +407,4 @@ Pilot check 2026-11-14 (impressions/clicks vs Wi-Fi pilot). Alaska Airlines not 
 21. https://canitakethis.co/food/latvia/
 22. https://canitakethis.co/food/belgium/
 23. https://canitakethis.co/food/singapore/
+24. https://canitakethis.co/food/united-arab-emirates/

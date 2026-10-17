@@ -2902,5 +2902,115 @@
     ]
    }
   ]
+ },
+ "United Arab Emirates": {
+  "checked": "17 October 2026",
+  "answer": "Dubai Customs' Passenger Customs Guide lists food products among the goods accompanying passengers that are subject to permits from the relevant authorities, and says food items may not be brought in by a traveller in commercial quantity under the names of individuals. Baggage and gifts must be of a personal nature and not in commercial quantities. The guide's list of items not allowed includes betel leaves (paan) and nasvaar, and it does not give a list of permitted or banned foods.",
+  "sources": [
+   [
+    "https://www.dubaicustoms.gov.ae/en/OpenData/Publications/PassengerCustomsGuide.pdf",
+    "Dubai Customs — Passenger Customs Guide (version 6, 2025)"
+   ]
+  ],
+  "faq": [
+   [
+    "Do I need a permit to bring food into the UAE?",
+    "Dubai Customs lists food products among the goods accompanying passengers that are subject to permits by the relevant authorities. The guide does not say which foods or amounts need one; Dubai Municipality is named as a strategic partner."
+   ],
+   [
+    "Can I bring a lot of food as a traveller?",
+    "No. The guide says food items are not allowed to be brought in by a traveller in commercial quantity under the names of individuals, and baggage must be of a personal nature and not in commercial quantities."
+   ],
+   [
+    "Are agricultural seedlings with soil allowed?",
+    "No. The guide says agricultural seedlings containing soil are not allowed to be brought in by a traveller; plants and seedlings are also on its permit list."
+   ],
+   [
+    "Which items does Dubai Customs say are not allowed?",
+    "Examples include narcotics, indecent materials, gambling machines, counterfeit goods and money, and nasvaar and betel leaves (paan) of any kind."
+   ]
+  ],
+  "topics": [
+   {
+    "id": "food",
+    "label": "Food products",
+    "status": "warn",
+    "verdict": "Permit may be needed",
+    "head": "Food is on the list of goods subject to permits from the relevant authorities.",
+    "scen": [
+     {
+      "when": "Personal food",
+      "status": "warn",
+      "tag": "Ask first",
+      "lines": [
+       "The guide lists food products among goods accompanying passengers that are subject to permits by the relevant authorities. It does not say which foods or amounts.",
+       "Check with the authority before you bring any food, especially meat, dairy or fresh produce; we did not find a list of permitted foods."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "commercial",
+    "label": "Commercial quantities",
+    "status": "stop",
+    "verdict": "Not allowed",
+    "head": "Food in commercial quantity cannot be brought in under an individual’s name.",
+    "scen": [
+     {
+      "when": "Quantities",
+      "status": "stop",
+      "tag": "Not allowed",
+      "lines": [
+       "Food items are not allowed to be brought in by a traveller in commercial quantity under the names of individuals.",
+       "Baggage and gifts must be of a personal nature and not in commercial quantities, and the passenger must not be someone who trades in them."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "plants",
+    "label": "Plants & seedlings",
+    "status": "stop",
+    "verdict": "Soil not allowed",
+    "head": "Seedlings with soil are not allowed; plants need a permit.",
+    "scen": [
+     {
+      "when": "Plants",
+      "status": "stop",
+      "tag": "Not allowed",
+      "lines": [
+       "Agricultural seedlings containing soil are not allowed to be brought in by a traveller.",
+       "Plants and seedlings are listed among the goods that are subject to permits by the relevant authorities."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "banned",
+    "label": "Items not allowed",
+    "status": "stop",
+    "verdict": "Not allowed",
+    "head": "Betel leaves (paan) and nasvaar of any kind are banned.",
+    "scen": [
+     {
+      "when": "Examples named",
+      "status": "stop",
+      "tag": "Not allowed",
+      "lines": [
+       "Nasvaar and betel leaves (paan) of any kind, narcotics, indecent and obscene materials, gambling tools and machines, counterfeit goods and counterfeit money.",
+       "Also any other goods the importation of which is banned under UAE laws or the GCC Common Customs Law."
+      ]
+     },
+     {
+      "when": "Not read",
+      "status": "warn",
+      "tag": "Ask first",
+      "lines": [
+       "The guide does not list permitted or banned foods, penalties for food, or the rules of Dubai Municipality; ask the authority before you travel with food."
+      ]
+     }
+    ]
+   }
+  ]
  }
 }
