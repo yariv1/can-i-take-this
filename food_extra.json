@@ -2381,5 +2381,394 @@
     ]
    }
   ]
+ },
+ "Croatia": {
+  "checked": "17 October 2026",
+  "answer": "Croatia's Ministry of Agriculture says that if you arrive from a non-EU country the import of most products of animal origin is prohibited, and meat, milk and their products are not allowed from third countries other than the Faroe Islands, Greenland and Iceland, where up to 10 kg per person is allowed. Small amounts are allowed: 2 kg of infant milk, medical food and other animal products such as honey and eggs, and 20 kg of fish. Products over the limits are confiscated and destroyed at the traveller's cost, and undeclared ones can bring a fine.",
+  "sources": [
+   [
+    "https://Inspektorat.gov.hr/UserDocsImages//ustrojstvo/9-sektor-za-veterinarski-nadzor-i-nadzor-sigurnosti-hrane-140/granicna-veterinarska-inspekcija//Brochure EN - products of animal origin in personal luggage.pdf",
+    "Croatian Ministry of Agriculture (Border Veterinary Inspection) — Which products can I import into the Republic of Croatia"
+   ]
+  ],
+  "faq": [
+   [
+    "Can I bring meat or milk into Croatia from a non-EU country?",
+    "No. The brochure says import of meat, milk and products derived from them is not allowed from third countries, except up to 10 kg per person in total from the Faroe Islands, Greenland or Iceland."
+   ],
+   [
+    "Does it matter where the product was made?",
+    "Yes. What counts is the country you enter from, not where the product was packaged or made. A product labelled as made in the EU but brought in from a third country is treated as a third-country product."
+   ],
+   [
+    "How much fish, honey and eggs can I bring?",
+    "Fish: 20 kg or the weight of one fish per person, whichever is larger, with fresh fish gutted. Honey, eggs, egg products, live shellfish, snail meat and frog legs: 2 kg per person (10 kg from the Faroe Islands, Greenland or Iceland)."
+   ],
+   [
+    "What happens to excess or banned products?",
+    "They are confiscated and destroyed, and the traveller bears all costs of safe destruction. If you fail to declare them you may be fined or judicial proceedings may be started."
+   ]
+  ],
+  "topics": [
+   {
+    "id": "meat",
+    "label": "Meat & milk",
+    "status": "stop",
+    "verdict": "Not allowed",
+    "head": "Meat, milk and their products from third countries are not allowed.",
+    "scen": [
+     {
+      "when": "From third countries",
+      "status": "stop",
+      "tag": "Not allowed",
+      "lines": [
+       "Import of meat, milk and products derived from them is not allowed from third countries other than the places below.",
+       "What counts is the country you enter from, not where the product was made or packaged."
+      ]
+     },
+     {
+      "when": "From the Faroe Islands, Greenland, Iceland",
+      "status": "warn",
+      "tag": "Up to 10 kg",
+      "lines": [
+       "Allowed, provided the total does not exceed 10 kg per person."
+      ]
+     },
+     {
+      "when": "From the EU, Andorra, Liechtenstein, Norway, San Marino, Switzerland",
+      "status": "go",
+      "tag": "No limit",
+      "lines": [
+       "Milk, meat and other animal products are not restricted in personal luggage."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "fish",
+    "label": "Fish",
+    "status": "warn",
+    "verdict": "Up to 20 kg",
+    "head": "Fish: 20 kg or the weight of one fish, whichever is larger.",
+    "scen": [
+     {
+      "when": "From third countries",
+      "status": "warn",
+      "tag": "Max 20 kg",
+      "lines": [
+       "Fresh fish must be gutted. Includes dried, cooked, marinated or smoked fish and some shellfish such as prawns, lobsters, mussels and oysters.",
+       "No restrictions on fishery products from the Faroe Islands or Iceland. Caviar of sturgeon: up to 125 g per person, more needs CITES papers."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "small",
+    "label": "Honey, eggs & baby food",
+    "status": "warn",
+    "verdict": "Up to 2 kg",
+    "head": "2 kg of honey, eggs, shellfish and similar; 2 kg of medical baby milk and food.",
+    "scen": [
+     {
+      "when": "Allowed in small amounts",
+      "status": "warn",
+      "tag": "Max 2 kg",
+      "lines": [
+       "Honey, eggs, egg products, live shellfish, snail meat and frog legs: up to 2 kg per person (10 kg from the Faroe Islands, Greenland or Iceland).",
+       "Powdered infant milk, infant food and special foods used only for medical purposes: up to 2 kg, in unopened proprietary-brand packaging that needs no refrigeration; home-made products do not qualify.",
+       "Raw eggs for humans are not allowed from South Korea, China and Malaysia, and raw honeycomb is not allowed."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "free",
+    "label": "No limit",
+    "status": "go",
+    "verdict": "Allowed",
+    "head": "Bread, biscuits, chocolate and pasta need no restriction.",
+    "scen": [
+     {
+      "when": "Mixed products",
+      "status": "go",
+      "tag": "Allowed",
+      "lines": [
+       "Bread, cakes (except with visible meat or milk added after cooking), cookies, chocolate and confectionery (except some Asian sweets high in unprocessed dairy).",
+       "Packaged food supplements, meat extracts, olives stuffed with fish, pasta without meat filling, stocks and flavourings, and other room-temperature foods without meat or unprocessed dairy and with less than 50% processed egg or fish."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "breach",
+    "label": "Excess & penalties",
+    "status": "stop",
+    "verdict": "Confiscated",
+    "head": "Over the limits means confiscation, destruction at your cost, and possibly a fine.",
+    "scen": [
+     {
+      "when": "At the border",
+      "status": "stop",
+      "tag": "Confiscated",
+      "lines": [
+       "Products above the limits, or from a country where import is not allowed, are confiscated and destroyed, and the traveller bears all costs.",
+       "Failing to declare them may bring a fine or judicial proceedings. Larger quantities must travel as commercial shipments with a veterinary certificate and be registered at a border inspection post."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "Latvia": {
+  "checked": "17 October 2026",
+  "answer": "Latvia's State Revenue Service says meat, dairy, potatoes and pet food with meat or milk are prohibited in personal baggage from non-EU countries, with allowed amounts of up to 2 kg of honey, eggs and similar items, up to 20 kg of fish and up to 5 kg of listed fresh non-animal products. Agricultural and animal feed products from Russia and Belarus are banned, and you can leave prohibited items in labelled bins before inspection to avoid an offence. Prohibited or excess products are confiscated and destroyed.",
+  "sources": [
+   [
+    "https://www.vid.gov.lv/en/food-products",
+    "State Revenue Service of Latvia (VID) — Food products in travellers’ personal baggage"
+   ]
+  ],
+  "faq": [
+   [
+    "Can I bring meat, cheese or milk into Latvia from a non-EU country?",
+    "No. VID lists meat and meat products, and milk and dairy products including cheese, butter, cream, yoghurt and ice-cream, as prohibited in personal baggage for private use."
+   ],
+   [
+    "Can I bring potatoes or pet food?",
+    "Potatoes are prohibited, and so is pet food containing meat or milk, and chewable dog toys."
+   ],
+   [
+    "What is the weight limit for fish and honey?",
+    "Up to 20 kg of fish products and up to 2 kg of animal-origin products such as honey and eggs, with no limit on fish from the Faroe Islands and Greenland."
+   ],
+   [
+    "Can I leave banned food at the border?",
+    "Yes: travellers are asked to leave prohibited products in special labelled containers at the customs control point before inspection, to avoid an administrative offence."
+   ]
+  ],
+  "topics": [
+   {
+    "id": "meat",
+    "label": "Meat & dairy",
+    "status": "stop",
+    "verdict": "Not allowed",
+    "head": "Meat, cheese, milk and meat-containing pet food are prohibited from non-EU countries.",
+    "scen": [
+     {
+      "when": "Prohibited",
+      "status": "stop",
+      "tag": "Not allowed",
+      "lines": [
+       "Meat and meat products, including poultry, sausages, canned meat, meat-filled pastry, gravy and soups.",
+       "Milk and dairy products, including cheese, butter, cream, yoghurt, kefir, condensed milk and ice-cream.",
+       "Pet food containing meat or milk, and chewable dog toys; potatoes; all dried beans originating in Nigeria."
+      ]
+     },
+     {
+      "when": "From Andorra, Iceland, Liechtenstein, Norway, San Marino, Switzerland",
+      "status": "go",
+      "tag": "No limit",
+      "lines": [
+       "No quantity restrictions apply to animal-origin products for private use from these places."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "limits",
+    "label": "Allowed in small amounts",
+    "status": "warn",
+    "verdict": "Weight limits",
+    "head": "Honey and eggs up to 2 kg, fish up to 20 kg, fresh produce up to 2 or 5 kg.",
+    "scen": [
+     {
+      "when": "Animal-origin products",
+      "status": "warn",
+      "tag": "Max 2 kg",
+      "lines": [
+       "Up to 2 kg of products such as honey, eggs, live oysters and shellfish, snails, royal jelly and bee glue, and baby milk powder, baby food, medical foods and certain pet food in patented packaging (10 kg from the Faroe Islands and Greenland)."
+      ]
+     },
+     {
+      "when": "Fish",
+      "status": "warn",
+      "tag": "Max 20 kg",
+      "lines": [
+       "Up to 20 kg of fresh (gutted), dried, heat-treated, salted, smoked or canned fish and some crustaceans; sturgeon roe up to 125 g per package with a special label; no products from Russia or Belarus."
+      ]
+     },
+     {
+      "when": "Fresh plant products",
+      "status": "warn",
+      "tag": "Certificate or 2 kg",
+      "lines": [
+       "Up to 2 kg of fruit, vegetables and nuts in shell if you hold a phytosanitary certificate from the third country; above 2 kg they must be presented to the Food and Veterinary Service.",
+       "Up to 5 kg of listed fresh non-animal products or 2 kg of other dried or prepared ones; wild berries and mushrooms up to 10 kg fresh."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "free",
+    "label": "Allowed freely",
+    "status": "go",
+    "verdict": "Allowed",
+    "head": "Bread, cakes, chocolate, pasta, bananas, dates and pineapples need no restriction.",
+    "scen": [
+     {
+      "when": "No restriction",
+      "status": "go",
+      "tag": "Allowed",
+      "lines": [
+       "Processed non-animal foods such as bread, cakes, cookies, candy, chocolate and pasta.",
+       "Bananas, coconuts, dates, pineapples and durians, but not from Russia or Belarus."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "russia",
+    "label": "Russia & Belarus",
+    "status": "stop",
+    "verdict": "Banned",
+    "head": "Agricultural and feed products from Russia and Belarus are prohibited.",
+    "scen": [
+     {
+      "when": "Under Regulation No. 158 of 5 March 2024",
+      "status": "stop",
+      "tag": "Not allowed",
+      "lines": [
+       "Agricultural and animal feed products from Russia and Belarus are prohibited; the page links to a PDF list.",
+       "Goods under EU sanctions from there, such as spirits, caviar and crustaceans, are prohibited too."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "breach",
+    "label": "Confiscation",
+    "status": "stop",
+    "verdict": "Destroyed",
+    "head": "Banned or excess products are confiscated and destroyed.",
+    "scen": [
+     {
+      "when": "At the border",
+      "status": "stop",
+      "tag": "Confiscated",
+      "lines": [
+       "Travellers from non-EU countries are subject to strict veterinary control at the border crossing; prohibited or excess products are confiscated and destroyed, and a repeated violation results in a penalty. The page gives no amounts.",
+       "To avoid an offence, leave prohibited products in the special labelled containers at the customs control point before inspection."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "Belgium": {
+  "checked": "17 October 2026",
+  "answer": "The Belgian food safety agency says travellers returning from a non-EU country should not bring meat, meat products, milk or dairy products for personal use in their luggage. Small amounts are allowed: up to 2 kg of powdered infant milk, baby food and medically required special food, up to 20 kg of fish, and up to 2 kg of other animal products such as honey, eggs and snails. The rules do not apply to products moved between EU states or from Andorra, Iceland, Liechtenstein, Norway, San Marino or Switzerland.",
+  "sources": [
+   [
+    "https://www.fasfc.be/node/497",
+    "FASFC (Belgian Federal Agency for the Safety of the Food Chain) — travelling with food: meat, dairy and animal products"
+   ]
+  ],
+  "faq": [
+   [
+    "Can I bring meat or cheese into Belgium from outside the EU?",
+    "FASFC says travellers returning from a non-EU country should not bring meat, meat products, milk or dairy products for personal use."
+   ],
+   [
+    "How much fish and honey can I bring into Belgium?",
+    "Fishery products up to 20 kg for personal consumption, or the weight of one fish if higher, and up to 2 kg of other animal products such as honey, eggs, live oysters, live mussels and snails."
+   ],
+   [
+    "What about baby milk and special foods?",
+    "Powdered infant milk, infant food and special foods or pet feed required for medical reasons are allowed up to 2 kg, if they need no refrigeration, are a packaged proprietary brand with intact packaging, and are for you or your accompanying pets."
+   ],
+   [
+    "Which places are exempt?",
+    "The rules do not apply to animal products moved between EU Member States, or to products from Andorra, Iceland, Liechtenstein, Norway, San Marino or Switzerland."
+   ]
+  ],
+  "topics": [
+   {
+    "id": "meat",
+    "label": "Meat & dairy",
+    "status": "stop",
+    "verdict": "Not allowed",
+    "head": "Meat, meat products, milk and dairy from non-EU countries should not be brought in.",
+    "scen": [
+     {
+      "when": "Returning from a non-EU country",
+      "status": "stop",
+      "tag": "Not allowed",
+      "lines": [
+       "Do not bring meat, meat products, milk or dairy products in your luggage for personal use.",
+       "The rules do not apply to animal products moved between EU Member States, or to products from Andorra, Iceland, Liechtenstein, Norway, San Marino or Switzerland."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "fish",
+    "label": "Fish",
+    "status": "warn",
+    "verdict": "Up to 20 kg",
+    "head": "Up to 20 kg of fish for personal consumption, or one fish if heavier.",
+    "scen": [
+     {
+      "when": "Fishery products",
+      "status": "warn",
+      "tag": "Max 20 kg",
+      "lines": [
+       "Includes fish and certain shellfish such as dead prawns, lobsters, mussels and oysters."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "small",
+    "label": "Baby food & honey",
+    "status": "warn",
+    "verdict": "Up to 2 kg",
+    "head": "2 kg of infant milk, medical foods, honey, eggs or snails.",
+    "scen": [
+     {
+      "when": "Special foods",
+      "status": "warn",
+      "tag": "Max 2 kg",
+      "lines": [
+       "Powdered infant milk, infant food and special foods or pet feed required for medical reasons: up to 2 kg, needing no refrigeration, in packaged proprietary-brand products with intact packaging unless in use, and for the traveller or accompanying pets."
+      ]
+     },
+     {
+      "when": "Other animal products",
+      "status": "warn",
+      "tag": "Max 2 kg",
+      "lines": [
+       "Up to 2 kg of other animal products such as honey, eggs, live oysters, live mussels and snails."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "notread",
+    "label": "Not read",
+    "status": "warn",
+    "verdict": "Ask first",
+    "head": "The page gives no penalties and does not say where to declare.",
+    "scen": [
+     {
+      "when": "What we could not confirm",
+      "status": "warn",
+      "tag": "Ask first",
+      "lines": [
+       "The page states no penalties and does not say where or how to declare. It links to a PDF list of animal products for personal use and to the Federal Public Service Finance Customs & Excises travelling page, which we did not read."
+      ]
+     }
+    ]
+   }
+  ]
  }
 }
