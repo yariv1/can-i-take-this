@@ -293,27 +293,27 @@ China Eastern (china-eastern), Copa (copa-airlines), Saudia (saudia), Royal Air 
 9. https://canitakethis.co/country/brazil/tobacco/
 10. https://canitakethis.co/food/united-arab-emirates/
 
-## 2026-10-17 new pages (airline Medication pilot) — TO REQUEST (not yet requested; not yet deployed)
+## 2026-10-17 new pages (airline Medication pilot) — TO REQUEST (deployed 2026-10-17, commit 3072bf6dc; not yet requested in GSC)
 1. https://canitakethis.co/airline/delta/medication/
 2. https://canitakethis.co/airline/american-airlines/medication/
 3. https://canitakethis.co/airline/united/medication/
 4. https://canitakethis.co/airline/southwest/medication/
 Pilot check 2026-11-14 (impressions/clicks vs Wi-Fi pilot). Alaska Airlines not built: alaskaair.com unreadable.
 
-## 2026-10-17 airline Medication pilot, batch 2 — TO REQUEST (not yet requested; not yet deployed)
+## 2026-10-17 airline Medication pilot, batch 2 — TO REQUEST (deployed 2026-10-17, commit 3072bf6dc; not yet requested in GSC)
 5. https://canitakethis.co/airline/ryanair/medication/
 6. https://canitakethis.co/airline/emirates/medication/
 7. https://canitakethis.co/airline/air-canada/medication/
 8. https://canitakethis.co/airline/lufthansa/medication/
 
-## 2026-10-17 airline Medication pilot, batch 3 — TO REQUEST (not yet requested; not yet deployed)
+## 2026-10-17 airline Medication pilot, batch 3 — TO REQUEST (deployed 2026-10-17, commit 3072bf6dc; not yet requested in GSC)
 9. https://canitakethis.co/airline/jetblue/medication/
 10. https://canitakethis.co/airline/klm/medication/
 11. https://canitakethis.co/airline/easyjet/medication/
 12. https://canitakethis.co/airline/air-france/medication/
 13. https://canitakethis.co/airline/turkish-airlines/medication/
 
-## 2026-10-17 airline Medication pilot, batch 4 — TO REQUEST (not yet requested; not yet deployed)
+## 2026-10-17 airline Medication pilot, batch 4 — TO REQUEST (deployed 2026-10-17, commit 3072bf6dc; not yet requested in GSC)
 14. https://canitakethis.co/airline/qantas/medication/
 15. https://canitakethis.co/airline/singapore-airlines/medication/
 16. https://canitakethis.co/airline/cathay-pacific/medication/
@@ -322,7 +322,7 @@ Pilot check 2026-11-14 (impressions/clicks vs Wi-Fi pilot). Alaska Airlines not 
 19. https://canitakethis.co/airline/iberia/medication/
 20. https://canitakethis.co/airline/sas/medication/
 
-## 2026-10-17 airline Medication pilot, batch 5 — TO REQUEST (not yet requested; not yet deployed)
+## 2026-10-17 airline Medication pilot, batch 5 — TO REQUEST (deployed 2026-10-17, commit 3072bf6dc; not yet requested in GSC)
 21. https://canitakethis.co/airline/etihad-airways/medication/
 22. https://canitakethis.co/airline/air-india/medication/
 23. https://canitakethis.co/airline/latam/medication/
@@ -330,9 +330,50 @@ Pilot check 2026-11-14 (impressions/clicks vs Wi-Fi pilot). Alaska Airlines not 
 25. https://canitakethis.co/airline/aer-lingus/medication/
 26. https://canitakethis.co/airline/tap-air-portugal/medication/
 
-## 2026-10-17 airline Medication pilot, batch 6 — TO REQUEST (not yet requested; not yet deployed)
+## 2026-10-17 airline Medication pilot, batch 6 — TO REQUEST (deployed 2026-10-17, commit 3072bf6dc; not yet requested in GSC)
 27. https://canitakethis.co/airline/avianca/medication/
 28. https://canitakethis.co/airline/swiss/medication/
 29. https://canitakethis.co/airline/austrian/medication/
 30. https://canitakethis.co/airline/brussels-airlines/medication/
 31. https://canitakethis.co/airline/norwegian/medication/
+
+## 2026-10-17 country Pets pages with new official-source text (existing URLs, content rewritten) — RE-INDEX REQUEST OPTIONAL (deployed commit 3072bf6dc)
+1. https://canitakethis.co/pets/japan/
+2. https://canitakethis.co/pets/mauritius/
+3. https://canitakethis.co/pets/united-arab-emirates/
+4. https://canitakethis.co/pets/mexico/
+5. https://canitakethis.co/pets/india/
+6. https://canitakethis.co/pets/thailand/
+7. https://canitakethis.co/pets/canada/
+8. https://canitakethis.co/pets/south-africa/
+9. https://canitakethis.co/pets/brazil/
+10. https://canitakethis.co/pets/israel/
+11. https://canitakethis.co/pets/france/
+12. https://canitakethis.co/pets/germany/
+13. https://canitakethis.co/pets/netherlands/
+14. https://canitakethis.co/pets/spain/
+15. https://canitakethis.co/pets/portugal/
+16. https://canitakethis.co/pets/italy/
+17. https://canitakethis.co/pets/finland/
+18. https://canitakethis.co/pets/ireland/
+19. https://canitakethis.co/pets/sweden/
+20. https://canitakethis.co/pets/denmark/
+21. https://canitakethis.co/pets/austria/
+22. https://canitakethis.co/pets/switzerland/
+23. https://canitakethis.co/pets/hong-kong/
+24. https://canitakethis.co/pets/chile/
+25. https://canitakethis.co/pets/peru/
+26. https://canitakethis.co/pets/argentina/
+27. https://canitakethis.co/pets/poland/
+28. https://canitakethis.co/pets/estonia/
+29. https://canitakethis.co/pets/croatia/
+30. https://canitakethis.co/pets/hungary/
+31. https://canitakethis.co/pets/luxembourg/
+32. https://canitakethis.co/pets/iceland/
+33. https://canitakethis.co/pets/fiji/
+34. https://canitakethis.co/pets/jamaica/
+35. https://canitakethis.co/pets/china/
+36. https://canitakethis.co/pets/czechia/
+37. https://canitakethis.co/pets/norway/
+38. https://canitakethis.co/pets/slovenia/
+39. https://canitakethis.co/pets/lithuania/
