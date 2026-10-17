@@ -343,3 +343,40 @@ Method: each cited official link opened in the browser pane, page text compared 
 | lufthansa | power-bank | verified | (Lufthansa Group notice) |
 
 Totals (156 rows): verified 100, fixed 25, unreadable 20, generic 11.
+
+## Countries G to M: verification against the official pages (2026-10-17)
+Method: each source link was opened in the built-in browser and read (blocked PDFs read with pdf.js in the page; WHO profiles compared field by field with `pdftotext`). Verified = every number/rule matches the page. Fixed = wording or number changed to what the page says, or a source added/removed so the label is true. Global = no readable official page for that category, the card says BASED ON GLOBAL RULES and keeps only the general rule. Per-category sources live in `CUSTOMS_CAT`, card text in `CUST_PATCH`, verified pet rules in `PET_VER` (canitakethis.html, block `GM_VERIFIED_V1`).
+Not readable today (host refuses connection from this machine): Indonesia (beacukai.go.id), Kuwait (customs.gov.kw), Malaysia (customs.gov.my). Their numbers were removed, cards are now BASED ON GLOBAL RULES. Jordan and Lebanon have no customs source on the site at all (global).
+Vape pages: the WHO table values were compared with all 25 WHO profile PDFs. Fixed: Germany flavours ("Some are banned"), Hungary and Lithuania ("All are banned", duplicate text and footnote digit), Mauritius (ENNDS text was repeated). Customs links that did not mention vapes were removed from the vape card.
+Plants cards of EU countries now state the Commission rule (certificate needed; five fruit exceptions) instead of the generic "banned outright / declare without exception" text.
+
+| Country | Alcohol | Tobacco | Cash | Plants | Vape | Food | Pets |
+|---|---|---|---|---|---|---|---|
+| Georgia | fixed ("on top of" removed, 30-day period only land/sea) | fixed (same) | verified | fixed (permit/certificate from brochure) | fixed (50 ml e-liquid line added) | global | global |
+| Germany | verified (EU) | verified; EU "combine products" note fixed | fixed ("seizure" not on page) | fixed | fixed (WHO flavours) | verified (general rule, EU links) | global |
+| Greece | verified | verified (air 200 / land-sea 40 list checked) | fixed | fixed | verified | global | global |
+| Hong Kong | fixed (liquor >30% only, 24 h rule), source added | verified, source added | verified, source added | global | global (no WHO profile) | global | global |
+| Hungary | verified | verified | fixed | fixed | fixed (WHO flavours text) | global | global |
+| Iceland | verified | verified | fixed ("E-29" not on page removed) | fixed | fixed (new: island.is 20 units / 40 ml rule) | verified (MAST + island.is) | global |
+| India | fixed, source added (CBIC) | fixed (100 cig / 25 cigars / 125 g), source added | fixed | fixed (restricted goods list) | verified | global | global |
+| Indonesia | unreadable, now global | unreadable, now global | unreadable, now global | unreadable, now global | verified | global | global |
+| Ireland | verified | verified | fixed | fixed | verified | global | fixed (unverified "strict" claim removed) |
+| Israel | verified | verified | fixed (NIS 12,000 only on listed land exits/Gaza, other source added) | fixed | verified (customs link removed) | global | global |
+| Italy | verified | verified | fixed | fixed | verified (customs link removed) | verified (general rule, EU links) | global |
+| Jamaica | verified | verified | global (page has no cash rule) | global | verified (customs link removed) | global | global |
+| Japan | verified | verified | fixed (gold bullion 90% over 1 kg, form wording) | verified (card text added) | verified | global | fixed (AQS rule: notification, 12 h / up to 180 days, no "permit") |
+| Jordan | global | global | global | global | verified | global | global |
+| Kenya | fixed (declare spirits >1 L, wine >2 L) | fixed (declare >250 g) | verified | fixed (restricted item) | verified | global | global |
+| Kuwait | unreadable, now global | unreadable, now global | global | global | verified | global | global |
+| Latvia | verified | verified | fixed | fixed | verified | global | global |
+| Lebanon | global | global | global | global | verified | global | global |
+| Lithuania | verified | verified | fixed | fixed | fixed (WHO flavours text) | global | global |
+| Luxembourg | verified | verified | fixed | fixed | verified | global | global |
+| Malaysia | global | global | global | global | verified | global | global |
+| Maldives | fixed (prior approval wording) | verified | global (page has no cash rule) | verified | verified | global | global |
+| Malta | verified | verified | fixed | fixed | verified | global | global |
+| Mauritius | fixed (date wording, "merchandise for sale") | verified | verified | fixed (MRA import-restrictions page) | fixed (WHO text) | verified | fixed (permit, no pets as baggage, 1 month quarantine) |
+| Mexico | verified, ANAM source added | verified, ANAM source added | fixed (fine 20-40%), ANAM source added | verified (2014 SENASICA notice, disclosed) | verified | global | global |
+| Morocco | verified | verified | verified | fixed | verified (customs link removed) | global | global |
+
+Open follow-ups: re-read Indonesia, Kuwait, Malaysia, Jordan, Lebanon when their hosts answer; Ireland and Iceland pet rules (DAFM/MAST) can be added as `PET_VER` rows; Georgia air-arrival period wording should be confirmed with the Revenue Service.
