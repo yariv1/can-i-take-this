@@ -8,3 +8,4 @@ Batch 3 (2026-10-17): Austria (BMF customs PDF), Switzerland (BLV). Skipped: Nor
 Batch 4: Hong Kong (AFCD), Chile (ChileAtiende/SAG).
 Batch 5 (2026-10-17): Peru, Argentina, Poland, Estonia, Croatia, Hungary, Luxembourg. Unreadable/no official page: Colombia, Costa Rica, Czechia, Lithuania, Latvia, Slovenia, Malta, Cyprus, Belgium, Norway, Turkey, South Korea, Egypt, Kenya, Qatar, Saudi, Philippines, Malaysia, Taiwan, Kuwait, Oman.
 Batch 6: Iceland (MAST), Fiji (BAF), Jamaica (MOA), China (GACC 2019 No.5 via Hunan gov), Czechia (Customs).
+Batch 7: Norway (Mattilsynet), Slovenia (gov.si).
