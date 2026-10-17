@@ -530,6 +530,7 @@ function tabRowBlock(){return '<style>.tabs{flex-wrap:nowrap;overflow-x:auto;ove
 const AIRCOMP=require('./airline_compensation.js');
 const AIRCS=require('./airline_customer_service.js');
 const AIRWIFI=require('./airline_wifi.js');
+const AIRMED=require('./airline_medication.js');
 function airTabs(sl, active){
   /* one horizontally scrollable row (YouTube-style filter chips): no 'All rules' tab (the header has Back), no 'Show more', Compensation second to last, Customer Service always LAST (user orders 2026-10-11) */
   var tabs=[
@@ -539,7 +540,7 @@ function airTabs(sl, active){
     {t:'Vape',u:'/airline/'+sl+'/vape-e-cigarette/',key:'vape'},
     {t:'Perfume',u:'/airline/'+sl+'/perfume-aerosols/',key:'perfume'},
     {t:'Alcohol',u:'/airline/'+sl+'/alcohol/',key:'alcohol'}
-  ].concat(AIRWIFI[sl]?[{t:'Wi-Fi',u:'/airline/'+sl+'/wifi/',key:'wifi'}]:[]).concat(AIRCOMP[sl]?[{t:'Compensation',u:'/airline/'+sl+'/compensation/',key:'compensation'}]:[]).concat(AIRCS[sl]?[{t:'Customer Service',u:'/airline/'+sl+'/customer-service/',key:'customer-service'}]:[]);
+  ].concat(AIRMED[sl]?[{t:'Medication',u:'/airline/'+sl+'/medication/',key:'medication'}]:[]).concat(AIRWIFI[sl]?[{t:'Wi-Fi',u:'/airline/'+sl+'/wifi/',key:'wifi'}]:[]).concat(AIRCOMP[sl]?[{t:'Compensation',u:'/airline/'+sl+'/compensation/',key:'compensation'}]:[]).concat(AIRCS[sl]?[{t:'Customer Service',u:'/airline/'+sl+'/customer-service/',key:'customer-service'}]:[]);
   var tabHtml=tabs.map(function(t){return '<a class="tab'+(t.key&&t.key===active?' on':'')+'" href="'+t.u+'">'+esc(t.t)+'</a>';}).join('');
   var moreBlock=tabRowBlock();
   return {tabHtml:tabHtml, moreBlock:moreBlock};
@@ -941,6 +942,12 @@ function run(){
     if(AIRCOMP[slug(a.name)]){
       const C=AIRCOMP[slug(a.name)], curl=`/airline/${slug(a.name)}/compensation/`;
       write(curl+'index.html', airPlaneShell({a:a,cat:'compensation',url:curl,hub:true,comp:true,h1:C.h1,ttl:C.ttl,desc:C.desc,faq:C.faq,vCarry:{status:'info',head:C.answer,lines:[]},extra:C.render(a),readKey:'compensation'}));
+      pages.push({url:curl,changefreq:'monthly'});
+    }
+
+    if(AIRMED[slug(a.name)]){
+      const C=AIRMED[slug(a.name)], curl=`/airline/${slug(a.name)}/medication/`;
+      write(curl+'index.html', airPlaneShell({a:a,cat:'medication',url:curl,hub:true,comp:true,h1:C.h1,ttl:C.ttl,desc:C.desc,faq:C.faq,vCarry:{status:'info',head:C.answer,lines:[]},extra:C.render(a),readKey:'medication'}));
       pages.push({url:curl,changefreq:'monthly'});
     }
 

@@ -527,3 +527,7 @@ The footer never repeats the source name: the name lives only in the "Helpful so
 
 ### 8.29 Tag colours (session 33)
 Five tag colours: neutral (grey, item/category), green (good), amber (rule applies / check), stop (red, not allowed), **purple** (animal: `Animal · Dog/Cat`, `--tg-purple`, dark #D1A4EA, light #6D3FB5, AA contrast). Defined in `global_ui.css`.
+
+
+## 8.30 Airline Medication tab (pilot, 2026-10-17)
+Tab `Medication` sits after Alcohol and before Wi-Fi, only on airlines listed in `airline_medication.js` (pilot: Delta, American, United, Southwest; Alaska excluded because alaskaair.com was unreadable). Same chip + verdict card component as Wi-Fi/Compensation (`COMP.__render`, tag MEDICATION, legend green = allowed / yellow = allowed with a step / red = not allowed), an at-a-glance table, a packing-steps list and the green Official source block (DS 8.21). Facts only from the airline's own pages that were READ plus tsa.gov; anything the airline does not publish says "Not published on the pages we read". Source-label guard: `audit_source_label.js` covers both Wi-Fi and Medication pages. Pilot test: compare Search Console impressions/clicks for the 4 pages on 2026-11-14 (4 weeks) before adding more airlines.

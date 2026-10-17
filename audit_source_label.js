@@ -6,8 +6,8 @@
 const fs = require('fs'), path = require('path');
 const bad = [];
 let pages = 0, ok = 0, un = 0;
-for (const a of fs.readdirSync('airline')) {
-  const p = path.join('airline', a, 'wifi', 'index.html');
+for (const [a, kind] of fs.readdirSync('airline').flatMap(x => ['wifi', 'medication'].map(k => [x, k]))) {
+  const p = path.join('airline', a, kind, 'index.html');
   if (!fs.existsSync(p)) continue;
   pages++;
   const s = fs.readFileSync(p, 'utf8');
@@ -24,7 +24,7 @@ for (const a of fs.readdirSync('airline')) {
   if (unBlocks && !/unofficial source, named above/.test(s)) bad.push(p + ': unofficial page footer line missing');
   if (/class="help src-ok"/.test(s) && unBlocks) bad.push(p + ': page mixes official and unofficial blocks');
 }
-console.log('Wi-Fi pages checked: ' + pages + ' (official blocks ' + ok + ', unofficial blocks ' + un + ')');
+console.log('Wi-Fi and Medication pages checked: ' + pages + ' (official blocks ' + ok + ', unofficial blocks ' + un + ')');
 if (bad.length) { console.log('SOURCE LABEL VIOLATIONS (DESIGN_SYSTEM.md 8.21):'); bad.slice(0, 30).forEach(x => console.log(' ', x)); process.exit(1); }
 console.log('OK source labels');
 
