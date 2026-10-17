@@ -526,4 +526,4 @@ The footer never repeats the source name: the name lives only in the "Helpful so
 **8.28 addendum 2 (session 33):** a non-controlled medicine card in a country with official medicine lines (MED_NOTE `o`) must not show the generic "Allowed" / "No prescription needed" header: it shows "Some rules apply", the tag "See the official rule" and the head "The official rule for medicines is below." (function `medNoteApply`). Guard: `audit_source_state.js` (note country with official lines showing the generic header). Countries whose note has no `o` lines still show the general-rule card, with the "general rule most countries follow" footer.
 
 ### 8.29 Tag colours (session 33)
-Five tag colours: neutral (grey, item/category), green (good), amber (rule applies / check), stop (red, not allowed), **blue** (animal: `Animal · Dog/Cat`, `--tg-blue`, dark #4CC2FF, light #0B6CB3, AA contrast). Defined in `global_ui.css`.
+Five tag colours: neutral (grey, item/category), green (good), amber (rule applies / check), stop (red, not allowed), **purple** (animal: `Animal · Dog/Cat`, `--tg-purple`, dark #D1A4EA, light #6D3FB5, AA contrast). Defined in `global_ui.css`.

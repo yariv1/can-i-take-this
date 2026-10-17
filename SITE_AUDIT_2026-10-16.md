@@ -419,3 +419,47 @@ Plants cards of EU countries now state the Commission rule (certificate needed; 
 | Morocco | verified | verified | verified | fixed | verified (customs link removed) | global | global |
 
 Open follow-ups: re-read Indonesia, Kuwait, Malaysia, Jordan, Lebanon when their hosts answer; Ireland and Iceland pet rules (DAFM/MAST) can be added as `PET_VER` rows; Georgia air-arrival period wording should be confirmed with the Revenue Service.
+
+
+## Countries N to Z: every fact against the official page (session country-verify-n-z, 2026-10-17)
+Method: each cited page opened (curl, or the browser pane; bot-walled sites read through Internet Archive copies) and every number and rule compared. V = verified as shown; F = fixed (number, wording, source or state); G = no country-specific claim, general rule with "Based on global rules"; U = unreadable today, state changed to Unofficial. Medication not touched.
+
+| Country | Alcohol | Tobacco | Cash | Plants | Vaping | Food | Pets |
+|---|---|---|---|---|---|---|---|
+| Nepal | G | G | G | G | F | G | G |
+| Netherlands | V | V | V | V | V | G | G |
+| New Zealand | V | V | F | F | V | G | F |
+| Nigeria | G | G | G | G | V | G | G |
+| Norway | F | F | F | V | V | V | G |
+| Oman | V | V | V | G | V | G | G |
+| Panama | G | G | G | G | F | G | G |
+| Peru | V | V | F | G | F | G | G |
+| Philippines | F | V | V | G | V | G | G |
+| Poland | V | V | V | V | V | G | G |
+| Portugal | V | V | V | V | V | G | G |
+| Qatar | F | V | F | G | V | G | G |
+| Romania | V | V | V | V | V | V | G |
+| Russia | G | G | G | G | V | G | G |
+| Saudi Arabia | F | F | F | G | V | G | G |
+| Serbia | V | V | F | G | V | V | G |
+| Seychelles | V | V | F | G | V | G | G |
+| Singapore | V | V | F | V | V | G | F |
+| Slovakia | V | V | V | V | V | G | G |
+| Slovenia | V | V | V | V | F | G | G |
+| South Africa | F | F | V | G | V | G | G |
+| South Korea | F | F | F | V | V | F | G |
+| Spain | V | V | V | V | V | G | G |
+| Sri Lanka | V | F | F | G | F | G | G |
+| Sweden | V | V | V | V | V | G | G |
+| Switzerland | F | F | F | V | F | G | G |
+| Taiwan | F | F | V | G | F | V | G |
+| Thailand | F | F | F | V | F | G | G |
+| Turkey | V | F | F | G | V | G | G |
+| Ukraine | V | V | F | G | V | G | G |
+| United Arab Emirates | F | V | V | G | V | G | G |
+| United Kingdom | V | F | F | V | V | G | F |
+| United States | F | F | F | V | V | G | F |
+| Vietnam | U | U | U | G | F | G | G |
+
+Main changes: per-category sources (CUST_SRC) added; duty-free page no longer cited for plants and vaping; Qatar alcohol (not allowed) and Sri Lanka tobacco (not allowed) were generic cards with an OFFICIAL badge; Thailand cash shows USD 15,000 (Bank of Thailand) while Thai Customs English page still says USD 20,000; Saudi Arabia read through Internet Archive copies of ZATCA pages; Vietnam customs site unreadable, numbers shown as UNOFFICIAL (Vietnam Law Magazine, dated); vaping now from the WHO 2025 report (data 2024) for N-Z (country_vape_who_2025.json; Singapore has no 2025 profile, Taiwan none at all: Taipei Customs lists e-cigarettes as prohibited); pets: UK, Singapore, US rewritten from GOV.UK, AVS and CDC, New Zealand generic because MPI is bot-walled; pet lead no longer claims a titre test for every country; South Korea food wording per VisitKorea.
+Not readable, left generic: Russia, Nigeria, Panama, Nepal customs pages; MPI (New Zealand). Guard: audit_country_cat_sources.js (N-Z enforced; 49 earlier-letter pages still cite a customs page for plants or vaping).

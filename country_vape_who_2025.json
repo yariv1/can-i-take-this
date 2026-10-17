@@ -1,0 +1,361 @@
+{
+ "_meta": {
+  "source": "WHO report on the global tobacco epidemic, 2025: country profiles (data for 2024), table \"Regulation of ENDS and ENNDS\", ENDS column (nicotine e-cigarettes)",
+  "read": "2026-10-17",
+  "scope": "N-Z countries only (session country-verify-n-z); other letters still use country_vape_who.json (2023 report)"
+ },
+ "c": {
+  "US": {
+   "general": "None",
+   "ennds_only_ban": false,
+   "indoor": "None",
+   "ads": "Partial ban",
+   "minAge": 21,
+   "flavours": "None are banned",
+   "note": "",
+   "pdf": "https://cdn.who.int/media/docs/default-source/country-profiles/tobacco/gtrc-2025/tobacco-2025-usa.pdf",
+   "rep": 2025
+  },
+  "GB": {
+   "general": "None",
+   "ennds_only_ban": false,
+   "indoor": "None",
+   "ads": "Partial ban",
+   "minAge": 18,
+   "flavours": "None are banned",
+   "note": "Sale of disposable e-cigarettes is banned. Provision adopted but not implemented by 31 December 2024.",
+   "pdf": "https://cdn.who.int/media/docs/default-source/country-profiles/tobacco/gtrc-2025/tobacco-2025-gbr.pdf",
+   "rep": 2025
+  },
+  "AE": {
+   "general": "None",
+   "ennds_only_ban": false,
+   "indoor": "None",
+   "ads": "Complete ban",
+   "minAge": 18,
+   "flavours": "None are banned",
+   "note": "",
+   "pdf": "https://cdn.who.int/media/docs/default-source/country-profiles/tobacco/gtrc-2025/tobacco-2025-are.pdf",
+   "rep": 2025
+  },
+  "TH": {
+   "general": "Ban on sale, import, manufacture",
+   "ennds_only_ban": false,
+   "indoor": "None",
+   "ads": "No explicit ban",
+   "minAge": null,
+   "flavours": "—",
+   "note": "",
+   "pdf": "https://cdn.who.int/media/docs/default-source/country-profiles/tobacco/gtrc-2025/tobacco-2025-tha.pdf",
+   "rep": 2025
+  },
+  "ES": {
+   "general": "None",
+   "ennds_only_ban": false,
+   "indoor": "Partial ban",
+   "ads": "Partial ban",
+   "minAge": 18,
+   "flavours": "None are banned",
+   "note": "",
+   "pdf": "https://cdn.who.int/media/docs/default-source/country-profiles/tobacco/gtrc-2025/tobacco-2025-esp.pdf",
+   "rep": 2025
+  },
+  "TR": {
+   "general": "Ban on sale, import (except for personal use)",
+   "ennds_only_ban": false,
+   "indoor": "Complete ban",
+   "ads": "Complete ban",
+   "minAge": null,
+   "flavours": "—",
+   "note": "The law bans the import of e-cigarettes. To date no approval for domestic production of e-cigarettes has been granted in the country. The combination of the import ban and the production ban is interpreted as a ban on the sale of e-cigarettes.",
+   "pdf": "https://cdn.who.int/media/docs/default-source/country-profiles/tobacco/gtrc-2025/tobacco-2025-tur.pdf",
+   "rep": 2025
+  },
+  "NL": {
+   "general": "None",
+   "ennds_only_ban": false,
+   "indoor": "Complete ban",
+   "ads": "Complete ban",
+   "minAge": 18,
+   "flavours": "All are banned",
+   "note": "",
+   "pdf": "https://cdn.who.int/media/docs/default-source/country-profiles/tobacco/gtrc-2025/tobacco-2025-nld.pdf",
+   "rep": 2025
+  },
+  "CH": {
+   "general": "None",
+   "ennds_only_ban": false,
+   "indoor": "None",
+   "ads": "Partial ban",
+   "minAge": 18,
+   "flavours": "Some are banned",
+   "note": "",
+   "pdf": "https://cdn.who.int/media/docs/default-source/country-profiles/tobacco/gtrc-2025/tobacco-2025-che.pdf",
+   "rep": 2025
+  },
+  "KR": {
+   "general": "None",
+   "ennds_only_ban": false,
+   "indoor": "Partial ban",
+   "ads": "No explicit ban",
+   "minAge": 19,
+   "flavours": "None are banned",
+   "note": "",
+   "pdf": "https://cdn.who.int/media/docs/default-source/country-profiles/tobacco/gtrc-2025/tobacco-2025-kor.pdf",
+   "rep": 2025
+  },
+  "QA": {
+   "general": "Ban on sale, import, trade, display, distribution, manufacture",
+   "ennds_only_ban": false,
+   "indoor": "None",
+   "ads": "No explicit ban",
+   "minAge": null,
+   "flavours": "—",
+   "note": "",
+   "pdf": "https://cdn.who.int/media/docs/default-source/country-profiles/tobacco/gtrc-2025/tobacco-2025-qat.pdf",
+   "rep": 2025
+  },
+  "SA": {
+   "general": "None",
+   "ennds_only_ban": false,
+   "indoor": "Partial ban",
+   "ads": "No explicit ban",
+   "minAge": null,
+   "flavours": "Restricted",
+   "note": "",
+   "pdf": "https://cdn.who.int/media/docs/default-source/country-profiles/tobacco/gtrc-2025/tobacco-2025-sau.pdf",
+   "rep": 2025
+  },
+  "PT": {
+   "general": "None",
+   "ennds_only_ban": false,
+   "indoor": "Partial ban",
+   "ads": "Partial ban",
+   "minAge": 18,
+   "flavours": "None are banned",
+   "note": "",
+   "pdf": "https://cdn.who.int/media/docs/default-source/country-profiles/tobacco/gtrc-2025/tobacco-2025-prt.pdf",
+   "rep": 2025
+  },
+  "PL": {
+   "general": "None",
+   "ennds_only_ban": false,
+   "indoor": "Partial ban",
+   "ads": "Partial ban",
+   "minAge": 18,
+   "flavours": "None are banned",
+   "note": "",
+   "pdf": "https://cdn.who.int/media/docs/default-source/country-profiles/tobacco/gtrc-2025/tobacco-2025-pol.pdf",
+   "rep": 2025
+  },
+  "PE": {
+   "general": "None",
+   "ennds_only_ban": false,
+   "indoor": "Complete ban",
+   "ads": "No explicit ban",
+   "minAge": 18,
+   "flavours": "None are banned",
+   "note": "",
+   "pdf": "https://cdn.who.int/media/docs/default-source/country-profiles/tobacco/gtrc-2025/tobacco-2025-per.pdf",
+   "rep": 2025
+  },
+  "ZA": {
+   "general": "None",
+   "ennds_only_ban": false,
+   "indoor": "None",
+   "ads": "No explicit ban",
+   "minAge": null,
+   "flavours": "None are banned",
+   "note": "",
+   "pdf": "https://cdn.who.int/media/docs/default-source/country-profiles/tobacco/gtrc-2025/tobacco-2025-zaf.pdf",
+   "rep": 2025
+  },
+  "NG": {
+   "general": "None",
+   "ennds_only_ban": false,
+   "indoor": "None",
+   "ads": "No explicit ban",
+   "minAge": null,
+   "flavours": "None are banned",
+   "note": "",
+   "pdf": "https://cdn.who.int/media/docs/default-source/country-profiles/tobacco/gtrc-2025/tobacco-2025-nga.pdf",
+   "rep": 2025
+  },
+  "NZ": {
+   "general": "None",
+   "ennds_only_ban": false,
+   "indoor": "Complete ban",
+   "ads": "Partial ban",
+   "minAge": 18,
+   "flavours": "Restricted",
+   "note": "Sale, manufacture, supply and distribution of disposable e-cigarettes are banned. Policy adopted but not implemented by 31 December 2024.",
+   "pdf": "https://cdn.who.int/media/docs/default-source/country-profiles/tobacco/gtrc-2025/tobacco-2025-nzl.pdf",
+   "rep": 2025
+  },
+  "SE": {
+   "general": "None",
+   "ennds_only_ban": false,
+   "indoor": "None",
+   "ads": "Partial ban",
+   "minAge": 18,
+   "flavours": "None are banned",
+   "note": "",
+   "pdf": "https://cdn.who.int/media/docs/default-source/country-profiles/tobacco/gtrc-2025/tobacco-2025-swe.pdf",
+   "rep": 2025
+  },
+  "NO": {
+   "general": "Ban on sale, import",
+   "ennds_only_ban": false,
+   "indoor": "Complete ban",
+   "ads": "Partial ban",
+   "minAge": null,
+   "flavours": "—",
+   "note": "",
+   "pdf": "https://cdn.who.int/media/docs/default-source/country-profiles/tobacco/gtrc-2025/tobacco-2025-nor.pdf",
+   "rep": 2025
+  },
+  "RO": {
+   "general": "None",
+   "ennds_only_ban": false,
+   "indoor": "Partial ban",
+   "ads": "Partial ban",
+   "minAge": 18,
+   "flavours": "None are banned",
+   "note": "",
+   "pdf": "https://cdn.who.int/media/docs/default-source/country-profiles/tobacco/gtrc-2025/tobacco-2025-rou.pdf",
+   "rep": 2025
+  },
+  "SI": {
+   "general": "None",
+   "ennds_only_ban": false,
+   "indoor": "Complete ban",
+   "ads": "Complete ban",
+   "minAge": 18,
+   "flavours": "All are banned",
+   "note": "Flavours: provision adopted but not implemented by 31 December 2024.",
+   "pdf": "https://cdn.who.int/media/docs/default-source/country-profiles/tobacco/gtrc-2025/tobacco-2025-svn.pdf",
+   "rep": 2025
+  },
+  "SK": {
+   "general": "None",
+   "ennds_only_ban": false,
+   "indoor": "None",
+   "ads": "Partial ban",
+   "minAge": 18,
+   "flavours": "None are banned",
+   "note": "",
+   "pdf": "https://cdn.who.int/media/docs/default-source/country-profiles/tobacco/gtrc-2025/tobacco-2025-svk.pdf",
+   "rep": 2025
+  },
+  "RS": {
+   "general": "None",
+   "ennds_only_ban": false,
+   "indoor": "None",
+   "ads": "Partial ban",
+   "minAge": 18,
+   "flavours": "None are banned",
+   "note": "",
+   "pdf": "https://cdn.who.int/media/docs/default-source/country-profiles/tobacco/gtrc-2025/tobacco-2025-srb.pdf",
+   "rep": 2025
+  },
+  "UA": {
+   "general": "None",
+   "ennds_only_ban": false,
+   "indoor": "Complete ban",
+   "ads": "Complete ban",
+   "minAge": 18,
+   "flavours": "Restricted",
+   "note": "Flavours: characterising flavours are banned.",
+   "pdf": "https://cdn.who.int/media/docs/default-source/country-profiles/tobacco/gtrc-2025/tobacco-2025-ukr.pdf",
+   "rep": 2025
+  },
+  "RU": {
+   "general": "None",
+   "ennds_only_ban": false,
+   "indoor": "Complete ban",
+   "ads": "Complete ban",
+   "minAge": 18,
+   "flavours": "Some are banned",
+   "note": "",
+   "pdf": "https://cdn.who.int/media/docs/default-source/country-profiles/tobacco/gtrc-2025/tobacco-2025-rus.pdf",
+   "rep": 2025
+  },
+  "OM": {
+   "general": "Ban on sale, import",
+   "ennds_only_ban": false,
+   "indoor": "None",
+   "ads": "No explicit ban",
+   "minAge": null,
+   "flavours": "—",
+   "note": "",
+   "pdf": "https://cdn.who.int/media/docs/default-source/country-profiles/tobacco/gtrc-2025/tobacco-2025-omn.pdf",
+   "rep": 2025
+  },
+  "PH": {
+   "general": "None",
+   "ennds_only_ban": false,
+   "indoor": "Partial ban",
+   "ads": "Partial ban",
+   "minAge": 18,
+   "flavours": "Some are allowed",
+   "note": "",
+   "pdf": "https://cdn.who.int/media/docs/default-source/country-profiles/tobacco/gtrc-2025/tobacco-2025-phl.pdf",
+   "rep": 2025
+  },
+  "VN": {
+   "general": "Ban on sale, use, production, import, storage, transportation",
+   "ennds_only_ban": false,
+   "indoor": "Complete ban",
+   "ads": "Partial ban",
+   "minAge": null,
+   "flavours": "—",
+   "note": "Provision adopted but not implemented by 31 December 2024.",
+   "pdf": "https://cdn.who.int/media/docs/default-source/country-profiles/tobacco/gtrc-2025/tobacco-2025-vnm.pdf",
+   "rep": 2025
+  },
+  "LK": {
+   "general": "Ban on sale, manufacture, import, offer for sale",
+   "ennds_only_ban": false,
+   "indoor": "None",
+   "ads": "No explicit ban",
+   "minAge": null,
+   "flavours": "—",
+   "note": "",
+   "pdf": "https://cdn.who.int/media/docs/default-source/country-profiles/tobacco/gtrc-2025/tobacco-2025-lka.pdf",
+   "rep": 2025
+  },
+  "NP": {
+   "general": "Ban on manufacture, import, distribution, promotion, advertising (restricted to some places)",
+   "ennds_only_ban": false,
+   "indoor": "Complete ban",
+   "ads": "Complete ban",
+   "minAge": 18,
+   "flavours": "None are banned",
+   "note": "",
+   "pdf": "https://cdn.who.int/media/docs/default-source/country-profiles/tobacco/gtrc-2025/tobacco-2025-npl.pdf",
+   "rep": 2025
+  },
+  "SC": {
+   "general": "None",
+   "ennds_only_ban": false,
+   "indoor": "None",
+   "ads": "No explicit ban",
+   "minAge": null,
+   "flavours": "None are banned",
+   "note": "",
+   "pdf": "https://cdn.who.int/media/docs/default-source/country-profiles/tobacco/gtrc-2025/tobacco-2025-syc.pdf",
+   "rep": 2025
+  },
+  "PA": {
+   "general": "None",
+   "ennds_only_ban": false,
+   "indoor": "None",
+   "ads": "No explicit ban",
+   "minAge": null,
+   "flavours": "None are banned",
+   "note": "Regulations are pending.",
+   "pdf": "https://cdn.who.int/media/docs/default-source/country-profiles/tobacco/gtrc-2025/tobacco-2025-pan.pdf",
+   "rep": 2025
+  }
+ }
+}

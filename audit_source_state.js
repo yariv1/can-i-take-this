@@ -6,7 +6,7 @@ const verified=new Set();
 const petVerified=new Set();{const pm=/var PET_VER=({.*});/.exec(fs.readFileSync("canitakethis.html","utf8"));if(pm)Object.keys(JSON.parse(pm[1])).forEach(k=>petVerified.add(k.toLowerCase().replace(/ /g,"-")));}
 {const re=/(?:MED_VER=\{|\}\)\(\),)\s*'?([A-Za-z ]+?)'?:\(function/g;let m;while((m=re.exec(mv)))verified.add(m[1].trim().toLowerCase().replace(/ /g,'-'));}
 const foodVerified=new Set(Object.keys(require('./food_detail.js').DETAIL).map(x=>x.toLowerCase().replace(/ /g,'-')));
-const petsVerified=new Set(['australia']); // pets rule read on the official page (session 34)
+const petsVerified=new Set(['australia','united-kingdom','singapore','united-states']); // pets rule read on the official page (session 34)
 const noteC=new Set(),noteO=new Set();{const a=html.indexOf('var MED_NOTE={'),b=html.indexOf('\n};',a);const re=/^'?([A-Za-z ]+?)'?:\{c:\[/gm;let m;const seg=html.slice(a,b);while((m=re.exec(seg))){const k=m[1].trim().toLowerCase().replace(/ /g,'-');noteC.add(k);const ne=seg.indexOf('\n',m.index);const ln=seg.slice(m.index,ne<0?seg.length:ne);if(!/,o:\[\]\}/.test(ln))noteO.add(k);}}
 const bad=[];let n=0;
 function walk(d){for(const e of fs.readdirSync(d,{withFileTypes:true})){if(e.name.startsWith('.')||e.name==='node_modules')continue;const p=path.join(d,e.name);if(e.isDirectory())walk(p);else if(e.name==='index.html')chk(p);}}
