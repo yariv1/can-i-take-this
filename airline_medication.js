@@ -1,7 +1,7 @@
 // Airline Medication pages (pilot, 2026-10-17): /airline/<slug>/medication/ + a "Medication" tab, shown ONLY for airlines listed here.
 // Rule (user order 2026-10-17, same standard as the Wi-Fi pilot): an airline is listed ONLY when its OWN published pages were READ and say something about medication.
 // Everything on the cards comes from those airline pages plus TSA (US government). Anything an airline does not publish is said as "not published", never filled from third-party sources.
-// Pilot airlines: Delta, American, United, Southwest, then Ryanair, Emirates, Air Canada, Lufthansa (non-US carriers use their own pages; Air Canada also uses CATSA, Canada's screening authority). Alaska Airlines is NOT listed (pages unreadable): British Airways (the medicines section did not load), Qatar Airways (no readable medication page), alaskaair.com returned only an error page from every browser tried on 2026-10-17 (summaries are not reading).
+// Pilot airlines: Delta, American, United, Southwest, then Ryanair, Emirates, Air Canada, Lufthansa, then JetBlue, KLM, easyJet, Air France, Turkish (non-US carriers use their own pages; Air Canada also uses CATSA, Canada's screening authority). Alaska Airlines is NOT listed (pages unreadable): British Airways (the medicines section did not load), Qatar Airways (no readable medication page), alaskaair.com returned only an error page from every browser tried on 2026-10-17 (summaries are not reading).
 const COMP = require('./airline_compensation.js');
 const BAGD = require('./baggage_detail.js');
 const { CSS, table } = BAGD;
@@ -534,6 +534,287 @@ const NP = 'Not published on the pages we read';
       ['Help taking medication?', 'Crew may not administer injections or medication']
     ],
     extra: steps(['Keep medication you need on the journey in your cabin bag. If your carry-on goes to the hold, take the medicines out first.', 'For cold medicine, order the Cube from Lufthansa\'s partner before your trip: it cannot be hired at the airport.', 'Check the medication rules of your destination country.'])
+  });
+}
+
+// ---------------- JETBLUE ----------------
+// Read 17 October 2026 on jetblue.com: Medication (help page).
+{
+  const PG = ['https://www.jetblue.com/help/medication', 'JetBlue: Medication', 'Traveling with medication'];
+  add({
+    slug: 'jetblue', name: 'JetBlue',
+    h1: 'JetBlue Medication Policy: Pills, Insulin, Syringes & Cooling on a JetBlue Flight (2026)',
+    desc: 'Can you bring medication on JetBlue? Yes: all prescription and over-the-counter medication, liquids included, plus syringes and pens, but never in checked bags. No fridge on board; bring a small insulated cooler. Checked 17 October 2026.',
+    answer: 'Yes. JetBlue lets you bring all prescription and over-the-counter medication for medical purposes, including liquids, gels and aerosols, and supplies such as syringes and pens. Medication must stay with you, never in checked bags. There are no refrigerators on board: bring a small insulated cooler.',
+    srcNote: 'From JetBlue\'s own medication page and TSA\'s medication pages, last checked 17 October 2026. Rules change, so confirm with the airline and TSA before you fly.',
+    scen: [
+      card('pills', 'Pills & tablets', 'go', 'Allowed', 'Keep it with you', 'JetBlue lets you bring all medication in any form, but never in checked bags.', [
+        'JetBlue: customers with a disability or medical condition may bring all prescription and over-the-counter medication for medical purposes.',
+        'JetBlue: medication should always remain with you, never in checked bags.',
+        'JetBlue: all medication in any form (pills, injectable or homeopathic) is allowed through the security checkpoint once screened. Medication in daily-dosage containers is also allowed once screened.',
+        'JetBlue and TSA recommend, but do not require, that your medication is labelled to help screening.'
+      ], [PG, TSA_PILLS], true),
+      card('liquids', 'Liquid medication', 'warn', 'Allowed, declare it', 'Over 100 ml (3.4 oz)', 'There is no limit on medically necessary liquids, but declare anything over 3.4 oz at the checkpoint.', [
+        'JetBlue: you may also bring liquids, juice or liquid nutrition and gels, and gels or frozen liquids needed to cool disability- or medically-related items, with no limit on amount or volume in your carry-on.',
+        'JetBlue: if the medically necessary items exceed 3.4 ounces or are not in a one-quart zip-top plastic bag, you must declare them to a TSA officer at the checkpoint for further inspection.',
+        TSA_LIQ_LINE
+      ], [PG, TSA_LIQ]),
+      card('needles', 'Insulin & syringes', 'go', 'Allowed once screened', 'Needles, syringes, pens', 'JetBlue allows syringes, pens and sharps containers with your medication once they are screened.', [
+        'JetBlue: you may bring associated supplies such as syringes, pens, infusers and saline solution on board. Syringes, sharps disposal containers and pre-loaded syringes are allowed through the checkpoint once screened.',
+        TSA_SYR_LINE,
+        TSA_INS_LINE
+      ], [PG, TSA_SYR, TSA_INS]),
+      card('cold', 'Cold medication', 'warn', 'Bring a small cooler', 'Medication that must stay cold', 'JetBlue has no refrigerators on board: bring a small insulated cooler.', [
+        'JetBlue: refrigerators are not available on board its aircraft.',
+        'JetBlue: if your medication needs to be refrigerated you may bring a small insulated cooler that meets the carry-on bag requirements.',
+        TSA_ICE_LINE
+      ], [PG, TSA_ICE]),
+      card('devices', 'Pumps & medical devices', 'warn', 'Tell the officer', 'Insulin pump, monitor', 'JetBlue\'s medication page gives no device rule; TSA asks you to tell the officer about devices on your body.', [
+        'JetBlue\'s medication page does not cover insulin pumps or other medical devices.',
+        TSA_DEV_LINE
+      ], [TSA_SUP]),
+      card('abroad', 'Flying abroad', 'warn', 'Check the destination', 'International flights', 'Your destination country sets its own medication rules.', ABROAD_LINES, [PG])
+    ],
+    faq: [
+      ['Can I bring medication on a JetBlue flight?', 'Yes. JetBlue says customers with a disability or medical condition may bring all prescription and over-the-counter medication for medical purposes, including liquids, gels and aerosols, and associated supplies such as syringes, pens and infusers. Medication should always remain with you, never in checked bags.'],
+      ['Can I bring more than 3.4 oz of liquid medication on JetBlue?', 'Yes. JetBlue says you are not limited in the amount or volume of medically necessary liquids in your carry-on, but if they exceed 3.4 ounces or are not in a one-quart zip-top bag you must declare them to a TSA officer at the checkpoint.'],
+      ['Does JetBlue have a fridge for medication?', 'No. JetBlue says refrigerators are not available on board. If your medication needs to be refrigerated you may bring a small insulated cooler that meets the carry-on bag requirements.'],
+      ['Can I bring insulin and syringes on JetBlue?', 'Yes. JetBlue allows syringes, pens, sharps disposal containers and pre-loaded syringes through the checkpoint once they have been screened. TSA says to tell officers you have medically necessary liquids such as insulin.']
+    ],
+    tableTitle: 'JetBlue medication rules at a glance',
+    tableNote: 'What JetBlue\'s own page and TSA say.',
+    rows: [
+      ['Where should medication go?', 'With you, never in checked bags'],
+      ['Can it be over 100 ml?', 'Yes. Declare anything over 3.4 oz to TSA'],
+      ['Needles and syringes?', 'Allowed once screened'],
+      ['Fridge or cooler on board?', 'No fridge. Small insulated cooler allowed'],
+      ['Labels?', 'Recommended, not required']
+    ],
+    extra: steps(['Keep all medication in your carry-on, never in a checked bag.', 'Pack syringes and pens with the medication they are for.', 'At security, declare liquids over 3.4 oz and gel packs to the TSA officer.', 'If your medication must stay cold, bring a small insulated cooler that meets carry-on size limits.'])
+  });
+}
+
+// ---------------- KLM ----------------
+// Read 17 October 2026 on klm.com (Israel version of the same pages): Medicines and medical equipment; Restricted items in hand baggage.
+{
+  const PG = ['https://www.klm.com/information/assistance-health/medicines-medical-equipment', 'KLM: Travelling with medicines or medical equipment', 'Medication, cooling, medical equipment'];
+  const RI = ['https://www.klm.com/information/baggage/restricted-items-hand-baggage', 'KLM: Restricted items in hand baggage', 'Liquids and medicines'];
+  add({
+    slug: 'klm', name: 'KLM',
+    h1: 'KLM Medication Policy: Pills, Insulin, Syringes, Liquids & Cooling (2026)',
+    desc: 'Can you bring medication on KLM? Yes: always bring prescribed medication in your hand baggage with an English prescription, including for syringes. Medicines for the flight are exempt from the liquid rule. Small packages can use the onboard fridge. Checked 17 October 2026.',
+    answer: 'Yes. KLM says you can always bring prescribed medication on board, in your hand baggage, with a prescription written in English that also covers any syringes. Medicines for the flight are always allowed with a prescription or doctor\'s statement, outside the liquids rule. KLM can store medication in small packaging in the onboard refrigerator.',
+    srcNote: 'From KLM\'s own pages, last checked 17 October 2026 (read on KLM\'s Israel site; page wording can differ by country). Rules change, so confirm with the airline before you fly.',
+    scen: [
+      card('pills', 'Pills & tablets', 'go', 'Hand baggage with prescription', 'Carry them with you', 'KLM says you can always bring prescribed medication on board, in your hand baggage.', [
+        'KLM: you can always bring prescribed medication onboard. Add it to your hand baggage so you can reach it during and immediately after the flight.',
+        'KLM: always pack your essential medicines in your hand baggage, including enough for the first few days after arrival.',
+        'KLM asks you to carry a doctor\'s prescription written in English for your medication and any syringes, so customs and security officers can check it.'
+      ], [PG, RI], true),
+      card('liquids', 'Liquid medication', 'go', 'Allowed with prescription', 'Over 100 ml (3.4 oz)', 'Medicines to take during the flight are always allowed, with a prescription or doctor\'s statement.', [
+        'KLM: you are always allowed to bring medicines to be taken during the flight, together with a prescription or doctor\'s statement, even though ordinary liquids are limited to containers of 100 ml in one transparent bag of up to 1 litre.',
+        'KLM: you are always allowed to bring liquid medications you need during the flight.'
+      ], [RI]),
+      card('needles', 'Insulin & syringes', 'warn', 'Bring an English prescription', 'Needles, syringes, injections', 'KLM asks for an English prescription that covers your medication and any syringes.', [
+        'KLM: bring a doctor\'s prescription in English for medication and any syringes. Customs or security officers can check it if they have questions.',
+        'KLM\'s pages we read give no other rule for syringes or sharps.'
+      ], [PG]),
+      card('cold', 'Cold medication', 'warn', 'Small packages can go in the fridge', 'Medication that must stay cold', 'KLM has limited fridge space: bring a cold bag or flask, small packages may go in the fridge.', [
+        'KLM: its aircraft have limited refrigerator space on board. If your medication needs cooling, KLM advises you to bring cold storage bags or vacuum flasks.',
+        'KLM: medication in small packaging can be stored in the onboard refrigerator.'
+      ], [PG]),
+      card('devices', 'Medical equipment', 'warn', 'Bring charged batteries', 'CPAP, oxygen, other equipment', 'Medical equipment cannot use in-seat power: bring enough charged batteries.', [
+        'KLM: CPAP and BiPAP equipment and respirators may come on board if they can be stowed under a seat or strapped to an adjoining seat.',
+        'KLM: in-seat power outlets cannot be used for medical equipment because the power is unstable and not certified. Bring charged batteries that last at least 150% of the expected maximum flight time.',
+        'KLM: you cannot use power banks or batteries, including certified medical batteries, to power medical equipment onboard; only internal or manufacturer-approved external medical batteries are allowed.',
+        'KLM: if you use your own oxygen or want KLM to provide it, contact KLM at least 48 hours before departure and fill in the medical information form. KLM-provided oxygen costs EUR 375 per flight.'
+      ], [PG]),
+      card('opiate', 'Dutch opiate law', 'warn', 'Medicine declaration', 'Medicines that fall under the Dutch Opiate Law', 'Medication covered by the Dutch Opiate Law needs a medicine declaration at customs.', [
+        'KLM: a medicine passport is not a legal travel document, but it can be useful.',
+        'KLM: if you use medication that falls under the Dutch Opiate Law you need a medicine declaration to declare it at customs. KLM points to the Dutch government website to check.'
+      ], [PG]),
+      card('abroad', 'Flying abroad', 'warn', 'Check the destination', 'International flights', 'Your destination country sets its own medication rules.', ABROAD_LINES, [PG])
+    ],
+    faq: [
+      ['Can I bring medication on a KLM flight?', 'Yes. KLM says you can always bring prescribed medication onboard, in your hand baggage, and asks you to carry a doctor\'s prescription in English for your medication and any syringes.'],
+      ['Can I bring liquid medication over 100 ml on KLM?', 'Yes. KLM says you are always allowed to bring medicines to be taken during the flight, together with a prescription or doctor\'s statement.'],
+      ['Does KLM keep medication in the fridge?', 'KLM has limited refrigerator space and advises you to bring cold storage bags or vacuum flasks. It says medication in small packaging can be stored in the onboard refrigerator.'],
+      ['Can I use my medical equipment on KLM power?', 'No. KLM says in-seat power outlets cannot be used for medical equipment. Bring charged batteries that last at least 150% of the expected maximum flight time; power banks cannot be used to power medical equipment.'],
+      ['Do I need a medicine declaration on KLM?', 'If your medication falls under the Dutch Opiate Law you need a medicine declaration to declare it at customs. A medicine passport is not a legal document but can be useful.']
+    ],
+    tableTitle: 'KLM medication rules at a glance',
+    tableNote: 'What KLM\'s own pages say.',
+    rows: [
+      ['Where should medication go?', 'Hand baggage, with an English prescription'],
+      ['Can it be over 100 ml?', 'Yes if for the flight, with prescription or doctor\'s statement'],
+      ['Needles and syringes?', 'English prescription covering the syringes'],
+      ['Fridge on board?', 'Limited. Small packages can be stored; bring a cold bag'],
+      ['Power for medical equipment?', 'No in-seat power. Bring charged batteries'],
+      ['Opiate Law medication?', 'Needs a medicine declaration at customs']
+    ],
+    extra: steps(['Put your essential medicines in your hand baggage, with enough for the first few days after arrival.', 'Bring an English prescription for the medication and any syringes.', 'Bring a cold bag or vacuum flask for medication that must stay cold; ask about the fridge for small packages.', 'For medical equipment, bring batteries that last 150% of the flight time.'])
+  });
+}
+
+// ---------------- EASYJET ----------------
+// Read 17 October 2026 on easyjet.com: Medicine, medical conditions and equipment (including the panels "What medication and equipment you can bring on board", "Travelling with diabetes", "Travelling with medication containing a controlled drug").
+{
+  const PG = ['https://www.easyjet.com/en/help/boarding-and-flying/medicine-medical-conditions-and-equipment', 'easyJet: Medicine, medical conditions and equipment', 'Medication, diabetes, controlled drugs'];
+  add({
+    slug: 'easyjet', name: 'easyJet',
+    h1: 'easyJet Medication Policy: Pills, Insulin, Needles, Liquids & Medical Equipment (2026)',
+    desc: 'Can you bring medication on easyJet? Yes, in your cabin bag. You only need a doctor\'s letter for liquids over 100 ml, needles and oxygen. Insulin pens need no certificate; easyJet cannot refrigerate medication. Checked 17 October 2026.',
+    answer: 'Yes. easyJet says to pack medication in your cabin bag. A letter from your healthcare practitioner is only needed for liquids over 100 ml, sharp objects such as needles, oxygen cylinders and concentrators, and medical equipment that counts as dangerous goods. Insulin pens need no certificate. easyJet cannot refrigerate medication.',
+    srcNote: 'From easyJet\'s own medical page, last checked 17 October 2026. Rules change, so confirm with the airline before you fly.',
+    scen: [
+      card('pills', 'Pills & tablets', 'go', 'Allowed, no letter', 'Pack it in your cabin bag', 'easyJet says to pack medication in your cabin bag wherever possible. No letter is needed for pills.', [
+        'easyJet: if you pack medicines in hold luggage it does not require a letter from your healthcare practitioner, but advises you to pack medication in your hand luggage where possible, especially medication you may need during the flight.',
+        'easyJet: a letter from your healthcare practitioner is only required for liquids over 100 ml, sharp objects such as needles, oxygen cylinders and concentrators, and medical equipment that may be dangerous goods in the cabin.'
+      ], [PG], true),
+      card('liquids', 'Liquid medication', 'warn', 'Letter needed over 100 ml', 'Over 100 ml (3.4 oz)', 'easyJet requires a letter from your healthcare practitioner for liquids over 100 ml.', [
+        'easyJet: the letter should confirm that the medication is prescribed to you and that it is necessary for you to bring the items on board.',
+        'easyJet does not require a letter for gel packs and cooler bags used to keep your medication cool.'
+      ], [PG]),
+      card('needles', 'Insulin & syringes', 'warn', 'Letter or certificate needed', 'Needles, syringes, insulin pens', 'Insulin pens need no certificate; needles need a letter and must be self-administered.', [
+        'easyJet: diabetic insulin pens are permitted for travel without a medical certificate.',
+        'easyJet: hypodermic needles are allowed in the cabin for medical purposes only. You must show your medical certificate at the security screening points.',
+        'easyJet: keep enough insulin in your cabin baggage, because insulin may be inactivated if carried in the hold due to freezing temperatures.',
+        'easyJet: if you need an injection during the flight it must be self-administered. Cabin crew are not allowed to administer any medication or injections. Tell the crew if you need to use a needle so they can arrange a sharps box.'
+      ], [PG]),
+      card('cold', 'Cold medication', 'warn', 'Bring gel packs', 'Medication that must stay cold', 'easyJet cannot refrigerate medication, but allows gel packs and cooler bags without a letter.', [
+        'easyJet: it is unable to refrigerate medication on board.',
+        'easyJet: you do not need a letter from your healthcare practitioner for gel packs and cooler bags used to maintain the temperature of your medication.'
+      ], [PG]),
+      card('devices', 'Medical equipment', 'warn', 'Tell easyJet 48 hours ahead', 'CPAP, nebuliser, dialysis, other devices', 'Small portable medical devices can be carried on top of your cabin allowance if you tell easyJet in advance.', [
+        'easyJet: portable medical devices such as CPAP machines, TENS machines, nebulisers and portable dialysis machines can be carried in addition to your cabin bag allowance, if no larger than 56 x 45 x 25 cm and you told the Special Assistance Team at least 48 hours before your flight.',
+        'easyJet: larger or several devices: contact the Special Assistance team at least 48 hours before your flight. Non-essential medical equipment over your cabin allowance is charged under the baggage policy.',
+        'easyJet: nebulisers are permitted in cabin baggage provided they do not contain oxygen cylinders; keep inhalers in your cabin baggage.'
+      ], [PG]),
+      card('controlled', 'Controlled drugs', 'warn', 'Prove it is yours', 'Diazepam, lorazepam, codeine, tramadol', 'Medication with a controlled drug needs a prescription or doctor\'s letter, and may be restricted at your destination.', [
+        'easyJet: check with your doctor or pharmacist if your prescription contains a controlled drug, such as diazepam, lorazepam, codeine or tramadol: some countries have strict laws on these.',
+        'easyJet: check the embassy rules and entry requirements of the country you are travelling to before you fly. You will need to prove the medication is yours, with a prescription or a letter from your doctor.'
+      ], [PG]),
+      card('abroad', 'Flying abroad', 'warn', 'Check the destination', 'International flights', 'Your destination country sets its own medication rules.', ABROAD_LINES, [PG])
+    ],
+    faq: [
+      ['Can I bring medication on an easyJet flight?', 'Yes. easyJet says to pack medication in your cabin bag wherever possible. You do not need a letter for medicines in the hold, but easyJet advises carrying them in hand luggage, especially if you may need them during the flight.'],
+      ['Do I need a doctor\'s letter for medication on easyJet?', 'Only for liquids over 100 ml, sharp objects such as needles, oxygen cylinders and concentrators, and medical equipment that may be considered dangerous goods in the cabin. The letter should confirm the items are prescribed to you and necessary on board.'],
+      ['Can I bring insulin pens on easyJet?', 'Yes. easyJet says diabetic insulin pens are permitted for travel without a medical certificate. Keep insulin in your cabin baggage: it may be inactivated by freezing temperatures in the hold.'],
+      ['Does easyJet refrigerate medication?', 'No. easyJet is unable to refrigerate medication on board. Gel packs and cooler bags to keep your medication cool do not need a letter.'],
+      ['Can I bring a CPAP machine on easyJet?', 'Yes. easyJet says CPAP machines, nebulisers, TENS machines and portable dialysis machines can be carried in addition to your cabin allowance if no larger than 56 x 45 x 25 cm and you told the Special Assistance Team at least 48 hours before your flight.']
+    ],
+    tableTitle: 'easyJet medication rules at a glance',
+    tableNote: 'What easyJet\'s own medical page says.',
+    rows: [
+      ['Where should medication go?', 'Cabin bag where possible. No letter if it goes in the hold'],
+      ['When is a doctor\'s letter needed?', 'Liquids over 100 ml, needles, oxygen, dangerous-goods equipment'],
+      ['Insulin pens?', 'Allowed without a certificate. Keep them in the cabin'],
+      ['Fridge on board?', 'No. Gel packs and cooler bags allowed without a letter'],
+      ['Portable medical devices?', 'Extra to cabin allowance up to 56 x 45 x 25 cm, 48 hours notice'],
+      ['Injections in flight?', 'Self-administered. Crew will not give them']
+    ],
+    extra: steps(['Pack medication in your cabin bag, with enough insulin for the whole trip.', 'Get a letter from your healthcare practitioner if you carry liquids over 100 ml, needles or oxygen.', 'Bring gel packs or a cooler bag for medication that must stay cold.', 'Tell the Special Assistance Team at least 48 hours ahead if you bring a CPAP, nebuliser or dialysis machine on top of your cabin allowance.', 'Using a needle in flight? Tell the crew for a sharps box.'])
+  });
+}
+
+// ---------------- AIR FRANCE ----------------
+// Read 17 October 2026 on wwws.airfrance.us: Aerosol products, toiletries and medication; Liquids, creams; Health and well-being.
+{
+  const HW = ['https://wwws.airfrance.us/information/aeroport/sante-et-bien-etre', 'Air France: Health and well-being', 'Travelling with medication'];
+  const LQ = ['https://wwws.airfrance.us/information/bagages/popin_produits-interdits-et-reglementes/produits-interdits-et-reglementes-11', 'Air France: Liquids, creams', 'Medication exception'];
+  const AE = ['https://wwws.airfrance.us/information/bagages/popin_produits-interdits-et-reglementes/produits-interdits-et-reglementes-1', 'Air France: Aerosol products, toiletries and medication', 'Quantity limits'];
+  add({
+    slug: 'air-france', name: 'Air France',
+    h1: 'Air France Medication Policy: Medicines in Hand Baggage, Liquids & Prescriptions (2026)',
+    desc: 'Can you bring medication on Air France? Yes, in your hand baggage with the prescription. Medication with a prescription or doctor\'s statement is exempt from the cabin liquid limit. Checked 17 October 2026.',
+    answer: 'Yes. Air France says to place all your medication in your hand baggage with the prescriptions stating their precise names. Medication needed during the flight is allowed without restriction in the cabin liquids rule if you have a prescription or a statement from your doctor.',
+    srcNote: 'From Air France\'s own pages, last checked 17 October 2026 (US version of the pages). Rules change, so confirm with the airline before you fly.',
+    scen: [
+      card('pills', 'Pills & tablets', 'go', 'Hand baggage with prescription', 'Keep it within reach', 'Air France says to put all medication in your hand baggage with the prescriptions, which name the drugs precisely.', [
+        'Air France: if you need medication during your flight, place all your medication in your hand baggage along with the prescriptions stating their precise names. Keep this document within easy reach.',
+        'Air France recommends consulting your doctor before travelling if you are receiving medical treatment or have a chronic illness.'
+      ], [HW], true),
+      card('liquids', 'Liquid medication', 'go', 'Allowed with prescription', 'Over 100 ml (3.4 oz)', 'Medication with a prescription or a doctor\'s statement is allowed in the cabin without the liquid restriction.', [
+        'Air France: liquids, creams and pastes are allowed in the cabin in containers of 100 ml (3.3 oz) maximum each, in one clear plastic bag of up to 1 L.',
+        'Air France exceptions: if necessary during your flight, medication with a prescription or a statement from your doctor, baby food and food for a specific dietary regimen are allowed without restrictions.',
+        'Air France: toiletries and non-radioactive medication (including aerosol products) are limited to 2 kg or 2 L in total per person, and each item to 0.5 kg or 500 ml. These quantities do not take the cabin liquid rule into account.'
+      ], [LQ, AE]),
+      card('needles', 'Insulin & syringes', 'warn', 'Not published', 'Needles, syringes, injections', 'The Air France pages we read do not state a rule for syringes or insulin.', [
+        'Air France\'s health page has separate entries for insulin and syringes, but their text did not display when we read the page, so we do not state them here.',
+        'Air France advises carrying prescriptions that state the precise names of your medication.'
+      ], [HW]),
+      card('cold', 'Cold medication', 'warn', 'Not published', 'Medication that must stay cold', 'Air France\'s pages we read do not say whether it can store medication cold.', [
+        'Air France\'s pages we read do not say whether crew can chill or store medication, so plan to carry your own cooling.'
+      ], [HW]),
+      card('abroad', 'Flying abroad', 'warn', 'Check the destination', 'International flights', 'Your destination country sets its own medication rules.', ABROAD_LINES, [HW])
+    ],
+    faq: [
+      ['Can I bring medication on an Air France flight?', 'Yes. Air France says to place all your medication in your hand baggage along with the prescriptions stating their precise names, and to keep this document within easy reach.'],
+      ['Can I bring liquid medication over 100 ml on Air France?', 'Yes, if it is necessary during your flight and you have a prescription or a statement from your doctor. Air France lists medication with a prescription or doctor\'s statement as an exception to the 100 ml cabin liquid limit.'],
+      ['Is there a quantity limit for medication on Air France?', 'Air France limits the net total of toiletries, non-radioactive medication and aerosol products to 2 kg or 2 L per person, with each item at most 0.5 kg or 500 ml. These quantities are separate from the cabin liquids restriction.']
+    ],
+    tableTitle: 'Air France medication rules at a glance',
+    tableNote: 'What Air France\'s own pages say. Where Air France is silent we say so.',
+    rows: [
+      ['Where should medication go?', 'Hand baggage, with the prescription'],
+      ['Can it be over 100 ml?', 'Yes with a prescription or doctor\'s statement'],
+      ['Quantity limit?', 'Toiletries and medication: 2 kg or 2 L total, 0.5 kg or 500 ml each'],
+      ['Needles and syringes?', NP],
+      ['Fridge or cooler on board?', NP]
+    ],
+    extra: steps(['Put all medication in your hand baggage with the prescription that names the drugs precisely.', 'Keep the prescription or a doctor\'s statement within easy reach for security.', 'Check the limits for medication and toiletries: 2 kg or 2 L in total per person.'])
+  });
+}
+
+// ---------------- TURKISH AIRLINES ----------------
+// Read 17 October 2026 on turkishairlines.com: Special Assistance Services for Passengers; Valuables (baggage information).
+{
+  const SA = ['https://www.turkishairlines.com/en-es/any-questions/special-assistance-for-passengers/', 'Turkish Airlines: Special assistance services for passengers', 'Medications'];
+  const VA = ['https://www.turkishairlines.com/en-us/any-questions/baggage-information/valuables/', 'Turkish Airlines: Valuables', 'Medicines in hand baggage'];
+  add({
+    slug: 'turkish-airlines', name: 'Turkish Airlines',
+    h1: 'Turkish Airlines Medication Policy: Medicines in Hand Baggage, Diabetes & Liquids (2026)',
+    desc: 'Can you bring medication on Turkish Airlines? Yes, in your hand baggage. Passengers with diabetes can take their medication without a report; for other conditions keep your prescription. Checked 17 October 2026.',
+    answer: 'Yes. Turkish Airlines says to carry medicines you may need during or right after the flight in your hand baggage and to try to keep liquid medicine under 100 ml. Passengers with diabetes can take their medication without a report; passengers with other conditions must keep their prescriptions with them.',
+    srcNote: 'From Turkish Airlines\' own pages, last checked 17 October 2026. Rules change, so confirm with the airline before you fly.',
+    scen: [
+      card('pills', 'Pills & tablets', 'go', 'Hand baggage', 'Carry them with you', 'Turkish Airlines says to carry medicines you may need during or right after your flight in your hand baggage.', [
+        'Turkish Airlines: carry the medicines you may need during or right after your flight in your hand baggage so you can reach them whenever you need.',
+        'Passengers with medical conditions other than diabetes who must take medication during the flight must keep their prescriptions with them.'
+      ], [VA, SA], true),
+      card('liquids', 'Liquid medication', 'warn', 'Try to stay under 100 ml', 'Over 100 ml (3.4 oz)', 'Turkish Airlines asks you to try to keep liquid medicine under 100 ml.', [
+        'Turkish Airlines: also try to limit the amount of your liquid medicine to under 100 ml.',
+        'Its pages we read do not say what happens with larger medically necessary amounts, so check the security rules of the airport you fly from.'
+      ], [VA]),
+      card('needles', 'Insulin & diabetes', 'go', 'No report needed', 'Passengers with diabetes', 'Passengers with diabetes may take their medication without producing a report.', [
+        'Turkish Airlines: passengers with diabetes may take their relevant medications without producing a report.',
+        'Turkish Airlines\' pages we read give no separate rule for syringes or needles.'
+      ], [SA]),
+      card('cold', 'Cold medication', 'warn', 'Not published', 'Medication that must stay cold', 'Turkish Airlines\' pages we read do not say whether it can store medication cold.', [
+        'The pages we read do not say whether crew can chill or store medication, so plan to carry your own cooling.'
+      ], [VA]),
+      card('allergy', 'Allergy medication', 'warn', 'Carry your own', 'Epinephrine auto-injectors', 'Passengers must carry their own allergy medication with its prescription.', [
+        'Turkish Airlines: passengers must carry their own medication (for example an epinephrine auto-injector) along with the prescription.',
+        'Passengers at risk of a severe allergic reaction must travel with a companion who can help give medication in an emergency.'
+      ], [SA]),
+      card('abroad', 'Flying abroad', 'warn', 'Check the destination', 'International flights', 'Your destination country sets its own medication rules.', ABROAD_LINES, [VA])
+    ],
+    faq: [
+      ['Can I bring medication on a Turkish Airlines flight?', 'Yes. Turkish Airlines says to carry medicines you may need during or right after your flight in your hand baggage, and to try to keep liquid medicine under 100 ml.'],
+      ['Do I need a report for diabetes medication on Turkish Airlines?', 'No. Turkish Airlines says passengers with diabetes may take their relevant medications without producing a report. Passengers with other conditions who need medication during the flight must keep their prescriptions with them.'],
+      ['Should I carry an epinephrine auto-injector on Turkish Airlines?', 'Yes. Turkish Airlines says passengers must carry their own medication, such as an epinephrine auto-injector, together with the prescription, and passengers at risk of a severe allergic reaction must travel with a companion who can help.']
+    ],
+    tableTitle: 'Turkish Airlines medication rules at a glance',
+    tableNote: 'What Turkish Airlines\' own pages say. Where it is silent we say so.',
+    rows: [
+      ['Where should medication go?', 'Hand baggage'],
+      ['Can it be over 100 ml?', 'Try to keep liquid medicine under 100 ml'],
+      ['Diabetes medication?', 'No report needed'],
+      ['Other conditions?', 'Keep the prescription with you'],
+      ['Needles and syringes?', NP],
+      ['Fridge or cooler on board?', NP]
+    ],
+    extra: steps(['Put the medicines you may need in your hand baggage.', 'Keep your prescription with you if you take medication other than for diabetes.', 'Keep liquid medicine under 100 ml where you can.', 'Carry your own epinephrine auto-injector if you have a severe allergy.'])
   });
 }
 

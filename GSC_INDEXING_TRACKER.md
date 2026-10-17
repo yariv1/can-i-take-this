@@ -305,3 +305,10 @@ Pilot check 2026-11-14 (impressions/clicks vs Wi-Fi pilot). Alaska Airlines not 
 6. https://canitakethis.co/airline/emirates/medication/
 7. https://canitakethis.co/airline/air-canada/medication/
 8. https://canitakethis.co/airline/lufthansa/medication/
+
+## 2026-10-17 airline Medication pilot, batch 3 — TO REQUEST (not yet requested; not yet deployed)
+9. https://canitakethis.co/airline/jetblue/medication/
+10. https://canitakethis.co/airline/klm/medication/
+11. https://canitakethis.co/airline/easyjet/medication/
+12. https://canitakethis.co/airline/air-france/medication/
+13. https://canitakethis.co/airline/turkish-airlines/medication/
