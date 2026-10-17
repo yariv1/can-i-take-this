@@ -31,13 +31,13 @@ module.exports = {
         ['Electronic device', 'One device you are currently using'],
         ['Heated tobacco products', 'Up to 200 pieces'],
         ['Cartridges or e-liquid', 'Up to 30 ml in total'],
-        ['Disposable e-cigarettes', 'Up to 3 pieces (Circular 2024/18, 19.09.2024, replaced the original limit of 10)']
+        ['Disposable e-cigarettes', 'Up to 3 pieces (Circular 2024/18 replaced the original limit of 10)']
       ] },
       list: ['<strong>Choose one:</strong> the circular allows 200 heated tobacco products, or 30 ml of cartridges or liquid, or the disposable limit, in addition to the one device you are using.', '<strong>Ordinary tobacco is separate:</strong> the Ministry of Trade traveller guide lets an adult bring 600 cigarettes, 100 cigarillos, 50 cigars, 250 g of cut tobacco or 250 g of pipe tobacco duty-free. Nothing there covers vapes.', '<strong>Over the limit:</strong> the circular gives no exemption for a bigger stock, so extra devices or liquid can be refused at customs. Check the current text with Turkish customs before you travel.']
     }],
     faq: [
       ['Can I bring a vape into Turkey?', 'Yes, in small amounts. An adult passenger (18 or over) may bring one e-cigarette device that they are currently using, plus up to 30 ml of cartridges or e-liquid, or up to 3 disposable e-cigarettes, or up to 200 heated tobacco products, under Ministry of Trade Circular 2020/7 as amended by 2024/18. Anything beyond that has no customs exemption.'],
-      ['How many disposable vapes can I bring to Turkey?', 'Up to 3. Circular 2020/7 originally said 10; Circular 2024/18 of 19 September 2024 changed it to 3.'],
+      ['How many disposable vapes can I bring to Turkey?', 'Up to 3. Circular 2020/7 originally said 10; Circular 2024/18 changed it to 3.'],
       ['How much e-liquid can I bring into Turkey?', 'Up to 30 ml of cartridges or solution in total, for passengers aged 18 or over, according to Circular 2020/7.'],
       ['How many cigarettes can I bring into Turkey?', 'Duty-free, 600 cigarettes (or 100 cigarillos, 50 cigars, 250 g of cut tobacco or 250 g of pipe tobacco) for an adult, according to the Ministry of Trade customs guide.']
     ],
