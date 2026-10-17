@@ -377,3 +377,8 @@ Pilot check 2026-11-14 (impressions/clicks vs Wi-Fi pilot). Alaska Airlines not 
 37. https://canitakethis.co/pets/norway/
 38. https://canitakethis.co/pets/slovenia/
 39. https://canitakethis.co/pets/lithuania/
+40. https://canitakethis.co/pets/united-kingdom/
+41. https://canitakethis.co/pets/singapore/
+42. https://canitakethis.co/pets/united-states/
+43. https://canitakethis.co/pets/australia/
+44. https://canitakethis.co/pets/new-zealand/
