@@ -37,3 +37,8 @@ html body .pass .help{margin-top:23px}
 /* 12. PREVIEW (not yet a DS rule): card footer line names the source status in the same capital label as 8.21. */
 html body .pass .src b.src-ok{color:var(--tg-green);letter-spacing:1.2px}
 html body .pass .src b.src-no,html body .pass .src b.src-un{color:var(--tg-amber);letter-spacing:1.2px}
+
+/* DS 8.29: animal tag (Dog / Cat / Small dog) is blue so it stands out next to the amber rule tag */
+:root,[data-theme="dark"]{--tg-blue:#4CC2FF}
+[data-theme="light"]{--tg-blue:#0B6CB3}
+html body .tag.tag-blue{background:rgba(76,194,255,.16);color:var(--tg-blue);font-weight:700}
