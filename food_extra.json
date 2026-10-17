@@ -2157,5 +2157,229 @@
     ]
    }
   ]
+ },
+ "Chile": {
+  "checked": "17 October 2026",
+  "answer": "Chile's Agricultural and Livestock Service (SAG) says everyone entering Chile, Chilean or foreign, must declare under oath every plant or animal product they carry in clothing, luggage or transport, whatever the quantity and however long ago they got it. A SAG inspector then decides whether each item may enter. You file the digital sworn declaration at Santiago airport or at land border controls.",
+  "sources": [
+   [
+    "https://www.sag.gob.cl/ambitos-de-accion/ingreso-chile",
+    "SAG (Servicio Agrícola y Ganadero) — Entering Chile: sworn declaration"
+   ]
+  ],
+  "faq": [
+   [
+    "Do I have to declare food when entering Chile?",
+    "Yes. SAG says everyone entering Chile must declare, individually and under oath, the plant and animal products they carry, regardless of quantity or how long ago they obtained them. Only commercial cargo is exempt from this declaration."
+   ],
+   [
+    "Who decides whether my food can enter Chile?",
+    "A SAG inspector evaluates each declared item. Declaring does not by itself mean the product is allowed."
+   ],
+   [
+    "Where do I file the declaration?",
+    "The digital sworn declaration (Declaración Jurada Digital) is filed at Arturo Merino Benítez Airport (SCL) or at land border controls."
+   ],
+   [
+    "What if I am not sure whether something needs declaring?",
+    "Ask a SAG inspector before submitting, call +56 2 2345 1100, or use the SAG contact form."
+   ]
+  ],
+  "topics": [
+   {
+    "id": "declare",
+    "label": "Declare everything",
+    "status": "warn",
+    "verdict": "Declare it",
+    "head": "Declare every plant or animal product under oath, whatever the quantity.",
+    "scen": [
+     {
+      "when": "Sworn declaration",
+      "status": "warn",
+      "tag": "Declare it",
+      "lines": [
+       "Everyone entering, including Chileans, foreigners, diplomats and officials, declares individually under oath on the sworn declaration form.",
+       "It covers plant and animal products, parts and by-products in your clothing, luggage or transport, unless the goods are commercial cargo."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "steps",
+    "label": "How to declare",
+    "status": "warn",
+    "verdict": "Digital form",
+    "head": "File the digital declaration, then hand declared items to the SAG inspector.",
+    "scen": [
+     {
+      "when": "Steps",
+      "status": "warn",
+      "tag": "Do this",
+      "lines": [
+       "File the Declaración Jurada Digital at Arturo Merino Benítez Airport (SCL) or at land border controls.",
+       "Hand over declared items for inspection; the SAG inspector decides whether each may enter. Vehicles and other transport are inspected after migration and customs control."
+      ]
+     },
+     {
+      "when": "If unsure",
+      "status": "go",
+      "tag": "Ask",
+      "lines": [
+       "Ask an SAG inspector before submitting, call +56 2 2345 1100, or use the SAG contact form."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "why",
+    "label": "Why it matters",
+    "status": "warn",
+    "verdict": "Protects exports",
+    "head": "Undeclared products could harm national production and export markets.",
+    "scen": [
+     {
+      "when": "SAG’s warning",
+      "status": "warn",
+      "tag": "Declare it",
+      "lines": [
+       "SAG says undeclared products could harm national production, possibly requiring eradication or control plans, causing major economic losses and reducing the trust of export markets."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "notread",
+    "label": "Not read",
+    "status": "warn",
+    "verdict": "Ask SAG",
+    "head": "The page lists no prohibited foods and gives no fine amounts.",
+    "scen": [
+     {
+      "when": "What we could not confirm",
+      "status": "warn",
+      "tag": "Ask first",
+      "lines": [
+       "This page does not list prohibited items such as fruit, meat or dairy, and gives no fine amounts. Ask SAG at +56 2 2345 1100 before you bring any of them."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "Thailand": {
+  "checked": "17 October 2026",
+  "answer": "Suvarnabhumi Airport's plant import guide, based on Thailand's plant quarantine rules, says fresh fruits from all countries are banned, as are seeds and cuttings, soil, organic fertiliser and animal pests. Fresh vegetables, ornamental plants, seeds and grains, dried tea leaves, fresh coffee beans and mushrooms may come in only if declared to a plant quarantine officer with a phytosanitary certificate. Violations can mean up to one year in prison or a fine of up to 20,000 THB.",
+  "sources": [
+   [
+    "https://suvarnabhumi.airportthai.co.th/service/airport-guide/detail/ProhibitedPlantforImport",
+    "Suvarnabhumi Airport (Airports of Thailand) — Prohibited plants for import"
+   ]
+  ],
+  "faq": [
+   [
+    "Can I bring fresh fruit into Thailand?",
+    "The airport guide lists fresh fruits from all countries as banned, with kiwi, orange and banana as examples. Some frozen fruit is exempt, for example frozen kiwi below -17.8°C from any country."
+   ],
+   [
+    "Can I bring vegetables, tea or coffee into Thailand?",
+    "Fresh vegetables, ornamental plants, seeds or grains, dried tea leaves, fresh coffee beans and mushrooms may be brought if declared to a plant quarantine officer with a phytosanitary certificate and found free from pests and disease."
+   ],
+   [
+    "What is the penalty?",
+    "Under Section 21, imprisonment for up to one year or a fine of up to 20,000 THB, or both."
+   ],
+   [
+    "Which documents are needed for plant imports?",
+    "Form P.Q.5 (declaration), P.Q. 2-1 (permit for prohibited articles), a controlled seed licence if applicable, a CITES permit if applicable, and a phytosanitary certificate from the country of origin."
+   ]
+  ],
+  "topics": [
+   {
+    "id": "fruit",
+    "label": "Fresh fruit",
+    "status": "stop",
+    "verdict": "Banned",
+    "head": "Fresh fruits from all countries are banned.",
+    "scen": [
+     {
+      "when": "Fresh fruit",
+      "status": "stop",
+      "tag": "Not allowed",
+      "lines": [
+       "Fresh fruits from all countries are banned, including kiwi, orange and banana.",
+       "Some frozen fruit is exempt: for example frozen kiwi at a temperature below -17.8°C is allowed from any country."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "veg",
+    "label": "Veg, tea & coffee",
+    "status": "warn",
+    "verdict": "Declare + certificate",
+    "head": "Allowed only if declared with a phytosanitary certificate.",
+    "scen": [
+     {
+      "when": "To a plant quarantine officer",
+      "status": "warn",
+      "tag": "Certificate needed",
+      "lines": [
+       "Fresh vegetables, ornamental plants, seeds or grains, dried tea leaves, fresh coffee beans and mushrooms may be brought in if declared to a plant quarantine officer, with a phytosanitary certificate, and found free from pests and diseases."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "plants",
+    "label": "Seeds, soil & plants",
+    "status": "stop",
+    "verdict": "Banned",
+    "head": "Seeds, cuttings, soil, organic fertiliser and animal pests are prohibited.",
+    "scen": [
+     {
+      "when": "Prohibited items",
+      "status": "stop",
+      "tag": "Not allowed",
+      "lines": [
+       "Propagating materials such as seeds and cuttings, soil, organic fertiliser and animal pests are on the prohibited list.",
+       "Restricted plants such as mango, apple, grape and some seeds are listed in a table with approved origin countries and required documents."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "docs",
+    "label": "Documents & fines",
+    "status": "stop",
+    "verdict": "Up to 20,000 THB",
+    "head": "Violations can mean up to one year in prison or a 20,000 THB fine.",
+    "scen": [
+     {
+      "when": "Papers for imports",
+      "status": "warn",
+      "tag": "Check first",
+      "lines": [
+       "Form P.Q.5 (declaration), P.Q. 2-1 (permit for prohibited articles), P.P.5 (controlled seed licence), a CITES permit where it applies, and a phytosanitary certificate from the country of origin."
+      ]
+     },
+     {
+      "when": "Penalty",
+      "status": "stop",
+      "tag": "Prison or fine",
+      "lines": [
+       "Section 21: imprisonment for up to one year or a fine of up to 20,000 THB, or both."
+      ]
+     },
+     {
+      "when": "Not read",
+      "status": "warn",
+      "tag": "Ask first",
+      "lines": [
+       "This airport page covers plants only; it does not cover meat, dairy or fish. Ask the Department of Livestock Development before you bring animal products."
+      ]
+     }
+    ]
+   }
+  ]
  }
 }
