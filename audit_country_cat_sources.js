@@ -8,7 +8,9 @@ const OK_SAME = { 'taiwan/vaping': 1, 'turkey/vaping': 1,
   // A-M pages read in full 2026-10-17: the cited page itself states the plant or vape rule
   'iceland/plants-seeds': 1, 'india/plants-seeds': 1, 'kenya/plants-seeds': 1, 'maldives/plants-seeds': 1, 'georgia/plants-seeds': 1, 'georgia/vaping': 1, 'morocco/plants-seeds': 1, 'israel/plants-seeds': 1, 'egypt/vaping': 1,
   // read in full 2026-10-18: the GACC passenger guide itself states the plant rule (red channel, fruit/soil banned)
-  'china/plants-seeds': 1 };
+  'china/plants-seeds': 1,
+  // vaping pages read in full 2026-10-18: the cited customs page itself states the e-cigarette / vaping-liquid rule
+  'canada/vaping': 1, 'south-korea/vaping': 1, 'switzerland/vaping': 1 };
 for (const c of fs.readdirSync('country')) {
   if (!fs.existsSync(path.join('country', c, 'alcohol'))) continue;
   const base = new Set(); for (const k of ['alcohol', 'tobacco', 'cash']) links(c + '/' + k).forEach(u => base.add(u));

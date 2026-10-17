@@ -424,3 +424,20 @@ Pilot check 2026-11-14 (impressions/clicks vs Wi-Fi pilot). Alaska Airlines not 
 12. https://canitakethis.co/country/israel/plants-seeds/
 13. https://canitakethis.co/country/maldives/plants-seeds/
 14. https://canitakethis.co/country/turkey/plants-seeds/
+
+## Country vaping pages with a national-source section (session 35, 2026-10-18): OPTIONAL re-index requests, not deployed yet
+1. https://canitakethis.co/country/singapore/vaping/
+2. https://canitakethis.co/country/united-kingdom/vaping/
+3. https://canitakethis.co/country/canada/vaping/
+4. https://canitakethis.co/country/norway/vaping/
+5. https://canitakethis.co/country/brazil/vaping/
+6. https://canitakethis.co/country/mexico/vaping/
+7. https://canitakethis.co/country/india/vaping/
+8. https://canitakethis.co/country/thailand/vaping/
+9. https://canitakethis.co/country/switzerland/vaping/
+10. https://canitakethis.co/country/united-arab-emirates/vaping/
+11. https://canitakethis.co/country/australia/vaping/
+12. https://canitakethis.co/country/sweden/vaping/
+13. https://canitakethis.co/country/south-korea/vaping/
+14. https://canitakethis.co/country/mauritius/vaping/
+15. https://canitakethis.co/country/iceland/vaping/

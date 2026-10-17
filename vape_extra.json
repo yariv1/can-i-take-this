@@ -1,0 +1,1003 @@
+{
+ "SG": {
+  "sections": [
+   {
+    "h": "🛃 What Singapore's health authority says about bringing e-vaporisers",
+    "p": "Singapore's Health Sciences Authority (HSA) statement of 1 August 2024 on enforcement against e-vaporisers says the following.",
+    "table": {
+     "head": [
+      "Item",
+      "What HSA says"
+     ],
+     "rows": [
+      [
+       "Travellers",
+       "It is illegal to bring e-vaporisers into Singapore; travellers found with them or their components are fined and the items are seized"
+      ],
+      [
+       "Possession, use or purchase",
+       "Maximum fine of $2,000"
+      ],
+      [
+       "Import, distribution or sale",
+       "First offence: fine up to $10,000, or up to 6 months in prison, or both"
+      ],
+      [
+       "Repeat offence",
+       "Fine up to $20,000, or up to 12 months in prison, or both"
+      ],
+      [
+       "Foreigners",
+       "Those convicted are deported and barred from re-entering Singapore"
+      ],
+      [
+       "Transport companies and drivers",
+       "Face enforcement action if they bring prohibited tobacco products in"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>Not read:</strong> the HSA statement does not describe the declaration channel at the border or an exemption for small amounts, so assume none and leave the device at home."
+    ]
+   }
+  ],
+  "faq": [
+   [
+    "Can I bring a vape into Singapore?",
+    "No. HSA says it is illegal for travellers to bring e-vaporisers into Singapore, and travellers found with them or their components are fined and the items are seized."
+   ],
+   [
+    "What is the fine for vaping in Singapore?",
+    "HSA lists a maximum fine of $2,000 for possession, use or purchase of e-vaporisers; importing, distributing or selling carries up to $10,000 or 6 months in prison for a first offence."
+   ],
+   [
+    "Can a tourist be deported for e-vaporisers in Singapore?",
+    "HSA says convicted foreigners will be deported and barred from re-entering Singapore."
+   ]
+  ],
+  "src": [
+   [
+    "https://www.hsa.gov.sg/announcements/update-on-stepped-up-enforcement-against-e-vaporisers-and-education-efforts/",
+    "HSA &mdash; Update on stepped up enforcement against e-vaporisers (1 Aug 2024)"
+   ]
+  ],
+  "keepSchema": true,
+  "card": {
+   "status": "stop",
+   "head": "Banned: do not bring a vape.",
+   "lines": [
+    "Singapore's HSA says travellers with e-vaporisers or parts are fined and the items seized; convicted foreigners can be deported."
+   ]
+  }
+ },
+ "GB": {
+  "sections": [
+   {
+    "h": "🛃 What HM Revenue and Customs says about bringing vaping liquid",
+    "p": "GOV.UK's guidance on bringing goods into Great Britain for personal use says the following about vaping products.",
+    "table": {
+     "head": [
+      "Item",
+      "What GOV.UK says"
+     ],
+     "rows": [
+      [
+       "Vaping liquid allowance",
+       "Up to 50ml of vaping liquid can be brought in"
+      ],
+      [
+       "Over the allowance",
+       "Vaping products above your allowance must be declared"
+      ],
+      [
+       "Under 17",
+       "No personal allowance for vaping products; you can still bring them for your own use but must declare them before you arrive"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>Not on the page:</strong> the guidance page we read does not mention nicotine strength, device limits or the Vaping Products Duty that starts on 1 October 2026; check GOV.UK for the current duty rules before you travel."
+    ]
+   }
+  ],
+  "faq": [
+   [
+    "How much vaping liquid can I bring into the UK?",
+    "GOV.UK says you can bring up to 50ml of vaping liquid when arriving in Great Britain; anything above your allowance must be declared."
+   ],
+   [
+    "Can under-17s bring vapes into the UK?",
+    "GOV.UK says there is no personal allowance for vaping products if you are under 17, but you can bring them for your own use if you declare them before arrival."
+   ]
+  ],
+  "src": [
+   [
+    "https://www.gov.uk/bringing-goods-into-uk-personal-use/arriving-in-Great-Britain",
+    "GOV.UK &mdash; Bringing goods into the UK for personal use: arriving in Great Britain"
+   ]
+  ],
+  "keepSchema": true,
+  "card": {
+   "status": "warn",
+   "head": "Up to 50ml of vaping liquid.",
+   "lines": [
+    "Declare anything above your allowance; under-17s have no allowance but may bring it for their own use if declared."
+   ]
+  }
+ },
+ "CA": {
+  "sections": [
+   {
+    "h": "🛃 What the Canada Border Services Agency says visitors can bring",
+    "p": "The CBSA page \"What visitors can bring into Canada\" says the following about vaping products.",
+    "table": {
+     "head": [
+      "Item",
+      "What CBSA says"
+     ],
+     "rows": [
+      [
+       "Declaration",
+       "Non-residents and temporary residents must declare all vaping products they carry when entering Canada"
+      ],
+      [
+       "Minimum age",
+       "18, wherever you enter Canada"
+      ],
+      [
+       "Quantity limit",
+       "12 vaping containers or fewer, with a maximum of 120 millilitres (liquid) or 120 grams (solid) per container"
+      ],
+      [
+       "Duties and taxes",
+       "You may have to pay duties and taxes on declared vaping products and should be ready to pay them on any quantity you declare"
+      ],
+      [
+       "More than the limit",
+       "You may need a permit from the provincial or territorial authority for amounts over the limits"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>Not read:</strong> the CBSA page does not mention excise stamps or nicotine strength; its link \"Importing vaping products\" covers the rest."
+    ]
+   }
+  ],
+  "faq": [
+   [
+    "How many vapes can I bring into Canada?",
+    "CBSA says visitors can bring 12 vaping containers or fewer, with a maximum of 120 millilitres of liquid or 120 grams of solid per container, and must declare them."
+   ],
+   [
+    "Do I have to declare a vape at the Canadian border?",
+    "Yes. Non-residents and temporary residents must declare all alcohol, tobacco and vaping products they have with them."
+   ],
+   [
+    "What age do you need to bring a vape into Canada?",
+    "CBSA lists a minimum age of 18 anywhere you enter Canada."
+   ]
+  ],
+  "src": [
+   [
+    "https://www.cbsa-asfc.gc.ca/travel-voyage/bring-apporter-eng.html",
+    "CBSA &mdash; What visitors can bring into Canada"
+   ]
+  ],
+  "keepSchema": true,
+  "card": {
+   "status": "warn",
+   "head": "Declare it: up to 12 containers.",
+   "lines": [
+    "CBSA allows 12 vaping containers of at most 120 ml (or 120 g) each for visitors aged 18+, and duties may apply."
+   ]
+  }
+ },
+ "NO": {
+  "sections": [
+   {
+    "h": "🛃 What Norwegian Customs says about private import of vapes",
+    "p": "Norwegian Customs (Tolletaten) says the following on its page about private importation of nicotine and tobacco products.",
+    "table": {
+     "head": [
+      "Item",
+      "What Tolletaten says"
+     ],
+     "rows": [
+      [
+       "Ban from 1 January 2026",
+       "Private individuals may not order cigarettes, snus, vapes and other tobacco and nicotine products from abroad, whether online, by phone, by post or other distance sale"
+      ],
+      [
+       "Prohibited to import",
+       "Vapes and e-cigarettes with nicotine; e-liquid with nicotine; nicotine snus; tobacco products, waterpipe tobacco and heated tobacco; e-cigarettes and e-juice without nicotine that have characterising flavours"
+      ],
+      [
+       "Still allowed",
+       "E-cigarettes without nicotine with tobacco flavour; herbal mixtures and snus without tobacco and nicotine"
+      ],
+      [
+       "Who is affected",
+       "Anyone without a licence to import tobacco products, which in practice means all private individuals"
+      ],
+      [
+       "Medical route",
+       "Nicotine e-cigarettes can still be imported for personal use as smoking-cessation products if medicinal products legislation is met"
+      ],
+      [
+       "If you break the rules",
+       "Customs may detain, confiscate and destroy the goods, and no compensation is paid for destroyed products"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>Not read:</strong> the page we read is about private importation and distance sales; its traveller quotas for tobacco are on a separate Tolletaten page."
+    ]
+   }
+  ],
+  "faq": [
+   [
+    "Can I bring a vape to Norway?",
+    "Tolletaten lists nicotine vapes and nicotine e-liquid among products private individuals may not import from 1 January 2026, apart from nicotine e-cigarettes imported as smoking-cessation products under medicinal products legislation."
+   ],
+   [
+    "Can I bring a non-nicotine vape to Norway?",
+    "E-cigarettes without nicotine and with tobacco flavour are still allowed; non-nicotine e-juice with characterising flavours is on the prohibited list."
+   ],
+   [
+    "What happens to vapes seized by Norwegian customs?",
+    "Customs may detain, confiscate and destroy them, and no compensation is paid."
+   ]
+  ],
+  "src": [
+   [
+    "https://www.toll.no/en/goods/alcohol-and-tobacco/private-importation-of-tobacco-and-snuff",
+    "Tolletaten &mdash; Importation of nicotine and tobacco products for personal use"
+   ]
+  ],
+  "keepSchema": true,
+  "card": {
+   "status": "stop",
+   "head": "Nicotine vapes cannot be imported.",
+   "lines": [
+    "From 1 January 2026 private individuals may not import nicotine vapes or e-liquid, except as smoking-cessation products under medicines law."
+   ]
+  }
+ },
+ "BR": {
+  "sections": [
+   {
+    "h": "🛃 What Anvisa says about bringing e-cigarettes",
+    "p": "Brazil's health regulator Anvisa published its decision of 19 April 2024 to keep the ban on electronic smoking devices.",
+    "table": {
+     "head": [
+      "Item",
+      "What Anvisa says"
+     ],
+     "rows": [
+      [
+       "Scope of the ban",
+       "Manufacture, import, sale, distribution, storage, transport and advertising of all electronic smoking devices, including accessories, parts and refills"
+      ],
+      [
+       "Travellers",
+       "Any form of import is prohibited, including for personal use and in the traveller's hand luggage"
+      ],
+      [
+       "Personal use",
+       "The regulation does not reach individual use; using any smoking device in enclosed collective spaces has been banned since 1996 (Law 9.294/1996)"
+      ],
+      [
+       "Penalties",
+       "Non-compliance is a sanitary infraction: warning, closure, recall and fine, among others, and health authorities notify the Public Prosecutor for possible civil and criminal action"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>Not read:</strong> the Anvisa news page does not give the resolution number, a fine amount or the customs seizure procedure."
+    ]
+   }
+  ],
+  "faq": [
+   [
+    "Can I bring a vape to Brazil?",
+    "No. Anvisa says any form of import is prohibited, including for personal use and in a traveller's hand luggage."
+   ],
+   [
+    "Is it legal to vape in Brazil?",
+    "Anvisa says the ban does not reach individual use, but using any smoking device in enclosed collective spaces has been banned since 1996."
+   ],
+   [
+    "What is the penalty for e-cigarettes in Brazil?",
+    "Anvisa calls non-compliance a sanitary infraction that can bring a warning, closure, recall or fine, and cases can go to the Public Prosecutor."
+   ]
+  ],
+  "src": [
+   [
+    "https://www.gov.br/anvisa/pt-br/assuntos/noticias-anvisa/2024/anvisa-atualiza-regulacao-de-cigarro-eletronico-e-mantem-proibicao",
+    "Anvisa &mdash; Anvisa updates e-cigarette regulation and keeps the ban (19 Apr 2024)"
+   ]
+  ],
+  "keepSchema": true,
+  "card": {
+   "status": "stop",
+   "head": "Banned: do not bring a vape.",
+   "lines": [
+    "Anvisa prohibits any import of e-cigarettes, including for personal use and in hand luggage."
+   ]
+  }
+ },
+ "MX": {
+  "sections": [
+   {
+    "h": "🛃 What Mexico's customs agency says",
+    "p": "Mexico's National Customs Agency (ANAM) lists vaping devices on its page \"Merchandise you cannot bring into Mexico\".",
+    "table": {
+     "head": [
+      "Item",
+      "What ANAM says"
+     ],
+     "rows": [
+      [
+       "Listed as prohibited or regulated",
+       "E-cigarettes and similar personal electric or electronic vaporisation devices, including new and emerging ones that use heated tobacco"
+      ],
+      [
+       "Systems named",
+       "Electronic nicotine delivery systems, similar systems without nicotine, and alternative nicotine consumption systems"
+      ],
+      [
+       "Tariff fraction",
+       "8543.40.01 of the general import and export tax law (LIGIE)"
+      ],
+      [
+       "Rule for travellers",
+       "ANAM says you cannot bring this merchandise in"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>Not read:</strong> the ANAM page cites no law or decree and gives no penalty or personal-use exception, so assume none and leave the device at home."
+    ]
+   }
+  ],
+  "faq": [
+   [
+    "Can I bring a vape to Mexico?",
+    "ANAM lists e-cigarettes and similar vaporisation devices, including heated-tobacco ones, among merchandise you cannot bring into Mexico."
+   ],
+   [
+    "Are heated tobacco devices allowed in Mexico?",
+    "ANAM includes devices that use heated tobacco in the same prohibited-or-regulated listing."
+   ]
+  ],
+  "src": [
+   [
+    "https://www.anam.gob.mx/mercancia-que-no-puedes-ingresar-a-mexico/",
+    "ANAM &mdash; Mercanc&iacute;a que no puedes ingresar a M&eacute;xico"
+   ]
+  ],
+  "keepSchema": true,
+  "card": {
+   "status": "stop",
+   "head": "Banned: do not bring a vape.",
+   "lines": [
+    "ANAM lists e-cigarettes and vaporisers, including heated-tobacco devices, as merchandise you cannot bring in."
+   ]
+  }
+ },
+ "IN": {
+  "sections": [
+   {
+    "h": "🛃 What the 2019 Act says",
+    "p": "India's Prohibition of Electronic Cigarettes Act, 2019 (Act No. 42 of 2019), published by the Ministry of Law and Justice, applies from 18 September 2019.",
+    "table": {
+     "head": [
+      "Item",
+      "What the Act says"
+     ],
+     "rows": [
+      [
+       "What counts as an e-cigarette",
+       "An electronic device that heats a substance, with or without nicotine and flavours, to create an aerosol; it covers nicotine delivery systems, heat-not-burn products and e-hookah, but not products licensed under the Drugs and Cosmetics Act, 1940"
+      ],
+      [
+       "Section 4 prohibition",
+       "No one may produce, manufacture, import, export, transport, sell or distribute e-cigarettes or parts, or advertise them"
+      ],
+      [
+       "Import",
+       "\"Import\" means bringing into India from a place outside India"
+      ],
+      [
+       "Penalty (section 7)",
+       "Up to 1 year in prison or a fine up to 1 lakh rupees, or both; second or later offence up to 3 years and a fine up to 5 lakh rupees"
+      ],
+      [
+       "Storage (section 5, penalty in section 8)",
+       "Knowingly letting a place be used to store e-cigarette stock is barred; up to 6 months in prison or a fine up to fifty thousand rupees, or both"
+      ],
+      [
+       "Enforcement",
+       "Offences under section 4 are cognizable; authorised officers can search and seize"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>Not read:</strong> the Act does not mention travellers or baggage separately, so we state only that import is prohibited; ask Indian customs before you travel."
+    ]
+   }
+  ],
+  "faq": [
+   [
+    "Can I bring a vape to India?",
+    "The 2019 Act prohibits importing e-cigarettes, defined as bringing them into India from outside, and does not carve out personal use."
+   ],
+   [
+    "What is the penalty for importing e-cigarettes into India?",
+    "Up to 1 year in prison or a fine up to 1 lakh rupees, or both, and up to 3 years and 5 lakh rupees for a repeat offence."
+   ],
+   [
+    "Are heated tobacco products banned in India?",
+    "The Act defines e-cigarettes to include heat-not-burn products and e-hookah."
+   ]
+  ],
+  "src": [
+   [
+    "https://ntcp.mohfw.gov.in/assets/document/The-Prohibition-of-Electronic-Cigarettes-Production-Manufacture-Import-Export-Transport-Sale-Distribution-Storage-and-Advertisement)-Act-2019.pdf",
+    "Ministry of Health (NTCP) &mdash; Prohibition of Electronic Cigarettes Act, 2019"
+   ]
+  ],
+  "keepSchema": true,
+  "card": {
+   "status": "stop",
+   "head": "Banned: import is prohibited.",
+   "lines": [
+    "India's 2019 Act bans importing e-cigarettes, including heat-not-burn products; penalties reach 3 years for repeat offences."
+   ]
+  }
+ },
+ "TH": {
+  "sections": [
+   {
+    "h": "🛃 What the Thai government says about e-cigarettes and tourists",
+    "p": "The Thai government site thailand.go.th carries a joint summary (created 15 March 2023, updated 11 July 2023) from the Department of Disease Control, the Consumer Protection Committee office, the Royal Thai Police, the Customs Department and the Department of Foreign Trade.",
+    "table": {
+     "head": [
+      "Item",
+      "What the summary says"
+     ],
+     "rows": [
+      [
+       "Import",
+       "Importing e-cigarettes is an offence under a 2014 Ministry of Commerce announcement: up to 10 years in prison or a fine of 5 times the product price, or both, plus confiscation of the goods, their containers and any vehicle used"
+      ],
+      [
+       "Customs Act 2017, section 244",
+       "Up to 10 years in prison or a fine of up to 500,000 baht, or both"
+      ],
+      [
+       "Receiving or possessing banned imports",
+       "Under section 246 of the Customs Act, helping to hide, sell, take away, buy or receive them knowing they entered without customs clearance can mean up to 5 years or a fine of four times the value"
+      ],
+      [
+       "Selling",
+       "Consumer Protection Board order bans selling e-cigarettes and refill liquids; up to 3 years or a fine up to 600,000 baht"
+      ],
+      [
+       "Smoking in public",
+       "Tobacco Products Control Act 2017: fine of up to 5,000 baht for using e-cigarettes in public areas where nicotine is an ingredient"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>Not read:</strong> the page title says the ban applies to tourists, but the summary does not describe a declaration channel or any allowance; its date is 2023, so check current enforcement with Thai Customs."
+    ]
+   }
+  ],
+  "faq": [
+   [
+    "Can I bring a vape to Thailand?",
+    "No. The Thai government summary says importing e-cigarettes is an offence, with up to 10 years in prison or a fine of 5 times the product price, or both, and its page is titled as a prohibition on importing by tourists."
+   ],
+   [
+    "Is it illegal to buy or hold a vape in Thailand?",
+    "The summary says buying or receiving e-cigarettes knowing they were imported illegally carries up to 5 years or a fine four times the value, and selling carries up to 3 years or 600,000 baht."
+   ],
+   [
+    "Can I vape in public in Thailand?",
+    "The Tobacco Products Control Act 2017 sets a fine of up to 5,000 baht for using e-cigarettes in public areas where nicotine is an ingredient, according to the summary."
+   ]
+  ],
+  "src": [
+   [
+    "https://thailand.go.th/issue-focus-detail/009_130",
+    "Thailand.go.th (Public Relations Department) &mdash; Electric and electronic cigarettes are illegal in Thailand"
+   ]
+  ],
+  "keepSchema": true,
+  "card": {
+   "status": "stop",
+   "head": "Banned: importing a vape is a crime.",
+   "lines": [
+    "The Thai government says importing e-cigarettes can mean up to 10 years in prison or a fine of 5 times the product price."
+   ]
+  }
+ },
+ "CH": {
+  "sections": [
+   {
+    "h": "🛃 What Swiss customs says about nicotine liquids and e-cigarettes",
+    "p": "The Federal Office for Customs and Border Security (BAZG) table of duty-free allowances for tobacco products says the following; allowances apply per person and per day and only from age 17.",
+    "table": {
+     "head": [
+      "Item",
+      "What BAZG says"
+     ],
+     "rows": [
+      [
+       "Nicotine liquid for e-cigarettes",
+       "250 ml duty-free; above that CHF 0.25 per ml"
+      ],
+      [
+       "Disposable e-cigarettes",
+       "25 units duty-free; above that CHF 2.50 per unit"
+      ],
+      [
+       "Nicotine cartridges, cigarettes, cigars, heated tobacco",
+       "250 units in total, then CHF 0.25 per unit"
+      ],
+      [
+       "Minimum age",
+       "The allowances are only granted to persons who are at least 17"
+      ],
+      [
+       "Mixing",
+       "A proportional mix of these products is allowed"
+      ],
+      [
+       "VAT",
+       "If the total value of goods carried exceeds CHF 150, VAT is due in any case"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>Not read:</strong> the table does not set a nicotine strength limit or say anything on the legality of vaping inside Switzerland."
+    ]
+   }
+  ],
+  "faq": [
+   [
+    "How much vape liquid can I bring into Switzerland?",
+    "BAZG lists 250 ml of nicotine liquid for e-cigarettes per person per day duty-free, and CHF 0.25 per ml above that."
+   ],
+   [
+    "Can I bring disposable vapes into Switzerland?",
+    "Up to 25 disposable e-cigarettes per person per day are duty-free; above that CHF 2.50 per unit."
+   ],
+   [
+    "How old do you have to be to bring vapes into Switzerland?",
+    "The duty-free tobacco and e-cigarette allowances are only granted to people aged 17 or over."
+   ]
+  ],
+  "src": [
+   [
+    "https://www.bazg.admin.ch/en/duty-free-allowances-foodstuffs-alcohol-and-tobacco",
+    "BAZG (Swiss Customs) &mdash; Duty-free allowances: foodstuffs, alcohol and tobacco"
+   ]
+  ],
+  "keepSchema": true,
+  "card": {
+   "status": "warn",
+   "head": "250 ml of nicotine liquid per day.",
+   "lines": [
+    "Swiss customs allows 250 ml of nicotine liquid or 25 disposable vapes per person and day, from age 17; above that duty is due."
+   ]
+  }
+ },
+ "AE": {
+  "sections": [
+   {
+    "h": "🛃 What Dubai Customs says",
+    "p": "Dubai Customs' page on prohibited and restricted goods lists e-cigarettes among goods that need approval from a controlling authority.",
+    "table": {
+     "head": [
+      "Item",
+      "What Dubai Customs says"
+     ],
+     "rows": [
+      [
+       "E-cigarettes and electronic hookah",
+       "Listed as restricted goods, under the Emirates Authority for Standardization and Metrology"
+      ],
+      [
+       "Meaning of restricted",
+       "Goods whose import or export is restricted and that may only be released with the approval of the competent authority"
+      ],
+      [
+       "Not listed as prohibited",
+       "The page does not put e-cigarettes in its prohibited list"
+      ],
+      [
+       "Vaporizers and nicotine",
+       "The page does not mention vaporizers or nicotine separately"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>Not read:</strong> the page gives no allowance for a traveller and does not say how a visitor obtains approval, so ask Dubai Customs or your airline before packing a device."
+    ]
+   }
+  ],
+  "faq": [
+   [
+    "Can I bring a vape to Dubai?",
+    "Dubai Customs lists e-cigarettes and electronic hookah as restricted goods that can only be released with approval from the competent authority; it does not list them as prohibited."
+   ],
+   [
+    "Is there a travellers' allowance for e-cigarettes in the UAE?",
+    "The Dubai Customs page we read gives none, so assume you need approval or leave the device at home."
+   ]
+  ],
+  "src": [
+   [
+    "https://www.dubaicustoms.gov.ae/en/mobile/Pages/ProhibitedandRestrictedGoods.aspx",
+    "Dubai Customs &mdash; Prohibited and restricted goods"
+   ]
+  ],
+  "keepSchema": true,
+  "card": {
+   "status": "warn",
+   "head": "Restricted: needs official approval.",
+   "lines": [
+    "Dubai Customs lists e-cigarettes as restricted goods released only with approval; no traveller allowance is published."
+   ]
+  }
+ },
+ "AU": {
+  "sections": [
+   {
+    "h": "🛃 What the Therapeutic Goods Administration says about bringing vapes",
+    "p": "The TGA page \"Vapes: information for individuals and patients\" says the following about travellers.",
+    "table": {
+     "head": [
+      "Item",
+      "What the TGA says"
+     ],
+     "rows": [
+      [
+       "Traveller's exemption",
+       "People entering by ship or aircraft may bring a small quantity of vapes, but only for treating the traveller or someone they care for who arrives on the same ship or aircraft"
+      ],
+      [
+       "Maximum quantity",
+       "2 vapes, 20 vape accessories (including cartridges, capsules or pods) and 200 mL of vape liquid"
+      ],
+      [
+       "Ordering from overseas",
+       "Vapes cannot be bought from overseas shops or websites for personal use, even with a prescription"
+      ],
+      [
+       "At the border",
+       "Australian Border Force can seize and destroy goods suspected to be unlawful imports; penalties for unlawful import are significant"
+      ],
+      [
+       "Possession",
+       "The federal reforms do not penalise individuals for small amounts for personal use, but some states and territories prohibit possessing unprescribed nicotine vapes"
+      ],
+      [
+       "Vapes with controlled drugs such as cannabis",
+       "Not counted in the traveller limits"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>Not read:</strong> the page does not say how the treatment purpose is proven at the border; check with the Australian Border Force before travelling."
+    ]
+   }
+  ],
+  "faq": [
+   [
+    "Can I bring a vape into Australia?",
+    "Only under the traveller's exemption: for treatment of yourself or someone you care for arriving on the same flight or ship, up to 2 vapes, 20 accessories and 200 mL of liquid, according to the TGA."
+   ],
+   [
+    "Can I order vapes online from overseas to Australia?",
+    "No. The TGA says vapes cannot be bought from overseas retailers or websites for personal use, even with a prescription."
+   ],
+   [
+    "Is it illegal to possess a vape in Australia?",
+    "The TGA says federal reforms do not penalise individuals for small amounts for personal use, but some states and territories prohibit possessing unprescribed nicotine vapes."
+   ]
+  ],
+  "src": [
+   [
+    "https://www.tga.gov.au/products/unapproved-therapeutic-goods/therapeutic-vaping-goods/vaping-hub/vapes-information-individuals-and-patients",
+    "TGA &mdash; Vapes: information for individuals and patients"
+   ]
+  ],
+  "keepSchema": true,
+  "card": {
+   "status": "stop",
+   "head": "Only a small medical exemption.",
+   "lines": [
+    "Travellers may bring 2 vapes, 20 accessories and 200 mL of liquid only for treatment; online orders from overseas are not allowed."
+   ]
+  }
+ },
+ "SE": {
+  "sections": [
+   {
+    "h": "🛃 What Swedish Customs says about e-cigarettes and refills",
+    "p": "Tullverket's page \"Buying e-cigarettes and refills when travelling\" says the following about nicotine e-liquid and devices for private use.",
+    "table": {
+     "head": [
+      "Item",
+      "What Tullverket says"
+     ],
+     "rows": [
+      [
+       "Age",
+       "You must be 18 to bring them in, and only for private use"
+      ],
+      [
+       "From another EU country",
+       "Limit of 20 millilitres"
+      ],
+      [
+       "From outside the EU, by air or commercial ferry",
+       "Goods worth up to SEK 5,000 can come in free of customs duty and tax (total of everything bought on the trip)"
+      ],
+      [
+       "From outside the EU, other travel",
+       "SEK 3,500 limit"
+      ],
+      [
+       "E-liquid without nicotine",
+       "From another EU country no restrictions; from outside the EU the same value limits apply"
+      ],
+      [
+       "Going over the limit",
+       "From outside the EU you pay customs duty and VAT; from another EU country you pay VAT to the Swedish Tax Agency within 5 days"
+      ],
+      [
+       "Declaring",
+       "Arriving from outside the EU with goods above the free allowance you must declare them to Swedish Customs at the border"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>Not read:</strong> this page does not mention excise duty rates or nicotine strength limits."
+    ]
+   }
+  ],
+  "faq": [
+   [
+    "How much vape liquid can I bring into Sweden?",
+    "From another EU country Tullverket allows 20 millilitres of nicotine e-liquid; from outside the EU the limit is a value limit of SEK 5,000 by air or commercial ferry and SEK 3,500 otherwise."
+   ],
+   [
+    "How old do you have to be to bring a vape into Sweden?",
+    "Tullverket says you must be 18 and the products must be for private use."
+   ],
+   [
+    "Do I have to declare e-liquid in Sweden?",
+    "If you arrive from outside the EU with goods above the free allowance, you must declare them to Swedish Customs at the border."
+   ]
+  ],
+  "src": [
+   [
+    "https://www.tullverket.se/en/startpage/private/travelling/bringinggoodswhentravelling/buyingecigarettesandrefillswhentravelling.4.311bf4f016e69d6ea0d658.html",
+    "Tullverket (Swedish Customs) &mdash; Buying e-cigarettes and refills when travelling"
+   ]
+  ],
+  "keepSchema": true,
+  "card": {
+   "status": "warn",
+   "head": "20 ml within the EU, value limits outside.",
+   "lines": [
+    "Tullverket allows 20 ml of nicotine e-liquid from another EU country; from outside the EU, SEK 5,000 (air or ferry) or SEK 3,500 in total."
+   ]
+  }
+ },
+ "KR": {
+  "sections": [
+   {
+    "h": "🛃 What Korea Customs says about e-cigarette liquid",
+    "p": "The Korea Customs Service passenger guide lists e-cigarette liquid within the allowance for cigarettes and perfume.",
+    "table": {
+     "head": [
+      "Item",
+      "What Korea Customs says"
+     ],
+     "rows": [
+      [
+       "E-cigarette liquid nicotine",
+       "20 ml, only where the nicotine content is under 1%"
+      ],
+      [
+       "Cigarettes",
+       "200 sticks, in the same allowance tier"
+      ],
+      [
+       "General allowance",
+       "US$800 or less in total taxable value of goods, separate from the tier above"
+      ],
+      [
+       "Minors",
+       "Under 19 (by year of birth) get no exemption for liquor and cigarettes"
+      ],
+      [
+       "Over the allowance",
+       "Goods above the exemptions must be declared; a voluntary declaration earns a 30% reduction of the standard customs duty"
+      ],
+      [
+       "If caught undeclared",
+       "Additional tax of 40%, or 60% if it happens twice or more within 2 years"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>Not read:</strong> the guide does not say whether stronger nicotine liquids or devices are treated differently."
+    ]
+   }
+  ],
+  "faq": [
+   [
+    "How much vape liquid can I bring into South Korea?",
+    "Korea Customs lists 20 ml of e-cigarette liquid nicotine within the allowance, only when the nicotine content is under 1%."
+   ],
+   [
+    "How old do you have to be to claim the cigarette allowance in South Korea?",
+    "Minors under 19, counted by year of birth, do not get tax exemption for liquor and cigarettes."
+   ],
+   [
+    "What if I do not declare vape liquid in South Korea?",
+    "Undeclared goods above the allowance face additional tax of 40%, or 60% for repeat cases within 2 years; declaring voluntarily earns a 30% duty reduction."
+   ]
+  ],
+  "src": [
+   [
+    "https://www.customs.go.kr/english/cm/cntnts/cntntsView.do?mi=8069&cntntsId=2743",
+    "Korea Customs Service &mdash; Customs clearance procedure for passenger belongings"
+   ]
+  ],
+  "keepSchema": true,
+  "card": {
+   "status": "warn",
+   "head": "20 ml of low-nicotine liquid is allowed.",
+   "lines": [
+    "Korea Customs allows 20 ml of e-cigarette liquid under 1% nicotine alongside 200 cigarette sticks; minors under 19 get no exemption."
+   ]
+  }
+ },
+ "MU": {
+  "sections": [
+   {
+    "h": "🛃 What the Mauritius Revenue Authority says",
+    "p": "The Mauritius Revenue Authority (MRA) publishes a list of \"selected prohibited goods\" under Section 156A(6) of the Customs Act; it names e-cigarette products among them.",
+    "table": {
+     "head": [
+      "Item",
+      "What the MRA says"
+     ],
+     "rows": [
+      [
+       "Listed as prohibited goods",
+       "ENDS or ENNDS devices as defined in the Public Health (Restrictions on Tobacco Products) Regulations 2022, their e-liquids, devices and accessories for use with them, heated tobacco products and roll-your-own tobacco"
+      ],
+      [
+       "Importing prohibited goods",
+       "A customs offence, and the person can be prosecuted in court"
+      ],
+      [
+       "Administrative penalty",
+       "For \"selected prohibited goods\" an administrative penalty may be imposed instead of prosecution, taking account of the quantity imported and the person's explanation"
+      ],
+      [
+       "Quantity caps for that option",
+       "The MRA table sets maximum quantities per item; we do not restate them because the table layout is not clear in the file we read"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>Not read:</strong> the MRA list does not say what happens to goods you declare in the red channel; check the MRA passenger guidance before you travel."
+    ]
+   }
+  ],
+  "faq": [
+   [
+    "Can I bring a vape to Mauritius?",
+    "No. The MRA lists ENDS and ENNDS devices, e-liquids and accessories among prohibited goods; importing them is a customs offence that can be prosecuted."
+   ],
+   [
+    "Are heated tobacco products allowed in Mauritius?",
+    "The MRA list also names heated tobacco products among selected prohibited goods."
+   ],
+   [
+    "Can I get a fine instead of prosecution for a vape in Mauritius?",
+    "For selected prohibited goods the MRA may impose an administrative penalty instead of prosecution, considering the quantity imported and your explanation."
+   ]
+  ],
+  "src": [
+   [
+    "https://www.mra.mu/download/SelectedProhibitedGoods.pdf",
+    "Mauritius Revenue Authority &mdash; Selected prohibited goods (Customs Act section 156A)"
+   ]
+  ],
+  "keepSchema": true,
+  "card": {
+   "status": "stop",
+   "head": "Banned: do not bring a vape.",
+   "lines": [
+    "The MRA lists vapes, e-liquid, accessories and heated tobacco as prohibited goods; importing them is a customs offence."
+   ]
+  }
+ },
+ "IS": {
+  "sections": [
+   {
+    "h": "🛃 What Iceland's government says about e-cigarettes in luggage",
+    "p": "The government portal island.is, in its guide to what you can bring or order to Iceland, says the following about nicotine products.",
+    "table": {
+     "head": [
+      "Item",
+      "What island.is says"
+     ],
+     "rows": [
+      [
+       "What counts",
+       "Nicotine pouches, e-cigarettes and e-liquid for refilling e-cigarettes, with or without nicotine; medicinal and food products are excluded"
+      ],
+      [
+       "Minimum age",
+       "18 for importing nicotine products"
+      ],
+      [
+       "Duty-free in luggage",
+       "Up to 20 units of nicotine products, or 20 disposable e-cigarettes with 2 ml tanks, or 40 ml of e-liquid for refilling"
+      ],
+      [
+       "Above the limit",
+       "Import charges apply to the quantity over those limits"
+      ],
+      [
+       "Paying in advance",
+       "Charges on luggage can be paid before arrival at rautthlid.is"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>Not read:</strong> the page does not state nicotine strength limits or rules on using e-cigarettes inside Iceland."
+    ]
+   }
+  ],
+  "faq": [
+   [
+    "How much vape liquid can I bring into Iceland?",
+    "Island.is says up to 40 ml of e-liquid for refilling, or 20 disposable e-cigarettes with 2 ml tanks, or 20 units of nicotine products, can come in without import charges."
+   ],
+   [
+    "How old do you have to be to import vapes to Iceland?",
+    "The minimum age for importing nicotine products is 18."
+   ],
+   [
+    "Can I pay import charges on vapes before arriving in Iceland?",
+    "Yes, for luggage the page says charges can be paid before arrival at rautthlid.is."
+   ]
+  ],
+  "src": [
+   [
+    "https://island.is/en/what-you-can-bring-or-order-to-iceland",
+    "island.is (Iceland government) &mdash; What you can bring or order to Iceland"
+   ]
+  ],
+  "keepSchema": true,
+  "card": {
+   "status": "warn",
+   "head": "40 ml of e-liquid or 20 units.",
+   "lines": [
+    "Iceland charges no import fees up to 40 ml of refill e-liquid or 20 disposable vapes; the minimum age is 18."
+   ]
+  }
+ }
+}

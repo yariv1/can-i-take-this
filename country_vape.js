@@ -4,7 +4,8 @@
 const DATA = require('./country_vape_who.json');
 const DATA25 = require('./country_vape_who_2025.json'); // N-Z countries re-read from the WHO 2025 report (data for 2024) on 2026-10-17; other countries still use the 2023 report
 const BAGD = require('./baggage_detail.js');
-const EXTRA = require('./country_vape_extra.js');
+// vape_extra.json (session 35, written by vape_add_country.js): sections read from the country's own official page; entries keep title, description and schema FAQ unchanged (keepSchema)
+const EXTRA = Object.assign({}, require('./country_vape_extra.js'), require('fs').existsSync(__dirname + '/vape_extra.json') ? JSON.parse(require('fs').readFileSync(__dirname + '/vape_extra.json', 'utf8')) : {});
 const { CSS, table, esc } = BAGD;
 const READ = '8 October 2026';
 const READ25 = '17 October 2026';
@@ -73,6 +74,7 @@ function build(c) {
     ['What is the minimum age to buy a vape in ' + cn + '?', D.minAge ? 'WHO reports a minimum age of sale of ' + D.minAge + ' for e-cigarettes in ' + cn + '.' : 'WHO\'s profile does not report a minimum age of sale for e-cigarettes in ' + cn + '.']
   ];
   const X = EXTRA[c.code];
+  const faqSchema = faq.slice();
   if (X) X.faq.forEach(q => faq.push(q));
   const list = [];
   if (D.note) list.push('<strong>WHO note:</strong> ' + esc(D.note));
@@ -94,7 +96,8 @@ function build(c) {
   if (X && X.ttl) ttl = X.ttl;
   if (X && X.desc) desc = X.desc;
   card.lines = [travel];
-  return { ttl, desc, html, faq, card };
+  if (X && X.card) card = X.card;
+  return { ttl, desc, html, faq: (X && X.keepSchema) ? faqSchema : faq, card };
 }
 
 module.exports = { build };
