@@ -42,3 +42,13 @@ html body .pass .src b.src-no,html body .pass .src b.src-un{color:var(--tg-amber
 :root,[data-theme="dark"]{--tg-purple:#D1A4EA}
 [data-theme="light"]{--tg-purple:#6D3FB5}
 html body .tag.tag-purple{background:rgba(160,110,230,.2);color:var(--tg-purple);font-weight:700}
+
+/* DS 8.33 (user order 2026-10-18): the tab-row scroll arrows are exactly as tall as the tab buttons (full height of the row), on every page type. */
+html body .tabs-wrap .tabs-arrow{top:0;bottom:0;height:100%}
+
+/* DS 8.34 (user order 2026-10-18): on phones the horizontally scrolling rows (tab row, home "Popular Travel Guides") run edge to edge of the screen, like the blog card rows and Airbnb: no side margin when they scroll, the first item still starts at the 18px page gutter. Rows only; nothing else on the page changes. No arrow buttons on touch. */
+@media (max-width:640px){
+  html body .tabs-wrap{margin-left:-18px;margin-right:-18px}
+  html body .tabs-wrap .tabs{padding-left:18px;padding-right:18px;scroll-padding-left:18px;scroll-padding-right:18px}
+  html body .hg-row{margin-left:-18px;margin-right:-18px;padding-left:18px;padding-right:18px;scroll-padding-left:18px;scroll-padding-right:18px}
+}
