@@ -19,3 +19,8 @@ Vape (13 new): United, American Airlines, British Airways, Cathay Pacific, ANA, 
 Liquids (8 new, none existed before): Qatar Airways, Finnair, SAS, Iberia, Copa Airlines, British Airways, Cathay Pacific, Air Canada.
 Duplicate text: airline vape 66% -> 60%, airline liquids 59% -> 57%.
 Not used: Swiss/Austrian/Lufthansa dangerous-goods pages (no e-cigarette entry there), Alaska, Air France, Aer Lingus (blocked), Air New Zealand (checked-baggage page has no e-cigarette entry), Etihad/Qatar/SAS vape (already had one).
+
+## Vape round 2 (session 36, 2026-10-18)
+Vape (11 new, same helper and rules): Emirates, Air Canada, Japan Airlines (international page), Korean Air, TAP Air Portugal, Vueling (thin: hand-luggage list only), Air New Zealand, IndiGo (Conditions of Carriage 15.5, ban), Aegean, Iberia, Air France. Vape sections now from own pages: 13 + 11 = 24 (plus 34 earlier entries).
+Not readable or too thin this round: Alaska (only mentions e-cigarettes under lithium batteries), Icelandair (old PDFs, table unreadable), Malaysia (page redirects, not read), Saudia (page redirects to fares), Aeromexico (nothing on vapes).
+Vape round 3 (same day, 9 new): flydubai, South African Airways, Copa Airlines, Vietnam Airlines (Vietnam site: not accepted at all), Transavia, Oman Air, Asiana, Air Arabia, Royal Jordanian. Vape sections from own pages now 13 + 11 + 9 = 33. Not readable/not used: SunExpress (Cloudflare), GOL (site blocked in the pane), Gulf Air (no e-cigarette text in the Conditions page read), LATAM (page text had no match), China Southern (page 404), Avianca (no match), EgyptAir (FAA advice only), Ethiopian/Kenya (no e-cigarette rule), El Al (2019 PDF only).
