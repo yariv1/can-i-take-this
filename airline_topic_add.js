@@ -14,7 +14,7 @@ N[spec.airline] = N[spec.airline] || {};
 for (const c of ['alcohol', 'perfume', 'vape', 'liquids']) {
   const e = spec[c]; if (!e) continue;
   if (!e.answer || !Array.isArray(e.sections) || !e.sections.length || !Array.isArray(e.faq) || e.faq.length < 2 || !Array.isArray(e.sources) || !e.sources.length) { console.log('bad ' + c); process.exit(1); }
-  N[spec.airline][c] = { answer: e.answer, sections: e.sections, faq: e.faq, sources: e.sources, keepSchema: true, checked: '18 October 2026' };
+  N[spec.airline][c] = { answer: e.answer, sections: e.sections, faq: e.faq, sources: e.sources, keepSchema: true, checked: '18 October 2026', unofficial: !!e.unofficial };
 }
 fs.writeFileSync(FILE, JSON.stringify(N, null, 1));
 console.log('topics_new now has ' + Object.keys(N).length + ' airlines (added/updated ' + spec.airline + ')');

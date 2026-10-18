@@ -28,8 +28,8 @@ function render(a, T) {
     (T.sections || []).map(s => '<section class="bd-sec"><h2>' + s.h + '</h2>' + (s.p ? '<p>' + s.p + '</p>' : '') +
       (s.table ? table(s.table) : '') + (s.list ? '<ul>' + s.list.map(x => '<li>' + x + '</li>').join('') + '</ul>' : '') + '</section>').join('') +
     (T.faq ? '<section class="bd-faq"><h2>❓ Quick answers</h2>' + T.faq.map(q => '<h3>' + esc(q[0]) + '</h3><p>' + esc(q[1]) + '</p>').join('') + '</section>' : '') +
-    '<p class="bd-chk">Checked ' + (T.checked || CHECKED) + ' on the airline\'s own terms and pages. Rules change: confirm with ' + esc(a.name) + ' before you fly.</p>' +
-    (T.sources ? '<div class="bd-src"><div class="h">✓ Official sources</div>' + T.sources.map(s => '<a href="' + s[0] + '" target="_blank" rel="noopener noreferrer">' + s[1] + '</a>').join('') + '</div>' : '') +
+    '<p class="bd-chk">Checked ' + (T.checked || CHECKED) + (T.unofficial ? ' on an unofficial source, not on the airline\'s own pages. Rules change: confirm with ' : ' on the airline\'s own terms and pages. Rules change: confirm with ') + esc(a.name) + ' before you fly.</p>' +
+    (T.sources ? '<div class="bd-src"><div class="h"' + (T.unofficial ? ' style="color:var(--tg-amber,#f3c765)"' : '') + '>' + (T.unofficial ? '⚠ Unofficial sources' : '✓ Official sources') + '</div>' + T.sources.map(s => '<a href="' + s[0] + '" target="_blank" rel="noopener noreferrer">' + s[1] + '</a>').join('') + '</div>' : '') +
     '</div>';
 }
 
