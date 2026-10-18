@@ -1049,6 +1049,69 @@
    ],
    "keepSchema": true,
    "checked": "18 October 2026"
+  },
+  "liquids": {
+   "answer": "JetBlue allows liquids, gels and aerosols in carry-on bags only in containers of 3.4 oz (100 ml) or less, all in one clear, sealed quart-sized zip-top bag, one bag per customer, placed in the screening bin.",
+   "sections": [
+    {
+     "h": "💧 What JetBlue says about liquids",
+     "p": "From the JetBlue help page \"Prohibited Items\", section Permitted items: Information on the 3-1-1 Directive.",
+     "table": {
+      "head": [
+       "Question",
+       "JetBlue rule"
+      ],
+      "rows": [
+       [
+        "Container size",
+        "3.4 oz / 100 ml bottle or less"
+       ],
+       [
+        "Bag",
+        "One clear, transparent, resealable quart-sized (one-liter) plastic zip-top bag; the contents must fit comfortably and the bag must be completely sealed"
+       ],
+       [
+        "At security",
+        "Take the bag out of the carry-on bag and place it in a security bin; one bag per customer"
+       ],
+       [
+        "Total",
+        "One quart-sized bag per person limits the total liquid each traveler can bring"
+       ],
+       [
+        "What counts",
+        "Beverages, shampoo, suntan lotion, creams, toothpaste, hair gel and similar items"
+       ],
+       [
+        "Why",
+        "JetBlue calls the 3.4 oz / 100 ml container size a security measure"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> the part of the page read does not give the rule for medication, baby items or alcohol; JetBlue has a separate page on alcohol guidelines."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much liquid can I take in my JetBlue carry-on?",
+     "Containers of 3.4 oz (100 ml) or less, all in one clear sealed quart-sized zip-top bag, one bag per customer."
+    ],
+    [
+     "Do I take my liquids bag out at JetBlue security?",
+     "Yes, JetBlue says to take the sealed bag out of the carry-on and put it in a security bin."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.jetblue.com/help/prohibited-items",
+     "JetBlue &mdash; Prohibited Items (3-1-1)"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026",
+   "unofficial": false
   }
  },
  "Finnair": {
@@ -1914,6 +1977,61 @@
    ],
    "keepSchema": true,
    "checked": "18 October 2026"
+  },
+  "liquids": {
+   "answer": "We could not take a liquids rule from United's own pages. The rule that security checkpoints apply to cabin baggage is containers of 3.4 ounces (100 ml) or less in one quart-size bag, according to the US Transportation Security Administration (TSA).",
+   "sections": [
+    {
+     "h": "💧 What United says about liquids",
+     "p": "This section is from an unofficial source, not United's own rules: the US Transportation Security Administration (TSA). United's dangerous items page (read) does not state the carry-on liquid limit.",
+     "table": {
+      "head": [
+       "Question",
+       "United rule"
+      ],
+      "rows": [
+       [
+        "Container size",
+        "Travel-size containers of 3.4 ounces or 100 milliliters"
+       ],
+       [
+        "Bag",
+        "Each passenger is limited to one quart-size bag of liquids, gels and aerosols"
+       ],
+       [
+        "What counts",
+        "Common travel items that must comply include toothpaste, shampoo, conditioner, mouthwash and lotion"
+       ],
+       [
+        "Where it applies",
+        "At security checkpoints at US airports"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> United's own rule. United and the airports you use can add stricter limits, so confirm with United before you fly."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much liquid can I take in my United cabin bag?",
+     "Following the US Transportation Security Administration (TSA): containers of 3.4 ounces (100 ml) or less in one quart-size bag. United's own page was not readable on this, so confirm with the airline."
+    ],
+    [
+     "Does United allow liquid medicine and baby food over the limit?",
+     "The source says the TSA allows exceptions for medically necessary liquids and infant items under its own rules; confirm with United."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.tsa.gov/travel/frequently-asked-questions/liquids-aerosols-and-gels-rule",
+     "TSA &mdash; Liquids, Aerosols, and Gels Rule"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026",
+   "unofficial": true
   }
  },
  "Cathay Pacific": {
@@ -2666,6 +2784,61 @@
    ],
    "keepSchema": true,
    "checked": "18 October 2026"
+  },
+  "liquids": {
+   "answer": "We could not take a liquids rule from Etihad's own pages. The rule that security checkpoints apply to cabin baggage is containers of 100 ml or less in one transparent resealable bag of at most 1 litre, according to the International Air Transport Association (IATA).",
+   "sections": [
+    {
+     "h": "💧 What Etihad says about liquids",
+     "p": "This section is from an unofficial source, not Etihad's own rules: the International Air Transport Association (IATA). Etihad's prohibited items page (read) lists liquids in a table whose columns we could not read reliably.",
+     "table": {
+      "head": [
+       "Question",
+       "Etihad rule"
+      ],
+      "rows": [
+       [
+        "Container size",
+        "Containers of 100 ml or equivalent"
+       ],
+       [
+        "Bag",
+        "A transparent resealable plastic bag with a maximum capacity of 1 litre"
+       ],
+       [
+        "Medications, baby foods and special diets",
+        "In principle the restrictions do not apply, but consult your local airport to be sure"
+       ],
+       [
+        "Where the rule comes from",
+        "More governments are adopting the guidelines of the International Civil Aviation Organization (ICAO)"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> Etihad's own rule. Etihad and the airports you use can add stricter limits, so confirm with Etihad before you fly."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much liquid can I take in my Etihad cabin bag?",
+     "Following the International Air Transport Association (IATA): containers of 100 ml or less in one transparent resealable bag of at most 1 litre. Etihad's own page was not readable on this, so confirm with the airline."
+    ],
+    [
+     "Does Etihad allow liquid medicine and baby food over the limit?",
+     "The source says in principle the restrictions do not apply to medications, baby foods and special dietary requirements, but to check with your local airport; confirm with Etihad."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.iata.org/en/youandiata/travelers/baggage/",
+     "IATA &mdash; Travel & Baggage"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026",
+   "unofficial": true
   }
  },
  "Swiss": {
@@ -3290,6 +3463,65 @@
    "keepSchema": true,
    "checked": "18 October 2026",
    "unofficial": true
+  },
+  "liquids": {
+   "answer": "On international flights LATAM allows liquids, aerosols, gels and creams in cabin baggage in containers of at most 100 ml, in one transparent plastic bag of at most 1 litre with a resealable closure that shows the contents, one bag per passenger.",
+   "sections": [
+    {
+     "h": "💧 What LATAM says about liquids",
+     "p": "From the LATAM help article \"¿Cuáles son los artículos restringidos en la cabina del avión?\" (Spanish), liquids section.",
+     "table": {
+      "head": [
+       "Question",
+       "LATAM rule"
+      ],
+      "rows": [
+       [
+        "International flights: container size",
+        "At most 100 ml (3.4 oz) each"
+       ],
+       [
+        "International flights: bag",
+        "Transparent plastic bag of at most 1 litre (34 oz) with an opening and closing system that lets you see the contents; one bag per passenger"
+       ],
+       [
+        "Domestic flights in Chile, Peru, Colombia and Ecuador",
+        "No restrictions on the quantities carried"
+       ],
+       [
+        "Domestic flights in Brazil",
+        "Limit of 4 containers per person, each up to 300 ml or 300 g"
+       ],
+       [
+        "Flights starting in Argentina or Chile",
+        "The domestic limits apply, except if the flight goes to the United States or Oceania or has stops or connections in Uruguay"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> the part read does not give the exemptions for medicine and baby food, or the rule for checked baggage."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much liquid can I take on a LATAM international flight?",
+     "Containers of at most 100 ml each, in one transparent resealable bag of at most 1 litre, one bag per passenger."
+    ],
+    [
+     "Are there liquid limits on LATAM domestic flights in Chile or Peru?",
+     "LATAM says no restrictions on the quantities apply on domestic flights in Chile, Peru, Colombia and Ecuador; Brazil has its own limit of 4 containers of up to 300 ml."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.latamairlines.com/us/es/centro-ayuda/preguntas/equipaje/articulos-restringidos/restringidos-cabina",
+     "LATAM &mdash; Art&iacute;culos restringidos en la cabina"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026",
+   "unofficial": false
   }
  },
  "Copa Airlines": {
@@ -3705,6 +3937,69 @@
    "keepSchema": true,
    "checked": "18 October 2026",
    "unofficial": false
+  },
+  "liquids": {
+   "answer": "We could not take a liquids rule from Austrian's own pages. The rule that security checkpoints apply to cabin baggage is containers of 100 ml or less in one transparent resealable bag of at most 1 litre, according to the European Commission.",
+   "sections": [
+    {
+     "h": "💧 What Austrian says about liquids",
+     "p": "This section is from an unofficial source, not Austrian's own rules: the European Commission. Austrian's carry-on page (read) does not state the liquid limit.",
+     "table": {
+      "head": [
+       "Question",
+       "Austrian rule"
+      ],
+      "rows": [
+       [
+        "Container size",
+        "Individual containers with a capacity not greater than 100 ml"
+       ],
+       [
+        "Bag",
+        "All in one transparent re-sealable plastic bag of a capacity not exceeding one litre"
+       ],
+       [
+        "What counts",
+        "Gels, aerosols, pastes, lotions, liquid/solid mixtures and similar items such as drinks, toothpaste, soups, syrups, perfumes and shaving foam"
+       ],
+       [
+        "Medicines, baby food and milk",
+        "Permitted in quantities larger than 100 ml, only for use during the trip; you may be asked to prove what they are"
+       ],
+       [
+        "Duty-free liquids",
+        "Allowed if the item and the receipt remain sealed inside the security bag given at purchase"
+       ],
+       [
+        "At the checkpoint",
+        "Put the transparent bag in a tray for screening"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> Austrian's own rule. Austrian and the airports you use can add stricter limits, so confirm with Austrian before you fly."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much liquid can I take in my Austrian cabin bag?",
+     "Following the European Commission: containers of 100 ml or less in one transparent resealable bag of at most 1 litre. Austrian's own page was not readable on this, so confirm with the airline."
+    ],
+    [
+     "Does Austrian allow liquid medicine and baby food over the limit?",
+     "The source says essential medicines, baby food and milk are permitted in larger quantities for use during the trip; confirm with Austrian."
+    ]
+   ],
+   "sources": [
+    [
+     "https://transport.ec.europa.eu/transport-modes/air/aviation-security/information-air-travellers_en",
+     "European Commission &mdash; Information for air travellers"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026",
+   "unofficial": true
   }
  },
  "Brussels Airlines": {
@@ -4803,6 +5098,69 @@
    ],
    "keepSchema": true,
    "checked": "18 October 2026"
+  },
+  "liquids": {
+   "answer": "We could not take a liquids rule from Norwegian's own pages. The rule that security checkpoints apply to cabin baggage is containers of 100 ml or less in one transparent resealable bag of at most 1 litre, according to the European Commission.",
+   "sections": [
+    {
+     "h": "💧 What Norwegian says about liquids",
+     "p": "This section is from an unofficial source, not Norwegian's own rules: the European Commission. Norwegian's hand baggage and restricted items pages (read) do not state the 100 ml limit.",
+     "table": {
+      "head": [
+       "Question",
+       "Norwegian rule"
+      ],
+      "rows": [
+       [
+        "Container size",
+        "Individual containers with a capacity not greater than 100 ml"
+       ],
+       [
+        "Bag",
+        "All in one transparent re-sealable plastic bag of a capacity not exceeding one litre"
+       ],
+       [
+        "What counts",
+        "Gels, aerosols, pastes, lotions, liquid/solid mixtures and similar items such as drinks, toothpaste, soups, syrups, perfumes and shaving foam"
+       ],
+       [
+        "Medicines, baby food and milk",
+        "Permitted in quantities larger than 100 ml, only for use during the trip; you may be asked to prove what they are"
+       ],
+       [
+        "Duty-free liquids",
+        "Allowed if the item and the receipt remain sealed inside the security bag given at purchase"
+       ],
+       [
+        "At the checkpoint",
+        "Put the transparent bag in a tray for screening"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> Norwegian's own rule. Norwegian and the airports you use can add stricter limits, so confirm with Norwegian before you fly."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much liquid can I take in my Norwegian cabin bag?",
+     "Following the European Commission: containers of 100 ml or less in one transparent resealable bag of at most 1 litre. Norwegian's own page was not readable on this, so confirm with the airline."
+    ],
+    [
+     "Does Norwegian allow liquid medicine and baby food over the limit?",
+     "The source says essential medicines, baby food and milk are permitted in larger quantities for use during the trip; confirm with Norwegian."
+    ]
+   ],
+   "sources": [
+    [
+     "https://transport.ec.europa.eu/transport-modes/air/aviation-security/information-air-travellers_en",
+     "European Commission &mdash; Information for air travellers"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026",
+   "unofficial": true
   }
  },
  "Southwest": {
@@ -4855,6 +5213,61 @@
    ],
    "keepSchema": true,
    "checked": "18 October 2026"
+  },
+  "liquids": {
+   "answer": "We could not take a liquids rule from Southwest's own pages. The rule that security checkpoints apply to cabin baggage is containers of 3.4 ounces (100 ml) or less in one quart-size bag, according to the US Transportation Security Administration (TSA).",
+   "sections": [
+    {
+     "h": "💧 What Southwest says about liquids",
+     "p": "This section is from an unofficial source, not Southwest's own rules: the US Transportation Security Administration (TSA). Southwest's carry-on policy page (read) does not state the liquid limit.",
+     "table": {
+      "head": [
+       "Question",
+       "Southwest rule"
+      ],
+      "rows": [
+       [
+        "Container size",
+        "Travel-size containers of 3.4 ounces or 100 milliliters"
+       ],
+       [
+        "Bag",
+        "Each passenger is limited to one quart-size bag of liquids, gels and aerosols"
+       ],
+       [
+        "What counts",
+        "Common travel items that must comply include toothpaste, shampoo, conditioner, mouthwash and lotion"
+       ],
+       [
+        "Where it applies",
+        "At security checkpoints at US airports"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> Southwest's own rule. Southwest and the airports you use can add stricter limits, so confirm with Southwest before you fly."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much liquid can I take in my Southwest cabin bag?",
+     "Following the US Transportation Security Administration (TSA): containers of 3.4 ounces (100 ml) or less in one quart-size bag. Southwest's own page was not readable on this, so confirm with the airline."
+    ],
+    [
+     "Does Southwest allow liquid medicine and baby food over the limit?",
+     "The source says the TSA allows exceptions for medically necessary liquids and infant items under its own rules; confirm with Southwest."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.tsa.gov/travel/frequently-asked-questions/liquids-aerosols-and-gels-rule",
+     "TSA &mdash; Liquids, Aerosols, and Gels Rule"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026",
+   "unofficial": true
   }
  },
  "Iberia": {
@@ -5263,6 +5676,65 @@
    ],
    "keepSchema": true,
    "checked": "18 October 2026"
+  },
+  "liquids": {
+   "answer": "On international departures and transfers Korean Air allows liquids (sprays) and gels in cabin baggage in individual containers of 100 ml or less, packed in a single 1 L plastic zip-top bag per person.",
+   "sections": [
+    {
+     "h": "💧 What Korean Air says about liquids",
+     "p": "From the Korean Air page \"Restricted items\".",
+     "table": {
+      "head": [
+       "Question",
+       "Korean Air rule"
+      ],
+      "rows": [
+       [
+        "International departures and transfers: cabin",
+        "Liquids (sprays) and gels (gels or creams), such as beverages, food and cosmetics, in individual containers of 100 ml or less, in a single 1 L plastic zip-top bag per person"
+       ],
+       [
+        "International: perfume and hairspray",
+        "Allowed as checked baggage in individual containers of 500 ml or less, with a total limit of 2 L per person"
+       ],
+       [
+        "International: alcohol 24% to 70%",
+        "Checked baggage, up to 5 L per person"
+       ],
+       [
+        "Domestic flights: alcohol 24% to 70%",
+        "Carry-on or checked baggage, up to 5 L per person"
+       ],
+       [
+        "Domestic flights: perfume and hairspray",
+        "Carry-on or checked baggage in containers of 500 ml or less, total 2 L per person"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> the page does not give the bag size, exemptions for medicine and baby food, or duty-free rules in the part read."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much liquid can I take on a Korean Air international flight?",
+     "Individual containers of 100 ml or less, all in a single 1 L plastic zip-top bag per person."
+    ],
+    [
+     "Can I take perfume on a Korean Air international flight?",
+     "In the cabin only within the 100 ml rule; larger perfume goes in checked baggage in containers of 500 ml or less, 2 L in total."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.koreanair.com/contents/plan-your-travel/baggage/restricted-item",
+     "Korean Air &mdash; Restricted items"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026",
+   "unofficial": false
   }
  },
  "TAP Air Portugal": {
@@ -5553,6 +6025,61 @@
    ],
    "keepSchema": true,
    "checked": "18 October 2026"
+  },
+  "liquids": {
+   "answer": "We could not take a liquids rule from IndiGo's own pages. The rule that security checkpoints apply to cabin baggage is containers of 100 ml or less in one transparent resealable bag of at most 1 litre, according to the International Air Transport Association (IATA).",
+   "sections": [
+    {
+     "h": "💧 What IndiGo says about liquids",
+     "p": "This section is from an unofficial source, not IndiGo's own rules: the International Air Transport Association (IATA). IndiGo's baggage policy page (read) does not state a liquid limit.",
+     "table": {
+      "head": [
+       "Question",
+       "IndiGo rule"
+      ],
+      "rows": [
+       [
+        "Container size",
+        "Containers of 100 ml or equivalent"
+       ],
+       [
+        "Bag",
+        "A transparent resealable plastic bag with a maximum capacity of 1 litre"
+       ],
+       [
+        "Medications, baby foods and special diets",
+        "In principle the restrictions do not apply, but consult your local airport to be sure"
+       ],
+       [
+        "Where the rule comes from",
+        "More governments are adopting the guidelines of the International Civil Aviation Organization (ICAO)"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> IndiGo's own rule. IndiGo and the airports you use can add stricter limits, so confirm with IndiGo before you fly."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much liquid can I take in my IndiGo cabin bag?",
+     "Following the International Air Transport Association (IATA): containers of 100 ml or less in one transparent resealable bag of at most 1 litre. IndiGo's own page was not readable on this, so confirm with the airline."
+    ],
+    [
+     "Does IndiGo allow liquid medicine and baby food over the limit?",
+     "The source says in principle the restrictions do not apply to medications, baby foods and special dietary requirements, but to check with your local airport; confirm with IndiGo."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.iata.org/en/youandiata/travelers/baggage/",
+     "IATA &mdash; Travel & Baggage"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026",
+   "unofficial": true
   }
  },
  "Aegean": {
@@ -5740,6 +6267,69 @@
    ],
    "keepSchema": true,
    "checked": "18 October 2026"
+  },
+  "liquids": {
+   "answer": "We could not take a liquids rule from Air France's own pages. The rule that security checkpoints apply to cabin baggage is containers of 100 ml or less in one transparent resealable bag of at most 1 litre, according to the European Commission.",
+   "sections": [
+    {
+     "h": "💧 What Air France says about liquids",
+     "p": "This section is from an unofficial source, not Air France's own rules: the European Commission. Air France's liquids page was blocked for us.",
+     "table": {
+      "head": [
+       "Question",
+       "Air France rule"
+      ],
+      "rows": [
+       [
+        "Container size",
+        "Individual containers with a capacity not greater than 100 ml"
+       ],
+       [
+        "Bag",
+        "All in one transparent re-sealable plastic bag of a capacity not exceeding one litre"
+       ],
+       [
+        "What counts",
+        "Gels, aerosols, pastes, lotions, liquid/solid mixtures and similar items such as drinks, toothpaste, soups, syrups, perfumes and shaving foam"
+       ],
+       [
+        "Medicines, baby food and milk",
+        "Permitted in quantities larger than 100 ml, only for use during the trip; you may be asked to prove what they are"
+       ],
+       [
+        "Duty-free liquids",
+        "Allowed if the item and the receipt remain sealed inside the security bag given at purchase"
+       ],
+       [
+        "At the checkpoint",
+        "Put the transparent bag in a tray for screening"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> Air France's own rule. Air France and the airports you use can add stricter limits, so confirm with Air France before you fly."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much liquid can I take in my Air France cabin bag?",
+     "Following the European Commission: containers of 100 ml or less in one transparent resealable bag of at most 1 litre. Air France's own page was not readable on this, so confirm with the airline."
+    ],
+    [
+     "Does Air France allow liquid medicine and baby food over the limit?",
+     "The source says essential medicines, baby food and milk are permitted in larger quantities for use during the trip; confirm with Air France."
+    ]
+   ],
+   "sources": [
+    [
+     "https://transport.ec.europa.eu/transport-modes/air/aviation-security/information-air-travellers_en",
+     "European Commission &mdash; Information for air travellers"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026",
+   "unofficial": true
   }
  },
  "flydubai": {
@@ -5812,6 +6402,61 @@
    ],
    "keepSchema": true,
    "checked": "18 October 2026"
+  },
+  "liquids": {
+   "answer": "We could not take a liquids rule from flydubai's own pages. The rule that security checkpoints apply to cabin baggage is containers of 100 ml or less in one transparent resealable bag of at most 1 litre, according to the International Air Transport Association (IATA).",
+   "sections": [
+    {
+     "h": "💧 What flydubai says about liquids",
+     "p": "This section is from an unofficial source, not flydubai's own rules: the International Air Transport Association (IATA). flydubai's hand baggage page (read) does not state the liquid limit.",
+     "table": {
+      "head": [
+       "Question",
+       "flydubai rule"
+      ],
+      "rows": [
+       [
+        "Container size",
+        "Containers of 100 ml or equivalent"
+       ],
+       [
+        "Bag",
+        "A transparent resealable plastic bag with a maximum capacity of 1 litre"
+       ],
+       [
+        "Medications, baby foods and special diets",
+        "In principle the restrictions do not apply, but consult your local airport to be sure"
+       ],
+       [
+        "Where the rule comes from",
+        "More governments are adopting the guidelines of the International Civil Aviation Organization (ICAO)"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> flydubai's own rule. flydubai and the airports you use can add stricter limits, so confirm with flydubai before you fly."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much liquid can I take in my flydubai cabin bag?",
+     "Following the International Air Transport Association (IATA): containers of 100 ml or less in one transparent resealable bag of at most 1 litre. flydubai's own page was not readable on this, so confirm with the airline."
+    ],
+    [
+     "Does flydubai allow liquid medicine and baby food over the limit?",
+     "The source says in principle the restrictions do not apply to medications, baby foods and special dietary requirements, but to check with your local airport; confirm with flydubai."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.iata.org/en/youandiata/travelers/baggage/",
+     "IATA &mdash; Travel & Baggage"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026",
+   "unofficial": true
   }
  },
  "South African Airways": {
@@ -6221,6 +6866,61 @@
    ],
    "keepSchema": true,
    "checked": "18 October 2026"
+  },
+  "liquids": {
+   "answer": "We could not take a liquids rule from Oman Air's own pages. The rule that security checkpoints apply to cabin baggage is containers of 100 ml or less in one transparent resealable bag of at most 1 litre, according to the International Air Transport Association (IATA).",
+   "sections": [
+    {
+     "h": "💧 What Oman Air says about liquids",
+     "p": "This section is from an unofficial source, not Oman Air's own rules: the International Air Transport Association (IATA). Oman Air's baggage page (read) does not state the liquid limit.",
+     "table": {
+      "head": [
+       "Question",
+       "Oman Air rule"
+      ],
+      "rows": [
+       [
+        "Container size",
+        "Containers of 100 ml or equivalent"
+       ],
+       [
+        "Bag",
+        "A transparent resealable plastic bag with a maximum capacity of 1 litre"
+       ],
+       [
+        "Medications, baby foods and special diets",
+        "In principle the restrictions do not apply, but consult your local airport to be sure"
+       ],
+       [
+        "Where the rule comes from",
+        "More governments are adopting the guidelines of the International Civil Aviation Organization (ICAO)"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> Oman Air's own rule. Oman Air and the airports you use can add stricter limits, so confirm with Oman Air before you fly."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much liquid can I take in my Oman Air cabin bag?",
+     "Following the International Air Transport Association (IATA): containers of 100 ml or less in one transparent resealable bag of at most 1 litre. Oman Air's own page was not readable on this, so confirm with the airline."
+    ],
+    [
+     "Does Oman Air allow liquid medicine and baby food over the limit?",
+     "The source says in principle the restrictions do not apply to medications, baby foods and special dietary requirements, but to check with your local airport; confirm with Oman Air."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.iata.org/en/youandiata/travelers/baggage/",
+     "IATA &mdash; Travel & Baggage"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026",
+   "unofficial": true
   }
  },
  "Asiana": {
@@ -6273,6 +6973,53 @@
    ],
    "keepSchema": true,
    "checked": "18 October 2026"
+  },
+  "liquids": {
+   "answer": "Asiana lists liquids exceeding 100 ml on international routes among its restricted items, and says toiletry articles including aerosols must not exceed 2 L in total and 0.5 L per article.",
+   "sections": [
+    {
+     "h": "💧 What Asiana says about liquids",
+     "p": "From the Asiana Airlines page \"Restricted Items\".",
+     "table": {
+      "head": [
+       "Question",
+       "Asiana rule"
+      ],
+      "rows": [
+       [
+        "Liquids on international routes",
+        "Liquids exceeding 100 ml are listed among the restricted items"
+       ],
+       [
+        "Toiletry articles including aerosols",
+        "Must not exceed 2 L in total; the net quantity of each single article must not exceed 0.5 L"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> the page lists the restricted items in one table without row headings: it does not give the bag size, the exemptions for medicine and baby food, or the duty-free rules."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much liquid can I take on an Asiana international flight?",
+     "Asiana lists liquids exceeding 100 ml on international routes among its restricted items."
+    ],
+    [
+     "Is there a limit on toiletries and aerosols on Asiana?",
+     "Yes: no more than 2 L in total and 0.5 L per article."
+    ]
+   ],
+   "sources": [
+    [
+     "https://flyasiana.com/C/GB/EN/contents/restricted-transport-items",
+     "Asiana Airlines &mdash; Restricted Items"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026",
+   "unofficial": false
   }
  },
  "Air Arabia": {
@@ -6325,6 +7072,53 @@
    ],
    "keepSchema": true,
    "checked": "18 October 2026"
+  },
+  "liquids": {
+   "answer": "Air Arabia says liquids over 100 ml are not permitted in cabin baggage.",
+   "sections": [
+    {
+     "h": "💧 What Air Arabia says about liquids",
+     "p": "From the Air Arabia page \"Cabin baggage\" (FAQ on personal items).",
+     "table": {
+      "head": [
+       "Question",
+       "Air Arabia rule"
+      ],
+      "rows": [
+       [
+        "Liquids in cabin baggage",
+        "Liquids over 100 ml are not permitted"
+       ],
+       [
+        "Also not permitted",
+        "Sharp objects and flammable materials"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> the page gives no bag size or number of containers, and no exemptions or duty-free rules."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "Can I take a bottle over 100 ml on Air Arabia?",
+     "Not in cabin baggage: Air Arabia says liquids over 100 ml are not permitted there."
+    ],
+    [
+     "What else is not allowed in Air Arabia cabin baggage?",
+     "Sharp objects and flammable materials."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.airarabia.com/en/help/baggage-enquiries/hand-baggage_baggage-enquiries",
+     "Air Arabia &mdash; Cabin baggage"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026",
+   "unofficial": false
   }
  },
  "Royal Jordanian": {
@@ -6625,6 +7419,69 @@
    "keepSchema": true,
    "checked": "18 October 2026",
    "unofficial": false
+  },
+  "liquids": {
+   "answer": "We could not take a liquids rule from Aer Lingus's own pages. The rule that security checkpoints apply to cabin baggage is containers of 100 ml or less in one transparent resealable bag of at most 1 litre, according to the European Commission.",
+   "sections": [
+    {
+     "h": "💧 What Aer Lingus says about liquids",
+     "p": "This section is from an unofficial source, not Aer Lingus's own rules: the European Commission. Aer Lingus' carry-on page was blocked for us.",
+     "table": {
+      "head": [
+       "Question",
+       "Aer Lingus rule"
+      ],
+      "rows": [
+       [
+        "Container size",
+        "Individual containers with a capacity not greater than 100 ml"
+       ],
+       [
+        "Bag",
+        "All in one transparent re-sealable plastic bag of a capacity not exceeding one litre"
+       ],
+       [
+        "What counts",
+        "Gels, aerosols, pastes, lotions, liquid/solid mixtures and similar items such as drinks, toothpaste, soups, syrups, perfumes and shaving foam"
+       ],
+       [
+        "Medicines, baby food and milk",
+        "Permitted in quantities larger than 100 ml, only for use during the trip; you may be asked to prove what they are"
+       ],
+       [
+        "Duty-free liquids",
+        "Allowed if the item and the receipt remain sealed inside the security bag given at purchase"
+       ],
+       [
+        "At the checkpoint",
+        "Put the transparent bag in a tray for screening"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> Aer Lingus's own rule. Aer Lingus and the airports you use can add stricter limits, so confirm with Aer Lingus before you fly."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much liquid can I take in my Aer Lingus cabin bag?",
+     "Following the European Commission: containers of 100 ml or less in one transparent resealable bag of at most 1 litre. Aer Lingus's own page was not readable on this, so confirm with the airline."
+    ],
+    [
+     "Does Aer Lingus allow liquid medicine and baby food over the limit?",
+     "The source says essential medicines, baby food and milk are permitted in larger quantities for use during the trip; confirm with Aer Lingus."
+    ]
+   ],
+   "sources": [
+    [
+     "https://transport.ec.europa.eu/transport-modes/air/aviation-security/information-air-travellers_en",
+     "European Commission &mdash; Information for air travellers"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026",
+   "unofficial": true
   }
  },
  "SunExpress": {
@@ -6690,6 +7547,69 @@
    "keepSchema": true,
    "checked": "18 October 2026",
    "unofficial": false
+  },
+  "liquids": {
+   "answer": "We could not take a liquids rule from SunExpress's own pages. The rule that security checkpoints apply to cabin baggage is containers of 100 ml or less in one transparent resealable bag of at most 1 litre, according to the European Commission.",
+   "sections": [
+    {
+     "h": "💧 What SunExpress says about liquids",
+     "p": "This section is from an unofficial source, not SunExpress's own rules: the European Commission. SunExpress' baggage pages were blocked by a security check for us.",
+     "table": {
+      "head": [
+       "Question",
+       "SunExpress rule"
+      ],
+      "rows": [
+       [
+        "Container size",
+        "Individual containers with a capacity not greater than 100 ml"
+       ],
+       [
+        "Bag",
+        "All in one transparent re-sealable plastic bag of a capacity not exceeding one litre"
+       ],
+       [
+        "What counts",
+        "Gels, aerosols, pastes, lotions, liquid/solid mixtures and similar items such as drinks, toothpaste, soups, syrups, perfumes and shaving foam"
+       ],
+       [
+        "Medicines, baby food and milk",
+        "Permitted in quantities larger than 100 ml, only for use during the trip; you may be asked to prove what they are"
+       ],
+       [
+        "Duty-free liquids",
+        "Allowed if the item and the receipt remain sealed inside the security bag given at purchase"
+       ],
+       [
+        "At the checkpoint",
+        "Put the transparent bag in a tray for screening"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> SunExpress's own rule. SunExpress and the airports you use can add stricter limits, so confirm with SunExpress before you fly."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much liquid can I take in my SunExpress cabin bag?",
+     "Following the European Commission: containers of 100 ml or less in one transparent resealable bag of at most 1 litre. SunExpress's own page was not readable on this, so confirm with the airline."
+    ],
+    [
+     "Does SunExpress allow liquid medicine and baby food over the limit?",
+     "The source says essential medicines, baby food and milk are permitted in larger quantities for use during the trip; confirm with SunExpress."
+    ]
+   ],
+   "sources": [
+    [
+     "https://transport.ec.europa.eu/transport-modes/air/aviation-security/information-air-travellers_en",
+     "European Commission &mdash; Information for air travellers"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026",
+   "unofficial": true
   }
  },
  "Kuwait Airways": {
@@ -6747,6 +7667,61 @@
    "keepSchema": true,
    "checked": "18 October 2026",
    "unofficial": false
+  },
+  "liquids": {
+   "answer": "We could not take a liquids rule from Kuwait Airways's own pages. The rule that security checkpoints apply to cabin baggage is containers of 100 ml or less in one transparent resealable bag of at most 1 litre, according to the International Air Transport Association (IATA).",
+   "sections": [
+    {
+     "h": "💧 What Kuwait Airways says about liquids",
+     "p": "This section is from an unofficial source, not Kuwait Airways's own rules: the International Air Transport Association (IATA). Kuwait Airways' carry-on page timed out for us.",
+     "table": {
+      "head": [
+       "Question",
+       "Kuwait Airways rule"
+      ],
+      "rows": [
+       [
+        "Container size",
+        "Containers of 100 ml or equivalent"
+       ],
+       [
+        "Bag",
+        "A transparent resealable plastic bag with a maximum capacity of 1 litre"
+       ],
+       [
+        "Medications, baby foods and special diets",
+        "In principle the restrictions do not apply, but consult your local airport to be sure"
+       ],
+       [
+        "Where the rule comes from",
+        "More governments are adopting the guidelines of the International Civil Aviation Organization (ICAO)"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> Kuwait Airways's own rule. Kuwait Airways and the airports you use can add stricter limits, so confirm with Kuwait Airways before you fly."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much liquid can I take in my Kuwait Airways cabin bag?",
+     "Following the International Air Transport Association (IATA): containers of 100 ml or less in one transparent resealable bag of at most 1 litre. Kuwait Airways's own page was not readable on this, so confirm with the airline."
+    ],
+    [
+     "Does Kuwait Airways allow liquid medicine and baby food over the limit?",
+     "The source says in principle the restrictions do not apply to medications, baby foods and special dietary requirements, but to check with your local airport; confirm with Kuwait Airways."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.iata.org/en/youandiata/travelers/baggage/",
+     "IATA &mdash; Travel & Baggage"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026",
+   "unofficial": true
   }
  },
  "EgyptAir": {
@@ -6800,6 +7775,61 @@
    "keepSchema": true,
    "checked": "18 October 2026",
    "unofficial": false
+  },
+  "liquids": {
+   "answer": "We could not take a liquids rule from EgyptAir's own pages. The rule that security checkpoints apply to cabin baggage is containers of 100 ml or less in one transparent resealable bag of at most 1 litre, according to the International Air Transport Association (IATA).",
+   "sections": [
+    {
+     "h": "💧 What EgyptAir says about liquids",
+     "p": "This section is from an unofficial source, not EgyptAir's own rules: the International Air Transport Association (IATA). EgyptAir's carry-on page was blocked for us.",
+     "table": {
+      "head": [
+       "Question",
+       "EgyptAir rule"
+      ],
+      "rows": [
+       [
+        "Container size",
+        "Containers of 100 ml or equivalent"
+       ],
+       [
+        "Bag",
+        "A transparent resealable plastic bag with a maximum capacity of 1 litre"
+       ],
+       [
+        "Medications, baby foods and special diets",
+        "In principle the restrictions do not apply, but consult your local airport to be sure"
+       ],
+       [
+        "Where the rule comes from",
+        "More governments are adopting the guidelines of the International Civil Aviation Organization (ICAO)"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> EgyptAir's own rule. EgyptAir and the airports you use can add stricter limits, so confirm with EgyptAir before you fly."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much liquid can I take in my EgyptAir cabin bag?",
+     "Following the International Air Transport Association (IATA): containers of 100 ml or less in one transparent resealable bag of at most 1 litre. EgyptAir's own page was not readable on this, so confirm with the airline."
+    ],
+    [
+     "Does EgyptAir allow liquid medicine and baby food over the limit?",
+     "The source says in principle the restrictions do not apply to medications, baby foods and special dietary requirements, but to check with your local airport; confirm with EgyptAir."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.iata.org/en/youandiata/travelers/baggage/",
+     "IATA &mdash; Travel & Baggage"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026",
+   "unofficial": true
   }
  },
  "Frontier": {
@@ -6852,6 +7882,65 @@
     [
      "https://www.flyfrontier.com/media/1206/baggage_fragile-and-special-items.pdf",
      "Frontier &mdash; Baggage: fragile and special items"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026",
+   "unofficial": false
+  },
+  "liquids": {
+   "answer": "Frontier says liquids in carry-ons must follow the 3-1-1 rule: containers of 3.4 oz (100 mL) or less, all in one quart-sized clear bag, one bag per passenger.",
+   "sections": [
+    {
+     "h": "💧 What Frontier says about liquids",
+     "p": "From the Frontier help article \"What does TSA allow and not allow on flights?\" (last modified 20 February 2026).",
+     "table": {
+      "head": [
+       "Question",
+       "Frontier rule"
+      ],
+      "rows": [
+       [
+        "Container size",
+        "3.4 oz (100 mL) or less"
+       ],
+       [
+        "Bag",
+        "All must fit in one quart-sized clear bag"
+       ],
+       [
+        "Number",
+        "Each passenger is allowed one bag"
+       ],
+       [
+        "Carry-on vs checked",
+        "The rules differ; the article says to double-check based on how you pack"
+       ],
+       [
+        "If unsure",
+        "Search the item on the TSA website"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> the article does not list exemptions for baby items or medicine; Frontier has a separate page on nursing and baby items."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much liquid can I take in my Frontier carry-on?",
+     "Containers of 3.4 oz (100 mL) or less, all in one quart-sized clear bag, one bag per passenger."
+    ],
+    [
+     "Where does Frontier say to check an item?",
+     "Frontier points to the TSA website to look up a specific item."
+    ]
+   ],
+   "sources": [
+    [
+     "https://faq.flyfrontier.com/help/what-does-tsa-allow-and-not-allow-on-flights",
+     "Frontier &mdash; What does TSA allow and not allow on flights?"
     ]
    ],
    "keepSchema": true,
@@ -6918,6 +8007,61 @@
    "keepSchema": true,
    "checked": "18 October 2026",
    "unofficial": true
+  },
+  "liquids": {
+   "answer": "We could not take a liquids rule from Ethiopian Airlines's own pages. The rule that security checkpoints apply to cabin baggage is containers of 100 ml or less in one transparent resealable bag of at most 1 litre, according to the International Air Transport Association (IATA).",
+   "sections": [
+    {
+     "h": "💧 What Ethiopian Airlines says about liquids",
+     "p": "This section is from an unofficial source, not Ethiopian Airlines's own rules: the International Air Transport Association (IATA). Ethiopian's carry-on page (read) says only that liquids and gels may be restricted, without a limit.",
+     "table": {
+      "head": [
+       "Question",
+       "Ethiopian Airlines rule"
+      ],
+      "rows": [
+       [
+        "Container size",
+        "Containers of 100 ml or equivalent"
+       ],
+       [
+        "Bag",
+        "A transparent resealable plastic bag with a maximum capacity of 1 litre"
+       ],
+       [
+        "Medications, baby foods and special diets",
+        "In principle the restrictions do not apply, but consult your local airport to be sure"
+       ],
+       [
+        "Where the rule comes from",
+        "More governments are adopting the guidelines of the International Civil Aviation Organization (ICAO)"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> Ethiopian Airlines's own rule. Ethiopian Airlines and the airports you use can add stricter limits, so confirm with Ethiopian Airlines before you fly."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much liquid can I take in my Ethiopian Airlines cabin bag?",
+     "Following the International Air Transport Association (IATA): containers of 100 ml or less in one transparent resealable bag of at most 1 litre. Ethiopian Airlines's own page was not readable on this, so confirm with the airline."
+    ],
+    [
+     "Does Ethiopian Airlines allow liquid medicine and baby food over the limit?",
+     "The source says in principle the restrictions do not apply to medications, baby foods and special dietary requirements, but to check with your local airport; confirm with Ethiopian Airlines."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.iata.org/en/youandiata/travelers/baggage/",
+     "IATA &mdash; Travel & Baggage"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026",
+   "unofficial": true
   }
  },
  "Kenya Airways": {
@@ -6974,6 +8118,61 @@
     [
      "https://www.iata.org/contentassets/6fea26dd84d24b26a7a1fd5788561d6e/passengers_travelling_with_lithium_batteries.pdf",
      "IATA &mdash; Passengers Travelling with Lithium Batteries (2026 guidance)"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026",
+   "unofficial": true
+  },
+  "liquids": {
+   "answer": "We could not take a liquids rule from Kenya Airways's own pages. The rule that security checkpoints apply to cabin baggage is containers of 100 ml or less in one transparent resealable bag of at most 1 litre, according to the International Air Transport Association (IATA).",
+   "sections": [
+    {
+     "h": "💧 What Kenya Airways says about liquids",
+     "p": "This section is from an unofficial source, not Kenya Airways's own rules: the International Air Transport Association (IATA). Kenya Airways' hand baggage page (read) does not state a liquid limit.",
+     "table": {
+      "head": [
+       "Question",
+       "Kenya Airways rule"
+      ],
+      "rows": [
+       [
+        "Container size",
+        "Containers of 100 ml or equivalent"
+       ],
+       [
+        "Bag",
+        "A transparent resealable plastic bag with a maximum capacity of 1 litre"
+       ],
+       [
+        "Medications, baby foods and special diets",
+        "In principle the restrictions do not apply, but consult your local airport to be sure"
+       ],
+       [
+        "Where the rule comes from",
+        "More governments are adopting the guidelines of the International Civil Aviation Organization (ICAO)"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> Kenya Airways's own rule. Kenya Airways and the airports you use can add stricter limits, so confirm with Kenya Airways before you fly."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much liquid can I take in my Kenya Airways cabin bag?",
+     "Following the International Air Transport Association (IATA): containers of 100 ml or less in one transparent resealable bag of at most 1 litre. Kenya Airways's own page was not readable on this, so confirm with the airline."
+    ],
+    [
+     "Does Kenya Airways allow liquid medicine and baby food over the limit?",
+     "The source says in principle the restrictions do not apply to medications, baby foods and special dietary requirements, but to check with your local airport; confirm with Kenya Airways."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.iata.org/en/youandiata/travelers/baggage/",
+     "IATA &mdash; Travel & Baggage"
     ]
    ],
    "keepSchema": true,
@@ -7040,6 +8239,65 @@
    "keepSchema": true,
    "checked": "18 October 2026",
    "unofficial": true
+  },
+  "liquids": {
+   "answer": "Royal Air Maroc allows liquids and gels in the cabin only in containers of a maximum of 100 ml each, grouped in a single transparent resealable one-litre plastic bag shown separately at security.",
+   "sections": [
+    {
+     "h": "💧 What Royal Air Maroc says about liquids",
+     "p": "From the Royal Air Maroc page \"Carry-On Baggage Rules\", Tips and important information.",
+     "table": {
+      "head": [
+       "Question",
+       "Royal Air Maroc rule"
+      ],
+      "rows": [
+       [
+        "Container size",
+        "A maximum of 100 ml each"
+       ],
+       [
+        "What counts",
+        "Liquids and gels such as care products and cosmetics"
+       ],
+       [
+        "Bag",
+        "A single transparent, resealable one-litre plastic bag"
+       ],
+       [
+        "At security",
+        "Presented separately"
+       ],
+       [
+        "Duty-free",
+        "Items bought in the duty-free zone are in addition to the standard allowance"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> the page does not give exemptions for medicine and baby food in the part read, or the rule for checked baggage."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much liquid can I take in my Royal Air Maroc cabin bag?",
+     "Containers of a maximum of 100 ml each, in a single transparent resealable one-litre bag shown separately at security."
+    ],
+    [
+     "Can I take medication on Royal Air Maroc?",
+     "The page advises carrying any medication needed during the trip in your hand baggage."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.royalairmaroc.com/us-en/carry-on-baggage",
+     "Royal Air Maroc &mdash; Carry-On Baggage Rules"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026",
+   "unofficial": false
   }
  },
  "China Southern": {
@@ -7101,6 +8359,65 @@
    "keepSchema": true,
    "checked": "18 October 2026",
    "unofficial": true
+  },
+  "liquids": {
+   "answer": "China Southern allows liquids, gels and aerosols in the cabin only in containers of a maximum of 100 ml, in one resealable transparent bag of at most 1 litre per passenger.",
+   "sections": [
+    {
+     "h": "💧 What China Southern says about liquids",
+     "p": "From the China Southern carry-on baggage FAQ, question 6 \"Can I carry liquid article?\" (read in a copy of the page saved on 20 August 2026).",
+     "table": {
+      "head": [
+       "Question",
+       "China Southern rule"
+      ],
+      "rows": [
+       [
+        "Container size",
+        "Maximum capacity 100 ml; a container larger than 100 ml, even if not full, is not allowed in the cabin"
+       ],
+       [
+        "Bag",
+        "Containers must fit comfortably in a resealable transparent plastic bag of at most 1 litre; each passenger one bag at a time; the excess goes in checked baggage"
+       ],
+       [
+        "At security",
+        "The bag is checked particularly at the security checkpoint"
+       ],
+       [
+        "Baby formula, milk and breast milk (baby accompanied), and liquid drugs for diabetics or other patients",
+        "Allowed through the checkpoint with certification shown; liquid drugs in a 100 ml container in a transparent bag"
+       ],
+       [
+        "Liquids bought in the isolated area of the terminal",
+        "Permitted on board"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> the FAQ does not say how the rules differ on domestic flights. The page was read in a dated copy."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much liquid can I take on a China Southern flight?",
+     "Containers of a maximum of 100 ml in one resealable transparent bag of at most 1 litre, one bag per passenger."
+    ],
+    [
+     "Can I take baby formula on China Southern?",
+     "Yes, with the baby accompanying, after showing it at the security checkpoint."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.csair.com/sg/en/tourguide/faq/baggage/ssxdxlxz.shtml",
+     "China Southern &mdash; Carry-on baggage FAQ"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026",
+   "unofficial": false
   }
  },
  "Air China": {
@@ -7157,6 +8474,61 @@
     [
      "https://www.iata.org/contentassets/6fea26dd84d24b26a7a1fd5788561d6e/passengers_travelling_with_lithium_batteries.pdf",
      "IATA &mdash; Passengers Travelling with Lithium Batteries (2026 guidance)"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026",
+   "unofficial": true
+  },
+  "liquids": {
+   "answer": "We could not take a liquids rule from Air China's own pages. The rule that security checkpoints apply to cabin baggage is containers of 100 ml or less in one transparent resealable bag of at most 1 litre, according to the International Air Transport Association (IATA).",
+   "sections": [
+    {
+     "h": "💧 What Air China says about liquids",
+     "p": "This section is from an unofficial source, not Air China's own rules: the International Air Transport Association (IATA). Air China's liquids page returned an error for us.",
+     "table": {
+      "head": [
+       "Question",
+       "Air China rule"
+      ],
+      "rows": [
+       [
+        "Container size",
+        "Containers of 100 ml or equivalent"
+       ],
+       [
+        "Bag",
+        "A transparent resealable plastic bag with a maximum capacity of 1 litre"
+       ],
+       [
+        "Medications, baby foods and special diets",
+        "In principle the restrictions do not apply, but consult your local airport to be sure"
+       ],
+       [
+        "Where the rule comes from",
+        "More governments are adopting the guidelines of the International Civil Aviation Organization (ICAO)"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> Air China's own rule. Air China and the airports you use can add stricter limits, so confirm with Air China before you fly."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much liquid can I take in my Air China cabin bag?",
+     "Following the International Air Transport Association (IATA): containers of 100 ml or less in one transparent resealable bag of at most 1 litre. Air China's own page was not readable on this, so confirm with the airline."
+    ],
+    [
+     "Does Air China allow liquid medicine and baby food over the limit?",
+     "The source says in principle the restrictions do not apply to medications, baby foods and special dietary requirements, but to check with your local airport; confirm with Air China."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.iata.org/en/youandiata/travelers/baggage/",
+     "IATA &mdash; Travel & Baggage"
     ]
    ],
    "keepSchema": true,
@@ -7223,6 +8595,69 @@
    "keepSchema": true,
    "checked": "18 October 2026",
    "unofficial": true
+  },
+  "liquids": {
+   "answer": "Icelandair allows liquids, gels and aerosols in containers up to 100 ml (3 oz) each, with a total limit of 1 litre (1 quart), in generally one clear resealable bag.",
+   "sections": [
+    {
+     "h": "💧 What Icelandair says about liquids",
+     "p": "From the Icelandair page \"Baggage on Icelandair flights\", Restricted items.",
+     "table": {
+      "head": [
+       "Question",
+       "Icelandair rule"
+      ],
+      "rows": [
+       [
+        "Container size",
+        "Up to 3 oz (100 ml) each"
+       ],
+       [
+        "Total",
+        "1 quart (1 litre)"
+       ],
+       [
+        "Bag",
+        "Generally one clear resealable bag that all items must fit into"
+       ],
+       [
+        "What counts",
+        "Liquids, gels, pastes, liquid/solid mixtures and the contents of pressurised containers"
+       ],
+       [
+        "Drink cans and bottles",
+        "Most hold more than 100 ml, so they are not permitted beyond security screening"
+       ],
+       [
+        "Duty-free",
+        "Items go in a special anti-tampering bag; it must be closed, show no sign of opening and contain the receipt; keep it separate from other carry-on items at screening"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> the section gives no rule on medicine and baby food in the part read, or for checked baggage."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much liquid can I take on Icelandair?",
+     "Containers up to 100 ml (3 oz) each, 1 litre in total, in one clear resealable bag."
+    ],
+    [
+     "Can I take duty-free liquids on Icelandair?",
+     "Yes, in the sealed anti-tampering bag with the receipt, kept separate at screening."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.icelandair.com/support/baggage/overview/",
+     "Icelandair &mdash; Baggage on Icelandair flights"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026",
+   "unofficial": false
   }
  },
  "Saudia": {
@@ -7284,6 +8719,57 @@
    "keepSchema": true,
    "checked": "18 October 2026",
    "unofficial": true
+  },
+  "liquids": {
+   "answer": "Saudia lists liquids, gels and aerosols exceeding the permitted limit, typically 100 ml per container in carry-on baggage, among the items restricted in carry-on.",
+   "sections": [
+    {
+     "h": "💧 What Saudia says about liquids",
+     "p": "From the Saudia page \"Carry On Baggage Rules and Limits\", section What items are restricted in carry-on baggage?",
+     "table": {
+      "head": [
+       "Question",
+       "Saudia rule"
+      ],
+      "rows": [
+       [
+        "Liquids, gels and aerosols",
+        "Exceeding the permitted limit (typically 100 ml per container in carry-on baggage) are restricted in carry-on"
+       ],
+       [
+        "Other restricted items",
+        "Sharp objects, flammable materials including some aerosols, explosives and hazardous substances, self-defence items, tools that could be used as weapons"
+       ],
+       [
+        "Checked baggage",
+        "Some restricted items may be accepted in checked baggage; others are prohibited entirely"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> the page says \"typically 100 ml\" and gives no bag size, exemptions or duty-free rules; check the rules of the airports you use."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much liquid can I take in my Saudia carry-on?",
+     "Saudia says typically 100 ml per container in carry-on baggage; larger amounts are restricted."
+    ],
+    [
+     "Can I take restricted liquids in checked baggage on Saudia?",
+     "Some restricted items may be accepted in checked baggage; others are prohibited entirely."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.saudia.com/en-SA/manage/baggage/carry-on-baggage",
+     "Saudia &mdash; Carry On Baggage Rules and Limits"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026",
+   "unofficial": false
   }
  },
  "Gulf Air": {
@@ -7340,6 +8826,61 @@
     [
      "https://www.iata.org/contentassets/6fea26dd84d24b26a7a1fd5788561d6e/passengers_travelling_with_lithium_batteries.pdf",
      "IATA &mdash; Passengers Travelling with Lithium Batteries (2026 guidance)"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026",
+   "unofficial": true
+  },
+  "liquids": {
+   "answer": "We could not take a liquids rule from Gulf Air's own pages. The rule that security checkpoints apply to cabin baggage is containers of 100 ml or less in one transparent resealable bag of at most 1 litre, according to the International Air Transport Association (IATA).",
+   "sections": [
+    {
+     "h": "💧 What Gulf Air says about liquids",
+     "p": "This section is from an unofficial source, not Gulf Air's own rules: the International Air Transport Association (IATA). Gulf Air's carry-on page (read) does not state the liquid limit.",
+     "table": {
+      "head": [
+       "Question",
+       "Gulf Air rule"
+      ],
+      "rows": [
+       [
+        "Container size",
+        "Containers of 100 ml or equivalent"
+       ],
+       [
+        "Bag",
+        "A transparent resealable plastic bag with a maximum capacity of 1 litre"
+       ],
+       [
+        "Medications, baby foods and special diets",
+        "In principle the restrictions do not apply, but consult your local airport to be sure"
+       ],
+       [
+        "Where the rule comes from",
+        "More governments are adopting the guidelines of the International Civil Aviation Organization (ICAO)"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> Gulf Air's own rule. Gulf Air and the airports you use can add stricter limits, so confirm with Gulf Air before you fly."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much liquid can I take in my Gulf Air cabin bag?",
+     "Following the International Air Transport Association (IATA): containers of 100 ml or less in one transparent resealable bag of at most 1 litre. Gulf Air's own page was not readable on this, so confirm with the airline."
+    ],
+    [
+     "Does Gulf Air allow liquid medicine and baby food over the limit?",
+     "The source says in principle the restrictions do not apply to medications, baby foods and special dietary requirements, but to check with your local airport; confirm with Gulf Air."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.iata.org/en/youandiata/travelers/baggage/",
+     "IATA &mdash; Travel & Baggage"
     ]
    ],
    "keepSchema": true,
@@ -7406,6 +8947,61 @@
    "keepSchema": true,
    "checked": "18 October 2026",
    "unofficial": true
+  },
+  "liquids": {
+   "answer": "We could not take a liquids rule from GOL's own pages. The rule that security checkpoints apply to cabin baggage is containers of 100 ml or less in one transparent resealable bag of at most 1 litre, according to the International Air Transport Association (IATA).",
+   "sections": [
+    {
+     "h": "💧 What GOL says about liquids",
+     "p": "This section is from an unofficial source, not GOL's own rules: the International Air Transport Association (IATA). GOL's baggage pages could not be opened for us.",
+     "table": {
+      "head": [
+       "Question",
+       "GOL rule"
+      ],
+      "rows": [
+       [
+        "Container size",
+        "Containers of 100 ml or equivalent"
+       ],
+       [
+        "Bag",
+        "A transparent resealable plastic bag with a maximum capacity of 1 litre"
+       ],
+       [
+        "Medications, baby foods and special diets",
+        "In principle the restrictions do not apply, but consult your local airport to be sure"
+       ],
+       [
+        "Where the rule comes from",
+        "More governments are adopting the guidelines of the International Civil Aviation Organization (ICAO)"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> GOL's own rule. GOL and the airports you use can add stricter limits, so confirm with GOL before you fly."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much liquid can I take in my GOL cabin bag?",
+     "Following the International Air Transport Association (IATA): containers of 100 ml or less in one transparent resealable bag of at most 1 litre. GOL's own page was not readable on this, so confirm with the airline."
+    ],
+    [
+     "Does GOL allow liquid medicine and baby food over the limit?",
+     "The source says in principle the restrictions do not apply to medications, baby foods and special dietary requirements, but to check with your local airport; confirm with GOL."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.iata.org/en/youandiata/travelers/baggage/",
+     "IATA &mdash; Travel & Baggage"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026",
+   "unofficial": true
   }
  },
  "Aeromexico": {
@@ -7462,6 +9058,61 @@
     [
      "https://www.iata.org/contentassets/6fea26dd84d24b26a7a1fd5788561d6e/passengers_travelling_with_lithium_batteries.pdf",
      "IATA &mdash; Passengers Travelling with Lithium Batteries (2026 guidance)"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026",
+   "unofficial": true
+  },
+  "liquids": {
+   "answer": "We could not take a liquids rule from Aeromexico's own pages. The rule that security checkpoints apply to cabin baggage is containers of 100 ml or less in one transparent resealable bag of at most 1 litre, according to the International Air Transport Association (IATA).",
+   "sections": [
+    {
+     "h": "💧 What Aeromexico says about liquids",
+     "p": "This section is from an unofficial source, not Aeromexico's own rules: the International Air Transport Association (IATA). Aeromexico's site could not be reached from our connection.",
+     "table": {
+      "head": [
+       "Question",
+       "Aeromexico rule"
+      ],
+      "rows": [
+       [
+        "Container size",
+        "Containers of 100 ml or equivalent"
+       ],
+       [
+        "Bag",
+        "A transparent resealable plastic bag with a maximum capacity of 1 litre"
+       ],
+       [
+        "Medications, baby foods and special diets",
+        "In principle the restrictions do not apply, but consult your local airport to be sure"
+       ],
+       [
+        "Where the rule comes from",
+        "More governments are adopting the guidelines of the International Civil Aviation Organization (ICAO)"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> Aeromexico's own rule. Aeromexico and the airports you use can add stricter limits, so confirm with Aeromexico before you fly."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much liquid can I take in my Aeromexico cabin bag?",
+     "Following the International Air Transport Association (IATA): containers of 100 ml or less in one transparent resealable bag of at most 1 litre. Aeromexico's own page was not readable on this, so confirm with the airline."
+    ],
+    [
+     "Does Aeromexico allow liquid medicine and baby food over the limit?",
+     "The source says in principle the restrictions do not apply to medications, baby foods and special dietary requirements, but to check with your local airport; confirm with Aeromexico."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.iata.org/en/youandiata/travelers/baggage/",
+     "IATA &mdash; Travel & Baggage"
     ]
    ],
    "keepSchema": true,
@@ -7528,6 +9179,61 @@
    "keepSchema": true,
    "checked": "18 October 2026",
    "unofficial": true
+  },
+  "liquids": {
+   "answer": "We could not take a liquids rule from El Al's own pages. The rule that security checkpoints apply to cabin baggage is containers of 100 ml or less in one transparent resealable bag of at most 1 litre, according to the International Air Transport Association (IATA).",
+   "sections": [
+    {
+     "h": "💧 What El Al says about liquids",
+     "p": "This section is from an unofficial source, not El Al's own rules: the International Air Transport Association (IATA). The only El Al page on liquids we found is a 2019 copy in German, too old to use as a current rule.",
+     "table": {
+      "head": [
+       "Question",
+       "El Al rule"
+      ],
+      "rows": [
+       [
+        "Container size",
+        "Containers of 100 ml or equivalent"
+       ],
+       [
+        "Bag",
+        "A transparent resealable plastic bag with a maximum capacity of 1 litre"
+       ],
+       [
+        "Medications, baby foods and special diets",
+        "In principle the restrictions do not apply, but consult your local airport to be sure"
+       ],
+       [
+        "Where the rule comes from",
+        "More governments are adopting the guidelines of the International Civil Aviation Organization (ICAO)"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> El Al's own rule. El Al and the airports you use can add stricter limits, so confirm with El Al before you fly."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much liquid can I take in my El Al cabin bag?",
+     "Following the International Air Transport Association (IATA): containers of 100 ml or less in one transparent resealable bag of at most 1 litre. El Al's own page was not readable on this, so confirm with the airline."
+    ],
+    [
+     "Does El Al allow liquid medicine and baby food over the limit?",
+     "The source says in principle the restrictions do not apply to medications, baby foods and special dietary requirements, but to check with your local airport; confirm with El Al."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.iata.org/en/youandiata/travelers/baggage/",
+     "IATA &mdash; Travel & Baggage"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026",
+   "unofficial": true
   }
  },
  "Arkia": {
@@ -7584,6 +9290,61 @@
     [
      "https://www.iata.org/contentassets/6fea26dd84d24b26a7a1fd5788561d6e/passengers_travelling_with_lithium_batteries.pdf",
      "IATA &mdash; Passengers Travelling with Lithium Batteries (2026 guidance)"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026",
+   "unofficial": true
+  },
+  "liquids": {
+   "answer": "We could not take a liquids rule from Arkia's own pages. The rule that security checkpoints apply to cabin baggage is containers of 100 ml or less in one transparent resealable bag of at most 1 litre, according to the International Air Transport Association (IATA).",
+   "sections": [
+    {
+     "h": "💧 What Arkia says about liquids",
+     "p": "This section is from an unofficial source, not Arkia's own rules: the International Air Transport Association (IATA). Arkia's own pages we found cover conditions of carriage and do not state a liquid limit.",
+     "table": {
+      "head": [
+       "Question",
+       "Arkia rule"
+      ],
+      "rows": [
+       [
+        "Container size",
+        "Containers of 100 ml or equivalent"
+       ],
+       [
+        "Bag",
+        "A transparent resealable plastic bag with a maximum capacity of 1 litre"
+       ],
+       [
+        "Medications, baby foods and special diets",
+        "In principle the restrictions do not apply, but consult your local airport to be sure"
+       ],
+       [
+        "Where the rule comes from",
+        "More governments are adopting the guidelines of the International Civil Aviation Organization (ICAO)"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> Arkia's own rule. Arkia and the airports you use can add stricter limits, so confirm with Arkia before you fly."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much liquid can I take in my Arkia cabin bag?",
+     "Following the International Air Transport Association (IATA): containers of 100 ml or less in one transparent resealable bag of at most 1 litre. Arkia's own page was not readable on this, so confirm with the airline."
+    ],
+    [
+     "Does Arkia allow liquid medicine and baby food over the limit?",
+     "The source says in principle the restrictions do not apply to medications, baby foods and special dietary requirements, but to check with your local airport; confirm with Arkia."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.iata.org/en/youandiata/travelers/baggage/",
+     "IATA &mdash; Travel & Baggage"
     ]
    ],
    "keepSchema": true,
@@ -7650,6 +9411,61 @@
    "keepSchema": true,
    "checked": "18 October 2026",
    "unofficial": true
+  },
+  "liquids": {
+   "answer": "We could not take a liquids rule from Israir's own pages. The rule that security checkpoints apply to cabin baggage is containers of 100 ml or less in one transparent resealable bag of at most 1 litre, according to the International Air Transport Association (IATA).",
+   "sections": [
+    {
+     "h": "💧 What Israir says about liquids",
+     "p": "This section is from an unofficial source, not Israir's own rules: the International Air Transport Association (IATA). Israir's baggage policy page (read) does not state a liquids limit.",
+     "table": {
+      "head": [
+       "Question",
+       "Israir rule"
+      ],
+      "rows": [
+       [
+        "Container size",
+        "Containers of 100 ml or equivalent"
+       ],
+       [
+        "Bag",
+        "A transparent resealable plastic bag with a maximum capacity of 1 litre"
+       ],
+       [
+        "Medications, baby foods and special diets",
+        "In principle the restrictions do not apply, but consult your local airport to be sure"
+       ],
+       [
+        "Where the rule comes from",
+        "More governments are adopting the guidelines of the International Civil Aviation Organization (ICAO)"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> Israir's own rule. Israir and the airports you use can add stricter limits, so confirm with Israir before you fly."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much liquid can I take in my Israir cabin bag?",
+     "Following the International Air Transport Association (IATA): containers of 100 ml or less in one transparent resealable bag of at most 1 litre. Israir's own page was not readable on this, so confirm with the airline."
+    ],
+    [
+     "Does Israir allow liquid medicine and baby food over the limit?",
+     "The source says in principle the restrictions do not apply to medications, baby foods and special dietary requirements, but to check with your local airport; confirm with Israir."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.iata.org/en/youandiata/travelers/baggage/",
+     "IATA &mdash; Travel & Baggage"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026",
+   "unofficial": true
   }
  },
  "Middle East Airlines": {
@@ -7706,6 +9522,61 @@
     [
      "https://www.iata.org/contentassets/6fea26dd84d24b26a7a1fd5788561d6e/passengers_travelling_with_lithium_batteries.pdf",
      "IATA &mdash; Passengers Travelling with Lithium Batteries (2026 guidance)"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026",
+   "unofficial": true
+  },
+  "liquids": {
+   "answer": "We could not take a liquids rule from MEA's own pages. The rule that security checkpoints apply to cabin baggage is containers of 100 ml or less in one transparent resealable bag of at most 1 litre, according to the International Air Transport Association (IATA).",
+   "sections": [
+    {
+     "h": "💧 What MEA says about liquids",
+     "p": "This section is from an unofficial source, not MEA's own rules: the International Air Transport Association (IATA). MEA's site blocked our connection.",
+     "table": {
+      "head": [
+       "Question",
+       "MEA rule"
+      ],
+      "rows": [
+       [
+        "Container size",
+        "Containers of 100 ml or equivalent"
+       ],
+       [
+        "Bag",
+        "A transparent resealable plastic bag with a maximum capacity of 1 litre"
+       ],
+       [
+        "Medications, baby foods and special diets",
+        "In principle the restrictions do not apply, but consult your local airport to be sure"
+       ],
+       [
+        "Where the rule comes from",
+        "More governments are adopting the guidelines of the International Civil Aviation Organization (ICAO)"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> MEA's own rule. MEA and the airports you use can add stricter limits, so confirm with MEA before you fly."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much liquid can I take in my MEA cabin bag?",
+     "Following the International Air Transport Association (IATA): containers of 100 ml or less in one transparent resealable bag of at most 1 litre. MEA's own page was not readable on this, so confirm with the airline."
+    ],
+    [
+     "Does MEA allow liquid medicine and baby food over the limit?",
+     "The source says in principle the restrictions do not apply to medications, baby foods and special dietary requirements, but to check with your local airport; confirm with MEA."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.iata.org/en/youandiata/travelers/baggage/",
+     "IATA &mdash; Travel & Baggage"
     ]
    ],
    "keepSchema": true,
@@ -7772,6 +9643,69 @@
    "keepSchema": true,
    "checked": "18 October 2026",
    "unofficial": true
+  },
+  "liquids": {
+   "answer": "Avianca allows liquids in carry-on baggage in containers of no more than 100 ml, packed in a transparent plastic bag with a seal or zipper that holds up to 1 litre.",
+   "sections": [
+    {
+     "h": "💧 What Avianca says about liquids",
+     "p": "From the Avianca help article \"Can I bring liquids in my carry-on baggage?\".",
+     "table": {
+      "head": [
+       "Question",
+       "Avianca rule"
+      ],
+      "rows": [
+       [
+        "Container size",
+        "No more than 100 ml per product"
+       ],
+       [
+        "Total",
+        "1 litre for the total of all products"
+       ],
+       [
+        "Bag",
+        "Transparent plastic bag with an adhesive seal or zipper, up to 1 litre"
+       ],
+       [
+        "What counts",
+        "Gels, aerosols, hand sanitizers and alcohol"
+       ],
+       [
+        "Exceptions",
+        "Medications; liquids (including juices) or gels for diabetics or other medical needs; breast milk, formula and juice if the infant or child is travelling; packaged food for infants or children up to two years old; food for travellers on special diets"
+       ],
+       [
+        "Departure and connections",
+        "The restrictions apply when departing from an airport and when connecting at another airport; airport security rules vary, so check with the airport authority"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> the article gives no rule for checked baggage."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much liquid can I take in my Avianca carry-on?",
+     "Containers of no more than 100 ml, up to 1 litre in total, in one transparent plastic bag with a seal or zipper."
+    ],
+    [
+     "Can I take baby formula on Avianca?",
+     "Yes, Avianca says breast milk, formula and juice are allowed if the infant or child is travelling."
+    ]
+   ],
+   "sources": [
+    [
+     "https://ayuda.avianca.com/hc/en-us/articles/13083098505627-Can-I-bring-liquids-in-my-carry-on-baggage",
+     "Avianca &mdash; Can I bring liquids in my carry-on baggage?"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026",
+   "unofficial": false
   }
  },
  "Alaska Airlines": {
@@ -7837,6 +9771,61 @@
    "keepSchema": true,
    "checked": "18 October 2026",
    "unofficial": true
+  },
+  "liquids": {
+   "answer": "We could not take a liquids rule from Alaska Airlines's own pages. The rule that security checkpoints apply to cabin baggage is containers of 3.4 ounces (100 ml) or less in one quart-size bag, according to the US Transportation Security Administration (TSA).",
+   "sections": [
+    {
+     "h": "💧 What Alaska Airlines says about liquids",
+     "p": "This section is from an unofficial source, not Alaska Airlines's own rules: the US Transportation Security Administration (TSA). Alaska's travel tips page was blocked for us.",
+     "table": {
+      "head": [
+       "Question",
+       "Alaska Airlines rule"
+      ],
+      "rows": [
+       [
+        "Container size",
+        "Travel-size containers of 3.4 ounces or 100 milliliters"
+       ],
+       [
+        "Bag",
+        "Each passenger is limited to one quart-size bag of liquids, gels and aerosols"
+       ],
+       [
+        "What counts",
+        "Common travel items that must comply include toothpaste, shampoo, conditioner, mouthwash and lotion"
+       ],
+       [
+        "Where it applies",
+        "At security checkpoints at US airports"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> Alaska Airlines's own rule. Alaska Airlines and the airports you use can add stricter limits, so confirm with Alaska Airlines before you fly."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much liquid can I take in my Alaska Airlines cabin bag?",
+     "Following the US Transportation Security Administration (TSA): containers of 3.4 ounces (100 ml) or less in one quart-size bag. Alaska Airlines's own page was not readable on this, so confirm with the airline."
+    ],
+    [
+     "Does Alaska Airlines allow liquid medicine and baby food over the limit?",
+     "The source says the TSA allows exceptions for medically necessary liquids and infant items under its own rules; confirm with Alaska Airlines."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.tsa.gov/travel/frequently-asked-questions/liquids-aerosols-and-gels-rule",
+     "TSA &mdash; Liquids, Aerosols, and Gels Rule"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026",
+   "unofficial": true
   }
  },
  "Azul": {
@@ -7886,6 +9875,61 @@
    "keepSchema": true,
    "checked": "18 October 2026",
    "unofficial": false
+  },
+  "liquids": {
+   "answer": "We could not take a liquids rule from Azul's own pages. The rule that security checkpoints apply to cabin baggage is containers of 100 ml or less in one transparent resealable bag of at most 1 litre, according to the International Air Transport Association (IATA).",
+   "sections": [
+    {
+     "h": "💧 What Azul says about liquids",
+     "p": "This section is from an unofficial source, not Azul's own rules: the International Air Transport Association (IATA). The Azul article we read covers checked baggage and does not state the carry-on liquid limit.",
+     "table": {
+      "head": [
+       "Question",
+       "Azul rule"
+      ],
+      "rows": [
+       [
+        "Container size",
+        "Containers of 100 ml or equivalent"
+       ],
+       [
+        "Bag",
+        "A transparent resealable plastic bag with a maximum capacity of 1 litre"
+       ],
+       [
+        "Medications, baby foods and special diets",
+        "In principle the restrictions do not apply, but consult your local airport to be sure"
+       ],
+       [
+        "Where the rule comes from",
+        "More governments are adopting the guidelines of the International Civil Aviation Organization (ICAO)"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> Azul's own rule. Azul and the airports you use can add stricter limits, so confirm with Azul before you fly."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much liquid can I take in my Azul cabin bag?",
+     "Following the International Air Transport Association (IATA): containers of 100 ml or less in one transparent resealable bag of at most 1 litre. Azul's own page was not readable on this, so confirm with the airline."
+    ],
+    [
+     "Does Azul allow liquid medicine and baby food over the limit?",
+     "The source says in principle the restrictions do not apply to medications, baby foods and special dietary requirements, but to check with your local airport; confirm with Azul."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.iata.org/en/youandiata/travelers/baggage/",
+     "IATA &mdash; Travel & Baggage"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026",
+   "unofficial": true
   }
  },
  "Wizz Air": {
@@ -8695,6 +10739,234 @@
    "keepSchema": true,
    "checked": "18 October 2026",
    "unofficial": false
+  }
+ },
+ "Volaris": {
+  "liquids": {
+   "answer": "Volaris says that for airport security reasons you cannot take liquids or gels of more than 100 ml in your hand baggage.",
+   "sections": [
+    {
+     "h": "💧 What Volaris says about liquids",
+     "p": "From the Volaris page \"Documenta tu vuelo\" (Spanish), section Consideraciones.",
+     "table": {
+      "head": [
+       "Question",
+       "Volaris rule"
+      ],
+      "rows": [
+       [
+        "Hand baggage",
+        "Liquids and/or gels of more than 100 ml are not allowed"
+       ],
+       [
+        "Electronics, valuables, medicines and documents",
+        "Should go in your hand baggage"
+       ],
+       [
+        "After you check your bag",
+        "Once the bag is handed in at the counter you can no longer put in it any item that the security filters would not let through"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> the page does not give the bag size, the exemptions for baby milk or medicine, or duty-free rules."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much liquid can I take in my Volaris hand baggage?",
+     "Volaris says liquids and gels of more than 100 ml are not allowed in hand baggage."
+    ],
+    [
+     "Can I put a big bottle in my bag after I check it in at Volaris?",
+     "Not if the security filters would not let it through: Volaris says you cannot add such items after handing in the bag."
+    ]
+   ],
+   "sources": [
+    [
+     "https://cms.volaris.com/es/informacion-util/antes-de-tu-vuelo/proceso-de-documentacion/",
+     "Volaris &mdash; Documenta tu vuelo (Consideraciones)"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026",
+   "unofficial": false
+  }
+ },
+ "China Eastern": {
+  "liquids": {
+   "answer": "On international and regional flights China Eastern requires liquid items in containers of no more than 100 ml, in one transparent re-sealable plastic bag of at most 1 L, one bag per flight; domestic flights allow almost no liquids.",
+   "sections": [
+    {
+     "h": "💧 What China Eastern says about liquids",
+     "p": "From the China Eastern page \"Carry-on Baggage\", section 3 Liquid items.",
+     "table": {
+      "head": [
+       "Question",
+       "China Eastern rule"
+      ],
+      "rows": [
+       [
+        "International and regional flights: container",
+        "Liquid items in a single container not exceeding 100 ml"
+       ],
+       [
+        "International and regional flights: bag",
+        "Containers in a transparent, re-sealable plastic bag with a maximum volume of 1 L; only one bag per flight, any excess has to be checked in"
+       ],
+       [
+        "Domestic flights",
+        "No liquid items, except cosmetics, toothpaste and shaving cream for use during the trip (cosmetics only under set conditions; one piece each of toothpaste and shaving cream, not over 100 g/ml)"
+       ],
+       [
+        "Transfer from international to domestic",
+        "Tax-free liquids need proof of purchase, a sealed intact transparent bag and examination at security; if you leave the restricted zone they become checked baggage"
+       ],
+       [
+        "Infants and patients",
+        "Liquid dairy products for infants and necessary liquid medicines (rest of the clause on the page)"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> the clause on liquid medicines for patients is cut off in the part read: see the page."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much liquid can I take on a China Eastern international flight?",
+     "Containers of no more than 100 ml in one transparent re-sealable bag of at most 1 L, one bag per flight."
+    ],
+    [
+     "Can I take liquids on a China Eastern domestic flight?",
+     "Almost none: only cosmetics, toothpaste and shaving cream for use during the trip, under the page's conditions."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.ceair.com/global/en_static/Announcement/BaggageService/CarryonBaggage/",
+     "China Eastern &mdash; Carry-on Baggage"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026",
+   "unofficial": false
+  }
+ },
+ "Hawaiian Airlines": {
+  "liquids": {
+   "answer": "We could not take a liquids rule from Hawaiian Airlines's own pages. The rule that security checkpoints apply to cabin baggage is containers of 3.4 ounces (100 ml) or less in one quart-size bag, according to the US Transportation Security Administration (TSA).",
+   "sections": [
+    {
+     "h": "💧 What Hawaiian Airlines says about liquids",
+     "p": "This section is from an unofficial source, not Hawaiian Airlines's own rules: the US Transportation Security Administration (TSA). Hawaiian's carry-on page did not load for us.",
+     "table": {
+      "head": [
+       "Question",
+       "Hawaiian Airlines rule"
+      ],
+      "rows": [
+       [
+        "Container size",
+        "Travel-size containers of 3.4 ounces or 100 milliliters"
+       ],
+       [
+        "Bag",
+        "Each passenger is limited to one quart-size bag of liquids, gels and aerosols"
+       ],
+       [
+        "What counts",
+        "Common travel items that must comply include toothpaste, shampoo, conditioner, mouthwash and lotion"
+       ],
+       [
+        "Where it applies",
+        "At security checkpoints at US airports"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> Hawaiian Airlines's own rule. Hawaiian Airlines and the airports you use can add stricter limits, so confirm with Hawaiian Airlines before you fly."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much liquid can I take in my Hawaiian Airlines cabin bag?",
+     "Following the US Transportation Security Administration (TSA): containers of 3.4 ounces (100 ml) or less in one quart-size bag. Hawaiian Airlines's own page was not readable on this, so confirm with the airline."
+    ],
+    [
+     "Does Hawaiian Airlines allow liquid medicine and baby food over the limit?",
+     "The source says the TSA allows exceptions for medically necessary liquids and infant items under its own rules; confirm with Hawaiian Airlines."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.tsa.gov/travel/frequently-asked-questions/liquids-aerosols-and-gels-rule",
+     "TSA &mdash; Liquids, Aerosols, and Gels Rule"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026",
+   "unofficial": true
+  }
+ },
+ "WestJet": {
+  "liquids": {
+   "answer": "We could not take a liquids rule from WestJet's own pages. The rule that security checkpoints apply to cabin baggage is containers of 100 ml or less in one transparent resealable bag of at most 1 litre, according to the International Air Transport Association (IATA).",
+   "sections": [
+    {
+     "h": "💧 What WestJet says about liquids",
+     "p": "This section is from an unofficial source, not WestJet's own rules: the International Air Transport Association (IATA). WestJet's carry-on baggage page (read) does not state the liquid limit.",
+     "table": {
+      "head": [
+       "Question",
+       "WestJet rule"
+      ],
+      "rows": [
+       [
+        "Container size",
+        "Containers of 100 ml or equivalent"
+       ],
+       [
+        "Bag",
+        "A transparent resealable plastic bag with a maximum capacity of 1 litre"
+       ],
+       [
+        "Medications, baby foods and special diets",
+        "In principle the restrictions do not apply, but consult your local airport to be sure"
+       ],
+       [
+        "Where the rule comes from",
+        "More governments are adopting the guidelines of the International Civil Aviation Organization (ICAO)"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> WestJet's own rule. WestJet and the airports you use can add stricter limits, so confirm with WestJet before you fly."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much liquid can I take in my WestJet cabin bag?",
+     "Following the International Air Transport Association (IATA): containers of 100 ml or less in one transparent resealable bag of at most 1 litre. WestJet's own page was not readable on this, so confirm with the airline."
+    ],
+    [
+     "Does WestJet allow liquid medicine and baby food over the limit?",
+     "The source says in principle the restrictions do not apply to medications, baby foods and special dietary requirements, but to check with your local airport; confirm with WestJet."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.iata.org/en/youandiata/travelers/baggage/",
+     "IATA &mdash; Travel & Baggage"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026",
+   "unofficial": true
   }
  }
 }

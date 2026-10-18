@@ -453,3 +453,42 @@ Vape (airline/<slug>/vape-e-cigarette/): united, american-airlines, british-airw
 Also session 36 round 3 (TO REQUEST, optional): /airline/flydubai/vape-e-cigarette/ , /airline/south-african-airways/vape-e-cigarette/ , /airline/copa-airlines/vape-e-cigarette/ , /airline/vietnam-airlines/vape-e-cigarette/ , /airline/transavia/vape-e-cigarette/ , /airline/oman-air/vape-e-cigarette/ , /airline/asiana/vape-e-cigarette/ , /airline/air-arabia/vape-e-cigarette/ , /airline/royal-jordanian/vape-e-cigarette/
 Also session 36 round 4 (TO REQUEST, optional): airline vape pages /airline/<slug>/vape-e-cigarette/ for swiss, austrian, brussels-airlines, ita-airways, malaysia-airlines, aer-lingus, sunexpress, kuwait-airways, egyptair, frontier, azul, ethiopian-airlines, kenya-airways, royal-air-maroc, china-southern, air-china, icelandair, saudia, gulf-air, latam, gol, aeromexico, el-al, arkia, israir, middle-east-airlines, avianca, alaska-airlines
 Also session 36 liquids round (TO REQUEST, optional): /airline/<slug>/liquids/ for wizz-air, easyjet, ryanair, emirates, lufthansa, swiss, eurowings, aegean, transavia, vueling, air-europa, tap-air-portugal, klm, virgin-atlantic, delta, american-airlines, singapore-airlines, ana, thai-airways, virgin-australia, air-india, air-new-zealand, philippine-airlines, vietnam-airlines, malaysia-airlines, japan-airlines, qantas, brussels-airlines, ita-airways, turkish-airlines, pegasus, lot-polish, south-african-airways, royal-jordanian
+
+## REQUESTED 2026-10-18 (user requested in GSC; verified not on Google by URL Inspection before)
+https://canitakethis.co/food/costa-rica/ REQUESTED 2026-10-18
+https://canitakethis.co/country/chile/plants-seeds/ REQUESTED 2026-10-18
+https://canitakethis.co/country/hong-kong/tobacco/ REQUESTED 2026-10-18
+https://canitakethis.co/country/philippines/cash/ REQUESTED 2026-10-18
+https://canitakethis.co/country/kenya/vaping/ REQUESTED 2026-10-18
+https://canitakethis.co/blog/travel-warning-mexico-2026/ REQUESTED 2026-10-18
+https://canitakethis.co/blog/tsa-precheck-touchless-id-2026/ REQUESTED 2026-10-18
+https://canitakethis.co/medication/sudafed/thailand/ REQUESTED 2026-10-18
+https://canitakethis.co/medication/sudafed/china/ REQUESTED 2026-10-18
+https://canitakethis.co/medication/into/austria/ REQUESTED 2026-10-18
+https://canitakethis.co/medication/into/south-africa/ REQUESTED 2026-10-18
+
+## NEXT 10 to request (verified NOT on Google with URL Inspection on 2026-10-18, after the 11 requested above)
+https://canitakethis.co/airline/singapore-airlines/wifi/ TO REQUEST
+https://canitakethis.co/airline/lufthansa/wifi/ TO REQUEST
+https://canitakethis.co/airline/lufthansa/compensation/ TO REQUEST
+https://canitakethis.co/airline/klm/wifi/ TO REQUEST
+https://canitakethis.co/airline/cathay-pacific/wifi/ TO REQUEST
+https://canitakethis.co/airline/qantas/wifi/ TO REQUEST
+https://canitakethis.co/medication/sudafed/indonesia/ TO REQUEST
+https://canitakethis.co/medication/sudafed/oman/ TO REQUEST
+https://canitakethis.co/medication/vicks-inhaler/china/ TO REQUEST
+https://canitakethis.co/medication/vicks-inhaler/poland/ TO REQUEST
+Verified ON Google in this round (do not request): wifi of emirates, qatar-airways, united, southwest, turkish-airlines, air-france, british-airways, ana, japan-airlines, korean-air, thai-airways, etihad-airways, swiss, austrian, iberia, aegean, air-new-zealand; compensation of ryanair, easyjet, klm, delta; medication sudafed/croatia, sweden, austria; tramadol/croatia; codeine/fiji; adderall/kenya; ritalin/argentina; vicks-inhaler/romania.
+
+## 2026-10-18 QUOTA EXCEEDED: GSC refused more requests after the 11 above. NONE of the 10 below were requested. Request them tomorrow (2026-10-19) in this order; re-verify with URL Inspection first only if more than 2 days pass.
+1 https://canitakethis.co/airline/singapore-airlines/wifi/ TO REQUEST
+2 https://canitakethis.co/airline/lufthansa/wifi/ TO REQUEST
+3 https://canitakethis.co/airline/lufthansa/compensation/ TO REQUEST
+4 https://canitakethis.co/airline/klm/wifi/ TO REQUEST
+5 https://canitakethis.co/airline/cathay-pacific/wifi/ TO REQUEST
+6 https://canitakethis.co/airline/qantas/wifi/ TO REQUEST
+7 https://canitakethis.co/medication/sudafed/indonesia/ TO REQUEST
+8 https://canitakethis.co/medication/sudafed/oman/ TO REQUEST
+9 https://canitakethis.co/medication/vicks-inhaler/china/ TO REQUEST
+10 https://canitakethis.co/medication/vicks-inhaler/poland/ TO REQUEST
+Also session 36 liquids round 3 (optional, TO REQUEST): /airline/<slug>/liquids/ for volaris, jetblue, frontier, latam, avianca, asiana, korean-air, icelandair, air-arabia, royal-air-maroc, china-southern, china-eastern, saudia, united, hawaiian-airlines, alaska-airlines, southwest, austrian, air-france, aer-lingus, norwegian, sunexpress, el-al, arkia, israir, etihad-airways, westjet, aeromexico, gol, azul, indigo, air-china, flydubai, gulf-air, oman-air, kuwait-airways, middle-east-airlines, egyptair, ethiopian-airlines, kenya-airways

@@ -360,3 +360,89 @@ https://canitakethis.co/country/european-union/cash/
 https://canitakethis.co/about/
 https://canitakethis.co/contact/
 
+
+## 2026-10-18 live GSC check (Page indexing, read in Chrome): NOT indexed now = 91 "Discovered - currently not indexed" + 21 "Crawled - currently not indexed" (+2 redirects). Indexed 1.98K.
+Do NOT request: /airline/<slug>/ overview URLs (e.g. /airline/qantas/ redirects), austrian/united/vueling baggage-allowance (URL inspection says on Google), 5 Wi-Fi pages already requested (delta, american-airlines, air-canada, finnair, tap-air-portugal), medication/into/italy (on Google), sitemap.xml.
+BEST 25 TO REQUEST NEXT (order = demand per page type from GSC 28 days: food 106 impr/page, airline baggage 97, power bank 90, perfume 66, plants 61, tobacco 46, cash 37, vaping 15, medication 18):
+1 https://canitakethis.co/airline/ethiopian-airlines/baggage-allowance/
+2 https://canitakethis.co/airline/air-europa/baggage-allowance/
+3 https://canitakethis.co/airline/avianca/baggage-allowance/
+4 https://canitakethis.co/airline/asiana/baggage-allowance/
+5 https://canitakethis.co/food/united-arab-emirates/
+6 https://canitakethis.co/food/costa-rica/
+7 https://canitakethis.co/airline/vietnam-airlines/power-bank/
+8 https://canitakethis.co/airline/korean-air/perfume-aerosols/
+9 https://canitakethis.co/country/chile/plants-seeds/
+10 https://canitakethis.co/country/kuwait/plants-seeds/
+11 https://canitakethis.co/country/hong-kong/tobacco/
+12 https://canitakethis.co/country/brazil/tobacco/
+13 https://canitakethis.co/country/india/tobacco/
+14 https://canitakethis.co/country/philippines/cash/
+15 https://canitakethis.co/country/lebanon/cash/
+16 https://canitakethis.co/country/kenya/vaping/
+17 https://canitakethis.co/food/slovenia/
+18 https://canitakethis.co/airline/westjet/alcohol/
+19 https://canitakethis.co/airline/westjet/vape-e-cigarette/
+20 https://canitakethis.co/medication/benadryl/japan/
+21 https://canitakethis.co/medication/benadryl/italy/
+22 https://canitakethis.co/medication/benadryl/australia/
+23 https://canitakethis.co/medication/sudafed/thailand/
+24 https://canitakethis.co/blog/travel-warning-mexico-2026/
+25 https://canitakethis.co/blog/tsa-precheck-touchless-id-2026/
+Rest of the not-indexed list (about 70 medication pages: adderall, ritalin, tramadol, sudafed, codeine, cbd-oil, vicks-inhaler, medication/into/austria|hungary|malta|south-africa; blog hubs; norwegian/aer-lingus/british-airways Wi-Fi/compensation) = lower demand, request after the 25.
+
+## 2026-10-18 CORRECTION (verified one by one with GSC URL Inspection, not from the Page indexing report)
+The Page indexing report is STALE: it listed 112 "not indexed" URLs, but many of them are already on Google. The "BEST 25" list above is WRONG and must not be used. Only the URLs below were verified with URL Inspection on 2026-10-18.
+VERIFIED NOT ON GOOGLE (request these, in this order = demand per page type):
+1 https://canitakethis.co/food/costa-rica/  (Discovered - currently not indexed)
+2 https://canitakethis.co/country/chile/plants-seeds/  (Discovered - currently not indexed)
+3 https://canitakethis.co/country/hong-kong/tobacco/  (Discovered - currently not indexed)
+4 https://canitakethis.co/country/philippines/cash/  (not on Google)
+5 https://canitakethis.co/country/kenya/vaping/  (Discovered - currently not indexed)
+6 https://canitakethis.co/blog/travel-warning-mexico-2026/  (not on Google)
+7 https://canitakethis.co/blog/tsa-precheck-touchless-id-2026/  (Discovered - currently not indexed)
+8 https://canitakethis.co/medication/sudafed/thailand/  (not on Google)
+9 https://canitakethis.co/medication/sudafed/china/  (not on Google)
+10 https://canitakethis.co/medication/into/austria/  (Discovered - currently not indexed)
+11 https://canitakethis.co/medication/into/south-africa/  (not on Google)
+INSPECT SAYS "Page with redirect" (do not request, check why): country/brazil/tobacco, blog/travel-warning-caribbean-2026.
+VERIFIED ALREADY ON GOOGLE (do not request): airline/ethiopian-airlines, air-europa, asiana, avianca baggage-allowance; airline/vietnam-airlines/power-bank; airline/korean-air/perfume-aerosols; airline/westjet alcohol and vape; airline/norwegian/wifi; airline/aer-lingus/compensation; airline/british-airways/compensation; country/kuwait/plants-seeds; country/india/tobacco; country/lebanon/cash; country/ukraine/tobacco; food/slovenia; food/united-arab-emirates; medication/benadryl/japan, italy, australia.
+NOT YET VERIFIED: the other ~65 medication pages, 8 blog hub pages, country/european-union/cash, 5 Wi-Fi pages already requested. Method that works: GSC search box -> paste URL -> Enter -> read "URL is on Google" / "URL is not on Google" (about 12 s per URL).
+
+## REQUESTED 2026-10-18 (user requested in GSC; verified not on Google by URL Inspection before)
+https://canitakethis.co/food/costa-rica/ REQUESTED 2026-10-18
+https://canitakethis.co/country/chile/plants-seeds/ REQUESTED 2026-10-18
+https://canitakethis.co/country/hong-kong/tobacco/ REQUESTED 2026-10-18
+https://canitakethis.co/country/philippines/cash/ REQUESTED 2026-10-18
+https://canitakethis.co/country/kenya/vaping/ REQUESTED 2026-10-18
+https://canitakethis.co/blog/travel-warning-mexico-2026/ REQUESTED 2026-10-18
+https://canitakethis.co/blog/tsa-precheck-touchless-id-2026/ REQUESTED 2026-10-18
+https://canitakethis.co/medication/sudafed/thailand/ REQUESTED 2026-10-18
+https://canitakethis.co/medication/sudafed/china/ REQUESTED 2026-10-18
+https://canitakethis.co/medication/into/austria/ REQUESTED 2026-10-18
+https://canitakethis.co/medication/into/south-africa/ REQUESTED 2026-10-18
+
+## NEXT 10 to request (verified NOT on Google with URL Inspection on 2026-10-18, after the 11 requested above)
+https://canitakethis.co/airline/singapore-airlines/wifi/ TO REQUEST
+https://canitakethis.co/airline/lufthansa/wifi/ TO REQUEST
+https://canitakethis.co/airline/lufthansa/compensation/ TO REQUEST
+https://canitakethis.co/airline/klm/wifi/ TO REQUEST
+https://canitakethis.co/airline/cathay-pacific/wifi/ TO REQUEST
+https://canitakethis.co/airline/qantas/wifi/ TO REQUEST
+https://canitakethis.co/medication/sudafed/indonesia/ TO REQUEST
+https://canitakethis.co/medication/sudafed/oman/ TO REQUEST
+https://canitakethis.co/medication/vicks-inhaler/china/ TO REQUEST
+https://canitakethis.co/medication/vicks-inhaler/poland/ TO REQUEST
+Verified ON Google in this round (do not request): wifi of emirates, qatar-airways, united, southwest, turkish-airlines, air-france, british-airways, ana, japan-airlines, korean-air, thai-airways, etihad-airways, swiss, austrian, iberia, aegean, air-new-zealand; compensation of ryanair, easyjet, klm, delta; medication sudafed/croatia, sweden, austria; tramadol/croatia; codeine/fiji; adderall/kenya; ritalin/argentina; vicks-inhaler/romania.
+
+## 2026-10-18 QUOTA EXCEEDED: GSC refused more requests after the 11 above. NONE of the 10 below were requested. Request them tomorrow (2026-10-19) in this order; re-verify with URL Inspection first only if more than 2 days pass.
+1 https://canitakethis.co/airline/singapore-airlines/wifi/ TO REQUEST
+2 https://canitakethis.co/airline/lufthansa/wifi/ TO REQUEST
+3 https://canitakethis.co/airline/lufthansa/compensation/ TO REQUEST
+4 https://canitakethis.co/airline/klm/wifi/ TO REQUEST
+5 https://canitakethis.co/airline/cathay-pacific/wifi/ TO REQUEST
+6 https://canitakethis.co/airline/qantas/wifi/ TO REQUEST
+7 https://canitakethis.co/medication/sudafed/indonesia/ TO REQUEST
+8 https://canitakethis.co/medication/sudafed/oman/ TO REQUEST
+9 https://canitakethis.co/medication/vicks-inhaler/china/ TO REQUEST
+10 https://canitakethis.co/medication/vicks-inhaler/poland/ TO REQUEST
