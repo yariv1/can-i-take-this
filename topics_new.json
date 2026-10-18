@@ -119,6 +119,64 @@
    ],
    "keepSchema": true,
    "checked": "18 October 2026"
+  },
+  "vape": {
+   "answer": "Delta says e-cigarettes can be brought as carry-on items only, for personal use only, and using or recharging the device on board is not permitted. Delta recommends a protected carry case to prevent damage or unintentional activation.",
+   "sections": [
+    {
+     "h": "🚭 What Delta says about e-cigarettes",
+     "p": "From the Delta page \"Tobacco, E-Cigarettes or Marijuana\".",
+     "table": {
+      "head": [
+       "Question",
+       "Delta rule"
+      ],
+      "rows": [
+       [
+        "Where",
+        "Carry-on items only"
+       ],
+       [
+        "Use or recharging on board",
+        "Not permitted"
+       ],
+       [
+        "Purpose",
+        "Personal use only"
+       ],
+       [
+        "Carry case",
+        "Recommended, to prevent damage or unintentional activation"
+       ],
+       [
+        "Foreign laws",
+        "Some countries restrict or ban import, export or use of e-cigarettes; Delta is not responsible for items confiscated by local authorities"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> the page does not mention gate checking."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "Can I pack a vape in checked baggage on Delta?",
+     "No, Delta says e-cigarettes can be brought as carry-on items only."
+    ],
+    [
+     "Can I use my vape on a Delta flight?",
+     "No, using or recharging the device on board is not permitted."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.delta.com/us/en/baggage/prohibited-or-restricted-items/tobacco-ecig-marijuana",
+     "Delta &mdash; Tobacco, e-cigarettes or marijuana"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026"
   }
  },
  "American Airlines": {
@@ -235,6 +293,64 @@
     [
      "Can I bring hairspray on American?",
      "Aerosol hair spray is listed as allowed under the same carry-on and checked limits."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.aa.com/i18n/travel-info/baggage/restricted-items.jsp",
+     "American Airlines &mdash; Restricted items in bags"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026"
+  },
+  "vape": {
+   "answer": "American allows e-cigarettes and vapor cigarettes in carry-on bags only, because some use lithium-ion batteries; they are not allowed in checked bags and cannot be used onboard any flight. American recommends a designated carry case and says regulations vary by country.",
+   "sections": [
+    {
+     "h": "🚭 What American Airlines says about e-cigarettes",
+     "p": "From the American Airlines page \"Restricted items in bags\", section on electronic cigarettes.",
+     "table": {
+      "head": [
+       "Question",
+       "American Airlines rule"
+      ],
+      "rows": [
+       [
+        "Carry-on bag",
+        "Yes"
+       ],
+       [
+        "Checked bags",
+        "No: some e-cigarettes use lithium-ion batteries"
+       ],
+       [
+        "Use onboard",
+        "Not allowed on any flight"
+       ],
+       [
+        "Packing tip",
+        "Travel with them in a designated carry case"
+       ],
+       [
+        "Other countries",
+        "Regulations vary; check each country you travel to, through or from"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> American does not mention charging separately."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "Can I pack a vape in my checked bag on American?",
+     "No, American says electronic cigarettes aren’t allowed in checked bags."
+    ],
+    [
+     "Can I vape on an American Airlines flight?",
+     "No, electronic cigarettes aren’t allowed to be used onboard any flight."
     ]
    ],
    "sources": [
@@ -363,6 +479,56 @@
    ],
    "keepSchema": true,
    "checked": "18 October 2026"
+  },
+  "liquids": {
+   "answer": "Air Canada allows liquids, gels and aerosols in carry-on in containers of no more than 100 ml/100 g (3.4 oz), placed in one clear, closed, re-sealable plastic bag no larger than 1 litre (1 quart) per passenger; larger containers are confiscated at the security checkpoint. In checked baggage the total is 2 L/2 kg per passenger.",
+   "sections": [
+    {
+     "h": "💧 What Air Canada says about liquids",
+     "p": "From the Air Canada page \"Restricted / Prohibited Items\", liquids and gels section.",
+     "table": {
+      "head": [
+       "Question",
+       "Air Canada rule"
+      ],
+      "rows": [
+       [
+        "Carry-on container size",
+        "No more than 100 ml/100 g (3.4 oz) or it is confiscated at the checkpoint"
+       ],
+       [
+        "Bag",
+        "One clear, closed, re-sealable plastic bag no larger than 1 litre (1 quart) per passenger"
+       ],
+       [
+        "Checked baggage",
+        "Liquids, gels and aerosols up to a total capacity of 2 L/2 kg (75 fl. oz.) per passenger"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not read:</strong> the page also names canned oxygen as not accepted; alcohol and aerosols have their own sections."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much liquid can I take in Air Canada carry-on?",
+     "Containers of 100 ml/100 g or less in one clear re-sealable bag of no more than 1 litre."
+    ],
+    [
+     "What happens to liquids over 100 ml in Air Canada carry-on?",
+     "They are confiscated at the security checkpoint."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.aircanada.com/ca/en/aco/home/plan/baggage/restricted-and-prohibited-items.html",
+     "Air Canada &mdash; Restricted / prohibited items"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026"
   }
  },
  "British Airways": {
@@ -481,6 +647,122 @@
    ],
    "keepSchema": true,
    "checked": "18 October 2026"
+  },
+  "vape": {
+   "answer": "British Airways completely prohibits smoking, including using vapes, e-cigarettes and e-pipes, on board its aircraft. Any smoking or vaping device must be in your hand baggage in the cabin, packaged to prevent accidental activation, and liquid parts follow the liquids rules.",
+   "sections": [
+    {
+     "h": "🚭 What British Airways says about e-cigarettes",
+     "p": "From the British Airways page \"Restricted and prohibited items\", section on other restricted items.",
+     "table": {
+      "head": [
+       "Question",
+       "British Airways rule"
+      ],
+      "rows": [
+       [
+        "Use on board",
+        "Completely prohibited"
+       ],
+       [
+        "Where to carry it",
+        "In your hand baggage, carried in the cabin"
+       ],
+       [
+        "Packaging",
+        "Packaged to prevent accidental activation"
+       ],
+       [
+        "Liquid components",
+        "Follow aviation security requirements for liquids"
+       ],
+       [
+        "If your bag goes in the hold",
+        "Remove vapes and e-cigarettes from a cabin bag checked in or taken at the gate"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> the section we read does not give a battery limit; see BA’s power bank page."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "Can I take a vape on British Airways?",
+     "Yes in your hand baggage in the cabin, packaged against accidental activation; you may not use it on board."
+    ],
+    [
+     "What if my cabin bag is checked at the gate on British Airways?",
+     "You must remove vapes and e-cigarettes from it and keep them with you in the cabin."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.britishairways.com/content/information/baggage-essentials/liquids-and-restrictions",
+     "British Airways &mdash; Restricted and prohibited items"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026"
+  },
+  "liquids": {
+   "answer": "At most UK airports British Airways asks for each liquid in its own container of no more than 100ml; some London airports, including Heathrow and Gatwick, have new security technology that lets liquids in containers up to 2 litres stay in cabin bags. You can take liquids in checked baggage, and duty-free liquids over 100ml must be sealed in a Security Tamper Evident Bag with the receipt inside.",
+   "sections": [
+    {
+     "h": "💧 What British Airways says about liquids",
+     "p": "From the British Airways page \"Restricted and prohibited items\", section on liquids.",
+     "table": {
+      "head": [
+       "Question",
+       "British Airways rule"
+      ],
+      "rows": [
+       [
+        "Most UK airports",
+        "Each liquid in its own container of no more than 100ml"
+       ],
+       [
+        "Heathrow and Gatwick (where arrangements are in place)",
+        "Liquids can go through security in containers up to 2 litres"
+       ],
+       [
+        "Checked baggage",
+        "You can take liquids, creams, powders and aerosols"
+       ],
+       [
+        "Duty-free over 100ml",
+        "Allowed on a connecting flight if sealed at purchase in a Security Tamper Evident Bag with the receipt inside"
+       ],
+       [
+        "Powders to the US",
+        "Up to 350g (12 oz) of powdered goods in hand baggage"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> check the rules of the airport you return from; BA says to check requirements for returning from your destination."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much liquid can I take in British Airways hand baggage?",
+     "At most UK airports each liquid must be in a container of no more than 100ml; at some London airports with new technology containers up to 2 litres are possible."
+    ],
+    [
+     "Can I carry duty-free liquids on British Airways?",
+     "Yes if sealed in a Security Tamper Evident Bag with the receipt inside when you have a connecting flight."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.britishairways.com/content/information/baggage-essentials/liquids-and-restrictions",
+     "British Airways &mdash; Restricted and prohibited items"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026"
   }
  },
  "JetBlue": {
@@ -545,6 +827,56 @@
     [
      "https://www.jetblue.com/help/alcohol-guidelines",
      "JetBlue &mdash; Alcohol guidelines"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026"
+  },
+  "vape": {
+   "answer": "JetBlue lists electronic and smokeless cigarettes as prohibited in checked bags: they must be carried in the cabin. In carry-on bags they are permitted if the device is in the \"off\" position and disconnected from its charging station and battery.",
+   "sections": [
+    {
+     "h": "🚭 What JetBlue says about e-cigarettes",
+     "p": "From the JetBlue help page \"Prohibited Items\".",
+     "table": {
+      "head": [
+       "Question",
+       "JetBlue rule"
+      ],
+      "rows": [
+       [
+        "Checked bags",
+        "Prohibited; must be carried in the cabin"
+       ],
+       [
+        "Carry-on bags",
+        "Permitted if the device is in the \"off\" position"
+       ],
+       [
+        "Charging",
+        "Must be disconnected from the charging station and battery"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> JetBlue does not say whether you may use or charge a vape in flight."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "Can I pack a vape in a checked bag on JetBlue?",
+     "No, JetBlue lists electronic and smokeless cigarettes as prohibited in checked bags."
+    ],
+    [
+     "What must I do with my e-cigarette in a JetBlue carry-on?",
+     "Keep the device in the \"off\" position and disconnected from its charging station and battery."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.jetblue.com/help/prohibited-items",
+     "JetBlue &mdash; Prohibited items"
     ]
    ],
    "keepSchema": true,
@@ -657,6 +989,122 @@
     [
      "Do aerosol bottles need a cap on Finnair?",
      "Yes, Finnair says the bottle must have a cap to prevent the contents being accidentally released."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.finnair.com/fi-en/baggage-on-finnair-flights/travelling-with-restricted-items",
+     "Finnair &mdash; Travelling with restricted items"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026"
+  },
+  "vape": {
+   "answer": "Finnair lets you carry electronic cigarettes as carry-on baggage only, protected from short-circuiting and unintentional activation, for example in their original packaging or with the terminals taped in a plastic bag or box. They may not be checked and may not be used or recharged during the flight.",
+   "sections": [
+    {
+     "h": "🚭 What Finnair says about e-cigarettes",
+     "p": "From the Finnair page \"Travelling with restricted items\".",
+     "table": {
+      "head": [
+       "Question",
+       "Finnair rule"
+      ],
+      "rows": [
+       [
+        "Carry-on baggage",
+        "Yes, protected from short-circuiting and unintentional activation"
+       ],
+       [
+        "Checked baggage",
+        "No"
+       ],
+       [
+        "Use or recharging in flight",
+        "Not allowed"
+       ],
+       [
+        "Packing tip",
+        "Original packaging, taped terminals, plastic bag or box; keep away from other batteries and flammable items such as perfume"
+       ],
+       [
+        "Monitoring",
+        "Keep them where they can be easily monitored"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> the page does not cover destination bans."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "Can I take a vape on Finnair?",
+     "Yes as carry-on baggage, protected from short-circuiting and unintentional activation; not in checked baggage."
+    ],
+    [
+     "Can I use my e-cigarette on a Finnair flight?",
+     "No, electronic cigarettes may not be used or recharged during the flight."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.finnair.com/fi-en/baggage-on-finnair-flights/travelling-with-restricted-items",
+     "Finnair &mdash; Travelling with restricted items"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026"
+  },
+  "liquids": {
+   "answer": "Finnair allows liquids in carry-on in containers of at most 100 ml packed in one transparent resealable 1-litre plastic bag, and in checked baggage without that limit. On departures from Helsinki, up to 2 litres of liquids per passenger can be carried in the cabin.",
+   "sections": [
+    {
+     "h": "💧 What Finnair says about liquids",
+     "p": "From the Finnair page \"Travelling with restricted items\".",
+     "table": {
+      "head": [
+       "Question",
+       "Finnair rule"
+      ],
+      "rows": [
+       [
+        "Cabin, container size",
+        "Maximum 100 ml"
+       ],
+       [
+        "Cabin, bag",
+        "A single transparent resealable 1-litre plastic bag"
+       ],
+       [
+        "Helsinki departures",
+        "Up to 2 litres of liquids per passenger in the cabin"
+       ],
+       [
+        "Checked baggage",
+        "Liquids allowed"
+       ],
+       [
+        "Baby milk and food for the flight",
+        "Allowed in carry-on and checked baggage"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> the table does not list quantity limits for checked liquids; see the aerosol and alcohol rules for those items."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much liquid can I take in my Finnair cabin bag?",
+     "Containers of at most 100 ml in one transparent resealable 1-litre bag; on departures from Helsinki up to 2 litres per passenger."
+    ],
+    [
+     "Can I take baby milk on Finnair?",
+     "Yes, baby milk and baby food for the flight are allowed in carry-on and checked baggage."
     ]
    ],
    "sources": [
@@ -919,6 +1367,56 @@
    ],
    "keepSchema": true,
    "checked": "18 October 2026"
+  },
+  "liquids": {
+   "answer": "Qatar Airways lets you carry liquids, gels, pastes and aerosols in hand baggage in containers of up to 100 ml (3.4 oz). Containers larger than 100 ml cannot be accepted even if only partly filled, and all containers go in a transparent resealable bag no larger than 20x20 cm.",
+   "sections": [
+    {
+     "h": "💧 What Qatar Airways says about liquids",
+     "p": "From the Qatar Airways page \"Checked and Cabin Baggage Restrictions\", liquids and gels.",
+     "table": {
+      "head": [
+       "Question",
+       "Qatar Airways rule"
+      ],
+      "rows": [
+       [
+        "Container size in hand baggage",
+        "Up to 100 ml (3.4 oz)"
+       ],
+       [
+        "Larger containers",
+        "Cannot be accepted, even if only partly filled"
+       ],
+       [
+        "Bag",
+        "Transparent, resealable, quart- or litre-sized, no larger than 20x20 cm (8x8 in)"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not read:</strong> the page also covers duty-free liquids and medicines in other sections."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much liquid can I carry on Qatar Airways?",
+     "Containers of up to 100 ml in a transparent resealable bag no larger than 20x20 cm."
+    ],
+    [
+     "Can a half-full large bottle go in my Qatar Airways cabin bag?",
+     "No, containers larger than 100 ml cannot be accepted even if only partly filled."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.qatarairways.com/en-us/baggage/restricted.html",
+     "Qatar Airways &mdash; Checked and cabin baggage restrictions"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026"
   }
  },
  "SAS": {
@@ -1025,6 +1523,60 @@
    ],
    "keepSchema": true,
    "checked": "18 October 2026"
+  },
+  "liquids": {
+   "answer": "SAS allows limited liquids in carry-on: a maximum of 100 ml per container, all fitting into a 1 L resealable plastic bag. Larger containers, including bottles of alcohol even if partially filled, must be packed in checked baggage, apart from baby milk or formula needed for the flight and medication.",
+   "sections": [
+    {
+     "h": "💧 What SAS says about liquids",
+     "p": "From the SAS page \"Dangerous Goods, Prohibited and Restricted Items\", FAQ on liquids.",
+     "table": {
+      "head": [
+       "Question",
+       "SAS rule"
+      ],
+      "rows": [
+       [
+        "Carry-on container size",
+        "Maximum 100 ml (toothpaste, lotion, perfume and similar)"
+       ],
+       [
+        "Bag",
+        "All containers fit into a 1 L resealable plastic bag"
+       ],
+       [
+        "Larger containers",
+        "Packed in checked baggage, even if partially filled"
+       ],
+       [
+        "Exceptions",
+        "Baby milk or formula needed for the flight, and medication or injections for personal use in a separate bag"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> the FAQ gives no duty-free rule."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much liquid can I take in my SAS cabin bag?",
+     "Containers of at most 100 ml, all fitting in a 1 L resealable plastic bag."
+    ],
+    [
+     "Can I take medication liquids over 100 ml on SAS?",
+     "Yes, medications or injections for personal use are an exception, carried in a separate bag."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.flysas.com/en/travel-info/baggage/restricted-prohibited-items",
+     "SAS &mdash; Dangerous goods, prohibited and restricted items"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026"
   }
  },
  "United": {
@@ -1067,6 +1619,64 @@
     [
      "Can I bring spray paint on United?",
      "No, household aerosols such as spray paint, cleaners and pesticides are not allowed in checked or carry-on bags."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.united.com/en/us/fly/baggage/dangerous-items.html",
+     "United &mdash; Dangerous items"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026"
+  },
+  "vape": {
+   "answer": "United allows e-cigarettes and personal vaporizers in a carry-on bag or personal item only. It does not accept them in checked or gate-checked bags, and you cannot charge or use them on board or at any United Club location.",
+   "sections": [
+    {
+     "h": "🚭 What United says about e-cigarettes",
+     "p": "From the United page \"Dangerous items\", section on lighters, matches and e-cigarettes.",
+     "table": {
+      "head": [
+       "Question",
+       "United rule"
+      ],
+      "rows": [
+       [
+        "Carry-on bag or personal item",
+        "Allowed (per the TSA)"
+       ],
+       [
+        "Checked or gate-checked bags",
+        "Not accepted"
+       ],
+       [
+        "Using on board",
+        "Not allowed"
+       ],
+       [
+        "Charging on board",
+        "Not allowed"
+       ],
+       [
+        "United Club locations",
+        "Charging or using is not allowed there either"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> United does not say anything about the rules of the countries you fly to; some countries ban vapes."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "Can I take a vape on United?",
+     "Yes in a carry-on bag or personal item; United does not accept e-cigarettes or personal vaporizers in checked or gate-checked bags."
+    ],
+    [
+     "Can I use or charge my vape on a United flight?",
+     "No, you cannot charge or use e-cigarettes and personal vaporizers on board or at any United Club location."
     ]
    ],
    "sources": [
@@ -1187,6 +1797,118 @@
    ],
    "keepSchema": true,
    "checked": "18 October 2026"
+  },
+  "vape": {
+   "answer": "Cathay Pacific allows electronic cigarettes only on your person or in cabin baggage; they must not be placed in checked baggage, used on the plane or recharged on board, and each must be individually protected against accidental activation.",
+   "sections": [
+    {
+     "h": "🚭 What Cathay Pacific says about e-cigarettes",
+     "p": "From the Cathay Pacific page \"Controlled items\".",
+     "table": {
+      "head": [
+       "Question",
+       "Cathay Pacific rule"
+      ],
+      "rows": [
+       [
+        "Where",
+        "On your person or in cabin baggage only"
+       ],
+       [
+        "Checked baggage",
+        "Must not be placed in checked baggage"
+       ],
+       [
+        "Use on the plane",
+        "Not allowed"
+       ],
+       [
+        "Recharging on board",
+        "Not permitted"
+       ],
+       [
+        "Protection",
+        "Individually protected to prevent accidental activation"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not read:</strong> Cathay links a separate page on e-cigarette bans in specific countries, which we did not read here."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "Can I take a vape on Cathay Pacific?",
+     "Yes, on your person or in cabin baggage only, protected against accidental activation."
+    ],
+    [
+     "Can I charge my e-cigarette on a Cathay Pacific flight?",
+     "No, recharging electronic cigarettes or their batteries on board is not permitted."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.cathaypacific.com/cx/en_HK/baggage/controlled-and-banned-items/controlled-items.html",
+     "Cathay Pacific &mdash; Controlled items"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026"
+  },
+  "liquids": {
+   "answer": "Cathay Pacific lets you bring liquids, aerosols and gels in cabin baggage as long as each item is no more than 100ml, carried in one resealable transparent plastic bag of no more than 1L per passenger. Items above that amount should be packed in checked bags, and regulations may vary by flight route.",
+   "sections": [
+    {
+     "h": "💧 What Cathay Pacific says about liquids",
+     "p": "From the Cathay Pacific page \"Controlled items\", liquids, aerosols, gels and powders.",
+     "table": {
+      "head": [
+       "Question",
+       "Cathay Pacific rule"
+      ],
+      "rows": [
+       [
+        "Each item in cabin baggage",
+        "No more than 100ml"
+       ],
+       [
+        "Bag",
+        "One resealable, transparent plastic bag, no more than 1L in capacity per passenger"
+       ],
+       [
+        "Larger amounts",
+        "Pack into checked bags"
+       ],
+       [
+        "Route differences",
+        "Regulations may vary depending on your flight route; Cathay points to a dedicated page including Duty Free liquid items"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not read:</strong> the dedicated duty-free liquids page was not read here."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much liquid can I carry on Cathay Pacific?",
+     "Items of no more than 100ml each in one resealable transparent bag of no more than 1L per passenger."
+    ],
+    [
+     "Where do larger liquid containers go on Cathay Pacific?",
+     "In checked bags."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.cathaypacific.com/cx/en_HK/baggage/controlled-and-banned-items/controlled-items.html",
+     "Cathay Pacific &mdash; Controlled items"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026"
   }
  },
  "ANA": {
@@ -1291,6 +2013,64 @@
     [
      "Which sprays are banned on ANA?",
      "Sprays classified as flammable gas for sport or daily use, such as lubricating oil, paint, varnish or dust-proof spray."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.ana.co.jp/en/jp/guide/boarding-procedures/baggage/international/caution-restriction03/",
+     "ANA &mdash; Items with conditions attached to their carry-on or check-in"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026"
+  },
+  "vape": {
+   "answer": "ANA permits electronic cigarettes in carry-on for personal use only and does not permit them in checked baggage. Using electronic cigarettes and other smoking devices that do not use fire is prohibited on board ANA Group flights, as is charging them or their spare batteries.",
+   "sections": [
+    {
+     "h": "🚭 What ANA says about e-cigarettes",
+     "p": "From the ANA page \"Items With Conditions Attached to Their Carry-on or Check-in\" (international flights).",
+     "table": {
+      "head": [
+       "Question",
+       "ANA rule"
+      ],
+      "rows": [
+       [
+        "Carry-on",
+        "Permitted, personal use only"
+       ],
+       [
+        "Check-in",
+        "Not permitted"
+       ],
+       [
+        "Use on board",
+        "Prohibited, including devices that do not emit smoke"
+       ],
+       [
+        "Charging",
+        "Prohibited for e-cigarettes and their spare batteries"
+       ],
+       [
+        "Batteries",
+        "Only lithium-metal up to 2 g lithium or lithium-ion up to 100 Wh may be carried on board"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not read:</strong> destination bans are on other ANA pages."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "Can I take a vape on ANA?",
+     "Yes in carry-on for personal use only; e-cigarettes cannot be checked in."
+    ],
+    [
+     "Can I use an e-cigarette on an ANA flight?",
+     "No, using smoking devices that do not use fire is prohibited on board ANA Group flights."
     ]
    ],
    "sources": [
@@ -1652,7 +2432,8 @@
     ]
    ],
    "keepSchema": true,
-   "checked": "18 October 2026"
+   "checked": "18 October 2026",
+   "conflict": true
   },
   "perfume": {
    "answer": "Air India lists perfumes and deodorant sprays among liquids, aerosols and gels, which are restricted in carry-on. Aerosols are prohibited except personal care or toiletries in limited quantities: a total of 2 l or 2 kg, with each article at most 0.5 kg or 0.5 l and the release valve capped.",
@@ -1715,6 +2496,53 @@
    ],
    "keepSchema": true,
    "checked": "18 October 2026"
+  },
+  "vape": {
+   "answer": "Air India lists e-cigarettes, including e-cigars, e-pipes, other personal vaporizers, all forms of electronic nicotine delivery systems, heat-not-burn products and e-hookah, as prohibited.",
+   "sections": [
+    {
+     "h": "🚭 What Air India says about e-cigarettes",
+     "p": "From the Air India page \"Restricted Baggage & Prohibited Items Guidelines\".",
+     "table": {
+      "head": [
+       "Question",
+       "Air India rule"
+      ],
+      "rows": [
+       [
+        "Status",
+        "Prohibited"
+       ],
+       [
+        "Covers",
+        "E-cigarettes, e-cigars, e-pipes, personal vaporizers, ENDS, heat-not-burn products, e-hookah and similar devices"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> the entry does not distinguish cabin from checked baggage; it is listed as prohibited outright."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "Can I take a vape on Air India?",
+     "No, Air India lists e-cigarettes and similar devices, including heat-not-burn products, as prohibited."
+    ],
+    [
+     "Are heated tobacco devices allowed on Air India?",
+     "No, heat-not-burn products are named in the same prohibited entry."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.airindia.com/in/en/travel-information/baggage-guidelines/restricted-baggage.html",
+     "Air India &mdash; Restricted baggage and prohibited items"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026",
+   "conflict": true
   }
  },
  "LATAM": {
@@ -1895,6 +2723,60 @@
     [
      "Do aerosol cans need a cap on Copa Airlines?",
      "Yes, the release valve must be protected by a cap or other suitable means."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.copaair.com/en-US/travel-information/baggage-information/restricted-baggage/",
+     "Copa Airlines &mdash; Restricted baggage"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026"
+  },
+  "liquids": {
+   "answer": "Copa Airlines allows liquids, gels and aerosols in carry-on only in containers of up to 100 ml or 3.4 oz, carried in a transparent self-closing plastic bag of no more than one litre. Containers larger than 100 ml are not accepted even if not completely full, and larger amounts must go in checked baggage.",
+   "sections": [
+    {
+     "h": "💧 What Copa Airlines says about liquids",
+     "p": "From the Copa Airlines page \"Restricted baggage\".",
+     "table": {
+      "head": [
+       "Question",
+       "Copa Airlines rule"
+      ],
+      "rows": [
+       [
+        "Container size",
+        "Up to 100 ml or 3.4 oz"
+       ],
+       [
+        "Bag",
+        "Transparent plastic bag with self-closing, capacity no more than one litre"
+       ],
+       [
+        "Larger containers",
+        "Not accepted in carry-on even if not completely full"
+       ],
+       [
+        "Breast milk, juice, insulin and medications",
+        "May be transported; if above the maximum quantity they must be declared to the TSA or inspection personnel"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> airport security rules can differ by country."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much liquid can I take in my Copa Airlines cabin bag?",
+     "Containers of up to 100 ml in a transparent self-closing bag of no more than one litre."
+    ],
+    [
+     "Can I carry insulin or breast milk over 100 ml on Copa Airlines?",
+     "They may be transported, but if they exceed the maximum quantity they must be declared to the TSA or inspection personnel."
     ]
    ],
    "sources": [
@@ -2373,6 +3255,64 @@
    ],
    "keepSchema": true,
    "checked": "18 October 2026"
+  },
+  "vape": {
+   "answer": "Eurowings allows e-cigarettes and vaping devices (e-cigars, e-pipes) for personal use in hand baggage without airline permission, but not in checked baggage. They must be switched off and protected against unintentional activation, and may not be used or charged on board.",
+   "sections": [
+    {
+     "h": "🚭 What Eurowings says about e-cigarettes",
+     "p": "From the Eurowings page \"Prohibited items and dangerous goods in your baggage\".",
+     "table": {
+      "head": [
+       "Question",
+       "Eurowings rule"
+      ],
+      "rows": [
+       [
+        "Hand baggage",
+        "Permitted, airline permission not required"
+       ],
+       [
+        "Checked baggage",
+        "Not permitted"
+       ],
+       [
+        "Condition",
+        "Switched off, protected against unintentional activation and damage, for example in secure packaging"
+       ],
+       [
+        "Use or charging on board",
+        "Not allowed"
+       ],
+       [
+        "Vaping fluids",
+        "May meet the criteria for dangerous goods, in which case they are prohibited"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Note:</strong> the liquids rules at security also apply to e-liquid in hand baggage."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "Can I take a vape on Eurowings?",
+     "Yes in hand baggage for personal use if it is switched off and protected against unintentional activation; not in checked baggage."
+    ],
+    [
+     "Can I take vape liquid on Eurowings?",
+     "Eurowings says vaping fluids may qualify as dangerous goods, in which case they are prohibited."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.eurowings.com/en/information/baggage/dangerous-goods.html",
+     "Eurowings &mdash; Prohibited items and dangerous goods in your baggage"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026"
   }
  },
  "LOT Polish": {
@@ -2473,6 +3413,56 @@
     [
      "Do aerosol cans need a cap on LOT?",
      "Yes, valves must be protected by a cap or other means."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.lot.com/us/en/journey/baggage/hazardous-materials",
+     "LOT &mdash; Prohibited items and hazardous materials"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026"
+  },
+  "vape": {
+   "answer": "LOT says battery-powered e-cigarettes and other personal inhalation devices may only be transported in your carry-on luggage, secured to prevent accidental activation, and that using and charging them on board is prohibited.",
+   "sections": [
+    {
+     "h": "🚭 What LOT Polish says about e-cigarettes",
+     "p": "From the LOT page \"Prohibited items and hazardous materials\", e-cigarettes entry.",
+     "table": {
+      "head": [
+       "Question",
+       "LOT Polish rule"
+      ],
+      "rows": [
+       [
+        "Where",
+        "Carry-on luggage only, \"only allowed on a person\""
+       ],
+       [
+        "Condition",
+        "Secured to prevent accidental activation"
+       ],
+       [
+        "Use and charging on board",
+        "Prohibited"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> LOT does not mention e-liquid in that entry."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "Can I take a vape on LOT?",
+     "Yes, but only in your carry-on luggage, secured against accidental activation."
+    ],
+    [
+     "Can I use an e-cigarette on a LOT flight?",
+     "No, using and charging e-cigarettes on board is prohibited."
     ]
    ],
    "sources": [
@@ -2589,6 +3579,172 @@
     [
      "https://www.norwegian.com/us/travel-info/baggage/restricted-items/dangerous-goods/",
      "Norwegian &mdash; Dangerous goods"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026"
+  },
+  "vape": {
+   "answer": "Norwegian does not permit e-cigarettes in checked baggage; they are permitted in carry-on baggage if each is individually protected against accidental activation. E-cigarettes, e-cigars and e-pipes may not be used or charged onboard.",
+   "sections": [
+    {
+     "h": "🚭 What Norwegian says about e-cigarettes",
+     "p": "From the Norwegian page \"Dangerous goods\", e-cigarettes entry.",
+     "table": {
+      "head": [
+       "Question",
+       "Norwegian rule"
+      ],
+      "rows": [
+       [
+        "Checked baggage",
+        "Not permitted"
+       ],
+       [
+        "Carry-on baggage",
+        "Permitted"
+       ],
+       [
+        "Protection",
+        "Individually protected to prevent accidental activation"
+       ],
+       [
+        "Use or charging onboard",
+        "Not allowed"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> the entry says nothing about e-liquid."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "Can I take a vape on Norwegian?",
+     "Yes in carry-on baggage if protected against accidental activation; not in checked baggage."
+    ],
+    [
+     "Can I charge my e-cigarette on a Norwegian flight?",
+     "No, e-cigarettes are not allowed to be used or charged onboard."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.norwegian.com/us/travel-info/baggage/restricted-items/dangerous-goods/",
+     "Norwegian &mdash; Dangerous goods"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026"
+  }
+ },
+ "Southwest": {
+  "vape": {
+   "answer": "Southwest says e-cigarettes, vaporizers, power banks, external chargers and spare lithium batteries are prohibited in checked baggage, so they have to travel in carry-on baggage.",
+   "sections": [
+    {
+     "h": "🚭 What Southwest says about e-cigarettes",
+     "p": "From the Southwest help article \"What do I need to know about hazardous materials?\".",
+     "table": {
+      "head": [
+       "Question",
+       "Southwest rule"
+      ],
+      "rows": [
+       [
+        "Checked baggage",
+        "E-cigarettes and vaporizers are prohibited"
+       ],
+       [
+        "Carry-on baggage",
+        "The article lists them with items that must travel in carry-on baggage"
+       ],
+       [
+        "Same rule",
+        "Applies to power banks, external chargers and spare lithium batteries"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> the article does not say whether you may use or charge a vape on board."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "Can I pack a vape in checked baggage on Southwest?",
+     "No, Southwest lists e-cigarettes and vaporizers as prohibited in checked baggage."
+    ],
+    [
+     "Where should my vape go on Southwest?",
+     "In your carry-on baggage."
+    ]
+   ],
+   "sources": [
+    [
+     "https://support.southwest.com/helpcenter/article/hazardous-materials",
+     "Southwest &mdash; Hazardous materials"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026"
+  }
+ },
+ "Iberia": {
+  "liquids": {
+   "answer": "Iberia sets three rules for liquids in carry-on baggage: liquids, gels and aerosols only in individual containers of no more than 100 ml, inside a clear plastic bag with a closing system and a capacity of no more than 1 litre, which must be closed, comfortably filled and presented separately for inspection.",
+   "sections": [
+    {
+     "h": "💧 What Iberia says about liquids",
+     "p": "From the Iberia page \"Dangerous goods and prohibited items\".",
+     "table": {
+      "head": [
+       "Question",
+       "Iberia rule"
+      ],
+      "rows": [
+       [
+        "Container size",
+        "Individual containers with a capacity of no more than 100 ml"
+       ],
+       [
+        "Bag",
+        "Clear plastic bag with an opening and closing system, capacity no more than 1 litre"
+       ],
+       [
+        "Fit",
+        "The contents should fit comfortably and the bag be completely closed"
+       ],
+       [
+        "At security",
+        "Presented for inspection separately from the carry-on baggage"
+       ],
+       [
+        "Powders (USA, Dominican Republic, Costa Rica)",
+        "Powder-like substances above 12oz/350ml/350gr are prohibited in the cabin; Iberia recommends checking them"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> the rule for checked baggage liquids is in Iberia’s dangerous goods guide, which we did not read."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much liquid can I take in my Iberia hand luggage?",
+     "Containers of no more than 100 ml, in a clear closeable bag of no more than 1 litre, shown separately at security."
+    ],
+    [
+     "Are powders restricted on Iberia flights to the USA?",
+     "Powder-like substances above 12oz/350ml/350gr are prohibited in the cabin on flights involving the USA, Dominican Republic and Costa Rica."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.iberia.com/us/luggage/dangerous-goods/",
+     "Iberia &mdash; Dangerous goods and prohibited items"
     ]
    ],
    "keepSchema": true,

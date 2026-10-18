@@ -11,7 +11,7 @@ const spec = JSON.parse(fs.readFileSync(process.argv[2], 'utf8'));
 if (!spec.airline) { console.log('bad spec'); process.exit(1); }
 const N = fs.existsSync(FILE) ? JSON.parse(fs.readFileSync(FILE, 'utf8')) : {};
 N[spec.airline] = N[spec.airline] || {};
-for (const c of ['alcohol', 'perfume']) {
+for (const c of ['alcohol', 'perfume', 'vape', 'liquids']) {
   const e = spec[c]; if (!e) continue;
   if (!e.answer || !Array.isArray(e.sections) || !e.sections.length || !Array.isArray(e.faq) || e.faq.length < 2 || !Array.isArray(e.sources) || !e.sources.length) { console.log('bad ' + c); process.exit(1); }
   N[spec.airline][c] = { answer: e.answer, sections: e.sections, faq: e.faq, sources: e.sources, keepSchema: true, checked: '18 October 2026' };

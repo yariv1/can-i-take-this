@@ -35,7 +35,7 @@ function srcBlock(c) {
   if (!d || !d.sources) return '';
   const rows = d.sources.map(x => '<a class="hitem" href="' + x[0] + '" target="_blank" rel="noopener"><span class="hi-ic">🌐</span><span class="hi-l">' + x[1] + '<small>Official guidance</small></span><span class="hi-go">↗</span></a>').join('');
   return '<div class="help"><div class="help-h">Helpful sources</div>' + rows + '<div class="hnote">To be 100% sure, we always recommend confirming with the official channels.</div></div>' +
-    '<div class="src"><b class="src-ok">✓ OFFICIAL SOURCE</b> These rules come from the official customs or quarantine authority, linked above. Food rules protect against pests and disease. When unsure, always declare it - declaring is free, smuggling is fined.</div>';
+    '<div class="src"><b class="src-ok">✓ OFFICIAL SOURCE</b> The rule above is from the official rules. To be more sure and learn further, please check the links placed here above. Food rules protect against pests and disease. When unsure, always declare it - declaring is free, smuggling is fined.</div>';
 }
 
 // Chip picker + one expanded card per topic (the same pattern as the Compensation pages). EXAMPLE on Romania, pending the user's approval for the others.

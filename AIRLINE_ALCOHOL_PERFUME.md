@@ -13,3 +13,9 @@ Perfume/aerosols (22): Delta, American Airlines, Air Canada, British Airways, Fi
 Alaska (site error), Air France (bot wall), KLM (hand-baggage page only lists alcohol above 70%), Southwest (hazmat page only mentions 70 oz of toiletries), Aer Lingus (bot wall), Iberia (limits are in a PDF not read), Korean Air, Singapore Airlines (404 / no strength rule), Etihad alcohol, Royal Jordanian, EgyptAir, Gulf Air, Avianca, Aeromexico, Saudia, JAL (old pages). Retry via the pane with `textContent` where a page exists.
 
 Duplicate text (audit_duplicates.js): airline alcohol 75% -> 66%, airline perfume-aerosols 75% -> 66%.
+
+## Vape and liquids (added the same session, same helper and rules)
+Vape (13 new): United, American Airlines, British Airways, Cathay Pacific, ANA, Delta, JetBlue, Finnair, Eurowings, Southwest, Norwegian, LOT, Air India (the 21 airlines that already had a vape section, e.g. SAS and Qatar, are untouched).
+Liquids (8 new, none existed before): Qatar Airways, Finnair, SAS, Iberia, Copa Airlines, British Airways, Cathay Pacific, Air Canada.
+Duplicate text: airline vape 66% -> 60%, airline liquids 59% -> 57%.
+Not used: Swiss/Austrian/Lufthansa dangerous-goods pages (no e-cigarette entry there), Alaska, Air France, Aer Lingus (blocked), Air New Zealand (checked-baggage page has no e-cigarette entry), Etihad/Qatar/SAS vape (already had one).
