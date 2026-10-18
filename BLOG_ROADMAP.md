@@ -1,5 +1,21 @@
 # HARD RULE #1 (user, 2026-10-18): NEVER HAND OFF BEFORE QA AND DEBUG PROVE 100% (NOT 99.99%) THAT IT IS AS IT SHOULD BE WITH NO REGRESSIONS. Read at the start of EVERY session and confirm in the first reply (memory: feedback_qa_100_percent_before_handoff.md).
 
+## SESSION 35 HANDOFF BLOCK (2026-10-18) - READ FIRST, after HARD RULE #1 above
+**State:** origin/main `7a69e7fb3` LIVE and fully deployed (every change of the session). One local docs commit (this block + DEPLOY_FLOW addendum) may be unpushed: push it with the next deploy. The full detailed handoff lives in the memory file `project_blog_roadmap.md` (sections 1-11); this block is the in-repo copy of the essentials.
+
+**Done in session 35 (all deployed):**
+- Plants & seeds: 14 countries from official pages (`plants_add_country.js`, `plants_extra.json`, `PLANTS_COUNTRIES.md`): NZ, Chile, Hong Kong, Iceland, Mauritius, Fiji, Sri Lanka, Jamaica, Argentina, China, South Africa, Israel, Maldives, Turkey.
+- Tobacco: no change (44/58 non-EU already official; 14 have no readable source). `cust_add_country.js` written, unused.
+- Country vaping: 15 pages (`vape_add_country.js`, `vape_extra.json`, `VAPE_COUNTRIES.md`): SG GB CA NO BR MX IN TH CH AE AU SE KR MU IS.
+- Airline pages from the airline's own pages (`airline_topic_add.js`, `topics_new.json`, `AIRLINE_ALCOHOL_PERFUME.md`): alcohol 22, perfume 22, vape 13, liquids 8 airlines.
+- Footer wording DS 8.32: approved official / unofficial sentences; BASED ON GLOBAL RULES only when a card has no source link; airline built pages show the read page's link + OFFICIAL, generic cards no link + global; app plane cards keep the airline link + OFFICIAL.
+- UI: tab arrows full height (8.33), phone edge-to-edge scrolling rows (8.34), home top 10 + Show more (8.35), app first option selected + typeahead hint + clear (x) + quick chips (8.36).
+
+**Next:** ask the ONE question: continue airline vape/liquids/alcohol/perfume with the remaining airlines (lists in memory section 3), retry unreadable pages in the browser pane, or another category. Keep: ONE session, no narration, short answers, preview links in the text, deploy only on "deploy", 100% QA before every handoff, never touch typeaheads.
+**Dup text now:** airline alcohol 67, perfume 67, vape 61, liquids 60, power-bank 64, country vaping 64, plants 55, tobacco 58, cash 52, country alcohol 50 (the fixed footer sentence counts as shared text, +3-5 pts site-wide).
+**Dates:** 2026-10-20 GSC+GA recheck; 2026-10-26 / 2026-11-09 food compare; 2026-10-29 power-bank detail check; 2026-11-03 Wi-Fi pilot; 2026-11-14 airline Medication pilot.
+
+
 # Blog roadmap (written 2026-10-10, session 20)
 
 ## SESSION 34 STATE (end of session 34, 2026-10-17/18): READ THIS FIRST
