@@ -548,3 +548,6 @@ The left/right scroll arrows of the tab row (`.tabs-arrow`, created by `/airtabs
 
 ### 8.34 Phones: scrolling rows run edge to edge (user order, 2026-10-18)
 Only the horizontally scrolling rows (tab row `.tabs-wrap .tabs` on every page type, home "Popular Travel Guides" `.hg-row`; the blog `.bcard-scroll` already did it) bleed to the screen edges on phones (max-width 640px): `margin:0 -18px` on the row, `padding:0 18px` inside, `scroll-padding` 18px, so the first item still starts at the page gutter. Nothing else on the page changes. No arrow buttons on touch (swipe). Rule lives in `global_ui.css`; guard `audit_tabs_arrow.js`.
+
+### 8.35 Home page: show only the 10 most popular, "Show more" for the rest (user order, 2026-10-18)
+The home page shows the first 10 airlines (popularity order `AIR_ORDER`) and the first 10 countries of "Country customs rules" (`CO_ORDER`), with a plain text button under each ("Show more airlines" / "Show more countries", turns into "Show fewer ..."). All links stay in the HTML (only hidden by CSS). Typing in the search box ignores the collapse and searches all airlines and countries; clearing it returns to the 10. Code: `build.js` home template (`.collapsed`, `.morebtn`), same on desktop and phone.
