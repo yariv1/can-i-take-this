@@ -177,6 +177,69 @@
    ],
    "keepSchema": true,
    "checked": "18 October 2026"
+  },
+  "liquids": {
+   "answer": "Delta limits liquids, gels, aerosols and pastes in carry-on to 3.4 ounces (100 ml) per container, all in one single quart-size clear zip-top bag.",
+   "sections": [
+    {
+     "h": "💧 What Delta says about liquids",
+     "p": "From the Delta page \"Carry-On Baggage\", section on liquids.",
+     "table": {
+      "head": [
+       "Question",
+       "Delta rule"
+      ],
+      "rows": [
+       [
+        "Container size",
+        "Maximum 3.4 ounces or 100 milliliters"
+       ],
+       [
+        "Bag",
+        "One single quart-size, zip-top bag of clear plastic"
+       ],
+       [
+        "At security",
+        "You may need to remove the quart-size bag and place it in a bin"
+       ],
+       [
+        "What counts",
+        "Beverages, creams, hair gel, hair spray, shampoo, suntan lotions, toothpaste and any item of similar consistency"
+       ],
+       [
+        "Bigger containers",
+        "Pack larger liquid items in your checked luggage; most countries restrict container size even for partly empty containers"
+       ],
+       [
+        "Medication, breast milk, infant juice and formula",
+        "The TSA usually makes special provisions, with special screening"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> the page does not give duty-free rules or the checked-baggage limits."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much liquid can I take in my Delta carry-on?",
+     "Containers of 3.4 ounces (100 ml) or less, all in one single quart-size clear zip-top bag."
+    ],
+    [
+     "Can I take breast milk or formula on Delta?",
+     "Delta says the TSA usually makes special provisions for medication, breast milk, and juice or formula for infants, with special screening."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.delta.com/us/en/baggage/carry-on-baggage",
+     "Delta &mdash; Carry-On Baggage"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026",
+   "unofficial": false
   }
  },
  "American Airlines": {
@@ -361,6 +424,61 @@
    ],
    "keepSchema": true,
    "checked": "18 October 2026"
+  },
+  "liquids": {
+   "answer": "American allows liquids, aerosols and gels in carry-on bags if each container is no more than 3.4 oz (100 ml), with a limit of 1 litre and 10 containers per passenger.",
+   "sections": [
+    {
+     "h": "💧 What American says about liquids",
+     "p": "From the American Airlines page \"Hazardous materials restrictions\", section Liquids, aerosols, and gels in carry-on bags.",
+     "table": {
+      "head": [
+       "Question",
+       "American rule"
+      ],
+      "rows": [
+       [
+        "Container size",
+        "Each container no more than 3.4 oz (100 ml)"
+       ],
+       [
+        "Total",
+        "One litre and 10 containers per passenger"
+       ],
+       [
+        "Medical or special need",
+        "Containers over 100 ml are allowed; an agent may ask you to verify the type and quantity"
+       ],
+       [
+        "Duty-free",
+        "The TSA allows certain duty-free liquids through security if packaged in a security tamper-evident bag"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> the section does not name the quart-size bag, and gives no rule for checked baggage. American says to contact the TSA if unsure."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much liquid can I take in my American Airlines carry-on?",
+     "Containers of 3.4 oz (100 ml) or less, up to one litre and 10 containers per passenger."
+    ],
+    [
+     "Can I take liquid medicine over 100 ml on American?",
+     "Yes, liquids needed for medical purposes or a special need are allowed; an agent may ask you to verify them."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.aa.com/web/i18n/travel-info/baggage/hazardous-materials.html",
+     "American Airlines &mdash; Hazardous materials restrictions"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026",
+   "unofficial": false
   }
  },
  "Air Canada": {
@@ -1295,6 +1413,65 @@
    ],
    "keepSchema": true,
    "checked": "18 October 2026"
+  },
+  "liquids": {
+   "answer": "On flights within the EU, German domestic flights and connections from the EU, Lufthansa allows liquids in carry-on in containers of up to 100 ml (the printed capacity counts), all in one resealable clear plastic bag of at most 1 litre per person.",
+   "sections": [
+    {
+     "h": "💧 What Lufthansa says about liquids",
+     "p": "From the Lufthansa page \"Carry-on baggage\", section Transportation of fluids in carry-on baggage.",
+     "table": {
+      "head": [
+       "Question",
+       "Lufthansa rule"
+      ],
+      "rows": [
+       [
+        "Container size",
+        "Up to 100 ml; the maximum capacity printed on the container counts, not the contents"
+       ],
+       [
+        "Bag",
+        "One resealable, clear plastic bag per person, maximum capacity 1 litre"
+       ],
+       [
+        "What counts",
+        "Pastes, lotions, mixtures of liquids and solids, contents of pressure containers (toothpaste, hair gel, drinks, soups, syrup, perfume, shaving foam), sprays, aerosols and gels"
+       ],
+       [
+        "Exceptions",
+        "Urgently needed medicines and special foods in liquid form (for example baby food), outside the bag and only the amount needed during the flight; a medical certificate in English is recommended"
+       ],
+       [
+        "Duty-free on connections via an EU airport",
+        "Liquid duty-free bought at an international airport or on board outside the EU must be in a sealed security bag with the receipt inside"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> the section gives no rule for checked baggage, and the special rules for flights to the USA are not summarised here."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much liquid can I take in my Lufthansa carry-on?",
+     "On flights within the EU and connections from the EU: containers up to 100 ml in one resealable clear bag of at most 1 litre."
+    ],
+    [
+     "Does the actual amount in the bottle matter on Lufthansa?",
+     "No, Lufthansa says the maximum capacity printed on the container counts, not what is inside."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.lufthansa.com/ao/en/carry-on-baggage",
+     "Lufthansa &mdash; Carry-on baggage"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026",
+   "unofficial": false
   }
  },
  "Qatar Airways": {
@@ -2131,6 +2308,69 @@
    ],
    "keepSchema": true,
    "checked": "18 October 2026"
+  },
+  "liquids": {
+   "answer": "On international flights ANA requires all liquids, aerosols and gels in cabin baggage to be in containers of no more than 100 ml each, in one transparent resealable bag of at most 1 litre with the two sides totalling no more than 40 cm.",
+   "sections": [
+    {
+     "h": "💧 What ANA says about liquids",
+     "p": "From the ANA page \"Carrying Liquid, Aerosols, and Gels (LAGs) on Board\" (international flights).",
+     "table": {
+      "head": [
+       "Question",
+       "ANA rule"
+      ],
+      "rows": [
+       [
+        "Container size",
+        "Capacity no larger than 100 ml each; 100 ml is counted as 100 g whatever the density"
+       ],
+       [
+        "Larger containers",
+        "Containers over 100 ml are not permitted even if they hold less; put them in checked baggage"
+       ],
+       [
+        "What counts",
+        "Drinks, creams, lotions, oils, perfumes, sprays, shampoos, shaving foams, aerosols such as deodorizers, pastes such as toothpaste, semisolid materials and similar items"
+       ],
+       [
+        "Bag",
+        "Transparent resealable (zip) plastic bag, volume no larger than 1 litre, two sides totalling no more than 40 cm; completely closed; you bring your own"
+       ],
+       [
+        "Number",
+        "One bag per passenger"
+       ],
+       [
+        "At security",
+        "Present the bag separately from other baggage"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> the part of the page on duty-free, medicines and baby food is not summarised here: read it on the page."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much liquid can I take on an ANA international flight?",
+     "Containers of no more than 100 ml each, in one transparent resealable bag of at most 1 litre, one bag per passenger."
+    ],
+    [
+     "Can I carry a 150 ml bottle that is half empty on ANA?",
+     "No, ANA says containers over 100 ml are not permitted even if the contents are less than 100 ml."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.ana.co.jp/en/es/travel-information/baggage-information/carrying-on-liquids/",
+     "ANA &mdash; Carrying Liquid, Aerosols, and Gels (LAGs) on Board"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026",
+   "unofficial": false
   }
  },
  "Air New Zealand": {
@@ -2307,6 +2547,73 @@
    ],
    "keepSchema": true,
    "checked": "18 October 2026"
+  },
+  "liquids": {
+   "answer": "Flying internationally, Air New Zealand allows liquids, aerosols, gels and pastes in carry-on only in containers of no more than 100 ml, all in one re-sealable transparent bag of no more than one litre, one bag per passenger.",
+   "sections": [
+    {
+     "h": "💧 What Air New Zealand says about liquids",
+     "p": "From the Air New Zealand page \"Carry-on baggage restricted items\", section Liquids, aerosols, powders, pastes and gels (LAGs).",
+     "table": {
+      "head": [
+       "Question",
+       "Air New Zealand rule"
+      ],
+      "rows": [
+       [
+        "Container size",
+        "Individual containers not larger than 100 ml"
+       ],
+       [
+        "What counts",
+        "Anything you can pump, squeeze, spread, smear, spray or spill, such as toothpaste, peanut butter, sunscreen, liquid electrolytes and bug spray"
+       ],
+       [
+        "Bag",
+        "Re-sealable transparent plastic bag no larger than one litre (about 20 cm x 20 cm or 8\" x 8\")"
+       ],
+       [
+        "Number and screening",
+        "One bag per passenger; sealed and taken out of other carry-on baggage at the screening point"
+       ],
+       [
+        "Ice packs and gel packs",
+        "Frozen ice packs and gel packs must meet the same requirements and fit in the same bag"
+       ],
+       [
+        "Exemptions",
+        "Personal medications, baby products and dietary supplements in liquid, paste, aerosol or gel form (see the page for the conditions)"
+       ],
+       [
+        "If in doubt",
+        "Put it in your checked bag or leave it at home"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> the page says the rules for other departure countries can differ, for example Canada (see CATSA); the exemption conditions are not summarised here."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much liquid can I take on an international Air New Zealand flight?",
+     "Containers of no more than 100 ml each, all in one re-sealable transparent bag of no more than one litre, one bag per passenger."
+    ],
+    [
+     "Are peanut butter and toothpaste counted as liquids on Air New Zealand?",
+     "Yes, Air New Zealand counts anything you can pump, squeeze, spread, smear, spray or spill, including toothpaste and peanut butter."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.airnewzealand.com/restricted-items",
+     "Air New Zealand &mdash; Carry-on baggage restricted items"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026",
+   "unofficial": false
   }
  },
  "Etihad Airways": {
@@ -2556,6 +2863,69 @@
    "keepSchema": true,
    "checked": "18 October 2026",
    "unofficial": false
+  },
+  "liquids": {
+   "answer": "At most airports SWISS allows liquids in hand baggage in containers of at most 100 ml (the printed capacity counts), in one resealable transparent bag of at most 1 litre, one bag per person.",
+   "sections": [
+    {
+     "h": "💧 What SWISS says about liquids",
+     "p": "From the SWISS page \"Hand baggage\", section on liquids (general provisions for other airports).",
+     "table": {
+      "head": [
+       "Question",
+       "SWISS rule"
+      ],
+      "rows": [
+       [
+        "Container size",
+        "Maximum capacity 100 ml; the capacity printed on the container applies, not the actual amount"
+       ],
+       [
+        "Bag",
+        "Resealable, transparent plastic bag, maximum capacity 1 litre; one bag per person"
+       ],
+       [
+        "At security",
+        "The bag with all containers must be fully closed and presented"
+       ],
+       [
+        "Medication",
+        "Urgently required liquid medication, only the amount needed during the flight; an English medical certificate is suggested"
+       ],
+       [
+        "Special foods",
+        "Milk and liquid baby food for small children, and liquid foods for passengers with allergies"
+       ],
+       [
+        "Airports",
+        "Liquid regulations vary by departure airport: check the airport's website before every trip"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> the part of the page on departures from Zurich Airport and on duty-free is not summarised here: read it on the page."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much liquid can I take in my SWISS hand baggage?",
+     "At most airports containers of at most 100 ml in one resealable transparent bag of at most 1 litre."
+    ],
+    [
+     "Can I take baby milk on SWISS?",
+     "Yes, passengers travelling with small children may carry milk and liquid baby food in hand baggage."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.swiss.com/ch/en/prepare/baggage/hand-baggage",
+     "SWISS &mdash; Hand baggage"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026",
+   "unofficial": false
   }
  },
  "Air India": {
@@ -2730,6 +3100,65 @@
    "keepSchema": true,
    "checked": "18 October 2026",
    "conflict": true
+  },
+  "liquids": {
+   "answer": "Air India accepts liquids, aerosols and gels (LAGs) in hand baggage only in containers of 100 ml or less, all in one 1-litre transparent re-sealable bag.",
+   "sections": [
+    {
+     "h": "💧 What Air India says about liquids",
+     "p": "From the Air India \"Baggage FAQs\", question on liquids, aerosols and gels in hand baggage.",
+     "table": {
+      "head": [
+       "Question",
+       "Air India rule"
+      ],
+      "rows": [
+       [
+        "Container size",
+        "Each LAG in a container of 100 ml or less; larger containers are not accepted even if partly filled"
+       ],
+       [
+        "Bag",
+        "All containers in a 1-litre transparent re-sealable bag, fitting comfortably and completely"
+       ],
+       [
+        "At security",
+        "Present the proof of purchase and the bag separately when asked"
+       ],
+       [
+        "Bought at airport shops or on board",
+        "LAGs of any volume are not permitted through security unless in a Security Tamper-Evident Bag (STEB)"
+       ],
+       [
+        "Flying to India from abroad",
+        "You must transfer LAGs over the allowed quantity bought at foreign airport shops or vending machines (page continues)"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> the rest of the page on exceptions for medicines and baby food is not summarised here: read it on the page."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much liquid can I take in my Air India hand baggage?",
+     "LAGs in containers of 100 ml or less, all in one 1-litre transparent re-sealable bag."
+    ],
+    [
+     "Can I carry a partly filled 200 ml bottle on Air India?",
+     "No, Air India says containers larger than 100 ml will not be accepted even if partially filled."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.airindia.com/in/en/frequently-asked-questions/baggage.html",
+     "Air India &mdash; Baggage FAQs"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026",
+   "unofficial": false
   }
  },
  "LATAM": {
@@ -3465,6 +3894,65 @@
    "keepSchema": true,
    "checked": "18 October 2026",
    "unofficial": false
+  },
+  "liquids": {
+   "answer": "On flights within the EU and connecting flights from the EU, Brussels Airlines allows liquids in carry-on in containers of up to 100 ml (the printed capacity counts), all in one resealable clear plastic bag of at most 1 litre per person.",
+   "sections": [
+    {
+     "h": "💧 What Brussels Airlines says about liquids",
+     "p": "From the Brussels Airlines page \"Carry-on baggage\", section Transportation of fluids in carry-on baggage.",
+     "table": {
+      "head": [
+       "Question",
+       "Brussels Airlines rule"
+      ],
+      "rows": [
+       [
+        "Container size",
+        "Up to 100 ml; the maximum capacity printed on the container counts, not the contents"
+       ],
+       [
+        "Bag",
+        "One resealable, clear plastic bag per person, maximum capacity 1 litre"
+       ],
+       [
+        "What counts",
+        "Pastes, lotions, mixtures of liquids and solids, contents of pressure containers (toothpaste, hair gel, drinks, soups, syrup, perfume, shaving foam), sprays, aerosols and gels"
+       ],
+       [
+        "Exceptions",
+        "Urgently required medicines and special foods in liquid form (for example baby food), outside the bag and only the amount needed during the flight; a medical certificate in English is recommended"
+       ],
+       [
+        "Duty-free on connections via an EU airport",
+        "Liquid duty-free bought at an international airport or on board outside the EU must be in a sealed security bag with the receipt inside"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> the part of the page on flights to the USA is not summarised here, and it gives no rule for checked baggage."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much liquid can I take in my Brussels Airlines carry-on?",
+     "On flights within the EU and connections from the EU: containers up to 100 ml in one resealable clear bag of at most 1 litre."
+    ],
+    [
+     "Does the actual amount in the bottle matter on Brussels Airlines?",
+     "No, the maximum capacity printed on the container counts, not what is inside."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.brusselsairlines.com/be/en/extra-services/baggage/carry-on-baggage",
+     "Brussels Airlines &mdash; Carry-on baggage"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026",
+   "unofficial": false
   }
  },
  "ITA Airways": {
@@ -3654,6 +4142,61 @@
    "keepSchema": true,
    "checked": "18 October 2026",
    "unofficial": false
+  },
+  "liquids": {
+   "answer": "On departures from EU airports (plus Norway, Iceland and Switzerland) ITA Airways applies the EU limit on liquids, aerosols and gels in carry-on; from 1 September 2024 the 100 ml per container limit is back at Milan Linate and Rome Fiumicino.",
+   "sections": [
+    {
+     "h": "💧 What ITA Airways says about liquids",
+     "p": "From the ITA Airways page \"Carry on baggage\", section Restrictions and Prohibited Items in the Cabin.",
+     "table": {
+      "head": [
+       "Question",
+       "ITA Airways rule"
+      ],
+      "rows": [
+       [
+        "Where it applies",
+        "Passengers departing from all airports within the European Union, including Norway, Iceland and Switzerland, for any destination"
+       ],
+       [
+        "Milan Linate and Rome Fiumicino",
+        "Since 1 September 2024 the maximum of 100 ml per container is reinstated, as at airports with traditional X-ray screening"
+       ],
+       [
+        "Airports with state-of-the-art screening equipment",
+        "Liquids in containers up to 100 ml and electrical devices can stay in your carry-on during screening; in all other cases the standard rules apply"
+       ],
+       [
+        "What counts",
+        "Gels, pastes such as toothpaste, lotions, liquid/solid mixtures, contents of pressurised containers such as shaving foam, hair gel, drinks and similar items"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> the part of the page after the list of what counts as a liquid (bag size, exceptions, duty-free) is not summarised here: read it on the page."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "Is the 100 ml liquids limit back at Rome Fiumicino on ITA Airways?",
+     "ITA Airways says that since 1 September 2024 the maximum of 100 ml per container is reinstated at Milan Linate and Rome Fiumicino."
+    ],
+    [
+     "Do the ITA Airways liquid rules apply outside the EU?",
+     "ITA Airways says the EU and ENAC rules apply to departures from all EU airports and Norway, Iceland and Switzerland, for any destination."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.ita-airways.com/it/en/book-and-prepare/travel-information/baggage/carry-on-baggage",
+     "ITA Airways &mdash; Carry on baggage"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026",
+   "unofficial": false
   }
  },
  "Eurowings": {
@@ -3826,6 +4369,61 @@
    ],
    "keepSchema": true,
    "checked": "18 October 2026"
+  },
+  "liquids": {
+   "answer": "Eurowings allows liquids on board in containers of up to 100 ml or 100 g, kept in a transparent resealable bag of at most 1 litre per person, with up to 10 containers in the bag.",
+   "sections": [
+    {
+     "h": "💧 What Eurowings says about liquids",
+     "p": "From the Eurowings \"Hand baggage\" page, section Liquids on board.",
+     "table": {
+      "head": [
+       "Question",
+       "Eurowings rule"
+      ],
+      "rows": [
+       [
+        "Container size",
+        "Up to 100 ml or 100 g"
+       ],
+       [
+        "Bag",
+        "Transparent, resealable bag, maximum 1 litre per person"
+       ],
+       [
+        "Containers in the bag",
+        "Up to 10"
+       ],
+       [
+        "Also permitted",
+        "Prescribed medication (with a note that it is necessary on board) and baby formula"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> the page does not give duty-free rules or the rule for checked baggage."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much liquid can I take on Eurowings?",
+     "Containers of up to 100 ml or 100 g in one transparent resealable bag of at most 1 litre, up to 10 containers."
+    ],
+    [
+     "Can I take medication on Eurowings?",
+     "Prescribed medication is permitted with a note saying it is necessary on board."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.eurowings.com/en/information/baggage/hand-baggage-policy.html",
+     "Eurowings &mdash; Hand baggage"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026",
+   "unofficial": false
   }
  },
  "LOT Polish": {
@@ -3986,6 +4584,61 @@
    ],
    "keepSchema": true,
    "checked": "18 October 2026"
+  },
+  "liquids": {
+   "answer": "LOT says the maximum volume of liquid containers in hand baggage is 100 ml, and some airports allow larger amounts, so check the airport's own website.",
+   "sections": [
+    {
+     "h": "💧 What LOT says about liquids",
+     "p": "From the LOT help centre article \"How to transport liquids in baggage?\".",
+     "table": {
+      "head": [
+       "Question",
+       "LOT rule"
+      ],
+      "rows": [
+       [
+        "Hand baggage",
+        "Liquids are much more limited in volume and type; the maximum volume is 100 ml per container"
+       ],
+       [
+        "Some airports",
+        "Selected airports allow you to carry a larger amount of liquids in carry-on baggage: check the official airport website"
+       ],
+       [
+        "Checked baggage",
+        "Allowed, but pack carefully: pressure changes can make containers unseal; protect them, for example in a sealed plastic bag"
+       ],
+       [
+        "Liquid medicines",
+        "LOT does not recommend carrying them in checked baggage because low temperatures in the luggage compartment may affect them"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> the part of the article read does not give the bag size or the exemptions for medicine, baby food and duty-free."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much liquid can I take in my LOT hand baggage?",
+     "The maximum volume per container is 100 ml; some airports allow more, so check the airport website."
+    ],
+    [
+     "Can I carry liquid medicine in checked baggage on LOT?",
+     "LOT does not recommend it, because the low temperatures in the luggage compartment may affect the medicine."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.lot.com/us/en/help-center/baggage/transporting-liquids",
+     "LOT &mdash; How to transport liquids in baggage?"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026",
+   "unofficial": false
   }
  },
  "Norwegian": {
@@ -4372,6 +5025,69 @@
    ],
    "keepSchema": true,
    "checked": "18 October 2026"
+  },
+  "liquids": {
+   "answer": "Emirates allows liquids, gels and aerosols in cabin baggage in containers of 100 ml or less, in one transparent resealable bag of up to one litre, one bag per customer.",
+   "sections": [
+    {
+     "h": "💧 What Emirates says about liquids",
+     "p": "From the Emirates \"Carry-on Baggage Rules\" page, section Liquids containers.",
+     "table": {
+      "head": [
+       "Question",
+       "Emirates rule"
+      ],
+      "rows": [
+       [
+        "Container size",
+        "100 ml maximum; bigger containers are not accepted even if only partly filled"
+       ],
+       [
+        "What counts",
+        "Liquids, gels, aerosols, pastes, lotions, creams, drinks and other items of similar consistency"
+       ],
+       [
+        "Bag",
+        "Transparent, re-sealable, maximum capacity one litre; foldover sandwich bags and larger bags are not allowed"
+       ],
+       [
+        "Closing",
+        "The containers must fit comfortably and the bag must be completely closed"
+       ],
+       [
+        "At security",
+        "Show the bag for visual examination; one bag per customer"
+       ],
+       [
+        "Exemptions",
+        "Medications, baby milk or food and special dietary requirements, with proof of what they are"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> the section does not give duty-free rules or the rule for checked baggage. Emirates says liquid restrictions at many airports can stop items getting past security."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much liquid can I take in my Emirates cabin bag?",
+     "Containers of 100 ml or less, all in one transparent resealable bag of up to one litre; one bag per customer."
+    ],
+    [
+     "Can I take baby milk on Emirates?",
+     "Yes, exemptions are made for baby milk or food, medications and special dietary needs, but you must be able to show what they are."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.emirates.com/us/english/before-you-fly/baggage/cabin-baggage-rules/",
+     "Emirates &mdash; Carry-on Baggage Rules"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026",
+   "unofficial": false
   }
  },
  "Japan Airlines": {
@@ -4436,6 +5152,61 @@
    ],
    "keepSchema": true,
    "checked": "18 October 2026"
+  },
+  "liquids": {
+   "answer": "On international flights JAL requires all liquids to be in containers of no more than 100 ml, placed in one transparent re-sealable plastic bag of at most one litre, one bag per person.",
+   "sections": [
+    {
+     "h": "💧 What JAL says about liquids",
+     "p": "From the JAL international flights page \"Restricted items (Baggage)\", section on liquids.",
+     "table": {
+      "head": [
+       "Question",
+       "JAL rule"
+      ],
+      "rows": [
+       [
+        "Container size",
+        "Capacity no greater than 100 ml"
+       ],
+       [
+        "Bag",
+        "If you carry more than one container, put them all in a transparent re-sealable plastic bag of maximum capacity one litre"
+       ],
+       [
+        "Number",
+        "One bag per person"
+       ],
+       [
+        "Transit",
+        "Other countries have similar restrictions; they also apply to passengers transiting to international flights"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> the section lists the detailed liquids rules on a linked page; exemptions for medicine and baby food and duty-free are not summarised here."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much liquid can I take on a JAL international flight?",
+     "Containers of no more than 100 ml each, all in one transparent re-sealable bag of at most one litre, one bag per person."
+    ],
+    [
+     "Do other countries have the same rule on JAL connections?",
+     "JAL says other countries have similar restrictions that also apply to transiting passengers."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.jal.co.jp/jp/en/inter/baggage/limit/",
+     "JAL &mdash; Restricted items (international flights)"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026",
+   "unofficial": false
   }
  },
  "Korean Air": {
@@ -4552,6 +5323,57 @@
    ],
    "keepSchema": true,
    "checked": "18 October 2026"
+  },
+  "liquids": {
+   "answer": "TAP requires liquids at the security control to be in individual containers of up to 100 ml and carried in a single transparent bag of at most 1 litre.",
+   "sections": [
+    {
+     "h": "💧 What TAP says about liquids",
+     "p": "From the TAP page \"Traveling with hand baggage\", section Rules to follow at the Security Control and X-Ray.",
+     "table": {
+      "head": [
+       "Question",
+       "TAP rule"
+      ],
+      "rows": [
+       [
+        "Container size",
+        "Individual containers of up to 100 ml"
+       ],
+       [
+        "Bag",
+        "A single transparent bag with a maximum capacity of 1 l"
+       ],
+       [
+        "Babies and children up to 2 years",
+        "Their food in quantities appropriate for the trip, except water, which you can request on board; you may be asked to taste the food"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> the section gives no rule on medicines, duty-free or checked baggage."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much liquid can I take in my TAP hand baggage?",
+     "Individual containers of up to 100 ml in a single transparent bag of at most 1 litre."
+    ],
+    [
+     "Can I bring baby food on TAP?",
+     "Yes, for children up to 2 years in quantities appropriate for the trip; water can be requested on board."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.flytap.com/en-us/information/baggage/hand-baggage",
+     "TAP Air Portugal &mdash; Traveling with hand baggage"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026",
+   "unofficial": false
   }
  },
  "Vueling": {
@@ -4604,6 +5426,69 @@
    ],
    "keepSchema": true,
    "checked": "18 October 2026"
+  },
+  "liquids": {
+   "answer": "Vueling allows liquids in hand luggage in containers of up to 100 ml, in one transparent, fully sealable bag of at most 1 litre, one bag per passenger.",
+   "sections": [
+    {
+     "h": "💧 What Vueling says about liquids",
+     "p": "From the Vueling help article \"Liquids in Hand Luggage\".",
+     "table": {
+      "head": [
+       "Question",
+       "Vueling rule"
+      ],
+      "rows": [
+       [
+        "Container size",
+        "Up to 100 ml (liquids, aerosols and gels), in line with Regulation 185/2010"
+       ],
+       [
+        "Bag",
+        "Transparent, completely sealable bag of at most 1,000 ml; one bag per passenger"
+       ],
+       [
+        "Baby",
+        "All the food the baby needs for the journey, including purées; containers can be over 100 ml and need not be sealed"
+       ],
+       [
+        "Diet products and medication",
+        "Liquids or semi-solids to be used on board, plus needed medical instruments such as syringes; a certificate may be asked at security"
+       ],
+       [
+        "Airport purchases",
+        "Liquids bought at airport shops in approved sealed security bags with the receipt; do not open the bags until your final destination"
+       ],
+       [
+        "Checked luggage",
+        "The restrictions do not apply"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> the article gives no rule for liquids bought on board."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much liquid can I take in my Vueling hand luggage?",
+     "Containers of up to 100 ml in one transparent, fully sealable bag of at most 1 litre, one bag per passenger."
+    ],
+    [
+     "Do the liquid limits apply to Vueling checked luggage?",
+     "No, Vueling says the restrictions do not affect checked luggage."
+    ]
+   ],
+   "sources": [
+    [
+     "https://help.vueling.com/hc/en-gb/articles/19798809556113-Liquids-in-Hand-Luggage",
+     "Vueling &mdash; Liquids in Hand Luggage"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026",
+   "unofficial": false
   }
  },
  "IndiGo": {
@@ -4724,6 +5609,65 @@
    ],
    "keepSchema": true,
    "checked": "18 October 2026"
+  },
+  "liquids": {
+   "answer": "Aegean allows liquids in hand luggage in containers of at most 100 ml, all in one transparent resealable bag of at most 1 litre, one bag per passenger, shown separately at security.",
+   "sections": [
+    {
+     "h": "💧 What Aegean says about liquids",
+     "p": "From the Aegean page \"Liquids in Baggage\".",
+     "table": {
+      "head": [
+       "Question",
+       "Aegean rule"
+      ],
+      "rows": [
+       [
+        "Container size",
+        "Capacity no greater than 100 ml each"
+       ],
+       [
+        "Bag",
+        "One transparent re-sealable bag, maximum capacity 1 litre; one per passenger"
+       ],
+       [
+        "At security",
+        "Sealed and delivered separately for examination"
+       ],
+       [
+        "Medical, dietary and baby food",
+        "Allowed if needed during the trip; you may be asked for proof; additional to the bag quantities"
+       ],
+       [
+        "Duty-free",
+        "Items from shops after security must stay in the special sealed bag, not opened before screening; on an EU, Norway, Iceland or Switzerland transfer, do not open it before screening at the transfer airport"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> the page does not give the rule for checked baggage."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much liquid can I take in my Aegean hand luggage?",
+     "Containers of at most 100 ml in one transparent resealable bag of at most 1 litre, one bag per passenger."
+    ],
+    [
+     "Can I take duty-free liquids on Aegean?",
+     "Yes, from shops after security, in the sealed bag provided; do not open it before screening."
+    ]
+   ],
+   "sources": [
+    [
+     "https://en.aegeanair.com/PlainContent.axd?language=EN&code=liquidsinbaggage",
+     "Aegean &mdash; Liquids in Baggage"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026",
+   "unofficial": false
   }
  },
  "Air France": {
@@ -4920,6 +5864,69 @@
    ],
    "keepSchema": true,
    "checked": "18 October 2026"
+  },
+  "liquids": {
+   "answer": "On international flights SAA allows liquids, gels and aerosols in hand baggage in containers of no more than 100 ml, packed in one 20 x 20 cm transparent re-sealable plastic bag, one bag per traveller.",
+   "sections": [
+    {
+     "h": "💧 What SAA says about liquids",
+     "p": "From the SAA page \"Restricted Baggage Items and Dangerous Goods\", section Transporting Liquids.",
+     "table": {
+      "head": [
+       "Question",
+       "SAA rule"
+      ],
+      "rows": [
+       [
+        "Container size",
+        "Capacity no greater than 100 ml; bigger containers are not accepted even if partly filled"
+       ],
+       [
+        "What counts",
+        "Liquids, gels and aerosols, pastes, lotions, creams, drinks and other items of similar consistency"
+       ],
+       [
+        "Bag",
+        "A 20 x 20 cm transparent, re-sealable plastic bag; only 1 bag per traveller, shown at airport security"
+       ],
+       [
+        "Exemptions",
+        "Medications, baby products and special dietary requirements"
+       ],
+       [
+        "Duty-free",
+        "Cigarettes, liquor and perfume are permitted in reasonable quantities"
+       ],
+       [
+        "Where it applies",
+        "The liquids, aerosols and gels (LAG) rules apply to international flights only"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> the section gives no rule for checked baggage."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much liquid can I take in my SAA hand baggage?",
+     "On international flights, containers of no more than 100 ml in one 20 x 20 cm transparent re-sealable bag, one bag per traveller."
+    ],
+    [
+     "Do the SAA liquid rules apply on domestic flights?",
+     "SAA says the LAG rules apply to international flights only."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.flysaa.com/manage-fly/baggage/restricted-items",
+     "South African Airways &mdash; Restricted Baggage Items and Dangerous Goods"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026",
+   "unofficial": false
   }
  },
  "Vietnam Airlines": {
@@ -4976,6 +5983,69 @@
    ],
    "keepSchema": true,
    "checked": "18 October 2026"
+  },
+  "liquids": {
+   "answer": "On international flights Vietnam Airlines allows in carry-on one sealed bottle, can or container of no more than 100 ml, up to 1 litre of liquid, spray or gel per passenger.",
+   "sections": [
+    {
+     "h": "💧 What Vietnam Airlines says about liquids",
+     "p": "From the Vietnam Airlines (Vietnam site) page \"Liquid\", section For international flights.",
+     "table": {
+      "head": [
+       "Question",
+       "Vietnam Airlines rule"
+      ],
+      "rows": [
+       [
+        "Container size",
+        "One sealed bottle, can or container with no more than 100 ml"
+       ],
+       [
+        "Total",
+        "Each passenger up to 1 litre of liquid, spray or gel"
+       ],
+       [
+        "Aerosols",
+        "Accepted only for medical use, make-up or personal toiletries, with a cover or protection on the sprayer valve"
+       ],
+       [
+        "Duty-free from the international quarantine zone",
+        "Allowed in carry-on without limit if in a sealed secure plastic bag; on flights from or to the US only in checked baggage"
+       ],
+       [
+        "Checked baggage",
+        "Bottles, cans and containers should be sealed to prevent spilling, within the free checked baggage weight and size"
+       ],
+       [
+        "Exceptions",
+        "The page lists items allowed without limit, such as prescribed drugs that match the user's details"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> this is the Vietnam version of the Vietnam Airlines site and the international-flights section; domestic rules are separate and not summarised here."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much liquid can I take on an international Vietnam Airlines flight?",
+     "In carry-on, one sealed container of no more than 100 ml each and up to 1 litre in total per passenger."
+    ],
+    [
+     "Can I take duty-free liquids on Vietnam Airlines flights to the US?",
+     "Vietnam Airlines says duty-free liquids on flights from or to the US are only allowed in checked baggage."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.vietnamairlines.com/vn/en/travel-information/baggage/restricted-baggage/Liquids",
+     "Vietnam Airlines &mdash; Liquid"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026",
+   "unofficial": false
   }
  },
  "Transavia": {
@@ -5036,6 +6106,65 @@
    ],
    "keepSchema": true,
    "checked": "18 October 2026"
+  },
+  "liquids": {
+   "answer": "Transavia allows 1 litre of liquids in your cabin bag, in containers of 100 ml each, all in one transparent resealable plastic bag.",
+   "sections": [
+    {
+     "h": "💧 What Transavia says about liquids",
+     "p": "From the Transavia help page \"Rules for liquids in the cabin\".",
+     "table": {
+      "head": [
+       "Question",
+       "Transavia rule"
+      ],
+      "rows": [
+       [
+        "Allowed",
+        "1 litre of liquids in containers of 100 ml each, in one transparent resealable bag"
+       ],
+       [
+        "What counts",
+        "Perfume, shampoo, toothpaste, mascara, deodorant, gels, creams, lotions, ointments, pastes, spray cans, water, soft drinks, juices, alcoholic drinks, syrups and soups"
+       ],
+       [
+        "Containers over 100 ml",
+        "Not allowed even if they hold less; containers over 100 ml bought after the security check can be taken on the plane"
+       ],
+       [
+        "Baby food",
+        "No bag needed; as much as the baby needs during the flight, plus up to 100 ml of boiled water to mix with formula"
+       ],
+       [
+        "Liquid medicine",
+        "Different rules apply: see the Transavia pages on medicines on board"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> the page does not give the rule for checked baggage."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much liquid can I take in my Transavia cabin bag?",
+     "1 litre in containers of 100 ml each, in one transparent resealable bag."
+    ],
+    [
+     "Can I take a bottle bigger than 100 ml on Transavia?",
+     "Not through security, even if it is partly empty; bigger bottles bought after the security check are allowed."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.transavia.com/help/en-eu/baggage/allowed-in-baggage/liquids-cabin-baggage",
+     "Transavia &mdash; Rules for liquids in the cabin"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026",
+   "unofficial": false
   }
  },
  "Oman Air": {
@@ -5248,6 +6377,65 @@
    ],
    "keepSchema": true,
    "checked": "18 October 2026"
+  },
+  "liquids": {
+   "answer": "On all flights Royal Jordanian only lets liquids, gels and powders such as perfumes, shaving foams and lotions through security in containers of 100 ml or less, packed in one transparent, sealed, re-sealable one-litre bag per passenger.",
+   "sections": [
+    {
+     "h": "💧 What Royal Jordanian says about liquids",
+     "p": "From the Royal Jordanian page \"Baggage restrictions\", section on liquids, gels and powders.",
+     "table": {
+      "head": [
+       "Question",
+       "Royal Jordanian rule"
+      ],
+      "rows": [
+       [
+        "What counts",
+        "Perfumes, shaving foams, deodorants, gels, sprays, shampoo, lotions, creams, toothpaste, oils, mascara, drinks, soups, syrups and similar items"
+       ],
+       [
+        "Container size",
+        "Maximum capacity of 100 ml each"
+       ],
+       [
+        "Bag",
+        "A transparent, re-sealable one (01) litre plastic bag, completely sealed; only one bag per passenger"
+       ],
+       [
+        "Medicines and special food (for example baby food)",
+        "Required during the flight; they do not need to be carried in the plastic bag"
+       ],
+       [
+        "At security",
+        "All these items have to be presented at the security check"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> the section gives no rule for duty-free purchases or for checked baggage."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much liquid can I take on a Royal Jordanian flight?",
+     "Containers of 100 ml or less, all in one transparent, sealed, re-sealable one-litre plastic bag, one bag per passenger."
+    ],
+    [
+     "Do medicines need to go in the liquids bag on Royal Jordanian?",
+     "No, medicines and special food such as baby food required during the flight do not need to be carried in the plastic bag."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.rj.com/en/info-and-tips/baggage-information/what-not-to-carry",
+     "Royal Jordanian &mdash; Baggage restrictions"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026",
+   "unofficial": false
   }
  },
  "Malaysia Airlines": {
@@ -5308,6 +6496,65 @@
     [
      "https://www.malaysiaairlines.com/my/en/travel-info/baggage/additional-restrictions.html",
      "Malaysia Airlines &mdash; Additional Restrictions"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026",
+   "unofficial": false
+  },
+  "liquids": {
+   "answer": "On international flights Malaysia Airlines limits liquids, aerosols and gels in cabin baggage to containers of at most 100 ml, in one transparent resealable bag of no more than one litre per passenger.",
+   "sections": [
+    {
+     "h": "💧 What Malaysia Airlines says about liquids",
+     "p": "From the Malaysia Airlines help article \"What are the restrictions on liquids, aerosols, and gels (LAG) in cabin baggage?\".",
+     "table": {
+      "head": [
+       "Question",
+       "Malaysia Airlines rule"
+      ],
+      "rows": [
+       [
+        "Container size",
+        "Maximum capacity 100 ml each (drinks, creams, perfumes, sprays, gels, toothpaste and similar)"
+       ],
+       [
+        "Bag",
+        "One transparent resealable plastic bag per passenger, volume no greater than one litre"
+       ],
+       [
+        "Bag size guide",
+        "Freezer bags of 20 cm x 20 cm or 25 cm x 15 cm are ideal; the four sides must not total more than 80 cm"
+       ],
+       [
+        "At security",
+        "At the international departure gate screening point, remove the bag from your cabin baggage so it is screened separately"
+       ],
+       [
+        "Final say",
+        "Airport screening staff decide what counts as a liquid, aerosol or gel and remove and dispose of those items"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> the article does not give duty-free, medicine or baby-food exemptions, or the rule for checked baggage."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much liquid can I take on an international Malaysia Airlines flight?",
+     "Containers of at most 100 ml each, all in one transparent resealable bag of no more than one litre per passenger."
+    ],
+    [
+     "Do I take my liquids bag out at Malaysia Airlines security?",
+     "Yes, remove the resealable bag from your cabin baggage at the international departure gate screening point."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.askmh.malaysiaairlines.com/faq/s/article/What-are-the-restrictions-on-liquids-aerosols-and-gels-LAG-in-cabin-baggage",
+     "Malaysia Airlines &mdash; Restrictions on liquids, aerosols and gels in cabin baggage"
     ]
    ],
    "keepSchema": true,
@@ -6634,6 +7881,815 @@
     [
      "https://revistaazul.voeazul.com.br/dicas-de-viagem/o-que-nao-pode-levar-na-bagagem-despachada/",
      "Azul &mdash; O que n&atilde;o pode levar na bagagem despachada"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026",
+   "unofficial": false
+  }
+ },
+ "Wizz Air": {
+  "liquids": {
+   "answer": "Wizz Air allows liquids in cabin baggage in containers of at most 100 ml, all in one transparent resealable 1-litre bag of 20 x 20 cm that you show separately at security.",
+   "sections": [
+    {
+     "h": "💧 What Wizz Air says about liquids",
+     "p": "From the Wizz Air help centre page \"Cabin baggage\".",
+     "table": {
+      "head": [
+       "Question",
+       "Wizz Air rule"
+      ],
+      "rows": [
+       [
+        "Container size",
+        "Maximum 100 ml each"
+       ],
+       [
+        "Bag",
+        "Transparent, resealable, 1-litre plastic bag measuring 20 x 20 cm"
+       ],
+       [
+        "At security",
+        "Present the bag separately"
+       ],
+       [
+        "Liquids that do not meet the rule",
+        "Disposed of at airport security"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> the page does not list exemptions such as baby food or medicine, duty-free rules or the rule for checked baggage."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much liquid can I take in my Wizz Air cabin bag?",
+     "Containers of at most 100 ml, all fitting in one transparent resealable 1-litre bag of 20 x 20 cm."
+    ],
+    [
+     "What happens to liquids over the limit on Wizz Air?",
+     "Any liquid that does not meet the rule is disposed of at airport security."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.wizzair.com/en-gb/help-centre/booking-information-and-services/baggage/baggage-allowance/cabin-baggage",
+     "Wizz Air &mdash; Cabin baggage"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026",
+   "unofficial": false
+  }
+ },
+ "easyJet": {
+  "liquids": {
+   "answer": "At most airports easyJet allows liquids in cabin baggage only in containers of 100 ml or less, all in one transparent resealable 20 x 20 cm bag, with a maximum of 1,000 ml per customer through security.",
+   "sections": [
+    {
+     "h": "💧 What easyJet says about liquids",
+     "p": "From the easyJet help page \"Restricted and unusual items\", section Liquids.",
+     "table": {
+      "head": [
+       "Question",
+       "easyJet rule"
+      ],
+      "rows": [
+       [
+        "Container size",
+        "100 ml or less at most airports"
+       ],
+       [
+        "Bag",
+        "One transparent, re-sealable 20 cm x 20 cm bag"
+       ],
+       [
+        "Total",
+        "Maximum 1,000 ml per customer through security"
+       ],
+       [
+        "More liquids",
+        "You can buy more in the departure lounge"
+       ],
+       [
+        "Airports with new scanners",
+        "A small number of airports, such as London Gatwick, allow larger volumes of liquids in hand luggage"
+       ],
+       [
+        "Liquid food",
+        "The 100 ml limit applies, for example to soup or custard"
+       ],
+       [
+        "Baby food, milk, sterilised water",
+        "The 100 ml limit does not apply if the total is no more than 2 litres; you may be asked to taste it"
+       ],
+       [
+        "Airport rules",
+        "Vary by airport: check your departure airport's website"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> the section does not give the rule for checked baggage."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much liquid can I take in my easyJet hand luggage?",
+     "At most airports containers of 100 ml or less, in one transparent 20 x 20 cm bag, up to 1,000 ml in total."
+    ],
+    [
+     "Does easyJet allow more than 100 ml at some airports?",
+     "Yes: a small number of airports, such as London Gatwick, have new security technology that allows larger volumes. Check your departure airport."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.easyjet.com/en/help/baggage/restricted-and-unusual-items",
+     "easyJet &mdash; Restricted and unusual items"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026",
+   "unofficial": false
+  }
+ },
+ "Ryanair": {
+  "liquids": {
+   "answer": "Ryanair follows EU security rules: each liquid container at most 100 ml, all in one transparent resealable bag of up to 20 x 20 cm and 1 litre, taken out of your bag at security.",
+   "sections": [
+    {
+     "h": "💧 What Ryanair says about liquids",
+     "p": "From the Ryanair help centre article \"What liquids are permitted on board?\" (read in a copy of the page saved on 12 May 2026).",
+     "table": {
+      "head": [
+       "Question",
+       "Ryanair rule"
+      ],
+      "rows": [
+       [
+        "Container size",
+        "No more than 100 ml (3.4 ounces) each"
+       ],
+       [
+        "Bag",
+        "One transparent, re-sealable plastic bag up to 20 cm x 20 cm, capacity up to 1 litre"
+       ],
+       [
+        "Bag must",
+        "Seal completely and fit in your hand baggage"
+       ],
+       [
+        "At security",
+        "Take the bag out of your other hand baggage to be screened separately"
+       ],
+       [
+        "Infant (8 days to 2 years)",
+        "As much baby milk, powdered milk, sterilised water and baby food as needed for the flight, outside the transparent bag"
+       ],
+       [
+        "Liquid medicine",
+        "As much as you need for your flight, outside the transparent bag; keep it ready for inspection"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> the article does not cover duty-free liquids or the rule for checked baggage. It was read in a dated copy, so check the live page before you fly."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much liquid can I take in my Ryanair hand baggage?",
+     "Containers of at most 100 ml, all in one transparent resealable bag of up to 20 x 20 cm and 1 litre."
+    ],
+    [
+     "Can I take baby milk on Ryanair?",
+     "Yes, for an infant aged 8 days to 2 years you can bring as much as you need for the flight, outside the transparent bag."
+    ]
+   ],
+   "sources": [
+    [
+     "https://help.ryanair.com/hc/en-gb/articles/12890779032209-What-liquids-are-permitted-on-board",
+     "Ryanair &mdash; What liquids are permitted on board?"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026",
+   "unofficial": false
+  }
+ },
+ "Air Europa": {
+  "liquids": {
+   "answer": "Air Europa allows only small amounts of liquid in hand baggage: containers of at most 100 ml in one transparent resealable bag of up to 1 litre, one bag per passenger.",
+   "sections": [
+    {
+     "h": "💧 What Air Europa says about liquids",
+     "p": "From the Air Europa page \"Allowed Powders and Liquids on the Plane\".",
+     "table": {
+      "head": [
+       "Question",
+       "Air Europa rule"
+      ],
+      "rows": [
+       [
+        "Container size",
+        "Maximum capacity 100 ml"
+       ],
+       [
+        "Total",
+        "Each passenger can bring a maximum of 1 litre"
+       ],
+       [
+        "What counts",
+        "Water and drinks; perfumes, gels, creams, oils and lotions including toothpaste; aerosols, foams, deodorants and other pressurised contents"
+       ],
+       [
+        "Bag",
+        "Individual containers inside a transparent resealable bag of up to 1 litre; one bag per passenger"
+       ],
+       [
+        "Bought after security or on board",
+        "Can be carried as hand luggage"
+       ],
+       [
+        "Medicines and baby food",
+        "Can be carried for use during the flight, in a transparent bag, presented separately at security"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> the part of the page on duty-free sealed bags and checked alcohol is not summarised here."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much liquid can I take in my Air Europa hand luggage?",
+     "Containers of at most 100 ml in one transparent resealable bag of up to 1 litre, one bag per passenger."
+    ],
+    [
+     "Can I take medicine on Air Europa?",
+     "Yes, medicines and baby food for use during the flight, in a transparent bag, shown separately at security."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.aireuropa.com/es/en/aea/travel-information/security/safety-measures-and-liquids.html",
+     "Air Europa &mdash; Allowed Powders and Liquids on the Plane"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026",
+   "unofficial": false
+  }
+ },
+ "KLM": {
+  "liquids": {
+   "answer": "KLM allows liquids in hand baggage in small containers of up to 100 ml each, all packed together in one transparent closed plastic bag with a total volume of up to 1 litre.",
+   "sections": [
+    {
+     "h": "💧 What KLM says about liquids",
+     "p": "From the KLM page \"Restricted and prohibited items in hand baggage\", section Liquids.",
+     "table": {
+      "head": [
+       "Question",
+       "KLM rule"
+      ],
+      "rows": [
+       [
+        "Container size",
+        "Up to 100 ml per item"
+       ],
+       [
+        "Bag",
+        "1 transparent, closed plastic bag, total volume up to 1 litre (recommended)"
+       ],
+       [
+        "More than that",
+        "Pack the rest in your checked baggage"
+       ],
+       [
+        "Filled bottles",
+        "From 1 September 2024 a filled bottle (water or other drinks) can no longer be taken through security"
+       ],
+       [
+        "Always allowed",
+        "Baby food for the flight; medicines to take during the flight with a prescription or doctor's statement; specific diet foods for the flight; sealed tax-free items"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> the section gives no rule on duty-free bags in transit; it does not list departure-airport exceptions."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much liquid can I take in my KLM hand baggage?",
+     "Containers of up to 100 ml each, all in one transparent closed plastic bag with a total volume of up to 1 litre."
+    ],
+    [
+     "Can I take an empty water bottle on KLM?",
+     "KLM says a filled bottle can no longer be taken through security; the rule is about filled bottles."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.klm.com/information/baggage/restricted-items-hand-baggage",
+     "KLM &mdash; Restricted and prohibited items in hand baggage"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026",
+   "unofficial": false
+  }
+ },
+ "Virgin Atlantic": {
+  "liquids": {
+   "answer": "Virgin Atlantic allows liquids in hand baggage in containers of 100 ml (3 oz) or smaller, all in one transparent resealable bag of no more than 20 x 20 cm and one litre.",
+   "sections": [
+    {
+     "h": "💧 What Virgin Atlantic says about liquids",
+     "p": "From the Virgin Atlantic help page \"Liquid restrictions\" (read in a copy of the page saved on 30 January 2023).",
+     "table": {
+      "head": [
+       "Question",
+       "Virgin Atlantic rule"
+      ],
+      "rows": [
+       [
+        "Container size",
+        "100 ml / 3 oz or smaller"
+       ],
+       [
+        "What counts",
+        "Gels, lotions, pastes, liquid cosmetics, foams, foodstuffs and drinking water"
+       ],
+       [
+        "Bag",
+        "A single transparent, re-sealable bag (zip or pressable seal) no bigger than 20 cm x 20 cm, one litre maximum; only one bag is allowed"
+       ],
+       [
+        "Bags that do not meet this",
+        "Not allowed"
+       ],
+       [
+        "Over 100 ml",
+        "Baby food and formula milk, and medications, are allowed in larger amounts; do not bring excessive amounts"
+       ],
+       [
+        "Advice",
+        "Pack liquids in your hold baggage unless you need them during the flight"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> the duty-free rules for connections are on a separate Virgin Atlantic page that was not read. The page was read in a dated copy, so check the live page before you fly."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much liquid can I take in my Virgin Atlantic hand baggage?",
+     "Containers of 100 ml or smaller, all in one transparent resealable bag of no more than 20 x 20 cm and one litre."
+    ],
+    [
+     "Can I take baby food over 100 ml on Virgin Atlantic?",
+     "Yes, baby food and formula milk are allowed in amounts greater than 100 ml, as are medications; do not bring excessive amounts."
+    ]
+   ],
+   "sources": [
+    [
+     "https://help.virginatlantic.com/us/en/baggage/liquid-restrictions.html",
+     "Virgin Atlantic &mdash; Liquid restrictions"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026",
+   "unofficial": false
+  }
+ },
+ "Singapore Airlines": {
+  "liquids": {
+   "answer": "Singapore Airlines allows liquids, aerosols and gels in cabin baggage only in containers of not more than 100 ml each, in one clear resealable bag of no more than 1 litre, one bag per passenger.",
+   "sections": [
+    {
+     "h": "💧 What Singapore Airlines says about liquids",
+     "p": "From the Singapore Airlines page \"Baggage Restrictions\", section on liquids, aerosols and gels.",
+     "table": {
+      "head": [
+       "Question",
+       "Singapore Airlines rule"
+      ],
+      "rows": [
+       [
+        "Container size",
+        "Not more than 100 ml each, even if the container is only partly filled"
+       ],
+       [
+        "What counts",
+        "All liquids including beverages, soups and syrups; gels; pastes; creams, lotions and oils; contents of aerosol cans; mascara; liquid-solid mixtures; similar items"
+       ],
+       [
+        "Bag",
+        "A clear, re-sealable plastic bag; total volume not more than 1 litre; one bag per passenger"
+       ],
+       [
+        "At security",
+        "Remove the bag from your cabin baggage and present it for visual and/or X-ray screening"
+       ],
+       [
+        "Medication and special diets (including baby formula)",
+        "Permitted in cabin baggage; remove them and declare them to security; extra checks are possible; carry supporting documents for prescription medicine"
+       ],
+       [
+        "Duty-free",
+        "Some countries apply the restrictions on arrival and departure, so you may not be allowed to carry certain duty-free purchases onboard"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> the section does not list the rule for checked baggage."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much liquid can I take in my Singapore Airlines cabin bag?",
+     "Containers of not more than 100 ml each, in one clear resealable bag of no more than 1 litre, one bag per passenger."
+    ],
+    [
+     "Can I take baby formula on Singapore Airlines?",
+     "Yes, medication and special-diet foods including baby formula are permitted in cabin baggage; declare them to security."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.singaporeair.com/en_UK/us/travel-info/baggage/baggage-restrictions/",
+     "Singapore Airlines &mdash; Baggage Restrictions"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026",
+   "unofficial": false
+  }
+ },
+ "Thai Airways": {
+  "liquids": {
+   "answer": "Thai Airways allows liquids, aerosols and gels in carry-on baggage only in containers of 100 ml or less, in one transparent re-sealable bag of at most one litre, one bag per passenger.",
+   "sections": [
+    {
+     "h": "💧 What Thai Airways says about liquids",
+     "p": "From the Thai Airways page \"Carry-On Baggage Allowance & Size\", section Liquid, aerosol and gel restrictions.",
+     "table": {
+      "head": [
+       "Question",
+       "Thai Airways rule"
+      ],
+      "rows": [
+       [
+        "Container size",
+        "Capacity not greater than 100 ml; larger containers are not accepted even if partly filled"
+       ],
+       [
+        "Bag",
+        "Transparent re-sealable plastic bag, maximum capacity one litre"
+       ],
+       [
+        "At security",
+        "Present the bag for visual examination, separately from other cabin baggage; one bag per passenger"
+       ],
+       [
+        "Exemptions",
+        "May be made for medications, baby milk or food and passengers with special dietary requirements"
+       ],
+       [
+        "Duty-free and on-board purchases",
+        "Must be packed in a sealed plastic bag and not opened; proof of purchase may be required"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> the section does not give the rule for checked baggage."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much liquid can I take in my Thai Airways carry-on?",
+     "Containers of 100 ml or less in one transparent re-sealable bag of at most one litre, one bag per passenger."
+    ],
+    [
+     "Can I bring duty-free liquids on Thai Airways?",
+     "Yes, if they are packed in a sealed plastic bag, unopened, and you may be asked for proof of purchase."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.thaiairways.com/en-th/content/baggage/carry-on-baggage/",
+     "Thai Airways &mdash; Carry-On Baggage Allowance & Size"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026",
+   "unofficial": false
+  }
+ },
+ "Virgin Australia": {
+  "liquids": {
+   "answer": "On international flights Virgin Australia allows liquids, aerosols and gels (with caps) in containers of at most 100 ml each, all in one sealed transparent resealable one-litre bag per guest.",
+   "sections": [
+    {
+     "h": "💧 What Virgin Australia says about liquids",
+     "p": "From the Virgin Australia page \"Airport security procedures\", section on international flights.",
+     "table": {
+      "head": [
+       "Question",
+       "Virgin Australia rule"
+      ],
+      "rows": [
+       [
+        "Where it applies",
+        "Carry-on baggage on international flights, and possibly when transiting through international airports"
+       ],
+       [
+        "Container size",
+        "Maximum capacity 100 ml each, with caps"
+       ],
+       [
+        "Bag",
+        "All containers must fit comfortably in a single one-litre transparent resealable plastic bag, completely sealed; one bag per guest, which may need to be presented separately at security"
+       ],
+       [
+        "What counts",
+        "Beverages and liquid food, shampoo and soap, perfume and deodorant, cream, lotion and oil, paste including toothpaste, lip balm, gloss and stick, hair gel and spray, similar items"
+       ],
+       [
+        "Inorganic powders",
+        "Departing flights limit them to a combined 350 ml/g or less per passenger in the cabin, presented separately at screening"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> the section does not describe domestic flights, baby liquids or duty-free in detail."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much liquid can I take on a Virgin Australia international flight?",
+     "Containers of at most 100 ml each, all in one sealed transparent resealable one-litre bag, one bag per guest."
+    ],
+    [
+     "Do powders have a limit on Virgin Australia?",
+     "Departing flights limit inorganic powders to a combined 350 ml/g per passenger in the cabin, shown separately at screening."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.virginaustralia.com/au/en/travel-info/international-travel/enhanced-security-procedures/",
+     "Virgin Australia &mdash; Airport security procedures"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026",
+   "unofficial": false
+  }
+ },
+ "Philippine Airlines": {
+  "liquids": {
+   "answer": "PAL requires every liquid, aerosol and gel (LAG) in carry-on to be in a container of no more than 100 ml, all in one transparent re-sealable bag of at most 1 litre, one bag per passenger, shown separately for screening.",
+   "sections": [
+    {
+     "h": "💧 What PAL says about liquids",
+     "p": "From the Philippine Airlines page \"Restricted items\", section Liquids, Aerosols and Gels [LAG].",
+     "table": {
+      "head": [
+       "Question",
+       "PAL rule"
+      ],
+      "rows": [
+       [
+        "Container size",
+        "No more than 100 ml each (or equivalent in other measures)"
+       ],
+       [
+        "Larger containers",
+        "Unacceptable even if only partially filled; empty containers over 100 ml are permitted"
+       ],
+       [
+        "Bag",
+        "Transparent re-sealable plastic bag, maximum capacity 1 litre; indicative size 20.5 cm x 20.5 cm or 25 cm x 15 cm"
+       ],
+       [
+        "Closing",
+        "The containers must fit comfortably and be fully closed"
+       ],
+       [
+        "Number and screening",
+        "Only one bag per passenger, presented separately for screening"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> the section does not give duty-free rules, exemptions for medicine or baby items, or the rule for checked baggage."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much liquid can I take in my PAL hand-carry?",
+     "Containers of no more than 100 ml each, all in one transparent re-sealable bag of at most 1 litre, one bag per passenger."
+    ],
+    [
+     "Can I bring an empty bottle over 100 ml on PAL?",
+     "Yes, PAL says empty containers with a capacity greater than 100 ml are permitted."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.philippineairlines.com/us/en/before-you-fly/baggage-information/restricted-items.html",
+     "Philippine Airlines &mdash; Restricted items"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026",
+   "unofficial": false
+  }
+ },
+ "Qantas": {
+  "liquids": {
+   "answer": "When departing any Australian international airport, Qantas says all liquids, aerosols and gels must be screened, toiletries must be 100 mL or less and displayed in a clear resealable plastic bag at the checkpoint.",
+   "sections": [
+    {
+     "h": "💧 What Qantas says about liquids",
+     "p": "From the Qantas page \"Carry-on baggage allowances\", section on liquids, aerosols and gels (LAGs).",
+     "table": {
+      "head": [
+       "Question",
+       "Qantas rule"
+      ],
+      "rows": [
+       [
+        "Where it applies",
+        "Departing from any Australian international airport (on international or domestic flights)"
+       ],
+       [
+        "Container size",
+        "Toiletries and similar LAGs 100 mL or less"
+       ],
+       [
+        "Bag",
+        "Displayed in a clear resealable plastic bag and screened at the checkpoint"
+       ],
+       [
+        "Duty-free on transit at Australian airports",
+        "Allowed on your next international flight after clearing the screening checkpoint"
+       ],
+       [
+        "Duty-free LAGs and powders",
+        "Must be bought at an airport retail outlet or on an inbound international flight, in secure tamper-evident bags (STEBs) with proof"
+       ],
+       [
+        "Powders",
+        "No restriction on organic powders such as baby formula and protein powder; inorganic powders such as salt and sand must not exceed 350 mL or 350 g"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> the section does not list the exemptions for medicine and baby liquids in detail, or the rules at other countries' airports."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much liquid can I take in my Qantas carry-on from Australia?",
+     "Toiletries and similar LAGs of 100 mL or less, shown in a clear resealable plastic bag at the checkpoint."
+    ],
+    [
+     "Are there limits on powders with Qantas?",
+     "Inorganic powders such as salt and sand must not exceed 350 mL or 350 g; organic powders such as baby formula have no restriction."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.qantas.com/en-us/baggage/carry-on",
+     "Qantas &mdash; Carry-on baggage allowances"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026",
+   "unofficial": false
+  }
+ },
+ "Turkish Airlines": {
+  "liquids": {
+   "answer": "Turkish Airlines allows hair sprays, perfumes, colognes and medicines containing alcohol in the cabin in a maximum of 100 ml per item; transiting passengers may not take liquids over 100 ml through transit security at some airports.",
+   "sections": [
+    {
+     "h": "💧 What Turkish Airlines says about liquids",
+     "p": "From the Turkish Airlines \"Travel Restrictions and Prohibited Items Guide\" table and the carry-on baggage page.",
+     "table": {
+      "head": [
+       "Question",
+       "Turkish Airlines rule"
+      ],
+      "rows": [
+       [
+        "Hair sprays, perfumes, colognes, alcohol-based medicines",
+        "A maximum of 100 ml is permitted in the cabin"
+       ],
+       [
+        "Alcoholic beverages",
+        "Alcohol content at most 70%; a maximum of 5 litres per passenger; the cabin amount applies only to duty-free purchases because of the liquid restriction at security"
+       ],
+       [
+        "Transit",
+        "Because of some airports' country rules, transiting passengers are not allowed through transit security with liquids over 100 ml, including closed duty-free bags"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> the pages read do not give the bag size or the exemptions for medicine and baby food. Check the airport where you transfer."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much perfume can I take in my Turkish Airlines cabin bag?",
+     "Turkish Airlines says a maximum of 100 ml is permitted in the cabin for hair sprays, perfumes, colognes and medicines containing alcohol."
+    ],
+    [
+     "Can I take duty-free liquids through a Turkish Airlines transfer?",
+     "Not always: at some airports transiting passengers cannot pass transit security with liquids over 100 ml, including sealed duty-free bags."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.turkishairlines.com/en-us/any-questions/restrictions/",
+     "Turkish Airlines &mdash; Travel Restrictions and Prohibited Items Guide"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026",
+   "unofficial": false
+  }
+ },
+ "Pegasus": {
+  "liquids": {
+   "answer": "Pegasus says the amount of liquids in hand luggage is restricted and cosmetic products carried in the cabin cannot be more than 100 ml each; essential items such as baby food can be carried in zip bags.",
+   "sections": [
+    {
+     "h": "💧 What Pegasus says about liquids",
+     "p": "From the Pegasus Airlines page \"What Is Cabin Luggage? The Rules For Cabin Baggage\", section Restricted and Prohibited Items on Cabin Luggage.",
+     "table": {
+      "head": [
+       "Question",
+       "Pegasus rule"
+      ],
+      "rows": [
+       [
+        "Liquids in hand luggage",
+        "The amount is restricted; too many cosmetic or liquid food products may not be accepted into the cabin"
+       ],
+       [
+        "Cosmetic products",
+        "Cannot be more than 100 ml"
+       ],
+       [
+        "Baby food",
+        "Essential products such as baby food can be carried in zip bags in cabin baggage"
+       ],
+       [
+        "Duty-free shopping",
+        "Pay attention if you have not bought additional luggage"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> the page does not give the bag size or total volume, and gives no rule for checked baggage."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much liquid can I take in my Pegasus cabin bag?",
+     "Pegasus says cosmetic products carried in the cabin cannot be more than 100 ml each, and too many liquid products may not be accepted."
+    ],
+    [
+     "Can I take baby food on Pegasus?",
+     "Yes, Pegasus says essential products such as baby food can be carried in zip bags in cabin baggage."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.flypgs.com/en/travel-glossary/cabin-baggage",
+     "Pegasus &mdash; Cabin baggage rules"
     ]
    ],
    "keepSchema": true,
