@@ -1,3 +1,5 @@
+# HARD RULE #1 (user, 2026-10-18): NEVER HAND OFF BEFORE QA AND DEBUG PROVE 100% (NOT 99.99%) THAT IT IS AS IT SHOULD BE WITH NO REGRESSIONS. Read this at the start of EVERY session and confirm it in the first reply. Checklist: memory file feedback_qa_100_percent_before_handoff.md. Compare before/after, test every neighbour (all categories, tabs, modes, desktop AND 375px), run ALL guards, verify the exact view of his screenshot, never change what he did not ask for.
+
 # canitakethis.co — Deploy Flow
 
 **CURRENT DEPLOY SEQUENCE (2026-10, supersedes the zip flow below):** only after the user says "deploy":

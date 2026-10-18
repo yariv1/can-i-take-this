@@ -1,3 +1,5 @@
+# HARD RULE #1 (user, 2026-10-18): NEVER HAND OFF BEFORE QA AND DEBUG PROVE 100% (NOT 99.99%) THAT IT IS AS IT SHOULD BE WITH NO REGRESSIONS. Read at the start of EVERY session and confirm in the first reply (memory: feedback_qa_100_percent_before_handoff.md).
+
 # Blog roadmap (written 2026-10-10, session 20)
 
 ## SESSION 34 STATE (end of session 34, 2026-10-17/18): READ THIS FIRST

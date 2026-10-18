@@ -1153,7 +1153,7 @@ function renderBagCard(wrap){
   }
   var f=fs[Math.min(S.fare,fs.length-1)];
   var carry=S.bag==='carry';var secH=carry?(CABINICO+' Carry-on allowance'):(HOLDICO+' Checked allowance');var body=carry?f.cabin:f.checked;
-  wrap.innerHTML='<div class="pass print"><div class="bstrip"><div class="bic">'+SUITCASE+'</div><div><div class="bt">Baggage allowance</div><div class="bsub">'+a.name+' \u00B7 '+f.label+'</div></div></div><div class="perf"></div><div class="body"><div class="bsec-h">'+secH+'</div><span class="perpax">Per passenger</span><p class="bsec-p">'+body+'</p>'+helpBlock(null)+'<div class="src">Allowances are per passenger and vary by fare, route and frequent-flyer status. Confirm with '+a.name+' before you fly.</div></div></div>';
+  wrap.innerHTML='<div class="pass print"><div class="bstrip"><div class="bic">'+SUITCASE+'</div><div><div class="bt">Baggage allowance</div><div class="bsub">'+a.name+' \u00B7 '+f.label+'</div></div></div><div class="perf"></div><div class="body"><div class="bsec-h">'+secH+'</div><span class="perpax">Per passenger</span><p class="bsec-p">'+body+'</p>'+helpBlock(null)+'<div class="src"><b class="src-ok">✓ OFFICIAL SOURCE</b> The rule above is from the official airline rules. To be more sure and learn further, please check the links placed here above. Allowances are per passenger and vary by fare, route and frequent-flyer status. Confirm with '+a.name+' before you fly.</div></div></div>';
   bindHelp(wrap);
 }
 function itemVerdict(){
@@ -1289,6 +1289,8 @@ function appSrcFoot(v){
   /* same three states as the built pages (DS 8.28): official link = OFFICIAL, none = BASED ON GLOBAL RULES; an unverified rule is worded as the general rule */
   var cat=S.cat,base=v.src||'';
   var SENT={med:['health','medicine'],food:['customs or quarantine','food rule'],animal:['animal import','pet import rule'],alcohol:['customs','allowance'],tobacco:['customs','allowance'],cash:['customs','limit'],plants:['customs or biosecurity','plant rule'],vape:['','vape rule']};
+  /* airline cards in the app: the card shows the airline link, so the state follows the link (DS 8.28 / 8.32): OFFICIAL with the approved sentence */
+  if(S.mode==='plane'&&v.status!=='nomatch')return '<b class="src-ok">✓ OFFICIAL SOURCE</b> The rule above is from the official airline rules. To be more sure and learn further, please check the links placed here above. '+base;
   if(S.mode!=='country'||!SENT[cat]||v.status==='nomatch')return base;
   var s=v.source,arr=(s&&s.length)?s:(s&&s.url?[s]:[]);
   if(!arr.length)return '<b class="src-no">BASED ON GLOBAL RULES</b> We did not find an official source specific to '+S.country+' for this '+SENT[cat][1]+', so this shows the general rules most countries follow. '+base;
