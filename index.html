@@ -1304,7 +1304,7 @@ function appSrcFoot(v){
   var un=arr.every(function(a){return a.unofficial;});
   var lab=un?'<b class="src-un">⚠ UNOFFICIAL SOURCE</b> ':'<b class="src-ok">✓ OFFICIAL SOURCE</b> ';
   var customs=(cat==='alcohol'||cat==='tobacco'||cat==='cash'||cat==='plants'||cat==='vape');
-  return lab+(un?'The rule above is from an unofficial source, not the official rules. To be more sure and learn further, please check the links placed here above. ':'The rule above is from the official rules. To be more sure and learn further, please check the links placed here above. ')+base;
+  return lab+(un?'The rules above are taken from unofficial sources. It doesn’t mean that they are not correct, just not officially from '+esc(S.country)+'. To be more sure and learn further, please check the links placed here above. ':'The rule above is from the official rules. To be more sure and learn further, please check the links placed here above. ')+base;
 }
 function renderPass(v,wrap){
   var route=S.mode==='plane'?'<span>&#9992; <b>'+S.airline+'</b></span><span>'+(S.bag==='carry'?'CARRY-ON':'CHECKED')+'</span><span>&rarr; <b>'+S.country+'</b></span>':'<span>&#128706; ENTERING</span><span><b>'+S.country+'</b> '+(CFLAG[S.country]||'')+'</span>';

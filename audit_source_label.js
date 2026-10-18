@@ -52,6 +52,7 @@ console.log('OK source labels');
     else if (f.name === 'index.html') {
       const s = fs.readFileSync(p, 'utf8');
       if (/class="help-h">Official source|class="h">🔗 Official|art-sources-head">🔗 Official/.test(s)) { console.log('OLD SOURCE HEADING (DS 8.21): ' + p); process.exitCode = 1; }
+      if (/unofficial source, not the official rules/.test(s)) { console.log('OLD UNOFFICIAL FOOTER WORDING (DS 8.32, order 2026-10-18): ' + p); process.exitCode = 1; }
     }
   }
 })('.');
