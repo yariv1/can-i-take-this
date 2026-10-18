@@ -493,3 +493,26 @@ Verified ON Google in this round (do not request): wifi of emirates, qatar-airwa
 10 https://canitakethis.co/medication/vicks-inhaler/poland/ TO REQUEST
 Also session 36 liquids round 3 (optional, TO REQUEST): /airline/<slug>/liquids/ for volaris, jetblue, frontier, latam, avianca, asiana, korean-air, icelandair, air-arabia, royal-air-maroc, china-southern, china-eastern, saudia, united, hawaiian-airlines, alaska-airlines, southwest, austrian, air-france, aer-lingus, norwegian, sunexpress, el-al, arkia, israir, etihad-airways, westjet, aeromexico, gol, azul, indigo, air-china, flydubai, gulf-air, oman-air, kuwait-airways, middle-east-airlines, egyptair, ethiopian-airlines, kenya-airways
 Also session 36 alcohol/perfume round (optional, TO REQUEST): /airline/<slug>/alcohol/ and /airline/<slug>/perfume-aerosols/ for the ~50 airlines listed in AIRLINE_ALCOHOL_PERFUME.md (round 3)
+
+## 2026-10-18 airline medication, TO REQUEST (commit 65344c994)
+- https://canitakethis.co/airline/ana/medication/ — TO REQUEST
+- https://canitakethis.co/airline/frontier/medication/ — TO REQUEST
+- https://canitakethis.co/airline/british-airways/medication/ — TO REQUEST
+- https://canitakethis.co/airline/wizz-air/medication/ — TO REQUEST
+- https://canitakethis.co/airline/thai-airways/medication/ — TO REQUEST
+- https://canitakethis.co/airline/qatar-airways/medication/ — TO REQUEST
+- https://canitakethis.co/airline/westjet/medication/ — TO REQUEST
+- https://canitakethis.co/airline/virgin-australia/medication/ — TO REQUEST
+- https://canitakethis.co/airline/icelandair/medication/ — TO REQUEST
+- https://canitakethis.co/airline/ethiopian-airlines/medication/ — TO REQUEST
+- https://canitakethis.co/airline/gol/medication/ — TO REQUEST
+- https://canitakethis.co/airline/transavia/medication/ — TO REQUEST
+- https://canitakethis.co/airline/pegasus/medication/ — TO REQUEST
+- https://canitakethis.co/airline/flydubai/medication/ — TO REQUEST
+- https://canitakethis.co/airline/gulf-air/medication/ — TO REQUEST
+- https://canitakethis.co/airline/kenya-airways/medication/ — TO REQUEST
+- https://canitakethis.co/airline/asiana/medication/ — TO REQUEST
+- https://canitakethis.co/airline/philippine-airlines/medication/ — TO REQUEST
+- https://canitakethis.co/airline/royal-air-maroc/medication/ — TO REQUEST
+- https://canitakethis.co/airline/air-europa/medication/ — TO REQUEST
+- https://canitakethis.co/airline/eurowings/medication/ — TO REQUEST
