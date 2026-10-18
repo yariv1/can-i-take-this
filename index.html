@@ -80,6 +80,7 @@ body{background:radial-gradient(1200px 600px at 50% -10%,var(--glow) 0%,transpar
 .tinput{flex:1;background:var(--surface);border:1px solid var(--line);border-radius:13px;color:var(--text);font-family:'Inter',sans-serif;font-size:15px;padding:13px 14px}
 .tinput:focus-visible{outline:none;border-color:var(--accent)}
 .tinput::placeholder{color:var(--muted)}
+.inwrap{position:relative;flex:1;display:flex;min-width:0}.inwrap .tinput{flex:1;min-width:0;padding-right:44px}.tclear{position:absolute;right:8px;top:50%;transform:translateY(-50%);width:30px;height:30px;border:0;border-radius:8px;background:none;color:var(--muted);cursor:pointer;display:none;align-items:center;justify-content:center;padding:0}.tclear.on{display:flex}.tclear:hover{color:var(--text)}.tclear:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
 #scanBtn{flex:none;background:var(--surface);border:1px solid var(--line);border-radius:13px;color:var(--accent);width:48px;display:grid;place-items:center;cursor:pointer}
 #scanBtn svg{width:20px;height:20px}
 .suggest{margin-top:6px;background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden}
@@ -840,10 +841,10 @@ var STRICT_PET=['Australia','United Kingdom','Japan','Singapore'];
 var ANIMAL_DB=['Rabbit','Hamster','Guinea pig','Gerbil','Ferret','Parrot','Cockatiel','Canary','Budgie','Finch','Turtle','Tortoise','Snake','Lizard','Gecko','Iguana','Fish','Frog','Hedgehog','Horse','Pony','Pig','Goat','Chinchilla','Rat','Mouse','Sugar glider','Bird of prey','Capybara'];
 
 var ITEMCFG={
- med:{db:MED_DB,quick:[],label:'Which medicine?',ph:'Type a medicine or ingredient (e.g. Sudafed)',sub:function(x){return x.ing;}},
- food:{db:FOOD_DB,quick:[],label:'Which food?',ph:'Type a food (e.g. beef jerky)',sub:function(x){return CATNAME[x.c];}},
+ med:{db:MED_DB,quick:['Advil','Tylenol','Sudafed','Benadryl','Melatonin','Adderall','Insulin'],label:'Which medicine?',ph:'Type a medicine or ingredient (e.g. Sudafed)',sub:function(x){return x.ing;}},
+ food:{db:FOOD_DB,quick:['Cheese','Beef jerky','Chocolate','Apple','Eggs','Honey','Baby formula','Milk'],label:'Which food?',ph:'Type a food (e.g. beef jerky)',sub:function(x){return CATNAME[x.c];}},
  sharp:{db:SHARP_DB,quick:['Knife','Scissors','Safety razor','Nail clippers','Tweezers','Multi-tool'],label:'Which sharp object?',ph:'Type a sharp object (e.g. corkscrew)',sub:null},
- sports:{db:SPORTS_DB,quick:['Golf clubs','Skis','Bicycle','Tennis racket','Surfboard','Scuba tank'],label:'Which sports gear?',ph:'Type your gear (e.g. fishing rod)',sub:null}
+ sports:{db:SPORTS_DB,quick:['Golf clubs','Skis','Bicycle','Tennis racket','Surfboard','Scuba tank','Snowboard','Fishing rod','Yoga mat','Baseball bat'],label:'Which sports gear?',ph:'Type your gear (e.g. fishing rod)',sub:null}
 };
 
 var S={mode:'plane',bag:'carry',airline:'El Al',country:'Japan',cat:'baginfo',detail:null,item:null,itemQ:'',open:null,aQ:'',cQ:'',fare:0,animal:null,dogSize:null,aniQ:'',liveToken:0};
@@ -1097,7 +1098,18 @@ function render(){
   if(animal){document.querySelectorAll('#animalChips .chip').forEach(function(b){b.classList.toggle('on',S.animal===b.dataset.a);});$('#dogSize').classList.toggle('hidden',S.animal!=='Dog');document.querySelectorAll('#dogSize .chip').forEach(function(b){b.classList.toggle('on',S.dogSize===b.dataset.s);});}
   renderVerdict();
 }
-function setCat(id){S.cat=id;S.detail=null;S.item=null;S.itemQ='';S.animal=null;S.dogSize=null;S.aniQ='';if(S.cat==='baginfo')S.fare=0;$('#itemInput').value='';$('#animalInput').value='';$('#itemSuggest').innerHTML='';$('#aniSuggest').innerHTML='';render();focusPicker();}
+/* first sub-option is selected the moment a category is tapped (user order 2026-10-18): no empty state; typeaheads stay */
+/* clear (x) inside every typeahead, same as the home search: shows only when there is text (user order 2026-10-18) */
+function wireClear(id,onClear){var inp=document.getElementById(id);if(!inp||inp.parentNode.classList.contains('inwrap'))return;var w=document.createElement('div');w.className='inwrap';inp.parentNode.insertBefore(w,inp);w.appendChild(inp);var b=document.createElement('button');b.type='button';b.className='tclear';b.setAttribute('aria-label','Clear');b.innerHTML='<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>';w.appendChild(b);b.onclick=function(){inp.value='';onClear();inp.dispatchEvent(new Event('input'));inp.focus();};inp._clearBtn=b;}
+function syncClears(){['itemInput','animalInput'].forEach(function(id){var i=document.getElementById(id);if(i&&i._clearBtn)i._clearBtn.classList.toggle('on',!!i.value);});}
+function ensureDefaults(){
+  if(isStandalone()){if(!S.item&&SOLO_PRESETS.length){var sn=SOLO_PRESETS[0];S.item={free:true,n:sn};S.itemQ='';}return;}
+  var co=null,arr=CATS[S.mode]||[];for(var i=0;i<arr.length;i++){if(arr[i].id===S.cat){co=arr[i];break;}}
+  if(co&&co.detail&&!S.detail&&DETAILS[co.detail]&&DETAILS[co.detail].length)S.detail=DETAILS[co.detail][0].id;
+  if(isItemMode()&&!S.item){var cfg=ITEMCFG[S.cat],qn=(cfg.quick||[])[0];if(qn){var fd=null;for(var j=0;j<cfg.db.length;j++){if(cfg.db[j].n===qn){fd=cfg.db[j];break;}}S.item=fd||{free:true,n:qn};S.itemQ='';}}
+  if(isAnimal()&&!S.animal){S.animal='Dog';S.dogSize=(S.mode==='plane')?'Small':null;}
+}
+function setCat(id){S.cat=id;S.detail=null;S.item=null;S.itemQ='';S.animal=null;S.dogSize=null;S.aniQ='';if(S.cat==='baginfo')S.fare=0;$('#itemInput').value='';$('#animalInput').value='';$('#itemSuggest').innerHTML='';$('#aniSuggest').innerHTML='';ensureDefaults();render();focusPicker();}
 function focusPicker(){
   var item=$('#itemBlock'),ani=$('#animalBlock');
   if(item&&!item.classList.contains('hidden')){var inp=$('#itemInput');if(inp){inp.focus({preventScroll:true});scrollToEl(item);}}
@@ -1107,7 +1119,7 @@ function scrollToEl(el){try{el.scrollIntoView({behavior:'smooth',block:'center'}
 function renderSoloQuick(){
   var el=$('#itemQuick');
   el.innerHTML=SOLO_PRESETS.map(function(n){var on=(S.item&&S.item.n===n);return '<button class="chip'+(on?' on':'')+'" data-q="'+esc(n)+'">'+esc(n)+'</button>';}).join('');
-  el.querySelectorAll('.chip').forEach(function(b){b.onclick=function(){S.item={free:true,n:b.dataset.q};S.itemQ=b.dataset.q;$('#itemInput').value=b.dataset.q;$('#itemSuggest').innerHTML='';renderVerdict();renderSoloQuick();};});
+  el.querySelectorAll('.chip').forEach(function(b){b.onclick=function(){S.item={free:true,n:b.dataset.q};S.itemQ='';$('#itemInput').value='';$('#itemSuggest').innerHTML='';renderVerdict();renderSoloQuick();};});
 }
 function renderSoloSuggest(){
   var q=(S.itemQ||'').toLowerCase().trim();
@@ -1121,7 +1133,7 @@ function renderSoloSuggest(){
 function renderQuick(){
   var cfg=ITEMCFG[S.cat],el=$('#itemQuick');
   el.innerHTML=(cfg.quick||[]).map(function(n){var on=(S.item&&S.item.n===n);return '<button class="chip'+(on?' on':'')+'" data-q="'+n+'">'+n+'</button>';}).join('');
-  el.querySelectorAll('.chip').forEach(function(b){b.onclick=function(){var name=b.dataset.q,found=null;for(var i=0;i<cfg.db.length;i++){if(cfg.db[i].n===name){found=cfg.db[i];break;}}S.item=found||{free:true,n:name};S.itemQ=name;$('#itemInput').value=name;$('#itemSuggest').innerHTML='';render();};});
+  el.querySelectorAll('.chip').forEach(function(b){b.onclick=function(){var name=b.dataset.q,found=null;for(var i=0;i<cfg.db.length;i++){if(cfg.db[i].n===name){found=cfg.db[i];break;}}S.item=found||{free:true,n:name};S.itemQ='';$('#itemInput').value='';$('#itemSuggest').innerHTML='';render();};});
 }
 function renderItemSuggest(){
   var cfg=ITEMCFG[S.cat],q=(S.itemQ||'').toLowerCase().trim();
@@ -1239,7 +1251,7 @@ function renderLive(v,wrap,fresh){
   bindHelp(wrap);
 }
 
-function renderVerdict(){
+function renderVerdict(){syncClears();
   var wrap=$('#passWrap'),v;
   /* Standalone / oversized check-in item */
   if(isStandalone()){
@@ -1310,13 +1322,14 @@ $('#countrySearch').addEventListener('input',function(e){S.cQ=e.target.value;ren
 document.addEventListener('click',function(e){if(!e.target.closest('.combo')){S.open=null;closePanels();}if(!e.target.closest('.email-trigger')&&!e.target.closest('.email-menu')){document.querySelectorAll('.email-menu').forEach(function(x){x.classList.add('hidden');});}});
 document.querySelectorAll('#seg button').forEach(function(b){b.onclick=function(){S.mode=b.dataset.mode;S.cat=S.mode==='plane'?'baginfo':'med';S.detail=null;S.item=null;S.itemQ='';S.animal=null;S.dogSize=null;S.aniQ='';S.fare=0;$('#itemInput').value='';$('#animalInput').value='';$('#itemSuggest').innerHTML='';$('#aniSuggest').innerHTML='';render();};});
 document.querySelectorAll('#bag button').forEach(function(b){b.onclick=function(){S.bag=b.dataset.bag;S.item=null;S.itemQ='';$('#itemInput').value='';$('#itemSuggest').innerHTML='';render();};});
-$('#bagStandalone').onclick=function(){S.bag='standalone';S.item=null;S.itemQ='';$('#itemInput').value='';$('#itemSuggest').innerHTML='';render();focusPicker();};
-$('#itemInput').addEventListener('input',function(e){S.itemQ=e.target.value;if(isStandalone())renderSoloSuggest();else renderItemSuggest();});
+$('#bagStandalone').onclick=function(){S.bag='standalone';S.item=null;S.itemQ='';$('#itemInput').value='';$('#itemSuggest').innerHTML='';ensureDefaults();render();focusPicker();};
+$('#itemInput').addEventListener('input',function(e){S.itemQ=e.target.value;syncClears();if(isStandalone())renderSoloSuggest();else renderItemSuggest();});
 document.querySelectorAll('#animalChips .chip').forEach(function(b){b.onclick=function(){S.animal=b.dataset.a;S.dogSize=null;S.aniQ='';$('#animalInput').value='';$('#aniSuggest').innerHTML='';render();};});
 document.querySelectorAll('#dogSize .chip').forEach(function(b){b.onclick=function(){S.dogSize=b.dataset.s;render();};});
-$('#animalInput').addEventListener('input',function(e){S.aniQ=e.target.value;renderAniSuggest();});
+$('#animalInput').addEventListener('input',function(e){S.aniQ=e.target.value;syncClears();renderAniSuggest();});
 $('#scanBtn').addEventListener('click',function(){var n=$('#scanNote');n.style.display=n.style.display==='block'?'none':'block';});
-applyTheme();renderTriggers();render();
+wireClear('itemInput',function(){S.itemQ='';$('#itemSuggest').innerHTML='';});wireClear('animalInput',function(){S.aniQ='';$('#aniSuggest').innerHTML='';});
+applyTheme();renderTriggers();render();syncClears();
 </script>
 <section class="hguides" aria-label="Travel guides"><div class="hg-head"><h2>Popular Travel Guides</h2><a href="/blog/">All guides &rarr;</a></div><div class="hg-wrap"><button type="button" class="hg-arrow hg-prev" aria-label="Scroll guides left"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg></button><button type="button" class="hg-arrow hg-next" aria-label="Scroll guides right"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg></button><div class="hg-row" tabindex="0"><a class="hg-card" href="/blog/power-bank-rules-2026-crackdown/"><img src="/assets/blog/blog-power-bank-2026-hero.webp" alt="" width="800" height="400" loading="lazy"><span class="hg-body"><span class="hg-tag">Batteries</span><span class="hg-t">Can You Bring a Power Bank on a Plane?</span></span></a><a class="hg-card" href="/blog/liquids-100ml-rule-2026/"><img src="/assets/blog/blog-liquids-100ml-rule-2026-card.webp" alt="" width="800" height="400" loading="lazy"><span class="hg-body"><span class="hg-tag">Packing rules</span><span class="hg-t">How Many ml Can You Take on a Plane?</span></span></a><a class="hg-card" href="/blog/duty-free-allowance-by-country-2026/"><img src="/assets/blog/blogHome-duty-free-allowance-by-country-2026-card.webp" alt="" width="800" height="400" loading="lazy"><span class="hg-body"><span class="hg-tag">Customs &amp; money</span><span class="hg-t">Duty-Free Allowance by Country</span></span></a><a class="hg-card" href="/blog/customs-cash-declaration-2026/"><img src="/assets/blog/blogHome-customs-cash-declaration-2026-card.webp" alt="" width="800" height="400" loading="lazy"><span class="hg-body"><span class="hg-tag">Customs &amp; money</span><span class="hg-t">The $10,000 Cash Declaration Rule</span></span></a><a class="hg-card" href="/blog/carry-on-size-limits-by-airline-2026/"><img src="/assets/blog/blogHome-carry-on-size-limits-by-airline-2026-card.webp" alt="" width="800" height="400" loading="lazy"><span class="hg-body"><span class="hg-tag">Packing rules</span><span class="hg-t">Carry-On Size Limits by Airline</span></span></a><a class="hg-card" href="/blog/vapes-country-rules-2026/"><img src="/assets/blog/blog-vapes-country-rules-hero.webp" alt="" width="800" height="400" loading="lazy"><span class="hg-body"><span class="hg-tag">Packing rules</span><span class="hg-t">Vape Rules by Country</span></span></a><a class="hg-card" href="/blog/banned-medications-by-country-2026/"><img src="/assets/blog/blogHome-banned-medications-by-country-2026-card.webp" alt="" width="800" height="400" loading="lazy"><span class="hg-body"><span class="hg-tag">Medications</span><span class="hg-t">Banned Medications by Country</span></span></a><a class="hg-card" href="/blog/food-tsa-vs-customs-2026/"><img src="/assets/blog/blogHome-food-tsa-vs-customs-2026-card.webp" alt="" width="800" height="400" loading="lazy"><span class="hg-body"><span class="hg-tag">Food</span><span class="hg-t">Food: TSA vs. Customs</span></span></a></div></div></section>
 <script>(function(){var r=document.querySelector('.hg-row');if(!r)return;var p=document.querySelector('.hg-prev'),n=document.querySelector('.hg-next');function u(){p.disabled=r.scrollLeft<4;n.disabled=r.scrollLeft+r.clientWidth>=r.scrollWidth-4;}function go(d){var c=r.querySelector('.hg-card');r.scrollBy({left:d*(c.offsetWidth+12)*2,behavior:'smooth'});}p.addEventListener('click',function(){go(-1)});n.addEventListener('click',function(){go(1)});r.addEventListener('scroll',u,{passive:true});window.addEventListener('resize',u);u();})();</script>
