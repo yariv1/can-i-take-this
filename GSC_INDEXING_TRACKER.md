@@ -492,3 +492,4 @@ Verified ON Google in this round (do not request): wifi of emirates, qatar-airwa
 9 https://canitakethis.co/medication/vicks-inhaler/china/ TO REQUEST
 10 https://canitakethis.co/medication/vicks-inhaler/poland/ TO REQUEST
 Also session 36 liquids round 3 (optional, TO REQUEST): /airline/<slug>/liquids/ for volaris, jetblue, frontier, latam, avianca, asiana, korean-air, icelandair, air-arabia, royal-air-maroc, china-southern, china-eastern, saudia, united, hawaiian-airlines, alaska-airlines, southwest, austrian, air-france, aer-lingus, norwegian, sunexpress, el-al, arkia, israir, etihad-airways, westjet, aeromexico, gol, azul, indigo, air-china, flydubai, gulf-air, oman-air, kuwait-airways, middle-east-airlines, egyptair, ethiopian-airlines, kenya-airways
+Also session 36 alcohol/perfume round (optional, TO REQUEST): /airline/<slug>/alcohol/ and /airline/<slug>/perfume-aerosols/ for the ~50 airlines listed in AIRLINE_ALCOHOL_PERFUME.md (round 3)
