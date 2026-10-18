@@ -3,7 +3,7 @@
    Categories listed in COMPLETE must have no gaps (fails). Other categories are reported only (work in progress).
    usage: node audit_ladder.js */
 const fs = require('fs'), path = require('path');
-const COMPLETE = ['vape', 'liquids', 'alcohol', 'perfume'];
+const COMPLETE = ['vape', 'liquids', 'alcohol', 'perfume', 'power'];
 const TOPICS = require('./airline_topics.js').TOPICS;
 const html = fs.readFileSync(path.join(__dirname, 'canitakethis.html'), 'utf8');
 const airlines = [...html.matchAll(/\{name:'([^']+)',iata:'/g)].map(m => m[1]);
