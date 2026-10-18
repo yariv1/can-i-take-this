@@ -1,0 +1,2598 @@
+{
+ "Delta": {
+  "alcohol": {
+   "answer": "Delta lets you carry alcohol in checked baggage, or in carry-on if you buy it after the security checkpoint and it meets carry-on guidelines. Alcohol may not exceed 140 proof (70%), up to 5 liters per person is allowed between 48 and 140 proof, and alcohol under 48 proof is not considered hazardous. It must be in its original unopened retail packaging.",
+   "sections": [
+    {
+     "h": "🥃 What Delta says about alcohol",
+     "p": "From the Delta page \"Food & Alcohol Transportation\".",
+     "table": {
+      "head": [
+       "Question",
+       "Delta rule"
+      ],
+      "rows": [
+       [
+        "Strength cap",
+        "Not more than 140 proof"
+       ],
+       [
+        "48 to 140 proof",
+        "Up to 5 liters per person"
+       ],
+       [
+        "Under 48 proof",
+        "Not considered hazardous; permitted"
+       ],
+       [
+        "Packaging",
+        "Original unopened retail packaging"
+       ],
+       [
+        "Carry-on",
+        "Allowed if bought after security and it meets carry-on guidelines"
+       ],
+       [
+        "Bought before security",
+        "The security rules apply to carry-on or checked baggage"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> Delta does not mention duty-free bags, drinking your own alcohol on board or destination customs limits there."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much alcohol can I take on Delta?",
+     "Up to 5 liters per person between 48 and 140 proof; nothing above 140 proof, and alcohol under 48 proof is not considered hazardous."
+    ],
+    [
+     "Can I bring alcohol in my Delta carry-on?",
+     "Yes if you buy it after the security checkpoint and it meets carry-on guidelines; otherwise put it in checked baggage."
+    ],
+    [
+     "Does alcohol have to be sealed on Delta?",
+     "Delta says it must be in its original unopened retail packaging."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.delta.com/us/en/baggage/prohibited-or-restricted-items/food-alcohol-transportation",
+     "Delta &mdash; Food &amp; alcohol transportation"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026"
+  },
+  "perfume": {
+   "answer": "Delta allows cologne, hairspray and similar personal items in checked baggage as long as each item is under 16 ounces and the total is under 70 ounces, and all items must follow TSA rules. The page does not set a separate carry-on size and refers to TSA.",
+   "sections": [
+    {
+     "h": "🧴 What Delta says about perfume and aerosols",
+     "p": "From the Delta page \"Personal Care & Medical Items\".",
+     "table": {
+      "head": [
+       "Question",
+       "Delta rule"
+      ],
+      "rows": [
+       [
+        "Cologne, hairspray and similar items",
+        "Allowed in checked baggage"
+       ],
+       [
+        "Each item",
+        "Less than 16 ounces"
+       ],
+       [
+        "All items together",
+        "Less than 70 ounces"
+       ],
+       [
+        "Other rules",
+        "All items must comply with TSA rules"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> Delta does not describe aerosol cap rules or the carry-on limit itself; the TSA 3-1-1 rule applies in the cabin."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "Can I bring perfume in checked baggage on Delta?",
+     "Yes: cologne and similar items are allowed if each is under 16 ounces and the total is under 70 ounces."
+    ],
+    [
+     "Can I bring hairspray on Delta?",
+     "Delta lists hairspray with cologne as allowed in checked baggage under the same 16-ounce and 70-ounce limits."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.delta.com/us/en/baggage/prohibited-or-restricted-items/personal-care-medical-items",
+     "Delta &mdash; Personal care &amp; medical items"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026"
+  }
+ },
+ "American Airlines": {
+  "alcohol": {
+   "answer": "American allows beer, wine and other alcohol in retail packaging in checked bags, up to 5 liters per passenger for drinks between 24 and 70 percent alcohol by volume, and points to TSA for carry-on bags. Opened containers are not allowed, and alcohol over 70 percent (over 140 proof) cannot travel at all.",
+   "sections": [
+    {
+     "h": "🥃 What American Airlines says about alcohol",
+     "p": "From the American Airlines page \"Restricted items in bags\".",
+     "table": {
+      "head": [
+       "Question",
+       "American Airlines rule"
+      ],
+      "rows": [
+       [
+        "Over 70 percent (over 140 proof)",
+        "Not allowed for travel"
+       ],
+       [
+        "Under 70 percent in checked bags",
+        "Allowed: beer, wine and other alcoholic beverages in retail packaging"
+       ],
+       [
+        "24 to 70 percent",
+        "Maximum 5 liters per passenger in checked bags"
+       ],
+       [
+        "Opened containers",
+        "Not allowed"
+       ],
+       [
+        "Carry-on bags",
+        "American refers to the TSA rules"
+       ],
+       [
+        "Destination",
+        "Customs regulations vary by country"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> American does not state a limit for drinks under 24 percent or say whether you may drink your own alcohol on board."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much alcohol can I pack in a checked bag on American?",
+     "Up to 5 liters per passenger for beverages between 24 and 70 percent alcohol by volume, in retail packaging."
+    ],
+    [
+     "Can I bring strong spirits on American?",
+     "Alcohol over 70 percent (over 140 proof) is listed as not allowed for travel."
+    ],
+    [
+     "Can I take an opened bottle on American?",
+     "No, American says opened containers are not allowed."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.aa.com/i18n/travel-info/baggage/restricted-items.jsp",
+     "American Airlines &mdash; Restricted items in bags"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026"
+  },
+  "perfume": {
+   "answer": "American allows aerosol deodorant, hair spray and perfume or cologne containing alcohol. In carry-on bags they must be in containers of 3.4 ounces or smaller inside one clear quart-size zip-top bag; in checked bags you can pack no more than 70 ounces in total with no container above 16 fluid ounces.",
+   "sections": [
+    {
+     "h": "🧴 What American Airlines says about perfume and aerosols",
+     "p": "From the American Airlines page \"Restricted items in bags\", section \"Personal care items\".",
+     "table": {
+      "head": [
+       "Question",
+       "American Airlines rule"
+      ],
+      "rows": [
+       [
+        "Examples listed",
+        "Aerosol deodorant or hair spray, insect repellent, perfume or cologne containing alcohol, nail polish and remover"
+       ],
+       [
+        "Carry-on",
+        "Containers of 3.4 ounces or smaller in a clear one-quart zip-top bag"
+       ],
+       [
+        "Checked bags: total",
+        "No more than 70 ounces"
+       ],
+       [
+        "Checked bags: per container",
+        "No more than 16 fluid ounces"
+       ],
+       [
+        "Spray cans of other types",
+        "Pressurized containers and gases such as butane or propane are not allowed"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> American does not describe cap or valve rules for aerosols."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "Can I bring perfume on American Airlines?",
+     "Yes: in carry-on in containers of 3.4 ounces or less in a quart bag, or in checked bags up to 16 fluid ounces per container and 70 ounces in total."
+    ],
+    [
+     "Can I bring hairspray on American?",
+     "Aerosol hair spray is listed as allowed under the same carry-on and checked limits."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.aa.com/i18n/travel-info/baggage/restricted-items.jsp",
+     "American Airlines &mdash; Restricted items in bags"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026"
+  }
+ },
+ "Air Canada": {
+  "alcohol": {
+   "answer": "Air Canada accepts alcoholic beverages in checked baggage up to 70% alcohol (140 proof) and 5 L per person, with no volume restriction for drinks under 24% such as wine. Alcohol of 70% or more is not accepted on board, and in carry-on baggage containers may not exceed 100 ml.",
+   "sections": [
+    {
+     "h": "🥃 What Air Canada says about alcohol",
+     "p": "From the Air Canada page \"Restricted / Prohibited Items\", section on liquids and gels.",
+     "table": {
+      "head": [
+       "Question",
+       "Air Canada rule"
+      ],
+      "rows": [
+       [
+        "70% or more",
+        "Not accepted on board"
+       ],
+       [
+        "Checked baggage strength",
+        "Not more than 70% (140 proof)"
+       ],
+       [
+        "Checked baggage quantity",
+        "5 L per person"
+       ],
+       [
+        "Under 24% (for example wine)",
+        "No volume restriction"
+       ],
+       [
+        "Carry-on",
+        "Containers must not exceed 100 ml/100 g in a clear re-sealable bag no larger than 1 litre, or they are confiscated at security"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> the page does not mention duty-free bags or drinking your own alcohol on board."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much alcohol can I check on Air Canada?",
+     "Up to 5 L per person at no more than 70% alcohol; there is no volume restriction for drinks under 24%."
+    ],
+    [
+     "Can I take strong spirits on Air Canada?",
+     "Alcohol of 70% or more is not accepted on board."
+    ],
+    [
+     "Can I carry wine in my Air Canada carry-on?",
+     "Carry-on liquids must be in containers of 100 ml or less, or they are confiscated at the security checkpoint."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.aircanada.com/ca/en/aco/home/plan/baggage/restricted-and-prohibited-items.html",
+     "Air Canada &mdash; Restricted / prohibited items"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026"
+  },
+  "perfume": {
+   "answer": "Air Canada accepts perfume, cologne and aerosols. In carry-on, containers must not exceed 100 ml/100 g in one clear re-sealable bag of 1 litre or less; in checked baggage liquids, gels and aerosols are accepted up to a total of 2 L/2 kg per passenger, with aerosol release valves protected by a cap or similar.",
+   "sections": [
+    {
+     "h": "🧴 What Air Canada says about perfume and aerosols",
+     "p": "From the Air Canada page \"Restricted / Prohibited Items\", section on liquids and gels.",
+     "table": {
+      "head": [
+       "Question",
+       "Air Canada rule"
+      ],
+      "rows": [
+       [
+        "Carry-on",
+        "Containers up to 100 ml/100 g (3.4 oz) in one clear re-sealable bag of 1 litre (1 quart) or less per passenger"
+       ],
+       [
+        "Checked baggage total",
+        "Liquids, gels and aerosols such as hairspray, perfume and cologne: 2 L/2 kg (75 fl. oz.) per passenger"
+       ],
+       [
+        "Aerosol valves",
+        "Release valves must be protected by a cap or other suitable means"
+       ],
+       [
+        "Insect repellents",
+        "Non-toxic and non-flammable; carry-on only if the canister holds 100 ml or less"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> no per-container limit is stated for checked baggage beyond the 2 L/2 kg total."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "Can I bring perfume on Air Canada?",
+     "Yes: containers up to 100 ml in carry-on, or in checked baggage within a total of 2 L/2 kg per passenger."
+    ],
+    [
+     "Do aerosol cans need a cap on Air Canada?",
+     "Yes, release valves must be protected by a cap or other suitable means."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.aircanada.com/ca/en/aco/home/plan/baggage/restricted-and-prohibited-items.html",
+     "Air Canada &mdash; Restricted / prohibited items"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026"
+  }
+ },
+ "British Airways": {
+  "alcohol": {
+   "answer": "British Airways sets no limit on alcoholic drinks below 24% alcohol by volume and allows up to five litres between 24% and 70%. That can go in checked baggage, or in the cabin bag if bought in the airport duty-free shop. Drinks above 70% are not permitted in either checked or hand baggage.",
+   "sections": [
+    {
+     "h": "🥃 What British Airways says about alcohol",
+     "p": "From the British Airways page \"Restricted and prohibited items\".",
+     "table": {
+      "head": [
+       "Question",
+       "British Airways rule"
+      ],
+      "rows": [
+       [
+        "Below 24%",
+        "No limit on the number of drinks"
+       ],
+       [
+        "24% to 70%",
+        "Up to five litres"
+       ],
+       [
+        "Where it can travel",
+        "Checked baggage, or cabin bag if bought in the airport duty-free shop"
+       ],
+       [
+        "Above 70%",
+        "Not permitted in checked or hand baggage"
+       ],
+       [
+        "Duty-free liquids over 100ml",
+        "Allowed on a connecting flight if sealed at purchase in a Security Tamper Evident Bag with the receipt inside"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> the section we read does not say whether you may drink your own alcohol on board."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much alcohol can I take on British Airways?",
+     "No limit below 24% alcohol; up to five litres between 24% and 70%; nothing above 70%."
+    ],
+    [
+     "Can I carry duty-free alcohol in my BA cabin bag?",
+     "Yes if you bought it in the airport duty-free shop; with a connecting flight it must be sealed in a Security Tamper Evident Bag with the receipt inside."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.britishairways.com/content/information/baggage-essentials/liquids-and-restrictions",
+     "British Airways &mdash; Restricted and prohibited items"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026"
+  },
+  "perfume": {
+   "answer": "British Airways lets you pack toiletries and aerosols such as hairspray, perfume and cologne in checked baggage under IATA limits: 500 ml or 500 g per item and 2 litres or 2 kg per person. Aerosols can be carried in cabin bags but not used on board, and at other UK airports each liquid in hand baggage must be in a container of no more than 100ml.",
+   "sections": [
+    {
+     "h": "🧴 What British Airways says about perfume and aerosols",
+     "p": "From the British Airways page \"Restricted and prohibited items\", section on liquids, creams, powders and aerosols.",
+     "table": {
+      "head": [
+       "Question",
+       "British Airways rule"
+      ],
+      "rows": [
+       [
+        "Per item (checked)",
+        "Maximum 500ml or 500g"
+       ],
+       [
+        "Per person (checked)",
+        "2 litres or 2kg"
+       ],
+       [
+        "Hand baggage at most UK airports",
+        "Each liquid in its own container of no more than 100ml"
+       ],
+       [
+        "Aerosols in the cabin",
+        "Can be carried in cabin bags but cannot be used on board"
+       ],
+       [
+        "Valves and seals",
+        "Seals and lids secure, and spray valves protected against accidental release"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> some London airports with new security technology allow liquids in containers up to 2 litres in cabin bags; check the airport before you fly."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "Can I bring perfume on British Airways?",
+     "Yes in checked baggage up to 500ml per item and 2 litres per person; in hand baggage at most UK airports each container must be 100ml or less."
+    ],
+    [
+     "Can I use an aerosol on a British Airways flight?",
+     "No. Aerosols can be carried in cabin bags but cannot be used on board."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.britishairways.com/content/information/baggage-essentials/liquids-and-restrictions",
+     "British Airways &mdash; Restricted and prohibited items"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026"
+  }
+ },
+ "JetBlue": {
+  "alcohol": {
+   "answer": "JetBlue allows alcohol in checked bags up to 70% alcohol by volume: below 24% with no quantity limit, and between 24% and 70% in unopened retail packaging up to five liters per customer. Alcohol above 70% is not permitted in checked or carry-on bags, and in carry-on bags liquids are limited to 3.4 ounces per container.",
+   "sections": [
+    {
+     "h": "🥃 What JetBlue says about alcohol",
+     "p": "From the JetBlue help page \"Alcohol Guidelines\".",
+     "table": {
+      "head": [
+       "Question",
+       "JetBlue rule"
+      ],
+      "rows": [
+       [
+        "Under 24% ABV (48 proof)",
+        "Checked bags: no quantity limit within bag size and weight limits"
+       ],
+       [
+        "24% to 70% ABV (48 to 140 proof)",
+        "Checked bags: unopened retail packaging, five liters (1.3 gallons) per customer"
+       ],
+       [
+        "Over 70% ABV (140 proof)",
+        "Not permitted in checked or carry-on bags (examples named: 95% grain alcohol, 150 proof rum)"
+       ],
+       [
+        "Carry-on",
+        "Containers of 3.4 ounces or less in one quart-size clear zip-top bag, one bag per customer"
+       ],
+       [
+        "Larger carry-on bottles",
+        "Must be bought in the secure boarding area after the security checkpoint"
+       ],
+       [
+        "On board",
+        "Wine, champagne or beer in unopened containers may be carried on board; drinking your own alcohol is not allowed"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> for international flights JetBlue only refers you to US Customs and Border Protection and gives no figures."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much alcohol can I check on JetBlue?",
+     "Alcohol below 24% has no quantity limit; between 24% and 70% you can check five liters per customer in unopened retail packaging."
+    ],
+    [
+     "Can I drink my own alcohol on a JetBlue flight?",
+     "No. JetBlue says drinking your own alcohol on board is not allowed."
+    ],
+    [
+     "Can I bring strong spirits on JetBlue?",
+     "Alcohol above 70% ABV (140 proof) is not permitted in checked or carry-on bags."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.jetblue.com/help/alcohol-guidelines",
+     "JetBlue &mdash; Alcohol guidelines"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026"
+  }
+ },
+ "Finnair": {
+  "alcohol": {
+   "answer": "Finnair allows alcohol in carry-on (with liquid restrictions) and in checked baggage. Between 24% and 70% alcohol by volume you may carry at most 5 litres per passenger in original, unopened bottles; for drinks of 24% or less the limit depends on customs regulations, and anything above 70% is prohibited.",
+   "sections": [
+    {
+     "h": "🥃 What Finnair says about alcohol",
+     "p": "From the Finnair page \"Travelling with restricted items\".",
+     "table": {
+      "head": [
+       "Question",
+       "Finnair rule"
+      ],
+      "rows": [
+       [
+        "Above 24% and up to 70% ABV",
+        "Maximum 5 litres per passenger, in original unopened bottles"
+       ],
+       [
+        "24% or less ABV",
+        "The maximum depends on customs regulations"
+       ],
+       [
+        "Above 70% ABV",
+        "Prohibited"
+       ],
+       [
+        "Carry-on",
+        "Allowed with the liquid restrictions: containers of at most 100ml in one transparent re-sealable 1-litre bag"
+       ],
+       [
+        "Checked baggage",
+        "Allowed"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> Finnair does not say anything about drinking your own alcohol on board."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much alcohol can I take on Finnair?",
+     "Up to 5 litres per passenger between 24% and 70% alcohol, in original unopened bottles; for 24% or less it depends on customs regulations."
+    ],
+    [
+     "Can I take strong spirits on Finnair?",
+     "Alcohol above 70% by volume is prohibited."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.finnair.com/fi-en/baggage-on-finnair-flights/travelling-with-restricted-items",
+     "Finnair &mdash; Travelling with restricted items"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026"
+  },
+  "perfume": {
+   "answer": "Finnair lists perfumes and colognes with aerosols. In checked baggage you can pack at most 2 kg or 2 litres in total per passenger, with no single product above 0.5 kg or 0.5 litres and a cap preventing accidental release. In the cabin only spray bottles of up to 100ml in a 1-litre plastic bag are allowed.",
+   "sections": [
+    {
+     "h": "🧴 What Finnair says about perfume and aerosols",
+     "p": "From the Finnair page \"Travelling with restricted items\", section on aerosols.",
+     "table": {
+      "head": [
+       "Question",
+       "Finnair rule"
+      ],
+      "rows": [
+       [
+        "Checked baggage total",
+        "Maximum 2kg/2l per passenger, including perfumes, colognes and medicines containing alcohol"
+       ],
+       [
+        "Single product (checked)",
+        "Maximum 0.5kg/0.5l"
+       ],
+       [
+        "Cap",
+        "The bottle must have a cap to prevent accidental release"
+       ],
+       [
+        "Carry-on",
+        "Spray bottles up to 100ml in one 1-litre plastic bag per passenger"
+       ],
+       [
+        "Helsinki departures",
+        "Up to 2 litres of liquids per passenger in the cabin"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> the page gives no separate limit for perfume or cologne beyond the aerosol rule."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "Can I bring perfume on Finnair?",
+     "Yes: in checked baggage up to 0.5 litres per product and 2 litres in total with a cap, or in carry-on as containers of up to 100ml in a 1-litre bag."
+    ],
+    [
+     "Do aerosol bottles need a cap on Finnair?",
+     "Yes, Finnair says the bottle must have a cap to prevent the contents being accidentally released."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.finnair.com/fi-en/baggage-on-finnair-flights/travelling-with-restricted-items",
+     "Finnair &mdash; Travelling with restricted items"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026"
+  }
+ },
+ "Lufthansa": {
+  "alcohol": {
+   "answer": "Lufthansa allows alcoholic drinks in checked baggage and in hand baggage. For drinks above 24% and up to 70% alcohol by volume the limit is 5 litres in total per passenger and 5 litres per container, in the original retail packaging. Drinks above 70% are prohibited, drinks under 24% are not dangerous goods, and drinking alcohol you brought on board is prohibited.",
+   "sections": [
+    {
+     "h": "🥃 What Lufthansa says about alcohol",
+     "p": "From the Lufthansa page \"Gefährliche Gegenstände\" (dangerous items), read in German.",
+     "table": {
+      "head": [
+       "Question",
+       "Lufthansa rule"
+      ],
+      "rows": [
+       [
+        "Above 24% and up to 70% ABV",
+        "Maximum 5 litres net in total per passenger, and 5 litres per container"
+       ],
+       [
+        "Packaging",
+        "The drinks must be in their original retail packaging"
+       ],
+       [
+        "Above 70% ABV",
+        "Prohibited for transport"
+       ],
+       [
+        "Under 24% ABV",
+        "Not considered dangerous goods"
+       ],
+       [
+        "Where",
+        "Allowed in checked baggage and in hand baggage in the cabin"
+       ],
+       [
+        "On board",
+        "Drinking alcohol you brought yourself is prohibited"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Note:</strong> Lufthansa’s English dangerous-goods page was not available when we checked, so this follows the German page; hand baggage still has to meet the liquids rules for security."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much alcohol can I take on Lufthansa?",
+     "Up to 5 litres per passenger between 24% and 70% alcohol, in original retail packaging; drinks under 24% are not dangerous goods."
+    ],
+    [
+     "Can I drink my own alcohol on a Lufthansa flight?",
+     "No, Lufthansa says consuming alcohol you brought on board is prohibited."
+    ],
+    [
+     "Can I take strong spirits on Lufthansa?",
+     "Drinks above 70% alcohol by volume are prohibited for transport."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.lufthansa.com/de/de/gefaehrliche-gegenstaende",
+     "Lufthansa &mdash; Gef&auml;hrliche Gegenst&auml;nde (dangerous items)"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026"
+  },
+  "perfume": {
+   "answer": "Lufthansa treats hairspray, perfume and eau de cologne as toiletries: up to 2 kg or 2 litres in total per passenger and 0.5 kg or 0.5 litres per item, in the cabin and in checked baggage. Only non-toxic, non-flammable aerosols for sport or home use are allowed, and spray valves must be protected by a cap or similar.",
+   "sections": [
+    {
+     "h": "🧴 What Lufthansa says about perfume and aerosols",
+     "p": "From the Lufthansa page \"Gefährliche Gegenstände\" (dangerous items), read in German.",
+     "table": {
+      "head": [
+       "Question",
+       "Lufthansa rule"
+      ],
+      "rows": [
+       [
+        "Total per passenger",
+        "Maximum 2 kg / 2 l (net quantity of all items)"
+       ],
+       [
+        "Per item",
+        "Maximum 0.5 kg / 0.5 l"
+       ],
+       [
+        "Examples named",
+        "Hairspray, perfume and eau de cologne, medicines containing alcohol, alcohol-based hand sanitiser"
+       ],
+       [
+        "Sport or home aerosols",
+        "Only non-toxic, non-flammable ones (division 2.2, no subsidiary hazard)"
+       ],
+       [
+        "Spray valves",
+        "Must be protected by a cap or another suitable device"
+       ],
+       [
+        "Hand baggage",
+        "The general liquids, gels and sprays rules for security also apply"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Note:</strong> Lufthansa’s English page was not available when we checked, so this follows the German page."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "Can I bring perfume on Lufthansa?",
+     "Yes: up to 0.5 litres per item and 2 litres in total per passenger, and in hand baggage the security liquids rules also apply."
+    ],
+    [
+     "Do aerosol cans need a cap on Lufthansa?",
+     "Yes, spray valves must be protected by a cap or another suitable device."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.lufthansa.com/de/de/gefaehrliche-gegenstaende",
+     "Lufthansa &mdash; Gef&auml;hrliche Gegenst&auml;nde (dangerous items)"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026"
+  }
+ },
+ "Qatar Airways": {
+  "alcohol": {
+   "answer": "Qatar Airways lets you carry alcoholic beverages in hand and checked baggage. In retail packaging they may contain more than 24% but not more than 70% alcohol by volume, in containers of no more than 5 litres, with a maximum total of 5 litres per passenger; drinks of 24% or less are not treated as dangerous goods.",
+   "sections": [
+    {
+     "h": "🥃 What Qatar Airways says about alcohol",
+     "p": "From the Qatar Airways page \"Checked and Cabin Baggage Restrictions\".",
+     "table": {
+      "head": [
+       "Question",
+       "Qatar Airways rule"
+      ],
+      "rows": [
+       [
+        "Above 24% and up to 70% ABV",
+        "In retail packaging, containers not exceeding 5 l"
+       ],
+       [
+        "Total per passenger",
+        "Maximum 5 l net"
+       ],
+       [
+        "24% or less",
+        "Not considered dangerous goods"
+       ],
+       [
+        "Where",
+        "Hand baggage and checked baggage"
+       ],
+       [
+        "Hand baggage",
+        "Quantities may be restricted further by liquids and gels rules"
+       ],
+       [
+        "Destination",
+        "Check the country and customs regulations too"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> Qatar does not say what happens above 70% in this section or whether you can drink your own alcohol on board."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much alcohol can I take on Qatar Airways?",
+     "Up to 5 litres in total per passenger for drinks between 24% and 70%, in retail packaging with containers no larger than 5 litres."
+    ],
+    [
+     "Can I carry alcohol in hand baggage on Qatar Airways?",
+     "Yes, but the quantities may be restricted further by the liquids and gels rules."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.qatarairways.com/en-us/baggage/restricted.html",
+     "Qatar Airways &mdash; Checked and cabin baggage restrictions"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026"
+  },
+  "perfume": {
+   "answer": "Qatar Airways allows medicinal and toiletry items, including aerosols such as hairsprays, perfumes and colognes, in checked and hand baggage. The total must not exceed 2 kg or 2 l and each item 0.5 kg or 0.5 l, aerosol release valves must be protected, and in hand baggage containers must be 100 ml or less in a transparent resealable bag.",
+   "sections": [
+    {
+     "h": "🧴 What Qatar Airways says about perfume and aerosols",
+     "p": "From the Qatar Airways page \"Checked and Cabin Baggage Restrictions\".",
+     "table": {
+      "head": [
+       "Question",
+       "Qatar Airways rule"
+      ],
+      "rows": [
+       [
+        "Total net quantity",
+        "Not more than 2 kg or 2 l"
+       ],
+       [
+        "Each item",
+        "Not more than 0.5 kg or 0.5 l"
+       ],
+       [
+        "Aerosol valves",
+        "Release valves must be protected by a cap or other suitable means"
+       ],
+       [
+        "Hand baggage",
+        "Liquids, gels, pastes and aerosols in containers up to 100 ml (3.4 oz); larger containers are not accepted even if partly filled"
+       ],
+       [
+        "Bag for liquids",
+        "Transparent, resealable, quart- or litre-sized bag no larger than 20x20 cm (8x8 in)"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> additional restrictions may apply, which the page does not detail."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "Can I bring perfume on Qatar Airways?",
+     "Yes: up to 0.5 litres per item and 2 litres in total in checked baggage, and containers of 100 ml or less in hand baggage."
+    ],
+    [
+     "Can I carry a large perfume bottle in hand baggage on Qatar Airways?",
+     "No, containers larger than 100 ml cannot be accepted in hand baggage even if only partly filled."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.qatarairways.com/en-us/baggage/restricted.html",
+     "Qatar Airways &mdash; Checked and cabin baggage restrictions"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026"
+  }
+ },
+ "SAS": {
+  "alcohol": {
+   "answer": "SAS says larger containers, including bottles of alcohol even if partially filled, must be packed in checked baggage, because carry-on liquids are limited to 100 ml per container in a 1 L resealable bag. Medicines and baby milk needed for the flight are exceptions.",
+   "sections": [
+    {
+     "h": "🥃 What SAS says about alcohol",
+     "p": "From the SAS page \"Dangerous Goods, Prohibited and Restricted Items\", FAQ on liquids.",
+     "table": {
+      "head": [
+       "Question",
+       "SAS rule"
+      ],
+      "rows": [
+       [
+        "Carry-on liquids",
+        "Maximum 100 ml per container, all in a 1 L resealable plastic bag"
+       ],
+       [
+        "Bottles of alcohol",
+        "Larger containers, even if partially filled, must go in checked baggage"
+       ],
+       [
+        "Exceptions",
+        "Baby milk or formula needed for the flight, and medication or injections for personal use in a separate bag"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> the page we read gives no strength bands or litre limits for alcohol in checked baggage; check SAS before packing strong spirits."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "Can I carry a bottle of alcohol in my SAS cabin bag?",
+     "No, SAS says containers larger than 100 ml, including bottles of alcohol even if partially filled, must be packed in checked baggage."
+    ],
+    [
+     "How big can liquids be in SAS hand baggage?",
+     "Maximum 100 ml per container, and all must fit in one 1 L resealable plastic bag."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.flysas.com/en/travel-info/baggage/restricted-prohibited-items",
+     "SAS &mdash; Dangerous goods, prohibited and restricted items"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026"
+  },
+  "perfume": {
+   "answer": "SAS names perfume among the liquids you may carry in hand baggage: a maximum of 100 ml per container, all fitting into a 1 L resealable plastic bag. Larger containers must go in checked baggage.",
+   "sections": [
+    {
+     "h": "🧴 What SAS says about perfume and aerosols",
+     "p": "From the SAS page \"Dangerous Goods, Prohibited and Restricted Items\", FAQ on liquids.",
+     "table": {
+      "head": [
+       "Question",
+       "SAS rule"
+      ],
+      "rows": [
+       [
+        "Perfume, lotion and toothpaste in hand baggage",
+        "Maximum 100 ml per container"
+       ],
+       [
+        "Bag",
+        "All containers must fit into a 1 L resealable plastic bag"
+       ],
+       [
+        "Larger containers",
+        "Must be packed in checked baggage"
+       ],
+       [
+        "Exceptions",
+        "Baby milk or formula needed for the flight, and medication or injections for personal use"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> the page does not give aerosol quantity limits for checked baggage."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "Can I bring perfume in my SAS cabin bag?",
+     "Yes if each container is 100 ml or less and all fit in one 1 L resealable plastic bag."
+    ],
+    [
+     "Where do larger perfume bottles go on SAS?",
+     "In checked baggage."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.flysas.com/en/travel-info/baggage/restricted-prohibited-items",
+     "SAS &mdash; Dangerous goods, prohibited and restricted items"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026"
+  }
+ },
+ "United": {
+  "perfume": {
+   "answer": "United does not allow household aerosols such as spray paint, cleaners and pesticides in checked or carry-on bags. It allows medicinal or toiletry aerosol cans if they are no more than 16 ounces per container in checked bags and no more than 3 ounces per container in carry-on bags.",
+   "sections": [
+    {
+     "h": "🧴 What United says about perfume and aerosols",
+     "p": "From the United page \"Dangerous items\".",
+     "table": {
+      "head": [
+       "Question",
+       "United rule"
+      ],
+      "rows": [
+       [
+        "Household aerosols",
+        "Not allowed in checked or carry-on bags: spray paint, household cleaners, pesticides"
+       ],
+       [
+        "Medicinal or toiletry aerosols in checked bags",
+        "Not over 16 ounces per container"
+       ],
+       [
+        "Medicinal or toiletry aerosols in carry-on bags",
+        "Not over 3 ounces per container"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> the United page we read gives no total weight for checked toiletries and does not name perfume; TSA rules also apply to carry-on liquids."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "Can I bring hairspray on United?",
+     "Toiletry aerosol cans are allowed up to 16 ounces per container in checked bags and 3 ounces per container in carry-on bags."
+    ],
+    [
+     "Can I bring spray paint on United?",
+     "No, household aerosols such as spray paint, cleaners and pesticides are not allowed in checked or carry-on bags."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.united.com/en/us/fly/baggage/dangerous-items.html",
+     "United &mdash; Dangerous items"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026"
+  }
+ },
+ "Cathay Pacific": {
+  "alcohol": {
+   "answer": "Cathay Pacific lets you bring alcoholic drinks in your checked or cabin baggage if they are in retail packaging and contain 24-70% alcohol, up to a total net quantity of 5 litres per person. Drinks of 24% or less are not governed by that restriction, and in carry-on the liquids, aerosols and gels rules still apply.",
+   "sections": [
+    {
+     "h": "🥃 What Cathay Pacific says about alcohol",
+     "p": "From the Cathay Pacific page \"Controlled items\".",
+     "table": {
+      "head": [
+       "Question",
+       "Cathay Pacific rule"
+      ],
+      "rows": [
+       [
+        "24-70% alcohol",
+        "Retail packaging; total net quantity of 5 litres per person"
+       ],
+       [
+        "Where",
+        "Checked baggage or cabin baggage"
+       ],
+       [
+        "24% or less",
+        "Not governed by the restrictions above"
+       ],
+       [
+        "In carry-on",
+        "The rules for liquids, aerosols and gels still apply"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> the page does not give a rule for drinks above 70% or say whether you may drink your own alcohol on board."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much alcohol can I take on Cathay Pacific?",
+     "Up to 5 litres in total per person for drinks with 24-70% alcohol in retail packaging, in checked or cabin baggage."
+    ],
+    [
+     "Can I carry a bottle of spirits in my Cathay Pacific cabin bag?",
+     "The page allows it within the 5-litre limit, but the liquids, aerosols and gels rules still apply to carry-on."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.cathaypacific.com/cx/en_HK/baggage/controlled-and-banned-items/controlled-items.html",
+     "Cathay Pacific &mdash; Controlled items"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026"
+  },
+  "perfume": {
+   "answer": "Cathay Pacific lets you bring liquids, aerosols and gels in cabin baggage as long as each item is no more than 100ml, all carried in one resealable transparent plastic bag of no more than 1L per passenger. Items above that amount should be packed in checked baggage.",
+   "sections": [
+    {
+     "h": "🧴 What Cathay Pacific says about perfume and aerosols",
+     "p": "From the Cathay Pacific page \"Controlled items\", section on liquids, aerosols, gels and powders.",
+     "table": {
+      "head": [
+       "Question",
+       "Cathay Pacific rule"
+      ],
+      "rows": [
+       [
+        "Cabin baggage, each item",
+        "No more than 100ml"
+       ],
+       [
+        "Bag",
+        "One resealable, transparent plastic bag, no more than 1L in capacity per passenger"
+       ],
+       [
+        "Larger amounts",
+        "Pack them in checked bags"
+       ],
+       [
+        "Regulations",
+        "May vary by flight route; the airline points to a dedicated page for liquids and duty-free items"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> the section we read does not give a checked-baggage quantity for perfume or aerosols; the 2 kg / 2 L figure it quotes is for alcohol-based disinfectants."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "Can I bring perfume in my Cathay Pacific cabin bag?",
+     "Yes if each container is no more than 100ml and all fit in one resealable transparent bag of no more than 1L."
+    ],
+    [
+     "What if my perfume is larger than 100ml on Cathay Pacific?",
+     "Pack it in your checked baggage."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.cathaypacific.com/cx/en_HK/baggage/controlled-and-banned-items/controlled-items.html",
+     "Cathay Pacific &mdash; Controlled items"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026"
+  }
+ },
+ "ANA": {
+  "alcohol": {
+   "answer": "ANA allows up to five liters per person of alcoholic beverages above 24% and no more than 70% alcohol to be checked in and carried on board, kept in the container in which they were sold. Drinks of 24% or less have no restrictions, and the international carry-on liquid limits may still stop you bringing a bottle into the cabin.",
+   "sections": [
+    {
+     "h": "🥃 What ANA says about alcohol",
+     "p": "From the ANA page \"Items With Conditions Attached to Their Carry-on or Check-in\" (international flights).",
+     "table": {
+      "head": [
+       "Question",
+       "ANA rule"
+      ],
+      "rows": [
+       [
+        "Above 24% and up to 70%",
+        "Up to five liters per person, checked in or carried on board"
+       ],
+       [
+        "24% or less",
+        "No restrictions"
+       ],
+       [
+        "Container",
+        "Must be stored in the container in which it was sold"
+       ],
+       [
+        "Carry-on",
+        "May still be refused if it does not meet the carry-on liquid restrictions for international flights"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> destination-specific bans (for example for China) are listed on other ANA pages."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much alcohol can I take on ANA?",
+     "Up to five liters per person for drinks above 24% and up to 70% alcohol; drinks of 24% or less have no restrictions."
+    ],
+    [
+     "Can I carry alcohol in the cabin on ANA international flights?",
+     "It is allowed within the limits, but the international carry-on liquid restrictions may prevent you bringing it on board."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.ana.co.jp/en/jp/guide/boarding-procedures/baggage/international/caution-restriction03/",
+     "ANA &mdash; Items with conditions attached to their carry-on or check-in"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026"
+  },
+  "perfume": {
+   "answer": "ANA permits cosmetics, hairsprays and sprays for sporting equipment or daily use (excluding flammable or poisonous gases) in carry-on and check-in: 2 kg or 2 liters per person, in containers of up to 0.5 kg or 0.5 liters, with a cap. Even then, the international carry-on liquid restrictions may stop an item being brought on board.",
+   "sections": [
+    {
+     "h": "🧴 What ANA says about perfume and aerosols",
+     "p": "From the ANA page \"Items With Conditions Attached to Their Carry-on or Check-in\" (international flights), section on sprays.",
+     "table": {
+      "head": [
+       "Question",
+       "ANA rule"
+      ],
+      "rows": [
+       [
+        "Total per person",
+        "2 kg or 2 liters"
+       ],
+       [
+        "Each container",
+        "Up to 0.5 kg or 0.5 liters"
+       ],
+       [
+        "Cap",
+        "A cap or other method to prevent accidental leaking"
+       ],
+       [
+        "Not permitted",
+        "Sprays classified as flammable gas, such as lubricating oil, paint, varnish or dust-proof spray"
+       ],
+       [
+        "Carry-on",
+        "Subject to the international liquid restrictions even if within these limits"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> perfume is not named; hairsprays and cosmetics are, so check ANA for fragrance bottles."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "Can I bring hairspray on ANA?",
+     "Yes, within 2 kg or 2 liters per person in containers of up to 0.5 kg or 0.5 liters, with a cap."
+    ],
+    [
+     "Which sprays are banned on ANA?",
+     "Sprays classified as flammable gas for sport or daily use, such as lubricating oil, paint, varnish or dust-proof spray."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.ana.co.jp/en/jp/guide/boarding-procedures/baggage/international/caution-restriction03/",
+     "ANA &mdash; Items with conditions attached to their carry-on or check-in"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026"
+  }
+ },
+ "Air New Zealand": {
+  "alcohol": {
+   "answer": "Air New Zealand allows alcohol in checked baggage in retail packaging: drinks under 24% alcohol by volume have no restriction, 24% to 70% is limited to 5 L per person, and alcohol over 70% is not permitted. These are airline allowances, not customs rules.",
+   "sections": [
+    {
+     "h": "🥃 What Air New Zealand says about alcohol",
+     "p": "From the Air New Zealand page \"Checked-in baggage restricted items\".",
+     "table": {
+      "head": [
+       "Question",
+       "Air New Zealand rule"
+      ],
+      "rows": [
+       [
+        "Under 24% ABV",
+        "No restrictions listed, in retail packaging and containers under 5 L"
+       ],
+       [
+        "24% to 70% ABV",
+        "5 L per person, in retail packaging and containers under 5 L"
+       ],
+       [
+        "Over 70% ABV",
+        "Not permitted"
+       ],
+       [
+        "Customs",
+        "Passengers may owe duty on arrival; check the local rules for duty-free allowances"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> the checked-baggage page does not give cabin limits for alcohol."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much alcohol can I check on Air New Zealand?",
+     "Under 24% alcohol has no restriction; 24% to 70% is limited to 5 L per person; over 70% is not permitted."
+    ],
+    [
+     "Do Air New Zealand alcohol limits replace customs rules?",
+     "No, the page says they are airline allowances and passengers may still owe customs duty on arrival."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.airnewzealand.com/dangerous-goods",
+     "Air New Zealand &mdash; Checked-in baggage restricted items"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026"
+  },
+  "perfume": {
+   "answer": "For checked baggage Air New Zealand limits all medicinal articles, toiletries and aerosols together to 2 kg or 2 L, with no single article over 0.5 kg or 0.5 L. Aerosols for home or sporting use must be non-flammable and non-toxic with a cap, and aerosols that are not medicinal or toiletry items are prohibited.",
+   "sections": [
+    {
+     "h": "🧴 What Air New Zealand says about perfume and aerosols",
+     "p": "From the Air New Zealand page \"Checked-in baggage restricted items\".",
+     "table": {
+      "head": [
+       "Question",
+       "Air New Zealand rule"
+      ],
+      "rows": [
+       [
+        "All articles together",
+        "Not more than 2 kg (4.4 lb) or 2 L (2 qt)"
+       ],
+       [
+        "Each single article",
+        "Not more than 0.5 kg (1 lb) or 0.5 L (1 pt)"
+       ],
+       [
+        "Aerosols for home or sport",
+        "Non-flammable and non-toxic, with a cap preventing accidental release"
+       ],
+       [
+        "Other aerosols",
+        "Not medicinal or toiletry items: prohibited"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> perfume is not named and the page gives no cabin limits, so ask Air New Zealand about fragrance bottles."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much toiletry aerosol can I check on Air New Zealand?",
+     "Up to 2 kg or 2 L in total, with each article at most 0.5 kg or 0.5 L."
+    ],
+    [
+     "Are aerosols allowed on Air New Zealand?",
+     "Medicinal and toiletry aerosols are allowed within the limits; aerosols that are not toiletries or medicinal are prohibited."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.airnewzealand.com/dangerous-goods",
+     "Air New Zealand &mdash; Checked-in baggage restricted items"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026"
+  }
+ },
+ "Etihad Airways": {
+  "perfume": {
+   "answer": "Etihad lists creams, lotions, cosmetics, oils, perfumes and sprays, and the contents of pressurised containers such as shaving foam and deodorants, as allowed in cabin baggage with conditions: up to 100ml each.",
+   "sections": [
+    {
+     "h": "🧴 What Etihad Airways says about perfume and aerosols",
+     "p": "From the Etihad page \"Prohibited items and what you can take on board\", table for liquids, aerosols and gels.",
+     "table": {
+      "head": [
+       "Question",
+       "Etihad Airways rule"
+      ],
+      "rows": [
+       [
+        "Perfumes, sprays, creams, lotions, oils, gels",
+        "Cabin baggage with conditions: up to 100ml"
+       ],
+       [
+        "Pressurised containers (shaving foam, deodorants)",
+        "Cabin baggage with conditions: up to 100ml"
+       ],
+       [
+        "Pastes, mascara, lip gloss",
+        "Cabin baggage with conditions: up to 100ml"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> the table we read gives no checked-baggage quantity for perfume or aerosols; Etihad’s limits depend on the departure airport, so check before you fly."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "Can I bring perfume in my Etihad cabin bag?",
+     "Yes, in containers of up to 100ml, according to Etihad’s table."
+    ],
+    [
+     "Can I bring deodorant spray on Etihad?",
+     "Pressurised containers such as deodorant are listed with the same 100ml cabin limit."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.etihad.com/en/help/baggage-information/prohibited-items",
+     "Etihad &mdash; Prohibited items and what you can take on board"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026"
+  }
+ },
+ "Swiss": {
+  "alcohol": {
+   "answer": "SWISS allows alcoholic drinks in checked baggage and in hand baggage in the cabin: for drinks above 24% and up to 70% alcohol by volume the limit is 5 l in total per passenger and 5 l per container, in original retail packaging. Drinks above 70% are forbidden, drinks below 24% are not dangerous goods, and drinking alcohol you brought on board is forbidden.",
+   "sections": [
+    {
+     "h": "🥃 What Swiss says about alcohol",
+     "p": "From the SWISS page \"Dangerous goods\".",
+     "table": {
+      "head": [
+       "Question",
+       "Swiss rule"
+      ],
+      "rows": [
+       [
+        "Above 24% and up to 70% ABV",
+        "Maximum 5 l total net quantity per passenger and 5 l per container"
+       ],
+       [
+        "Packaging",
+        "Original retail packaging"
+       ],
+       [
+        "Above 70% ABV",
+        "Forbidden for transport"
+       ],
+       [
+        "Below 24% ABV",
+        "Not classified as dangerous goods"
+       ],
+       [
+        "Where",
+        "Checked baggage or hand baggage in the cabin"
+       ],
+       [
+        "On board",
+        "Drinking alcohol brought on board by passengers is forbidden"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Note:</strong> hand baggage still has to meet the general liquids rules at security."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much alcohol can I take on SWISS?",
+     "Up to 5 l per passenger for drinks above 24% and up to 70% alcohol by volume, in original retail packaging."
+    ],
+    [
+     "Can I drink my own alcohol on SWISS?",
+     "No, SWISS says consuming alcohol brought on board is forbidden."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.swiss.com/de/en/prepare/baggage/dangerous-goods",
+     "SWISS &mdash; Dangerous goods"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026"
+  },
+  "perfume": {
+   "answer": "SWISS counts hair spray, perfume and eau de cologne as toiletries, allowed in hand baggage and checked baggage up to 2 kg or 2 l in total per passenger and 0.5 kg or 0.5 l per item. Only non-toxic, non-flammable aerosols for sport or home use are allowed, with a cap on the release valve.",
+   "sections": [
+    {
+     "h": "🧴 What Swiss says about perfume and aerosols",
+     "p": "From the SWISS page \"Dangerous goods\", section on toiletries.",
+     "table": {
+      "head": [
+       "Question",
+       "Swiss rule"
+      ],
+      "rows": [
+       [
+        "Total per passenger",
+        "Maximum 2 kg / 2 l (total net quantity of all items)"
+       ],
+       [
+        "Per item",
+        "Maximum 0.5 kg / 0.5 l"
+       ],
+       [
+        "Examples named",
+        "Hair spray, perfume and eau de cologne, alcohol-containing medical items and hand sanitisers"
+       ],
+       [
+        "Sport or home aerosols",
+        "Only non-toxic, non-flammable, hazard class 2.2 with no subsidiary hazard"
+       ],
+       [
+        "Release valves",
+        "Protected by a cap or other suitable means"
+       ],
+       [
+        "Hand baggage",
+        "The general rules for liquids, gels and sprays also apply"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Note:</strong> SWISS asks you to read the general safety rules for liquids in hand baggage as well."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "Can I bring perfume on SWISS?",
+     "Yes: up to 0.5 l per item and 2 l in total per passenger, and in hand baggage the general liquids rules also apply."
+    ],
+    [
+     "Do aerosol cans need a cap on SWISS?",
+     "Yes, release valves must be protected by a cap or another suitable means."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.swiss.com/de/en/prepare/baggage/dangerous-goods",
+     "SWISS &mdash; Dangerous goods"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026"
+  }
+ },
+ "Air India": {
+  "alcohol": {
+   "answer": "Air India marks alcoholic beverages as not allowed in carry-on and allowed in checked baggage: a person can carry a total net quantity of 5 l (169 oz) of alcohol, in original retail packaging, in receptacles of no more than 5 l, with an alcohol content between 24% and 70%. Duty-free alcohol depends on the duty-free rules at the airport.",
+   "sections": [
+    {
+     "h": "🥃 What Air India says about alcohol",
+     "p": "From the Air India page \"Restricted Baggage & Prohibited Items Guidelines\".",
+     "table": {
+      "head": [
+       "Question",
+       "Air India rule"
+      ],
+      "rows": [
+       [
+        "Carry-on",
+        "No"
+       ],
+       [
+        "Checked baggage",
+        "Yes"
+       ],
+       [
+        "Quantity",
+        "A total net quantity of 5 l / 169 oz per person"
+       ],
+       [
+        "Packaging",
+        "Original retail packaging, receptacle not more than 5 l"
+       ],
+       [
+        "Strength",
+        "Alcohol content by volume between 24% and 70%"
+       ],
+       [
+        "Duty-free",
+        "The quantity you can buy and carry depends on duty-free regulations at the airport"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Note:</strong> there are exceptions for international transfer passengers under Air India’s liquids, aerosols and gels policy."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "Can I carry alcohol in my Air India cabin bag?",
+     "Air India marks alcoholic beverages as not allowed in carry-on, with exceptions for international transfer passengers under its liquids policy."
+    ],
+    [
+     "How much alcohol can I check on Air India?",
+     "A total net quantity of 5 l per person, in original retail packaging, with an alcohol content between 24% and 70%."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.airindia.com/in/en/travel-information/baggage-guidelines/restricted-baggage.html",
+     "Air India &mdash; Restricted baggage and prohibited items"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026"
+  },
+  "perfume": {
+   "answer": "Air India lists perfumes and deodorant sprays among liquids, aerosols and gels, which are restricted in carry-on. Aerosols are prohibited except personal care or toiletries in limited quantities: a total of 2 l or 2 kg, with each article at most 0.5 kg or 0.5 l and the release valve capped.",
+   "sections": [
+    {
+     "h": "🧴 What Air India says about perfume and aerosols",
+     "p": "From the Air India page \"Restricted Baggage & Prohibited Items Guidelines\".",
+     "table": {
+      "head": [
+       "Question",
+       "Air India rule"
+      ],
+      "rows": [
+       [
+        "Perfumes, deodorants and sprays",
+        "Count as liquids, aerosols and gels (LAGs) with carry-on restrictions"
+       ],
+       [
+        "Aerosols in general",
+        "Prohibited, except for personal care or toiletries in limited quantities"
+       ],
+       [
+        "Toiletry aerosols total",
+        "Not more than 2 l / 67 oz or 2 kg / 4 lb"
+       ],
+       [
+        "Each article",
+        "Not more than 0.5 kg or 0.5 l"
+       ],
+       [
+        "Release valve",
+        "Protected by a cap or other suitable means"
+       ],
+       [
+        "Connecting from abroad",
+        "Duty-free LAGs above the allowance must go in checked baggage before Indian security screening"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not read:</strong> the cabin container size for LAGs is on a separate part of Air India’s page that we did not read in full."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "Can I bring perfume on Air India?",
+     "Perfume counts as a liquid, aerosol or gel; toiletry aerosols are allowed in limited quantities of 2 l or 2 kg in total and 0.5 l or 0.5 kg per article, with a cap."
+    ],
+    [
+     "Are aerosols allowed on Air India?",
+     "Aerosols are prohibited except for personal care or toiletries in limited quantities."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.airindia.com/in/en/travel-information/baggage-guidelines/restricted-baggage.html",
+     "Air India &mdash; Restricted baggage and prohibited items"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026"
+  }
+ },
+ "LATAM": {
+  "alcohol": {
+   "answer": "LATAM allows up to 5 liters of alcohol per person in checked baggage (retail containers up to 5 liters, 24% to 70% alcohol), and in the cabin the limit depends on the flight: up to 5 liters on domestic flights, but on international flights containers of up to 100 ml in a 1-liter bag. Cabin and checked alcohol together cannot exceed 5 liters, and nothing above 70% is allowed.",
+   "sections": [
+    {
+     "h": "🥃 What LATAM says about alcohol",
+     "p": "From the LATAM help page \"How many alcoholic beverages can I carry\".",
+     "table": {
+      "head": [
+       "Question",
+       "LATAM rule"
+      ],
+      "rows": [
+       [
+        "Checked baggage",
+        "Up to 5 liters (170 oz) in retail containers of up to 5 liters, 24% to 70% alcohol"
+       ],
+       [
+        "Cabin, domestic flights",
+        "Up to 5 liters in retail containers of up to 5 liters, 24% to 70% alcohol"
+       ],
+       [
+        "Cabin, international flights",
+        "Containers up to 100 ml each in a clear bag of up to 1 liter"
+       ],
+       [
+        "Departures from Argentina or Chile",
+        "Same limits as domestic flights, except flights to the United States or Oceania or with a stop in Uruguay"
+       ],
+       [
+        "24% or less",
+        "No restriction on domestic flights"
+       ],
+       [
+        "Above 70%",
+        "Not allowed on any route or in any baggage"
+       ],
+       [
+        "Combined",
+        "Cabin plus checked alcohol cannot exceed 5 liters per person"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Note:</strong> the page says the limits are subject to the applicable laws."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much alcohol can I take on LATAM?",
+     "Up to 5 liters per person in total across cabin and checked baggage, for drinks between 24% and 70% alcohol in retail containers of up to 5 liters."
+    ],
+    [
+     "Can I carry a bottle of spirits in my LATAM cabin bag on an international flight?",
+     "Only containers of up to 100 ml in a clear 1-liter bag; larger bottles go in checked baggage."
+    ],
+    [
+     "Can I take strong spirits on LATAM?",
+     "Alcohol above 70% by volume is not allowed on any route or in any baggage."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.latamairlines.com/us/en/help-center/faq/baggage/restricted-articles/alcoholic-beverages",
+     "LATAM &mdash; How many alcoholic beverages can I carry"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026"
+  }
+ },
+ "Copa Airlines": {
+  "alcohol": {
+   "answer": "Copa Airlines allows liquor bottles in checked baggage as long as they do not exceed five litres per passenger of legal age. Bottles bought at airport duty-free shops or on board can travel in the cabin if sealed in a tamper-evident container with proof of purchase from the day of travel; other bottles in carry-on must be 100 ml or less, and acceptance may depend on airport administrative rules.",
+   "sections": [
+    {
+     "h": "🥃 What Copa Airlines says about alcohol",
+     "p": "From the Copa Airlines page \"Restricted baggage\" (liquor bottles section).",
+     "table": {
+      "head": [
+       "Question",
+       "Copa Airlines rule"
+      ],
+      "rows": [
+       [
+        "Checked baggage",
+        "Liquor bottles allowed up to five (5) litres per passenger of legal age"
+       ],
+       [
+        "Duty-free bottles in the cabin",
+        "Allowed if packed in a sealed, tamper-evident container with proof of purchase on the day of travel at the airport shops or on board"
+       ],
+       [
+        "Other bottles in carry-on",
+        "Less than 3.4oz/100ml allowed"
+       ],
+       [
+        "Airport rules",
+        "Acceptance of bottles within carry-on limits may be subject to the administrative provisions of each airport or security point"
+       ],
+       [
+        "To the US or Canada",
+        "Duty-free items bought at Tocumen (Panama) can go in the cabin; items bought at other airports must be checked on arrival in Panama"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> the Copa page we read gives no strength limits for liquor and says nothing about drinking your own alcohol on board."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much liquor can I check on Copa Airlines?",
+     "Up to five litres per passenger of legal age."
+    ],
+    [
+     "Can I bring duty-free liquor in my Copa cabin bag?",
+     "Yes if it is sealed in a tamper-evident container with proof that it was bought at the airport shops or on board on the day of travel; when flying to the US or Canada the rule depends on where you bought it."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.copaair.com/en-US/travel-information/baggage-information/restricted-baggage/",
+     "Copa Airlines &mdash; Restricted baggage"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026"
+  },
+  "perfume": {
+   "answer": "Copa Airlines lists perfumes, colognes, hair sprays and medicines containing alcohol as non-radioactive medicinal or toiletry articles: the total must not exceed 2 kg or 2 litres and each item 0.5 kg or 0.5 litres, with the aerosol release valve protected by a cap. In carry-on liquids and aerosols are only allowed in containers of 100 ml or less in a clear bag of at most one litre.",
+   "sections": [
+    {
+     "h": "🧴 What Copa Airlines says about perfume and aerosols",
+     "p": "From the Copa Airlines page \"Restricted baggage\".",
+     "table": {
+      "head": [
+       "Question",
+       "Copa Airlines rule"
+      ],
+      "rows": [
+       [
+        "All articles together",
+        "Not more than 2 kg or 2 litres"
+       ],
+       [
+        "Each article",
+        "Not more than 0.5 kg or 0.5 litres"
+       ],
+       [
+        "Aerosol valve",
+        "Protected by a cap or other suitable means"
+       ],
+       [
+        "Carry-on liquids and aerosols",
+        "Only containers of up to 100 ml or 3.4 oz, in a transparent self-closing bag of no more than one litre"
+       ],
+       [
+        "Larger containers",
+        "Not accepted in carry-on even if not completely full"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not read:</strong> the cabin/hold tick marks for toiletry aerosols are shown as images on Copa’s page, so we do not restate them."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "Can I bring perfume on Copa Airlines?",
+     "Yes within 0.5 litres per item and 2 litres in total, and in carry-on only containers of 100 ml or less in a clear bag of at most one litre."
+    ],
+    [
+     "Do aerosol cans need a cap on Copa Airlines?",
+     "Yes, the release valve must be protected by a cap or other suitable means."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.copaair.com/en-US/travel-information/baggage-information/restricted-baggage/",
+     "Copa Airlines &mdash; Restricted baggage"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026"
+  }
+ },
+ "Austrian": {
+  "alcohol": {
+   "answer": "Austrian lets you carry alcoholic drinks both as checked baggage and in the cabin if they have more than 24% and up to 70% alcohol by volume: maximum 5 l in total per passenger and 5 l per container, in the original packaging as sold. Drinks above 70% are prohibited, drinks below 24% are not dangerous goods, and drinking alcohol you brought aboard is prohibited.",
+   "sections": [
+    {
+     "h": "🥃 What Austrian says about alcohol",
+     "p": "From the Austrian Airlines page \"Items forbidden in the aircraft\".",
+     "table": {
+      "head": [
+       "Question",
+       "Austrian rule"
+      ],
+      "rows": [
+       [
+        "More than 24% and up to 70% alcohol",
+        "Max. 5 l total net quantity per passenger, max. 5 l per container"
+       ],
+       [
+        "Packaging",
+        "Original packaging as sold"
+       ],
+       [
+        "More than 70% alcohol",
+        "Prohibited for transport"
+       ],
+       [
+        "Less than 24% alcohol",
+        "Not classed as dangerous goods"
+       ],
+       [
+        "Consuming it on board",
+        "Prohibited for alcohol brought on by passengers"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Note:</strong> hand baggage must also respect the general rules for liquids at security."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much alcohol can I take on Austrian Airlines?",
+     "Up to 5 l per passenger between 24% and 70% alcohol, in its original packaging."
+    ],
+    [
+     "Can I drink my own alcohol on Austrian?",
+     "No, consuming alcohol brought on board by passengers is prohibited."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.austrian.com/xx/en/dangerous-goods",
+     "Austrian Airlines &mdash; Items forbidden in the aircraft"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026"
+  },
+  "perfume": {
+   "answer": "Austrian counts hairspray, perfume and eau de cologne as toiletries: in total max. 2 kg/2 l per passenger and 0.5 kg/0.5 l per item. Only non-poisonous, non-flammable spray cans for sport or personal domestic use are permitted, with release valves protected by a cap.",
+   "sections": [
+    {
+     "h": "🧴 What Austrian says about perfume and aerosols",
+     "p": "From the Austrian Airlines page \"Items forbidden in the aircraft\", toiletries section.",
+     "table": {
+      "head": [
+       "Question",
+       "Austrian rule"
+      ],
+      "rows": [
+       [
+        "Total per passenger",
+        "Max. 2 kg/2 l (total net quantity of all items)"
+       ],
+       [
+        "Per item",
+        "Max. 0.5 kg/0.5 l"
+       ],
+       [
+        "Named as toiletries",
+        "Hairspray, perfume and eau de cologne, alcohol-containing medical items and hand sanitiser"
+       ],
+       [
+        "Aerosols for sport or home",
+        "Non-poisonous, non-flammable, hazard division 2.2"
+       ],
+       [
+        "Release valves",
+        "Protected by a cap or other suitable means"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Note:</strong> Austrian also asks you to observe the general safety rules for liquids in carry-on baggage."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "Can I bring perfume on Austrian Airlines?",
+     "Yes, up to 0.5 l per item and 2 l in total per passenger, and carry-on liquid rules also apply."
+    ],
+    [
+     "Do spray cans need a cap on Austrian?",
+     "Yes, release valves must be protected by a cap or other suitable means."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.austrian.com/xx/en/dangerous-goods",
+     "Austrian Airlines &mdash; Items forbidden in the aircraft"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026"
+  }
+ },
+ "Brussels Airlines": {
+  "alcohol": {
+   "answer": "Brussels Airlines allows alcoholic drinks of 24% to 70% in checked and cabin baggage, at most 5 l in total per passenger and 5 l per container, in retail packaging. Drinks above 70% are prohibited, drinks below 24% are not dangerous goods, and you may not drink alcohol you brought on board.",
+   "sections": [
+    {
+     "h": "🥃 What Brussels Airlines says about alcohol",
+     "p": "From the Brussels Airlines page \"Dangerous goods\".",
+     "table": {
+      "head": [
+       "Question",
+       "Brussels Airlines rule"
+      ],
+      "rows": [
+       [
+        "24% to 70%",
+        "Max. 5 l total net quantity per passenger and 5 l per container"
+       ],
+       [
+        "Packaging",
+        "Retail packaging"
+       ],
+       [
+        "Above 70%",
+        "Prohibited for transport"
+       ],
+       [
+        "Below 24%",
+        "Not classified as dangerous goods"
+       ],
+       [
+        "On board",
+        "Drinking alcohol you brought yourself is prohibited"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Note:</strong> general carry-on liquid rules still apply."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much alcohol can I take on Brussels Airlines?",
+     "Up to 5 l per passenger between 24% and 70% alcohol, in retail packaging."
+    ],
+    [
+     "Can I take strong spirits on Brussels Airlines?",
+     "Drinks with more than 70% alcohol by volume are prohibited for transport."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.brusselsairlines.com/no/en/extra-services/baggage/prohibited-items",
+     "Brussels Airlines &mdash; Dangerous goods"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026"
+  },
+  "perfume": {
+   "answer": "Brussels Airlines lists hairspray, perfume and eau de cologne among care products allowed up to 2 kg/2 l in total per passenger and 0.5 kg/0.5 l per item. Only non-poisonous, non-flammable aerosols for sport or personal domestic use are allowed, with a cap on the release valve.",
+   "sections": [
+    {
+     "h": "🧴 What Brussels Airlines says about perfume and aerosols",
+     "p": "From the Brussels Airlines page \"Dangerous goods\", care products section.",
+     "table": {
+      "head": [
+       "Question",
+       "Brussels Airlines rule"
+      ],
+      "rows": [
+       [
+        "Total per passenger",
+        "Max. 2 kg/2 l (total net quantity)"
+       ],
+       [
+        "Per item",
+        "Max. 0.5 kg/0.5 l"
+       ],
+       [
+        "Named as care products",
+        "Hairspray, perfume and eau de cologne, alcohol-containing medical items, hand sanitiser"
+       ],
+       [
+        "Aerosols for sport or home",
+        "Non-poisonous and non-flammable, hazard division 2.2"
+       ],
+       [
+        "Release valves",
+        "Protected by a cap or other suitable means"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Note:</strong> the general safety rules for liquids in carry-on baggage also apply."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "Can I bring perfume on Brussels Airlines?",
+     "Yes, up to 0.5 l per item and 2 l in total per passenger."
+    ],
+    [
+     "Are aerosols allowed on Brussels Airlines?",
+     "Only non-poisonous, non-flammable ones for sport or personal domestic use, with a protected release valve."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.brusselsairlines.com/no/en/extra-services/baggage/prohibited-items",
+     "Brussels Airlines &mdash; Dangerous goods"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026"
+  }
+ },
+ "ITA Airways": {
+  "alcohol": {
+   "answer": "ITA Airways permits alcoholic drinks with more than 24% and up to 70% alcohol in checked and cabin baggage: at most 5 l in total per passenger and 5 l per container, in the original packaging as sold. More than 70% is prohibited, below 24% is not dangerous goods, and drinking alcohol brought on board is prohibited.",
+   "sections": [
+    {
+     "h": "🥃 What ITA Airways says about alcohol",
+     "p": "From the ITA Airways page \"Restricted and prohibited items\".",
+     "table": {
+      "head": [
+       "Question",
+       "ITA Airways rule"
+      ],
+      "rows": [
+       [
+        "More than 24% up to 70%",
+        "Max. 5 l per passenger in total, 5 l per container"
+       ],
+       [
+        "Packaging",
+        "Original packaging as sold"
+       ],
+       [
+        "More than 70%",
+        "Prohibited for transport"
+       ],
+       [
+        "Less than 24%",
+        "Not classed as dangerous goods"
+       ],
+       [
+        "On board",
+        "Consuming alcohol brought by passengers is prohibited"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Note:</strong> ITA’s separate liquids rules for carry-on still apply."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much alcohol can I take on ITA Airways?",
+     "Up to 5 l per passenger for drinks above 24% and up to 70% alcohol, in original packaging."
+    ],
+    [
+     "Can I drink my own alcohol on ITA Airways?",
+     "No, consuming alcohol brought on board by passengers is prohibited."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.ita-airways.com/us/en/book-and-prepare/travel-information/baggage/restricted-and-prohibited-items",
+     "ITA Airways &mdash; Restricted and prohibited items"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026"
+  },
+  "perfume": {
+   "answer": "ITA Airways counts hairspray, perfume and eau de cologne as toiletries: max. 2 kg/2 l in total per passenger and 0.5 kg/0.5 l per item. Only non-poisonous, non-flammable sprays for sport or personal domestic use (hazard division 2.2) are permitted, with release valves protected by a cap.",
+   "sections": [
+    {
+     "h": "🧴 What ITA Airways says about perfume and aerosols",
+     "p": "From the ITA Airways page \"Restricted and prohibited items\", toiletries section.",
+     "table": {
+      "head": [
+       "Question",
+       "ITA Airways rule"
+      ],
+      "rows": [
+       [
+        "Total per passenger",
+        "Max. 2 kg/2 l"
+       ],
+       [
+        "Per item",
+        "Max. 0.5 kg/0.5 l"
+       ],
+       [
+        "Named as toiletries",
+        "Hairspray, perfume and eau de cologne, alcohol-containing medical items, hand sanitiser"
+       ],
+       [
+        "Sport or home sprays",
+        "Non-poisonous and non-flammable, hazard division 2.2"
+       ],
+       [
+        "Release valves",
+        "Protected by a cap or other suitable means"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Note:</strong> ITA also asks passengers to observe the general safety rules for liquids in carry-on baggage."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "Can I bring perfume on ITA Airways?",
+     "Yes, up to 0.5 l per item and 2 l in total per passenger."
+    ],
+    [
+     "Do spray cans need a cap on ITA Airways?",
+     "Yes, release valves must be protected by a cap or other suitable means."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.ita-airways.com/us/en/book-and-prepare/travel-information/baggage/restricted-and-prohibited-items",
+     "ITA Airways &mdash; Restricted and prohibited items"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026"
+  }
+ },
+ "Eurowings": {
+  "alcohol": {
+   "answer": "Eurowings permits alcoholic drinks with more than 24% and no more than 70% alcohol by volume in checked and hand baggage without airline permission: maximum 5 l per person in containers of at most 5 l, as sold by retailers. Alcoholic drinks above 70% are prohibited in all baggage, and carry-on liquid rules still apply.",
+   "sections": [
+    {
+     "h": "🥃 What Eurowings says about alcohol",
+     "p": "From the Eurowings page \"Prohibited items and dangerous goods in your baggage\".",
+     "table": {
+      "head": [
+       "Question",
+       "Eurowings rule"
+      ],
+      "rows": [
+       [
+        "More than 24%, up to 70%",
+        "Checked and hand baggage permitted, airline permission not required"
+       ],
+       [
+        "Quantity",
+        "Maximum 5 l per person, in containers of at most 5 l as sold by retailers"
+       ],
+       [
+        "Above 70%",
+        "Prohibited in both hand and checked baggage"
+       ],
+       [
+        "Hand baggage",
+        "Other regulations apply, such as those on carrying liquids"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> Eurowings does not say anything about drinks of 24% or less on this page."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much alcohol can I take on Eurowings?",
+     "Up to 5 l per person for drinks of more than 24% and up to 70%, in containers of at most 5 l as sold by retailers."
+    ],
+    [
+     "Can I take strong spirits on Eurowings?",
+     "Alcoholic beverages exceeding 70% by volume are prohibited in hand and checked baggage."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.eurowings.com/en/information/baggage/dangerous-goods.html",
+     "Eurowings &mdash; Prohibited items and dangerous goods in your baggage"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026"
+  },
+  "perfume": {
+   "answer": "Eurowings allows hairspray, room spray and similar spray cans, and cosmetic articles such as perfumes and deodorants, in hand and checked baggage without permission: each article at most 0.5 l or 0.5 kg and all together at most 2 l or 2 kg per person. Each spray can needs a protective cap or locking device.",
+   "sections": [
+    {
+     "h": "🧴 What Eurowings says about perfume and aerosols",
+     "p": "From the Eurowings page \"Prohibited items and dangerous goods in your baggage\".",
+     "table": {
+      "head": [
+       "Question",
+       "Eurowings rule"
+      ],
+      "rows": [
+       [
+        "Each article or spray can",
+        "Not more than 0.5 l or 0.5 kg"
+       ],
+       [
+        "All cosmetic articles and spray cans together",
+        "Not more than 2 l or 2 kg per person"
+       ],
+       [
+        "Protection",
+        "A protective cap or locking device against unintentional activation"
+       ],
+       [
+        "Permission",
+        "Airline permission not required"
+       ],
+       [
+        "Where",
+        "Checked baggage and hand baggage permitted"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Note:</strong> Eurowings’s hand baggage page separately covers the liquids limits at security."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "Can I bring perfume on Eurowings?",
+     "Yes, up to 0.5 l per article and 2 l in total per person, in hand or checked baggage."
+    ],
+    [
+     "Do spray cans need a cap on Eurowings?",
+     "Yes, each spray can must have a protective cap or locking device."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.eurowings.com/en/information/baggage/dangerous-goods.html",
+     "Eurowings &mdash; Prohibited items and dangerous goods in your baggage"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026"
+  }
+ },
+ "LOT Polish": {
+  "alcohol": {
+   "answer": "LOT lists alcohol in retail packaging as permitted in carry-on and checked baggage: a strength above 24% and up to 70% in a container of up to 5 l, up to 5 l per person. Alcoholic beverages with 24% alcohol or less are not restricted.",
+   "sections": [
+    {
+     "h": "🥃 What LOT Polish says about alcohol",
+     "p": "From the LOT page \"Prohibited items and hazardous materials\".",
+     "table": {
+      "head": [
+       "Question",
+       "LOT Polish rule"
+      ],
+      "rows": [
+       [
+        "Above 24% and up to 70%",
+        "In retail packaging, container up to 5 l, up to 5 l per person"
+       ],
+       [
+        "24% or less",
+        "Not restricted"
+       ],
+       [
+        "Where",
+        "Permitted in carry-on baggage and in checked baggage"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> the hazardous-materials page does not mention drinking your own alcohol on board; LOT’s other pages cover it."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much alcohol can I take on LOT?",
+     "Up to 5 l per person for drinks above 24% and up to 70% alcohol, in retail packaging and containers of up to 5 l."
+    ],
+    [
+     "Are drinks under 24% restricted on LOT?",
+     "No, alcoholic beverages containing 24% alcohol or less are not restricted."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.lot.com/us/en/journey/baggage/hazardous-materials",
+     "LOT &mdash; Prohibited items and hazardous materials"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026"
+  },
+  "perfume": {
+   "answer": "LOT permits toiletries and medical supplies including aerosols such as hairsprays, perfumes and colognes in carry-on and checked baggage: the total net quantity cannot exceed 2 kg or 2 l and a single article 0.5 kg or 0.5 l, with aerosol valves protected by a cap or other means.",
+   "sections": [
+    {
+     "h": "🧴 What LOT Polish says about perfume and aerosols",
+     "p": "From the LOT page \"Prohibited items and hazardous materials\", toiletries and medical supplies.",
+     "table": {
+      "head": [
+       "Question",
+       "LOT Polish rule"
+      ],
+      "rows": [
+       [
+        "Total net quantity",
+        "Cannot exceed 2 kg or 2 l"
+       ],
+       [
+        "Single article",
+        "Cannot exceed 0.5 kg or 0.5 l"
+       ],
+       [
+        "Examples named",
+        "Hairsprays, perfumes, colognes and medications containing alcohol"
+       ],
+       [
+        "Aerosol valves",
+        "Protected by a cap or other means to prevent accidental release"
+       ],
+       [
+        "Where",
+        "Permitted in carry-on baggage and in checked baggage"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not read:</strong> the 100 ml carry-on rule for liquids is on LOT’s separate cosmetics and liquids help pages."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "Can I bring perfume on LOT?",
+     "Yes, within 0.5 l per article and 2 l in total in carry-on or checked baggage."
+    ],
+    [
+     "Do aerosol cans need a cap on LOT?",
+     "Yes, valves must be protected by a cap or other means."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.lot.com/us/en/journey/baggage/hazardous-materials",
+     "LOT &mdash; Prohibited items and hazardous materials"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026"
+  }
+ },
+ "Norwegian": {
+  "alcohol": {
+   "answer": "Norwegian lists alcoholic beverages in retail packaging with more than 24% and not more than 70% alcohol by volume as permitted in checked and carry-on baggage, in receptacles not exceeding 5 L with a total net quantity of 5 L per person. Drinks containing 24% or less are not subject to any restrictions.",
+   "sections": [
+    {
+     "h": "🥃 What Norwegian says about alcohol",
+     "p": "From the Norwegian page \"Dangerous goods\".",
+     "table": {
+      "head": [
+       "Question",
+       "Norwegian rule"
+      ],
+      "rows": [
+       [
+        "More than 24% up to 70%",
+        "In retail packaging, receptacles not exceeding 5 L, total net quantity 5 L per person"
+       ],
+       [
+        "24% or less",
+        "Not subject to any restrictions"
+       ],
+       [
+        "Where",
+        "Permitted in checked baggage and in carry-on baggage"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> the dangerous-goods table does not state a rule for drinks above 70% or for drinking your own alcohol on board; carry-on liquid rules at security still apply."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much alcohol can I take on Norwegian?",
+     "Up to 5 L per person for drinks above 24% and up to 70% alcohol, in retail packaging and receptacles of at most 5 L."
+    ],
+    [
+     "Are drinks under 24% restricted on Norwegian?",
+     "No, Norwegian says alcoholic beverages with 24% alcohol or less are not subject to any restrictions."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.norwegian.com/us/travel-info/baggage/restricted-items/dangerous-goods/",
+     "Norwegian &mdash; Dangerous goods"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026"
+  },
+  "perfume": {
+   "answer": "Norwegian lists non-radioactive medicinal or toiletry articles such as hair sprays, perfumes, colognes and medicines containing alcohol, and non-flammable, non-toxic aerosols for sport or home use, as permitted in checked and carry-on baggage. The total net quantity must not exceed 2 kg or 2 L, each single article 0.5 kg or 0.5 L, and aerosol release valves must be protected by a cap.",
+   "sections": [
+    {
+     "h": "🧴 What Norwegian says about perfume and aerosols",
+     "p": "From the Norwegian page \"Dangerous goods\".",
+     "table": {
+      "head": [
+       "Question",
+       "Norwegian rule"
+      ],
+      "rows": [
+       [
+        "Toiletry and medicinal articles",
+        "Hair sprays, perfumes, colognes and medicines containing alcohol, including aerosols"
+       ],
+       [
+        "Total net quantity",
+        "Not more than 2 kg or 2 L"
+       ],
+       [
+        "Each single article",
+        "Not more than 0.5 kg or 0.5 L"
+       ],
+       [
+        "Sport or home aerosols",
+        "Non-flammable, non-toxic, with no subsidiary risk"
+       ],
+       [
+        "Aerosol valves",
+        "Protected by a cap or other suitable means"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> the cabin liquid limit for security is on Norwegian’s separate hand baggage page."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "Can I bring perfume on Norwegian?",
+     "Yes, within 0.5 L per article and 2 L in total; Norwegian lists perfumes among permitted toiletry articles."
+    ],
+    [
+     "Do aerosol cans need a cap on Norwegian?",
+     "Yes, release valves must be protected by a cap or other suitable means."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.norwegian.com/us/travel-info/baggage/restricted-items/dangerous-goods/",
+     "Norwegian &mdash; Dangerous goods"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "18 October 2026"
+  }
+ }
+}

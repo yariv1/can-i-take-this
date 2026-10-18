@@ -441,3 +441,8 @@ Pilot check 2026-11-14 (impressions/clicks vs Wi-Fi pilot). Alaska Airlines not 
 13. https://canitakethis.co/country/south-korea/vaping/
 14. https://canitakethis.co/country/mauritius/vaping/
 15. https://canitakethis.co/country/iceland/vaping/
+
+## Airline alcohol / perfume pages with an airline-source section (session 35, 2026-10-18): OPTIONAL re-index requests, not deployed yet
+Alcohol: delta, american-airlines, air-canada, british-airways, jetblue, finnair, lufthansa, qatar-airways, sas, cathay-pacific, ana, air-new-zealand, swiss, air-india, latam (https://canitakethis.co/airline/<slug>/alcohol/)
+Perfume: delta, american-airlines, air-canada, british-airways, finnair, lufthansa, qatar-airways, sas, united, cathay-pacific, ana, air-new-zealand, etihad-airways, swiss, air-india (https://canitakethis.co/airline/<slug>/perfume-aerosols/)
+Added later the same day (same list, same URL pattern): alcohol and perfume-aerosols for copa-airlines, austrian, brussels-airlines, ita-airways, eurowings, lot-polish, norwegian.
