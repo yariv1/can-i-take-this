@@ -60,3 +60,29 @@ console.log('OK airline typeahead (' + n + ' medication pages)');
   if (bad.length) { console.log('FAIL "Not published" verdict card on: ' + bad.slice(0, 8).join(', ')); process.exit(1); }
   console.log('OK no "Not published" verdict cards on airline medication pages');
 })();
+
+// a chip is something you bring ("Liquid medication", "Other medicine"): never "Not published"
+(function () {
+  const bad = [];
+  for (const d of fs.readdirSync(path.join(__dirname, 'airline'))) {
+    const fp = path.join(__dirname, 'airline', d, 'medication', 'index.html');
+    if (!fs.existsSync(fp)) continue;
+    if (/class="chip(?: on)?" data-c="[a-z]+">Not published</.test(fs.readFileSync(fp, 'utf8'))) bad.push(d);
+  }
+  if (bad.length) { console.log('FAIL chip named "Not published" on: ' + bad.slice(0, 8).join(', ')); process.exit(1); }
+  console.log('OK no chip named "Not published"');
+})();
+
+// one chip name per kind of card on every airline medication page (DESIGN_SYSTEM 8.41)
+(function () {
+  const CHIP = { pills: 'Pills &amp; tablets', liquids: 'Liquid medication', needles: 'Insulin &amp; syringes', cold: 'Cold medication', devices: 'Medical devices', allergy: 'Allergy medication', controlled: 'Controlled medication', abroad: 'Flying abroad', unknown: 'Other medicine' };
+  const bad = [];
+  for (const d of fs.readdirSync(path.join(__dirname, 'airline'))) {
+    const fp = path.join(__dirname, 'airline', d, 'medication', 'index.html');
+    if (!fs.existsSync(fp)) continue;
+    const h = fs.readFileSync(fp, 'utf8');
+    for (const m of h.matchAll(/class="chip(?: on)?" data-c="([a-z]+)">([^<]*)</g)) if (CHIP[m[1]] && CHIP[m[1]] !== m[2]) bad.push(d + ': ' + m[1] + ' chip is "' + m[2] + '", must be "' + CHIP[m[1]] + '"');
+  }
+  if (bad.length) { console.log('FAIL chip names:' + String.fromCharCode(10) + bad.slice(0, 12).join(String.fromCharCode(10))); process.exit(1); }
+  console.log('OK one chip name per kind of card');
+})();

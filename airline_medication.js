@@ -40,6 +40,8 @@ const HOME = { 'copa-airlines': 'panama', 'south-african-airways': 'south-africa
 const HOMENAME = { egypt: 'Egypt', india: 'India', poland: 'Poland', vietnam: 'Vietnam', mexico: 'Mexico', italy: 'Italy', israel: 'Israel', china: 'China', panama: 'Panama', 'south-africa': 'South Africa', jordan: 'Jordan', greece: 'Greece', oman: 'Oman', malaysia: 'Malaysia', iceland: 'Iceland', ethiopia: 'Ethiopia', brazil: 'Brazil', bahrain: 'Bahrain', kenya: 'Kenya', 'south-korea': 'South Korea', philippines: 'the Philippines', morocco: 'Morocco', hungary: 'Hungary', thailand: 'Thailand', qatar: 'Qatar', japan: 'Japan', 'united-states': 'the United States', ireland: 'Ireland', 'united-arab-emirates': 'the UAE', canada: 'Canada', germany: 'Germany', netherlands: 'the Netherlands', 'united-kingdom': 'the UK', france: 'France', turkey: 'Turkey', australia: 'Australia', singapore: 'Singapore', 'hong-kong': 'Hong Kong', spain: 'Spain', finland: 'Finland', sweden: 'Sweden', india: 'India', chile: 'Chile', 'new-zealand': 'New Zealand', portugal: 'Portugal', colombia: 'Colombia', switzerland: 'Switzerland', austria: 'Austria', belgium: 'Belgium', norway: 'Norway' };
 const SLUG = a => a.name.toLowerCase().replace(/&/g, 'and').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 const GENERIC_LINE = /not say|does not say|do not say|set by the security rules|gives no|give no|plan to carry your own cooling|depend on the airports|does not cover|do not cover|did not display|not state/i;
+// canonical chip names (DESIGN_SYSTEM 8.41); a chip not listed here is a specific scenario of that airline and keeps its own name
+const CHIP = { pills: 'Pills & tablets', liquids: 'Liquid medication', needles: 'Insulin & syringes', cold: 'Cold medication', devices: 'Medical devices', allergy: 'Allergy medication', controlled: 'Controlled medication', abroad: 'Flying abroad', unknown: 'Other medicine' };
 const UNK = { pills: 'ordinary pills and tablets', liquids: 'the liquid limit for medication', needles: 'the rule for needles and syringes', cold: 'cold storage or a fridge', devices: 'the rule for medical equipment', allergy: 'allergy medication' };
 function polish(scen, a) {
   const sl = SLUG(a), home = HOME[sl], HN = home && HOMENAME[home], name = a.name;
@@ -54,7 +56,7 @@ function polish(scen, a) {
     const srcs = []; const seen = new Set();
     merged.forEach(c => c.sources.forEach(x => { if (!seen.has(x[0])) { seen.add(x[0]); srcs.push(x); } }));
     const list = labels.length > 1 ? labels.slice(0, -1).join(', ') + ' and ' + labels[labels.length - 1] : labels[0];
-    const card = { id: 'unknown', label: 'Not published', status: 'info', verdict: 'Check the source', sub: 'What ' + name + ' does not say',
+    const card = { id: 'unknown', label: 'Other medicine', status: 'info', verdict: 'Check the source', sub: 'What ' + name + ' does not say',
       head: (/s$/i.test(name) ? name + '’' : name + '’s') + ' pages we read do not state ' + list + '.',
       lines: ['Page read: ' + titles.join('; ') + '.', 'Where an airline is silent, the rule of the airport you fly from applies: check its security rules, or ask ' + name + ' before you rely on it.'], sources: srcs, first: false };
     const ai = out.findIndex(c => c.id === 'abroad' || c.id === 'uae');
@@ -68,6 +70,8 @@ function polish(scen, a) {
   });
   // any other card that says "the airline does not publish this" is the site-wide unknown state too (info, "Check the source"), never an amber warning
   out = out.map(c => (c.verdict === 'Not published' ? Object.assign({}, c, { status: 'info', verdict: 'Check the source' }) : c));
+  // one name per kind of card on every airline page (user order 2026-10-20: same label = same meaning, everywhere)
+  out = out.map(c => (CHIP[c.id] ? Object.assign({}, c, { label: CHIP[c.id] }) : c));
   out.forEach((c, i) => { c.first = i === 0; });
   return out;
 }
