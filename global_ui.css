@@ -54,3 +54,8 @@ html body .tabs-wrap .tabs-arrow{top:0;bottom:0;height:100%}
 }
 /* typeahead clear (x) inside the field: same on the app, country pages and airline pages (DS 8.36) */
 .inwrap{position:relative;flex:1;display:flex;min-width:0}.inwrap .tinput{flex:1;min-width:0;padding-right:44px}.tclear{position:absolute;right:8px;top:50%;transform:translateY(-50%);width:30px;height:30px;border:0;border-radius:8px;background:none;color:var(--muted);cursor:pointer;display:none;align-items:center;justify-content:center;padding:0}.tclear.on{display:flex}.tclear:hover{color:var(--text)}.tclear:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+/* DS 8.40 tag system: one colour per TYPE (Animal purple, Ingredient/Medicine blue, Food teal, Item grey) and per STATUS (green allowed, amber condition, red not allowed) */
+:root,[data-theme="dark"]{--tg-blue:#9CC2FF;--tg-teal:#5FDCCB}
+[data-theme="light"]{--tg-blue:#1D4FA8;--tg-teal:#0B6B5F}
+html body .tag.tag-blue{background:rgba(90,150,255,.2);color:var(--tg-blue);font-weight:700}
+html body .tag.tag-teal{background:rgba(50,200,180,.2);color:var(--tg-teal);font-weight:700}

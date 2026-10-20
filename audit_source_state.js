@@ -17,7 +17,7 @@ function chk(p){const raw0=fs.readFileSync(p,'utf8');if(/These (rules|allowances
   else if(parts[0]==='food'||parts[0]==='pets'){ if(lab==='none')bad.push(p+' card without source state'); if(lab==='ok'&&!links)bad.push(p+' OFFICIAL without link'); if(lab==='no'&&links)bad.push(p+' global rules but has a link'); if(lab==='un')bad.push(p+' unofficial unexpected'); }
   else if(parts[0]==='country'){ if((lab==='ok'||lab==='un')&&!links)bad.push(p+' '+lab+' without link'); if(lab==='no'&&links)bad.push(p+' global rules but has a link'); }
   if(parts[0]==='medication'&&parts[1]!=='into'&&noteC.has(parts[parts.length-2])&&/We don.t have verified info/.test(body))bad.push(p+' note country shows "Check the source" instead of its official note');
-  if(parts[0]==='medication'&&parts[1]!=='into'&&noteO.has(parts[parts.length-2])&&/No prescription needed|Usually fine to bring in/.test(body)&&!/Check if controlled/.test(body))bad.push(p+' note country with official medicine lines still shows the generic Allowed / No prescription needed header');
+  if(parts[0]==='medication'&&parts[1]!=='into'&&noteO.has(parts[parts.length-2])&&/No prescription needed|Usually fine to bring in/.test(body)&&!/Controlled medicine/.test(body))bad.push(p+' note country with official medicine lines still shows the generic Allowed / No prescription needed header');
   if(/not checked|have not checked/i.test(foot))bad.push(p+' forbidden wording "not checked"');
  }}
 walk('.');

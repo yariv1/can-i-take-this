@@ -11,7 +11,7 @@
  2) PER-MEDICINE ROWS (the official page or list names the ingredients):
       node med_add_country.js verified spec.json
     spec.json = {"country":"Australia","rules":{"Amphetamine":"rx","Codeine":"permit"},"verBlock":"<js text of the IIFE body ending with return {...};>","auth":"[{label:'..',url:'..'}]"}
-    levels: ban | permit | rx | ok (see medCountryVerdict in canitakethis.html). verBlock returns an object ingredient -> {src:[...],tag,head,lines:[...]}.
+    levels: ban | permit | rx | ok (see medCountryVerdict in canitakethis.html). verBlock returns an object ingredient -> {src:[...],tag,head,lines:[...]}. `tag` is NOT free text: it is one or more labels from the status vocabulary TAG_STATUS in canitakethis.html separated by | (e.g. 'Prescription needed|Limit applies'); the details go in head/lines. DESIGN_SYSTEM 8.40; guard audit_tags.js.
     Look at an existing country block inside MED_VER (e.g. Australia, Singapore) and copy its shape. Footer = OFFICIAL SOURCE + "These rules come from the official ...".
  After either: node build.js, run audit_source_state.js, audit_internal_links.js and the usual audits (DEPLOY_FLOW.md), add new URLs to GSC_INDEXING_TRACKER.md.
  New /medication/<drug>/<country>/ pages appear only for per-medicine rows and only for the brands listed in MED_PAGE.
