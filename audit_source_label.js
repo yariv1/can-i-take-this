@@ -7,7 +7,7 @@
 const fs = require('fs'), path = require('path');
 const bad = [];
 let pages = 0, cardsN = 0, ok = 0, un = 0, no = 0;
-const MED = 'Medication rules vary by country and can change. This is guidance, not legal advice - carry your prescription and confirm with the official authority before you fly.';
+const MED = 'Medication rules vary by country and can change. This is guidance, not legal advice - in case of a prescribed medicine, carry your prescription and confirm with the official authority before you fly.';
 function check(p) {
   pages++;
   const raw = fs.readFileSync(p, 'utf8');

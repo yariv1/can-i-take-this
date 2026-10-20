@@ -8,7 +8,7 @@ const ICON = { go: '<path d="M20 6 9 17l-5-5"/>', warn: '<path d="M12 9v4m0 4h.0
 
 function render(a, SCEN, SRC_NOTE, O) {
   O = O || {};
-  const MED_ORIG = 'Medication rules vary by country and can change. This is guidance, not legal advice - carry your prescription and confirm with the official authority before you fly.';
+  const MED_ORIG = 'Medication rules vary by country and can change. This is guidance, not legal advice - in case of a prescribed medicine, carry your prescription and confirm with the official authority before you fly.';
   const medCard = s => {
     const lines = s.lines.map(l => '<li>' + l + '</li>').join('');
     const src = s.sources.map(x => '<a class="hitem" href="' + esc(x[0]) + '" target="_blank" rel="noopener"><span class="hi-ic">🌐</span><span class="hi-l">' + esc(x[1]) + '<small>Official guidance</small></span><span class="hi-go">↗</span></a>').join('');
@@ -21,7 +21,8 @@ function render(a, SCEN, SRC_NOTE, O) {
   const legend = O.legend || '<p class="cc-legend"><span class="cc-dot cc-g"></span> Green: you are owed something. <span class="cc-dot cc-y"></span> Yellow: it depends, check with the airline. <span class="cc-dot cc-r"></span> Red: nothing owed for this case.</p>';
   const css = '<style>.cc[hidden]{display:none}.cc-legend{font-size:.9rem;color:var(--muted);margin:14px 4px 0;line-height:1.7}.cc-dot{display:inline-block;width:11px;height:11px;border-radius:50%;margin:0 4px 0 8px;vertical-align:middle}.cc-dot:first-child{margin-left:0}.cc-g{background:#2FCF9B}.cc-y{background:#F5B841}.cc-r{background:#FF6B6B}.cc-picker .chip{font-size:14px}</style>';
   const script = '<script>(function(){var cs=document.querySelectorAll(".cc-picker .chip"),cc=document.querySelectorAll(".cc");function go(id){[].forEach.call(cc,function(x){x.hidden=x.id!=="cc-"+id;});[].forEach.call(cs,function(x){x.classList.toggle("on",x.dataset.c===id);});}[].forEach.call(cs,function(b){b.onclick=function(){go(b.dataset.c);};});var h=location.hash.slice(1);if(h&&document.getElementById("cc-"+h))go(h);})();</scr' + 'ipt>';
-  return css + '<div class="slab">' + esc(O.slab || 'What happened?') + '</div><div class="chips cc-picker">' + chips + '</div>' + SCEN.map(card).join('') + legend + script;
+  const orig = css + '<div class="slab">' + esc(O.slab || 'What happened?') + '</div><div class="chips cc-picker">' + chips + '</div>' + SCEN.map(card).join('') + legend + script;
+  return O.medStyle ? require('./airline_med_typeahead.js')(a, SCEN, medCard, esc, orig) : orig;
 }
 
 const out = {};

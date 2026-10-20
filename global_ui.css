@@ -52,3 +52,5 @@ html body .tabs-wrap .tabs-arrow{top:0;bottom:0;height:100%}
   html body .tabs-wrap .tabs{padding-left:18px;padding-right:18px;scroll-padding-left:18px;scroll-padding-right:18px}
   html body .hg-row{margin-left:-18px;margin-right:-18px;padding-left:18px;padding-right:18px;scroll-padding-left:18px;scroll-padding-right:18px}
 }
+/* typeahead clear (x) inside the field: same on the app, country pages and airline pages (DS 8.36) */
+.inwrap{position:relative;flex:1;display:flex;min-width:0}.inwrap .tinput{flex:1;min-width:0;padding-right:44px}.tclear{position:absolute;right:8px;top:50%;transform:translateY(-50%);width:30px;height:30px;border:0;border-radius:8px;background:none;color:var(--muted);cursor:pointer;display:none;align-items:center;justify-content:center;padding:0}.tclear.on{display:flex}.tclear:hover{color:var(--text)}.tclear:focus-visible{outline:2px solid var(--accent);outline-offset:1px}

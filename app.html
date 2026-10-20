@@ -911,7 +911,7 @@ function medCountryVerdict(entry){
   var level=rules?(rules[country]||rules.def):'unknown';
   var auth=MED_AUTH[country]||{label:country+' health & customs authority',url:null};
   var ingTag={t:'Active ingredient \u00B7 '+ing,k:'neutral'};
-  var base={source:auth,src:'Medication rules vary by country and can change. This is guidance, not legal advice - carry your prescription and confirm with the official authority before you fly.'};
+  var base={source:auth,src:'Medication rules vary by country and can change. This is guidance, not legal advice - in case of a prescribed medicine, carry your prescription and confirm with the official authority before you fly.'};
   var ver=(typeof MED_VER!=='undefined'&&MED_VER[country]&&MED_VER[country][ing])||null;
   if(ver&&level&&level!=='unknown'){var vv=medCountryVerdictBase(entry,level,base,ingTag,country,ing);var ov={lines:ver.lines,head:ver.head,source:ver.src,verified:true};if(ver.tag){vv.tags=[ingTag,{t:ver.tag,k:level==='permit'?'amber':(level==='rx'?'green':vv.tags[1].k)}];}return merge(vv,ov);}
   var gv=medCountryVerdictBase(entry,level,base,ingTag,country,ing);

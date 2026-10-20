@@ -95,7 +95,7 @@ module.exports = function (X) {
       tableNote: 'What Israir\'s own page says. Where Israir is silent we say so.',
       rows: [
         ['Where should medication go?', 'With you, not in the hold'],
-        ['Personal-use limit?', 'Up to 500 g/ml per unit, 2 kg/l in total (IATA/ICAO, as cited by Israir)'],
+        ['Personal-use limit?', 'Up to 500 g or 500 ml per unit, 2 kg or 2 litres in total (IATA/ICAO, as cited by Israir)'],
         ['Adrenaline syringe?', 'Medical certificate for airport security'],
         ['Cold medication?', 'Soft cooler with ice; no fridge on board'],
         ['Blood samples?', 'Completely banned']

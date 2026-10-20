@@ -532,3 +532,8 @@ Also session 36 alcohol/perfume round (optional, TO REQUEST): /airline/<slug>/al
 - https://canitakethis.co/airline/korean-air/medication/ — TO REQUEST
 - https://canitakethis.co/airline/china-eastern/medication/ — TO REQUEST
 - https://canitakethis.co/airline/arkia/medication/ — TO REQUEST
+- https://canitakethis.co/airline/virgin-atlantic/medication/ — TO REQUEST
+- https://canitakethis.co/airline/vietnam-airlines/medication/ — TO REQUEST
+- https://canitakethis.co/airline/volaris/medication/ — TO REQUEST
+- https://canitakethis.co/airline/ita-airways/medication/ — TO REQUEST
+- https://canitakethis.co/airline/sunexpress/medication/ — TO REQUEST
