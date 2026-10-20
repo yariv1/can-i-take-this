@@ -1,5 +1,11 @@
 # HARD RULE #1 (user, 2026-10-18): NEVER HAND OFF BEFORE QA AND DEBUG PROVE 100% (NOT 99.99%) THAT IT IS AS IT SHOULD BE WITH NO REGRESSIONS. Read at the start of EVERY session and confirm in the first reply (memory: feedback_qa_100_percent_before_handoff.md).
 
+## SESSION 36 HANDOFF BLOCK (2026-10-20) - READ FIRST after HARD RULE #1
+**State:** origin/main `0d136c61e` LIVE. Airline vape/liquids/alcohol/perfume/power = 82/82. Airline Medication tab = 60/82 LIVE (airline_medication.js + airline_medication_b7..b10.js). Full detail: memory `project_blog_roadmap.md` section 17.
+**Remaining 22 airline Medication pages:** aeromexico, air-china, alaska-airlines, arkia, china-eastern, china-southern, egyptair, el-after, hawaiian-airlines, indigo, israir, ita-airways, japan-airlines, korean-air, kuwait-airways, lot-polish, middle-east-airlines, saudia, sunexpress, vietnam-airlines, virgin-atlantic, volaris (blocked/thin/denied notes in memory section 17).
+**Rules:** source ladder (official -> unofficial amber -> global), zero narration, LIVE canitakethis.co links after deploy (localhost only for review), deploy only on "deploy", 100% QA before handoff, ONE session.
+**Next:** ask ONE question (continue remaining airline Medication / Wi-Fi 12 / compensation 67 / country generic pages), then BIG batches.
+
 ## SESSION 35 HANDOFF BLOCK (2026-10-18) - READ FIRST, after HARD RULE #1 above
 **State:** origin/main `7a69e7fb3` LIVE and fully deployed (every change of the session). One local docs commit (this block + DEPLOY_FLOW addendum) may be unpushed: push it with the next deploy. The full detailed handoff lives in the memory file `project_blog_roadmap.md` (sections 1-11); this block is the in-repo copy of the essentials.
 
