@@ -516,3 +516,13 @@ Also session 36 alcohol/perfume round (optional, TO REQUEST): /airline/<slug>/al
 - https://canitakethis.co/airline/royal-air-maroc/medication/ — TO REQUEST
 - https://canitakethis.co/airline/air-europa/medication/ — TO REQUEST
 - https://canitakethis.co/airline/eurowings/medication/ — TO REQUEST
+
+## 2026-10-20 airline medication batch 10, TO REQUEST
+- https://canitakethis.co/airline/copa-airlines/medication/ — TO REQUEST
+- https://canitakethis.co/airline/south-african-airways/medication/ — TO REQUEST
+- https://canitakethis.co/airline/royal-jordanian/medication/ — TO REQUEST
+- https://canitakethis.co/airline/aegean/medication/ — TO REQUEST
+- https://canitakethis.co/airline/air-arabia/medication/ — TO REQUEST
+- https://canitakethis.co/airline/azul/medication/ — TO REQUEST
+- https://canitakethis.co/airline/oman-air/medication/ — TO REQUEST
+- https://canitakethis.co/airline/malaysia-airlines/medication/ — TO REQUEST
