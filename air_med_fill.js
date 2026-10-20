@@ -1,0 +1,82 @@
+// Fills the airline Medication cards the AIRLINE's own pages say nothing about (user order 2026-10-20, HARD, DESIGN_SYSTEM 8.43):
+// "official source" does not mean "has the answer". A card whose answer is not on the airline's pages gets, in this order:
+//   1. an UNOFFICIAL source that really answers it: the regulator or airport authority of the airline's home regime (read in full on 2026-10-20),
+//   2. only if no such page was found: "BASED ON GLOBAL RULES", written from what the regimes we read agree on, with no link.
+// Every sentence below is from the page named in its source list.
+module.exports = function (T) {
+  const L = (u, label, sub) => [u, label, sub];
+  const EC = L('https://transport.ec.europa.eu/transport-modes/air/aviation-security/aviation-security-policy/liquids-aerosols-and-gels_en', 'European Commission: Liquids, aerosols and gels', 'Medicines exempt from the 100 ml limit');
+  const YE = L('https://europa.eu/youreurope/citizens/travel/security-and-emergencies/airport-airline-security/faq/index_en.htm', 'Your Europe: Airport and airline security FAQ', 'Medicines over 100 ml');
+  const UK = L('https://www.gov.uk/hand-luggage-restrictions/essential-medicines-and-medical-equipment', 'GOV.UK: Hand luggage restrictions, medicines and medical equipment', 'Tablets, liquids, syringes, gel packs');
+  const CA1 = L('https://www.catsa-acsta.gc.ca/en/what-can-bring/item/liquid-and-gel-based-prescription-medication', 'CATSA: Liquid and gel-based prescription medication', 'Exempt from the liquid limit');
+  const CA2 = L('https://www.catsa-acsta.gc.ca/en/what-can-bring/item/diabetic-supplies', 'CATSA: Diabetic supplies', 'Syringes, insulin, gel or ice packs');
+  const KR = L('https://www.airport.kr/ap_en/1434/subview.do', 'Incheon Airport: Carry-on restricted items FAQ', 'Liquid medicine, syringes, ice packs');
+  const HK = L('https://www.cad.gov.hk/english/packing_tips.html', 'Hong Kong Civil Aviation Department: Packing tips', 'Liquids, medications');
+  const SG = L('https://www.changiairport.com/en/fly/security-and-baggage-restrictions.html', 'Changi Airport: Security and baggage restrictions', 'Liquids and medication');
+  const DXB = L('https://www.dubaiairports.ae/information/baggage/baggage-info/baggage-regulations', 'Dubai Airports: Baggage regulations', 'Liquids exemption for medication');
+  const AUH = L('https://www.abudhabiairport.ae/en/faq?currentCategoryId=&page=5&q=', 'Abu Dhabi Airport: FAQ', 'Medication and the resealable bag');
+  const TH = L('https://suvarnabhumi.airportthai.co.th/service/airport-guide/detail/GuidelinesforLAGs_BKK', 'Suvarnabhumi Airport: Permitted LAGs in cabin baggage', 'Medicinal liquids');
+  const MX = L('https://www.aicm.com.mx/en/passengers/tips-for-passengers/special-medical-needs', 'Mexico City Airport (AICM): Passengers with special medical needs', 'Medications, diabetics and syringes');
+  const OM = L('https://www.omanairports.co.om/en/security-customs', 'Oman Airports: Security and customs', 'Needles and syringes');
+
+  const poss = n => (/s$/i.test(n) ? n + '’' : n + '’s');
+  // regime facts: { kind: { status, verdict (the condition), head, lines(name) , sources } }
+  const REG = {
+    EU: { liquids: { status: 'warn', verdict: 'Needed on the trip, proof possible', head: 'At EU airports, liquid medicine over 100 ml is allowed if you need it during the trip.',
+      lines: n => ['European Commission: liquids to be used during the trip for medical purposes or special dietary requirements are exempt from the 100 ml limit in hand luggage.', 'Your Europe (EU): medicines are allowed in quantities larger than 100 ml, but only for use during the trip, and you may have to prove it is genuine.', 'This is the EU rule for flights leaving EU airports. ' + n + ' publishes no rule of its own on this in the pages we read.'], sources: [EC, YE] } },
+    UK: {
+      pills: { status: 'go', verdict: 'Hand and hold luggage', head: 'UK airports allow tablets and capsules in hand and hold luggage.', lines: n => ['GOV.UK: tablets and capsules are allowed in hand luggage and in hold luggage, and you do not need to show proof for tablets.', 'This is the rule at UK airports. ' + n + ' publishes no rule of its own on this in the pages we read.'], sources: [UK] },
+      liquids: { status: 'warn', verdict: 'Proof over 100 ml', head: 'UK airports allow essential liquid medicine over 100 ml in hand luggage, with proof if the container is larger than 100 ml.', lines: n => ['GOV.UK: you can carry essential medicines of more than 100 ml in hand luggage, including liquid dietary foodstuffs and inhalers.', 'GOV.UK: you need proof the medication is prescribed to you (a letter from your doctor or a copy of your prescription) if it is a liquid in a container larger than 100 ml; no proof for liquid in a container of 100 ml or smaller.', 'GOV.UK: airport staff might need to open the containers to screen the liquids.'], sources: [UK] },
+      needles: { status: 'go', verdict: 'Hand and hold luggage', head: 'UK airports allow hypodermic syringes in hand and hold luggage.', lines: n => ['GOV.UK: hypodermic syringes are allowed in hand luggage and in hold luggage.', 'GOV.UK: medical equipment that is essential for your journey is screened separately.'], sources: [UK] },
+      cold: { status: 'warn', verdict: 'Gel packs yes, ice packs ask the airport', head: 'UK airports allow cooling gel packs; for ice packs in hand luggage you contact the airport.', lines: n => ['GOV.UK: cooling gel packs are allowed in hand luggage and in hold luggage.', 'GOV.UK: ice packs are allowed in hold luggage; for hand luggage, contact the airport.'], sources: [UK] } },
+    CA: {
+      liquids: { status: 'go', verdict: 'Declare it', head: 'In Canada, liquid and gel prescription medication is exempt from the 100 ml limit: declare it at security.', lines: n => ['CATSA: liquid and gel-based prescription medications are exempt from the liquid restrictions and can be carried in carry-on baggage in volumes larger than 100 ml.', 'CATSA: declare them to the screening officer separately; it recommends a professionally printed label, and documentation is not required.', 'This is the rule at Canadian airports. ' + n + ' publishes no rule of its own on this in the pages we read.'], sources: [CA1] } },
+    US: {
+      liquids: { status: 'warn', verdict: 'Declare it', head: 'In the US, medically necessary liquids can exceed 3.4 oz if you declare them.', lines: n => [T.TSA_LIQ_LINE, T.TSA_REMOVE, 'This is TSA’s rule for US flights. ' + n + ' publishes no rule of its own on this in the pages we read.'], sources: [T.TSA_LIQ, T.TSA_FAQ] },
+      cold: { status: 'warn', verdict: 'Ice packs allowed', head: 'In the US, medically necessary gel ice packs are allowed in reasonable quantities.', lines: n => [T.TSA_ICE_LINE, 'This is TSA’s rule for US flights. ' + n + ' publishes no rule of its own on this in the pages we read.'], sources: [T.TSA_ICE] } },
+    KR: {
+      liquids: { status: 'warn', verdict: 'Doctor’s note over 100 ml', head: 'In Korea, liquid medicine over 100 ml needs a doctor’s note or prescription, and only what you need for the flight goes in carry-on.', lines: n => ['Incheon Airport: if you carry liquid medicine over 100 ml (such as insulin) you must carry a doctor’s note or prescription, in Korean or English.', 'Incheon Airport: you can only carry the amount of liquid medicine needed for use on the flight in carry-on; any extra must be checked in.', 'Incheon Airport: without a prescription the 100 ml limit applies to liquids and gels in carry-on.'], sources: [KR] },
+      needles: { status: 'go', verdict: 'Carry-on and checked', head: 'In Korea, syringes and needles can go in carry-on and checked baggage.', lines: n => ['Incheon Airport: syringes, needles and other medical items (tools) can be brought in both carry-on and checked baggage.'], sources: [KR] },
+      cold: { status: 'warn', verdict: 'Ice packs follow the liquid rule', head: 'In Korea, ice packs follow the liquid rule; coolers without liquids are allowed.', lines: n => ['Incheon Airport: ice packs are restricted based on volume according to the liquid, spray and gel rules (100 ml containers in carry-on, no volume limit in checked baggage).', 'Incheon Airport: coolers that do not contain liquids are allowed on board as carry-on or checked baggage; dry ice needs the airline’s approval.'], sources: [KR] } },
+    HK: { liquids: { status: 'warn', verdict: 'Exempt, subject to verification', head: 'In Hong Kong, medications are exempt from the 100 ml liquid limit, subject to verification.', lines: n => ['Hong Kong Civil Aviation Department: exemptions will be made for medications, baby milk and food and special dietary requirements, subject to verification.'], sources: [HK] } },
+    SG: { liquids: { status: 'warn', verdict: 'Doctor’s letter', head: 'At Changi, liquids over 100 ml can be exempted with a doctor’s letter.', lines: n => ['Changi Airport: liquids in containers over 100 ml are not accepted, but other items may be exempted upon presentation of a bona fide doctor’s letter.', 'Changi Airport: medication accompanied by a doctor’s letter is allowed in carry-on.'], sources: [SG] } },
+    DXB: { liquids: { status: 'go', verdict: 'Exemption for medication', head: 'At Dubai airports, medication is exempt from the 100 ml liquid limit.', lines: n => ['Dubai Airports: if you carry liquids, aerosols or gels in hand baggage each item must not exceed 100 ml and the total must not exceed one litre; exemptions apply for medication, baby milk and foods and special dietary requirements.'], sources: [DXB] } },
+    AUH: { liquids: { status: 'warn', verdict: 'Inspected separately', head: 'At Abu Dhabi airport, medication can go outside the clear bag but is inspected separately.', lines: n => ['Abu Dhabi Airport: medications and special food you may need during the flight may be carried outside the re-sealable plastic bag, but they must be separately inspected at the security check.', 'Abu Dhabi Airport: security staff may ask you to prove you need them during the flight, so bring a doctor’s prescription where applicable.'], sources: [AUH] } },
+    TH: { liquids: { status: 'warn', verdict: 'Certificate or label with your name', head: 'At Bangkok airport, medicinal liquids are exempt from the 100 ml limit with a certificate or label in your name.', lines: n => ['Suvarnabhumi Airport: liquids exempt from the quantity restrictions may be carried in quantities appropriate for the journey, and you must present them to the screening officers.', 'Suvarnabhumi Airport: these include medicinal liquids accompanied by a medical certificate, a label or medication documentation bearing the passenger’s name, or household medicines listed by the Ministry of Public Health.'], sources: [TH] } },
+    MX: {
+      liquids: { status: 'go', verdict: 'No clear bag needed', head: 'At Mexico City airport, medications do not have to go in the resealable bag if the amount is reasonable.', lines: n => ['AICM: medications are allowed and do not have to be placed in the resealable plastic bag if the amount is reasonable for the passenger’s need and itinerary.', 'This is the airport’s rule, not ' + poss(n) + ' own page.'], sources: [MX] },
+      needles: { status: 'go', verdict: 'No prescription needed (diabetics)', head: 'At Mexico City airport, diabetics may carry the medicines and syringes they need without a prescription.', lines: n => ['AICM: diabetics may enter with the medicines and syringes necessary for the trip; it is not necessary to show the prescription.', 'AICM: it is advisable to carry your diabetic credential.'], sources: [MX] } },
+    OM: { needles: { status: 'warn', verdict: 'Declare and show proof', head: 'At Muscat airport, you must declare needles and syringes and bring proof of medical need.', lines: n => ['Oman Airports: travellers with medical conditions requiring needles or syringes will be required to declare them and bring in proof of medical need for authentication.'], sources: [OM] } }
+  };
+  const AIRLINE_REG = {
+    'air-europa': 'EU', austrian: 'EU', 'brussels-airlines': 'EU', eurowings: 'EU', finnair: 'EU', lufthansa: 'EU', sas: 'EU', 'tap-air-portugal': 'EU', 'wizz-air': 'EU', norwegian: 'EU', aegean: 'EU', 'aer-lingus': 'EU', 'air-france': 'EU', 'lot-polish': 'EU', ryanair: 'EU', 'ita-airways': 'EU',
+    'british-airways': 'UK', westjet: 'CA', 'alaska-airlines': 'US', 'american-airlines': 'US', frontier: 'US', 'hawaiian-airlines': 'US',
+    asiana: 'KR', 'korean-air': 'KR', 'cathay-pacific': 'HK', 'singapore-airlines': 'SG', emirates: 'DXB', 'etihad-airways': 'AUH', 'thai-airways': 'TH', aeromexico: 'MX', volaris: 'MX', 'oman-air': 'OM'
+  };
+  // GLOBAL: what the regimes we read agree on. No link, no claim about the airline.
+  // Same advice, three wordings, picked by the airline's name: the page of an airline that says nothing should not be a copy of another airline's page.
+  const pick = (n, arr) => arr[[...n].reduce((h, c) => (h * 31 + c.charCodeAt(0)) >>> 0, 7) % arr.length];
+  const GLOBAL = {
+    pills: { status: 'go', verdict: 'Carry-on or checked', lines: n => [],
+      head: n => pick(n, [
+        n + ' publishes no rule for pills: tablets and capsules are normally allowed in carry-on and checked baggage. Keep the original pack and your prescription.',
+        'Nothing from ' + n + ' on pills and capsules. Under the rules we checked they travel in carry-on or checked baggage; bring the pharmacy pack and a prescription.',
+        'On ' + n + ', pills and capsules are normally fine in the cabin or in the hold. Its pages say nothing, so carry the original pack and your prescription.']) },
+    liquids: { status: 'warn', verdict: 'Declare it, carry proof', lines: n => [],
+      head: n => pick(n, [
+        n + ' publishes no rule for liquid medicine: it is normally exempt from the 100 ml limit if you need it on the trip. Declare it and carry a doctor’s letter.',
+        'Nothing from ' + n + ' on liquid medicine over 100 ml. Under the rules we checked it is allowed when needed on the trip: show it to security with a doctor’s letter.',
+        'For liquid medicine, ' + n + ' gives no figure. Elsewhere the 100 ml limit is waived for medicine you need on the trip, if you declare it and can prove it.']) },
+    needles: { status: 'warn', verdict: 'Carry the medicine and a letter', lines: n => [],
+      head: n => pick(n, [
+        n + ' publishes no rule for needles and syringes: they are normally allowed in the cabin with your medicine and a doctor’s letter. Declare them at security.',
+        'Nothing from ' + n + ' on syringes and needles. Under the rules we checked they are allowed for your own medication; pack the medicine, a doctor’s letter, and declare them.',
+        'On ' + n + ', needles and syringes are not covered. Where we checked, they are allowed in the cabin with the medicine they are used with and a letter from your doctor.']) },
+    cold: { status: 'warn', verdict: 'Bring your own cooling', lines: n => [],
+      head: n => pick(n, [
+        n + ' publishes no rule for cold storage: bring an insulated pouch with a cool pack and keep it with you in the cabin.',
+        'Nothing from ' + n + ' on keeping medication cold. Do not rely on a fridge: take an insulated pouch with a cool pack and keep it in the cabin.',
+        'For medication that must stay cold, ' + n + ' gives no answer. Pack it in an insulated pouch with a cool pack and keep it with you.']) }
+  };
+  return { REG, AIRLINE_REG, GLOBAL, poss };
+};

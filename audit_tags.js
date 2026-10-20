@@ -63,3 +63,27 @@ if (bad.length) {
   process.exit(1);
 }
 console.log('OK tag system (' + tags + ' tags on ' + pages + ' pages, ' + answers + ' answers; ' + Object.keys(STATUS).length + ' status labels, ' + Object.keys(TYPE).length + ' types)');
+
+// VERDICT WORDS (DESIGN_SYSTEM 8.42, user order 2026-10-20, HARD): the big title of every card is one of five plain answers, the same on every page type
+const VERDICTS = ['Allowed', 'Some rules apply', 'Not allowed', 'No clear answer', 'No matches found', 'Depends on the destination'];
+(function () {
+  const v = [];
+  const dup = [];
+  function walk(d) {
+    for (const e of fs.readdirSync(d, { withFileTypes: true })) {
+      if (e.name === '.claude' || e.name === 'node_modules' || e.name.startsWith('.git')) continue;
+      const p = path.join(d, e.name);
+      if (e.isDirectory()) walk(p);
+      else if (e.name === 'index.html' && /^airline[\/][^\/]+[\/]medication[\/]/.test(path.relative(__dirname, p))) {
+        const h = fs.readFileSync(p, 'utf8');
+        for (const m of h.matchAll(/<div class="pass (?:go|warn|stop|info|nomatch)[^"]*"><div class="strip">[\s\S]*?<div class="verdict">([^<]*)<\/div>/g)) if (VERDICTS.indexOf(m[1]) < 0) v.push(path.relative(__dirname, p) + ': card title "' + m[1] + '"');
+      }
+    }
+  }
+  walk(path.join(__dirname, 'airline'));
+  // the old vague words must not come back anywhere
+  for (const f of ['canitakethis.html', 'build.js']) { const s = fs.readFileSync(path.join(__dirname, f), 'utf8'); for (const w of ["info:'Check the source'", '>Check the source<', "warn:'Check first'"]) if (s.includes(w)) dup.push(f + ' contains "' + w + '"'); }
+  const all = v.concat(dup);
+  if (all.length) { console.log('FAIL verdict words:\n' + all.slice(0, 15).join('\n') + (all.length > 15 ? '\n... ' + all.length + ' total' : '')); process.exit(1); }
+  console.log('OK verdict words: every airline medication card title is one of ' + VERDICTS.length + ' plain answers');
+})();

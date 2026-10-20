@@ -13,15 +13,16 @@ module.exports = function typeahead(a, SCEN, medCard, esc, orig) {
   // a card named 'banned' (airline bans specific medicines on some routes) answers those medicines
   const BANNED = /^(Tramadol)$/;
   // The answer is never an empty "not published": if the airline's page has no card for this form (needles, liquid medicine), the answer is the airline's GENERAL medicine card (pills) plus one line saying that no specific rule is published for this form. If there is no general card either, the answer is the site-wide "Check the source" card.
-  const realIds = ids.filter(i => i !== 'unknown' && i !== 'abroad');
+  const status = {}; SCEN.forEach(x => { status[x.id] = x.status; });
+  const has = id => ids.indexOf(id) > -1 && status[id] !== 'info';   // a card with a real answer
   const formOf = e => (e.injectable ? 'needles' : (e.liquid ? 'liquids' : 'pills'));
   const FORMTXT = { needles: 'needles and syringes', liquids: 'liquid medicine over 100 ml', pills: 'this kind of medicine' };
   const resolve = e => {
-    if (ids.indexOf('banned') > -1 && BANNED.test(e.ing)) return { card: 'banned', extra: '' };
+    if (has('banned') && BANNED.test(e.ing)) return { card: 'banned', extra: '' };
     const f = formOf(e);
-    if (ids.indexOf(f) > -1) return { card: f, extra: '' };
-    if (f !== 'pills' && ids.indexOf('pills') > -1) return { card: 'pills', extra: poss(a.name) + ' page gives no specific rule for ' + FORMTXT[f] + ': ask ' + a.name + ' and check the security rules at your departure airport.' };
-    return { card: ids.indexOf('unknown') > -1 ? 'unknown' : realIds[0], extra: '' };
+    if (has(f)) return { card: f, extra: '' };
+    if (f !== 'pills' && has('pills')) return { card: 'pills', extra: poss(a.name) + ' page gives no specific rule for ' + FORMTXT[f] + ': ask ' + a.name + ' and check the security rules at your departure airport.' };
+    return { card: ids.indexOf(f) > -1 ? f : ids[0], extra: '' };
   };
   const items = PT.appVar('MED_DB').map(e => ({
     n: e.n, sub: e.ing, card: resolve(e).card,

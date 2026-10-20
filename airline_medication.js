@@ -39,29 +39,42 @@ const ABROAD_LINES = [
 const HOME = { 'copa-airlines': 'panama', 'south-african-airways': 'south-africa', 'royal-jordanian': 'jordan', aegean: 'greece', 'air-arabia': 'united-arab-emirates', azul: 'brazil', 'oman-air': 'oman', 'malaysia-airlines': 'malaysia', westjet: 'canada', 'virgin-australia': 'australia', icelandair: 'iceland', 'ethiopian-airlines': 'ethiopia', gol: 'brazil', transavia: 'netherlands', pegasus: 'turkey', flydubai: 'united-arab-emirates', 'gulf-air': 'bahrain', 'kenya-airways': 'kenya', asiana: 'south-korea', 'philippine-airlines': 'philippines', 'royal-air-maroc': 'morocco', 'air-europa': 'spain', eurowings: 'germany', 'wizz-air': 'hungary', 'thai-airways': 'thailand', 'qatar-airways': 'qatar', ana: 'japan', frontier: 'united-states', 'british-airways': 'united-kingdom', delta: 'united-states', 'american-airlines': 'united-states', united: 'united-states', southwest: 'united-states', jetblue: 'united-states', ryanair: 'ireland', 'aer-lingus': 'ireland', emirates: 'united-arab-emirates', 'etihad-airways': 'united-arab-emirates', 'air-canada': 'canada', lufthansa: 'germany', klm: 'netherlands', easyjet: 'united-kingdom', 'air-france': 'france', 'turkish-airlines': 'turkey', qantas: 'australia', 'singapore-airlines': 'singapore', 'cathay-pacific': 'hong-kong', vueling: 'spain', iberia: 'spain', finnair: 'finland', sas: 'sweden', 'air-india': 'india', latam: 'chile', 'air-new-zealand': 'new-zealand', 'tap-air-portugal': 'portugal', avianca: 'colombia', swiss: 'switzerland', austrian: 'austria', 'brussels-airlines': 'belgium', norwegian: 'norway', 'lot-polish': 'poland', israir: 'israel', 'el-al': 'israel', arkia: 'israel', 'korean-air': 'south-korea', 'china-eastern': 'china', aeromexico: 'mexico', 'air-china': 'china', 'alaska-airlines': 'united-states', 'china-southern': 'china', egyptair: 'egypt', 'hawaiian-airlines': 'united-states', indigo: 'india', 'japan-airlines': 'japan', 'virgin-atlantic': 'united-kingdom', 'vietnam-airlines': 'vietnam', volaris: 'mexico', 'ita-airways': 'italy', sunexpress: 'turkey' };
 const HOMENAME = { egypt: 'Egypt', india: 'India', poland: 'Poland', vietnam: 'Vietnam', mexico: 'Mexico', italy: 'Italy', israel: 'Israel', china: 'China', panama: 'Panama', 'south-africa': 'South Africa', jordan: 'Jordan', greece: 'Greece', oman: 'Oman', malaysia: 'Malaysia', iceland: 'Iceland', ethiopia: 'Ethiopia', brazil: 'Brazil', bahrain: 'Bahrain', kenya: 'Kenya', 'south-korea': 'South Korea', philippines: 'the Philippines', morocco: 'Morocco', hungary: 'Hungary', thailand: 'Thailand', qatar: 'Qatar', japan: 'Japan', 'united-states': 'the United States', ireland: 'Ireland', 'united-arab-emirates': 'the UAE', canada: 'Canada', germany: 'Germany', netherlands: 'the Netherlands', 'united-kingdom': 'the UK', france: 'France', turkey: 'Turkey', australia: 'Australia', singapore: 'Singapore', 'hong-kong': 'Hong Kong', spain: 'Spain', finland: 'Finland', sweden: 'Sweden', india: 'India', chile: 'Chile', 'new-zealand': 'New Zealand', portugal: 'Portugal', colombia: 'Colombia', switzerland: 'Switzerland', austria: 'Austria', belgium: 'Belgium', norway: 'Norway' };
 const SLUG = a => a.name.toLowerCase().replace(/&/g, 'and').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+const OWN = require('./air_med_own.js');
+const FILL = require('./air_med_fill.js')({ TSA_LIQ_LINE, TSA_REMOVE, TSA_LIQ, TSA_FAQ, TSA_ICE_LINE, TSA_ICE });
 const GENERIC_LINE = /not say|does not say|do not say|set by the security rules|gives no|give no|plan to carry your own cooling|depend on the airports|does not cover|do not cover|did not display|not state/i;
 // canonical chip names (DESIGN_SYSTEM 8.41); a chip not listed here is a specific scenario of that airline and keeps its own name
-const CHIP = { pills: 'Pills & tablets', liquids: 'Liquid medication', needles: 'Insulin & syringes', cold: 'Cold medication', devices: 'Medical devices', allergy: 'Allergy medication', controlled: 'Controlled medication', abroad: 'Flying abroad', unknown: 'Other medicine' };
+const CHIP = { pills: 'Pills & tablets', liquids: 'Liquid medication', needles: 'Insulin & syringes', cold: 'Cold medication', devices: 'Medical devices', allergy: 'Allergy medication', controlled: 'Controlled medication', abroad: 'Flying abroad' };
 const UNK = { pills: 'ordinary pills and tablets', liquids: 'the liquid limit for medication', needles: 'the rule for needles and syringes', cold: 'cold storage or a fridge', devices: 'the rule for medical equipment', allergy: 'allergy medication' };
 function polish(scen, a) {
   const sl = SLUG(a), home = HOME[sl], HN = home && HOMENAME[home], name = a.name;
-  const merged = [], keep = [];
-  for (const c of scen) {
-    if (c.verdict === 'Not published' && UNK[c.id] && c.lines.every(l => GENERIC_LINE.test(l))) merged.push(c); else keep.push(c);
-  }
-  let out = keep.slice();
-  if (merged.length) {
-    const labels = merged.map(c => UNK[c.id]);
-    const titles = [...new Set(merged.map(c => String(c.sources[0][1]).replace(/^[^:]+: /, '')))];
-    const srcs = []; const seen = new Set();
-    merged.forEach(c => c.sources.forEach(x => { if (!seen.has(x[0])) { seen.add(x[0]); srcs.push(x); } }));
-    const list = labels.length > 1 ? labels.slice(0, -1).join(', ') + ' and ' + labels[labels.length - 1] : labels[0];
-    const card = { id: 'unknown', label: 'Other medicine', status: 'info', verdict: 'Check the source', sub: 'What ' + name + ' does not say',
-      head: (/s$/i.test(name) ? name + '’' : name + '’s') + ' pages we read do not state ' + list + '.',
-      lines: ['Page read: ' + titles.join('; ') + '.', 'Where an airline is silent, the rule of the airport you fly from applies: check its security rules, or ask ' + name + ' before you rely on it.'], sources: srcs, first: false };
-    const ai = out.findIndex(c => c.id === 'abroad' || c.id === 'uae');
-    if (ai < 0) out.push(card); else out.splice(ai, 0, card);
-  }
+  const poss = /s$/i.test(name) ? name + '’' : name + '’s';
+  // One chip set on every airline (user order 2026-10-20): Pills, Liquid, Insulin & syringes, Cold, then the airline's own scenarios, then Flying abroad.
+  // When the airline's pages say nothing about a kind, its card is the site-wide unknown state (info, "Check the source") naming that airline and that kind: never a merged "other" card.
+  const BASE = ['pills', 'liquids', 'needles', 'cold'];
+  const SUB = { pills: 'Keep it with you', liquids: 'Over 100 ml (3.4 oz)', needles: 'Needles, syringes, injections', cold: 'Medication that must stay cold', devices: 'Medical devices', allergy: 'Emergency medication' };
+  const WHAT = { pills: 'ordinary pills and tablets', liquids: 'liquid medication over 100 ml', needles: 'needles and syringes', cold: 'cold storage or a fridge', devices: 'medical equipment', allergy: 'allergy medication' };
+  const real = scen.filter(c => !(c.verdict === 'Not published' && UNK[c.id] && c.lines.every(l => GENERIC_LINE.test(l))));
+  const realSrcs = []; { const seen = new Set(); real.forEach(c => (c.sources || []).forEach(x => { if (!seen.has(x[0])) { seen.add(x[0]); realSrcs.push(x); } })); }
+  const titles = [...new Set(realSrcs.map(x => String(x[1]).replace(/^[^:]+: /, '')))].slice(0, 3);
+  // a kind the airline's pages say nothing about is answered by the regulator / airport of its home regime (UNOFFICIAL), else by the global rules (no link): never an empty card
+  const regId = FILL.AIRLINE_REG[sl];
+  const silent = id => {
+    const w = OWN[sl] && OWN[sl][id];   // the airline's own other pages first (official)
+    if (w) return { id, label: CHIP[id] || id, status: w.status, verdict: w.verdict, sub: SUB[id] || '', head: w.head, lines: w.lines, sources: w.sources, srcKind: 'official', first: false };
+    const f = regId && FILL.REG[regId] && FILL.REG[regId][id];
+    if (f) return { id, label: CHIP[id] || id, status: f.status, verdict: f.verdict, sub: SUB[id] || '', head: name + ': ' + f.head.charAt(0).toLowerCase() + f.head.slice(1), lines: f.lines(name).map((l, i) => (i < 2 ? 'For ' + name + ': ' + l : l)), sources: f.sources, srcKind: 'unofficial', first: false };
+    const g = FILL.GLOBAL[id];
+    if (g) return { id, label: CHIP[id] || id, status: g.status, verdict: g.verdict, sub: SUB[id] || '', head: g.head(name), lines: g.lines(name), sources: [], srcKind: 'global', first: false };
+    return null;
+  };
+  const byId = {};
+  scen.forEach(c => { if (!byId[c.id]) byId[c.id] = c; });
+  const asSilent = c => (c.verdict === 'Not published' && !!UNK[c.id]);
+  let out = [];
+  BASE.forEach(id => { const c = byId[id]; if (!c || asSilent(c)) out.push(silent(id)); else out.push(c); });
+  const ABR = c => c.id === 'abroad' || c.id === 'uae';
+  scen.forEach(c => { if (BASE.indexOf(c.id) > -1 || ABR(c) || byId[c.id] !== c) return; if (asSilent(c)) return; out.push(c); });
+  scen.forEach(c => { if (ABR(c) && byId[c.id] === c) out.push(c); });
   out = out.map(c => {
     if (c.id !== 'abroad') return c;
     const rest = c.lines.filter(l => l !== ABROAD_LINES[0] && l !== ABROAD_LINES[1]);
@@ -72,7 +85,18 @@ function polish(scen, a) {
   out = out.map(c => (c.verdict === 'Not published' ? Object.assign({}, c, { status: 'info', verdict: 'Check the source' }) : c));
   // one name per kind of card on every airline page (user order 2026-10-20: same label = same meaning, everywhere)
   out = out.map(c => (CHIP[c.id] ? Object.assign({}, c, { label: CHIP[c.id] }) : c));
-  out.forEach((c, i) => { c.first = i === 0; });
+  // The big title of EVERY card is the plain answer, the same five words on every page (user order 2026-10-20, DESIGN_SYSTEM 8.42);
+  // the condition that used to be the title moves to the small line under it. "Check the source" / "Check the destination" are gone.
+  const VERD = { go: 'Allowed', warn: 'Some rules apply', stop: 'Not allowed', info: 'No clear answer' };
+  out = out.map(c => {
+    const generic = ['Allowed', 'Not allowed', 'Check the source', 'Check the destination', 'Not published'].indexOf(c.verdict) > -1;
+    if (c.id === 'abroad') return Object.assign({}, c, { verdict: 'Depends on the destination', sub: 'International flights', srcKind: 'global', sources: [] }); // the airline's page does not say this: never an "official source" link
+    if (c.status === 'info') return Object.assign({}, c, { verdict: VERD.info, sub: 'Not stated by ' + name });
+    return Object.assign({}, c, { verdict: VERD[c.status] || c.verdict, sub: generic ? c.sub : c.verdict });
+  });
+  // the card that opens first is the first one with a real answer (never a "Check the source" card)
+  const fi = Math.max(0, out.findIndex(c => c.status !== 'info'));
+  out.forEach((c, i) => { c.first = i === fi; });
   return out;
 }
 
@@ -85,7 +109,7 @@ function add(cfg) {
     h1: cfg.h1, ttl: cfg.h1, desc: cfg.desc, answer: cfg.answer, faq: cfg.faq,
     render: a => COMP.__render(a, polish(cfg.scen, a), cfg.srcNote, { slab: 'What are you bringing?', tag: 'MEDICATION', legend: LEGEND, srcKind: 'ok', checked: CK, medStyle: true, unofficial: cfg.unofficial ? ('The rules above are taken from unofficial sources. It doesn’t mean that they are not correct, just not officially from ' + cfg.name + '. To be more sure and learn further, please check the links placed here above.') : undefined }) +
       '<div class="bd-wrap">' + CSS + '<section class="bd-sec"><h2>💊 ' + esc(cfg.tableTitle) + '</h2><p>' + cfg.tableNote + '</p>' +
-      table({ head: ['Question', cfg.name + ' says'], rows: cfg.rows }) + '</section>' + (cfg.extra || '') +
+      table({ head: ['Question', cfg.name + ' says'], rows: cfg.rows.filter(r => r[1] !== NP && !/^Not published/.test(r[1])) }) + '</section>' + (cfg.extra || '') +
       '<p class="bd-chk">Last checked ' + CK + ' on ' + (cfg.unofficial ? 'unofficial sources' : esc(cfg.name) + '\'s own pages') + (/tsa\.gov/.test(JSON.stringify(cfg.scen)) ? ' and on tsa.gov' : (/catsa/.test(JSON.stringify(cfg.scen)) ? ' and on catsa-acsta.gc.ca' : '')) + '. We re-check regularly because airline' + (/tsa\.gov/.test(JSON.stringify(cfg.scen)) ? ' and TSA' : '') + ' rules change.</p></div>'
   };
 }

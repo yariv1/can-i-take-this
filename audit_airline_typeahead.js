@@ -75,7 +75,7 @@ console.log('OK airline typeahead (' + n + ' medication pages)');
 
 // one chip name per kind of card on every airline medication page (DESIGN_SYSTEM 8.41)
 (function () {
-  const CHIP = { pills: 'Pills &amp; tablets', liquids: 'Liquid medication', needles: 'Insulin &amp; syringes', cold: 'Cold medication', devices: 'Medical devices', allergy: 'Allergy medication', controlled: 'Controlled medication', abroad: 'Flying abroad', unknown: 'Other medicine' };
+  const CHIP = { pills: 'Pills &amp; tablets', liquids: 'Liquid medication', needles: 'Insulin &amp; syringes', cold: 'Cold medication', devices: 'Medical devices', allergy: 'Allergy medication', controlled: 'Controlled medication', abroad: 'Flying abroad' };
   const bad = [];
   for (const d of fs.readdirSync(path.join(__dirname, 'airline'))) {
     const fp = path.join(__dirname, 'airline', d, 'medication', 'index.html');

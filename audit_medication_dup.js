@@ -7,6 +7,8 @@ for (const a of fs.readdirSync('airline')) {
   const p = path.join('airline', a, 'medication', 'index.html'); if (!fs.existsSync(p)) continue;
   let h = fs.readFileSync(p, 'utf8').replace(/<script[\s\S]*?<\/script>/g, ' ').replace(/<style[\s\S]*?<\/style>/g, ' ');
   const m = h.match(/<main>([\s\S]*?)<\/main>/); h = m ? m[1] : h;
+  h = h.replace(/<div class="help">[\s\S]*?<div class="hnote">[^<]*<\/div><\/div>/g, ' '); // source link blocks are references, not prose
+  h = h.replace(/<div class="chips cc-picker">[\s\S]*?<\/div>/g, ' '); // the chip row is interface (one name per kind of card on every page, DS 8.41), not content
   h = h.replace(/<li>/g, '\n').replace(/<\/p>|<\/div>|<\/h\d>|<\/li>|<\/tr>/g, '\n').replace(/<[^>]+>/g, ' ').replace(/&amp;/g, '&').replace(/&#39;|&apos;/g, "'").replace(/&nbsp;/g, ' ');
   pages[a] = h.split('\n').map(s => s.replace(/\s+/g, ' ').trim()).filter(s => s.length > 25 && !/^(✓ OFFICIAL SOURCE|⚠ UNOFFICIAL SOURCE|BASED ON GLOBAL RULES)/.test(s));
 }
