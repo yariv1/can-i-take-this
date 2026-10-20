@@ -537,3 +537,11 @@ Also session 36 alcohol/perfume round (optional, TO REQUEST): /airline/<slug>/al
 - https://canitakethis.co/airline/volaris/medication/ — TO REQUEST
 - https://canitakethis.co/airline/ita-airways/medication/ — TO REQUEST
 - https://canitakethis.co/airline/sunexpress/medication/ — TO REQUEST
+- https://canitakethis.co/airline/japan-airlines/medication/ — TO REQUEST
+- https://canitakethis.co/airline/air-china/medication/ — TO REQUEST
+- https://canitakethis.co/airline/china-southern/medication/ — TO REQUEST
+- https://canitakethis.co/airline/egyptair/medication/ — TO REQUEST
+- https://canitakethis.co/airline/indigo/medication/ — TO REQUEST
+- https://canitakethis.co/airline/aeromexico/medication/ — TO REQUEST
+- https://canitakethis.co/airline/alaska-airlines/medication/ — TO REQUEST
+- https://canitakethis.co/airline/hawaiian-airlines/medication/ — TO REQUEST

@@ -48,3 +48,15 @@ console.log('OK airline typeahead (' + n + ' medication pages)');
   if (bad.length) { console.log('FAIL typeahead without clear (x) on ' + bad.length + ' pages, e.g. ' + bad.slice(0, 5).join(', ')); process.exit(1); }
   console.log('OK every typeahead has the clear (x) (' + n + ' pages)');
 })();
+
+// an airline medication answer is never an amber "Not published" verdict: the unknown state is the site-wide info card "Check the source"
+(function () {
+  const bad = [];
+  for (const d of fs.readdirSync(path.join(__dirname, 'airline'))) {
+    const fp = path.join(__dirname, 'airline', d, 'medication', 'index.html');
+    if (!fs.existsSync(fp)) continue;
+    if (/class="verdict">Not published/.test(fs.readFileSync(fp, 'utf8'))) bad.push(d);
+  }
+  if (bad.length) { console.log('FAIL "Not published" verdict card on: ' + bad.slice(0, 8).join(', ')); process.exit(1); }
+  console.log('OK no "Not published" verdict cards on airline medication pages');
+})();
