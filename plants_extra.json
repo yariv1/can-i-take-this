@@ -1679,5 +1679,132 @@
     "The lists give no allowance for plants in a traveller’s bag."
    ]
   }
+ },
+ "Costa Rica": {
+  "date": "SFE page read 21 October 2026",
+  "ttl": "Seeds & Plants into Costa Rica: Permit Rules 2026",
+  "desc": "Bringing plants or seeds into Costa Rica (2026): Do not bring plants or seeds without a permit.",
+  "lead": "Costa Rica’s State Phytosanitary Service (SFE) regulates the entry of plant material to keep new agricultural pests out. Its page for passengers and tourists lists seeds, fruit, plants and cuttings among the plant items, and tells you to ask the SFE for the requirements before you bring one home from a trip. Plant material that arrives without the legal procedures done is held or destroyed.",
+  "rows": [
+   [
+    "Seeds",
+    "Plant item: ask the SFE for its phytosanitary requirements before you bring it"
+   ],
+   [
+    "Fruit",
+    "Plant item: ask the SFE for its phytosanitary requirements before you bring it"
+   ],
+   [
+    "Plants, cuttings and tubers",
+    "Plant items: ask the SFE for the requirements first"
+   ],
+   [
+    "Growing media such as coconut fibre or peat",
+    "Listed among the plant items"
+   ],
+   [
+    "Some wood, and souvenirs made of plant fibre",
+    "Some types of wood (depending on treatment) and some souvenirs such as baskets, bags or hats of wicker, bamboo or banana fibre are listed as plant items"
+   ],
+   [
+    "Requirements",
+    "They vary with the form of the product and the country it comes from, so each case is assessed, whether it is a commercial shipment or an item for your own use at home"
+   ],
+   [
+    "Without the legal procedures",
+    "The item is held or destroyed for safety, depending on the case"
+   ]
+  ],
+  "notes": [
+   "<strong>Where to ask:</strong> the page points to the Ventanilla Única de Comercio at Procomer for the phytosanitary requirements of a product.",
+   "<strong>Not read:</strong> the page gives no list of items allowed in a traveller’s bag and no weight limits, so we do not state any."
+  ],
+  "faq": [
+   [
+    "Can I bring seeds or plants into Costa Rica?",
+    "The SFE lists seeds, plants, cuttings and tubers as plant items with phytosanitary requirements that depend on the product and its country of origin. Ask the SFE before you bring them."
+   ],
+   [
+    "Can I bring fruit into Costa Rica?",
+    "Fruit is listed as a plant item. The SFE says the requirements vary by product and origin, and plant material that enters without the legal procedures is held or destroyed."
+   ],
+   [
+    "Can I bring a wicker or bamboo souvenir into Costa Rica?",
+    "The SFE lists some plant-fibre souvenirs, such as baskets, bags and hats of wicker, bamboo or banana fibre, among the plant items, so check the requirement first."
+   ]
+  ],
+  "src": [
+   [
+    "https://www.sfe.go.cr/SitePages/Tramites/ComprasenLinea.aspx",
+    "SFE Costa Rica — online purchases and restricted products for crews, passengers and tourists"
+   ]
+  ],
+  "keepSchema": true,
+  "card": {
+   "status": "warn",
+   "head": "Ask the SFE first - plant items can be held or destroyed.",
+   "lines": [
+    "The SFE lists seeds, fruit, plants, cuttings, tubers and some plant-fibre souvenirs as plant items with phytosanitary requirements.",
+    "The requirements depend on the product and the country it comes from.",
+    "Plant material that enters without the legal procedures is held or destroyed."
+   ]
+  }
+ },
+ "Indonesia": {
+  "date": "Indonesian Agricultural Quarantine Agency pages read 21 October 2026",
+  "ttl": "Can You Bring Seeds & Plants into Indonesia? Permit Rules (2026)",
+  "desc": "Bringing plants or seeds into Indonesia (2026): Do not bring plants or seeds without a permit.",
+  "lead": "Indonesia’s Agricultural Quarantine Agency requires every plant or plant product entering the country to have a phytosanitary certificate from the country of origin, to come in through a designated entry point and to be reported to the plant quarantine officer on arrival. Seeds and seedlings also need an import permit from the Minister of Agriculture, and fresh fruit has extra conditions. The pages describe imports in general and do not set a separate rule for a traveller’s bag.",
+  "rows": [
+   [
+    "Plants and plant products",
+    "Need a phytosanitary certificate from the country of origin (and from any transit country), must enter through a designated entry point and must be reported and handed to the plant quarantine officer on arrival"
+   ],
+   [
+    "Seeds and seedlings",
+    "Also need an import permit (SIP) from the Minister of Agriculture, applied for online"
+   ],
+   [
+    "Fresh fruit",
+    "Must enter through a designated point (Tanjung Perak Surabaya, Belawan Medan, Soekarno-Hatta airport Jakarta, Soekarno-Hatta seaport Makassar) and be treated by cold treatment, irradiation or methyl bromide fumigation"
+   ],
+   [
+    "Items that do not meet the rules",
+    "Refused entry"
+   ]
+  ],
+  "notes": [
+   "<strong>Not read:</strong> the pages do not give a small-quantity allowance for a traveller, so we do not state one. Report any plant material to the quarantine officer and ask before you pack it."
+  ],
+  "faq": [
+   [
+    "Can I bring seeds or plants into Indonesia?",
+    "Plants and plant products need a phytosanitary certificate from the country of origin and must be reported to the quarantine officer on arrival. Seeds and seedlings also need an import permit from the Minister of Agriculture."
+   ],
+   [
+    "Can I bring fresh fruit into Indonesia?",
+    "Fresh fruit must enter through one of four designated points, including Soekarno-Hatta airport in Jakarta, and be treated by cold treatment, irradiation or fumigation, on top of the phytosanitary requirements."
+   ]
+  ],
+  "src": [
+   [
+    "https://karantina.pertanian.go.id/hal/IMPOR-TUMBUHAN-DAN-PRODUK-TUMBUHAN",
+    "Indonesian Agricultural Quarantine Agency — import requirements for plants and plant products"
+   ],
+   [
+    "https://tanjungpinang.karantina.pertanian.go.id/persyaratan-karantina-tumbuhan",
+    "Tanjungpinang Agricultural Quarantine Office — plant quarantine requirements"
+   ]
+  ],
+  "keepSchema": true,
+  "card": {
+   "status": "warn",
+   "head": "Plants need a phytosanitary certificate. Seeds need a permit.",
+   "lines": [
+    "Every plant or plant product needs a phytosanitary certificate from the country of origin and must be reported to the quarantine officer on arrival.",
+    "Seeds and seedlings also need an import permit from the Minister of Agriculture.",
+    "Fresh fruit may enter only through designated points and needs cold, irradiation or fumigation treatment."
+   ]
+  }
  }
 }
