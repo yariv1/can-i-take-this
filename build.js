@@ -1230,9 +1230,28 @@ ${CHK_BODY}
 </body></html>`);
   pages.push({url:'/',changefreq:'weekly'});
 
-  // copy the interactive app to /app/
-  fs.writeFileSync(path.join(OUT,'app.html'), FF.floorFonts(fs.readFileSync(SRC,'utf8')));
-  ensure(path.join(OUT,'app')); fs.writeFileSync(path.join(OUT,'app','index.html'), FF.floorFonts(fs.readFileSync(SRC,'utf8').replace('</head>','<style id="citt-global-ui">'+GLOBAL_UI_CSS+'</style></head>')));
+  // copy the interactive app to /app/. The SEO section under the app is the SAME block as the home page (user order 2026-10-21: one section = one look everywhere): taken from the built home page, never a separate copy.
+  var APP_SRC=(function(){
+    var END='</footer>\n</div>', NL='\n', AIRQ='<script>(function(){var q=document.getElementById("airq")';
+    var home=fs.readFileSync(path.join(OUT,'index.html'),'utf8'), src=fs.readFileSync(SRC,'utf8');
+    var hs=home.indexOf('<div class="seo">'), he=home.indexOf(END,hs)+END.length;
+    var blk=home.slice(hs,he);
+    var cssLines=home.split(NL).filter(function(l){return /^\.seo[ {.]/.test(l);}).join(NL);
+    var sc1=home.indexOf(AIRQ), sc2=home.indexOf('<script src="/feedback.js"');
+    var scripts=home.slice(sc1,sc2);
+    if(hs<0||he<hs||sc1<0||sc2<sc1||!cssLines)throw new Error('home seo block not found');
+    var as=src.indexOf('<div class="seo">'), ae=src.indexOf(END,as)+END.length;
+    if(as<0||ae<as)throw new Error('app seo block not found');
+    src=src.slice(0,as)+blk+src.slice(ae);
+    src=src.replace(/^\.seo[ {.][^\n]*\n/gm,'');
+    src=src.replace('</style>',cssLines+NL+'</style>');
+    var os=src.indexOf(AIRQ), oe=src.indexOf(NL,os)+1;
+    if(os<0)throw new Error('app airq script not found');
+    src=src.slice(0,os)+scripts+src.slice(oe);
+    return src;
+  })();
+  fs.writeFileSync(path.join(OUT,'app.html'), FF.floorFonts(APP_SRC));
+  ensure(path.join(OUT,'app')); fs.writeFileSync(path.join(OUT,'app','index.html'), FF.floorFonts(APP_SRC.replace('</head>','<style id="citt-global-ui">'+GLOBAL_UI_CSS+'</style></head>')));
 
 
   // ---------- GUIDES SECTION ----------
