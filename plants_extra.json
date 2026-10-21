@@ -1806,5 +1806,71 @@
     "Fresh fruit may enter only through designated points and needs cold, irradiation or fumigation treatment."
    ]
   }
+ },
+ "Nepal": {
+  "date": "Nepal AIP read 21 October 2026",
+  "ttl": "Can You Bring Seeds & Plants into Nepal? Permit Rules (2026)",
+  "desc": "Bringing plants or seeds into Nepal (2026): Do not bring plants or seeds without a permit.",
+  "lead": "Nepal’s Aeronautical Information Publication, issued by the Civil Aviation Authority, says plants, plant products and growing media such as soil and moss need an entry permit from the Plant Quarantine and Pesticide Management Centre, issued beforehand, and a phytosanitary certificate from the country of export. The documents go to the quarantine office before customs. Separately, a foreign passenger may bring fresh fruit worth up to Rs 2,000 without customs duty.",
+  "rows": [
+   [
+    "Plants and plant products",
+    "Need an entry permit issued beforehand by the Plant Quarantine and Pesticide Management Centre"
+   ],
+   [
+    "Soil, moss and other growing media",
+    "Need the same advance entry permit"
+   ],
+   [
+    "Phytosanitary certificate",
+    "Required, issued by the country of export, for any kind of plants or plant products regulated under the Plant Protection Act"
+   ],
+   [
+    "Where to go",
+    "The documents are presented at the quarantine office before you proceed to customs"
+   ],
+   [
+    "Protected species (CITES)",
+    "Prior permission of the concerned authority is needed to import or export protected wild plants and their parts"
+   ],
+   [
+    "Fresh fruit and customs duty",
+    "A foreign passenger holding a passport pays no customs duty on fresh fruit up to an aggregate value of Rs 2,000; this is a duty rule, not a quarantine exemption"
+   ]
+  ],
+  "notes": [
+   "<strong>Scope:</strong> the plant requirements sit in the section on cargo and other articles. The publication does not give a separate allowance for a few plants or seeds in a traveller’s bag, so ask the quarantine office before you pack them.",
+   "<strong>Date:</strong> the amendment is dated 30 April 2024."
+  ],
+  "faq": [
+   [
+    "Can I bring plants or seeds into Nepal?",
+    "Plants and plant products need an advance entry permit from the Plant Quarantine and Pesticide Management Centre and a phytosanitary certificate from the country of export, according to Nepal’s AIP. It gives no separate allowance for a small amount in your bag."
+   ],
+   [
+    "Can I bring soil into Nepal?",
+    "Soil, moss and other plant-growing media are on the list of regulated items that need the advance entry permit."
+   ],
+   [
+    "How much fresh fruit can I bring into Nepal?",
+    "A foreign passenger with a passport pays no customs duty on fresh fruit worth up to Rs 2,000. The AIP does not say this exempts the fruit from quarantine rules."
+   ]
+  ],
+  "src": [
+   [
+    "https://e-aip.caanepal.gov.np/_uploads/_pdf/41e27dcc2352870eeac952cbdf61f042.pdf",
+    "Civil Aviation Authority of Nepal — Aeronautical Information Publication, GEN 1.3 and 1.4 (amendment of 30 April 2024)"
+   ]
+  ],
+  "keepSchema": true,
+  "card": {
+   "status": "warn",
+   "head": "Plants need a permit and a phytosanitary certificate.",
+   "lines": [
+    "Plants, plant products, soil and moss need an advance entry permit from the Plant Quarantine and Pesticide Management Centre and a phytosanitary certificate from the country of export.",
+    "Present the documents at the quarantine office before customs.",
+    "Fresh fruit up to Rs 2,000 is duty-free for a foreign passenger, but the AIP does not waive quarantine rules for it."
+   ]
+  }
  }
 }
