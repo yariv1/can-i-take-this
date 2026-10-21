@@ -595,3 +595,6 @@ Lists: medicines Tylenol, Ibuprofen, Melatonin, Benadryl, Adderall, Sudafed (dem
 
 ### 8.45 Ticket label = the page's own category (HARD, 2026-10-21)
 The grey label on the right of a ticket's route line must name the page's own category (COMPENSATION, WI-FI, CUSTOMER SERVICE, MEDICATION; country pages: ENTERING + country + flag). The shared renderer in airline_compensation.js must never default to another category's label. Guards: `audit_ticket_labels.js` (airline pages), `audit_country_tickets.js` (country pages).
+
+### 8.46 "Probably worth knowing..." under an app card (HARD, 2026-10-21)
+No button inside a verdict card that sends the reader elsewhere. Under the Medication/Food card of the home app, a `.worth` section (20px title "Probably worth knowing...", about 46px below the card, 16px above the page footer block) lists question links (`.qlink`: accent colour, no box, underline on hover): 1) "Can I bring <item> into <country>?" (switches to Into the country), 2) a relevant article when we have one (`WORTH_ART` in canitakethis.html; medication: pill organizers vs original bottles).
