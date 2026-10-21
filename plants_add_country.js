@@ -24,6 +24,7 @@ else {
   desc = un(/<meta name="description" content="([^"]*)"/.exec(built)[1]);
 }
 const e = { date: spec.date, ttl, desc, lead: spec.lead, rows: spec.rows, notes: spec.notes || [], faq: spec.faq, src: spec.src.map(x => [x[0], x[1]]), keepSchema: true };
+if (spec.unofficial) e.unofficial = true;   // ladder step 2: a reliable named third party (UNOFFICIAL footer + amber heading)
 if (spec.card) e.card = spec.card;
 extra[spec.country] = e;
 fs.writeFileSync(EXTRA, JSON.stringify(extra, null, 1));
@@ -36,7 +37,7 @@ let depth = 0, i = objStart;
 for (; i < h.length; i++) { const c = h[i]; if (c === '{') depth++; else if (c === '}') { depth--; if (depth === 0) break; } else if (c === '"') { i++; while (h[i] !== '"') { if (h[i] === '\\') i++; i++; } } }
 const obj = JSON.parse(h.slice(objStart, i + 1));
 obj[spec.country] = obj[spec.country] || {};
-obj[spec.country].plants = spec.src.map(x => ({ label: (spec.srcPlain && spec.srcPlain[x[0]]) || un(x[1]).replace(/&mdash;/g, '—'), url: x[0] }));
+obj[spec.country].plants = spec.src.map(x => Object.assign({ label: (spec.srcPlain && spec.srcPlain[x[0]]) || un(x[1]).replace(/&mdash;/g, '—'), url: x[0] }, spec.unofficial ? { unofficial: true } : {}));
 h = h.slice(0, objStart) + JSON.stringify(obj) + h.slice(i + 1);
 fs.writeFileSync(FILE, h);
 console.log('plants_extra now has ' + Object.keys(extra).length + ' entries (added/updated ' + spec.country + ')');

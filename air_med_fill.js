@@ -98,5 +98,62 @@ module.exports = function (T) {
         'Nothing from ' + n + ' on keeping medication cold. Do not rely on a fridge: take an insulated pouch with a cool pack and keep it in the cabin.',
         'For medication that must stay cold, ' + n + ' gives no answer. Pack it in an insulated pouch with a cool pack and keep it with you.']) }
   };
-  return { REG, AIRLINE_REG, AIRLINE_REG_KIND, GLOBAL, poss };
+  // THIRD: step 2 of the ladder when neither the airline's pages nor its home regime answer a card: a reliable, named, third-party source read in full (UNOFFICIAL footer + link).
+  // Several wordings per kind, picked by the airline's name (the same sentence must not sit on many pages, audit_medication_dup).
+  const CDC = L('https://www.cdc.gov/yellow-book/hcp/travelers-with-additional-considerations/travelers-with-chronic-illnesses.html', 'CDC Yellow Book: Travelers with chronic illnesses', 'Medications in hand luggage');
+  const DUK = L('https://www.diabetes.org.uk/living-with-diabetes/life-with-diabetes/travel', 'Diabetes UK: Travelling with diabetes', 'Insulin, needles, cool bags, doctor’s letter');
+  const THIRD = {
+    pills: { status: 'warn', verdict: 'Hand luggage, original pack, doctor’s letter', sources: [CDC, DUK], variants: [
+      n => ({ head: n + ' gives no rule on pills. The CDC advises carrying all medication in hand luggage, in its original container.',
+        lines: ['CDC Yellow Book: all medications should be carried in hand luggage rather than in checked baggage.', 'CDC Yellow Book: bring all necessary medications in their original containers.'] }),
+      n => ({ head: 'Nothing from ' + n + ' on pills and capsules. The CDC says to pack enough for the trip plus extra, in your carry-on.',
+        lines: ['CDC Yellow Book: pack enough medicine for the whole trip and several days afterwards in case of delays, in your carry-on.', 'CDC Yellow Book: a letter from your healthcare professional should list your medications with generic names and doses.'] }),
+      n => ({ head: 'On ' + n + ', pills are not covered. Diabetes UK says there is no limit on tablets through security, but list them in your doctor’s letter.',
+        lines: ['Diabetes UK: there is no restriction on the number of tablets you can take through airport security.', 'Diabetes UK: the tablets should be mentioned in your doctor’s letter.'] }),
+      n => ({ head: n + ' does not address pills. The CDC says medicines belong in your carry-on, not in checked baggage.',
+        lines: ['CDC Yellow Book: carry medicines in your hand luggage, not in the hold.', 'CDC Yellow Book: keep all your necessary medications in the containers they came in.'] }),
+      n => ({ head: 'For pills and capsules, ' + n + ' gives no answer. The CDC advises a letter from your doctor that lists each medicine with its generic name and dose.',
+        lines: ['CDC Yellow Book: the letter should be on the clinic’s letterhead and list the medications prescribed, with generic names and doses.', 'CDC Yellow Book: it should also name allergies and any equipment you need for your condition.'] }),
+      n => ({ head: n + ' is silent on liquid medicine. Diabetes UK says some airlines ask for a doctor’s letter, so check with ' + n + ' before you fly.',
+        lines: ['Diabetes UK: a doctor’s letter is requested by some airlines and is helpful to show security if there is any confusion.', 'Diabetes UK: say in the letter if you need to carry medication in containers over 100 ml.'] }),
+      n => ({ head: 'On ' + n + ', liquid medicine over 100 ml is not covered. Diabetes UK says the ordinary limit is 100 ml, so explain larger containers in a doctor’s letter.',
+        lines: ['Diabetes UK: liquid items in hand luggage are only allowed in containers of 100 ml or less under current security rules.', 'Diabetes UK: the letter should cover your medication and any container over 100 ml that you need.'] }),
+      n => ({ head: n + ' says nothing on syringes. Diabetes UK tells diabetics to keep supplies in hand luggage and carry a doctor’s letter.',
+        lines: ['Diabetes UK: put insulin, diabetes medication and supplies in your hand luggage.', 'Diabetes UK: a letter from your doctor is useful if airport security is unsure about your supplies.'] }),
+      n => ({ head: 'For needles and syringes, ' + n + ' gives no answer. Diabetes UK says to ask the airline whether it wants a letter.',
+        lines: ['Diabetes UK: some airlines and other operators ask for a letter, so check before you travel.', 'Diabetes UK: the letter should describe your medication and the devices you use.'] }),
+      n => ({ head: n + ' has no word on cold storage. Diabetes UK says insulin damaged by heat can turn brownish or cloudy and should not be used.',
+        lines: ['Diabetes UK: insulin damaged by heat may have a brownish colour, and clear insulin may become cloudy.', 'Diabetes UK: do not use insulin that looks like this; a cool bag helps to keep it cool.'] }),
+      n => ({ head: 'On ' + n + ', keeping medication cold is not covered. Diabetes UK recommends a cool bag in your hand luggage, never frozen.',
+        lines: ['Diabetes UK: keep insulin cool in a cool bag, but make sure it does not freeze.', 'Diabetes UK: sensors and other device spares must go in hand luggage too, because hold X-rays can damage them.'] })
+    ] },
+    liquids: { status: 'warn', verdict: 'Doctor’s letter if over 100 ml', sources: [DUK], variants: [
+      n => ({ head: n + ' gives no figure for liquid medicine. Diabetes UK says to put any need for containers over 100 ml in your doctor’s letter.',
+        lines: ['Diabetes UK: the letter should include details of your medication and whether you need to carry it in containers over 100 ml.', 'Diabetes UK: some airlines ask for the letter, so check with the airline before you travel.'] }),
+      n => ({ head: 'Nothing from ' + n + ' on liquid medicine over 100 ml. Diabetes UK advises a letter from your doctor that explains the need.',
+        lines: ['Diabetes UK: a letter from your doctor can state that you need to carry medication in containers over 100 ml.', 'Diabetes UK: some airlines request the letter and it helps if security staff are unsure.'] }),
+      n => ({ head: 'For liquid medicine, ' + n + ' is silent. Diabetes UK says ordinary liquids in hand luggage must be 100 ml or less, so carry a letter for any larger medicine container.',
+        lines: ['Diabetes UK: current security rules allow liquids in hand luggage only in containers of 100 ml or less.', 'Diabetes UK: the doctor’s letter should say if you need medication in containers over 100 ml.'] })
+    ] },
+    needles: { status: 'warn', verdict: 'Hand luggage, doctor’s letter', sources: [DUK], variants: [
+      n => ({ head: n + ' gives no rule on needles and syringes. Diabetes UK says to carry insulin and supplies in hand luggage, with a doctor’s letter.',
+        lines: ['Diabetes UK: always carry insulin, other diabetes medication and supplies in your hand luggage.', 'Diabetes UK: a letter from your GP is requested by some airlines and helps if security is unsure.'] }),
+      n => ({ head: 'Nothing from ' + n + ' on syringes. Diabetes UK advises keeping them in hand luggage and bringing a letter that names your medication and devices.',
+        lines: ['Diabetes UK: the letter should give details of your medication and any devices you use.', 'Diabetes UK: insulin and other diabetes supplies belong in hand luggage, not in the hold.'] }),
+      n => ({ head: 'On ' + n + ', needles are not covered. Diabetes UK says some airlines want a doctor’s letter, so ask the airline before you fly.',
+        lines: ['Diabetes UK: check with the airline before you travel, as some airlines and operators ask for a letter.', 'Diabetes UK: pack your diabetes medication and supplies in your hand luggage.'] })
+    ] },
+    cold: { status: 'warn', verdict: 'Cool bag in the cabin, never frozen', sources: [DUK], variants: [
+      n => ({ head: n + ' gives no cold-storage rule. Diabetes UK says to keep insulin cool in a cool bag, as long as it does not freeze.',
+        lines: ['Diabetes UK: keep insulin cool in a cool bag, providing it does not freeze.', 'Diabetes UK: carry insulin in hand luggage; the hold can damage it.'] }),
+      n => ({ head: 'Nothing from ' + n + ' on cold storage. Diabetes UK advises a cool bag and keeping insulin away from frozen ice blocks.',
+        lines: ['Diabetes UK: if your cool bag uses plastic ice blocks, make sure the insulin does not touch the frozen plastic.', 'Diabetes UK: heat can damage insulin and stop it working properly.'] }),
+      n => ({ head: n + ' does not say how to keep medication cold. Diabetes UK: insulin goes in your hand luggage, since the hold is cold enough to damage it.',
+        lines: ['Diabetes UK: being in the hold can damage insulin because it is so cold, and luggage can be lost.', 'Diabetes UK: a cool bag is a good way to keep insulin cool, as long as it does not freeze.'] }),
+      n => ({ head: 'On ' + n + ', cold storage is not covered. Diabetes UK suggests a cool bag that does not let the insulin freeze, carried in the cabin.',
+        lines: ['Diabetes UK: you can also keep insulin cool in a hotel fridge if your room has one.', 'Diabetes UK: do not let insulin touch frozen plastic ice blocks in the cool bag.'] })
+    ] }
+  };
+  const third = (kind, n) => { const t = THIRD[kind]; if (!t) return null; const v = t.variants[[...n].reduce((h, c) => (h * 31 + c.charCodeAt(0)) >>> 0, 11) % t.variants.length](n); return { status: t.status, verdict: t.verdict, head: v.head, lines: v.lines, sources: t.sources }; };
+  return { REG, AIRLINE_REG, AIRLINE_REG_KIND, GLOBAL, THIRD, third, poss };
 };

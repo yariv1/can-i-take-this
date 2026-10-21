@@ -1840,7 +1840,7 @@
   ],
   "notes": [
    "<strong>Scope:</strong> the plant requirements sit in the section on cargo and other articles. The publication does not give a separate allowance for a few plants or seeds in a traveller’s bag, so ask the quarantine office before you pack them.",
-   "<strong>Date:</strong> the amendment is dated 30 April 2024."
+   "<strong>Date:</strong> the amendment is dated 30 April 2021; the 2024 edition says the same."
   ],
   "faq": [
    [
@@ -1858,8 +1858,8 @@
   ],
   "src": [
    [
-    "https://e-aip.caanepal.gov.np/_uploads/_pdf/41e27dcc2352870eeac952cbdf61f042.pdf",
-    "Civil Aviation Authority of Nepal — Aeronautical Information Publication, GEN 1.3 and 1.4 (amendment of 30 April 2024)"
+    "https://e-aip.caanepal.gov.np/_uploads/_pdf/e51c9943dcb3b3b76ea1b590f2ad35c5.pdf",
+    "Civil Aviation Authority of Nepal — Aeronautical Information Publication, GEN 1.3 and 1.4 (amendment of 30 April 2021)"
    ]
   ],
   "keepSchema": true,
@@ -1870,6 +1870,268 @@
     "Plants, plant products, soil and moss need an advance entry permit from the Plant Quarantine and Pesticide Management Centre and a phytosanitary certificate from the country of export.",
     "Present the documents at the quarantine office before customs.",
     "Fresh fruit up to Rs 2,000 is duty-free for a foreign passenger, but the AIP does not waive quarantine rules for it."
+   ]
+  }
+ },
+ "Saudi Arabia": {
+  "date": "UK government travel advice read 21 October 2026",
+  "ttl": "Seeds & Plants into Saudi Arabia: Permit Rules 2026",
+  "desc": "Bringing plants or seeds into Saudi Arabia (2026): Do not bring plants or seeds without a permit.",
+  "lead": "Saudi Arabia’s own plant-health rule for a traveller’s bag could not be read. The UK government’s travel advice for Saudi Arabia lists agricultural seeds among the items you may need special approval to bring in, and says you must declare anything that may be prohibited or subject to tax or duty.",
+  "rows": [
+   [
+    "Agricultural seeds",
+    "You may need special approval to bring them in"
+   ],
+   [
+    "Live animals",
+    "Also listed as needing special approval"
+   ],
+   [
+    "Anything that may be prohibited or taxed",
+    "Must be declared; the advice says items may be examined"
+   ]
+  ],
+  "notes": [
+   "<strong>Not read:</strong> the advice says nothing about live plants, cuttings or fresh fruit, so we do not state a rule for them. Ask the Ministry of Environment, Water and Agriculture before you pack plant material."
+  ],
+  "faq": [
+   [
+    "Can I bring seeds into Saudi Arabia?",
+    "The UK government’s advice says you may need special approval to bring agricultural seeds into Saudi Arabia."
+   ],
+   [
+    "Do I declare plants at Saudi customs?",
+    "The advice says you must declare anything that may be prohibited or subject to tax or duty."
+   ]
+  ],
+  "src": [
+   [
+    "https://www.gov.uk/foreign-travel-advice/saudi-arabia/entry-requirements",
+    "UK government (FCDO) — Saudi Arabia travel advice: entry requirements and customs rules"
+   ]
+  ],
+  "keepSchema": true,
+  "unofficial": true,
+  "card": {
+   "status": "warn",
+   "head": "Seeds may need special approval.",
+   "lines": [
+    "The UK government’s travel advice lists agricultural seeds among the items that may need special approval in Saudi Arabia.",
+    "Declare anything that may be prohibited or taxed.",
+    "The advice says nothing about live plants or fresh fruit."
+   ]
+  }
+ },
+ "Nigeria": {
+  "date": "UK government travel advice read 21 October 2026",
+  "ttl": "Can You Bring Seeds & Plants into Nigeria? Permit Rules (2026)",
+  "desc": "Bringing plants or seeds into Nigeria (2026): Do not bring plants or seeds without a permit.",
+  "lead": "Nigeria’s own plant-health rule for a traveller’s bag could not be read. The UK government’s travel advice for Nigeria says it is illegal to import fruits, vegetables and cereals, among other goods, and that you must declare anything that may be prohibited or subject to tax or duty.",
+  "rows": [
+   [
+    "Fruits",
+    "Illegal to import"
+   ],
+   [
+    "Vegetables",
+    "Illegal to import"
+   ],
+   [
+    "Cereals",
+    "Illegal to import"
+   ],
+   [
+    "Anything that may be prohibited or taxed",
+    "Must be declared"
+   ]
+  ],
+  "notes": [
+   "<strong>Not read:</strong> the advice does not mention seeds, live plants or cuttings, so we do not state a rule for them. Ask the Nigerian agricultural quarantine service before you pack plant material."
+  ],
+  "faq": [
+   [
+    "Can I bring fruit or vegetables into Nigeria?",
+    "No. The UK government’s advice lists fruits, vegetables and cereals among the goods it is illegal to import into Nigeria."
+   ],
+   [
+    "Can I bring seeds or plants into Nigeria?",
+    "The advice does not mention them. Declare them and ask the Nigerian authorities first."
+   ]
+  ],
+  "src": [
+   [
+    "https://www.gov.uk/foreign-travel-advice/nigeria/entry-requirements",
+    "UK government (FCDO) — Nigeria travel advice: entry requirements and customs rules"
+   ]
+  ],
+  "keepSchema": true,
+  "unofficial": true,
+  "card": {
+   "status": "stop",
+   "head": "No fruit, vegetables or cereals.",
+   "lines": [
+    "The UK government’s travel advice says it is illegal to import fruits, vegetables and cereals into Nigeria.",
+    "Declare anything that may be prohibited or taxed.",
+    "The advice does not cover seeds or live plants."
+   ]
+  }
+ },
+ "Lebanon": {
+  "date": "Beirut airport page read 21 October 2026",
+  "ttl": "Can You Bring Seeds & Plants into Lebanon? Permit Rules (2026)",
+  "desc": "Bringing plants or seeds into Lebanon (2026): Do not bring plants or seeds without a permit.",
+  "lead": "Lebanon’s own plant-health rule for a traveller’s bag could not be read. The website of Beirut’s airport, run by the Directorate General of Civil Aviation, says passengers arriving in Lebanon are prohibited from carrying fresh fruit and vegetables, because they can hold fruit-fly eggs and larvae that the eye cannot see.",
+  "rows": [
+   [
+    "Fresh fruit",
+    "Arriving passengers may not carry it"
+   ],
+   [
+    "Fresh vegetables",
+    "Arriving passengers may not carry them"
+   ],
+   [
+    "Why",
+    "They can contain fruit-fly eggs and larvae that are invisible to the naked eye, and the page asks travellers to help protect Lebanese farmers"
+   ]
+  ],
+  "notes": [
+   "<strong>Not read:</strong> the page says nothing about seeds, live plants or cuttings, so we do not state a rule for them. Ask the Lebanese Ministry of Agriculture before you pack plant material."
+  ],
+  "faq": [
+   [
+    "Can I bring fresh fruit or vegetables into Lebanon?",
+    "No. The Beirut airport website says passengers arriving in Lebanon are prohibited from carrying fresh fruit and vegetables."
+   ],
+   [
+    "Can I bring seeds or plants into Lebanon?",
+    "The airport page does not mention them. Ask the Ministry of Agriculture before you travel."
+   ]
+  ],
+  "src": [
+   [
+    "https://www.beirutairport.gov.lb/_page.php?page_id=52",
+    "Beirut-Rafic Hariri International Airport (Directorate General of Civil Aviation) — fresh fruit and vegetables (page in Arabic)"
+   ]
+  ],
+  "keepSchema": true,
+  "unofficial": true,
+  "card": {
+   "status": "stop",
+   "head": "No fresh fruit or vegetables.",
+   "lines": [
+    "The Beirut airport website says arriving passengers are prohibited from carrying fresh fruit and vegetables.",
+    "They can carry fruit-fly eggs and larvae you cannot see.",
+    "The page does not cover seeds or live plants."
+   ]
+  }
+ },
+ "Egypt": {
+  "date": "Cairo International Airport customs page read 21 October 2026",
+  "ttl": "Can You Bring Seeds & Plants into Egypt? Permit Rules (2026)",
+  "desc": "Bringing plants or seeds into Egypt (2026): Do not bring plants or seeds without a permit.",
+  "lead": "Egypt’s own plant-health rule for a traveller’s bag could not be read. Cairo International Airport’s customs page for arriving passengers says it is prohibited to bring any seeds or agricultural seedlings, to prevent pests being brought in, and that the quarantine office deals with them.",
+  "rows": [
+   [
+    "Seeds",
+    "Prohibited for arriving passengers"
+   ],
+   [
+    "Agricultural seedlings",
+    "Prohibited for arriving passengers"
+   ],
+   [
+    "Why",
+    "To prevent the transfer of pests; the quarantine office handles such items"
+   ],
+   [
+    "Items subject to customs collection",
+    "Must be disclosed to the customs director"
+   ]
+  ],
+  "notes": [
+   "<strong>Not read:</strong> the page says nothing about fruit, vegetables, cut flowers or other plants, so we do not state a rule for them. Ask the Agricultural Quarantine before you pack plant material."
+  ],
+  "faq": [
+   [
+    "Can I bring seeds into Egypt?",
+    "No. Cairo International Airport’s customs page says it is prohibited to bring any seeds or agricultural seedlings, to prevent the transfer of pests."
+   ],
+   [
+    "Can I bring fruit or other plants into Egypt?",
+    "The airport page does not say. Ask the Egyptian Agricultural Quarantine before you travel."
+   ]
+  ],
+  "src": [
+   [
+    "https://www.cairo-airport.com/en-us/Services/Passenger-Guide/Customs-Regulations",
+    "Cairo International Airport — Customs regulations for passengers arriving in Egypt"
+   ]
+  ],
+  "keepSchema": true,
+  "unofficial": true,
+  "card": {
+   "status": "stop",
+   "head": "No seeds or agricultural seedlings.",
+   "lines": [
+    "Cairo International Airport’s customs page says it is prohibited to bring any seeds or agricultural seedlings, to prevent pests.",
+    "The quarantine office deals with such items.",
+    "The page does not cover fruit or other plants."
+   ]
+  }
+ },
+ "Panama": {
+  "date": "Tocumen airport page read 21 October 2026",
+  "ttl": "Can You Bring Seeds & Plants into Panama? Permit Rules (2026)",
+  "desc": "Bringing plants or seeds into Panama (2026): Do not bring plants or seeds without a permit.",
+  "lead": "Panama’s own plant-health rule for a traveller’s bag could not be read. Tocumen airport’s page on arrivals says the customs form asks whether you bring fruit, meat, food or live animals, and that every live plant, and every product of plant or animal origin, must come with the phytosanitary or sanitary certificate issued by the country of origin.",
+  "rows": [
+   [
+    "Customs form",
+    "Asks whether you bring fruit, meat, food or live animals; one form per family"
+   ],
+   [
+    "Live plants",
+    "Must come with the phytosanitary certificate issued by the health authorities or agriculture ministry of the country of origin"
+   ],
+   [
+    "Products of plant origin",
+    "Must come with the same phytosanitary or sanitary certificate"
+   ],
+   [
+    "Foot-and-mouth disease",
+    "The page also bans products of cloven-hoofed animals from affected countries, such as fresh meat, fresh milk and fresh cheese"
+   ]
+  ],
+  "notes": [
+   "<strong>Not read:</strong> the page gives no list of plant products allowed in a traveller’s bag and no small-quantity allowance, so we do not state one. Ask MIDA, Panama’s agriculture ministry, before you pack plant material."
+  ],
+  "faq": [
+   [
+    "Can I bring plants or seeds into Panama?",
+    "Every live plant and every product of plant origin must come with the phytosanitary certificate of the country of origin, according to Tocumen airport’s customs page."
+   ],
+   [
+    "Do I declare fruit in Panama?",
+    "Yes. The customs form asks whether you bring fruit, meat, food or live animals."
+   ]
+  ],
+  "src": [
+   [
+    "https://www.tocumenpanama.aero/index.php/inmigracion/aduana",
+    "Tocumen International Airport — customs and quarantine for arriving passengers (page in Spanish)"
+   ]
+  ],
+  "keepSchema": true,
+  "unofficial": true,
+  "card": {
+   "status": "warn",
+   "head": "Plants need a phytosanitary certificate.",
+   "lines": [
+    "Tocumen airport says every live plant and plant product must come with the phytosanitary certificate of its country of origin.",
+    "The customs form asks whether you carry fruit, meat, food or live animals.",
+    "The page gives no list of what is allowed in a traveller’s bag."
    ]
   }
  }

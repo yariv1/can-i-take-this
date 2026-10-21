@@ -64,6 +64,8 @@ function polish(scen, a) {
     const rk = (FILL.AIRLINE_REG_KIND && FILL.AIRLINE_REG_KIND[sl] && FILL.AIRLINE_REG_KIND[sl][id]) || regId;
     const f = rk && FILL.REG[rk] && FILL.REG[rk][id];
     if (f) return { id, label: CHIP[id] || id, status: f.status, verdict: f.verdict, sub: SUB[id] || '', head: name + ': ' + f.head.charAt(0).toLowerCase() + f.head.slice(1), lines: f.lines(name).map((l, i) => (i < 2 ? 'For ' + name + ': ' + l : l)), sources: f.sources, srcKind: 'unofficial', first: false };
+    const t3 = FILL.third(id, name);   // ladder step 2: a reliable named third-party source (UNOFFICIAL footer); global only if this fails too
+    if (t3) return { id, label: CHIP[id] || id, status: t3.status, verdict: t3.verdict, sub: SUB[id] || '', head: t3.head, lines: t3.lines, sources: t3.sources, srcKind: 'unofficial', first: false };
     const g = FILL.GLOBAL[id];
     if (g) return { id, label: CHIP[id] || id, status: g.status, verdict: g.verdict, sub: SUB[id] || '', head: g.head(name), lines: g.lines(name), sources: [], srcKind: 'global', first: false };
     return null;

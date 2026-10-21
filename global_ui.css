@@ -61,3 +61,6 @@ html body .tag.tag-blue{background:rgba(90,150,255,.2);color:var(--tg-blue);font
 html body .tag.tag-teal{background:rgba(50,200,180,.2);color:var(--tg-teal);font-weight:700}
 /* DS 8.44 popular suggestions: clicking an empty typeahead field lists the most searched items under this small heading; they disappear when the user types */
 .suggest .sughead{padding:10px 14px 6px;font-family:'Space Mono',monospace;font-size:14px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);border-bottom:1px solid var(--bg);cursor:default}
+/* DS 8.21 unofficial source on country plants pages: amber heading and one reason line */
+html body .bd-src .h.un{color:var(--tg-amber)}
+.bd-src .bd-unr{margin:.2em 0 .6em;font-weight:300}
