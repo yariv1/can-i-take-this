@@ -997,5 +997,687 @@
     "Up to 3 kg of fruit and vegetables and one bouquet are allowed; seeds, seedlings and cuttings are not, whatever the amount."
    ]
   }
+ },
+ "Cuba": {
+  "date": "Cuban Customs page read 21 October 2026",
+  "ttl": "Can You Bring Seeds & Plants into Cuba? Permit Rules (2026)",
+  "desc": "Bringing plants or seeds into Cuba (2026): High-risk - usually needs a permit. Live plants, seeds, soil and cuttings are tightly controlled.",
+  "lead": "Cuban Customs publishes the plant and animal health rules that apply to what you bring into Cuba. Its list of absolute prohibitions includes plants and plant parts, fresh fruit and vegetables, seeds, and soil or organic matter in any form. Only canned vegetables of recognised brands are listed among the facilities.",
+  "rows": [
+   [
+    "Plants or parts of plants",
+    "Absolutely prohibited"
+   ],
+   [
+    "Fresh fruit and vegetables",
+    "Absolutely prohibited"
+   ],
+   [
+    "Seeds",
+    "Absolutely prohibited"
+   ],
+   [
+    "Soil or organic matter",
+    "Absolutely prohibited in any form"
+   ],
+   [
+    "Agricultural and forestry products",
+    "Absolutely prohibited"
+   ],
+   [
+    "Canned vegetables",
+    "Listed as a facility when they are from recognised brands"
+   ]
+  ],
+  "notes": [
+   "<strong>Who sets the rules:</strong> the page says the Veterinary Medicine Institute and the National Plant Health Centre of the Ministry of Agriculture publish these rules to keep pests and diseases out.",
+   "<strong>Not read:</strong> the page does not say whether any permit can lift a prohibition, so we do not state one."
+  ],
+  "faq": [
+   [
+    "Can I bring plants or seeds into Cuba?",
+    "No. Cuban Customs lists plants or parts of plants, fresh fruit and vegetables and seeds among the absolute prohibitions."
+   ],
+   [
+    "Can I bring soil into Cuba?",
+    "No. Soil or organic matter in any form is on the same list of absolute prohibitions."
+   ],
+   [
+    "Can I bring canned vegetables into Cuba?",
+    "The page lists canned vegetables of recognised brands among the facilities, so they are the exception to the ban on vegetables."
+   ]
+  ],
+  "src": [
+   [
+    "https://www.aduana.gob.cu/pagina-basica/disposiciones-fitosanitarias-y-veterinarias",
+    "Aduana de Cuba — disposiciones fitosanitarias y veterinarias"
+   ]
+  ],
+  "keepSchema": true,
+  "card": {
+   "status": "stop",
+   "head": "Banned - no plants, seeds or fresh produce.",
+   "lines": [
+    "Cuban Customs lists plants or parts of plants, fresh fruit and vegetables and seeds as absolutely prohibited.",
+    "Soil or organic matter in any form is prohibited too.",
+    "Canned vegetables of recognised brands are the exception the page lists."
+   ]
+  }
+ },
+ "Peru": {
+  "date": "SENASA page read 21 October 2026",
+  "ttl": "Can You Bring Seeds & Plants into Peru? Permit Rules (2026)",
+  "desc": "Bringing plants or seeds into Peru (2026): High-risk - usually needs a permit. Live plants, seeds, soil and cuttings are tightly controlled.",
+  "lead": "SENASA, Peru’s agricultural health service, lists the plant products you may carry in your baggage, up to 1 kg, and says everything else needs its prior authorisation. Soil is not allowed, and you must declare plant products on your customs declaration before the customs check.",
+  "rows": [
+   [
+    "Dried herbs, spices, flours, grains (up to 1 kg)",
+    "Allowed in your baggage; the SENASA inspector only checks them. The list covers industrially dried medicinal and aromatic herbs, dried cut flowers and foliage, industrially dried fruit and vegetables, ground herbs and spices, fresh or dried edible mushrooms, flours, starches and semolina, grains and whole spices"
+   ],
+   [
+    "More than 1 kg of those products",
+    "You must follow SENASA’s rules and find out before you travel"
+   ],
+   [
+    "Fresh or naturally dried fruit and flowers",
+    "Need SENASA’s prior authorisation; they cannot come in your baggage without the plant-health controls"
+   ],
+   [
+    "Plants or parts of plants, wood, live insects",
+    "Need SENASA’s prior authorisation, like any other item SENASA regulates"
+   ],
+   [
+    "Soil or earth",
+    "Not allowed"
+   ],
+   [
+    "Declaration",
+    "Declare the plant products you carry on your customs declaration before the customs check"
+   ]
+  ],
+  "notes": [
+   "<strong>Questions:</strong> the page gives scv@senasa.gob.pe for questions about a specific product.",
+   "<strong>Not read:</strong> the page does not name seeds in its list of allowed products. Check them with SENASA before you pack."
+  ],
+  "faq": [
+   [
+    "Can I bring seeds into Peru?",
+    "The SENASA page does not list seeds among the products allowed in baggage, and says items it regulates need its prior authorisation. Ask SENASA at scv@senasa.gob.pe before you travel."
+   ],
+   [
+    "Can I bring plants into Peru?",
+    "Plants or parts of them need SENASA’s prior authorisation and cannot come in your baggage without the plant-health controls."
+   ],
+   [
+    "Can I bring soil into Peru?",
+    "No. SENASA states that soil or earth is not allowed."
+   ]
+  ],
+  "src": [
+   [
+    "https://www.gob.pe/institucion/senasa/campa%C3%B1as/6969-amigo-viajero",
+    "SENASA Peru — ¡Amigo viajero!"
+   ]
+  ],
+  "keepSchema": true,
+  "card": {
+   "status": "warn",
+   "head": "Only dried products up to 1 kg - plants need approval.",
+   "lines": [
+    "Dried herbs, spices, flours and grains, up to 1 kg, may come in your baggage.",
+    "Fresh fruit, flowers, plants or parts of plants need SENASA’s prior authorisation. Soil is not allowed.",
+    "Declare plant products on your customs declaration."
+   ]
+  }
+ },
+ "Taiwan": {
+  "date": "BAPHIQ and APHIA pages read 21 October 2026",
+  "ttl": "Can You Bring Seeds & Plants into Taiwan? Permit Rules (2026)",
+  "desc": "Bringing plants or seeds into Taiwan (2026): High-risk - usually needs a permit. Live plants, seeds, soil and cuttings are tightly controlled.",
+  "lead": "Taiwan’s animal and plant health agency says passengers cannot bring any fresh fruit from any country into Taiwan. All plants or plant products you carry must be declared on arrival, and not declaring is fined NT$3,000 or more. Live plants, seeds, bulbs and soil are on the agency’s list of items that must go through quarantine.",
+  "rows": [
+   [
+    "Fresh fruit",
+    "Not allowed from any country; the ban on passengers carrying fresh fruit dates from 1 October 1998"
+   ],
+   [
+    "Live plants, seeds and bulbs",
+    "Listed as items that must go through plant quarantine; they must meet the Plant Protection and Quarantine Act"
+   ],
+   [
+    "Soil and live insects",
+    "On the same list of items that must go through quarantine"
+   ],
+   [
+    "Vegetables, cut flowers and branches",
+    "On the list of items that must go through quarantine, fresh or chilled vegetables included"
+   ],
+   [
+    "Dried plants, herbs and spices, cereals",
+    "On the list of items that must go through quarantine"
+   ],
+   [
+    "Declaration",
+    "Declare all plants and plant products you carry to the quarantine agency or customs when you arrive"
+   ],
+   [
+    "Fine for not declaring",
+    "NT$3,000 or more"
+   ]
+  ],
+  "notes": [
+   "<strong>Not read:</strong> the pages list what must be quarantined but do not say which seeds or plants can be cleared, so we do not state which items are permitted."
+  ],
+  "faq": [
+   [
+    "Can I bring fresh fruit into Taiwan?",
+    "No. BAPHIQ says passengers cannot bring any fresh fruit from any country into Taiwan."
+   ],
+   [
+    "Can I bring seeds or plants into Taiwan?",
+    "Live plants, including seeds and bulbs, must go through plant quarantine and meet the Plant Protection and Quarantine Act. Declare them on arrival."
+   ],
+   [
+    "What is the fine for not declaring plants in Taiwan?",
+    "The APHIA page gives a fine of NT$3,000 or more for failing to declare plants or plant products."
+   ]
+  ],
+  "src": [
+   [
+    "https://www.baphiq.gov.tw/office/klbaphiq/en/ws.php?id=5400",
+    "BAPHIQ — Can passengers bring fresh fruits into Taiwan?"
+   ],
+   [
+    "https://www.aphia.gov.tw/office/khaphia/en/ws.php?id=729",
+    "APHIA Kaohsiung — plant quarantine, passenger quarantine"
+   ]
+  ],
+  "keepSchema": true,
+  "card": {
+   "status": "stop",
+   "head": "No fresh fruit. Declare all plants and seeds.",
+   "lines": [
+    "Passengers cannot bring any fresh fruit from any country into Taiwan.",
+    "Live plants, seeds, bulbs and soil must go through plant quarantine.",
+    "Not declaring plants or plant products is fined NT$3,000 or more."
+   ]
+  }
+ },
+ "Russia": {
+  "date": "Rosselkhoznadzor page read 21 October 2026",
+  "ttl": "Can You Bring Seeds & Plants into Russia? Permit Rules (2026)",
+  "desc": "Bringing plants or seeds into Russia (2026): High-risk - usually needs a permit. Live plants, seeds, soil and cuttings are tightly controlled.",
+  "lead": "Rosselkhoznadzor, Russia’s agricultural safety service, says anyone arriving with plant products in hand luggage or baggage must show them to the plant-health inspector at the border. Seeds, planting material and potatoes need a phytosanitary certificate from your country of departure. Other plant products up to 5 kg need no certificate.",
+  "rows": [
+   [
+    "Seeds and planting material",
+    "Need a phytosanitary certificate issued by the plant-protection organisation of the country you travel from. The list covers seeds, bulbs, seedlings, tubers, root tubers, rhizomes, cuttings, layers and live plants with soil, including pot plants"
+   ],
+   [
+    "Potatoes (seed or food)",
+    "Need a phytosanitary certificate"
+   ],
+   [
+    "Other plant products",
+    "Up to 5 kg in hand luggage and baggage without a certificate, as long as they are not seeds, planting material or potatoes"
+   ],
+   [
+    "Infested plant products",
+    "Banned; goods that do not meet the plant-health rules are sent back, seized or destroyed"
+   ],
+   [
+    "Showing them at the border",
+    "Show plant products to the inspector who carries out plant-health control at the border crossing"
+   ],
+   [
+    "Fine",
+    "The page cites an administrative fine of 300 to 500 rubles for individuals under article 10.2 of the Code of Administrative Offences"
+   ]
+  ],
+  "notes": [
+   "<strong>Country limits:</strong> the page also lists temporary limits on plant products arriving from certain countries (Ukraine, Moldova, Azerbaijan, Tajikistan, Uzbekistan), in letters dated 2012 to 2014. We did not check whether they still apply, so check before you travel from those countries.",
+   "<strong>Date:</strong> the page shows it was last changed on 6 January 2023."
+  ],
+  "faq": [
+   [
+    "Can I bring seeds into Russia?",
+    "Only with a phytosanitary certificate issued by the plant-protection organisation of the country you travel from, and you must show them to the plant-health inspector."
+   ],
+   [
+    "How much fruit or vegetables can I bring into Russia?",
+    "Up to 5 kg of plant products without a phytosanitary certificate, provided they are not seeds, planting material or potatoes."
+   ],
+   [
+    "Can I bring potted plants into Russia?",
+    "Live plants with soil, including pot plants, need a phytosanitary certificate from the country you travel from."
+   ]
+  ],
+  "src": [
+   [
+    "https://178.fsvps.gov.ru/rekomendacii-fizicheskim-licam-o-porjadke-peremeshhenija-cherez-tamozhennuju-granicu-evrazijskogo-jekonomicheskogo-sojuza-produkcii-rastitelnogo-proishozhdenija/",
+    "Rosselkhoznadzor — recommendations for individuals on plant products"
+   ]
+  ],
+  "keepSchema": true,
+  "card": {
+   "status": "warn",
+   "head": "Up to 5 kg of plant products. Seeds and plants need a certificate.",
+   "lines": [
+    "Seeds, bulbs, cuttings, live plants with soil and potatoes need a phytosanitary certificate from the country you travel from.",
+    "Other plant products are allowed up to 5 kg without a certificate.",
+    "Show all plant products to the border plant-health inspector."
+   ]
+  }
+ },
+ "Malaysia": {
+  "date": "Department of Agriculture page read 21 October 2026",
+  "ttl": "Can You Bring Seeds & Plants into Malaysia? Permit Rules (2026)",
+  "desc": "Bringing plants or seeds into Malaysia (2026): High-risk - usually needs a permit. Live plants, seeds, soil and cuttings are tightly controlled.",
+  "lead": "Malaysia’s Department of Agriculture says planting material such as seeds, seedlings, cuttings and tissue culture needs an import permit from MAQIS, the quarantine service, plus a phytosanitary certificate from the country it comes from. Soil may not come with planting material.",
+  "rows": [
+   [
+    "Seeds, seedlings, cuttings, tissue culture",
+    "Need an import permit from MAQIS and a phytosanitary certificate from the exporting country, and must meet the permit conditions"
+   ],
+   [
+    "Soil with planting material",
+    "Prohibited; only sterile, soil-free growing medium is allowed"
+   ],
+   [
+    "Permit",
+    "Applied for online through the DagangNet ePermit system and approved by MAQIS"
+   ]
+  ],
+  "notes": [
+   "<strong>Not read:</strong> the page does not give a separate allowance for a few items carried in a bag, so we do not state one. Ask MAQIS before you pack plant material."
+  ],
+  "faq": [
+   [
+    "Can I bring seeds into Malaysia?",
+    "Seeds need an import permit from MAQIS and a phytosanitary certificate from the exporting country, according to the Department of Agriculture."
+   ],
+   [
+    "Can I bring soil into Malaysia?",
+    "Importing soil together with planting material is prohibited. Only sterile, soil-free growing medium is allowed."
+   ],
+   [
+    "Who approves the import permit in Malaysia?",
+    "The permit is applied for online through the DagangNet ePermit system, and MAQIS approves it."
+   ]
+  ],
+  "src": [
+   [
+    "https://www.doa.gov.my/index.php/pages/view/579?mid=265",
+    "Department of Agriculture Malaysia — FAQ, plant biosecurity"
+   ]
+  ],
+  "keepSchema": true,
+  "card": {
+   "status": "warn",
+   "head": "Seeds and plants need a MAQIS permit.",
+   "lines": [
+    "Seeds, seedlings and cuttings need an import permit from MAQIS and a phytosanitary certificate from the country they come from.",
+    "Soil with planting material is prohibited."
+   ]
+  }
+ },
+ "Philippines": {
+  "date": "Bureau of Customs page read 21 October 2026",
+  "ttl": "Seeds & Plants into Philippines: Permit Rules 2026",
+  "desc": "Bringing plants or seeds into Philippines (2026): High-risk - usually needs a permit. Live plants, seeds, soil and cuttings are tightly controlled.",
+  "lead": "The Philippine Bureau of Customs says importing live animals and plants is regulated. For live plants you need an international phytosanitary certificate from the country of origin and a Sanitary and Phytosanitary Import Clearance (SPSIC) from the Bureau of Plant Industry, obtained before you import. Live plants that arrive without both can be seized, confiscated or refused.",
+  "rows": [
+   [
+    "Live plants",
+    "Need an international phytosanitary certificate from the competent authority of the country of origin, plus an SPSIC from the Bureau of Plant Industry before importation"
+   ],
+   [
+    "Plants arriving without both documents",
+    "Seized, confiscated or refused admission"
+   ],
+   [
+    "Where to apply",
+    "Bureau of Plant Industry, 692 San Andres St., Malate, Manila"
+   ]
+  ],
+  "notes": [
+   "<strong>Not read:</strong> the page covers live and household plants. It does not give a rule for seeds, fruit or a small personal amount, so we do not state one."
+  ],
+  "faq": [
+   [
+    "Can I bring a live plant into the Philippines?",
+    "Only with an international phytosanitary certificate from your country and an SPSIC from the Bureau of Plant Industry, both obtained before you travel."
+   ],
+   [
+    "What happens to plants without a permit in the Philippines?",
+    "The Bureau of Customs says live plants arriving without the required certificate and SPSIC can be seized, confiscated or refused admission."
+   ]
+  ],
+  "src": [
+   [
+    "https://customs.gov.ph/pet-animals-household-plants/",
+    "Bureau of Customs Philippines — pets, animals and household plants"
+   ]
+  ],
+  "keepSchema": true,
+  "card": {
+   "status": "warn",
+   "head": "Live plants need two documents before you fly.",
+   "lines": [
+    "Live plants need an international phytosanitary certificate and a Sanitary and Phytosanitary Import Clearance (SPSIC) from the Bureau of Plant Industry.",
+    "Plants that arrive without both can be seized, confiscated or refused.",
+    "The page does not cover seeds or fruit."
+   ]
+  }
+ },
+ "Serbia": {
+  "date": "Serbian Customs page read 21 October 2026",
+  "ttl": "Can You Bring Seeds & Plants into Serbia? Permit Rules (2026)",
+  "desc": "Bringing plants or seeds into Serbia (2026): High-risk - usually needs a permit. Live plants, seeds, soil and cuttings are tightly controlled.",
+  "lead": "Serbian Customs says you can bring a small amount of plants into Serbia without a plant-health inspection, as long as the plants come from European countries, are for non-commercial use or eating on the trip, and carry no risk of spreading harmful organisms. Larger amounts must be reported at a border crossing that has a plant-health inspection.",
+  "rows": [
+   [
+    "Fresh fruit and vegetables",
+    "Up to 5 kg (potato tubers excluded)"
+   ],
+   [
+    "Cut flowers or plant parts",
+    "One bouquet or wreath"
+   ],
+   [
+    "Flower and vegetable seeds",
+    "Up to 100 g, or up to five packets, in original packaging"
+   ],
+   [
+    "Bulbs and tubers of ornamental plants",
+    "Up to 3 kg"
+   ],
+   [
+    "House plants and pot plants",
+    "Up to three (bonsai excluded)"
+   ],
+   [
+    "Balcony plants and non-woody ornamental shrubs",
+    "Up to ten"
+   ],
+   [
+    "Conditions",
+    "Plants must come from European countries, be for non-industrial and non-commercial use or for eating during the trip, and carry no risk of spreading harmful organisms"
+   ],
+   [
+    "Larger amounts",
+    "Report at a border crossing with a plant-health inspection"
+   ],
+   [
+    "Protected species",
+    "Bringing one in needs a CITES import permit from the environment ministry and the export CITES permit of the country it leaves; for Serbian protected species you fill in an import notification form at the border"
+   ]
+  ],
+  "notes": [
+   "<strong>Last updated:</strong> the page shows 13 January 2026.",
+   "<strong>Not read:</strong> the page does not say what applies to plants that do not come from Europe, so we do not state a rule for them."
+  ],
+  "faq": [
+   [
+    "How many plants can I bring into Serbia?",
+    "Without a plant-health inspection: up to three house plants, up to ten balcony plants or non-woody ornamental shrubs, one bouquet of cut flowers, and up to 3 kg of ornamental bulbs and tubers. The plants must come from European countries."
+   ],
+   [
+    "Can I bring seeds into Serbia?",
+    "Up to 100 g, or up to five packets of flower and vegetable seeds in original packaging, without a plant-health inspection."
+   ],
+   [
+    "How much fresh fruit can I bring into Serbia?",
+    "Up to 5 kg of fresh fruit and vegetables, potato tubers excluded."
+   ]
+  ],
+  "src": [
+   [
+    "https://www.carina.rs/putnici/pitanja-i-odgovori/unos_bilja.html",
+    "Serbian Customs Administration — plants (questions and answers for travellers)"
+   ]
+  ],
+  "keepSchema": true,
+  "card": {
+   "status": "warn",
+   "head": "A small amount from Europe is fine. More needs inspection.",
+   "lines": [
+    "Without inspection: up to 5 kg of fresh fruit and vegetables, one bouquet, up to 100 g or five packets of seeds, up to three house plants and up to ten balcony plants.",
+    "The plants must come from European countries and be for personal use.",
+    "Larger amounts must be reported at a border crossing with a plant-health inspection."
+   ]
+  }
+ },
+ "Colombia": {
+  "date": "ICA page read 21 October 2026",
+  "ttl": "Can You Bring Seeds & Plants into Colombia? Permit Rules (2026)",
+  "desc": "Bringing plants or seeds into Colombia (2026): Do not bring plants or seeds without a permit.",
+  "lead": "Colombia’s agriculture institute, the ICA, says travellers who bring plant or animal products in their baggage must carry the phytosanitary or zoosanitary certificate issued by the authority of the country they come from. Plants of all species, planting material, and fresh fruit and vegetables that do not comply can be seized. This ICA notice is dated 12 April 2017.",
+  "rows": [
+   [
+    "Plant products in baggage",
+    "Must come with the phytosanitary certificate issued by the plant-health authority of the country of origin"
+   ],
+   [
+    "Plants, planting material, fresh fruit and vegetables",
+    "Can be seized if they do not comply with the current rules, because they can carry pests"
+   ],
+   [
+    "Non-compliance",
+    "The product is held and sent back within five days, or it is seized and incinerated"
+   ],
+   [
+    "Baggage declaration",
+    "Fill in the baggage declaration and say whether you carry animals, plants, or animal or plant products; it is a customs requirement before you enter"
+   ],
+   [
+    "Who inspects",
+    "The ICA, the customs authority (DIAN) and the national police inspect baggage together"
+   ]
+  ],
+  "notes": [
+   "<strong>Date:</strong> the notice is from 2017, so rules may have changed since. Ask the ICA before you pack plants or seeds.",
+   "<strong>Not read:</strong> the notice does not give a weight allowance or a list of allowed plants, so we do not state one."
+  ],
+  "faq": [
+   [
+    "Can I bring plants or seeds into Colombia?",
+    "Plant products in your baggage must come with the phytosanitary certificate from the plant-health authority of your country. Plants of all species and planting material that do not comply can be seized."
+   ],
+   [
+    "What happens if I bring fruit or plants without a certificate to Colombia?",
+    "The ICA says the product is held and sent back within five days, or it is seized and incinerated."
+   ],
+   [
+    "Do I declare plants at Colombian customs?",
+    "Yes. The baggage declaration asks whether you carry animals, plants, or animal or plant products."
+   ]
+  ],
+  "src": [
+   [
+    "https://www.ica.gov.co/noticias/agricola-y-pecuaria/ica-hace-recomendaciones-a-viajeros-internacionale.aspx",
+    "ICA Colombia — recommendations for international travellers (12 April 2017)"
+   ]
+  ],
+  "keepSchema": true,
+  "card": {
+   "status": "warn",
+   "head": "Plant products need a certificate from your country.",
+   "lines": [
+    "Plant products in your baggage must come with the phytosanitary certificate of the country they come from.",
+    "Plants, planting material and fresh fruit and vegetables that do not comply can be seized and incinerated.",
+    "Declare plants on the baggage declaration. The ICA notice is from 2017."
+   ]
+  }
+ },
+ "United Arab Emirates": {
+  "date": "Dubai Customs guide read 21 October 2026",
+  "ttl": "Seeds & Plants into United Arab Emirates: Permit Rules 2026",
+  "desc": "Bringing plants or seeds into United Arab Emirates (2026): Do not bring plants or seeds without a permit.",
+  "lead": "Dubai Customs’ passenger guide lists plants and seedlings among the goods that travellers may bring only with a permit from the relevant authority. It also says agricultural seedlings that contain soil are not allowed to be brought in by a traveller.",
+  "rows": [
+   [
+    "Plants and seedlings",
+    "On the guide’s list of goods accompanying passengers that are subject to permits by the relevant authorities"
+   ],
+   [
+    "Seedlings containing soil",
+    "Not allowed to be brought in by a traveller"
+   ],
+   [
+    "Baggage that is not personal or is in commercial quantities",
+    "Customs duty applies and the normal import procedures apply to the goods"
+   ]
+  ],
+  "notes": [
+   "<strong>Scope:</strong> this is the Dubai Customs guide. The UAE’s agriculture ministry, which issues plant permits, was not read for this page.",
+   "<strong>Not read:</strong> the guide does not give a list of allowed plants or a small-amount allowance for seeds or fruit, so we do not state one."
+  ],
+  "faq": [
+   [
+    "Can I bring plants or seeds into the UAE?",
+    "Dubai Customs lists plants and seedlings among goods that need a permit from the relevant authority."
+   ],
+   [
+    "Can I bring a plant with soil into the UAE?",
+    "No. The guide says agricultural seedlings containing soil are not allowed to be brought in by a traveller."
+   ]
+  ],
+  "src": [
+   [
+    "https://www.dubaicustoms.gov.ae/en/OpenData/Publications/PassengerCustomsGuide.pdf",
+    "Dubai Customs — Passenger Customs Guide, version 6, 2025"
+   ]
+  ],
+  "keepSchema": true,
+  "card": {
+   "status": "warn",
+   "head": "Plants and seeds need a permit. No soil.",
+   "lines": [
+    "Dubai Customs lists plants and seedlings among goods that need a permit from the relevant authority.",
+    "Seedlings that contain soil are not allowed.",
+    "The guide gives no allowance for seeds or fruit."
+   ]
+  }
+ },
+ "Seychelles": {
+  "date": "Seychelles regulations read 21 October 2026",
+  "ttl": "Seeds & Plants into Seychelles: Permit Rules 2026",
+  "desc": "Bringing plants or seeds into Seychelles (2026): Do not bring plants or seeds without a permit.",
+  "lead": "Seychelles’ customs regulations of 2023 list live trees and other plants, bulbs, roots, cut flowers and ornamental foliage, edible vegetables and fresh fruit as restricted goods. Importing them needs written approval in advance from the Department of Agriculture. Palm plants covered by the 2007 plant protection regulations are named separately.",
+  "rows": [
+   [
+    "Live trees and other plants, bulbs, roots, cut flowers, ornamental foliage",
+    "Restricted: written approval from the Department of Agriculture before import"
+   ],
+   [
+    "Palm plants",
+    "Covered by the Plant Protection (Aleurotrochelus Atratus) Regulations, 2007, and named in the restricted list"
+   ],
+   [
+    "Edible vegetables and certain roots and tubers",
+    "Restricted: written approval from the Department of Agriculture before import"
+   ],
+   [
+    "Fresh fruit and nuts, fresh ginger",
+    "Restricted: written approval from the Department of Agriculture before import"
+   ],
+   [
+    "Approval",
+    "Obtained in writing before the goods are imported into Seychelles"
+   ]
+  ],
+  "notes": [
+   "<strong>Scope:</strong> the regulations cover imports in general. The text we read does not mention a separate rule or allowance for travellers’ baggage, so ask the Department of Agriculture before you pack plant material.",
+   "<strong>Not read:</strong> the First Schedule of prohibited goods was not checked for plant items."
+  ],
+  "faq": [
+   [
+    "Can I bring plants or seeds into Seychelles?",
+    "The regulations list live plants, bulbs, roots and cut flowers as restricted goods that need written approval from the Department of Agriculture before import. Seeds are not named in the part we read."
+   ],
+   [
+    "Can I bring fresh fruit into Seychelles?",
+    "Fresh fruit and nuts are on the restricted list, so they need written approval from the Department of Agriculture first."
+   ]
+  ],
+  "src": [
+   [
+    "https://src.gov.sc/wp-content/uploads/2023/11/SI-87-Customs-Management-Prohibited-and-Restricted-Goods-Regulations-2023.pdf",
+    "Seychelles Revenue Commission — Prohibited and Restricted Goods Regulations 2023 (S.I. 87)"
+   ]
+  ],
+  "keepSchema": true,
+  "card": {
+   "status": "warn",
+   "head": "Plants and fresh produce need written approval first.",
+   "lines": [
+    "Live plants, bulbs, roots, cut flowers, vegetables and fresh fruit are restricted goods in Seychelles.",
+    "Approval comes from the Department of Agriculture, in writing, before the goods are imported.",
+    "The text we read has no allowance for travellers’ baggage."
+   ]
+  }
+ },
+ "Qatar": {
+  "date": "General Authority of Customs pages read 21 October 2026",
+  "ttl": "Can You Bring Seeds & Plants into Qatar? Permit Rules (2026)",
+  "desc": "Bringing plants or seeds into Qatar (2026): Do not bring plants or seeds without a permit.",
+  "lead": "Qatar’s General Authority of Customs lists live plants and plant material among the goods restricted by tariff. For bulbs, tubers, grapevines, palm seedlings, ornamental shrubs, roses, cut flowers and ornamental foliage, its list names the Ministry of Municipality’s Department of Agriculture Affairs and Fisheries as the approving authority. Poppy seeds and hemp seeds are on the list of goods forbidden by tariff.",
+  "rows": [
+   [
+    "Bulbs, tubers, tuberous roots, corms, crowns and rhizomes",
+    "Restricted: approval from the Department of Agriculture Affairs and Fisheries"
+   ],
+   [
+    "Grapevines, palm tree seedlings, ornamental shrubs and other live plants",
+    "Restricted: approval from the same department"
+   ],
+   [
+    "Roses, cut flowers and flower buds",
+    "Restricted: approval from the same department"
+   ],
+   [
+    "Ornamental foliage, branches and plant parts",
+    "Restricted: approval from the same department"
+   ],
+   [
+    "Poppy seeds and hemp seeds",
+    "Forbidden by tariff"
+   ]
+  ],
+  "notes": [
+   "<strong>Scope:</strong> these are the customs tariff lists, which apply to all imports. The pages we read do not give a separate allowance for plants in a traveller’s bag, so ask the Department of Agriculture Affairs before you pack plant material.",
+   "<strong>Not read:</strong> the lists name plant items by tariff code. Garden or vegetable seeds other than poppy and hemp are not covered here."
+  ],
+  "faq": [
+   [
+    "Can I bring plants into Qatar?",
+    "Live plants, bulbs, tubers, palm seedlings, cut flowers and ornamental foliage are on the customs list of restricted goods and need approval from the Department of Agriculture Affairs and Fisheries."
+   ],
+   [
+    "Can I bring poppy or hemp seeds into Qatar?",
+    "No. Qatar Customs lists poppy seeds and hemp seeds among the goods forbidden by tariff."
+   ]
+  ],
+  "src": [
+   [
+    "https://www.customs.gov.qa/English/Tariff/Pages/Restricted-Goods.aspx",
+    "General Authority of Customs Qatar — goods restricted by tariff"
+   ],
+   [
+    "https://www.customs.gov.qa/English/Tariff/Pages/Prohibited-Goods.aspx",
+    "General Authority of Customs Qatar — goods forbidden by tariff"
+   ]
+  ],
+  "keepSchema": true,
+  "card": {
+   "status": "warn",
+   "head": "Plants and flowers need approval. Poppy and hemp seeds are banned.",
+   "lines": [
+    "Live plants, bulbs, tubers, palm seedlings, cut flowers and ornamental foliage are restricted: they need approval from the Department of Agriculture Affairs and Fisheries.",
+    "Poppy seeds and hemp seeds are forbidden.",
+    "The lists give no allowance for plants in a traveller’s bag."
+   ]
+  }
  }
 }

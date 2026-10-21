@@ -37,7 +37,7 @@ function build(c) {
   const cn = c.name, A = analyse(D);
   let status, lead, travel, card;
   if (A.none) {
-    status = 'No General Ban'; card = { status: 'warn', head: 'WHO lists no general ban - check customs.' };
+    status = 'No General Ban'; card = { status: 'warn', head: 'No general ban - but no traveller limit is published.' };
     lead = RPT + cn + YR + ' lists no general ban on e-cigarettes' +
       (N25 ? '' : (D.laws === 'Yes' ? ' and says national laws or regulations regulate them' : ' and says no national law regulates them')) + '. ' + indoorText(cn, D) +
       ' That is the law on e-cigarette products: it does not say how many devices or how much e-liquid customs lets you carry in a bag, so check with the customs authority before you travel.';
