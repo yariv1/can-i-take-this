@@ -604,3 +604,8 @@ Gap from the last element under a verdict card (card or the "Probably worth know
 
 ### 8.48 One section = one look on every page (HARD, 2026-10-21)
 The "Can I take this? Know before you pack..." SEO section (search box, popular airlines, countries, On the plane, footer links) is generated ONCE (home page, build.js) and the app page (/app/) takes that exact block from the built home page. Never keep a second hand-written copy of a section. Guard: `audit_home_app_seo_block.js`.
+
+### 8.49 Preset chips go BELOW the typeahead; generic hints; one name "Pets" (HARD, 2026-10-21)
+- On every typeahead the preset/quick chips sit BELOW the input, never above it (home app: `#itemQuick`, `#animalChips`, `#dogSize`; static pages show popular items inside the dropdown). Gap input-to-chips 18px, size chips 9px under Dog/Cat.
+- Placeholder hints are general, not an extra ("Other animal"): the animal input says "Which animal do you want to travel with?".
+- The animals category is called **Pets** everywhere (country pages tab, home app tab). Reason (Google autocomplete 2026-10-21): "bring pets into the uk" and "traveling with pets airline" are predicted, "animals into the uk" returns nothing and "animals on a plane" returns movies/games; earlier demand check: pet 56 vs animal 1. Labels inside the Pets view may still say "animal" where it means a non-dog/cat species.

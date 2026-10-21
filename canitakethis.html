@@ -71,7 +71,7 @@ body{background:radial-gradient(1200px 600px at 50% -10%,var(--glow) 0%,transpar
 .chip.on{background:var(--sel-bg);color:var(--sel-text);border-color:var(--sel-bg);font-weight:600}
 .chip.sm{font-family:'Space Mono',monospace;font-size:14px;font-weight:700;padding:8px 13px}
 .chip.fare{font-size:14px}
-#itemQuick,#dogSize{margin-bottom:18px}
+#itemQuick,#animalChips{margin-top:18px}#dogSize{margin-top:9px}
 #itemQuick:empty{display:none}
 .searchrow{display:flex;gap:8px}
 .tinput{flex:1;background:var(--surface);border:1px solid var(--line);border-radius:13px;color:var(--text);font-family:'Inter',sans-serif;font-size:15px;padding:13px 14px}
@@ -200,18 +200,18 @@ body{margin:0;font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,
 
   <div id="itemBlock" class="hidden">
     <div class="slab" id="itemLabel">Which one?</div>
-    <div class="chips" id="itemQuick"></div>
     <div class="pickwrap"><div class="searchrow"><input id="itemInput" class="tinput" type="text" autocomplete="off" placeholder="Type a name"><button id="scanBtn" title="Scan barcode"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 5v14M7 5v14M11 5v14M14 5v14M18 5v14M21 5v14"/></svg></button></div>
     <div id="itemSuggest" class="suggest"></div></div>
+    <div class="chips" id="itemQuick"></div>
     <div id="scanNote">Barcode scanning is on the roadmap — for now, just type the name.</div>
   </div>
 
   <div id="animalBlock" class="hidden">
     <div class="slab">Which animal?</div>
-    <div class="chips" id="animalChips" style="margin-bottom:9px"><button class="chip" data-a="Dog"><span class="e">&#128021;</span>Dog</button><button class="chip" data-a="Cat"><span class="e">&#128008;</span>Cat</button></div>
-    <div class="chips hidden" id="dogSize"><button class="chip sm" data-s="Small">Small (cabin-sized)</button><button class="chip sm" data-s="Medium">Medium</button><button class="chip sm" data-s="Large">Large</button></div>
-    <div class="pickwrap"><input id="animalInput" class="tinput" type="text" autocomplete="off" placeholder="Other animal (e.g. rabbit, parrot)">
+    <div class="pickwrap"><input id="animalInput" class="tinput" type="text" autocomplete="off" placeholder="Which animal do you want to travel with?">
     <div id="aniSuggest" class="suggest"></div></div>
+    <div class="chips" id="animalChips"><button class="chip" data-a="Dog"><span class="e">&#128021;</span>Dog</button><button class="chip" data-a="Cat"><span class="e">&#128008;</span>Cat</button></div>
+    <div class="chips hidden" id="dogSize"><button class="chip sm" data-s="Small">Small (cabin-sized)</button><button class="chip sm" data-s="Medium">Medium</button><button class="chip sm" data-s="Large">Large</button></div>
   </div>
 
   <div class="pass-wrap" id="passWrap"></div>
@@ -356,8 +356,8 @@ var CFLAG={};COUNTRIES.forEach(function(c){CFLAG[c.name]=flagFromCode(c.code);})
 function airlineByName(n){for(var i=0;i<AIRLINES.length;i++)if(AIRLINES[i].name===n)return AIRLINES[i];return AIRLINES[0];}
 
 var CATS={
-  plane:[{id:'baginfo',e:'\uD83E\uDDF3',label:'Bag info'},{id:'liquids',e:'\uD83D\uDCA7',label:'Liquids',detail:'vol'},{id:'perfume',e:'\uD83C\uDF38',label:'Perfume & aerosols',detail:'vol'},{id:'med',e:'\uD83D\uDC8A',label:'Medication'},{id:'power',e:'\uD83D\uDD0B',label:'Power bank',detail:'wh'},{id:'vape',e:'\uD83D\uDCA8',label:'Vape / e-cig'},{id:'sharp',e:'\uD83D\uDD2A',label:'Sharp objects'},{id:'alcohol',e:'\uD83C\uDF77',label:'Alcohol',detail:'vol'},{id:'food',e:'\uD83E\uDD6A',label:'Food'},{id:'animal',e:'\uD83D\uDC3E',label:'Animals'},{id:'sports',e:'\uD83C\uDFBE',label:'Sports gear'},{id:'lighter',e:'\uD83D\uDD25',label:'Lighter'}],
-  country:[{id:'med',e:'\uD83D\uDC8A',label:'Medication'},{id:'food',e:'\uD83E\uDD69',label:'Food & produce'},{id:'animal',e:'\uD83D\uDC3E',label:'Animals'},{id:'alcohol',e:'\uD83C\uDF77',label:'Alcohol'},{id:'cash',e:'\uD83D\uDCB5',label:'Cash'},{id:'plants',e:'\uD83C\uDF31',label:'Plants & seeds'},{id:'vape',e:'\uD83D\uDCA8',label:'Vape / e-cig'},{id:'tobacco',e:'\uD83D\uDEAC',label:'Tobacco'}]
+  plane:[{id:'baginfo',e:'\uD83E\uDDF3',label:'Bag info'},{id:'liquids',e:'\uD83D\uDCA7',label:'Liquids',detail:'vol'},{id:'perfume',e:'\uD83C\uDF38',label:'Perfume & aerosols',detail:'vol'},{id:'med',e:'\uD83D\uDC8A',label:'Medication'},{id:'power',e:'\uD83D\uDD0B',label:'Power bank',detail:'wh'},{id:'vape',e:'\uD83D\uDCA8',label:'Vape / e-cig'},{id:'sharp',e:'\uD83D\uDD2A',label:'Sharp objects'},{id:'alcohol',e:'\uD83C\uDF77',label:'Alcohol',detail:'vol'},{id:'food',e:'\uD83E\uDD6A',label:'Food'},{id:'animal',e:'\uD83D\uDC3E',label:'Pets'},{id:'sports',e:'\uD83C\uDFBE',label:'Sports gear'},{id:'lighter',e:'\uD83D\uDD25',label:'Lighter'}],
+  country:[{id:'med',e:'\uD83D\uDC8A',label:'Medication'},{id:'food',e:'\uD83E\uDD69',label:'Food & produce'},{id:'animal',e:'\uD83D\uDC3E',label:'Pets'},{id:'alcohol',e:'\uD83C\uDF77',label:'Alcohol'},{id:'cash',e:'\uD83D\uDCB5',label:'Cash'},{id:'plants',e:'\uD83C\uDF31',label:'Plants & seeds'},{id:'vape',e:'\uD83D\uDCA8',label:'Vape / e-cig'},{id:'tobacco',e:'\uD83D\uDEAC',label:'Tobacco'}]
 };
 var DETAILS={vol:[{id:'50',label:'50 ml'},{id:'100',label:'100 ml'},{id:'300',label:'300 ml'},{id:'500',label:'500 ml+'}],wh:[{id:'lo',label:'Under 100 Wh'},{id:'mid',label:'100-160 Wh'},{id:'hi',label:'Over 160 Wh'}]};
 
