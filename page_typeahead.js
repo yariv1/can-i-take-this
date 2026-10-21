@@ -35,14 +35,7 @@ function client(D) {
   }
   function restore() { res.innerHTML = ''; org.style.display = ''; tabs(true); }
   function sync() { clr.classList.toggle('on', !!inp.value); }
-  inp.addEventListener('input', function () {
-    sync();
-    var q = inp.value.toLowerCase().trim();
-    if (!q) { sug.innerHTML = ''; restore(); return; }
-    var idx = [];
-    for (var i = 0; i < D.items.length && idx.length < 6; i++) { if (D.items[i].n.toLowerCase().indexOf(q) > -1) idx.push(i); }
-    var html = idx.map(function (i) { var x = D.items[i]; return '<div class="sug" data-i="' + i + '">' + esc(x.n) + (x.sub ? '<span class="ing">' + esc(x.sub) + '</span>' : '') + '</div>'; }).join('');
-    if (!idx.length) html = '<div class="sug anyway" data-any="1">Check “' + esc(inp.value) + '” anyway<span class="ing">not in our list</span></div>';
+  function show(html) {
     sug.innerHTML = html;
     [].forEach.call(sug.querySelectorAll('.sug'), function (el) {
       el.onclick = function () {
@@ -50,13 +43,42 @@ function client(D) {
         else { var x = D.items[+el.getAttribute('data-i')]; inp.value = x.n; sync(); pick(x); }
       };
     });
+  }
+  function row(i) { var x = D.items[i]; return '<div class="sug" data-i="' + i + '">' + esc(x.n) + (x.sub ? '<span class="ing">' + esc(x.sub) + '</span>' : '') + '</div>'; }
+  // the most searched items, shown when the empty field is clicked (DESIGN_SYSTEM 8.44); they disappear as soon as the user types
+  function popular() {
+    if (inp.value || res.innerHTML) return;
+    // only items this page can answer (a popular item with no card here would end in "No matches found")
+    var idx = [], head = 'Popular';
+    (D.popn || []).forEach(function (n) { for (var i = 0; i < D.items.length; i++) { if (D.items[i].n.toLowerCase() === n.toLowerCase()) { if (D.items[i].card) idx.push(i); break; } } });
+    if (idx.length < 3) {
+      head = 'Suggested';
+      for (var j = 0; j < D.items.length && idx.length < 5; j++) { if (D.items[j].card && idx.indexOf(j) < 0) idx.push(j); }
+    }
+    if (!idx.length) return;
+    show('<div class="sughead">' + head + '</div>' + idx.slice(0, 6).map(row).join(''));
+  }
+  inp.addEventListener('focus', popular);
+  inp.addEventListener('click', popular);
+  document.addEventListener('mousedown', function (e) { if (!inp.value && !e.target.closest('.tapick')) sug.innerHTML = ''; });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !inp.value) sug.innerHTML = ''; });
+  inp.addEventListener('input', function () {
+    sync();
+    var q = inp.value.toLowerCase().trim();
+    if (!q) { sug.innerHTML = ''; restore(); popular(); return; }
+    var idx = [];
+    for (var i = 0; i < D.items.length && idx.length < 6; i++) { if (D.items[i].n.toLowerCase().indexOf(q) > -1) idx.push(i); }
+    show(idx.length ? idx.map(row).join('') : '<div class="sug anyway" data-any="1">Check “' + esc(inp.value) + '” anyway<span class="ing">not in our list</span></div>');
   });
-  clr.onclick = function () { inp.value = ''; sync(); sug.innerHTML = ''; restore(); inp.focus(); };
+  clr.onclick = function () { inp.value = ''; sync(); sug.innerHTML = ''; restore(); inp.focus(); popular(); };
 }
 
 // opt: { label, placeholder, items:[{n, sub, tags:[{t,k}], extra, card}], cards:{id:html}, nomatchHtml (with %Q%), ins }
+// most searched items (demand research 2026-10-20 for medicines; the app's own quick list for food); matched by name against the page's items
+const POP = { med: ['Tylenol', 'Ibuprofen', 'Melatonin', 'Benadryl', 'Adderall', 'Sudafed'], food: ['Cheese', 'Beef jerky', 'Chocolate', 'Eggs', 'Honey', 'Milk'] };
 function build(opt) {
-  const D = JSON.stringify({ items: opt.items, cards: opt.cards, nomatch: opt.nomatchHtml, ins: opt.ins }).replace(/</g, '\\u003c');
+  const popn = /medicine/i.test(opt.label) ? POP.med : POP.food;
+  const D = JSON.stringify({ items: opt.items, cards: opt.cards, nomatch: opt.nomatchHtml, ins: opt.ins, popn }).replace(/</g, '\\u003c');
   const field = '<div class="tasearch"><label class="talabel" for="taInput">' + opt.label + '</label><div class="tapick"><div class="inwrap"><input id="taInput" class="tinput" type="text" autocomplete="off" placeholder="' + opt.placeholder + '"><button type="button" class="tclear" id="taClear" aria-label="Clear"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div><div id="taSuggest" class="suggest"></div></div></div>';
   const script = '<script>(' + client.toString() + ')(' + D + ');</scr' + 'ipt>';
   return { field, script };

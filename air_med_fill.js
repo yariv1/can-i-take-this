@@ -19,6 +19,11 @@ module.exports = function (T) {
   const MX = L('https://www.aicm.com.mx/en/passengers/tips-for-passengers/special-medical-needs', 'Mexico City Airport (AICM): Passengers with special medical needs', 'Medications, diabetics and syringes');
   const OM = L('https://www.omanairports.co.om/en/security-customs', 'Oman Airports: Security and customs', 'Needles and syringes');
 
+  const SE = L('https://www.transportstyrelsen.se/sv/luftfart/flygresenar/Bagage/Vad-far-jag-ta-med-mig-ombord/Medicin/', 'Transportstyrelsen (Swedish Transport Agency): Medicin i vätskeform och sjukvårdsartiklar (page in Swedish)', 'Medicine and syringes in hand luggage');
+  const NO = L('https://www.avinor.no/en/practical-info/baggage-rules/', 'Avinor: Baggage rules', 'Syringes and insulin, cooling elements');
+  const FR = L('https://www.ecologie.gouv.fr/sites/default/files/documents/diabete_aeroport.pdf', 'Le diabète à l’aéroport (guide in French by the Fédération Française des Diabétiques with the DGAC and Aéroports de Paris, on ecologie.gouv.fr)', 'Insulin, needles, syringes, cold packs');
+  const JP = L('https://www.mlit.go.jp/common/001105372.pdf', 'MLIT Japan: Liquids restricted on international flights, list of examples (October 2015, in Japanese)', 'Ice and cold packs with medicine');
+  const BR = L('https://www.gov.br/anac/pt-br/assuntos/passageiros/transporte-de-liquidos-em-voos-internacionais', 'ANAC Brazil: Transporte de líquidos em voos internacionais (page in Portuguese)', 'Liquid medicinal articles');
   const poss = n => (/s$/i.test(n) ? n + '’' : n + '’s');
   // regime facts: { kind: { status, verdict (the condition), head, lines(name) , sources } }
   const REG = {
@@ -46,13 +51,28 @@ module.exports = function (T) {
     MX: {
       liquids: { status: 'go', verdict: 'No clear bag needed', head: 'At Mexico City airport, medications do not have to go in the resealable bag if the amount is reasonable.', lines: n => ['AICM: medications are allowed and do not have to be placed in the resealable plastic bag if the amount is reasonable for the passenger’s need and itinerary.', 'This is the airport’s rule, not ' + poss(n) + ' own page.'], sources: [MX] },
       needles: { status: 'go', verdict: 'No prescription needed (diabetics)', head: 'At Mexico City airport, diabetics may carry the medicines and syringes they need without a prescription.', lines: n => ['AICM: diabetics may enter with the medicines and syringes necessary for the trip; it is not necessary to show the prescription.', 'AICM: it is advisable to carry your diabetic credential.'], sources: [MX] } },
-    OM: { needles: { status: 'warn', verdict: 'Declare and show proof', head: 'At Muscat airport, you must declare needles and syringes and bring proof of medical need.', lines: n => ['Oman Airports: travellers with medical conditions requiring needles or syringes will be required to declare them and bring in proof of medical need for authentication.'], sources: [OM] } }
+    OM: { needles: { status: 'warn', verdict: 'Declare and show proof', head: 'At Muscat airport, you must declare needles and syringes and bring proof of medical need.', lines: n => ['Oman Airports: travellers with medical conditions requiring needles or syringes will be required to declare them and bring in proof of medical need for authentication.'], sources: [OM] } },
+    SE: { needles: { status: 'go', verdict: 'Hand luggage, show it at security', head: 'In Sweden, medicine and medical articles including syringes may go in hand luggage without a limit; show liquid medicine separately.',
+      lines: n => ['Transportstyrelsen (Sweden): prescription and over-the-counter medicine and medical articles in liquid form, including syringes, may be carried in hand luggage without limit: you can take what you need for the trip and your time away.', 'Transportstyrelsen: this also applies to cool packs when you carry medicine that needs them.', 'Transportstyrelsen: at the security check take your liquid medicine out and show it separately from your hand luggage.'], sources: [SE] } },
+    NO: { needles: { status: 'go', verdict: 'Carry-on and checked', head: 'At Norwegian airports, syringes and insulin are allowed in carry-on and checked baggage; bring a prescription or documentation.',
+      lines: n => ['Avinor: syringes and insulin are allowed in hand luggage and in checked baggage; feel free to bring a prescription or documentation.', 'Avinor: liquid medicines are exempt from the 100 ml rule and do not need to be in the 1-litre bag; cooling elements are allowed for medicine that needs to be cooled.'], sources: [NO] } },
+    FR: {
+      needles: { status: 'warn', verdict: 'Prescription in French, in your name', head: 'In France, a diabetic passenger carries insulin, needles and syringes in hand luggage with a legible prescription in French, in their own name.',
+        lines: n => ['French diabetes guide (with the DGAC and Aéroports de Paris): every diabetic passenger must carry a legible, valid prescription in French, in their own name.', 'The same guide: the prescription should list every item of the treatment carried on the trip (needles, injector pens, meter) and all the medicines.', 'The same guide: needles, lancets, syringes and meters can go in any travel case; you put them in a tray at the security check, and only equipment meant for you may be carried in the cabin.'], sources: [FR] },
+      cold: { status: 'warn', verdict: 'Cold packs not needed for insulin', head: 'In France, the diabetes guide says cold packs are not needed for insulin and could freeze it.',
+        lines: n => ['French diabetes guide (with the DGAC and Aéroports de Paris): there is no reason to use cold packs, which could freeze the insulin; current insulins are made to be kept at room temperature for several days.', 'The same guide: you can wrap insulin in an insulated pouch, which protects it from heat and cold.'], sources: [FR] } },
+    JP: { cold: { status: 'warn', verdict: 'Ice and cold packs with the medicine', head: 'At Japanese airports, ice and cold packs are exempt from the liquid limit when packed with medicine that needs to be kept cold.',
+      lines: n => ['MLIT Japan (2015 list): ice and cold packs are an exception to the liquid restriction when they are packed together with medicines that need refrigeration, such as insulin and hormone drugs.', 'MLIT Japan: you must tell the security inspector it is medicine, and the inspector may ask for proof (a copy of the prescription, the medicine bag or a medical certificate).'], sources: [JP] } },
+    BR: { liquids: { status: 'warn', verdict: 'Prescription, only what you need', head: 'In Brazil, liquid medicine is exempt from the 100 ml limit with a prescription, in the amount needed for the whole flight.',
+      lines: n => ['ANAC (Brazil): liquid medicinal articles with a medical prescription, on paper or digital, may be carried in the quantity needed for the whole flight, including any stopovers.', 'ANAC: they must be presented at the security inspection.', 'ANAC: under Portaria SIA 1155 of 2015 you may ask the aviation security agent in advance for the medicines to be inspected without X-ray and metal detectors; you then hand them over separately from the rest of your hand baggage.'], sources: [BR] } },
   };
   const AIRLINE_REG = {
     'air-europa': 'EU', austrian: 'EU', 'brussels-airlines': 'EU', eurowings: 'EU', finnair: 'EU', lufthansa: 'EU', sas: 'EU', 'tap-air-portugal': 'EU', 'wizz-air': 'EU', norwegian: 'EU', aegean: 'EU', 'aer-lingus': 'EU', 'air-france': 'EU', 'lot-polish': 'EU', ryanair: 'EU', 'ita-airways': 'EU',
     'british-airways': 'UK', westjet: 'CA', 'alaska-airlines': 'US', 'american-airlines': 'US', frontier: 'US', 'hawaiian-airlines': 'US',
     asiana: 'KR', 'korean-air': 'KR', 'cathay-pacific': 'HK', 'singapore-airlines': 'SG', emirates: 'DXB', 'etihad-airways': 'AUH', 'thai-airways': 'TH', aeromexico: 'MX', volaris: 'MX', 'oman-air': 'OM'
   };
+  // per airline and kind: a regime that answers a card the airline's home regime above does not (e.g. SAS: EU for liquids, Sweden for syringes)
+  const AIRLINE_REG_KIND = { sas: { needles: 'SE' }, norwegian: { needles: 'NO' }, 'air-france': { needles: 'FR', cold: 'FR' }, 'japan-airlines': { cold: 'JP' }, azul: { liquids: 'BR' }, gol: { liquids: 'BR' } };
   // GLOBAL: what the regimes we read agree on. No link, no claim about the airline.
   // Same advice, three wordings, picked by the airline's name: the page of an airline that says nothing should not be a copy of another airline's page.
   const pick = (n, arr) => arr[[...n].reduce((h, c) => (h * 31 + c.charCodeAt(0)) >>> 0, 7) % arr.length];
@@ -78,5 +98,5 @@ module.exports = function (T) {
         'Nothing from ' + n + ' on keeping medication cold. Do not rely on a fridge: take an insulated pouch with a cool pack and keep it in the cabin.',
         'For medication that must stay cold, ' + n + ' gives no answer. Pack it in an insulated pouch with a cool pack and keep it with you.']) }
   };
-  return { REG, AIRLINE_REG, GLOBAL, poss };
+  return { REG, AIRLINE_REG, AIRLINE_REG_KIND, GLOBAL, poss };
 };

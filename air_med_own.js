@@ -61,5 +61,55 @@ module.exports = {
     cold: { status: 'warn', verdict: 'No cold chain, bring your own', head: 'LATAM does not offer a cold chain for medicines: carry them yourself in an appropriate container.',
       lines: ['LATAM: it does not offer a cold chain service for transporting medicines.', 'LATAM: if you need to carry them, keep them in an appropriate container, under your care for the whole trip, and meet the hand-baggage standards.'],
       sources: [L('https://www.latamairlines.com/cl/es/centro-ayuda/preguntas/equipaje/articulos-restringidos/medicamentos', 'LATAM: Can I carry my medicines on the trip? (page in Spanish)', 'Cold chain')] }
-  }
+  },
+  swiss: {
+    liquids: { status: 'warn', verdict: 'Only what you need on the flight', head: 'SWISS lets you take urgently required liquid medication on board, only the amount you need during the flight.',
+      lines: ['SWISS: you are permitted to take urgently required medication in liquid form on board with you.', 'SWISS: you may only take the amount that you will require during the flight.', 'SWISS: it suggests that you carry a medical certificate in English for such medication.'],
+      sources: [L('https://www.swiss.com/no/en/prepare/baggage/hand-baggage', 'SWISS: Hand baggage', 'Medication exception to the liquid rules')] } },
+  'malaysia-airlines': {
+    needles: { status: 'warn', verdict: 'Doctor’s note for insulin', head: 'Malaysia Airlines advises diabetics to carry extra needles and syringes in the cabin, with a doctor’s note confirming the need for insulin.',
+      lines: ['Malaysia Airlines: if you have diabetes, include extra insulin or tablet medicine, extra needles or syringes in your cabin baggage in case there are delays or breakages along the way.', 'Malaysia Airlines: to avoid issues with security at the airport, you will need a doctor’s note confirming your need for insulin.'],
+      sources: [L('https://www.malaysiaairlines.com/vn/vi/travel-info/special-requirements.html', 'Malaysia Airlines: Special requirements', 'Diabetes, insulin and needles')] } },
+  'vietnam-airlines': {
+    pills: { status: 'warn', verdict: 'Up to 2 kg or 2 L in total', head: 'Vietnam Airlines allows non-radioactive medicine in carry-on and checked baggage, up to 0.5 kg or 0.5 L per item and 2 kg or 2 L in total.',
+      lines: ['Vietnam Airlines: non-radioactive medicine (including sprays) for passenger treatment can be carried in carry-on baggage and in checked baggage.', 'Vietnam Airlines: one bottle or can must be under 0.5 kg or 0.5 litre, and each passenger can carry no more than 2 kg or 2 litres of these items in total, carry-on and checked baggage together.', 'Vietnam Airlines: for flights from or to the US, these items are only allowed in checked baggage.'],
+      sources: [L('https://www.vietnamairlines.com/us/en/travel-information/baggage/restricted-baggage/medical-drugs-make-up-aerosol', 'Vietnam Airlines: Medicine, makeup and sprays', 'Medicine in baggage')] } },
+  'philippine-airlines': {
+    needles: { status: 'warn', verdict: 'Call the airline first', head: 'Philippine Airlines asks you to call its Reservations Hotline if you will bring needles or syringes.',
+      lines: ['Philippine Airlines: if you will be bringing more specialized assistive devices like respiratory devices, needles or syringes, please call its Reservations Hotline for further assistance.'],
+      sources: [L('https://www.philippineairlines.com/ph/en/before-you-fly/special-needs-and-request/senior-citizen-and-pwd.html', 'Philippine Airlines: Senior citizens and PWD services', 'Needles and syringes')] } },
+  'copa-airlines': {
+    liquids: { status: 'warn', verdict: 'Declare it if over the limit', head: 'Copa Airlines allows insulin and medications as liquids; if they exceed the maximum quantity, declare them to TSA or inspection staff.',
+      lines: ['Copa Airlines: liquids are only allowed in containers of up to 100 ml (3.4 oz), carried in a transparent resealable bag of no more than one litre.', 'Copa Airlines: breast milk, juice, insulin and medications may be transported, but if they exceed the maximum quantity they must be declared to the TSA or inspection personnel.'],
+      sources: [L('https://www.copaair.com/en-US/travel-information/baggage-information/restricted-baggage/', 'Copa Airlines: Restricted baggage', 'Liquids, insulin and medications')] } },
+  flydubai: {
+    needles: { status: 'warn', verdict: 'Hand baggage, with a letter', head: 'flydubai asks you to carry insulin and other approved injectables in your hand baggage, with a doctor’s prescription or letter.',
+      lines: ['flydubai: any medication needed during the flight, including approved injectables such as insulin, should be carried in your hand baggage.', 'flydubai: to avoid delays it advises carrying your doctor’s prescription or a medical letter, along with any necessary supporting documentation.'],
+      sources: [L('https://www.flydubai.com/en/flying-with-us/baggage/special-baggage', 'flydubai: Special baggage rules and guidelines', 'Medications')] } },
+  'kenya-airways': {
+    pills: { status: 'warn', verdict: 'Cabin baggage, with a prescription', head: 'Kenya Airways recommends carrying your medication in your cabin baggage with your prescription and a doctor’s letter.',
+      lines: ['Kenya Airways: it recommends always carrying your prescription, a letter from your doctor and your medication in your cabin baggage.', 'Kenya Airways: different countries have different regulations on carrying medication, so check them before you travel.'],
+      sources: [L('https://www.kenya-airways.com/en/plan/special-care/medical-special-support/', 'Kenya Airways: Medical and special needs', 'Medication on board')] },
+    cold: { status: 'warn', verdict: 'No fridge on board', head: 'Kenya Airways cannot refrigerate medication on board: bring your own cooling.',
+      lines: ['Kenya Airways: medication cannot be refrigerated on board.', 'Kenya Airways: guests who have to administer injections on board are urged to inform a cabin crew member.'],
+      sources: [L('https://www.kenya-airways.com/en/plan/special-care/medical-special-support/', 'Kenya Airways: Medical and special needs', 'Medication on board')] } },
+  'ita-airways': (() => {
+    const P = L('https://www.ita-airways.com/it/en/world-of-ita-airways/services-on-board/health-and-travel', 'ITA Airways: Wellbeing, health and travel', 'Medication, syringes, cold storage');
+    return {
+      pills: { status: 'warn', verdict: 'Hand baggage, with a medical certificate', head: 'ITA Airways asks you to carry medication in your hand baggage, with a medical certificate that lists the prescription and quantity.',
+        lines: ['ITA Airways: medications and devices must be carried in hand baggage, to avoid damage from temperature changes and to keep them accessible during the flight.', 'ITA Airways: a medical certificate specifying the prescription and the quantity of medication transported is mandatory, dated at most 12 months before the date of travel.', 'ITA Airways: also take the package leaflet of the medication with you for consultation and to help identify it.'], sources: [P] },
+      needles: { status: 'warn', verdict: 'Tell the cabin crew', head: 'ITA Airways asks you to tell the cabin crew if you will use a syringe on board, so it can be disposed of properly.',
+        lines: ['ITA Airways: if you need to use a syringe on board, inform the cabin crew to ensure its proper disposal.', 'ITA Airways: for insulin, it invites you to carry insulin and other necessary devices in your hand baggage.', 'ITA Airways: at security it is sufficient to show an original medical certificate, dated at most 30 days before travel, stating the quantity and method of administration, and the medication’s package leaflet.'], sources: [P] },
+      cold: { status: 'warn', verdict: 'No cold chain, bring a cooler', head: 'ITA Airways has no cold chain on board: use a cooler with dry ice or freezer packs, up to 2.5 kg per person.',
+        lines: ['ITA Airways: it does not provide an onboard cold chain.', 'ITA Airways: to keep medication cool you can use a cooler with dry ice or freezer packs, up to a maximum weight of 2.5 kg per person.'], sources: [P] }
+    };
+  })(),
+  'royal-air-maroc': {
+    liquids: { status: 'warn', verdict: 'Prescription in your name', head: 'Royal Air Maroc accepts liquid medications in the cabin when you show a medical prescription in your name.',
+      lines: ['Royal Air Maroc: liquid medications are accepted in the cabin upon presentation of a medical prescription in the passenger’s name.', 'Royal Air Maroc: other liquids and creams must be in containers not exceeding 100 ml, in transparent plastic bags of 20 cm by 20 cm.'],
+      sources: [L('https://www.royalairmaroc.com/us-en/special-baggage', 'Royal Air Maroc: Special baggage', 'Baggage restrictions, liquid medications')] } },
+  'air-arabia': {
+    pills: { status: 'warn', verdict: 'Keep it in your cabin bag', head: 'Air Arabia does not let you put medication you may need on the trip in checked baggage: keep it in your cabin bag.',
+      lines: ['Air Arabia: you must not include in your checked baggage any medication or medical equipment which may be required in flight or during your trip.', 'Air Arabia: medical equipment can be accepted in unchecked baggage.'],
+      sources: [L('https://www.airarabia.com/-/media/conditions-of-carriage/20251215_gcoc_english_version_air-arabia.pdf', 'Air Arabia: General Conditions of Carriage', 'Checked baggage, medication')] } }
 };

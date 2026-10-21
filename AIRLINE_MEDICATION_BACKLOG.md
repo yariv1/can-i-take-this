@@ -38,3 +38,9 @@ Official own pages: BA medical-conditions (pills, liquids, needles, cold), Lufth
 - Istanbul Airport FAQ (lead for ITA/SunExpress/Turkish only if airline-side pages fail): medication in hand baggage with prescription or report, original packaging; hypodermic injectors restricted in the cabin.
 - Israel: no Ben Gurion rule found; El Al "Allowable dangerous goods" PDF (read, Oct 2022: insulin and syringes allowed carry-on and checked, no approval).
 - China/Japan/India/Vietnam/Egypt/Africa/LatAm authorities: nothing readable found yet (CAAC notice hosted on airchina.us is already used).
+
+## Session 38 progress (2026-10-21): 76 -> 56 cards still global
+Done (own page, OFFICIAL, `air_med_own.js`): SWISS liquids, Malaysia needles, Vietnam pills, Philippine needles, Copa liquids, flydubai needles, Kenya pills + cold, ITA pills + needles + cold, Royal Air Maroc liquids, Air Arabia pills.
+Done (authority, UNOFFICIAL, `air_med_fill.js` REG + `AIRLINE_REG_KIND` per airline and kind): SAS needles (Transportstyrelsen), Norwegian needles (Avinor), Air France needles + cold (French diabetes guide with DGAC/ADP on ecologie.gouv.fr), JAL cold (MLIT 2015 list), Azul + Gol liquids (ANAC Brazil).
+Tried and nothing usable (do not redo): Qatar cold, Ryanair cold, Turkish cold, Thai cold, Qantas liquids (help.qantas is dynamic), Emirates needles, IndiGo, Aegean (Athens airport behind Cloudflare), SunExpress/EgyptAir/El Al (Cloudflare or bot page in the pane), JAL FAQ hosts (blocked), Oman Air PDF (blocked), Ethiopian, Gulf Air pills/liquids (medical page silent), China airlines (no syringe or pill page found).
+Still global (56 cards): run the list script idea in session 38 (parse built airline/*/medication pages for BASED ON GLOBAL RULES cards).

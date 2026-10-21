@@ -61,7 +61,8 @@ function polish(scen, a) {
   const silent = id => {
     const w = OWN[sl] && OWN[sl][id];   // the airline's own other pages first (official)
     if (w) return { id, label: CHIP[id] || id, status: w.status, verdict: w.verdict, sub: SUB[id] || '', head: w.head, lines: w.lines, sources: w.sources, srcKind: 'official', first: false };
-    const f = regId && FILL.REG[regId] && FILL.REG[regId][id];
+    const rk = (FILL.AIRLINE_REG_KIND && FILL.AIRLINE_REG_KIND[sl] && FILL.AIRLINE_REG_KIND[sl][id]) || regId;
+    const f = rk && FILL.REG[rk] && FILL.REG[rk][id];
     if (f) return { id, label: CHIP[id] || id, status: f.status, verdict: f.verdict, sub: SUB[id] || '', head: name + ': ' + f.head.charAt(0).toLowerCase() + f.head.slice(1), lines: f.lines(name).map((l, i) => (i < 2 ? 'For ' + name + ': ' + l : l)), sources: f.sources, srcKind: 'unofficial', first: false };
     const g = FILL.GLOBAL[id];
     if (g) return { id, label: CHIP[id] || id, status: g.status, verdict: g.verdict, sub: SUB[id] || '', head: g.head(name), lines: g.lines(name), sources: [], srcKind: 'global', first: false };
