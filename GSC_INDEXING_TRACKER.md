@@ -545,3 +545,6 @@ Also session 36 alcohol/perfume round (optional, TO REQUEST): /airline/<slug>/al
 - https://canitakethis.co/airline/aeromexico/medication/ — TO REQUEST
 - https://canitakethis.co/airline/alaska-airlines/medication/ — TO REQUEST
 - https://canitakethis.co/airline/hawaiian-airlines/medication/ — TO REQUEST
+- https://canitakethis.co/airline/saudia/medication/ — TO REQUEST
+- https://canitakethis.co/airline/kuwait-airways/medication/ — TO REQUEST
+- https://canitakethis.co/airline/middle-east-airlines/medication/ — TO REQUEST
