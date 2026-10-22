@@ -2134,5 +2134,506 @@
     "The page gives no list of what is allowed in a traveller’s bag."
    ]
   }
+ },
+ "Bahrain": {
+  "date": "Bahrain National Portal service page read 22 October 2026",
+  "ttl": "Can You Bring Seeds & Plants into Bahrain? Permit Rules (2026)",
+  "desc": "Bringing plants or seeds into Bahrain (2026): Do not bring plants or seeds without a permit.",
+  "lead": "Bahrain's national portal lists a permit service for plants and plant products that travellers bring in. The Ministry of Municipalities Affairs and Agriculture runs it with Customs, to stop agricultural pests arriving with travellers or by post.",
+  "rows": [
+   [
+    "Item",
+    "What the portal page says"
+   ],
+   [
+    "Plants and vegetable products carried by a traveller",
+    "An entry permit from the Ministry of Municipalities Affairs and Agriculture is part of the process"
+   ],
+   [
+    "Who it is for",
+    "Travellers arriving through Bahrain's ports, and goods arriving by post"
+   ],
+   [
+    "Document asked for",
+    "A trust receipt issued by Customs Affairs"
+   ],
+   [
+    "Processing time",
+    "1 working day"
+   ],
+   [
+    "Rules that apply",
+    "Agricultural quarantine procedures under the GCC Agricultural Quarantine Law (Law 5 of 2003) and Ministerial Resolution 1 of 2004"
+   ]
+  ],
+  "notes": [
+   "<strong>Not read:</strong> the page does not list which plants, fruit or seeds need the permit, any personal-quantity exemption or the fee for travellers, so assume everything plant-based needs checking first.",
+   "<strong>Practical step:</strong> declare plants, seeds and fresh produce to Customs on arrival and ask for the quarantine route."
+  ],
+  "faq": [
+   [
+    "Can I bring plants or seeds into Bahrain?",
+    "Bahrain's national portal describes an entry permit for plants and vegetable products carried by travellers, issued through the Ministry of Municipalities Affairs and Agriculture with Customs. Do not bring them without checking."
+   ],
+   [
+    "What do I need for a plant permit in Bahrain?",
+    "The portal lists a trust receipt issued by Customs Affairs, and says processing takes 1 working day."
+   ]
+  ],
+  "src": [
+   [
+    "https://www.bahrain.bh/wps/portal/en/BNP/ServicesCatalogue/GSX-UI-PServiceDetails?psID=1573",
+    "Bahrain National Portal: Entry permit to bring vegetable products and plants with travellers"
+   ]
+  ],
+  "keepSchema": true,
+  "card": {
+   "status": "warn",
+   "head": "Permit needed: do not just carry plants in.",
+   "lines": [
+    "Bahrain's national portal says travellers need an entry permit from the agriculture ministry for plants and vegetable products. Declare them to Customs."
+   ]
+  }
+ },
+ "Ethiopia": {
+  "date": "FAOLEX copy of Regulation 4/1992 read 22 October 2026",
+  "ttl": "Can You Bring Seeds & Plants into Ethiopia? Permit Rules (2026)",
+  "desc": "Bringing plants or seeds into Ethiopia (2026): Do not bring plants or seeds without a permit.",
+  "lead": "Ethiopia's plant quarantine regulation (1992, in the FAO legal database) puts every imported plant and plant article under quarantine control. It says fresh fruit and vegetables need an import permit and a phytosanitary certificate, and bans soil.",
+  "rows": [
+   [
+    "Item",
+    "What the regulation says"
+   ],
+   [
+    "Imported plants and plant products, seeds included",
+    "All are subject to plant quarantine"
+   ],
+   [
+    "Items on the restricted list (Schedule I)",
+    "Need an import permit from the Minister of Agriculture and a phytosanitary certificate"
+   ],
+   [
+    "Fresh fruit and vegetables",
+    "On the restricted list, so permit and certificate apply"
+   ],
+   [
+    "Seeds",
+    "Many listed crops (for example citrus, tomato-family and cabbage-family plants, beans, mango) are listed as plants excluding seeds; some, such as maize, wheat, rice, sorghum and potato, are listed without that exception"
+   ],
+   [
+    "Soil, compost, plant packing materials such as banana leaves, straw and rice hulls",
+    "Prohibited (Schedule II)"
+   ],
+   [
+    "Pest-infested plants",
+    "Treated, re-exported or destroyed at the owner's expense; inspectors can seize them"
+   ],
+   [
+    "Penalty",
+    "Under the Plant Protection Decree 56 of 1971, which was not read"
+   ]
+  ],
+  "notes": [
+   "<strong>Not read:</strong> the regulation does not mention personal baggage or a small-quantity exemption, and it dates from 1992, so the lists may have been amended since. It is a copy on the FAO site, not the Ethiopian ministry's own page.",
+   "<strong>Practical step:</strong> do not pack soil, fresh produce or plants. Ask the Ethiopian Ministry of Agriculture's plant quarantine service before travelling."
+  ],
+  "faq": [
+   [
+    "Can I bring fresh fruit or vegetables into Ethiopia?",
+    "Ethiopia's 1992 plant quarantine regulation lists fresh fruit and vegetables as restricted: an import permit and a phytosanitary certificate are required. It has no personal-baggage exemption in the text read."
+   ],
+   [
+    "Can I bring soil or plants with soil into Ethiopia?",
+    "No. The regulation lists soil, whether alone or attached to plants, as a prohibited article."
+   ]
+  ],
+  "src": [
+   [
+    "https://faolex.fao.org/docs/pdf/eth4524.pdf",
+    "FAO FAOLEX copy of Ethiopia's Plant Quarantine Council of Ministers Regulation No. 4/1992"
+   ]
+  ],
+  "keepSchema": true,
+  "unofficial": true,
+  "card": {
+   "status": "stop",
+   "head": "Do not bring fresh produce, soil or plants.",
+   "lines": [
+    "Ethiopia's plant quarantine regulation (1992) requires an import permit and phytosanitary certificate for fresh fruit, vegetables and many plants, and bans soil."
+   ]
+  }
+ },
+ "Vietnam": {
+  "date": "English translation of Law 41/2013/QH13 read 22 October 2026",
+  "ttl": "Can You Bring Seeds & Plants into Vietnam? Permit Rules (2026)",
+  "desc": "Bringing plants or seeds into Vietnam (2026): Do not bring plants or seeds without a permit.",
+  "lead": "Vietnam's Law on Plant Protection and Quarantine says plant items carried in hand luggage or checked luggage must be declared and inspected. Plant items can only clear customs after the plant quarantine steps are done.",
+  "rows": [
+   [
+    "Item",
+    "What the law says"
+   ],
+   [
+    "Plants and plant items carried in hand or checked luggage (Article 29)",
+    "Subject to declaration and inspection under rules set by the Ministry of Agriculture and Rural Development"
+   ],
+   [
+    "Customs clearance (Article 29)",
+    "Items liable to quarantine clear customs only after plant quarantine on import is complete"
+   ],
+   [
+    "Passenger declaration (Article 7)",
+    "The ministry sets the plant quarantine content of the declaration that passengers fill in on entry or exit"
+   ],
+   [
+    "Infested, risky or unclear-origin items (Article 34)",
+    "Can be fumigated, heat-treated, re-exported, destroyed or refused entry"
+   ]
+  ],
+  "notes": [
+   "<strong>Not read:</strong> the law leaves the details to ministry rules, so it does not say which fruits, seeds or plants are allowed in hand luggage, whether a phytosanitary certificate is needed, or what the fines are.",
+   "<strong>Source:</strong> this is a private publisher's English translation of the Official Gazette, not the ministry's page, so treat the Vietnamese text as the version that counts."
+  ],
+  "faq": [
+   [
+    "Do I have to declare plants or seeds when arriving in Vietnam?",
+    "Yes. Article 29 of Vietnam's plant protection and quarantine law says plant items carried in hand luggage or checked luggage are subject to declaration and inspection."
+   ],
+   [
+    "Can Vietnam destroy plants I bring in?",
+    "Article 34 allows treatment, re-export, destruction or refusal of entry for items that are infested, likely to carry quarantine pests or of unclear origin."
+   ]
+  ],
+  "src": [
+   [
+    "https://english.luatvietnam.vn/law-no-41-2013-qh13-of-the-national-assembly-on-plant-protection-and-quarantine-83382-doc1.html",
+    "LuatVietnam: English translation of Vietnam's Law on Plant Protection and Quarantine (Law 41/2013/QH13)"
+   ]
+  ],
+  "keepSchema": true,
+  "unofficial": true,
+  "card": {
+   "status": "warn",
+   "head": "Declare plants, seeds and fresh produce.",
+   "lines": [
+    "Vietnam's plant quarantine law requires plant items in hand or checked luggage to be declared and inspected before customs clearance."
+   ]
+  }
+ },
+ "Oman": {
+  "date": "Oman CAA AIP GEN 1.4 (amendment of 15 May 2025, archived copy) read 22 October 2026",
+  "ttl": "Can You Bring Seeds & Plants into Oman? Permit Rules (2026)",
+  "desc": "Bringing plants or seeds into Oman (2026): Do not bring plants or seeds without a permit.",
+  "lead": "Oman's civil aviation publication sets out the plant quarantine rules for agricultural goods, including seeds, live plants, soil, fresh vegetables, fruit and nuts. Seeds and live plants need a phytosanitary certificate, and untreated soil is banned.",
+  "rows": [
+   [
+    "Item",
+    "What the publication says"
+   ],
+   [
+    "Seeds and live plants",
+    "Need an official certificate from the country of origin saying they are free from agricultural pests and diseases"
+   ],
+   [
+    "Live plants",
+    "The certificate must say how the soil they are rooted in was sterilised"
+   ],
+   [
+    "Date and coconut palms, citrus, banana and tobacco plants",
+    "Need an import permit from the Ministry of Agriculture and Fisheries before shipping; the fruit of these plants is allowed without a permit"
+   ],
+   [
+    "Natural soil",
+    "Untreated or unsterilised soil is prohibited; treated soil is allowed only where live plants are rooted in it"
+   ],
+   [
+    "Every consignment",
+    "Examined by a plant quarantine officer on arrival"
+   ],
+   [
+    "Pest-infested plants",
+    "Returned within one week or destroyed"
+   ],
+   [
+    "Penalty",
+    "Fine of up to OMR 1,000"
+   ]
+  ],
+  "notes": [
+   "<strong>Not read:</strong> this part of the publication is written for agricultural goods in general. It does not give a small-quantity exemption for passengers, and a 2026 news report says Oman has relaxed some permit rules, so check the ministry before you travel."
+  ],
+  "faq": [
+   [
+    "Can I bring seeds or plants into Oman?",
+    "Oman's civil aviation publication says seeds and live plants must have an official phytosanitary certificate from the country of origin, and some plants (palms, citrus, banana, tobacco) also need an import permit."
+   ],
+   [
+    "Can I bring soil into Oman?",
+    "Not untreated soil. The publication prohibits unsterilised natural soil; sterilised soil is allowed only around live plants that come with the right certificate."
+   ]
+  ],
+  "src": [
+   [
+    "https://aim.caa.gov.om/eAIP_AMDT_02-25/final/2025-05-15-Non-AIRAC/html/eAIP/GEN-1.4-en-GB.html",
+    "Oman Civil Aviation Authority AIP, GEN 1.4: agricultural and veterinary quarantine requirements"
+   ]
+  ],
+  "keepSchema": true,
+  "card": {
+   "status": "warn",
+   "head": "Certificate needed for seeds and plants.",
+   "lines": [
+    "Oman requires a phytosanitary certificate for seeds and live plants, a permit for some plants, and bans untreated soil. Fines go up to OMR 1,000."
+   ]
+  }
+ },
+ "Cambodia": {
+  "date": "FAOLEX copy of Prakas 346 (10 May 2010) read 22 October 2026",
+  "ttl": "Can You Bring Seeds & Plants into Cambodia? Permit Rules (2026)",
+  "desc": "Bringing plants or seeds into Cambodia (2026): Do not bring plants or seeds without a permit.",
+  "lead": "Cambodia's Agriculture Ministry order on plant quarantine inspection treats seeds for planting, soil and compost as high-risk, and says anyone importing plant materials must go through an inspection office with a phytosanitary certificate. It has no separate rule for passengers.",
+  "rows": [
+   [
+    "Item",
+    "What the order says"
+   ],
+   [
+    "Anyone importing plant quarantine materials",
+    "Must apply to a Plant Quarantine Inspection Office and attach the exporting country's original phytosanitary certificate"
+   ],
+   [
+    "High-risk items: seeds or seed parts for replanting, tissue culture or propagation",
+    "Need an Import Certificate/Permit from the General Directorate of Agriculture before they come in"
+   ],
+   [
+    "High-risk items: soil, compost, algae, living insects and microorganisms",
+    "Same permit requirement"
+   ],
+   [
+    "Fresh fruit, vegetables, roots and buds from a country that has never exported them to Cambodia",
+    "Also treated as high-risk and need the permit"
+   ],
+   [
+    "Agricultural goods such as crops, fertilisers and feed",
+    "Also need an import licence from the Ministry of Agriculture"
+   ],
+   [
+    "Permit decision time",
+    "The General Directorate answers the risk analysis within 15 days"
+   ]
+  ],
+  "notes": [
+   "<strong>Not read:</strong> the order is written for consignments. It says nothing about passengers, small amounts for personal use or fines, so assume the same rules can apply to plants in your bags.",
+   "<strong>Source:</strong> a copy in the FAO legal database, dated 2010; the ministry's own page was not readable."
+  ],
+  "faq": [
+   [
+    "Can I bring seeds into Cambodia?",
+    "Cambodia's plant quarantine order treats seeds for replanting as high-risk. They need an import permit from the General Directorate of Agriculture and a phytosanitary certificate. The order does not give a small-amount exemption."
+   ],
+   [
+    "Can I bring soil or compost to Cambodia?",
+    "The order lists soil and compost used for planting or soil improvement among the high-risk materials that need a permit before import."
+   ]
+  ],
+  "src": [
+   [
+    "https://faolex.fao.org/docs/pdf/cam159615.pdf",
+    "FAO FAOLEX copy of Cambodia's Agriculture Ministry Prakas 346 (2010) on plant quarantine inspection procedures"
+   ]
+  ],
+  "keepSchema": true,
+  "unofficial": true,
+  "card": {
+   "status": "warn",
+   "head": "Permit and certificate needed for seeds and soil.",
+   "lines": [
+    "Cambodia's plant quarantine order requires a permit for seeds, soil and compost, and a phytosanitary certificate for plant materials. It says nothing about personal amounts."
+   ]
+  }
+ },
+ "Kuwait": {
+  "date": "GCC Plant Quarantine Law (1424H / 2003) read 22 October 2026",
+  "ttl": "Can You Bring Seeds & Plants into Kuwait? Permit Rules (2026)",
+  "desc": "Bringing plants or seeds into Kuwait (2026): Do not bring plants or seeds without a permit.",
+  "lead": "Kuwait is a GCC member, and the Gulf Cooperation Council's common plant quarantine law has a rule for travellers. Plants carried by travellers can be exempt from a phytosanitary certificate unless they are for planting, but they are always subject to inspection, and failing to declare them is an offence.",
+  "rows": [
+   [
+    "Item",
+    "What the GCC law says"
+   ],
+   [
+    "Plants or plant products carried by travellers, not for planting or multiplication (Article 24)",
+    "May be exempt from the phytosanitary certificate requirement, but are subject to inspection"
+   ],
+   [
+    "Plants for planting or multiplication",
+    "Not covered by that exemption, so the certificate requirement applies"
+   ],
+   [
+    "Declaring plants at the point of entry (Article 29)",
+    "Failing to declare imported plants, plant products or regulated articles is an offence"
+   ],
+   [
+    "Sand, soil and untreated organic fertiliser (Article 20)",
+    "Importing them is prohibited"
+   ],
+   [
+    "Prohibited or restricted items (Article 22)",
+    "The minister can ban or restrict any plant, plant product, soil or item that could carry a pest"
+   ],
+   [
+    "Penalty (Article 30)",
+    "Set by executive regulation, which was not read"
+   ]
+  ],
+  "notes": [
+   "<strong>Not read:</strong> Kuwait's own implementing rules and fines, and the list of plants that Kuwait bans or restricts. The GCC law applies the same framework across member states, but each state sets its own details.",
+   "<strong>Practical step:</strong> declare plants, seeds and fresh produce at the point of entry. Do not bring soil or plants meant for growing."
+  ],
+  "faq": [
+   [
+    "Do I have to declare fruit or plants when arriving in Kuwait?",
+    "The GCC plant quarantine law makes it an offence not to declare imported plants or plant products at the point of entry, and says traveller items are subject to inspection."
+   ],
+   [
+    "Can I bring plants or seeds to plant in Kuwait?",
+    "The GCC law only allows the phytosanitary certificate exemption for traveller items that are not for planting or multiplication. Plants or seeds for growing need the certificate."
+   ]
+  ],
+  "src": [
+   [
+    "https://www.gcc-sg.org/en/MediaCenter/DigitalLibrary/Documents/1274263266.pdf",
+    "GCC Secretariat: Plant Quarantine Law for the Cooperation Council for the Arab States of the Gulf (2003)"
+   ]
+  ],
+  "keepSchema": true,
+  "unofficial": true,
+  "card": {
+   "status": "warn",
+   "head": "Declare plants; no planting material.",
+   "lines": [
+    "The GCC plant quarantine law, which Kuwait is part of, makes travellers' plants subject to inspection and non-declaration an offence. The exemption from certificates excludes anything for planting."
+   ]
+  }
+ },
+ "Dominican Republic": {
+  "date": "Diario Libre and El Día reports of Agriculture Ministry statements read 22 October 2026",
+  "ttl": "Seeds & Plants into Dominican Republic: Permit Rules 2026",
+  "desc": "Bringing plants or seeds into Dominican Republic (2026): Do not bring plants or seeds without a permit.",
+  "lead": "The Dominican Agriculture Ministry's plant-health department told the press that its quarantine technicians check bags and suitcases at airports and seize fruit and unregistered products. What they take is incinerated.",
+  "rows": [
+   [
+    "Item",
+    "What the reports say"
+   ],
+   [
+    "Bags and suitcases at airports",
+    "Plant quarantine technicians check them and seize any fruit or product without a registration (Diario Libre)"
+   ],
+   [
+    "What happens to a seizure at an airport or border",
+    "The product is seized and incinerated (Diario Libre)"
+   ],
+   [
+    "Extra checks",
+    "Pre-check and checks of luggage and all passengers were reinforced at Punta Cana airport as part of the response to Mediterranean fruit fly (El Día)"
+   ],
+   [
+    "Plant-health permits",
+    "The same department issues phytosanitary permits and certificates (Diario Libre)"
+   ]
+  ],
+  "notes": [
+   "<strong>Not read:</strong> no source read lists which plants, seeds or fruit are allowed, or personal amounts. Both are newspaper reports of ministry statements, so the plant rule is marked unofficial.",
+   "<strong>Practical step:</strong> do not pack fresh fruit, plants or seeds, and declare any food on the arrival form."
+  ],
+  "faq": [
+   [
+    "Can I bring fruit into the Dominican Republic?",
+    "The Agriculture Ministry's plant-health department says its technicians check bags and suitcases and seize fruit or products without a registration, which are then incinerated."
+   ],
+   [
+    "Do I have to declare plants and seeds in the Dominican Republic?",
+    "No source read lists plants or seeds. Declare any food or plant material on the arrival form and ask the plant-health officers at the airport."
+   ]
+  ],
+  "src": [
+   [
+    "https://www.diariolibre.com/economia/agricultura-aumenta-chequeos-fitosanitarios-en-puertos-y-aeropuertos-PC23475749",
+    "Diario Libre: Agriculture ministry plant-health checks at ports and airports"
+   ],
+   [
+    "https://eldia.com.do/incautan-frutas-al-cantante-julio-iglesias-en-el-aeropuerto-punta-cana/",
+    "El Día: Agriculture ministry plant quarantine seizes fruit at Punta Cana airport"
+   ]
+  ],
+  "keepSchema": true,
+  "unofficial": true,
+  "card": {
+   "status": "warn",
+   "head": "Do not bring fresh fruit or plants.",
+   "lines": [
+    "The Dominican Agriculture Ministry says its airport technicians seize and incinerate fruit and unregistered plant products found in bags."
+   ]
+  }
+ },
+ "Ukraine": {
+  "date": "English copy of the Law on Plant Quarantine (version with amendments up to 2003) read 22 October 2026",
+  "ttl": "Can You Bring Seeds & Plants into Ukraine? Permit Rules (2026)",
+  "desc": "Bringing plants or seeds into Ukraine (2026): Do not bring plants or seeds without a permit.",
+  "lead": "Ukraine's Law on Plant Quarantine says the plant quarantine inspectorate checks quarantine-liable materials arriving from abroad, including those in baggage and passenger hand luggage. It puts the duty to follow the quarantine rules on citizens as well as businesses.",
+  "rows": [
+   [
+    "Item",
+    "What the law says"
+   ],
+   [
+    "Materials subject to quarantine arriving from abroad in baggage or passenger hand luggage (Article 7)",
+    "The border and regional plant quarantine inspections carry out quarantine checks and laboratory tests on them"
+   ],
+   [
+    "Treatment (Article 7)",
+    "The inspections arrange treatment and disinfection of quarantine-liable materials and vehicles arriving from abroad"
+   ],
+   [
+    "Citizens (Articles 5 and 15)",
+    "Citizens must help the state inspectors and follow the plant quarantine rules"
+   ],
+   [
+    "Penalty for citizens (Article 16)",
+    "Liability under Ukrainian legislation; fines through the courts are set for entrepreneurs bringing in quarantine materials"
+   ]
+  ],
+  "notes": [
+   "<strong>Not read:</strong> the list of quarantine-liable materials sits in a separate Cabinet of Ministers regulation, and this copy predates later amendments, so it does not say whether fruit or plants in personal luggage are allowed, or in what amounts.",
+   "<strong>Source:</strong> a copy by a research institute, not the State Service's own page."
+  ],
+  "faq": [
+   [
+    "Are plants in my luggage checked when I enter Ukraine?",
+    "Yes, under the Law on Plant Quarantine the border plant quarantine inspections check quarantine-liable materials delivered from abroad, including baggage and passenger hand luggage."
+   ],
+   [
+    "Can I bring seeds or fruit into Ukraine?",
+    "The law read does not list allowed items. Quarantine-liable materials are set by a separate Cabinet regulation that was not read, so declare them and ask the border inspectors."
+   ]
+  ],
+  "src": [
+   [
+    "https://www.vertic.org/media/National%20Legislation/Ukraine/UA_Law_Plant_Quarantine.pdf",
+    "VERTIC copy (English) of Ukraine's Law on Plant Quarantine"
+   ]
+  ],
+  "keepSchema": true,
+  "unofficial": true,
+  "card": {
+   "status": "warn",
+   "head": "Plants in luggage are inspected.",
+   "lines": [
+    "Ukraine's plant quarantine law has border inspectors check quarantine-liable plant material in baggage and hand luggage. The list of items was not read."
+   ]
+  }
  }
 }

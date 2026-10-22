@@ -2,15 +2,12 @@
 
 User order (HARD): "stop bullshitting the users", no worthless generic answers. Source ladder (DS 8.37) per cell: (1) official page read; (2) if it fails for ANY reason, a reliable NAMED third party read in full (UNOFFICIAL footer + link); (3) global only if both fail. Never report "no source found" without listing which third-party sources were tried.
 
-## Cells still generic (14)
-- **Plants & seeds (9):** Bahrain, Cambodia, Dominican Republic, Ethiopia, Jordan, Kuwait, Oman, Ukraine, Vietnam.
-- **Alcohol + tobacco (2 each):** Lebanon, Panama.
-- **Cash (1):** Lebanon.
-- **Vaping (1):** Hong Kong (country_vape.js, WHO card only).
-
-## Already tried for them (do NOT repeat, find a NEW kind of source)
-UK FCDO `gov.uk/foreign-travel-advice/<country>/entry-requirements` (all 16 read: no allowances except those already used), Canada travel.gc.ca and US State pages (no allowances), IPPC national reporting pages, FAOLEX, airport operator pages (Queen Alia: arrivals text used for Jordan t/a/c; Cairo used; Tocumen via Wayback used; Beirut DGCA used; Cambodia Airports used; Kuwait Airport, Oman Airports, Boryspil, Hamad: silent), tourism-ministry portals (Cuba, Cambodia, Panama used; Lebanon Destination Lebanon silent), customs sites (Bahrain 403, Oman silent, Kuwait blocked, Vietnam silent, Ukraine silent, Cambodia SPA-only), MEWA Saudi PDF (dead link), Panama ANA (page moved, numbers only in a search summary: NOT usable).
-Ideas not yet tried: embassy pages of the country abroad (e.g. embassy of Bahrain/Oman/Vietnam/Ukraine "customs" pages), national duty-free operators (Bahrain Duty Free, Oman Duty Free, Dufry/Lagardere pages quoting allowances), Wikipedia-sourced official citations, regional plant-protection organisations (GCC secretariat agricultural quarantine law PDF, NEPPO, APPPC), GSMA/IATA Timatic-like public summaries, national tourism boards of Vietnam/Oman/Bahrain, "Dominican Republic: DGA Manual del Viajero + Ministry of Agriculture RES-MARD" (weak: only says declare), Hong Kong: Department of Health / Customs and Excise (cap. 371 smoking ban on e-cigarettes since 30 April 2022: official page not yet read).
+## Session 40 (2026-10-22): 11 of 14 cells done (not deployed yet)
+Done with NEW source types: HK vaping (DH notice, official, new `noWho` branch in country_vape.js for countries without a WHO profile), Bahrain plants (national portal service page), Oman plants (CAA AIP GEN 1.4 via Wayback), Kuwait plants (GCC Secretariat Plant Quarantine Law, art. 20/22/24/29, UNOFFICIAL), Ethiopia (Reg 4/1992 on FAOLEX, UNOFFICIAL), Vietnam (Law 41/2013 English, art. 29/7/34, UNOFFICIAL), Cambodia (MAFF Prakas 346/2010 on FAOLEX, UNOFFICIAL), Ukraine (Law on Plant Quarantine copy, art. 7, UNOFFICIAL), Dominican Republic (Agriculture Ministry statements in Diario Libre + El Dia, UNOFFICIAL; DGA manual link is cited by other DR pages).
+## Still generic (3 cells + Jordan plants + Panama alc/tob = 5 cells)
+Jordan plants; Panama alcohol + tobacco; Lebanon alcohol + tobacco + cash (3 cells counted separately).
+TRIED this session: Jordan: FAOLEX reg Z/2/2003 (PDF unreadable Arabic font, abstract only), CARC AIP GEN 1.3/1.4 (2006, says only food samples inspected), customs trade portal (commercial live animals only), MoA search, secondary guides (World Baggage Network, Roafly). Panama: ANA declaracion-jurada page (www.ana.gob.pa/w_ana/index.php/declaracion-jurada-de-viajero) redirects to home, Wayback blocked, Gaceta Oficial PDFs blocked; figures (5 L liquor, 500 g tobacco, US$500) seen ONLY in a search summary = NOT usable. Lebanon: customs.gov.lb unreachable (SSL), only copies of one travel-site text (hinterlandtravel) and entrybrief with CONFLICTING figures (800 vs 200 cigarettes), FIDI 2018 removals guide, UAE embassy Beirut page 404, Beirut airport site silent.
+Ideas left: Panama ANA page via Chrome (Claude in Chrome, user's browser), Lebanon customs via Chrome/Wayback when rate limit passes, Jordan Customs travellers guide in Arabic via Chrome, FIDI Lebanon PDF read in full.
 
 ## Tools (all in repo root)
 - `cust_add_country.js spec.json` (alcohol/tobacco/cash). Spec: `{"country","src":[{"label","url","unofficial":true}],"srcByCat":{cat:[...]},"cats":{"alcohol":[head,[lines],"warn|stop|go"],...}}`.

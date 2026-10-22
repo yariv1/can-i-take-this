@@ -999,5 +999,85 @@
     "Iceland charges no import fees up to 40 ml of refill e-liquid or 20 disposable vapes; the minimum age is 18."
    ]
   }
+ },
+ "HK": {
+  "sections": [
+   {
+    "h": "🛃 What Hong Kong's Department of Health says about bringing e-cigarettes",
+    "p": "A Department of Health (DH) notice of 28 April 2022 explains how the Smoking (Public Health) (Amendment) Ordinance 2021 applies to incoming travellers.",
+    "table": {
+     "head": [
+      "Item",
+      "What the DH notice says"
+     ],
+     "rows": [
+      [
+       "What is banned",
+       "Import, promotion, manufacture, sale and possession for commercial purposes of alternative smoking products"
+      ],
+      [
+       "Which products",
+       "Electronic smoking products, heated tobacco products, herbal cigarettes and their accessories"
+      ],
+      [
+       "Travellers",
+       "Bringing them in as an incoming traveller is prohibited"
+      ],
+      [
+       "Declaration",
+       "Travellers bringing them in must declare them to the Customs and Excise Department, whatever the quantity and even for personal use"
+      ],
+      [
+       "Transit",
+       "Articles carried by people in transit at Hong Kong International Airport who do not pass through immigration control are exempt"
+      ],
+      [
+       "Penalty",
+       "Maximum fine of HK$50,000 and six months in prison"
+      ],
+      [
+       "Using one in public",
+       "No smoking or carrying an activated product in a statutory no-smoking area; fixed penalty of HK$1,500"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>Not read:</strong> the notice does not say what Customs does with a declared device, so assume it can be taken. The DH Tobacco and Alcohol Control Office (TACO) site has the FAQ and pamphlet, which were not read."
+    ]
+   }
+  ],
+  "faq": [
+   [
+    "Can I bring a vape into Hong Kong?",
+    "No. The Department of Health says importing electronic smoking products, including by an incoming traveller, is prohibited, and a traveller who has one must declare it to Customs and Excise whatever the quantity."
+   ],
+   [
+    "What is the penalty for bringing an e-cigarette to Hong Kong?",
+    "The DH notice gives a maximum fine of HK$50,000 and six months in prison for offences under the ban, and a HK$1,500 fixed penalty for using or carrying an activated product in a no-smoking area."
+   ],
+   [
+    "Can I carry a vape in transit through Hong Kong airport?",
+    "The DH notice exempts articles carried by people in transit who do not pass through immigration control. If you leave the transit area, the import ban applies."
+   ]
+  ],
+  "src": [
+   [
+    "https://www.info.gov.hk/gia/general/202204/28/P2022042600489.htm",
+    "Hong Kong Department of Health &mdash; DH to enforce new legislation on alternative smoking products (28 Apr 2022)"
+   ]
+  ],
+  "keepSchema": true,
+  "card": {
+   "status": "stop",
+   "head": "Banned: do not bring a vape.",
+   "lines": [
+    "Hong Kong's Department of Health says incoming travellers may not bring e-cigarettes or heated tobacco in, and any that are carried must be declared to Customs."
+   ]
+  },
+  "noWho": true,
+  "ttl": "Vaping in Hong Kong 2026 — Is It Legal?",
+  "desc": "Vaping in Hong Kong 2026: Often restricted - check first. Some countries ban or heavily restrict vapes and nicotine liquids.",
+  "read": "Hong Kong Department of Health notice of 28 April 2022 read 22 October 2026",
+  "lead": "Hong Kong prohibits importing e-cigarettes, heated tobacco and herbal cigarettes, including by an incoming traveller. Anyone bringing one in must declare it to Customs, whatever the quantity."
  }
 }

@@ -31,7 +31,18 @@ function indoorText(cn, D) {
 }
 
 function build(c) {
-  const D = DATA25.c[c.code] || DATA.c[c.code]; if (!D) return null;
+  const D = DATA25.c[c.code] || DATA.c[c.code];
+  if (!D) {
+    // country without a WHO profile: page built only from the country's own official page (vape_extra.json); title and description stay as before (X.ttl / X.desc)
+    const XN = EXTRA[c.code]; if (!XN || !XN.noWho) return null;
+    const cnn = c.name;
+    const htmlN = '<div class="bd-wrap">' + CSS + '<p class="bd-lead"><strong>' + esc(XN.lead) + '</strong></p>' +
+      XN.sections.map(sc => '<section class="bd-sec"><h2>' + sc.h + '</h2><p>' + esc(sc.p) + '</p>' + (sc.table ? table(sc.table) : '') + (sc.list ? '<ul>' + sc.list.map(x => '<li>' + x + '</li>').join('') + '</ul>' : '') + '</section>').join('') +
+      '<section class="bd-faq"><h2>❓ Quick answers</h2>' + XN.faq.map(q => '<h3>' + esc(q[0]) + '</h3><p>' + esc(q[1]) + '</p>').join('') + '</section>' +
+      '<p class="bd-chk">Read ' + esc(XN.read) + '. Rules change: confirm with the customs authority of ' + esc(cnn) + ' before you travel.</p>' +
+      '<div class="bd-src"><div class="h">✓ Official source</div>' + XN.src.map(x => '<a href="' + x[0] + '" target="_blank" rel="noopener noreferrer">' + x[1] + '</a>').join('') + '</div></div>';
+    return { ttl: XN.ttl, desc: XN.desc, html: htmlN, faq: [], card: XN.card };
+  }
   const N25 = D.rep === 2025;
   const RPT = N25 ? "WHO's 2025 country profile for " : "WHO's 2023 country profile for ", YR = N25 ? ' (data for 2024)' : ' (data as at 2022)';
   const cn = c.name, A = analyse(D);
