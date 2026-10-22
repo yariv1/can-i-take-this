@@ -1,15 +1,14 @@
 # Airline source audit (session 40, 2026-10-22): does the OFFICIAL link on a tab answer the card?
-Scope: airline tabs liquids, power bank, vape, perfume/aerosols, alcohol (273 cited official links, 88 unique pages not readable by a plain fetch re-read in the browser pane). Test: the page must contain the topic. Baggage tab not audited.
+Scope: airline tabs liquids, power bank, vape, perfume/aerosols, alcohol (273 cited official links; 88 unique pages re-read in a real browser). Baggage tab not audited.
 
-## DOES NOT ANSWER (page read in a real browser, topic missing or only a country-ban note) - fix pending
-- liquids: IndiGo (cabin-baggage page: 0 mentions of liquids), easyJet (cabin-bags page: 0)
-- vape: Malaysia Airlines (additional-restrictions: 0), Air Arabia (prohibited-items: 0), Turkish (restrictions: 0)
-- vape, page only says "in some/many countries e-cigarettes are prohibited", NOT the cabin-only rule the card states: Austrian, Lufthansa, SWISS, Brussels Airlines, ITA Airways
-- vape, page only bans USING e-cigarettes on board (Pegasus); Vueling and WestJet only list e-cigarettes among items allowed in hand luggage (partial: no "never checked")
-- liquids: Air Arabia hand-baggage page has 3 weak mentions (check card text)
-Fix per ladder: another page of the same airline that answers, else named regulator (UNOFFICIAL), else GLOBAL footer without an official link.
+## FIXED (page really lacked the rule; link replaced by the airline's page that has it, read 2026-10-22)
+- IndiGo liquids: cabin-baggage page has no liquids rule -> https://www.goindigo.in/baggage/dangerous-goods-policy.html (litre bag, shampoos etc.)
+- easyJet liquids: cabin-bags page has no liquids rule -> https://www.easyjet.com/en/help/baggage/restricted-and-unusual-items (100 ml, 20x20 bag, 1,000 ml)
 
-## VERIFIED OK (topic present with real content): the rest that loaded (Gulf Air, GOL, Icelandair, Virgin Atlantic, China Eastern, Emirates, Air NZ, JetBlue, JAL, Thai, Copa, Eurowings, ITA hand-baggage, LOT, Korean, Philippine, SAS, Transavia, SWISS hand-baggage, United, Turkish carry-on, Lufthansa Group power banks, easyJet dangerous goods, Oman Air, Norwegian, Thai power-bank, Southwest, Delta, Ryanair, Air Canada, Norwegian DG, Austrian DG etc.)
+## FALSE ALARMS after reading context (first check missed wording like "e cigarettes", "electronic smoking devices", "cigarettes", icon-labelled table rows)
+Air Arabia, Malaysia Airlines, Turkish, Pegasus (states the use ban), Vueling (lists e-cigarette as allowed hand luggage), WestJet, Lufthansa, Austrian, SWISS, Brussels, ITA (rule block sits right above the e-cigarette note; the row label is an icon, not text). They answer their cards.
 
-## NOT VERIFIED: the page blocks our browsers (Cloudflare/403/SPA/geo/PDF); needs the user's own Chrome or Wayback
-Alaska, Hawaiian (3 pages), El Al, EgyptAir (2), SunExpress (3), KLM, Air France (2), Aeromexico, MEA, Azul, ANA, Korean news, Israir, plus 6 PDFs (Air Canada liquid_rules, Aer Lingus x2, Frontier, others). Full list was in the audit output (93 URL x tab pairs).
+## VERIFIED OK: all other pages that loaded had real topic content.
+
+## NOT VERIFIED (page blocks our browsers even in the user's Chrome from this IP: Cloudflare/403/SPA/geo)
+Alaska, Hawaiian (3 pages), El Al, EgyptAir (2), SunExpress (3), KLM, Air France (2), Aeromexico beta, MEA (geo-ban), Azul, ANA, Korean news, Israir + 6 PDFs. Needs a check from a US/EU IP or by the user. Method: open the page, search the tab topic, compare with the card text.
