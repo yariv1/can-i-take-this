@@ -117,7 +117,7 @@ function typeahead(c) {
     const lab = ITEM_KIND[e.n] === 'fish' ? 'Fish' : (ITEM_KIND[e.n] === 'baby' ? 'Baby food' : (cat[e.c] || 'Food'));
     return { n: e.n, sub: lab, card: t ? t.id : '', tags: [PT.tagT('Food', lab)] };
   });
-  return PT.build({ label: 'Which food?', placeholder: 'Type a food (e.g. beef jerky)', items, cards, nomatchHtml: PT.nomatchCard(esc, c.name, 'Food', d.sources || []), ins: '<p class="headline">' });
+  return PT.build({ label: 'Which food?', placeholder: 'Type a food name (e.g. beef jerky)', items, cards, nomatchHtml: PT.nomatchCard(esc, c.name, 'Food', d.sources || []), ins: '<p class="headline">' });
 }
 
 module.exports = { DETAIL, render, cards, typeahead, topicFor, TOPICS };

@@ -8,7 +8,7 @@ for (const d of fs.readdirSync(root)) {
   if (!fs.existsSync(f)) continue;
   n++;
   const h = fs.readFileSync(f, 'utf8');
-  const need = ['id="taInput"', 'Which medicine?', 'Type a medicine or ingredient (e.g. Sudafed)', 'id="taClear"', 'id="taSuggest"', 'id="taResult"', 'id="taOriginal"', 'tabs(false)'];
+  const need = ['id="taInput"', 'Which medicine?', 'Type a medicine or ingredient name (e.g. Sudafed)', 'id="taClear"', 'id="taSuggest"', 'id="taResult"', 'id="taOriginal"', 'tabs(false)'];
   const miss = need.filter(x => !h.includes(x));
   if (miss.length) bad.push(d + ' missing ' + miss.join(', '));
 }

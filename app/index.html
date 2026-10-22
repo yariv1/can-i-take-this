@@ -78,8 +78,6 @@ body{background:radial-gradient(1200px 600px at 50% -10%,var(--glow) 0%,transpar
 .tinput:focus-visible{outline:none;border-color:var(--accent)}
 .tinput::placeholder{color:var(--muted)}
 .inwrap{position:relative;flex:1;display:flex;min-width:0}.inwrap .tinput{flex:1;min-width:0;padding-right:44px}.tclear{position:absolute;right:8px;top:50%;transform:translateY(-50%);width:30px;height:30px;border:0;border-radius:8px;background:none;color:var(--muted);cursor:pointer;display:none;align-items:center;justify-content:center;padding:0}.tclear.on{display:flex}.tclear:hover{color:var(--text)}.tclear:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
-#scanBtn{flex:none;background:var(--surface);border:1px solid var(--line);border-radius:13px;color:var(--accent);width:48px;display:grid;place-items:center;cursor:pointer}
-#scanBtn svg{width:20px;height:20px}
 .suggest{margin-top:6px;background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden}
 .pickwrap{position:relative}
 @media(max-width:640px){
@@ -92,7 +90,6 @@ body{background:radial-gradient(1200px 600px at 50% -10%,var(--glow) 0%,transpar
 .sug:hover{background:var(--surface-2)}
 .sug.anyway{color:var(--accent);font-weight:600}
 .sug .ing{font-family:'Space Mono',monospace;font-size:14px;color:var(--muted);align-self:center;font-weight:400}
-#scanNote{margin-top:8px;font-size:14px;color:var(--muted);display:none}
 .pass-wrap{margin-top:20px;min-height:150px}
 .pass{position:relative;background:var(--card);color:var(--card-text);border-radius:18px;overflow:hidden;box-shadow:0 20px 50px rgba(0,0,0,.30);transition:background .25s,color .25s}
 .pass.print{animation:print .5s cubic-bezier(.2,.9,.25,1) both}
@@ -211,10 +208,9 @@ body{margin:0;font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,
 
   <div id="itemBlock" class="hidden">
     <div class="slab" id="itemLabel">Which one?</div>
-    <div class="pickwrap"><div class="searchrow"><input id="itemInput" class="tinput" type="text" autocomplete="off" placeholder="Type a name"><button id="scanBtn" title="Scan barcode"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 5v14M7 5v14M11 5v14M14 5v14M18 5v14M21 5v14"/></svg></button></div>
+    <div class="pickwrap"><div class="searchrow"><input id="itemInput" class="tinput" type="text" autocomplete="off" placeholder="Type a name"></div>
     <div id="itemSuggest" class="suggest"></div></div>
     <div class="chips" id="itemQuick"></div>
-    <div id="scanNote">Barcode scanning is on the roadmap — for now, just type the name.</div>
   </div>
 
   <div id="animalBlock" class="hidden">
@@ -847,10 +843,10 @@ var STRICT_PET=['Australia','United Kingdom','Japan','Singapore'];
 var ANIMAL_DB=['Rabbit','Hamster','Guinea pig','Gerbil','Ferret','Parrot','Cockatiel','Canary','Budgie','Finch','Turtle','Tortoise','Snake','Lizard','Gecko','Iguana','Fish','Frog','Hedgehog','Horse','Pony','Pig','Goat','Chinchilla','Rat','Mouse','Sugar glider','Bird of prey','Capybara'];
 
 var ITEMCFG={
- med:{db:MED_DB,quick:['Advil','Tylenol','Sudafed','Benadryl','Melatonin','Adderall','Insulin'],pop:['Tylenol','Ibuprofen','Melatonin','Benadryl','Adderall','Sudafed'],label:'Which medicine?',ph:'Type a medicine or ingredient (e.g. Sudafed)',sub:function(x){return x.ing;}},
- food:{db:FOOD_DB,quick:['Cheese','Beef jerky','Chocolate','Apple','Eggs','Honey','Baby formula','Milk'],label:'Which food?',ph:'Type a food (e.g. beef jerky)',sub:function(x){return CATNAME[x.c];}},
- sharp:{db:SHARP_DB,quick:['Knife','Scissors','Safety razor','Nail clippers','Tweezers','Multi-tool'],label:'Which sharp object?',ph:'Type a sharp object (e.g. corkscrew)',sub:null},
- sports:{db:SPORTS_DB,quick:['Golf clubs','Skis','Bicycle','Tennis racket','Surfboard','Scuba tank','Snowboard','Fishing rod','Yoga mat','Baseball bat'],label:'Which sports gear?',ph:'Type your gear (e.g. fishing rod)',sub:null}
+ med:{db:MED_DB,quick:['Advil','Tylenol','Sudafed','Benadryl','Melatonin','Adderall','Insulin'],pop:['Tylenol','Ibuprofen','Melatonin','Benadryl','Adderall','Sudafed'],label:'Which medicine?',ph:'Type a medicine or ingredient name (e.g. Sudafed)',sub:function(x){return x.ing;}},
+ food:{db:FOOD_DB,quick:['Cheese','Beef jerky','Chocolate','Apple','Eggs','Honey','Baby formula','Milk'],label:'Which food?',ph:'Type a food name (e.g. beef jerky)',sub:function(x){return CATNAME[x.c];}},
+ sharp:{db:SHARP_DB,quick:['Knife','Scissors','Safety razor','Nail clippers','Tweezers','Multi-tool'],label:'Which sharp object?',ph:'Type a sharp object name (e.g. corkscrew)',sub:null},
+ sports:{db:SPORTS_DB,quick:['Golf clubs','Skis','Bicycle','Tennis racket','Surfboard','Scuba tank','Snowboard','Fishing rod','Yoga mat','Baseball bat'],label:'Which sports gear?',ph:'Type your gear name (e.g. fishing rod)',sub:null}
 };
 
 var S={mode:'plane',bag:'carry',airline:'El Al',country:'Japan',cat:'baginfo',detail:null,item:null,itemQ:'',open:null,aQ:'',cQ:'',fare:0,animal:null,dogSize:null,aniQ:'',liveToken:0};
@@ -1093,7 +1089,7 @@ function render(){
     $('#animalBlock').classList.add('hidden');
     $('#itemBlock').classList.remove('hidden');
     $('#itemLabel').textContent='Large / standalone item';
-    $('#itemInput').placeholder='Type any large item (e.g. kayak, wheelchair)';
+    $('#itemInput').placeholder='Type any large item name (e.g. kayak, wheelchair)';
     renderSoloQuick();renderVerdict();return;
   }
   $('#catLabel').textContent=S.mode==='plane'?'What are you bringing?':'What do you want to bring in?';
@@ -1119,7 +1115,8 @@ function ensureDefaults(){
   var co=null,arr=CATS[S.mode]||[];for(var i=0;i<arr.length;i++){if(arr[i].id===S.cat){co=arr[i];break;}}
   if(co&&co.detail&&!S.detail&&DETAILS[co.detail]&&DETAILS[co.detail].length)S.detail=DETAILS[co.detail][0].id;
   if(isItemMode()&&!S.item){var cfg=ITEMCFG[S.cat],qn=(cfg.quick||[])[0];if(qn){var fd=null;for(var j=0;j<cfg.db.length;j++){if(cfg.db[j].n===qn){fd=cfg.db[j];break;}}S.item=fd||{free:true,n:qn};S.itemQ='';}}
-  if(isAnimal()&&!S.animal){S.animal='Dog';S.dogSize=(S.mode==='plane')?'Small':null;}
+  if(isAnimal()&&!S.animal){S.animal='Dog';}
+  if(isAnimal()&&S.animal==='Dog'&&S.mode==='plane'&&!S.dogSize){S.dogSize='Small';}
 }
 function setCat(id){S.cat=id;S.detail=null;S.item=null;S.itemQ='';S.animal=null;S.dogSize=null;S.aniQ='';if(S.cat==='baginfo')S.fare=0;$('#itemInput').value='';$('#animalInput').value='';$('#itemSuggest').innerHTML='';$('#aniSuggest').innerHTML='';ensureDefaults();render();focusPicker();}
 function focusPicker(){
@@ -1280,7 +1277,6 @@ function renderVerdict(){syncClears();
   /* Animals */
   if(isAnimal()){
     if(!S.animal){wrap.innerHTML=emptyHTML('Pick <b>Dog</b>, <b>Cat</b>, or type another animal.<br>We\'ll check '+(S.mode==='plane'?S.airline:S.country)+'.');return;}
-    if(S.mode==='plane'&&S.animal==='Dog'&&!S.dogSize){wrap.innerHTML=emptyHTML('<b>How big is your dog?</b><br>Size decides cabin vs cargo — pick one above.');return;}
     v=animalVerdict(); if(v)renderPass(v,wrap); else liveFallback(wrap); return;
   }
   /* Specific-item categories (medication, food, sharp, sports) */
@@ -1337,7 +1333,7 @@ $('#countryTrigger').onclick=function(){S.open==='country'?(S.open=null,closePan
 $('#airlineSearch').addEventListener('input',function(e){S.aQ=e.target.value;renderAirlineList();});
 $('#countrySearch').addEventListener('input',function(e){S.cQ=e.target.value;renderCountryList();});
 document.addEventListener('click',function(e){if(!e.target.closest('.combo')){S.open=null;closePanels();}if(!e.target.closest('.email-trigger')&&!e.target.closest('.email-menu')){document.querySelectorAll('.email-menu').forEach(function(x){x.classList.add('hidden');});}});
-document.querySelectorAll('#seg button').forEach(function(b){b.onclick=function(){S.mode=b.dataset.mode;S.cat=S.mode==='plane'?'baginfo':'med';S.detail=null;S.item=null;S.itemQ='';S.animal=null;S.dogSize=null;S.aniQ='';S.fare=0;$('#itemInput').value='';$('#animalInput').value='';$('#itemSuggest').innerHTML='';$('#aniSuggest').innerHTML='';render();};});
+document.querySelectorAll('#seg button').forEach(function(b){b.onclick=function(){S.mode=b.dataset.mode;S.cat=S.mode==='plane'?'baginfo':'med';S.detail=null;S.item=null;S.itemQ='';S.animal=null;S.dogSize=null;S.aniQ='';S.fare=0;$('#itemInput').value='';$('#animalInput').value='';$('#itemSuggest').innerHTML='';$('#aniSuggest').innerHTML='';ensureDefaults();render();};});
 document.querySelectorAll('#bag button').forEach(function(b){b.onclick=function(){S.bag=b.dataset.bag;S.item=null;S.itemQ='';$('#itemInput').value='';$('#itemSuggest').innerHTML='';render();};});
 $('#bagStandalone').onclick=function(){S.bag='standalone';S.item=null;S.itemQ='';$('#itemInput').value='';$('#itemSuggest').innerHTML='';ensureDefaults();render();focusPicker();};
 $('#itemInput').addEventListener('input',function(e){S.itemQ=e.target.value;syncClears();if(isStandalone())renderSoloSuggest(!e.target.value);else renderItemSuggest(!e.target.value);});
@@ -1346,10 +1342,9 @@ $('#itemInput').addEventListener('focus',popItem);$('#itemInput').addEventListen
 function popAni(){var i=$('#animalInput');if(!i||i.value||window._progFocus)return;S.aniQ='';renderAniSuggest(true);}
 $('#animalInput').addEventListener('focus',popAni);$('#animalInput').addEventListener('click',popAni);
 document.addEventListener('mousedown',function(e){if(e.target.closest&&!e.target.closest('.pickwrap')){var a=$('#itemInput'),b=$('#animalInput');if(a&&!a.value)$('#itemSuggest').innerHTML='';if(b&&!b.value)$('#aniSuggest').innerHTML='';}});
-document.querySelectorAll('#animalChips .chip').forEach(function(b){b.onclick=function(){S.animal=b.dataset.a;S.dogSize=null;S.aniQ='';$('#animalInput').value='';$('#aniSuggest').innerHTML='';render();};});
+document.querySelectorAll('#animalChips .chip').forEach(function(b){b.onclick=function(){S.animal=b.dataset.a;S.dogSize=(S.animal==='Dog'&&S.mode==='plane')?'Small':null;S.aniQ='';$('#animalInput').value='';$('#aniSuggest').innerHTML='';render();};});
 document.querySelectorAll('#dogSize .chip').forEach(function(b){b.onclick=function(){S.dogSize=b.dataset.s;render();};});
 $('#animalInput').addEventListener('input',function(e){S.aniQ=e.target.value;syncClears();renderAniSuggest(!e.target.value);});
-$('#scanBtn').addEventListener('click',function(){var n=$('#scanNote');n.style.display=n.style.display==='block'?'none':'block';});
 wireClear('itemInput',function(){S.itemQ='';$('#itemSuggest').innerHTML='';});wireClear('animalInput',function(){S.aniQ='';$('#aniSuggest').innerHTML='';});
 applyTheme();renderTriggers();render();syncClears();
 </script>

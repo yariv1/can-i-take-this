@@ -29,6 +29,6 @@ module.exports = function typeahead(a, SCEN, medCard, esc, orig) {
     tags: [PT.tagT('Ingredient', e.ing)],
     extra: [resolve(e).extra, e.controlled ? e.ing + ' is a controlled substance in many places: carry documentation, and the destination country’s rule matters most.' : ''].filter(Boolean).join(' ')
   }));
-  const t = PT.build({ label: 'Which medicine?', placeholder: 'Type a medicine or ingredient (e.g. Sudafed)', items, cards, nomatchHtml: PT.nomatchCard(esc, a.name, 'Medicine', srcs), ins: '<p class="headline">' });
+  const t = PT.build({ label: 'Which medicine?', placeholder: 'Type a medicine or ingredient name (e.g. Sudafed)', items, cards, nomatchHtml: PT.nomatchCard(esc, a.name, 'Medicine', srcs), ins: '<p class="headline">' });
   return t.field + '<div id="taResult"></div><div id="taOriginal">' + orig + '</div>' + t.script;
 };
