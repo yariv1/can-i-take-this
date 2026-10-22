@@ -19,3 +19,6 @@ Ideas left: Panama ANA page via Chrome (Claude in Chrome, user's browser), Leban
 
 ## What is done (all live)
 Real answers (official or unofficial-labelled) now exist for all other country x category cells, incl. session 38: Russia, Indonesia, Malaysia, Kuwait, Colombia, Cuba, Argentina, Ethiopia, Nepal, Nigeria, Cambodia, Jordan, Egypt, Panama, Jamaica, Maldives (cash/alcohol/tobacco as listed in the roadmap memory) and plants for Cuba, Peru, Taiwan, Russia, Malaysia, Philippines, Serbia, Colombia, UAE, Seychelles, Qatar, Costa Rica, Indonesia, Nepal, Saudi Arabia, Nigeria, Lebanon, Egypt, Panama.
+
+## Session 40 retry through Chrome (2026-10-22, after deploy)
+Panama: ANA declaracion-jurada page is GONE (redirects to home in Chrome too), ANA site search finds nothing; the Costa Rica embassy page "Protocolo de viaje a Panama" is about COSTA RICAN rules (RECAUCA art. 208, Ley 8204), not Panama = NOT usable. Lebanon: customs.gov.lb unreachable and mea.com.lb/Lebanese sites geo-block our IP (Cloudflare 1009). Jordan: nothing new. Still generic: Jordan plants, Panama alcohol+tobacco, Lebanon alcohol+tobacco+cash. Ideas left: user checks the Panama ANA page from his own Chrome in Panama/US IP, Lebanon customs via a VPN, Jordan Customs Arabic traveller guide.
