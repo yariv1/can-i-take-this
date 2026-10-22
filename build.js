@@ -82,7 +82,7 @@ var BLOG_LINKS={
   alcohol:[['/blog/duty-free-alcohol-allowance-by-country-2026/','Duty-Free Alcohol Allowance by Country (2026): Litres of Wine, Beer & Spirits You Can Bring'],['/blog/duty-free-allowance-by-country-2026/','Duty-Free Allowance by Country (2026)']],
   tobacco:[['/blog/duty-free-tobacco-allowance-by-country-2026/','Duty-Free Tobacco Allowance by Country (2026): Cigarettes, Cigars & Heated Tobacco'],['/blog/duty-free-allowance-by-country-2026/','Duty-Free Allowance by Country (2026)'],['/plane/cigarettes/','Can You Bring Cigarettes on a Plane? TSA and Customs Rules (2026)']],
   cash:[['/blog/customs-cash-declaration-2026/','The $10,000 Cash Declaration Rule Explained (2026)']],
-  plants:[['/blog/food-tsa-vs-customs-2026/','Food on a Plane: What Passes TSA vs. Customs (2026)']],
+  plants:[],
   vape:[['/blog/vapes-country-rules-2026/','Can You Bring a Vape on a Plane? Country-by-Country Rules (2026)']],
   med:[['/blog/banned-medications-by-country-2026/','Banned OTC & Prescription Medications by Country (2026)'],['/blog/controlled-substances-painkillers-abroad-2026/','Flying with Xanax, Ambien & Codeine: Controlled Substances Abroad (2026)']],
   food:[['/blog/baby-food-pouches-on-a-plane-2026/','Baby Food Pouches on a Plane: TSA Rules for Purées, Formula & Toddler Snacks (2026)'],['/blog/food-you-can-take-on-a-plane-list-2026/','Food You Can Take on a Plane: Full List for TSA & International Flights (2026)'],['/blog/food-tsa-vs-customs-2026/','Food on a Plane: What Passes TSA vs. Customs (2026)']],

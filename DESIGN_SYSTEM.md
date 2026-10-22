@@ -614,3 +614,8 @@ The "Can I take this? Know before you pack..." SEO section (search box, popular 
 - A verdict card is never replaced by an empty state ("How big is your dog?", "Pick or type..."): every tab in both modes opens with a default (first quick item; Dog = Small, Cat) via `ensureDefaults()`, also when switching mode.
 - The "scan barcode" button and note are removed until scanning really exists.
 - Item typeahead hints end the noun with "name": "Type a food name (e.g. beef jerky)", "Type a medicine or ingredient name (e.g. Sudafed)", "Type your gear name (e.g. fishing rod)", "Type a sharp object name (...)", "Type any large item name (...)". Same text on the app, airline Medication pages and country Food pages.
+
+### 8.51 "Read the full guide" offers only articles about the SAME topic (HARD, 2026-10-22)
+- RULE (user, 2026-10-22): an offered article must have CONTEXT to the page (e.g. a carry-on/baggage page may offer an article on liquids in carry-on). Same topic is not required, context is.
+- Plants & seeds pages showed a FOOD article (no context). A category page may only offer articles about its own category; no article for the topic = no block (BLOG_LINKS in build.js, plants = []).
+- Guard `audit_readmore_topic.js` holds the allowed articles per country category page (plants, food, alcohol, tobacco, cash, vaping, medication). A new article for a category: add it to BLOG_LINKS AND the guard. Never fill a block with a "close enough" article.
