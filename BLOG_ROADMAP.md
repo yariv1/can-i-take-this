@@ -1,5 +1,13 @@
 # HARD RULE #1 (user, 2026-10-18): NEVER HAND OFF BEFORE QA AND DEBUG PROVE 100% (NOT 99.99%) THAT IT IS AS IT SHOULD BE WITH NO REGRESSIONS. Read at the start of EVERY session and confirm in the first reply (memory: feedback_qa_100_percent_before_handoff.md).
 
+## SESSION 39 HANDOFF BLOCK (2026-10-22) - READ FIRST after HARD RULE #1 (supersedes the session 38 block below for state and next task)
+**State:** origin/main `5a7ba69e4` LIVE. Branch s33-integrate, clean except untracked `.claude/` (never add). Handoff docs of this step may be an unpushed local commit: push with the next deploy.
+**NEXT TASK (user order): Retry the 14 generic country cells with new source types** (list, tried sources, untried ideas, tool specs: `COUNTRY_GENERIC_BACKLOG.md`), then Saudia / Kuwait Airways / MEA Medication pages.
+**First reply of the next session:** QA-rule line + 3 short Synced bullets + ONE question: "Retry the 14 generic country cells with new source types, then build Saudia / Kuwait Airways / MEA?"
+**NEW HARD RULE:** research best practices BEFORE implementing any new feature (typeaheads especially) and say what was found (memory feedback_research_best_practices_before_feature.md).
+**Session 39 did (all live, DS 8.45-8.50):** Compensation ticket label fix + guards audit_ticket_labels/audit_country_tickets; "Probably worth knowing..." question-link section replaces the in-card button on the app Medication/Food cards; app spacing (68px to heading, 32px labels, 18px chip-input); `/app/` SEO section built from the home block (guard audit_home_app_seo_block); preset chips below typeaheads; animals category = "Pets" everywhere; no empty states (ensureDefaults incl. mode switch), barcode button removed, "name" in hint texts.
+**Open, do not start unless he orders:** app country tab "Food & produce" vs country page tab "Food" naming nit; airline Pets pages; other open items as in the session 38 block. Pre-existing failing guard: audit_verdict_label.js (1 Austria food page).
+
 ## SESSION 38 HANDOFF BLOCK (2026-10-21) - READ FIRST after HARD RULE #1
 **State:** origin/main `906fb40b2` LIVE (Pages success, live checks done). Branch s33-integrate, working tree clean except untracked `.claude/` (never add). Everything of session 38 is deployed. Only docs of this handoff may be an unpushed local commit: push it with the next deploy.
 **Theme of session 38:** the user was furious at generic/non-answer cards ("Check the tobacco limit first", "no source = global"). Rules: no worthless generic answers; source ladder step 2 (named third party, UNOFFICIAL label) MUST be run before anything stays global; never say "still on global rules / no source" without listing the third-party sources tried.
