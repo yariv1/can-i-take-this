@@ -115,3 +115,5 @@ Before every deploy: `node audit_global_ui.js` must print "OK global ui" (global
 
 ## Addendum, session 35 (2026-10-18)
 Before EVERY deploy (and every handoff) run the whole list: update_rates, update_advisories, build, audit_seo_change_scope (before committing), audit_bag_selector, audit_capsules, audit_medication_dup, audit_airline_typeahead, audit_med_tags, audit_tags, audit_source_label, audit_airline_state, audit_source_state, audit_country_cat_sources, audit_tabs_arrow, audit_typeahead_popular, audit_seo --fail. Run guards with timeout 100. Preview server: mcp preview_start citt-preview (port 5055). Compare local vs live with a scripted pass (every category/mode) before deploying UI changes. Never git add .claude/.
+
+**HARD RULE (user, 2026-10-23): after EVERY indexing-request session, update ALL indexing lists in the same turn:** `GSC_INDEXING_TRACKER.md` table rows (`REQUESTED <date>`), URLs with no row added, a dated block at the TOP of `GSC_REQUEST_QUEUE.md` (requested / next quota / already on Google), commit and push, and say which files were updated.
