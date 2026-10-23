@@ -10,7 +10,12 @@ One list, in the order to request indexing: **tier 0 first** (Google confirmed i
 
 **Finding (90 days):** no Wi-Fi page, no Compensation page, no Customer Service page and only 2 of 72 blog articles appear in the Pages report.
 
-## 2026-10-17 status (read this first)
+## 2026-10-23 status (read this first; supersedes the 2026-10-17 NEXT QUOTA list below)
+REQUESTED 2026-10-23 (done by Claude in the user's GSC, "Indexing requested" confirmed, quota 10/10): airline/saudia/medication, airline/kuwait-airways/medication, airline/middle-east-airlines/medication, country/hong-kong/vaping (re-crawl), country/bahrain/plants-seeds (re-crawl), country/oman/plants-seeds (re-crawl), blog/travel-warning-caribbean-2026, airline/westjet/liquids, airline/hawaiian-airlines/liquids, country/brazil/tobacco.
+NEXT QUOTA (URL Inspection 2026-10-23: NOT on Google): 1. airline/volaris/baggage-allowance 2. airline/virgin-atlantic/perfume-aerosols. Then re-verify others one by one before requesting (the Page indexing report is stale: 6 of 14 listed "Discovered" URLs were already on Google).
+ALREADY ON GOOGLE (URL Inspection 2026-10-23, do not request): blog/duty-free-tobacco-allowance-by-country-2026, blog/tsa-precheck-touchless-id-2026, blog/travel-warning-mexico-2026, country/hong-kong/tobacco, country/chile/plants-seeds, country/philippines/cash, airline/virgin-atlantic/baggage-allowance, medication/into/austria, food/costa-rica. Still waiting from 2026-10-17: blog/duty-free-alcohol-allowance-by-country-2026.
+
+## 2026-10-17 status (older)
 REQUESTED 2026-10-17 (done): blog/duty-free-alcohol-allowance-by-country-2026, blog/duty-free-tobacco-allowance-by-country-2026, blog/duty-free-allowance-by-country-2026, blog/duty-free-bag-extra-carry-on-2026, blog/is-turks-and-caicos-safe-2026, blog/travel-warning-by-country-2026, blog/level-4-travel-advisory-countries-2026, blog/carry-on-size-by-airline, airline/gulf-air/baggage-allowance, airline/pegasus/baggage-allowance
 
 NEXT QUOTA, in this order (checked with GSC URL inspection 2026-10-17: Page indexing "Discovered/Crawled, not indexed"):

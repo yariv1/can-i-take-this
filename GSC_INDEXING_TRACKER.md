@@ -18,7 +18,7 @@ Last GSC check: 2026-10-05 (Page indexing 1,924 indexed / 89 not indexed as of 2
 |---|---|---|---|
 | 52 | https://canitakethis.co/blog/travel-warning-mexico-2026/ | 2026-10-06 | TO REQUEST |
 | 51 | https://canitakethis.co/blog/level-4-travel-advisory-countries-2026/ | 2026-10-06 | REQUESTED 2026-10-17 |
-| 50 | https://canitakethis.co/blog/travel-warning-caribbean-2026/ | 2026-10-06 | TO REQUEST |
+| 50 | https://canitakethis.co/blog/travel-warning-caribbean-2026/ | 2026-10-06 | REQUESTED 2026-10-23 |
 | 49 | https://canitakethis.co/blog/is-turks-and-caicos-safe-2026/ | 2026-10-06 | REQUESTED 2026-10-17 |
 | 48 | https://canitakethis.co/blog/travel-warning-by-country-2026/ | 2026-10-06 | REQUESTED 2026-10-17 |
 | 47 | https://canitakethis.co/blog/tsa-precheck-touchless-id-2026/ | 2026-10-05 | TO REQUEST |
@@ -545,9 +545,9 @@ Also session 36 alcohol/perfume round (optional, TO REQUEST): /airline/<slug>/al
 - https://canitakethis.co/airline/aeromexico/medication/ — TO REQUEST
 - https://canitakethis.co/airline/alaska-airlines/medication/ — TO REQUEST
 - https://canitakethis.co/airline/hawaiian-airlines/medication/ — TO REQUEST
-- https://canitakethis.co/airline/saudia/medication/ — TO REQUEST
-- https://canitakethis.co/airline/kuwait-airways/medication/ — TO REQUEST
-- https://canitakethis.co/airline/middle-east-airlines/medication/ — TO REQUEST
+- https://canitakethis.co/airline/saudia/medication/ — REQUESTED 2026-10-23
+- https://canitakethis.co/airline/kuwait-airways/medication/ — REQUESTED 2026-10-23
+- https://canitakethis.co/airline/middle-east-airlines/medication/ — REQUESTED 2026-10-23
 
 ## URL Inspection check 2026-10-23 (verified one by one; the Page indexing report was stale: 6 of 14 "Discovered" URLs were already on Google)
 NOT on Google: blog/duty-free-alcohol-allowance-by-country-2026 (Discovered, REQUESTED 2026-10-17), blog/travel-warning-caribbean-2026 (Discovered), country/brazil/tobacco (Crawled, not indexed), airline/westjet/liquids, airline/hawaiian-airlines/liquids, airline/volaris/baggage-allowance, airline/virgin-atlantic/perfume-aerosols (all Crawled, not indexed), airline/saudia/medication (Discovered), airline/kuwait-airways/medication, airline/middle-east-airlines/medication (Crawled, not indexed).
