@@ -619,3 +619,15 @@ The "Can I take this? Know before you pack..." SEO section (search box, popular 
 - RULE (user, 2026-10-22): an offered article must have CONTEXT to the page (e.g. a carry-on/baggage page may offer an article on liquids in carry-on). Same topic is not required, context is.
 - Plants & seeds pages showed a FOOD article (no context). A category page may only offer articles about its own category; no article for the topic = no block (BLOG_LINKS in build.js, plants = []).
 - Guard `audit_readmore_topic.js` holds the allowed articles per country category page (plants, food, alcohol, tobacco, cash, vaping, medication). A new article for a category: add it to BLOG_LINKS AND the guard. Never fill a block with a "close enough" article.
+
+### 8.52 Trip header: Airline | Leaving from | Destination (HARD, 2026-10-24, Trip check phase 1)
+- The home app and /app/ trip header has THREE pickers in this order: Airline, Leaving from, Destination (one row). Phone (up to 640px): Airline and Leaving from share the first row, Destination is a full-width row below.
+- `S.from` is an ISO country code (all 247 countries of the IANA zone.tab are selectable, the 85 destination countries listed first). Default = country of the device timezone (embedded `TZC`), then browser language region, then US. The user's choice is remembered on the device (`citt_from`, always in try/catch). It is never derived from the airline.
+- Same picker as Airline/Destination (panel + search), plus clear (x), hint "Type a country name", Enter picks the first option. Domestic (From = Destination): the "Can I bring X into <country>?" link is hidden.
+- Static country/airline/blog pages are not touched. Guard: `audit_trip_from.js`.
+
+### 8.53 "Leaving from" screening rules in the app (HARD, 2026-10-24, Trip check phase 2)
+- Plane mode, Medication, a listed medicine: under the verdict card a block "Leaving from <flag> <country>" shows the airport-security rule of the DEPARTURE country (rows: Pills & tablets / Liquid medication / Insulin & syringes, Cold medication only when we have it). The airline's home country is never used for this block.
+- Data = `DEPMED` between markers in canitakethis.html, written by `gen_depmed.js` from the regimes read in full on the official regulator/airport page (`air_med_fill.js` REG, 40 countries: EU members, SE, FR, NO, GB, CA, US, KR, HK, SG, AE, TH, MX, OM, JP, BR). Each row = verdict word (Allowed / Some rules apply / Not allowed), the rule in our words, the official link, the approved OFFICIAL SOURCE sentence.
+- No data for the country or the kind: row "No clear answer for <country> yet" (never hidden, never green by guess). Do not add a country without an official page that was read; Israel: the IAA pages have no medication rule (2026-10-24), stays "No clear answer".
+- Guard: `audit_depmed.js` (run `node gen_depmed.js` before `node build.js`).
