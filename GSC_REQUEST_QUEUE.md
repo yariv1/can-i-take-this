@@ -10,6 +10,11 @@ One list, in the order to request indexing: **tier 0 first** (Google confirmed i
 
 **Finding (90 days):** no Wi-Fi page, no Compensation page, no Customer Service page and only 2 of 72 blog articles appear in the Pages report.
 
+## 2026-10-25 status (read this first)
+REQUESTED 2026-10-25 (quota 10/10, all verified NOT on Google by URL Inspection first): airline/volaris/baggage-allowance, airline/virgin-atlantic/perfume-aerosols, airline/lufthansa/compensation, airline/iberia/compensation, blog/us-travel-programs, blog/medications, blog/entry-permits, blog/food-agriculture, blog/customs-money, blog/batteries-electronics.
+NEXT QUOTA: 1. blog/airline-fees-policies (NOT on Google, verified 2026-10-25). Then from the Discovered list (not yet inspected): country/european-union/cash, medication/into/hungary, medication/adderall/switzerland, medication/benadryl/singapore, medication/sudafed/china, medication/vicks-inhaler/china. Verify each with URL Inspection first.
+Re-crawl due: 2026-10-23 requests (saudia/kuwait-airways/MEA medication, hong-kong vaping, bahrain/oman plants, caribbean warning, westjet/hawaiian liquids, brazil tobacco) still show Discovered/Crawled in the report; check by URL Inspection in a few days.
+
 ## 2026-10-23 status (read this first; supersedes the 2026-10-17 NEXT QUOTA list below)
 REQUESTED 2026-10-23 (done by Claude in the user's GSC, "Indexing requested" confirmed, quota 10/10): airline/saudia/medication, airline/kuwait-airways/medication, airline/middle-east-airlines/medication, country/hong-kong/vaping (re-crawl), country/bahrain/plants-seeds (re-crawl), country/oman/plants-seeds (re-crawl), blog/travel-warning-caribbean-2026, airline/westjet/liquids, airline/hawaiian-airlines/liquids, country/brazil/tobacco.
 NEXT QUOTA (URL Inspection 2026-10-23: NOT on Google): 1. airline/volaris/baggage-allowance 2. airline/virgin-atlantic/perfume-aerosols. Then re-verify others one by one before requesting (the Page indexing report is stale: 6 of 14 listed "Discovered" URLs were already on Google).

@@ -74,16 +74,16 @@ Last GSC check: 2026-10-05 (Page indexing 1,924 indexed / 89 not indexed as of 2
 | URL | Status |
 |---|---|
 | https://canitakethis.co/blog/ | INDEXED (seen in GSC sample 2026-10-05) |
-| https://canitakethis.co/blog/medications/ | UNVERIFIED |
-| https://canitakethis.co/blog/batteries-electronics/ | UNVERIFIED |
+| https://canitakethis.co/blog/medications/ | REQUESTED 2026-10-25 |
+| https://canitakethis.co/blog/batteries-electronics/ | REQUESTED 2026-10-25 |
 | https://canitakethis.co/blog/airline-fees-policies/ | UNVERIFIED |
 | https://canitakethis.co/blog/carry-on-size-by-airline/ | UNVERIFIED |
-| https://canitakethis.co/blog/us-travel-programs/ | UNVERIFIED |
-| https://canitakethis.co/blog/entry-permits/ | UNVERIFIED |
+| https://canitakethis.co/blog/us-travel-programs/ | REQUESTED 2026-10-25 |
+| https://canitakethis.co/blog/entry-permits/ | REQUESTED 2026-10-25 |
 | https://canitakethis.co/blog/travel-safety/ | TO REQUEST (new section page, 2026-10-06) |
 | https://canitakethis.co/blog/packing-rules/ | UNVERIFIED |
-| https://canitakethis.co/blog/customs-money/ | UNVERIFIED |
-| https://canitakethis.co/blog/food-agriculture/ | UNVERIFIED |
+| https://canitakethis.co/blog/customs-money/ | REQUESTED 2026-10-25 |
+| https://canitakethis.co/blog/food-agriculture/ | REQUESTED 2026-10-25 |
 
 ## Other new pages
 
@@ -149,7 +149,7 @@ REQUESTED 2026-10-08: /country/european-union/tobacco/, /country/european-union/
 2026-10-11: /airline/jetblue/compensation/ NEW (TO REQUEST, after deploy)
 2026-10-11: /airline/ryanair/compensation/ NEW (TO REQUEST, after deploy)
 2026-10-11: /airline/easyjet/compensation/ NEW (TO REQUEST, after deploy)
-2026-10-11: /airline/lufthansa/compensation/ NEW (TO REQUEST, after deploy)
+2026-10-11: /airline/lufthansa/compensation/ NEW (REQUESTED 2026-10-25)
 2026-10-11: /airline/british-airways/compensation/ NEW (TO REQUEST, after deploy)
 2026-10-11: /airline/air-france/compensation/ NEW (TO REQUEST, after deploy)
 2026-10-11: /airline/klm/compensation/ NEW (TO REQUEST, after deploy)
@@ -157,13 +157,13 @@ REQUESTED 2026-10-08: /country/european-union/tobacco/, /country/european-union/
 2026-10-11: /airline/aer-lingus/compensation/ NEW (TO REQUEST, after deploy)
 
 REQUESTED 2026-10-11 (user): /blog/united-carry-on-size-2026/, /blog/personal-item-size-by-airline-2026/, /plane/cigarettes/, /blog/basic-economy-carry-on-rules-2026/, /blog/delayed-flight-compensation-us-airlines-2026/, /blog/eu261-compensation-explained-us-travelers-2026/, /blog/do-i-need-a-passport-canada-mexico-bahamas-puerto-rico-2026/, /blog/overbooked-flight-compensation-us-airlines-2026/, /blog/cancelled-flight-compensation-refund-us-airlines-2026/, /blog/hawaiian-airlines-carry-on-size-2026/, /airline/american-airlines/compensation/
-2026-10-11: /airline/iberia/compensation/ NEW (TO REQUEST, after deploy)
+2026-10-11: /airline/iberia/compensation/ NEW (REQUESTED 2026-10-25)
 2026-10-11: /airline/turkish-airlines/customer-service/ NEW (TO REQUEST, after deploy)
 2026-10-11: /airline/turkish-airlines/compensation/ NEW (TO REQUEST, after deploy)
 2026-10-12: /airline/virgin-atlantic/baggage-allowance/ (overview URL is a redirect, do not request) +  + /liquids/ + /power-bank/ + /vape-e-cigarette/ + /perfume-aerosols/ + /alcohol/ NEW (TO REQUEST, after deploy)
 2026-10-12: /airline/hawaiian-airlines/baggage-allowance/ + /liquids/ + /power-bank/ + /vape-e-cigarette/ + /perfume-aerosols/ + /alcohol/ NEW (TO REQUEST, after deploy)
 2026-10-12: /airline/westjet/baggage-allowance/ + /liquids/ + /power-bank/ + /vape-e-cigarette/ + /perfume-aerosols/ + /alcohol/ NEW (TO REQUEST, after deploy)
-2026-10-12: /airline/volaris/baggage-allowance/ + /liquids/ + /power-bank/ + /vape-e-cigarette/ + /perfume-aerosols/ + /alcohol/ NEW (TO REQUEST, after deploy)
+2026-10-12: /airline/volaris/baggage-allowance/ + /liquids/ + /power-bank/ + /vape-e-cigarette/ + /perfume-aerosols/ + /alcohol/ NEW (baggage-allowance REQUESTED 2026-10-25)
 
 ## 2026-10-12 baggage rebuilds (existing URLs, TO REQUEST re-index)
 - https://canitakethis.co/airline/delta/baggage-allowance/
@@ -470,7 +470,7 @@ https://canitakethis.co/medication/into/south-africa/ REQUESTED 2026-10-18
 ## NEXT 10 to request (verified NOT on Google with URL Inspection on 2026-10-18, after the 11 requested above)
 https://canitakethis.co/airline/singapore-airlines/wifi/ TO REQUEST
 https://canitakethis.co/airline/lufthansa/wifi/ TO REQUEST
-https://canitakethis.co/airline/lufthansa/compensation/ TO REQUEST
+https://canitakethis.co/airline/lufthansa/compensation/ REQUESTED 2026-10-25
 https://canitakethis.co/airline/klm/wifi/ TO REQUEST
 https://canitakethis.co/airline/cathay-pacific/wifi/ TO REQUEST
 https://canitakethis.co/airline/qantas/wifi/ TO REQUEST
@@ -483,7 +483,7 @@ Verified ON Google in this round (do not request): wifi of emirates, qatar-airwa
 ## 2026-10-18 QUOTA EXCEEDED: GSC refused more requests after the 11 above. NONE of the 10 below were requested. Request them tomorrow (2026-10-19) in this order; re-verify with URL Inspection first only if more than 2 days pass.
 1 https://canitakethis.co/airline/singapore-airlines/wifi/ TO REQUEST
 2 https://canitakethis.co/airline/lufthansa/wifi/ TO REQUEST
-3 https://canitakethis.co/airline/lufthansa/compensation/ TO REQUEST
+3 https://canitakethis.co/airline/lufthansa/compensation/ REQUESTED 2026-10-25
 4 https://canitakethis.co/airline/klm/wifi/ TO REQUEST
 5 https://canitakethis.co/airline/cathay-pacific/wifi/ TO REQUEST
 6 https://canitakethis.co/airline/qantas/wifi/ TO REQUEST
@@ -556,3 +556,8 @@ Changed 2026-10-22 (re-request worth it): country/hong-kong/vaping, country/bahr
 
 ## REQUESTED 2026-10-23 (done by Claude through the user's GSC, each "Indexing requested" confirmed on screen)
 airline/saudia/medication, airline/kuwait-airways/medication, airline/middle-east-airlines/medication, country/hong-kong/vaping (re-crawl), country/bahrain/plants-seeds (re-crawl), country/oman/plants-seeds (re-crawl), blog/travel-warning-caribbean-2026, airline/westjet/liquids, airline/hawaiian-airlines/liquids (first try "Something went wrong", second try OK), country/brazil/tobacco. Next in line (verified not indexed): airline/volaris/baggage-allowance, airline/virgin-atlantic/perfume-aerosols. Quota used today: 10.
+
+## 2026-10-25 indexing requests (URL Inspection: all NOT on Google before the request; quota 10/10)
+REQUESTED 2026-10-25: airline/volaris/baggage-allowance, airline/virgin-atlantic/perfume-aerosols, airline/lufthansa/compensation, airline/iberia/compensation, blog/us-travel-programs, blog/medications, blog/entry-permits, blog/food-agriculture, blog/customs-money, blog/batteries-electronics (the last two sent in a batch whose confirmation was lost; the 11th click returned "Quota Exceeded", so all 10 counted).
+NOT requested (no quota): blog/airline-fees-policies (NOT on Google, verified 2026-10-25).
+ALREADY ON GOOGLE (2026-10-25): ethiopian/air-europa/avianca/asiana baggage, benadryl/japan, food/united-arab-emirates, vietnam-airlines/power-bank, korean-air/perfume-aerosols, country/kenya/vaping, kuwait/plants-seeds, blog uk-eta, etias, real-id, global-entry, clear-vs-precheck, precheck-cost, delta + ryanair compensation, delta/wifi, medication/into/south-africa.
