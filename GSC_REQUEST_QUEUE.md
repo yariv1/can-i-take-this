@@ -451,3 +451,6 @@ Verified ON Google in this round (do not request): wifi of emirates, qatar-airwa
 8 https://canitakethis.co/medication/sudafed/oman/ TO REQUEST
 9 https://canitakethis.co/medication/vicks-inhaler/china/ TO REQUEST
 10 https://canitakethis.co/medication/vicks-inhaler/poland/ TO REQUEST
+
+## 2026-10-24 (deploy b0ce3ca6e): content corrected, optional re-crawl
+airline/aeromexico/medication (title, description, H1 and body rewritten from the current AICM guide) and airline/volaris/medication (needles card). Request re-crawl with the next quota. No new URLs in this deploy.
