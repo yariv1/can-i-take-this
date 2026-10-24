@@ -194,43 +194,33 @@ module.exports = function (X) {
 
   // ---------------- AEROMEXICO (airport source, UNOFFICIAL) ----------------
   {
-    const P1 = ['https://www.aicm.com.mx/en/passengers/tips-for-passengers/special-medical-needs', 'Mexico City International Airport (AICM): Passengers with special medical needs', 'Medications, diabetics and syringes'];
+    const P1 = ['https://www.aicm.com.mx/wp-content/uploads/2023/09/GuiaDelPasajero.pdf', 'Mexico City International Airport (AICM): Guía del pasajero (2023, in Spanish)', 'Syringes with needles'];
     add({
       slug: 'aeromexico', name: 'Aeromexico', unofficial: true,
-      h1: 'Aeromexico Medication Policy: Medicine & Diabetic Syringes in Hand Baggage at Mexico City Airport (2026)',
-      desc: 'Can you bring medication on Aeromexico? Aeromexico\'s own pages were not readable. Mexico City airport (AICM) allows medications in reasonable amounts without the resealable bag, and diabetics may carry their medicines and syringes without a prescription. Checked 20 October 2026.',
-      answer: 'Yes, according to Mexico City International Airport. AICM says medications, milk and baby food (with the baby on board) and special diets are allowed and do not have to go in the resealable plastic bag if the amount is reasonable for your need and itinerary. Diabetics may carry the medicines and syringes they need for the trip and do not have to show a prescription; AICM advises carrying a diabetic credential. This is the airport\'s rule, not an Aeromexico page.',
-      srcNote: 'From the AICM airport page (read from an archived copy), not from Aeromexico, whose own pages blocked our reader, last checked 20 October 2026. Rules change, so confirm with the airline before you fly.',
+      h1: 'Aeromexico Medication Policy: Medicine & Syringes in Hand Baggage at Mexico City Airport (2026)',
+      desc: 'Can you bring medication on Aeromexico? Aeromexico\'s own pages were not readable. Mexico City airport (AICM) allows syringes with needles only with a medical prescription for diabetes or allergies, together with the medicine. Checked 24 October 2026.',
+      answer: 'Partly, according to Mexico City International Airport. The AICM passenger guide says syringes with needles are allowed only with a medical prescription for diabetes or allergies, accompanied by the medicine. It gives no rule for ordinary pills or liquid medicine, so ask Aeromexico and check the security rules at your departure airport. This is the airport\'s rule, not an Aeromexico page.',
+      srcNote: 'From the AICM passenger guide (2023, in Spanish), not from Aeromexico, whose own pages blocked our reader, last checked 24 October 2026. Rules change, so confirm with the airline before you fly.',
       scen: [
-        card('pills', 'Pills & tablets', 'go', 'Allowed, reasonable amount', 'Keep it with you', 'AICM allows medications in an amount reasonable for your need and itinerary.', [
-          'AICM: medications are allowed, and do not have to go inside the resealable plastic bag if the amount is reasonable for the passenger\'s need and itinerary.',
-          'This is the rule at Mexico City airport; the page is not Aeromexico\'s own.'
+        card('needles', 'Insulin & syringes', 'warn', 'Prescription needed', 'Needles, syringes, injections', 'AICM: syringes with needles are allowed only with a medical prescription for diabetes or allergies.', [
+          'AICM passenger guide: syringes with needles are allowed only with a medical prescription for diabetes or allergies, accompanied by their respective medicine.',
+          'This is the rule at Mexico City airport; the guide is not Aeromexico\'s own.'
         ], [P1], true),
-        card('needles', 'Insulin & syringes', 'go', 'No prescription needed (diabetics)', 'Needles, syringes, injections', 'AICM: diabetics may carry the medicines and syringes needed for the trip without a prescription.', [
-          'AICM: diabetics may enter with the medicines and syringes necessary for the trip; it is not necessary to show the prescription.',
-          'AICM: it is advisable to carry your diabetic credential.'
-        ], [P1]),
-        gap('liquids', 'Liquid medication', 'x', 'Over 100 ml (3.4 oz)', P1, 'AICM', 'the liquid size limit for medication beyond "a reasonable amount"'),
+        gap('pills', 'Pills & tablets', 'x', 'Keep it with you', P1, 'AICM', 'ordinary pills and tablets'),
+        gap('liquids', 'Liquid medication', 'x', 'Over 100 ml (3.4 oz)', P1, 'AICM', 'liquid medication over 100 ml'),
         gap('cold', 'Cold medication', 'x', 'Medication that must stay cold', P1, 'AICM', 'keeping medication cold'),
-        card('oxygen', 'Oxygen', 'warn', 'Prescription + 5 kg limit', 'Medical oxygen', 'AICM allows gaseous medical oxygen cylinders with a prescription up to 5 kg gross weight.', [
-          'AICM: gaseous oxygen cylinders for medical use are allowed with a medical prescription, provided they do not exceed 5 kg gross weight.',
-          'AICM: portable oxygen concentrators certified by Mexico\'s civil aviation authority are allowed with a medical prescription.'
-        ], [P1]),
         ab(P1)
       ],
       faq: [
-        ['Can I carry insulin and syringes on Aeromexico?', 'Mexico City airport says diabetics may carry the medicines and syringes they need for the trip without showing a prescription. This is the airport\'s rule, not an Aeromexico page.'],
-        ['Does medicine have to go in the clear bag at Mexico City airport?', 'No: AICM says medications do not have to be placed in the resealable bag if the amount is reasonable for your need and itinerary.']
+        ['Can I carry insulin and syringes on Aeromexico?', 'The Mexico City airport passenger guide says syringes with needles are allowed only with a medical prescription for diabetes or allergies, together with the medicine. This is the airport\'s rule, not an Aeromexico page.']
       ],
       tableTitle: 'Aeromexico medication rules at a glance (Mexico City airport)',
-      tableNote: 'What the Mexico City airport page says; Aeromexico\'s own page could not be read. Where the page is silent we say so.',
+      tableNote: 'What the Mexico City airport guide says; Aeromexico\'s own page could not be read. Where the guide is silent we say so.',
       rows: [
-        ['Medication in hand baggage?', 'Allowed, reasonable amount, no resealable bag needed'],
-        ['Diabetics: syringes?', 'Allowed with the medicines needed for the trip; no prescription needed'],
-        ['Medical oxygen?', 'Gaseous cylinders with prescription up to 5 kg gross'],
-        ['Liquid size limit, cold storage?', NP]
+        ['Syringes with needles?', 'Only with a medical prescription for diabetes or allergies, with the medicine'],
+        ['Pills, liquid size limit, cold storage?', NP]
       ],
-      extra: steps(['Carry only a reasonable amount for your trip.', 'Diabetics: carry your diabetic credential.', 'Ask Aeromexico about its own rules.'])
+      extra: steps(['Carry the prescription and the medicine together with the syringes.', 'Ask Aeromexico about its own rules.'])
     });
   }
 

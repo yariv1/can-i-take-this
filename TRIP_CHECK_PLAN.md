@@ -39,3 +39,6 @@ Deploy only on "deploy"; research before each feature; 100% QA with before/after
 1. Final name (Trip check recommended).
 2. Where the optional stop lives in the UI.
 3. Which departure countries to cover first in Phase 2.
+
+## Connection leg (added 2026-10-24, built as the optional "Connecting in" row; DESIGN_SYSTEM 8.54)
+Hub transfer screening is hub-specific, read from each hub's own page: Heathrow (all connecting passengers re-screened, liquids up to 2 L), Frankfurt (transfer checkpoints keep the 100 ml rule), Istanbul (transfer passengers scanned, 100 ml, medication exempt with prescription), Changi (transit passengers screened before the onward gate). Doha, Dubai, Abu Dhabi, Schiphol: official pages did not state the transfer rule (Schiphol 403), not added. More hubs = one official page each, added in `gen_depmed.js`.
