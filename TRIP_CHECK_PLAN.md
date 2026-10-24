@@ -1,3 +1,5 @@
+# STATUS 2026-10-24 (end of session 41): PHASES 1-3 ARE BUILT AND LIVE (origin/main f4a813730). This file below is the ORIGINAL plan (historical). The CURRENT truth is DESIGN_SYSTEM.md 8.59 and memory project_blog_roadmap.md sections 2-4. What changed versus the plan: (1) the sheet follows HIS mockup 7.webp (button = icon on the answer card, order Flying with -> Leaving from -> Connecting -> Arriving in, rows Carry-on / Checked suitcase / Carry-on & security check / <Country> customs); (2) NO extra cards under the answer; (3) verdict words Allowed / Some rules apply / Not allowed only, never "No clear answer"; (4) links ONLY our pages; (5) optional connection ("Connecting in": IST LHR FRA SIN + any country) was added; (6) data layer = gen_depmed.js (DEPMED, LIQDEP, PBDEP, CONN, MEDPAGES). NEXT = his review, then data expansion from official pages (Israel via his Chrome, Brazil, more hubs and countries).
+
 # Trip check: plan (draft for approval, 2026-10-24). NOTHING IS CODED YET.
 
 ## Idea (user, 2026-10-24)
