@@ -679,3 +679,6 @@ The "Can I take this? Know before you pack..." SEO section (search box, popular 
 - **Links:** ONLY our own pages (airline topic page, medicine/country page, or the answer card in the app). Never external, never a new page, never a new rule. Targets are checked for relevance AND existence.
 - **Data:** `gen_depmed.js` writes DEPMED, LIQDEP, PBDEP, CONN, MEDPAGES into canitakethis.html; new data only from an official page that was read; guards `audit_trip_from.js`, `audit_depmed.js`, `audit_tripcheck.js`. The departure/connection data only sets the verdict words of the Leaving/Connecting rows (details are not displayed).
 - **Icons:** clean 24px line set; carry-on trolley and suitcase have wheels; security shield; customs officer. 14px font floor everywhere.
+
+### 8.60 Body links in light mode (session 43, 2026-10-25)
+Links inside `.prose` (guides and blog articles) use `--accent`, which is #1E86D6 on the light page (#ECEAE1) = 3.2:1, below WCAG AA. `global_ui.css` sets `[data-theme="light"] .prose a{color:#0B63B0}` (5.0:1). Dark mode keeps the accent (8.6:1). Do not remove. The "Read the full guide" card (8.16) was already AA (links 15.9:1 light, 8.6:1 dark, heading 5.5:1).

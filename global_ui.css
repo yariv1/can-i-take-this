@@ -64,3 +64,5 @@ html body .tag.tag-teal{background:rgba(50,200,180,.2);color:var(--tg-teal);font
 /* DS 8.21 unofficial source on country plants pages: amber heading and one reason line */
 html body .bd-src .h.un{color:var(--tg-amber)}
 .bd-src .bd-unr{margin:.2em 0 .6em;font-weight:300}
+/* DS 8.60 (session 43): body links in guides and blog articles use --accent, which is only 3.2:1 on the light page background; light mode darkens them to AA (5.0:1). Dark mode unchanged. */
+[data-theme="light"] .prose a{color:#0B63B0}
