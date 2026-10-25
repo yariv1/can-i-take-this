@@ -94,6 +94,15 @@ function related(url) {
     add('More about ' + c.name, [{ u: '/country/' + m[1] + '/', t: 'All ' + c.name + ' customs rules' }, { u: '/food/' + m[1] + '/', t: 'Food into ' + c.name }, { u: '/pets/' + m[1] + '/', t: 'Pets into ' + c.name }]);
     add('Medication rules in other countries', neighbours(LISTS.countries, c.name, 6).map(x => ({ u: '/medication/into/' + slugify(x.name) + '/', t: x.name, c: x.code })));
     add('Guides', [guideLink('banned-medications-by-country-2026', 'Banned medications by country')]);
+  } else if (url === '/guides/power-banks/') {
+    /* session 43: the most linked hub (footer on every page) now passes its links to the aggregate power bank articles */
+    add('Guides', [guideLink('power-bank-rules-by-airline-2026', 'Power bank rules by airline'), guideLink('power-bank-rules-2026-crackdown', 'Power bank rules 2026')]);
+  } else if (url === '/guides/liquids/') {
+    add('Guides', [guideLink('liquids-100ml-rule-2026', 'The 100 ml liquids rule'), guideLink('how-many-ounces-can-you-bring-on-a-plane-2026', 'How many ounces can you bring')]);
+  } else if (url === '/guides/vapes/') {
+    add('Guides', [guideLink('vapes-country-rules-2026', 'Vape rules by country')]);
+  } else if (url === '/guides/') {
+    add('Guides', [guideLink('power-bank-rules-by-airline-2026', 'Power bank rules by airline'), guideLink('carry-on-size-limits-by-airline-2026', 'Carry-on size limits by airline'), guideLink('banned-medications-by-country-2026', 'Banned medications by country'), guideLink('vapes-country-rules-2026', 'Vape rules by country')]);
   }
   if (url.indexOf('/country/european-union/') === 0) { const ok = /^\/country\/european-union\/(alcohol|cash|tobacco|plants-seeds)\/$/; groups.forEach(g => { g.l = g.l.filter(x => !/european-union/.test(x.u) || ok.test(x.u)); }); return groups.filter(g => g.l.length); } /* EU master: only link to pages that exist */
   return groups;
