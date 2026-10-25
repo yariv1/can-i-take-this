@@ -459,3 +459,8 @@ Verified ON Google in this round (do not request): wifi of emirates, qatar-airwa
 
 ## 2026-10-24 (deploy b0ce3ca6e): content corrected, optional re-crawl
 airline/aeromexico/medication (title, description, H1 and body rewritten from the current AICM guide) and airline/volaris/medication (needles card). Request re-crawl with the next quota. No new URLs in this deploy.
+
+## DAILY ROUTINE (user order 2026-10-25): every working day
+1. Google Search Console: 10 URL Inspection + Request indexing (verify "not on Google" first). See the top status block of this file.
+2. Bing Webmaster Tools URL Submission: 100 URLs per day (quota resets ~15 h after use). Get the list with `node bing_next.js` (priority order, skips what is already in `bing_submitted.txt`), paste it at https://www.bing.com/webmasters/submiturl?siteUrl=https%3A%2F%2Fcanitakethis.co%2F, then save the URLs to a file and run `node bing_next.js --mark <file>`. 2026-10-25: first 99 submitted (home, app, about, all blog pages, 25 top airline baggage pages).
+3. After every deploy also run `node indexnow.js` (Bing, free, unlimited).
