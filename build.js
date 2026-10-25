@@ -1212,6 +1212,7 @@ ${CHK_BODY}
 <div class="seo">
 <h1>Can I take this? Know before you pack. Know before you aim for a location.</h1>
 <p>Fast, sourced answers on what you can bring — on <b>82 airlines</b> and into <b>85 countries</b>. Baggage, liquids, power banks, vapes, medication, alcohol, cash, plants and more.</p>
+<p>Pick your airline, where you are flying from and where you are going, then the item. You get the airline's rule and the destination's customs rule in one place, each with its official source and the date the page was last updated. Trip check shows the same answer for every stop on your route.</p>
 <div class="airwrap"><input class="airsearch" id="airq" type="text" placeholder="Type an airline or a country name..." autocomplete="off" aria-label="Search airlines and countries"><button type="button" class="airclear" id="airx" aria-label="Clear search"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
 <p class="airhelp">Want us to cover a specific airline or a country you cant find here? Please <a href="/contact/">write to us</a>.</p>
 <div class="grid allair collapsed" id="allair">${allAir}${allCo}</div><button type="button" class="morebtn" id="airmore" aria-expanded="false" data-more="Show more airlines" data-less="Show fewer airlines">Show more airlines</button>

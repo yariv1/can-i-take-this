@@ -157,6 +157,8 @@ function post(url, html) {
   if (!/name="twitter:card"/.test(h)) add += '<meta name="twitter:card" content="' + (ogImg ? 'summary_large_image' : 'summary') + '"><meta name="twitter:title" content="' + esc(title.replace(/ \| canitakethis\.co$/, '')) + '"><meta name="twitter:description" content="' + esc(desc) + '">' + (ogImg ? '<meta name="twitter:image" content="' + ogImg + '">' : '');
   // 5. structured data: WebPage with dateModified (blog Article gets its dates)
   const dm = mod(url), dp = published(url);
+  // visible date = the same honest content-change date as dateModified (AI answers and readers weigh a precise date over 'Updated 2026')
+  if (url !== '/' && dm) { const D = new Date(dm + 'T00:00:00Z'), MN = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']; h = h.replace(/\bUpdated 2026\b/g, 'Updated ' + D.getUTCDate() + ' ' + MN[D.getUTCMonth()] + ' ' + D.getUTCFullYear()); }
   if (/"@type":"(Article|BlogPosting)"/.test(h)) {
     h = h.replace(/<script type="application\/ld\+json">(\{[^<]*"@type":"(?:Article|BlogPosting)"[^<]*\})<\/script>/, (m, j) => { try { const o = JSON.parse(j); if (!o.dateModified) o.dateModified = dm; if (!o.datePublished && dp) o.datePublished = dp; if (!o.mainEntityOfPage) o.mainEntityOfPage = canonical; return '<script type="application/ld+json">' + JSON.stringify(o) + '</script>'; } catch (e) { return m; } });
   } else {
