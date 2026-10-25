@@ -682,3 +682,6 @@ The "Can I take this? Know before you pack..." SEO section (search box, popular 
 
 ### 8.60 Body links in light mode (session 43, 2026-10-25)
 Links inside `.prose` (guides and blog articles) use `--accent`, which is #1E86D6 on the light page (#ECEAE1) = 3.2:1, below WCAG AA. `global_ui.css` sets `[data-theme="light"] .prose a{color:#0B63B0}` (5.0:1). Dark mode keeps the accent (8.6:1). Do not remove. The "Read the full guide" card (8.16) was already AA (links 15.9:1 light, 8.6:1 dark, heading 5.5:1).
+
+### 8.61 Airline top card label must match the body (user order, 2026-10-25, HARD; extends 8.32)
+When an airline page's topic section says the airline's own rule was taken from an unofficial source (TSA, IATA, other), the top card shows `⚠ UNOFFICIAL SOURCE`, links that unofficial source in "Helpful sources", and its last line says "Not taken from <airline>'s own pages." Never `✓ OFFICIAL SOURCE` / "From <airline>'s own published rules" on such a page. Generator: `card()` in `airPlaneShell` (build.js, `_UNO`). Guard: `audit_card_label_consistency.js`. The link label stays "Official guidance" (8.21 guard).
