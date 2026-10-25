@@ -464,3 +464,6 @@ airline/aeromexico/medication (title, description, H1 and body rewritten from th
 1. Google Search Console: 10 URL Inspection + Request indexing (verify "not on Google" first). See the top status block of this file.
 2. Bing Webmaster Tools URL Submission: 100 URLs per day (quota resets ~15 h after use). Get the list with `node bing_next.js` (priority order, skips what is already in `bing_submitted.txt`), paste it at https://www.bing.com/webmasters/submiturl?siteUrl=https%3A%2F%2Fcanitakethis.co%2F, then save the URLs to a file and run `node bing_next.js --mark <file>`. 2026-10-25: first 99 submitted (home, app, about, all blog pages, 25 top airline baggage pages).
 3. After every deploy also run `node indexnow.js` (Bing, free, unlimited).
+
+## 2026-10-25 (session 43) re-crawl candidates after deploy fe9acac5f (IndexNow sent)
+GSC quota was used up today. Tomorrow request re-indexing (URL Inspection -> Request indexing) for: /guides/power-banks/, /guides/, /guides/liquids/, /guides/vapes/ (new article links).
