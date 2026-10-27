@@ -10,7 +10,11 @@ One list, in the order to request indexing: **tier 0 first** (Google confirmed i
 
 **Finding (90 days):** no Wi-Fi page, no Compensation page, no Customer Service page and only 2 of 72 blog articles appear in the Pages report.
 
-## 2026-10-25 status (read this first)
+## 2026-10-27 status (read this first)
+BING: 100 URLs submitted 2026-10-27 (ordered by Google impressions, 90 days: food/country/airline pages with the most demand; bing_submitted.txt now 199, rest of the sitemap still to go, next batch = bing_next.js order is NOT demand-ordered: use the Search Console Pages report by impressions, as done today).
+GSC: "Quota Exceeded" on the first Request indexing today, nothing requested. Request tomorrow, in this order (verify each with URL Inspection first): 1. guides/power-banks (on Google, re-crawl for new article links) 2. guides 3. guides/liquids 4. guides/vapes 5. blog/airline-fees-policies (NOT on Google) 6. blog/power-bank-rules-by-airline-2026 7. blog/liquids-100ml-rule-2026 8. blog/carry-on-size-limits-by-airline-2026 9. blog/banned-medications-by-country-2026 10. blog/vapes-country-rules-2026.
+
+## 2026-10-25 status (older)
 REQUESTED 2026-10-25 (quota 10/10, all verified NOT on Google by URL Inspection first): airline/volaris/baggage-allowance, airline/virgin-atlantic/perfume-aerosols, airline/lufthansa/compensation, airline/iberia/compensation, blog/us-travel-programs, blog/medications, blog/entry-permits, blog/food-agriculture, blog/customs-money, blog/batteries-electronics.
 NEXT QUOTA: 1. blog/airline-fees-policies (NOT on Google, verified 2026-10-25). Then from the Discovered list (not yet inspected): country/european-union/cash, medication/into/hungary, medication/adderall/switzerland, medication/benadryl/singapore, medication/sudafed/china, medication/vicks-inhaler/china. Verify each with URL Inspection first.
 Re-crawl due: 2026-10-23 requests (saudia/kuwait-airways/MEA medication, hong-kong vaping, bahrain/oman plants, caribbean warning, westjet/hawaiian liquids, brazil tobacco) still show Discovered/Crawled in the report; check by URL Inspection in a few days.
