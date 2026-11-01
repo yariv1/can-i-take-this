@@ -10,6 +10,10 @@ One list, in the order to request indexing: **tier 0 first** (Google confirmed i
 
 **Finding (90 days):** no Wi-Fi page, no Compensation page, no Customer Service page and only 2 of 72 blog articles appear in the Pages report.
 
+## 2026-11-01 status (read this first)
+BING: 100 URLs submitted 2026-11-01 (demand order from GSC Pages export, 90 days, minus bing_submitted.txt; bing_submitted.txt now 299). Next batch: same method (GSC Performance > Pages > Export CSV, filter against bing_submitted.txt, script in session scratchpad mk100.js idea: sort by impressions).
+GSC: "Quota Exceeded" again on the first Request indexing (guides/power-banks), nothing requested. The 2026-10-27 list below is still the next 10. GSC traffic recovered 2026-10-30 (impressions back to ~2.5K/day).
+
 ## 2026-10-27 status (read this first)
 BING: 100 URLs submitted 2026-10-27 (ordered by Google impressions, 90 days: food/country/airline pages with the most demand; bing_submitted.txt now 199, rest of the sitemap still to go, next batch = bing_next.js order is NOT demand-ordered: use the Search Console Pages report by impressions, as done today).
 GSC: "Quota Exceeded" on the first Request indexing today, nothing requested. Request tomorrow, in this order (verify each with URL Inspection first): 1. guides/power-banks (on Google, re-crawl for new article links) 2. guides 3. guides/liquids 4. guides/vapes 5. blog/airline-fees-policies (NOT on Google) 6. blog/power-bank-rules-by-airline-2026 7. blog/liquids-100ml-rule-2026 8. blog/carry-on-size-limits-by-airline-2026 9. blog/banned-medications-by-country-2026 10. blog/vapes-country-rules-2026.
