@@ -42,6 +42,7 @@ const TOPICS=require('./airline_topics.js');
 const CVAPE=require('./country_vape.js');
 const CTOB=require('./country_tobacco.js');
 const CPLANT=require('./country_plants.js');
+const CDEP=require('./country_depth.js');
 const CALC=require('./country_alcohol.js');
 const EUM=require('./eu_master.js');
 const UKFE=require('./uk_from_eu.js');
@@ -1018,11 +1019,12 @@ function run(){
       const url=`/country/${slug(cn)}/${cc.url}/`;
       const CV=(cc.cat==='vape')?CVAPE.build(c):(cc.cat==='tobacco'?CTOB.build(c):(cc.cat==='plants'?CPLANT.build(c):(cc.cat==='alcohol'?CALC.build(c):null)));
       const EUC=EUM.isEU(cn)&&EUM.CATS.indexOf(cc.cat)>=0&&!(cc.cat==='alcohol'&&CALC.has(c));
+      const CD=CV?null:CDEP.build(c,cc.cat);
       if(CV&&CV.card) v=Object.assign({},v,CV.card);
       write(url+'index.html', countryShell({
         mode:'cat', url, c, cat:cc.cat, v,
         canonical:EUC?(BASE+EUM.url(cc.cat)):null,
-        extra:(CV?CV.html:'')+(EUC?EUM.note(cn,cc.cat):'')+(cn==='United Kingdom'&&(cc.cat==='alcohol'||cc.cat==='tobacco')?UKFE.note():''), faqExtra:CV?CV.faq:null,
+        extra:(CV?CV.html:'')+(CD?CD.html:'')+(EUC?EUM.note(cn,cc.cat):'')+(cn==='United Kingdom'&&(cc.cat==='alcohol'||cc.cat==='tobacco')?UKFE.note():''), faqExtra:CV?CV.faq:null,
         title:CV?(CV.ttl+' | canitakethis.co'):`${batchTitle(cc.cat, cn, v, cc.t(cn))} | canitakethis.co`,
         desc:CV?CV.desc:batchDesc(({alcohol:cn+' duty-free alcohol allowance 2026',cash:cn+' cash declaration limit 2026',tobacco:cn+' duty-free tobacco allowance 2026',plants:'Bringing plants or seeds into '+cn+' (2026)',vape:'Vaping in '+cn+' 2026'})[cc.cat]||cn, cc.cat==='plants'?{head:v.head,lines:[String((v.lines||[]).filter(Boolean)[0]||'').replace(' for biosecurity','')]}:v, cc.cat==='tobacco'||cc.cat==='alcohol'||cc.cat==='cash'),
         h1:cc.q(cn), faqA:`${v.head} ${(v.lines||[]).filter(Boolean).join(' ')}`
@@ -1033,7 +1035,7 @@ function run(){
     const hub=`/country/${slug(cn)}/`;
     const hubCards=countryCats.map(cc=>{setS({mode:'country',cat:cc.cat,country:cn,detail:null});let v=w.verdict();const _cv=(cc.cat==='vape')?CVAPE.build(c):(cc.cat==='plants'?CPLANT.build(c):null);if(_cv&&_cv.card)v=Object.assign({},v,_cv.card);return {u:`/country/${slug(cn)}/${cc.url}/`,label:cc.q(cn).replace(' (2026)',''),status:v.status,head:v.head};});
     write(hub+'index.html', countryShell({
-      mode:'hub', url:hub, c, cat:null, cards:hubCards,
+      mode:'hub', url:hub, c, cat:null, cards:hubCards, extra:CDEP.hub(c),
       title:`Travelling to ${cn}? Customs & What You Can Bring 2026 | canitakethis.co`,
       desc:`What you can bring into ${cn}: duty-free alcohol and tobacco, cash declaration limit, plants, and vaping rules — 2026.`,
       h1:`What can I bring into ${cn}? (2026 customs)`,
