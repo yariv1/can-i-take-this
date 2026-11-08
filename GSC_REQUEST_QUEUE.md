@@ -10,6 +10,9 @@ One list, in the order to request indexing: **tier 0 first** (Google confirmed i
 
 **Finding (90 days):** no Wi-Fi page, no Compensation page, no Customer Service page and only 2 of 72 blog articles appear in the Pages report.
 
+## 2026-11-08 deploy c08ec8a76 (AdSense pilot): re-crawl candidates, no new URLs
+Content deepened on 10 pages (IndexNow sent). Request re-crawl with the next GSC quota, after the 2026-10-27 list: country/egypt/tobacco, country/egypt/, country/india/plants-seeds, country/norway/tobacco, country/turkey/, country/turkey/tobacco, country/chile/, country/chile/alcohol, country/chile/tobacco, country/chile/cash (all with Search Console impressions).
+
 ## 2026-11-01 status (read this first)
 BING: 100 URLs submitted 2026-11-01 (demand order from GSC Pages export, 90 days, minus bing_submitted.txt; bing_submitted.txt now 299). Next batch: same method (GSC Performance > Pages > Export CSV, filter against bing_submitted.txt, script in session scratchpad mk100.js idea: sort by impressions).
 GSC: "Quota Exceeded" again on the first Request indexing (guides/power-banks), nothing requested. The 2026-10-27 list below is still the next 10. GSC traffic recovered 2026-10-30 (impressions back to ~2.5K/day).
