@@ -685,3 +685,7 @@ Links inside `.prose` (guides and blog articles) use `--accent`, which is #1E86D
 
 ### 8.61 Airline top card label must match the body (user order, 2026-10-25, HARD; extends 8.32)
 When an airline page's topic section says the airline's own rule was taken from an unofficial source (TSA, IATA, other), the top card shows `⚠ UNOFFICIAL SOURCE`, links that unofficial source in "Helpful sources", and its last line says "Not taken from <airline>'s own pages." Never `✓ OFFICIAL SOURCE` / "From <airline>'s own published rules" on such a page. Generator: `card()` in `airPlaneShell` (build.js, `_UNO`). Guard: `audit_card_label_consistency.js`. The link label stays "Official guidance" (8.21 guard).
+
+### 8.62 A card never points to "the official source below" without a source link (user order, 2026-11-08, HARD; extends 8.28 / 8.32 / 8.61)
+- If a country card (food, medication, pets) has no source link (footer BASED ON GLOBAL RULES), its lines must not say "Check the rule for X at the official source below". Generator: `card()` in `build.js` and `srcPtr()` in `canitakethis.html` rewrite it to "We have no official source to link for X, so check with the authority there before you travel".
+- Guard: `node audit_source_pointer.js` (fails on any card with that phrase and no `class="hitem"` link). Proven: 69 pages failed on the old build (48 food, 21 medication), 0 on the new one. Run before every deploy.

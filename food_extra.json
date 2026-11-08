@@ -3012,5 +3012,1349 @@
     ]
    }
   ]
+ },
+ "Philippines": {
+  "checked": "8 November 2026",
+  "answer": "The Philippines regulates plants and plant products through the Bureau of Plant Industry (BPI). For personal use you need a Plant Quarantine Clearance (PQC) from BPI before you travel, plus a phytosanitary certificate from the country you travel from, and you must declare the product and show both documents at the airport; without them it may be confiscated. A product that is not on BPI's list of allowed commodities may not be brought in. The BPI advisory we read is written for travellers from Thailand and mentions a limit of 10 kg for personal consumption.",
+  "sources": [
+   [
+    "https://npqsd.bpi-npqsd.com.ph/2026/04/27/advisory-for-travelers-bringing-agricultural-products-into-the-philippines-for-personal-consumption-ref-no-advisory-bkpe-01-2025/",
+    "BPI National Plant Quarantine Services Division — Advisory for travelers: bringing agricultural products into the Philippines for personal consumption (27 April 2026)"
+   ],
+   [
+    "https://npqsd.bpi-npqsd.com.ph/import/",
+    "BPI National Plant Quarantine Services Division — Import (Plant Quarantine Clearance and allowed lists)"
+   ]
+  ],
+  "faq": [
+   [
+    "Can I bring fruit and vegetables into the Philippines?",
+    "Only if the product is on BPI's list of allowed commodities and you hold a Plant Quarantine Clearance from BPI and a phytosanitary certificate from the country you travel from. The BPI advisory we read is for travellers from Thailand and says personal consumption should not exceed 10 kg."
+   ],
+   [
+    "What documents do I need to bring plants or planting materials?",
+    "A Plant Quarantine Clearance (PQC) issued by the Bureau of Plant Industry and a phytosanitary certificate issued by the plant authority of the country you travel from. On arrival you declare the product and present both documents to Customs and Plant Quarantine officers at the airport."
+   ],
+   [
+    "What happens if I arrive without the clearance?",
+    "The advisory says the products may be confiscated by the authorities at the airport."
+   ],
+   [
+    "Where do I check whether a product is allowed?",
+    "BPI publishes a downloadable list of allowable plants and planting materials (the version we read is dated 15 October 2026) and a separate list of allowable fruits and vegetables on its import page."
+   ]
+  ],
+  "topics": [
+   {
+    "id": "fruit",
+    "label": "Fresh fruit & vegetables",
+    "status": "warn",
+    "verdict": "Clearance needed",
+    "head": "Fruit and vegetables need a BPI clearance and a certificate from the exporting country.",
+    "scen": [
+     {
+      "when": "Fruit, vegetables, ornamental plants or planting materials",
+      "status": "warn",
+      "tag": "Permit first",
+      "lines": [
+       "Check BPI's list of allowed commodities first: a product that is not on the list may not be brought in.",
+       "You need a Plant Quarantine Clearance (PQC) from BPI and a phytosanitary certificate from the plant authority of the country you travel from, both obtained before you travel.",
+       "Declare the product on arrival and present the PQC and the certificate to Customs and Plant Quarantine officers at the airport."
+      ]
+     },
+     {
+      "when": "The advisory's quantity limit",
+      "status": "warn",
+      "tag": "Up to 10 kg",
+      "lines": [
+       "The BPI advisory we read is written for travellers coming from Thailand and states that personal consumption should not exceed 10 kg.",
+       "It does not say whether the same limit applies to other departure countries."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "plants",
+    "label": "Plants & seeds",
+    "status": "warn",
+    "verdict": "BPI list",
+    "head": "Plants and planting materials follow the same clearance and allowed-list rules.",
+    "scen": [
+     {
+      "when": "Plants, seeds and planting materials",
+      "status": "warn",
+      "tag": "Allowed list",
+      "lines": [
+       "BPI says anyone importing plants or plant products applies for a PQC before importing; a PQC is for personal use, while commercial imports use a different clearance.",
+       "The BPI import page says an application for a PQC is filed in person at the NPQSD central office, so ask BPI how this works for a traveller before you fly.",
+       "BPI's list of allowable plants and planting materials is a downloadable spreadsheet that it calls a living document, updated regularly."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "consequence",
+    "label": "If you have no clearance",
+    "status": "stop",
+    "verdict": "May be confiscated",
+    "head": "Without the PQC and the certificate, officers may confiscate the products at the airport.",
+    "scen": [
+     {
+      "when": "You arrive without both documents",
+      "status": "stop",
+      "tag": "Confiscation",
+      "lines": [
+       "The advisory says that if you do not obtain both the PQC and the phytosanitary certificate before you arrive, the products may be confiscated at the airport."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "notread",
+    "label": "Not read",
+    "status": "warn",
+    "verdict": "Ask first",
+    "head": "We did not read the rules for meat, dairy, eggs or packaged food.",
+    "scen": [
+     {
+      "when": "What we could not confirm",
+      "status": "warn",
+      "tag": "Ask first",
+      "lines": [
+       "The pages we read cover plants and plant products only; they say nothing about meat, dairy, eggs or packaged food.",
+       "Declare any food on arrival and ask the Department of Agriculture before you bring meat, dairy, eggs or packaged food."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "India": {
+  "checked": "8 November 2026",
+  "answer": "Indian Customs asks every arriving passenger to say whether they carry meat, dairy, fish or poultry products, and whether they carry seeds, plants, fruits, flowers or other planting material. Anyone who answers yes goes to the Red Channel. Plants and their produce, such as fruits and seeds, are listed as restricted goods, so they are allowed only under conditions. Non-declaration or concealment is an offence that can lead to confiscation, fines and prosecution. The pages we read give no quantity limits for food.",
+  "sources": [
+   [
+    "https://www.cbic.gov.in/resources/htdocs-cbec/travellerguide_atithi.pdf",
+    "CBIC (Indian Customs) — Guide for International Travellers (PDF)"
+   ],
+   [
+    "https://www.cbic.gov.in/resources/htdocs-cbec/customs_clearance_of_passengers_at_a_glance.pdf",
+    "CBIC (Indian Customs) — Customs Clearance of Passengers at a Glance (PDF)"
+   ]
+  ],
+  "faq": [
+   [
+    "Do I have to declare food when I arrive in India?",
+    "The Customs baggage declaration form asks whether you are bringing meat and meat products, dairy, fish or poultry products, and whether you are bringing seeds, plants, fruits, flowers or other planting material. If you answer yes to these items you report to the Red Channel."
+   ],
+   [
+    "Can I bring fruit, seeds or plants into India?",
+    "Indian Customs lists plants and their produce, such as fruits and seeds, as restricted goods: they can be brought in only under conditions. The pages we read do not state those conditions, so ask Indian customs or the nearest Indian mission before you bring any."
+   ],
+   [
+    "What is the Red Channel and the Green Channel?",
+    "Passengers with nothing dutiable or prohibited may use the Green Channel. Passengers who need to declare goods, or who carry items from the declaration form such as meat, dairy, plants or seeds, must use the Red Channel."
+   ],
+   [
+    "What happens if I do not declare?",
+    "Non-declaration, mis-declaration or concealment is an offence under the Customs Act, 1962. It can lead to confiscation of the goods, fines and penalties, and prosecution."
+   ]
+  ],
+  "topics": [
+   {
+    "id": "meat",
+    "label": "Meat, dairy & fish",
+    "status": "warn",
+    "verdict": "Declare it",
+    "head": "Meat, dairy, fish and poultry products are a declaration item at arrival.",
+    "scen": [
+     {
+      "when": "Meat, dairy, fish or poultry products in your baggage",
+      "status": "warn",
+      "tag": "Declare it",
+      "lines": [
+       "The Customs declaration form lists meat and meat products, dairy products, fish and poultry products as one item you must answer yes or no to.",
+       "A yes to this item sends you to the Red Channel.",
+       "The pages we read give no quantity limit and no list of allowed products."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "plants",
+    "label": "Fruit, seeds & plants",
+    "status": "warn",
+    "verdict": "Restricted",
+    "head": "Fruits, seeds, flowers and plants are restricted goods and a declaration item.",
+    "scen": [
+     {
+      "when": "Seeds, plants, fruits, flowers or other planting material",
+      "status": "warn",
+      "tag": "Restricted",
+      "lines": [
+       "The declaration form asks about seeds, plants, fruits, flowers and other planting material; a yes sends you to the Red Channel.",
+       "The Customs leaflet lists plants and their produce, such as fruits and seeds, as restricted goods, meaning goods allowed only under certain conditions.",
+       "The leaflet does not name the conditions, a permit or a quantity."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "channels",
+    "label": "Red & Green Channel",
+    "status": "warn",
+    "verdict": "Choose correctly",
+    "head": "Use the Green Channel only if you carry nothing dutiable or prohibited.",
+    "scen": [
+     {
+      "when": "Which channel to use",
+      "status": "warn",
+      "tag": "Red if unsure",
+      "lines": [
+       "Passengers who need to declare goods for duty, or who carry items subject to import prohibitions listed in the declaration form, must report to the Red Channel.",
+       "Walking through the Green Channel with prohibited, restricted or dutiable goods can lead to penal action."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "penalty",
+    "label": "If you do not declare",
+    "status": "stop",
+    "verdict": "Offence",
+    "head": "Non-declaration or concealment can mean confiscation, fines and prosecution.",
+    "scen": [
+     {
+      "when": "Undeclared or misdeclared goods",
+      "status": "stop",
+      "tag": "Penalties",
+      "lines": [
+       "The guide says non-declaration, mis-declaration or concealment is an offence under the Customs Act, 1962.",
+       "Depending on how serious it is, goods can be confiscated outright or released after a redemption fine, penalties can be imposed, and the passenger can be arrested and prosecuted."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "notread",
+    "label": "Not read",
+    "status": "warn",
+    "verdict": "Ask first",
+    "head": "We did not read India's plant and animal quarantine rules.",
+    "scen": [
+     {
+      "when": "What we could not confirm",
+      "status": "warn",
+      "tag": "Ask first",
+      "lines": [
+       "The Customs pages we read give no weight limit and no list of allowed foods. We did not read India's plant and animal quarantine rules: the Plant Quarantine site could not be opened when we checked.",
+       "Ask Indian customs or the nearest Indian mission before you bring meat, dairy, fruit, seeds or plants."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "Indonesia": {
+  "checked": "8 November 2026",
+  "answer": "Indonesia's quarantine agency Badan Karantina asks travellers returning from abroad to declare their baggage in the All Indonesia app, and passengers carrying commodities that need quarantine inspection must report them and have them checked by quarantine officers at the airport. Bringing animals, fish, plants or their products without quarantine documents from the place of origin is a violation. The agency also bans commodities at risk of Nipah virus from countries not free of it, including Malaysia, and seizes and destroys them. The page we read gives no quantity limits.",
+  "sources": [
+   [
+    "https://karantinaindonesia.go.id/berita/pengawasan-produk-hewan-dan-tumbuhan-asal-luar-negeri-terus-diperketat",
+    "Badan Karantina Indonesia — Oversight of animal and plant products from abroad is tightened (6 April 2026)"
+   ]
+  ],
+  "faq": [
+   [
+    "Do I have to declare food or plants when I arrive in Indonesia?",
+    "Badan Karantina asks travellers to declare their baggage in the All Indonesia app, and passengers carrying commodities that require quarantine inspection must report them and have them checked by quarantine officers at the airport."
+   ],
+   [
+    "Can I bring meat, fruit or vegetables into Indonesia?",
+    "The agency's oversight focuses on meat and processed meat, plants, fruit and vegetables in passenger baggage. Bringing animals, fish, plants or their products without quarantine documents from the place of origin is a violation."
+   ],
+   [
+    "Can I bring food from Malaysia?",
+    "Badan Karantina bans commodities at risk of Nipah virus contamination from countries not yet free of it, including Malaysia. If officers find them in the baggage of a passenger from Malaysia they seize and destroy them."
+   ],
+   [
+    "Are there quantity limits?",
+    "The page we read states none."
+   ]
+  ],
+  "topics": [
+   {
+    "id": "declare",
+    "label": "Declare in the app",
+    "status": "warn",
+    "verdict": "All Indonesia app",
+    "head": "Declare your baggage in the All Indonesia app and report quarantine commodities at the airport.",
+    "scen": [
+     {
+      "when": "Arriving from abroad",
+      "status": "warn",
+      "tag": "Declare it",
+      "lines": [
+       "Travellers returning from abroad are asked to declare their baggage in the All Indonesia app.",
+       "Passengers carrying commodities that need quarantine inspection must report them and have quarantine officers check them when they arrive at the airport."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "meat",
+    "label": "Meat, plants & produce",
+    "status": "warn",
+    "verdict": "Documents needed",
+    "head": "Animals, fish, plants and their products need quarantine documents from where they come from.",
+    "scen": [
+     {
+      "when": "Meat, processed meat, plants, fruit and vegetables",
+      "status": "warn",
+      "tag": "Documents",
+      "lines": [
+       "These are the items the quarantine office says it checks in passenger baggage and cargo.",
+       "Bringing animals, fish, plants or their products without quarantine documents from the area or country of origin is a violation and can lead to action under the rules."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "nipah",
+    "label": "From Malaysia",
+    "status": "stop",
+    "verdict": "Seized and destroyed",
+    "head": "Commodities at risk of Nipah virus from Malaysia are banned.",
+    "scen": [
+     {
+      "when": "Passenger arriving from Malaysia",
+      "status": "stop",
+      "tag": "Not allowed",
+      "lines": [
+       "The quarantine agency bans commodities at risk of Nipah virus contamination from countries not yet free of the virus, including Malaysia.",
+       "If officers find them in a passenger's baggage they seize and destroy them."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "notread",
+    "label": "Not read",
+    "status": "warn",
+    "verdict": "Ask first",
+    "head": "The page lists no quantity limits and no list of allowed foods.",
+    "scen": [
+     {
+      "when": "What we could not confirm",
+      "status": "warn",
+      "tag": "Ask first",
+      "lines": [
+       "We read one official news page from Badan Karantina. It gives no quantity limit, no list of allowed foods, and no fine amounts.",
+       "Ask the quarantine office or check the All Indonesia app before you bring meat, dairy, eggs, plants or fruit."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "Dominican Republic": {
+  "checked": "8 November 2026",
+  "answer": "The Dominican customs authority (DGA) says food must be declared on the electronic e-Ticket form, and that plants, farm products, food and medicines are subject to rules of the Ministry of Agriculture or the Ministry of Public Health. Animal products fall under the Ministry of Agriculture. The traveller manual page gives no specific rules for fruit and no quantity limits for food.",
+  "sources": [
+   [
+    "https://www.aduanas.gob.do/manual-del-viajero/",
+    "Dirección General de Aduanas (DGA) — Manual del Viajero"
+   ]
+  ],
+  "faq": [
+   [
+    "Do I have to declare food when I arrive in the Dominican Republic?",
+    "Yes. The DGA traveller manual says food must be declared on the corresponding form, the electronic e-Ticket."
+   ],
+   [
+    "Who sets the rules for food, plants and animal products?",
+    "The manual says plants, farm products, food and medicines are subject to regulation by the Ministry of Agriculture or the Ministry of Public Health. Animal products are subject to the Ministry of Agriculture."
+   ],
+   [
+    "Can I bring fruit into the Dominican Republic?",
+    "The manual page contains no specific rule for fruit. Declare it and ask the Ministry of Agriculture."
+   ],
+   [
+    "Can I bring my medicines?",
+    "Medicines for personal use are allowed. Controlled or psychotropic substances need a medical prescription that justifies their use during your stay."
+   ]
+  ],
+  "topics": [
+   {
+    "id": "declare",
+    "label": "Declare food",
+    "status": "warn",
+    "verdict": "Declare it",
+    "head": "Food must be declared on the electronic e-Ticket form.",
+    "scen": [
+     {
+      "when": "Food in your baggage",
+      "status": "warn",
+      "tag": "Declare it",
+      "lines": [
+       "The DGA manual says food must be declared on the corresponding form, the e-Ticket.",
+       "Health, plant-health and animal-health authorities regulate these products as applicable."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "regulated",
+    "label": "Plants, farm & animal products",
+    "status": "warn",
+    "verdict": "Ministry rules",
+    "head": "Plants, farm products and animal products are regulated by the Ministry of Agriculture.",
+    "scen": [
+     {
+      "when": "Plants, farm products, animal products",
+      "status": "warn",
+      "tag": "Ask the ministry",
+      "lines": [
+       "The manual says plants, farm products, food and medicines are subject to regulation by the Ministry of Agriculture or the Ministry of Public Health.",
+       "Animal products are subject to the Ministry of Agriculture; the page gives no further details."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "medicine",
+    "label": "Personal medicines",
+    "status": "go",
+    "verdict": "Allowed",
+    "head": "Medicines for personal use are allowed; controlled ones need a prescription.",
+    "scen": [
+     {
+      "when": "Medicines in your baggage",
+      "status": "go",
+      "tag": "Allowed",
+      "lines": [
+       "Medicines for personal use are allowed.",
+       "Controlled or psychotropic substances need a medical prescription that justifies their consumption during your stay."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "notread",
+    "label": "Not read",
+    "status": "warn",
+    "verdict": "Ask first",
+    "head": "The manual page gives no fruit rule, no food quantity limits and no fines.",
+    "scen": [
+     {
+      "when": "What we could not confirm",
+      "status": "warn",
+      "tag": "Ask first",
+      "lines": [
+       "The page does not say which foods are banned, how much you may bring, or what the penalty is. It also shows no update date.",
+       "Declare any food and ask the Ministry of Agriculture before you bring fruit, meat, dairy or eggs."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "Poland": {
+  "checked": "8 November 2026",
+  "answer": "Poland's veterinary inspectorate (GIW) says animal-origin food brought from non-EU countries for personal use is tightly limited because of disease risk: meat, milk and dairy are not allowed under the personal-use exemption, infant formula, special medical food and medically needed pet food are allowed up to 2 kg in total, gutted fish up to 20 kg, and honey, live oysters, live mussels and snails up to 2 kg. Anything that does not meet the conditions must be handed over on arrival for official disposal, and failing to declare it can mean a fine or criminal proceedings.",
+  "sources": [
+   [
+    "https://www.wetgiw.gov.pl/handel-eksport-import/przywoz-zywnosci-na-wlasny-uzytek",
+    "Główny Inspektorat Weterynarii (GIW) — Bringing food and pet food for personal use"
+   ]
+  ],
+  "faq": [
+   [
+    "Can I bring meat or dairy into Poland from a non-EU country?",
+    "Not under the personal-use exemption: meat, milk and their products are allowed only from the Faroe Islands or Greenland, up to 10 kg per person. Anything else must be handed over for official disposal."
+   ],
+   [
+    "How much fish can I bring?",
+    "From non-EU countries other than the Faroe Islands and Greenland: up to 20 kg per person, or one fish if it weighs 20 kg or more. Fresh fish must be gutted."
+   ],
+   [
+    "What can I bring for a baby or for medical reasons?",
+    "Infant formula and other infant food, special medical food and pet food needed for a pet's health: up to 2 kg in total, if it needs no refrigeration before opening, is in commercial packaging and is sealed unless already in use."
+   ],
+   [
+    "What happens if I do not declare these products?",
+    "The GIW page says failing to declare them may result in a fine or criminal proceedings."
+   ]
+  ],
+  "topics": [
+   {
+    "id": "meat",
+    "label": "Meat & dairy",
+    "status": "stop",
+    "verdict": "Not allowed",
+    "head": "Meat, milk and their products from outside the EU are not covered by the personal-use exemption.",
+    "scen": [
+     {
+      "when": "Coming from most non-EU countries",
+      "status": "stop",
+      "tag": "Not allowed",
+      "lines": [
+       "Meat, milk, meat products and dairy products are not allowed under the personal-use exemption.",
+       "Anything that does not meet the conditions must be handed over on arrival for official disposal."
+      ]
+     },
+     {
+      "when": "Coming from the Faroe Islands or Greenland",
+      "status": "warn",
+      "tag": "Up to 10 kg",
+      "lines": [
+       "Meat, milk and their products are allowed up to 10 kg per person."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "other",
+    "label": "Fish, honey & other",
+    "status": "warn",
+    "verdict": "Weight limits",
+    "head": "Fish up to 20 kg; honey, live oysters, mussels and snails up to 2 kg.",
+    "scen": [
+     {
+      "when": "Fishery products",
+      "status": "warn",
+      "tag": "Up to 20 kg",
+      "lines": [
+       "Fresh (gutted), dried, cooked, salted or smoked fish and some shellfish: up to 20 kg per person, or one fish if it weighs 20 kg or more."
+      ]
+     },
+     {
+      "when": "Honey, live oysters, live mussels, snails",
+      "status": "warn",
+      "tag": "Up to 2 kg",
+      "lines": [
+       "Up to 2 kg combined per person from most non-EU countries; up to 10 kg from the Faroe Islands or Greenland."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "exempt",
+    "label": "Processed foods",
+    "status": "go",
+    "verdict": "Some exempt",
+    "head": "Some processed foods are exempt from these limits.",
+    "scen": [
+     {
+      "when": "Foods named as exempt on the page",
+      "status": "go",
+      "tag": "Exempt",
+      "lines": [
+       "Chocolate and cocoa products, pasta, couscous, cereal products, bread and biscuits, coffee and tea extracts, stock cubes, liqueurs, and packaged food supplements containing glucosamine, chondroitin or chitosan can be exempt if they meet the conditions of Regulation 2021/630.",
+       "Check the conditions on the GIW page before you rely on an exemption."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "notread",
+    "label": "Not read",
+    "status": "warn",
+    "verdict": "Ask first",
+    "head": "The page does not mention plants.",
+    "scen": [
+     {
+      "when": "What we could not confirm",
+      "status": "warn",
+      "tag": "Ask first",
+      "lines": [
+       "The GIW page has no publication date and does not cover plants, fruit or vegetables.",
+       "Larger amounts than the limits above can only come in as a commercial consignment, with an official EU certificate and the goods shown at an EU border control point."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "Hungary": {
+  "checked": "8 November 2026",
+  "answer": "Nébih, Hungary's food chain safety office, says meat and dairy products from non-EU countries may not be brought into the EU, including Hungary, whatever the quantity, and are confiscated. Pork and pork products are also barred from any third country or EU area hit by African swine fever. Small personal quantities of a few other animal products are allowed within weight limits, such as up to 2 kg of infant formula and honey, and up to 20 kg of gutted fish. The Nébih article we read is dated 24 January 2020.",
+  "sources": [
+   [
+    "https://portal.nebih.gov.hu/-/szigoru-szabalyozas-a-poggyaszban-behozott-elelmiszerekre-vonatkozoan",
+    "Nébih — Strict rules for food brought in luggage (24 January 2020)"
+   ]
+  ],
+  "faq": [
+   [
+    "Can I bring meat or dairy into Hungary from a non-EU country?",
+    "No. Nébih says importing meat and dairy products from third countries into the EU is prohibited regardless of quantity, so even small amounts are confiscated. The exception is up to 10 kg of meat, milk and dairy from the Faroe Islands or Greenland."
+   ],
+   [
+    "Can I bring pork?",
+    "Pork and pork products cannot be brought in from any third country or EU area where African swine fever occurs; Nébih names the Danube Delta and Szatmár county as examples."
+   ],
+   [
+    "Which small animal products are allowed?",
+    "Infant formula, baby food, special medical food and medically needed pet food: up to 2 kg in total (10 kg from the Faroe Islands or Greenland), sealed and needing no refrigeration. Honey, live oysters, mussels and snails: up to 2 kg. Gutted fish: up to 20 kg or one fish."
+   ],
+   [
+    "What happens at the border?",
+    "Products that do not meet the rules must be handed over for official destruction, and failing to declare them can lead to a fine or criminal proceedings."
+   ]
+  ],
+  "topics": [
+   {
+    "id": "meat",
+    "label": "Meat & dairy",
+    "status": "stop",
+    "verdict": "Banned",
+    "head": "Meat and dairy from non-EU countries are banned whatever the quantity.",
+    "scen": [
+     {
+      "when": "Meat, milk or dairy from outside the EU",
+      "status": "stop",
+      "tag": "Banned",
+      "lines": [
+       "Nébih says the ban applies regardless of quantity, so small personal amounts are confiscated too.",
+       "Exception: up to 10 kg from the Faroe Islands or Greenland."
+      ]
+     },
+     {
+      "when": "Pork and pork products",
+      "status": "stop",
+      "tag": "Swine fever",
+      "lines": [
+       "Pork cannot be brought in from any third country or EU area where African swine fever occurs."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "small",
+    "label": "Baby food, fish, honey",
+    "status": "warn",
+    "verdict": "Weight limits",
+    "head": "A few animal products are allowed in small weights.",
+    "scen": [
+     {
+      "when": "Infant formula, baby food, special medical food, pet food for health",
+      "status": "warn",
+      "tag": "Up to 2 kg",
+      "lines": [
+       "Up to 2 kg in total (10 kg from the Faroe Islands or Greenland); the product must need no refrigeration before opening, carry a protected brand name and be sealed unless in use."
+      ]
+     },
+     {
+      "when": "Fish, honey, live oysters, mussels, snails",
+      "status": "warn",
+      "tag": "Check limit",
+      "lines": [
+       "Gutted fish: up to 20 kg per person or the weight of one fish, whichever is higher.",
+       "Honey, live oysters, live mussels and snails: up to 2 kg (10 kg from the Faroe Islands or Greenland)."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "exempt",
+    "label": "Baked goods & sweets",
+    "status": "go",
+    "verdict": "Some exempt",
+    "head": "Some processed foods with little milk or egg are exempt.",
+    "scen": [
+     {
+      "when": "Foods named as exempt on the page",
+      "status": "go",
+      "tag": "Exempt",
+      "lines": [
+       "Bread, cakes and biscuits where processed milk and egg products are under 20%; chocolate and confectionery under 50%; meat-free pasta under 50%.",
+       "Food supplements with under 20% processed animal preparations, and packaged soups and flavourings with under 50% fish oil, meal or extract."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "notread",
+    "label": "Not read",
+    "status": "warn",
+    "verdict": "Ask first",
+    "head": "The article is from 2020 and says little about plants.",
+    "scen": [
+     {
+      "when": "What we could not confirm",
+      "status": "warn",
+      "tag": "Ask first",
+      "lines": [
+       "The article is dated 24 January 2020, so check Nébih for any newer rules, and it does not cover fruit and vegetables.",
+       "Larger quantities are only allowed as commercial consignments with an official EU certificate shown at an EU border control post."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "Portugal": {
+  "checked": "8 November 2026",
+  "answer": "Portugal's food and veterinary authority DGAV says that on arrival from a non-EU country you cannot bring meat, milk or their products, except up to 10 kg from the Faroe Islands or Greenland. You may bring up to 2 kg in total of infant milk, infant food, medical special foods and medically needed pet feed, up to 20 kg of fish and some shellfish, and up to 2 kg of other animal products such as honey, live oysters, live mussels and snails. Products that do not comply must be declared to Customs; undeclared ones are seized and destroyed, and the sheet says you may face further consequences. The DGAV data sheet we read was reviewed in May 2021.",
+  "sources": [
+   [
+    "https://www.dgav.pt/wp-content/uploads/2021/05/Viajar-com-produtos-de-origem-animal-EN.pdf",
+    "DGAV (Portugal) — Data sheet: travelling with products of animal origin from non-EU countries (reviewed May 2021)"
+   ]
+  ],
+  "faq": [
+   [
+    "Can I bring meat or milk products into Portugal from outside the EU?",
+    "No, except from the Faroe Islands or Greenland, up to 10 kg per person. The DGAV sheet shows meat and milk products as items you cannot bring."
+   ],
+   [
+    "What can I bring for a baby or for health reasons?",
+    "Powdered infant milk, infant food, special foods needed for medical reasons and special pet feed needed for medical reasons: 2 kg per person at most (10 kg from the Faroe Islands or Greenland), if it needs no refrigeration, is a proprietary brand and the packaging is unbroken."
+   ],
+   [
+    "How much fish can I bring?",
+    "Up to 20 kg per person, or the weight of one fish if that is more; the sheet lists fresh gutted, dried, cooked, cured or smoked fish and some crustaceans and shellfish."
+   ],
+   [
+    "What if I arrive with a product that breaks the rules?",
+    "Declare it to Customs at the EU airport or port. If Customs find it undeclared, it is seized and destroyed, and the sheet says you may also face further consequences."
+   ]
+  ],
+  "topics": [
+   {
+    "id": "meat",
+    "label": "Meat & milk products",
+    "status": "stop",
+    "verdict": "Not allowed",
+    "head": "Meat and milk products from outside the EU cannot be brought in.",
+    "scen": [
+     {
+      "when": "Coming from a non-EU country",
+      "status": "stop",
+      "tag": "Not allowed",
+      "lines": [
+       "The DGAV sheet lists meat and meat products and milk and milk products as items you cannot bring.",
+       "Exception: up to 10 kg per person from the Faroe Islands or Greenland."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "allowed",
+    "label": "Fish and small items",
+    "status": "warn",
+    "verdict": "Weight limits",
+    "head": "Fish up to 20 kg; baby and medical foods and honey up to 2 kg.",
+    "scen": [
+     {
+      "when": "Fish and shellfish",
+      "status": "warn",
+      "tag": "Up to 20 kg",
+      "lines": [
+       "Up to 20 kg per person or the weight of one fish; the restriction does not apply to the Faroe Islands or Greenland."
+      ]
+     },
+     {
+      "when": "Infant food, medical foods, honey, live oysters, mussels, snails",
+      "status": "warn",
+      "tag": "Up to 2 kg",
+      "lines": [
+       "2 kg per person at most, or up to 10 kg from the Faroe Islands or Greenland."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "declare",
+    "label": "If you carry a banned product",
+    "status": "warn",
+    "verdict": "Declare it",
+    "head": "Declare any non-compliant product to Customs on arrival.",
+    "scen": [
+     {
+      "when": "You inadvertently carry a non-compliant product",
+      "status": "warn",
+      "tag": "Declare it",
+      "lines": [
+       "Declare it to Customs at the EU airport or port.",
+       "If Customs find it without a declaration, it is seized and destroyed, and you may face further consequences."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "notread",
+    "label": "Not read",
+    "status": "warn",
+    "verdict": "Ask first",
+    "head": "The sheet covers animal products only and dates from May 2021.",
+    "scen": [
+     {
+      "when": "What we could not confirm",
+      "status": "warn",
+      "tag": "Ask first",
+      "lines": [
+       "The sheet says nothing about plants, fruit or vegetables, and gives no fine amounts. Check DGAV or Portuguese customs for newer rules."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "Peru": {
+  "checked": "8 November 2026",
+  "answer": "Peru's agriculture health service SENASA lets travellers bring a short list of dried or processed plant products up to 1 kg, and, for animal products, packaged and labelled pasteurised dairy up to 5 kg (or one cheese up to 10 kg), sausages other than pork up to 10 kg, canned fast food other than pork up to 2 kg, and honey, royal jelly or pollen up to 1 kg. Fresh fruit, flowers, plants, wood and live insects need SENASA's prior authorisation, soil is not allowed, and pork products are banned because of African swine fever. Everything must be declared, and food from the aeroplane must not be taken off the flight.",
+  "sources": [
+   [
+    "https://www.gob.pe/institucion/senasa/campa%C3%B1as/6969-amigo-viajero",
+    "SENASA (Peru) — Amigo viajero: plant and animal products allowed as accompanied baggage (last changed 10 May 2024)"
+   ]
+  ],
+  "faq": [
+   [
+    "Can I bring fruit into Peru?",
+    "Fresh or naturally dried fruit and flowers, wood, live insects, plants or parts of plants need SENASA's prior authorisation and cannot come in baggage without the plant-health checks. Only industrially dried fruit and vegetables are on the list of items allowed up to 1 kg."
+   ],
+   [
+    "Can I bring cheese, sausages or honey?",
+    "Packaged and labelled, from a country without health restrictions: pasteurised dairy up to 5 kg or one cheese up to 10 kg, sausages (not pork) up to 10 kg, canned fast food (not pork) up to 2 kg, and honey, royal jelly or pollen up to 1 kg."
+   ],
+   [
+    "Can I bring pork products?",
+    "No. SENASA banned pork products from entering Peru to keep the country free of African swine fever."
+   ],
+   [
+    "What do I do with the food from my flight?",
+    "Eat it on the flight. If you take it off the aeroplane, the SENASA inspector confiscates it."
+   ]
+  ],
+  "topics": [
+   {
+    "id": "plants",
+    "label": "Fruit, plants & seeds",
+    "status": "warn",
+    "verdict": "Approval needed",
+    "head": "Fresh fruit, plants, wood and flowers need SENASA's prior authorisation; soil is not allowed.",
+    "scen": [
+     {
+      "when": "Fresh or naturally dried fruit and flowers, plants, wood, live insects",
+      "status": "stop",
+      "tag": "Prior approval",
+      "lines": [
+       "These need prior authorisation from SENASA and cannot enter in your baggage without the plant-health checks."
+      ]
+     },
+     {
+      "when": "Dried herbs, ground spices, grains, flours, edible mushrooms, industrially dried fruit and vegetables",
+      "status": "go",
+      "tag": "Up to 1 kg",
+      "lines": [
+       "SENASA lists these as allowed up to 1 kg, checked by the SENASA inspector. Bring more only after following SENASA's rules before you travel."
+      ]
+     },
+     {
+      "when": "Soil or earth",
+      "status": "stop",
+      "tag": "Not allowed",
+      "lines": [
+       "Entry of soil or earth is not authorised."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "animal",
+    "label": "Dairy, sausages & honey",
+    "status": "warn",
+    "verdict": "Weight limits",
+    "head": "Some packaged animal products are allowed within weight limits, with no permit.",
+    "scen": [
+     {
+      "when": "Packaged and labelled, from a country without health restrictions",
+      "status": "warn",
+      "tag": "Within limits",
+      "lines": [
+       "Pasteurised dairy up to 5 kg, or a single cheese of no more than 10 kg.",
+       "Sausages (not pork) up to 10 kg; canned fast food (not pork) up to 2 kg.",
+       "Honey, royal jelly and pollen up to 1 kg."
+      ]
+     },
+     {
+      "when": "Meat, sausages or eggs not on that list",
+      "status": "warn",
+      "tag": "SENASA office",
+      "lines": [
+       "Go to the SENASA office in the arrivals hall to start the entry procedure. Only products declared and authorised by SENASA can enter."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "pork",
+    "label": "Pork",
+    "status": "stop",
+    "verdict": "Banned",
+    "head": "Pork products may not enter Peru.",
+    "scen": [
+     {
+      "when": "Pork, ham, pork sausages",
+      "status": "stop",
+      "tag": "Not allowed",
+      "lines": [
+       "SENASA banned pork products under Directoral Resolution 0012-2021 to keep the country free of African swine fever."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "declare",
+    "label": "Declare & flight food",
+    "status": "warn",
+    "verdict": "Declare it",
+    "head": "Declare plant and animal products on the customs declaration; do not take flight food off the plane.",
+    "scen": [
+     {
+      "when": "At arrival",
+      "status": "warn",
+      "tag": "Declare it",
+      "lines": [
+       "Every passenger and crew member must declare animal products on the sworn passenger declaration handed out on arrival, and declare plant products on the Customs declaration before the customs check.",
+       "Food served on the aeroplane, such as cheese or ham, must be eaten during the flight; it is confiscated if taken off."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "notread",
+    "label": "Not read",
+    "status": "warn",
+    "verdict": "Ask first",
+    "head": "The page gives no fine amounts and was last changed in May 2024.",
+    "scen": [
+     {
+      "when": "What we could not confirm",
+      "status": "warn",
+      "tag": "Ask first",
+      "lines": [
+       "The page does not state penalties or which countries have health restrictions. Ask SENASA before you bring anything that is not on its list."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "Mexico": {
+  "checked": "8 November 2026",
+  "answer": "Mexico's agriculture department (SADER, with SENASICA) says you must declare any agri-food product in your luggage on arrival; an officer then assesses its sanitary condition and decides whether it can enter, must be returned, or is destroyed. The page lists as restricted: soil and plant material, artisanal hams, sausages and cheeses, animal-origin flours, dairy, and fresh, dried, canned or frozen poultry, pork, beef and fish, plus shellfish and crustaceans. The page we read is from July 2017 and gives no quantity limits.",
+  "sources": [
+   [
+    "https://www.gob.mx/agricultura/articulos/que-alimentos-puedo-movilizar-dentro-y-fuera-de-mexico",
+    "SADER (Mexico) — What products can I bring into Mexico? (12 July 2017)"
+   ]
+  ],
+  "faq": [
+   [
+    "Do I have to declare food when I arrive in Mexico?",
+    "Yes. SADER says that if you declare agri-food products in your luggage, an officer from SENASICA evaluates their sanitary condition. Luggage on all flights can also be inspected for safety and pest control."
+   ],
+   [
+    "What decides whether my food can enter?",
+    "The SENASICA officer evaluates the declared product and decides whether a procedure applies, whether it is returned, or whether it is officially destroyed."
+   ],
+   [
+    "Which foods are restricted?",
+    "Artisanal hams, sausages and cheeses, animal-origin flours, dairy products, and fresh, dried, canned or frozen poultry, pork, beef and fish, plus shellfish and crustaceans. Soil and plant material are restricted too."
+   ],
+   [
+    "Why are these products restricted?",
+    "The page says they could bring pests and diseases that are not present in the country."
+   ]
+  ],
+  "topics": [
+   {
+    "id": "declare",
+    "label": "Declare it",
+    "status": "warn",
+    "verdict": "Declare it",
+    "head": "Declare every agri-food product in your luggage; a SENASICA officer decides.",
+    "scen": [
+     {
+      "when": "Any agri-food product in your bags",
+      "status": "warn",
+      "tag": "Declare it",
+      "lines": [
+       "A SENASICA officer assesses the sanitary condition of what you declare.",
+       "The outcome can be entry, return to you, or official destruction."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "meat",
+    "label": "Meat, dairy & fish",
+    "status": "stop",
+    "verdict": "Restricted",
+    "head": "Meat, dairy, artisanal cheeses and fish are on the restricted list.",
+    "scen": [
+     {
+      "when": "Poultry, pork, beef, fish, shellfish, crustaceans",
+      "status": "stop",
+      "tag": "Restricted",
+      "lines": [
+       "Fresh, dried, canned or frozen poultry, pork, beef and fish, plus shellfish and crustaceans, are listed as restricted."
+      ]
+     },
+     {
+      "when": "Hams, sausages, cheeses, dairy, animal flours",
+      "status": "stop",
+      "tag": "Restricted",
+      "lines": [
+       "Artisanal hams, sausages and cheeses, dairy products and animal-origin flours are listed as restricted."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "plants",
+    "label": "Plants & soil",
+    "status": "stop",
+    "verdict": "Restricted",
+    "head": "Soil and plant material are restricted.",
+    "scen": [
+     {
+      "when": "Soil, plant material",
+      "status": "stop",
+      "tag": "Restricted",
+      "lines": [
+       "The page lists soil and plant material among restricted agricultural products. It gives no separate rule for fruit or seeds."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "notread",
+    "label": "Not read",
+    "status": "warn",
+    "verdict": "Ask first",
+    "head": "The page is from 2017 and gives no limits, fines or fruit rules.",
+    "scen": [
+     {
+      "when": "What we could not confirm",
+      "status": "warn",
+      "tag": "Ask first",
+      "lines": [
+       "The article dates from 12 July 2017 and names the agency by its former name, so requirements may have changed. It does not give quantity limits, fines or rules for fruit and seeds.",
+       "Check SADER or SENASICA before you travel."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "South Africa": {
+  "checked": "8 November 2026",
+  "answer": "The South African government says you must have a permit from the Department of Agriculture, Land Reform and Rural Development for items such as meat, dairy, honey, eggs, live animals, fresh produce, seeds or wood, and these may also need a health certificate from the country they come from. Goods that need a permit must be declared to customs on arrival; failing to declare them can lead to confiscation or fines. The gov.za page gives no quantity limits and shows no update date.",
+  "sources": [
+   [
+    "https://www.gov.za/faq/travel-tourism/what-goods-may-i-bring-south-africa",
+    "South African Government — What goods may I bring into South Africa?"
+   ]
+  ],
+  "faq": [
+   [
+    "Can I bring meat, dairy or eggs into South Africa?",
+    "You need a permit from the Department of Agriculture, Land Reform and Rural Development for meat, dairy, honey and eggs, and a health certificate from the country of origin may also be required."
+   ],
+   [
+    "Can I bring fruit, vegetables or seeds?",
+    "The page lists fresh produce, seeds and wood among the items that need a Department of Agriculture permit."
+   ],
+   [
+    "Do I have to declare these goods?",
+    "Yes. Goods that need a permit must be declared to customs on arrival. If you are unsure, the page says it is safest to declare them."
+   ],
+   [
+    "What happens if I do not declare?",
+    "The page says failure to declare can result in confiscation or fines."
+   ]
+  ],
+  "topics": [
+   {
+    "id": "permit",
+    "label": "Permit needed",
+    "status": "stop",
+    "verdict": "Permit first",
+    "head": "Meat, dairy, honey, eggs, fresh produce, seeds and wood need an agriculture permit.",
+    "scen": [
+     {
+      "when": "Meat, dairy, honey, eggs, live animals, fresh produce, seeds, wood",
+      "status": "stop",
+      "tag": "Permit first",
+      "lines": [
+       "You must have a permit from the Department of Agriculture, Land Reform and Rural Development.",
+       "A health certificate from the country of origin may also be needed."
+      ]
+     },
+     {
+      "when": "Other animal or plant products and certain medicines",
+      "status": "warn",
+      "tag": "May need permit",
+      "lines": [
+       "The page says these may require special permits."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "declare",
+    "label": "Declare to customs",
+    "status": "warn",
+    "verdict": "Declare it",
+    "head": "Declare permit goods on arrival; if unsure, declare.",
+    "scen": [
+     {
+      "when": "At customs",
+      "status": "warn",
+      "tag": "Declare it",
+      "lines": [
+       "Goods that need a permit must be declared to customs officials on arrival.",
+       "Failure to declare can result in confiscation or fines."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "allowance",
+    "label": "Duty-free allowance",
+    "status": "warn",
+    "verdict": "Not for farm goods",
+    "head": "The duty-free allowance page covers personal goods, not permit items.",
+    "scen": [
+     {
+      "when": "Duty-free goods",
+      "status": "warn",
+      "tag": "Check limits",
+      "lines": [
+       "Travellers may bring certain goods without customs duties and VAT within allowable limits; the gov.za page gives no limits for food, animal products or plants and says only limited quantities for alcohol and tobacco.",
+       "It points to the SARS travellers' guide for current limits."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "notread",
+    "label": "Not read",
+    "status": "warn",
+    "verdict": "Ask first",
+    "head": "The page gives no quantity limits, no fine amounts and no date.",
+    "scen": [
+     {
+      "when": "What we could not confirm",
+      "status": "warn",
+      "tag": "Ask first",
+      "lines": [
+       "The page shows only a 2026 copyright notice, not an update date, and does not say how permits are applied for.",
+       "It links to the Department of Agriculture import pages and the SARS travellers' guide for detail."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "Brazil": {
+  "checked": "8 November 2026",
+  "answer": "Brazil's agriculture ministry (MAPA) tells travellers who are unsure how an item is classified to declare it and present themselves to the Vigiagro agricultural inspectors through the customs channel 'Bens a Declarar'. Travellers who visited agricultural production or exhibition areas in the last 15 days must also declare this. Your bag may be selected for agricultural inspection, Vigiagro decides whether goods may enter, and non-compliant items can be destroyed. The MAPA page we read (updated 24 September 2026) lists the categories but gives no per-item verdicts or quantity limits in the part we read.",
+  "sources": [
+   [
+    "https://www.gov.br/agricultura/pt-br/assuntos/vigilancia-agropecuaria/viajantes-e-bagagens/lista-de-bens-agropecuarios-que-podem-ou-nao-ingressar-no-brasil",
+    "Ministry of Agriculture and Livestock (MAPA, Brazil) — List of agricultural goods that may or may not enter Brazil in travellers' baggage (updated 24 September 2026)"
+   ]
+  ],
+  "faq": [
+   [
+    "Do I have to declare food or plants when I arrive in Brazil?",
+    "MAPA advises you to declare any item you are unsure how to classify and to present yourself to Vigiagro through customs, using the 'Bens a Declarar' (goods to declare) channel."
+   ],
+   [
+    "Who decides whether my goods can enter?",
+    "Vigiagro, the agricultural inspection service. Your bag may be selected for federal agricultural inspection."
+   ],
+   [
+    "What if I visited a farm or agricultural fair before the trip?",
+    "If you were in agricultural production or exhibition areas in the last 15 days, you must declare it and present yourself to Vigiagro."
+   ],
+   [
+    "What happens to goods that do not meet the rules?",
+    "The page says non-compliant items can lead to loss or destruction of the products and retention of animals."
+   ]
+  ],
+  "topics": [
+   {
+    "id": "declare",
+    "label": "Declare in doubt",
+    "status": "warn",
+    "verdict": "Declare it",
+    "head": "If you are unsure how an item is classified, declare it.",
+    "scen": [
+     {
+      "when": "An agricultural item you are unsure about",
+      "status": "warn",
+      "tag": "Declare it",
+      "lines": [
+       "Present yourself to Vigiagro through customs, in the 'Bens a Declarar' channel.",
+       "The page names fruits, plants, seeds, cheeses, meat, fish and honey as examples of items that can cause losses."
+      ]
+     },
+     {
+      "when": "You visited farms or fairs in the last 15 days",
+      "status": "warn",
+      "tag": "Declare it",
+      "lines": [
+       "Declare it and present yourself to Vigiagro."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "categories",
+    "label": "What MAPA lists",
+    "status": "warn",
+    "verdict": "Check each item",
+    "head": "MAPA sorts goods into categories, each with its own list.",
+    "scen": [
+     {
+      "when": "Categories on the page",
+      "status": "warn",
+      "tag": "Check list",
+      "lines": [
+       "Animal-origin products; plant parts (fruits, leaves, flowers, grains); in-flight food and snacks; industrially processed plant products; handicrafts with plant or animal parts; wood, bark and cork; and soil and substrates, among others.",
+       "The part of the page we read shows only the category titles; the allowed and not-allowed items are on the pages each category links to."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "inspection",
+    "label": "Inspection & loss",
+    "status": "stop",
+    "verdict": "May be destroyed",
+    "head": "Vigiagro can decide goods may not enter, and non-compliant items can be destroyed.",
+    "scen": [
+     {
+      "when": "Your bag is selected or goods do not comply",
+      "status": "stop",
+      "tag": "Destroyed",
+      "lines": [
+       "Any bag may be selected for federal agricultural inspection.",
+       "Non-compliant items can lead to the loss or destruction of the products and retention of animals."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "notread",
+    "label": "Not read",
+    "status": "warn",
+    "verdict": "Ask first",
+    "head": "We did not read the per-item lists, quantity limits or the electronic declaration steps.",
+    "scen": [
+     {
+      "when": "What we could not confirm",
+      "status": "warn",
+      "tag": "Ask first",
+      "lines": [
+       "The page we read does not give quantity limits or the electronic declaration procedure, and the last part of the page was not read.",
+       "Open the MAPA list for the exact item before you pack it, or declare it."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "Turkey": {
+  "checked": "8 November 2026",
+  "answer": "The Turkish Ministry of Trade's customs guide lists the consumer food you may bring duty-free when you arrive: 1 kg each of tea, instant coffee, coffee, chocolate and sugar-based sweets, together with the tobacco, alcohol and cosmetics allowances. The goods must accompany the passenger. The page we read has a revision date of 4 December 2018 and does not cover meat, dairy, fruit, plants or any ban, so ask Turkish customs or the agriculture ministry before you bring them.",
+  "sources": [
+   [
+    "https://gumrukrehberi.gov.tr/sayfa/yolcu-beraberinde-getirilen-t%C3%BCketim-e%C5%9Fyas%C4%B1n%C4%B1n-miktarlar%C4%B1-ne-kadard%C4%B1r",
+    "Turkish Ministry of Trade — Customs guide: consumer goods amounts for passengers (revision 4 December 2018)"
+   ]
+  ],
+  "faq": [
+   [
+    "How much tea, coffee or chocolate can I bring into Turkey?",
+    "The Ministry of Trade guide lists 1 kg each of tea, instant coffee, coffee, chocolate and sugar-based sweets as duty-free consumer goods, if they accompany you."
+   ],
+   [
+    "Is there an age limit?",
+    "Passengers under 18 cannot use the tobacco or alcohol exemptions; the page states no age limit for the food items."
+   ],
+   [
+    "Can I bring meat, cheese or fruit into Turkey?",
+    "The page we read does not cover them. Ask Turkish customs or the Ministry of Agriculture before you bring meat, dairy, fruit, vegetables or plants."
+   ],
+   [
+    "What happens if I bring more than the amounts?",
+    "The page does not say what happens above the limits, and it states that it is guidance that does not replace customs legislation."
+   ]
+  ],
+  "topics": [
+   {
+    "id": "allowance",
+    "label": "Duty-free food",
+    "status": "go",
+    "verdict": "1 kg each",
+    "head": "Tea, coffee, chocolate and sweets are on the duty-free list, 1 kg each.",
+    "scen": [
+     {
+      "when": "Consumer food that travels with you",
+      "status": "go",
+      "tag": "Up to 1 kg",
+      "lines": [
+       "Tea 1 kg, instant coffee 1 kg, coffee 1 kg, chocolate 1 kg and sugar-based sweets 1 kg.",
+       "The guide adds a note on a combined 2 kg allowance for chocolate and sweets; read it on the page before you pack more than 1 kg of either."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "alcohol",
+    "label": "Alcohol & tobacco",
+    "status": "warn",
+    "verdict": "Adults only",
+    "head": "Alcohol and tobacco have their own limits and an 18-year age limit.",
+    "scen": [
+     {
+      "when": "Drinks and tobacco on the same page",
+      "status": "warn",
+      "tag": "Limits apply",
+      "lines": [
+       "Spirits over 22% alcohol: 1 litre; drinks up to 22%: 2 litres.",
+       "Cigarettes 600, cigarillos 100, cigars 50, cut tobacco 250 g and pipe tobacco 250 g, each product with its own limit.",
+       "Passengers under 18 cannot use the tobacco or alcohol exemptions."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "notread",
+    "label": "Not read",
+    "status": "warn",
+    "verdict": "Ask first",
+    "head": "The page has no rules for meat, dairy, fruit, plants or what happens above the limits.",
+    "scen": [
+     {
+      "when": "What we could not confirm",
+      "status": "warn",
+      "tag": "Ask first",
+      "lines": [
+       "This is an allowance list, not a quarantine guide: it says nothing about meat, dairy, eggs, fresh produce, plants or seeds, and it has a revision date of December 2018.",
+       "Ask Turkish customs before you bring any of these, and declare anything you are unsure about."
+      ]
+     }
+    ]
+   }
+  ]
  }
 }

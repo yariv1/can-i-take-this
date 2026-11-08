@@ -7,3 +7,8 @@ Done on 2026-10-12 (test group, 8): South Korea, Norway, Mauritius, Taiwan, Roma
 
 Still generic (no readable official page found yet): see node audit_duplicates.js and food/*/ pages containing "The rule above is the general rule most countries follow".
 Notes: bot-blocked sites read via the Browser pane (get_page_text / document.body.textContent); WebFetch with an exact-quote prompt works for open hosts. EU members share the EU baseline (Delegated Regulation 2019/2122); each page must use its own national authority page.
+
+## 2026-11-08 (session 43, AdSense review): 12 more food pages from official pages
+Done: Philippines, India, Indonesia, Dominican Republic, Poland, Hungary, Portugal, Peru, Mexico, South Africa, Brazil, Turkey (food_extra.json now 36). Still generic (36, official site unreadable from here or no food rules on it): bahrain cambodia china colombia costa-rica cuba egypt ethiopia fiji georgia greece israel jamaica jordan kenya kuwait lebanon lithuania luxembourg malaysia maldives malta morocco nepal nigeria oman panama qatar russia saudi-arabia seychelles slovakia slovenia sri-lanka ukraine vietnam.
+Method notes: domain-restricted WebSearch (allowed_domains = the agency) finds official pages; WebFetch fails on some hosts (DNS, 403, 418): those load in the user's Chrome (gob.pe worked); PDFs: curl + pdftotext. Never write files with Python on Windows (it converts LF to CRLF and broke the app build): use the Edit/Write tools.
+Pages with no source link no longer say "official source below" (DS 8.62, audit_source_pointer.js).

@@ -1426,6 +1426,8 @@ function linkRow(icon,label,sub,url){var inner='<span class="hi-ic">'+SICON[icon
   return '<div class="help"><div class="help-h">Helpful sources</div>'+rows+'<div class="hnote">To be 100% sure, we always recommend confirming with the official channels.</div></div>';
 }
 function bindHelp(scope){(scope||document).querySelectorAll('.email-trigger').forEach(function(t){t.onclick=function(ev){ev.stopPropagation();var m=t.nextElementSibling;document.querySelectorAll('.email-menu').forEach(function(x){if(x!==m)x.classList.add('hidden');});if(m&&m.classList.contains('email-menu'))m.classList.toggle('hidden');};});}
+/* a card line must not point to "the official source below" when the card has no source link (DS 8.62) */
+function srcPtr(l,v){var s=v.source,has=(s&&s.length)||(s&&s.url);return (has||S.mode!=='country')?l:String(l).replace(/Check the rule for ([^.]*?) at the official source below/g,'We have no official source to link for $1, so check with the authority there before you travel').replace(/See Helpful sources below, and carry/g,'We have no source to link, so check with the authority there, and carry');}
 function appSrcFoot(v){
   /* same three states as the built pages (DS 8.28): official link = OFFICIAL, none = BASED ON GLOBAL RULES; an unverified rule is worded as the general rule */
   var cat=S.cat,base=v.src||'';
@@ -1444,7 +1446,7 @@ function renderPass(v,wrap){
   var route=S.mode==='plane'?'<span>&#9992; <b>'+S.airline+'</b></span><span>'+(S.bag==='carry'?'CARRY-ON':'CHECKED')+'</span><span>&rarr; <b>'+S.country+'</b></span>':'<span>&#128706; ENTERING</span><span><b>'+S.country+'</b> '+(CFLAG[S.country]||'')+'</span>';
   var tagsHtml=(v.tags&&v.tags.length)?'<div class="tagrow">'+v.tags.map(function(t){return '<span class="tag tag-'+t.k+'">'+t.t+'</span>';}).join('')+'</div>':'';
   var xlink='';
-  wrap.innerHTML='<div class="pass '+v.status+' print"><div class="strip"><div class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">'+VICON[v.status]+'</svg></div><div><div class="verdict">'+VLABEL[v.status]+'</div><div class="vsub">'+(S.mode==='plane'?'On the aircraft':'At the border')+'</div></div>'+tcBtnHtml()+'</div><div class="perf"></div><div class="body"><div class="route">'+route+'</div>'+tagsHtml+'<p class="headline">'+v.head+'</p><ul class="detail">'+v.lines.map(function(l){return '<li>'+l+'</li>';}).join('')+'</ul>'+helpBlock(v.source)+'<div class="src">'+appSrcFoot(v)+'</div></div></div>'+worthHtml();
+  wrap.innerHTML='<div class="pass '+v.status+' print"><div class="strip"><div class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">'+VICON[v.status]+'</svg></div><div><div class="verdict">'+VLABEL[v.status]+'</div><div class="vsub">'+(S.mode==='plane'?'On the aircraft':'At the border')+'</div></div>'+tcBtnHtml()+'</div><div class="perf"></div><div class="body"><div class="route">'+route+'</div>'+tagsHtml+'<p class="headline">'+v.head+'</p><ul class="detail">'+v.lines.map(function(l){return '<li>'+srcPtr(l,v)+'</li>';}).join('')+'</ul>'+helpBlock(v.source)+'<div class="src">'+appSrcFoot(v)+'</div></div></div>'+worthHtml();
   var t=$('#toCountry');if(t)t.onclick=function(e){e.preventDefault();S.mode='country';S.detail=null;S.animal=null;S.dogSize=null;S.aniQ='';render();$('#itemInput').value=S.item?S.item.n:'';renderVerdict();};
   bindHelp(wrap);var _tb=$('#tcBtn');if(_tb)_tb.onclick=tcOpen;
 }
