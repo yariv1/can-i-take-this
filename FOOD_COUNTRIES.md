@@ -16,3 +16,8 @@ Pages with no source link no longer say "official source below" (DS 8.62, audit_
 ## 2026-11-09 — 9 more food pages sourced
 Greece, Lithuania, Luxembourg, Malta, Slovakia, Slovenia (EU Your Europe page, 21 Oct 2026), Georgia (rs.ge brochure), Sri Lanka (doa.gov.lk + customs FAQ), Kenya (KEPHIS). Austria verdict label fixed; typeahead guard accepts `tabs(false)`.
 Still generic (27): bahrain cambodia china colombia costa-rica cuba egypt ethiopia fiji israel jamaica jordan kuwait lebanon malaysia maldives morocco nepal nigeria oman panama qatar russia saudi-arabia seychelles ukraine vietnam. Unreachable from here: malaysia colombia nepal(PDF) panama jordan costa-rica ukraine(403).
+
+## 2026-11-09 — 18 pages on IATA Travel Centre (UNOFFICIAL)
+Israel, Saudi Arabia, China, Vietnam, Cambodia, Morocco, Malaysia, Bahrain, Costa Rica, Cuba, Ethiopia, Fiji, Jamaica, Maldives, Nepal, Nigeria, Seychelles, Ukraine (source infopages.traveldoc.aero/Customs/<ISO3>/Plain, undated). On global rules, IATA page has no food line: Egypt, Colombia, Kuwait, Lebanon, Oman, Panama, Qatar, Russia, Jordan. Next for those: more step-2 sources (FCDO, embassies, airport operators).
+
+Added later 2026-11-09: Colombia (OFFICIAL, DIAN traveller page), Qatar (Hamad Airport, UNOFFICIAL), Russia (Meduza explainer, UNOFFICIAL). Still on global rules: Egypt, Kuwait, Lebanon, Oman, Panama, Jordan (IATA page silent; only aggregator/press sources that conflict; Panama MIDA gives no rule, only "check requirements"). Revisit when Kuwait/Oman/Jordan customs portals are readable.

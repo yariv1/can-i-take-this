@@ -27,5 +27,6 @@ if (!Array.isArray(spec.topics) || spec.topics.length < 2) bad.push("topics(>=2)
 if (bad.length) { console.log('bad spec: ' + bad.join(', ')); process.exit(1); }
 const all = fs.existsSync(FILE) ? JSON.parse(fs.readFileSync(FILE, 'utf8')) : {};
 all[spec.country] = { checked: spec.checked || '17 October 2026', answer: spec.answer, sources: spec.sources, faq: spec.faq, topics: spec.topics };
+if (spec.unofficial) all[spec.country].unofficial = true;   // ladder step 2: reliable named third party (UNOFFICIAL footer)
 fs.writeFileSync(FILE, JSON.stringify(all, null, 1));
 console.log('food_extra.json now has ' + Object.keys(all).length + ' countries (added/updated ' + spec.country + ')');
