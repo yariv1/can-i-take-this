@@ -30,7 +30,7 @@ module.exports = {
           ["Larger amounts", "A phytosanitary certificate is required"] ] } },
       { h: "⚠️ If you break the rules",
         list: ["Animal products that do not conform must be surrendered on arrival for official disposal, and failure to declare them can lead to criminal prosecution.",
-          "<strong>Not read:</strong> Mattilsynet's list of food products with special rules (protective measures against disease, infection and pollution), published in Norwegian." ] }
+          "<strong>Not covered:</strong> Mattilsynet's list of food products with special rules (protective measures against disease, infection and pollution), published in Norwegian." ] }
     ],
     faq: [
       ["How much meat and cheese can I bring into Norway from the EU?", "A quota of 10 kg in total of meat, meat products, cheese and animal feed products applies per person aged over 12 when travelling from the EEA."],
@@ -105,7 +105,7 @@ module.exports = {
         list: ["<strong>Above these limits</strong> an import permit issued by the International Trade Administration is required; for milled rice above the limit a permit from the Agricultural and Food Agency is also required.",
           "<strong>TFDA food inspection</strong> is required if one kind of food (excluding tablets or capsules) exceeds 6 kg or its total value is more than USD 1,000. Contact the TFDA on +886-2-2787-8000 before customs clearance.",
           "<strong>Endangered species:</strong> items such as dried or sliced American ginseng need a CITES permit or certificate." ] },
-      { h: "📋 Not read",
+      { h: "📋 Not covered",
         list: ["The APHIA reference table of common animals and plants, and rules for specific foods (cheese, milk powder, instant noodles) beyond the pages above."] }
     ],
     faq: [

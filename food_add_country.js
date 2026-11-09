@@ -10,7 +10,7 @@
    "topics": [ {"id":"meat","label":"Meat & dairy","status":"stop|warn|go","verdict":"short chip text","head":"one sentence",
                  "scen":[{"when":"...","status":"stop|warn|go","tag":"Not allowed|Declare it|Allowed|...","lines":["...","..."]}]} ]
  }
- Rules: only facts stated on the pages read; own words; say what was NOT read in a final "Not read" scenario; no invented URLs/numbers.
+ Rules: only facts stated on the pages read; own words; say what was NOT read in a final "Not covered" scenario; no invented URLs/numbers.
  Output feeds food_detail.js (EXTRA). After adding: node build.js; node audit_duplicates.js (food/*); node audit_source_state.js; node audit_seo_change_scope.js.
  Fields title/description/H1 stay unchanged; the FAQ answer (schema) changes for the page: keep within the approved food rebuild.
 */

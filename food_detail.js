@@ -69,7 +69,7 @@ function render(c, d) {
 // ---- "Which food?" typeahead on the verified pages (user order 2026-10-20: every page type that has the field elsewhere has it here) ----
 // A food maps to the country's OWN verified topic card for its kind of food; if the country has no topic for it, the answer is the "No matches found" card with the country's sources. Nothing is guessed.
 const PT = require('./page_typeahead.js');
-const GENERIC_TOPIC = /^(limits & fines|not checked|not read|if you break|if it|if it does|declare|how to declare|why it matters|documents|penalty|fines?|large amounts|sudden import bans|african swine|inspection|packaging|limits & vat|mail|farm|outdoor|souvenirs|pets|pet food|protected|russia|commercial|items not allowed|excess|confiscation|allowed in small amounts|baby, medical & pet food)/i;
+const GENERIC_TOPIC = /^(limits & fines|not checked|not read|not covered|if you break|if it|if it does|declare|how to declare|why it matters|documents|penalty|fines?|large amounts|sudden import bans|african swine|inspection|packaging|limits & vat|mail|farm|outdoor|souvenirs|pets|pet food|protected|russia|commercial|items not allowed|excess|confiscation|allowed in small amounts|baby, medical & pet food)/i;
 // Strict mapping: a food gets a topic card ONLY when the card's own label names that kind of food; otherwise a broad "any food" card of the country; otherwise no match (never a neighbouring category).
 const GENERIC = /^(food in luggage|any food|food on the list|food products|foods?)$/i;
 const KIND = {

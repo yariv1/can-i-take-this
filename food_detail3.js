@@ -29,7 +29,7 @@ module.exports = {
       { h: "🔍 Checks and what happens to banned food",
         list: ["The EU organises controls at entry points and can use scanning equipment and detector dogs to screen baggage.",
           "Personal consignments found in breach of the rules are seized and destroyed, and those responsible may be liable for costs or penalties.",
-          "<strong>Not read:</strong> Romania's own customs (customs.ro) and veterinary authority (ANSVSA) pages, and the exact quantity limit for fruit and vegetables. These EU pages apply in Romania; check Romanian customs for national details." ] }
+          "<strong>Not covered:</strong> Romania's own customs (customs.ro) and veterinary authority (ANSVSA) pages, and the exact quantity limit for fruit and vegetables. These EU pages apply in Romania; check Romanian customs for national details." ] }
     ],
     faq: [
       ["Can I bring meat or cheese into Romania from another EU country?", "Yes, for your own personal consumption. The same applies to fruit and vegetables grown in an EU country and free from pests or disease."],

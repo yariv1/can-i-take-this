@@ -116,7 +116,7 @@ module.exports = {
       S("Not allowed", "stop", "Not allowed", ["Honey, homemade products, and foods without identification or label.", "Also not permitted: animal feed, bee products (wax, propolis), veterinary products, insects, bacteria, fungi and reproductive material."]) ]),
     T("rules", "If you break the rules", "warn", "Seized and destroyed", "Non-compliant products are seized and destroyed.", [
       S("What happens", "stop", "Seized", ["SENASA staff can seize products that do not meet the authorisations, draw up a record and destroy them in front of the traveller.", "Entry of unauthorised animal or plant products can bring pests and diseases and harm national production."]),
-      S("Not read", "warn", "Ask first", ["Resolution 295/1999, which regulates the entry of food, animals, plants and agricultural products: SENASA tells travellers to consult it."]) ])
+      S("Not covered", "warn", "Ask first", ["Resolution 295/1999, which regulates the entry of food, animals, plants and agricultural products: SENASA tells travellers to consult it."]) ])
   ] },
   "Serbia": { slab: "What are you bringing?", topics: [
     T("food", "Food in luggage", "go", "Allowed", "Reasonable quantities for personal or family use, in the original wrapping.", [
