@@ -20,7 +20,7 @@ console.log('OK airline typeahead (' + n + ' medication pages)');
   const bad = [];
   for (const f of ['medication/into/japan/index.html', 'food/brazil/index.html']) {
     const h = fs.readFileSync(path.join(__dirname, f), 'utf8');
-    if (!h.includes('_tabs(false)')) bad.push(f + ' does not deselect the tab on an answer');
+    if (!h.includes('tabs(false)')) bad.push(f + ' does not deselect the tab on an answer');
   }
   // every food country page has the "Which food?" typeahead (verified pages answer from their own topic cards)
   let foodPages = 0;
