@@ -163,7 +163,7 @@ ${blogReadByUrl(url)}
 </div>
 <script>function __lbl(c){var l=document.getElementById('themeLabel'),i=document.getElementById('themeIcon');if(l)l.textContent=c==='dark'?'Light':'Dark';if(i)i.innerHTML=c==='dark'?'<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>':'<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>';}function __tt(){var t=document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark';document.documentElement.setAttribute('data-theme',t);localStorage.setItem('citt-theme',t);__lbl(t);}window.addEventListener('DOMContentLoaded',function(){__lbl(document.documentElement.getAttribute('data-theme'));});</script>
 <script src="/feedback.js" defer></script>
-<script src="/units.js" defer></script>
+<script src="/units.js" defer></script><script src="/track.js" defer></script>
 <script src="/currency.js" defer></script>
 </body></html>`;
 }
@@ -306,6 +306,7 @@ function airShell({url,title,desc,a,fares}){
 +'<script>function __lbl(c){var l=document.getElementById(\'themeLabel\'),i=document.getElementById(\'themeIcon\');if(l)l.textContent=c===\'dark\'?\'Light\':\'Dark\';if(i)i.innerHTML=c===\'dark\'?\'<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>\':\'<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>\';}function __tt(){var t=document.documentElement.getAttribute(\'data-theme\')===\'dark\'?\'light\':\'dark\';document.documentElement.setAttribute(\'data-theme\',t);localStorage.setItem(\'citt-theme\',t);__lbl(t);}window.addEventListener(\'DOMContentLoaded\',function(){__lbl(document.documentElement.getAttribute(\'data-theme\'));});</scr'+'ipt>\n'
 +'<script src="/feedback.js" defer></scr'+'ipt>\n'
 +'<script src="/units.js" defer></scr'+'ipt>\n'
++'<script src="/track.js" defer></scr'+'ipt>\n'
 +'<script src="/currency.js" defer></scr'+'ipt>\n'
 +'</body></html>';
 }
@@ -523,6 +524,7 @@ function countryShell(o){/*data-country4*/
 +'<script>function __lbl(c){var l=document.getElementById(\'themeLabel\'),i=document.getElementById(\'themeIcon\');if(l)l.textContent=c===\'dark\'?\'Light\':\'Dark\';if(i)i.innerHTML=c===\'dark\'?\'<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>\':\'<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>\';}function __tt(){var t=document.documentElement.getAttribute(\'data-theme\')===\'dark\'?\'light\':\'dark\';document.documentElement.setAttribute(\'data-theme\',t);localStorage.setItem(\'citt-theme\',t);__lbl(t);}window.addEventListener(\'DOMContentLoaded\',function(){__lbl(document.documentElement.getAttribute(\'data-theme\'));});</scr'+'ipt>\n'
 +'<script src="/feedback.js" defer></scr'+'ipt>\n'
 +'<script src="/units.js" defer></scr'+'ipt>\n'
++'<script src="/track.js" defer></scr'+'ipt>\n'
 +'<script src="/currency.js" defer></scr'+'ipt>\n'
 +'</body></html>';
 }
@@ -758,6 +760,7 @@ function airPlaneShell(o){
 +'<script>function __lbl(c){var l=document.getElementById(\'themeLabel\'),i=document.getElementById(\'themeIcon\');if(l)l.textContent=c===\'dark\'?\'Light\':\'Dark\';if(i)i.innerHTML=c===\'dark\'?\'<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>\':\'<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>\';}function __tt(){var t=document.documentElement.getAttribute(\'data-theme\')===\'dark\'?\'light\':\'dark\';document.documentElement.setAttribute(\'data-theme\',t);localStorage.setItem(\'citt-theme\',t);__lbl(t);}window.addEventListener(\'DOMContentLoaded\',function(){__lbl(document.documentElement.getAttribute(\'data-theme\'));});</scr'+'ipt>\n'
 +'<script src="/feedback.js" defer></scr'+'ipt>\n'
 +'<script src="/units.js" defer></scr'+'ipt>\n'
++'<script src="/track.js" defer></scr'+'ipt>\n'
 +'<script src="/currency.js" defer></scr'+'ipt>\n'
 +'</body></html>';
 }
@@ -913,6 +916,7 @@ function guideShell(o){
   +'<script>function __lbl(c){var l=document.getElementById(\'themeLabel\'),i=document.getElementById(\'themeIcon\');if(l)l.textContent=c===\'dark\'?\'Light\':\'Dark\';if(i)i.innerHTML=c===\'dark\'?\'<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>\':\'<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>\';}function __tt(){var t=document.documentElement.getAttribute(\'data-theme\')=== \'dark\'?\'light\':\'dark\';document.documentElement.setAttribute(\'data-theme\',t);localStorage.setItem(\'citt-theme\',t);__lbl(t);}window.addEventListener(\'DOMContentLoaded\',function(){__lbl(document.documentElement.getAttribute(\'data-theme\'));});</scr'+'ipt>\n'
   +'<script src="/feedback.js" defer></scr'+'ipt>\n'
 +'<script src="/units.js" defer></scr'+'ipt>\n'
++'<script src="/track.js" defer></scr'+'ipt>\n'
 +'<script src="/currency.js" defer></scr'+'ipt>\n'
   +'</body></html>';
 }
@@ -1229,7 +1233,7 @@ ${CHK_BODY}
 <script>(function(){var q=document.getElementById("airq");if(!q)return;var box=document.getElementById("allair");var nm=document.getElementById("airnm");var x=document.getElementById("airx");var links=[].slice.call(box.querySelectorAll("a"));q.addEventListener("input",function(){var v=q.value.trim().toLowerCase();var shown=0;links.forEach(function(a){var m=v?a.getAttribute("data-n").indexOf(v)>-1:!a.classList.contains("co");a.classList.toggle("hide",!m);if(m)shown++;});nm.style.display=shown?"none":"block";x.classList.toggle("on",!!q.value);});x.addEventListener("click",function(){q.value="";q.dispatchEvent(new Event("input"));q.focus();});})();</script>
 <script>(function(){function wire(gridId,btnId,searchBox){var g=document.getElementById(gridId),b=document.getElementById(btnId);if(!g||!b)return;b.addEventListener("click",function(){var open=g.classList.toggle("collapsed")===false;b.setAttribute("aria-expanded",open?"true":"false");b.textContent=open?b.getAttribute("data-less"):b.getAttribute("data-more");});if(searchBox){var q=document.getElementById("airq");q.addEventListener("input",function(){var s=!!q.value.trim();g.classList.toggle("collapsed",!s&&b.getAttribute("aria-expanded")!=="true");b.classList.toggle("off",s);});}}wire("allair","airmore",true);wire("ccgrid","ccmore",false);})();</script>
 <script src="/feedback.js" defer></script>
-<script src="/units.js" defer></script>
+<script src="/units.js" defer></script><script src="/track.js" defer></script>
 <script src="/currency.js" defer></script>
 </body></html>`);
   pages.push({url:'/',changefreq:'weekly'});
