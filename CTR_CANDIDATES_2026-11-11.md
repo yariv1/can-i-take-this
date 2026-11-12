@@ -14,3 +14,9 @@ airline/air-new-zealand/baggage-allowance (282), airline/klm/power-bank (274), a
 
 ## C. Rule
 No title/meta edit on more than 40 pages without written approval (audit_seo_change_scope.js).
+
+## D. TEST (prepared 2026-11-12, meta description only, titles unchanged, via seo_restore.json)
+Test group (8 food pages, baseline 28d to 2026-11-09, clicks/impr, pos): south-korea 5/637 p8.9, malaysia 8/519 p8.5, dominican-republic 6/514 p7.9,
+thailand 3/406 p8.9, norway 4/364 p10.5, colombia 6/320 p6.7, indonesia 5/304 p7.3, nepal 4/301 p6.5.
+New description = verdict first, facts taken only from each page's own sourced answer. Control = all other food pages (e.g. vietnam, finland, peru, philippines).
+Read-out 4 weeks after deploy: CTR of test vs control in GSC (same 28-day window). GSC shows almost no query text for these pages (e.g. south-korea 591 impr, 4 queries visible), so the test is judged on CTR only.
