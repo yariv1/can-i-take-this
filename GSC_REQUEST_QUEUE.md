@@ -481,3 +481,6 @@ airline/aeromexico/medication (title, description, H1 and body rewritten from th
 
 ## 2026-10-25 (session 43) re-crawl candidates after deploy fe9acac5f (IndexNow sent)
 GSC quota was used up today. Tomorrow request re-indexing (URL Inspection -> Request indexing) for: /guides/power-banks/, /guides/, /guides/liquids/, /guides/vapes/ (new article links).
+
+## 2026-11-12 re-crawl (CTR test, new meta descriptions, live 534492ef4)
+food/south-korea, food/malaysia, food/dominican-republic, food/thailand, food/norway, food/colombia, food/indonesia, food/nepal. Test read-out 2026-12-10 (see CTR_CANDIDATES_2026-11-11.md section D).
