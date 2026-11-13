@@ -10,6 +10,9 @@ One list, in the order to request indexing: **tier 0 first** (Google confirmed i
 
 **Finding (90 days):** no Wi-Fi page, no Compensation page, no Customer Service page and only 2 of 72 blog articles appear in the Pages report.
 
+## 2026-11-13 status (read this first)
+BING: 100 URLs submitted (bing_submitted.txt 499, 1,676 remain). GSC: "Quota Exceeded" again on the first Request indexing (guides/power-banks, on Google), nothing requested; 4th session in a row (11-01, 11-09, 11-13). Quota seems exhausted for the property, not per day: next try after 2026-11-20; the 2026-11-09 list below is still the next order.
+
 ## 2026-11-09 status (read this first)
 BING: 100 URLs submitted (bing_submitted.txt +100, 1,776 remain). GSC: "Quota Exceeded" on the first Request indexing (guides/power-banks, on Google), nothing requested. Next quota: the 2026-10-27 list below, then the 2026-11-08 re-crawl list, then re-crawl for the 2026-11-09 deploy bced63a79: food/georgia, food/turkey, food/greece, food/lithuania, food/luxembourg, food/malta, food/slovakia, food/slovenia, food/sri-lanka, food/kenya. Then re-crawl the 21 pages of deploy 8c25b353b (2026-11-09): food/israel, saudi-arabia, china, vietnam, cambodia, morocco, malaysia, bahrain, costa-rica, cuba, ethiopia, fiji, jamaica, maldives, nepal, nigeria, seychelles, ukraine, colombia, qatar, russia.
 
