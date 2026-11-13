@@ -4339,30 +4339,34 @@
   ]
  },
  "Greece": {
-  "checked": "9 November 2026",
-  "answer": "Greece is an EU member state, so the EU rules on personal food apply when you arrive from outside the EU. The official EU page (Your Europe) says meat and dairy are not allowed, limited quantities of fruit, vegetables, eggs and honey are allowed, fish up to 20 kg or one fish, and up to 2 kg of baby milk, baby food, medical food or special pet food. Undeclared meat or dairy is confiscated and destroyed, and you can be fined or prosecuted. We read the EU page, not a Greece national page.",
+  "checked": "14 November 2026",
+  "answer": "Flying into Greece from outside the EU, you follow the EU food rules: no meat or dairy, only small amounts of fruit, vegetables, eggs and honey, fish up to 20 kg and up to 2 kg of baby or medical food. Athens International Airport says Greek customs works on site, that you declare cash of €10,000 or more before leaving the baggage claim area, and it gives a customs email for questions. That airport page says nothing about food, so the food limits come from the EU page.",
   "sources": [
    [
     "https://europa.eu/youreurope/citizens/travel/carry/meat-dairy-animal/index_en.htm",
     "European Union (Your Europe) — Taking animal products, food or plants with you in the EU (page checked 21 October 2026)"
+   ],
+   [
+    "https://www.aia.gr/en/traveller/procedures/customs-tax-refund",
+    "Athens International Airport — Customs & Tax refund (Greek customs at the airport; undated)"
    ]
   ],
   "faq": [
    [
-    "Can I bring meat or cheese into Greece from a non-EU country?",
-    "No. The EU page says meat and dairy are not allowed when you travel from a non-EU country, apart from under 10 kg from the Faroe Islands or Greenland."
+    "Can I carry cheese, ham or milk into Greece from a non-EU country?",
+    "No. The EU page rules out meat and dairy for travellers from outside the EU, with one narrow exception for under 10 kg from the Faroe Islands or Greenland."
    ],
    [
-    "How much fish can I bring into Greece?",
-    "Fresh eviscerated, prepared or processed fish: up to 20 kg or one fish, whichever weighs most."
+    "Where do I declare things at Athens airport?",
+    "Athens International Airport lists currency declaration offices in the baggage claim area, and says cash of €10,000 or more must be declared before you leave it. The airport page gives no separate food declaration point."
    ],
    [
-    "What about baby food or medical food?",
-    "Powdered infant milk, infant food and medical special foods are allowed up to 2 kg if they need no refrigeration, are branded retail packs and the packaging is unbroken unless in use. Health-related pet food is also up to 2 kg."
+    "Who can I ask about Greek customs at the airport?",
+    "The airport page gives an email for Greek customs at Athens airport: tel.el-venizelos@aade.gr."
    ],
    [
-    "What happens if I bring meat or dairy anyway?",
-    "The EU page says undeclared meat or dairy is confiscated and destroyed, and you may be fined or face criminal prosecution."
+    "How much baby food or fish may I bring?",
+    "The EU page allows up to 2 kg of powdered infant milk, infant food or medical food in sealed retail packs, and fish up to 20 kg or one fish, whichever is heavier."
    ]
   ],
   "topics": [
@@ -4371,23 +4375,23 @@
     "label": "Meat & dairy",
     "status": "stop",
     "verdict": "Not allowed",
-    "head": "Meat and dairy from outside the EU are not allowed.",
+    "head": "Meat, ham, cheese and milk cannot come in from outside the EU.",
     "scen": [
      {
-      "when": "Arriving from a non-EU country",
+      "when": "Arriving at a Greek airport from a non-EU country",
       "status": "stop",
       "tag": "Not allowed",
       "lines": [
-       "The EU page says meat and dairy are not allowed when you travel from a non-EU country.",
-       "Undeclared meat or dairy is confiscated and destroyed, and you may be fined or prosecuted."
+       "This follows the EU page, not a Greek national rule.",
+       "Anything undeclared is taken and destroyed, and a fine or prosecution is possible."
       ]
      },
      {
-      "when": "From the Faroe Islands or Greenland",
+      "when": "Coming from the Faroe Islands or Greenland",
       "status": "warn",
       "tag": "Up to 10 kg",
       "lines": [
-       "Up to 10 kg each of meat, dairy, honey and eggs is allowed."
+       "Up to 10 kg each of meat, dairy, honey and eggs."
       ]
      }
     ]
@@ -4397,15 +4401,15 @@
     "label": "Fruit, plants & honey",
     "status": "warn",
     "verdict": "Limited amounts",
-    "head": "Fruit, vegetables, eggs and honey are allowed in limited quantities; plants need a certificate.",
+    "head": "Small amounts of fruit, vegetables, eggs and honey; plants need a certificate.",
     "scen": [
      {
-      "when": "Fruit, vegetables, eggs, egg products, honey",
+      "when": "Fruit, vegetables, eggs and honey for yourself",
       "status": "warn",
       "tag": "Limited",
       "lines": [
-       "The page says limited quantities are allowed but gives no figure for fruit, vegetables or eggs.",
-       "Other products without meat or milk, such as honey: up to 2 kg."
+       "The EU page allows limited quantities but names no number for fruit, vegetables or eggs.",
+       "Other food without meat or milk, such as honey, is up to 2 kg."
       ]
      },
      {
@@ -4413,7 +4417,7 @@
       "status": "stop",
       "tag": "Certificate",
       "lines": [
-       "A phytosanitary (plant health) certificate is required."
+       "You need a plant health (phytosanitary) certificate."
       ]
      }
     ]
@@ -4423,14 +4427,14 @@
     "label": "Fish",
     "status": "go",
     "verdict": "Up to 20 kg",
-    "head": "Fish is allowed up to 20 kg or one fish.",
+    "head": "Fish is fine up to 20 kg, or a single fish if that weighs more.",
     "scen": [
      {
-      "when": "Fresh eviscerated, prepared or processed fish",
+      "when": "Fresh gutted, prepared or processed fish",
       "status": "go",
       "tag": "Up to 20 kg",
       "lines": [
-       "Up to 20 kg or one fish, whichever weighs most."
+       "The limit is 20 kg or one fish, whichever weighs most."
       ]
      }
     ]
@@ -4440,22 +4444,47 @@
     "label": "Baby & medical food",
     "status": "go",
     "verdict": "Up to 2 kg",
-    "head": "Baby milk, baby food, medical food and special pet food: up to 2 kg.",
+    "head": "Infant milk, baby food and medical food: up to 2 kg.",
     "scen": [
      {
-      "when": "Powdered infant milk, infant food, medical special food",
+      "when": "Powdered infant milk, baby food, medical food",
       "status": "go",
       "tag": "Up to 2 kg",
       "lines": [
-       "Must not need refrigeration, be a branded retail pack, with unbroken packaging unless in use."
+       "Shelf-stable, in branded retail packs with the packaging unbroken unless in use."
       ]
      },
      {
-      "when": "Health-related pet food",
+      "when": "Pet food prescribed for a health reason",
       "status": "go",
       "tag": "Up to 2 kg",
       "lines": [
-       "For the pet travelling with you, shelf-stable, branded retail pack, packaging unbroken unless in use."
+       "For the pet travelling with you, shelf-stable, in an unbroken retail pack."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "athens",
+    "label": "At Athens airport",
+    "status": "warn",
+    "verdict": "Declare cash",
+    "head": "Greek customs works at Athens airport; cash of €10,000 or more must be declared.",
+    "scen": [
+     {
+      "when": "Cash of €10,000 or more",
+      "status": "warn",
+      "tag": "Declare it",
+      "lines": [
+       "Declare it in the baggage claim area before you leave it, online or at the currency declaration office."
+      ]
+     },
+     {
+      "when": "A question about what you carry",
+      "status": "go",
+      "tag": "Ask",
+      "lines": [
+       "The airport page gives an email for Greek customs at Athens airport: tel.el-venizelos@aade.gr."
       ]
      }
     ]
@@ -4465,15 +4494,15 @@
     "label": "Not covered",
     "status": "warn",
     "verdict": "Ask first",
-    "head": "We read the EU page, not Greece's own customs page.",
+    "head": "Neither page gives a Greek food list.",
     "scen": [
      {
       "when": "What we could not confirm",
       "status": "warn",
       "tag": "Ask first",
       "lines": [
-       "The EU page gives no limit for fruit, vegetables or eggs and does not show a Greece national page.",
-       "Ask Greece's customs or food authority before you bring anything not listed."
+       "The airport page has no food rule, and the EU page gives no limit for fruit, vegetables or eggs.",
+       "Ask Greek customs before you bring anything not listed above."
       ]
      }
     ]
@@ -4481,9 +4510,13 @@
   ]
  },
  "Lithuania": {
-  "checked": "9 November 2026",
-  "answer": "Lithuania is an EU member state, so the EU rules on personal food apply when you arrive from outside the EU. The official EU page (Your Europe) says meat and dairy are not allowed, limited quantities of fruit, vegetables, eggs and honey are allowed, fish up to 20 kg or one fish, and up to 2 kg of baby milk, baby food, medical food or special pet food. Undeclared meat or dairy is confiscated and destroyed, and you can be fined or prosecuted. We read the EU page, not a Lithuania national page.",
+  "checked": "14 November 2026",
+  "answer": "Lithuanian Customs says that from a non-EU country you may bring up to 5 kg of fruit and vegetables for yourself, but potatoes are banned outright. Seeds, bulbs and flowers have small limits, and since June 2024 a Lithuanian ban covers agricultural products and food from Russia and Belarus. For meat and dairy the customs page points to the European Commission, whose rule is that they are not allowed.",
   "sources": [
+   [
+    "https://muitine.lrv.lt/en/for-passengers/coming-from-third-countries/",
+    "Lithuanian Customs — Coming from third countries (updated 14 July 2026)"
+   ],
    [
     "https://europa.eu/youreurope/citizens/travel/carry/meat-dairy-animal/index_en.htm",
     "European Union (Your Europe) — Taking animal products, food or plants with you in the EU (page checked 21 October 2026)"
@@ -4491,20 +4524,20 @@
   ],
   "faq": [
    [
-    "Can I bring meat or cheese into Lithuania from a non-EU country?",
-    "No. The EU page says meat and dairy are not allowed when you travel from a non-EU country, apart from under 10 kg from the Faroe Islands or Greenland."
+    "Can I bring potatoes into Lithuania?",
+    "No. Lithuanian Customs says importing potatoes from non-EU countries for private use is prohibited."
    ],
    [
-    "How much fish can I bring into Lithuania?",
-    "Fresh eviscerated, prepared or processed fish: up to 20 kg or one fish, whichever weighs most."
+    "How much fruit and vegetables can I bring into Lithuania?",
+    "Up to 5 kg of vegetables and fruit for private use, according to Lithuanian Customs."
    ],
    [
-    "What about baby food or medical food?",
-    "Powdered infant milk, infant food and medical special foods are allowed up to 2 kg if they need no refrigeration, are branded retail packs and the packaging is unbroken unless in use. Health-related pet food is also up to 2 kg."
+    "Can I bring food from Russia or Belarus?",
+    "No. A Lithuanian government resolution has banned imports of agricultural products and food originating in Russia or Belarus since 3 June 2024. Its list covers meat, fish, milk, eggs, honey, vegetables, fruit, sugar, sweets, drinks and more."
    ],
    [
-    "What happens if I bring meat or dairy anyway?",
-    "The EU page says undeclared meat or dairy is confiscated and destroyed, and you may be fined or face criminal prosecution."
+    "What about meat and dairy?",
+    "The customs page links to the European Commission for meat and dairy. The EU rule is that they are not allowed from outside the EU."
    ]
   ],
   "topics": [
@@ -4513,23 +4546,15 @@
     "label": "Meat & dairy",
     "status": "stop",
     "verdict": "Not allowed",
-    "head": "Meat and dairy from outside the EU are not allowed.",
+    "head": "Lithuanian Customs sends you to the EU rule: no meat or dairy from outside the EU.",
     "scen": [
      {
-      "when": "Arriving from a non-EU country",
+      "when": "Meat, sausages, milk and cheese from a non-EU country",
       "status": "stop",
       "tag": "Not allowed",
       "lines": [
-       "The EU page says meat and dairy are not allowed when you travel from a non-EU country.",
-       "Undeclared meat or dairy is confiscated and destroyed, and you may be fined or prosecuted."
-      ]
-     },
-     {
-      "when": "From the Faroe Islands or Greenland",
-      "status": "warn",
-      "tag": "Up to 10 kg",
-      "lines": [
-       "Up to 10 kg each of meat, dairy, honey and eggs is allowed."
+       "The customs page has a Meat and dairy products section that links to the European Commission.",
+       "The EU page says undeclared products are confiscated and destroyed, and you can be fined or prosecuted."
       ]
      }
     ]
@@ -4538,24 +4563,74 @@
     "id": "plants",
     "label": "Fruit, plants & honey",
     "status": "warn",
-    "verdict": "Limited amounts",
-    "head": "Fruit, vegetables, eggs and honey are allowed in limited quantities; plants need a certificate.",
+    "verdict": "Up to 5 kg",
+    "head": "You may bring up to 5 kg of fruit and vegetables, and small amounts of other plant items.",
     "scen": [
      {
-      "when": "Fruit, vegetables, eggs, egg products, honey",
+      "when": "Fruit and vegetables",
       "status": "warn",
-      "tag": "Limited",
+      "tag": "Up to 5 kg",
       "lines": [
-       "The page says limited quantities are allowed but gives no figure for fruit, vegetables or eggs.",
-       "Other products without meat or milk, such as honey: up to 2 kg."
+       "The limit is 5 kg in total for private use."
       ]
      },
      {
-      "when": "Plants and cut flowers",
-      "status": "stop",
-      "tag": "Certificate",
+      "when": "Seeds",
+      "status": "warn",
+      "tag": "Small packs",
       "lines": [
-       "A phytosanitary (plant health) certificate is required."
+       "Up to 10 packs of 10 g or less per species, and no more than 100 g in total."
+      ]
+     },
+     {
+      "when": "Bulbs, flowers and seedlings",
+      "status": "warn",
+      "tag": "Limits",
+      "lines": [
+       "Up to 200 g of bulbs, corms and tubers; 20 cut flowers; 5 pot flowers; 20 seedlings."
+      ]
+     },
+     {
+      "when": "Eggs and honey",
+      "status": "warn",
+      "tag": "Limited",
+      "lines": [
+       "The EU page allows limited amounts and gives up to 2 kg for other products such as honey."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "potato",
+    "label": "Potatoes",
+    "status": "stop",
+    "verdict": "Banned",
+    "head": "Potatoes cannot be brought in from outside the EU.",
+    "scen": [
+     {
+      "when": "Potatoes from a non-EU country",
+      "status": "stop",
+      "tag": "Not allowed",
+      "lines": [
+       "Lithuanian Customs singles this out: the entry of potatoes is prohibited, even for private use."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "russia",
+    "label": "From Russia or Belarus",
+    "status": "stop",
+    "verdict": "Banned",
+    "head": "Food and farm products from Russia or Belarus are banned.",
+    "scen": [
+     {
+      "when": "Food, drink and agricultural products made in Russia or Belarus",
+      "status": "stop",
+      "tag": "Not allowed",
+      "lines": [
+       "Government resolution No. 396 of 29 May 2024 bans them since 3 June 2024.",
+       "The list has 24 product groups, from meat, fish, milk, eggs and honey to fruit, vegetables, grain, sugar, sweets, tea, coffee and drinks."
       ]
      }
     ]
@@ -4565,14 +4640,14 @@
     "label": "Fish",
     "status": "go",
     "verdict": "Up to 20 kg",
-    "head": "Fish is allowed up to 20 kg or one fish.",
+    "head": "Under the EU rule fish is allowed up to 20 kg or one fish.",
     "scen": [
      {
-      "when": "Fresh eviscerated, prepared or processed fish",
+      "when": "Fresh gutted, prepared or processed fish",
       "status": "go",
       "tag": "Up to 20 kg",
       "lines": [
-       "Up to 20 kg or one fish, whichever weighs most."
+       "The EU page gives 20 kg or one fish, whichever weighs most. The customs page does not repeat it."
       ]
      }
     ]
@@ -4582,22 +4657,14 @@
     "label": "Baby & medical food",
     "status": "go",
     "verdict": "Up to 2 kg",
-    "head": "Baby milk, baby food, medical food and special pet food: up to 2 kg.",
+    "head": "Baby milk, baby food and medical food up to 2 kg (EU rule).",
     "scen": [
      {
-      "when": "Powdered infant milk, infant food, medical special food",
+      "when": "Powdered infant milk, baby food, medical food",
       "status": "go",
       "tag": "Up to 2 kg",
       "lines": [
-       "Must not need refrigeration, be a branded retail pack, with unbroken packaging unless in use."
-      ]
-     },
-     {
-      "when": "Health-related pet food",
-      "status": "go",
-      "tag": "Up to 2 kg",
-      "lines": [
-       "For the pet travelling with you, shelf-stable, branded retail pack, packaging unbroken unless in use."
+       "Shelf-stable branded retail packs, unopened unless in use."
       ]
      }
     ]
@@ -4607,15 +4674,15 @@
     "label": "Not covered",
     "status": "warn",
     "verdict": "Ask first",
-    "head": "We read the EU page, not Lithuania's own customs page.",
+    "head": "The customs page does not give meat, dairy or fish limits itself.",
     "scen": [
      {
       "when": "What we could not confirm",
       "status": "warn",
       "tag": "Ask first",
       "lines": [
-       "The EU page gives no limit for fruit, vegetables or eggs and does not show a Lithuania national page.",
-       "Ask Lithuania's customs or food authority before you bring anything not listed."
+       "It gives no figure for eggs or honey, and the pages we read do not say how to declare food.",
+       "Ask Lithuanian Customs before you bring anything not listed."
       ]
      }
     ]
@@ -4623,9 +4690,13 @@
   ]
  },
  "Luxembourg": {
-  "checked": "9 November 2026",
-  "answer": "Luxembourg is an EU member state, so the EU rules on personal food apply when you arrive from outside the EU. The official EU page (Your Europe) says meat and dairy are not allowed, limited quantities of fruit, vegetables, eggs and honey are allowed, fish up to 20 kg or one fish, and up to 2 kg of baby milk, baby food, medical food or special pet food. Undeclared meat or dairy is confiscated and destroyed, and you can be fined or prosecuted. We read the EU page, not a Luxembourg national page.",
+  "checked": "14 November 2026",
+  "answer": "Luxembourg's government portal says travellers arriving directly from a non-EU country must declare their goods to customs and pay any duty, and that plant products and animal-origin foods under national or EU health bans are on its list of prohibited imports. It gives no meat, dairy or fruit quantities, so the food limits come from the EU page. The Luxembourg page is dated 2018 and says it is being updated.",
   "sources": [
+   [
+    "https://guichet.public.lu/fr/citoyens/loisirs/tourisme/droits-voyageurs/transport-argent-marchandises/importation-marchandises-luxembourg.html",
+    "Guichet.lu (Luxembourg government) — Importation de marchandises vers le Luxembourg (page last modified 11 June 2018, marked as being updated)"
+   ],
    [
     "https://europa.eu/youreurope/citizens/travel/carry/meat-dairy-animal/index_en.htm",
     "European Union (Your Europe) — Taking animal products, food or plants with you in the EU (page checked 21 October 2026)"
@@ -4633,20 +4704,20 @@
   ],
   "faq": [
    [
-    "Can I bring meat or cheese into Luxembourg from a non-EU country?",
-    "No. The EU page says meat and dairy are not allowed when you travel from a non-EU country, apart from under 10 kg from the Faroe Islands or Greenland."
+    "Do I declare food in Luxembourg?",
+    "The portal says travellers arriving directly from outside the EU must declare the goods they carry to the customs office and pay duty where it applies. It adds that if in doubt, ask customs before returning with prohibited goods."
    ],
    [
-    "How much fish can I bring into Luxembourg?",
-    "Fresh eviscerated, prepared or processed fish: up to 20 kg or one fish, whichever weighs most."
+    "What food does Luxembourg prohibit?",
+    "It lists plants and plant products banned in all EU states, and animal foods or products under national or EU health bans. It gives no list of specific foods."
    ],
    [
-    "What about baby food or medical food?",
-    "Powdered infant milk, infant food and medical special foods are allowed up to 2 kg if they need no refrigeration, are branded retail packs and the packaging is unbroken unless in use. Health-related pet food is also up to 2 kg."
+    "What is the duty-free value limit?",
+    "Other goods up to €430 by air or sea, or €300 for other travellers, per person. Allowances cannot be pooled between travellers."
    ],
    [
-    "What happens if I bring meat or dairy anyway?",
-    "The EU page says undeclared meat or dairy is confiscated and destroyed, and you may be fined or face criminal prosecution."
+    "Can I bring meat and cheese from a non-EU country?",
+    "The EU page says no: meat and dairy are not allowed, apart from under 10 kg from the Faroe Islands or Greenland."
    ]
   ],
   "topics": [
@@ -4655,23 +4726,15 @@
     "label": "Meat & dairy",
     "status": "stop",
     "verdict": "Not allowed",
-    "head": "Meat and dairy from outside the EU are not allowed.",
+    "head": "The EU rule applies: no meat or dairy from outside the EU.",
     "scen": [
      {
-      "when": "Arriving from a non-EU country",
+      "when": "Meat, cold cuts, milk, cheese from a non-EU country",
       "status": "stop",
       "tag": "Not allowed",
       "lines": [
-       "The EU page says meat and dairy are not allowed when you travel from a non-EU country.",
-       "Undeclared meat or dairy is confiscated and destroyed, and you may be fined or prosecuted."
-      ]
-     },
-     {
-      "when": "From the Faroe Islands or Greenland",
-      "status": "warn",
-      "tag": "Up to 10 kg",
-      "lines": [
-       "Up to 10 kg each of meat, dairy, honey and eggs is allowed."
+       "Luxembourg's portal lists animal foods under health bans among prohibited imports.",
+       "The EU page confirms meat and dairy are not allowed; undeclared items are confiscated and destroyed."
       ]
      }
     ]
@@ -4681,23 +4744,22 @@
     "label": "Fruit, plants & honey",
     "status": "warn",
     "verdict": "Limited amounts",
-    "head": "Fruit, vegetables, eggs and honey are allowed in limited quantities; plants need a certificate.",
+    "head": "Plant products banned in every EU state are prohibited; small food amounts follow EU limits.",
     "scen": [
      {
-      "when": "Fruit, vegetables, eggs, egg products, honey",
-      "status": "warn",
-      "tag": "Limited",
+      "when": "Plants, seeds, bark, soil",
+      "status": "stop",
+      "tag": "Not allowed",
       "lines": [
-       "The page says limited quantities are allowed but gives no figure for fruit, vegetables or eggs.",
-       "Other products without meat or milk, such as honey: up to 2 kg."
+       "The portal lists plants and plant products, bark, seeds and soil banned in all EU states as prohibited."
       ]
      },
      {
-      "when": "Plants and cut flowers",
-      "status": "stop",
-      "tag": "Certificate",
+      "when": "Fruit, vegetables, eggs and honey for yourself",
+      "status": "warn",
+      "tag": "Limited",
       "lines": [
-       "A phytosanitary (plant health) certificate is required."
+       "The EU page allows limited amounts; honey and similar products up to 2 kg."
       ]
      }
     ]
@@ -4707,14 +4769,14 @@
     "label": "Fish",
     "status": "go",
     "verdict": "Up to 20 kg",
-    "head": "Fish is allowed up to 20 kg or one fish.",
+    "head": "Fish is allowed up to 20 kg or one fish under the EU page.",
     "scen": [
      {
-      "when": "Fresh eviscerated, prepared or processed fish",
+      "when": "Fresh gutted, prepared or processed fish",
       "status": "go",
       "tag": "Up to 20 kg",
       "lines": [
-       "Up to 20 kg or one fish, whichever weighs most."
+       "20 kg or a single fish, whichever weighs more."
       ]
      }
     ]
@@ -4724,22 +4786,40 @@
     "label": "Baby & medical food",
     "status": "go",
     "verdict": "Up to 2 kg",
-    "head": "Baby milk, baby food, medical food and special pet food: up to 2 kg.",
+    "head": "Baby and medical food up to 2 kg under the EU page.",
     "scen": [
      {
-      "when": "Powdered infant milk, infant food, medical special food",
+      "when": "Powdered infant milk, baby food, medical food",
       "status": "go",
       "tag": "Up to 2 kg",
       "lines": [
-       "Must not need refrigeration, be a branded retail pack, with unbroken packaging unless in use."
+       "Retail packs that need no fridge, unopened unless in use."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "declare",
+    "label": "Declaring & limits",
+    "status": "warn",
+    "verdict": "Declare it",
+    "head": "Arriving directly from outside the EU, you declare to customs and may owe duty.",
+    "scen": [
+     {
+      "when": "Goods carried in your luggage",
+      "status": "warn",
+      "tag": "Declare it",
+      "lines": [
+       "Declare them at the customs office and pay the duties and taxes that apply.",
+       "In doubt about a banned item? The portal says ask customs before you travel."
       ]
      },
      {
-      "when": "Health-related pet food",
-      "status": "go",
-      "tag": "Up to 2 kg",
+      "when": "Other goods worth",
+      "status": "warn",
+      "tag": "Up to €430",
       "lines": [
-       "For the pet travelling with you, shelf-stable, branded retail pack, packaging unbroken unless in use."
+       "Per person: €430 by air or sea, €300 by other transport. Allowances cannot be combined, so four people cannot claim €1,720 for one item."
       ]
      }
     ]
@@ -4749,15 +4829,15 @@
     "label": "Not covered",
     "status": "warn",
     "verdict": "Ask first",
-    "head": "We read the EU page, not Luxembourg's own customs page.",
+    "head": "The Luxembourg page has no food list and is dated 2018.",
     "scen": [
      {
       "when": "What we could not confirm",
       "status": "warn",
       "tag": "Ask first",
       "lines": [
-       "The EU page gives no limit for fruit, vegetables or eggs and does not show a Luxembourg national page.",
-       "Ask Luxembourg's customs or food authority before you bring anything not listed."
+       "It names no authority for food checks, no food limits and no penalties.",
+       "Ask Luxembourg customs before you bring anything not listed."
       ]
      }
     ]
@@ -4765,9 +4845,13 @@
   ]
  },
  "Malta": {
-  "checked": "9 November 2026",
-  "answer": "Malta is an EU member state, so the EU rules on personal food apply when you arrive from outside the EU. The official EU page (Your Europe) says meat and dairy are not allowed, limited quantities of fruit, vegetables, eggs and honey are allowed, fish up to 20 kg or one fish, and up to 2 kg of baby milk, baby food, medical food or special pet food. Undeclared meat or dairy is confiscated and destroyed, and you can be fined or prosecuted. We read the EU page, not a Malta national page.",
+  "checked": "14 November 2026",
+  "answer": "Malta's customs administration sets what a non-EU traveller may bring duty-free for personal use: goods other than tobacco and alcohol up to €430, plus 200 cigarettes and set alcohol amounts. Its page has no food rule, so Malta follows the EU page for food: no meat or dairy, limited fruit, vegetables, eggs and honey, fish up to 20 kg. Malta customs is the place to ask about anything else.",
   "sources": [
+   [
+    "https://mtca.gov.mt/customs/self-employed/travellers--allowances-on-accompanied-goods-from-non-eu-or-eu-countries",
+    "Malta Tax and Customs Administration — Travellers' allowances on accompanied goods from non-EU or EU countries (undated)"
+   ],
    [
     "https://europa.eu/youreurope/citizens/travel/carry/meat-dairy-animal/index_en.htm",
     "European Union (Your Europe) — Taking animal products, food or plants with you in the EU (page checked 21 October 2026)"
@@ -4775,20 +4859,20 @@
   ],
   "faq": [
    [
-    "Can I bring meat or cheese into Malta from a non-EU country?",
-    "No. The EU page says meat and dairy are not allowed when you travel from a non-EU country, apart from under 10 kg from the Faroe Islands or Greenland."
+    "Is there a food list on Malta's customs page?",
+    "No. The Malta Tax and Customs page we read covers tobacco, alcohol and goods value, and does not list food."
    ],
    [
-    "How much fish can I bring into Malta?",
-    "Fresh eviscerated, prepared or processed fish: up to 20 kg or one fish, whichever weighs most."
+    "What value of goods can I bring into Malta duty-free from a non-EU country?",
+    "Goods other than tobacco and alcohol up to €430 per traveller, for personal use."
    ],
    [
-    "What about baby food or medical food?",
-    "Powdered infant milk, infant food and medical special foods are allowed up to 2 kg if they need no refrigeration, are branded retail packs and the packaging is unbroken unless in use. Health-related pet food is also up to 2 kg."
+    "Can I bring Italian-style cured meat or cheese into Malta?",
+    "From outside the EU, no: the EU page says meat and dairy are not allowed. Coming from another EU country is a different rule that this page does not cover."
    ],
    [
-    "What happens if I bring meat or dairy anyway?",
-    "The EU page says undeclared meat or dairy is confiscated and destroyed, and you may be fined or face criminal prosecution."
+    "Can I bring baby formula?",
+    "Yes within the EU limit: up to 2 kg of powdered infant milk, baby food or medical food in sealed retail packs."
    ]
   ],
   "topics": [
@@ -4797,23 +4881,15 @@
     "label": "Meat & dairy",
     "status": "stop",
     "verdict": "Not allowed",
-    "head": "Meat and dairy from outside the EU are not allowed.",
+    "head": "From outside the EU, meat and dairy cannot be brought to Malta.",
     "scen": [
      {
-      "when": "Arriving from a non-EU country",
+      "when": "Arriving in Malta from a non-EU country",
       "status": "stop",
       "tag": "Not allowed",
       "lines": [
-       "The EU page says meat and dairy are not allowed when you travel from a non-EU country.",
-       "Undeclared meat or dairy is confiscated and destroyed, and you may be fined or prosecuted."
-      ]
-     },
-     {
-      "when": "From the Faroe Islands or Greenland",
-      "status": "warn",
-      "tag": "Up to 10 kg",
-      "lines": [
-       "Up to 10 kg each of meat, dairy, honey and eggs is allowed."
+       "This is the EU rule; Malta's customs allowance page does not mention it.",
+       "Undeclared meat or dairy is confiscated and destroyed, with a possible fine or prosecution."
       ]
      }
     ]
@@ -4823,15 +4899,14 @@
     "label": "Fruit, plants & honey",
     "status": "warn",
     "verdict": "Limited amounts",
-    "head": "Fruit, vegetables, eggs and honey are allowed in limited quantities; plants need a certificate.",
+    "head": "Some fruit, vegetables, eggs and honey are allowed; plants need a certificate.",
     "scen": [
      {
-      "when": "Fruit, vegetables, eggs, egg products, honey",
+      "when": "Fruit, vegetables, eggs and honey for yourself",
       "status": "warn",
       "tag": "Limited",
       "lines": [
-       "The page says limited quantities are allowed but gives no figure for fruit, vegetables or eggs.",
-       "Other products without meat or milk, such as honey: up to 2 kg."
+       "Limited quantities under the EU page; up to 2 kg for honey-type products."
       ]
      },
      {
@@ -4839,7 +4914,7 @@
       "status": "stop",
       "tag": "Certificate",
       "lines": [
-       "A phytosanitary (plant health) certificate is required."
+       "A phytosanitary certificate is required."
       ]
      }
     ]
@@ -4849,14 +4924,14 @@
     "label": "Fish",
     "status": "go",
     "verdict": "Up to 20 kg",
-    "head": "Fish is allowed up to 20 kg or one fish.",
+    "head": "Fish up to 20 kg or one fish under the EU page.",
     "scen": [
      {
-      "when": "Fresh eviscerated, prepared or processed fish",
+      "when": "Fresh gutted, prepared or processed fish",
       "status": "go",
       "tag": "Up to 20 kg",
       "lines": [
-       "Up to 20 kg or one fish, whichever weighs most."
+       "20 kg or a single fish, whichever is more."
       ]
      }
     ]
@@ -4866,22 +4941,39 @@
     "label": "Baby & medical food",
     "status": "go",
     "verdict": "Up to 2 kg",
-    "head": "Baby milk, baby food, medical food and special pet food: up to 2 kg.",
+    "head": "Baby and medical food up to 2 kg under the EU page.",
     "scen": [
      {
-      "when": "Powdered infant milk, infant food, medical special food",
+      "when": "Powdered infant milk, baby food, medical food",
       "status": "go",
       "tag": "Up to 2 kg",
       "lines": [
-       "Must not need refrigeration, be a branded retail pack, with unbroken packaging unless in use."
+       "Sealed retail packs, shelf-stable, opened only when in use."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "allowance",
+    "label": "Duty-free allowance",
+    "status": "warn",
+    "verdict": "Up to €430",
+    "head": "Malta's customs page sets what you may bring duty-free for personal use.",
+    "scen": [
+     {
+      "when": "Goods other than tobacco and alcohol",
+      "status": "warn",
+      "tag": "Up to €430",
+      "lines": [
+       "The limit is €430 in value per traveller, for your own use."
       ]
      },
      {
-      "when": "Health-related pet food",
-      "status": "go",
-      "tag": "Up to 2 kg",
+      "when": "Tobacco and alcohol (age 17+)",
+      "status": "warn",
+      "tag": "Set amounts",
       "lines": [
-       "For the pet travelling with you, shelf-stable, branded retail pack, packaging unbroken unless in use."
+       "200 cigarettes or 250 g tobacco; 1 litre of strong spirits or 2 litres of weaker drinks; 4 litres of still wine and 16 litres of beer."
       ]
      }
     ]
@@ -4891,15 +4983,15 @@
     "label": "Not covered",
     "status": "warn",
     "verdict": "Ask first",
-    "head": "We read the EU page, not Malta's own customs page.",
+    "head": "Malta's page does not list food.",
     "scen": [
      {
       "when": "What we could not confirm",
       "status": "warn",
       "tag": "Ask first",
       "lines": [
-       "The EU page gives no limit for fruit, vegetables or eggs and does not show a Malta national page.",
-       "Ask Malta's customs or food authority before you bring anything not listed."
+       "No Malta-specific food rule or veterinary guidance was readable for travellers.",
+       "Ask Malta customs before you bring anything not listed."
       ]
      }
     ]
@@ -4907,9 +4999,13 @@
   ]
  },
  "Slovakia": {
-  "checked": "9 November 2026",
-  "answer": "Slovakia is an EU member state, so the EU rules on personal food apply when you arrive from outside the EU. The official EU page (Your Europe) says meat and dairy are not allowed, limited quantities of fruit, vegetables, eggs and honey are allowed, fish up to 20 kg or one fish, and up to 2 kg of baby milk, baby food, medical food or special pet food. Undeclared meat or dairy is confiscated and destroyed, and you can be fined or prosecuted. We read the EU page, not a Slovakia national page.",
+  "checked": "14 November 2026",
+  "answer": "Slovakia follows the EU rule for travellers from outside the EU: no meat or dairy, limited fruit, vegetables, eggs and honey. On top of that, the Slovak Chief Veterinary Officer issued an emergency order on 30 March 2026, valid until revoked, banning fresh meat, meat products, milk, dairy and colostrum from Cyprus and the Greek island of Lesbos because of foot-and-mouth disease, and allowing dairy from Turkey only if specially treated. The order does not say how it applies to personal luggage.",
   "sources": [
+   [
+    "https://www.svps.sk/zdroje/data/15/46/nudzove_opatrenie_grecko-2026-03-30.docx",
+    "Slovak State Veterinary and Food Administration (ŠVPS) — Emergency measures for foot-and-mouth disease, Chief Veterinary Officer, 30 March 2026, valid until revoked"
+   ],
    [
     "https://europa.eu/youreurope/citizens/travel/carry/meat-dairy-animal/index_en.htm",
     "European Union (Your Europe) — Taking animal products, food or plants with you in the EU (page checked 21 October 2026)"
@@ -4917,20 +5013,20 @@
   ],
   "faq": [
    [
-    "Can I bring meat or cheese into Slovakia from a non-EU country?",
-    "No. The EU page says meat and dairy are not allowed when you travel from a non-EU country, apart from under 10 kg from the Faroe Islands or Greenland."
+    "Is there a Slovak ban on products from Cyprus or Lesbos?",
+    "Yes. A Slovak emergency order of 30 March 2026 bans moving fresh meat, meat products, milk, dairy, colostrum and composite products from Cyprus and the Greek island of Lesbos, until it is revoked."
    ],
    [
-    "How much fish can I bring into Slovakia?",
-    "Fresh eviscerated, prepared or processed fish: up to 20 kg or one fish, whichever weighs most."
+    "Why did Slovakia issue it?",
+    "Foot-and-mouth disease was reported in Cyprus on 20 February 2026 and on Lesbos on 16 March 2026, and the order says it is endemic in Turkey."
    ],
    [
-    "What about baby food or medical food?",
-    "Powdered infant milk, infant food and medical special foods are allowed up to 2 kg if they need no refrigeration, are branded retail packs and the packaging is unbroken unless in use. Health-related pet food is also up to 2 kg."
+    "What about dairy from Turkey?",
+    "The order says only dairy products specially treated to reduce the foot-and-mouth risk, with the EU import certificate, may be brought in from Turkey."
    ],
    [
-    "What happens if I bring meat or dairy anyway?",
-    "The EU page says undeclared meat or dairy is confiscated and destroyed, and you may be fined or face criminal prosecution."
+    "Can I carry cheese or ham into Slovakia from outside the EU?",
+    "No. The EU page rules out meat and dairy, apart from under 10 kg from the Faroe Islands or Greenland."
    ]
   ],
   "topics": [
@@ -4939,23 +5035,31 @@
     "label": "Meat & dairy",
     "status": "stop",
     "verdict": "Not allowed",
-    "head": "Meat and dairy from outside the EU are not allowed.",
+    "head": "No meat or dairy from outside the EU, and extra bans apply from Cyprus, Lesbos and Turkey.",
     "scen": [
      {
-      "when": "Arriving from a non-EU country",
+      "when": "From a non-EU country",
       "status": "stop",
       "tag": "Not allowed",
       "lines": [
-       "The EU page says meat and dairy are not allowed when you travel from a non-EU country.",
-       "Undeclared meat or dairy is confiscated and destroyed, and you may be fined or prosecuted."
+       "EU rule: meat and dairy are not allowed. Undeclared items are confiscated and destroyed."
       ]
      },
      {
-      "when": "From the Faroe Islands or Greenland",
-      "status": "warn",
-      "tag": "Up to 10 kg",
+      "when": "From Cyprus or the Greek island of Lesbos",
+      "status": "stop",
+      "tag": "Not allowed",
       "lines": [
-       "Up to 10 kg each of meat, dairy, honey and eggs is allowed."
+       "The Slovak order bans fresh meat, meat products, milk, dairy, colostrum and composite products from there.",
+       "It does not say how this applies to personal luggage, so do not carry them."
+      ]
+     },
+     {
+      "when": "Dairy from Turkey",
+      "status": "warn",
+      "tag": "Treated only",
+      "lines": [
+       "Only specially heat-treated dairy products that come with the EU import certificate."
       ]
      }
     ]
@@ -4965,15 +5069,14 @@
     "label": "Fruit, plants & honey",
     "status": "warn",
     "verdict": "Limited amounts",
-    "head": "Fruit, vegetables, eggs and honey are allowed in limited quantities; plants need a certificate.",
+    "head": "Small amounts of fruit, vegetables, eggs and honey; plants need a certificate.",
     "scen": [
      {
-      "when": "Fruit, vegetables, eggs, egg products, honey",
+      "when": "Fruit, vegetables, eggs and honey for yourself",
       "status": "warn",
       "tag": "Limited",
       "lines": [
-       "The page says limited quantities are allowed but gives no figure for fruit, vegetables or eggs.",
-       "Other products without meat or milk, such as honey: up to 2 kg."
+       "The EU page allows limited quantities, with honey-type products up to 2 kg."
       ]
      },
      {
@@ -4981,7 +5084,7 @@
       "status": "stop",
       "tag": "Certificate",
       "lines": [
-       "A phytosanitary (plant health) certificate is required."
+       "A phytosanitary certificate is required."
       ]
      }
     ]
@@ -4991,14 +5094,14 @@
     "label": "Fish",
     "status": "go",
     "verdict": "Up to 20 kg",
-    "head": "Fish is allowed up to 20 kg or one fish.",
+    "head": "Fish up to 20 kg or one fish (EU rule).",
     "scen": [
      {
-      "when": "Fresh eviscerated, prepared or processed fish",
+      "when": "Fresh gutted, prepared or processed fish",
       "status": "go",
       "tag": "Up to 20 kg",
       "lines": [
-       "Up to 20 kg or one fish, whichever weighs most."
+       "20 kg or a single fish, whichever weighs more."
       ]
      }
     ]
@@ -5008,22 +5111,32 @@
     "label": "Baby & medical food",
     "status": "go",
     "verdict": "Up to 2 kg",
-    "head": "Baby milk, baby food, medical food and special pet food: up to 2 kg.",
+    "head": "Baby and medical food up to 2 kg (EU rule).",
     "scen": [
      {
-      "when": "Powdered infant milk, infant food, medical special food",
+      "when": "Powdered infant milk, baby food, medical food",
       "status": "go",
       "tag": "Up to 2 kg",
       "lines": [
-       "Must not need refrigeration, be a branded retail pack, with unbroken packaging unless in use."
+       "Shelf-stable branded retail packs, unbroken unless in use."
       ]
-     },
+     }
+    ]
+   },
+   {
+    "id": "slak",
+    "label": "Foot-and-mouth order",
+    "status": "warn",
+    "verdict": "In force",
+    "head": "The Slovak order is valid from 30 March 2026 until revoked.",
+    "scen": [
      {
-      "when": "Health-related pet food",
-      "status": "go",
-      "tag": "Up to 2 kg",
+      "when": "Where it applies",
+      "status": "warn",
+      "tag": "Check status",
       "lines": [
-       "For the pet travelling with you, shelf-stable, branded retail pack, packaging unbroken unless in use."
+       "Cyprus and the Greek island of Lesbos, plus Turkey for dairy.",
+       "The Chief Veterinary Officer of Slovakia signed it; check the ŠVPS site to see if it is still in force."
       ]
      }
     ]
@@ -5033,15 +5146,15 @@
     "label": "Not covered",
     "status": "warn",
     "verdict": "Ask first",
-    "head": "We read the EU page, not Slovakia's own customs page.",
+    "head": "The order is about animal health, not a full traveller food list.",
     "scen": [
      {
       "when": "What we could not confirm",
       "status": "warn",
       "tag": "Ask first",
       "lines": [
-       "The EU page gives no limit for fruit, vegetables or eggs and does not show a Slovakia national page.",
-       "Ask Slovakia's customs or food authority before you bring anything not listed."
+       "The pages we read give no Slovak limit for fruit, vegetables or eggs, and no penalty.",
+       "Ask Slovak customs or ŠVPS before you bring anything not listed."
       ]
      }
     ]
@@ -5049,9 +5162,13 @@
   ]
  },
  "Slovenia": {
-  "checked": "9 November 2026",
-  "answer": "Slovenia is an EU member state, so the EU rules on personal food apply when you arrive from outside the EU. The official EU page (Your Europe) says meat and dairy are not allowed, limited quantities of fruit, vegetables, eggs and honey are allowed, fish up to 20 kg or one fish, and up to 2 kg of baby milk, baby food, medical food or special pet food. Undeclared meat or dairy is confiscated and destroyed, and you can be fined or prosecuted. We read the EU page, not a Slovenia national page.",
+  "checked": "14 November 2026",
+  "answer": "Slovenia's food safety and veterinary administration (UVHVVR) said on 22 April 2026 that from outside the EU you may not bring meat, milk or products made from them, except up to 2 kg of powdered baby milk, baby food or special animal feed. It allows up to 2 kg of eggs, up to 2 kg of honey, oysters or snails, and up to 20 kg of fish. Plants, seeds and fruit need certificates, apart from pineapple, dates, bananas, coconut and durian.",
   "sources": [
+   [
+    "https://www.gov.si/novice/2026-04-22-pazljivo-pri-vnosu-rastlin-in-proizvodov-zivalskega-izvora-s-potovanj-zunaj-eu/",
+    "Slovenia, Food Safety, Veterinary and Plant Protection Administration (UVHVVR) — Careful when bringing plants and animal products back from outside the EU (22 April 2026)"
+   ],
    [
     "https://europa.eu/youreurope/citizens/travel/carry/meat-dairy-animal/index_en.htm",
     "European Union (Your Europe) — Taking animal products, food or plants with you in the EU (page checked 21 October 2026)"
@@ -5059,20 +5176,24 @@
   ],
   "faq": [
    [
-    "Can I bring meat or cheese into Slovenia from a non-EU country?",
-    "No. The EU page says meat and dairy are not allowed when you travel from a non-EU country, apart from under 10 kg from the Faroe Islands or Greenland."
+    "How many eggs can I bring into Slovenia from outside the EU?",
+    "Up to 2 kg, though the Slovenian page says imports of eggs and some other products are strictly limited."
    ],
    [
-    "How much fish can I bring into Slovenia?",
-    "Fresh eviscerated, prepared or processed fish: up to 20 kg or one fish, whichever weighs most."
+    "Which fruit can I carry without a certificate?",
+    "Pineapple, dates, bananas, coconut and durian may be carried in personal luggage into the EU, according to the UVHVVR page. Other fruit, plants and seeds need the right certificates."
    ],
    [
-    "What about baby food or medical food?",
-    "Powdered infant milk, infant food and medical special foods are allowed up to 2 kg if they need no refrigeration, are branded retail packs and the packaging is unbroken unless in use. Health-related pet food is also up to 2 kg."
+    "Can I bring honey, oysters or snails?",
+    "Up to 2 kg of honey, live oysters or live snails."
    ],
    [
-    "What happens if I bring meat or dairy anyway?",
-    "The EU page says undeclared meat or dairy is confiscated and destroyed, and you may be fined or face criminal prosecution."
+    "Why does Slovenia restrict these products?",
+    "UVHVVR names foot-and-mouth disease, African swine fever and sheep and goat plague as the risks."
+   ],
+   [
+    "Who do I contact?",
+    "The UVHVVR page lists phone 01 300 13 00."
    ]
   ],
   "topics": [
@@ -5081,23 +5202,15 @@
     "label": "Meat & dairy",
     "status": "stop",
     "verdict": "Not allowed",
-    "head": "Meat and dairy from outside the EU are not allowed.",
+    "head": "Meat, milk and products made from them are not allowed from outside the EU.",
     "scen": [
      {
-      "when": "Arriving from a non-EU country",
+      "when": "Meat, milk and products made from them",
       "status": "stop",
       "tag": "Not allowed",
       "lines": [
-       "The EU page says meat and dairy are not allowed when you travel from a non-EU country.",
-       "Undeclared meat or dairy is confiscated and destroyed, and you may be fined or prosecuted."
-      ]
-     },
-     {
-      "when": "From the Faroe Islands or Greenland",
-      "status": "warn",
-      "tag": "Up to 10 kg",
-      "lines": [
-       "Up to 10 kg each of meat, dairy, honey and eggs is allowed."
+       "The only exception is up to 2 kg of powdered baby milk, baby food or special animal feed.",
+       "The page names foot-and-mouth disease, African swine fever and sheep and goat plague as the reasons."
       ]
      }
     ]
@@ -5107,23 +5220,38 @@
     "label": "Fruit, plants & honey",
     "status": "warn",
     "verdict": "Limited amounts",
-    "head": "Fruit, vegetables, eggs and honey are allowed in limited quantities; plants need a certificate.",
+    "head": "Eggs and honey up to 2 kg; plants, seeds and most fruit need certificates.",
     "scen": [
      {
-      "when": "Fruit, vegetables, eggs, egg products, honey",
+      "when": "Eggs",
       "status": "warn",
-      "tag": "Limited",
+      "tag": "Up to 2 kg",
       "lines": [
-       "The page says limited quantities are allowed but gives no figure for fruit, vegetables or eggs.",
-       "Other products without meat or milk, such as honey: up to 2 kg."
+       "Up to 2 kg, and the page calls egg imports strictly limited."
       ]
      },
      {
-      "when": "Plants and cut flowers",
+      "when": "Honey, live oysters or live snails",
+      "status": "warn",
+      "tag": "Up to 2 kg",
+      "lines": [
+       "Up to 2 kg."
+      ]
+     },
+     {
+      "when": "Plants, seeds and most fruit",
       "status": "stop",
       "tag": "Certificate",
       "lines": [
-       "A phytosanitary (plant health) certificate is required."
+       "Not allowed without the appropriate certificates."
+      ]
+     },
+     {
+      "when": "Pineapple, dates, bananas, coconut, durian",
+      "status": "go",
+      "tag": "Allowed",
+      "lines": [
+       "May be carried in personal luggage on arrival in the EU."
       ]
      }
     ]
@@ -5133,14 +5261,14 @@
     "label": "Fish",
     "status": "go",
     "verdict": "Up to 20 kg",
-    "head": "Fish is allowed up to 20 kg or one fish.",
+    "head": "Fish and fishery products up to 20 kg.",
     "scen": [
      {
-      "when": "Fresh eviscerated, prepared or processed fish",
+      "when": "Fish and fishery products",
       "status": "go",
       "tag": "Up to 20 kg",
       "lines": [
-       "Up to 20 kg or one fish, whichever weighs most."
+       "The Slovenian page gives up to 20 kg."
       ]
      }
     ]
@@ -5150,22 +5278,32 @@
     "label": "Baby & medical food",
     "status": "go",
     "verdict": "Up to 2 kg",
-    "head": "Baby milk, baby food, medical food and special pet food: up to 2 kg.",
+    "head": "Powdered baby milk, baby food and special animal feed: up to 2 kg in total.",
     "scen": [
      {
-      "when": "Powdered infant milk, infant food, medical special food",
+      "when": "Powdered baby milk, baby food, special animal feed",
       "status": "go",
       "tag": "Up to 2 kg",
       "lines": [
-       "Must not need refrigeration, be a branded retail pack, with unbroken packaging unless in use."
+       "The 2 kg is the total across these items."
       ]
-     },
+     }
+    ]
+   },
+   {
+    "id": "contact",
+    "label": "Moving within the EU",
+    "status": "go",
+    "verdict": "Different rules",
+    "head": "Coming from another EU state is a different rule.",
+    "scen": [
      {
-      "when": "Health-related pet food",
+      "when": "Travelling from another EU member state",
       "status": "go",
-      "tag": "Up to 2 kg",
+      "tag": "Free movement",
       "lines": [
-       "For the pet travelling with you, shelf-stable, branded retail pack, packaging unbroken unless in use."
+       "Goods move freely, but take care with plants because some quarantine pests occur only in certain areas.",
+       "The page cites the orange spiny whitefly, Chinese citrus longhorn beetle and olive bacterial blight; plants may carry a plant passport."
       ]
      }
     ]
@@ -5175,15 +5313,15 @@
     "label": "Not covered",
     "status": "warn",
     "verdict": "Ask first",
-    "head": "We read the EU page, not Slovenia's own customs page.",
+    "head": "The page gives no fines or declaration steps.",
     "scen": [
      {
       "when": "What we could not confirm",
       "status": "warn",
       "tag": "Ask first",
       "lines": [
-       "The EU page gives no limit for fruit, vegetables or eggs and does not show a Slovenia national page.",
-       "Ask Slovenia's customs or food authority before you bring anything not listed."
+       "It does not say where to declare goods or what penalties apply, and gives no limit for vegetables.",
+       "Call UVHVVR on 01 300 13 00 before you bring anything not listed."
       ]
      }
     ]
@@ -5371,33 +5509,62 @@
   ]
  },
  "Kenya": {
-  "checked": "9 November 2026",
-  "answer": "Kenya's plant health inspectorate KEPHIS says all imported plant material must be declared to a plant inspector at any point of entry, and needs a KEPHIS import permit plus a phytosanitary certificate from the exporting country. Some plant material is prohibited outright, and goods without the right documents are refused and may be destroyed or re-shipped at your cost. The KEPHIS page covers consignments, not traveller baggage, and says nothing about meat, dairy or cooked food, so ask before you bring any.",
+  "checked": "14 November 2026",
+  "answer": "Two Kenyan authorities cover what you carry in. The Kenya Revenue Authority says every arriving passenger declares specified items on Form F88 before arrival, that baggage is scanned and may be physically inspected, and that new goods up to USD 500 are duty-free if declared. KEPHIS says plant material must be declared to a plant inspector and needs a permit and a phytosanitary certificate. Neither page gives a rule for meat, dairy or cooked food, so ask before bringing them.",
   "sources": [
    [
     "https://www.kephis.go.ke/phytosanitary-services",
     "Kenya Plant Health Inspectorate Service (KEPHIS) — Phytosanitary services (plant imports; undated, 2024 copyright)"
+   ],
+   [
+    "https://www.kra.go.ke/news-center/public-notices/2067-clearance-at-passenger-terminals",
+    "Kenya Revenue Authority — Clearance at passenger terminals (public notice dated 2 November 2023)"
    ]
   ],
   "faq": [
    [
-    "Do I have to declare plants or seeds when I arrive in Kenya?",
-    "Yes. KEPHIS says all imported plant material must be declared to a plant inspector at any point of entry."
+    "Do I fill in a form when I land in Kenya?",
+    "Yes. The Kenya Revenue Authority says all passengers declare the specified items on the Passenger Declaration Form (F88) before arrival, and hand it to a customs officer at the point of entry."
    ],
    [
-    "Do I need a permit?",
-    "KEPHIS says imports need a Plant Import Permit and each consignment a phytosanitary certificate from the exporting country. The page does not say whether these apply to small personal items."
+    "Will my bag be checked?",
+    "The Revenue Authority says baggage is scanned to screen out prohibited and restricted goods, and items flagged after the first scan are physically inspected by a customs officer."
    ],
    [
-    "Is anything banned outright?",
-    "Yes. The page gives paddy rice, cowpea, soybeans, lucerne and lentils as examples of prohibited vegetative material."
+    "Do I have to declare plants or seeds?",
+    "Yes. KEPHIS says all imported plant material is declared to a plant inspector at any point of entry, and needs a Plant Import Permit and a phytosanitary certificate from the exporting country."
    ],
    [
-    "What happens without the right documents?",
-    "The material is refused entry and may be destroyed or re-shipped at the owner's cost, and breaking the rules is an offence with a fine, prison or both."
+    "What is the duty-free allowance?",
+    "The KRA notice says used personal items are exempt, and new goods up to USD 500 per traveller are exempt if baggage is accompanied and declared."
    ]
   ],
   "topics": [
+   {
+    "id": "declare",
+    "label": "Declaring at arrival",
+    "status": "warn",
+    "verdict": "Declare it",
+    "head": "Every arriving passenger declares specified items on Form F88.",
+    "scen": [
+     {
+      "when": "All passengers arriving in Kenya",
+      "status": "warn",
+      "tag": "Declare it",
+      "lines": [
+       "Complete the Passenger Declaration Form (F88) before arrival and give it to a customs officer at the point of entry."
+      ]
+     },
+     {
+      "when": "Baggage screening",
+      "status": "warn",
+      "tag": "Scanned",
+      "lines": [
+       "Bags are scanned for prohibited and restricted goods; flagged bags are opened and inspected by a customs officer."
+      ]
+     }
+    ]
+   },
    {
     "id": "plants",
     "label": "Plants, seeds & produce",
@@ -5419,7 +5586,7 @@
       "status": "stop",
       "tag": "Not allowed",
       "lines": [
-       "The page names paddy rice, cowpea, soybeans, lucerne and lentils as examples."
+       "The KEPHIS page names paddy rice, cowpea, soybeans, lucerne and lentils as examples."
       ]
      }
     ]
@@ -5437,7 +5604,50 @@
       "tag": "Destroyed",
       "lines": [
        "It may be destroyed or re-shipped at the owner's cost.",
-       "Breaking the rules is an offence with a fine, imprisonment or both."
+       "Breaking the plant rules is an offence with a fine, imprisonment or both."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "allowance",
+    "label": "Duty-free goods",
+    "status": "go",
+    "verdict": "Up to USD 500",
+    "head": "Used personal items and new goods up to USD 500 are duty-free if declared.",
+    "scen": [
+     {
+      "when": "New goods",
+      "status": "go",
+      "tag": "Up to USD 500",
+      "lines": [
+       "Exempt from import tax per traveller when the baggage is accompanied and declared."
+      ]
+     },
+     {
+      "when": "Used personal items",
+      "status": "go",
+      "tag": "Exempt",
+      "lines": [
+       "Exempt from customs duties."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "fresh",
+    "label": "Meat, dairy, eggs & produce",
+    "status": "warn",
+    "verdict": "Ask first",
+    "head": "The Kenyan pages we read give no rule for meat, dairy or eggs.",
+    "scen": [
+     {
+      "when": "Meat, dairy, eggs and cooked food",
+      "status": "warn",
+      "tag": "Ask first",
+      "lines": [
+       "Neither the KEPHIS nor the KRA page says whether they are allowed.",
+       "Ask Kenyan customs before you bring them."
       ]
      }
     ]
@@ -5447,14 +5657,14 @@
     "label": "Not covered",
     "status": "warn",
     "verdict": "Ask first",
-    "head": "The page is about plant consignments, not traveller food.",
+    "head": "The KRA notice dates from 2023 and the KEPHIS page covers consignments.",
     "scen": [
      {
       "when": "What we could not confirm",
       "status": "warn",
       "tag": "Ask first",
       "lines": [
-       "It gives no rule for meat, dairy, eggs, cooked food or small personal quantities, and no update date.",
+       "KRA's notice does not mention food, plants or animal products or penalties; KEPHIS does not say whether small personal items need a permit.",
        "Ask Kenyan customs or KEPHIS before you bring any food."
       ]
      }
@@ -7519,7 +7729,7 @@
  },
  "Jordan": {
   "checked": "14 November 2026",
-  "answer": "We could not read a food rule on Jordan Customs Department pages, so this comes from a named travel customs guide (EntryBrief, last reviewed 1 October 2026), not an official page. It says fresh meat, dairy, fruit and vegetables are generally prohibited or need a permit, and that sealed packaged food is usually tolerated in small amounts if declared. Confirm with Jordan Customs Department before you bring any food.",
+  "answer": "Jordan's Customs Department pages could not be read, so this comes from the EntryBrief guide to Jordanian customs, last reviewed 1 October 2026. It says pork and anything containing it is prohibited, fresh fruit, vegetables, seeds and plants are generally banned or need a phytosanitary certificate, and meat and dairy from non-approved countries are banned. Sealed snacks and canned goods are usually fine in small amounts.",
   "sources": [
    [
     "https://entrybrief.com/customs/jordan/",
@@ -7528,16 +7738,20 @@
   ],
   "faq": [
    [
-    "Can I bring fresh meat, dairy, fruit or vegetables into Jordan?",
-    "The guide says they are generally prohibited or need a permit. Do not pack them unless Jordan Customs Department confirms otherwise."
+    "Is pork allowed in Jordan?",
+    "The guide lists pork and any food containing pork among prohibited items."
    ],
    [
-    "Can I bring packaged snacks into Jordan?",
-    "Processed, sealed food such as canned goods and packaged snacks is usually allowed in small quantities for personal use. All food, plant and animal products must be declared; undeclared items can be fined and confiscated."
+    "What about fresh fruit and vegetables for a trip to Petra?",
+    "The guide says fresh fruit, vegetables, meat and dairy are not fine to carry: declare them or leave them behind. Sealed snacks such as protein bars and packaged nuts are generally fine in small amounts."
    ],
    [
-    "Is this an official Jordan rule?",
-    "No. It comes from a named travel customs guide, last reviewed 1 October 2026. It points to Jordan Customs Department as the official source."
+    "Which meat and dairy are banned?",
+    "Meat and dairy from non-approved countries. The guide does not say which countries are approved."
+   ],
+   [
+    "What happens if I forget to declare food?",
+    "The guide says undeclared agricultural items can mean fines and confiscation."
    ]
   ],
   "topics": [
@@ -7546,15 +7760,15 @@
     "label": "Pork",
     "status": "stop",
     "verdict": "Not allowed",
-    "head": "The guide lists pork as prohibited.",
+    "head": "The guide treats pork as a prohibited item.",
     "scen": [
      {
-      "when": "Pork and pork products",
+      "when": "Pork and pork-containing foods",
       "status": "stop",
       "tag": "Not allowed",
       "lines": [
-       "Pork products and any food containing pork are on the prohibited list.",
-       "Leave pork products at home."
+       "Listed with the prohibited goods for Jordan.",
+       "Pack nothing that contains it."
       ]
      }
     ]
@@ -7564,16 +7778,22 @@
     "label": "Meat, dairy, eggs & produce",
     "status": "stop",
     "verdict": "Not allowed",
-    "head": "The guide says fresh food is generally prohibited or needs a permit.",
+    "head": "Fresh produce, meat and dairy are mostly out.",
     "scen": [
      {
-      "when": "Fresh meat, dairy, fruit and vegetables",
+      "when": "Fresh fruit, vegetables, seeds, plants",
+      "status": "stop",
+      "tag": "Certificate",
+      "lines": [
+       "Generally prohibited, or need a phytosanitary certificate."
+      ]
+     },
+     {
+      "when": "Meat and dairy from non-approved countries",
       "status": "stop",
       "tag": "Not allowed",
       "lines": [
-       "Fresh fruit, vegetables, seeds and plants are generally prohibited or need a phytosanitary certificate.",
-       "Meat and dairy from non-approved countries are banned.",
-       "Do not pack them unless the authority confirms a permit or certificate."
+       "Banned, and the guide does not list the approved countries."
       ]
      }
     ]
@@ -7583,15 +7803,15 @@
     "label": "Packaged food",
     "status": "warn",
     "verdict": "Declare it",
-    "head": "Sealed, packaged food is usually tolerated in small amounts.",
+    "head": "Canned goods and packaged snacks are usually tolerated in small quantities.",
     "scen": [
      {
-      "when": "Sealed, commercially packaged snacks and food",
+      "when": "Canned goods, packaged snacks, protein bars, nuts",
       "status": "warn",
       "tag": "Declare it",
       "lines": [
-       "Processed, sealed food such as canned goods and packaged snacks is usually allowed in small quantities for personal use.",
-       "All food, plant and animal products must be declared; undeclared items can be fined and confiscated."
+       "Small personal quantities of processed, sealed food are usually permitted.",
+       "All food, plant and animal products must be declared."
       ]
      }
     ]
@@ -7601,15 +7821,15 @@
     "label": "Not covered",
     "status": "warn",
     "verdict": "Ask first",
-    "head": "The guide leaves out eggs, honey and exact limits.",
+    "head": "The guide is silent on honey, eggs and baby food.",
     "scen": [
      {
       "when": "What we could not confirm",
       "status": "warn",
       "tag": "Ask first",
       "lines": [
-       "The guide gives no rule for eggs or honey and no exact quantity limit.",
-       "Jordan Customs Department pages could not be read, so confirm with them before you bring any food."
+       "Nothing about honey, eggs, baby food or exact limits.",
+       "The Jordan Customs Department is the official place to ask."
       ]
      }
     ]
@@ -7619,7 +7839,7 @@
  },
  "Oman": {
   "checked": "14 November 2026",
-  "answer": "We could not read a food rule on Royal Oman Police Customs pages, so this comes from a named travel customs guide (EntryBrief, last reviewed 1 October 2026), not an official page. It says fresh meat, dairy, fruit and vegetables are generally prohibited or need a permit, and that sealed packaged food is usually tolerated in small amounts if declared. Confirm with Royal Oman Police Customs before you bring any food.",
+  "answer": "We could not open Royal Oman Police Customs' own pages, so these rules come from EntryBrief's Oman guide, reviewed on 1 October 2026. It says fresh fruit, vegetables, meat and dairy are generally prohibited or need an import permit, pork and pork products are banned, and processed, packaged food may be allowed in small personal quantities. Live animals and plants need permits and health certificates.",
   "sources": [
    [
     "https://entrybrief.com/customs/oman/",
@@ -7628,16 +7848,20 @@
   ],
   "faq": [
    [
-    "Can I bring fresh meat, dairy, fruit or vegetables into Oman?",
-    "The guide says they are generally prohibited or need a permit. Do not pack them unless Royal Oman Police Customs confirms otherwise."
+    "Can I bring fresh food to Oman?",
+    "Most fresh food, meat, dairy and plant products are prohibited or need a permit, according to the guide."
    ],
    [
-    "Can I bring packaged snacks into Oman?",
-    "Processed and packaged food may be allowed in small quantities for personal use. All food, plants, seeds and animal products must be declared; failure to declare can mean fines and confiscation."
+    "Is packaged food allowed?",
+    "It may be allowed in small quantities for personal use. The guide advises declaring any food to customs to avoid fines."
    ],
    [
-    "Is this an official Oman rule?",
-    "No. It comes from a named travel customs guide, last reviewed 1 October 2026. It points to Royal Oman Police Customs as the official source."
+    "Are pork products banned?",
+    "Yes, the guide puts pork and pork products on the prohibited list."
+   ],
+   [
+    "Do pets or plants need anything?",
+    "Live animals and plants require an import permit and health certificates, says the guide."
    ]
   ],
   "topics": [
@@ -7646,15 +7870,14 @@
     "label": "Pork",
     "status": "stop",
     "verdict": "Not allowed",
-    "head": "The guide lists pork as prohibited.",
+    "head": "Pork and pork products are on the guide's prohibited list.",
     "scen": [
      {
       "when": "Pork and pork products",
       "status": "stop",
       "tag": "Not allowed",
       "lines": [
-       "Pork and pork products are on the prohibited list.",
-       "Leave pork products at home."
+       "Do not carry them into Oman."
       ]
      }
     ]
@@ -7664,15 +7887,15 @@
     "label": "Meat, dairy, eggs & produce",
     "status": "stop",
     "verdict": "Not allowed",
-    "head": "The guide says fresh food is generally prohibited or needs a permit.",
+    "head": "Fresh food needs an import permit, if it is allowed at all.",
     "scen": [
      {
-      "when": "Fresh meat, dairy, fruit and vegetables",
+      "when": "Fresh fruit, vegetables, meat and dairy",
       "status": "stop",
-      "tag": "Not allowed",
+      "tag": "Permit",
       "lines": [
-       "Fresh fruit, vegetables, meat and dairy are generally prohibited or need an import permit.",
-       "Do not pack them unless the authority confirms a permit or certificate."
+       "Generally prohibited unless you hold an import permit.",
+       "The guide says most fresh food and plant products fall under this."
       ]
      }
     ]
@@ -7682,15 +7905,15 @@
     "label": "Packaged food",
     "status": "warn",
     "verdict": "Declare it",
-    "head": "Sealed, packaged food is usually tolerated in small amounts.",
+    "head": "Processed, packaged food may pass in small amounts.",
     "scen": [
      {
-      "when": "Sealed, commercially packaged snacks and food",
+      "when": "Packaged food for personal use",
       "status": "warn",
       "tag": "Declare it",
       "lines": [
-       "Processed and packaged food may be allowed in small quantities for personal use.",
-       "All food, plants, seeds and animal products must be declared; failure to declare can mean fines and confiscation."
+       "May be allowed in small quantities.",
+       "Failing to declare can mean fines and confiscation."
       ]
      }
     ]
@@ -7700,15 +7923,15 @@
     "label": "Not covered",
     "status": "warn",
     "verdict": "Ask first",
-    "head": "The guide leaves out eggs, honey and exact limits.",
+    "head": "No honey or egg rule appears in the guide.",
     "scen": [
      {
       "when": "What we could not confirm",
       "status": "warn",
       "tag": "Ask first",
       "lines": [
-       "The guide gives no rule for eggs or honey and no exact quantity limit.",
-       "Royal Oman Police Customs pages could not be read, so confirm with them before you bring any food."
+       "Honey, eggs and exact limits are not mentioned.",
+       "Royal Oman Police Customs is the official source to ask."
       ]
      }
     ]
@@ -7718,7 +7941,7 @@
  },
  "Egypt": {
   "checked": "14 November 2026",
-  "answer": "We could not read a food rule on Egyptian Customs Authority pages, so this comes from a named travel customs guide (EntryBrief, last reviewed 1 October 2026), not an official page. It says fresh meat, dairy, fruit and vegetables are generally prohibited or need a permit, and that sealed packaged food is usually tolerated in small amounts if declared. Confirm with Egyptian Customs Authority before you bring any food.",
+  "answer": "Egyptian Customs' pages did not give a readable food rule, so this page relies on EntryBrief's Egypt guide (reviewed 1 October 2026). It says fresh food, meat, dairy, fruit, vegetables, seeds and plants are generally prohibited or need an import permit from Egypt's agricultural quarantine authority, pork is banned under Egyptian law, and animal products from outbreak areas are banned. Packaged food in small amounts may pass if declared.",
   "sources": [
    [
     "https://entrybrief.com/customs/egypt/",
@@ -7727,16 +7950,20 @@
   ],
   "faq": [
    [
-    "Can I bring fresh meat, dairy, fruit or vegetables into Egypt?",
-    "The guide says they are generally prohibited or need a permit. Do not pack them unless Egyptian Customs Authority confirms otherwise."
+    "Who issues the permit for food in Egypt?",
+    "The guide names the Egyptian agricultural quarantine authority and advises checking with it before you travel with any food."
    ],
    [
-    "Can I bring packaged snacks into Egypt?",
-    "Processed and packaged food may be allowed in small quantities for personal use, but you must declare it. The guide advises checking with the Egyptian agricultural quarantine authority before you travel with any food."
+    "Is pork allowed in Egypt?",
+    "The guide says pork and pork products are banned under Egyptian law."
    ],
    [
-    "Is this an official Egypt rule?",
-    "No. It comes from a named travel customs guide, last reviewed 1 October 2026. It points to Egyptian Customs Authority as the official source."
+    "Can I bring snacks?",
+    "Processed and packaged food may be allowed in small personal quantities, but it must be declared."
+   ],
+   [
+    "Are there bans linked to animal disease?",
+    "Yes. Animal products from areas with disease outbreaks are banned, and live birds from countries with avian influenza outbreaks."
    ]
   ],
   "topics": [
@@ -7745,15 +7972,14 @@
     "label": "Pork",
     "status": "stop",
     "verdict": "Not allowed",
-    "head": "The guide lists pork as prohibited.",
+    "head": "The guide says Egyptian law bans pork products.",
     "scen": [
      {
       "when": "Pork and pork products",
       "status": "stop",
       "tag": "Not allowed",
       "lines": [
-       "Pork and pork products are banned.",
-       "Leave pork products at home."
+       "Banned under Egyptian law, as the guide states."
       ]
      }
     ]
@@ -7763,16 +7989,22 @@
     "label": "Meat, dairy, eggs & produce",
     "status": "stop",
     "verdict": "Not allowed",
-    "head": "The guide says fresh food is generally prohibited or needs a permit.",
+    "head": "Fresh food mostly needs an agricultural quarantine permit.",
     "scen": [
      {
-      "when": "Fresh meat, dairy, fruit and vegetables",
+      "when": "Fresh food, meat, dairy, fruit, vegetables, seeds, plants",
+      "status": "stop",
+      "tag": "Permit",
+      "lines": [
+       "Generally prohibited, or allowed only with a permit from the agricultural quarantine authority."
+      ]
+     },
+     {
+      "when": "Animal products from outbreak areas",
       "status": "stop",
       "tag": "Not allowed",
       "lines": [
-       "Fresh food, meat, dairy, fruit, vegetables, seeds and plants are generally prohibited or need an import permit from the Egyptian agricultural quarantine authority.",
-       "Animal products from areas with disease outbreaks are banned.",
-       "Do not pack them unless the authority confirms a permit or certificate."
+       "Banned."
       ]
      }
     ]
@@ -7782,15 +8014,14 @@
     "label": "Packaged food",
     "status": "warn",
     "verdict": "Declare it",
-    "head": "Sealed, packaged food is usually tolerated in small amounts.",
+    "head": "Small amounts of packaged food may be allowed.",
     "scen": [
      {
-      "when": "Sealed, commercially packaged snacks and food",
+      "when": "Processed and packaged food",
       "status": "warn",
       "tag": "Declare it",
       "lines": [
-       "Processed and packaged food may be allowed in small quantities for personal use, but you must declare it.",
-       "The guide advises checking with the Egyptian agricultural quarantine authority before you travel with any food."
+       "Small personal quantities may be allowed, but you must declare them."
       ]
      }
     ]
@@ -7800,15 +8031,15 @@
     "label": "Not covered",
     "status": "warn",
     "verdict": "Ask first",
-    "head": "The guide leaves out eggs, honey and exact limits.",
+    "head": "Honey and eggs are not mentioned in the guide.",
     "scen": [
      {
       "when": "What we could not confirm",
       "status": "warn",
       "tag": "Ask first",
       "lines": [
-       "The guide gives no rule for eggs or honey and no exact quantity limit.",
-       "Egyptian Customs Authority pages could not be read, so confirm with them before you bring any food."
+       "No rule on honey, eggs or an exact quantity.",
+       "Egyptian Customs and the agricultural quarantine authority are the official places to ask."
       ]
      }
     ]
@@ -7818,7 +8049,7 @@
  },
  "Kuwait": {
   "checked": "14 November 2026",
-  "answer": "We could not read a food rule on Kuwait General Administration of Customs pages, so this comes from a named travel customs guide (EntryBrief, last reviewed 1 October 2026), not an official page. It says fresh meat, dairy, fruit and vegetables are generally prohibited or need a permit, and that sealed packaged food is usually tolerated in small amounts if declared. Confirm with Kuwait General Administration of Customs before you bring any food.",
+  "answer": "Kuwait's customs administration did not give a readable food page, so this one rests on EntryBrief's Kuwait guide (last reviewed 1 October 2026), which carries a note that it is for guidance only. It says fresh fruit, vegetables, meat, dairy and homemade food are generally prohibited or heavily restricted, pork and pork-derived products are prohibited, and sealed commercial food in small personal amounts is usually fine.",
   "sources": [
    [
     "https://entrybrief.com/customs/kuwait/",
@@ -7827,16 +8058,20 @@
   ],
   "faq": [
    [
-    "Can I bring fresh meat, dairy, fruit or vegetables into Kuwait?",
-    "The guide says they are generally prohibited or need a permit. Do not pack them unless Kuwait General Administration of Customs confirms otherwise."
+    "Can I bring homemade food to Kuwait?",
+    "The guide lists homemade food with fresh produce, meat and dairy as generally prohibited or heavily restricted, and says it must be declared."
    ],
    [
-    "Can I bring packaged snacks into Kuwait?",
-    "Commercially packaged, sealed food in small personal quantities is usually permitted. All food, plant material, seeds, soil and animal products must be declared; undeclared food is confiscated and can lead to a fine."
+    "Are pork products allowed?",
+    "No. The guide says pork products and pork-derived products are prohibited."
    ],
    [
-    "Is this an official Kuwait rule?",
-    "No. It comes from a named travel customs guide, last reviewed 1 October 2026. It points to Kuwait General Administration of Customs as the official source."
+    "What about sealed supermarket snacks?",
+    "Commercially packaged, sealed food in small personal quantities is usually permitted."
+   ],
+   [
+    "What if I do not declare food?",
+    "The guide says undeclared food is confiscated and can lead to a fine."
    ]
   ],
   "topics": [
@@ -7845,15 +8080,14 @@
     "label": "Pork",
     "status": "stop",
     "verdict": "Not allowed",
-    "head": "The guide lists pork as prohibited.",
+    "head": "Pork and anything derived from pork is prohibited.",
     "scen": [
      {
-      "when": "Pork and pork products",
+      "when": "Pork and pork-derived products",
       "status": "stop",
       "tag": "Not allowed",
       "lines": [
-       "Pork products and pork-derived products are prohibited.",
-       "Leave pork products at home."
+       "The guide lists both on its prohibited list."
       ]
      }
     ]
@@ -7863,15 +8097,15 @@
     "label": "Meat, dairy, eggs & produce",
     "status": "stop",
     "verdict": "Not allowed",
-    "head": "The guide says fresh food is generally prohibited or needs a permit.",
+    "head": "Fresh and homemade food is generally prohibited or heavily restricted.",
     "scen": [
      {
-      "when": "Fresh meat, dairy, fruit and vegetables",
+      "when": "Fresh fruit, vegetables, meat, dairy, homemade food",
       "status": "stop",
       "tag": "Not allowed",
       "lines": [
-       "Fresh fruit, vegetables, meat, dairy and homemade food are generally prohibited or heavily restricted, and must be declared.",
-       "Do not pack them unless the authority confirms a permit or certificate."
+       "Generally prohibited or heavily restricted, and must be declared.",
+       "The guide gives pest and disease protection as the reason."
       ]
      }
     ]
@@ -7881,15 +8115,15 @@
     "label": "Packaged food",
     "status": "warn",
     "verdict": "Declare it",
-    "head": "Sealed, packaged food is usually tolerated in small amounts.",
+    "head": "Sealed commercial food is usually fine in small personal amounts.",
     "scen": [
      {
-      "when": "Sealed, commercially packaged snacks and food",
+      "when": "Commercially packaged, sealed food",
       "status": "warn",
       "tag": "Declare it",
       "lines": [
-       "Commercially packaged, sealed food in small personal quantities is usually permitted.",
-       "All food, plant material, seeds, soil and animal products must be declared; undeclared food is confiscated and can lead to a fine."
+       "Usually permitted in small personal quantities.",
+       "All food, plant material, seeds, soil and animal products must be declared."
       ]
      }
     ]
@@ -7899,15 +8133,15 @@
     "label": "Not covered",
     "status": "warn",
     "verdict": "Ask first",
-    "head": "The guide leaves out eggs, honey and exact limits.",
+    "head": "The guide says its lists can change without notice.",
     "scen": [
      {
       "when": "What we could not confirm",
       "status": "warn",
       "tag": "Ask first",
       "lines": [
-       "The guide gives no rule for eggs or honey and no exact quantity limit.",
-       "Kuwait General Administration of Customs pages could not be read, so confirm with them before you bring any food."
+       "No rule on honey, eggs or exact amounts, and the guide is for guidance only.",
+       "Kuwait's General Administration of Customs is the official source to ask."
       ]
      }
     ]
@@ -7917,7 +8151,7 @@
  },
  "Lebanon": {
   "checked": "14 November 2026",
-  "answer": "We could not read a food rule on Lebanese Customs Administration pages, so this comes from a named travel customs guide (EntryBrief, last reviewed 1 October 2026), not an official page. It says fresh meat, dairy, fruit and vegetables are generally prohibited or need a permit, and that sealed packaged food is usually tolerated in small amounts if declared. Confirm with Lebanese Customs Administration before you bring any food.",
+  "answer": "Lebanon's customs pages were not readable for food, so we used EntryBrief's Lebanon guide (reviewed 1 October 2026). It says all fresh meat, dairy, fruit, vegetables and plants are prohibited, or need an import permit from the Ministry of Agriculture, soil and live plants are strictly banned, and pork is banned for religious reasons. Packaged food for personal use is allowed within the USD 800 duty-free allowance.",
   "sources": [
    [
     "https://entrybrief.com/customs/lebanon/",
@@ -7926,16 +8160,20 @@
   ],
   "faq": [
    [
-    "Can I bring fresh meat, dairy, fruit or vegetables into Lebanon?",
-    "The guide says they are generally prohibited or need a permit. Do not pack them unless Lebanese Customs Administration confirms otherwise."
+    "Can I bring fresh fruit to Lebanon?",
+    "The guide says all fresh meat, dairy, fruit, vegetables and plants are prohibited, unless you hold an import permit from the Ministry of Agriculture."
    ],
    [
-    "Can I bring packaged snacks into Lebanon?",
-    "Packaged and processed food for personal use is generally allowed within the USD 800 duty-free allowance. Anything above the allowance must be declared and may be taxed."
+    "Is there a limit for chocolates and biscuits?",
+    "Packaged and processed food, such as chocolates, biscuits and canned goods, is generally allowed for personal use within the USD 800 duty-free allowance."
    ],
    [
-    "Is this an official Lebanon rule?",
-    "No. It comes from a named travel customs guide, last reviewed 1 October 2026. It points to Lebanese Customs Administration as the official source."
+    "Can I bring soil or houseplants?",
+    "No. The guide says soil and live plants are strictly banned, and live animals need a veterinary or phytosanitary certificate."
+   ],
+   [
+    "What if I go over the allowance?",
+    "Anything beyond USD 800 must be declared and may be taxed."
    ]
   ],
   "topics": [
@@ -7944,15 +8182,14 @@
     "label": "Pork",
     "status": "stop",
     "verdict": "Not allowed",
-    "head": "The guide lists pork as prohibited.",
+    "head": "The guide says pork is banned for religious reasons.",
     "scen": [
      {
       "when": "Pork and pork products",
       "status": "stop",
       "tag": "Not allowed",
       "lines": [
-       "Pork and pork products are on the prohibited list.",
-       "Leave pork products at home."
+       "On the prohibited list."
       ]
      }
     ]
@@ -7962,16 +8199,22 @@
     "label": "Meat, dairy, eggs & produce",
     "status": "stop",
     "verdict": "Not allowed",
-    "head": "The guide says fresh food is generally prohibited or needs a permit.",
+    "head": "Fresh food is prohibited unless the Ministry of Agriculture permits it.",
     "scen": [
      {
-      "when": "Fresh meat, dairy, fruit and vegetables",
+      "when": "Fresh meat, dairy, fruit, vegetables",
       "status": "stop",
       "tag": "Not allowed",
       "lines": [
-       "All fresh meat, dairy, fruit, vegetables, seeds and plants are prohibited, or need an import permit from the Ministry of Agriculture.",
-       "Soil and live plants are strictly banned.",
-       "Do not pack them unless the authority confirms a permit or certificate."
+       "Prohibited, or allowed only with an import permit from the Ministry of Agriculture."
+      ]
+     },
+     {
+      "when": "Soil and live plants",
+      "status": "stop",
+      "tag": "Not allowed",
+      "lines": [
+       "Strictly banned."
       ]
      }
     ]
@@ -7981,15 +8224,15 @@
     "label": "Packaged food",
     "status": "warn",
     "verdict": "Declare it",
-    "head": "Sealed, packaged food is usually tolerated in small amounts.",
+    "head": "Chocolates, biscuits and canned goods are fine within USD 800.",
     "scen": [
      {
-      "when": "Sealed, commercially packaged snacks and food",
+      "when": "Packaged and processed food",
       "status": "warn",
       "tag": "Declare it",
       "lines": [
-       "Packaged and processed food for personal use is generally allowed within the USD 800 duty-free allowance.",
-       "Anything above the allowance must be declared and may be taxed."
+       "Allowed for personal use within the USD 800 duty-free allowance.",
+       "Anything above it must be declared and may be taxed."
       ]
      }
     ]
@@ -7999,15 +8242,15 @@
     "label": "Not covered",
     "status": "warn",
     "verdict": "Ask first",
-    "head": "The guide leaves out eggs, honey and exact limits.",
+    "head": "Honey and eggs are not mentioned in the guide.",
     "scen": [
      {
       "when": "What we could not confirm",
       "status": "warn",
       "tag": "Ask first",
       "lines": [
-       "The guide gives no rule for eggs or honey and no exact quantity limit.",
-       "Lebanese Customs Administration pages could not be read, so confirm with them before you bring any food."
+       "No rule on honey, eggs or baby food.",
+       "The Lebanese Customs Administration is the official source to ask."
       ]
      }
     ]
@@ -8017,7 +8260,7 @@
  },
  "Panama": {
   "checked": "14 November 2026",
-  "answer": "We could not read a food rule on Autoridad Nacional de Aduanas (ANA) pages, so this comes from a named travel customs guide (EntryBrief, last reviewed 1 October 2026), not an official page. It says fresh meat, dairy, fruit and vegetables are generally prohibited or need a permit, and that sealed packaged food is usually tolerated in small amounts if declared. Confirm with Autoridad Nacional de Aduanas (ANA) before you bring any food.",
+  "answer": "Panama's own customs and agriculture pages gave no traveller food list, so this page uses EntryBrief's Panama guide (reviewed 1 October 2026), which calls undeclared agricultural products Panama's biggest customs risk. It says fresh fruit, vegetables and plants are prohibited, and so are meat and dairy from countries with animal diseases. Packaged non-perishable snacks are usually allowed if declared. The guide does not mention pork.",
   "sources": [
    [
     "https://entrybrief.com/customs/panama/",
@@ -8026,16 +8269,20 @@
   ],
   "faq": [
    [
-    "Can I bring fresh meat, dairy, fruit or vegetables into Panama?",
-    "The guide says they are generally prohibited or need a permit. Do not pack them unless Autoridad Nacional de Aduanas (ANA) confirms otherwise."
+    "Can I bring an apple or a sandwich into Panama?",
+    "The guide warns that even a single apple or sandwich can mean a fine and confiscation, because fresh food is prohibited."
    ],
    [
-    "Can I bring packaged snacks into Panama?",
-    "Packaged, non-perishable snacks such as chocolate and chips are usually allowed, but you must declare them. All food, plants, seeds and animal products must be declared; failure to declare can mean fines and confiscation."
+    "Which meat and dairy are banned?",
+    "Meat and dairy from countries with animal diseases, per the guide."
    ],
    [
-    "Is this an official Panama rule?",
-    "No. It comes from a named travel customs guide, last reviewed 1 October 2026. It points to Autoridad Nacional de Aduanas (ANA) as the official source."
+    "Are chips and chocolate fine?",
+    "Packaged, non-perishable snacks such as chocolate and chips are usually allowed, but you must declare them."
+   ],
+   [
+    "Do plants and seeds need anything?",
+    "Plants and seeds need a phytosanitary certificate according to the guide."
    ]
   ],
   "topics": [
@@ -8044,16 +8291,22 @@
     "label": "Meat, dairy, eggs & produce",
     "status": "stop",
     "verdict": "Not allowed",
-    "head": "The guide says fresh food is generally prohibited or needs a permit.",
+    "head": "Fresh food is prohibited, and so is meat and dairy from diseased areas.",
     "scen": [
      {
-      "when": "Fresh meat, dairy, fruit and vegetables",
+      "when": "Fresh fruit, vegetables and plants",
       "status": "stop",
       "tag": "Not allowed",
       "lines": [
-       "Fresh fruit, vegetables and plants are prohibited, and so is meat and dairy from countries with animal diseases.",
-       "The guide says even a single apple or sandwich can result in a fine and confiscation.",
-       "Do not pack them unless the authority confirms a permit or certificate."
+       "On the prohibited list."
+      ]
+     },
+     {
+      "when": "Meat and dairy from countries with animal diseases",
+      "status": "stop",
+      "tag": "Not allowed",
+      "lines": [
+       "Prohibited. The guide does not say which countries."
       ]
      }
     ]
@@ -8063,15 +8316,33 @@
     "label": "Packaged food",
     "status": "warn",
     "verdict": "Declare it",
-    "head": "Sealed, packaged food is usually tolerated in small amounts.",
+    "head": "Non-perishable packaged snacks are usually allowed, if declared.",
     "scen": [
      {
-      "when": "Sealed, commercially packaged snacks and food",
+      "when": "Chocolate, chips and similar snacks",
       "status": "warn",
       "tag": "Declare it",
       "lines": [
-       "Packaged, non-perishable snacks such as chocolate and chips are usually allowed, but you must declare them.",
-       "All food, plants, seeds and animal products must be declared; failure to declare can mean fines and confiscation."
+       "Usually allowed, but you must declare them.",
+       "All food, plants, seeds and animal products must be declared."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "plants",
+    "label": "Plants & seeds",
+    "status": "warn",
+    "verdict": "Certificate",
+    "head": "Plants and seeds need a phytosanitary certificate.",
+    "scen": [
+     {
+      "when": "Plants and seeds",
+      "status": "warn",
+      "tag": "Certificate",
+      "lines": [
+       "A phytosanitary certificate is required.",
+       "Soil is not mentioned in the guide."
       ]
      }
     ]
@@ -8081,20 +8352,769 @@
     "label": "Not covered",
     "status": "warn",
     "verdict": "Ask first",
-    "head": "The guide leaves out eggs, honey and exact limits.",
+    "head": "The guide never mentions pork, honey or eggs.",
     "scen": [
      {
       "when": "What we could not confirm",
       "status": "warn",
       "tag": "Ask first",
       "lines": [
-       "The guide gives no rule for eggs or honey and no exact quantity limit.",
-       "Autoridad Nacional de Aduanas (ANA) pages could not be read, so confirm with them before you bring any food."
+       "No rule on pork, honey or eggs, and it advises confirming with Panama's customs authority (ANA).",
+       "The guide is for guidance only."
       ]
      }
     ]
    }
   ],
   "unofficial": true
+ },
+ "Denmark": {
+  "checked": "14 November 2026",
+  "answer": "Borger.dk, the Danish public portal, says you may not take meat, meat products, milk or dairy home from outside the EU, nor composite products containing meat. Other animal products such as honey, eggs and snails, and long-life sweets, pasta and baked goods, are capped at 2 kg, fish at 20 kg, and fresh fruit, vegetables and berries need a plant health certificate. Flour and grain have no limit. The page shows no date.",
+  "sources": [
+   [
+    "https://www.borger.dk/transport-trafik-rejser/udlandsrejser/hvad-maa-du-tage-med-hjem-fra-rejsen/rejser-uden-for-eu-det-maa-du-tage-med-hjem",
+    "Borger.dk (Danish public portal; Agency for Food, Agriculture and Fisheries) — Travel outside the EU: what you may take home (undated)"
+   ]
+  ],
+  "faq": [
+   [
+    "How much honey or eggs can I take back to Denmark?",
+    "Up to 2 kg of other animal products without meat or milk, such as honey, eggs and snails."
+   ],
+   [
+    "Can I bring biscuits, pasta or bread home?",
+    "Yes, long-life composite products without meat count toward the same 2 kg limit. The page names sweets, pasta and couscous, muesli and cereals, bread, cakes and biscuits."
+   ],
+   [
+    "Do I need a certificate for fruit and vegetables?",
+    "Fresh vegetables, berries and fruit need a plant health certificate from the country you leave, and getting it is your responsibility. Pineapple, banana, date, durian and coconut are listed as freely allowed."
+   ],
+   [
+    "How much fish can I bring from outside the EU?",
+    "Fish and fish products up to 20 kg, and a whole fish heavier than 20 kg is also allowed. Sturgeon caviar is limited to 125 g per person in marked, sealed containers."
+   ],
+   [
+    "Is the Faroe Islands or Greenland different?",
+    "Yes. From there you may take up to 10 kg of meat, dairy and other animal products, with no limit on fish, and fresh vegetables, fruit and berries may not be taken home."
+   ]
+  ],
+  "topics": [
+   {
+    "id": "meat",
+    "label": "Meat & dairy",
+    "status": "stop",
+    "verdict": "Not allowed",
+    "head": "Danish authorities say no meat, meat products, milk or dairy from outside the EU.",
+    "scen": [
+     {
+      "when": "Meat, canned meat, jerky, milk and dairy",
+      "status": "stop",
+      "tag": "Not allowed",
+      "lines": [
+       "They may not be taken home from countries outside the EU."
+      ]
+     },
+     {
+      "when": "Composite products",
+      "status": "stop",
+      "tag": "Not allowed",
+      "lines": [
+       "Products containing meat, and short-life products containing milk, are also banned."
+      ]
+     },
+     {
+      "when": "From the Faroe Islands or Greenland",
+      "status": "warn",
+      "tag": "Up to 10 kg",
+      "lines": [
+       "Meat, dairy and other animal products up to 10 kg each."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "plants",
+    "label": "Fruit, plants & honey",
+    "status": "warn",
+    "verdict": "Limited amounts",
+    "head": "Honey, eggs and long-life goods up to 2 kg; fresh produce needs a certificate.",
+    "scen": [
+     {
+      "when": "Honey, eggs, snails",
+      "status": "warn",
+      "tag": "Up to 2 kg",
+      "lines": [
+       "Other animal products without meat or milk: 2 kg."
+      ]
+     },
+     {
+      "when": "Sweets, pasta, muesli, bread, cakes, biscuits",
+      "status": "warn",
+      "tag": "Up to 2 kg",
+      "lines": [
+       "Long-life composite products without meat share the 2 kg limit."
+      ]
+     },
+     {
+      "when": "Fresh vegetables, berries and fruit",
+      "status": "stop",
+      "tag": "Certificate",
+      "lines": [
+       "A plant health certificate from the departure country is needed."
+      ]
+     },
+     {
+      "when": "Pineapple, banana, date, durian, coconut",
+      "status": "go",
+      "tag": "Allowed",
+      "lines": [
+       "Listed as freely takeable."
+      ]
+     },
+     {
+      "when": "Flour and grain",
+      "status": "go",
+      "tag": "No limit",
+      "lines": [
+       "In most cases there is no quantity limit. Rice, spices and nuts can in some cases carry toxin residues."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "fish",
+    "label": "Fish",
+    "status": "go",
+    "verdict": "Up to 20 kg",
+    "head": "Fish up to 20 kg, or one whole fish if it weighs more.",
+    "scen": [
+     {
+      "when": "Fish and fish products",
+      "status": "go",
+      "tag": "Up to 20 kg",
+      "lines": [
+       "A whole fish above 20 kg is allowed too."
+      ]
+     },
+     {
+      "when": "Sturgeon caviar",
+      "status": "warn",
+      "tag": "Up to 125 g",
+      "lines": [
+       "Per person, in marked, sealed containers with unique codes; above that, CITES permits are needed."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "baby",
+    "label": "Baby & medical food",
+    "status": "go",
+    "verdict": "Up to 2 kg",
+    "head": "Baby food and formula up to 2 kg.",
+    "scen": [
+     {
+      "when": "Infant formula and baby food",
+      "status": "go",
+      "tag": "Up to 2 kg",
+      "lines": [
+       "Commercially packed from a shop, not homemade, unopened unless in use, and needing no fridge before opening."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "declare",
+    "label": "Plants & declaring",
+    "status": "warn",
+    "verdict": "Pre-declare",
+    "head": "Live plants and certain seeds must be declared in advance.",
+    "scen": [
+     {
+      "when": "Live plants and certain seeds",
+      "status": "warn",
+      "tag": "Declare it",
+      "lines": [
+       "Declare them to the Agency for Food, Agriculture and Fisheries for import control at least 24 hours before you travel home."
+      ]
+     },
+     {
+      "when": "Food from endangered species",
+      "status": "warn",
+      "tag": "Permit",
+      "lines": [
+       "CITES export and Danish import permits may be needed; questions go to CITES@mst.dk."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "notread",
+    "label": "Not covered",
+    "status": "warn",
+    "verdict": "Ask first",
+    "head": "The page shows no update date or penalties.",
+    "scen": [
+     {
+      "when": "What we could not confirm",
+      "status": "warn",
+      "tag": "Ask first",
+      "lines": [
+       "It gives no fine amounts and no date, and does not say where at the airport to declare.",
+       "Ask the Danish Agency for Food, Agriculture and Fisheries before you bring anything not listed."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "Estonia": {
+  "checked": "14 November 2026",
+  "answer": "Estonia's Tax and Customs Board says meat and milk products may not come in from outside the EU, and gives sausage, canned meat, bacon, dumplings and ice cream as examples. You may bring 2 kg of other animal products, 20 kg of gutted fresh fish and 2 kg of baby or medical food, plus sweets and biscuits without milk or meat. Fruit and vegetables need a plant health certificate, and a surcharge applies to goods from Russia and Belarus.",
+  "sources": [
+   [
+    "https://www.emta.ee/eraklient/saadetised-reisimine-elama-asumine/reisimine/keelatud-ja-eriloaga-kaubad",
+    "Estonian Tax and Customs Board (EMTA) — Prohibited goods and goods needing a permit (undated)"
+   ],
+   [
+    "https://www.emta.ee/eraklient/saadetised-reisimine-elama-asumine/reisimine/eestisse-kolmandast-riigist",
+    "Estonian Tax and Customs Board (EMTA) — Coming to Estonia from a third country (updated 27 October 2026)"
+   ]
+  ],
+  "faq": [
+   [
+    "Which foods does Estonia treat as meat or milk products?",
+    "EMTA names sausage, canned meat, bacon, pies, dumplings, ice cream, condensed milk, stuffed vegetables and prepared mustard."
+   ],
+   [
+    "Can I bring sweets and biscuits to Estonia from a third country?",
+    "Yes, in quantities for personal use, if they contain no milk or meat. The page gives candy, chocolate, biscuits and cakes as examples."
+   ],
+   [
+    "How much fish and caviar can I bring?",
+    "Up to 20 kg of gutted fresh fish per person, but not black caviar. Each traveller may bring 125 g of sturgeon caviar without a CITES permit, if the packaging is marked."
+   ],
+   [
+    "What about spices, rice and nuts?",
+    "EMTA says some foods from certain countries are under temporary stricter control with border veterinary checks. Fresh goods under 5 kg and dried goods under 2 kg are exempt."
+   ],
+   [
+    "Is there an extra charge on goods from Russia or Belarus?",
+    "Yes. From 20 July 2025 an additional 50% customs duty applies to listed goods such as meat, milk, honey, fruit and vegetables."
+   ]
+  ],
+  "topics": [
+   {
+    "id": "meat",
+    "label": "Meat & dairy",
+    "status": "stop",
+    "verdict": "Not allowed",
+    "head": "EMTA lists many everyday foods as meat or milk products that cannot be brought in.",
+    "scen": [
+     {
+      "when": "Sausage, canned meat, bacon, pies, dumplings",
+      "status": "stop",
+      "tag": "Not allowed",
+      "lines": [
+       "The page counts them as meat products."
+      ]
+     },
+     {
+      "when": "Ice cream, condensed milk, stuffed vegetables, prepared mustard",
+      "status": "stop",
+      "tag": "Not allowed",
+      "lines": [
+       "They are listed as milk or meat-containing products."
+      ]
+     },
+     {
+      "when": "Coming from within the EU",
+      "status": "go",
+      "tag": "Allowed",
+      "lines": [
+       "All foods in quantities for personal consumption; ask the Agriculture and Food Board (PTA) for details."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "plants",
+    "label": "Fruit, plants & honey",
+    "status": "warn",
+    "verdict": "Limited amounts",
+    "head": "Other animal products 2 kg; fruit and vegetables need a certificate.",
+    "scen": [
+     {
+      "when": "Other animal products (honey, eggs)",
+      "status": "warn",
+      "tag": "Up to 2 kg",
+      "lines": [
+       "The total for products not listed as meat or milk is 2 kg."
+      ]
+     },
+     {
+      "when": "Most fruit, vegetables, berries, seeds, plants",
+      "status": "stop",
+      "tag": "Certificate",
+      "lines": [
+       "They need a phytosanitary certificate and a plant health check at the border; without it they are destroyed or returned."
+      ]
+     },
+     {
+      "when": "Fresh pineapple, coconut, durian, banana, date",
+      "status": "go",
+      "tag": "Allowed",
+      "lines": [
+       "May be brought for personal use without the certificate."
+      ]
+     },
+     {
+      "when": "Sweets, chocolate, biscuits, cakes",
+      "status": "go",
+      "tag": "Allowed",
+      "lines": [
+       "In personal quantities, if they contain no milk or meat."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "fish",
+    "label": "Fish",
+    "status": "go",
+    "verdict": "Up to 20 kg",
+    "head": "Gutted fresh fish up to 20 kg per person; black caviar excluded.",
+    "scen": [
+     {
+      "when": "Fresh fish for personal use",
+      "status": "go",
+      "tag": "Up to 20 kg",
+      "lines": [
+       "It must be gutted. Black caviar is not covered."
+      ]
+     },
+     {
+      "when": "Sturgeon caviar",
+      "status": "warn",
+      "tag": "Up to 125 g",
+      "lines": [
+       "Per traveller without a CITES permit, if the packaging is marked accordingly."
+      ]
+     },
+     {
+      "when": "Fresh fish from the Faroe Islands or Greenland",
+      "status": "go",
+      "tag": "Reasonable amount",
+      "lines": [
+       "Allowed in reasonable quantities."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "baby",
+    "label": "Baby & medical food",
+    "status": "go",
+    "verdict": "Up to 2 kg",
+    "head": "Baby food, formula and medical food up to 2 kg per person or pet.",
+    "scen": [
+     {
+      "when": "Powdered infant formula, baby food, special medical food",
+      "status": "go",
+      "tag": "Up to 2 kg",
+      "lines": [
+       "In original labelled packaging, needing no chilling before use."
+      ]
+     },
+     {
+      "when": "Therapeutic pet food",
+      "status": "go",
+      "tag": "Up to 2 kg",
+      "lines": [
+       "Long shelf life, retail packaging."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "russia",
+    "label": "From Russia or Belarus",
+    "status": "warn",
+    "verdict": "50% surcharge",
+    "head": "An extra 50% duty applies to listed goods from Russia and Belarus.",
+    "scen": [
+     {
+      "when": "Meat, milk, honey, live plants, fruit, vegetables, coffee, tea, cereals",
+      "status": "warn",
+      "tag": "Surcharge",
+      "lines": [
+       "An additional 50% customs duty applies from 20 July 2025; the full list is in Annex I of Regulation (EU) 2025/1227."
+      ]
+     },
+     {
+      "when": "Breaking an international sanction",
+      "status": "stop",
+      "tag": "Penalty",
+      "lines": [
+       "A fine or up to five years in prison."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "declare",
+    "label": "Declaring at customs",
+    "status": "warn",
+    "verdict": "Red lane",
+    "head": "Goods above the allowance or needing a permit go through the red corridor.",
+    "scen": [
+     {
+      "when": "Duty-free value",
+      "status": "go",
+      "tag": "Up to €430",
+      "lines": [
+       "€430 by air or sea, €300 otherwise, per traveller."
+      ]
+     },
+     {
+      "when": "Unsure whether to declare",
+      "status": "warn",
+      "tag": "Red corridor",
+      "lines": [
+       "EMTA says choose the red corridor if in doubt; where there is no corridor system, declare to a customs officer."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "notread",
+    "label": "Not covered",
+    "status": "warn",
+    "verdict": "Ask first",
+    "head": "EMTA's travel page has no general food allowance.",
+    "scen": [
+     {
+      "when": "What we could not confirm",
+      "status": "warn",
+      "tag": "Ask first",
+      "lines": [
+       "The two EMTA pages name no fine amounts for food, and the prohibited-goods page carries no date.",
+       "Ask EMTA or the Agriculture and Food Board before you bring anything not listed."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "Cyprus": {
+  "checked": "14 November 2026",
+  "answer": "Cyprus Customs runs a red and green channel system at Larnaca and Paphos airports and Limassol port: you take the red channel if you carry goods above the allowance or any prohibited or restricted goods. Its page gives the €430 allowance but no food list, so the food limits come from the EU page: no meat or dairy from outside the EU, limited fruit, vegetables, eggs and honey, fish up to 20 kg. The Cyprus page dates from February 2020.",
+  "sources": [
+   [
+    "https://www.mof.gov.cy/mof/customs/customs.nsf/All/D8E0334067181B47C22572BF002DF37C",
+    "Cyprus Customs and Excise Department — Passenger allowances and red/green channels (last updated 5 February 2020)"
+   ],
+   [
+    "https://europa.eu/youreurope/citizens/travel/carry/meat-dairy-animal/index_en.htm",
+    "European Union (Your Europe) — Taking animal products, food or plants with you in the EU (page checked 21 October 2026)"
+   ]
+  ],
+  "faq": [
+   [
+    "Where does Cyprus use red and green channels?",
+    "At Larnaca and Paphos International Airports and Limassol Port, according to the Customs and Excise Department."
+   ],
+   [
+    "Which channel do I use if I carry cheese or meat?",
+    "Those are restricted from outside the EU, and the customs page says anyone with prohibited or restricted goods must report to the red channel and declare them to an officer."
+   ],
+   [
+    "What goods can I bring duty-free?",
+    "Other goods for personal use or as presents up to €430 per person, or €175 for a traveller under 15. Travellers under 17 get no tobacco or alcohol relief."
+   ],
+   [
+    "Can I bring halloumi or sausages from a non-EU country?",
+    "The EU page says no: meat and dairy are not allowed, apart from under 10 kg from the Faroe Islands or Greenland."
+   ]
+  ],
+  "topics": [
+   {
+    "id": "meat",
+    "label": "Meat & dairy",
+    "status": "stop",
+    "verdict": "Not allowed",
+    "head": "Meat and dairy from non-EU countries are not allowed into Cyprus.",
+    "scen": [
+     {
+      "when": "Meat, dairy, halloumi or sausage from a non-EU country",
+      "status": "stop",
+      "tag": "Not allowed",
+      "lines": [
+       "This is the EU rule. Undeclared items are seized and destroyed, with possible fines or prosecution."
+      ]
+     },
+     {
+      "when": "From the Faroe Islands or Greenland",
+      "status": "warn",
+      "tag": "Up to 10 kg",
+      "lines": [
+       "Meat, dairy, honey and eggs, 10 kg each."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "plants",
+    "label": "Fruit, plants & honey",
+    "status": "warn",
+    "verdict": "Limited amounts",
+    "head": "Limited fruit, vegetables, eggs and honey; plants need a certificate.",
+    "scen": [
+     {
+      "when": "Fruit, vegetables, eggs and honey",
+      "status": "warn",
+      "tag": "Limited",
+      "lines": [
+       "Small personal amounts; honey and similar products up to 2 kg."
+      ]
+     },
+     {
+      "when": "Plants and cut flowers",
+      "status": "stop",
+      "tag": "Certificate",
+      "lines": [
+       "A plant health certificate is required."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "fish",
+    "label": "Fish",
+    "status": "go",
+    "verdict": "Up to 20 kg",
+    "head": "Fish up to 20 kg or one fish.",
+    "scen": [
+     {
+      "when": "Fresh gutted, prepared or processed fish",
+      "status": "go",
+      "tag": "Up to 20 kg",
+      "lines": [
+       "Whichever weighs more: 20 kg or one fish."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "baby",
+    "label": "Baby & medical food",
+    "status": "go",
+    "verdict": "Up to 2 kg",
+    "head": "Baby food and medical food up to 2 kg.",
+    "scen": [
+     {
+      "when": "Powdered infant milk, baby food, medical food",
+      "status": "go",
+      "tag": "Up to 2 kg",
+      "lines": [
+       "Shelf-stable retail packs, unbroken unless in use."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "channels",
+    "label": "Red & green channels",
+    "status": "warn",
+    "verdict": "Red channel",
+    "head": "Cyprus customs lets you choose a channel on your own responsibility.",
+    "scen": [
+     {
+      "when": "Only allowances, nothing prohibited or restricted",
+      "status": "go",
+      "tag": "Green channel",
+      "lines": [
+       "You may leave through the green channel unless an officer stops you."
+      ]
+     },
+     {
+      "when": "Goods above allowances, or anything prohibited or restricted",
+      "status": "warn",
+      "tag": "Red channel",
+      "lines": [
+       "Report to the red channel and declare them to an officer."
+      ]
+     },
+     {
+      "when": "Duty-free value",
+      "status": "go",
+      "tag": "Up to €430",
+      "lines": [
+       "Per person; €175 for under 15s."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "notread",
+    "label": "Not covered",
+    "status": "warn",
+    "verdict": "Ask first",
+    "head": "The Cyprus page gives no food list and is dated 2020.",
+    "scen": [
+     {
+      "when": "What we could not confirm",
+      "status": "warn",
+      "tag": "Ask first",
+      "lines": [
+       "Its list of prohibited and restricted goods could not be opened, so we have no Cyprus food rule.",
+       "Write to Cyprus Customs (headquarters@customs.mof.gov.cy) before you bring anything not listed."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "Bulgaria": {
+  "checked": "14 November 2026",
+  "answer": "For travellers arriving from outside the EU, Bulgaria applies the EU personal-import rules: no meat or dairy, limited fruit, vegetables, eggs and honey, fish up to 20 kg and up to 2 kg of baby or medical food. We could not open Bulgarian Customs Agency or Food Safety Agency pages, so this page shows only the EU rule. Confirm with Bulgarian customs before you bring anything beyond it.",
+  "sources": [
+   [
+    "https://europa.eu/youreurope/citizens/travel/carry/meat-dairy-animal/index_en.htm",
+    "European Union (Your Europe) — Taking animal products, food or plants with you in the EU (page checked 21 October 2026)"
+   ]
+  ],
+  "faq": [
+   [
+    "Can I bring salami or white cheese into Bulgaria from a non-EU country?",
+    "No. The EU page says meat and dairy are not allowed when travelling from outside the EU, apart from under 10 kg from the Faroe Islands or Greenland."
+   ],
+   [
+    "Do I need a certificate for plants?",
+    "Yes, a phytosanitary certificate is required for plants and cut flowers."
+   ],
+   [
+    "What are the limits for fish and baby food?",
+    "Fish up to 20 kg or one fish. Powdered infant milk, baby food and medical food up to 2 kg in sealed retail packs."
+   ],
+   [
+    "Did you read a Bulgarian national page?",
+    "No. We could not open the Bulgarian customs or food safety pages, so only the EU rule is shown here."
+   ]
+  ],
+  "topics": [
+   {
+    "id": "meat",
+    "label": "Meat & dairy",
+    "status": "stop",
+    "verdict": "Not allowed",
+    "head": "Bulgaria follows the EU ban on meat and dairy from outside the EU.",
+    "scen": [
+     {
+      "when": "Salami, ham, cheese, yoghurt from a non-EU country",
+      "status": "stop",
+      "tag": "Not allowed",
+      "lines": [
+       "The EU page forbids meat and dairy for travellers from outside the EU.",
+       "Undeclared items are confiscated and destroyed, with a possible fine or prosecution."
+      ]
+     },
+     {
+      "when": "From the Faroe Islands or Greenland",
+      "status": "warn",
+      "tag": "Up to 10 kg",
+      "lines": [
+       "10 kg each of meat, dairy, honey and eggs."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "plants",
+    "label": "Fruit, plants & honey",
+    "status": "warn",
+    "verdict": "Limited amounts",
+    "head": "Small personal amounts of produce; plants need a certificate.",
+    "scen": [
+     {
+      "when": "Fruit, vegetables, eggs, honey",
+      "status": "warn",
+      "tag": "Limited",
+      "lines": [
+       "No figure is given for fruit, vegetables or eggs; products like honey up to 2 kg."
+      ]
+     },
+     {
+      "when": "Plants and cut flowers",
+      "status": "stop",
+      "tag": "Certificate",
+      "lines": [
+       "A phytosanitary certificate is required."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "fish",
+    "label": "Fish",
+    "status": "go",
+    "verdict": "Up to 20 kg",
+    "head": "Fish up to 20 kg, or one fish if heavier.",
+    "scen": [
+     {
+      "when": "Fresh gutted, prepared or processed fish",
+      "status": "go",
+      "tag": "Up to 20 kg",
+      "lines": [
+       "Take the larger of 20 kg or a single fish."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "baby",
+    "label": "Baby & medical food",
+    "status": "go",
+    "verdict": "Up to 2 kg",
+    "head": "Baby milk, baby food and medical food up to 2 kg.",
+    "scen": [
+     {
+      "when": "Powdered infant milk, baby food, medical food",
+      "status": "go",
+      "tag": "Up to 2 kg",
+      "lines": [
+       "Shelf-stable, branded retail packs, unbroken unless in use."
+      ]
+     },
+     {
+      "when": "Pet food needed for health reasons",
+      "status": "go",
+      "tag": "Up to 2 kg",
+      "lines": [
+       "For the pet travelling with you, sealed retail pack."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "notread",
+    "label": "Not covered",
+    "status": "warn",
+    "verdict": "Ask first",
+    "head": "No Bulgarian national page was readable.",
+    "scen": [
+     {
+      "when": "What we could not confirm",
+      "status": "warn",
+      "tag": "Ask first",
+      "lines": [
+       "Bulgarian Customs Agency and Food Safety Agency pages did not open, so any Bulgarian detail is missing.",
+       "Ask Bulgarian customs before you bring anything not listed."
+      ]
+     }
+    ]
+   }
+  ]
  }
 }
