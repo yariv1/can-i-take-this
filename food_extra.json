@@ -7516,5 +7516,585 @@
    }
   ],
   "unofficial": true
+ },
+ "Jordan": {
+  "checked": "14 November 2026",
+  "answer": "We could not read a food rule on Jordan Customs Department pages, so this comes from a named travel customs guide (EntryBrief, last reviewed 1 October 2026), not an official page. It says fresh meat, dairy, fruit and vegetables are generally prohibited or need a permit, and that sealed packaged food is usually tolerated in small amounts if declared. Confirm with Jordan Customs Department before you bring any food.",
+  "sources": [
+   [
+    "https://entrybrief.com/customs/jordan/",
+    "EntryBrief — Jordan customs guide (last reviewed 1 October 2026; not an official page)"
+   ]
+  ],
+  "faq": [
+   [
+    "Can I bring fresh meat, dairy, fruit or vegetables into Jordan?",
+    "The guide says they are generally prohibited or need a permit. Do not pack them unless Jordan Customs Department confirms otherwise."
+   ],
+   [
+    "Can I bring packaged snacks into Jordan?",
+    "Processed, sealed food such as canned goods and packaged snacks is usually allowed in small quantities for personal use. All food, plant and animal products must be declared; undeclared items can be fined and confiscated."
+   ],
+   [
+    "Is this an official Jordan rule?",
+    "No. It comes from a named travel customs guide, last reviewed 1 October 2026. It points to Jordan Customs Department as the official source."
+   ]
+  ],
+  "topics": [
+   {
+    "id": "pork",
+    "label": "Pork",
+    "status": "stop",
+    "verdict": "Not allowed",
+    "head": "The guide lists pork as prohibited.",
+    "scen": [
+     {
+      "when": "Pork and pork products",
+      "status": "stop",
+      "tag": "Not allowed",
+      "lines": [
+       "Pork products and any food containing pork are on the prohibited list.",
+       "Leave pork products at home."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "fresh",
+    "label": "Meat, dairy, eggs & produce",
+    "status": "stop",
+    "verdict": "Not allowed",
+    "head": "The guide says fresh food is generally prohibited or needs a permit.",
+    "scen": [
+     {
+      "when": "Fresh meat, dairy, fruit and vegetables",
+      "status": "stop",
+      "tag": "Not allowed",
+      "lines": [
+       "Fresh fruit, vegetables, seeds and plants are generally prohibited or need a phytosanitary certificate.",
+       "Meat and dairy from non-approved countries are banned.",
+       "Do not pack them unless the authority confirms a permit or certificate."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "packaged",
+    "label": "Packaged food",
+    "status": "warn",
+    "verdict": "Declare it",
+    "head": "Sealed, packaged food is usually tolerated in small amounts.",
+    "scen": [
+     {
+      "when": "Sealed, commercially packaged snacks and food",
+      "status": "warn",
+      "tag": "Declare it",
+      "lines": [
+       "Processed, sealed food such as canned goods and packaged snacks is usually allowed in small quantities for personal use.",
+       "All food, plant and animal products must be declared; undeclared items can be fined and confiscated."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "notread",
+    "label": "Not covered",
+    "status": "warn",
+    "verdict": "Ask first",
+    "head": "The guide leaves out eggs, honey and exact limits.",
+    "scen": [
+     {
+      "when": "What we could not confirm",
+      "status": "warn",
+      "tag": "Ask first",
+      "lines": [
+       "The guide gives no rule for eggs or honey and no exact quantity limit.",
+       "Jordan Customs Department pages could not be read, so confirm with them before you bring any food."
+      ]
+     }
+    ]
+   }
+  ],
+  "unofficial": true
+ },
+ "Oman": {
+  "checked": "14 November 2026",
+  "answer": "We could not read a food rule on Royal Oman Police Customs pages, so this comes from a named travel customs guide (EntryBrief, last reviewed 1 October 2026), not an official page. It says fresh meat, dairy, fruit and vegetables are generally prohibited or need a permit, and that sealed packaged food is usually tolerated in small amounts if declared. Confirm with Royal Oman Police Customs before you bring any food.",
+  "sources": [
+   [
+    "https://entrybrief.com/customs/oman/",
+    "EntryBrief — Oman customs guide (last reviewed 1 October 2026; not an official page)"
+   ]
+  ],
+  "faq": [
+   [
+    "Can I bring fresh meat, dairy, fruit or vegetables into Oman?",
+    "The guide says they are generally prohibited or need a permit. Do not pack them unless Royal Oman Police Customs confirms otherwise."
+   ],
+   [
+    "Can I bring packaged snacks into Oman?",
+    "Processed and packaged food may be allowed in small quantities for personal use. All food, plants, seeds and animal products must be declared; failure to declare can mean fines and confiscation."
+   ],
+   [
+    "Is this an official Oman rule?",
+    "No. It comes from a named travel customs guide, last reviewed 1 October 2026. It points to Royal Oman Police Customs as the official source."
+   ]
+  ],
+  "topics": [
+   {
+    "id": "pork",
+    "label": "Pork",
+    "status": "stop",
+    "verdict": "Not allowed",
+    "head": "The guide lists pork as prohibited.",
+    "scen": [
+     {
+      "when": "Pork and pork products",
+      "status": "stop",
+      "tag": "Not allowed",
+      "lines": [
+       "Pork and pork products are on the prohibited list.",
+       "Leave pork products at home."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "fresh",
+    "label": "Meat, dairy, eggs & produce",
+    "status": "stop",
+    "verdict": "Not allowed",
+    "head": "The guide says fresh food is generally prohibited or needs a permit.",
+    "scen": [
+     {
+      "when": "Fresh meat, dairy, fruit and vegetables",
+      "status": "stop",
+      "tag": "Not allowed",
+      "lines": [
+       "Fresh fruit, vegetables, meat and dairy are generally prohibited or need an import permit.",
+       "Do not pack them unless the authority confirms a permit or certificate."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "packaged",
+    "label": "Packaged food",
+    "status": "warn",
+    "verdict": "Declare it",
+    "head": "Sealed, packaged food is usually tolerated in small amounts.",
+    "scen": [
+     {
+      "when": "Sealed, commercially packaged snacks and food",
+      "status": "warn",
+      "tag": "Declare it",
+      "lines": [
+       "Processed and packaged food may be allowed in small quantities for personal use.",
+       "All food, plants, seeds and animal products must be declared; failure to declare can mean fines and confiscation."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "notread",
+    "label": "Not covered",
+    "status": "warn",
+    "verdict": "Ask first",
+    "head": "The guide leaves out eggs, honey and exact limits.",
+    "scen": [
+     {
+      "when": "What we could not confirm",
+      "status": "warn",
+      "tag": "Ask first",
+      "lines": [
+       "The guide gives no rule for eggs or honey and no exact quantity limit.",
+       "Royal Oman Police Customs pages could not be read, so confirm with them before you bring any food."
+      ]
+     }
+    ]
+   }
+  ],
+  "unofficial": true
+ },
+ "Egypt": {
+  "checked": "14 November 2026",
+  "answer": "We could not read a food rule on Egyptian Customs Authority pages, so this comes from a named travel customs guide (EntryBrief, last reviewed 1 October 2026), not an official page. It says fresh meat, dairy, fruit and vegetables are generally prohibited or need a permit, and that sealed packaged food is usually tolerated in small amounts if declared. Confirm with Egyptian Customs Authority before you bring any food.",
+  "sources": [
+   [
+    "https://entrybrief.com/customs/egypt/",
+    "EntryBrief — Egypt customs guide (last reviewed 1 October 2026; not an official page)"
+   ]
+  ],
+  "faq": [
+   [
+    "Can I bring fresh meat, dairy, fruit or vegetables into Egypt?",
+    "The guide says they are generally prohibited or need a permit. Do not pack them unless Egyptian Customs Authority confirms otherwise."
+   ],
+   [
+    "Can I bring packaged snacks into Egypt?",
+    "Processed and packaged food may be allowed in small quantities for personal use, but you must declare it. The guide advises checking with the Egyptian agricultural quarantine authority before you travel with any food."
+   ],
+   [
+    "Is this an official Egypt rule?",
+    "No. It comes from a named travel customs guide, last reviewed 1 October 2026. It points to Egyptian Customs Authority as the official source."
+   ]
+  ],
+  "topics": [
+   {
+    "id": "pork",
+    "label": "Pork",
+    "status": "stop",
+    "verdict": "Not allowed",
+    "head": "The guide lists pork as prohibited.",
+    "scen": [
+     {
+      "when": "Pork and pork products",
+      "status": "stop",
+      "tag": "Not allowed",
+      "lines": [
+       "Pork and pork products are banned.",
+       "Leave pork products at home."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "fresh",
+    "label": "Meat, dairy, eggs & produce",
+    "status": "stop",
+    "verdict": "Not allowed",
+    "head": "The guide says fresh food is generally prohibited or needs a permit.",
+    "scen": [
+     {
+      "when": "Fresh meat, dairy, fruit and vegetables",
+      "status": "stop",
+      "tag": "Not allowed",
+      "lines": [
+       "Fresh food, meat, dairy, fruit, vegetables, seeds and plants are generally prohibited or need an import permit from the Egyptian agricultural quarantine authority.",
+       "Animal products from areas with disease outbreaks are banned.",
+       "Do not pack them unless the authority confirms a permit or certificate."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "packaged",
+    "label": "Packaged food",
+    "status": "warn",
+    "verdict": "Declare it",
+    "head": "Sealed, packaged food is usually tolerated in small amounts.",
+    "scen": [
+     {
+      "when": "Sealed, commercially packaged snacks and food",
+      "status": "warn",
+      "tag": "Declare it",
+      "lines": [
+       "Processed and packaged food may be allowed in small quantities for personal use, but you must declare it.",
+       "The guide advises checking with the Egyptian agricultural quarantine authority before you travel with any food."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "notread",
+    "label": "Not covered",
+    "status": "warn",
+    "verdict": "Ask first",
+    "head": "The guide leaves out eggs, honey and exact limits.",
+    "scen": [
+     {
+      "when": "What we could not confirm",
+      "status": "warn",
+      "tag": "Ask first",
+      "lines": [
+       "The guide gives no rule for eggs or honey and no exact quantity limit.",
+       "Egyptian Customs Authority pages could not be read, so confirm with them before you bring any food."
+      ]
+     }
+    ]
+   }
+  ],
+  "unofficial": true
+ },
+ "Kuwait": {
+  "checked": "14 November 2026",
+  "answer": "We could not read a food rule on Kuwait General Administration of Customs pages, so this comes from a named travel customs guide (EntryBrief, last reviewed 1 October 2026), not an official page. It says fresh meat, dairy, fruit and vegetables are generally prohibited or need a permit, and that sealed packaged food is usually tolerated in small amounts if declared. Confirm with Kuwait General Administration of Customs before you bring any food.",
+  "sources": [
+   [
+    "https://entrybrief.com/customs/kuwait/",
+    "EntryBrief — Kuwait customs guide (last reviewed 1 October 2026; not an official page)"
+   ]
+  ],
+  "faq": [
+   [
+    "Can I bring fresh meat, dairy, fruit or vegetables into Kuwait?",
+    "The guide says they are generally prohibited or need a permit. Do not pack them unless Kuwait General Administration of Customs confirms otherwise."
+   ],
+   [
+    "Can I bring packaged snacks into Kuwait?",
+    "Commercially packaged, sealed food in small personal quantities is usually permitted. All food, plant material, seeds, soil and animal products must be declared; undeclared food is confiscated and can lead to a fine."
+   ],
+   [
+    "Is this an official Kuwait rule?",
+    "No. It comes from a named travel customs guide, last reviewed 1 October 2026. It points to Kuwait General Administration of Customs as the official source."
+   ]
+  ],
+  "topics": [
+   {
+    "id": "pork",
+    "label": "Pork",
+    "status": "stop",
+    "verdict": "Not allowed",
+    "head": "The guide lists pork as prohibited.",
+    "scen": [
+     {
+      "when": "Pork and pork products",
+      "status": "stop",
+      "tag": "Not allowed",
+      "lines": [
+       "Pork products and pork-derived products are prohibited.",
+       "Leave pork products at home."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "fresh",
+    "label": "Meat, dairy, eggs & produce",
+    "status": "stop",
+    "verdict": "Not allowed",
+    "head": "The guide says fresh food is generally prohibited or needs a permit.",
+    "scen": [
+     {
+      "when": "Fresh meat, dairy, fruit and vegetables",
+      "status": "stop",
+      "tag": "Not allowed",
+      "lines": [
+       "Fresh fruit, vegetables, meat, dairy and homemade food are generally prohibited or heavily restricted, and must be declared.",
+       "Do not pack them unless the authority confirms a permit or certificate."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "packaged",
+    "label": "Packaged food",
+    "status": "warn",
+    "verdict": "Declare it",
+    "head": "Sealed, packaged food is usually tolerated in small amounts.",
+    "scen": [
+     {
+      "when": "Sealed, commercially packaged snacks and food",
+      "status": "warn",
+      "tag": "Declare it",
+      "lines": [
+       "Commercially packaged, sealed food in small personal quantities is usually permitted.",
+       "All food, plant material, seeds, soil and animal products must be declared; undeclared food is confiscated and can lead to a fine."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "notread",
+    "label": "Not covered",
+    "status": "warn",
+    "verdict": "Ask first",
+    "head": "The guide leaves out eggs, honey and exact limits.",
+    "scen": [
+     {
+      "when": "What we could not confirm",
+      "status": "warn",
+      "tag": "Ask first",
+      "lines": [
+       "The guide gives no rule for eggs or honey and no exact quantity limit.",
+       "Kuwait General Administration of Customs pages could not be read, so confirm with them before you bring any food."
+      ]
+     }
+    ]
+   }
+  ],
+  "unofficial": true
+ },
+ "Lebanon": {
+  "checked": "14 November 2026",
+  "answer": "We could not read a food rule on Lebanese Customs Administration pages, so this comes from a named travel customs guide (EntryBrief, last reviewed 1 October 2026), not an official page. It says fresh meat, dairy, fruit and vegetables are generally prohibited or need a permit, and that sealed packaged food is usually tolerated in small amounts if declared. Confirm with Lebanese Customs Administration before you bring any food.",
+  "sources": [
+   [
+    "https://entrybrief.com/customs/lebanon/",
+    "EntryBrief — Lebanon customs guide (last reviewed 1 October 2026; not an official page)"
+   ]
+  ],
+  "faq": [
+   [
+    "Can I bring fresh meat, dairy, fruit or vegetables into Lebanon?",
+    "The guide says they are generally prohibited or need a permit. Do not pack them unless Lebanese Customs Administration confirms otherwise."
+   ],
+   [
+    "Can I bring packaged snacks into Lebanon?",
+    "Packaged and processed food for personal use is generally allowed within the USD 800 duty-free allowance. Anything above the allowance must be declared and may be taxed."
+   ],
+   [
+    "Is this an official Lebanon rule?",
+    "No. It comes from a named travel customs guide, last reviewed 1 October 2026. It points to Lebanese Customs Administration as the official source."
+   ]
+  ],
+  "topics": [
+   {
+    "id": "pork",
+    "label": "Pork",
+    "status": "stop",
+    "verdict": "Not allowed",
+    "head": "The guide lists pork as prohibited.",
+    "scen": [
+     {
+      "when": "Pork and pork products",
+      "status": "stop",
+      "tag": "Not allowed",
+      "lines": [
+       "Pork and pork products are on the prohibited list.",
+       "Leave pork products at home."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "fresh",
+    "label": "Meat, dairy, eggs & produce",
+    "status": "stop",
+    "verdict": "Not allowed",
+    "head": "The guide says fresh food is generally prohibited or needs a permit.",
+    "scen": [
+     {
+      "when": "Fresh meat, dairy, fruit and vegetables",
+      "status": "stop",
+      "tag": "Not allowed",
+      "lines": [
+       "All fresh meat, dairy, fruit, vegetables, seeds and plants are prohibited, or need an import permit from the Ministry of Agriculture.",
+       "Soil and live plants are strictly banned.",
+       "Do not pack them unless the authority confirms a permit or certificate."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "packaged",
+    "label": "Packaged food",
+    "status": "warn",
+    "verdict": "Declare it",
+    "head": "Sealed, packaged food is usually tolerated in small amounts.",
+    "scen": [
+     {
+      "when": "Sealed, commercially packaged snacks and food",
+      "status": "warn",
+      "tag": "Declare it",
+      "lines": [
+       "Packaged and processed food for personal use is generally allowed within the USD 800 duty-free allowance.",
+       "Anything above the allowance must be declared and may be taxed."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "notread",
+    "label": "Not covered",
+    "status": "warn",
+    "verdict": "Ask first",
+    "head": "The guide leaves out eggs, honey and exact limits.",
+    "scen": [
+     {
+      "when": "What we could not confirm",
+      "status": "warn",
+      "tag": "Ask first",
+      "lines": [
+       "The guide gives no rule for eggs or honey and no exact quantity limit.",
+       "Lebanese Customs Administration pages could not be read, so confirm with them before you bring any food."
+      ]
+     }
+    ]
+   }
+  ],
+  "unofficial": true
+ },
+ "Panama": {
+  "checked": "14 November 2026",
+  "answer": "We could not read a food rule on Autoridad Nacional de Aduanas (ANA) pages, so this comes from a named travel customs guide (EntryBrief, last reviewed 1 October 2026), not an official page. It says fresh meat, dairy, fruit and vegetables are generally prohibited or need a permit, and that sealed packaged food is usually tolerated in small amounts if declared. Confirm with Autoridad Nacional de Aduanas (ANA) before you bring any food.",
+  "sources": [
+   [
+    "https://entrybrief.com/customs/panama/",
+    "EntryBrief — Panama customs guide (last reviewed 1 October 2026; not an official page)"
+   ]
+  ],
+  "faq": [
+   [
+    "Can I bring fresh meat, dairy, fruit or vegetables into Panama?",
+    "The guide says they are generally prohibited or need a permit. Do not pack them unless Autoridad Nacional de Aduanas (ANA) confirms otherwise."
+   ],
+   [
+    "Can I bring packaged snacks into Panama?",
+    "Packaged, non-perishable snacks such as chocolate and chips are usually allowed, but you must declare them. All food, plants, seeds and animal products must be declared; failure to declare can mean fines and confiscation."
+   ],
+   [
+    "Is this an official Panama rule?",
+    "No. It comes from a named travel customs guide, last reviewed 1 October 2026. It points to Autoridad Nacional de Aduanas (ANA) as the official source."
+   ]
+  ],
+  "topics": [
+   {
+    "id": "fresh",
+    "label": "Meat, dairy, eggs & produce",
+    "status": "stop",
+    "verdict": "Not allowed",
+    "head": "The guide says fresh food is generally prohibited or needs a permit.",
+    "scen": [
+     {
+      "when": "Fresh meat, dairy, fruit and vegetables",
+      "status": "stop",
+      "tag": "Not allowed",
+      "lines": [
+       "Fresh fruit, vegetables and plants are prohibited, and so is meat and dairy from countries with animal diseases.",
+       "The guide says even a single apple or sandwich can result in a fine and confiscation.",
+       "Do not pack them unless the authority confirms a permit or certificate."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "packaged",
+    "label": "Packaged food",
+    "status": "warn",
+    "verdict": "Declare it",
+    "head": "Sealed, packaged food is usually tolerated in small amounts.",
+    "scen": [
+     {
+      "when": "Sealed, commercially packaged snacks and food",
+      "status": "warn",
+      "tag": "Declare it",
+      "lines": [
+       "Packaged, non-perishable snacks such as chocolate and chips are usually allowed, but you must declare them.",
+       "All food, plants, seeds and animal products must be declared; failure to declare can mean fines and confiscation."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "notread",
+    "label": "Not covered",
+    "status": "warn",
+    "verdict": "Ask first",
+    "head": "The guide leaves out eggs, honey and exact limits.",
+    "scen": [
+     {
+      "when": "What we could not confirm",
+      "status": "warn",
+      "tag": "Ask first",
+      "lines": [
+       "The guide gives no rule for eggs or honey and no exact quantity limit.",
+       "Autoridad Nacional de Aduanas (ANA) pages could not be read, so confirm with them before you bring any food."
+      ]
+     }
+    ]
+   }
+  ],
+  "unofficial": true
  }
 }
