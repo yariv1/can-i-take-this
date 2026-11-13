@@ -10,6 +10,9 @@ One list, in the order to request indexing: **tier 0 first** (Google confirmed i
 
 **Finding (90 days):** no Wi-Fi page, no Compensation page, no Customer Service page and only 2 of 72 blog articles appear in the Pages report.
 
+## 2026-11-14 status (read this first)
+DEPLOY 34bada034: 6 food pages rebuilt as UNOFFICIAL (EntryBrief): food/jordan, food/oman, food/egypt, food/kuwait, food/lebanon, food/panama. Re-crawl request needed (IndexNow sent). GSC: Quota Exceeded again on the first Request indexing (guides/power-banks), 5th session in a row; nothing requested. Bing 100 was done 2026-11-13.
+
 ## 2026-11-13 status (read this first)
 BING: 100 URLs submitted (bing_submitted.txt 499, 1,676 remain). GSC: "Quota Exceeded" again on the first Request indexing (guides/power-banks, on Google), nothing requested; 4th session in a row (11-01, 11-09, 11-13). Quota seems exhausted for the property, not per day: next try after 2026-11-20; the 2026-11-09 list below is still the next order.
 
