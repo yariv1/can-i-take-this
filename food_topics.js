@@ -19,7 +19,7 @@ module.exports = {
     T("limits", "Limits & fines", "warn", "Small tax-free limits", "Tax-free limits are small, and not declaring costs more.", [
       S("Tax-free amount", "go", "Tax-free", ["Total taxable value of goods up to US$800.", "For agricultural, livestock and fishery products: up to 5 kg of each good and 40 kg in total, and up to 100,000 won of the price of all goods purchased overseas."]),
       S("If you do not declare", "stop", "You pay a fine", ["Goods above the allowance that are not declared: additional tax of 40% on top of the regular tax, 60% if it happens twice or more within 2 years.", "Voluntary declaration earns a 30% reduction of the standard customs duty.", "Prohibited items are confiscated, and you can be punished under Korean customs law."]) ]),
-    T("gaps", "Not checked", "warn", "Not checked", "What we could not read.", [
+    T("gaps", "Also check", "warn", "Ask first", "Where to confirm the rest.", [
       S("Official pages we could not open", "warn", "Ask first", ["The Animal and Plant Quarantine Agency site itself (it redirected to a Korean home page), so the current prohibited-regions list is not on this page.", "The tourism page we used says it was last updated on 8 September 2024."]) ])
   ] },
   "Norway": { slab: "What are you bringing?", topics: [
@@ -41,7 +41,7 @@ module.exports = {
       S("Children", "warn", "Age limit", ["Children may only bring soft drinks, chocolate and sugar products duty-free; other products require the traveller to be at least 12."]) ]),
     T("other", "Other animal food", "warn", "Up to 1 kg", "Animal food other than meat and milk: up to 1 kg without control.", [
       S("Food of animal origin other than meat and milk", "warn", "Up to 1 kg", ["You may bring up to 1 kg without submitting it for control."]) ]),
-    T("gaps", "Not checked", "warn", "Not checked", "What we could not read.", [
+    T("gaps", "Also check", "warn", "Ask first", "Where to confirm the rest.", [
       S("Pages we did not read", "warn", "Ask first", ["Mattilsynet's list of food products with special rules (protective measures against disease, infection and pollution), published in Norwegian."]) ])
   ] },
   "Mauritius": { slab: "What are you bringing?", topics: [
@@ -77,7 +77,7 @@ module.exports = {
     T("plants", "Plants & seeds", "stop", "Not allowed", "Seeds, live plants and fresh plant products are banned unless they meet quarantine rules.", [
       S("Seeds, live plants, fresh plant products", "stop", "Not allowed", ["Allowed only if they comply with the quarantine regulations."]),
       S("Endangered species", "warn", "Needs a permit", ["Items such as dried or sliced American ginseng need a CITES permit or certificate."]) ]),
-    T("gaps", "Not checked", "warn", "Not checked", "What we could not read.", [
+    T("gaps", "Also check", "warn", "Ask first", "Where to confirm the rest.", [
       S("Pages we did not read", "warn", "Ask first", ["The APHIA reference table of common animals and plants carried by travellers, and rules for specific foods such as cheese, milk powder or instant noodles."]) ])
   ] },
   "Iceland": { slab: "What are you bringing?", topics: [
