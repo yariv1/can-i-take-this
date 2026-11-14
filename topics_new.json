@@ -16913,63 +16913,54 @@
  },
  "Israir": {
   "vape": {
-   "answer": "We could not find a vape rule on Israir's own pages. The industry guidance airlines follow (IATA) says e-cigarettes with batteries go in carry-on baggage only, protected from accidental activation, and may not be recharged on board.",
+   "answer": "Israir says e-cigarettes and their components may not be carried in the hold. They may be carried in your hand luggage or on your person, as long as you do not use them during the flight.",
    "sections": [
     {
-     "h": "🚭 What the industry guidance says about e-cigarettes on Israir",
-     "p": "This section is from an unofficial source, not Israir's own rules: the IATA passenger guidance on lithium batteries (revised for the 2026 regulations, dated 31 March 2026). Israir's own baggage pages could not be read for this.",
+     "h": "🚭 What Israir says about e-cigarettes",
+     "p": "From the Smoking section of Israir's terms and conditions.",
      "table": {
       "head": [
        "Question",
-       "IATA guidance"
+       "Israir rule"
       ],
       "rows": [
        [
-        "Carry-on baggage",
-        "Yes: e-cigarettes, e-cigars, e-pipes and other personal vaporizers containing batteries, for personal use, must be in carry-on baggage only"
+        "Where",
+        "Hand luggage or on your person; not in the hold"
        ],
        [
-        "Checked baggage",
-        "No"
+        "Components",
+        "Same rule as the device: not in the hold"
        ],
        [
-        "Protection",
-        "Protect the device from damage and from unintentional activation"
-       ],
-       [
-        "Recharging on board",
-        "Not permitted"
-       ],
-       [
-        "If your cabin bag is checked at the gate",
-        "Remove all lithium batteries and devices first and keep them with you"
+        "Use on board",
+        "Not allowed; smoking is prohibited on all Israir flights"
        ]
       ]
      },
      "list": [
-      "<strong>Not on the page:</strong> Israir's own rule. Israir can add stricter rules, for example a ban on carrying vapes into some countries, so confirm with Israir before you fly."
+      "<strong>Not on the page:</strong> the terms do not give a device limit, a spare-battery limit or a rule on charging."
      ]
     }
    ],
    "faq": [
     [
-     "Can I take a vape on Israir?",
-     "Airlines follow the IATA rule that e-cigarettes go in carry-on baggage only, never in checked baggage. Israir's own page was not readable on this point, so confirm with the airline."
+     "Can I pack a vape in checked baggage on Israir?",
+     "No, Israir says e-cigarettes and their components may not be carried in the hold."
     ],
     [
-     "Can I recharge my vape on a Israir flight?",
-     "The IATA guidance says recharging e-cigarettes or their batteries on board is not permitted."
+     "Can I use my vape on an Israir flight?",
+     "No, Israir says e-cigarettes must not be used during the flight, and smoking is strictly prohibited on its flights."
     ]
    ],
    "sources": [
     [
-     "https://www.iata.org/contentassets/6fea26dd84d24b26a7a1fd5788561d6e/passengers_travelling_with_lithium_batteries.pdf",
-     "IATA &mdash; Passengers Travelling with Lithium Batteries (2026 guidance)"
+     "https://www.israir.co.il/en/Passengers_Info/Takanon_English",
+     "Israir &mdash; Terms and conditions, Smoking section"
     ]
    ],
    "keepSchema": true,
-   "checked": "18 October 2026",
-   "unofficial": true
+   "checked": "14 November 2026"
   },
   "liquids": {
    "answer": "We could not take a liquids rule from Israir's own pages. The rule that security checkpoints apply to cabin baggage is containers of 100 ml or less in one transparent resealable bag of at most 1 litre, according to the International Air Transport Association (IATA).",
@@ -17531,63 +17522,58 @@
  },
  "Avianca": {
   "vape": {
-   "answer": "We could not find a vape rule on Avianca's own pages. The industry guidance airlines follow (IATA) says e-cigarettes with batteries go in carry-on baggage only, protected from accidental activation, and may not be recharged on board.",
+   "answer": "Avianca says electronic cigarettes must always be carried in your carry-on baggage and may not be transported in checked baggage. The same rule applies to loose lithium batteries and power banks.",
    "sections": [
     {
-     "h": "🚭 What the industry guidance says about e-cigarettes on Avianca",
-     "p": "This section is from an unofficial source, not Avianca's own rules: the IATA passenger guidance on lithium batteries (revised for the 2026 regulations, dated 31 March 2026). An old copy of Avianca's baggage page (saved in 2019) said electronic cigarettes cannot be carried as checked baggage and may be taken as hand baggage, that use and recharging in the cabin is not permitted, and that up to 10 electronic devices may be carried; we could not confirm that on a current page.",
+     "h": "🚭 What Avianca says about e-cigarettes",
+     "p": "From the Avianca Help Center article \"What items should I carry in my carry-on baggage?\".",
      "table": {
       "head": [
        "Question",
-       "IATA guidance"
+       "Avianca rule"
       ],
       "rows": [
        [
-        "Carry-on baggage",
-        "Yes: e-cigarettes, e-cigars, e-pipes and other personal vaporizers containing batteries, for personal use, must be in carry-on baggage only"
+        "Where",
+        "Carry-on baggage only"
        ],
        [
         "Checked baggage",
-        "No"
+        "Forbidden"
        ],
        [
-        "Protection",
-        "Protect the device from damage and from unintentional activation"
+        "Loose lithium batteries",
+        "Also carry-on only"
        ],
        [
-        "Recharging on board",
-        "Not permitted"
-       ],
-       [
-        "If your cabin bag is checked at the gate",
-        "Remove all lithium batteries and devices first and keep them with you"
+        "Power banks",
+        "Carry-on only, maximum 2, each up to 100 Wh, not in the overhead compartment, not charged from the aircraft power ports"
        ]
       ]
      },
      "list": [
-      "<strong>Not on the page:</strong> Avianca's own rule. Avianca can add stricter rules, for example a ban on carrying vapes into some countries, so confirm with Avianca before you fly."
+      "<strong>Not on the page:</strong> the page does not say whether you may use an e-cigarette on board, and gives no device limit."
      ]
     }
    ],
    "faq": [
     [
-     "Can I take a vape on Avianca?",
-     "Airlines follow the IATA rule that e-cigarettes go in carry-on baggage only, never in checked baggage. Avianca's own page was not readable on this point, so confirm with the airline."
+     "Can I pack a vape in checked baggage on Avianca?",
+     "No, Avianca says electronic cigarettes must always be carried in carry-on baggage and may not be transported in checked baggage."
     ],
     [
-     "Can I recharge my vape on a Avianca flight?",
-     "The IATA guidance says recharging e-cigarettes or their batteries on board is not permitted."
+     "How many power banks can I take on Avianca?",
+     "Avianca allows a maximum of 2 power banks, each up to 100 Wh, carried with you in the cabin."
     ]
    ],
    "sources": [
     [
-     "https://www.iata.org/contentassets/6fea26dd84d24b26a7a1fd5788561d6e/passengers_travelling_with_lithium_batteries.pdf",
-     "IATA &mdash; Passengers Travelling with Lithium Batteries (2026 guidance)"
+     "https://ayuda.avianca.com/hc/en-us/articles/13522878045467-What-items-should-I-carry-in-my-carry-on-baggage",
+     "Avianca &mdash; What items should I carry in my carry-on baggage?"
     ]
    ],
    "keepSchema": true,
-   "checked": "18 October 2026",
-   "unofficial": true
+   "checked": "14 November 2026"
   },
   "liquids": {
    "answer": "Avianca allows liquids in carry-on baggage in containers of no more than 100 ml, packed in a transparent plastic bag with a seal or zipper that holds up to 1 litre.",
