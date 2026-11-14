@@ -4142,63 +4142,54 @@
    "checked": "18 October 2026"
   },
   "vape": {
-   "answer": "We could not find a vape rule on LATAM's own pages. The industry guidance airlines follow (IATA) says e-cigarettes with batteries go in carry-on baggage only, protected from accidental activation, and may not be recharged on board.",
+   "answer": "LATAM says electronic cigarettes are allowed in the cabin, except on international flights to Brazil. They are prohibited in checked baggage on every route.",
    "sections": [
     {
-     "h": "🚭 What the industry guidance says about e-cigarettes on LATAM",
-     "p": "This section is from an unofficial source, not LATAM's own rules: the IATA passenger guidance on lithium batteries (revised for the 2026 regulations, dated 31 March 2026). LATAM's help pages on restricted items could not be read for this.",
+     "h": "🚭 What LATAM says about e-cigarettes",
+     "p": "From the LATAM Help Center article \"Can I bring cigarettes in my baggage?\", section Electronic cigarettes.",
      "table": {
       "head": [
        "Question",
-       "IATA guidance"
+       "LATAM rule"
       ],
       "rows": [
        [
-        "Carry-on baggage",
-        "Yes: e-cigarettes, e-cigars, e-pipes and other personal vaporizers containing batteries, for personal use, must be in carry-on baggage only"
+        "In the cabin",
+        "Allowed, except on international flights to Brazil"
+       ],
+       [
+        "Flights to Brazil (international)",
+        "Not allowed in the cabin"
        ],
        [
         "Checked baggage",
-        "No"
-       ],
-       [
-        "Protection",
-        "Protect the device from damage and from unintentional activation"
-       ],
-       [
-        "Recharging on board",
-        "Not permitted"
-       ],
-       [
-        "If your cabin bag is checked at the gate",
-        "Remove all lithium batteries and devices first and keep them with you"
+        "Prohibited, for all countries"
        ]
       ]
      },
      "list": [
-      "<strong>Not on the page:</strong> LATAM's own rule. LATAM can add stricter rules, for example a ban on carrying vapes into some countries, so confirm with LATAM before you fly."
+      "<strong>Not on the page:</strong> the page gives no device limit and no rule on use or charging on board."
      ]
     }
    ],
    "faq": [
     [
-     "Can I take a vape on LATAM?",
-     "Airlines follow the IATA rule that e-cigarettes go in carry-on baggage only, never in checked baggage. LATAM's own page was not readable on this point, so confirm with the airline."
+     "Can I pack a vape in checked baggage on LATAM?",
+     "No, LATAM says electronic cigarettes are prohibited in checked baggage for all countries."
     ],
     [
-     "Can I recharge my vape on a LATAM flight?",
-     "The IATA guidance says recharging e-cigarettes or their batteries on board is not permitted."
+     "Can I take a vape in the cabin on a LATAM flight to Brazil?",
+     "Not on international flights to Brazil. LATAM allows electronic cigarettes in the cabin on its other flights."
     ]
    ],
    "sources": [
     [
-     "https://www.iata.org/contentassets/6fea26dd84d24b26a7a1fd5788561d6e/passengers_travelling_with_lithium_batteries.pdf",
-     "IATA &mdash; Passengers Travelling with Lithium Batteries (2026 guidance)"
+     "https://www.latamairlines.com/es/en/help-center/faq/baggage/restricted-articles/cigarettes",
+     "LATAM &mdash; Can I bring cigarettes in my baggage?"
     ]
    ],
    "keepSchema": true,
-   "checked": "18 October 2026",
-   "unofficial": true
+   "checked": "14 November 2026"
   },
   "liquids": {
    "answer": "On international flights LATAM allows liquids, aerosols, gels and creams in cabin baggage in containers of at most 100 ml, in one transparent plastic bag of at most 1 litre with a resealable closure that shows the contents, one bag per passenger.",
@@ -13823,62 +13814,50 @@
  },
  "Royal Air Maroc": {
   "vape": {
-   "answer": "We could not find a vape rule on Royal Air Maroc's own pages. The industry guidance airlines follow (IATA) says e-cigarettes with batteries go in carry-on baggage only, protected from accidental activation, and may not be recharged on board.",
+   "answer": "We could not read Royal Air Maroc's own vape rule. The Moroccan newspaper L'Economiste reported in February 2016 that RAM reminded customers that electronic devices with lithium-ion batteries, e-cigarettes included, must be carried in cabin baggage.",
    "sections": [
     {
-     "h": "🚭 What the industry guidance says about e-cigarettes on Royal Air Maroc",
-     "p": "This section is from an unofficial source, not Royal Air Maroc's own rules: the IATA passenger guidance on lithium batteries (revised for the 2026 regulations, dated 31 March 2026). Royal Air Maroc's carry-on baggage page (read in a copy saved on 21 July 2026) does not name e-cigarettes.",
+     "h": "🚭 What L'Economiste reported RAM said about e-cigarettes",
+     "p": "From a L'Economiste article of 29 February 2016. This is an unofficial source and it is old, so the rule may have changed.",
      "table": {
       "head": [
        "Question",
-       "IATA guidance"
+       "Royal Air Maroc (as reported)"
       ],
       "rows": [
        [
-        "Carry-on baggage",
-        "Yes: e-cigarettes, e-cigars, e-pipes and other personal vaporizers containing batteries, for personal use, must be in carry-on baggage only"
+        "Where",
+        "In hand luggage in the cabin"
        ],
        [
-        "Checked baggage",
-        "No"
+        "Devices named",
+        "Laptops, smartphones, e-cigarettes, portable medical devices and other equipment with lithium-ion batteries"
        ],
        [
-        "Protection",
-        "Protect the device from damage and from unintentional activation"
-       ],
-       [
-        "Recharging on board",
-        "Not permitted"
-       ],
-       [
-        "If your cabin bag is checked at the gate",
-        "Remove all lithium batteries and devices first and keep them with you"
+        "Why",
+        "Lithium-ion batteries are not carried in the hold; RAM said it already applied this before the ICAO date of 1 April 2016"
        ]
       ]
      },
      "list": [
-      "<strong>Not on the page:</strong> Royal Air Maroc's own rule. Royal Air Maroc can add stricter rules, for example a ban on carrying vapes into some countries, so confirm with Royal Air Maroc before you fly."
+      "<strong>Not on the page:</strong> the article is from 2016 and says nothing about use, charging or a device limit."
      ]
     }
    ],
    "faq": [
     [
-     "Can I take a vape on Royal Air Maroc?",
-     "Airlines follow the IATA rule that e-cigarettes go in carry-on baggage only, never in checked baggage. Royal Air Maroc's own page was not readable on this point, so confirm with the airline."
-    ],
-    [
-     "Can I recharge my vape on a Royal Air Maroc flight?",
-     "The IATA guidance says recharging e-cigarettes or their batteries on board is not permitted."
+     "Can I pack a vape in checked baggage on Royal Air Maroc?",
+     "L'Economiste reported in 2016 that RAM said e-cigarettes must be carried in the cabin, not in the hold. We could not read RAM's own page, so confirm with the airline."
     ]
    ],
    "sources": [
     [
-     "https://www.iata.org/contentassets/6fea26dd84d24b26a7a1fd5788561d6e/passengers_travelling_with_lithium_batteries.pdf",
-     "IATA &mdash; Passengers Travelling with Lithium Batteries (2026 guidance)"
+     "https://www.leconomiste.com/flash-infos/ram-precisions-sur-les-interdictions-en-soute/",
+     "L'Economiste &mdash; RAM: precisions on hold baggage bans (29 February 2016)"
     ]
    ],
    "keepSchema": true,
-   "checked": "18 October 2026",
+   "checked": "14 November 2026",
    "unofficial": true
   },
   "liquids": {
@@ -14136,63 +14115,66 @@
  },
  "China Southern": {
   "vape": {
-   "answer": "We could not find a vape rule on China Southern's own pages. The industry guidance airlines follow (IATA) says e-cigarettes with batteries go in carry-on baggage only, protected from accidental activation, and may not be recharged on board.",
+   "answer": "China Southern's battery pages do not name e-cigarettes. They say backup batteries and power banks go in carry-on baggage, not checked baggage, and that power banks must stay switched off and may not be charged or used to charge devices on board.",
    "sections": [
     {
-     "h": "🚭 What the industry guidance says about e-cigarettes on China Southern",
-     "p": "This section is from an unofficial source, not China Southern's own rules: the IATA passenger guidance on lithium batteries (revised for the 2026 regulations, dated 31 March 2026). China Southern's carry-on baggage FAQ (read in a copy saved on 20 August 2026) does not name e-cigarettes.",
+     "h": "🚭 What China Southern says about e-cigarettes",
+     "p": "From the Batteries page of China Southern Airlines. Vapes are not named on it.",
      "table": {
       "head": [
        "Question",
-       "IATA guidance"
+       "China Southern rule"
       ],
       "rows": [
        [
-        "Carry-on baggage",
-        "Yes: e-cigarettes, e-cigars, e-pipes and other personal vaporizers containing batteries, for personal use, must be in carry-on baggage only"
+        "Backup batteries and power banks",
+        "Carry-on baggage only, not checked"
        ],
        [
-        "Checked baggage",
-        "No"
+        "Power banks on board",
+        "Switched off for the whole flight; no charging devices from them, no charging them"
        ],
        [
-        "Protection",
-        "Protect the device from damage and from unintentional activation"
+        "Devices and spare batteries up to 100 Wh",
+        "No declaration needed; at most 15 devices and 20 backup batteries per passenger, carry-on only"
        ],
        [
-        "Recharging on board",
-        "Not permitted"
+        "Above 160 Wh",
+        "Prohibited"
        ],
        [
-        "If your cabin bag is checked at the gate",
-        "Remove all lithium batteries and devices first and keep them with you"
+        "Damaged, recalled or unlabelled batteries",
+        "Prohibited"
        ]
       ]
      },
      "list": [
-      "<strong>Not on the page:</strong> China Southern's own rule. China Southern can add stricter rules, for example a ban on carrying vapes into some countries, so confirm with China Southern before you fly."
+      "<strong>Not on the page:</strong> e-cigarettes and vapes are not named, so the battery rules above are the closest rules on China Southern's own pages."
      ]
     }
    ],
    "faq": [
     [
-     "Can I take a vape on China Southern?",
-     "Airlines follow the IATA rule that e-cigarettes go in carry-on baggage only, never in checked baggage. China Southern's own page was not readable on this point, so confirm with the airline."
+     "Can I pack spare vape batteries in checked baggage on China Southern?",
+     "No, China Southern says backup batteries and power banks must be in carry-on baggage, not checked baggage."
     ],
     [
-     "Can I recharge my vape on a China Southern flight?",
-     "The IATA guidance says recharging e-cigarettes or their batteries on board is not permitted."
+     "How many spare batteries can I carry on China Southern?",
+     "Up to 20 backup batteries of no more than 100 Wh per passenger, carry-on only, according to the airline's battery page."
     ]
    ],
    "sources": [
     [
-     "https://www.iata.org/contentassets/6fea26dd84d24b26a7a1fd5788561d6e/passengers_travelling_with_lithium_batteries.pdf",
-     "IATA &mdash; Passengers Travelling with Lithium Batteries (2026 guidance)"
+     "https://www.csair.com/newh5/en/tourguide/luggage_service/carryon_luggage/lithium_battery/",
+     "China Southern &mdash; Batteries"
+    ],
+    [
+     "https://www.csair.com/newh5/en/tourguide/booking/orders/order/battery/",
+     "China Southern &mdash; Safety tips for transporting lithium batteries"
     ]
    ],
    "keepSchema": true,
-   "checked": "18 October 2026",
-   "unofficial": true
+   "checked": "14 November 2026"
   },
   "liquids": {
    "answer": "China Southern allows liquids, gels and aerosols in the cabin only in containers of a maximum of 100 ml, in one resealable transparent bag of at most 1 litre per passenger.",
@@ -14449,63 +14431,46 @@
  },
  "Air China": {
   "vape": {
-   "answer": "We could not find a vape rule on Air China's own pages. The industry guidance airlines follow (IATA) says e-cigarettes with batteries go in carry-on baggage only, protected from accidental activation, and may not be recharged on board.",
+   "answer": "Air China's passenger guidelines say smoking is banned on all its flights and in all areas on board, and that e-cigarettes and synthetic vapor smoking devices are also prohibited. Smoking, electronic cigarettes included, is listed as disruptive behaviour on board.",
    "sections": [
     {
-     "h": "🚭 What the industry guidance says about e-cigarettes on Air China",
-     "p": "This section is from an unofficial source, not Air China's own rules: the IATA passenger guidance on lithium batteries (revised for the 2026 regulations, dated 31 March 2026). Air China's checked baggage restrictions page (the copy we could read is from 2 October 2023) does not name e-cigarettes.",
+     "h": "🚭 What Air China says about e-cigarettes",
+     "p": "From Air China's Passengers Guidelines (conditions of carriage), section 4.5.3 Smoking ban on flights.",
      "table": {
       "head": [
        "Question",
-       "IATA guidance"
+       "Air China rule"
       ],
       "rows": [
        [
-        "Carry-on baggage",
-        "Yes: e-cigarettes, e-cigars, e-pipes and other personal vaporizers containing batteries, for personal use, must be in carry-on baggage only"
+        "Use on board",
+        "Prohibited: smoking, e-cigarettes and synthetic vapor smoking devices"
        ],
        [
-        "Checked baggage",
-        "No"
-       ],
-       [
-        "Protection",
-        "Protect the device from damage and from unintentional activation"
-       ],
-       [
-        "Recharging on board",
-        "Not permitted"
-       ],
-       [
-        "If your cabin bag is checked at the gate",
-        "Remove all lithium batteries and devices first and keep them with you"
+        "Smoking on board, e-cigarettes included",
+        "Listed as disruptive behaviour"
        ]
       ]
      },
      "list": [
-      "<strong>Not on the page:</strong> Air China's own rule. Air China can add stricter rules, for example a ban on carrying vapes into some countries, so confirm with Air China before you fly."
+      "<strong>Not on the page:</strong> these pages do not say whether e-cigarettes go in carry-on or checked baggage, and give no device or battery limit."
      ]
     }
    ],
    "faq": [
     [
-     "Can I take a vape on Air China?",
-     "Airlines follow the IATA rule that e-cigarettes go in carry-on baggage only, never in checked baggage. Air China's own page was not readable on this point, so confirm with the airline."
-    ],
-    [
-     "Can I recharge my vape on a Air China flight?",
-     "The IATA guidance says recharging e-cigarettes or their batteries on board is not permitted."
+     "Can I use my vape on an Air China flight?",
+     "No, Air China says smoking is banned in all areas on board and that e-cigarettes and synthetic vapor smoking devices are also prohibited."
     ]
    ],
    "sources": [
     [
-     "https://www.iata.org/contentassets/6fea26dd84d24b26a7a1fd5788561d6e/passengers_travelling_with_lithium_batteries.pdf",
-     "IATA &mdash; Passengers Travelling with Lithium Batteries (2026 guidance)"
+     "https://m.airchina.com.cn/c/invoke/readPop@pgenus?type=&ffMap=undefined",
+     "Air China &mdash; Passengers Guidelines"
     ]
    ],
    "keepSchema": true,
-   "checked": "18 October 2026",
-   "unofficial": true
+   "checked": "14 November 2026"
   },
   "liquids": {
    "answer": "We could not take a liquids rule from Air China's own pages. The rule that security checkpoints apply to cabin baggage is containers of 100 ml or less in one transparent resealable bag of at most 1 litre, according to the International Air Transport Association (IATA).",
@@ -14758,63 +14723,54 @@
  },
  "Icelandair": {
   "vape": {
-   "answer": "We could not find a vape rule on Icelandair's own pages. The industry guidance airlines follow (IATA) says e-cigarettes with batteries go in carry-on baggage only, protected from accidental activation, and may not be recharged on board.",
+   "answer": "Icelandair's baggage restrictions page lists e-cigarettes and vaping devices with the electronics it recommends packing in your personal item. It says spare batteries can only go in carry-on baggage, and it limits power banks to 2 per passenger, 100 Wh each, carry-on only.",
    "sections": [
     {
-     "h": "🚭 What the industry guidance says about e-cigarettes on Icelandair",
-     "p": "This section is from an unofficial source, not Icelandair's own rules: the IATA passenger guidance on lithium batteries (revised for the 2026 regulations, dated 31 March 2026). Icelandair's baggage restrictions page (read in a copy saved on 15 January 2026) does not name e-cigarettes.",
+     "h": "🚭 What Icelandair says about e-cigarettes",
+     "p": "From the Icelandair page \"Baggage restrictions\", carry-on section.",
      "table": {
       "head": [
        "Question",
-       "IATA guidance"
+       "Icelandair rule"
       ],
       "rows": [
        [
-        "Carry-on baggage",
-        "Yes: e-cigarettes, e-cigars, e-pipes and other personal vaporizers containing batteries, for personal use, must be in carry-on baggage only"
+        "E-cigarettes and vaping devices",
+        "Listed with electronics to pack in your personal item"
        ],
        [
-        "Checked baggage",
-        "No"
+        "Spare and loose batteries",
+        "Carry-on baggage only, under the seat in front or in the seat pocket, not in the overhead lockers"
        ],
        [
-        "Protection",
-        "Protect the device from damage and from unintentional activation"
-       ],
-       [
-        "Recharging on board",
-        "Not permitted"
-       ],
-       [
-        "If your cabin bag is checked at the gate",
-        "Remove all lithium batteries and devices first and keep them with you"
+        "Power banks",
+        "Maximum 2 per passenger, up to 100 Wh each, carry-on only, not charged on board, not in the overhead lockers"
        ]
       ]
      },
      "list": [
-      "<strong>Not on the page:</strong> Icelandair's own rule. Icelandair can add stricter rules, for example a ban on carrying vapes into some countries, so confirm with Icelandair before you fly."
+      "<strong>Not on the page:</strong> the page does not state a rule on using vapes on board or a checked-baggage ban for the devices themselves."
      ]
     }
    ],
    "faq": [
     [
-     "Can I take a vape on Icelandair?",
-     "Airlines follow the IATA rule that e-cigarettes go in carry-on baggage only, never in checked baggage. Icelandair's own page was not readable on this point, so confirm with the airline."
+     "Where do I pack a vape on Icelandair?",
+     "Icelandair lists e-cigarettes and vaping devices with the electronics it recommends packing in your personal item."
     ],
     [
-     "Can I recharge my vape on a Icelandair flight?",
-     "The IATA guidance says recharging e-cigarettes or their batteries on board is not permitted."
+     "Can I take spare vape batteries on Icelandair?",
+     "Spare batteries can only be transported in carry-on baggage, placed under the seat in front or in the seat pocket and not in the overhead lockers."
     ]
    ],
    "sources": [
     [
-     "https://www.iata.org/contentassets/6fea26dd84d24b26a7a1fd5788561d6e/passengers_travelling_with_lithium_batteries.pdf",
-     "IATA &mdash; Passengers Travelling with Lithium Batteries (2026 guidance)"
+     "https://icelandair.us/support/baggage/restrictions/",
+     "Icelandair &mdash; Baggage restrictions"
     ]
    ],
    "keepSchema": true,
-   "checked": "18 October 2026",
-   "unofficial": true
+   "checked": "14 November 2026"
   },
   "liquids": {
    "answer": "Icelandair allows liquids, gels and aerosols in containers up to 100 ml (3 oz) each, with a total limit of 1 litre (1 quart), in generally one clear resealable bag.",
@@ -15677,62 +15633,54 @@
  },
  "GOL": {
   "vape": {
-   "answer": "We could not find a vape rule on GOL's own pages. The industry guidance airlines follow (IATA) says e-cigarettes with batteries go in carry-on baggage only, protected from accidental activation, and may not be recharged on board.",
+   "answer": "We could not read GOL's own vape rule. The trade news site Panrotas reported in July 2024 that, under the Brazilian aviation regulator's rule, electronic smoking devices for personal use can be carried in hand luggage on domestic flights, but not in hand luggage on international flights to Brazil, even for personal use.",
    "sections": [
     {
-     "h": "🚭 What the industry guidance says about e-cigarettes on GOL",
-     "p": "This section is from an unofficial source, not GOL's own rules: the IATA passenger guidance on lithium batteries (revised for the 2026 regulations, dated 31 March 2026). GOL's carry-on baggage page could not be read for this.",
+     "h": "🚭 What Panrotas reported about e-cigarettes on flights in Brazil",
+     "p": "From a Panrotas article published on 22 July 2024. It does not name GOL, so this is an unofficial source and the rule may have changed since.",
      "table": {
       "head": [
        "Question",
-       "IATA guidance"
+       "GOL (as reported)"
       ],
       "rows": [
        [
-        "Carry-on baggage",
-        "Yes: e-cigarettes, e-cigars, e-pipes and other personal vaporizers containing batteries, for personal use, must be in carry-on baggage only"
+        "Domestic flights",
+        "Hand luggage allowed, for personal use"
+       ],
+       [
+        "International flights to Brazil",
+        "Not allowed in hand luggage, even for personal use"
        ],
        [
         "Checked baggage",
-        "No"
-       ],
-       [
-        "Protection",
-        "Protect the device from damage and from unintentional activation"
-       ],
-       [
-        "Recharging on board",
-        "Not permitted"
-       ],
-       [
-        "If your cabin bag is checked at the gate",
-        "Remove all lithium batteries and devices first and keep them with you"
+        "Not covered by the article"
        ]
       ]
      },
      "list": [
-      "<strong>Not on the page:</strong> GOL's own rule. GOL can add stricter rules, for example a ban on carrying vapes into some countries, so confirm with GOL before you fly."
+      "<strong>Not on the page:</strong> the article does not name GOL and does not say anything about checked baggage, use or charging."
      ]
     }
    ],
    "faq": [
     [
-     "Can I take a vape on GOL?",
-     "Airlines follow the IATA rule that e-cigarettes go in carry-on baggage only, never in checked baggage. GOL's own page was not readable on this point, so confirm with the airline."
+     "Can I take a vape in hand luggage on a GOL domestic flight?",
+     "Panrotas reported in July 2024 that personal-use electronic smoking devices can be carried as hand luggage on domestic flights in Brazil. We could not read GOL's own page, so confirm with the airline."
     ],
     [
-     "Can I recharge my vape on a GOL flight?",
-     "The IATA guidance says recharging e-cigarettes or their batteries on board is not permitted."
+     "Can I take a vape on an international flight to Brazil?",
+     "Panrotas reported that it cannot be carried in hand luggage on international flights to Brazil, even for personal use."
     ]
    ],
    "sources": [
     [
-     "https://www.iata.org/contentassets/6fea26dd84d24b26a7a1fd5788561d6e/passengers_travelling_with_lithium_batteries.pdf",
-     "IATA &mdash; Passengers Travelling with Lithium Batteries (2026 guidance)"
+     "https://www.panrotas.com.br/aviacao/empresas/2024/07/anac-proibe-transporte-de-vape-em-voos-internacionais-e-libera-no-domestico_207418.html",
+     "Panrotas &mdash; ANAC prohibits vape on international flights and allows it on domestic flights (22 July 2024)"
     ]
    ],
    "keepSchema": true,
-   "checked": "18 October 2026",
+   "checked": "14 November 2026",
    "unofficial": true
   },
   "liquids": {
@@ -15986,62 +15934,54 @@
  },
  "Aeromexico": {
   "vape": {
-   "answer": "We could not find a vape rule on Aeromexico's own pages. The industry guidance airlines follow (IATA) says e-cigarettes with batteries go in carry-on baggage only, protected from accidental activation, and may not be recharged on board.",
+   "answer": "We could not read Aeromexico's own vape rule. The Mexican news site UnoTV, in a list of permitted and prohibited items from July 2025, says one e-cigarette or vape is allowed in hand luggage, not in checked baggage, switched off and not used on board.",
    "sections": [
     {
-     "h": "🚭 What the industry guidance says about e-cigarettes on Aeromexico",
-     "p": "This section is from an unofficial source, not Aeromexico's own rules: the IATA passenger guidance on lithium batteries (revised for the 2026 regulations, dated 31 March 2026). Aeromexico's baggage pages could not be read for this.",
+     "h": "🚭 What UnoTV reported about e-cigarettes",
+     "p": "From the UnoTV article \"Artículos prohibidos y permitidos al viajar en avión\" (30 July 2025), which credits the Secretaría de Marina and Mexico City airport for its warnings. It does not name Aeromexico.",
      "table": {
       "head": [
        "Question",
-       "IATA guidance"
+       "UnoTV list"
       ],
       "rows": [
        [
-        "Carry-on baggage",
-        "Yes: e-cigarettes, e-cigars, e-pipes and other personal vaporizers containing batteries, for personal use, must be in carry-on baggage only"
+        "Hand luggage",
+        "One device allowed"
        ],
        [
         "Checked baggage",
-        "No"
+        "Not allowed"
        ],
        [
-        "Protection",
-        "Protect the device from damage and from unintentional activation"
-       ],
-       [
-        "Recharging on board",
-        "Not permitted"
-       ],
-       [
-        "If your cabin bag is checked at the gate",
-        "Remove all lithium batteries and devices first and keep them with you"
+        "Condition",
+        "Switched off, not used on board"
        ]
       ]
      },
      "list": [
-      "<strong>Not on the page:</strong> Aeromexico's own rule. Aeromexico can add stricter rules, for example a ban on carrying vapes into some countries, so confirm with Aeromexico before you fly."
+      "<strong>Not on the page:</strong> the article does not name Aeromexico, and the airline may be stricter."
      ]
     }
    ],
    "faq": [
     [
-     "Can I take a vape on Aeromexico?",
-     "Airlines follow the IATA rule that e-cigarettes go in carry-on baggage only, never in checked baggage. Aeromexico's own page was not readable on this point, so confirm with the airline."
+     "Can I pack a vape in checked baggage on Aeromexico?",
+     "UnoTV's July 2025 list says e-cigarettes and vapes are not allowed in checked baggage. We could not read Aeromexico's own page, so confirm with the airline."
     ],
     [
-     "Can I recharge my vape on a Aeromexico flight?",
-     "The IATA guidance says recharging e-cigarettes or their batteries on board is not permitted."
+     "Can I use my vape on board?",
+     "The same list says the device must be switched off and not used on board."
     ]
    ],
    "sources": [
     [
-     "https://www.iata.org/contentassets/6fea26dd84d24b26a7a1fd5788561d6e/passengers_travelling_with_lithium_batteries.pdf",
-     "IATA &mdash; Passengers Travelling with Lithium Batteries (2026 guidance)"
+     "https://www.unotv.com/turismo/articulos-prohibidos-y-permitidos-al-viajar-en-avion/",
+     "UnoTV &mdash; Prohibited and permitted items when flying (30 July 2025)"
     ]
    ],
    "keepSchema": true,
-   "checked": "18 October 2026",
+   "checked": "14 November 2026",
    "unofficial": true
   },
   "liquids": {
@@ -16295,63 +16235,74 @@
  },
  "El Al": {
   "vape": {
-   "answer": "We could not find a vape rule on El Al's own pages. The industry guidance airlines follow (IATA) says e-cigarettes with batteries go in carry-on baggage only, protected from accidental activation, and may not be recharged on board.",
+   "answer": "El Al's battery allowance table says e-cigarettes containing batteries are allowed in carry-on baggage, in the device only. Spare batteries and checked baggage are not allowed. You may not use or charge the device during the flight, and it must be protected from accidental activation.",
    "sections": [
     {
-     "h": "🚭 What the industry guidance says about e-cigarettes on El Al",
-     "p": "This section is from an unofficial source, not El Al's own rules: the IATA passenger guidance on lithium batteries (revised for the 2026 regulations, dated 31 March 2026). El Al's own battery document we found is a PDF from 2019 that could not be read.",
+     "h": "🚭 What El Al says about e-cigarettes",
+     "p": "From the table \"Batteries allowance table in El Al passengers' baggage\", item 7, e-cigarettes containing batteries.",
      "table": {
       "head": [
        "Question",
-       "IATA guidance"
+       "El Al rule"
       ],
       "rows": [
        [
         "Carry-on baggage",
-        "Yes: e-cigarettes, e-cigars, e-pipes and other personal vaporizers containing batteries, for personal use, must be in carry-on baggage only"
+        "Yes, the device itself"
        ],
        [
-        "Checked baggage",
+        "Spare batteries in carry-on",
         "No"
        ],
        [
+        "Checked baggage",
+        "No, neither the device nor spares"
+       ],
+       [
+        "Airline approval",
+        "Not required"
+       ],
+       [
+        "Use or charging during the flight",
+        "Not allowed"
+       ],
+       [
         "Protection",
-        "Protect the device from damage and from unintentional activation"
+        "Protect against accidental activation"
        ],
        [
-        "Recharging on board",
-        "Not permitted"
-       ],
-       [
-        "If your cabin bag is checked at the gate",
-        "Remove all lithium batteries and devices first and keep them with you"
+        "Where to keep it",
+        "On you or within easy reach"
        ]
       ]
      },
      "list": [
-      "<strong>Not on the page:</strong> El Al's own rule. El Al can add stricter rules, for example a ban on carrying vapes into some countries, so confirm with El Al before you fly."
+      "<strong>Not on the page:</strong> the table gives no limit on the number of devices."
      ]
     }
    ],
    "faq": [
     [
-     "Can I take a vape on El Al?",
-     "Airlines follow the IATA rule that e-cigarettes go in carry-on baggage only, never in checked baggage. El Al's own page was not readable on this point, so confirm with the airline."
+     "Can I pack a vape in checked baggage on El Al?",
+     "No, El Al's battery table says no for checked baggage, both for the device and for spare batteries."
     ],
     [
-     "Can I recharge my vape on a El Al flight?",
-     "The IATA guidance says recharging e-cigarettes or their batteries on board is not permitted."
+     "Can I bring spare vape batteries on El Al?",
+     "No, El Al's table says no for spare batteries of e-cigarettes in carry-on and in checked baggage."
+    ],
+    [
+     "Can I use or charge my vape on an El Al flight?",
+     "No, El Al says it is not allowed to use or charge the device during the flight."
     ]
    ],
    "sources": [
     [
-     "https://www.iata.org/contentassets/6fea26dd84d24b26a7a1fd5788561d6e/passengers_travelling_with_lithium_batteries.pdf",
-     "IATA &mdash; Passengers Travelling with Lithium Batteries (2026 guidance)"
+     "https://www.elal.com/media/d3shhvoe/batteries-en.pdf",
+     "El Al &mdash; Batteries allowance table in El Al passengers' baggage"
     ]
    ],
    "keepSchema": true,
-   "checked": "18 October 2026",
-   "unofficial": true
+   "checked": "14 November 2026"
   },
   "liquids": {
    "answer": "We could not take a liquids rule from El Al's own pages. The rule that security checkpoints apply to cabin baggage is containers of 100 ml or less in one transparent resealable bag of at most 1 litre, according to the International Air Transport Association (IATA).",
