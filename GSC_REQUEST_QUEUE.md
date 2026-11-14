@@ -11,6 +11,7 @@ One list, in the order to request indexing: **tier 0 first** (Google confirmed i
 **Finding (90 days):** no Wi-Fi page, no Compensation page, no Customer Service page and only 2 of 72 blog articles appear in the Pages report.
 
 ## 2026-11-14 status (read this first)
+DEPLOY 625b744f1: /airline/israir/vape-e-cigarette/ and /airline/avianca/vape-e-cigarette/ rewritten from each airline own page. Re-crawl request needed; IndexNow sent.
 DEPLOY (Southwest vape page): /airline/southwest/vape-e-cigarette/ rewritten from the Southwest battery article (2 devices, no use/charging, 20 spares). Re-crawl request needed; IndexNow sent.
 DEPLOY b5bd4a01f: /guides/vapes/ rewritten (top Bing AI citation, 59). Re-crawl request needed first in GSC when quota allows (IndexNow sent, 200).
 DEPLOY ab907df69: 17 food pages rewritten (distinct text): food/greece, lithuania, luxembourg, malta, slovakia, slovenia, estonia, denmark, cyprus, bulgaria, kenya, jordan, oman, egypt, kuwait, lebanon, panama. Add to the re-crawl list (IndexNow sent).
