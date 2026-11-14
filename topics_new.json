@@ -6212,11 +6212,11 @@
  },
  "Southwest": {
   "vape": {
-   "answer": "Southwest says e-cigarettes, vaporizers, power banks, external chargers and spare lithium batteries are prohibited in checked baggage, so they have to travel in carry-on baggage.",
+   "answer": "Southwest puts e-cigarettes and vapes in carry-on baggage only, never checked. Its own battery article also bans using or charging them on board and limits you to two devices per passenger.",
    "sections": [
     {
-     "h": "🚭 What Southwest says about e-cigarettes",
-     "p": "From the Southwest help article \"What do I need to know about hazardous materials?\".",
+     "h": "🚭 What Southwest says about vapes and e-cigarettes",
+     "p": "From the Southwest help article \"Traveling with Lithium Batteries, Chargers, E-Cigs & Lighters\", section on battery-powered electronic smoking devices.",
      "table": {
       "head": [
        "Question",
@@ -6224,42 +6224,74 @@
       ],
       "rows": [
        [
-        "Checked baggage",
-        "E-cigarettes and vaporizers are prohibited"
+        "Where can it go",
+        "Carry-on only. E-cigarettes are not allowed in checked luggage"
        ],
        [
-        "Carry-on baggage",
-        "The article lists them with items that must travel in carry-on baggage"
+        "How many devices",
+        "No more than two devices per passenger"
        ],
        [
-        "Same rule",
-        "Applies to power banks, external chargers and spare lithium batteries"
+        "Use on board",
+        "Not allowed"
+       ],
+       [
+        "Charging on board",
+        "Not allowed, for the device or its batteries"
+       ],
+       [
+        "What counts",
+        "E-cigarettes, e-cigars, e-pipes, e-hookahs, personal vaporizers and vapes"
+       ],
+       [
+        "Spare batteries",
+        "Up to 20 spares, carried in the cabin or on your person with the terminals protected against short circuits"
+       ],
+       [
+        "Power bank",
+        "One per passenger from 20 April 2026, 100 Wh at most, under the seat in front rather than the overhead bin, and not charged from the seat power"
+       ],
+       [
+        "Other countries",
+        "Southwest says e-cigarette rules vary by country and tells you to check each country's official government site"
        ]
       ]
      },
      "list": [
-      "<strong>Not on the page:</strong> the article does not say whether you may use or charge a vape on board."
+      "<strong>Not on the page:</strong> the article does not say what happens to a third device at the gate. Partner airlines can have different rules."
      ]
     }
    ],
    "faq": [
     [
      "Can I pack a vape in checked baggage on Southwest?",
-     "No, Southwest lists e-cigarettes and vaporizers as prohibited in checked baggage."
+     "No. Southwest allows e-cigarettes and vapes in carry-on only and lists them as not allowed in checked luggage."
     ],
     [
-     "Where should my vape go on Southwest?",
-     "In your carry-on baggage."
+     "How many vapes can I bring on Southwest?",
+     "Two devices per passenger, according to the Southwest help article."
+    ],
+    [
+     "Can I vape or charge my e-cigarette on a Southwest flight?",
+     "No. Southwest does not allow using or charging the device or its batteries on board."
+    ],
+    [
+     "How many spare vape batteries can I take on Southwest?",
+     "Up to 20 spare batteries, in the cabin or on your person, with the terminals protected against short circuits."
     ]
    ],
    "sources": [
+    [
+     "https://support.southwest.com/helpcenter/article/Traveling-with-lithium-batteries-e-cigarettes-and-lighters",
+     "Southwest &mdash; Lithium batteries, e-cigarettes and lighters"
+    ],
     [
      "https://support.southwest.com/helpcenter/article/hazardous-materials",
      "Southwest &mdash; Hazardous materials"
     ]
    ],
    "keepSchema": true,
-   "checked": "18 October 2026"
+   "checked": "14 November 2026"
   },
   "liquids": {
    "answer": "We could not take a liquids rule from Southwest's own pages. The rule that security checkpoints apply to cabin baggage is containers of 3.4 ounces (100 ml) or less in one quart-size bag, according to the US Transportation Security Administration (TSA).",
