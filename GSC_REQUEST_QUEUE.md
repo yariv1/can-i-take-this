@@ -12,6 +12,8 @@ One list, in the order to request indexing: **tier 0 first** (Google confirmed i
 
 ## 2026-11-14 status (read this first)
 
+- **cc009b25e (deployed 2026-11-15, IndexNow sent):** 4 vape pages to re-crawl: /airline/{swiss,austrian,brussels-airlines,ita-airways}/vape-e-cigarette/
+
 - **2e7ca524c (deployed 2026-11-15, IndexNow sent):** 6 vape pages to re-crawl: /airline/{ethiopian-airlines,saudia,kenya-airways,gulf-air,arkia,middle-east-airlines}/vape-e-cigarette/
 DEPLOY 0c19f9182: vape pages rewritten from own/named sources: /airline/{latam,china-southern,el-al,air-china,icelandair,gol,royal-air-maroc,aeromexico}/vape-e-cigarette/. Re-crawl needed; IndexNow sent.
 DEPLOY 625b744f1: /airline/israir/vape-e-cigarette/ and /airline/avianca/vape-e-cigarette/ rewritten from each airline own page. Re-crawl request needed; IndexNow sent.
