@@ -3703,75 +3703,80 @@
    "checked": "18 October 2026"
   },
   "vape": {
-   "answer": "SWISS does not allow e-cigarettes in checked baggage; they are permitted in hand baggage in the cabin, for personal use, and use or charging on board is forbidden.",
+   "answer": "SWISS lets you bring an e-cigarette in your hand baggage, in a personal-use quantity. It is not accepted in checked baggage, and you may not use or charge it on board. Keep it under the seat, in the seat pocket or on you, never in the overhead locker.",
    "sections": [
     {
-     "h": "🚭 What SWISS says about e-cigarettes",
-     "p": "From the SWISS page \"Electronic devices and batteries\", e-cigarettes section.",
+     "h": "🚭 The e-cigarette entry on SWISS's page",
+     "p": "Taken from the e-cigarettes entry of the SWISS page \"Electronic devices and batteries\".",
+     "list": [
+      "<strong>Cabin:</strong> allowed in hand baggage, for personal use only.",
+      "<strong>Hold:</strong> not accepted.",
+      "<strong>In flight:</strong> no use and no charging.",
+      "<strong>Stowing:</strong> under the seat in front, in the seat pocket or on your person, not in the overhead locker.",
+      "<strong>Switch-on:</strong> it must not be able to activate by accident.",
+      "<strong>Battery size:</strong> up to 100 Wh or 2 g lithium content per device.",
+      "<strong>Quantity:</strong> the 15-device limit for portable electronics applies.",
+      "<strong>Destination:</strong> some countries ban carrying e-cigarettes or inhalers."
+     ]
+    },
+    {
+     "h": "🛄 SWISS's general conditions for any battery item",
+     "p": "From the introduction and footnotes of the same SWISS page.",
      "table": {
       "head": [
-       "Question",
-       "SWISS rule"
+       "Condition",
+       "SWISS wording, summarised"
       ],
       "rows": [
        [
-        "Hand baggage (cabin)",
-        "Permitted, only in amounts for personal use"
+        "Damaged or recalled items",
+        "Not allowed on board"
        ],
        [
-        "Checked baggage",
-        "Not permitted"
+        "Battery test standard",
+        "Lithium batteries must meet UN Manual of Tests and Criteria, Part III, 38.3"
        ],
        [
-        "Battery limit",
-        "Lithium batteries: max. 100 Wh or 2 g lithium content per device"
+        "Wh for a multi-cell pack",
+        "Add up the Wh of every battery inside the one casing"
        ],
        [
-        "Use or charging on board",
-        "Forbidden"
+        "Items that are not approved",
+        "May be confiscated at the airport; SWISS accepts no liability"
        ],
        [
-        "Where to stow it",
-        "Not in the overhead locker: under the seat in front of you, in the seat pocket or on your person"
-       ],
-       [
-        "Accidental activation",
-        "Must not be possible"
-       ],
-       [
-        "Device count",
-        "A maximum of 15 portable electronic devices per passenger applies"
-       ],
-       [
-        "Destination",
-        "In some countries it is forbidden to carry e-cigarettes or other inhalers"
+        "Stricter rules",
+        "SWISS can add safety measures, and some countries have tougher laws"
        ]
       ]
      },
      "list": [
-      "<strong>Not on the page:</strong> the section gives no rule on e-liquid."
+      "<strong>Not on the page:</strong> a rule for e-liquid."
      ]
     }
    ],
    "faq": [
     [
-     "Can I take a vape on SWISS?",
-     "Yes in hand baggage, for personal use; e-cigarettes are not permitted in checked baggage."
+     "Can I put my e-cigarette in a suitcase I check in with SWISS?",
+     "No. SWISS lists e-cigarettes as not permitted in checked baggage."
     ],
     [
-     "Where should I keep my e-cigarette on board SWISS?",
-     "SWISS says not in the overhead locker: keep it under the seat in front of you, in the seat pocket or on your person, and do not use or charge it."
+     "Where do I keep an e-cigarette during a SWISS flight?",
+     "Under the seat in front of you, in the seat pocket or on you. SWISS says not in the overhead locker."
+    ],
+    [
+     "What if my vape is damaged?",
+     "SWISS does not allow damaged or recalled battery devices to travel."
     ]
    ],
+   "keepSchema": true,
+   "checked": "15 November 2026",
    "sources": [
     [
      "https://www.swiss.com/ch/en/prepare/baggage/electronic-devices-and-batteries",
      "SWISS &mdash; Electronic devices and batteries"
     ]
-   ],
-   "keepSchema": true,
-   "checked": "18 October 2026",
-   "unofficial": false
+   ]
   },
   "liquids": {
    "answer": "At most airports SWISS allows liquids in hand baggage in containers of at most 100 ml (the printed capacity counts), in one resealable transparent bag of at most 1 litre, one bag per person.",
@@ -4788,75 +4793,88 @@
    "checked": "18 October 2026"
   },
   "vape": {
-   "answer": "Austrian does not allow e-cigarettes in checked baggage; they are permitted in hand baggage in the cabin, for personal use, and use or charging on board is forbidden.",
+   "answer": "Austrian Airlines allows an e-cigarette only in your cabin baggage, in personal-use quantity. It is not accepted in checked baggage. Using or charging it on board is forbidden, and it must not be stowed in the overhead locker.",
    "sections": [
     {
-     "h": "🚭 What Austrian says about e-cigarettes",
-     "p": "From the Austrian page \"Electronic devices and batteries\", e-cigarettes section.",
+     "h": "🚭 What Austrian Airlines says about e-cigarettes",
+     "p": "From the e-cigarettes entry on Austrian's page \"Electronic items and batteries\".",
      "table": {
       "head": [
-       "Question",
-       "Austrian rule"
+       "Situation",
+       "Austrian Airlines rule"
       ],
       "rows": [
        [
-        "Hand baggage (cabin)",
-        "Permitted, only in amounts for personal use"
+        "In the cabin",
+        "Yes, in amounts for personal use"
        ],
        [
-        "Checked baggage",
-        "Not permitted"
+        "In checked baggage",
+        "No"
        ],
        [
-        "Battery limit",
-        "Lithium batteries: max. 100 Wh or 2 g lithium content per device"
-       ],
-       [
-        "Use or charging on board",
+        "Plugging in or puffing in flight",
         "Forbidden"
        ],
        [
-        "Where to stow it",
-        "Not in the overhead locker: under the seat in front of you, in the seat pocket or on your person"
+        "Seat stowage",
+        "Under the seat ahead, in the seat pocket, or on your person; overhead locker excluded"
        ],
        [
-        "Accidental activation",
-        "Must not be possible"
+        "Accidental switch-on",
+        "Must be impossible"
        ],
        [
-        "Device count",
-        "A maximum of 15 portable electronic devices per passenger applies"
+        "Battery ceiling",
+        "100 Wh, or 2 g of lithium, per device"
        ],
        [
-        "Destination",
-        "In some countries it is forbidden to carry e-cigarettes or other inhalers"
+        "How many gadgets",
+        "Up to 15 portable electronic devices per passenger"
+       ],
+       [
+        "Where you are flying to",
+        "Several countries prohibit carrying e-cigarettes and inhalers"
        ]
       ]
      },
      "list": [
-      "<strong>Not on the page:</strong> the section gives no rule on e-liquid."
+      "<strong>Not on the page:</strong> a rule for e-liquid."
+     ]
+    },
+    {
+     "h": "ℹ Other points on the Austrian page",
+     "p": "Austrian's introduction and footnotes, in short.",
+     "list": [
+      "The list is not complete, so for an item that is not shown, use Austrian's contact form.",
+      "Batteries must meet UN 38.3 testing, and unapproved items can be confiscated at the airport without liability.",
+      "Austrian may be stricter than IATA, and so may national law.",
+      "Austrian also points to separate pages on dangerous goods, medical items and hand luggage."
      ]
     }
    ],
    "faq": [
     [
-     "Can I take a vape on Austrian?",
-     "Yes in hand baggage, for personal use; e-cigarettes are not permitted in checked baggage."
+     "Is a vape allowed in Austrian Airlines hand luggage?",
+     "Yes, Austrian allows e-cigarettes in the cabin in quantities for personal use."
     ],
     [
-     "Where should I keep my e-cigarette on board Austrian?",
-     "Austrian says not in the overhead locker: keep it under the seat in front of you, in the seat pocket or on your person, and do not use or charge it."
+     "Can I use my e-cigarette on an Austrian flight?",
+     "No. Austrian forbids both use and charging on board."
+    ],
+    [
+     "Who do I ask about a device that is not listed?",
+     "Austrian says to use its contact form."
     ]
    ],
+   "keepSchema": true,
+   "checked": "15 November 2026",
    "sources": [
     [
      "https://www.austrian.com/at/en/electronic-devices-and-batteries",
      "Austrian Airlines &mdash; Electronic items and batteries"
     ]
-   ],
-   "keepSchema": true,
-   "checked": "18 October 2026",
-   "unofficial": false
+   ]
   },
   "liquids": {
    "answer": "We could not take a liquids rule from Austrian's own pages. The rule that security checkpoints apply to cabin baggage is containers of 100 ml or less in one transparent resealable bag of at most 1 litre, according to the European Commission.",
@@ -5040,75 +5058,82 @@
    "checked": "18 October 2026"
   },
   "vape": {
-   "answer": "Brussels Airlines does not allow e-cigarettes in checked baggage; they are permitted in hand baggage in the cabin, for personal use, and use or charging on board is forbidden.",
+   "answer": "Brussels Airlines accepts an e-cigarette in the cabin only, in a quantity for personal use. It cannot go in checked baggage, cannot be used or charged on board, and should not sit in the overhead locker.",
    "sections": [
     {
-     "h": "🚭 What Brussels Airlines says about e-cigarettes",
-     "p": "From the Brussels Airlines page \"Electronic devices and batteries\", e-cigarettes section.",
+     "h": "1. Packing",
+     "p": "From the e-cigarettes entry on the Brussels Airlines page \"Electronic devices and batteries\".",
+     "list": [
+      "Cabin baggage: yes, personal-use amounts.",
+      "Checked baggage: no.",
+      "Battery limit: 100 Wh or 2 g lithium content per device.",
+      "Destination check: some countries forbid carrying e-cigarettes or inhalers."
+     ]
+    },
+    {
+     "h": "2. On board",
+     "p": "Same entry.",
+     "list": [
+      "No use and no charging.",
+      "Keep it under the seat in front of you, in the seat pocket or on you, not in the overhead locker.",
+      "It must not be possible for it to switch on by itself.",
+      "The 15-device limit for portable electronics applies."
+     ]
+    },
+    {
+     "h": "3. If you are unsure",
+     "p": "From the introduction and notes on the page.",
      "table": {
       "head": [
        "Question",
-       "Brussels Airlines rule"
+       "Brussels Airlines says"
       ],
       "rows": [
        [
-        "Hand baggage (cabin)",
-        "Permitted, only in amounts for personal use"
+        "Item not listed?",
+        "Contact the Brussels Airlines Dangerous Goods Department"
        ],
        [
-        "Checked baggage",
-        "Not permitted"
+        "Damaged or recalled device?",
+        "Strictly prohibited"
        ],
        [
-        "Battery limit",
-        "Lithium batteries: max. 100 Wh or 2 g lithium content per device"
+        "Unapproved item?",
+        "Risk of confiscation, no liability"
        ],
        [
-        "Use or charging on board",
-        "Forbidden"
-       ],
-       [
-        "Where to stow it",
-        "Not in the overhead locker: under the seat in front of you, in the seat pocket or on your person"
-       ],
-       [
-        "Accidental activation",
-        "Must not be possible"
-       ],
-       [
-        "Device count",
-        "A maximum of 15 portable electronic devices per passenger applies"
-       ],
-       [
-        "Destination",
-        "In some countries it is forbidden to carry e-cigarettes or other inhalers"
+        "Extra rules?",
+        "Brussels Airlines may add safety measures, and national rules can be stricter"
        ]
       ]
      },
      "list": [
-      "<strong>Not on the page:</strong> the section gives no rule on e-liquid."
+      "<strong>Not on the page:</strong> a rule for e-liquid."
      ]
     }
    ],
    "faq": [
     [
-     "Can I take a vape on Brussels Airlines?",
-     "Yes in hand baggage, for personal use; e-cigarettes are not permitted in checked baggage."
+     "Does Brussels Airlines accept a vape in checked luggage?",
+     "No. Its page says e-cigarettes are not permitted in checked baggage."
     ],
     [
-     "Where should I keep my e-cigarette on board Brussels Airlines?",
-     "Brussels Airlines says not in the overhead locker: keep it under the seat in front of you, in the seat pocket or on your person, and do not use or charge it."
+     "Can I charge my e-cigarette in flight on Brussels Airlines?",
+     "No, charging and use are both forbidden."
+    ],
+    [
+     "Who answers questions about a device not on the list?",
+     "The Brussels Airlines Dangerous Goods Department."
     ]
    ],
+   "keepSchema": true,
+   "checked": "15 November 2026",
    "sources": [
     [
      "https://www.brusselsairlines.com/es/en/extra-services/baggage/electronic-devices-and-batteries",
      "Brussels Airlines &mdash; Electronic devices and batteries"
     ]
-   ],
-   "keepSchema": true,
-   "checked": "18 October 2026",
-   "unofficial": false
+   ]
   },
   "liquids": {
    "answer": "On flights within the EU and connecting flights from the EU, Brussels Airlines allows liquids in carry-on in containers of up to 100 ml (the printed capacity counts), all in one resealable clear plastic bag of at most 1 litre per person.",
@@ -5288,75 +5313,87 @@
    "checked": "18 October 2026"
   },
   "vape": {
-   "answer": "ITA Airways does not allow e-cigarettes in checked baggage; they are permitted in hand baggage in the cabin, for personal use, and use or charging on board is forbidden.",
+   "answer": "ITA Airways' Italian page says an e-cigarette is accepted in the cabin in a personal-use quantity, not in checked baggage. Use and charging on board are forbidden, and the device must stay out of the overhead locker.",
    "sections": [
     {
-     "h": "🚭 What ITA Airways says about e-cigarettes",
-     "p": "From the ITA Airways page \"Electronic devices and batteries\", e-cigarettes section. Read on the Italian-language page.",
+     "h": "🚭 What the ITA Airways page says about e-cigarettes",
+     "p": "From the Italian page \"Dispositivi elettronici e batterie\", e-cigarettes entry. Summarised in English.",
      "table": {
       "head": [
-       "Question",
-       "ITA Airways rule"
+       "Point",
+       "ITA Airways"
       ],
       "rows": [
        [
-        "Hand baggage (cabin)",
-        "Permitted, only in amounts for personal use"
+        "Bagaglio a mano (cabin)",
+        "Allowed, personal-use quantity"
        ],
        [
-        "Checked baggage",
-        "Not permitted"
+        "Bagaglio da imbarcare (hold)",
+        "Not allowed"
        ],
        [
-        "Battery limit",
-        "Lithium batteries: max. 100 Wh or 2 g lithium content per device"
+        "Use and charging",
+        "Forbidden on board"
        ],
        [
-        "Use or charging on board",
-        "Forbidden"
+        "Stowage",
+        "Under the seat in front, in the seat pocket or on you, not overhead"
        ],
        [
-        "Where to stow it",
-        "Not in the overhead locker: under the seat in front of you, in the seat pocket or on your person"
+        "Activation",
+        "Must not switch on accidentally"
        ],
        [
-        "Accidental activation",
-        "Must not be possible"
+        "Battery",
+        "Maximum 100 Wh or 2 g lithium"
        ],
        [
-        "Device count",
-        "A maximum of 15 portable electronic devices per passenger applies"
+        "Portable devices",
+        "Limit of 15 per passenger"
        ],
        [
-        "Destination",
-        "In some countries it is forbidden to carry e-cigarettes or other inhalers"
+        "Country rules",
+        "A few countries forbid e-cigarettes and inhalers"
        ]
       ]
      },
      "list": [
-      "<strong>Not on the page:</strong> the section gives no rule on e-liquid."
+      "<strong>Not on the page:</strong> a rule for e-liquid."
+     ]
+    },
+    {
+     "h": "📌 Notes at the bottom of the ITA page",
+     "p": "The general notes in the same page.",
+     "list": [
+      "Items for which transport is not allowed may be confiscated, and ITA takes no responsibility.",
+      "ITA's rules follow national law and IATA, with the right to be stricter.",
+      "For an item that is not listed, use the customer information centre."
      ]
     }
    ],
    "faq": [
     [
-     "Can I take a vape on ITA Airways?",
-     "Yes in hand baggage, for personal use; e-cigarettes are not permitted in checked baggage."
+     "Can I bring an e-cigarette in hand baggage with ITA Airways?",
+     "Yes, the ITA page lists it as permitted in hand baggage, in a quantity for personal use."
     ],
     [
-     "Where should I keep my e-cigarette on board ITA Airways?",
-     "ITA Airways says not in the overhead locker: keep it under the seat in front of you, in the seat pocket or on your person, and do not use or charge it."
+     "Can I use or charge a vape on an ITA Airways flight?",
+     "No, both are forbidden on board."
+    ],
+    [
+     "Can it go in the hold?",
+     "No, not in checked baggage."
     ]
    ],
+   "keepSchema": true,
+   "checked": "15 November 2026",
    "sources": [
     [
      "https://www.ita-airways.com/it/it/book-and-prepare/travel-information/baggage/electronic-devices-and-batteries",
      "ITA Airways &mdash; Dispositivi elettronici e batterie"
     ]
-   ],
-   "keepSchema": true,
-   "checked": "18 October 2026",
-   "unofficial": false
+   ]
   },
   "liquids": {
    "answer": "On departures from EU airports (plus Norway, Iceland and Switzerland) ITA Airways applies the EU limit on liquids, aerosols and gels in carry-on; from 1 September 2024 the 100 ml per container limit is back at Milan Linate and Rome Fiumicino.",
