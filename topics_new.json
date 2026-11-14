@@ -13204,63 +13204,58 @@
  },
  "Ethiopian Airlines": {
   "vape": {
-   "answer": "We could not find a vape rule on Ethiopian Airlines's own pages. The industry guidance airlines follow (IATA) says e-cigarettes with batteries go in carry-on baggage only, protected from accidental activation, and may not be recharged on board.",
+   "answer": "Ethiopian Airlines tells passengers to carry vapes, where they are allowed, in hand baggage and not in checked baggage. It also says spare batteries and power banks must have their terminals protected, and that you should confirm your airline's own rules.",
    "sections": [
     {
-     "h": "🚭 What the industry guidance says about e-cigarettes on Ethiopian Airlines",
-     "p": "This section is from an unofficial source, not Ethiopian Airlines's own rules: the IATA passenger guidance on lithium batteries (revised for the 2026 regulations, dated 31 March 2026). Ethiopian's restricted items page (read in a copy saved on 12 June 2026) does not name e-cigarettes.",
+     "h": "🚭 What Ethiopian Airlines says about vapes",
+     "p": "From the Ethiopian Airlines travel update \"Travel Smart with Lithium Batteries\" (7 simple steps).",
      "table": {
       "head": [
        "Question",
-       "IATA guidance"
+       "Ethiopian rule"
       ],
       "rows": [
        [
-        "Carry-on baggage",
-        "Yes: e-cigarettes, e-cigars, e-pipes and other personal vaporizers containing batteries, for personal use, must be in carry-on baggage only"
+        "Where to carry vapes",
+        "In your hand baggage, not in checked baggage (\"vapes (if allowed)\")"
        ],
        [
-        "Checked baggage",
-        "No"
+        "Spare batteries and power banks",
+        "Keep in original packaging or cover the terminals with tape"
        ],
        [
-        "Protection",
-        "Protect the device from damage and from unintentional activation"
+        "If your hand baggage is gate-checked",
+        "Remove all lithium batteries and devices first"
        ],
        [
-        "Recharging on board",
-        "Not permitted"
-       ],
-       [
-        "If your cabin bag is checked at the gate",
-        "Remove all lithium batteries and devices first and keep them with you"
+        "Batteries over 100 Wh",
+        "Check with the airline, approval may be required"
        ]
       ]
      },
      "list": [
-      "<strong>Not on the page:</strong> Ethiopian Airlines's own rule. Ethiopian Airlines can add stricter rules, for example a ban on carrying vapes into some countries, so confirm with Ethiopian Airlines before you fly."
+      "<strong>Not on the page:</strong> the page does not say whether vapes are allowed on Ethiopian flights, and gives no rule on use or charging."
      ]
     }
    ],
    "faq": [
     [
-     "Can I take a vape on Ethiopian Airlines?",
-     "Airlines follow the IATA rule that e-cigarettes go in carry-on baggage only, never in checked baggage. Ethiopian Airlines's own page was not readable on this point, so confirm with the airline."
+     "Can I pack a vape in checked baggage on Ethiopian Airlines?",
+     "No, Ethiopian says to carry vapes (if allowed) in hand baggage, not in checked baggage."
     ],
     [
-     "Can I recharge my vape on a Ethiopian Airlines flight?",
-     "The IATA guidance says recharging e-cigarettes or their batteries on board is not permitted."
+     "What do I do with a vape if my bag is gate-checked?",
+     "Ethiopian says to remove all lithium batteries and devices from the bag first."
     ]
    ],
    "sources": [
     [
-     "https://www.iata.org/contentassets/6fea26dd84d24b26a7a1fd5788561d6e/passengers_travelling_with_lithium_batteries.pdf",
-     "IATA &mdash; Passengers Travelling with Lithium Batteries (2026 guidance)"
+     "https://www.ethiopianairlines.com/et/travel-update",
+     "Ethiopian Airlines &mdash; Travel update, Travel Smart with Lithium Batteries"
     ]
    ],
    "keepSchema": true,
-   "checked": "18 October 2026",
-   "unofficial": true
+   "checked": "14 November 2026"
   },
   "liquids": {
    "answer": "We could not take a liquids rule from Ethiopian Airlines's own pages. The rule that security checkpoints apply to cabin baggage is containers of 100 ml or less in one transparent resealable bag of at most 1 litre, according to the International Air Transport Association (IATA).",
@@ -13505,62 +13500,89 @@
  },
  "Kenya Airways": {
   "vape": {
-   "answer": "We could not find a vape rule on Kenya Airways's own pages. The industry guidance airlines follow (IATA) says e-cigarettes with batteries go in carry-on baggage only, protected from accidental activation, and may not be recharged on board.",
+   "answer": "Kenya Airways publishes no vape rule that we could read. What its own pages do say: smoking is strictly prohibited on every flight, restrooms included, and security-type cases containing lithium batteries may not travel in hand or checked baggage. For the vape itself, follow the IATA rule: cabin only.",
    "sections": [
     {
-     "h": "🚭 What the industry guidance says about e-cigarettes on Kenya Airways",
-     "p": "This section is from an unofficial source, not Kenya Airways's own rules: the IATA passenger guidance on lithium batteries (revised for the 2026 regulations, dated 31 March 2026). Kenya Airways' baggage restrictions page (read in a copy saved on 23 September 2026) does not name e-cigarettes.",
+     "h": "✈ What Kenya Airways' own pages say",
+     "p": "From the Kenya Airways pages \"Electronic Devices Information\" and \"Baggage restrictions\". Neither names vapes or e-cigarettes.",
      "table": {
       "head": [
-       "Question",
-       "IATA guidance"
+       "Topic",
+       "Kenya Airways page"
       ],
       "rows": [
        [
-        "Carry-on baggage",
-        "Yes: e-cigarettes, e-cigars, e-pipes and other personal vaporizers containing batteries, for personal use, must be in carry-on baggage only"
+        "Smoking",
+        "Strictly prohibited on all flights, in all areas of the aircraft, including restrooms where smoke detector alarms are fitted"
        ],
        [
-        "Checked baggage",
-        "No"
+        "Security-type cases with lithium batteries",
+        "Prohibited in hand baggage and in checked baggage"
        ],
        [
-        "Protection",
-        "Protect the device from damage and from unintentional activation"
-       ],
-       [
-        "Recharging on board",
-        "Not permitted"
-       ],
-       [
-        "If your cabin bag is checked at the gate",
-        "Remove all lithium batteries and devices first and keep them with you"
+        "Wet cell batteries",
+        "Listed with corrosive materials that may not be carried"
        ]
       ]
      },
      "list": [
-      "<strong>Not on the page:</strong> Kenya Airways's own rule. Kenya Airways can add stricter rules, for example a ban on carrying vapes into some countries, so confirm with Kenya Airways before you fly."
+      "<strong>Not on these pages:</strong> a rule for vapes, spare vape batteries or power banks."
+     ]
+    },
+    {
+     "h": "🚭 What IATA says to do with a vape",
+     "p": "Unofficial source: IATA passenger guidance on lithium batteries (2026). It is the standard airlines follow, not Kenya Airways' own wording.",
+     "table": {
+      "head": [
+       "Step",
+       "IATA guidance"
+      ],
+      "rows": [
+       [
+        "Where to pack it",
+        "Cabin baggage only"
+       ],
+       [
+        "Hold",
+        "Not allowed"
+       ],
+       [
+        "Charging on board",
+        "Not permitted"
+       ]
+      ]
+     },
+     "list": [
+      "Keep the device from switching on by accident. If your cabin bag is gate-checked, take the batteries and device out first."
      ]
     }
    ],
    "faq": [
     [
-     "Can I take a vape on Kenya Airways?",
-     "Airlines follow the IATA rule that e-cigarettes go in carry-on baggage only, never in checked baggage. Kenya Airways's own page was not readable on this point, so confirm with the airline."
+     "Is vaping allowed on a Kenya Airways flight?",
+     "Kenya Airways says smoking is strictly prohibited on all its flights, including restrooms. Its page does not name e-cigarettes, so do not use one on board."
     ],
     [
-     "Can I recharge my vape on a Kenya Airways flight?",
-     "The IATA guidance says recharging e-cigarettes or their batteries on board is not permitted."
+     "Where do I pack a vape for Kenya Airways?",
+     "In your cabin bag. Kenya Airways has no vape rule we could read, and the IATA rule is cabin only."
     ]
    ],
    "sources": [
+    [
+     "https://www.kenya-airways.com/en/plan/travel-information/electronic-devices/",
+     "Kenya Airways &mdash; Electronic Devices Information"
+    ],
+    [
+     "https://www.kenya-airways.com/en/plan/baggage-information/baggage-restrictions/",
+     "Kenya Airways &mdash; Baggage restrictions"
+    ],
     [
      "https://www.iata.org/contentassets/6fea26dd84d24b26a7a1fd5788561d6e/passengers_travelling_with_lithium_batteries.pdf",
      "IATA &mdash; Passengers Travelling with Lithium Batteries (2026 guidance)"
     ]
    ],
    "keepSchema": true,
-   "checked": "18 October 2026",
+   "checked": "14 November 2026",
    "unofficial": true
   },
   "liquids": {
@@ -15031,63 +15053,42 @@
  },
  "Saudia": {
   "vape": {
-   "answer": "We could not find a vape rule on Saudia's own pages. The industry guidance airlines follow (IATA) says e-cigarettes with batteries go in carry-on baggage only, protected from accidental activation, and may not be recharged on board.",
+   "answer": "Saudia's general conditions of carriage say it prohibits smoking on board all flights, including electronic cigarettes. We could not read a Saudia page on where vapes may be packed.",
    "sections": [
     {
-     "h": "🚭 What the industry guidance says about e-cigarettes on Saudia",
-     "p": "This section is from an unofficial source, not Saudia's own rules: the IATA passenger guidance on lithium batteries (revised for the 2026 regulations, dated 31 March 2026). Saudia's own baggage pages could not be read for this: the hand baggage page copy had almost no text.",
+     "h": "🚭 What Saudia says about e-cigarettes",
+     "p": "From Saudia's General Conditions of Carriage, article 1.2.33.4, Smoking.",
      "table": {
       "head": [
        "Question",
-       "IATA guidance"
+       "Saudia rule"
       ],
       "rows": [
        [
-        "Carry-on baggage",
-        "Yes: e-cigarettes, e-cigars, e-pipes and other personal vaporizers containing batteries, for personal use, must be in carry-on baggage only"
-       ],
-       [
-        "Checked baggage",
-        "No"
-       ],
-       [
-        "Protection",
-        "Protect the device from damage and from unintentional activation"
-       ],
-       [
-        "Recharging on board",
-        "Not permitted"
-       ],
-       [
-        "If your cabin bag is checked at the gate",
-        "Remove all lithium batteries and devices first and keep them with you"
+        "Use on board",
+        "Prohibited: smoking on all flights, electronic cigarettes included"
        ]
       ]
      },
      "list": [
-      "<strong>Not on the page:</strong> Saudia's own rule. Saudia can add stricter rules, for example a ban on carrying vapes into some countries, so confirm with Saudia before you fly."
+      "<strong>Not on the page:</strong> the page does not say whether vapes go in hand baggage or checked baggage, and gives no device or battery limit."
      ]
     }
    ],
    "faq": [
     [
-     "Can I take a vape on Saudia?",
-     "Airlines follow the IATA rule that e-cigarettes go in carry-on baggage only, never in checked baggage. Saudia's own page was not readable on this point, so confirm with the airline."
-    ],
-    [
-     "Can I recharge my vape on a Saudia flight?",
-     "The IATA guidance says recharging e-cigarettes or their batteries on board is not permitted."
+     "Can I use my vape on a Saudia flight?",
+     "No, Saudia prohibits smoking on board all flights, including electronic cigarettes."
     ]
    ],
    "sources": [
     [
-     "https://www.iata.org/contentassets/6fea26dd84d24b26a7a1fd5788561d6e/passengers_travelling_with_lithium_batteries.pdf",
-     "IATA &mdash; Passengers Travelling with Lithium Batteries (2026 guidance)"
+     "https://www.saudia.com/information/terms-and-conditions/general-conditions-of-carriage",
+     "Saudia &mdash; General Conditions of Carriage"
     ]
    ],
    "keepSchema": true,
-   "checked": "18 October 2026",
-   "unofficial": true
+   "checked": "14 November 2026"
   },
   "liquids": {
    "answer": "Saudia lists liquids, gels and aerosols exceeding the permitted limit, typically 100 ml per container in carry-on baggage, among the items restricted in carry-on.",
@@ -15324,52 +15325,52 @@
  },
  "Gulf Air": {
   "vape": {
-   "answer": "We could not find a vape rule on Gulf Air's own pages. The industry guidance airlines follow (IATA) says e-cigarettes with batteries go in carry-on baggage only, protected from accidental activation, and may not be recharged on board.",
+   "answer": "Gulf Air's baggage pages that we could open say nothing about vapes. Until you hear otherwise from Gulf Air, treat a vape like any battery device on a Bahrain departure: in your hand luggage, switched off, never in the hold.",
    "sections": [
     {
-     "h": "🚭 What the industry guidance says about e-cigarettes on Gulf Air",
-     "p": "This section is from an unofficial source, not Gulf Air's own rules: the IATA passenger guidance on lithium batteries (revised for the 2026 regulations, dated 31 March 2026). Gulf Air's baggage pages could not be read for this: the copies we could reach had no e-cigarette text.",
+     "h": "📋 Quick checklist for a vape on Gulf Air",
+     "p": "Unofficial source: IATA passenger guidance on lithium batteries (2026). Gulf Air's own carry-on and baggage information pages were read and have no e-cigarette text.",
      "table": {
       "head": [
-       "Question",
-       "IATA guidance"
+       "Before you fly",
+       "Do this"
       ],
       "rows": [
        [
-        "Carry-on baggage",
-        "Yes: e-cigarettes, e-cigars, e-pipes and other personal vaporizers containing batteries, for personal use, must be in carry-on baggage only"
+        "At home",
+        "Switch the vape off and lock or cap it so it cannot fire in your bag"
        ],
        [
-        "Checked baggage",
-        "No"
+        "Security",
+        "Hand luggage only; the hold is not allowed"
        ],
        [
-        "Protection",
-        "Protect the device from damage and from unintentional activation"
+        "Spare batteries",
+        "Carry them with you, terminals covered or in their packaging"
        ],
        [
-        "Recharging on board",
-        "Not permitted"
+        "In the air",
+        "No use and no charging"
        ],
        [
-        "If your cabin bag is checked at the gate",
-        "Remove all lithium batteries and devices first and keep them with you"
+        "Gate-checked bag",
+        "Take the devices and batteries out and keep them on you"
        ]
       ]
      },
      "list": [
-      "<strong>Not on the page:</strong> Gulf Air's own rule. Gulf Air can add stricter rules, for example a ban on carrying vapes into some countries, so confirm with Gulf Air before you fly."
+      "<strong>Not on the page:</strong> a Gulf Air limit on the number of devices, or any ban on certain routes."
      ]
     }
    ],
    "faq": [
     [
-     "Can I take a vape on Gulf Air?",
-     "Airlines follow the IATA rule that e-cigarettes go in carry-on baggage only, never in checked baggage. Gulf Air's own page was not readable on this point, so confirm with the airline."
+     "What is Gulf Air's rule on vapes?",
+     "We could not read one. Gulf Air's pages that we opened have no e-cigarette wording, so this page uses the IATA guidance and says so."
     ],
     [
-     "Can I recharge my vape on a Gulf Air flight?",
-     "The IATA guidance says recharging e-cigarettes or their batteries on board is not permitted."
+     "Can I charge a vape on a Gulf Air flight?",
+     "IATA says recharging e-cigarettes on board is not permitted, and airlines follow it."
     ]
    ],
    "sources": [
@@ -15379,7 +15380,7 @@
     ]
    ],
    "keepSchema": true,
-   "checked": "18 October 2026",
+   "checked": "14 November 2026",
    "unofficial": true
   },
   "liquids": {
@@ -16555,62 +16556,81 @@
  },
  "Arkia": {
   "vape": {
-   "answer": "We could not find a vape rule on Arkia's own pages. The industry guidance airlines follow (IATA) says e-cigarettes with batteries go in carry-on baggage only, protected from accidental activation, and may not be recharged on board.",
+   "answer": "Arkia does not publish a vape rule we could find. Israel regulates e-cigarettes under its tobacco marketing law, and the IATA rule that every airline follows applies on the plane: vape in the cabin bag, not in the hold, no charging.",
    "sections": [
     {
-     "h": "🚭 What the industry guidance says about e-cigarettes on Arkia",
-     "p": "This section is from an unofficial source, not Arkia's own rules: the IATA passenger guidance on lithium batteries (revised for the 2026 regulations, dated 31 March 2026). Arkia's own baggage pages could not be read for this.",
+     "h": "🇮🇱 What the law says in Israel",
+     "p": "Unofficial source: the Tobacco Control Laws database (Last updated 20 July 2022).",
      "table": {
       "head": [
-       "Question",
-       "IATA guidance"
+       "Point",
+       "Source says"
       ],
       "rows": [
        [
-        "Carry-on baggage",
-        "Yes: e-cigarettes, e-cigars, e-pipes and other personal vaporizers containing batteries, for personal use, must be in carry-on baggage only"
+        "Legal basis",
+        "E-cigarettes are regulated under the Prohibition of Advertising and Restriction of Marketing of Tobacco law"
        ],
        [
-        "Checked baggage",
-        "No"
-       ],
-       [
-        "Protection",
-        "Protect the device from damage and from unintentional activation"
-       ],
-       [
-        "Recharging on board",
-        "Not permitted"
-       ],
-       [
-        "If your cabin bag is checked at the gate",
-        "Remove all lithium batteries and devices first and keep them with you"
+        "Medicinal products",
+        "A registered preparation, or one marketed under a permit, does not count as a smoking product"
        ]
       ]
      },
      "list": [
-      "<strong>Not on the page:</strong> Arkia's own rule. Arkia can add stricter rules, for example a ban on carrying vapes into some countries, so confirm with Arkia before you fly."
+      "<strong>Not on the page:</strong> where use is banned, or import and sale rules (\"No data available\")."
+     ]
+    },
+    {
+     "h": "✈ On the aircraft",
+     "p": "Unofficial source: IATA passenger guidance on lithium batteries (2026).",
+     "table": {
+      "head": [
+       "Item",
+       "IATA guidance"
+      ],
+      "rows": [
+       [
+        "Vape",
+        "Cabin baggage"
+       ],
+       [
+        "Hold",
+        "No"
+       ],
+       [
+        "Charging",
+        "Not allowed"
+       ]
+      ]
+     },
+     "list": [
+      "Arkia can be stricter than IATA, so confirm with Arkia before you fly."
      ]
     }
    ],
    "faq": [
     [
-     "Can I take a vape on Arkia?",
-     "Airlines follow the IATA rule that e-cigarettes go in carry-on baggage only, never in checked baggage. Arkia's own page was not readable on this point, so confirm with the airline."
+     "Does Arkia have its own vape rule?",
+     "None that we could find. This page shows the IATA guidance and Israel's legal basis, both labelled unofficial."
     ],
     [
-     "Can I recharge my vape on a Arkia flight?",
-     "The IATA guidance says recharging e-cigarettes or their batteries on board is not permitted."
+     "Can I put a vape in my suitcase on Arkia?",
+     "IATA says no: vapes go in the cabin bag."
     ]
    ],
    "sources": [
+    [
+     "https://www.tobaccocontrollaws.org/legislation/israel/e-cigarettes/regulatory-framework",
+     "Tobacco Control Laws &mdash; Israel, e-cigarettes, regulatory framework"
+    ],
     [
      "https://www.iata.org/contentassets/6fea26dd84d24b26a7a1fd5788561d6e/passengers_travelling_with_lithium_batteries.pdf",
      "IATA &mdash; Passengers Travelling with Lithium Batteries (2026 guidance)"
     ]
    ],
    "keepSchema": true,
-   "checked": "18 October 2026",
+   "checked": "14 November 2026",
    "unofficial": true
   },
   "liquids": {
@@ -17164,62 +17184,85 @@
  },
  "Middle East Airlines": {
   "vape": {
-   "answer": "We could not find a vape rule on MEA's own pages. The industry guidance airlines follow (IATA) says e-cigarettes with batteries go in carry-on baggage only, protected from accidental activation, and may not be recharged on board.",
+   "answer": "Middle East Airlines' baggage pages block automated readers, so we have no MEA vape rule. In Lebanon, the law bars using tobacco products, e-cigarettes included, in enclosed public places, workplaces and public transport. On the plane, the IATA rule applies: cabin bag only.",
    "sections": [
     {
-     "h": "🚭 What the industry guidance says about e-cigarettes on MEA",
-     "p": "This section is from an unofficial source, not MEA's own rules: the IATA passenger guidance on lithium batteries (revised for the 2026 regulations, dated 31 March 2026). MEA's restricted items pages could not be read for this.",
+     "h": "🇱🇧 What the law says in Lebanon",
+     "p": "Unofficial source: the Tobacco Control Laws database for Lebanon (Last updated 22 October 2026).",
      "table": {
       "head": [
-       "Question",
-       "IATA guidance"
+       "Point",
+       "Source says"
       ],
       "rows": [
        [
-        "Carry-on baggage",
-        "Yes: e-cigarettes, e-cigars, e-pipes and other personal vaporizers containing batteries, for personal use, must be in carry-on baggage only"
+        "Use",
+        "Prohibited in nearly all enclosed public places, enclosed workplaces and public transport; e-cigarettes count as tobacco products"
        ],
        [
-        "Checked baggage",
-        "No"
+        "Hotels",
+        "May set aside 20% of rooms for smoking"
        ],
        [
-        "Protection",
-        "Protect the device from damage and from unintentional activation"
-       ],
-       [
-        "Recharging on board",
-        "Not permitted"
-       ],
-       [
-        "If your cabin bag is checked at the gate",
-        "Remove all lithium batteries and devices first and keep them with you"
+        "Sale",
+        "Allowed with restrictions; a retail license is required"
        ]
       ]
      },
      "list": [
-      "<strong>Not on the page:</strong> MEA's own rule. MEA can add stricter rules, for example a ban on carrying vapes into some countries, so confirm with MEA before you fly."
+      "<strong>Not on the page:</strong> an import rule for travellers."
+     ]
+    },
+    {
+     "h": "✈ Packing a vape for an MEA flight",
+     "p": "Unofficial source: IATA passenger guidance on lithium batteries (2026), not MEA's wording.",
+     "table": {
+      "head": [
+       "Item",
+       "IATA guidance"
+      ],
+      "rows": [
+       [
+        "Device and spare batteries",
+        "Cabin baggage"
+       ],
+       [
+        "Hold",
+        "No"
+       ],
+       [
+        "Recharging on board",
+        "Not permitted"
+       ]
+      ]
+     },
+     "list": [
+      "MEA may add its own limits, so check with the airline."
      ]
     }
    ],
    "faq": [
     [
-     "Can I take a vape on MEA?",
-     "Airlines follow the IATA rule that e-cigarettes go in carry-on baggage only, never in checked baggage. MEA's own page was not readable on this point, so confirm with the airline."
+     "Is there an MEA rule on vapes?",
+     "We could not read one because MEA's site refuses automated access. This page uses the IATA guidance and Lebanese law, labelled unofficial."
     ],
     [
-     "Can I recharge my vape on a MEA flight?",
-     "The IATA guidance says recharging e-cigarettes or their batteries on board is not permitted."
+     "Can I vape in public places in Lebanon?",
+     "The Tobacco Control Laws database says use of tobacco products, e-cigarettes included, is prohibited in nearly all enclosed public places and public transport."
     ]
    ],
    "sources": [
+    [
+     "https://www.tobaccocontrollaws.org/legislation/lebanon/e-cigarettes",
+     "Tobacco Control Laws &mdash; Lebanon, e-cigarettes"
+    ],
     [
      "https://www.iata.org/contentassets/6fea26dd84d24b26a7a1fd5788561d6e/passengers_travelling_with_lithium_batteries.pdf",
      "IATA &mdash; Passengers Travelling with Lithium Batteries (2026 guidance)"
     ]
    ],
    "keepSchema": true,
-   "checked": "18 October 2026",
+   "checked": "14 November 2026",
    "unofficial": true
   },
   "liquids": {
