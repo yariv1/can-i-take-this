@@ -605,6 +605,475 @@
         "The Dominican Republic allows adults 5 litres of alcohol, and 20 packs of cigarettes, 25 cigars or 200 g of tobacco duty-free. Declare US$10,000 or more on the customs form and be ready to show where the money comes from.",
         "The Agriculture Ministry says airport technicians seize and incinerate fruit and unregistered plant products. The Manual del Viajero lets you carry medicines for personal use with no stated limit, but controlled ones need the prescription justifying their use."
       ]
+    },
+    "costa-rica": {
+      "h": "What stands out when you travel to Costa Rica",
+      "p": [
+        "Costa Rica allows each adult 5 litres of wine, spirits or liquor and 500 g of processed tobacco duty-free. Declare cash of US$10,000 or more, or securities of US$50,000 or more. The SFE lists seeds, fruit, plants, cuttings and tubers as plant items, and material that enters without the legal procedures is held or destroyed.",
+        "The Drug Surveillance Board lets treated travellers bring one month of treatment, with an ID copy, the prescription and a clinical summary issued within three months, all translated into Spanish. WHO lists no general e-cigarette ban."
+      ]
+    },
+    "egypt": {
+      "h": "What stands out when you travel to Egypt",
+      "p": [
+        "Egypt's tourist allowance is 1 litre of spirits and 200 cigarettes, 25 cigars or 200 g of tobacco, with the quantity recorded in your passport. Foreign currency above US$10,000 must be declared, while Egyptian pounds are capped at 5,000. Cairo Airport prohibits any seeds or agricultural seedlings.",
+        "Egypt's customs regulations list medicine for personal use as duty-free luggage at the discretion of the control authority, with no quantity or document list. WHO lists no general e-cigarette ban."
+      ]
+    },
+    "estonia": {
+      "h": "What stands out when you travel to Estonia",
+      "p": [
+        "Estonia applies the lower EU tobacco limit to every traveller from outside the EU, even by air: 40 cigarettes, 20 cigarillos, 10 cigars or 50 g. The alcohol limits are the usual EU ones, and €10,000 or more in cash must be declared.",
+        "Narcotic or psychotropic medicine may come in without a permit as one retail package of up to 30 units or 25 ml, with a doctor's notice or prescription copy. More, up to 30 days, needs State Agency of Medicines authorisation."
+      ]
+    },
+    "ethiopia": {
+      "h": "What stands out when you travel to Ethiopia",
+      "p": [
+        "Ethiopia's Directive 923/2014 allows 2 litres of alcohol, 200 g of cigarettes and 250 g of loose tobacco for personal use, but WHO lists a ban on importing e-cigarettes. Travellers may carry 3,000 birr, and foreign currency above US$10,000 needs a customs declaration.",
+        "Plant quarantine rules need an import permit and phytosanitary certificate for fresh produce and many plants, and soil is banned. Under the EFDA guideline, personal medicine needs no pre-import permit, but port staff check quantity against your prescription."
+      ]
+    },
+    "fiji": {
+      "h": "What stands out when you travel to Fiji",
+      "p": [
+        "Fiji allows 3 litres of spirits, 4.5 litres of wine or 4.5 litres of beer, and 200 cigarettes or 200 g of cigars or tobacco, for travellers 18 and over. Chewing tobacco is prohibited. Declare FJ$10,000 or more on the Border Currency Reporting Form.",
+        "BAF treats the arrival card as a legal document, so declare plants and seeds. For medicine, Fiji's guideline asks you to show at the border that it was legally prescribed and supplied to you."
+      ]
+    },
+    "finland": {
+      "h": "What stands out when you travel to Finland",
+      "p": [
+        "Finland follows the EU limits (4 litres of still wine, 16 litres of beer, 200 cigarettes) and the €10,000 cash declaration. Plants and seeds need a permit.",
+        "Its medicine rule depends on where you travel from: Finland counts psychotropic and central nervous system medicines as narcotics, allowing up to 30 days' supply from a Schengen country but only 14 days' from outside it. A pharmacy Schengen certificate is needed inside the Schengen area."
+      ]
+    },
+    "france": {
+      "h": "What stands out when you travel to France",
+      "p": [
+        "France uses the EU arrival limits (4 litres of still wine, 16 litres of beer, 200 cigarettes) and asks you to declare €10,000 or more in cash. Plants and seeds need a permit.",
+        "For medicines, the ANSM says no transport attestation is required and it does not issue one. The original prescription is mandatory, ideally with an English translation if you travel on. WHO lists no general e-cigarette ban."
+      ]
+    },
+    "georgia": {
+      "h": "What stands out when you travel to Georgia",
+      "p": [
+        "Georgia's Revenue Service gives one of 1 litre of drinks at 22% or more, 2 litres under 22%, or 4 litres of wine and 16 litres of beer, and 200 cigarettes, 50 cigars or 250 g of other tobacco, from age 18. At land and sea crossings these are per 30 calendar days. Declare cash above GEL 30,000.",
+        "Plants need a permit or certificate. Georgia's customs brochure names methamphetamine and treats ephedrine and pseudoephedrine preparations as controlled, so medicine needs documents, including an English prescription copy approved by your home authority."
+      ]
+    },
+    "germany": {
+      "h": "What stands out when you travel to Germany",
+      "p": [
+        "Germany applies the EU limits and a €10,000 cash declaration, with penalties for an incorrect declaration. Plants, plant products and cut flowers from outside the EU are prohibited without a phytosanitary certificate, except fruit of pineapple, coconut, durian, banana or date.",
+        "BfArM's travel page covers narcotics under the Schengen rule: a certificate under Article 75, completed by your doctor and authenticated by the health authority before the trip. It says nothing about ADHD medicines or pseudoephedrine."
+      ]
+    },
+    "greece": {
+      "h": "What stands out when you travel to Greece",
+      "p": [
+        "Greece has the EU's two-level tobacco rule: 200 cigarettes by air but 40 by land or sea. Alcohol follows the EU limits, and €10,000 or more in cash must be declared, with penalties for an incorrect declaration. Plants and plant products need a phytosanitary certificate, except fruit of pineapple, coconut, durian, banana or date.",
+        "Medicine rules rely on the Schengen decision: a certificate from the national authority, valid at most 30 days and for one drug each, for residents of a Schengen state."
+      ]
+    },
+    "hong-kong": {
+      "h": "What stands out when you travel to Hong Kong",
+      "p": [
+        "Hong Kong has one of the smallest allowances here: 1 litre of liquor above 30% and 19 cigarettes, 1 cigar or 25 g of tobacco, for travellers 18 and over. Its Department of Health says incoming travellers may not bring e-cigarettes or heated tobacco, and any carried must be declared. Declare more than HK$120,000, with fines up to HK$500,000.",
+        "The Drug Office treats amphetamine as a dangerous drug: even a visitor in transit needs written approval before arrival, processed in about 10 working days. Plants need a licence and a certificate."
+      ]
+    },
+    "hungary": {
+      "h": "What stands out when you travel to Hungary",
+      "p": [
+        "Hungary follows the EU limits, with 200 cigarettes by air and 40 by land or sea, and a €10,000 cash declaration. Plants from outside the EU need a phytosanitary certificate, except fruit of pineapple, coconut, durian, banana or date.",
+        "Its medicine rule is tiered by length: for narcotic drugs, up to 3 days needs only a GP's international certificate and 3 to 90 days an official certificate; for psychotropics, up to 30 days with a GP certificate. You show documents at the customs and police check."
+      ]
+    },
+    "iceland": {
+      "h": "What stands out when you travel to Iceland",
+      "p": [
+        "Iceland counts alcohol in units (for example 1 litre of spirits plus 0.75 litre of wine plus 3 litres of beer) and sets the age at 20, while tobacco is 200 cigarettes from age 18. Vaping is allowed duty-free up to 40 ml of e-liquid or 20 disposable vapes. Declare more than €10,000.",
+        "Up to 25 cut flowers and 2 kg of bulbs travel free. The Medicines Agency allows 30 days' supply of narcotic or psychotropic medicine from outside the EEA, measured in defined daily doses."
+      ]
+    },
+    "india": {
+      "h": "What stands out when you travel to India",
+      "p": [
+        "India's duty-free allowance is 2 litres of alcohol and 100 cigarettes, 25 cigars or 125 g of tobacco, and imported tobacco must carry India's pictorial health warning. Its 2019 Act bans importing e-cigarettes, including heat-not-burn products. Declare foreign currency over US$5,000 in notes, or US$10,000 in total.",
+        "The customs guide lists narcotic and psychotropic substances as prohibited imports and plants and their produce as restricted, so a prescription alone is not safe to rely on. Ask Indian customs first."
+      ]
+    },
+    "indonesia": {
+      "h": "What stands out when you travel to Indonesia",
+      "p": [
+        "Indonesia allows adults 21 and over 1 litre of alcohol, and 200 cigarettes, 25 cigars or 100 g of cut tobacco. E-cigarettes have their own limits for ages 18 and over: 140 solid sticks or 40 capsules, 30 ml of open-system liquid or 12 ml of closed-system liquid. Anything over a limit is destroyed on the spot.",
+        "Plants need a phytosanitary certificate, and seeds an import permit. BPOM's leaflet bars narcotic medicines from passenger bags, while psychotropic medicines need a prescription, up to 60 days."
+      ]
+    },
+    "ireland": {
+      "h": "What stands out when you travel to Ireland",
+      "p": [
+        "Ireland follows the EU limits for arrivals from outside the EU (4 litres of still wine, 16 litres of beer, 200 cigarettes) and the €10,000 cash declaration. Plants and plant products need a phytosanitary certificate, except fruit of pineapple, coconut, durian, banana or date.",
+        "The Department of Health asks visitors from a Schengen country for an Article 75 certificate when a medicine contains a controlled drug in Schedule II or III of the Misuse of Drugs Regulations 2017, valid up to 30 days and covering one drug."
+      ]
+    },
+    "israel": {
+      "h": "What stands out when you travel to Israel",
+      "p": [
+        "Israel's duty-free allowance for entrants 18 and over is 1 litre of spirits and 2 litres of wine, and tobacco up to 250 g or 200 cigarettes. The green channel counts as your declaration that you carry only permitted items. Report NIS 50,000 or more, or NIS 12,000 when entering or leaving Gaza.",
+        "Plants and seeds need a Ministry of Agriculture licence before you arrive. The Ministry of Health's 90-day allowance for personal medicines excludes narcotic drugs and psychotropic substances, which follow different rules."
+      ]
+    },
+    "italy": {
+      "h": "What stands out when you travel to Italy",
+      "p": [
+        "Italy applies the EU limits for arrivals from outside the EU (4 litres of still wine, 16 litres of beer, 200 cigarettes) and the €10,000 cash declaration, with penalties for an incorrect declaration. Plants need a phytosanitary certificate, except fruit of pineapple, coconut, durian, banana or date.",
+        "Italy exempts carried medicines from specific requirements, except those with narcotic or psychotropic substances. Travellers from Schengen countries need an Article 75 certificate valid 30 days, issued on a doctor's prescription."
+      ]
+    },
+    "jamaica": {
+      "h": "What stands out when you travel to Jamaica",
+      "p": [
+        "Jamaica allows passengers 18 and over 2 litres of alcohol, and 200 cigarettes, 50 cigars or 230 g of processed tobacco. Form C5 asks whether you carry currency worth more than US$10,000. Plants need a permit, and amnesty bins at Kingston and Montego Bay airports let you hand items in.",
+        "For prescription drugs, the foreign ministry page asks for a special permit, applied for with a physician's letter, a prescription copy and flight details."
+      ]
+    },
+    "japan": {
+      "h": "What stands out when you travel to Japan",
+      "p": [
+        "Japan's duty-free allowance is 3 bottles of about 760 ml each, and 200 cigarettes, 50 cigars, 10 packages of heat-not-burn tobacco or 250 g of other tobacco. Other goods are exempt up to ¥200,000 in total, and a single item above that pays duty on its full value. Declare more than ¥1,000,000. Plants need a certificate and inspection, and soil is prohibited.",
+        "Japan's health ministry treats amphetamine, the ingredient in Adderall, as prohibited for individual travellers, even with a foreign prescription. Sudafed's pseudoephedrine is listed with stimulant raw materials."
+      ]
+    },
+    "jordan": {
+      "h": "What stands out when you travel to Jordan",
+      "p": [
+        "Queen Alia airport's guide gives each passenger 18 and over a bottle of spirits up to 1 litre and 200 cigarettes. Cash above JOD 10,000 must be declared under the Anti-Money Laundering Law of 2021. WHO lists a ban on importing e-cigarettes.",
+        "We found no source specific to Jordan on plants and seeds, so that card shows the general rules. For medicines, a regulation filed with the INCB covers narcotics and psychotropics together: personal use only, no more than six months."
+      ]
+    },
+    "kenya": {
+      "h": "What stands out when you travel to Kenya",
+      "p": [
+        "Kenya asks you to declare, not just stay within limits: spirits over 1 litre, wine over 2 litres, tobacco over 250 g, perfumes over a litre in total, and currency worth US$10,000 or more. KRA lists plants and plant material as restricted.",
+        "Kenya's filing to the UN narcotics board allows 30 days for both narcotic drugs and psychotropic substances, with a valid prescription and the original packaging."
+      ]
+    },
+    "kuwait": {
+      "h": "What stands out when you travel to Kuwait",
+      "p": [
+        "Kuwait is one of the few countries here where alcohol is illegal to import, and failing to declare can mean imprisonment, refusal of entry and deportation. Tobacco falls in a duty exemption of 3,000 Saudi riyals in goods, with no more than 400 cigarettes. Declare 3,000 dinars or more in cash.",
+        "Under the GCC plant quarantine law, travellers' plants are inspected and anything for planting is excluded. Kuwait's INCB filing allows only schedule 2, 3 and 4 substances and says narcotic drugs are currently not allowed at all."
+      ]
+    },
+    "latvia": {
+      "h": "What stands out when you travel to Latvia",
+      "p": [
+        "Latvia follows the EU limits: 200 cigarettes by air but 40 by land or sea, with the usual alcohol limits and a €10,000 cash declaration. Plants need a phytosanitary certificate, except fruit of pineapple, coconut, durian, banana or date.",
+        "For medicines with Schedule II or III substances entering from a Schengen country, the State Agency of Medicines requires a certificate from the authority of the country you come from. From outside Schengen, up to 14 days needs no permit."
+      ]
+    },
+    "lebanon": {
+      "h": "What stands out when you travel to Lebanon",
+      "p": [
+        "For Lebanon we found no source on alcohol, tobacco or cash, so those cards show general rules and say so; confirm with customs. The Beirut airport website does say arriving passengers may not carry fresh fruit and vegetables. WHO lists no general e-cigarette ban.",
+        "Lebanon's filing with the UN narcotics board allows 7 days of narcotic drugs and 30 days of psychotropic substances, so the class of the drug decides how much you may bring. The filing also needs approval of the Department of Narcotics."
+      ]
+    },
+    "lithuania": {
+      "h": "What stands out when you travel to Lithuania",
+      "p": [
+        "Lithuania follows the EU limits: 200 cigarettes by air but 40 by land or sea, the usual alcohol limits and a €10,000 cash declaration. Plants need a phytosanitary certificate, except fruit of pineapple, coconut, durian, banana or date.",
+        "Its customs page names examples of narcotic medicines (buprenorphine, fentanyl, methadone, morphine, pethidine, tramadol) and psychotropic ones (alprazolam, diazepam, clonazepam, lorazepam, zolpidem, phenobarbital, higher-dose codeine). Adderall is not among them."
+      ]
+    },
+    "luxembourg": {
+      "h": "What stands out when you travel to Luxembourg",
+      "p": [
+        "Luxembourg applies the EU limits for arrivals from outside the EU (4 litres of still wine, 16 litres of beer, 200 cigarettes) and the €10,000 cash declaration. Plants and plant products need a phytosanitary certificate.",
+        "Its filing to the UN narcotics board asks for a copy of the valid prescription and a doctor's certificate endorsed by your home health authority, and says the Schengen agreement applies. It gives no day or quantity limit."
+      ]
+    },
+    "malaysia": {
+      "h": "What stands out when you travel to Malaysia",
+      "p": [
+        "Malaysia allows 1 litre of alcohol in all, but lists no duty-free tobacco amount: the declaration form asks everyone whether they carry tobacco, and failing to declare dutiable goods is an offence. Declare more than US$10,000, and do not bring ringgit worth more than that without Bank Negara approval. WHO lists a ban on sale of e-cigarettes, but no import ban.",
+        "Seeds and cuttings need a MAQIS permit and a phytosanitary certificate. Prescription medicines with dangerous drugs must be declared, with a prescription or doctor's letter in English."
+      ]
+    },
+    "maldives": {
+      "h": "What stands out when you travel to Maldives",
+      "p": [
+        "The Maldives bans importing alcohol under Law No. 4/1975 and Customs advises not to buy it on the flight or in duty-free shops, as it is confiscated at the airport. Tourists 18 and over may bring 200 cigarettes, 25 cigars or 250 g of tobacco, and held goods can be collected at departure. Report US$10,000 or more.",
+        "All plants need a phytosanitary certificate and inspection. Customs lists narcotics and psychotropics as prohibited but also asks for a registered doctor's prescription for controlled drugs, so the position needs checking."
+      ]
+    },
+    "malta": {
+      "h": "What stands out when you travel to Malta",
+      "p": [
+        "Malta follows the EU limits for arrivals from outside the EU (4 litres of still wine, 16 litres of beer, 200 cigarettes) and the €10,000 cash declaration. Plants need a phytosanitary certificate, except fruit of pineapple, coconut, durian, banana or date.",
+        "Malta's filing to the UN narcotics board, dated 3 January 2017, asks only for a valid medical prescription and says the Schengen agreement applies. It states no day or quantity limit."
+      ]
+    },
+    "mauritius": {
+      "h": "What stands out when you travel to Mauritius",
+      "p": [
+        "Mauritius gives adults 18 and over a choice of three alcohol options (for example 1 litre of spirits plus 2 litres of wine or beer), each with 250 g of tobacco, under a table that has applied since 1 September 2025. The MRA lists vapes, e-liquid and heated tobacco as prohibited goods. Use the red channel above Rs 500,000.",
+        "Plants, seeds, cut flowers, fruit and soil need Ministry clearance. For controlled medicines you need approval from the Government Pharmacist, a legible prescription and the original containers, for one month."
+      ]
+    },
+    "mexico": {
+      "h": "What stands out when you travel to Mexico",
+      "p": [
+        "Mexico allows adults 18 and over up to 3 litres of alcoholic drinks and 6 litres of wine, and 20 packs of cigarettes, 25 cigars or 200 g of tobacco, and the separate US$500 goods allowance cannot be used for them. ANAM lists e-cigarettes and vaporisers as merchandise you cannot bring in. Not declaring cash above US$10,000 is fined 20% to 40% of the excess.",
+        "SENASICA regulates seeds, bulbs, cuttings and plants, and prohibits soil, straw, hay and palm. For psychotropic substances you must show the corresponding prescription."
+      ]
+    },
+    "morocco": {
+      "h": "What stands out when you travel to Morocco",
+      "p": [
+        "Morocco's customs guide gives visitors one 1-litre bottle of wine and one of spirits, and 200 grams of manufactured tobacco, without declaration. Declare 100,000 dirhams or more and keep the endorsed form, which proves the origin of the money when you leave. Plant products need an ONSSA phytosanitary certificate.",
+        "Morocco's filing to the UN narcotics board sets no day limit for controlled medicines but asks for more paper than most countries: a prescription, a patient's written request, and for a medicine not sold in Morocco an authorisation."
+      ]
+    },
+    "nepal": {
+      "h": "What stands out when you travel to Nepal",
+      "p": [
+        "Nepal gives a foreign passenger one bottle of up to 1 litre of liquor or up to twelve cans of beer, not both, and 200 cigarettes, 50 cigars or 250 g of tobacco. WHO lists a ban on importing e-cigarettes. Declare more than US$5,000 in cash.",
+        "Plants, soil and moss need an advance entry permit and a phytosanitary certificate, presented at the quarantine office before customs. We found no source on medicine limits for Nepal, so that card gives none."
+      ]
+    },
+    "netherlands": {
+      "h": "What stands out when you travel to the Netherlands",
+      "p": [
+        "The Netherlands applies the EU limits for arrivals from outside the EU (4 litres of still wine, 16 litres of beer, 200 cigarettes) and the €10,000 cash declaration. Plants and seeds need a permit.",
+        "The Dutch government says ADHD medication falls under the Opium Act, List I, which names active ingredients, not brands. Opium Act medicines can enter only with an official statement, so check whether amphetamine is on the list."
+      ]
+    },
+    "new-zealand": {
+      "h": "What stands out when you travel to New Zealand",
+      "p": [
+        "New Zealand allows 4.5 litres of wine or beer or 3 bottles of spirits (age 17 and over), and 50 cigarettes or 50 g of tobacco, the lowest cigarette figure among these hubs. Other goods are exempt up to NZ$700. Report NZ$10,000 or more on a Border Cash Report, online within 72 hours of travel.",
+        "Seeds, bulbs, flowers and soil are biosecurity risk goods: declare them or risk an NZD 400 fine. Medsafe allows three months of a non-controlled prescription medicine and one month of a controlled drug, and the Ministry of Health says pseudoephedrine medicines are controlled."
+      ]
+    },
+    "nigeria": {
+      "h": "What stands out when you travel to Nigeria",
+      "p": [
+        "Nigeria's passenger concessions list one 1-litre bottle of spirit, one 1-litre bottle of wine and 200 grams of tobacco, and choosing the green or red exit counts as your declaration. A customs notice from 2016 sets a US$10,000 cash threshold, so confirm the current figure. The UK government says importing fruit, vegetables and cereals is illegal.",
+        "We found no official source on Nigerian medicine limits, so that card states none; carry the prescription in its original packaging and ask NAFDAC."
+      ]
+    },
+    "norway": {
+      "h": "What stands out when you travel to Norway",
+      "p": [
+        "Norway sets age limits of 18 for beer and wine and 20 for drinks over 22%, bans drinks over 60%, and gives visitors 200 cigarettes or 250 g of tobacco. Since 1 January 2026 private individuals may not import nicotine vapes or e-liquid. Notify customs of currency above NOK 25,000 or risk a fine of 20% of the amount.",
+        "For narcotic medicines, NOMA wants them prescribed for you, documented and declared in the red zone; without a Norwegian address you may bring up to 30 days' use with a prescription copy or doctor's letter."
+      ]
+    },
+    "oman": {
+      "h": "What stands out when you travel to Oman",
+      "p": [
+        "Oman allows only non-Muslims alcohol, up to 2 litres of wine and 48 cans of beer, and gives up to 400 cigarettes, neither for frequent border crossers. WHO lists a ban on importing e-cigarettes. Declare OMR 6,000 or more, and the green or red channel also counts as your declaration.",
+        "Seeds and live plants need a phytosanitary certificate, untreated soil is banned and fines go up to OMR 1,000. Oman's filing to the UN narcotics board gives the same 30-day limit for narcotic and psychotropic drugs."
+      ]
+    },
+    "panama": {
+      "h": "What stands out when you travel to Panama",
+      "p": [
+        "For Panama we found no source on alcohol or tobacco limits, so those cards show general rules and say so. Tourism Panama says you declare only cash, objects or documents worth more than US$10,000, with an online traveller's affidavit and a QR code. Tocumen airport requires a phytosanitary certificate for every live plant and plant product.",
+        "Panama's filing to the UN narcotics board allows up to 90 days for either narcotic or psychotropic medicines, with a valid prescription and a doctor's certificate."
+      ]
+    },
+    "peru": {
+      "h": "What stands out when you travel to Peru",
+      "p": [
+        "Peru allows 3 litres of liquor and 20 packs of cigarettes, 50 cigars or 250 g of tobacco, for travellers over 18. SUNAT lists cash up to US$10,000 as exempt baggage, and omitting or falsifying a declaration leads to a 30% penalty on the undeclared value. Only dried products up to 1 kg may come as plant items, and soil is not allowed.",
+        "Peru's filing to the UN narcotics board allows narcotic drugs for up to 5 days only, while psychotropic substances may be carried in the amount of the prescription."
+      ]
+    },
+    "philippines": {
+      "h": "What stands out when you travel to the Philippines",
+      "p": [
+        "The Philippines gives 2 bottles of liquor with a total value of P10,000 or less, and 2 reams of cigarettes, 50 cigars or 250 g of pipe tobacco, free of duty and tax. Declare foreign currency above US$10,000. Live plants need an international phytosanitary certificate and an SPSIC from the Bureau of Plant Industry, or they can be seized.",
+        "A 2015 joint circular of the DOH, FDA and Customs puts dangerous drugs and controlled precursors under the Dangerous Drugs Board and gives no traveller allowance."
+      ]
+    },
+    "poland": {
+      "h": "What stands out when you travel to Poland",
+      "p": [
+        "Poland follows the EU limits: 200 cigarettes by air but 40 by land or sea, the usual alcohol limits and a €10,000 cash declaration. Plants and seeds need a permit.",
+        "Poland's Chief Pharmaceutical Inspectorate asks for a document before you carry any medicine on its list of narcotic drugs and psychotropic substances, issued within 15 days before you cross the border."
+      ]
+    },
+    "portugal": {
+      "h": "What stands out when you travel to Portugal",
+      "p": [
+        "Portugal applies the EU limits for arrivals from outside the EU (4 litres of still wine, 16 litres of beer, 200 cigarettes) and the €10,000 cash declaration. Plants and seeds need a permit.",
+        "Decree-Law 15/93, Article 13, published by Infarmed, lets people crossing the border carry controlled substances for their own use, up to 30 days of treatment, with a medical document justifying the need."
+      ]
+    },
+    "qatar": {
+      "h": "What stands out when you travel to Qatar",
+      "p": [
+        "Hamad International Airport lists alcohol among items that cannot be imported under any condition, and it is confiscated at arrival screening. Tobacco is allowed up to 400 cigarettes or 2 kg of shisha tobacco, worth no more than QAR 3,000. WHO lists a ban on importing e-cigarettes. Declare QAR 50,000 or more.",
+        "Poppy and hemp seeds are forbidden, and live plants and cut flowers need approval. For controlled medicines the Ministry of Public Health requires a permit through its electronic system, approved or rejected within three working days."
+      ]
+    },
+    "romania": {
+      "h": "What stands out when you travel to Romania",
+      "p": [
+        "Romania applies the lower EU tobacco limit to every traveller from outside the EU, even by air: 40 cigarettes, 20 cigarillos, 10 cigars or 50 g. Alcohol follows the usual EU limits, and €10,000 or more in cash must be declared.",
+        "Romanian Customs says that when you enter from a non-EU state you must declare in writing, in every case, medicines containing narcotic or psychotropic substances, and a wrong or missing declaration can be fined."
+      ]
+    },
+    "russia": {
+      "h": "What stands out when you travel to Russia",
+      "p": [
+        "Russia applies Eurasian Economic Union norms: 3 litres of alcohol and beer in total, and 200 cigarettes, 50 cigars or 250 g of tobacco, for adults 18 and over, whether you arrive by air, land or on foot. Declare cash above US$10,000; above US$100,000 you must also show where the money came from. Plant products are allowed up to 5 kg without a certificate.",
+        "Medicines with narcotic or psychotropic substances are allowed on medical grounds with documents naming the medicine and quantity, in Russian or with a notarised Russian translation."
+      ]
+    },
+    "saudi-arabia": {
+      "h": "What stands out when you travel to Saudi Arabia",
+      "p": [
+        "Saudi Arabia bans importing alcohol and intoxicants of all kinds, with confiscation, fines and imprisonment. ZATCA exempts up to 200 cigarettes; 200 to 2,400 are allowed with duties and Saudi Food and Drug Authority approval. Declare cash above SAR 60,000, and goods in commercial quantities worth more than SAR 3,000.",
+        "The UK government says agricultural seeds may need special approval. Controlled drugs containing narcotic or psychotropic substances need a clearance permit from the SFDA, applied for online with a prescription and medical report."
+      ]
+    },
+    "serbia": {
+      "h": "What stands out when you travel to Serbia",
+      "p": [
+        "Serbia's allowances are small: 1 litre of spirits or sparkling wine plus 1 litre of other wine, and 50 cigarettes, 25 cigarillos, 10 cigars or 50 g of tobacco. Declare €10,000 or more. Without inspection you may bring up to 5 kg of fresh fruit and vegetables, 100 g of seeds and up to three house plants, but only from European countries.",
+        "Customs says medicines containing controlled psychoactive substances need approval from the competent ministry before personal import."
+      ]
+    },
+    "seychelles": {
+      "h": "What stands out when you travel to Seychelles",
+      "p": [
+        "Seychelles allows 2 litres of drinks up to 16% plus 2 litres of stronger drinks, and 250 g of tobacco or 200 cigarettes, for travellers 18 and over. Cash above SCR 50,000 goes through the red channel with a Cash Declaration Form and proof of where the money comes from. Live plants, vegetables and fresh fruit need written approval from the Department of Agriculture first.",
+        "Seychelles' filing to the UN narcotics board allows 30 days of narcotic drugs but 90 days of psychotropic substances, with a doctor's certificate endorsed in your home country."
+      ]
+    },
+    "singapore": {
+      "h": "What stands out when you travel to Singapore",
+      "p": [
+        "Singapore gives duty-free liquor only after 48 hours abroad, not when arriving from Malaysia, and gives no duty-free concession on tobacco at all. Its HSA says travellers with e-vaporisers are fined and the items seized, and convicted foreigners can be deported. Report over S$20,000 on Form NP 727 within 72 hours of travel.",
+        "Amphetamine, the ingredient in Adderall, appears on Appendix A of the HSA document guide of controlled substances that need approval, which must be applied for at least two weeks before arrival, in English."
+      ]
+    },
+    "slovakia": {
+      "h": "What stands out when you travel to Slovakia",
+      "p": [
+        "Slovakia follows the EU limits: 200 cigarettes by air but 40 by land or sea, the usual alcohol limits and a €10,000 cash declaration. Plants and seeds need a permit.",
+        "Its 2007 filing with the INCB allows 7 days for Schedule II psychotropic substances and 30 days for Schedules III and IV of the 1971 Convention, with a valid prescription, and says the Schengen agreement applies."
+      ]
+    },
+    "slovenia": {
+      "h": "What stands out when you travel to Slovenia",
+      "p": [
+        "Slovenia applies the EU limits for arrivals from outside the EU (4 litres of still wine, 16 litres of beer, 200 cigarettes) and the €10,000 cash declaration. Plants and seeds need a permit.",
+        "Slovenia's Financial Administration says illicit drugs used as medicines may be carried within the Schengen area with a medical certificate issued or endorsed by the authority of your country of permanent residence."
+      ]
+    },
+    "south-africa": {
+      "h": "What stands out when you travel to South Africa",
+      "p": [
+        "South Africa allows 2 litres of wine plus 1 litre of spirits, and 200 cigarettes, 20 cigars and 250 g of tobacco, but under-18s cannot claim either allowance. South African banknotes above R100,000 can be seized without National Treasury permission, and you declare currency on the Traveller Declaration. Plants need a plant health import permit and soil is prohibited.",
+        "SAHPRA's guideline lets you hold a Schedule 3, 4, 5 or 6 medicine for personal use, up to one month's supply, with a valid prescription and a prescriber's certificate."
+      ]
+    },
+    "south-korea": {
+      "h": "What stands out when you travel to South Korea",
+      "p": [
+        "South Korea allows 2 litres of liquor and 200 cigarette sticks, apart from the general US$800 allowance, and also 20 ml of e-cigarette liquid under 1% nicotine. Minors under 19 get no exemption. Report means of payment above US$10,000.",
+        "The MFDS requires handling approval for anyone, Korean or foreign, entering with narcotic or psychotropic drugs for their own treatment, a rule that has applied since 23 October 2009."
+      ]
+    },
+    "spain": {
+      "h": "What stands out when you travel to Spain",
+      "p": [
+        "Spain follows the EU limits for arrivals from outside the EU (4 litres of still wine, 16 litres of beer, 200 cigarettes) and the €10,000 cash declaration. Plants and seeds need a permit.",
+        "Spain's AEMPS requires travellers entering with narcotic or psychotropic medicines to request a permit from its Narcotics and Psychotropics Area, authorising them to carry the medicine for their own treatment."
+      ]
+    },
+    "sri-lanka": {
+      "h": "What stands out when you travel to Sri Lanka",
+      "p": [
+        "Sri Lanka Customs does not allow cigarettes, cigars, beedies or snuff in personal baggage at all, and WHO lists a ban on importing e-cigarettes. Tourists may bring 2 bottles of wine and 1.5 litres of spirits, bought at a Sri Lanka duty-free shop or brought from abroad on the day of arrival. Declare more than US$15,000 coming in, and more than US$10,000 going out.",
+        "Any plant item needs a permit and must be shown to the Plant Quarantine Officer. The NMRA does not allow Schedule III medicines; ordinary personal medicine may be carried for your stay or 90 days."
+      ]
+    },
+    "sweden": {
+      "h": "What stands out when you travel to Sweden",
+      "p": [
+        "Sweden applies the EU limits for arrivals from outside the EU (4 litres of still wine, 16 litres of beer, 200 cigarettes) and the €10,000 cash declaration. Tullverket allows 20 ml of nicotine e-liquid from another EU country, and from outside the EU SEK 5,000 by air or ferry, or SEK 3,500 in total.",
+        "Swedish Customs says narcotic or doping medicines may be brought only for medical purposes and personal use, proved with a prescription, pharmacy label or doctor's certificate."
+      ]
+    },
+    "switzerland": {
+      "h": "What stands out when you travel to Switzerland",
+      "p": [
+        "Switzerland's duty-free allowance is per person per day: 5 litres of drinks up to 18% plus 1 litre above, and 250 cigarettes or 250 g of tobacco, from age 17. Customs allows 250 ml of nicotine liquid or 25 disposable vapes a day. No declaration is needed for cash, but from CHF 10,000 customs can ask where it comes from, and the amount is registered.",
+        "Swissmedic allows medicines containing narcotics up to a 30-day supply, ideally in hand luggage and original packaging, with a certificate for each medicine."
+      ]
+    },
+    "taiwan": {
+      "h": "What stands out when you travel to Taiwan",
+      "p": [
+        "Taiwan allows 1.5 litres of alcohol (1 litre if it comes from Mainland China) and, from age 20, 200 cigarettes, 25 cigars or 1 pound of tobacco. E-cigarettes, e-liquid, snuff, snus, chewing tobacco and shisha tobacco are prohibited and can bring criminal penalties. Each passenger may not carry more than NT$100,000 and RMB 20,000, and no fresh fruit from any country is allowed.",
+        "For controlled drugs Taiwan allows up to a 6-month supply with a prescription, and clearance needs a statement certified by the TFDA."
+      ]
+    },
+    "thailand": {
+      "h": "What stands out when you travel to Thailand",
+      "p": [
+        "Thailand allows 1 litre of alcohol and 200 cigarettes or 250 g of tobacco; excess must be dropped in the box provided by Customs, or you face prosecution. The government says importing e-cigarettes can mean up to 10 years in prison or a fine of 5 times the product price. Declare foreign currency over US$15,000, although Customs' English page still shows an older US$20,000 threshold.",
+        "The FDA sorts travellers' controlled medicines by schedule, and for a psychotropic a supply of up to 30 days needs only a certificate or prescription."
+      ]
+    },
+    "turkey": {
+      "h": "What stands out when you travel to Turkey",
+      "p": [
+        "Turkey allows 1 litre of drinks over 22% plus 2 litres up to 22%, and the high figure of 600 cigarettes, 50 cigars and 250 g each of cut and pipe tobacco. Cash above €10,000 or TL 25,000 must be declared, and an undeclared amount means a 10% fine, all the cash held and a report to the prosecutor. WHO lists an import ban on e-cigarettes with a personal-use exception.",
+        "Seeds, seedlings and cuttings are banned in luggage; up to 3 kg of fruit and vegetables and one bouquet are allowed. Medication for personal treatment is allowed with a document, sent up to a month before or three months after arrival."
+      ]
+    },
+    "ukraine": {
+      "h": "What stands out when you travel to Ukraine",
+      "p": [
+        "Ukraine allows adults 5 litres of beer, 2 litres of wine and 1 litre of strong drinks, and 200 cigarettes, 50 cigars or 250 g of tobacco, without a written declaration. Absence of under 24 hours means no duty-free alcohol or tobacco. A written declaration is needed from €10,000.",
+        "Plant material in baggage is inspected under the plant quarantine law. Ukraine's filing to the UN narcotics board needs a valid prescription, a customs declaration and your passport."
+      ]
+    },
+    "united-arab-emirates": {
+      "h": "What stands out when you travel to the United Arab Emirates",
+      "p": [
+        "Dubai's Passenger Customs Guide allows up to 4 litres of alcohol or 2 cartons of beer, with alcohol treated as a restricted item. Tobacco is 200 cigarettes, 50 cigars or 500 g. Dubai Customs lists e-cigarettes as restricted goods released only with approval. Declare cash over AED 60,000.",
+        "Plants and seedlings need a permit, and seedlings containing soil are not allowed. Adderall's amphetamine is on the UAE list as Psychotropic Schedule II, and pseudoephedrine is listed as controlled under the 1988 UN Convention."
+      ]
+    },
+    "united-kingdom": {
+      "h": "What stands out when you travel to the United Kingdom",
+      "p": [
+        "Great Britain's allowance is 42 litres of beer, 18 litres of still wine and 4 litres of spirits, the largest alcohol allowance among these hubs, for travellers 17 and over. Tobacco is 200 cigarettes or 250 g, and you may bring up to 50 ml of vaping liquid. Declare £10,000 or more to Border Force. Other goods are worth up to £390.",
+        "The Home Office's personal-licence guidance works on a three-month rule: amphetamine is a Schedule 2 drug, and a supply of up to three months dispensed to you in your country of residence needs no licence."
+      ]
+    },
+    "united-states": {
+      "h": "What stands out when you travel to the United States",
+      "p": [
+        "The US returning-resident exemption is 1 litre of alcohol, for adults 21 and over, and 200 cigarettes and 100 cigars, with a separate $800 goods exemption every 31 days after at least 48 hours abroad. Report currency over $10,000 on FinCEN Form 105; families and groups are counted together.",
+        "For medicines, the DEA generally decides whether a controlled substance may be imported for personal use, and the FDA coordinates with it on products under both agencies."
+      ]
+    },
+    "vietnam": {
+      "h": "What stands out when you travel to Vietnam",
+      "p": [
+        "Vietnam's duty-free allowance is per entry: 1.5 litres of alcohol above 20%, 2 litres below 20%, or 3 litres of alcoholic drinks and beer, and 200 cigarettes, 20 cigars or 250 g of raw tobacco, with no allowance under 18. WHO lists a ban on importing e-cigarettes. Declare cash above US$5,000 or VND 15,000,000.",
+        "Plant items in hand or checked luggage must be declared and inspected before customs clearance. Vietnam Customs allows medicines for your own treatment of up to 7 days' use for narcotic drugs or up to 10 days' use for psychotropic and precursor drugs, citing Decree 54/2017."
+      ]
     }
   }
 }
