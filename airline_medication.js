@@ -470,7 +470,7 @@ const NP = 'Not published on the pages we read';
         'Emirates: if you carry controlled medication into the UAE you must apply for approval through the Ministry of Health (MoH) website. Ask your doctor whether your medication is controlled.',
         'You must also carry the prescription for the quantity you bring, with a maximum of 3 months\' supply.',
         'Other medication (prescription for uncontrolled medication and over-the-counter medication) does not need prior approval from MoH.',
-        'The UAE has a zero-tolerance anti-drugs policy and airports search thoroughly. See also our <a href="/medication/adderall/united-arab-emirates/">UAE medication rules</a>.'
+        'The UAE has a zero-tolerance anti-drugs policy and airports search thoroughly. See also our <a href="/medication/into/united-arab-emirates/">UAE medication rules</a>.'
       ], [DG]),
       card('abroad', 'Other destinations', 'warn', 'Check the destination', 'International flights', 'Your destination country sets its own medication rules.', ABROAD_LINES, [BF])
     ],
@@ -1291,7 +1291,7 @@ const NP = 'Not published on the pages we read';
         'Etihad: ask your doctor for preventative treatment and complete a MEDIF for clearance to fly.'
       ], [PG]),
       card('uae', 'Flying to the UAE', 'warn', 'Check UAE rules', 'Abu Dhabi and the UAE', 'The UAE has its own rules for controlled medication.', [
-        'Etihad\'s page does not state the UAE rules itself. See our <a href="/medication/adderall/united-arab-emirates/">UAE medication rules</a> from the official UAE sources.'
+        'Etihad\'s page does not state the UAE rules itself. See our <a href="/medication/into/united-arab-emirates/">UAE medication rules</a> from the official UAE sources.'
       ].concat(ABROAD_LINES.slice(1)), [PG])
     ],
     faq: [

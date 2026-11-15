@@ -1436,7 +1436,7 @@ function appSrcFoot(v){
   if(S.mode==='plane'&&v.status!=='nomatch')return '<b class="src-ok">✓ OFFICIAL SOURCE</b> The rule above is from the official airline rules. To be more sure and learn further, please check the links placed here above. '+base;
   if(S.mode!=='country'||!SENT[cat]||v.status==='nomatch')return base;
   var s=v.source,arr=(s&&s.length)?s:(s&&s.url?[s]:[]);
-  if(!arr.length)return '<b class="src-no">BASED ON GLOBAL RULES</b> We did not find an official source specific to '+S.country+' for this '+SENT[cat][1]+', so this shows the general rules most countries follow. '+base;
+  if(!arr.length)return '<b class="src-no">BASED ON GLOBAL RULES</b> We found no official or unofficial source specific to '+S.country+' for this '+SENT[cat][1]+', so this shows the general rules most countries follow. Confirm with customs or the official authority before you travel. '+base;
   var un=arr.every(function(a){return a.unofficial;});
   var lab=un?'<b class="src-un">⚠ UNOFFICIAL SOURCE</b> ':'<b class="src-ok">✓ OFFICIAL SOURCE</b> ';
   var customs=(cat==='alcohol'||cat==='tobacco'||cat==='cash'||cat==='plants'||cat==='vape');

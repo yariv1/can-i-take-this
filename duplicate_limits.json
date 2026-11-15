@@ -1,0 +1,21 @@
+{
+ "airline/*/perfume-aerosols": 52,
+ "airline/*/alcohol": 53,
+ "country/*/vaping": 52,
+ "pets/*": 59,
+ "country/*/ (main page)": 59,
+ "airline/*/power-bank": 50,
+ "country/*/tobacco": 42,
+ "airline/*/liquids": 42,
+ "country/*/cash": 48,
+ "country/*/alcohol": 40,
+ "airline/*/medication": 46,
+ "country/*/plants-seeds": 46,
+ "airline/*/vape-e-cigarette": 44,
+ "food/*": 40,
+ "airline/*/ (main page)": 40,
+ "airline/*/baggage-allowance": 40,
+ "airline/*/wifi": 40,
+ "airline/*/compensation": 40,
+ "blog/*": 40
+}

@@ -25,7 +25,7 @@ function custEntry(cn) {
   return ['40 cigarettes from outside the EU (lower limit for all travellers).', ['Entering ' + cn + ' from a non-EU country the lower limit applies to all travellers: 40 cigarettes, or 20 cigarillos, or 10 cigars, or 50 g of tobacco.', age, guide], 'warn'];
 }
 
-function build(c) {
+function build(c, CUP) {
   const cn = c.name; if (!isEU(cn)) return null;
   const k = kind(cn);
   const rows = [['Cigarettes', k === 'lower' ? '40' : '200', '40'], ['Cigarillos (cigars up to 3 g each)', k === 'lower' ? '20' : '100', '20'], ['Cigars', k === 'lower' ? '10' : '50', '10'], ['Smoking tobacco', k === 'lower' ? '50 g' : '250 g', '50 g']];
@@ -52,9 +52,10 @@ function build(c) {
     ['Can I bring cigarettes into ' + cn + ' if I am under 17?', 'No duty-free allowance: Your Europe says travellers under 17 are not entitled to the tobacco or alcohol allowance.'],
     ['How many cigarettes can I bring into ' + cn + ' from another EU country?', 'The EU\'s guideline levels may not be lower than 800 cigarettes, 400 cigarillos, 200 cigars or 1 kg of tobacco for travel between EU countries.']
   ];
+  if (CUP && CUP.faq) faq = CUP.faq.slice(0);
   const html = '<div class="bd-wrap">' + CSS + '<p class="bd-lead"><strong>' + esc(lead) + '</strong></p>' +
-    '<section class="bd-sec"><h2>🚬 Tobacco allowance for ' + esc(cn) + '</h2><p>From the EU\'s Your Europe page "Alcohol, tobacco and excise duties" (last checked by the EU on 21 September 2026).</p>' + table(tbl) +
-    '<ul><li><strong>Mixing products:</strong> Your Europe says you may combine any of these tobacco products, but you must not exceed the total limit (for example 50 cigarillos and 25 cigars where the higher limit applies).</li><li><strong>Travel between EU countries:</strong> the EU guideline levels may not be lower than 800 cigarettes, 400 cigarillos (cigars up to 3 g each), 200 cigars or 1 kg of tobacco.</li><li><strong>Under 17:</strong> no duty-free tobacco or alcohol allowance.</li></ul></section>' +
+    '<section class="bd-sec"><h2>🚬 Tobacco allowance for ' + esc(cn) + '</h2>' + (CUP ? '' : '<p>From the EU\'s Your Europe page "Alcohol, tobacco and excise duties" (last checked by the EU on 21 September 2026).</p>') + table(tbl) +
+    (CUP ? '' : '<ul><li><strong>Mixing products:</strong> Your Europe says you may combine any of these tobacco products, but you must not exceed the total limit (for example 50 cigarillos and 25 cigars where the higher limit applies).</li><li><strong>Travel between EU countries:</strong> the EU guideline levels may not be lower than 800 cigarettes, 400 cigarillos (cigars up to 3 g each), 200 cigars or 1 kg of tobacco.</li><li><strong>Under 17:</strong> no duty-free tobacco or alcohol allowance.</li></ul>') + '</section>' +
     '<section class="bd-faq"><h2>❓ Quick answers</h2>' + faq.map(q => '<h3>' + esc(q[0]) + '</h3><p>' + esc(q[1]) + '</p>').join('') + '</section>' +
     '<p class="bd-chk">Read ' + READ + '. Allowances can change: confirm with the customs authority of ' + esc(cn) + ' before you travel.</p>' +
     '<div class="bd-src"><div class="h">✓ Official source</div><a href="' + SRC + '" target="_blank" rel="noopener noreferrer">Your Europe: Alcohol, tobacco and excise duties</a></div></div>';

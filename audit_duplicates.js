@@ -1,6 +1,6 @@
 // Duplicate-content audit: per sibling group, share of each page's 5-word shingles that also appear on another page of the same group.
 const fs=require('fs'),path=require('path');
-const root='C:/Users/yariv/Utility Website/can-i-take-this';
+const root=__dirname;
 function text(file){
   let h=fs.readFileSync(file,'utf8');
   const m=h.match(/<main[^>]*>([\s\S]*?)<\/main>/);
@@ -10,7 +10,7 @@ function text(file){
 }
 function shingles(w){const s=new Set();for(let i=0;i+5<=w.length;i++)s.add(w.slice(i,i+5).join(' '));return s;}
 const groups={};
-function add(g,f){(groups[g]=groups[g]||[]).push(f);}
+function add(g,f){ if(/<meta name="robots" content="[^"]*noindex/i.test(fs.readFileSync(f,'utf8').slice(0,6000))) return; (groups[g]=groups[g]||[]).push(f);}
 // airline/<slug>/<cat>/index.html, country/<slug>/<cat>/index.html, food/<slug>/index.html, blog/*/index.html
 for(const top of ['airline','country']){
   for(const s of fs.readdirSync(path.join(root,top))){
@@ -39,3 +39,15 @@ for(const [g,files] of Object.entries(groups)){
 }
 out.sort((a,b)=>b.avgDup-a.avgDup);
 for(const o of out)console.log(`${(o.avgDup*100).toFixed(0)}% shared | ${o.pages} pages | ~${o.avgShingles} words | ${o.g} | worst: ${o.worst.map(w=>w.f+' '+(w.dup*100).toFixed(0)+'%').join(', ')}`);
+
+// LIMIT (qa_gate): a group's avg shared share may not exceed its ceiling in duplicate_limits.json.
+// New/unlisted groups default to 40%. Ceilings only go DOWN: after de-duplicating a group run `node audit_duplicates.js --ratchet`.
+const LIM=path.join(root,'duplicate_limits.json'),DEFAULT=40;
+let lim={};try{lim=JSON.parse(fs.readFileSync(LIM,'utf8'));}catch(e){}
+if(process.argv.includes('--ratchet')||!fs.existsSync(LIM)){
+  for(const o of out){const cur=Math.ceil(o.avgDup*100);const prev=lim[o.g];lim[o.g]=prev===undefined?Math.max(cur,DEFAULT):Math.min(prev,Math.max(cur,DEFAULT));}
+  fs.writeFileSync(LIM,JSON.stringify(lim,null,1));console.log('ceilings written');
+}
+const bad=out.filter(o=>Math.round(o.avgDup*100)>(lim[o.g]===undefined?DEFAULT:lim[o.g]));
+if(bad.length){console.log('DUPLICATE LIMIT EXCEEDED: '+bad.map(o=>o.g+' '+(o.avgDup*100).toFixed(0)+'% > '+(lim[o.g]===undefined?DEFAULT:lim[o.g])+'%').join('; '));process.exit(1);}
+console.log('duplicate limits OK ('+out.filter(o=>o.avgDup*100>DEFAULT).length+' groups still above the 40% target)');
