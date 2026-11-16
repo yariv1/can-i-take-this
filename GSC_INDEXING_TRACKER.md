@@ -561,3 +561,109 @@ airline/saudia/medication, airline/kuwait-airways/medication, airline/middle-eas
 REQUESTED 2026-10-25: airline/volaris/baggage-allowance, airline/virgin-atlantic/perfume-aerosols, airline/lufthansa/compensation, airline/iberia/compensation, blog/us-travel-programs, blog/medications, blog/entry-permits, blog/food-agriculture, blog/customs-money, blog/batteries-electronics (the last two sent in a batch whose confirmation was lost; the 11th click returned "Quota Exceeded", so all 10 counted).
 NOT requested (no quota): blog/airline-fees-policies (NOT on Google, verified 2026-10-25).
 ALREADY ON GOOGLE (2026-10-25): ethiopian/air-europa/avianca/asiana baggage, benadryl/japan, food/united-arab-emirates, vietnam-airlines/power-bank, korean-air/perfume-aerosols, country/kenya/vaping, kuwait/plants-seeds, blog uk-eta, etias, real-id, global-entry, clear-vs-precheck, precheck-cost, delta + ryanair compensation, delta/wifi, medication/into/south-africa.
+
+## 2026-11-16: RESTORED (noindex removed, deploy 2e953e853) - 104 pages, TO REQUEST in GSC (impressions order, ~10/day)
+https://canitakethis.co/country/bulgaria/tobacco/ (416 impr)
+https://canitakethis.co/country/poland/cash/ (328 impr)
+https://canitakethis.co/country/romania/tobacco/ (222 impr)
+https://canitakethis.co/country/romania/cash/ (196 impr)
+https://canitakethis.co/country/south-korea/cash/ (177 impr)
+https://canitakethis.co/country/hungary/alcohol/ (159 impr)
+https://canitakethis.co/country/poland/alcohol/ (143 impr)
+https://canitakethis.co/country/bulgaria/cash/ (134 impr)
+https://canitakethis.co/country/malaysia/cash/ (133 impr)
+https://canitakethis.co/country/israel/cash/ (116 impr)
+https://canitakethis.co/country/taiwan/cash/ (112 impr)
+https://canitakethis.co/country/bulgaria/alcohol/ (103 impr)
+https://canitakethis.co/country/turkey/cash/ (103 impr)
+https://canitakethis.co/country/norway/cash/ (98 impr)
+https://canitakethis.co/country/portugal/cash/ (97 impr)
+https://canitakethis.co/country/egypt/cash/ (95 impr)
+https://canitakethis.co/country/sweden/cash/ (95 impr)
+https://canitakethis.co/country/canada/cash/ (94 impr)
+https://canitakethis.co/country/poland/tobacco/ (87 impr)
+https://canitakethis.co/country/croatia/cash/ (83 impr)
+https://canitakethis.co/country/lithuania/alcohol/ (81 impr)
+https://canitakethis.co/country/mauritius/cash/ (81 impr)
+https://canitakethis.co/country/austria/cash/ (78 impr)
+https://canitakethis.co/country/lithuania/cash/ (78 impr)
+https://canitakethis.co/airline/pegasus/alcohol/ (75 impr)
+https://canitakethis.co/country/lithuania/tobacco/ (71 impr)
+https://canitakethis.co/country/dominican-republic/cash/ (67 impr)
+https://canitakethis.co/country/south-africa/cash/ (64 impr)
+https://canitakethis.co/country/belgium/cash/ (61 impr)
+https://canitakethis.co/country/spain/cash/ (60 impr)
+https://canitakethis.co/country/finland/alcohol/ (57 impr)
+https://canitakethis.co/country/georgia/cash/ (51 impr)
+https://canitakethis.co/country/serbia/vaping/ (51 impr)
+https://canitakethis.co/country/united-kingdom/cash/ (50 impr)
+https://canitakethis.co/country/georgia/vaping/ (47 impr)
+https://canitakethis.co/country/qatar/cash/ (45 impr)
+https://canitakethis.co/country/portugal/tobacco/ (43 impr)
+https://canitakethis.co/country/argentina/cash/ (40 impr)
+https://canitakethis.co/country/oman/cash/ (39 impr)
+https://canitakethis.co/country/malta/alcohol/ (35 impr)
+https://canitakethis.co/country/serbia/cash/ (34 impr)
+https://canitakethis.co/country/india/cash/ (31 impr)
+https://canitakethis.co/country/czechia/cash/ (30 impr)
+https://canitakethis.co/country/new-zealand/cash/ (30 impr)
+https://canitakethis.co/country/estonia/cash/ (29 impr)
+https://canitakethis.co/country/malta/cash/ (28 impr)
+https://canitakethis.co/country/maldives/cash/ (27 impr)
+https://canitakethis.co/country/netherlands/cash/ (27 impr)
+https://canitakethis.co/country/kenya/cash/ (26 impr)
+https://canitakethis.co/country/ethiopia/cash/ (23 impr)
+https://canitakethis.co/country/fiji/vaping/ (23 impr)
+https://canitakethis.co/country/france/cash/ (23 impr)
+https://canitakethis.co/country/singapore/cash/ (20 impr)
+https://canitakethis.co/country/belgium/tobacco/ (2 impr)
+https://canitakethis.co/country/belgium/alcohol/
+https://canitakethis.co/country/brazil/cash/
+https://canitakethis.co/country/cambodia/cash/
+https://canitakethis.co/country/chile/cash/
+https://canitakethis.co/country/china/cash/
+https://canitakethis.co/country/colombia/cash/
+https://canitakethis.co/country/costa-rica/cash/
+https://canitakethis.co/country/cuba/cash/
+https://canitakethis.co/country/cyprus/cash/
+https://canitakethis.co/country/denmark/cash/
+https://canitakethis.co/country/european-union/cash/
+https://canitakethis.co/country/fiji/cash/
+https://canitakethis.co/country/finland/cash/
+https://canitakethis.co/country/finland/tobacco/
+https://canitakethis.co/country/germany/cash/
+https://canitakethis.co/country/greece/alcohol/
+https://canitakethis.co/country/greece/cash/
+https://canitakethis.co/country/greece/tobacco/
+https://canitakethis.co/country/hong-kong/cash/
+https://canitakethis.co/country/hungary/cash/
+https://canitakethis.co/country/iceland/cash/
+https://canitakethis.co/country/indonesia/cash/
+https://canitakethis.co/country/ireland/cash/
+https://canitakethis.co/country/italy/cash/
+https://canitakethis.co/country/jamaica/cash/
+https://canitakethis.co/country/japan/cash/
+https://canitakethis.co/country/japan/vaping/
+https://canitakethis.co/country/kuwait/cash/
+https://canitakethis.co/country/latvia/cash/
+https://canitakethis.co/country/luxembourg/cash/
+https://canitakethis.co/country/malta/tobacco/
+https://canitakethis.co/country/mexico/cash/
+https://canitakethis.co/country/morocco/cash/
+https://canitakethis.co/country/nepal/cash/
+https://canitakethis.co/country/panama/cash/
+https://canitakethis.co/country/philippines/cash/
+https://canitakethis.co/country/russia/cash/
+https://canitakethis.co/country/saudi-arabia/cash/
+https://canitakethis.co/country/seychelles/cash/
+https://canitakethis.co/country/slovakia/alcohol/
+https://canitakethis.co/country/slovakia/cash/
+https://canitakethis.co/country/slovakia/tobacco/
+https://canitakethis.co/country/slovenia/cash/
+https://canitakethis.co/country/sri-lanka/cash/
+https://canitakethis.co/country/switzerland/cash/
+https://canitakethis.co/country/thailand/cash/
+https://canitakethis.co/country/ukraine/cash/
+https://canitakethis.co/country/united-arab-emirates/cash/
+https://canitakethis.co/country/united-states/cash/
+https://canitakethis.co/country/vietnam/cash/
