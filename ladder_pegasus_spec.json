@@ -1,0 +1,28 @@
+{
+ "airline": "Pegasus",
+ "alcohol": {
+  "answer": "Pegasus publishes the passenger dangerous-goods table (document effective 1 January to 31 December 2023). It lists alcoholic drinks of more than 24% and up to 70% alcohol in retail packaging, in receptacles of up to 5 L and 5 L in total per person, and says drinks of 24% or less are not subject to any restrictions.",
+  "sections": [
+   {"h": "What Pegasus's own document says about alcohol", "p": "The document is titled Provisions for Dangerous Goods Carried by Passengers or Crew on Pegasus Airlines Flights. It starts from the principle that dangerous goods must not be carried in or as passengers or crew, checked or carry-on baggage, except as otherwise provided in its table.",
+    "table": {"head": ["Drink", "What the Pegasus document states"], "rows": [
+     ["More than 24% and up to 70% alcohol by volume", "Allowed in retail packaging, in receptacles not exceeding 5 L, with a total net quantity per person of 5 L"],
+     ["24% or less alcohol by volume", "Not subject to any restrictions"]]},
+    "list": ["The table has separate columns for carry-on, checked baggage, operator approval and informing the pilot-in-command; the text extracted from the PDF does not keep the columns reliably aligned, so check the PDF itself for which column applies.", "Not on the page: any Pegasus rule for duty-free alcohol or for drinks stronger than 70%."]}
+  ],
+  "faq": [["How much strong alcohol can I take on Pegasus?", "Pegasus's 2023 passenger dangerous-goods document allows drinks of more than 24% and up to 70% alcohol in retail packaging, in containers of up to 5 L and 5 L in total per person."], ["Is wine or beer restricted on Pegasus?", "The same document says alcoholic beverages containing 24% or less alcohol by volume are not subject to any restrictions."]],
+  "sources": [["https://cdnp.flypgs.com/files/pdf/genel_kurallar_pdf/ProvisionsforDangerous_Goods_Carried_by_PassengersorCrew_on_Pegasus_Airlines_Flights.pdf", "Pegasus: Provisions for Dangerous Goods Carried by Passengers or Crew (document effective 2023)"]]
+ },
+ "perfume": {
+  "answer": "Pegasus's own passenger dangerous-goods document (effective 2023) covers perfumes, colognes and hair sprays: the total net quantity of such toiletry articles and non-flammable aerosols must not exceed 2 kg or 2 L, and each single article must not exceed 0.5 kg or 0.5 L.",
+  "sections": [
+   {"h": "What Pegasus's own document says about perfume and aerosols", "p": "Pegasus lists non-radioactive medicinal or toiletry articles (including aerosols), such as hair sprays, perfumes, colognes and medicines containing alcohol, together with non-flammable, non-toxic (Division 2.2) aerosols for sporting or home use.",
+    "table": {"head": ["Point", "What the Pegasus document states"], "rows": [
+     ["Total per passenger", "Not more than 2 kg or 2 L in total"],
+     ["Each single article", "Not more than 0.5 kg or 0.5 L"],
+     ["Aerosol valves", "Release valves must be protected by a cap or other suitable means to prevent inadvertent release of the contents"]]},
+    "list": ["The table has separate columns for carry-on, checked baggage and operator approval; the extracted PDF text does not keep the columns reliably aligned, so check the PDF itself.", "Security checkpoints can apply the separate 100 ml liquid limit in the cabin; this document does not address it."]}
+  ],
+  "faq": [["How much perfume can I take on a Pegasus flight?", "Pegasus's 2023 dangerous-goods document sets 2 kg or 2 L in total for toiletry articles such as perfumes and hair sprays, and 0.5 kg or 0.5 L for each single article."], ["Do aerosol sprays need a cap on Pegasus?", "Yes. The document says release valves on aerosols must be protected by a cap or other suitable means to prevent inadvertent release of the contents."]],
+  "sources": [["https://cdnp.flypgs.com/files/pdf/genel_kurallar_pdf/ProvisionsforDangerous_Goods_Carried_by_PassengersorCrew_on_Pegasus_Airlines_Flights.pdf", "Pegasus: Provisions for Dangerous Goods Carried by Passengers or Crew (document effective 2023)"]]
+ }
+}

@@ -1,0 +1,28 @@
+const fs = require('fs');
+const d = JSON.parse(fs.readFileSync('country_unique.json', 'utf8'));
+for (const k of ['alcohol', 'tobacco', 'plants', 'cash']) d[k] = d[k] || {};
+const log = JSON.parse(fs.readFileSync('ladder_log.json', 'utf8'));
+const code = { 'saudi-arabia': 'SAU', ukraine: 'UKR', lebanon: 'LBN', ireland: 'IRL', 'south-korea': 'KOR', peru: 'PER', mexico: 'MEX' };
+const nm = { 'saudi-arabia': 'Saudi Arabia', ukraine: 'Ukraine', lebanon: 'Lebanon', ireland: 'Ireland', 'south-korea': 'South Korea', peru: 'Peru', mexico: 'Mexico' };
+const OFF = { 'saudi-arabia': 'zatca.gov.sa rules page: request failed, not read', ukraine: 'customs.gov.ua: HTTP 403, not read', lebanon: 'customs.gov.lb: expired certificate, not read', ireland: 'revenue.ie customs page redirected; redirect target not read', 'south-korea': 'customs.go.kr home page read: no plant or seed rules on it', peru: 'sunat.gob.pe home page read: only a link to traveller info, no plant rules', mexico: 'sat.gob.mx: HTTP 504, not read' };
+const NOTE = 'The page names no publisher and shows no date, so confirm the figures with the customs authority before you travel.';
+const S = (c) => 'Unofficial source, read 16 November 2026: Travel Doc customs information page for ' + nm[c] + ' (infopages.traveldoc.aero, undated; it names no publisher). The official customs site could not be read.';
+const LBL = { alcohol: 'alcohol', tobacco: 'tobacco', plants: 'plants and seeds', cash: 'cash' };
+const E = (c, cat, p) => {
+  d[cat][c] = { h: 'What the Travel Doc customs page says about ' + LBL[cat] + ' in ' + nm[c], p: [p, NOTE], src: S(c), link: ['https://infopages.traveldoc.aero/Customs/' + code[c] + '/Plain', 'Travel Doc: ' + nm[c] + ' customs information'] };
+  log['country/' + c + '/' + (cat === 'plants' ? 'plants-seeds' : cat)] = { official: ['tried 2026-11-16: ' + OFF[c]], reliable: ['read: Travel Doc customs information page for ' + nm[c] + ' (infopages.traveldoc.aero)'], other: ['none needed: step 2a answered the question'], date: '2026-11-16' };
+};
+E('saudi-arabia', 'tobacco', 'The Travel Doc customs page for Saudi Arabia lists 200 cigarettes or 25 cigars as free to import, plus a separate hookah tobacco allowance of 500 g. It states no age limit.');
+E('saudi-arabia', 'cash', 'The Travel Doc customs page for Saudi Arabia says any amount of currency may be imported, but amounts above SAR 60,000 (or the foreign equivalent) must be declared.');
+E('ukraine', 'alcohol', 'The Travel Doc customs page for Ukraine allows travellers aged 18 and over 1 litre of spirits and 2 litres of wine.');
+E('ukraine', 'tobacco', 'The Travel Doc customs page for Ukraine allows travellers aged 18 and over one of: 200 cigarettes, 50 cigars or 250 g of tobacco.');
+E('ukraine', 'cash', 'The Travel Doc customs page for Ukraine says funds above 10,000 hryvnia need a written declaration supported by documents showing the money was withdrawn from an accredited bank or similar institution. Its wording on funds below that level is unclear, so ask Ukrainian customs which amounts you must declare.');
+E('lebanon', 'alcohol', 'The Travel Doc customs page for Lebanon allows travellers aged 18 and over either 2 litres of spirits such as whisky, cognac or champagne, or 4 litres of other alcoholic drinks such as beer or wine.');
+E('lebanon', 'tobacco', 'The Travel Doc customs page for Lebanon allows travellers aged 18 and over one of: 800 cigarettes, 100 cigarillos, 50 cigars or 1,000 g of tobacco.');
+E('ireland', 'plants', 'The Travel Doc customs page for Ireland gives no quantity allowance for plants or seeds. It says plants and plant products face restrictions, especially when they come from outside the EU, and points to a gov.ie page on plant imports.');
+E('south-korea', 'plants', 'The Travel Doc customs page for South Korea lists agricultural, forest and plant products as restricted, with limits of up to 5 kg of each item and 40 kg in total, within a value of 100,000 won. Restricted goods generally need a permit before arrival. Seeds are not mentioned separately.');
+E('peru', 'plants', 'The Travel Doc customs page for Peru gives no personal allowance for plants or seeds. It lists agricultural products and flora and fauna as restricted goods that in most cases need a permit before arrival, and refers you to SUNAT for details.');
+E('mexico', 'cash', 'The Travel Doc customs page for Mexico says currency of more than US$10,000 must be declared to customs. It gives no separate threshold for other forms of cash.');
+fs.writeFileSync('country_unique.json', JSON.stringify(d));
+fs.writeFileSync('ladder_log.json', JSON.stringify(log, null, 1));
+console.log('ok');

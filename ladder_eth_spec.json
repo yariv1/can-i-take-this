@@ -1,0 +1,15 @@
+{
+ "airline": "Ethiopian Airlines",
+ "liquids": {
+  "answer": "Ethiopian Airlines's restricted-items page does not state a 100 ml limit. It says aerosols, perfumes and alcohol-based medicines are allowed in carry-on and checked baggage up to 0.5 kg or L per article and 2.0 kg or L in total, and that flammable liquids such as fuels, paints and thinners are not allowed in either.",
+  "sections": [
+   {"h": "What Ethiopian Airlines's own page says about liquids", "p": "The restricted-items page lists liquid-type goods in a table with columns for carry-on and check-in. It also notes in its FAQ that Ethiopian may have restrictions on carrying liquids, gels and certain hazardous items in carry-on bags.",
+    "table": {"head": ["Item", "Carry-on", "Checked", "Limit stated"], "rows": [
+     ["Aerosols, perfumes, alcohol-based medicines", "Yes", "Yes", "Not exceeding 0.5 KG/L per article and 2.0 KG/L in total weight"],
+     ["Flammable liquids (lighter or heating fuels, paints, thinners)", "No", "No", "Not allowed"]]},
+    "list": ["Not on the page: a 100 ml per container limit or a one-litre bag. Those come from the security rules of the airport you depart from."]}
+  ],
+  "faq": [["Does Ethiopian Airlines state a 100 ml liquid limit?", "Not on its restricted-items page. The page gives a 0.5 kg or L per article and 2.0 kg or L total limit for aerosols, perfumes and alcohol-based medicines, and says Ethiopian may have restrictions on liquids and gels in carry-on bags."], ["Can I take paint or thinners on Ethiopian Airlines?", "No. The restricted-items page marks flammable liquids such as fuels, paints and thinners as not allowed in carry-on or in checked baggage."]],
+  "sources": [["https://www.ethiopianairlines.com/us/information/baggage-information/restricted-items", "Ethiopian Airlines: Restricted items"]]
+ }
+}

@@ -9116,5 +9116,146 @@
     ]
    }
   ]
+ },
+ "Italy": {
+  "checked": "16 November 2026",
+  "answer": "Italy's customs agency (ADM) says, in its Traveller's Customs Charter (July 2025), that personal supplies of meat, meat products, milk, dairy and game may not be brought in from outside the EU (Andorra, Iceland, Liechtenstein, Norway, San Marino and Switzerland excepted) unless they come with a health certificate from the country of origin, whatever the quantity. Small plant quantities need a phytosanitary certificate, and fish is capped at 20 kg.",
+  "sources": [
+   [
+    "https://www.adm.gov.it/portale/documents/20182/909438/Carta+doganale+del+viaggiatore_luglio+2025.pdf",
+    "Agenzia delle Dogane e dei Monopoli (ADM) — Carta doganale del viaggiatore, July 2025 (PDF, in Italian)"
+   ]
+  ],
+  "faq": [
+   [
+    "Can I bring cheese or cured meat into Italy from outside the EU?",
+    "Not as personal supplies. ADM says meat, meat products, milk and dairy from third countries are banned whatever the amount unless a health certificate from the country of origin accompanies them; the traveller must also go to the Ministry of Health border inspection post (PCF)."
+   ],
+   [
+    "Which countries are exempt from the ban?",
+    "ADM names Andorra, Iceland, Liechtenstein, Norway, San Marino and Switzerland."
+   ],
+   [
+    "Can I bring bread, biscuits, chocolate or pasta?",
+    "ADM lists bread, biscuits, chocolate, confectionery and pasta among exempted products, as long as they are not combined with meat products or filled with them."
+   ],
+   [
+    "How much fish can I bring?",
+    "ADM gives a limit of 20 kg of fishery products for personal consumption, or the weight of one fish. Caviar is exempt from paperwork up to 125 g per traveller; above that a CITES certificate is needed."
+   ],
+   [
+    "Do I need a certificate for fruit and vegetables?",
+    "ADM says introducing small quantities of plants is not allowed without the phytosanitary certificates of the country of origin, because of the risk of spreading harmful organisms."
+   ]
+  ],
+  "topics": [
+   {
+    "id": "meat",
+    "label": "Meat & dairy",
+    "status": "stop",
+    "verdict": "Not allowed",
+    "head": "ADM bans personal supplies of meat and dairy from outside the EU unless certified.",
+    "scen": [
+     {
+      "when": "Meat, cured meat, game, milk and dairy from non-EU countries",
+      "status": "stop",
+      "tag": "Not allowed",
+      "lines": [
+       "Banned whatever the quantity unless accompanied by a health certificate from the country of origin."
+      ]
+     },
+     {
+      "when": "Stuffed pasta and pet food with meat or milk",
+      "status": "stop",
+      "tag": "Not allowed",
+      "lines": [
+       "ADM names certain preparations with milk or meat, such as filled pasta and pet food, in the same ban."
+      ]
+     },
+     {
+      "when": "Faroe Islands and Greenland",
+      "status": "warn",
+      "tag": "Up to 10 kg",
+      "lines": [
+       "Small quantities of meat, milk and derivatives up to 10 kg."
+      ]
+     },
+     {
+      "when": "Infant formula and special medical food",
+      "status": "warn",
+      "tag": "Up to 2 kg",
+      "lines": [
+       "Allowed if no refrigeration is needed before opening, branded, in intact retail packs; 2 kg from other countries, 10 kg from Faroe Islands or Greenland."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "plants",
+    "label": "Fruit, plants & honey",
+    "status": "warn",
+    "verdict": "Limited amounts",
+    "head": "Plants need a phytosanitary certificate; honey and similar products are capped.",
+    "scen": [
+     {
+      "when": "Fresh fruit and vegetables",
+      "status": "stop",
+      "tag": "Certificate",
+      "lines": [
+       "Not allowed without the phytosanitary certificates of the country of origin."
+      ]
+     },
+     {
+      "when": "Honey, live oysters, mussels, snails",
+      "status": "warn",
+      "tag": "Up to 2 kg",
+      "lines": [
+       "Small quantities for personal consumption up to 2 kg per person (10 kg from the Faroe Islands or Greenland)."
+      ]
+     },
+     {
+      "when": "Bread, biscuits, chocolate, confectionery, pasta",
+      "status": "go",
+      "tag": "Allowed",
+      "lines": [
+       "Exempted as long as not combined with or filled with meat products."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "fish",
+    "label": "Fish",
+    "status": "go",
+    "verdict": "Up to 20 kg",
+    "head": "Fishery products up to 20 kg, or one fish.",
+    "scen": [
+     {
+      "when": "Fish and fishery products",
+      "status": "go",
+      "tag": "Up to 20 kg",
+      "lines": [
+       "The limit is 20 kg or the weight of one fish."
+      ]
+     },
+     {
+      "when": "Caviar",
+      "status": "warn",
+      "tag": "Up to 125 g",
+      "lines": [
+       "No paperwork up to 125 g per traveller; above that a CITES certificate is required, shown to the Guardia di Finanza at import."
+      ]
+     },
+     {
+      "when": "Not covered",
+      "status": "warn",
+      "tag": "Not read",
+      "lines": [
+       "The charter is in Italian; this page repeats only what the July 2025 edition states and does not summarise its other sections."
+      ]
+     }
+    ]
+   }
+  ]
  }
 }

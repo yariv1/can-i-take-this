@@ -13295,59 +13295,57 @@
    "checked": "14 November 2026"
   },
   "liquids": {
-   "answer": "We could not take a liquids rule from Ethiopian Airlines's own pages. The rule that security checkpoints apply to cabin baggage is containers of 100 ml or less in one transparent resealable bag of at most 1 litre, according to the International Air Transport Association (IATA).",
+   "answer": "Ethiopian Airlines's restricted-items page does not state a 100 ml limit. It says aerosols, perfumes and alcohol-based medicines are allowed in carry-on and checked baggage up to 0.5 kg or L per article and 2.0 kg or L in total, and that flammable liquids such as fuels, paints and thinners are not allowed in either.",
    "sections": [
     {
-     "h": "💧 What Ethiopian Airlines says about liquids",
-     "p": "This section is from an unofficial source, not Ethiopian Airlines's own rules: the International Air Transport Association (IATA). Ethiopian's carry-on page (read) says only that liquids and gels may be restricted, without a limit.",
+     "h": "What Ethiopian Airlines's own page says about liquids",
+     "p": "The restricted-items page lists liquid-type goods in a table with columns for carry-on and check-in. It also notes in its FAQ that Ethiopian may have restrictions on carrying liquids, gels and certain hazardous items in carry-on bags.",
      "table": {
       "head": [
-       "Question",
-       "Ethiopian Airlines rule"
+       "Item",
+       "Carry-on",
+       "Checked",
+       "Limit stated"
       ],
       "rows": [
        [
-        "Container size",
-        "Containers of 100 ml or equivalent"
+        "Aerosols, perfumes, alcohol-based medicines",
+        "Yes",
+        "Yes",
+        "Not exceeding 0.5 KG/L per article and 2.0 KG/L in total weight"
        ],
        [
-        "Bag",
-        "A transparent resealable plastic bag with a maximum capacity of 1 litre"
-       ],
-       [
-        "Medications, baby foods and special diets",
-        "In principle the restrictions do not apply, but consult your local airport to be sure"
-       ],
-       [
-        "Where the rule comes from",
-        "More governments are adopting the guidelines of the International Civil Aviation Organization (ICAO)"
+        "Flammable liquids (lighter or heating fuels, paints, thinners)",
+        "No",
+        "No",
+        "Not allowed"
        ]
       ]
      },
      "list": [
-      "<strong>Not on the page:</strong> Ethiopian Airlines's own rule. Ethiopian Airlines and the airports you use can add stricter limits, so confirm with Ethiopian Airlines before you fly."
+      "Not on the page: a 100 ml per container limit or a one-litre bag. Those come from the security rules of the airport you depart from."
      ]
     }
    ],
    "faq": [
     [
-     "How much liquid can I take in my Ethiopian Airlines cabin bag?",
-     "Following the International Air Transport Association (IATA): containers of 100 ml or less in one transparent resealable bag of at most 1 litre. Ethiopian Airlines's own page was not readable on this, so confirm with the airline."
+     "Does Ethiopian Airlines state a 100 ml liquid limit?",
+     "Not on its restricted-items page. The page gives a 0.5 kg or L per article and 2.0 kg or L total limit for aerosols, perfumes and alcohol-based medicines, and says Ethiopian may have restrictions on liquids and gels in carry-on bags."
     ],
     [
-     "Does Ethiopian Airlines allow liquid medicine and baby food over the limit?",
-     "The source says in principle the restrictions do not apply to medications, baby foods and special dietary requirements, but to check with your local airport; confirm with Ethiopian Airlines."
+     "Can I take paint or thinners on Ethiopian Airlines?",
+     "No. The restricted-items page marks flammable liquids such as fuels, paints and thinners as not allowed in carry-on or in checked baggage."
     ]
    ],
    "sources": [
     [
-     "https://www.iata.org/en/youandiata/travelers/baggage/",
-     "IATA &mdash; Travel & Baggage"
+     "https://www.ethiopianairlines.com/us/information/baggage-information/restricted-items",
+     "Ethiopian Airlines: Restricted items"
     ]
    ],
    "keepSchema": true,
    "checked": "18 October 2026",
-   "unofficial": true
+   "unofficial": false
   },
   "alcohol": {
    "answer": "We could not take an alcohol rule from Ethiopian Airlines's own pages. The IATA Dangerous Goods Regulations allow alcoholic drinks of more than 24% and up to 70% alcohol in retail packaging, in receptacles of up to 5 L and 5 L in total per person, in carry-on and checked baggage; drinks of 24% or less are not restricted.",
@@ -20116,126 +20114,104 @@
    "unofficial": false
   },
   "alcohol": {
-   "answer": "We could not take an alcohol rule from Pegasus's own pages. The IATA Dangerous Goods Regulations allow alcoholic drinks of more than 24% and up to 70% alcohol in retail packaging, in receptacles of up to 5 L and 5 L in total per person, in carry-on and checked baggage; drinks of 24% or less are not restricted.",
+   "answer": "Pegasus publishes the passenger dangerous-goods table (document effective 1 January to 31 December 2023). It lists alcoholic drinks of more than 24% and up to 70% alcohol in retail packaging, in receptacles of up to 5 L and 5 L in total per person, and says drinks of 24% or less are not subject to any restrictions.",
    "sections": [
     {
-     "h": "🍷 What the industry rule says about alcohol on Pegasus",
-     "p": "This section is from an unofficial source, not Pegasus's own rules: the International Air Transport Association (IATA). The Pegasus pages we read (baggage, restricted items and dangerous goods) do not state this rule.",
+     "h": "What Pegasus's own document says about alcohol",
+     "p": "The document is titled Provisions for Dangerous Goods Carried by Passengers or Crew on Pegasus Airlines Flights. It starts from the principle that dangerous goods must not be carried in or as passengers or crew, checked or carry-on baggage, except as otherwise provided in its table.",
      "table": {
       "head": [
-       "Question",
-       "IATA rule"
+       "Drink",
+       "What the Pegasus document states"
       ],
       "rows": [
        [
-        "Up to 24% alcohol by volume",
+        "More than 24% and up to 70% alcohol by volume",
+        "Allowed in retail packaging, in receptacles not exceeding 5 L, with a total net quantity per person of 5 L"
+       ],
+       [
+        "24% or less alcohol by volume",
         "Not subject to any restrictions"
-       ],
-       [
-        "More than 24% and up to 70%",
-        "Retail packaging, receptacles not exceeding 5 L, total net quantity 5 L per person"
-       ],
-       [
-        "Where",
-        "Permitted in carry-on and in checked baggage, without operator approval"
-       ],
-       [
-        "Stronger than 70%",
-        "The entry only covers drinks up to 70%"
-       ],
-       [
-        "In your cabin bag on Pegasus",
-        "Security liquid limits also apply: Pegasus says the amount of liquids in hand luggage is restricted and cosmetic products carried in the cabin cannot be more than 100 ml each; essential items such as baby food can be carried in zip bags."
        ]
       ]
      },
      "list": [
-      "<strong>Not on the page:</strong> Pegasus's own rule. Pegasus, the airports you use and your destination customs can add stricter limits, so confirm with Pegasus before you fly."
+      "The table has separate columns for carry-on, checked baggage, operator approval and informing the pilot-in-command; the text extracted from the PDF does not keep the columns reliably aligned, so check the PDF itself for which column applies.",
+      "Not on the page: any Pegasus rule for duty-free alcohol or for drinks stronger than 70%."
      ]
     }
    ],
    "faq": [
     [
-     "Can I take alcohol on Pegasus?",
-     "Following the IATA rule: drinks up to 24% have no restriction and drinks above 24% up to 70% are allowed in retail packaging up to 5 L in total per person. Pegasus's own page was not readable on this, so confirm with the airline."
+     "How much strong alcohol can I take on Pegasus?",
+     "Pegasus's 2023 passenger dangerous-goods document allows drinks of more than 24% and up to 70% alcohol in retail packaging, in containers of up to 5 L and 5 L in total per person."
     ],
     [
-     "Can I carry alcohol in my Pegasus cabin bag?",
-     "The IATA entry allows it in carry-on baggage, but security liquid limits apply at the checkpoint (see the liquids rule below)."
+     "Is wine or beer restricted on Pegasus?",
+     "The same document says alcoholic beverages containing 24% or less alcohol by volume are not subject to any restrictions."
     ]
    ],
    "sources": [
     [
-     "https://www.iata.org/contentassets/6fea26dd84d24b26a7a1fd5788561d6e/dgr-67-en-2.3.a.pdf",
-     "IATA &mdash; Dangerous Goods Regulations, Table 2.3.A (67th edition, 1 January 2026)"
+     "https://cdnp.flypgs.com/files/pdf/genel_kurallar_pdf/ProvisionsforDangerous_Goods_Carried_by_PassengersorCrew_on_Pegasus_Airlines_Flights.pdf",
+     "Pegasus: Provisions for Dangerous Goods Carried by Passengers or Crew (document effective 2023)"
     ]
    ],
    "keepSchema": true,
    "checked": "18 October 2026",
-   "unofficial": true
+   "unofficial": false
   },
   "perfume": {
-   "answer": "We could not take a perfume and aerosol rule from Pegasus's own pages. The IATA Dangerous Goods Regulations allow medicinal and toiletry articles including aerosols, such as hair sprays, perfumes and colognes, in carry-on and checked baggage, up to 2 kg or 2 L in total and 0.5 kg or 0.5 L per article.",
+   "answer": "Pegasus's own passenger dangerous-goods document (effective 2023) covers perfumes, colognes and hair sprays: the total net quantity of such toiletry articles and non-flammable aerosols must not exceed 2 kg or 2 L, and each single article must not exceed 0.5 kg or 0.5 L.",
    "sections": [
     {
-     "h": "🧴 What the industry rule says about perfume and aerosols on Pegasus",
-     "p": "This section is from an unofficial source, not Pegasus's own rules: the International Air Transport Association (IATA). The Pegasus pages we read (baggage, restricted items and dangerous goods) do not state this rule.",
+     "h": "What Pegasus's own document says about perfume and aerosols",
+     "p": "Pegasus lists non-radioactive medicinal or toiletry articles (including aerosols), such as hair sprays, perfumes, colognes and medicines containing alcohol, together with non-flammable, non-toxic (Division 2.2) aerosols for sporting or home use.",
      "table": {
       "head": [
-       "Question",
-       "IATA rule"
+       "Point",
+       "What the Pegasus document states"
       ],
       "rows": [
        [
-        "What it covers",
-        "Non-radioactive medicinal or toiletry articles including aerosols, such as hair sprays, perfumes, colognes and medicines containing alcohol, and non-flammable, non-toxic aerosols for sporting or home use"
-       ],
-       [
-        "Where",
-        "Permitted in carry-on and in checked baggage, without operator approval"
-       ],
-       [
-        "Total",
+        "Total per passenger",
         "Not more than 2 kg or 2 L in total"
        ],
        [
-        "Each article",
+        "Each single article",
         "Not more than 0.5 kg or 0.5 L"
        ],
        [
         "Aerosol valves",
-        "Release valves must be protected by a cap or other suitable means"
-       ],
-       [
-        "In your cabin bag on Pegasus",
-        "Security liquid limits also apply: Pegasus says the amount of liquids in hand luggage is restricted and cosmetic products carried in the cabin cannot be more than 100 ml each; essential items such as baby food can be carried in zip bags."
+        "Release valves must be protected by a cap or other suitable means to prevent inadvertent release of the contents"
        ]
       ]
      },
      "list": [
-      "<strong>Not on the page:</strong> Pegasus's own rule. Pegasus, the airports you use and your destination customs can add stricter limits, so confirm with Pegasus before you fly."
+      "The table has separate columns for carry-on, checked baggage and operator approval; the extracted PDF text does not keep the columns reliably aligned, so check the PDF itself.",
+      "Security checkpoints can apply the separate 100 ml liquid limit in the cabin; this document does not address it."
      ]
     }
    ],
    "faq": [
     [
-     "How much perfume can I take on Pegasus?",
-     "Following the IATA rule: up to 0.5 kg or 0.5 L per article and 2 kg or 2 L in total. Pegasus's own page was not readable on this, so confirm with the airline."
+     "How much perfume can I take on a Pegasus flight?",
+     "Pegasus's 2023 dangerous-goods document sets 2 kg or 2 L in total for toiletry articles such as perfumes and hair sprays, and 0.5 kg or 0.5 L for each single article."
     ],
     [
-     "Do aerosol cans need a cap on Pegasus?",
-     "The IATA rule says the release valve of an aerosol must be protected by a cap or other suitable means."
+     "Do aerosol sprays need a cap on Pegasus?",
+     "Yes. The document says release valves on aerosols must be protected by a cap or other suitable means to prevent inadvertent release of the contents."
     ]
    ],
    "sources": [
     [
-     "https://www.iata.org/contentassets/6fea26dd84d24b26a7a1fd5788561d6e/dgr-67-en-2.3.a.pdf",
-     "IATA &mdash; Dangerous Goods Regulations, Table 2.3.A (67th edition, 1 January 2026)"
+     "https://cdnp.flypgs.com/files/pdf/genel_kurallar_pdf/ProvisionsforDangerous_Goods_Carried_by_PassengersorCrew_on_Pegasus_Airlines_Flights.pdf",
+     "Pegasus: Provisions for Dangerous Goods Carried by Passengers or Crew (document effective 2023)"
     ]
    ],
    "keepSchema": true,
    "checked": "18 October 2026",
-   "unofficial": true
+   "unofficial": false
   }
  },
  "Volaris": {

@@ -1,0 +1,40 @@
+const fs=require('fs');
+const d=JSON.parse(fs.readFileSync('country_unique.json','utf8'));
+d.tobacco=d.tobacco||{};
+d.tobacco['hong-kong']={h:'What Hong Kong Customs says about the tobacco concession',p:[
+"Hong Kong Customs and Excise says travellers aged 18 or over may bring 19 cigarettes, or 1 cigar, or 25 g of cigars, or 25 g of other manufactured tobacco duty-free, which is one of the smallest allowances in the world. The liquor concession is 1 litre of liquor above 30% alcohol by volume, and a Hong Kong ID card holder must have been outside Hong Kong for at least 24 hours to use it. Hong Kong charges excise duty only on liquor, tobacco, hydrocarbon oil and methyl alcohol.",
+"Failing to declare dutiable goods above the allowance, or making a false or incomplete declaration, can lead to prosecution, or the department may instead impose a penalty for compoundable offences under Cap. 109. There is no concession for goods for trade or business, and anyone carrying such goods must use the Red Channel, declare the purpose and lodge import declarations. Cross-boundary drivers under the Northbound and Southbound schemes are not eligible."],
+src:'Source read: Hong Kong Customs and Excise Department, Duty-free concessions for passengers. The penalty amounts are not on the page.'};
+d.tobacco.iceland={h:'What Icelandic Customs says about the tobacco allowance and ages',p:[
+"Icelandic Customs (Skatturinn) allows 200 cigarettes, or 250 g of other tobacco products, duty-free. The minimum age for bringing tobacco is 18, while the minimum age for alcohol is 20. Alcohol combinations the page gives include 1 litre of spirits, 0.75 litre of wine and 3 litres of beer, or 18 litres of beer, with spirits meaning drinks above 21% alcohol.",
+"The goods must be for personal use or as gifts, not for sale, and travel agencies, guides or drivers cannot import duty-free goods on a traveller's behalf. Food is limited to 10 kg and ISK 25,000, and Icelandic residents may bring goods worth up to ISK 88,000 in total, with children under 12 getting half. Use the red channel if you have dutiable or restricted goods or are unsure. The page does not state a penalty for tobacco over the allowance."],
+src:'Source read: Skatturinn, Duty-free imports (English). No penalty for tobacco is stated.'};
+d.tobacco.india={h:'What the Indian customs passenger guide says about cigarettes and tobacco',p:[
+"The Indian customs passenger guide allows, within the duty-free allowance for incoming passengers, 100 cigarettes, or 25 cigars, or 125 g of tobacco, next to 2 litres of alcohol, on the condition that the goods carry the pictorial health warning prescribed under the cigarettes and tobacco packaging and labelling rules of the Ministry of Health and Family Welfare.",
+"Above the allowance the guide gives the rate for cigarettes as basic customs duty of 60% plus a social welfare surcharge of 10% and the other applicable duties and taxes, and for alcohol other than beer 50% plus an agriculture infrastructure cess. These rates come from a guide that may be out of date, so check the current rates with Indian customs before you carry more than the allowance."],
+src:'Source read: CBIC, Customs clearance of passengers at a glance (PDF). The rates may have changed since the guide was issued.'};
+d.tobacco.jamaica={h:'What the Jamaica Customs Agency says about tobacco',p:[
+"The Jamaica Customs Agency page on duty-free allowances says travellers aged 18 and over may bring 200 cigarettes, or 50 cigars, or 230 grams of processed tobacco, with 2 litres of alcohol, 170 ml of perfume and 340 ml of eau de toilette. Items must be properly declared, and each allowance applies only up to the stated amount.",
+"Personal and household effects, including gifts, are exempt up to US$1,000 or the equivalent in Jamaican dollars. The page does not describe penalties for going over the tobacco allowance or the age rule for travellers under 18, so ask Customs before you travel with more."],
+src:'Source read: Jamaica Customs Agency, What are my duty-free allowances and exemptions. No tobacco penalty is stated.'};
+d.tobacco.japan={h:'What Japan Customs says about the tobacco allowance and age',p:[
+"Japan Customs lists the duty-free allowance per person over 20 as 200 cigarettes, or 50 cigars, or 10 packages of heat-not-burn tobacco, or 250 g of other tobacco products. The page applies the allowances only to people over 20 and says nothing about younger travellers. Alcohol is 3 bottles of 760 ml, and other items are allowed in any quantity as long as each item's overseas market value is 10,000 yen or less, up to 200,000 yen in total.",
+"An item worth more than 200,000 yen gets no allowance and is taxed in full, and customs applies the allowance to the items that benefit the traveller most. The page does not state the duty rates or the procedure for quantities above the allowance."],
+src:'Source read: Japan Customs, Customs Answer 7104 (English). Duty rates above the allowance are not on the page.'};
+d.tobacco.kenya={h:'What the Kenya Revenue Authority says about tobacco',p:[
+"The Kenya Revenue Authority says cigarettes, cigars, cheroots, cigarillos, tobacco and snuff are allowed up to 250 grams combined without exemption, and duty-free shop purchases on planes or ships must be declared if they exceed that. The alcohol limits are 1 litre of spirits and 2 litres of wine, and perfume up to half a litre.",
+"Passengers get a US$2,000 concession for personal or household goods, but alcohol, perfume and tobacco are not covered by it beyond those limits. Goods bought abroad above US$500 must be declared, and the Red Channel is for dutiable or restricted goods. Failing to declare or misdeclaring goods breaches Section 203 of the East African Community Customs Management Act and goods are liable to seizure or confiscation."],
+src:'Source read: KRA, Passenger terminal clearance in Kenya.'};
+d.tobacco.israel={h:'Israel: what we could and could not read',p:[
+"Our card says the duty-free allowance is tobacco in any form up to 250 g, and for cigarettes up to 200, which is one carton, and to use the red channel if in doubt. It comes from the tourist customs guide on the Israeli government site that we link below the card.",
+"That page refused our request today, so we could not re-read the age rule, the alcohol allowance or any penalty. We did not bypass the block and we do not use search snippets as sources. This text adds no new facts. Check the Israel Tax Authority before you travel."],
+src:'The Israeli government page returned an access error on the day this text was written. The text repeats the card and adds no new facts.'};
+d.tobacco.indonesia={h:'Indonesia: what we could and could not read',p:[
+"Our card says the excise-free allowance per adult passenger is 200 cigarettes, or 25 cigars, or 100 g of cut tobacco, or 100 g of other tobacco. It comes from the passenger goods page of Indonesian Customs that we link below the card.",
+"That site refused our connection today, so we could not re-read the figures, the age rule or any penalty. We do not use search snippets as sources. This text adds no new facts. Check Indonesian Customs before you travel."],
+src:'The Indonesian customs page refused the connection on the day this text was written. The text repeats the card and adds no new facts.'};
+d.tobacco.kuwait={h:'Kuwait: what we could and could not read',p:[
+"Our card says personal effects and gifts worth up to 3,000 Saudi riyals, or the same value in another GCC currency, are exempt, and that the exemption includes up to 400 cigarettes. It comes from the GCC customs law as published on the Kuwait customs site that we link below the card.",
+"That file could not be loaded today, so we could not re-read the allowance, the age rule or any penalty. We do not use search snippets as sources. This text adds no new facts. Check Kuwait Customs before you travel."],
+src:'The Kuwait customs file could not be loaded on the day this text was written. The text repeats the card and adds no new facts.'};
+fs.writeFileSync('country_unique.json',JSON.stringify(d,null,2));

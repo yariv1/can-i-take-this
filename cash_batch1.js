@@ -1,0 +1,28 @@
+const fs=require('fs');
+const d=JSON.parse(fs.readFileSync('country_unique.json','utf8'));
+d.cash=d.cash||{};
+d.cash.argentina={h:'How the Argentine customs declaration treats cash',p:[
+"Argentina's customs service, ARCA, names three situations in which an arriving traveller must hand in the customs declaration. One of them is bringing cash or monetary instruments, in foreign or Argentine legal currency, worth the equivalent of US$10,000 or more. The other two are owing duty because you went over your allowance and carrying goods regulated by SENASA.",
+"The declaration is made preferably on the digital arrival baggage form, available in mobile apps and on self-service terminals. A traveller who cannot do it digitally uses the manual form OM-2087/G5 or OM-2087/G6, whichever applies. The page we read does not describe penalties for failing to declare money, so we cannot state any here."],
+src:'Source read: ARCA, Viajeros: régimen de equipaje. It does not mention cash on departure or fines.'};
+d.cash.austria={h:'How the Austrian Ministry of Finance explains carrying cash',p:[
+"The Austrian Ministry of Finance (BMF) says that anyone crossing the EU's external border by air, land, rail or sea with EUR 10,000 or more must declare it, whether entering or leaving the EU. The rule counts the equivalent in other currencies and easily convertible values such as cheques, and it applies to each person in a group separately, so a family cannot add its money together to stay under the limit.",
+"Cash here means banknotes and coins, including withdrawn currencies a bank can still exchange, bearer instruments such as cheques, traveller's cheques and promissory notes, gold coins with at least 90% gold content and gold bars or nuggets with at least 99.5%. Casino chips do not count. For minors the declaration is made through a parent or legal guardian. Customs may check people, luggage and vehicles, may hold undeclared cash, and can act on smaller amounts if there are signs of a link to crime. The EU rules in force since 3 June 2021 come from Regulation 2018/1672."],
+src:'Source read: BMF, Mitnahme von Bargeld (first part of the page). We did not read the forms page or the penalty details.'};
+d.cash.brazil={h:'What the Receita Federal says about cash on entry',p:[
+"Brazil's tax and customs authority, the Receita Federal, requires every traveller entering Brazil with more than US$10,000, or the equivalent in another currency, to fill in the e-DBV, the electronic declaration of travellers' goods, and present it at customs inspection. The wording is \"more than\" US$10,000, which differs from the \"10,000 or more\" used by Argentina and the EU.",
+"The page says the declaration covers physical banknotes, Brazilian or foreign, and that securities, cheques and traveller's cheques are not included. You complete the e-DBV online and present it, with the total amount you carry, in the travellers' goods control area on arrival before leaving the customs area. The page does not describe penalties and points to the legislation it cites, so ask the Receita Federal about a specific case."],
+src:'Source read: Receita Federal, dinheiro em espécie (cash on entry). Penalties are not described on the page.'};
+d.cash.australia={h:'Australia: what we could and could not read',p:[
+"Our card states that A$10,000 or more, or the foreign equivalent, must be declared when entering or leaving Australia, and that not declaring can mean penalties. That is the rule from the Australian Border Force and AUSTRAC pages we link below the card.",
+"Those official pages did not open when we tried them today (a timeout from AUSTRAC and a block from the Border Force), and we do not use search snippets as sources. So we cannot add the report's name, how far in advance to file it or the penalty amounts. Read the AUSTRAC page on moving money overseas before you travel."],
+src:'No official page was readable on the day this text was written. The text repeats the card and adds no new facts.'};
+d.cash.bahrain={h:'Bahrain: what we could and could not read',p:[
+"Our card says Bahrain has no restriction on importing local or foreign currency, but that customs or security can ask arriving and departing travellers to disclose currency, gold or other negotiable instruments and to prove where it came from. That is the rule from the Bahrain Customs Affairs page we link below the card.",
+"That page was blocked when we tried to open it again today, so we could not check the wording or find a threshold, a form or penalties. In practice, keep a bank withdrawal slip or similar proof of where the money came from, and ask Bahrain Customs Affairs if you carry a large amount."],
+src:'The official page was blocked on the day this text was written. The text repeats the card and adds no new facts.'};
+d.cash.belgium={h:'Belgium: what we could and could not read',p:[
+"Our card gives the EU rule: declare EUR 10,000 or more in cash, or the equivalent, when entering or leaving the EU, and not declaring can mean penalties. The EU Your Europe page we link below the card adds that there are no EU-wide rules for cash moved between EU countries, so check with the customs of the countries you leave and enter.",
+"Belgium's own customs pages could not be read: the Federal Public Service Finance site showed a human-verification page when we opened its cash declaration form. So we cannot say how Belgian customs handles intra-EU checks or what the penalty is. Ask Belgian Customs before you travel with a large amount."],
+src:'Source read: EU Your Europe, carrying cash. The Belgian customs site was blocked on the day this text was written.'};
+fs.writeFileSync('country_unique.json',JSON.stringify(d,null,2));

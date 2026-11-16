@@ -1,0 +1,40 @@
+const fs=require('fs');
+const d=JSON.parse(fs.readFileSync('country_unique.json','utf8'));
+d.tobacco=d.tobacco||{};
+d.tobacco.mexico={h:'What the Mexican customs agency says about the tobacco allowance',p:[
+"The Mexican customs agency (ANAM) says passengers over 18 may bring up to 20 packs of cigarettes, or 25 cigars, or 200 g of tobacco duty-free in their personal luggage, plus up to 3 litres of alcoholic drinks and 6 litres of wine. Separately, passengers may bring goods worth up to US$500 beyond personal luggage if an invoice or receipt supports the value, and family members arriving together on the same transport can combine the exemption.",
+"That US$500 exemption does not cover alcoholic drinks, manufactured tobacco or fuel beyond the vehicle's tank. Customs staff may set the value if there is no receipt, and goods bought in the border strip still count toward the limit if you show the tax receipt. The page also names the Heroes Paisanos periods for Mexicans returning for holidays and lists up to three pets with a zoosanitary certificate. It does not describe penalties for exceeding the tobacco allowance."],
+src:'Source read: ANAM, Equipaje y franquicia (English). No tobacco penalty is stated.'};
+d.tobacco['new-zealand']={h:'What New Zealand Customs says about tobacco and duty',p:[
+"New Zealand Customs says you can bring in 50 cigarettes, or 50 g of cigars or tobacco products, or 50 g of a mix, and must be 17 or older to claim alcohol and tobacco concessions, while you must be 18 to buy them in New Zealand. Anything above must be declared, and duty and GST are payable on the excess. Undeclared excess is seized and destroyed, and you may be fined or prosecuted. If you do not want to pay, unwanted tobacco can be left in the airport disposal bins, where it is destroyed.",
+"The NZ$700 goods concession is separate, with alcohol and tobacco having their own limits, and travelling companions cannot pool their concessions. The alcohol concession is 4.5 litres of wine or beer, or 3 bottles of spirits or liqueur of no more than 1.125 litres each, for personal use and gifts only. The tobacco limit applies when you leave a cruise ship. Anything over your concession is charged full duties, and the Customs estimator tool shows likely charges."],
+src:'Source read: New Zealand Customs, Duty-free shopping.'};
+d.tobacco.norway={h:'What Norwegian Customs says about tobacco quotas',p:[
+"Norwegian Customs gives visitors who live outside Norway a quota of 200 cigarettes or 250 g of other tobacco, plus 200 cigarette papers, while residents of Norway get 100 cigarettes or 125 g, plus 100 papers. Snuff, cigars and cigarillos are counted by weight, and duty-free shops at Norwegian airports sell only the resident amount. You must be 18 or older to bring beer, wine and tobacco and 20 or older to bring drinks above 22% alcohol.",
+"Quotas are per person and can be combined with alcohol, but tobacco cannot be exchanged for alcohol. The alcohol quotas are 1 litre of spirits, 1.5 litres of wine and 2 litres of beer, and one litre of spirits can be swapped for 1.5 litres of wine or beer. You may bring more than the quota but must declare the excess on a simplified customs declaration. Unapproved new tobacco and nicotine products, such as nicotine pouches and heated tobacco, waterpipe tobacco and some e-cigarettes are not allowed. The page does not describe penalties."],
+src:'Source read: Toll.no, Alcohol and tobacco quotas (English). No penalty is stated on the page.'};
+d.tobacco.maldives={h:'Maldives: what we could and could not read',p:[
+"Our card says tourists aged 18 or over may bring 200 cigarettes, or 25 cigars, or up to 250 g of tobacco products, and that anything above that is held by customs. It comes from the duty-free concessions page of Maldives Customs that we link below the card.",
+"That page refused our request today, so we could not re-read the allowance, what happens to tobacco above it or the alcohol rules. We did not bypass the block and we do not use search snippets as sources. This text adds no new facts. Check Maldives Customs before you travel."],
+src:'The Maldives Customs page returned an access error on the day this text was written. The text repeats the card and adds no new facts.'};
+d.tobacco.mauritius={h:'Mauritius: what we could and could not read',p:[
+"Our card says the duty-free allowance is 250 g of tobacco, combined with one of the alcohol options, and that you must be 18 or older. It comes from the allowances page of the Mauritius Revenue Authority that we link below the card.",
+"That page returned a not-found error today, so we could not re-read the allowance, the alcohol options or any penalty, and we do not use search snippets as sources. This text adds no new facts. Check the Mauritius Revenue Authority before you travel."],
+src:'The MRA page returned an error on the day this text was written. The text repeats the card and adds no new facts.'};
+d.tobacco.nigeria={h:'Nigeria: what we could and could not read',p:[
+"Our card says the Nigeria Customs Service passenger concessions list tobacco of all kinds as 200 grams in total, and that cigarettes count by weight toward that figure. It comes from the passenger concessions page of the customs service that we link below the card.",
+"That page refused our request today, so we could not re-read the concession, the alcohol rule or any penalty. We did not bypass the block and we do not use search snippets as sources. This text adds no new facts. Check the Nigeria Customs Service before you travel."],
+src:'The Nigeria Customs page returned an access error on the day this text was written. The text repeats the card and adds no new facts.'};
+d.tobacco.malaysia={h:'Malaysia: what we could and could not read',p:[
+"Our card says no duty-free amount is listed and that the Customs Declaration form asks every arriving traveller whether they carry tobacco products, including cigarettes, so you declare any you bring. It comes from a Malaysian customs form that we link below the card.",
+"The customs site refused our connection today, so we could not re-read the form or find an allowance. We do not use search snippets as sources. This text adds no new facts. Check Malaysian Customs before you travel."],
+src:'The Malaysian customs site refused the connection on the day this text was written. The text repeats the card and adds no new facts.'};
+d.tobacco.morocco={h:'Morocco: what we could and could not read',p:[
+"Our card says visitors may bring 200 grams of manufactured tobacco, and that the Moroccan customs guide says this applies without declaration. It comes from a customs guide that we link below the card.",
+"The Moroccan customs site rejected our request for that guide today, so we could not re-check the figure or the alcohol and age rules. We do not use search snippets as sources. This text adds no new facts. Check Moroccan Customs before you travel."],
+src:'The Moroccan customs guide rejected the request on the day this text was written. The text repeats the card and adds no new facts.'};
+d.tobacco.nepal={h:'What the Nepal aeronautical information publication says about tobacco',p:[
+"The passenger customs section of the Nepal aeronautical information publication says no customs duty is levied on goods brought by a foreign passenger holding a passport up to: one bottle of liquor of up to one litre or up to twelve cans of beer, up to 200 cigarettes, 50 cigars and 250 grams of tobacco, medicines up to NPR 10,000, foodstuffs up to NPR 5,000 and fresh fruit up to NPR 2,000.",
+"The publication is an aviation document of the Civil Aviation Authority of Nepal, not a page of the Customs Department, so it does not give an age limit or a penalty for going over the allowance. The wording says up to 200 sticks, 50 sticks of cigars and 250 grams, and it does not say whether the three can be combined, so ask Nepal Customs before you carry a mix."],
+src:'Source read: Civil Aviation Authority of Nepal, AIP Nepal, customs section. It gives no age limit or penalty.'};
+fs.writeFileSync('country_unique.json',JSON.stringify(d,null,2));
