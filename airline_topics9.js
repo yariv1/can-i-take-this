@@ -332,3 +332,4 @@ module.exports = {
     miss: "the approval process for batteries of 100 to 160 Wh."
   })
 };
+{ const X = require('./lh_power_extra.js'); for (const a of Object.keys(X)) { const e = module.exports[a].power, x = X[a]; e.sections.push({ h: x.h, p: x.p, table: x.table, list: x.list }); e.faq.push(x.faq); e.sources.push(x.src); x.src[1] = "Unofficial source: " + x.src[1]; } }

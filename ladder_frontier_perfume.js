@@ -1,0 +1,14 @@
+const fs = require('fs');
+const N = JSON.parse(fs.readFileSync('topics_new.json', 'utf8'));
+const log = JSON.parse(fs.readFileSync('ladder_log.json', 'utf8'));
+const e = N['Frontier'].perfume;
+const H1 = 'What Frontier and the US TSA say about perfume and aerosols';
+if (!e.sections.some(s => s.h === H1)) e.sections.push({ h: H1, p: 'Two pages read on 16 November 2026: Frontier\'s bag-options page (the airline\'s own page) and the TSA\'s "perfume" entry (the US security authority, not Frontier).', table: { head: ['Source', 'Carry-on', 'Checked bag'], rows: [['TSA, perfume entry', 'Yes, 3.4 oz / 100 ml or less', 'Yes; the FAA caps restricted medicinal and toiletry articles at 2 kg or 2 L (70 oz / 68 fl oz) per person'], ['Frontier bag-options page', 'Not mentioned', 'Lists "aerosols" among hazardous items that are prohibited, together with weapons, corrosives, explosives, lithium batteries, flammables and toxins']] }, list: ['The two pages do not clearly agree: Frontier\'s list does not say whether it means ordinary toiletry aerosols such as hair spray or deodorant, while the TSA lets perfume go in checked bags. Ask Frontier before you pack an aerosol in a checked bag.', 'Not on either page: a rule for duty-free perfume or for aerosols in carry-on bags.'] });
+const F = ['Does Frontier allow aerosols in checked bags?', 'Frontier\'s bag-options page lists "aerosols" among hazardous items prohibited in checked bags, but it does not say whether this covers ordinary toiletry aerosols. The TSA says perfume may go in checked bags. Confirm with Frontier first.'];
+if (!e.faq.some(x => x[0] === F[0])) e.faq.push(F);
+for (const s of [['https://www.flyfrontier.com/travel/travel-info/bag-options/', 'Frontier Airlines: bag options'], ['https://www.tsa.gov/travel/security-screening/whatcanibring/items/perfume', 'TSA: perfume']]) if (!e.sources.some(x => x[0] === s[0])) e.sources.push(s);
+e.unofficial = true;
+log['airline/frontier/perfume-aerosols'] = Object.assign(log['airline/frontier/perfume-aerosols'] || {}, { official: ['read 2026-11-16: flyfrontier.com bag-options page (aerosols listed as prohibited in checked bags; nothing on perfume or carry-on); faq.flyfrontier.com TSA page only repeats the 3-1-1 rule'], reliable: ['read 2026-11-16: TSA perfume entry (tsa.gov)'], other: ['none needed: step 2a answered the question'], date: '2026-11-16' });
+fs.writeFileSync('topics_new.json', JSON.stringify(N, null, 1));
+fs.writeFileSync('ladder_log.json', JSON.stringify(log, null, 1));
+console.log('ok');

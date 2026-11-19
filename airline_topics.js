@@ -28,9 +28,39 @@ function render(a, T) {
     (T.sections || []).map(s => '<section class="bd-sec"><h2>' + s.h + '</h2>' + (s.p ? '<p>' + s.p + '</p>' : '') +
       (s.table ? table(s.table) : '') + (s.list ? '<ul>' + s.list.map(x => '<li>' + x + '</li>').join('') + '</ul>' : '') + '</section>').join('') +
     (T.faq ? '<section class="bd-faq"><h2>❓ Quick answers</h2>' + T.faq.map(q => '<h3>' + esc(q[0]) + '</h3><p>' + esc(q[1]) + '</p>').join('') + '</section>' : '') +
-    '<p class="bd-chk">Checked ' + (T.checked || CHECKED) + (T.unofficial ? ' on an unofficial source, not on the airline\'s own pages. Rules change: confirm with ' : ' on the airline\'s own terms and pages. Rules change: confirm with ') + esc(a.name) + ' before you fly.</p>' +
-    (T.sources ? '<div class="bd-src"><div class="h"' + (T.unofficial ? ' style="color:var(--tg-amber,#f3c765)"' : '') + '>' + (T.unofficial ? '⚠ Unofficial sources' : '✓ Official sources') + '</div>' + T.sources.map(s => '<a href="' + s[0] + '" target="_blank" rel="noopener noreferrer">' + s[1] + '</a>').join('') + '</div>' : '') +
+    srcBlock(a, T) +
     '</div>';
 }
+
+// Source tiers: official / unofficial from a reliable third party (airport operator, public authority, WHO) / unofficial from a less reliable source. Always says why.
+function tierOf(label) { return /airport|airports|WHO |WHO$|authority|customs|\bTSA\b|\bFAA\b|ministry|aeroporti|fraport|dubai airports|government|civil aviation|IATA|ICAO|EASA|\bCAA\b|\bCASA\b|Transport Canada|\bUSDA\b|border|home affairs/i.test(label) ? 'reliable' : 'less'; }
+function link(s) { return '<a href="' + s[0] + '" target="_blank" rel="noopener noreferrer">' + s[1] + '</a>'; }
+const CONTACT = (() => { try { return JSON.parse(require('fs').readFileSync(__dirname + '/airline_contact.json', 'utf8')); } catch (e) { return {}; } })();
+function contactLine(a) { const c = CONTACT[a.name]; if (!c) return ''; return c.kind === 'contact' ? ' <a href="' + c.url + '" target="_blank" rel="noopener noreferrer">Contact ' + esc(a.name) + ' on its official contact page</a>.' : ' <a href="' + c.url + '" target="_blank" rel="noopener noreferrer">Find ' + esc(a.name) + ' contact options on its official website</a>.'; }
+function srcBlock(a, T) {
+  const all = T.sources || [];
+  const isUn = s => T.unofficial || /^Unofficial source/i.test(s[1]);
+  const off = all.filter(s => !isUn(s)), un = all.filter(isUn);
+  const chk = 'Checked ' + (T.checked || CHECKED);
+const lab = x => String(x[1]).replace(/^Unofficial source:s*/i,'').replace(/&mdash;/g,'-');
+  const first = off[0] ? lab(off[0]) : (un[0] ? lab(un[0]) : '');
+  let h = '<p class="bd-chk">' + (off.length ? 'We read ' + first + ' on ' + (T.checked || CHECKED) + (un.length ? ', and the unofficial source below for the rest' : '') + '. ' : un.length ? 'We read ' + first + ' on ' + (T.checked || CHECKED) + '; it is not a page published by ' + esc(a.name) + '. ' : '') + 'Rules change, so before you fly confirm this with ' + esc(a.name) + ' using the channels on its own website.' + contactLine(a) + '</p>';
+  if (off.length) h += '<div class="bd-src"><div class="h">✓ Official sources</div>' + off.map(link).join('') + '</div>';
+  if (un.length) {
+    const rel = un.every(s => tierOf(s[1]) === 'reliable'), n = esc(a.name);
+    h += '<div class="bd-src"><div class="h" style="color:var(--tg-amber,#f3c765)">⚠ Unofficial sources</div>' + un.map(link).join('') +
+      '<p class="bd-why">' + (rel ? 'No ' + n + ' page we could read answers this, so ' : 'No ' + n + ' page we could read answers this, so ') + (rel ? 'we used a reliable third party. It is likely right but not confirmed by ' + n + '; check with ' + n + ' too.' : 'we used a source we rate as less reliable. It may be wrong, so check with ' + n + ' yourself.') + '</p></div>';
+  }
+  return h;
+}
+
+// perfume_extra.js: labelled authority/airport sections (unofficial), added after all merges
+{ const X = require('./perfume_extra.js'); for (const a of Object.keys(X)) { const e = TOPICS[a] && TOPICS[a].perfume; if (!e || !e.sections) continue; if (!e.sections.some(s => s.h === X[a].sec.h)) e.sections.push(X[a].sec); const s = [X[a].src[0], 'Unofficial source: ' + X[a].src[1]]; e.sources = e.sources || []; if (!e.sources.some(x => x[0] === s[0])) e.sources.push(s); } }
+
+{ const X = require('./liquids_extra.js'); for (const a of Object.keys(X)) { const e = TOPICS[a] && TOPICS[a].liquids; if (!e || !e.sections) continue; if (!e.sections.some(s => s.h === X[a].sec.h)) e.sections.push(X[a].sec); const s = [X[a].src[0], 'Unofficial source: ' + X[a].src[1]]; e.sources = e.sources || []; if (!e.sources.some(x => x[0] === s[0])) e.sources.push(s); } }
+
+{ const X = require('./vape_extra.js'); for (const a of Object.keys(X)) { const e = TOPICS[a] && TOPICS[a].vape; if (!e || !e.sections) continue; if (!e.sections.some(s => s.h === X[a].sec.h)) e.sections.push(X[a].sec); const s = [X[a].src[0], 'Unofficial source: ' + X[a].src[1]]; e.sources = e.sources || []; if (!e.sources.some(x => x[0] === s[0])) e.sources.push(s); } }
+
+{ const X = require('./vape_extra2.js'); for (const a of Object.keys(X)) { const e = TOPICS[a] && TOPICS[a].vape; if (!e || !e.sections) continue; if (!e.sections.some(s => s.h === X[a].sec.h)) e.sections.push(X[a].sec); if (a === 'Aegean' && e.sections[0].list) e.sections[0].list = e.sections[0].list.map(x => x.replace('no battery size limit and no e-liquid rule', 'no e-liquid rule; the battery limits are in the section below')); const s = [X[a].src[0], X[a].src[1]]; e.sources = e.sources || []; if (!e.sources.some(x => x[0] === s[0])) e.sources.push(s); } }
 
 module.exports = { TOPICS, render, CHECKED };

@@ -1,0 +1,26 @@
+{
+ "date": "2026-11-17",
+ "method": "browser read of each cited page, numbers on our page compared to the live text",
+ "not_reverified": {
+  "Hawaiian Airlines (alcohol, power, vape, perfume)": "hawaiianairlines.com returns HTTP 406 to the browser too; not re-read 2026-11-17",
+  "Norwegian (alcohol, perfume, vape)": "all three re-read from pasted page 2026-11-17 and match",
+  "SunExpress (vape, power)": "both SunExpress pages re-read from user pastes 2026-11-17; pages updated",
+  "EgyptAir (vape)": "re-read from user paste 2026-11-17; vape matches, power and perfume rewritten",
+  "Royal Air Maroc (vape)": "L'Economiste article re-read from user paste 2026-11-17; page matches, source labelled unofficial",
+  "Kuwait Airways (vape)": "official page not openable by user (Israel) or by tool; cross-checked 2026-11-17 against two unofficial sites (Kuwait E-Portal, BaggageBase), consistent; official text from saved copy 2026-08-07",
+  "Azul (vape)": "Azul page unreachable (DNS fail for tool; user cannot open); hand baggage cross-checked 2026-11-17 on Kayak Brasil and PANROTAS (unofficial); checked-bag rule still from saved copy 2024-05-22",
+  "Icelandair (vape)": "cited icelandair.us restrictions URL redirects to the baggage overview, which has no e-cigarette text; island.is authority page 403; not re-confirmed",
+  "Air Canada (liquids, perfume, alcohol)": "all three re-read from the Special Items card Liquids and gels pasted by user 2026-11-17; match; insect-repellent row removed (not on the card)",
+  "China Southern (liquids)": "cited csair.com FAQ returns 404 to a plain fetch; search index still lists it; page already says it was read from a saved copy",
+  "Azul (alcohol, power)": "re-read from full official checked-luggage page pasted by user 2026-11-17; alcohol rewritten from Azul rule, power: checked-bag ban added",
+  "Azul (liquids, perfume, power, vape)": "all four re-read from the full official carry-on page pasted by user 2026-11-17 and rewritten from Azul text",
+  "Icelandair (vape, power, perfume)": "re-read from the full Restricted and prohibited items page pasted by user 2026-11-17; vape, power and perfume rewritten; liquids and alcohol not on that page",
+  "Air Canada (liquids)": "carry-on Liquids and gels tab pasted by user 2026-11-17 and page rewritten; perfume and alcohol still wait for the Restricted / Prohibited items page",
+  "Air Canada (vape)": "re-read from carry-on Additional items tab pasted by user 2026-11-17; matches",
+  "China Southern (liquids, perfume)": "FAQ re-read from full page pasted by user 2026-11-17; liquids matches, perfume rewritten (hairspray NO)",
+  "Air Canada (power)": "rewritten from the Batteries and personal electronic devices card pasted by user 2026-11-17",
+  "Hawaiian Airlines (power)": "airline page unreadable now; cross-checked 2026-11-17 on two readable unofficial sources (YMMV Jul 2026, Beat of Hawaii Aug 2025): consistent on carry-on only and Wh tiers",
+  "Icelandair (alcohol)": "no Icelandair alcohol rule on the pasted page; Isavia airport page read (customs allowance only); stays on IATA + customs"
+ },
+ "note": "All other cited pages (about 50 of 61 blocked URLs and 210 plain-fetch pages) loaded and contained the numbers shown on our pages."
+}

@@ -1,0 +1,412 @@
+{
+ "Emirates": {
+  "url": "https://www.emirates.com/english/help/",
+  "kind": "contact",
+  "read": true
+ },
+ "Singapore Airlines": {
+  "url": "https://www.singaporeair.com/en_UK/sg/contact-us/",
+  "kind": "contact",
+  "read": true
+ },
+ "Qatar Airways": {
+  "url": "https://www.qatarairways.com/en/help.html",
+  "kind": "contact",
+  "read": true
+ },
+ "Etihad Airways": {
+  "url": "https://www.etihad.com/en-ae/help",
+  "kind": "contact",
+  "read": true
+ },
+ "Virgin Atlantic": {
+  "url": "https://www.virginatlantic.com/en-IL/contact-us",
+  "kind": "contact",
+  "read": true
+ },
+ "WestJet": {
+  "url": "https://www.westjet.com/en-ca/contact",
+  "kind": "contact",
+  "read": true
+ },
+ "British Airways": {
+  "url": "https://www.britishairways.com/content/information/help-and-contacts/contact-us",
+  "kind": "contact",
+  "read": true
+ },
+ "Air New Zealand": {
+  "url": "https://www.airnewzealand.com/en-nz/help-and-contact",
+  "kind": "contact",
+  "read": true
+ },
+ "Malaysia Airlines": {
+  "url": "https://www.malaysiaairlines.com/my/en/askmh/contact-details.html",
+  "kind": "contact",
+  "read": true
+ },
+ "Delta": {
+  "url": "https://www.delta.com/us/en/need-help/overview",
+  "kind": "contact",
+  "read": true
+ },
+ "Air Canada": {
+  "url": "https://www.aircanada.com/ca/en/aco/home/fly/customer-support.html",
+  "kind": "contact",
+  "read": true
+ },
+ "Virgin Australia": {
+  "url": "https://www.virginaustralia.com/au/en/help/contact-us/",
+  "kind": "contact",
+  "read": true
+ },
+ "Finnair": {
+  "url": "https://www.finnair.com/en/customer-care-and-contact-information",
+  "kind": "contact",
+  "read": true
+ },
+ "Air India": {
+  "url": "https://www.airindia.com/in/en/contact-us.html",
+  "kind": "contact",
+  "read": true
+ },
+ "IndiGo": {
+  "url": "https://www.goindigo.in/contact-us.html",
+  "kind": "contact",
+  "read": true
+ },
+ "flydubai": {
+  "url": "https://www.flydubai.com/en/help/contact-us-form/",
+  "kind": "contact",
+  "read": true
+ },
+ "South African Airways": {
+  "url": "https://www.flysaa.com/en/help/customer-support/contact-us",
+  "kind": "contact",
+  "read": true
+ },
+ "Vietnam Airlines": {
+  "url": "https://www.vietnamairlines.com/go/en/support/customer-service-plan",
+  "kind": "contact",
+  "read": true
+ },
+ "Kenya Airways": {
+  "url": "https://www.kenya-airways.com/en/contact/",
+  "kind": "contact",
+  "read": true
+ },
+ "Frontier": {
+  "url": "https://www.flyfrontier.com/customer-service/",
+  "kind": "contact",
+  "read": true
+ },
+ "Aegean": {
+  "url": "https://www.aegeanhub.com/en/passenger-services-and-procedures/travel-info/passenger-contact-information/",
+  "kind": "contact",
+  "read": true
+ },
+ "Royal Air Maroc": {
+  "url": "https://www.royalairmaroc.com/il-en/information/contact-us",
+  "kind": "contact",
+  "read": true
+ },
+ "Southwest": {
+  "url": "https://www.southwest.com/contact-us",
+  "kind": "contact",
+  "read": true
+ },
+ "Qantas": {
+  "url": "https://www.qantas.com/en-au/help",
+  "kind": "contact",
+  "read": true
+ },
+ "Cathay Pacific": {
+  "url": "https://www.cathaypacific.com/cx/en_HK/contact-us.html",
+  "kind": "contact",
+  "read": true
+ },
+ "Gulf Air": {
+  "url": "https://www.gulfair.com/contact-us",
+  "kind": "contact",
+  "read": true
+ },
+ "Turkish Airlines": {
+  "url": "https://www.turkishairlines.com/en-us/any-questions/get-in-touch/",
+  "kind": "contact",
+  "read": true
+ },
+ "Air Europa": {
+  "url": "https://www.aireuropa.com/us/en/aea/faq.html",
+  "kind": "contact",
+  "read": true
+ },
+ "easyJet": {
+  "url": "https://www.easyjet.com/en/help-centre/contact/contact-us",
+  "kind": "contact",
+  "read": true
+ },
+ "JetBlue": {
+  "url": "https://www.jetblue.com/contact-us",
+  "kind": "contact",
+  "read": true
+ },
+ "American Airlines": {
+  "url": "https://www.aa.com/web/i18n/customer-service/contact-american/contact-american.html",
+  "kind": "contact",
+  "read": true
+ },
+ "United": {
+  "url": "https://www.united.com/en/us/fly/help-center.html",
+  "kind": "contact",
+  "read": true
+ },
+ "Korean Air": {
+  "url": "https://www.koreanair.com/contact-us",
+  "kind": "contact",
+  "read": true
+ },
+ "Volaris": {
+  "url": "https://www.volaris.com/contact-us",
+  "kind": "contact",
+  "read": true
+ },
+ "Aer Lingus": {
+  "url": "https://www.aerlingus.com/support/customer-care/contact-us/",
+  "kind": "contact",
+  "read": true
+ },
+ "Iberia": {
+  "url": "https://www.iberia.com/us/contact/",
+  "kind": "contact",
+  "read": true
+ },
+ "Aeromexico": {
+  "url": "https://www.aeromexico.com/en-us/contact-us",
+  "kind": "contact",
+  "read": true
+ },
+ "Japan Airlines": {
+  "url": "https://www.jal.co.jp/ar/en/contact/",
+  "kind": "contact",
+  "read": true
+ },
+ "Thai Airways": {
+  "url": "https://www.thaiairways.com/en-us/content/help/contact/",
+  "kind": "contact",
+  "read": false
+ },
+ "Hawaiian Airlines": {
+  "url": "https://www2.hawaiianairlines.com/contact-us/call",
+  "kind": "contact",
+  "read": false
+ },
+ "ITA Airways": {
+  "url": "https://www.ita-airways.com/en_us/support-faq/assistance.html",
+  "kind": "contact",
+  "read": false
+ },
+ "KLM": {
+  "url": "https://www.klm.com/information/corporate/contact",
+  "kind": "contact",
+  "read": false
+ },
+ "Ryanair": {
+  "url": "https://help.ryanair.com/hc/en-ie/articles/12892354434065-Contact-Us",
+  "kind": "contact",
+  "read": false
+ },
+ "Pegasus": {
+  "url": "https://www.flypgs.com/en/contact/headquarters",
+  "kind": "contact",
+  "read": false
+ },
+ "Eurowings": {
+  "url": "https://www.eurowings.com/en/information/about-us/company/contact-customer-service.html",
+  "kind": "contact",
+  "read": false
+ },
+ "Alaska Airlines": {
+  "url": "https://www.alaskaair.com/feedback/general-comments",
+  "kind": "contact",
+  "read": false
+ },
+ "Copa Airlines": {
+  "url": "https://www.copaair.com/en-gs/customer-service/call-center/",
+  "kind": "contact",
+  "read": false
+ },
+ "SAS": {
+  "url": "https://www.sasgroup.net/contact/customer-contact/",
+  "kind": "contact",
+  "read": false
+ },
+ "Wizz Air": {
+  "url": "https://www.wizzair.com/",
+  "kind": "home",
+  "read": false
+ },
+ "Lufthansa": {
+  "url": "https://www.lufthansa.com/",
+  "kind": "home",
+  "read": false
+ },
+ "China Eastern": {
+  "url": "https://www.ceair.com/",
+  "kind": "home",
+  "read": false
+ },
+ "Austrian": {
+  "url": "https://www.austrian.com/",
+  "kind": "home",
+  "read": false
+ },
+ "Brussels Airlines": {
+  "url": "https://www.brusselsairlines.com/",
+  "kind": "home",
+  "read": false
+ },
+ "Swiss": {
+  "url": "https://www.swiss.com/",
+  "kind": "home",
+  "read": false
+ },
+ "Air France": {
+  "url": "https://www.airfrance.com/",
+  "kind": "home",
+  "read": false
+ },
+ "Transavia": {
+  "url": "https://www.transavia.com/",
+  "kind": "home",
+  "read": false
+ },
+ "Oman Air": {
+  "url": "https://www.omanair.com/",
+  "kind": "home",
+  "read": false
+ },
+ "Philippine Airlines": {
+  "url": "https://www.philippineairlines.com/",
+  "kind": "home",
+  "read": false
+ },
+ "SunExpress": {
+  "url": "https://www.sunexpress.com/",
+  "kind": "home",
+  "read": false
+ },
+ "Vueling": {
+  "url": "https://www.vueling.com/",
+  "kind": "home",
+  "read": false
+ },
+ "LATAM": {
+  "url": "https://www.latamairlines.com/",
+  "kind": "home",
+  "read": false
+ },
+ "EgyptAir": {
+  "url": "https://www.egyptair.com/",
+  "kind": "home",
+  "read": false
+ },
+ "LOT Polish": {
+  "url": "https://www.lot.com/",
+  "kind": "home",
+  "read": false
+ },
+ "Saudia": {
+  "url": "https://www.saudia.com/",
+  "kind": "home",
+  "read": false
+ },
+ "Air Arabia": {
+  "url": "https://www.airarabia.com/",
+  "kind": "home",
+  "read": false
+ },
+ "El Al": {
+  "url": "https://www.elal.com/",
+  "kind": "home",
+  "read": false
+ },
+ "Icelandair": {
+  "url": "https://www.icelandair.com/",
+  "kind": "home",
+  "read": false
+ },
+ "Ethiopian Airlines": {
+  "url": "https://www.ethiopianairlines.com/",
+  "kind": "home",
+  "read": false
+ },
+ "Avianca": {
+  "url": "https://www.avianca.com/",
+  "kind": "home",
+  "read": false
+ },
+ "ANA": {
+  "url": "https://www.ana.co.jp/",
+  "kind": "home",
+  "read": false
+ },
+ "Asiana": {
+  "url": "https://www.flyasiana.com/",
+  "kind": "home",
+  "read": false
+ },
+ "Azul": {
+  "url": "https://www.voeazul.com.br/",
+  "kind": "home",
+  "read": false
+ },
+ "Royal Jordanian": {
+  "url": "https://www.rj.com/en",
+  "kind": "home",
+  "read": false
+ },
+ "GOL": {
+  "url": "https://www.voegol.com.br/",
+  "kind": "home",
+  "read": false
+ },
+ "China Southern": {
+  "url": "https://www.csair.com/",
+  "kind": "home",
+  "read": false
+ },
+ "TAP Air Portugal": {
+  "url": "https://www.flytap.com/",
+  "kind": "home",
+  "read": false
+ },
+ "Israir": {
+  "url": "https://www.israir.co.il/",
+  "kind": "home",
+  "read": false
+ },
+ "Arkia": {
+  "url": "https://www.arkia.co.il/",
+  "kind": "home",
+  "read": false
+ },
+ "Middle East Airlines": {
+  "url": "https://www.mea.com.lb/",
+  "kind": "home",
+  "read": false
+ },
+ "Air China": {
+  "url": "https://www.airchina.com/",
+  "kind": "home",
+  "read": false
+ },
+ "Kuwait Airways": {
+  "url": "https://www.kuwaitairways.com/",
+  "kind": "home",
+  "read": false
+ },
+ "Norwegian": {
+  "url": "https://www.norwegian.com/",
+  "kind": "home",
+  "read": false
+ }
+}

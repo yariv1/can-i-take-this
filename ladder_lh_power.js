@@ -1,0 +1,4 @@
+const fs=require('fs');const log=JSON.parse(fs.readFileSync('ladder_log.json','utf8'));
+const S={swiss:['Swiss','https://lenews.ch/2026/01/16/swiss-changes-rules-on-flying-with-power-banks/'],austrian:['Austrian','https://www.markenkoffer.de/en/blogs/news/austrian-airlines-hand-luggage'],eurowings:['Eurowings','https://www.markenkoffer.de/en/blogs/news/eurowings-handgepaeck'],'brussels-airlines':['Brussels Airlines','https://lisboasecreta.co/en/what-is-prohibited-from-being-carried-on-the-plane/']};
+for(const [k,[n,u]] of Object.entries(S)){log['airline/'+k+'/power-bank']=Object.assign(log['airline/'+k+'/power-bank']||{},{official:['tried 2026-11-16: '+n+' own electronic-devices/power-bank page: HTTP 403, not read; Lufthansa Group news page read earlier (group rule)'],reliable:['read 2026-11-16: '+u],other:['none needed: step 2a answered part of the question'],date:'2026-11-16'});}
+fs.writeFileSync('ladder_log.json',JSON.stringify(log,null,1));

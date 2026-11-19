@@ -83,14 +83,15 @@ module.exports = {
             ["Purchased beyond the security checkpoints", "Allowed", "Allowed"],
             ["Breast milk", "Allowed", "Allowed"] ] },
           list: ["Its checklist says to cap or tape lids to protect your and others' belongings in checked bags.",
-            "We did not read Hawaiian Airlines' separate limit per aerosol can in checked bags."] }
+            "Hawaiian Airlines' checklist gives no separate limit per aerosol can in checked bags; the US rule is in the next section."] },
+        { h: "US rule for perfume and aerosols in checked bags (TSA)", p: "Hawaiian Airlines flies under US rules, so the TSA perfume page applies. This is a US government page, not Hawaiian Airlines' own text (read 17 November 2026): perfume is allowed in checked bags; the total of restricted medicinal and toiletry articles including aerosols is limited to 2 kg (70 oz) or 2 L (68 fl oz) per person, each container to 0.5 kg (18 oz) or 500 ml (17 fl oz), and aerosol spray nozzles must be protected by caps or other suitable means. In the carry-on, perfume is allowed in containers of 3.4 oz (100 ml) or less. The TSA officer at the checkpoint makes the final decision." }
       ],
       faq: [
         ["Can I bring perfume on Hawaiian Airlines?", "In the carry-on, up to 3.4 oz (100 ml) per container packed per TSA rules. Larger bottles go in checked baggage."],
         ["Can I bring hair spray on Hawaiian Airlines?", "Up to 3.4 oz in the carry-on; larger cans are allowed in checked bags."],
         ["Can I bring duty free perfume on Hawaiian Airlines?", "Liquids, gels and aerosols bought beyond the security checkpoint are allowed in the carry-on on its checklist."]
       ],
-      sources: [["https://www.hawaiianairlines.com/content/travel-info/baggage/prohibited-items", "Hawaiian Airlines &mdash; Baggage prohibited items checklist"]]
+      sources: [["https://www.hawaiianairlines.com/content/travel-info/baggage/prohibited-items", "Hawaiian Airlines &mdash; Baggage prohibited items checklist"], ["https://tsa.gov/travel/security-screening/whatcanibring/items/perfume", "Unofficial source: TSA &mdash; Perfume"]]
     }
   }
 };

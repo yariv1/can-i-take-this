@@ -161,6 +161,37 @@
     "list": [
      "<strong>Not read:</strong> the CBSA page does not mention excise stamps or nicotine strength; its link \"Importing vaping products\" covers the rest."
     ]
+   },
+   {
+    "h": "📊 How common vaping is in Canada, per the WHO survey figures",
+    "p": "From the same WHO report on the global tobacco epidemic 2023, country profile for Canada, table \"Tobacco use prevalence from the latest survey\". These are survey results, not a law or a customs rule, and each survey has its own age group.",
+    "table": {
+     "head": [
+      "Item",
+      "What the WHO profile lists for Canada"
+     ],
+     "rows": [
+      [
+       "Adult survey",
+       "Canadian Community Health Survey, 2021 (national, ages 15+)"
+      ],
+      [
+       "E-cigarette use, current",
+       "4% (men 6%)"
+      ],
+      [
+       "E-cigarette use, daily",
+       "2%"
+      ],
+      [
+       "Cigarette smoking, current",
+       "11%"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>How to read it:</strong> \"current\" means the survey&rsquo;s own definition of current use; WHO prints the surveys&rsquo; figures as published and does not harmonise them."
+    ]
    }
   ],
   "faq": [
@@ -175,6 +206,10 @@
    [
     "What age do you need to bring a vape into Canada?",
     "CBSA lists a minimum age of 18 anywhere you enter Canada."
+   ],
+   [
+    "How common is vaping in Canada?",
+    "Adults: 4% of adults currently use e-cigarettes (men 6%), and 2% use them daily in the survey \"Canadian Community Health Survey, 2021\" (national, ages 15+)."
    ]
   ],
   "src": [
@@ -232,6 +267,33 @@
     "list": [
      "<strong>Not read:</strong> the page we read is about private importation and distance sales; its traveller quotas for tobacco are on a separate Tolletaten page."
     ]
+   },
+   {
+    "h": "📊 How common vaping is in Norway, per the WHO survey figures",
+    "p": "From the same WHO report on the global tobacco epidemic 2025, country profile for Norway, table \"Tobacco use prevalence from the latest survey\". These are survey results, not a law or a customs rule, and each survey has its own age group.",
+    "table": {
+     "head": [
+      "Item",
+      "What the WHO profile lists for Norway"
+     ],
+     "rows": [
+      [
+       "Adult survey",
+       "Statistics Norway Rusundersøkelsen, 2024 (national, ages 16-79)"
+      ],
+      [
+       "E-cigarette use, current",
+       "6% (men 4%)"
+      ],
+      [
+       "E-cigarette use, daily",
+       "2%"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>How to read it:</strong> \"current\" means the survey&rsquo;s own definition of current use; WHO prints the surveys&rsquo; figures as published and does not harmonise them."
+    ]
    }
   ],
   "faq": [
@@ -246,6 +308,10 @@
    [
     "What happens to vapes seized by Norwegian customs?",
     "Customs may detain, confiscate and destroy them, and no compensation is paid."
+   ],
+   [
+    "How common is vaping in Norway?",
+    "Adults: 6% of adults currently use e-cigarettes (men 4%), and 2% use them daily in the survey \"Statistics Norway Rusundersøkelsen, 2024\" (national, ages 16-79)."
    ]
   ],
   "src": [
@@ -358,6 +424,29 @@
     "list": [
      "<strong>Not read:</strong> the ANAM page cites no law or decree and gives no penalty or personal-use exception, so assume none and leave the device at home."
     ]
+   },
+   {
+    "h": "📊 How common vaping is in Mexico, per the WHO survey figures",
+    "p": "From the same WHO report on the global tobacco epidemic 2023, country profile for Mexico, table \"Tobacco use prevalence from the latest survey\". These are survey results, not a law or a customs rule, and each survey has its own age group.",
+    "table": {
+     "head": [
+      "Item",
+      "What the WHO profile lists for Mexico"
+     ],
+     "rows": [
+      [
+       "Adult survey",
+       "Encuesta Nacional de Salud y Nutrición, 2021 (national, ages 20+)"
+      ],
+      [
+       "E-cigarette use, current",
+       "1.6% (men 2.5%, women 0.7%)"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>How to read it:</strong> \"current\" means the survey&rsquo;s own definition of current use; WHO prints the surveys&rsquo; figures as published and does not harmonise them."
+    ]
    }
   ],
   "faq": [
@@ -368,6 +457,10 @@
    [
     "Are heated tobacco devices allowed in Mexico?",
     "ANAM includes devices that use heated tobacco in the same prohibited-or-regulated listing."
+   ],
+   [
+    "How common is vaping in Mexico?",
+    "Adults: 1.6% of adults currently use e-cigarettes (men 2.5%, women 0.7%) in the survey \"Encuesta Nacional de Salud y Nutrición, 2021\" (national, ages 20+)."
    ]
   ],
   "src": [
@@ -492,6 +585,33 @@
     "list": [
      "<strong>Not read:</strong> the page title says the ban applies to tourists, but the summary does not describe a declaration channel or any allowance; its date is 2023, so check current enforcement with Thai Customs."
     ]
+   },
+   {
+    "h": "📊 How common vaping is in Thailand, per the WHO survey figures",
+    "p": "From the same WHO report on the global tobacco epidemic 2025, country profile for Thailand, table \"Tobacco use prevalence from the latest survey\". These are survey results, not a law or a customs rule, and each survey has its own age group.",
+    "table": {
+     "head": [
+      "Item",
+      "What the WHO profile lists for Thailand"
+     ],
+     "rows": [
+      [
+       "Adult survey",
+       "Health Behaviour of the Population Survey, 2021 (national, ages 15+)"
+      ],
+      [
+       "E-cigarette use, current",
+       "17.6% (men 20.2%, women 15.0%)"
+      ],
+      [
+       "Cigarette smoking, current",
+       "16.9%"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>How to read it:</strong> \"current\" means the survey&rsquo;s own definition of current use; WHO prints the surveys&rsquo; figures as published and does not harmonise them."
+    ]
    }
   ],
   "faq": [
@@ -506,6 +626,10 @@
    [
     "Can I vape in public in Thailand?",
     "The Tobacco Products Control Act 2017 sets a fine of up to 5,000 baht for using e-cigarettes in public areas where nicotine is an ingredient, according to the summary."
+   ],
+   [
+    "How common is vaping in Thailand?",
+    "Adults: 17.6% of adults currently use e-cigarettes (men 20.2%, women 15.0%) in the survey \"Health Behaviour of the Population Survey, 2021\" (national, ages 15+)."
    ]
   ],
   "src": [
@@ -839,6 +963,45 @@
     "list": [
      "<strong>Not read:</strong> the guide does not say whether stronger nicotine liquids or devices are treated differently."
     ]
+   },
+   {
+    "h": "📊 How common vaping is in South Korea, per the WHO survey figures",
+    "p": "From the same WHO report on the global tobacco epidemic 2025, country profile for South Korea, table \"Tobacco use prevalence from the latest survey\". These are survey results, not a law or a customs rule, and each survey has its own age group.",
+    "table": {
+     "head": [
+      "Item",
+      "What the WHO profile lists for South Korea"
+     ],
+     "rows": [
+      [
+       "Adult survey",
+       "Korea National Health and Nutrition Examination Survey (KNHANES), 2023 (national, ages 19+)"
+      ],
+      [
+       "E-cigarette use, current",
+       "3.3% (men 5.3%, women 1.3%)"
+      ],
+      [
+       "Cigarette smoking, current",
+       "18.5%"
+      ],
+      [
+       "Adolescent survey",
+       "Korea Youth Risk Behavior Web-based Survey, 2024 (national, ages 13-18)"
+      ],
+      [
+       "E-cigarette use, current",
+       "3.0% (boys 3.7%, girls 2.2%)"
+      ],
+      [
+       "Cigarette smoking, current",
+       "3.6%"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>How to read it:</strong> \"current\" means the survey&rsquo;s own definition of current use; WHO prints the surveys&rsquo; figures as published and does not harmonise them."
+    ]
    }
   ],
   "faq": [
@@ -853,6 +1016,10 @@
    [
     "What if I do not declare vape liquid in South Korea?",
     "Undeclared goods above the allowance face additional tax of 40%, or 60% for repeat cases within 2 years; declaring voluntarily earns a 30% duty reduction."
+   ],
+   [
+    "How common is vaping in South Korea?",
+    "Adults: 3.3% of adults currently use e-cigarettes (men 5.3%, women 1.3%) in the survey \"Korea National Health and Nutrition Examination Survey (KNHANES), 2023\" (national, ages 19+). Adolescents: 3.0% of adolescents currently use e-cigarettes (boys 3.7%, girls 2.2%) in the survey \"Korea Youth Risk Behavior Web-based Survey, 2024\" (national, ages 13-18)."
    ]
   ],
   "src": [
@@ -1079,5 +1246,2313 @@
   "desc": "Vaping in Hong Kong 2026: Often restricted - check first. Some countries ban or heavily restrict vapes and nicotine liquids.",
   "read": "Hong Kong Department of Health notice of 28 April 2022 read 22 October 2026",
   "lead": "Hong Kong prohibits importing e-cigarettes, heated tobacco and herbal cigarettes, including by an incoming traveller. Anyone bringing one in must declare it to Customs, whatever the quantity."
+ },
+ "DE": {
+  "sections": [
+   {
+    "h": "🛃 What German Customs says about e-cigarette liquids",
+    "p": "From the Zoll (German Customs) page \"Travellers' allowances\" (English, read 19 November 2026; undated). It is customs guidance on what you may bring in; it does not cover using vapes in Germany.",
+    "table": {
+     "head": [
+      "Item",
+      "What Zoll says"
+     ],
+     "rows": [
+      [
+       "Liquids for e-cigarettes",
+       "Count as substitutes for tobacco products, listed under \"other goods\""
+      ],
+      [
+       "Who may use the allowance",
+       "Persons aged 17 or older for tobacco substitutes"
+      ],
+      [
+       "Limit for tobacco substitutes",
+       "No quantity limit; they fall under the general value limit"
+      ],
+      [
+       "Value limit",
+       "430 euros for air and sea travellers, 300 euros for other travellers, 175 euros for travellers under 15"
+      ],
+      [
+       "Tobacco products (for comparison)",
+       "200 cigarettes, 100 cigarillos, 50 cigars or 250 g of tobacco, or a proportionate mix"
+      ],
+      [
+       "E-cigarette devices",
+       "Not mentioned on the page"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>Not read:</strong> the page does not mention e-cigarette devices. It covers arrivals from outside the EU; check Zoll for rules when you travel within the EU."
+    ]
+   },
+   {
+    "h": "📊 How common vaping is in Germany, per the WHO survey figures",
+    "p": "From the same WHO report on the global tobacco epidemic 2023, country profile for Germany, table \"Tobacco use prevalence from the latest survey\". These are survey results, not a law or a customs rule, and each survey has its own age group.",
+    "table": {
+     "head": [
+      "Item",
+      "What the WHO profile lists for Germany"
+     ],
+     "rows": [
+      [
+       "Adult survey",
+       "Epidemiologischer Suchtsurvey (ESA), 2021 (national, ages 18-64)"
+      ],
+      [
+       "E-cigarette use, current",
+       "3.9% (men 4.5%, women 3.3%)"
+      ],
+      [
+       "Adolescent survey",
+       "European School Survey Project on Alcohol and Other Drugs, 2019 (national, ages 15-16)"
+      ],
+      [
+       "E-cigarette use, current",
+       "16.0% (boys 20.0%, girls 12.0%)"
+      ],
+      [
+       "Cigarette smoking, current",
+       "20.0%"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>How to read it:</strong> \"current\" means the survey&rsquo;s own definition of current use; WHO prints the surveys&rsquo; figures as published and does not harmonise them."
+    ]
+   }
+  ],
+  "faq": [
+   [
+    "Can I bring e-cigarette liquid into Germany?",
+    "Zoll treats liquids for e-cigarettes as tobacco substitutes with no quantity limit, inside the general value limit of 430 euros for air and sea travellers (persons aged 17 or older)."
+   ],
+   [
+    "Does Germany have a quantity limit for vape liquid?",
+    "The Zoll travellers' allowances page sets no quantity limit for tobacco substitutes such as e-cigarette liquids; it applies a value limit instead."
+   ],
+   [
+    "How common is vaping in Germany?",
+    "Adults: 3.9% of adults currently use e-cigarettes (men 4.5%, women 3.3%) in the survey \"Epidemiologischer Suchtsurvey (ESA), 2021\" (national, ages 18-64). Adolescents: 16.0% of adolescents currently use e-cigarettes (boys 20.0%, girls 12.0%) in the survey \"European School Survey Project on Alcohol and Other Drugs, 2019\" (national, ages 15-16)."
+   ]
+  ],
+  "src": [
+   [
+    "https://www.zoll.de/EN/Private-individuals/Travel/Entering-Germany/Duties-and-taxes/Travellers-allowances/travellers-allowances.html",
+    "Zoll (German Customs) - Travellers' allowances"
+   ]
+  ],
+  "keepSchema": true
+ },
+ "ES": {
+  "sections": [
+   {
+    "h": "🛃 What the Spanish Tax Agency says about e-cigarette liquid you carry in",
+    "p": "From the Agencia Tributaria page on exemptions from the tax on e-cigarette liquids and other tobacco-related products (last updated 27 March 2026, read 19 November 2026, translated from Spanish). It is a tax exemption page, not a ban or a health rule.",
+    "table": {
+     "head": [
+      "Item",
+      "What the Agencia Tributaria says"
+     ],
+     "rows": [
+      [
+       "Who is exempt",
+       "Travellers over 17 who personally bring products in from outside the internal territory"
+      ],
+      [
+       "E-liquid limit",
+       "20 ml"
+      ],
+      [
+       "Nicotine pouches",
+       "200"
+      ],
+      [
+       "Other nicotine products",
+       "200 g"
+      ],
+      [
+       "Occasional parcel from one private person to another, with no payment",
+       "Exempt up to 10 ml of e-liquid, 30 nicotine pouches or 150 g of other nicotine products"
+      ],
+      [
+       "General traveller allowance",
+       "See the separate customs page: 430 euros by air or sea, 300 euros by land; tobacco 200 cigarettes"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>Not read:</strong> what happens above 20 ml, and any ban on using vapes in Spain. The page is about the tax exemption, so confirm the customs treatment with the agency."
+    ]
+   },
+   {
+    "h": "📊 How common vaping is in Spain, per the WHO survey figures",
+    "p": "From the same WHO report on the global tobacco epidemic 2025, country profile for Spain, table \"Tobacco use prevalence from the latest survey\". These are survey results, not a law or a customs rule, and each survey has its own age group.",
+    "table": {
+     "head": [
+      "Item",
+      "What the WHO profile lists for Spain"
+     ],
+     "rows": [
+      [
+       "Adult survey",
+       "Encuesta sobre Alcohol y Drogas en España (EDADES), 2024 (national, ages 15-64)"
+      ],
+      [
+       "E-cigarette use, current",
+       "4.6% (men 4.7%, women 4.5%)"
+      ],
+      [
+       "E-cigarette use, daily",
+       "1.3%"
+      ],
+      [
+       "Adolescent survey",
+       "European School Survey Project on Alcohol and Other Drugs, 2023 (national, ages 14-18)"
+      ],
+      [
+       "E-cigarette use, current",
+       "26.3% (boys 24.7%, girls 27.9%)"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>How to read it:</strong> \"current\" means the survey&rsquo;s own definition of current use; WHO prints the surveys&rsquo; figures as published and does not harmonise them."
+    ]
+   }
+  ],
+  "faq": [
+   [
+    "How much vape liquid can I bring into Spain?",
+    "The Agencia Tributaria exempts up to 20 ml of e-liquid from the special tax for travellers over 17 who bring it in personally from outside the internal territory."
+   ],
+   [
+    "Can I send a vape to someone in Spain?",
+    "An occasional non-paid parcel between private individuals is exempt up to 10 ml of e-liquid, 30 nicotine pouches or 150 g of other nicotine products."
+   ],
+   [
+    "How common is vaping in Spain?",
+    "Adults: 4.6% of adults currently use e-cigarettes (men 4.7%, women 4.5%), and 1.3% use them daily in the survey \"Encuesta sobre Alcohol y Drogas en España (EDADES), 2024\" (national, ages 15-64). Adolescents: 26.3% of adolescents currently use e-cigarettes (boys 24.7%, girls 27.9%) in the survey \"European School Survey Project on Alcohol and Other Drugs, 2023\" (national, ages 14-18)."
+   ]
+  ],
+  "src": [
+   [
+    "https://sede.agenciatributaria.gob.es/Sede/impuestos-especiales-medioambientales/impuestos-especiales-fabricacion/liquidos-cigarrillos-electronicos-otros-productos-tabaco/exenciones.html",
+    "Agencia Tributaria - Exemptions: e-cigarette liquids and other tobacco-related products"
+   ]
+  ],
+  "keepSchema": true
+ },
+ "FR": {
+  "sections": [
+   {
+    "h": "🛃 What French Customs says about e-cigarettes bought abroad",
+    "p": "From the Douane (French Customs) page \"Calculation of duties and taxes on purchases abroad\" (updated 15 October 2026, read 19 November 2026). It is a duty table, not a ban or a quantity limit.",
+    "table": {
+     "head": [
+      "Item",
+      "What Douane says"
+     ],
+     "rows": [
+      [
+       "Electronic cigarettes from outside the EU",
+       "Customs duty 3.7% and VAT 20% (customs nomenclature 8543 70 70)"
+      ],
+      [
+       "Legal basis cited",
+       "Commission Implementing Regulation (EU) 2019/1776 of 9 October 2019"
+      ],
+      [
+       "Above the exemption thresholds",
+       "Purchases from outside the EU are taxed, either at a flat rate or case by case under the Common Customs Tariff"
+      ],
+      [
+       "How duty is worked out",
+       "On the CIF value, with French VAT added to the duty"
+      ],
+      [
+       "Purchases inside the EU",
+       "Generally no duties, but VAT and excise are paid in the country of purchase"
+      ],
+      [
+       "Traveller allowance for e-cigarettes",
+       "Not stated; the page refers to a separate page for tobacco, alcohol and other goods"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>Not read:</strong> any quantity limit for e-liquid, and the rule on using vapes in France. The page is a duty table."
+    ]
+   },
+   {
+    "h": "📊 How common vaping is in France, per the WHO survey figures",
+    "p": "From the same WHO report on the global tobacco epidemic 2023, country profile for France, table \"Tobacco use prevalence from the latest survey\". These are survey results, not a law or a customs rule, and each survey has its own age group.",
+    "table": {
+     "head": [
+      "Item",
+      "What the WHO profile lists for France"
+     ],
+     "rows": [
+      [
+       "Adult survey",
+       "Baromètre santé, 2021 (national, ages 18-75)"
+      ],
+      [
+       "E-cigarette use, current",
+       "6.7%"
+      ],
+      [
+       "E-cigarette use, daily",
+       "5.0%"
+      ],
+      [
+       "Adolescent survey",
+       "enCLASS, 2021 (national, ages 9th-grade)"
+      ],
+      [
+       "E-cigarette use, current",
+       "13.9% (boys 15.4%, girls 12.3%)"
+      ],
+      [
+       "E-cigarette use, daily",
+       "2.8%"
+      ],
+      [
+       "Cigarette smoking, current",
+       "10.2%"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>How to read it:</strong> \"current\" means the survey&rsquo;s own definition of current use; WHO prints the surveys&rsquo; figures as published and does not harmonise them."
+    ]
+   }
+  ],
+  "faq": [
+   [
+    "Do I pay duty on a vape I bring into France?",
+    "French Customs lists electronic cigarettes from outside the EU at 3.7% customs duty and 20% VAT, applying when your purchases go above the exemption thresholds."
+   ],
+   [
+    "Is there a limit on e-liquid for travellers in France?",
+    "The Douane duty page does not state a traveller allowance for e-cigarettes; it points to a separate page for tobacco, alcohol and other goods."
+   ],
+   [
+    "How common is vaping in France?",
+    "Adults: 6.7% of adults currently use e-cigarettes, and 5.0% use them daily in the survey \"Baromètre santé, 2021\" (national, ages 18-75). Adolescents: 13.9% of adolescents currently use e-cigarettes (boys 15.4%, girls 12.3%), and 2.8% use them daily in the survey \"enCLASS, 2021\" (national, ages 9th-grade)."
+   ]
+  ],
+  "src": [
+   [
+    "https://www.douane.gouv.fr/en/fiche/calculation-duties-and-taxes-purchases-abroad",
+    "Douane (French Customs) - Calculation of duties and taxes on purchases abroad"
+   ]
+  ],
+  "keepSchema": true
+ },
+ "NL": {
+  "sections": [
+   {
+    "h": "🛃 What Dutch Customs says about bringing a vape",
+    "p": "From the Douane (Dutch Customs) page \"Bringing cigarettes or tobacco from abroad\" (published 26 June 2025, updated 9 November 2026, read 19 November 2026, translated from Dutch).",
+    "table": {
+     "head": [
+      "Item",
+      "What Douane says"
+     ],
+     "rows": [
+      [
+       "E-cigarettes and vapes",
+       "You may bring them into the Netherlands only if they are for your own use"
+      ],
+      [
+       "Reselling",
+       "You may not put these products on the market, which means you may not sell or resell them"
+      ],
+      [
+       "More information",
+       "The page refers to the NVWA, the food and consumer product safety authority, for rules on buying vapes"
+      ],
+      [
+       "Tobacco from an EU country",
+       "800 cigarettes, 200 cigars, 1 kg of tobacco or 400 cigarillos per person aged 17 or older"
+      ],
+      [
+       "Tobacco from outside the EU",
+       "200 cigarettes, 50 cigars, 250 g of tobacco or 100 cigarillos, or a mix"
+      ],
+      [
+       "Over the allowance",
+       "Declare it at the \"Goods to declare\" exit by air or sea; a fine can follow if you do not declare"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>Not read:</strong> an age limit for vapes and whether a vape must be declared. The page gives neither."
+    ]
+   }
+  ],
+  "faq": [
+   [
+    "Can I bring a vape into the Netherlands?",
+    "Dutch Customs says e-cigarettes or vapes may be brought in only for your own use, and may not be sold on."
+   ],
+   [
+    "Where do I find the Dutch rules on buying a vape?",
+    "The Douane page refers to the NVWA, the Netherlands Food and Consumer Product Safety Authority."
+   ]
+  ],
+  "src": [
+   [
+    "https://www.douane.nl/onderwerpen/reizen-en-vakantie/aankopen-uit-het-buitenland/sigaretten-of-tabak/",
+    "Douane (Dutch Customs) - Bringing cigarettes or tobacco from abroad"
+   ]
+  ],
+  "keepSchema": true
+ },
+ "IE": {
+  "sections": [
+   {
+    "h": "🛃 What Irish Revenue says about the e-liquid tax",
+    "p": "From the Revenue page \"E-liquid Products Tax (EPT)\" (read 19 November 2026; undated). It is a tax page for suppliers; it does not set a traveller allowance.",
+    "table": {
+     "head": [
+      "Item",
+      "What Revenue says"
+     ],
+     "rows": [
+      [
+       "Start of the tax",
+       "E-liquid Products Tax came into effect on 1 November 2025"
+      ],
+      [
+       "Which products",
+       "Both nicotine-containing and non-nicotine e-liquid products"
+      ],
+      [
+       "Who pays",
+       "The supplier is liable to account for and pay the tax, on the first supply in the State"
+      ],
+      [
+       "Personal imports by travellers",
+       "Not covered on this page"
+      ],
+      [
+       "Rate and reliefs",
+       "The page links to separate sections that were not part of the text we read"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>Not read:</strong> the rate, the reliefs and any rule for liquid a traveller carries in. Ask Revenue before bringing more than a personal supply."
+    ]
+   },
+   {
+    "h": "📊 How common vaping is in Ireland, per the WHO survey figures",
+    "p": "From the same WHO report on the global tobacco epidemic 2023, country profile for Ireland, table \"Tobacco use prevalence from the latest survey\". These are survey results, not a law or a customs rule, and each survey has its own age group.",
+    "table": {
+     "head": [
+      "Item",
+      "What the WHO profile lists for Ireland"
+     ],
+     "rows": [
+      [
+       "Adult survey",
+       "Healthy Ireland Survey, 2022 (national, ages 15+)"
+      ],
+      [
+       "E-cigarette use, current",
+       "6.0% (men 7.0%, women 5.0%)"
+      ],
+      [
+       "Adolescent survey",
+       "European School Survey Project on Alcohol and Other Drugs, 2019 (national, ages 15-16)"
+      ],
+      [
+       "E-cigarette use, current",
+       "15.0% (boys 20.0%, girls 12.0%)"
+      ],
+      [
+       "Cigarette smoking, current",
+       "14.0%"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>How to read it:</strong> \"current\" means the survey&rsquo;s own definition of current use; WHO prints the surveys&rsquo; figures as published and does not harmonise them."
+    ]
+   }
+  ],
+  "faq": [
+   [
+    "Is there a tax on vape liquid in Ireland?",
+    "Yes: Revenue says the E-liquid Products Tax came into effect on 1 November 2025 and applies to nicotine and non-nicotine e-liquid products, paid by the supplier on first supply in the State."
+   ],
+   [
+    "Does the Irish vape tax apply to what I carry in?",
+    "The Revenue EPT page does not cover personal imports by travellers, so confirm with Revenue."
+   ],
+   [
+    "How common is vaping in Ireland?",
+    "Adults: 6.0% of adults currently use e-cigarettes (men 7.0%, women 5.0%) in the survey \"Healthy Ireland Survey, 2022\" (national, ages 15+). Adolescents: 15.0% of adolescents currently use e-cigarettes (boys 20.0%, girls 12.0%) in the survey \"European School Survey Project on Alcohol and Other Drugs, 2019\" (national, ages 15-16)."
+   ]
+  ],
+  "src": [
+   [
+    "https://www.revenue.ie/en/companies-and-charities/excise-and-licences/ept/index.aspx",
+    "Revenue (Ireland) - E-liquid Products Tax (EPT)"
+   ]
+  ],
+  "keepSchema": true
+ },
+ "PT": {
+  "sections": [
+   {
+    "h": "🛃 What the Portuguese Tax Authority says about e-cigarette liquid",
+    "p": "From the Autoridade Tributaria \"Travellers guide\" (PDF, last modified 30 June 2026, read 19 November 2026, translated from Portuguese). It is the tax and customs allowance table, not a rule on using vapes.",
+    "table": {
+     "head": [
+      "Item",
+      "What the guide says"
+     ],
+     "rows": [
+      [
+       "Liquid for e-cigarettes in refill containers, reusable or not",
+       "30 ml exempt from excise duty (IEC)"
+      ],
+      [
+       "Who the excise exemption covers",
+       "Travellers coming from third countries, third territories and EU member states"
+      ],
+      [
+       "Nicotine pouches",
+       "20 g"
+      ],
+      [
+       "Heated tobacco",
+       "250 g"
+      ],
+      [
+       "Other goods from third countries: value",
+       "430 euros by air or sea, 300 euros by road or rail and private boats or aircraft"
+      ],
+      [
+       "Travellers under 17 from third countries",
+       "No exemption for tobacco products and alcohol"
+      ],
+      [
+       "Which channel",
+       "Green channel only if nothing is to be declared; use the red channel if in doubt"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>Not read:</strong> whether the 30 ml figure now also covers nicotine-free liquid, which Portuguese tax law has taxed since 1 January 2024. Ask the authority before bringing more than a small supply."
+    ]
+   }
+  ],
+  "faq": [
+   [
+    "How much vape liquid can I bring into Portugal?",
+    "The Autoridade Tributaria travellers guide lists 30 ml of e-cigarette liquid in refill containers as exempt from excise duty, for travellers from third countries and from EU member states."
+   ],
+   [
+    "Is there an age limit for the Portuguese allowances?",
+    "Travellers under 17 coming from third countries get no exemption for tobacco products and alcohol, according to the guide."
+   ]
+  ],
+  "src": [
+   [
+    "https://info.portaldasfinancas.gov.pt/pt/apoio_contribuinte/Folhetos_informativos/Documents/Guia_viajantes.pdf",
+    "Autoridade Tributaria e Aduaneira - Travellers guide (PDF)"
+   ]
+  ],
+  "keepSchema": true
+ },
+ "CZ": {
+  "sections": [
+   {
+    "h": "🛃 What Czech Customs says about e-cigarette refills",
+    "p": "From the Celni sprava page \"Quantity limits for goods carried by individuals\" (read 19 November 2026, translated from Czech; the page shows only a version number). It covers goods carried by a person from other EU member states for personal consumption.",
+    "table": {
+     "head": [
+      "Item",
+      "What Celni sprava says"
+     ],
+     "rows": [
+      [
+       "E-cigarette refill containers (under other tobacco products)",
+       "80 ml"
+      ],
+      [
+       "Where the limit applies",
+       "Goods carried by an individual from EU member states for personal consumption"
+      ],
+      [
+       "Limits for arrivals from third countries",
+       "Not on this page"
+      ],
+      [
+       "Age, excise per ml, seizure rules",
+       "Not on this page"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>Not read:</strong> the limit for arrivals from outside the EU, the minimum age and the penalties. Search results from Czech Customs mention a 20 ml limit from third countries and an excise duty on refills, but we did not read those pages, so confirm with Celni sprava."
+    ]
+   },
+   {
+    "h": "📊 How common vaping is in Czechia, per the WHO survey figures",
+    "p": "From the same WHO report on the global tobacco epidemic 2023, country profile for Czechia, table \"Tobacco use prevalence from the latest survey\". These are survey results, not a law or a customs rule, and each survey has its own age group.",
+    "table": {
+     "head": [
+      "Item",
+      "What the WHO profile lists for Czechia"
+     ],
+     "rows": [
+      [
+       "Adult survey",
+       "National Research on Tobacco and Alcohol Use in the Czech Republic (NAUTA), 2021 (national, ages 15+)"
+      ],
+      [
+       "E-cigarette use, current",
+       "7.4% (men 8.8%, women 6.0%)"
+      ],
+      [
+       "E-cigarette use, daily",
+       "4.0%"
+      ],
+      [
+       "Cigarette smoking, current",
+       "22.8%"
+      ],
+      [
+       "Adolescent survey",
+       "European School Survey Project on Alcohol and Other Drugs, 2019 (national, ages 15-16)"
+      ],
+      [
+       "E-cigarette use, current",
+       "19.8% (boys 22.5%, girls 16.9%)"
+      ],
+      [
+       "E-cigarette use, daily",
+       "3.1%"
+      ],
+      [
+       "Cigarette smoking, current",
+       "23.6%"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>How to read it:</strong> \"current\" means the survey&rsquo;s own definition of current use; WHO prints the surveys&rsquo; figures as published and does not harmonise them."
+    ]
+   }
+  ],
+  "faq": [
+   [
+    "How much vape liquid can I carry in the Czech Republic?",
+    "Czech Customs lists 80 ml of e-cigarette refill containers in its quantity limits for goods carried by an individual from other EU member states for personal consumption."
+   ],
+   [
+    "How common is vaping in Czechia?",
+    "Adults: 7.4% of adults currently use e-cigarettes (men 8.8%, women 6.0%), and 4.0% use them daily in the survey \"National Research on Tobacco and Alcohol Use in the Czech Republic (NAUTA), 2021\" (national, ages 15+). Adolescents: 19.8% of adolescents currently use e-cigarettes (boys 22.5%, girls 16.9%), and 3.1% use them daily in the survey \"European School Survey Project on Alcohol and Other Drugs, 2019\" (national, ages 15-16)."
+   ]
+  ],
+  "src": [
+   [
+    "https://celnisprava.gov.cz/cz/dane/WebSPD/WebInFO/Stranky/InfoFO_limity_doprava.aspx",
+    "Celni sprava CR - Quantity limits for goods carried by individuals"
+   ]
+  ],
+  "keepSchema": true
+ },
+ "PL": {
+  "sections": [
+   {
+    "h": "🛃 What Polish tax administration (KAS) says about e-cigarette liquid",
+    "p": "From the gov.pl article of the Krajowa Administracja Skarbowa \"Planning a trip abroad? Remember this\" (published 26 June 2021, read 19 November 2026, translated from Polish). It is old: search results for KAS also show a 2026 tourist guide with different figures that we could not read.",
+    "table": {
+     "head": [
+      "Item",
+      "What the KAS article says"
+     ],
+     "rows": [
+      [
+       "E-cigarette liquid, duty and tax free into the EU: air or sea travellers",
+       "50 ml"
+      ],
+      [
+       "E-cigarette liquid: travellers by other transport",
+       "10 ml"
+      ],
+      [
+       "Novel tobacco products: air or sea travellers",
+       "0.04 kg"
+      ],
+      [
+       "Novel tobacco products: other transport",
+       "0.008 kg"
+      ],
+      [
+       "Combining liquid and novel products",
+       "Allowed while the used percentages of each allowance add up to no more than 100%"
+      ],
+      [
+       "Disposable e-cigarettes and vaporisers",
+       "Not mentioned in the article"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>Check before you travel:</strong> the figures are from 2021. The 2026 KAS tourist guide (granica.gov.pl) could not be opened, and it may give different limits."
+    ]
+   },
+   {
+    "h": "📊 How common vaping is in Poland, per the WHO survey figures",
+    "p": "From the same WHO report on the global tobacco epidemic 2025, country profile for Poland, table \"Tobacco use prevalence from the latest survey\". These are survey results, not a law or a customs rule, and each survey has its own age group.",
+    "table": {
+     "head": [
+      "Item",
+      "What the WHO profile lists for Poland"
+     ],
+     "rows": [
+      [
+       "Adult survey",
+       "Public Opinion Research Center (CBOS) nicotine consumption survey, 2021 (national, ages 18+)"
+      ],
+      [
+       "E-cigarette use, current",
+       "0.9% (men 1.5%, women 0.4%)"
+      ],
+      [
+       "Cigarette smoking, current",
+       "22.6%"
+      ],
+      [
+       "Adolescent survey",
+       "Global Youth Tobacco Survey, 2022 (national, ages 13-15)"
+      ],
+      [
+       "E-cigarette use, current",
+       "22.3% (boys 21.2%, girls 23.4%)"
+      ],
+      [
+       "Cigarette smoking, current",
+       "11.7%"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>How to read it:</strong> \"current\" means the survey&rsquo;s own definition of current use; WHO prints the surveys&rsquo; figures as published and does not harmonise them."
+    ]
+   }
+  ],
+  "faq": [
+   [
+    "How much e-cigarette liquid can I bring into Poland?",
+    "A 2021 KAS article gives 50 ml for travellers by air or sea and 10 ml for other transport, duty and tax free; check the current KAS tourist guide because the limits may have changed."
+   ],
+   [
+    "How common is vaping in Poland?",
+    "Adults: 0.9% of adults currently use e-cigarettes (men 1.5%, women 0.4%) in the survey \"Public Opinion Research Center (CBOS) nicotine consumption survey, 2021\" (national, ages 18+). Adolescents: 22.3% of adolescents currently use e-cigarettes (boys 21.2%, girls 23.4%) in the survey \"Global Youth Tobacco Survey, 2022\" (national, ages 13-15)."
+   ]
+  ],
+  "src": [
+   [
+    "https://www.gov.pl/web/kas/planujesz-zagraniczny-wyjazd-o-tym-pamietaj",
+    "KAS (Poland) - Planning a trip abroad? Remember this (2021)"
+   ]
+  ],
+  "keepSchema": true
+ },
+ "AR": {
+  "sections": [
+   {
+    "h": "📊 How common vaping is in Argentina, per the WHO survey figures",
+    "p": "From the same WHO report on the global tobacco epidemic 2023, country profile for Argentina, table \"Tobacco use prevalence from the latest survey\". These are survey results, not a law or a customs rule, and each survey has its own age group.",
+    "table": {
+     "head": [
+      "Item",
+      "What the WHO profile lists for Argentina"
+     ],
+     "rows": [
+      [
+       "Adult survey",
+       "Encuesta Nacional de Factores de Riesgo Para Enfermedades No Transmisibles, 2018 (national, ages 18+)"
+      ],
+      [
+       "E-cigarette use, current",
+       "1.1%"
+      ],
+      [
+       "Cigarette smoking, current",
+       "22.2%"
+      ],
+      [
+       "Adolescent survey",
+       "Global Youth Tobacco Survey, 2018 (national, ages 13-15)"
+      ],
+      [
+       "E-cigarette use, current",
+       "7.1% (boys 8.1%, girls 6.2%)"
+      ],
+      [
+       "Cigarette smoking, current",
+       "18.0%"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>How to read it:</strong> \"current\" means the survey&rsquo;s own definition of current use; WHO prints the surveys&rsquo; figures as published and does not harmonise them."
+    ]
+   }
+  ],
+  "faq": [
+   [
+    "How common is vaping in Argentina?",
+    "Adults: 1.1% of adults currently use e-cigarettes in the survey \"Encuesta Nacional de Factores de Riesgo Para Enfermedades No Transmisibles, 2018\" (national, ages 18+). Adolescents: 7.1% of adolescents currently use e-cigarettes (boys 8.1%, girls 6.2%) in the survey \"Global Youth Tobacco Survey, 2018\" (national, ages 13-15)."
+   ],
+   [
+    "What does WHO list for e-cigarette use in Argentina?",
+    "1.1% of adults currently use e-cigarettes in the survey \"Encuesta Nacional de Factores de Riesgo Para Enfermedades No Transmisibles, 2018\" (national, ages 18+)."
+   ]
+  ],
+  "src": [],
+  "keepSchema": true
+ },
+ "AT": {
+  "sections": [
+   {
+    "h": "📊 How common vaping is in Austria, per the WHO survey figures",
+    "p": "From the same WHO report on the global tobacco epidemic 2023, country profile for Austria, table \"Tobacco use prevalence from the latest survey\". These are survey results, not a law or a customs rule, and each survey has its own age group.",
+    "table": {
+     "head": [
+      "Item",
+      "What the WHO profile lists for Austria"
+     ],
+     "rows": [
+      [
+       "Adult survey",
+       "Repräsentativerhebung zum Substanzgebrauch, 2020 (national, ages 15+)"
+      ],
+      [
+       "E-cigarette use, current",
+       "3.4% (men 4.5%, women 2.2%)"
+      ],
+      [
+       "E-cigarette use, daily",
+       "0.9%"
+      ],
+      [
+       "Cigarette smoking, current",
+       "23.7%"
+      ],
+      [
+       "Adolescent survey",
+       "European School Survey Project on Alcohol and Other Drugs (ESPAD), 2019 (national, ages 14-17)"
+      ],
+      [
+       "E-cigarette use, current",
+       "13.0% (boys 17.0%, girls 9.0%)"
+      ],
+      [
+       "E-cigarette use, daily",
+       "2.0%"
+      ],
+      [
+       "Cigarette smoking, current",
+       "25.0%"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>How to read it:</strong> \"current\" means the survey&rsquo;s own definition of current use; WHO prints the surveys&rsquo; figures as published and does not harmonise them."
+    ]
+   }
+  ],
+  "faq": [
+   [
+    "How common is vaping in Austria?",
+    "Adults: 3.4% of adults currently use e-cigarettes (men 4.5%, women 2.2%), and 0.9% use them daily in the survey \"Repräsentativerhebung zum Substanzgebrauch, 2020\" (national, ages 15+). Adolescents: 13.0% of adolescents currently use e-cigarettes (boys 17.0%, girls 9.0%), and 2.0% use them daily in the survey \"European School Survey Project on Alcohol and Other Drugs (ESPAD), 2019\" (national, ages 14-17)."
+   ],
+   [
+    "What does WHO list for e-cigarette use in Austria?",
+    "3.4% of adults currently use e-cigarettes (men 4.5%, women 2.2%), and 0.9% use them daily in the survey \"Repräsentativerhebung zum Substanzgebrauch, 2020\" (national, ages 15+)."
+   ]
+  ],
+  "src": [],
+  "keepSchema": true
+ },
+ "BE": {
+  "sections": [
+   {
+    "h": "📊 How common vaping is in Belgium, per the WHO survey figures",
+    "p": "From the same WHO report on the global tobacco epidemic 2023, country profile for Belgium, table \"Tobacco use prevalence from the latest survey\". These are survey results, not a law or a customs rule, and each survey has its own age group.",
+    "table": {
+     "head": [
+      "Item",
+      "What the WHO profile lists for Belgium"
+     ],
+     "rows": [
+      [
+       "Adult survey",
+       "Enquête sur le tabagisme, 2021 (national, ages 15+)"
+      ],
+      [
+       "E-cigarette use, current",
+       "10.0% (men 12.0%, women 8.0%)"
+      ],
+      [
+       "E-cigarette use, daily",
+       "3.0%"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>How to read it:</strong> \"current\" means the survey&rsquo;s own definition of current use; WHO prints the surveys&rsquo; figures as published and does not harmonise them."
+    ]
+   }
+  ],
+  "faq": [
+   [
+    "How common is vaping in Belgium?",
+    "Adults: 10.0% of adults currently use e-cigarettes (men 12.0%, women 8.0%), and 3.0% use them daily in the survey \"Enquête sur le tabagisme, 2021\" (national, ages 15+)."
+   ],
+   [
+    "What does WHO list for e-cigarette use in Belgium?",
+    "10.0% of adults currently use e-cigarettes (men 12.0%, women 8.0%), and 3.0% use them daily in the survey \"Enquête sur le tabagisme, 2021\" (national, ages 15+)."
+   ]
+  ],
+  "src": [],
+  "keepSchema": true
+ },
+ "CL": {
+  "sections": [
+   {
+    "h": "📊 How common vaping is in Chile, per the WHO survey figures",
+    "p": "From the same WHO report on the global tobacco epidemic 2023, country profile for Chile, table \"Tobacco use prevalence from the latest survey\". These are survey results, not a law or a customs rule, and each survey has its own age group.",
+    "table": {
+     "head": [
+      "Item",
+      "What the WHO profile lists for Chile"
+     ],
+     "rows": [
+      [
+       "Adult survey",
+       "Estudio Nacional de Drogas en Población General de Chile, 2022 (national, ages 15-64)"
+      ],
+      [
+       "E-cigarette use, current",
+       "1.0% (men 1.4%, women 0.5%)"
+      ],
+      [
+       "E-cigarette use, daily",
+       "0.6%"
+      ],
+      [
+       "Cigarette smoking, current",
+       "30.3%"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>How to read it:</strong> \"current\" means the survey&rsquo;s own definition of current use; WHO prints the surveys&rsquo; figures as published and does not harmonise them."
+    ]
+   }
+  ],
+  "faq": [
+   [
+    "How common is vaping in Chile?",
+    "Adults: 1.0% of adults currently use e-cigarettes (men 1.4%, women 0.5%), and 0.6% use them daily in the survey \"Estudio Nacional de Drogas en Población General de Chile, 2022\" (national, ages 15-64)."
+   ],
+   [
+    "What does WHO list for e-cigarette use in Chile?",
+    "1.0% of adults currently use e-cigarettes (men 1.4%, women 0.5%), and 0.6% use them daily in the survey \"Estudio Nacional de Drogas en Población General de Chile, 2022\" (national, ages 15-64)."
+   ]
+  ],
+  "src": [],
+  "keepSchema": true
+ },
+ "CN": {
+  "sections": [
+   {
+    "h": "📊 How common vaping is in China, per the WHO survey figures",
+    "p": "From the same WHO report on the global tobacco epidemic 2023, country profile for China, table \"Tobacco use prevalence from the latest survey\". These are survey results, not a law or a customs rule, and each survey has its own age group.",
+    "table": {
+     "head": [
+      "Item",
+      "What the WHO profile lists for China"
+     ],
+     "rows": [
+      [
+       "Adult survey",
+       "Global Adult Tobacco Survey (GATS), 2020 (national, ages 15+)"
+      ],
+      [
+       "E-cigarette use, current",
+       "0.7% (men 1.2%, women 0.1%)"
+      ],
+      [
+       "Cigarette smoking, current",
+       "25.3%"
+      ],
+      [
+       "Adolescent survey",
+       "Global Youth Tobacco Survey, 2021 (national, ages 13-15)"
+      ],
+      [
+       "E-cigarette use, current",
+       "3.1% (boys 3.9%, girls 2.2%)"
+      ],
+      [
+       "Cigarette smoking, current",
+       "3.3%"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>How to read it:</strong> \"current\" means the survey&rsquo;s own definition of current use; WHO prints the surveys&rsquo; figures as published and does not harmonise them."
+    ]
+   }
+  ],
+  "faq": [
+   [
+    "How common is vaping in China?",
+    "Adults: 0.7% of adults currently use e-cigarettes (men 1.2%, women 0.1%) in the survey \"Global Adult Tobacco Survey (GATS), 2020\" (national, ages 15+). Adolescents: 3.1% of adolescents currently use e-cigarettes (boys 3.9%, girls 2.2%) in the survey \"Global Youth Tobacco Survey, 2021\" (national, ages 13-15)."
+   ],
+   [
+    "What does WHO list for e-cigarette use in China?",
+    "0.7% of adults currently use e-cigarettes (men 1.2%, women 0.1%) in the survey \"Global Adult Tobacco Survey (GATS), 2020\" (national, ages 15+)."
+   ]
+  ],
+  "src": [],
+  "keepSchema": true
+ },
+ "CO": {
+  "sections": [
+   {
+    "h": "📊 How common vaping is in Colombia, per the WHO survey figures",
+    "p": "From the same WHO report on the global tobacco epidemic 2023, country profile for Colombia, table \"Tobacco use prevalence from the latest survey\". These are survey results, not a law or a customs rule, and each survey has its own age group.",
+    "table": {
+     "head": [
+      "Item",
+      "What the WHO profile lists for Colombia"
+     ],
+     "rows": [
+      [
+       "Adult survey",
+       "Estudio Nacional de Consumo de Sustancias Psicoactivas en Colombia, 2019 (national, ages 12-65)"
+      ],
+      [
+       "E-cigarette use, current",
+       "0.7% (men 1.0%, women 0.4%)"
+      ],
+      [
+       "Adolescent survey",
+       "Encuesta Nacional de Tabaquismo en Jóvenes, 2017 (national, ages 13-15)"
+      ],
+      [
+       "E-cigarette use, current",
+       "9.0% (boys 9.0%, girls 8.8%)"
+      ],
+      [
+       "E-cigarette use, daily",
+       "0.4%"
+      ],
+      [
+       "Cigarette smoking, current",
+       "9.0%"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>How to read it:</strong> \"current\" means the survey&rsquo;s own definition of current use; WHO prints the surveys&rsquo; figures as published and does not harmonise them."
+    ]
+   }
+  ],
+  "faq": [
+   [
+    "How common is vaping in Colombia?",
+    "Adults: 0.7% of adults currently use e-cigarettes (men 1.0%, women 0.4%) in the survey \"Estudio Nacional de Consumo de Sustancias Psicoactivas en Colombia, 2019\" (national, ages 12-65). Adolescents: 9.0% of adolescents currently use e-cigarettes (boys 9.0%, girls 8.8%), and 0.4% use them daily in the survey \"Encuesta Nacional de Tabaquismo en Jóvenes, 2017\" (national, ages 13-15)."
+   ],
+   [
+    "What does WHO list for e-cigarette use in Colombia?",
+    "0.7% of adults currently use e-cigarettes (men 1.0%, women 0.4%) in the survey \"Estudio Nacional de Consumo de Sustancias Psicoactivas en Colombia, 2019\" (national, ages 12-65)."
+   ]
+  ],
+  "src": [],
+  "keepSchema": true
+ },
+ "CU": {
+  "sections": [
+   {
+    "h": "📊 How common vaping is in Cuba, per the WHO survey figures",
+    "p": "From the same WHO report on the global tobacco epidemic 2023, country profile for Cuba, table \"Tobacco use prevalence from the latest survey\". These are survey results, not a law or a customs rule, and each survey has its own age group.",
+    "table": {
+     "head": [
+      "Item",
+      "What the WHO profile lists for Cuba"
+     ],
+     "rows": [
+      [
+       "Adolescent survey",
+       "Global Youth Tobacco Survey, 2018 (national, ages 13-15)"
+      ],
+      [
+       "E-cigarette use, current",
+       "6.1% (boys 7.6%, girls 4.2%)"
+      ],
+      [
+       "Cigarette smoking, current",
+       "8.7%"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>How to read it:</strong> \"current\" means the survey&rsquo;s own definition of current use; WHO prints the surveys&rsquo; figures as published and does not harmonise them."
+    ]
+   }
+  ],
+  "faq": [
+   [
+    "How common is vaping in Cuba?",
+    "Adolescents: 6.1% of adolescents currently use e-cigarettes (boys 7.6%, girls 4.2%) in the survey \"Global Youth Tobacco Survey, 2018\" (national, ages 13-15)."
+   ],
+   [
+    "What does WHO list for e-cigarette use in Cuba?",
+    "6.1% of adolescents currently use e-cigarettes (boys 7.6%, girls 4.2%) in the survey \"Global Youth Tobacco Survey, 2018\" (national, ages 13-15)."
+   ]
+  ],
+  "src": [],
+  "keepSchema": true
+ },
+ "CY": {
+  "sections": [
+   {
+    "h": "📊 How common vaping is in Cyprus, per the WHO survey figures",
+    "p": "From the same WHO report on the global tobacco epidemic 2023, country profile for Cyprus, table \"Tobacco use prevalence from the latest survey\". These are survey results, not a law or a customs rule, and each survey has its own age group.",
+    "table": {
+     "head": [
+      "Item",
+      "What the WHO profile lists for Cyprus"
+     ],
+     "rows": [
+      [
+       "Adolescent survey",
+       "European School Survey Project on Alcohol and Other Drugs, 2019 (national, ages 15 -16)"
+      ],
+      [
+       "E-cigarette use, current",
+       "10.0% (boys 14.0%, girls 7.5%)"
+      ],
+      [
+       "Cigarette smoking, current",
+       "14.0%"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>How to read it:</strong> \"current\" means the survey&rsquo;s own definition of current use; WHO prints the surveys&rsquo; figures as published and does not harmonise them."
+    ]
+   }
+  ],
+  "faq": [
+   [
+    "How common is vaping in Cyprus?",
+    "Adolescents: 10.0% of adolescents currently use e-cigarettes (boys 14.0%, girls 7.5%) in the survey \"European School Survey Project on Alcohol and Other Drugs, 2019\" (national, ages 15 -16)."
+   ],
+   [
+    "What does WHO list for e-cigarette use in Cyprus?",
+    "10.0% of adolescents currently use e-cigarettes (boys 14.0%, girls 7.5%) in the survey \"European School Survey Project on Alcohol and Other Drugs, 2019\" (national, ages 15 -16)."
+   ]
+  ],
+  "src": [],
+  "keepSchema": true
+ },
+ "DK": {
+  "sections": [
+   {
+    "h": "📊 How common vaping is in Denmark, per the WHO survey figures",
+    "p": "From the same WHO report on the global tobacco epidemic 2023, country profile for Denmark, table \"Tobacco use prevalence from the latest survey\". These are survey results, not a law or a customs rule, and each survey has its own age group.",
+    "table": {
+     "head": [
+      "Item",
+      "What the WHO profile lists for Denmark"
+     ],
+     "rows": [
+      [
+       "Adolescent survey",
+       "European School Survey Project on Alcohol and Other Drugs, 2019 (national, ages 15-16)"
+      ],
+      [
+       "E-cigarette use, current",
+       "14.0% (boys 19.0%, girls 10.0%)"
+      ],
+      [
+       "Cigarette smoking, current",
+       "22.0%"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>How to read it:</strong> \"current\" means the survey&rsquo;s own definition of current use; WHO prints the surveys&rsquo; figures as published and does not harmonise them."
+    ]
+   }
+  ],
+  "faq": [
+   [
+    "How common is vaping in Denmark?",
+    "Adolescents: 14.0% of adolescents currently use e-cigarettes (boys 19.0%, girls 10.0%) in the survey \"European School Survey Project on Alcohol and Other Drugs, 2019\" (national, ages 15-16)."
+   ],
+   [
+    "What does WHO list for e-cigarette use in Denmark?",
+    "14.0% of adolescents currently use e-cigarettes (boys 19.0%, girls 10.0%) in the survey \"European School Survey Project on Alcohol and Other Drugs, 2019\" (national, ages 15-16)."
+   ]
+  ],
+  "src": [],
+  "keepSchema": true
+ },
+ "FJ": {
+  "sections": [
+   {
+    "h": "📊 How common vaping is in Fiji, per the WHO survey figures",
+    "p": "From the same WHO report on the global tobacco epidemic 2023, country profile for Fiji, table \"Tobacco use prevalence from the latest survey\". These are survey results, not a law or a customs rule, and each survey has its own age group.",
+    "table": {
+     "head": [
+      "Item",
+      "What the WHO profile lists for Fiji"
+     ],
+     "rows": [
+      [
+       "Adolescent survey",
+       "Global Youth Tobacco Survey, 2016 (national, ages 13-15)"
+      ],
+      [
+       "E-cigarette use, current",
+       "11.9%"
+      ],
+      [
+       "Cigarette smoking, current",
+       "5.1%"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>How to read it:</strong> \"current\" means the survey&rsquo;s own definition of current use; WHO prints the surveys&rsquo; figures as published and does not harmonise them."
+    ]
+   }
+  ],
+  "faq": [
+   [
+    "How common is vaping in Fiji?",
+    "Adolescents: 11.9% of adolescents currently use e-cigarettes in the survey \"Global Youth Tobacco Survey, 2016\" (national, ages 13-15)."
+   ],
+   [
+    "What does WHO list for e-cigarette use in Fiji?",
+    "11.9% of adolescents currently use e-cigarettes in the survey \"Global Youth Tobacco Survey, 2016\" (national, ages 13-15)."
+   ]
+  ],
+  "src": [],
+  "keepSchema": true
+ },
+ "GE": {
+  "sections": [
+   {
+    "h": "📊 How common vaping is in Georgia, per the WHO survey figures",
+    "p": "From the same WHO report on the global tobacco epidemic 2023, country profile for Georgia, table \"Tobacco use prevalence from the latest survey\". These are survey results, not a law or a customs rule, and each survey has its own age group.",
+    "table": {
+     "head": [
+      "Item",
+      "What the WHO profile lists for Georgia"
+     ],
+     "rows": [
+      [
+       "Adult survey",
+       "National tobacco survey, 2019 (national, ages 18-69)"
+      ],
+      [
+       "E-cigarette use, current",
+       "0.3% (men 0.6%, women 0.0%)"
+      ],
+      [
+       "Cigarette smoking, current",
+       "24.8%"
+      ],
+      [
+       "Adolescent survey",
+       "European School Survey Project on Alcohol and Other Drugs, 2019 (national, ages 15-16)"
+      ],
+      [
+       "E-cigarette use, current",
+       "7.0% (boys 11.0%, girls 4.0%)"
+      ],
+      [
+       "E-cigarette use, daily",
+       "2.0%"
+      ],
+      [
+       "Cigarette smoking, current",
+       "12.0%"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>How to read it:</strong> \"current\" means the survey&rsquo;s own definition of current use; WHO prints the surveys&rsquo; figures as published and does not harmonise them."
+    ]
+   }
+  ],
+  "faq": [
+   [
+    "How common is vaping in Georgia?",
+    "Adults: 0.3% of adults currently use e-cigarettes (men 0.6%, women 0.0%) in the survey \"National tobacco survey, 2019\" (national, ages 18-69). Adolescents: 7.0% of adolescents currently use e-cigarettes (boys 11.0%, girls 4.0%), and 2.0% use them daily in the survey \"European School Survey Project on Alcohol and Other Drugs, 2019\" (national, ages 15-16)."
+   ],
+   [
+    "What does WHO list for e-cigarette use in Georgia?",
+    "0.3% of adults currently use e-cigarettes (men 0.6%, women 0.0%) in the survey \"National tobacco survey, 2019\" (national, ages 18-69)."
+   ]
+  ],
+  "src": [],
+  "keepSchema": true
+ },
+ "GR": {
+  "sections": [
+   {
+    "h": "📊 How common vaping is in Greece, per the WHO survey figures",
+    "p": "From the same WHO report on the global tobacco epidemic 2023, country profile for Greece, table \"Tobacco use prevalence from the latest survey\". These are survey results, not a law or a customs rule, and each survey has its own age group.",
+    "table": {
+     "head": [
+      "Item",
+      "What the WHO profile lists for Greece"
+     ],
+     "rows": [
+      [
+       "Adolescent survey",
+       "European School Survey Project on Alcohol and Other Drugs, 2019 (national, ages 15-16)"
+      ],
+      [
+       "E-cigarette use, current",
+       "11.0% (boys 15.0%, girls 7.6%)"
+      ],
+      [
+       "Cigarette smoking, current",
+       "15.0%"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>How to read it:</strong> \"current\" means the survey&rsquo;s own definition of current use; WHO prints the surveys&rsquo; figures as published and does not harmonise them."
+    ]
+   }
+  ],
+  "faq": [
+   [
+    "How common is vaping in Greece?",
+    "Adolescents: 11.0% of adolescents currently use e-cigarettes (boys 15.0%, girls 7.6%) in the survey \"European School Survey Project on Alcohol and Other Drugs, 2019\" (national, ages 15-16)."
+   ],
+   [
+    "What does WHO list for e-cigarette use in Greece?",
+    "11.0% of adolescents currently use e-cigarettes (boys 15.0%, girls 7.6%) in the survey \"European School Survey Project on Alcohol and Other Drugs, 2019\" (national, ages 15-16)."
+   ]
+  ],
+  "src": [],
+  "keepSchema": true
+ },
+ "HR": {
+  "sections": [
+   {
+    "h": "📊 How common vaping is in Croatia, per the WHO survey figures",
+    "p": "From the same WHO report on the global tobacco epidemic 2023, country profile for Croatia, table \"Tobacco use prevalence from the latest survey\". These are survey results, not a law or a customs rule, and each survey has its own age group.",
+    "table": {
+     "head": [
+      "Item",
+      "What the WHO profile lists for Croatia"
+     ],
+     "rows": [
+      [
+       "Adolescent survey",
+       "European School Survey Project on Alcohol and Other Drugs, 2019 (national, ages 15-16)"
+      ],
+      [
+       "E-cigarette use, current",
+       "12.0% (boys 16.0%, girls 8.9%)"
+      ],
+      [
+       "Cigarette smoking, current",
+       "29.0%"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>How to read it:</strong> \"current\" means the survey&rsquo;s own definition of current use; WHO prints the surveys&rsquo; figures as published and does not harmonise them."
+    ]
+   }
+  ],
+  "faq": [
+   [
+    "How common is vaping in Croatia?",
+    "Adolescents: 12.0% of adolescents currently use e-cigarettes (boys 16.0%, girls 8.9%) in the survey \"European School Survey Project on Alcohol and Other Drugs, 2019\" (national, ages 15-16)."
+   ],
+   [
+    "What does WHO list for e-cigarette use in Croatia?",
+    "12.0% of adolescents currently use e-cigarettes (boys 16.0%, girls 8.9%) in the survey \"European School Survey Project on Alcohol and Other Drugs, 2019\" (national, ages 15-16)."
+   ]
+  ],
+  "src": [],
+  "keepSchema": true
+ },
+ "ID": {
+  "sections": [
+   {
+    "h": "📊 How common vaping is in Indonesia, per the WHO survey figures",
+    "p": "From the same WHO report on the global tobacco epidemic 2023, country profile for Indonesia, table \"Tobacco use prevalence from the latest survey\". These are survey results, not a law or a customs rule, and each survey has its own age group.",
+    "table": {
+     "head": [
+      "Item",
+      "What the WHO profile lists for Indonesia"
+     ],
+     "rows": [
+      [
+       "Adult survey",
+       "Global Adult Tobacco Survey (GATS), 2021 (national, ages 15+)"
+      ],
+      [
+       "E-cigarette use, current",
+       "3.0% (men 5.8%, women 0.3%)"
+      ],
+      [
+       "E-cigarette use, daily",
+       "0.3%"
+      ],
+      [
+       "Cigarette smoking, current",
+       "33.3%"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>How to read it:</strong> \"current\" means the survey&rsquo;s own definition of current use; WHO prints the surveys&rsquo; figures as published and does not harmonise them."
+    ]
+   }
+  ],
+  "faq": [
+   [
+    "How common is vaping in Indonesia?",
+    "Adults: 3.0% of adults currently use e-cigarettes (men 5.8%, women 0.3%), and 0.3% use them daily in the survey \"Global Adult Tobacco Survey (GATS), 2021\" (national, ages 15+)."
+   ],
+   [
+    "What does WHO list for e-cigarette use in Indonesia?",
+    "3.0% of adults currently use e-cigarettes (men 5.8%, women 0.3%), and 0.3% use them daily in the survey \"Global Adult Tobacco Survey (GATS), 2021\" (national, ages 15+)."
+   ]
+  ],
+  "src": [],
+  "keepSchema": true
+ },
+ "IT": {
+  "sections": [
+   {
+    "h": "📊 How common vaping is in Italy, per the WHO survey figures",
+    "p": "From the same WHO report on the global tobacco epidemic 2023, country profile for Italy, table \"Tobacco use prevalence from the latest survey\". These are survey results, not a law or a customs rule, and each survey has its own age group.",
+    "table": {
+     "head": [
+      "Item",
+      "What the WHO profile lists for Italy"
+     ],
+     "rows": [
+      [
+       "Adult survey",
+       "Survey by DOXA/ISS, 2022 (national, ages 15+)"
+      ],
+      [
+       "E-cigarette use, current",
+       "1.7%"
+      ],
+      [
+       "Cigarette smoking, current",
+       "24.2%"
+      ],
+      [
+       "Adolescent survey",
+       "European School Survey Project on Alcohol and Other Drugs, 2019 (national, ages 15-16)"
+      ],
+      [
+       "E-cigarette use, current",
+       "13.0% (boys 15.0%, girls 12.0%)"
+      ],
+      [
+       "Cigarette smoking, current",
+       "32.0%"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>How to read it:</strong> \"current\" means the survey&rsquo;s own definition of current use; WHO prints the surveys&rsquo; figures as published and does not harmonise them."
+    ]
+   }
+  ],
+  "faq": [
+   [
+    "How common is vaping in Italy?",
+    "Adults: 1.7% of adults currently use e-cigarettes in the survey \"Survey by DOXA/ISS, 2022\" (national, ages 15+). Adolescents: 13.0% of adolescents currently use e-cigarettes (boys 15.0%, girls 12.0%) in the survey \"European School Survey Project on Alcohol and Other Drugs, 2019\" (national, ages 15-16)."
+   ],
+   [
+    "What does WHO list for e-cigarette use in Italy?",
+    "1.7% of adults currently use e-cigarettes in the survey \"Survey by DOXA/ISS, 2022\" (national, ages 15+)."
+   ]
+  ],
+  "src": [],
+  "keepSchema": true
+ },
+ "JM": {
+  "sections": [
+   {
+    "h": "📊 How common vaping is in Jamaica, per the WHO survey figures",
+    "p": "From the same WHO report on the global tobacco epidemic 2023, country profile for Jamaica, table \"Tobacco use prevalence from the latest survey\". These are survey results, not a law or a customs rule, and each survey has its own age group.",
+    "table": {
+     "head": [
+      "Item",
+      "What the WHO profile lists for Jamaica"
+     ],
+     "rows": [
+      [
+       "Adolescent survey",
+       "Global Youth Tobacco Survey, 2017 (national, ages 13-15)"
+      ],
+      [
+       "E-cigarette use, current",
+       "11.7% (boys 13.7%, girls 9.7%)"
+      ],
+      [
+       "Cigarette smoking, current",
+       "11.2%"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>How to read it:</strong> \"current\" means the survey&rsquo;s own definition of current use; WHO prints the surveys&rsquo; figures as published and does not harmonise them."
+    ]
+   }
+  ],
+  "faq": [
+   [
+    "How common is vaping in Jamaica?",
+    "Adolescents: 11.7% of adolescents currently use e-cigarettes (boys 13.7%, girls 9.7%) in the survey \"Global Youth Tobacco Survey, 2017\" (national, ages 13-15)."
+   ],
+   [
+    "What does WHO list for e-cigarette use in Jamaica?",
+    "11.7% of adolescents currently use e-cigarettes (boys 13.7%, girls 9.7%) in the survey \"Global Youth Tobacco Survey, 2017\" (national, ages 13-15)."
+   ]
+  ],
+  "src": [],
+  "keepSchema": true
+ },
+ "KH": {
+  "sections": [
+   {
+    "h": "📊 How common vaping is in Cambodia, per the WHO survey figures",
+    "p": "From the same WHO report on the global tobacco epidemic 2023, country profile for Cambodia, table \"Tobacco use prevalence from the latest survey\". These are survey results, not a law or a customs rule, and each survey has its own age group.",
+    "table": {
+     "head": [
+      "Item",
+      "What the WHO profile lists for Cambodia"
+     ],
+     "rows": [
+      [
+       "Adult survey",
+       "National Adult Tobacco Survey of Cambodia, 2021 (national, ages 15+)"
+      ],
+      [
+       "E-cigarette use, current",
+       "0.0% (men 0.0%, women 0.0%)"
+      ],
+      [
+       "Cigarette smoking, current",
+       "13.0%"
+      ],
+      [
+       "Adolescent survey",
+       "Global Youth Tobacco Survey, 2022 (national, ages 13-15)"
+      ],
+      [
+       "E-cigarette use, current",
+       "0.9% (boys 1.1%, girls 0.8%)"
+      ],
+      [
+       "Cigarette smoking, current",
+       "1.2%"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>How to read it:</strong> \"current\" means the survey&rsquo;s own definition of current use; WHO prints the surveys&rsquo; figures as published and does not harmonise them."
+    ]
+   }
+  ],
+  "faq": [
+   [
+    "How common is vaping in Cambodia?",
+    "Adults: 0.0% of adults currently use e-cigarettes (men 0.0%, women 0.0%) in the survey \"National Adult Tobacco Survey of Cambodia, 2021\" (national, ages 15+). Adolescents: 0.9% of adolescents currently use e-cigarettes (boys 1.1%, girls 0.8%) in the survey \"Global Youth Tobacco Survey, 2022\" (national, ages 13-15)."
+   ],
+   [
+    "What does WHO list for e-cigarette use in Cambodia?",
+    "0.0% of adults currently use e-cigarettes (men 0.0%, women 0.0%) in the survey \"National Adult Tobacco Survey of Cambodia, 2021\" (national, ages 15+)."
+   ]
+  ],
+  "src": [],
+  "keepSchema": true
+ },
+ "LT": {
+  "sections": [
+   {
+    "h": "📊 How common vaping is in Lithuania, per the WHO survey figures",
+    "p": "From the same WHO report on the global tobacco epidemic 2023, country profile for Lithuania, table \"Tobacco use prevalence from the latest survey\". These are survey results, not a law or a customs rule, and each survey has its own age group.",
+    "table": {
+     "head": [
+      "Item",
+      "What the WHO profile lists for Lithuania"
+     ],
+     "rows": [
+      [
+       "Adolescent survey",
+       "European School Survey Project on Alcohol and Other Drugs (ESPAD), 2019 (national, ages 15-16)"
+      ],
+      [
+       "E-cigarette use, current",
+       "31.0% (boys 34.0%, girls 29.0%)"
+      ],
+      [
+       "Cigarette smoking, current",
+       "21.0%"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>How to read it:</strong> \"current\" means the survey&rsquo;s own definition of current use; WHO prints the surveys&rsquo; figures as published and does not harmonise them."
+    ]
+   }
+  ],
+  "faq": [
+   [
+    "How common is vaping in Lithuania?",
+    "Adolescents: 31.0% of adolescents currently use e-cigarettes (boys 34.0%, girls 29.0%) in the survey \"European School Survey Project on Alcohol and Other Drugs (ESPAD), 2019\" (national, ages 15-16)."
+   ],
+   [
+    "What does WHO list for e-cigarette use in Lithuania?",
+    "31.0% of adolescents currently use e-cigarettes (boys 34.0%, girls 29.0%) in the survey \"European School Survey Project on Alcohol and Other Drugs (ESPAD), 2019\" (national, ages 15-16)."
+   ]
+  ],
+  "src": [],
+  "keepSchema": true
+ },
+ "LU": {
+  "sections": [
+   {
+    "h": "📊 How common vaping is in Luxembourg, per the WHO survey figures",
+    "p": "From the same WHO report on the global tobacco epidemic 2023, country profile for Luxembourg, table \"Tobacco use prevalence from the latest survey\". These are survey results, not a law or a customs rule, and each survey has its own age group.",
+    "table": {
+     "head": [
+      "Item",
+      "What the WHO profile lists for Luxembourg"
+     ],
+     "rows": [
+      [
+       "Adult survey",
+       "Le tabagisme au Luxembourg, 2021 (national, ages 16+)"
+      ],
+      [
+       "E-cigarette use, current",
+       "9.4%"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>How to read it:</strong> \"current\" means the survey&rsquo;s own definition of current use; WHO prints the surveys&rsquo; figures as published and does not harmonise them."
+    ]
+   }
+  ],
+  "faq": [
+   [
+    "How common is vaping in Luxembourg?",
+    "Adults: 9.4% of adults currently use e-cigarettes in the survey \"Le tabagisme au Luxembourg, 2021\" (national, ages 16+)."
+   ],
+   [
+    "What does WHO list for e-cigarette use in Luxembourg?",
+    "9.4% of adults currently use e-cigarettes in the survey \"Le tabagisme au Luxembourg, 2021\" (national, ages 16+)."
+   ]
+  ],
+  "src": [],
+  "keepSchema": true
+ },
+ "MA": {
+  "sections": [
+   {
+    "h": "📊 How common vaping is in Morocco, per the WHO survey figures",
+    "p": "From the same WHO report on the global tobacco epidemic 2023, country profile for Morocco, table \"Tobacco use prevalence from the latest survey\". These are survey results, not a law or a customs rule, and each survey has its own age group.",
+    "table": {
+     "head": [
+      "Item",
+      "What the WHO profile lists for Morocco"
+     ],
+     "rows": [
+      [
+       "Adolescent survey",
+       "Global Youth Tobacco Survey, 2016 (national, ages 13-15)"
+      ],
+      [
+       "E-cigarette use, current",
+       "5.3% (boys 6.3%, girls 4.3%)"
+      ],
+      [
+       "Cigarette smoking, current",
+       "1.9%"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>How to read it:</strong> \"current\" means the survey&rsquo;s own definition of current use; WHO prints the surveys&rsquo; figures as published and does not harmonise them."
+    ]
+   }
+  ],
+  "faq": [
+   [
+    "How common is vaping in Morocco?",
+    "Adolescents: 5.3% of adolescents currently use e-cigarettes (boys 6.3%, girls 4.3%) in the survey \"Global Youth Tobacco Survey, 2016\" (national, ages 13-15)."
+   ],
+   [
+    "What does WHO list for e-cigarette use in Morocco?",
+    "5.3% of adolescents currently use e-cigarettes (boys 6.3%, girls 4.3%) in the survey \"Global Youth Tobacco Survey, 2016\" (national, ages 13-15)."
+   ]
+  ],
+  "src": [],
+  "keepSchema": true
+ },
+ "MT": {
+  "sections": [
+   {
+    "h": "📊 How common vaping is in Malta, per the WHO survey figures",
+    "p": "From the same WHO report on the global tobacco epidemic 2023, country profile for Malta, table \"Tobacco use prevalence from the latest survey\". These are survey results, not a law or a customs rule, and each survey has its own age group.",
+    "table": {
+     "head": [
+      "Item",
+      "What the WHO profile lists for Malta"
+     ],
+     "rows": [
+      [
+       "Adult survey",
+       "Eurobarometer, 2020 (national, ages 15+)"
+      ],
+      [
+       "E-cigarette use, current",
+       "1.0%"
+      ],
+      [
+       "Adolescent survey",
+       "European School Survey Project on Alcohol and Other Drugs, 2019 (national, ages 15-16)"
+      ],
+      [
+       "E-cigarette use, current",
+       "7.1% (boys 7.7%, girls 6.5%)"
+      ],
+      [
+       "Cigarette smoking, current",
+       "10.0%"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>How to read it:</strong> \"current\" means the survey&rsquo;s own definition of current use; WHO prints the surveys&rsquo; figures as published and does not harmonise them."
+    ]
+   }
+  ],
+  "faq": [
+   [
+    "How common is vaping in Malta?",
+    "Adults: 1.0% of adults currently use e-cigarettes in the survey \"Eurobarometer, 2020\" (national, ages 15+). Adolescents: 7.1% of adolescents currently use e-cigarettes (boys 7.7%, girls 6.5%) in the survey \"European School Survey Project on Alcohol and Other Drugs, 2019\" (national, ages 15-16)."
+   ],
+   [
+    "What does WHO list for e-cigarette use in Malta?",
+    "1.0% of adults currently use e-cigarettes in the survey \"Eurobarometer, 2020\" (national, ages 15+)."
+   ]
+  ],
+  "src": [],
+  "keepSchema": true
+ },
+ "MY": {
+  "sections": [
+   {
+    "h": "📊 How common vaping is in Malaysia, per the WHO survey figures",
+    "p": "From the same WHO report on the global tobacco epidemic 2023, country profile for Malaysia, table \"Tobacco use prevalence from the latest survey\". These are survey results, not a law or a customs rule, and each survey has its own age group.",
+    "table": {
+     "head": [
+      "Item",
+      "What the WHO profile lists for Malaysia"
+     ],
+     "rows": [
+      [
+       "Adult survey",
+       "National Health And Morbidity Survey, 2019 (national, ages 15-75)"
+      ],
+      [
+       "E-cigarette use, current",
+       "4.9% (men 9.4%, women 0.3%)"
+      ],
+      [
+       "Cigarette smoking, current",
+       "20.8%"
+      ],
+      [
+       "Adolescent survey",
+       "National Health and Morbidity Survey - Adolescent Health Survey, 2017 (national, ages 13-17)"
+      ],
+      [
+       "E-cigarette use, current",
+       "9.8% (boys 17.0%, girls 2.8%)"
+      ],
+      [
+       "Cigarette smoking, current",
+       "13.8%"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>How to read it:</strong> \"current\" means the survey&rsquo;s own definition of current use; WHO prints the surveys&rsquo; figures as published and does not harmonise them."
+    ]
+   }
+  ],
+  "faq": [
+   [
+    "How common is vaping in Malaysia?",
+    "Adults: 4.9% of adults currently use e-cigarettes (men 9.4%, women 0.3%) in the survey \"National Health And Morbidity Survey, 2019\" (national, ages 15-75). Adolescents: 9.8% of adolescents currently use e-cigarettes (boys 17.0%, girls 2.8%) in the survey \"National Health and Morbidity Survey - Adolescent Health Survey, 2017\" (national, ages 13-17)."
+   ],
+   [
+    "What does WHO list for e-cigarette use in Malaysia?",
+    "4.9% of adults currently use e-cigarettes (men 9.4%, women 0.3%) in the survey \"National Health And Morbidity Survey, 2019\" (national, ages 15-75)."
+   ]
+  ],
+  "src": [],
+  "keepSchema": true
+ },
+ "NZ": {
+  "sections": [
+   {
+    "h": "📊 How common vaping is in New Zealand, per the WHO survey figures",
+    "p": "From the same WHO report on the global tobacco epidemic 2025, country profile for New Zealand, table \"Tobacco use prevalence from the latest survey\". These are survey results, not a law or a customs rule, and each survey has its own age group.",
+    "table": {
+     "head": [
+      "Item",
+      "What the WHO profile lists for New Zealand"
+     ],
+     "rows": [
+      [
+       "Adult survey",
+       "New Zealand Health Survey , 2023-24 (national, ages 15+)"
+      ],
+      [
+       "E-cigarette use, current",
+       "14.0% (men 14.7%, women 13.2%)"
+      ],
+      [
+       "E-cigarette use, daily",
+       "11.1%"
+      ],
+      [
+       "Adolescent survey",
+       "ASH Year 10 Survey, 2024 (national, ages 14-15)"
+      ],
+      [
+       "E-cigarette use, current",
+       "14.1%"
+      ],
+      [
+       "E-cigarette use, daily",
+       "8.7%"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>How to read it:</strong> \"current\" means the survey&rsquo;s own definition of current use; WHO prints the surveys&rsquo; figures as published and does not harmonise them."
+    ]
+   }
+  ],
+  "faq": [
+   [
+    "How common is vaping in New Zealand?",
+    "Adults: 14.0% of adults currently use e-cigarettes (men 14.7%, women 13.2%), and 11.1% use them daily in the survey \"New Zealand Health Survey , 2023-24\" (national, ages 15+). Adolescents: 14.1% of adolescents currently use e-cigarettes, and 8.7% use them daily in the survey \"ASH Year 10 Survey, 2024\" (national, ages 14-15)."
+   ],
+   [
+    "What does WHO list for e-cigarette use in New Zealand?",
+    "14.0% of adults currently use e-cigarettes (men 14.7%, women 13.2%), and 11.1% use them daily in the survey \"New Zealand Health Survey , 2023-24\" (national, ages 15+)."
+   ]
+  ],
+  "src": [],
+  "keepSchema": true
+ },
+ "OM": {
+  "sections": [
+   {
+    "h": "📊 How common vaping is in Oman, per the WHO survey figures",
+    "p": "From the same WHO report on the global tobacco epidemic 2025, country profile for Oman, table \"Tobacco use prevalence from the latest survey\". These are survey results, not a law or a customs rule, and each survey has its own age group.",
+    "table": {
+     "head": [
+      "Item",
+      "What the WHO profile lists for Oman"
+     ],
+     "rows": [
+      [
+       "Adult survey",
+       "STEPS Survey, 2017 (national, ages 15+)"
+      ],
+      [
+       "E-cigarette use, current",
+       "5.3% (men 8.9%, women 2.3%)"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>How to read it:</strong> \"current\" means the survey&rsquo;s own definition of current use; WHO prints the surveys&rsquo; figures as published and does not harmonise them."
+    ]
+   }
+  ],
+  "faq": [
+   [
+    "How common is vaping in Oman?",
+    "Adults: 5.3% of adults currently use e-cigarettes (men 8.9%, women 2.3%) in the survey \"STEPS Survey, 2017\" (national, ages 15+)."
+   ],
+   [
+    "What does WHO list for e-cigarette use in Oman?",
+    "5.3% of adults currently use e-cigarettes (men 8.9%, women 2.3%) in the survey \"STEPS Survey, 2017\" (national, ages 15+)."
+   ]
+  ],
+  "src": [],
+  "keepSchema": true
+ },
+ "PA": {
+  "sections": [
+   {
+    "h": "📊 How common vaping is in Panama, per the WHO survey figures",
+    "p": "From the same WHO report on the global tobacco epidemic 2025, country profile for Panama, table \"Tobacco use prevalence from the latest survey\". These are survey results, not a law or a customs rule, and each survey has its own age group.",
+    "table": {
+     "head": [
+      "Item",
+      "What the WHO profile lists for Panama"
+     ],
+     "rows": [
+      [
+       "Adult survey",
+       "Encuesta Nacional de Salud, 2019 (national, ages 15+)"
+      ],
+      [
+       "E-cigarette use, current",
+       "8.5% (men 9.0%, women 8.1%)"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>How to read it:</strong> \"current\" means the survey&rsquo;s own definition of current use; WHO prints the surveys&rsquo; figures as published and does not harmonise them."
+    ]
+   }
+  ],
+  "faq": [
+   [
+    "How common is vaping in Panama?",
+    "Adults: 8.5% of adults currently use e-cigarettes (men 9.0%, women 8.1%) in the survey \"Encuesta Nacional de Salud, 2019\" (national, ages 15+)."
+   ],
+   [
+    "What does WHO list for e-cigarette use in Panama?",
+    "8.5% of adults currently use e-cigarettes (men 9.0%, women 8.1%) in the survey \"Encuesta Nacional de Salud, 2019\" (national, ages 15+)."
+   ]
+  ],
+  "src": [],
+  "keepSchema": true
+ },
+ "PE": {
+  "sections": [
+   {
+    "h": "📊 How common vaping is in Peru, per the WHO survey figures",
+    "p": "From the same WHO report on the global tobacco epidemic 2025, country profile for Peru, table \"Tobacco use prevalence from the latest survey\". These are survey results, not a law or a customs rule, and each survey has its own age group.",
+    "table": {
+     "head": [
+      "Item",
+      "What the WHO profile lists for Peru"
+     ],
+     "rows": [
+      [
+       "Adult survey",
+       "Encuesta Demográfica y de Salud Familiar, 2023 (national, ages 15+)"
+      ],
+      [
+       "E-cigarette use, current",
+       "6.3% (men 7.1%, women 5.4%)"
+      ],
+      [
+       "Cigarette smoking, current",
+       "9.3%"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>How to read it:</strong> \"current\" means the survey&rsquo;s own definition of current use; WHO prints the surveys&rsquo; figures as published and does not harmonise them."
+    ]
+   }
+  ],
+  "faq": [
+   [
+    "How common is vaping in Peru?",
+    "Adults: 6.3% of adults currently use e-cigarettes (men 7.1%, women 5.4%) in the survey \"Encuesta Demográfica y de Salud Familiar, 2023\" (national, ages 15+)."
+   ],
+   [
+    "What does WHO list for e-cigarette use in Peru?",
+    "6.3% of adults currently use e-cigarettes (men 7.1%, women 5.4%) in the survey \"Encuesta Demográfica y de Salud Familiar, 2023\" (national, ages 15+)."
+   ]
+  ],
+  "src": [],
+  "keepSchema": true
+ },
+ "PH": {
+  "sections": [
+   {
+    "h": "📊 How common vaping is in Philippines, per the WHO survey figures",
+    "p": "From the same WHO report on the global tobacco epidemic 2025, country profile for Philippines, table \"Tobacco use prevalence from the latest survey\". These are survey results, not a law or a customs rule, and each survey has its own age group.",
+    "table": {
+     "head": [
+      "Item",
+      "What the WHO profile lists for Philippines"
+     ],
+     "rows": [
+      [
+       "Adult survey",
+       "Global Adult Tobacco Survey (GATS), 2021 (national, ages 15+)"
+      ],
+      [
+       "E-cigarette use, current",
+       "14.1% (men 20.9%, women 7.5%)"
+      ],
+      [
+       "Cigarette smoking, current",
+       "18.3%"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>How to read it:</strong> \"current\" means the survey&rsquo;s own definition of current use; WHO prints the surveys&rsquo; figures as published and does not harmonise them."
+    ]
+   }
+  ],
+  "faq": [
+   [
+    "How common is vaping in Philippines?",
+    "Adults: 14.1% of adults currently use e-cigarettes (men 20.9%, women 7.5%) in the survey \"Global Adult Tobacco Survey (GATS), 2021\" (national, ages 15+)."
+   ],
+   [
+    "What does WHO list for e-cigarette use in Philippines?",
+    "14.1% of adults currently use e-cigarettes (men 20.9%, women 7.5%) in the survey \"Global Adult Tobacco Survey (GATS), 2021\" (national, ages 15+)."
+   ]
+  ],
+  "src": [],
+  "keepSchema": true
+ },
+ "QA": {
+  "sections": [
+   {
+    "h": "📊 How common vaping is in Qatar, per the WHO survey figures",
+    "p": "From the same WHO report on the global tobacco epidemic 2025, country profile for Qatar, table \"Tobacco use prevalence from the latest survey\". These are survey results, not a law or a customs rule, and each survey has its own age group.",
+    "table": {
+     "head": [
+      "Item",
+      "What the WHO profile lists for Qatar"
+     ],
+     "rows": [
+      [
+       "Adult survey",
+       "Qatar STEPS, 2023 (national, ages 18-69)"
+      ],
+      [
+       "E-cigarette use, current",
+       "11.3% (men 15.0%, women 7.8%)"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>How to read it:</strong> \"current\" means the survey&rsquo;s own definition of current use; WHO prints the surveys&rsquo; figures as published and does not harmonise them."
+    ]
+   }
+  ],
+  "faq": [
+   [
+    "How common is vaping in Qatar?",
+    "Adults: 11.3% of adults currently use e-cigarettes (men 15.0%, women 7.8%) in the survey \"Qatar STEPS, 2023\" (national, ages 18-69)."
+   ],
+   [
+    "What does WHO list for e-cigarette use in Qatar?",
+    "11.3% of adults currently use e-cigarettes (men 15.0%, women 7.8%) in the survey \"Qatar STEPS, 2023\" (national, ages 18-69)."
+   ]
+  ],
+  "src": [],
+  "keepSchema": true
+ },
+ "RS": {
+  "sections": [
+   {
+    "h": "📊 How common vaping is in Serbia, per the WHO survey figures",
+    "p": "From the same WHO report on the global tobacco epidemic 2025, country profile for Serbia, table \"Tobacco use prevalence from the latest survey\". These are survey results, not a law or a customs rule, and each survey has its own age group.",
+    "table": {
+     "head": [
+      "Item",
+      "What the WHO profile lists for Serbia"
+     ],
+     "rows": [
+      [
+       "Adult survey",
+       "Survey on psychoactive substance use and gambling among adults , 2023 (national, ages 18-64)"
+      ],
+      [
+       "E-cigarette use, current",
+       "18.4% (men 17.5%, women 19.3%)"
+      ],
+      [
+       "Cigarette smoking, current",
+       "37.9%"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>How to read it:</strong> \"current\" means the survey&rsquo;s own definition of current use; WHO prints the surveys&rsquo; figures as published and does not harmonise them."
+    ]
+   }
+  ],
+  "faq": [
+   [
+    "How common is vaping in Serbia?",
+    "Adults: 18.4% of adults currently use e-cigarettes (men 17.5%, women 19.3%) in the survey \"Survey on psychoactive substance use and gambling among adults , 2023\" (national, ages 18-64)."
+   ],
+   [
+    "What does WHO list for e-cigarette use in Serbia?",
+    "18.4% of adults currently use e-cigarettes (men 17.5%, women 19.3%) in the survey \"Survey on psychoactive substance use and gambling among adults , 2023\" (national, ages 18-64)."
+   ]
+  ],
+  "src": [],
+  "keepSchema": true
+ },
+ "RU": {
+  "sections": [
+   {
+    "h": "📊 How common vaping is in Russia, per the WHO survey figures",
+    "p": "From the same WHO report on the global tobacco epidemic 2025, country profile for Russia, table \"Tobacco use prevalence from the latest survey\". These are survey results, not a law or a customs rule, and each survey has its own age group.",
+    "table": {
+     "head": [
+      "Item",
+      "What the WHO profile lists for Russia"
+     ],
+     "rows": [
+      [
+       "Adult survey",
+       "Selective monitoring of the health of the population survey (Rosstat), 2024 (national, ages 15+)"
+      ],
+      [
+       "E-cigarette use, current",
+       "4.4% (men 5.2%, women 3.8%)"
+      ],
+      [
+       "Adolescent survey",
+       "Global Youth Tobacco Survey, 2021 (national, ages 13-15)"
+      ],
+      [
+       "E-cigarette use, current",
+       "16.7% (boys 15.8%, girls 17.4%)"
+      ],
+      [
+       "Cigarette smoking, current",
+       "5.7%"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>How to read it:</strong> \"current\" means the survey&rsquo;s own definition of current use; WHO prints the surveys&rsquo; figures as published and does not harmonise them."
+    ]
+   }
+  ],
+  "faq": [
+   [
+    "How common is vaping in Russia?",
+    "Adults: 4.4% of adults currently use e-cigarettes (men 5.2%, women 3.8%) in the survey \"Selective monitoring of the health of the population survey (Rosstat), 2024\" (national, ages 15+). Adolescents: 16.7% of adolescents currently use e-cigarettes (boys 15.8%, girls 17.4%) in the survey \"Global Youth Tobacco Survey, 2021\" (national, ages 13-15)."
+   ],
+   [
+    "What does WHO list for e-cigarette use in Russia?",
+    "4.4% of adults currently use e-cigarettes (men 5.2%, women 3.8%) in the survey \"Selective monitoring of the health of the population survey (Rosstat), 2024\" (national, ages 15+)."
+   ]
+  ],
+  "src": [],
+  "keepSchema": true
+ },
+ "SA": {
+  "sections": [
+   {
+    "h": "📊 How common vaping is in Saudi Arabia, per the WHO survey figures",
+    "p": "From the same WHO report on the global tobacco epidemic 2025, country profile for Saudi Arabia, table \"Tobacco use prevalence from the latest survey\". These are survey results, not a law or a customs rule, and each survey has its own age group.",
+    "table": {
+     "head": [
+      "Item",
+      "What the WHO profile lists for Saudi Arabia"
+     ],
+     "rows": [
+      [
+       "Adult survey",
+       "National Health Survey, 2023 (national, ages 15+)"
+      ],
+      [
+       "E-cigarette use, current",
+       "5.4% (men 6.1%, women 4.7%)"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>How to read it:</strong> \"current\" means the survey&rsquo;s own definition of current use; WHO prints the surveys&rsquo; figures as published and does not harmonise them."
+    ]
+   }
+  ],
+  "faq": [
+   [
+    "How common is vaping in Saudi Arabia?",
+    "Adults: 5.4% of adults currently use e-cigarettes (men 6.1%, women 4.7%) in the survey \"National Health Survey, 2023\" (national, ages 15+)."
+   ],
+   [
+    "What does WHO list for e-cigarette use in Saudi Arabia?",
+    "5.4% of adults currently use e-cigarettes (men 6.1%, women 4.7%) in the survey \"National Health Survey, 2023\" (national, ages 15+)."
+   ]
+  ],
+  "src": [],
+  "keepSchema": true
+ },
+ "SC": {
+  "sections": [
+   {
+    "h": "📊 How common vaping is in Seychelles, per the WHO survey figures",
+    "p": "From the same WHO report on the global tobacco epidemic 2025, country profile for Seychelles, table \"Tobacco use prevalence from the latest survey\". These are survey results, not a law or a customs rule, and each survey has its own age group.",
+    "table": {
+     "head": [
+      "Item",
+      "What the WHO profile lists for Seychelles"
+     ],
+     "rows": [
+      [
+       "Adult survey",
+       "The Seychelles Heart Study V, 2023 (national, ages 18-74)"
+      ],
+      [
+       "E-cigarette use, current",
+       "7.3% (men 10.0%, women 4.7%)"
+      ],
+      [
+       "Cigarette smoking, current",
+       "19.5%"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>How to read it:</strong> \"current\" means the survey&rsquo;s own definition of current use; WHO prints the surveys&rsquo; figures as published and does not harmonise them."
+    ]
+   }
+  ],
+  "faq": [
+   [
+    "How common is vaping in Seychelles?",
+    "Adults: 7.3% of adults currently use e-cigarettes (men 10.0%, women 4.7%) in the survey \"The Seychelles Heart Study V, 2023\" (national, ages 18-74)."
+   ],
+   [
+    "What does WHO list for e-cigarette use in Seychelles?",
+    "7.3% of adults currently use e-cigarettes (men 10.0%, women 4.7%) in the survey \"The Seychelles Heart Study V, 2023\" (national, ages 18-74)."
+   ]
+  ],
+  "src": [],
+  "keepSchema": true
+ },
+ "UA": {
+  "sections": [
+   {
+    "h": "📊 How common vaping is in Ukraine, per the WHO survey figures",
+    "p": "From the same WHO report on the global tobacco epidemic 2025, country profile for Ukraine, table \"Tobacco use prevalence from the latest survey\". These are survey results, not a law or a customs rule, and each survey has its own age group.",
+    "table": {
+     "head": [
+      "Item",
+      "What the WHO profile lists for Ukraine"
+     ],
+     "rows": [
+      [
+       "Adult survey",
+       "Kyiv International Institute of Sociology face-to-face survey, 2024 (national, ages 18+)"
+      ],
+      [
+       "E-cigarette use, current",
+       "5.3% (men 7.0%, women 3.9%)"
+      ],
+      [
+       "E-cigarette use, daily",
+       "3.9%"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>How to read it:</strong> \"current\" means the survey&rsquo;s own definition of current use; WHO prints the surveys&rsquo; figures as published and does not harmonise them."
+    ]
+   }
+  ],
+  "faq": [
+   [
+    "How common is vaping in Ukraine?",
+    "Adults: 5.3% of adults currently use e-cigarettes (men 7.0%, women 3.9%), and 3.9% use them daily in the survey \"Kyiv International Institute of Sociology face-to-face survey, 2024\" (national, ages 18+)."
+   ],
+   [
+    "What does WHO list for e-cigarette use in Ukraine?",
+    "5.3% of adults currently use e-cigarettes (men 7.0%, women 3.9%), and 3.9% use them daily in the survey \"Kyiv International Institute of Sociology face-to-face survey, 2024\" (national, ages 18+)."
+   ]
+  ],
+  "src": [],
+  "keepSchema": true
+ },
+ "US": {
+  "sections": [
+   {
+    "h": "📊 How common vaping is in United States, per the WHO survey figures",
+    "p": "From the same WHO report on the global tobacco epidemic 2025, country profile for United States, table \"Tobacco use prevalence from the latest survey\". These are survey results, not a law or a customs rule, and each survey has its own age group.",
+    "table": {
+     "head": [
+      "Item",
+      "What the WHO profile lists for United States"
+     ],
+     "rows": [
+      [
+       "Adult survey",
+       "National Survey on Drug Use and Health (NSDUH), 2023 (national, ages 18+)"
+      ],
+      [
+       "E-cigarette use, current",
+       "3.5% (men 3.1%, women 3.9%)"
+      ],
+      [
+       "Cigarette smoking, current",
+       "14.9%"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>How to read it:</strong> \"current\" means the survey&rsquo;s own definition of current use; WHO prints the surveys&rsquo; figures as published and does not harmonise them."
+    ]
+   }
+  ],
+  "faq": [
+   [
+    "How common is vaping in United States?",
+    "Adults: 3.5% of adults currently use e-cigarettes (men 3.1%, women 3.9%) in the survey \"National Survey on Drug Use and Health (NSDUH), 2023\" (national, ages 18+)."
+   ],
+   [
+    "What does WHO list for e-cigarette use in United States?",
+    "3.5% of adults currently use e-cigarettes (men 3.1%, women 3.9%) in the survey \"National Survey on Drug Use and Health (NSDUH), 2023\" (national, ages 18+)."
+   ]
+  ],
+  "src": [],
+  "keepSchema": true
  }
 }
