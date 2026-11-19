@@ -10,6 +10,12 @@ One list, in the order to request indexing: **tier 0 first** (Google confirmed i
 
 **Finding (90 days):** no Wi-Fi page, no Compensation page, no Customer Service page and only 2 of 72 blog articles appear in the Pages report.
 
+## 2026-11-19 DEPLOYED (read this first)
+
+- **Commit 0d156912c, Pages build success, IndexNow sent 631 URLs to Bing/Yandex.** Full list with sections in `GSC_NEW_2026-11-19.md`: **A = 284 pages that were noindex live and are now indexable (request first)**, B = 347 pages rewritten from read sources (request after A, about 10 per day).
+- Not yet requested in Google Search Console by the user. Quota-limited: work through A first (airline perfume/alcohol/power-bank/liquids pages, country vaping/cash/plants pages, pets pages).
+- Known weak spot: the 85 country vaping pages are about 61% shared (limit 52%, user-approved exception); do not prioritise them for requests.
+
 ## 2026-11-14 status (read this first)
 
 - **cc009b25e (deployed 2026-11-15, IndexNow sent):** 4 vape pages to re-crawl: /airline/{swiss,austrian,brussels-airlines,ita-airways}/vape-e-cigarette/

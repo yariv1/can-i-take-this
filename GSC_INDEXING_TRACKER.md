@@ -3,6 +3,7 @@
 > 2026-10-11: the request ORDER now lives in GSC_PRIORITY.md. This file stays the per-URL status ledger.
 > 2026-10-15: the request ORDER is now `GSC_REQUEST_QUEUE.md` (319 URLs, tier 0 = 84 pages Google confirmed as not indexed, then by demand). This file stays the per-URL status ledger.
 
+> 2026-11-19: DEPLOYED commit 0d156912c (631 URLs changed, 284 newly indexable). Per-URL list: `GSC_NEW_2026-11-19.md`; request order: `GSC_REQUEST_QUEUE.md` top block. Status of those URLs: TO REQUEST.
 
 Keep this file current. **Every article or page we add goes in this table in the same step as the deploy**, with status `TO REQUEST`. Update the status when the user requests indexing (he does it manually in GSC, about 10 URLs per day) and when GSC confirms it.
 

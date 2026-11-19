@@ -1,3 +1,10 @@
+# STATE 2026-11-19 (session 56/57): DEPLOYED commit 0d156912c to main, Pages build success, IndexNow 631 URLs.
+
+- Live: airline perfume-aerosols, alcohol, power-bank, liquids pages rewritten from pages read (airline -> airport/regulator/customs -> press -> global, each labelled); country vaping national sections (DE ES FR NL IE PT CZ PL) + WHO survey figures (45 countries); NO page is noindex (NOINDEX_ENABLED=false); 284 pages newly indexable.
+- Gate: 38 of 39 guards pass. Only failure: country/*/vaping duplicate share 61% (limit 52%), user-approved exception for this deploy. All other duplicate groups sit exactly at their limits (alcohol 53, power-bank 50, liquids 42, perfume 51): zero margin.
+- Next: request indexing from `GSC_NEW_2026-11-19.md` section A first; reduce country vaping (needs ~35 more full national sections, none cheap); optional margin on the other groups; known inconsistency: index.html tool card for China Southern power bank says "Up to 20 backup batteries" while the official csair page says 2 spares at 100-160 Wh; Lufthansa/ITA power pages (airline_topics9.js) share Lufthansa Group text.
+- AdSense re-request only after Google recrawls and not before 2026-12-08.
+
 # SESSION 54 HANDOFF (2026-11-17, end of session 53) — READ THIS BLOCK FIRST (it overrides the TOP RULE / STATE / NEXT of every block below; their method and standing facts stay valid)
 
 ## SESSION 56 HANDOFF (2026-11-17, end of session 55) — READ THIS FIRST, IT OVERRIDES EVERY OLDER BLOCK BELOW (older blocks = method and history only)
