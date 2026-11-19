@@ -1,3 +1,13 @@
+# SESSION 57 HANDOFF (2026-11-19, end of session 56) - READ FIRST
+
+- First reply of next session: one line of rules read (no noindex ever, ladder automatic, duplicates fixed by sourced text only, deploy only on his word, no hooks, zero narration) + 3 Synced bullets, no question; start nothing unasked.
+- State: DEPLOYED. main = 74005499c (content 0d156912c), Pages success, IndexNow 631 URLs, 0 noindex pages, 284 pages newly indexable. Gate 38/39 (country/*/vaping 61% vs 52% = approved exception). `node ladder_queue.js` = 0.
+- Next: he requests Google Search Console indexing from GSC_NEW_2026-11-19.md section A (284), then B (347) ~10/day, vaping pages last; update GSC_NEW_2026-11-19.md, GSC_REQUEST_QUEUE.md, GSC_INDEXING_TRACKER.md after each session.
+- Optional open items (only on his word): country vaping needs ~35 more full national sections; zero margin on alcohol 53, power-bank 50, liquids 42, perfume 51; index.html China Southern power card says 20 backup batteries vs official 2 spares (100-160 Wh); Lufthansa/ITA power pages share text (airline_topics9.js); KLM/Etihad/IndiGo/United official pages time out, ANAC Brasil captcha (not bypassed).
+- Rules: finish one batch fully before the next; always search the airline's own site first, then official -> reliable third party -> press -> global; never log a fetch not made; never raise duplicate_limits.json; never delete pages; no noindex; no hooks; never git add -A or .claude/.
+- AdSense: re-request only after recrawl and not before 2026-12-08.
+- Full detail: memory project_blog_roadmap.md (SESSION 57 block).
+
 # STATE 2026-11-19 (session 56/57): DEPLOYED commit 0d156912c to main, Pages build success, IndexNow 631 URLs.
 
 - Live: airline perfume-aerosols, alcohol, power-bank, liquids pages rewritten from pages read (airline -> airport/regulator/customs -> press -> global, each labelled); country vaping national sections (DE ES FR NL IE PT CZ PL) + WHO survey figures (45 countries); NO page is noindex (NOINDEX_ENABLED=false); 284 pages newly indexable.
