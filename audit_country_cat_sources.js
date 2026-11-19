@@ -12,7 +12,9 @@ const OK_SAME = { 'taiwan/vaping': 1, 'turkey/vaping': 1,
   // vaping pages read in full 2026-10-18: the cited customs page itself states the e-cigarette / vaping-liquid rule
   'canada/vaping': 1, 'south-korea/vaping': 1, 'switzerland/vaping': 1,
   // read in full 2026-11-19: the Autoridade Tributaria travellers guide PDF itself lists the 30 ml e-cigarette liquid allowance (row "Liquido para cigarros eletronicos")
-  'portugal/vaping': 1 };
+  'portugal/vaping': 1,
+  // read in full 2026-11-19: each cited customs page itself states the e-liquid / tobacco liquid rule (EE 20 ml, HR 10 ml, SI 100 ml EU, LU other-goods value cap)
+  'estonia/vaping': 1, 'croatia/vaping': 1, 'slovenia/vaping': 1, 'luxembourg/vaping': 1 };
 for (const c of fs.readdirSync('country')) {
   if (!fs.existsSync(path.join('country', c, 'alcohol'))) continue;
   const base = new Set(); for (const k of ['alcohol', 'tobacco', 'cash']) links(c + '/' + k).forEach(u => base.add(u));

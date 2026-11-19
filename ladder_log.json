@@ -14490,7 +14490,9 @@
   "reliable": [
    "read 2026-11-19: WHO country profile PDF (downloaded, pdftotext), table of tobacco use prevalence from the latest survey (e-cigarette use rows)"
   ],
-  "other": [],
+  "other": [
+   "2026-11-19: Shantou customs guide PDF: WebFetch certificate error (self signed certificate in chain), not bypassed"
+  ],
   "date": "2026-11-19"
  },
  "country/colombia/vaping": {
@@ -14565,10 +14567,10 @@
  },
  "country/croatia/vaping": {
   "official": [
-   "no national page needed for this section: WHO profile table read"
+   "read 2026-11-19: Croatian Customs Administration passenger luggage page (undated): e-liquid 10 ml, heated tobacco 50 g"
   ],
   "reliable": [
-   "read 2026-11-19: WHO country profile PDF (downloaded, pdftotext), table of tobacco use prevalence from the latest survey (e-cigarette use rows)"
+   "read 2026-11-19: WHO country profile PDF, tobacco use prevalence table"
   ],
   "other": [],
   "date": "2026-11-19"
@@ -14580,7 +14582,9 @@
   "reliable": [
    "read 2026-11-19: WHO country profile PDF (downloaded, pdftotext), table of tobacco use prevalence from the latest survey (e-cigarette use rows)"
   ],
-  "other": [],
+  "other": [
+   "2026-11-19: beacukai.go.id passenger goods pages: WebFetch connection refused/not found and curl no connection, retried twice"
+  ],
   "date": "2026-11-19"
  },
  "country/italy/vaping": {
@@ -14635,10 +14639,10 @@
  },
  "country/luxembourg/vaping": {
   "official": [
-   "no national page needed for this section: WHO profile table read"
+   "read 2026-11-19: douanes.public.lu non-EU arrivals page (updated 2026-07-30) and e-liquids FAQ (updated 2026-05-08)"
   ],
   "reliable": [
-   "read 2026-11-19: WHO country profile PDF (downloaded, pdftotext), table of tobacco use prevalence from the latest survey (e-cigarette use rows)"
+   "read 2026-11-19: WHO country profile PDF, tobacco use prevalence table"
   ],
   "other": [],
   "date": "2026-11-19"
@@ -14740,7 +14744,9 @@
   "reliable": [
    "read 2026-11-19: WHO country profile PDF (downloaded, pdftotext), table of tobacco use prevalence from the latest survey (e-cigarette use rows)"
   ],
-  "other": [],
+  "other": [
+   "2026-11-19: customs.gov.ph guidelines page and Essential Guide PDF: WebFetch 403 and curl 403, not bypassed"
+  ],
   "date": "2026-11-19"
  },
  "country/qatar/vaping": {
@@ -14821,6 +14827,54 @@
    "read 2026-11-19: WHO country profile PDF (downloaded, pdftotext), table of tobacco use prevalence from the latest survey (e-cigarette use rows)"
   ],
   "other": [],
+  "date": "2026-11-19"
+ },
+ "country/estonia/vaping": {
+  "official": [
+   "read 2026-11-19: EMTA travel page (updated 2026-10-27): 20 ml tobacco liquid, non-EU; EMTA news item: 50 ml from EU, distance-selling ban"
+  ],
+  "reliable": [
+   "WHO country profile read 2026-10-08 (base card)"
+  ],
+  "other": [
+   "none needed: national customs page read"
+  ],
+  "date": "2026-11-19"
+ },
+ "country/latvia/vaping": {
+  "official": [
+   "read 2026-11-19: VID Travelling within the EU (published 2022-10-31): 300 ml e-cigarette liquid, 300 g tobacco substitutes, EU duty paid"
+  ],
+  "reliable": [
+   "WHO country profile read 2026-10-08 (base card)"
+  ],
+  "other": [
+   "none needed: national tax authority page read; no non-EU figure on the page"
+  ],
+  "date": "2026-11-19"
+ },
+ "country/hungary/vaping": {
+  "official": [
+   "read 2026-11-19: NAV English travel FAQ tobacco products (undated, footer 2026): fluid charge 75 ml air, 15 ml road/rail"
+  ],
+  "reliable": [
+   "WHO country profile read 2026-10-08 (base card)"
+  ],
+  "other": [
+   "none needed: national customs page read"
+  ],
+  "date": "2026-11-19"
+ },
+ "country/slovenia/vaping": {
+  "official": [
+   "read 2026-11-19: FURS import of alcohol and tobacco page (refreshed 2020-09-23): 100 ml e-cigarette filler from EU, no non-EU figure"
+  ],
+  "reliable": [
+   "WHO country profile read 2026-10-08 (base card)"
+  ],
+  "other": [
+   "none needed: national tax authority page read"
+  ],
   "date": "2026-11-19"
  }
 }
