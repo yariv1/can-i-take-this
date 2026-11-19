@@ -505,3 +505,18 @@ GSC quota was used up today. Tomorrow request re-indexing (URL Inspection -> Req
 
 ## 2026-11-12 re-crawl (CTR test, new meta descriptions, live 534492ef4)
 food/south-korea, food/malaysia, food/dominican-republic, food/thailand, food/norway, food/colombia, food/indonesia, food/nepal. Test read-out 2026-12-10 (see CTR_CANDIDATES_2026-11-11.md section D).
+
+## 2026-11-19 GSC requests done by Claude (Request Indexing, 9 accepted, then "Quota Exceeded" = daily limit)
+
+- REQUESTED https://canitakethis.co/airline/united/power-bank/
+- REQUESTED https://canitakethis.co/airline/united/liquids/
+- REQUESTED https://canitakethis.co/airline/alaska-airlines/power-bank/
+- REQUESTED https://canitakethis.co/airline/air-france/power-bank/
+- REQUESTED https://canitakethis.co/airline/frontier/power-bank/
+- REQUESTED https://canitakethis.co/airline/indigo/power-bank/
+- REQUESTED https://canitakethis.co/airline/aeromexico/power-bank/
+- REQUESTED https://canitakethis.co/airline/southwest/liquids/
+- REQUESTED https://canitakethis.co/airline/air-canada/power-bank/
+- Already on Google (no request needed): /airline/ryanair/perfume-aerosols/
+- NOT requested (quota): /airline/southwest/alcohol/ and the rest of section A; continue tomorrow in the order of GSC_NEW_2026-11-19.md section A
+- Bing: 100 URLs submitted 2026-11-19 via Bing Webmaster URL Submission (logged in bing_submitted.txt)
