@@ -1959,6 +1959,81 @@
    "keepSchema": true,
    "checked": "18 October 2026",
    "unofficial": false
+  },
+  "power": {
+   "answer": "Lufthansa carries up to two power banks per passenger in cabin baggage only, each up to 100 Wh (2 g lithium content). They may not be used or charged on board except for approved medical devices, and may not go in the overhead locker. One model, the Mobikins MK-PB-04, is banned on all Lufthansa Group flights.",
+   "sections": [
+    {
+     "h": "🔋 What Lufthansa says about power banks",
+     "p": "From the Lufthansa page \"Electronic devices and batteries\", read on 22 November 2026.",
+     "table": {
+      "head": [
+       "Question",
+       "Lufthansa rule"
+      ],
+      "rows": [
+       [
+        "Checked baggage",
+        "Not permitted"
+       ],
+       [
+        "Limit",
+        "2 power banks, each max. 100 Wh or 2 g lithium content"
+       ],
+       [
+        "100 to 160 Wh",
+        "Needs Lufthansa's approval, requested via the Help Center at booking"
+       ],
+       [
+        "Using or charging",
+        "Prohibited, except for approved medical devices"
+       ],
+       [
+        "Medication cooling bags",
+        "Not treated as medical devices: they cannot be charged from a power bank"
+       ],
+       [
+        "Where to store",
+        "Under the seat in front, in the seat pocket, on you or in your hand luggage, never the overhead locker"
+       ],
+       [
+        "Short circuit protection",
+        "Original packaging, taped terminals or a separate plastic bag or pouch per power bank"
+       ],
+       [
+        "Banned model",
+        "Mobikins MK-PB-04, on every Lufthansa Group flight"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Approval above 100 Wh:</strong> request it through the Lufthansa Help Center when you book; a power bank over 160 Wh is not accepted."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "Can I charge my phone from a power bank on Lufthansa?",
+     "No. Lufthansa prohibits charging and using power banks on board, apart from approved medical devices."
+    ],
+    [
+     "How do I get approval for a 150 Wh power bank on Lufthansa?",
+     "Register it through the Lufthansa Help Center when you book. Without approval only banks up to 100 Wh are accepted."
+    ],
+    [
+     "Can a medication cooling bag run off a power bank on Lufthansa?",
+     "No. Lufthansa says cooling bags are not medical devices, so they must run on built-in batteries or cooling packs."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.lufthansa.com/us/en/prepare-for-your-trip/baggage/electronic-devices-and-batteries",
+     "Lufthansa &mdash; Electronic devices and batteries"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "22 November 2026",
+   "unofficial": false
   }
  },
  "Qatar Airways": {
@@ -2637,75 +2712,67 @@
    "unofficial": true
   },
   "power": {
-   "answer": "We could not take a power bank rule from United's own pages. The IATA guidance that airlines are adopting says passengers are limited to a maximum of two lithium-ion power banks not exceeding 100 Wh, in carry-on baggage only.",
+   "answer": "No United page with a power bank rule could be read, so this page uses the US aviation regulator: spare lithium batteries and power banks go in carry-on only, up to 100 Wh each with no federal count limit, and 101 to 160 Wh needs airline approval with two at most. From 27 March 2026 the international standard also limits power banks to two per passenger with no recharging in flight. Check United before you fly.",
    "sections": [
     {
-     "h": "🔋 What United says about power banks",
-     "p": "This section is from an unofficial source, not United's own rules: the IATA guidance document for passengers travelling with lithium batteries (revised for the 2026 regulations, dated 31 March 2026). United's dangerous items page (read) does not state a power bank rule.",
+     "h": "🔋 What the regulators say (United's own page not readable)",
+     "p": "From the US FAA PackSafe page and the ICAO news release of 27 March 2026, read on 22 November 2026.",
      "table": {
       "head": [
        "Question",
-       "United rule"
+       "What the source says"
       ],
       "rows": [
        [
-        "How many",
-        "A maximum of two lithium-ion power banks not exceeding 100 Wh"
-       ],
-       [
-        "Between 100 Wh and 160 Wh",
-        "IATA's Table 1 allows power banks of more than 100 Wh and up to 160 Wh in carry-on baggage only, limited to 2; above 160 Wh power banks are forbidden"
-       ],
-       [
         "Where",
-        "Carry-on baggage only: power banks are not permitted in checked baggage"
+        "Carry-on only; if the bag is checked at the gate, take the power banks out and keep them with you (FAA)"
        ],
        [
-        "Charging the power bank on board",
-        "Must not be recharged from an in-aircraft power supply"
+        "Up to 100 Wh",
+        "Allowed; the FAA sets no federal count limit but says airlines may be stricter"
        ],
        [
-        "Where to keep it",
-        "Should not be stored in the overhead lockers"
+        "101 to 160 Wh",
+        "Airline approval needed, two spares at most (FAA)"
        ],
        [
-        "Use",
-        "Should not be used to power other devices during taxi, take-off or landing"
+        "Terminals",
+        "Protect from short circuit: retail packaging, tape or a case (FAA)"
        ],
        [
-        "Protection",
-        "Spare batteries individually protected against short circuits: original retail packaging, taped terminals, or each in a separate bag or pouch"
-       ],
-       [
-        "Stricter rules",
-        "Airlines may impose more stringent conditions on the carriage and use of power banks"
+        "Two per passenger and no recharging in flight",
+        "International standard effective 27 March 2026 (ICAO)"
        ]
       ]
      },
      "list": [
-      "<strong>Not on the page:</strong> United's own rule. Many airlines are stricter than IATA, for example banning use on board or allowing only one power bank, so confirm with United before you fly."
+      "<strong>Not read:</strong> United's own power bank page did not load any text. United may apply stricter limits, so check with United."
      ]
     }
    ],
    "faq": [
     [
-     "How many power banks can I take on United?",
-     "Following the IATA guidance: a maximum of two lithium-ion power banks, each up to 100 Wh, in carry-on baggage. United's own page was not readable on this, so confirm with the airline."
+     "Can I check a power bank on United?",
+     "No. The FAA says spare lithium batteries and power banks must be in carry-on baggage only."
     ],
     [
-     "Can I use my power bank on a United flight?",
-     "IATA says power banks must not be recharged from the aircraft power and should not power other devices during taxi, take-off and landing; many airlines ban use entirely, so confirm with United."
+     "How many power banks can I carry on United?",
+     "The FAA sets no count limit for batteries up to 100 Wh, but ICAO's 2026 standard limits passengers to two power banks, and United may be stricter."
     ]
    ],
    "sources": [
     [
-     "https://www.iata.org/contentassets/6fea26dd84d24b26a7a1fd5788561d6e/passengers_travelling_with_lithium_batteries.pdf",
-     "IATA &mdash; Passengers Travelling with Lithium Batteries (2026 guidance)"
+     "https://www.faa.gov/hazmat/packsafe/lithium-batteries",
+     "Unofficial source: US FAA PackSafe &mdash; Lithium Batteries"
+    ],
+    [
+     "https://www.icao.int/news/new-power-bank-restrictions-will-safeguard-international-aviation",
+     "Unofficial source: ICAO &mdash; New power bank restrictions will safeguard international aviation (27 March 2026)"
     ]
    ],
    "keepSchema": true,
-   "checked": "18 October 2026",
-   "unofficial": true
+   "checked": "22 November 2026",
+   "unofficial": false
   }
  },
  "Cathay Pacific": {
@@ -5005,6 +5072,73 @@
    "keepSchema": true,
    "checked": "18 October 2026",
    "unofficial": true
+  },
+  "power": {
+   "answer": "Austrian Airlines applies the Lufthansa Group rule: two power banks per passenger in cabin baggage only, each up to 100 Wh (2 g lithium), none used or charged on board and none in the overhead locker. Approval for 100 to 160 Wh is requested at specialcases@austrian.com.",
+   "sections": [
+    {
+     "h": "🔋 What Austrian says about power banks",
+     "p": "From the Austrian page \"Electronic items and batteries\", read on 22 November 2026.",
+     "table": {
+      "head": [
+       "Question",
+       "Austrian rule"
+      ],
+      "rows": [
+       [
+        "Checked baggage",
+        "Not permitted"
+       ],
+       [
+        "Limit",
+        "2 power banks, each max. 100 Wh or 2 g lithium content"
+       ],
+       [
+        "100 to 160 Wh",
+        "Needs Austrian's approval, requested by email to specialcases@austrian.com at booking"
+       ],
+       [
+        "Classification",
+        "Power banks count as spare batteries, not as electronic devices"
+       ],
+       [
+        "Using or charging",
+        "Prohibited, except for approved medical devices"
+       ],
+       [
+        "Where to store",
+        "Under the seat, in the seat pocket, on you or in hand luggage, not the overhead locker"
+       ],
+       [
+        "Banned model",
+        "Mobikins MK-PB-04, on all Lufthansa Group flights"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Approval above 100 Wh:</strong> write to specialcases@austrian.com when you book; a power bank over 160 Wh is not accepted."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "Who do I ask about a larger power bank on Austrian?",
+     "Email specialcases@austrian.com when you book if the bank is between 100 and 160 Wh."
+    ],
+    [
+     "Can I use a power bank in my seat on Austrian?",
+     "No. Using and charging power banks is prohibited on board, except for approved medical devices."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.austrian.com/us/en/electronic-devices-and-batteries",
+     "Austrian &mdash; Electronic items and batteries"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "22 November 2026",
+   "unofficial": false
   }
  },
  "Brussels Airlines": {
@@ -5515,6 +5649,73 @@
    ],
    "keepSchema": true,
    "checked": "18 October 2026",
+   "unofficial": false
+  },
+  "power": {
+   "answer": "ITA Airways accepts up to two power banks per person in hand baggage only, each up to 100 Wh (2 g lithium). Charging and using them on board is prohibited except for approved medical devices, and they may not sit in the overhead locker. For 100 to 160 Wh, ITA issues a transport authorisation arranged at booking.",
+   "sections": [
+    {
+     "h": "🔋 What ITA Airways says about power banks",
+     "p": "From the ITA Airways page \"Electronic devices and batteries\", read on 22 November 2026.",
+     "table": {
+      "head": [
+       "Question",
+       "ITA Airways rule"
+      ],
+      "rows": [
+       [
+        "Checked baggage",
+        "Not allowed"
+       ],
+       [
+        "Limit",
+        "2 power banks per person, each max. 100 Wh or 2 g lithium"
+       ],
+       [
+        "100 to 160 Wh",
+        "Authorisation issued by ITA; notify its Customer Information Assistance Center at booking"
+       ],
+       [
+        "Contact",
+        "prenotazione.assistenza@ita-airways.com"
+       ],
+       [
+        "Using or charging",
+        "Prohibited, except for approved medical devices"
+       ],
+       [
+        "Where to store",
+        "Under the seat, in the seat pocket, on you or in hand baggage, not the overhead locker"
+       ],
+       [
+        "Banned model",
+        "Mobikins MK-PB-04, on all Lufthansa Group flights"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Approval above 100 Wh:</strong> tell ITA's Customer Information Assistance Center at booking, or write to prenotazione.assistenza@ita-airways.com; ITA then issues a transport authorisation. Over 160 Wh is not accepted."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How do I get ITA Airways to authorise a bigger power bank?",
+     "Notify ITA's Customer Information Assistance Center at booking, or use prenotazione.assistenza@ita-airways.com; ITA issues the authorisation."
+    ],
+    [
+     "Can I charge devices from a power bank on ITA Airways?",
+     "No. ITA prohibits charging and using power banks on board, except for approved medical devices."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.ita-airways.com/us/en/book-and-prepare/travel-information/baggage/electronic-devices-and-batteries",
+     "ITA Airways &mdash; Electronic devices and batteries"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "22 November 2026",
    "unofficial": false
   }
  },
@@ -8482,11 +8683,11 @@
    "unofficial": true
   },
   "power": {
-   "answer": "We could not take a power bank rule from IndiGo's own pages. The IATA guidance that airlines are adopting says passengers are limited to a maximum of two lithium-ion power banks not exceeding 100 Wh, in carry-on baggage only.",
+   "answer": "IndiGo's Conditions of Carriage allow up to two spare lithium-ion batteries, power banks included, of up to 100 Wh each, subject to airport security clearance. Banks from 100 to 160 Wh need approval at the check-in counter and are limited to two. They stay in carry-on, are never recharged or used to charge devices on board, and the Mobikins MK-PB-04 is banned outright.",
    "sections": [
     {
      "h": "🔋 What IndiGo says about power banks",
-     "p": "This section is from an unofficial source, not IndiGo's own rules: the IATA guidance document for passengers travelling with lithium batteries (revised for the 2026 regulations, dated 31 March 2026). IndiGo's dangerous goods page (read) does not state a power bank rule.",
+     "p": "From clause 8, \"Carriage of lithium batteries\", of the IndiGo baggage policy, read on 22 November 2026.",
      "table": {
       "head": [
        "Question",
@@ -8495,62 +8696,66 @@
       "rows": [
        [
         "How many",
-        "A maximum of two lithium-ion power banks not exceeding 100 Wh"
+        "Maximum two spare or loose batteries, power banks included"
        ],
        [
-        "Between 100 Wh and 160 Wh",
-        "IATA's Table 1 allows power banks of more than 100 Wh and up to 160 Wh in carry-on baggage only, limited to 2; above 160 Wh power banks are forbidden"
+        "Up to 100 Wh",
+        "Allowed, subject to security clearance at the airport"
+       ],
+       [
+        "Above 100 Wh up to 160 Wh",
+        "Allowed with IndiGo's approval at the check-in counter, still two at most"
+       ],
+       [
+        "Lithium metal batteries",
+        "Up to 2 g lithium; 2 to 8 g only for portable medical devices"
        ],
        [
         "Where",
-        "Carry-on baggage only: power banks are not permitted in checked baggage"
+        "Carry-on baggage only"
        ],
        [
-        "Charging the power bank on board",
-        "Must not be recharged from an in-aircraft power supply"
+        "Packing",
+        "Original retail packaging or separate plastic bags, terminals taped and insulated"
        ],
        [
-        "Where to keep it",
-        "Should not be stored in the overhead lockers"
+        "On board",
+        "Must not be recharged, and must not recharge a device"
        ],
        [
-        "Use",
-        "Should not be used to power other devices during taxi, take-off or landing"
-       ],
-       [
-        "Protection",
-        "Spare batteries individually protected against short circuits: original retail packaging, taped terminals, or each in a separate bag or pouch"
-       ],
-       [
-        "Stricter rules",
-        "Airlines may impose more stringent conditions on the carriage and use of power banks"
+        "Banned model",
+        "Mobikins MK-PB-04, in cabin or checked baggage"
        ]
       ]
      },
      "list": [
-      "<strong>Not on the page:</strong> IndiGo's own rule. Many airlines are stricter than IATA, for example banning use on board or allowing only one power bank, so confirm with IndiGo before you fly."
+      "<strong>Wording gap:</strong> the policy sets the approval step for devices above 100 Wh at the check-in counter, while another IndiGo page mentions calling the call centre in advance for other items. Ask IndiGo before you fly with a bank over 100 Wh."
      ]
     }
    ],
    "faq": [
     [
      "How many power banks can I take on IndiGo?",
-     "Following the IATA guidance: a maximum of two lithium-ion power banks, each up to 100 Wh, in carry-on baggage. IndiGo's own page was not readable on this, so confirm with the airline."
+     "Two spare lithium batteries, power banks included, up to 100 Wh each, subject to airport security clearance."
     ],
     [
-     "Can I use my power bank on a IndiGo flight?",
-     "IATA says power banks must not be recharged from the aircraft power and should not power other devices during taxi, take-off and landing; many airlines ban use entirely, so confirm with IndiGo."
+     "Can I carry a 150 Wh power bank on IndiGo?",
+     "Only with IndiGo's approval at check-in and airport security clearance, and not more than two."
+    ],
+    [
+     "Is the Mobikins MK-PB-04 power bank allowed on IndiGo?",
+     "No. IndiGo prohibits it in cabin and checked baggage."
     ]
    ],
    "sources": [
     [
-     "https://www.iata.org/contentassets/6fea26dd84d24b26a7a1fd5788561d6e/passengers_travelling_with_lithium_batteries.pdf",
-     "IATA &mdash; Passengers Travelling with Lithium Batteries (2026 guidance)"
+     "https://www.goindigo.in/information/baggage-policy.html",
+     "IndiGo &mdash; Baggage Policy, clause 8 Carriage of lithium batteries"
     ]
    ],
    "keepSchema": true,
-   "checked": "18 October 2026",
-   "unofficial": true
+   "checked": "22 November 2026",
+   "unofficial": false
   }
  },
  "Aegean": {
@@ -10235,54 +10440,67 @@
    "unofficial": true
   },
   "perfume": {
-   "answer": "Transavia's own rule could not be read. The IATA limit is 0.5 L or 0.5 kg per article and 2 L or 2 kg in total; the table below has the details.",
+   "answer": "Transavia treats perfume and liquid make-up like any other liquid in the cabin: containers of up to 100 ml each, 1 litre in total. A bottle over 100 ml must be checked in, unless you buy it after the security check. Solid and powder make-up can always go in the cabin bag.",
    "sections": [
     {
-     "h": "🧴 What the industry rule says about perfume and aerosols on Transavia",
-     "p": "IATA, the airline industry body. Airports and customs can add stricter limits.",
+     "h": "🧴 What Transavia says about perfume and make-up",
+     "p": "From the Transavia help page \"Perfume and make-up in the cabin\" (Netherlands English version), read on 22 November 2026.",
      "table": {
       "head": [
        "Question",
-       "IATA rule"
+       "Transavia rule"
       ],
       "rows": [
        [
-        "What it covers",
-        "Non-radioactive medicinal or toiletry articles including aerosols, such as hair sprays, perfumes, colognes and medicines containing alcohol, and non-flammable, non-toxic aerosols for sporting or home use"
+        "Perfume in the cabin",
+        "Containers of up to 100 ml each"
        ],
        [
-        "Where",
-        "Permitted in carry-on and in checked baggage, without operator approval"
+        "Total for all liquids",
+        "Maximum 1 litre"
        ],
        [
-        "Total",
-        "Not more than 2 kg or 2 L in total"
+        "Perfume over 100 ml",
+        "Must go in checked baggage"
        ],
        [
-        "Each article",
-        "Not more than 0.5 kg or 0.5 L"
+        "Perfume bought after security",
+        "Allowed in hand luggage or cabin bag"
        ],
        [
-        "Aerosol valves",
-        "Release valves must be protected by a cap or other suitable means"
+        "Liquid make-up (lip gloss, eyeliner, nail polish)",
+        "Same rule as other liquids"
        ],
        [
-        "In your cabin bag on Transavia",
-        "Security liquid limits also apply: Transavia allows 1 litre of liquids in your cabin bag, in containers of 100 ml each, all in one transparent resealable plastic bag."
+        "Solid or powder make-up (blush, eye shadow, pencil eyeliner)",
+        "Can always go in the cabin bag"
        ]
       ]
-     }
+     },
+     "list": [
+      "<strong>Not on this page:</strong> aerosol deodorants and hairspray by name, and the checked-baggage limits. Transavia's separate liquids pages cover the hold."
+     ]
     }
+   ],
+   "faq": [
+    [
+     "Can I take full-size perfume in my hand luggage on Transavia?",
+     "Only if you bought it after the security check. A bottle over 100 ml brought from home must be checked in."
+    ],
+    [
+     "Is powder make-up limited on Transavia?",
+     "No. Solid and powder make-up can always go in the cabin bag."
+    ]
    ],
    "sources": [
     [
-     "https://www.iata.org/contentassets/6fea26dd84d24b26a7a1fd5788561d6e/dgr-67-en-2.3.a.pdf",
-     "IATA &mdash; Dangerous Goods Regulations, Table 2.3.A (67th edition, 1 January 2026)"
+     "https://www.transavia.com/help/en-nl/baggage/allowed-in-baggage/perfume-and-make-up",
+     "Transavia &mdash; Perfume and make-up in the cabin"
     ]
    ],
    "keepSchema": true,
-   "checked": "18 October 2026",
-   "unofficial": true
+   "checked": "22 November 2026",
+   "unofficial": false
   },
   "power": {
    "answer": "Transavia lets you bring up to 20 loose lithium batteries, such as power banks, of up to 100 Wh each, in your cabin baggage only and never in checked baggage.",
@@ -10791,54 +11009,63 @@
    "unofficial": false
   },
   "perfume": {
-   "answer": "Asiana's own rule could not be read. The IATA limit is 0.5 L or 0.5 kg per article and 2 L or 2 kg in total; the table below has the details.",
+   "answer": "Asiana's restricted items page limits toiletries including aerosols to 2 litres in total with no single container over 0.5 litre, and bans liquids over 100 ml from the cabin on international routes. Duty-free perfume from Korean airports travels only sealed in a tamper-evident bag.",
    "sections": [
     {
-     "h": "🧴 What the industry rule says about perfume and aerosols on Asiana",
-     "p": "IATA, the airline industry body. Airports and customs can add stricter limits.",
+     "h": "🧴 What Asiana says about perfume and aerosols",
+     "p": "From the Asiana \"Restricted Items\" page (US English version), read on 22 November 2026.",
      "table": {
       "head": [
        "Question",
-       "IATA rule"
+       "Asiana rule"
       ],
       "rows": [
        [
-        "What it covers",
-        "Non-radioactive medicinal or toiletry articles including aerosols, such as hair sprays, perfumes, colognes and medicines containing alcohol, and non-flammable, non-toxic aerosols for sporting or home use"
+        "Toiletries including aerosols",
+        "Total not above 2 L, each single article not above 0.5 L"
        ],
        [
-        "Where",
-        "Permitted in carry-on and in checked baggage, without operator approval"
+        "Cabin, international routes",
+        "Liquids of 100 ml or less in one transparent 1 L resealable bag, one bag per passenger"
        ],
        [
-        "Total",
-        "Not more than 2 kg or 2 L in total"
+        "Liquids over 100 ml",
+        "Not in the cabin; carry them in checked baggage"
        ],
        [
-        "Each article",
-        "Not more than 0.5 kg or 0.5 L"
+        "Duty-free perfume or alcohol from Korean airports",
+        "Only sealed in a security tamper-evident bag"
        ],
        [
-        "Aerosol valves",
-        "Release valves must be protected by a cap or other suitable means"
-       ],
-       [
-        "In your cabin bag on Asiana",
-        "Security liquid limits also apply: Asiana lists liquids exceeding 100 ml on international routes among its restricted items, and says toiletry articles including aerosols must not exceed 2 L in total and 0.5 L per article."
+        "Duty-free bought abroad and transferred",
+        "Allowed if sealed in a tamper-evident bag; the transit country may still confiscate it"
        ]
       ]
-     }
+     },
+     "list": [
+      "<strong>Not on this page:</strong> a separate rule for perfume alone beyond the toiletries and duty-free lines above."
+     ]
     }
+   ],
+   "faq": [
+    [
+     "How much aerosol or perfume can I check on Asiana?",
+     "Toiletries including aerosols up to 2 litres in total, and no single container above 0.5 litre."
+    ],
+    [
+     "Can I carry duty-free perfume on Asiana?",
+     "Yes, if it is sealed in a security tamper-evident bag. Transit countries may still confiscate it."
+    ]
    ],
    "sources": [
     [
-     "https://www.iata.org/contentassets/6fea26dd84d24b26a7a1fd5788561d6e/dgr-67-en-2.3.a.pdf",
-     "IATA &mdash; Dangerous Goods Regulations, Table 2.3.A (67th edition, 1 January 2026)"
+     "https://flyasiana.com/C/US/EN/contents/restricted-transport-items",
+     "Asiana &mdash; Restricted Items"
     ]
    ],
    "keepSchema": true,
-   "checked": "18 October 2026",
-   "unofficial": true
+   "checked": "22 November 2026",
+   "unofficial": false
   },
   "power": {
    "answer": "Asiana's notice \"Carry-on regulations and storage guidelines for power banks and electronic cigarettes\" (posted 17 April 2026, as of 20 April) bans power banks from checked baggage, bans using or charging them on board, and tells passengers to keep them on their person or in the seat pocket, not in the overhead bins. Over 100 Wh and up to 160 Wh needs airline approval, and over 160 Wh is prohibited.",
@@ -12516,75 +12743,59 @@
    "unofficial": false
   },
   "power": {
-   "answer": "We could not take a power bank rule from Kuwait Airways's own pages. The IATA guidance that airlines are adopting says passengers are limited to a maximum of two lithium-ion power banks not exceeding 100 Wh, in carry-on baggage only.",
+   "answer": "Kuwait Airways' own battery document could not be loaded, so this page uses the ICAO rule that took effect on 27 March 2026: a passenger may carry at most two power banks and may not recharge them during the flight. Confirm the watt-hour limit with Kuwait Airways.",
    "sections": [
     {
-     "h": "🔋 What Kuwait Airways says about power banks",
-     "p": "This section is from an unofficial source, not Kuwait Airways's own rules: the IATA guidance document for passengers travelling with lithium batteries (revised for the 2026 regulations, dated 31 March 2026). Kuwait Airways's own pages could not be read for us.",
+     "h": "🔋 What ICAO says (Kuwait Airways' own page not readable)",
+     "p": "From the ICAO news release of 27 March 2026, read on 22 November 2026.",
      "table": {
       "head": [
        "Question",
-       "Kuwait Airways rule"
+       "What the source says"
       ],
       "rows": [
        [
-        "How many",
-        "A maximum of two lithium-ion power banks not exceeding 100 Wh"
+        "Number",
+        "Two power banks per passenger (ICAO, from 27 March 2026)"
        ],
        [
-        "Between 100 Wh and 160 Wh",
-        "IATA's Table 1 allows power banks of more than 100 Wh and up to 160 Wh in carry-on baggage only, limited to 2; above 160 Wh power banks are forbidden"
+        "Recharging in flight",
+        "Prohibited (ICAO)"
        ],
        [
-        "Where",
-        "Carry-on baggage only: power banks are not permitted in checked baggage"
+        "Crew",
+        "May still carry and use power banks as the aircraft requires (ICAO)"
        ],
        [
-        "Charging the power bank on board",
-        "Must not be recharged from an in-aircraft power supply"
-       ],
-       [
-        "Where to keep it",
-        "Should not be stored in the overhead lockers"
-       ],
-       [
-        "Use",
-        "Should not be used to power other devices during taxi, take-off or landing"
-       ],
-       [
-        "Protection",
-        "Spare batteries individually protected against short circuits: original retail packaging, taped terminals, or each in a separate bag or pouch"
-       ],
-       [
-        "Stricter rules",
-        "Airlines may impose more stringent conditions on the carriage and use of power banks"
+        "Kuwait Airways own rule",
+        "Not read: its battery document did not load"
        ]
       ]
      },
      "list": [
-      "<strong>Not on the page:</strong> Kuwait Airways's own rule. Many airlines are stricter than IATA, for example banning use on board or allowing only one power bank, so confirm with Kuwait Airways before you fly."
+      "<strong>Not read:</strong> the Kuwait Airways battery FAQ (an older PDF on its site). The Wh limits and checked-baggage rule are therefore not stated here."
      ]
     }
    ],
    "faq": [
     [
      "How many power banks can I take on Kuwait Airways?",
-     "Following the IATA guidance: a maximum of two lithium-ion power banks, each up to 100 Wh, in carry-on baggage. Kuwait Airways's own page was not readable on this, so confirm with the airline."
+     "The ICAO standard from 27 March 2026 limits passengers to two; Kuwait Airways' own rule could not be read."
     ],
     [
-     "Can I use my power bank on a Kuwait Airways flight?",
-     "IATA says power banks must not be recharged from the aircraft power and should not power other devices during taxi, take-off and landing; many airlines ban use entirely, so confirm with Kuwait Airways."
+     "Can I charge my power bank on a Kuwait Airways flight?",
+     "Under the ICAO standard, passengers are prohibited from recharging power banks during flights."
     ]
    ],
    "sources": [
     [
-     "https://www.iata.org/contentassets/6fea26dd84d24b26a7a1fd5788561d6e/passengers_travelling_with_lithium_batteries.pdf",
-     "IATA &mdash; Passengers Travelling with Lithium Batteries (2026 guidance)"
+     "https://www.icao.int/news/new-power-bank-restrictions-will-safeguard-international-aviation",
+     "Unofficial source: ICAO &mdash; New power bank restrictions will safeguard international aviation (27 March 2026)"
     ]
    ],
    "keepSchema": true,
-   "checked": "18 October 2026",
-   "unofficial": true
+   "checked": "22 November 2026",
+   "unofficial": false
   }
  },
  "EgyptAir": {
@@ -13755,75 +13966,63 @@
    "unofficial": false
   },
   "power": {
-   "answer": "We could not take a power bank rule from Kenya Airways's own pages. The IATA guidance that airlines are adopting says passengers are limited to a maximum of two lithium-ion power banks not exceeding 100 Wh, in carry-on baggage only.",
+   "answer": "Kenya Airways' electronic devices page says passengers may use laptops, phones and similar devices only once the aircraft reaches cruise level, after telling the cabin crew. It does not state a power bank rule, so the limits here come from ICAO: two power banks per passenger and no recharging in flight, effective 27 March 2026.",
    "sections": [
     {
-     "h": "🔋 What Kenya Airways says about power banks",
-     "p": "This section is from an unofficial source, not Kenya Airways's own rules: the IATA guidance document for passengers travelling with lithium batteries (revised for the 2026 regulations, dated 31 March 2026). The Kenya Airways pages we read do not state a power bank rule, or could not be read in full.",
+     "h": "🔋 What Kenya Airways and ICAO say",
+     "p": "From the Kenya Airways Electronic Devices Information page and the ICAO news release of 27 March 2026, read on 22 November 2026.",
      "table": {
       "head": [
        "Question",
-       "Kenya Airways rule"
+       "What the source says"
       ],
       "rows": [
        [
-        "How many",
-        "A maximum of two lithium-ion power banks not exceeding 100 Wh"
+        "Using devices",
+        "Not during taxi-out, take-off, climb, descent, landing and taxi-in; allowed at cruise level after informing cabin crew (Kenya Airways)"
        ],
        [
-        "Between 100 Wh and 160 Wh",
-        "IATA's Table 1 allows power banks of more than 100 Wh and up to 160 Wh in carry-on baggage only, limited to 2; above 160 Wh power banks are forbidden"
+        "Power bank rule on the Kenya Airways page",
+        "Not stated"
        ],
        [
-        "Where",
-        "Carry-on baggage only: power banks are not permitted in checked baggage"
+        "Two per passenger",
+        "International standard effective 27 March 2026 (ICAO)"
        ],
        [
-        "Charging the power bank on board",
-        "Must not be recharged from an in-aircraft power supply"
-       ],
-       [
-        "Where to keep it",
-        "Should not be stored in the overhead lockers"
-       ],
-       [
-        "Use",
-        "Should not be used to power other devices during taxi, take-off or landing"
-       ],
-       [
-        "Protection",
-        "Spare batteries individually protected against short circuits: original retail packaging, taped terminals, or each in a separate bag or pouch"
-       ],
-       [
-        "Stricter rules",
-        "Airlines may impose more stringent conditions on the carriage and use of power banks"
+        "Recharging a power bank in flight",
+        "Prohibited by the same standard (ICAO)"
        ]
       ]
      },
      "list": [
-      "<strong>Not on the page:</strong> Kenya Airways's own rule. Many airlines are stricter than IATA, for example banning use on board or allowing only one power bank, so confirm with Kenya Airways before you fly."
+      "<strong>Not on the page:</strong> a watt-hour limit and carry-on or checked rule for power banks. Ask Kenya Airways before you fly."
      ]
     }
    ],
    "faq": [
     [
-     "How many power banks can I take on Kenya Airways?",
-     "Following the IATA guidance: a maximum of two lithium-ion power banks, each up to 100 Wh, in carry-on baggage. Kenya Airways's own page was not readable on this, so confirm with the airline."
+     "Can I use my phone at any time on Kenya Airways?",
+     "Not during taxi, take-off, climb, descent, landing; at cruise level you may, after telling the cabin crew."
     ],
     [
-     "Can I use my power bank on a Kenya Airways flight?",
-     "IATA says power banks must not be recharged from the aircraft power and should not power other devices during taxi, take-off and landing; many airlines ban use entirely, so confirm with Kenya Airways."
+     "How many power banks on Kenya Airways?",
+     "Kenya Airways does not say on the page we read; the ICAO standard from 27 March 2026 limits passengers to two."
     ]
    ],
    "sources": [
     [
-     "https://www.iata.org/contentassets/6fea26dd84d24b26a7a1fd5788561d6e/passengers_travelling_with_lithium_batteries.pdf",
-     "IATA &mdash; Passengers Travelling with Lithium Batteries (2026 guidance)"
+     "https://www.kenya-airways.com/en/plan/travel-information/electronic-devices/",
+     "Kenya Airways &mdash; Electronic Devices Information"
+    ],
+    [
+     "https://www.icao.int/news/new-power-bank-restrictions-will-safeguard-international-aviation",
+     "Unofficial source: ICAO &mdash; New power bank restrictions will safeguard international aviation (27 March 2026)"
     ]
    ],
    "keepSchema": true,
-   "checked": "18 October 2026",
-   "unofficial": true
+   "checked": "22 November 2026",
+   "unofficial": false
   }
  },
  "Royal Air Maroc": {
@@ -14026,11 +14225,11 @@
    "unofficial": true
   },
   "power": {
-   "answer": "We could not take a power bank rule from Royal Air Maroc's own pages. The IATA guidance that airlines are adopting says passengers are limited to a maximum of two lithium-ion power banks not exceeding 100 Wh, in carry-on baggage only.",
+   "answer": "Royal Air Maroc's baggage page says lithium batteries go in carry-on baggage only, a passenger may carry a maximum of two power banks in the cabin, and power banks may not be recharged during the flight.",
    "sections": [
     {
      "h": "🔋 What Royal Air Maroc says about power banks",
-     "p": "This section is from an unofficial source, not Royal Air Maroc's own rules: the IATA guidance document for passengers travelling with lithium batteries (revised for the 2026 regulations, dated 31 March 2026). The Royal Air Maroc pages we read do not state a power bank rule, or could not be read in full.",
+     "p": "From the \"Restricted items\" block of the Royal Air Maroc Baggage Information page, read on 22 November 2026.",
      "table": {
       "head": [
        "Question",
@@ -14039,62 +14238,46 @@
       "rows": [
        [
         "How many",
-        "A maximum of two lithium-ion power banks not exceeding 100 Wh"
+        "Maximum 2 power banks in the cabin per passenger"
        ],
        [
-        "Between 100 Wh and 160 Wh",
-        "IATA's Table 1 allows power banks of more than 100 Wh and up to 160 Wh in carry-on baggage only, limited to 2; above 160 Wh power banks are forbidden"
+        "Lithium batteries",
+        "Rechargeable batteries in carry-on baggage only"
        ],
        [
-        "Where",
-        "Carry-on baggage only: power banks are not permitted in checked baggage"
+        "Recharging the power bank",
+        "Not allowed during the flight"
        ],
        [
-        "Charging the power bank on board",
-        "Must not be recharged from an in-aircraft power supply"
-       ],
-       [
-        "Where to keep it",
-        "Should not be stored in the overhead lockers"
-       ],
-       [
-        "Use",
-        "Should not be used to power other devices during taxi, take-off or landing"
-       ],
-       [
-        "Protection",
-        "Spare batteries individually protected against short circuits: original retail packaging, taped terminals, or each in a separate bag or pouch"
-       ],
-       [
-        "Stricter rules",
-        "Airlines may impose more stringent conditions on the carriage and use of power banks"
+        "Capacity (Wh) limit",
+        "Not stated on this page"
        ]
       ]
      },
      "list": [
-      "<strong>Not on the page:</strong> Royal Air Maroc's own rule. Many airlines are stricter than IATA, for example banning use on board or allowing only one power bank, so confirm with Royal Air Maroc before you fly."
+      "<strong>Not on the page:</strong> a watt-hour limit, whether approval is possible above 100 Wh, and whether using the bank to charge a device is allowed. Contact Royal Air Maroc before you fly with a large bank."
      ]
     }
    ],
    "faq": [
     [
      "How many power banks can I take on Royal Air Maroc?",
-     "Following the IATA guidance: a maximum of two lithium-ion power banks, each up to 100 Wh, in carry-on baggage. Royal Air Maroc's own page was not readable on this, so confirm with the airline."
+     "A maximum of two per passenger in the cabin."
     ],
     [
-     "Can I use my power bank on a Royal Air Maroc flight?",
-     "IATA says power banks must not be recharged from the aircraft power and should not power other devices during taxi, take-off and landing; many airlines ban use entirely, so confirm with Royal Air Maroc."
+     "Can I recharge my power bank on a Royal Air Maroc flight?",
+     "No. The airline's baggage page says passengers may not recharge power banks during the flight."
     ]
    ],
    "sources": [
     [
-     "https://www.iata.org/contentassets/6fea26dd84d24b26a7a1fd5788561d6e/passengers_travelling_with_lithium_batteries.pdf",
-     "IATA &mdash; Passengers Travelling with Lithium Batteries (2026 guidance)"
+     "https://www.royalairmaroc.com/us-en/baggage-information",
+     "Royal Air Maroc &mdash; Baggage Information (restricted items)"
     ]
    ],
    "keepSchema": true,
-   "checked": "18 October 2026",
-   "unofficial": true
+   "checked": "22 November 2026",
+   "unofficial": false
   }
  },
  "China Southern": {
@@ -16447,11 +16630,11 @@
    "unofficial": false
   },
   "power": {
-   "answer": "We could not take a power bank rule from El Al's own pages. The IATA guidance that airlines are adopting says passengers are limited to a maximum of two lithium-ion power banks not exceeding 100 Wh, in carry-on baggage only.",
+   "answer": "El Al's battery table (February 2018) treats a power bank as a spare battery: one power bank per passenger up to 100 Wh in carry-on, none in checked baggage, and a power bank of 101 to 160 Wh is not allowed. It is an older document, so confirm it with El Al.",
    "sections": [
     {
      "h": "🔋 What El Al says about power banks",
-     "p": "This section is from an unofficial source, not El Al's own rules: the IATA guidance document for passengers travelling with lithium batteries (revised for the 2026 regulations, dated 31 March 2026). The El Al pages we read do not state a power bank rule, or could not be read in full.",
+     "p": "From the El Al document \"Batteries allowance table in El Al passengers' baggage\" (English, February 2018), read on 22 November 2026. It is an older document.",
      "table": {
       "head": [
        "Question",
@@ -16459,63 +16642,55 @@
       ],
       "rows": [
        [
-        "How many",
-        "A maximum of two lithium-ion power banks not exceeding 100 Wh"
+        "Power bank classification",
+        "A spare battery"
        ],
        [
-        "Between 100 Wh and 160 Wh",
-        "IATA's Table 1 allows power banks of more than 100 Wh and up to 160 Wh in carry-on baggage only, limited to 2; above 160 Wh power banks are forbidden"
+        "Up to 100 Wh or 2 g lithium",
+        "Allowed in carry-on, 1 power bank per passenger, no airline approval"
        ],
        [
-        "Where",
-        "Carry-on baggage only: power banks are not permitted in checked baggage"
+        "Checked baggage",
+        "Not allowed"
        ],
        [
-        "Charging the power bank on board",
-        "Must not be recharged from an in-aircraft power supply"
+        "101 to 160 Wh",
+        "Power bank not allowed; batteries of this size are accepted only installed in a device, up to 2 per passenger, after calling El Al"
        ],
        [
-        "Where to keep it",
-        "Should not be stored in the overhead lockers"
-       ],
-       [
-        "Use",
-        "Should not be used to power other devices during taxi, take-off or landing"
+        "Above 160 Wh",
+        "Not covered by the table for passengers"
        ],
        [
         "Protection",
-        "Spare batteries individually protected against short circuits: original retail packaging, taped terminals, or each in a separate bag or pouch"
-       ],
-       [
-        "Stricter rules",
-        "Airlines may impose more stringent conditions on the carriage and use of power banks"
+        "Protect spares from damage and short circuit"
        ]
       ]
      },
      "list": [
-      "<strong>Not on the page:</strong> El Al's own rule. Many airlines are stricter than IATA, for example banning use on board or allowing only one power bank, so confirm with El Al before you fly."
+      "<strong>Older document:</strong> it dates from 2018 and does not mention in-flight use or charging. Ask El Al before you fly."
      ]
     }
    ],
    "faq": [
     [
      "How many power banks can I take on El Al?",
-     "Following the IATA guidance: a maximum of two lithium-ion power banks, each up to 100 Wh, in carry-on baggage. El Al's own page was not readable on this, so confirm with the airline."
+     "One per passenger, up to 100 Wh, in carry-on baggage, according to El Al's 2018 battery table."
     ],
     [
-     "Can I use my power bank on a El Al flight?",
-     "IATA says power banks must not be recharged from the aircraft power and should not power other devices during taxi, take-off and landing; many airlines ban use entirely, so confirm with El Al."
+     "Can I check a power bank on El Al?",
+     "No. El Al's table does not allow spare batteries or power banks in checked baggage."
     ]
    ],
    "sources": [
     [
-     "https://www.iata.org/contentassets/6fea26dd84d24b26a7a1fd5788561d6e/passengers_travelling_with_lithium_batteries.pdf",
-     "IATA &mdash; Passengers Travelling with Lithium Batteries (2026 guidance)"
+     "https://www.elal.com/SiteCollectionDocuments/Baggage/Airline_passengers_and_batteries-EN-FEB-2018.pdf",
+     "El Al &mdash; Batteries allowance table in El Al passengers' baggage (PDF, 2018)"
     ]
    ],
    "keepSchema": true,
-   "checked": "18 October 2026",
-   "unofficial": true
+   "checked": "22 November 2026",
+   "unofficial": false
   }
  },
  "Arkia": {
@@ -17315,75 +17490,59 @@
    "unofficial": true
   },
   "power": {
-   "answer": "We could not take a power bank rule from MEA's own pages. The IATA guidance that airlines are adopting says passengers are limited to a maximum of two lithium-ion power banks not exceeding 100 Wh, in carry-on baggage only.",
+   "answer": "MEA's baggage pages blocked our reader (Cloudflare), so this page uses the ICAO rule that took effect on 27 March 2026: at most two power banks per passenger, none recharged during the flight. Check MEA for its watt-hour limit and checked-baggage rule.",
    "sections": [
     {
-     "h": "🔋 What MEA says about power banks",
-     "p": "This section is from an unofficial source, not MEA's own rules: the IATA guidance document for passengers travelling with lithium batteries (revised for the 2026 regulations, dated 31 March 2026). MEA's own pages could not be read for us.",
+     "h": "🔋 What ICAO says (MEA's own page not readable)",
+     "p": "From the ICAO news release of 27 March 2026, read on 22 November 2026.",
      "table": {
       "head": [
        "Question",
-       "MEA rule"
+       "What the source says"
       ],
       "rows": [
        [
-        "How many",
-        "A maximum of two lithium-ion power banks not exceeding 100 Wh"
+        "Number",
+        "Two power banks per passenger (ICAO, from 27 March 2026)"
        ],
        [
-        "Between 100 Wh and 160 Wh",
-        "IATA's Table 1 allows power banks of more than 100 Wh and up to 160 Wh in carry-on baggage only, limited to 2; above 160 Wh power banks are forbidden"
+        "Recharging in flight",
+        "Prohibited (ICAO)"
        ],
        [
-        "Where",
-        "Carry-on baggage only: power banks are not permitted in checked baggage"
+        "Crew",
+        "May still carry and use power banks as the aircraft requires (ICAO)"
        ],
        [
-        "Charging the power bank on board",
-        "Must not be recharged from an in-aircraft power supply"
-       ],
-       [
-        "Where to keep it",
-        "Should not be stored in the overhead lockers"
-       ],
-       [
-        "Use",
-        "Should not be used to power other devices during taxi, take-off or landing"
-       ],
-       [
-        "Protection",
-        "Spare batteries individually protected against short circuits: original retail packaging, taped terminals, or each in a separate bag or pouch"
-       ],
-       [
-        "Stricter rules",
-        "Airlines may impose more stringent conditions on the carriage and use of power banks"
+        "MEA's own rule",
+        "Not read: the page returned an access-denied error"
        ]
       ]
      },
      "list": [
-      "<strong>Not on the page:</strong> MEA's own rule. Many airlines are stricter than IATA, for example banning use on board or allowing only one power bank, so confirm with MEA before you fly."
+      "<strong>Not read:</strong> MEA's own luggage rules. The Wh limit and carry-on or checked rule are not stated here."
      ]
     }
    ],
    "faq": [
     [
-     "How many power banks can I take on MEA?",
-     "Following the IATA guidance: a maximum of two lithium-ion power banks, each up to 100 Wh, in carry-on baggage. MEA's own page was not readable on this, so confirm with the airline."
+     "How many power banks can I carry on MEA?",
+     "The ICAO standard from 27 March 2026 limits passengers to two; MEA's own page could not be read."
     ],
     [
-     "Can I use my power bank on a MEA flight?",
-     "IATA says power banks must not be recharged from the aircraft power and should not power other devices during taxi, take-off and landing; many airlines ban use entirely, so confirm with MEA."
+     "Can I recharge a power bank on a MEA flight?",
+     "Under the ICAO standard, passengers are prohibited from recharging power banks during flights."
     ]
    ],
    "sources": [
     [
-     "https://www.iata.org/contentassets/6fea26dd84d24b26a7a1fd5788561d6e/passengers_travelling_with_lithium_batteries.pdf",
-     "IATA &mdash; Passengers Travelling with Lithium Batteries (2026 guidance)"
+     "https://www.icao.int/news/new-power-bank-restrictions-will-safeguard-international-aviation",
+     "Unofficial source: ICAO &mdash; New power bank restrictions will safeguard international aviation (27 March 2026)"
     ]
    ],
    "keepSchema": true,
-   "checked": "18 October 2026",
-   "unofficial": true
+   "checked": "22 November 2026",
+   "unofficial": false
   }
  },
  "Avianca": {
@@ -20249,54 +20408,75 @@
    "unofficial": false
   },
   "perfume": {
-   "answer": "China Eastern's own rule could not be read. The IATA limit is 0.5 L or 0.5 kg per article and 2 L or 2 kg in total; the table below has the details.",
+   "answer": "China Eastern's carry-on page treats perfume as a liquid: on international and regional flights each container must hold 100 ml or less and fit in one transparent 1 L resealable bag, one bag per passenger. On domestic flights liquids are banned except self-use cosmetics, toothpaste and shaving cream.",
    "sections": [
     {
-     "h": "🧴 What the industry rule says about perfume and aerosols on China Eastern",
-     "p": "IATA, the airline industry body. Airports and customs can add stricter limits.",
+     "h": "🧴 What China Eastern says about perfume and liquids",
+     "p": "From the China Eastern \"Carry-on Baggage\" page, rule 3 \"Liquid items\", read on 22 November 2026.",
      "table": {
       "head": [
        "Question",
-       "IATA rule"
+       "China Eastern rule"
       ],
       "rows": [
        [
-        "What it covers",
-        "Non-radioactive medicinal or toiletry articles including aerosols, such as hair sprays, perfumes, colognes and medicines containing alcohol, and non-flammable, non-toxic aerosols for sporting or home use"
+        "International and regional flights",
+        "Each container up to 100 ml, inside one transparent resealable bag of up to 1 L, one bag per flight"
        ],
        [
-        "Where",
-        "Permitted in carry-on and in checked baggage, without operator approval"
+        "Extra liquids beyond that bag",
+        "Must be checked in"
        ],
        [
-        "Total",
-        "Not more than 2 kg or 2 L in total"
+        "Domestic flights",
+        "No liquids, except cosmetics, toothpaste and shaving cream for self-use"
        ],
        [
-        "Each article",
-        "Not more than 0.5 kg or 0.5 L"
+        "Domestic cosmetics conditions",
+        "One piece of each item, fits a container of 100 ml or less, can be opened for inspection"
        ],
        [
-        "Aerosol valves",
-        "Release valves must be protected by a cap or other suitable means"
+        "Duty-free liquids changing to a domestic flight",
+        "Proof of purchase, sealed intact transparent bag, screened at security; leaving the secure area turns them into checked baggage"
        ],
        [
-        "In your cabin bag on China Eastern",
-        "Security liquid limits also apply: On international and regional flights China Eastern requires liquid items in containers of no more than 100 ml, in one transparent re-sealable plastic bag of at most 1 L, one bag per flight; domestic flights allow almost no liquids."
+        "Bought inside the secure area or on board",
+        "May be carried until you leave the security restricted area"
+       ],
+       [
+        "Infant milk and liquid medicine",
+        "Allowed after examination at security"
        ]
       ]
-     }
+     },
+     "list": [
+      "<strong>Not on the page:</strong> a named rule for aerosol deodorants and hairspray. Aerosols are liquids for the cabin; flammable ones fall under dangerous goods, which China Eastern points to separate catalogues for."
+     ]
     }
+   ],
+   "faq": [
+    [
+     "Can I take perfume on a China Eastern international flight?",
+     "Yes, in a container of 100 ml or less inside your one transparent 1 L bag; larger bottles must be checked."
+    ],
+    [
+     "Can I take perfume on a China Eastern domestic flight?",
+     "Liquids are not allowed in the cabin on domestic flights, except cosmetics for use during the journey that meet the one-piece, 100 ml, openable conditions."
+    ],
+    [
+     "Does duty-free perfume change on a China Eastern connection?",
+     "If you transfer to a domestic flight in the secure zone, it needs proof of purchase and a sealed intact bag; if you leave the secure area it becomes checked baggage."
+    ]
    ],
    "sources": [
     [
-     "https://www.iata.org/contentassets/6fea26dd84d24b26a7a1fd5788561d6e/dgr-67-en-2.3.a.pdf",
-     "IATA &mdash; Dangerous Goods Regulations, Table 2.3.A (67th edition, 1 January 2026)"
+     "https://www.ceair.com/global/en_static/Announcement/BaggageService/CarryonBaggage/",
+     "China Eastern &mdash; Carry-on Baggage"
     ]
    ],
    "keepSchema": true,
-   "checked": "18 October 2026",
-   "unofficial": true
+   "checked": "22 November 2026",
+   "unofficial": false
   },
   "power": {
    "answer": "China Eastern allows a maximum of two power banks per passenger, only in carry-on baggage: 100 Wh or less, or up to 160 Wh with airline approval; charging them from aircraft power and using them to charge other devices is not allowed.",
