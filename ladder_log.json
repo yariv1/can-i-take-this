@@ -14435,32 +14435,40 @@
  },
  "country/argentina/vaping": {
   "official": [
-   "no national page needed for this section: WHO profile table read"
+   "read 2026-11-22: argentina.gob.ar news item on Ministry of Health Resolution 549/2026 (prohibition replaced by registry, disposables prohibited); ARCA traveller page not found by search"
   ],
   "reliable": [
-   "read 2026-11-19: WHO country profile PDF (downloaded, pdftotext), table of tobacco use prevalence from the latest survey (e-cigarette use rows)"
+   "WHO country profile read 2026-10-08 (base card)"
   ],
-  "other": [],
-  "date": "2026-11-19"
+  "other": [
+   "none needed: government page read"
+  ],
+  "date": "2026-11-22"
  },
  "country/austria/vaping": {
   "official": [
-   "no national page needed for this section: WHO profile table read"
+   "read 2026-11-22: oesterreich.gv.at tobacco page (BMF, updated 2026-10-21): tobacco and heated tobacco limits, no e-liquid; bmf.gv.at press release 2025-11-17: 518 e-cigarettes and liquids found"
   ],
   "reliable": [
-   "read 2026-11-19: WHO country profile PDF (downloaded, pdftotext), table of tobacco use prevalence from the latest survey (e-cigarette use rows)"
+   "WHO country profile read 2026-10-08 (base card)"
   ],
-  "other": [],
-  "date": "2026-11-19"
+  "other": [
+   "bmf.gv.at Zoll-Info PDF July 2023: HTTP 404 on curl 2026-11-22"
+  ],
+  "date": "2026-11-22"
  },
  "country/belgium/vaping": {
   "official": [
-   "no national page needed for this section: WHO profile table read"
+   "no national page needed for this section: WHO profile table read",
+   "2026-11-22: finance.belgium.be traveller page: captcha wall, not bypassed"
   ],
   "reliable": [
-   "read 2026-11-19: WHO country profile PDF (downloaded, pdftotext), table of tobacco use prevalence from the latest survey (e-cigarette use rows)"
+   "read 2026-11-19: WHO country profile PDF (downloaded, pdftotext), table of tobacco use prevalence from the latest survey (e-cigarette use rows)",
+   "read 2026-11-22: ECC Belgium (European Consumer Centre) page on online sale of e-cigarettes: online sales and imports from foreign webshops prohibited in Belgium; e-cigarettes treated like tobacco products (not a traveller allowance)"
   ],
-  "other": [],
+  "other": [
+   "2026-11-22: financien.belgium.be traveller pages found by search give no tobacco or e-liquid quantities in the summaries; not read in full"
+  ],
   "date": "2026-11-19"
  },
  "country/canada/vaping": {
@@ -14475,75 +14483,88 @@
  },
  "country/chile/vaping": {
   "official": [
-   "no national page needed for this section: WHO profile table read"
+   "read 2026-11-22: aduana.cl airport page (400 cigarettes, 2.5 l alcohol, over-18 only) and 2023 entry/exit manual PDF (400 units, 500 g tobacco, 50 cigars): no vape word"
   ],
   "reliable": [
-   "read 2026-11-19: WHO country profile PDF (downloaded, pdftotext), table of tobacco use prevalence from the latest survey (e-cigarette use rows)"
+   "WHO country profile read 2026-10-08 (base card)"
   ],
-  "other": [],
-  "date": "2026-11-19"
+  "other": [
+   "none needed: national customs pages read"
+  ],
+  "date": "2026-11-22"
  },
  "country/china/vaping": {
   "official": [
-   "no national page needed for this section: WHO profile table read"
+   "read 2026-11-21: Shanghai government English guide, source General Administration of Customs, updated 2025-10-13: over 2 devices, over 6 cartridges or 12 ml liquid, halved from HK/Macao"
   ],
   "reliable": [
-   "read 2026-11-19: WHO country profile PDF (downloaded, pdftotext), table of tobacco use prevalence from the latest survey (e-cigarette use rows)"
+   "WHO country profile read 2026-10-08 (base card)"
   ],
   "other": [
-   "2026-11-19: Shantou customs guide PDF: WebFetch certificate error (self signed certificate in chain), not bypassed"
+   "Shantou customs guide PDF: certificate error 2026-11-21, not bypassed"
   ],
-  "date": "2026-11-19"
+  "date": "2026-11-21"
  },
  "country/colombia/vaping": {
   "official": [
-   "no national page needed for this section: WHO profile table read"
+   "read 2026-11-22: DIAN modalidad de viajeros page: USD 2,000, 10 units of the same kind, 15% single tax, form 530, no vape word"
   ],
   "reliable": [
-   "read 2026-11-19: WHO country profile PDF (downloaded, pdftotext), table of tobacco use prevalence from the latest survey (e-cigarette use rows)"
+   "WHO country profile read 2026-10-08 (base card)"
   ],
-  "other": [],
-  "date": "2026-11-19"
+  "other": [
+   "none needed: national customs page read"
+  ],
+  "date": "2026-11-22"
  },
  "country/cuba/vaping": {
   "official": [
-   "no national page needed for this section: WHO profile table read"
+   "aduana.gob.cu pages found by search (what you can and cannot import) do not name e-cigarettes in the summaries; not read in full"
   ],
   "reliable": [
-   "read 2026-11-19: WHO country profile PDF (downloaded, pdftotext), table of tobacco use prevalence from the latest survey (e-cigarette use rows)"
+   "WHO country profile read 2026-10-08 (base card)"
   ],
-  "other": [],
-  "date": "2026-11-19"
+  "other": [
+   "read 2026-11-22: Directorio Cubano article reporting Aduana General position and MINSAP Resolution 23/2020 (lower reliability press)",
+   "read 2026-11-22: GSTHR e-cigarette profile for Cuba (page updated 2026-11-16, secondary compilation, lower reliability)"
+  ],
+  "date": "2026-11-22"
  },
  "country/cyprus/vaping": {
   "official": [
-   "no national page needed for this section: WHO profile table read"
+   "read 2026-11-21: Cyprus customs traveller allowances page (updated 2020-02-05) and excise general information page: e-liquid EUR 0.12/ml, no traveller ml figure"
   ],
   "reliable": [
-   "read 2026-11-19: WHO country profile PDF (downloaded, pdftotext), table of tobacco use prevalence from the latest survey (e-cigarette use rows)"
+   "WHO country profile read 2026-10-08 (base card)"
   ],
-  "other": [],
-  "date": "2026-11-19"
+  "other": [
+   "none needed: national customs pages read"
+  ],
+  "date": "2026-11-21"
  },
  "country/denmark/vaping": {
   "official": [
-   "no national page needed for this section: WHO profile table read"
+   "read 2026-11-21: Danish Tax Agency legal guidance E.A.5.4.5 version 3.17 (valid 2026-07-31): nicotine liquid DKK 1.50 per ml up to 12 mg/ml, DKK 2.50 per ml above"
   ],
   "reliable": [
-   "read 2026-11-19: WHO country profile PDF (downloaded, pdftotext), table of tobacco use prevalence from the latest survey (e-cigarette use rows)"
+   "WHO country profile read 2026-10-08 (base card)"
   ],
-  "other": [],
-  "date": "2026-11-19"
+  "other": [
+   "F.A.29 travel goods page read 2026-11-21: no nicotine liquid rule for travellers"
+  ],
+  "date": "2026-11-21"
  },
  "country/fiji/vaping": {
   "official": [
-   "no national page needed for this section: WHO profile table read"
+   "frcs.org.fj traveller page: not found by search, not read"
   ],
   "reliable": [
-   "read 2026-11-19: WHO country profile PDF (downloaded, pdftotext), table of tobacco use prevalence from the latest survey (e-cigarette use rows)"
+   "WHO country profile read 2026-10-08 (base card)"
   ],
-  "other": [],
-  "date": "2026-11-19"
+  "other": [
+   "read 2026-11-22: GSTHR e-cigarette profile for Fiji (page updated 2026-11-16, secondary compilation, lower reliability)"
+  ],
+  "date": "2026-11-22"
  },
  "country/georgia/vaping": {
   "official": [
@@ -14557,13 +14578,15 @@
  },
  "country/greece/vaping": {
   "official": [
-   "no national page needed for this section: WHO profile table read"
+   "read 2026-11-21: AADE other national taxes page: excise on e-cigarette replenishment fluids, no traveller figure"
   ],
   "reliable": [
-   "read 2026-11-19: WHO country profile PDF (downloaded, pdftotext), table of tobacco use prevalence from the latest survey (e-cigarette use rows)"
+   "WHO country profile read 2026-10-08 (base card)"
   ],
-  "other": [],
-  "date": "2026-11-19"
+  "other": [
+   "AADE customs booklet 2021 (search result only, not read in full): tobacco only"
+  ],
+  "date": "2026-11-21"
  },
  "country/croatia/vaping": {
   "official": [
@@ -14577,45 +14600,51 @@
  },
  "country/indonesia/vaping": {
   "official": [
-   "no national page needed for this section: WHO profile table read"
+   "beacukai.go.id passenger goods pages: connection refused or host not found on WebFetch and curl 2026-11-19, retried 2026-11-21"
   ],
   "reliable": [
-   "read 2026-11-19: WHO country profile PDF (downloaded, pdftotext), table of tobacco use prevalence from the latest survey (e-cigarette use rows)"
+   "WHO country profile read 2026-10-08 (base card)"
   ],
   "other": [
-   "2026-11-19: beacukai.go.id passenger goods pages: WebFetch connection refused/not found and curl no connection, retried twice"
+   "read 2026-11-21: DDTCNews 2024-11-06 (lower reliability, tax press) quoting PMK 82/2024 Art. 36: 30 ml open, 12 ml closed, 140 sticks or 40 capsules"
   ],
-  "date": "2026-11-19"
+  "date": "2026-11-21"
  },
  "country/italy/vaping": {
   "official": [
-   "no national page needed for this section: WHO profile table read"
+   "read 2026-11-22: ADM Carta doganale del viaggiatore July 2025 (pdftotext, full): tobacco and alcohol limits, no vape or nicotine word"
   ],
   "reliable": [
-   "read 2026-11-19: WHO country profile PDF (downloaded, pdftotext), table of tobacco use prevalence from the latest survey (e-cigarette use rows)"
+   "WHO country profile read 2026-10-08 (base card)"
   ],
-  "other": [],
-  "date": "2026-11-19"
+  "other": [
+   "none needed: national customs card read"
+  ],
+  "date": "2026-11-22"
  },
  "country/jamaica/vaping": {
   "official": [
-   "no national page needed for this section: WHO profile table read"
+   "jacustoms.gov.jm: TLS certificate error 2026-11-22, not bypassed"
   ],
   "reliable": [
-   "read 2026-11-19: WHO country profile PDF (downloaded, pdftotext), table of tobacco use prevalence from the latest survey (e-cigarette use rows)"
+   "WHO country profile read 2026-10-08 (base card)"
   ],
-  "other": [],
-  "date": "2026-11-19"
+  "other": [
+   "read 2026-11-22: GSTHR e-cigarette profile for Jamaica (page updated 2026-11-16, secondary compilation, lower reliability)"
+  ],
+  "date": "2026-11-22"
  },
  "country/cambodia/vaping": {
   "official": [
-   "no national page needed for this section: WHO profile table read"
+   "Cambodia General Department of Customs and Excise traveller page: not found by search, not read"
   ],
   "reliable": [
-   "read 2026-11-19: WHO country profile PDF (downloaded, pdftotext), table of tobacco use prevalence from the latest survey (e-cigarette use rows)"
+   "WHO country profile read 2026-10-08 (base card)"
   ],
-  "other": [],
-  "date": "2026-11-19"
+  "other": [
+   "read 2026-11-22: GSTHR e-cigarette profile for Cambodia (page updated 2026-11-16, secondary compilation, lower reliability)"
+  ],
+  "date": "2026-11-22"
  },
  "country/south-korea/vaping": {
   "official": [
@@ -14629,13 +14658,15 @@
  },
  "country/lithuania/vaping": {
   "official": [
-   "no national page needed for this section: WHO profile table read"
+   "muitine.lrv.lt traveller page and ntakd.lrv.lt e-cigarette page: HTTP 403 (Cloudflare) 2026-11-22, not bypassed; mano.muitine.lt same wall"
   ],
   "reliable": [
-   "read 2026-11-19: WHO country profile PDF (downloaded, pdftotext), table of tobacco use prevalence from the latest survey (e-cigarette use rows)"
+   "WHO country profile read 2026-10-08 (base card)"
   ],
-  "other": [],
-  "date": "2026-11-19"
+  "other": [
+   "read 2026-11-22: GSTHR e-cigarette profile for Lithuania (page updated 2026-11-16, secondary compilation, lower reliability)"
+  ],
+  "date": "2026-11-22"
  },
  "country/luxembourg/vaping": {
   "official": [
@@ -14649,23 +14680,27 @@
  },
  "country/morocco/vaping": {
   "official": [
-   "no national page needed for this section: WHO profile table read"
+   "douane.gov.ma circulars found in search cover domestic tax (TIC) on e-liquid and disposables, not a traveller allowance; finances.gov.ma ADII 2026 PDF: no response 2026-11-22"
   ],
   "reliable": [
-   "read 2026-11-19: WHO country profile PDF (downloaded, pdftotext), table of tobacco use prevalence from the latest survey (e-cigarette use rows)"
+   "WHO country profile read 2026-10-08 (base card)"
   ],
-  "other": [],
-  "date": "2026-11-19"
+  "other": [
+   "read 2026-11-22: GSTHR e-cigarette profile for Morocco (page updated 2026-11-16, secondary compilation, lower reliability)"
+  ],
+  "date": "2026-11-22"
  },
  "country/malta/vaping": {
   "official": [
-   "no national page needed for this section: WHO profile table read"
+   "read 2026-11-21: Malta Customs accompanied excise goods page (updated 2020-12-18, page 2026-01-22): tobacco limits only, no e-liquid"
   ],
   "reliable": [
-   "read 2026-11-19: WHO country profile PDF (downloaded, pdftotext), table of tobacco use prevalence from the latest survey (e-cigarette use rows)"
+   "WHO country profile read 2026-10-08 (base card)"
   ],
-  "other": [],
-  "date": "2026-11-19"
+  "other": [
+   "none needed: national customs page read"
+  ],
+  "date": "2026-11-21"
  },
  "country/mexico/vaping": {
   "official": [
@@ -14699,55 +14734,63 @@
  },
  "country/new-zealand/vaping": {
   "official": [
-   "no national page needed for this section: WHO profile table read"
+   "read 2026-11-22: NZ Customs equipment for smoking or taking drugs page (vaporisers and parts prohibited, medical-device exception) and duty-free shopping page (50 cigarettes / 50 g)"
   ],
   "reliable": [
-   "read 2026-11-19: WHO country profile PDF (downloaded, pdftotext), table of tobacco use prevalence from the latest survey (e-cigarette use rows)"
+   "WHO country profile read 2026-10-08 (base card)"
   ],
-  "other": [],
-  "date": "2026-11-19"
+  "other": [
+   "none needed: national customs pages read"
+  ],
+  "date": "2026-11-22"
  },
  "country/oman/vaping": {
   "official": [
-   "no national page needed for this section: WHO profile table read"
+   "customs.gov.om traveller services page: no response on curl, navigation failed in browser pane 2026-11-22"
   ],
   "reliable": [
-   "read 2026-11-19: WHO country profile PDF (downloaded, pdftotext), table of tobacco use prevalence from the latest survey (e-cigarette use rows)"
+   "WHO country profile read 2026-10-08 (base card)"
   ],
-  "other": [],
-  "date": "2026-11-19"
+  "other": [
+   "read 2026-11-22: GSTHR e-cigarette profile for Oman (page updated 2026-11-16, secondary compilation, lower reliability)"
+  ],
+  "date": "2026-11-22"
  },
  "country/panama/vaping": {
   "official": [
-   "no national page needed for this section: WHO profile table read"
+   "read 2026-11-22: ANA news item 2026-03-10 on Bill 263 (ban on use, import, sale of e-cigarettes) and Bill 347, both in technical analysis; no traveller allowance; ANA traveller declaration page is script-driven, text not readable by curl"
   ],
   "reliable": [
-   "read 2026-11-19: WHO country profile PDF (downloaded, pdftotext), table of tobacco use prevalence from the latest survey (e-cigarette use rows)"
+   "WHO country profile read 2026-10-08 (base card)"
   ],
-  "other": [],
-  "date": "2026-11-19"
+  "other": [
+   "none needed: national customs page read"
+  ],
+  "date": "2026-11-22"
  },
  "country/peru/vaping": {
   "official": [
-   "no national page needed for this section: WHO profile table read"
+   "read 2026-11-22: SUNAT travellers baggage page: 20 cigarette packs, 50 cigars, 250 g tobacco, 3 l liquor, US$ 500 other goods, no vape word"
   ],
   "reliable": [
-   "read 2026-11-19: WHO country profile PDF (downloaded, pdftotext), table of tobacco use prevalence from the latest survey (e-cigarette use rows)"
+   "WHO country profile read 2026-10-08 (base card)"
   ],
-  "other": [],
-  "date": "2026-11-19"
+  "other": [
+   "none needed: national customs page read"
+  ],
+  "date": "2026-11-22"
  },
  "country/philippines/vaping": {
   "official": [
-   "no national page needed for this section: WHO profile table read"
+   "customs.gov.ph: HTTP 403 2026-11-21 and again web.senate.gov.ph RA 11900 PDF 403 2026-11-22, not bypassed"
   ],
   "reliable": [
-   "read 2026-11-19: WHO country profile PDF (downloaded, pdftotext), table of tobacco use prevalence from the latest survey (e-cigarette use rows)"
+   "read 2026-11-22: Lawphil text of RA 11900 (sections 1-8, 19, 23, 27); WHO country profile read 2026-10-08 (base card)"
   ],
   "other": [
-   "2026-11-19: customs.gov.ph guidelines page and Essential Guide PDF: WebFetch 403 and curl 403, not bypassed"
+   "travel-guide sites with conflicting allowances (200 ml e-juice) not used"
   ],
-  "date": "2026-11-19"
+  "date": "2026-11-22"
  },
  "country/qatar/vaping": {
   "official": [
@@ -14771,33 +14814,39 @@
  },
  "country/russia/vaping": {
   "official": [
-   "no national page needed for this section: WHO profile table read"
+   "customs.gov.ru traveller page: not found by search, not read"
   ],
   "reliable": [
-   "read 2026-11-19: WHO country profile PDF (downloaded, pdftotext), table of tobacco use prevalence from the latest survey (e-cigarette use rows)"
+   "WHO country profile read 2026-10-08 (base card)"
   ],
-  "other": [],
-  "date": "2026-11-19"
+  "other": [
+   "read 2026-11-22: GSTHR e-cigarette profile for Russia (page updated 2026-11-16, secondary compilation, lower reliability)"
+  ],
+  "date": "2026-11-22"
  },
  "country/saudi-arabia/vaping": {
   "official": [
-   "no national page needed for this section: WHO profile table read"
+   "zatca.gov.sa FAQ 321 and tobacco quantity pages: no response on curl, navigation failed in browser pane 2026-11-22"
   ],
   "reliable": [
-   "read 2026-11-19: WHO country profile PDF (downloaded, pdftotext), table of tobacco use prevalence from the latest survey (e-cigarette use rows)"
+   "WHO country profile read 2026-10-08 (base card)"
   ],
-  "other": [],
-  "date": "2026-11-19"
+  "other": [
+   "read 2026-11-22: Saudi Gazette 2020-08-30 and 2Firsts 2023-02-27 (lower reliability press)"
+  ],
+  "date": "2026-11-22"
  },
  "country/seychelles/vaping": {
   "official": [
-   "no national page needed for this section: WHO profile table read"
+   "Seychelles Revenue Commission traveller page: not found by search, not read"
   ],
   "reliable": [
-   "read 2026-11-19: WHO country profile PDF (downloaded, pdftotext), table of tobacco use prevalence from the latest survey (e-cigarette use rows)"
+   "WHO country profile read 2026-10-08 (base card)"
   ],
-  "other": [],
-  "date": "2026-11-19"
+  "other": [
+   "read 2026-11-22: GSTHR e-cigarette profile for Seychelles (page updated 2026-11-16, secondary compilation, lower reliability)"
+  ],
+  "date": "2026-11-22"
  },
  "country/thailand/vaping": {
   "official": [
@@ -14811,23 +14860,27 @@
  },
  "country/ukraine/vaping": {
   "official": [
-   "no national page needed for this section: WHO profile table read"
+   "customs.gov.ua traveller pages found by search: tobacco limit article only, no e-liquid figure read"
   ],
   "reliable": [
-   "read 2026-11-19: WHO country profile PDF (downloaded, pdftotext), table of tobacco use prevalence from the latest survey (e-cigarette use rows)"
+   "WHO country profile read 2026-10-08 (base card)"
   ],
-  "other": [],
-  "date": "2026-11-19"
+  "other": [
+   "read 2026-11-22: GSTHR e-cigarette profile for Ukraine (page updated 2026-11-16, secondary compilation, lower reliability)"
+  ],
+  "date": "2026-11-22"
  },
  "country/united-states/vaping": {
   "official": [
-   "no national page needed for this section: WHO profile table read"
+   "read 2026-11-22: FDA tobacco importing and exporting page: refusal of admission under FD&C Act section 801, import alerts 98-07 and 98-06 updated 2025-01-03, no traveller quantity; CBP traveller page for vapes not found by search"
   ],
   "reliable": [
-   "read 2026-11-19: WHO country profile PDF (downloaded, pdftotext), table of tobacco use prevalence from the latest survey (e-cigarette use rows)"
+   "WHO country profile read 2026-10-08 (base card)"
   ],
-  "other": [],
-  "date": "2026-11-19"
+  "other": [
+   "none needed: federal authority page read"
+  ],
+  "date": "2026-11-22"
  },
  "country/estonia/vaping": {
   "official": [
@@ -14876,5 +14929,231 @@
    "none needed: national tax authority page read"
   ],
   "date": "2026-11-19"
+ },
+ "country/slovakia/vaping": {
+  "official": [
+   "read 2026-11-21: Financial Administration press release 2025-02-19 (browser pane): ITV/e-cigarette refills 2 consumer packages, 5x by air, age 17"
+  ],
+  "reliable": [
+   "WHO country profile read 2026-10-08 (base card)"
+  ],
+  "other": [
+   "excise page financnasprava.sk/en/.../excise-duties read 2026-11-21: no e-cigarette refill text"
+  ],
+  "date": "2026-11-21"
+ },
+ "country/israel/vaping": {
+  "official": [
+   "read 2026-11-21: Israel Tax Authority tourist customs guide, green channel chapter (updated 2026-07-30): tobacco 250 g, USD 200 other goods, no vape text"
+  ],
+  "reliable": [
+   "WHO country profile read 2026-10-08 (base card)"
+  ],
+  "other": [
+   "other chapters of the guide are a script-driven page that returned no text; not read"
+  ],
+  "date": "2026-11-21"
+ },
+ "country/maldives/vaping": {
+  "official": [
+   "customs.gov.mv restricted items page: 403 on WebFetch and curl 2026-11-19; archive copy not fetched"
+  ],
+  "reliable": [
+   "Maldives High Commission UK customs page: browser navigation refused 2026-11-21"
+  ],
+  "other": [
+   "read 2026-11-21: Atoll Times 2026-08-07 (lower reliability, press): import/sale/use prohibited, fines MVR 50,000 + 10,000 per device"
+  ],
+  "date": "2026-11-21"
+ },
+ "country/finland/vaping": {
+  "official": [
+   "read 2026-11-21: vero.fi (Finnish Tax Administration) traveller page (updated 2025-11-12): pouches and snus 1,000 g; ordering page (updated 2025-02-09): no ordering of e-cigarettes or nicotine liquid"
+  ],
+  "reliable": [
+   "WHO country profile read 2026-10-08 (base card)"
+  ],
+  "other": [
+   "tulli.fi e-cigarette traveller page: HTTP 403 with challenge page 2026-11-21, not bypassed; Finnish Customs 10 ml figure seen in a search summary only, not stated on this page"
+  ],
+  "date": "2026-11-21"
+ },
+ "country/lebanon/vaping": {
+  "official": [
+   "Lebanese customs traveller pages: no vape text (search results and tariff pages only, 2026-11-21)"
+  ],
+  "reliable": [
+   "read 2026-11-21: Tobacco Control Laws Lebanon e-cigarettes page (updated 2026-10-22): sale allowed with restrictions, Law 174, MoF Resolution 877/2015"
+  ],
+  "other": [],
+  "date": "2026-11-21"
+ },
+ "country/kuwait/vaping": {
+  "official": [
+   "Kuwait General Administration of Customs and Ministry of Health pages: no readable vape rule found 2026-11-21"
+  ],
+  "reliable": [
+   "Tobacco Control Laws Kuwait e-cigarettes page read 2026-11-21: no data available (last updated 2021-12-22)"
+  ],
+  "other": [
+   "read 2026-11-21: Gulf News 2026-08-16 (lower reliability, press): Ministerial Resolution 237/2026, effective 2027-01-01, min age 21, online sales banned, import covered"
+  ],
+  "date": "2026-11-21"
+ },
+ "country/bahrain/vaping": {
+  "official": [
+   "customs.gov.bh / bahraincustoms.gov.bh: HTTP 403 earlier, not bypassed"
+  ],
+  "reliable": [
+   "read 2026-11-22: Tobacco Control Laws entry for Ministry of Industry and Commerce Decision 38/2013 (title, date, in-effect date 2019-09-17); WHO country profile read 2026-10-08"
+  ],
+  "other": [
+   "goodsacrossborders and expat forum seen in search, conflicting, not used"
+  ],
+  "date": "2026-11-22"
+ },
+ "country/bulgaria/vaping": {
+  "official": [
+   "customs.bg traveller pages and 2026-01-13 Sofia airport seizure news: connection timeout 2026-11-22"
+  ],
+  "reliable": [
+   "WHO country profile read 2026-10-08 (base card)"
+  ],
+  "other": [
+   "read 2026-11-22: GSTHR e-cigarette profile for Bulgaria (page updated 2026-11-16, secondary compilation, lower reliability)"
+  ],
+  "date": "2026-11-22"
+ },
+ "country/south-africa/vaping": {
+  "official": [
+   "read 2026-11-22: SARS SC-PA-01-03 guide effective 2026-07-01 (pdftotext) and SARS duties-and-taxes page: tobacco and alcohol limits, no vape word"
+  ],
+  "reliable": [
+   "WHO country profile read 2026-10-08 (base card)"
+  ],
+  "other": [
+   "none needed: national customs guide read"
+  ],
+  "date": "2026-11-22"
+ },
+ "country/kenya/vaping": {
+  "official": [
+   "read 2026-11-22: KRA passenger terminal clearance page and Passenger Terminals FAQs PDF (pdftotext): 250 g tobacco, 1 l spirits / 2 l wine, USD 2,000 vs USD 500, no vape word"
+  ],
+  "reliable": [
+   "WHO country profile read 2026-10-08 (base card)"
+  ],
+  "other": [
+   "none needed: national customs pages read"
+  ],
+  "date": "2026-11-22"
+ },
+ "country/dominican-republic/vaping": {
+  "official": [
+   "read 2026-11-22: DGA Manual del Viajero page FAQ: 20 packs, 25 cigars, 200 g tobacco, 5 l alcohol, restricted list drugs/firearms, no vape word"
+  ],
+  "reliable": [
+   "WHO country profile read 2026-10-08 (base card)"
+  ],
+  "other": [
+   "none needed: national customs page read"
+  ],
+  "date": "2026-11-22"
+ },
+ "country/sri-lanka/vaping": {
+  "official": [
+   "read 2026-11-22: Sri Lanka Customs passenger services directorate page (cigarettes, cigars, beedies, snuff not allowed as baggage) and passenger guide page: no vape word"
+  ],
+  "reliable": [
+   "WHO country profile read 2026-10-08 (base card)"
+  ],
+  "other": [
+   "none needed: national customs pages read"
+  ],
+  "date": "2026-11-22"
+ },
+ "country/vietnam/vaping": {
+  "official": [
+   "Vietnam General Department of Customs: no traveller page found by search for vapes, not read"
+  ],
+  "reliable": [
+   "read 2026-11-22: WHO Viet Nam statement 2025-12-11 (Resolution 173/2024/QH15 prohibits importation) and Vietnamese Government News 2025-12-11 (Investment Law); WHO country profile read 2026-10-08 (base card)"
+  ],
+  "other": [
+   "press (Tuoi Tre, VnExpress, Straits-type travel news) seen in search for fines, not used"
+  ],
+  "date": "2026-11-22"
+ },
+ "country/nigeria/vaping": {
+  "official": [
+   "customs.gov.ng passenger page: HTTP 522 2026-11-21; trade.gov Nigeria prohibited imports page read 2026-11-22: no e-cigarette entry"
+  ],
+  "reliable": [
+   "WHO country profile read 2026-10-08 (base card)"
+  ],
+  "other": [
+   "read 2026-11-22: GSTHR e-cigarette profile for Nigeria (page updated 2026-11-16, secondary compilation, lower reliability)"
+  ],
+  "date": "2026-11-22"
+ },
+ "country/costa-rica/vaping": {
+  "official": [
+   "hacienda.go.cr and AduanaFacil traveller pages found by search: general baggage rules only, no vape rule read"
+  ],
+  "reliable": [
+   "WHO country profile read 2026-10-08 (base card)"
+  ],
+  "other": [
+   "read 2026-11-22: GSTHR e-cigarette profile for Costa Rica (page updated 2026-11-16, secondary compilation, lower reliability)"
+  ],
+  "date": "2026-11-22"
+ },
+ "country/ethiopia/vaping": {
+  "official": [
+   "ecc.gov.et: only a tax calculator page found by search, no traveller rule"
+  ],
+  "reliable": [
+   "WHO country profile read 2026-10-08 (base card)"
+  ],
+  "other": [
+   "read 2026-11-22: GSTHR e-cigarette profile for Ethiopia (page updated 2026-11-16, secondary compilation, lower reliability)"
+  ],
+  "date": "2026-11-22"
+ },
+ "country/nepal/vaping": {
+  "official": [
+   "Nepal Department of Customs traveller page: not found by search, not read"
+  ],
+  "reliable": [
+   "WHO country profile read 2026-10-08 (base card)"
+  ],
+  "other": [
+   "read 2026-11-22: GSTHR e-cigarette profile for Nepal (page updated 2026-11-16, secondary compilation, lower reliability)"
+  ],
+  "date": "2026-11-22"
+ },
+ "country/jordan/vaping": {
+  "official": [
+   "customs.gov.jo FAQ page read via search summary only: diplomat allowances, no passenger vape rule"
+  ],
+  "reliable": [
+   "WHO country profile read 2026-10-08 (base card)"
+  ],
+  "other": [
+   "read 2026-11-22: GSTHR e-cigarette profile for Jordan (page updated 2026-11-16, secondary compilation, lower reliability)"
+  ],
+  "date": "2026-11-22"
+ },
+ "country/romania/vaping": {
+  "official": [
+   "customs.ro non-EU arrivals page: HTTP 403 Cloudflare 2026-11-21, not bypassed"
+  ],
+  "reliable": [
+   "read 2026-11-22: Tobacco Control Laws Romania e-cigarettes page (updated 2024-05-11): distance sales to Romanian consumers prohibited, public-use ban, advertising limits; WHO country profile read 2026-10-08 (base card)"
+  ],
+  "other": [
+   "goodsacrossborders and aggregators seen in search, conflicting, not used"
+  ],
+  "date": "2026-11-22"
  }
 }

@@ -89,8 +89,8 @@ function build(c) {
   if (X) X.faq.forEach(q => faq.push(q));
   const list = [];
   if (D.note) list.push('<strong>WHO note:</strong> ' + esc(D.note));
-  list.push('<strong>How old is this:</strong> the WHO report is dated ' + (N25 ? '2025 and its e-cigarette rows are for 2024' : '2023 and its e-cigarette rows are as at 2022') + '; laws can change, so check the current rule with the authority below.');
-  list.push('<strong>On the plane:</strong> separately from the country\'s law, airlines require e-cigarettes in the cabin and not in checked baggage; see the airline vape pages.');
+  list.push('<strong>How old is this:</strong> WHO ' + (N25 ? '2025 report, 2024 data' : '2023 report, 2022 data') + '; laws change, so check the authority below.');
+  list.push('<strong>On the plane:</strong> airlines want vapes in the cabin, not checked baggage.');
   const html = '<div class="bd-wrap">' + CSS + '<p class="bd-lead"><strong>' + esc(lead) + '</strong></p>' +
     '<section class="bd-sec"><h2>🚭 What WHO reports for ' + esc(cn) + '</h2><p>From the WHO report on the global tobacco epidemic ' + (N25 ? '2025' : '2023') + ', country profile for ' + esc(cn) + ', table "Regulation of ENDS and ENNDS" (nicotine e-cigarettes).</p>' +
     table({ head: ['WHO item', 'Reported for ' + cn], rows }) + '<ul>' + list.map(x => '<li>' + x + '</li>').join('') + '</ul></section>' +

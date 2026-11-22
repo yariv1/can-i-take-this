@@ -1,3 +1,12 @@
+# SESSION 58 HANDOFF (2026-11-22, end of session 57) - READ FIRST
+
+- First reply: one line of rules read (worst pages first, source ladder official -> 2a -> 2b -> global, no noindex ever, never raise limits, deploy only on his word, no hooks, zero narration) + 3 Synced bullets, no question; then continue the stream at once.
+- State: main (origin) = fc94e0b1c deployed. LOCAL UNCOMMITTED on s33-integrate: China Southern power-bank card fix; 12 national vaping sections (SK CY GR IL DK MV FI LB KW CN ID MT, dup_work/cv_batch4-7.py); audit_country_cat_sources OK_SAME extended; vape_extra.json, ladder_log.json. Not deployed.
+- Numbers: country vaping 57% vs limit 52% (approved exception); gate 38/39 (only vaping); ladder_queue 0; 2284 pages.
+- Stream: next worst vaping pages (Bulgaria 74, Bahrain, Romania, Nigeria, Philippines, Italy, then Cuba, Lithuania, Morocco, South Africa ...) re-ranked with node dup_work/cv_rank.js; ladder mandatory; template dup_work/cv_batch7.py.
+- Then: deploy only on his word (DEPLOY_FLOW.md, update_rates.js, ALLOW_MASS_SEO confirmation); daily GSC ~10 (section A ~275 left) and Bing 100.
+- Full detail: memory project_blog_roadmap.md (SESSION 58 block).
+
 # SESSION 57 HANDOFF (2026-11-19, end of session 56) - READ FIRST
 
 - First reply of next session: one line of rules read (no noindex ever, ladder automatic, duplicates fixed by sourced text only, deploy only on his word, no hooks, zero narration) + 3 Synced bullets, no question; start nothing unasked.

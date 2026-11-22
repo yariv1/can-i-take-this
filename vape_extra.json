@@ -190,7 +190,7 @@
      ]
     },
     "list": [
-     "<strong>How to read it:</strong> \"current\" means the survey&rsquo;s own definition of current use; WHO prints the surveys&rsquo; figures as published and does not harmonise them."
+     "<strong>How to read it:</strong> \"current\" is each survey&rsquo;s own definition of current use."
     ]
    }
   ],
@@ -292,7 +292,7 @@
      ]
     },
     "list": [
-     "<strong>How to read it:</strong> \"current\" means the survey&rsquo;s own definition of current use; WHO prints the surveys&rsquo; figures as published and does not harmonise them."
+     "<strong>How to read it:</strong> \"current\" is each survey&rsquo;s own definition of current use."
     ]
    }
   ],
@@ -445,7 +445,7 @@
      ]
     },
     "list": [
-     "<strong>How to read it:</strong> \"current\" means the survey&rsquo;s own definition of current use; WHO prints the surveys&rsquo; figures as published and does not harmonise them."
+     "<strong>How to read it:</strong> \"current\" is each survey&rsquo;s own definition of current use."
     ]
    }
   ],
@@ -610,7 +610,7 @@
      ]
     },
     "list": [
-     "<strong>How to read it:</strong> \"current\" means the survey&rsquo;s own definition of current use; WHO prints the surveys&rsquo; figures as published and does not harmonise them."
+     "<strong>How to read it:</strong> \"current\" is each survey&rsquo;s own definition of current use."
     ]
    }
   ],
@@ -1000,7 +1000,7 @@
      ]
     },
     "list": [
-     "<strong>How to read it:</strong> \"current\" means the survey&rsquo;s own definition of current use; WHO prints the surveys&rsquo; figures as published and does not harmonise them."
+     "<strong>How to read it:</strong> \"current\" is each survey&rsquo;s own definition of current use."
     ]
    }
   ],
@@ -1320,7 +1320,7 @@
      ]
     },
     "list": [
-     "<strong>How to read it:</strong> \"current\" means the survey&rsquo;s own definition of current use; WHO prints the surveys&rsquo; figures as published and does not harmonise them."
+     "<strong>How to read it:</strong> \"current\" is each survey&rsquo;s own definition of current use."
     ]
    }
   ],
@@ -1419,7 +1419,7 @@
      ]
     },
     "list": [
-     "<strong>How to read it:</strong> \"current\" means the survey&rsquo;s own definition of current use; WHO prints the surveys&rsquo; figures as published and does not harmonise them."
+     "<strong>How to read it:</strong> \"current\" is each survey&rsquo;s own definition of current use."
     ]
    }
   ],
@@ -1526,7 +1526,7 @@
      ]
     },
     "list": [
-     "<strong>How to read it:</strong> \"current\" means the survey&rsquo;s own definition of current use; WHO prints the surveys&rsquo; figures as published and does not harmonise them."
+     "<strong>How to read it:</strong> \"current\" is each survey&rsquo;s own definition of current use."
     ]
    }
   ],
@@ -1681,7 +1681,7 @@
      ]
     },
     "list": [
-     "<strong>How to read it:</strong> \"current\" means the survey&rsquo;s own definition of current use; WHO prints the surveys&rsquo; figures as published and does not harmonise them."
+     "<strong>How to read it:</strong> \"current\" is each survey&rsquo;s own definition of current use."
     ]
    }
   ],
@@ -1848,7 +1848,7 @@
      ]
     },
     "list": [
-     "<strong>How to read it:</strong> \"current\" means the survey&rsquo;s own definition of current use; WHO prints the surveys&rsquo; figures as published and does not harmonise them."
+     "<strong>How to read it:</strong> \"current\" is each survey&rsquo;s own definition of current use."
     ]
    }
   ],
@@ -1947,7 +1947,7 @@
      ]
     },
     "list": [
-     "<strong>How to read it:</strong> \"current\" means the survey&rsquo;s own definition of current use; WHO prints the surveys&rsquo; figures as published and does not harmonise them."
+     "<strong>How to read it:</strong> \"current\" is each survey&rsquo;s own definition of current use."
     ]
    }
   ],
@@ -1971,6 +1971,49 @@
  },
  "AR": {
   "sections": [
+   {
+    "h": "⚖️ What the Argentine government says about the 2026 change",
+    "p": "From the Argentine government news item \"Nuevo marco normativo para los productos de tabaco y nicotina\" (argentina.gob.ar, read on 22 November 2026) on Ministry of Health Resolution 549/2026. The WHO 2023 profile above still shows the older import ban; the Ministry says its new framework replaces the prohibition scheme. It does not state a traveller allowance.",
+    "table": {
+     "head": [
+      "Point",
+      "What the Ministry of Health says"
+     ],
+     "rows": [
+      [
+       "Resolution",
+       "549/2026, Ministry of Health"
+      ],
+      [
+       "Old scheme",
+       "A prohibition, which the Ministry says did not stop access or use"
+      ],
+      [
+       "New scheme",
+       "Registration, control and oversight; a National Registry of Tobacco and Nicotine Products (RNPTN)"
+      ],
+      [
+       "Legal status",
+       "E-cigarettes, vapes, heated tobacco devices, vaping liquids and nicotine pouches are treated as tobacco products under Law 26.687"
+      ],
+      [
+       "Flavours",
+       "Only tobacco-flavour liquids and sticks, and tobacco or menthol pouches"
+      ],
+      [
+       "Disposable pre-filled e-cigarettes",
+       "Expressly prohibited"
+      ],
+      [
+       "Traveller allowance",
+       "Not stated"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>Not read:</strong> the text of Resolution 549/2026, the ANMAT disposition and any customs (ARCA) traveller rule. Do not bring disposables, and confirm with Argentine customs before you carry any vape."
+    ]
+   },
    {
     "h": "📊 How common vaping is in Argentina, per the WHO survey figures",
     "p": "From the same WHO report on the global tobacco epidemic 2023, country profile for Argentina, table \"Tobacco use prevalence from the latest survey\". These are survey results, not a law or a customs rule, and each survey has its own age group.",
@@ -2007,11 +2050,15 @@
      ]
     },
     "list": [
-     "<strong>How to read it:</strong> \"current\" means the survey&rsquo;s own definition of current use; WHO prints the surveys&rsquo; figures as published and does not harmonise them."
+     "<strong>How to read it:</strong> \"current\" is each survey&rsquo;s own definition of current use."
     ]
    }
   ],
   "faq": [
+   [
+    "Is the vape import ban still in force in Argentina?",
+    "WHO (2023 profile, data as at 2022) lists an import ban. The Argentine Ministry of Health announced in 2026 that Resolution 549/2026 replaces the prohibition with a registration and control system and prohibits disposable pre-filled vapes. No traveller limit is published, so check with customs."
+   ],
    [
     "How common is vaping in Argentina?",
     "Adults: 1.1% of adults currently use e-cigarettes in the survey \"Encuesta Nacional de Factores de Riesgo Para Enfermedades No Transmisibles, 2018\" (national, ages 18+). Adolescents: 7.1% of adolescents currently use e-cigarettes (boys 8.1%, girls 6.2%) in the survey \"Global Youth Tobacco Survey, 2018\" (national, ages 13-15)."
@@ -2021,11 +2068,64 @@
     "1.1% of adults currently use e-cigarettes in the survey \"Encuesta Nacional de Factores de Riesgo Para Enfermedades No Transmisibles, 2018\" (national, ages 18+)."
    ]
   ],
-  "src": [],
-  "keepSchema": true
+  "src": [
+   [
+    "https://www.argentina.gob.ar/noticias/nuevo-marco-normativo-para-los-productos-de-tabaco-y-nicotina",
+    "Argentina.gob.ar - Nuevo marco normativo para los productos de tabaco y nicotina (Resolution 549/2026)"
+   ]
+  ],
+  "keepSchema": false,
+  "ttl": "Vaping in Argentina 2026: Rules Changing",
+  "desc": "Is vaping legal in Argentina? Ministry of Health Resolution 549/2026 replaces the old ban with a registry; disposables are prohibited. WHO 2023 data shows the old ban.",
+  "card": {
+   "status": "warn",
+   "head": "Rules changed in 2026: check customs.",
+   "lines": [
+    "The Ministry of Health says Resolution 549/2026 replaces the old prohibition with a registry and bans disposable vapes. No traveller allowance is published."
+   ]
+  }
  },
  "AT": {
   "sections": [
+   {
+    "h": "🛃 What Austrian customs says about tobacco and e-cigarettes",
+    "p": "From the Austrian Federal Ministry of Finance (page \"Mitnahme von Tabakwaren aus anderen EU-Staaten\" on oesterreich.gv.at, updated 21 October 2026, read 22 November 2026) and its customs press release of 17 November 2025 on summer checks at Vienna airport. The ministry page lists tobacco and heated tobacco only; it does not name e-cigarettes or vape liquid.",
+    "table": {
+     "head": [
+      "Item",
+      "What the Ministry of Finance says"
+     ],
+     "rows": [
+      [
+       "Cigarettes, own use from another EU state",
+       "Up to 800 (no proof needed below this level)"
+      ],
+      [
+       "Cigarillos / cigars / smoking tobacco",
+       "400 / 200 / 1 kg"
+      ],
+      [
+       "Heated tobacco",
+       "800 sticks, or 250 g of tobacco in other packaging"
+      ],
+      [
+       "Above these amounts",
+       "You must show the goods are for personal use (reason, transport, documents, quantity)"
+      ],
+      [
+       "Summer 2025 checks, July to September",
+       "518 e-cigarettes and liquids were found prohibited or undeclared, next to 391,122 cigarettes"
+      ],
+      [
+       "E-cigarette liquid allowance",
+       "Not named on the ministry page"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>Not read:</strong> any Austrian customs figure for e-liquid or devices from non-EU countries. Ask Zentrale Auskunftsstelle Zoll before carrying more than a device and a few pods."
+    ]
+   },
    {
     "h": "📊 How common vaping is in Austria, per the WHO survey figures",
     "p": "From the same WHO report on the global tobacco epidemic 2023, country profile for Austria, table \"Tobacco use prevalence from the latest survey\". These are survey results, not a law or a customs rule, and each survey has its own age group.",
@@ -2070,11 +2170,15 @@
      ]
     },
     "list": [
-     "<strong>How to read it:</strong> \"current\" means the survey&rsquo;s own definition of current use; WHO prints the surveys&rsquo; figures as published and does not harmonise them."
+     "<strong>How to read it:</strong> \"current\" is each survey&rsquo;s own definition of current use."
     ]
    }
   ],
   "faq": [
+   [
+    "Does Austrian customs check e-cigarettes in luggage?",
+    "Yes. The Ministry of Finance reported 518 prohibited or undeclared e-cigarettes and liquids among its summer 2025 findings at Vienna airport, but its traveller page sets limits only for tobacco and heated tobacco."
+   ],
    [
     "How common is vaping in Austria?",
     "Adults: 3.4% of adults currently use e-cigarettes (men 4.5%, women 2.2%), and 0.9% use them daily in the survey \"Repräsentativerhebung zum Substanzgebrauch, 2020\" (national, ages 15+). Adolescents: 13.0% of adolescents currently use e-cigarettes (boys 17.0%, girls 9.0%), and 2.0% use them daily in the survey \"European School Survey Project on Alcohol and Other Drugs (ESPAD), 2019\" (national, ages 14-17)."
@@ -2084,11 +2188,51 @@
     "3.4% of adults currently use e-cigarettes (men 4.5%, women 2.2%), and 0.9% use them daily in the survey \"Repräsentativerhebung zum Substanzgebrauch, 2020\" (national, ages 15+)."
    ]
   ],
-  "src": [],
+  "src": [
+   [
+    "https://www.oesterreich.gv.at/de/themen/eu_und_international/einfuhr-von-waren-nach-oesterreich-und-zoll/3/Seite.2960170",
+    "Austrian Ministry of Finance - Mitnahme von Tabakwaren (oesterreich.gv.at)"
+   ],
+   [
+    "https://www.bmf.gv.at/presse/pressemeldungen/2025/november/zoll-sommerbilanz.html",
+    "Austrian Ministry of Finance - customs summer review 2025 (press release)"
+   ]
+  ],
   "keepSchema": true
  },
  "BE": {
   "sections": [
+   {
+    "h": "⚖️ What the European Consumer Centre Belgium says about e-cigarettes",
+    "p": "Unofficial source (reliable): European Consumer Centre Belgium, page \"Online sale of e-cigarettes\" (read on 22 November 2026). It is about buying from webshops, not about what you carry in a bag. The Belgian customs page for travellers (finance.belgium.be) sits behind a captcha and was not opened.",
+    "table": {
+     "head": [
+      "Point",
+      "What ECC Belgium says"
+     ],
+     "rows": [
+      [
+       "Online sales and imports from foreign webshops",
+       "Prohibited in Belgium; a parcel can be intercepted and confiscated by Customs & Excise"
+      ],
+      [
+       "Legal status",
+       "E-cigarettes are treated like tobacco products"
+      ],
+      [
+       "Bans listed",
+       "Use in enclosed public spaces, sale to under-18s, online sales, advertising except in newsagents and specialist shops"
+      ],
+      [
+       "Traveller allowance",
+       "Not stated"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>Not read:</strong> the Belgian customs rule for travellers. Ask Belgian customs before carrying more than a device and a few pods."
+    ]
+   },
    {
     "h": "📊 How common vaping is in Belgium, per the WHO survey figures",
     "p": "From the same WHO report on the global tobacco epidemic 2023, country profile for Belgium, table \"Tobacco use prevalence from the latest survey\". These are survey results, not a law or a customs rule, and each survey has its own age group.",
@@ -2113,11 +2257,15 @@
      ]
     },
     "list": [
-     "<strong>How to read it:</strong> \"current\" means the survey&rsquo;s own definition of current use; WHO prints the surveys&rsquo; figures as published and does not harmonise them."
+     "<strong>How to read it:</strong> \"current\" is each survey&rsquo;s own definition of current use."
     ]
    }
   ],
   "faq": [
+   [
+    "Can I order a vape online to Belgium?",
+    "No. ECC Belgium says online sales of e-cigarettes, including from webshops abroad, are prohibited, and such parcels can be confiscated by customs."
+   ],
    [
     "How common is vaping in Belgium?",
     "Adults: 10.0% of adults currently use e-cigarettes (men 12.0%, women 8.0%), and 3.0% use them daily in the survey \"Enquête sur le tabagisme, 2021\" (national, ages 15+)."
@@ -2127,11 +2275,51 @@
     "10.0% of adults currently use e-cigarettes (men 12.0%, women 8.0%), and 3.0% use them daily in the survey \"Enquête sur le tabagisme, 2021\" (national, ages 15+)."
    ]
   ],
-  "src": [],
+  "src": [
+   [
+    "https://www.eccbelgium.be/themes/services-in-europe/health-services/online-sale-of-e-cigarettes",
+    "Unofficial source: European Consumer Centre Belgium - Online sale of e-cigarettes"
+   ]
+  ],
   "keepSchema": true
  },
  "CL": {
   "sections": [
+   {
+    "h": "🛃 What Chilean customs says about tobacco in traveller baggage",
+    "p": "From the Servicio Nacional de Aduanas page \"Aduanas en Aeropuerto\" and its 2023 entry-and-exit manual (PDF), both read on 22 November 2026. Both list cigarettes under the traveller allowance and do not name e-cigarettes, vape liquid or nicotine.",
+    "table": {
+     "head": [
+      "Item",
+      "What Aduanas says"
+     ],
+     "rows": [
+      [
+       "Cigarettes without declaring or paying tax",
+       "Up to 400 units (the manual also lists 500 g of tobacco and 50 cigars)"
+      ],
+      [
+       "Alcohol",
+       "Up to 2.5 litres"
+      ],
+      [
+       "Age",
+       "Alcohol and cigarettes only for people over 18"
+      ],
+      [
+       "Duty Free purchases",
+       "Up to US$ 650 per passenger (airport page)"
+      ],
+      [
+       "E-cigarettes and vape liquid",
+       "Not named on either page"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>Not read:</strong> any Aduanas rule on e-cigarettes. The airport page is an older page and the manual is from 2023, so confirm the current allowance with Aduanas before you travel."
+    ]
+   },
    {
     "h": "📊 How common vaping is in Chile, per the WHO survey figures",
     "p": "From the same WHO report on the global tobacco epidemic 2023, country profile for Chile, table \"Tobacco use prevalence from the latest survey\". These are survey results, not a law or a customs rule, and each survey has its own age group.",
@@ -2160,11 +2348,15 @@
      ]
     },
     "list": [
-     "<strong>How to read it:</strong> \"current\" means the survey&rsquo;s own definition of current use; WHO prints the surveys&rsquo; figures as published and does not harmonise them."
+     "<strong>How to read it:</strong> \"current\" is each survey&rsquo;s own definition of current use."
     ]
    }
   ],
   "faq": [
+   [
+    "Is there a limit for vape liquid in Chile?",
+    "The Aduanas airport page and 2023 manual list 400 cigarettes, 2.5 litres of alcohol and other baggage items, but do not name e-cigarettes or liquid. Ask Chilean customs before bringing vapes."
+   ],
    [
     "How common is vaping in Chile?",
     "Adults: 1.0% of adults currently use e-cigarettes (men 1.4%, women 0.5%), and 0.6% use them daily in the survey \"Estudio Nacional de Drogas en Población General de Chile, 2022\" (national, ages 15-64)."
@@ -2174,11 +2366,55 @@
     "1.0% of adults currently use e-cigarettes (men 1.4%, women 0.5%), and 0.6% use them daily in the survey \"Estudio Nacional de Drogas en Población General de Chile, 2022\" (national, ages 15-64)."
    ]
   ],
-  "src": [],
+  "src": [
+   [
+    "https://www.aduana.cl/aduanas-en-aeropuerto/aduana/2018-12-28/084619.html",
+    "Servicio Nacional de Aduanas - Aduanas en Aeropuerto"
+   ],
+   [
+    "https://www.aduana.cl/aduana/site/docs/20230712/20230712145906/manual_de_ingreso_y_salida_a_chile_juegos_panamericanos_y_parapanamericanos_01_06_2023.pdf",
+    "Servicio Nacional de Aduanas - Manual de ingreso y salida a Chile (2023)"
+   ]
+  ],
   "keepSchema": true
  },
  "CN": {
   "sections": [
+   {
+    "h": "🛃 What the Chinese customs guide says about e-cigarettes in luggage",
+    "p": "From the Customs clearance guide for inbound passengers on the Shanghai government English site (source: General Administration of Customs, updated 13 October 2025, read 21 November 2026). The guide lists what sends you to the red channel, so the figures below are the most you can carry without declaring.",
+    "table": {
+     "head": [
+      "Item",
+      "What the guide says"
+     ],
+     "rows": [
+      [
+       "E-cigarette devices",
+       "Declare if you carry more than 2"
+      ],
+      [
+       "E-cigarette cartridges (e-liquid), or cartridge-device products including disposable e-cigarettes",
+       "Declare if you carry more than 6, or if the total liquid is more than 12 ml"
+      ],
+      [
+       "Arriving from Hong Kong or Macao",
+       "All these duty-free limits are halved"
+      ],
+      [
+       "Cigarettes, cigars, tobacco",
+       "Declare more than 400 cigarettes, 20 cigars or 500 g of tobacco"
+      ],
+      [
+       "Alcohol",
+       "Declare more than 1,500 ml of drinks above 12% alcohol by volume"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>Not read:</strong> the General Administration of Customs original and the other chapters of the guide, including any rule on nicotine strength. Ask Chinese customs before bringing more than a device and a few pods."
+    ]
+   },
    {
     "h": "📊 How common vaping is in China, per the WHO survey figures",
     "p": "From the same WHO report on the global tobacco epidemic 2023, country profile for China, table \"Tobacco use prevalence from the latest survey\". These are survey results, not a law or a customs rule, and each survey has its own age group.",
@@ -2215,11 +2451,15 @@
      ]
     },
     "list": [
-     "<strong>How to read it:</strong> \"current\" means the survey&rsquo;s own definition of current use; WHO prints the surveys&rsquo; figures as published and does not harmonise them."
+     "<strong>How to read it:</strong> \"current\" is each survey&rsquo;s own definition of current use."
     ]
    }
   ],
   "faq": [
+   [
+    "How many vapes can I bring into China?",
+    "The customs guide on the Shanghai government site says you must declare more than 2 e-cigarette devices, or more than 6 cartridges or disposable e-cigarettes, or a total of more than 12 ml of liquid. For arrivals from Hong Kong or Macao these limits are halved."
+   ],
    [
     "How common is vaping in China?",
     "Adults: 0.7% of adults currently use e-cigarettes (men 1.2%, women 0.1%) in the survey \"Global Adult Tobacco Survey (GATS), 2020\" (national, ages 15+). Adolescents: 3.1% of adolescents currently use e-cigarettes (boys 3.9%, girls 2.2%) in the survey \"Global Youth Tobacco Survey, 2021\" (national, ages 13-15)."
@@ -2229,11 +2469,55 @@
     "0.7% of adults currently use e-cigarettes (men 1.2%, women 0.1%) in the survey \"Global Adult Tobacco Survey (GATS), 2020\" (national, ages 15+)."
    ]
   ],
-  "src": [],
+  "src": [
+   [
+    "https://english.shanghai.gov.cn/en-CustomsImmigration/20231212/9a3c7f512d464e0798be3fc76c8dd6f2.html",
+    "Shanghai Municipal Government - Customs clearance guide for inbound passengers (source: General Administration of Customs)"
+   ]
+  ],
   "keepSchema": true
  },
  "CO": {
   "sections": [
+   {
+    "h": "🛃 What DIAN says about the traveller baggage allowance",
+    "p": "From the DIAN page \"Modalidad de viajeros\" (read on 22 November 2026). It sets value and unit limits for baggage goods. It does not name tobacco, e-cigarettes or vape liquid.",
+    "table": {
+     "head": [
+      "Item",
+      "What DIAN says"
+     ],
+     "rows": [
+      [
+       "Goods for personal or family use, carried with you",
+       "Up to USD 2,000, no more than 10 units of the same kind, tax free"
+      ],
+      [
+       "Household, sport or work-related goods",
+       "USD 3,000 limit, 3 units of each; tax free if carried with you"
+      ],
+      [
+       "Goods above the allowance",
+       "15% single tax (tributo unico) and Form 530"
+      ],
+      [
+       "Mobile phones",
+       "No more than 3, declared on Form 530"
+      ],
+      [
+       "Commercial quantities",
+       "Not covered by the traveller regime"
+      ],
+      [
+       "E-cigarettes and vape liquid",
+       "Not named on the page"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>Not read:</strong> any DIAN or health-ministry rule on e-cigarettes. A few devices for your own use fit the generic 10-unit rule, but confirm with DIAN."
+    ]
+   },
    {
     "h": "📊 How common vaping is in Colombia, per the WHO survey figures",
     "p": "From the same WHO report on the global tobacco epidemic 2023, country profile for Colombia, table \"Tobacco use prevalence from the latest survey\". These are survey results, not a law or a customs rule, and each survey has its own age group.",
@@ -2270,11 +2554,15 @@
      ]
     },
     "list": [
-     "<strong>How to read it:</strong> \"current\" means the survey&rsquo;s own definition of current use; WHO prints the surveys&rsquo; figures as published and does not harmonise them."
+     "<strong>How to read it:</strong> \"current\" is each survey&rsquo;s own definition of current use."
     ]
    }
   ],
   "faq": [
+   [
+    "Is there a limit for vapes in Colombia?",
+    "DIAN allows personal goods up to USD 2,000 and no more than 10 units of the same kind, with 15% tax above that, and does not name e-cigarettes. Confirm with DIAN before you travel."
+   ],
    [
     "How common is vaping in Colombia?",
     "Adults: 0.7% of adults currently use e-cigarettes (men 1.0%, women 0.4%) in the survey \"Estudio Nacional de Consumo de Sustancias Psicoactivas en Colombia, 2019\" (national, ages 12-65). Adolescents: 9.0% of adolescents currently use e-cigarettes (boys 9.0%, girls 8.8%), and 0.4% use them daily in the survey \"Encuesta Nacional de Tabaquismo en Jóvenes, 2017\" (national, ages 13-15)."
@@ -2284,11 +2572,43 @@
     "0.7% of adults currently use e-cigarettes (men 1.0%, women 0.4%) in the survey \"Estudio Nacional de Consumo de Sustancias Psicoactivas en Colombia, 2019\" (national, ages 12-65)."
    ]
   ],
-  "src": [],
+  "src": [
+   [
+    "https://www.dian.gov.co/Viajeros-y-Servicios-aduaneros/Paginas/Modalidad-viajeros.aspx",
+    "DIAN - Modalidad de viajeros"
+   ]
+  ],
   "keepSchema": true
  },
  "CU": {
   "sections": [
+   {
+    "h": "📰 What a secondary profile reports about e-cigarettes in Cuba",
+    "p": "Less reliable source (secondary profile): the Global State of Tobacco Harm Reduction (GSTHR) country page, updated 16 November 2026 and read on 22 November 2026. It compiles other sources and is not a customs page. The official customs rule for travellers could not be read, so treat this as background and confirm with customs.",
+    "table": {
+     "head": [
+      "Point",
+      "What GSTHR reports"
+     ],
+     "rows": [
+      [
+       "Specific law",
+       "GSTHR says there is no specific e-cigarette law"
+      ],
+      [
+       "Personal import",
+       "Some references say people cannot import them for personal use"
+      ],
+      [
+       "Customs position (press)",
+       "Directorio Cubano reports that Cuban customs cites Ministry of Public Health Resolution 23 of 2020 as the rule on non-commercial import and export of e-cigarettes, and says it applies even with a medical prescription"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>Not read:</strong> the text of Resolution 23/2020 and any aduana.gob.cu page that names e-cigarettes. The press report is secondary; the two sources do not agree on whether a specific rule exists."
+    ]
+   },
    {
     "h": "📊 How common vaping is in Cuba, per the WHO survey figures",
     "p": "From the same WHO report on the global tobacco epidemic 2023, country profile for Cuba, table \"Tobacco use prevalence from the latest survey\". These are survey results, not a law or a customs rule, and each survey has its own age group.",
@@ -2313,11 +2633,15 @@
      ]
     },
     "list": [
-     "<strong>How to read it:</strong> \"current\" means the survey&rsquo;s own definition of current use; WHO prints the surveys&rsquo; figures as published and does not harmonise them."
+     "<strong>How to read it:</strong> \"current\" is each survey&rsquo;s own definition of current use."
     ]
    }
   ],
   "faq": [
+   [
+    "Can I bring a vape to Cuba?",
+    "Cuban customs, as reported by Directorio Cubano, cites Ministry of Health Resolution 23 of 2020 on non-commercial imports of e-cigarettes, with no exception for prescriptions. GSTHR says references suggest personal import is not allowed. Do not pack a vape for Cuba without written confirmation."
+   ],
    [
     "How common is vaping in Cuba?",
     "Adolescents: 6.1% of adolescents currently use e-cigarettes (boys 7.6%, girls 4.2%) in the survey \"Global Youth Tobacco Survey, 2018\" (national, ages 13-15)."
@@ -2327,11 +2651,55 @@
     "6.1% of adolescents currently use e-cigarettes (boys 7.6%, girls 4.2%) in the survey \"Global Youth Tobacco Survey, 2018\" (national, ages 13-15)."
    ]
   ],
-  "src": [],
+  "src": [
+   [
+    "https://www.directoriocubano.info/?p=99663",
+    "Less reliable source (press): Directorio Cubano - customs position on e-cigarettes in Cuba"
+   ],
+   [
+    "https://gsthr.org/countries/profile/cub/e_cigarettes/",
+    "Less reliable source (secondary profile): Global State of Tobacco Harm Reduction - e-cigarettes in Cuba"
+   ]
+  ],
   "keepSchema": true
  },
  "CY": {
   "sections": [
+   {
+    "h": "🛃 What Cyprus Customs says about e-cigarette liquid",
+    "p": "From the Department of Customs and Excise pages \"Channel system and concessions\" (last updated 5 February 2020) and \"Excise Duties - General Information\", both read 21 November 2026. The allowance page lists tobacco products but not vapes.",
+    "table": {
+     "head": [
+      "Item",
+      "What Cyprus Customs says"
+     ],
+     "rows": [
+      [
+       "Allowance list for travellers entering Cyprus",
+       "Cigarettes 200, cigarillos 100, cigars 50 or smoking tobacco 250 g; e-cigarette liquid is not named"
+      ],
+      [
+       "Other goods for personal use or gifts",
+       "Value up to 430 euros per person, 175 euros for travellers under 15"
+      ],
+      [
+       "Under 17",
+       "No relief on tobacco products and alcohol"
+      ],
+      [
+       "Excise on e-cigarette liquid",
+       "Liquid used in electronic cigarettes, whether or not it contains nicotine: 0.12 euro per ml"
+      ],
+      [
+       "More than the allowance, or restricted goods",
+       "Use the red channel and declare them"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>Not read:</strong> any Cyprus Customs figure in millilitres for travellers, and whether liquid counts as \"other goods\" under the 430 euro cap."
+    ]
+   },
    {
     "h": "📊 How common vaping is in Cyprus, per the WHO survey figures",
     "p": "From the same WHO report on the global tobacco epidemic 2023, country profile for Cyprus, table \"Tobacco use prevalence from the latest survey\". These are survey results, not a law or a customs rule, and each survey has its own age group.",
@@ -2356,11 +2724,19 @@
      ]
     },
     "list": [
-     "<strong>How to read it:</strong> \"current\" means the survey&rsquo;s own definition of current use; WHO prints the surveys&rsquo; figures as published and does not harmonise them."
+     "<strong>How to read it:</strong> \"current\" is each survey&rsquo;s own definition of current use."
     ]
    }
   ],
   "faq": [
+   [
+    "Is there a limit in millilitres for vape liquid in Cyprus?",
+    "The Department of Customs and Excise page for travellers names no limit for e-cigarette liquid. It lists tobacco allowances and a 430 euro value cap for other goods."
+   ],
+   [
+    "Is nicotine-free vape liquid taxed in Cyprus?",
+    "The Customs excise page says liquid used in electronic cigarettes is subject to excise duty of 0.12 euro per ml whether or not it contains nicotine."
+   ],
    [
     "How common is vaping in Cyprus?",
     "Adolescents: 10.0% of adolescents currently use e-cigarettes (boys 14.0%, girls 7.5%) in the survey \"European School Survey Project on Alcohol and Other Drugs, 2019\" (national, ages 15 -16)."
@@ -2370,11 +2746,51 @@
     "10.0% of adolescents currently use e-cigarettes (boys 14.0%, girls 7.5%) in the survey \"European School Survey Project on Alcohol and Other Drugs, 2019\" (national, ages 15 -16)."
    ]
   ],
-  "src": [],
+  "src": [
+   [
+    "https://www.mof.gov.cy/mof/customs/customs.nsf/All/D8E0334067181B47C22572BF002DF37C?OpenDocument=",
+    "Cyprus Customs and Excise - Travellers, channel system and concessions"
+   ],
+   [
+    "https://www.mof.gov.cy/mof/customs/customs.nsf/All/A2C3593B5465A799422577D6002FEAC4",
+    "Cyprus Customs and Excise - Excise duties, general information"
+   ]
+  ],
   "keepSchema": true
  },
  "DK": {
   "sections": [
+   {
+    "h": "🛃 What the Danish tax authority says about nicotine liquids",
+    "p": "From the Danish Tax Agency legal guidance, section E.A.5.4.5 \"Afgiftens størrelse og beregning\" (version 3.17, valid from 31 July 2026, translated from Danish, read 21 November 2026). It is the excise rate for nicotine liquids, not a traveller allowance.",
+    "table": {
+     "head": [
+      "Item",
+      "What the guidance says"
+     ],
+     "rows": [
+      [
+       "Nicotine liquid with 12 mg nicotine per ml or less",
+       "1.50 kroner per ml"
+      ],
+      [
+       "Nicotine liquid with more than 12 mg nicotine per ml",
+       "2.50 kroner per ml"
+      ],
+      [
+       "Container with no label, or a label that does not show the nicotine content",
+       "Taxed at the higher 2.50 kroner rate if the content cannot be established"
+      ],
+      [
+       "Nicotine products (pouches)",
+       "10 ore per mg of nicotine"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>Not read:</strong> a Danish Customs figure for how much liquid a traveller may bring in without tax. Ask the Danish Customs Agency before bringing more than a small supply."
+    ]
+   },
    {
     "h": "📊 How common vaping is in Denmark, per the WHO survey figures",
     "p": "From the same WHO report on the global tobacco epidemic 2023, country profile for Denmark, table \"Tobacco use prevalence from the latest survey\". These are survey results, not a law or a customs rule, and each survey has its own age group.",
@@ -2399,11 +2815,15 @@
      ]
     },
     "list": [
-     "<strong>How to read it:</strong> \"current\" means the survey&rsquo;s own definition of current use; WHO prints the surveys&rsquo; figures as published and does not harmonise them."
+     "<strong>How to read it:</strong> \"current\" is each survey&rsquo;s own definition of current use."
     ]
    }
   ],
   "faq": [
+   [
+    "How is vape liquid with nicotine taxed in Denmark?",
+    "The Danish Tax Agency guidance lists 1.50 kroner per ml for nicotine liquid with 12 mg per ml or less and 2.50 kroner per ml above that. Liquid with no readable nicotine label is taxed at the higher rate."
+   ],
    [
     "How common is vaping in Denmark?",
     "Adolescents: 14.0% of adolescents currently use e-cigarettes (boys 19.0%, girls 10.0%) in the survey \"European School Survey Project on Alcohol and Other Drugs, 2019\" (national, ages 15-16)."
@@ -2413,11 +2833,47 @@
     "14.0% of adolescents currently use e-cigarettes (boys 19.0%, girls 10.0%) in the survey \"European School Survey Project on Alcohol and Other Drugs, 2019\" (national, ages 15-16)."
    ]
   ],
-  "src": [],
+  "src": [
+   [
+    "https://info.skat.dk/data.aspx?oid=2350652",
+    "Danish Tax Agency - legal guidance E.A.5.4.5, size and calculation of the tax (Danish)"
+   ]
+  ],
   "keepSchema": true
  },
  "FJ": {
   "sections": [
+   {
+    "h": "📰 What a secondary profile reports about e-cigarettes in Fiji",
+    "p": "Less reliable source (secondary profile): the Global State of Tobacco Harm Reduction (GSTHR) country page, updated 16 November 2026 and read on 22 November 2026. It compiles other sources and is not a customs page. The official customs rule for travellers could not be read, so treat this as background and confirm with customs.",
+    "table": {
+     "head": [
+      "Point",
+      "What GSTHR reports"
+     ],
+     "rows": [
+      [
+       "Legal status",
+       "Allowed, including online purchase"
+      ],
+      [
+       "Retail",
+       "Sale needs a licence"
+      ],
+      [
+       "Product rules",
+       "Health warnings required; no limits on flavours or nicotine"
+      ],
+      [
+       "Age and public use",
+       "18 to buy; vaping prohibited in public places"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>Not read:</strong> the Fiji Revenue and Customs traveller allowance."
+    ]
+   },
    {
     "h": "📊 How common vaping is in Fiji, per the WHO survey figures",
     "p": "From the same WHO report on the global tobacco epidemic 2023, country profile for Fiji, table \"Tobacco use prevalence from the latest survey\". These are survey results, not a law or a customs rule, and each survey has its own age group.",
@@ -2442,11 +2898,15 @@
      ]
     },
     "list": [
-     "<strong>How to read it:</strong> \"current\" means the survey&rsquo;s own definition of current use; WHO prints the surveys&rsquo; figures as published and does not harmonise them."
+     "<strong>How to read it:</strong> \"current\" is each survey&rsquo;s own definition of current use."
     ]
    }
   ],
   "faq": [
+   [
+    "Is vaping legal in Fiji?",
+    "A secondary profile (GSTHR) says vaping is allowed in Fiji, with licensed retail, health warnings and a ban on use in public places. It gives no traveller allowance, so check Fiji customs."
+   ],
    [
     "How common is vaping in Fiji?",
     "Adolescents: 11.9% of adolescents currently use e-cigarettes in the survey \"Global Youth Tobacco Survey, 2016\" (national, ages 13-15)."
@@ -2456,7 +2916,12 @@
     "11.9% of adolescents currently use e-cigarettes in the survey \"Global Youth Tobacco Survey, 2016\" (national, ages 13-15)."
    ]
   ],
-  "src": [],
+  "src": [
+   [
+    "https://gsthr.org/countries/profile/fji/e_cigarettes/",
+    "Less reliable source (secondary profile): Global State of Tobacco Harm Reduction - e-cigarettes in Fiji"
+   ]
+  ],
   "keepSchema": true
  },
  "GE": {
@@ -2501,7 +2966,7 @@
      ]
     },
     "list": [
-     "<strong>How to read it:</strong> \"current\" means the survey&rsquo;s own definition of current use; WHO prints the surveys&rsquo; figures as published and does not harmonise them."
+     "<strong>How to read it:</strong> \"current\" is each survey&rsquo;s own definition of current use."
     ]
    }
   ],
@@ -2520,6 +2985,33 @@
  },
  "GR": {
   "sections": [
+   {
+    "h": "🛃 What the Greek Customs authority says about e-cigarette refill fluids",
+    "p": "From the Independent Authority for Public Revenue (AADE) page \"Other National Taxes\" (English, no date shown, read 21 November 2026). It is an information page on national excise duty, not a traveller allowance table.",
+    "table": {
+     "head": [
+      "Item",
+      "What AADE says"
+     ],
+     "rows": [
+      [
+       "E-cigarette replenishment fluids",
+       "Subject to national excise duty, outside the harmonised EU excise rules"
+      ],
+      [
+       "Electrically heated tobacco products",
+       "Subject to the same national excise page"
+      ],
+      [
+       "Status of the page",
+       "Informative; the texts are not binding for the Administration and do not replace the legal acts in force"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>Not read:</strong> any AADE figure in millilitres for travellers bringing e-liquid in luggage. Ask Greek Customs before bringing more than a small supply."
+    ]
+   },
    {
     "h": "📊 How common vaping is in Greece, per the WHO survey figures",
     "p": "From the same WHO report on the global tobacco epidemic 2023, country profile for Greece, table \"Tobacco use prevalence from the latest survey\". These are survey results, not a law or a customs rule, and each survey has its own age group.",
@@ -2544,11 +3036,15 @@
      ]
     },
     "list": [
-     "<strong>How to read it:</strong> \"current\" means the survey&rsquo;s own definition of current use; WHO prints the surveys&rsquo; figures as published and does not harmonise them."
+     "<strong>How to read it:</strong> \"current\" is each survey&rsquo;s own definition of current use."
     ]
    }
   ],
   "faq": [
+   [
+    "Is e-cigarette liquid taxed in Greece?",
+    "AADE lists electronic cigarette replenishment fluids among the products under national excise duty. It gives no traveller allowance in millilitres on that page."
+   ],
    [
     "How common is vaping in Greece?",
     "Adolescents: 11.0% of adolescents currently use e-cigarettes (boys 15.0%, girls 7.6%) in the survey \"European School Survey Project on Alcohol and Other Drugs, 2019\" (national, ages 15-16)."
@@ -2558,7 +3054,12 @@
     "11.0% of adolescents currently use e-cigarettes (boys 15.0%, girls 7.6%) in the survey \"European School Survey Project on Alcohol and Other Drugs, 2019\" (national, ages 15-16)."
    ]
   ],
-  "src": [],
+  "src": [
+   [
+    "https://www.aade.gr/en/customs/other-national-taxes",
+    "Greek Independent Authority for Public Revenue (AADE) - Other national taxes"
+   ]
+  ],
   "keepSchema": true
  },
  "HR": {
@@ -2623,7 +3124,7 @@
      ]
     },
     "list": [
-     "<strong>How to read it:</strong> \"current\" means the survey&rsquo;s own definition of current use; WHO prints the surveys&rsquo; figures as published and does not harmonise them."
+     "<strong>How to read it:</strong> \"current\" is each survey&rsquo;s own definition of current use."
     ]
    }
   ],
@@ -2656,6 +3157,53 @@
  "ID": {
   "sections": [
    {
+    "h": "📰 What Indonesian tax news reports from Finance Ministry Regulation 82/2024",
+    "p": "Less reliable source (press): DDTCNews, \"Olahan Tembakau dan Rokok Elektrik dari Luar Negeri Bisa Bebas Cukai\" (6 November 2024, translated from Indonesian), quoting Article 36 of Finance Minister Regulation (PMK) No. 82/2024. The Directorate General of Customs and Excise pages could not be reached from here, so the figures are as reported.",
+    "table": {
+     "head": [
+      "Item",
+      "What DDTCNews reports (per adult passenger)"
+     ],
+     "rows": [
+      [
+       "Open-system liquid e-cigarette",
+       "Up to 30 ml excise-free"
+      ],
+      [
+       "Closed-system liquid e-cigarette",
+       "Up to 12 ml excise-free"
+      ],
+      [
+       "Solid e-cigarette",
+       "Up to 140 sticks or 40 capsules"
+      ],
+      [
+       "Cigarettes",
+       "Up to 200"
+      ],
+      [
+       "Heated tobacco and other processed tobacco",
+       "Up to 100 g"
+      ],
+      [
+       "Crew members",
+       "Open-system liquid 15 ml, closed-system 6 ml"
+      ],
+      [
+       "Parcels from abroad",
+       "Per recipient per shipment: open-system liquid 15 ml, closed-system 6 ml"
+      ],
+      [
+       "Several tobacco types together",
+       "Relief is given proportionally within each type's limit"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>Not read:</strong> the regulation text, any later amendment, and a Customs page for travellers. The figures are from November 2024; confirm with Indonesian customs before you travel."
+    ]
+   },
+   {
     "h": "📊 How common vaping is in Indonesia, per the WHO survey figures",
     "p": "From the same WHO report on the global tobacco epidemic 2023, country profile for Indonesia, table \"Tobacco use prevalence from the latest survey\". These are survey results, not a law or a customs rule, and each survey has its own age group.",
     "table": {
@@ -2683,11 +3231,15 @@
      ]
     },
     "list": [
-     "<strong>How to read it:</strong> \"current\" means the survey&rsquo;s own definition of current use; WHO prints the surveys&rsquo; figures as published and does not harmonise them."
+     "<strong>How to read it:</strong> \"current\" is each survey&rsquo;s own definition of current use."
     ]
    }
   ],
   "faq": [
+   [
+    "How much vape liquid can I bring into Indonesia?",
+    "DDTCNews, quoting PMK 82/2024, reports an excise-free limit per adult passenger of 30 ml for open-system liquid e-cigarettes or 12 ml for closed-system ones, plus 140 sticks or 40 capsules of solid e-cigarettes."
+   ],
    [
     "How common is vaping in Indonesia?",
     "Adults: 3.0% of adults currently use e-cigarettes (men 5.8%, women 0.3%), and 0.3% use them daily in the survey \"Global Adult Tobacco Survey (GATS), 2021\" (national, ages 15+)."
@@ -2697,11 +3249,47 @@
     "3.0% of adults currently use e-cigarettes (men 5.8%, women 0.3%), and 0.3% use them daily in the survey \"Global Adult Tobacco Survey (GATS), 2021\" (national, ages 15+)."
    ]
   ],
-  "src": [],
+  "src": [
+   [
+    "https://news.ddtc.co.id/berita/nasional/1806663/olahan-tembakau-dan-rokok-elektrik-dari-luar-negeri-bisa-bebas-cukai",
+    "Less reliable source (press): DDTCNews - PMK 82/2024, tobacco products and e-cigarettes from abroad"
+   ]
+  ],
   "keepSchema": true
  },
  "IT": {
   "sections": [
+   {
+    "h": "🛃 What the Italian customs traveller card says about tobacco",
+    "p": "From the Agenzia delle Dogane e dei Monopoli (ADM) \"Carta doganale del viaggiatore\", July 2025 edition, read in full on 22 November 2026. The card lists tobacco and alcohol allowances. It does not mention e-cigarettes, vape liquid or nicotine.",
+    "table": {
+     "head": [
+      "Item",
+      "What the ADM card says"
+     ],
+     "rows": [
+      [
+       "Cigarettes bought outside the EU",
+       "Up to 200"
+      ],
+      [
+       "Cigarillos (max 3 g each) / cigars / smoking tobacco",
+       "100 / 50 / 250 g"
+      ],
+      [
+       "Cigarettes within the EU",
+       "Up to 800 (cigarillos 400, cigars 200, smoking tobacco 1 kg)"
+      ],
+      [
+       "E-cigarettes and inhalation liquid",
+       "Not named on the card"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>Not read:</strong> any ADM determination that sets a limit for inhalation liquids. Ask Italian customs before carrying more than a device and a few pods."
+    ]
+   },
    {
     "h": "📊 How common vaping is in Italy, per the WHO survey figures",
     "p": "From the same WHO report on the global tobacco epidemic 2023, country profile for Italy, table \"Tobacco use prevalence from the latest survey\". These are survey results, not a law or a customs rule, and each survey has its own age group.",
@@ -2738,11 +3326,15 @@
      ]
     },
     "list": [
-     "<strong>How to read it:</strong> \"current\" means the survey&rsquo;s own definition of current use; WHO prints the surveys&rsquo; figures as published and does not harmonise them."
+     "<strong>How to read it:</strong> \"current\" is each survey&rsquo;s own definition of current use."
     ]
    }
   ],
   "faq": [
+   [
+    "Is there a limit for vape liquid in Italy?",
+    "The July 2025 ADM traveller card gives limits for cigarettes, cigarillos, cigars and smoking tobacco only. It does not name e-cigarettes or liquid, so check with Italian customs."
+   ],
    [
     "How common is vaping in Italy?",
     "Adults: 1.7% of adults currently use e-cigarettes in the survey \"Survey by DOXA/ISS, 2022\" (national, ages 15+). Adolescents: 13.0% of adolescents currently use e-cigarettes (boys 15.0%, girls 12.0%) in the survey \"European School Survey Project on Alcohol and Other Drugs, 2019\" (national, ages 15-16)."
@@ -2752,11 +3344,43 @@
     "1.7% of adults currently use e-cigarettes in the survey \"Survey by DOXA/ISS, 2022\" (national, ages 15+)."
    ]
   ],
-  "src": [],
+  "src": [
+   [
+    "https://www.adm.gov.it/portale/documents/20182/909438/Carta+doganale+del+viaggiatore_luglio+2025.pdf",
+    "ADM - Carta doganale del viaggiatore, July 2025"
+   ]
+  ],
   "keepSchema": true
  },
  "JM": {
   "sections": [
+   {
+    "h": "📰 What a secondary profile reports about e-cigarettes in Jamaica",
+    "p": "Less reliable source (secondary profile): the Global State of Tobacco Harm Reduction (GSTHR) country page, updated 16 November 2026 and read on 22 November 2026. It compiles other sources and is not a customs page. The official customs rule for travellers could not be read, so treat this as background and confirm with customs.",
+    "table": {
+     "head": [
+      "Point",
+      "What GSTHR reports"
+     ],
+     "rows": [
+      [
+       "Legal status",
+       "Allowed, including online purchase"
+      ],
+      [
+       "Product rules",
+       "No limits on nicotine strength or flavours; no health warning required on packs"
+      ],
+      [
+       "Use in public",
+       "Restricted in public places"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>Not read:</strong> Jamaica Customs Agency traveller rules (the site had a certificate error) and any rule naming vapes."
+    ]
+   },
    {
     "h": "📊 How common vaping is in Jamaica, per the WHO survey figures",
     "p": "From the same WHO report on the global tobacco epidemic 2023, country profile for Jamaica, table \"Tobacco use prevalence from the latest survey\". These are survey results, not a law or a customs rule, and each survey has its own age group.",
@@ -2781,11 +3405,15 @@
      ]
     },
     "list": [
-     "<strong>How to read it:</strong> \"current\" means the survey&rsquo;s own definition of current use; WHO prints the surveys&rsquo; figures as published and does not harmonise them."
+     "<strong>How to read it:</strong> \"current\" is each survey&rsquo;s own definition of current use."
     ]
    }
   ],
   "faq": [
+   [
+    "Is vaping legal in Jamaica?",
+    "A secondary profile (GSTHR) says vaping is allowed in Jamaica with no nicotine or flavour limits, but use in public places is restricted. It gives no traveller allowance, so check Jamaica Customs."
+   ],
    [
     "How common is vaping in Jamaica?",
     "Adolescents: 11.7% of adolescents currently use e-cigarettes (boys 13.7%, girls 9.7%) in the survey \"Global Youth Tobacco Survey, 2017\" (national, ages 13-15)."
@@ -2795,11 +3423,43 @@
     "11.7% of adolescents currently use e-cigarettes (boys 13.7%, girls 9.7%) in the survey \"Global Youth Tobacco Survey, 2017\" (national, ages 13-15)."
    ]
   ],
-  "src": [],
+  "src": [
+   [
+    "https://gsthr.org/countries/profile/jam/e_cigarettes/",
+    "Less reliable source (secondary profile): Global State of Tobacco Harm Reduction - e-cigarettes in Jamaica"
+   ]
+  ],
   "keepSchema": true
  },
  "KH": {
   "sections": [
+   {
+    "h": "📰 What a secondary profile reports about e-cigarettes in Cambodia",
+    "p": "Less reliable source (secondary profile): the Global State of Tobacco Harm Reduction (GSTHR) country page, updated 16 November 2026 and read on 22 November 2026. It compiles other sources and is not a customs page. The official customs rule for travellers could not be read, so treat this as background and confirm with customs.",
+    "table": {
+     "head": [
+      "Point",
+      "What GSTHR reports"
+     ],
+     "rows": [
+      [
+       "Status",
+       "Banned by law"
+      ],
+      [
+       "Covered",
+       "Sale, import and advertising"
+      ],
+      [
+       "Use",
+       "Reported prevalence of vaping at 0% in 2021"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>Not read:</strong> the Cambodian customs rule for travellers and the text of the ban."
+    ]
+   },
    {
     "h": "📊 How common vaping is in Cambodia, per the WHO survey figures",
     "p": "From the same WHO report on the global tobacco epidemic 2023, country profile for Cambodia, table \"Tobacco use prevalence from the latest survey\". These are survey results, not a law or a customs rule, and each survey has its own age group.",
@@ -2836,11 +3496,15 @@
      ]
     },
     "list": [
-     "<strong>How to read it:</strong> \"current\" means the survey&rsquo;s own definition of current use; WHO prints the surveys&rsquo; figures as published and does not harmonise them."
+     "<strong>How to read it:</strong> \"current\" is each survey&rsquo;s own definition of current use."
     ]
    }
   ],
   "faq": [
+   [
+    "Can I bring a vape to Cambodia?",
+    "A secondary profile (GSTHR) says e-cigarettes are banned in Cambodia, including sale, import and advertising. Do not pack one without checking with Cambodian customs."
+   ],
    [
     "How common is vaping in Cambodia?",
     "Adults: 0.0% of adults currently use e-cigarettes (men 0.0%, women 0.0%) in the survey \"National Adult Tobacco Survey of Cambodia, 2021\" (national, ages 15+). Adolescents: 0.9% of adolescents currently use e-cigarettes (boys 1.1%, girls 0.8%) in the survey \"Global Youth Tobacco Survey, 2022\" (national, ages 13-15)."
@@ -2850,11 +3514,51 @@
     "0.0% of adults currently use e-cigarettes (men 0.0%, women 0.0%) in the survey \"National Adult Tobacco Survey of Cambodia, 2021\" (national, ages 15+)."
    ]
   ],
-  "src": [],
+  "src": [
+   [
+    "https://gsthr.org/countries/profile/khm/e_cigarettes/",
+    "Less reliable source (secondary profile): Global State of Tobacco Harm Reduction - e-cigarettes in Cambodia"
+   ]
+  ],
   "keepSchema": true
  },
  "LT": {
   "sections": [
+   {
+    "h": "📰 What a secondary profile reports about e-cigarettes in Lithuania",
+    "p": "Less reliable source (secondary profile): the Global State of Tobacco Harm Reduction (GSTHR) country page, updated 16 November 2026 and read on 22 November 2026. It compiles other sources and is not a customs page. The official customs rule for travellers could not be read, so treat this as background and confirm with customs.",
+    "table": {
+     "head": [
+      "Point",
+      "What GSTHR reports"
+     ],
+     "rows": [
+      [
+       "Legal status",
+       "Legal and regulated as tobacco products"
+      ],
+      [
+       "Sales",
+       "Sold in ordinary shops; online sales and health claims are banned"
+      ],
+      [
+       "Product limits",
+       "Nicotine up to 20 mg/ml, tanks of 2 ml or less, flavour restrictions"
+      ],
+      [
+       "Excise",
+       "Up to 10% of the rate on conventional cigarettes"
+      ],
+      [
+       "Age and public use",
+       "18 and over; vaping restricted in public places"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>Not read:</strong> the Lithuanian customs traveller allowance for e-liquid and the current law text."
+    ]
+   },
    {
     "h": "📊 How common vaping is in Lithuania, per the WHO survey figures",
     "p": "From the same WHO report on the global tobacco epidemic 2023, country profile for Lithuania, table \"Tobacco use prevalence from the latest survey\". These are survey results, not a law or a customs rule, and each survey has its own age group.",
@@ -2879,11 +3583,15 @@
      ]
     },
     "list": [
-     "<strong>How to read it:</strong> \"current\" means the survey&rsquo;s own definition of current use; WHO prints the surveys&rsquo; figures as published and does not harmonise them."
+     "<strong>How to read it:</strong> \"current\" is each survey&rsquo;s own definition of current use."
     ]
    }
   ],
   "faq": [
+   [
+    "Can I vape or bring e-liquid in Lithuania?",
+    "GSTHR describes e-cigarettes in Lithuania as legal and regulated like tobacco, with a 20 mg/ml nicotine cap and 2 ml tanks. It gives no traveller allowance, so check Lithuanian customs."
+   ],
    [
     "How common is vaping in Lithuania?",
     "Adolescents: 31.0% of adolescents currently use e-cigarettes (boys 34.0%, girls 29.0%) in the survey \"European School Survey Project on Alcohol and Other Drugs (ESPAD), 2019\" (national, ages 15-16)."
@@ -2893,7 +3601,12 @@
     "31.0% of adolescents currently use e-cigarettes (boys 34.0%, girls 29.0%) in the survey \"European School Survey Project on Alcohol and Other Drugs (ESPAD), 2019\" (national, ages 15-16)."
    ]
   ],
-  "src": [],
+  "src": [
+   [
+    "https://gsthr.org/countries/profile/ltu/e_cigarettes/",
+    "Less reliable source (secondary profile): Global State of Tobacco Harm Reduction - e-cigarettes in Lithuania"
+   ]
+  ],
   "keepSchema": true
  },
  "LU": {
@@ -2957,7 +3670,7 @@
      ]
     },
     "list": [
-     "<strong>How to read it:</strong> \"current\" means the survey&rsquo;s own definition of current use; WHO prints the surveys&rsquo; figures as published and does not harmonise them."
+     "<strong>How to read it:</strong> \"current\" is each survey&rsquo;s own definition of current use."
     ]
    }
   ],
@@ -2994,6 +3707,37 @@
  "MA": {
   "sections": [
    {
+    "h": "📰 What a secondary profile reports about e-cigarettes in Morocco",
+    "p": "Less reliable source (secondary profile): the Global State of Tobacco Harm Reduction (GSTHR) country page, updated 16 November 2026 and read on 22 November 2026. It compiles other sources and is not a customs page. The official customs rule for travellers could not be read, so treat this as background and confirm with customs.",
+    "table": {
+     "head": [
+      "Point",
+      "What GSTHR reports"
+     ],
+     "rows": [
+      [
+       "Specific law",
+       "GSTHR says there is no specific e-cigarette law"
+      ],
+      [
+       "Personal import",
+       "Relayed from a vape retailer blog: bringing vapes for personal use is generally allowed; the profile advises checking the airline"
+      ],
+      [
+       "Minimum age",
+       "Unclear; the smoking age of 18 is suggested"
+      ],
+      [
+       "Public places",
+       "Smoking is banned in mosques, schools, hospitals and public transport; vaping there is not encouraged"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>Not read:</strong> any ADII (Moroccan customs) figure for travellers. Search results show customs duty and excise on e-cigarettes and a mandatory product standard from 2026, which are not baggage rules."
+    ]
+   },
+   {
     "h": "📊 How common vaping is in Morocco, per the WHO survey figures",
     "p": "From the same WHO report on the global tobacco epidemic 2023, country profile for Morocco, table \"Tobacco use prevalence from the latest survey\". These are survey results, not a law or a customs rule, and each survey has its own age group.",
     "table": {
@@ -3017,11 +3761,15 @@
      ]
     },
     "list": [
-     "<strong>How to read it:</strong> \"current\" means the survey&rsquo;s own definition of current use; WHO prints the surveys&rsquo; figures as published and does not harmonise them."
+     "<strong>How to read it:</strong> \"current\" is each survey&rsquo;s own definition of current use."
     ]
    }
   ],
   "faq": [
+   [
+    "Can I bring a vape to Morocco?",
+    "A secondary profile (GSTHR) says there is no specific e-cigarette law and relays that personal-use vapes are generally allowed, citing a vape retailer blog. Customs duties on e-cigarettes are high, so confirm the rule with Moroccan customs."
+   ],
    [
     "How common is vaping in Morocco?",
     "Adolescents: 5.3% of adolescents currently use e-cigarettes (boys 6.3%, girls 4.3%) in the survey \"Global Youth Tobacco Survey, 2016\" (national, ages 13-15)."
@@ -3031,11 +3779,43 @@
     "5.3% of adolescents currently use e-cigarettes (boys 6.3%, girls 4.3%) in the survey \"Global Youth Tobacco Survey, 2016\" (national, ages 13-15)."
    ]
   ],
-  "src": [],
+  "src": [
+   [
+    "https://gsthr.org/countries/profile/mar/e_cigarettes/",
+    "Less reliable source (secondary profile): Global State of Tobacco Harm Reduction - e-cigarettes in Morocco"
+   ]
+  ],
   "keepSchema": true
  },
  "MT": {
   "sections": [
+   {
+    "h": "🛃 What Malta Customs says about tobacco allowances",
+    "p": "From the Malta Customs page \"Accompanied Excise Goods From EU or From Third Countries\" (updated 18 December 2020, page last updated 22 January 2026, read 21 November 2026). The page covers tobacco and alcohol and does not name e-cigarettes or vape liquid.",
+    "table": {
+     "head": [
+      "Item",
+      "What Malta Customs says"
+     ],
+     "rows": [
+      [
+       "Tobacco from outside the EU (excise exemption, LN 72 of 2009)",
+       "200 cigarettes, 100 cigarillos, 50 cigars or 250 g of smoking tobacco"
+      ],
+      [
+       "Tobacco bought duty paid in another EU state",
+       "Own use only; Malta may use guide levels as evidence, not lower than 800 cigarettes, 400 cigarillos, 200 cigars or 1 kg of smoking tobacco"
+      ],
+      [
+       "E-cigarette liquid",
+       "Not named on the page"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>Not read:</strong> any Malta Customs figure for e-liquid or devices."
+    ]
+   },
    {
     "h": "📊 How common vaping is in Malta, per the WHO survey figures",
     "p": "From the same WHO report on the global tobacco epidemic 2023, country profile for Malta, table \"Tobacco use prevalence from the latest survey\". These are survey results, not a law or a customs rule, and each survey has its own age group.",
@@ -3068,11 +3848,15 @@
      ]
     },
     "list": [
-     "<strong>How to read it:</strong> \"current\" means the survey&rsquo;s own definition of current use; WHO prints the surveys&rsquo; figures as published and does not harmonise them."
+     "<strong>How to read it:</strong> \"current\" is each survey&rsquo;s own definition of current use."
     ]
    }
   ],
   "faq": [
+   [
+    "Is there a limit for vape liquid in Malta?",
+    "The Malta Customs page on accompanied excise goods lists only tobacco and alcohol limits and does not name e-cigarette liquid."
+   ],
    [
     "How common is vaping in Malta?",
     "Adults: 1.0% of adults currently use e-cigarettes in the survey \"Eurobarometer, 2020\" (national, ages 15+). Adolescents: 7.1% of adolescents currently use e-cigarettes (boys 7.7%, girls 6.5%) in the survey \"European School Survey Project on Alcohol and Other Drugs, 2019\" (national, ages 15-16)."
@@ -3082,7 +3866,12 @@
     "1.0% of adults currently use e-cigarettes in the survey \"Eurobarometer, 2020\" (national, ages 15+)."
    ]
   ],
-  "src": [],
+  "src": [
+   [
+    "https://mtca.gov.mt/customs/individual/accompanied-excise-goods-from-eu-or-from-third-countries",
+    "Malta Customs - Accompanied excise goods from the EU or from third countries"
+   ]
+  ],
   "keepSchema": true
  },
  "MY": {
@@ -3123,7 +3912,7 @@
      ]
     },
     "list": [
-     "<strong>How to read it:</strong> \"current\" means the survey&rsquo;s own definition of current use; WHO prints the surveys&rsquo; figures as published and does not harmonise them."
+     "<strong>How to read it:</strong> \"current\" is each survey&rsquo;s own definition of current use."
     ]
    }
   ],
@@ -3142,6 +3931,41 @@
  },
  "NZ": {
   "sections": [
+   {
+    "h": "🛃 What New Zealand Customs says about vaporisers and tobacco",
+    "p": "From the New Zealand Customs Service pages \"Equipment for smoking or taking drugs\" (under prohibited and restricted items) and \"Duty-free shopping\", read on 22 November 2026. Customs lists vaporisers and their parts among the methamphetamine and cannabis utensils that you cannot bring in.",
+    "table": {
+     "head": [
+      "Item",
+      "What NZ Customs says"
+     ],
+     "rows": [
+      [
+       "Vaporisers and their parts",
+       "Prohibited, listed with methamphetamine and cannabis utensils"
+      ],
+      [
+       "Exception",
+       "Vaporisers approved as a medical device by an overseas regulator; tobacco pipes are also allowed"
+      ],
+      [
+       "Duty-free tobacco",
+       "50 cigarettes, or 50 g of cigars or tobacco products, or 50 g of a mixture"
+      ],
+      [
+       "Above the limit",
+       "Declare it on the Traveller Declaration and pay duty and GST; undeclared tobacco is seized and destroyed, and you may be fined or prosecuted"
+      ],
+      [
+       "Age for tobacco concession",
+       "17 or older"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>Not read:</strong> any Customs allowance for nicotine e-liquid itself. Declare a vape on the New Zealand Traveller Declaration and ask Customs if unsure."
+    ]
+   },
    {
     "h": "📊 How common vaping is in New Zealand, per the WHO survey figures",
     "p": "From the same WHO report on the global tobacco epidemic 2025, country profile for New Zealand, table \"Tobacco use prevalence from the latest survey\". These are survey results, not a law or a customs rule, and each survey has its own age group.",
@@ -3178,11 +4002,15 @@
      ]
     },
     "list": [
-     "<strong>How to read it:</strong> \"current\" means the survey&rsquo;s own definition of current use; WHO prints the surveys&rsquo; figures as published and does not harmonise them."
+     "<strong>How to read it:</strong> \"current\" is each survey&rsquo;s own definition of current use."
     ]
    }
   ],
   "faq": [
+   [
+    "Can I bring a vaporiser into New Zealand?",
+    "The New Zealand Customs page on equipment for smoking or taking drugs lists vaporisers and their parts as prohibited, except vaporisers approved as a medical device by an overseas regulator. Declare it on arrival and ask Customs if you are unsure."
+   ],
    [
     "How common is vaping in New Zealand?",
     "Adults: 14.0% of adults currently use e-cigarettes (men 14.7%, women 13.2%), and 11.1% use them daily in the survey \"New Zealand Health Survey , 2023-24\" (national, ages 15+). Adolescents: 14.1% of adolescents currently use e-cigarettes, and 8.7% use them daily in the survey \"ASH Year 10 Survey, 2024\" (national, ages 14-15)."
@@ -3192,11 +4020,54 @@
     "14.0% of adults currently use e-cigarettes (men 14.7%, women 13.2%), and 11.1% use them daily in the survey \"New Zealand Health Survey , 2023-24\" (national, ages 15+)."
    ]
   ],
-  "src": [],
-  "keepSchema": true
+  "src": [
+   [
+    "https://www.customs.govt.nz/travel-to-and-from-new-zealand/prohibited-and-restricted-items/equipment-for-smoking-or-taking-drugs",
+    "New Zealand Customs Service - Equipment for smoking or taking drugs"
+   ],
+   [
+    "https://www.customs.govt.nz/travel-to-and-from-new-zealand/duty-free-shopping",
+    "New Zealand Customs Service - Duty-free shopping"
+   ]
+  ],
+  "keepSchema": true,
+  "card": {
+   "status": "stop",
+   "head": "Vaporisers are prohibited at the border.",
+   "lines": [
+    "New Zealand Customs lists vaporisers and their parts as prohibited, except those approved as a medical device by an overseas regulator. Declare it and check with Customs before you pack one."
+   ]
+  }
  },
  "OM": {
   "sections": [
+   {
+    "h": "📰 What a secondary profile reports about e-cigarettes in Oman",
+    "p": "Less reliable source (secondary profile): the Global State of Tobacco Harm Reduction (GSTHR) country page, updated 16 November 2026 and read on 22 November 2026. It compiles other sources and is not a customs page. The official customs rule for travellers could not be read, so treat this as background and confirm with customs.",
+    "table": {
+     "head": [
+      "Point",
+      "What GSTHR reports"
+     ],
+     "rows": [
+      [
+       "Status (January 2025 data)",
+       "Banned: import, sale and use of vapes are described as illegal"
+      ],
+      [
+       "Advertising",
+       "Not clear that all advertising is banned"
+      ],
+      [
+       "Advice",
+       "Travellers should be aware of the strict rules to avoid legal problems"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>Not read:</strong> the Omani customs traveller page (no response), the legal text of the ban and anything newer than January 2025."
+    ]
+   },
    {
     "h": "📊 How common vaping is in Oman, per the WHO survey figures",
     "p": "From the same WHO report on the global tobacco epidemic 2025, country profile for Oman, table \"Tobacco use prevalence from the latest survey\". These are survey results, not a law or a customs rule, and each survey has its own age group.",
@@ -3217,11 +4088,15 @@
      ]
     },
     "list": [
-     "<strong>How to read it:</strong> \"current\" means the survey&rsquo;s own definition of current use; WHO prints the surveys&rsquo; figures as published and does not harmonise them."
+     "<strong>How to read it:</strong> \"current\" is each survey&rsquo;s own definition of current use."
     ]
    }
   ],
   "faq": [
+   [
+    "Can I bring a vape to Oman?",
+    "A secondary profile (GSTHR, January 2025 data) describes vapes as banned in Oman, including import, sale and use. Do not pack one without written confirmation from Omani customs."
+   ],
    [
     "How common is vaping in Oman?",
     "Adults: 5.3% of adults currently use e-cigarettes (men 8.9%, women 2.3%) in the survey \"STEPS Survey, 2017\" (national, ages 15+)."
@@ -3231,11 +4106,51 @@
     "5.3% of adults currently use e-cigarettes (men 8.9%, women 2.3%) in the survey \"STEPS Survey, 2017\" (national, ages 15+)."
    ]
   ],
-  "src": [],
+  "src": [
+   [
+    "https://gsthr.org/countries/profile/omn/e_cigarettes/",
+    "Less reliable source (secondary profile): Global State of Tobacco Harm Reduction - e-cigarettes in Oman"
+   ]
+  ],
   "keepSchema": true
  },
  "PA": {
   "sections": [
+   {
+    "h": "⚖️ What Panama customs said about e-cigarette bills in March 2026",
+    "p": "From the Autoridad Nacional de Aduanas (ANA) news item of 10 March 2026, \"Aduanas expone desafios del control de dispositivos electronicos de nicotina ante la Asamblea Nacional\" (read on 22 November 2026). It reports a hearing in the National Assembly health subcommittee. It is not a traveller allowance, and ANA did not publish a vape limit there.",
+    "table": {
+     "head": [
+      "Point",
+      "What ANA reports"
+     ],
+     "rows": [
+      [
+       "Bill 263",
+       "Would ban use, import and sale of e-cigarettes, vaporizers, heated tobacco heaters and similar devices, with or without nicotine"
+      ],
+      [
+       "Bill 347",
+       "Would amend Law 13 of 25 January 2008 to ban use of these devices in public and private spaces"
+      ],
+      [
+       "Status given",
+       "Both bills at technical analysis stage"
+      ],
+      [
+       "ANA position",
+       "Says more resources, coordination and updated rules are needed to control illicit trade; it will join a future technical working group"
+      ],
+      [
+       "Traveller allowance for vapes",
+       "Not stated"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>Not read:</strong> the bill texts, any vote after March 2026, and the ANA traveller declaration rules. Check the current status with ANA before you bring a vape."
+    ]
+   },
    {
     "h": "📊 How common vaping is in Panama, per the WHO survey figures",
     "p": "From the same WHO report on the global tobacco epidemic 2025, country profile for Panama, table \"Tobacco use prevalence from the latest survey\". These are survey results, not a law or a customs rule, and each survey has its own age group.",
@@ -3256,11 +4171,15 @@
      ]
     },
     "list": [
-     "<strong>How to read it:</strong> \"current\" means the survey&rsquo;s own definition of current use; WHO prints the surveys&rsquo; figures as published and does not harmonise them."
+     "<strong>How to read it:</strong> \"current\" is each survey&rsquo;s own definition of current use."
     ]
    }
   ],
   "faq": [
+   [
+    "Can I bring a vape into Panama?",
+    "ANA reported in March 2026 that two bills were being studied, one of which would ban the import and use of e-cigarettes and vaporizers. Both were still at the analysis stage then, so confirm the current rule with Panama customs before you fly."
+   ],
    [
     "How common is vaping in Panama?",
     "Adults: 8.5% of adults currently use e-cigarettes (men 9.0%, women 8.1%) in the survey \"Encuesta Nacional de Salud, 2019\" (national, ages 15+)."
@@ -3270,11 +4189,55 @@
     "8.5% of adults currently use e-cigarettes (men 9.0%, women 8.1%) in the survey \"Encuesta Nacional de Salud, 2019\" (national, ages 15+)."
    ]
   ],
-  "src": [],
+  "src": [
+   [
+    "https://www.ana.gob.pa/index.php/2026/03/10/aduanas-expone-desafios-del-control-de-dispositivos-electronicos-de-nicotina-ante-la-asamblea-nacional/",
+    "Autoridad Nacional de Aduanas - Aduanas expone desafios del control de dispositivos electronicos de nicotina (10 March 2026)"
+   ]
+  ],
   "keepSchema": true
  },
  "PE": {
   "sections": [
+   {
+    "h": "🛃 What SUNAT says about tobacco in traveller baggage",
+    "p": "From the SUNAT customs guidance for travellers, page \"Bienes considerados como equipaje inafectos al pago de tributos\" (read in full on 22 November 2026). It lists tobacco and alcohol for adults over 18 and many electronic devices, but not e-cigarettes, vape liquid or nicotine.",
+    "table": {
+     "head": [
+      "Item",
+      "What SUNAT says (adults over 18)"
+     ],
+     "rows": [
+      [
+       "Cigarette packs",
+       "Up to 20 packs"
+      ],
+      [
+       "Cigars",
+       "Up to 50"
+      ],
+      [
+       "Cut or strand smoking tobacco",
+       "Up to 250 g"
+      ],
+      [
+       "Liquor",
+       "Up to 3 litres"
+      ],
+      [
+       "Other goods for use or consumption, and gifts",
+       "Up to US$ 500 in total, and not in quantities that suggest trade"
+      ],
+      [
+       "E-cigarettes and vape liquid",
+       "Not named on the page"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>Not read:</strong> any SUNAT rule on e-cigarettes. Ask SUNAT before bringing more than a device and a few pods."
+    ]
+   },
    {
     "h": "📊 How common vaping is in Peru, per the WHO survey figures",
     "p": "From the same WHO report on the global tobacco epidemic 2025, country profile for Peru, table \"Tobacco use prevalence from the latest survey\". These are survey results, not a law or a customs rule, and each survey has its own age group.",
@@ -3299,11 +4262,15 @@
      ]
     },
     "list": [
-     "<strong>How to read it:</strong> \"current\" means the survey&rsquo;s own definition of current use; WHO prints the surveys&rsquo; figures as published and does not harmonise them."
+     "<strong>How to read it:</strong> \"current\" is each survey&rsquo;s own definition of current use."
     ]
    }
   ],
   "faq": [
+   [
+    "Is there a limit for vape liquid in Peru?",
+    "The SUNAT traveller page lists 20 packs of cigarettes, 50 cigars, 250 g of tobacco and 3 litres of liquor for adults, and does not name e-cigarettes or liquid. Check with SUNAT customs."
+   ],
    [
     "How common is vaping in Peru?",
     "Adults: 6.3% of adults currently use e-cigarettes (men 7.1%, women 5.4%) in the survey \"Encuesta Demográfica y de Salud Familiar, 2023\" (national, ages 15+)."
@@ -3313,11 +4280,51 @@
     "6.3% of adults currently use e-cigarettes (men 7.1%, women 5.4%) in the survey \"Encuesta Demográfica y de Salud Familiar, 2023\" (national, ages 15+)."
    ]
   ],
-  "src": [],
+  "src": [
+   [
+    "https://www.sunat.gob.pe/orientacionaduanera/viajeros/equipaje_bienes.html",
+    "SUNAT - Bienes considerados como equipaje inafectos al pago de tributos"
+   ]
+  ],
   "keepSchema": true
  },
  "PH": {
   "sections": [
+   {
+    "h": "⚖️ What Republic Act 11900 says about importers and age",
+    "p": "Unofficial source (reliable): the text of Republic Act No. 11900, the Vaporized Nicotine and Non-Nicotine Products Regulation Act (22 July 2022 law), as published by the Lawphil legal database and read on 22 November 2026. It regulates importation and trade. It does not set a traveller allowance, and the Bureau of Customs site could not be read (HTTP 403).",
+    "table": {
+     "head": [
+      "Point",
+      "What the Act says"
+     ],
+     "rows": [
+      [
+       "Scope",
+       "Regulates importation, manufacture, sale, packaging, distribution, use and communication of vapor products and novel tobacco products"
+      ],
+      [
+       "Minimum age",
+       "18 years to buy, sell and use"
+      ],
+      [
+       "Product registration (Section 19)",
+       "Manufacturers and importers must register vapor devices, refills and heated tobacco products with the DTI"
+      ],
+      [
+       "Online sale (Section 8)",
+       "Allowed for sellers registered with the DTI or SEC, with age checks"
+      ],
+      [
+       "Traveller allowance",
+       "Not stated"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>Not read:</strong> any Bureau of Customs rule for passengers or any later amendment. The Act is about trade; a traveller with a few personal pods should confirm with customs."
+    ]
+   },
    {
     "h": "📊 How common vaping is in Philippines, per the WHO survey figures",
     "p": "From the same WHO report on the global tobacco epidemic 2025, country profile for Philippines, table \"Tobacco use prevalence from the latest survey\". These are survey results, not a law or a customs rule, and each survey has its own age group.",
@@ -3342,11 +4349,15 @@
      ]
     },
     "list": [
-     "<strong>How to read it:</strong> \"current\" means the survey&rsquo;s own definition of current use; WHO prints the surveys&rsquo; figures as published and does not harmonise them."
+     "<strong>How to read it:</strong> \"current\" is each survey&rsquo;s own definition of current use."
     ]
    }
   ],
   "faq": [
+   [
+    "Is vaping legal in the Philippines?",
+    "Yes. Republic Act 11900 regulates rather than bans vapor products: age 18, DTI registration for importers and manufacturers, and registered online sellers. It does not set a traveller allowance, so check with the Bureau of Customs."
+   ],
    [
     "How common is vaping in Philippines?",
     "Adults: 14.1% of adults currently use e-cigarettes (men 20.9%, women 7.5%) in the survey \"Global Adult Tobacco Survey (GATS), 2021\" (national, ages 15+)."
@@ -3356,7 +4367,12 @@
     "14.1% of adults currently use e-cigarettes (men 20.9%, women 7.5%) in the survey \"Global Adult Tobacco Survey (GATS), 2021\" (national, ages 15+)."
    ]
   ],
-  "src": [],
+  "src": [
+   [
+    "https://lawphil.net/statutes/repacts/ra2022/ra_11900_2022.html",
+    "Unofficial source: Lawphil - Republic Act No. 11900 (Vaporized Nicotine and Non-Nicotine Products Regulation Act)"
+   ]
+  ],
   "keepSchema": true
  },
  "QA": {
@@ -3381,7 +4397,7 @@
      ]
     },
     "list": [
-     "<strong>How to read it:</strong> \"current\" means the survey&rsquo;s own definition of current use; WHO prints the surveys&rsquo; figures as published and does not harmonise them."
+     "<strong>How to read it:</strong> \"current\" is each survey&rsquo;s own definition of current use."
     ]
    }
   ],
@@ -3424,7 +4440,7 @@
      ]
     },
     "list": [
-     "<strong>How to read it:</strong> \"current\" means the survey&rsquo;s own definition of current use; WHO prints the surveys&rsquo; figures as published and does not harmonise them."
+     "<strong>How to read it:</strong> \"current\" is each survey&rsquo;s own definition of current use."
     ]
    }
   ],
@@ -3443,6 +4459,41 @@
  },
  "RU": {
   "sections": [
+   {
+    "h": "📰 What a secondary profile reports about e-cigarettes in Russia",
+    "p": "Less reliable source (secondary profile): the Global State of Tobacco Harm Reduction (GSTHR) country page, updated 16 November 2026 and read on 22 November 2026. It compiles other sources and is not a customs page. The official customs rule for travellers could not be read, so treat this as background and confirm with customs.",
+    "table": {
+     "head": [
+      "Point",
+      "What GSTHR reports"
+     ],
+     "rows": [
+      [
+       "Legal status",
+       "Permitted with regulation"
+      ],
+      [
+       "Product rules",
+       "Health warnings required; flavour limits; nicotine set at 20 mg/ml"
+      ],
+      [
+       "Online and machines",
+       "Buying online or from vending machines not allowed"
+      ],
+      [
+       "Advertising",
+       "Completely banned"
+      ],
+      [
+       "Use in public",
+       "No legal ban on public use"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>Not read:</strong> the Russian customs (FCS) rule on how many devices or how much liquid a traveller may carry."
+    ]
+   },
    {
     "h": "📊 How common vaping is in Russia, per the WHO survey figures",
     "p": "From the same WHO report on the global tobacco epidemic 2025, country profile for Russia, table \"Tobacco use prevalence from the latest survey\". These are survey results, not a law or a customs rule, and each survey has its own age group.",
@@ -3475,11 +4526,15 @@
      ]
     },
     "list": [
-     "<strong>How to read it:</strong> \"current\" means the survey&rsquo;s own definition of current use; WHO prints the surveys&rsquo; figures as published and does not harmonise them."
+     "<strong>How to read it:</strong> \"current\" is each survey&rsquo;s own definition of current use."
     ]
    }
   ],
   "faq": [
+   [
+    "Can I bring a vape to Russia?",
+    "A secondary profile (GSTHR) says e-cigarettes are permitted in Russia with a 20 mg/ml nicotine cap and a full advertising ban. It gives no traveller allowance, so check Russian customs."
+   ],
    [
     "How common is vaping in Russia?",
     "Adults: 4.4% of adults currently use e-cigarettes (men 5.2%, women 3.8%) in the survey \"Selective monitoring of the health of the population survey (Rosstat), 2024\" (national, ages 15+). Adolescents: 16.7% of adolescents currently use e-cigarettes (boys 15.8%, girls 17.4%) in the survey \"Global Youth Tobacco Survey, 2021\" (national, ages 13-15)."
@@ -3489,11 +4544,39 @@
     "4.4% of adults currently use e-cigarettes (men 5.2%, women 3.8%) in the survey \"Selective monitoring of the health of the population survey (Rosstat), 2024\" (national, ages 15+)."
    ]
   ],
-  "src": [],
+  "src": [
+   [
+    "https://gsthr.org/countries/profile/rus/e_cigarettes/",
+    "Less reliable source (secondary profile): Global State of Tobacco Harm Reduction - e-cigarettes in Russia"
+   ]
+  ],
   "keepSchema": true
  },
  "SA": {
   "sections": [
+   {
+    "h": "📰 What Saudi press reports about customs and e-cigarettes",
+    "p": "Less reliable source (press): Saudi Gazette / Okaz, 30 August 2020, and industry news site 2Firsts, 27 February 2023 (both read on 22 November 2026). The ZATCA (customs) pages could not be opened from here, so the figures are as reported and may have changed.",
+    "table": {
+     "head": [
+      "Date",
+      "What the press reports"
+     ],
+     "rows": [
+      [
+       "30 August 2020 (Saudi Gazette)",
+       "Saudi Customs banned import of shisha, e-cigarettes and accessories through shipping companies and individuals' websites; seized items are confiscated and a fine imposed. SFDA-licensed companies may import commercial quantities"
+      ],
+      [
+       "27 February 2023 (2Firsts, citing the customs authority)",
+       "Non-frequent adult travellers may carry up to 25 disposable e-cigarettes, at most 125 per person every three months"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>Not read:</strong> the ZATCA traveller pages and the current rule. Confirm the limit with Saudi customs before you travel."
+    ]
+   },
    {
     "h": "📊 How common vaping is in Saudi Arabia, per the WHO survey figures",
     "p": "From the same WHO report on the global tobacco epidemic 2025, country profile for Saudi Arabia, table \"Tobacco use prevalence from the latest survey\". These are survey results, not a law or a customs rule, and each survey has its own age group.",
@@ -3514,11 +4597,15 @@
      ]
     },
     "list": [
-     "<strong>How to read it:</strong> \"current\" means the survey&rsquo;s own definition of current use; WHO prints the surveys&rsquo; figures as published and does not harmonise them."
+     "<strong>How to read it:</strong> \"current\" is each survey&rsquo;s own definition of current use."
     ]
    }
   ],
   "faq": [
+   [
+    "How many vapes can I bring into Saudi Arabia?",
+    "Industry news (2Firsts, February 2023) reports that adult travellers may carry up to 25 disposable e-cigarettes, at most 125 per three months. This is press, not the customs page, so confirm with ZATCA."
+   ],
    [
     "How common is vaping in Saudi Arabia?",
     "Adults: 5.4% of adults currently use e-cigarettes (men 6.1%, women 4.7%) in the survey \"National Health Survey, 2023\" (national, ages 15+)."
@@ -3528,11 +4615,51 @@
     "5.4% of adults currently use e-cigarettes (men 6.1%, women 4.7%) in the survey \"National Health Survey, 2023\" (national, ages 15+)."
    ]
   ],
-  "src": [],
+  "src": [
+   [
+    "https://www.2firsts.com/news/saudi-arabia-allows-limited-entry-of-e-cigarettes",
+    "Less reliable source (press): 2Firsts - Saudi Arabia allows limited entry of e-cigarettes (2023)"
+   ],
+   [
+    "https://saudigazette.com.sa/article/597279/SAUDI-ARABIA/Customs-ban-individuals-from-importing-electronic-cigarettes",
+    "Less reliable source (press): Saudi Gazette - Customs ban individuals from importing e-cigarettes (2020)"
+   ]
+  ],
   "keepSchema": true
  },
  "SC": {
   "sections": [
+   {
+    "h": "📰 What a secondary profile reports about e-cigarettes in Seychelles",
+    "p": "Less reliable source (secondary profile): the Global State of Tobacco Harm Reduction (GSTHR) country page, updated 16 November 2026 and read on 22 November 2026. It compiles other sources and is not a customs page. The official customs rule for travellers could not be read, so treat this as background and confirm with customs.",
+    "table": {
+     "head": [
+      "Point",
+      "What GSTHR reports"
+     ],
+     "rows": [
+      [
+       "Status",
+       "Banned and regulated as tobacco products"
+      ],
+      [
+       "Prohibited",
+       "Import, sale and trade of devices and nicotine"
+      ],
+      [
+       "Personal use",
+       "Online sources suggest bringing vapes for personal use is not allowed (unverified)"
+      ],
+      [
+       "Advice",
+       "Check with the authorities before bringing anything"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>Not read:</strong> any Seychelles Revenue Commission rule for travellers."
+    ]
+   },
    {
     "h": "📊 How common vaping is in Seychelles, per the WHO survey figures",
     "p": "From the same WHO report on the global tobacco epidemic 2025, country profile for Seychelles, table \"Tobacco use prevalence from the latest survey\". These are survey results, not a law or a customs rule, and each survey has its own age group.",
@@ -3557,11 +4684,15 @@
      ]
     },
     "list": [
-     "<strong>How to read it:</strong> \"current\" means the survey&rsquo;s own definition of current use; WHO prints the surveys&rsquo; figures as published and does not harmonise them."
+     "<strong>How to read it:</strong> \"current\" is each survey&rsquo;s own definition of current use."
     ]
    }
   ],
   "faq": [
+   [
+    "Can I bring a vape to Seychelles?",
+    "A secondary profile (GSTHR) says e-cigarettes are banned in Seychelles, including import, and that personal-use import is reportedly not allowed (unverified). Do not pack a vape without checking with the authorities."
+   ],
    [
     "How common is vaping in Seychelles?",
     "Adults: 7.3% of adults currently use e-cigarettes (men 10.0%, women 4.7%) in the survey \"The Seychelles Heart Study V, 2023\" (national, ages 18-74)."
@@ -3571,11 +4702,43 @@
     "7.3% of adults currently use e-cigarettes (men 10.0%, women 4.7%) in the survey \"The Seychelles Heart Study V, 2023\" (national, ages 18-74)."
    ]
   ],
-  "src": [],
+  "src": [
+   [
+    "https://gsthr.org/countries/profile/syc/e_cigarettes/",
+    "Less reliable source (secondary profile): Global State of Tobacco Harm Reduction - e-cigarettes in Seychelles"
+   ]
+  ],
   "keepSchema": true
  },
  "UA": {
   "sections": [
+   {
+    "h": "📰 What a secondary profile reports about e-cigarettes in Ukraine",
+    "p": "Less reliable source (secondary profile): the Global State of Tobacco Harm Reduction (GSTHR) country page, updated 16 November 2026 and read on 22 November 2026. It compiles other sources and is not a customs page. The official customs rule for travellers could not be read, so treat this as background and confirm with customs.",
+    "table": {
+     "head": [
+      "Point",
+      "What GSTHR reports"
+     ],
+     "rows": [
+      [
+       "Legal status",
+       "Legal, including sale and online purchase, but not from vending machines"
+      ],
+      [
+       "Product rules",
+       "Health warnings, notification of new products, authorised flavours only, nicotine up to 20 mg/ml"
+      ],
+      [
+       "Age and public use",
+       "18 to buy; use restricted in public places"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>Not read:</strong> the State Customs Service traveller allowance for e-liquid. Its site says liquids for e-cigarettes are excise goods, but no traveller figure was read."
+    ]
+   },
    {
     "h": "📊 How common vaping is in Ukraine, per the WHO survey figures",
     "p": "From the same WHO report on the global tobacco epidemic 2025, country profile for Ukraine, table \"Tobacco use prevalence from the latest survey\". These are survey results, not a law or a customs rule, and each survey has its own age group.",
@@ -3600,11 +4763,15 @@
      ]
     },
     "list": [
-     "<strong>How to read it:</strong> \"current\" means the survey&rsquo;s own definition of current use; WHO prints the surveys&rsquo; figures as published and does not harmonise them."
+     "<strong>How to read it:</strong> \"current\" is each survey&rsquo;s own definition of current use."
     ]
    }
   ],
   "faq": [
+   [
+    "Can I bring a vape to Ukraine?",
+    "A secondary profile (GSTHR) says e-cigarettes are legal in Ukraine with a 20 mg/ml nicotine cap and age 18. It gives no traveller allowance, so check the Ukrainian customs service."
+   ],
    [
     "How common is vaping in Ukraine?",
     "Adults: 5.3% of adults currently use e-cigarettes (men 7.0%, women 3.9%), and 3.9% use them daily in the survey \"Kyiv International Institute of Sociology face-to-face survey, 2024\" (national, ages 18+)."
@@ -3614,11 +4781,47 @@
     "5.3% of adults currently use e-cigarettes (men 7.0%, women 3.9%), and 3.9% use them daily in the survey \"Kyiv International Institute of Sociology face-to-face survey, 2024\" (national, ages 18+)."
    ]
   ],
-  "src": [],
+  "src": [
+   [
+    "https://gsthr.org/countries/profile/ukr/e_cigarettes/",
+    "Less reliable source (secondary profile): Global State of Tobacco Harm Reduction - e-cigarettes in Ukraine"
+   ]
+  ],
   "keepSchema": true
  },
  "US": {
   "sections": [
+   {
+    "h": "🛃 What the FDA says about importing e-cigarettes",
+    "p": "From the FDA page \"Importing and Exporting\" (tobacco products), read on 22 November 2026. It sets the rule for tobacco products imported into the United States. It is not a traveller allowance and does not give a quantity for personal vapes.",
+    "table": {
+     "head": [
+      "Point",
+      "What the FDA says"
+     ],
+     "rows": [
+      [
+       "Who must comply",
+       "Tobacco products imported or offered for import must meet the Federal Food, Drug, and Cosmetic Act and the Tobacco Control Act"
+      ],
+      [
+       "If requirements are not met",
+       "The imported tobacco products are subject to refusal of admission (section 801)"
+      ],
+      [
+       "Import alerts",
+       "On 3 January 2025 the FDA updated import alerts 98-07 and 98-06 to treat imported e-cigarette products separately from other tobacco products"
+      ],
+      [
+       "Traveller quantity",
+       "Not stated on the page"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>Not read:</strong> any CBP or FDA rule on the number of vapes a traveller may carry. Declare vapes to CBP and expect that unauthorised products can be refused admission."
+    ]
+   },
    {
     "h": "📊 How common vaping is in United States, per the WHO survey figures",
     "p": "From the same WHO report on the global tobacco epidemic 2025, country profile for United States, table \"Tobacco use prevalence from the latest survey\". These are survey results, not a law or a customs rule, and each survey has its own age group.",
@@ -3643,11 +4846,15 @@
      ]
     },
     "list": [
-     "<strong>How to read it:</strong> \"current\" means the survey&rsquo;s own definition of current use; WHO prints the surveys&rsquo; figures as published and does not harmonise them."
+     "<strong>How to read it:</strong> \"current\" is each survey&rsquo;s own definition of current use."
     ]
    }
   ],
   "faq": [
+   [
+    "Can I bring a vape into the United States?",
+    "The FDA says imported tobacco products that do not meet US requirements can be refused admission, and it treats imported e-cigarettes under separate import alerts. It publishes no traveller quantity on that page, so declare vapes to CBP."
+   ],
    [
     "How common is vaping in United States?",
     "Adults: 3.5% of adults currently use e-cigarettes (men 3.1%, women 3.9%) in the survey \"National Survey on Drug Use and Health (NSDUH), 2023\" (national, ages 18+)."
@@ -3657,7 +4864,12 @@
     "3.5% of adults currently use e-cigarettes (men 3.1%, women 3.9%) in the survey \"National Survey on Drug Use and Health (NSDUH), 2023\" (national, ages 18+)."
    ]
   ],
-  "src": [],
+  "src": [
+   [
+    "https://www.fda.gov/tobacco-products/products-guidance-regulations/importing-and-exporting",
+    "U.S. FDA - Importing and Exporting (tobacco products)"
+   ]
+  ],
   "keepSchema": true
  },
  "EE": {
@@ -3870,6 +5082,1007 @@
    [
     "https://www.fu.gov.si/en/life_events_individuals/import_of_alcoholic_beverages_and_tobacco_products",
     "Slovenian Financial Administration (FURS) - Import of alcoholic beverages and tobacco products"
+   ]
+  ],
+  "keepSchema": true
+ },
+ "SK": {
+  "sections": [
+   {
+    "h": "🛃 What the Slovak Financial Administration says about e-cigarette refills",
+    "p": "From the Financial Administration press release \"Import of smokeless tobacco products from third countries with exemption from import payments\" (19 February 2025, translated from Slovak, read 21 November 2026). The rules apply to goods brought in from outside the EU for personal use and have applied since 1 February 2025.",
+    "table": {
+     "head": [
+      "Item",
+      "What the Financial Administration says"
+     ],
+     "rows": [
+      [
+       "E-cigarette refills (called products related to tobacco products)",
+       "Same limits as smokeless tobacco products: 2 consumer packages when not travelling by air, 5 times that by air"
+      ],
+      [
+       "Combining products",
+       "Any combination is allowed while the shares of the allowed amounts add up to no more than 100%"
+      ],
+      [
+       "Cigarettes",
+       "40 by road, rail or sea, 200 by air"
+      ],
+      [
+       "Age",
+       "Nobody under 17 may bring in tobacco products, smokeless tobacco products or related products"
+      ],
+      [
+       "Which imports count",
+       "Occasional imports for the traveller or household, or gifts; the release gives no millilitre figure for a refill"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>Penalties:</strong> illegal import from third countries is a customs offence or a crime and can lead to a fine, seizure and confiscation of the goods.",
+     "<strong>Not read:</strong> a millilitre figure for refills, and the allowance for e-liquid bought in another EU state."
+    ]
+   }
+  ],
+  "faq": [
+   [
+    "How much e-cigarette liquid can I bring into Slovakia from outside the EU?",
+    "The Financial Administration treats e-cigarette refills like smokeless tobacco products: 2 consumer packages when not travelling by air and 5 times that by air, as a share of one combined allowance. It gives no millilitre figure."
+   ],
+   [
+    "Is there an age limit for bringing vapes into Slovakia?",
+    "Yes. The Financial Administration says nobody under 17 may bring in tobacco products, smokeless tobacco products or related products such as refills."
+   ]
+  ],
+  "src": [
+   [
+    "https://www.financnasprava.sk/sk/pre-media/novinky/archiv-noviniek/detail-novinky/_dovoz-btv-ts/bc",
+    "Slovak Financial Administration - Import of smokeless tobacco products from third countries (Slovak)"
+   ]
+  ],
+  "keepSchema": true
+ },
+ "IL": {
+  "sections": [
+   {
+    "h": "🛃 What the Israel Tax Authority says about tobacco and other goods",
+    "p": "From the Israel Tax Authority \"Customs Guide for Tourists and Foreign Residents\" (updated 30 July 2026, read 21 November 2026), the chapter on the green channel. The guide does not name e-cigarettes or vape liquid.",
+    "table": {
+     "head": [
+      "Item",
+      "What the guide says"
+     ],
+     "rows": [
+      [
+       "Tobacco in all its forms",
+       "Up to 250 g (cigarettes: up to 200, one carton) for each entrant"
+      ],
+      [
+       "Other items for personal use or as a gift",
+       "Value up to 200 US dollars for each entrant aged 2 and over"
+      ],
+      [
+       "Alcohol",
+       "1 litre of spirits and 2 litres of wine for each entrant aged at least 18"
+      ],
+      [
+       "Alcoholic cosmetics (perfume)",
+       "Up to 250 ml for each entrant"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>Not read:</strong> any line on vapes, e-liquid or nicotine, and the guide's other chapters (the red channel and items needing approval). Ask the Tax Authority before bringing more than a device and a small supply."
+    ]
+   }
+  ],
+  "faq": [
+   [
+    "Does the Israel Tax Authority guide mention vapes?",
+    "The tourist customs guide chapter on the green channel lists tobacco in all its forms up to 250 g and 200 US dollars of other goods, and does not name e-cigarettes or vape liquid."
+   ]
+  ],
+  "src": [
+   [
+    "https://www.gov.il/en/pages/guide-tourist-customs?chapterIndex=3",
+    "Israel Tax Authority - Customs Guide for Tourists and Foreign Residents"
+   ]
+  ],
+  "keepSchema": true
+ },
+ "MV": {
+  "sections": [
+   {
+    "h": "🚫 What Maldives news says about the vape ban and fines",
+    "p": "Less reliable source (local press): Atoll Times, \"Customs seizes 800 vape cartridges at Velana International Airport\" (7 August 2026), quoting Maldives Customs and the 2024 Tobacco Control Act amendments. The Maldives Customs pages returned 403, so no official page was read.",
+    "table": {
+     "head": [
+      "Item",
+      "What Atoll Times reports"
+     ],
+     "rows": [
+      [
+       "Import, sale and use of vaping products",
+       "Prohibited in the Maldives"
+      ],
+      [
+       "Fine for importing vaping devices or products",
+       "50,000 rufiyaa, plus 10,000 rufiyaa for each device imported"
+      ],
+      [
+       "Fine for using a vaping product",
+       "5,000 rufiyaa"
+      ],
+      [
+       "Latest seizure",
+       "800 vape cartridges intercepted at Velana International Airport on 3 August 2026"
+      ],
+      [
+       "Enforcement",
+       "Customs and other agencies keep seizing vaping products and fining importers since the ban began in late 2024"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>Not read:</strong> any Maldives Customs notice for tourists. Treat a vape as something that will be seized and fined, and confirm with Maldives Customs before you travel."
+    ]
+   }
+  ],
+  "faq": [
+   [
+    "Can I bring a vape to the Maldives?",
+    "No. Atoll Times, quoting Maldives Customs, reports that importing, selling and using vaping products is prohibited, with a 50,000 rufiyaa fine for importing plus 10,000 rufiyaa per device."
+   ]
+  ],
+  "src": [
+   [
+    "https://atolltimes.mv/post/news/16751",
+    "Less reliable source (press): Atoll Times - Customs seizes 800 vape cartridges at Velana International Airport"
+   ]
+  ],
+  "keepSchema": true
+ },
+ "FI": {
+  "sections": [
+   {
+    "h": "🛃 What the Finnish Tax Administration says about nicotine products",
+    "p": "From two pages of the Finnish Tax Administration (vero.fi, English): \"Bringing alcohol and tobacco with you from trips outside Finland\" (last updated 12 November 2025) and \"Ordering tobacco and nicotine products from abroad\" (last updated 9 February 2025), both read 21 November 2026. The Finnish Customs page on e-cigarette liquid sits behind a challenge page and could not be read.",
+    "table": {
+     "head": [
+      "Item",
+      "What the Tax Administration says"
+     ],
+     "rows": [
+      [
+       "Nicotine pouches and snus carried from outside Finland",
+       "From 2026: at most 1,000 g of each of the two products for personal use, carried with you"
+      ],
+      [
+       "Above 1,000 g",
+       "Excise duty is due on the part over the limit"
+      ],
+      [
+       "Other tobacco products carried for personal use",
+       "Exempt from duty if you carry them with you by the means of transport you travel with"
+      ],
+      [
+       "Ordering from a seller abroad",
+       "Not allowed in Finland for tobacco products, electronic cigarettes, liquids containing nicotine, snus or nicotine pouches"
+      ],
+      [
+       "If such a product is received anyway",
+       "The authority can impose taxes and duties"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>Not read:</strong> a millilitre figure for nicotine liquid in luggage, which the Finnish Customs page covers. The Tax Administration pages name nicotine liquid only in the ordering rule."
+    ]
+   }
+  ],
+  "faq": [
+   [
+    "Can I order vape liquid with nicotine to Finland?",
+    "No. The Finnish Tax Administration says that in Finland you may not order tobacco products, electronic cigarettes, liquids containing nicotine, snus or nicotine pouches from sellers in other countries."
+   ],
+   [
+    "How much snus or nicotine pouches can I bring into Finland?",
+    "From 2026 the Tax Administration allows at most 1,000 g of each of snus and non-liquid smokeless nicotine products for personal use, carried with you."
+   ]
+  ],
+  "src": [
+   [
+    "https://vero.fi/en/individuals/tax-cards-and-tax-returns/arriving_in_finland/bringing-alcohol-and-tobacco-to-finland/bringing-alcohol-and-tobacco-with-you-from-trips-outside-finland/",
+    "Finnish Tax Administration - Bringing alcohol and tobacco with you from trips outside Finland"
+   ],
+   [
+    "https://vero.fi/en/individuals/tax-cards-and-tax-returns/arriving_in_finland/bringing-alcohol-and-tobacco-to-finland/ordering-tobacco-and-nicotine-products-from-a-seller-abroad/",
+    "Finnish Tax Administration - Ordering tobacco and nicotine products from abroad"
+   ]
+  ],
+  "keepSchema": true
+ },
+ "LB": {
+  "sections": [
+   {
+    "h": "⚖️ What a tobacco-control legal database lists for e-cigarettes in Lebanon",
+    "p": "Unofficial source: Tobacco Control Laws (Campaign for Tobacco-Free Kids), \"Main Policies - E-Cigarettes, Lebanon\", last updated 22 October 2026, read 21 November 2026. It summarises Law No. 174 and Ministry of Finance Resolution No. 877/2015. The Lebanese customs pages name no vape rule for travellers.",
+    "table": {
+     "head": [
+      "Item",
+      "What the database lists"
+     ],
+     "rows": [
+      [
+       "Retail sale of e-cigarettes",
+       "Allowed, subject to restrictions under the law"
+      ],
+      [
+       "Sale over the internet",
+       "Allowed"
+      ],
+      [
+       "Use in indoor public places, workplaces and public transport",
+       "Some restrictions"
+      ],
+      [
+       "Health warnings on packaging",
+       "Required"
+      ],
+      [
+       "Manufacturer or importer disclosures or notification",
+       "Required"
+      ],
+      [
+       "Retail licence or equivalent approval",
+       "Required"
+      ],
+      [
+       "Maximum nicotine concentration",
+       "Not required (no limit set)"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>Not read:</strong> a Lebanese customs figure for e-liquid or devices in luggage. The database covers sale and use, not what a traveller may carry in."
+    ]
+   }
+  ],
+  "faq": [
+   [
+    "Are e-cigarettes legal in Lebanon?",
+    "The Tobacco Control Laws database lists the retail sale of e-cigarettes as allowed in Lebanon, subject to restrictions, with health warnings, importer notification and a retail licence required. It says nothing about a traveller allowance."
+   ]
+  ],
+  "src": [
+   [
+    "https://www.tobaccocontrollaws.org/legislation/lebanon/e-cigarettes",
+    "Unofficial source: Tobacco Control Laws - E-cigarettes, Lebanon (Campaign for Tobacco-Free Kids)"
+   ]
+  ],
+  "keepSchema": true
+ },
+ "KW": {
+  "sections": [
+   {
+    "h": "📰 What Gulf News reports about Kuwait's new nicotine rules",
+    "p": "Less reliable source (press): Gulf News, \"Kuwait bans online tobacco sales and sets minimum age at 21\" (last updated 16 August 2026), reporting Ministerial Resolution No. 237 of 2026 as published by Al Anbaa. The Kuwait customs and health ministry pages were not read.",
+    "table": {
+     "head": [
+      "Item",
+      "What Gulf News reports"
+     ],
+     "rows": [
+      [
+       "When the rules start",
+       "1 January 2027"
+      ],
+      [
+       "What they cover",
+       "Import, manufacture, packaging, distribution, sale, display, advertising, promotion and use of tobacco and nicotine products, including electronic cigarettes and heated tobacco"
+      ],
+      [
+       "Minimum age",
+       "21 to buy or be supplied with tobacco, nicotine or nicotine-delivery products"
+      ],
+      [
+       "Online and delivery sales",
+       "Banned, including websites, apps, social media and delivery services"
+      ],
+      [
+       "Use of e-cigarettes",
+       "Smoking restrictions are extended to electronic cigarettes and heated tobacco products"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>Not read:</strong> the text of the resolution itself, and any traveller allowance for devices or liquid. Until the rules take effect, confirm with Kuwait customs before bringing a vape."
+    ]
+   }
+  ],
+  "faq": [
+   [
+    "Is vaping restricted in Kuwait?",
+    "Gulf News reports that Ministerial Resolution No. 237 of 2026 starts on 1 January 2027, sets a minimum age of 21 for nicotine products, bans online sales and extends smoking restrictions to electronic cigarettes."
+   ]
+  ],
+  "src": [
+   [
+    "https://gulfnews.com/world/gulf/kuwait/kuwait-bans-online-tobacco-sales-and-sets-minimum-age-at-21-1.500642680",
+    "Less reliable source (press): Gulf News - Kuwait bans online tobacco sales and sets minimum age at 21"
+   ]
+  ],
+  "keepSchema": true
+ },
+ "BH": {
+  "sections": [
+   {
+    "h": "⚖️ What the Bahrain e-cigarette decision is titled",
+    "p": "Unofficial source: Tobacco Control Laws (Campaign for Tobacco-Free Kids legal database), read 22 November 2026. It lists Ministry of Industry and Commerce Decision No. 38 of 2013, dated 6 May 2013, titled \"Concerning Banning of Importation, Distribution, or Selling of Electronic Cigarettes\". The database says the laws shown were in effect as of 17 September 2019. Bahrain Customs could not be read from here (HTTP 403).",
+    "table": {
+     "head": [
+      "Point",
+      "What the database shows"
+     ],
+     "rows": [
+      [
+       "Decision",
+       "No. 38 of 2013, Ministry of Industry and Commerce, 6 May 2013"
+      ],
+      [
+       "Subject",
+       "Ban on importing, distributing or selling e-cigarettes"
+      ],
+      [
+       "Status date given",
+       "In effect as of 17 September 2019"
+      ],
+      [
+       "Traveller allowance",
+       "Not stated"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>Not read:</strong> the decision text, anything newer than 2019, and the Bahrain Customs traveller rules. Treat vapes as possibly refused or confiscated at the border and check with Bahrain Customs first."
+    ]
+   }
+  ],
+  "faq": [
+   [
+    "Can I bring a vape into Bahrain?",
+    "A 2013 Ministry of Industry and Commerce decision, listed by Tobacco Control Laws, bans importing, distributing and selling e-cigarettes. Its current status for travellers is not confirmed, so check with Bahrain Customs before you fly."
+   ]
+  ],
+  "src": [
+   [
+    "https://www.tobaccocontrollaws.org/laws/decision-no-38-2013-on-e-cigs-bahrain",
+    "Unofficial source: Tobacco Control Laws - Bahrain Decision No. 38 of 2013"
+   ]
+  ],
+  "keepSchema": true
+ },
+ "ZA": {
+  "sections": [
+   {
+    "h": "🛃 What SARS says about duty-free tobacco for travellers",
+    "p": "From the South African Revenue Service guide \"Duty Free Allowances for Travellers\" (SC-PA-01-03, effective 1 July 2026) and the SARS page \"Duties and Taxes for Travellers\", both read on 22 November 2026. Both list tobacco and alcohol only. Neither names e-cigarettes, vape liquid or nicotine.",
+    "table": {
+     "head": [
+      "Item",
+      "What SARS says (per adult traveller)"
+     ],
+     "rows": [
+      [
+       "Cigarettes",
+       "Up to 200"
+      ],
+      [
+       "Cigars",
+       "Up to 20"
+      ],
+      [
+       "Cigarette or pipe tobacco",
+       "Up to 250 g combined"
+      ],
+      [
+       "Wine / other alcohol",
+       "2 litres / 1 litre"
+      ],
+      [
+       "Frequency",
+       "Once per 30-day cycle, after an absence of more than 48 hours"
+      ],
+      [
+       "Under 18",
+       "No tobacco or alcohol allowance"
+      ],
+      [
+       "Above the limits",
+       "Full duty and VAT on the excess"
+      ],
+      [
+       "E-cigarettes and vape liquid",
+       "Not named in the guide"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>Not read:</strong> any SARS rule or tariff note for e-cigarettes and liquid, so the traveller allowance for them is unknown. Ask SARS before carrying more than a device and a few pods."
+    ]
+   }
+  ],
+  "faq": [
+   [
+    "Is there a limit for vape liquid in South Africa?",
+    "The SARS traveller allowance guide (effective 1 July 2026) lists 200 cigarettes, 20 cigars and 250 g of tobacco, and does not name e-cigarettes or liquid. Check with SARS customs before you travel."
+   ]
+  ],
+  "src": [
+   [
+    "https://www.sars.gov.za/wp-content/uploads/Docs/Customs/SC-PA-01-03-Duty-Free-Allowances-for-Travellers-External-Guide.pdf",
+    "SARS - Duty Free Allowances for Travellers, external guide (effective 1 July 2026)"
+   ],
+   [
+    "https://www.sars.gov.za/customs-and-excise/travellers/duties-and-taxes-for-travellers/",
+    "SARS - Duties and Taxes for Travellers"
+   ]
+  ],
+  "keepSchema": true
+ },
+ "KE": {
+  "sections": [
+   {
+    "h": "🛃 What the Kenya Revenue Authority says about tobacco for passengers",
+    "p": "From the KRA page \"Passenger Terminal Clearance in Kenya\" and the KRA \"Passenger Terminals FAQs\" PDF, both read on 22 November 2026. Both give an allowance for tobacco and alcohol and do not name e-cigarettes, vape liquid or nicotine.",
+    "table": {
+     "head": [
+      "Item",
+      "What KRA says (not exempt above these limits)"
+     ],
+     "rows": [
+      [
+       "Cigarettes, cigars, cheroots, cigarillos, tobacco and snuff",
+       "Up to 250 g in all"
+      ],
+      [
+       "Spirits or wine",
+       "Up to 1 litre of spirits or 2 litres of wine"
+      ],
+      [
+       "Perfume and toilet water",
+       "Up to half a litre in all, of which at most a quarter perfume"
+      ],
+      [
+       "Other goods for personal or household use",
+       "Passenger concession of USD 2,000 on the KRA page; the FAQ PDF mentions a USD 500 declaration level"
+      ],
+      [
+       "Cash",
+       "Declare USD 10,000 and above"
+      ],
+      [
+       "E-cigarettes and vape liquid",
+       "Not named on either page"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>Not read:</strong> any KRA rule or tariff note on e-cigarettes. KRA gives two different USD figures for the general concession, so confirm both with KRA at the terminal."
+    ]
+   }
+  ],
+  "faq": [
+   [
+    "Is there a limit for vape liquid in Kenya?",
+    "KRA passenger pages list 250 g of tobacco products and set alcohol and perfume limits, but do not name e-cigarettes or liquid. Ask KRA customs before bringing vapes."
+   ]
+  ],
+  "src": [
+   [
+    "https://www.kra.go.ke/helping-tax-payers/faqs/passenger-terminal-clearance-in-kenya",
+    "Kenya Revenue Authority - Passenger Terminal Clearance in Kenya"
+   ],
+   [
+    "https://www.kra.go.ke/images/Customs/Passenger-Terminals-FAQs.pdf",
+    "Kenya Revenue Authority - Passenger Terminals FAQs (PDF)"
+   ]
+  ],
+  "keepSchema": true
+ },
+ "DO": {
+  "sections": [
+   {
+    "h": "🛃 What Dominican customs says about tobacco in traveller baggage",
+    "p": "From the Dirección General de Aduanas (DGA) \"Manual del Viajero\" page and its traveller FAQ (read on 22 November 2026). It lists cigarettes, cigars and tobacco and does not name e-cigarettes, vape liquid or nicotine.",
+    "table": {
+     "head": [
+      "Item",
+      "What the DGA says (duty free, adults)"
+     ],
+     "rows": [
+      [
+       "Cigarettes",
+       "Up to 20 packs"
+      ],
+      [
+       "Cigars",
+       "Up to 25"
+      ],
+      [
+       "Tobacco",
+       "Up to 200 g"
+      ],
+      [
+       "Alcohol",
+       "Up to 5 litres"
+      ],
+      [
+       "Electronic items",
+       "No declaration if within the quantities allowed as baggage in the manual"
+      ],
+      [
+       "Prohibited or restricted",
+       "Drugs, psychotropic substances, firearms, polluting substances and others affecting national security"
+      ],
+      [
+       "E-cigarettes and vape liquid",
+       "Not named in the FAQ"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>Not read:</strong> any DGA rule that names vapes. Ask DGA before bringing more than a device and a few pods."
+    ]
+   }
+  ],
+  "faq": [
+   [
+    "Is there a limit for vape liquid in the Dominican Republic?",
+    "The DGA traveller FAQ lists 20 packs of cigarettes, 25 cigars, 200 g of tobacco and 5 litres of alcohol, and does not name e-cigarettes or liquid. Check with Dominican customs."
+   ]
+  ],
+  "src": [
+   [
+    "https://www.aduanas.gob.do/manual-del-viajero/",
+    "Dirección General de Aduanas - Manual del Viajero"
+   ]
+  ],
+  "keepSchema": true
+ },
+ "LK": {
+  "sections": [
+   {
+    "h": "🛃 What Sri Lanka Customs says about cigarettes in passenger baggage",
+    "p": "From the Sri Lanka Customs Passenger Services Directorate page and the Customs passenger guide (\"Travellers\"), read on 22 November 2026. The directorate page says cigarettes, cigars, beedies and snuff are not allowed in personal baggage. Neither page names e-cigarettes or vape liquid.",
+    "table": {
+     "head": [
+      "Point",
+      "What Sri Lanka Customs says"
+     ],
+     "rows": [
+      [
+       "Cigarettes, cigars, beedies, snuff",
+       "Not allowed as personal baggage, accompanied or unaccompanied"
+      ],
+      [
+       "Airline crew",
+       "No allowance"
+      ],
+      [
+       "Restricted or prohibited articles",
+       "Listed in Schedule B of the Customs Ordinance"
+      ],
+      [
+       "False declaration",
+       "Loses the exemptions and is dealt with under the Customs Ordinance"
+      ],
+      [
+       "E-cigarettes and vape liquid",
+       "Not named on either page"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>Not read:</strong> Schedule B and any Customs rule on e-cigarettes. Ask the Customs Information Desk (+94 11 2221333) before bringing a vape."
+    ]
+   }
+  ],
+  "faq": [
+   [
+    "Can I bring a vape into Sri Lanka?",
+    "Sri Lanka Customs says cigarettes, cigars, beedies and snuff are not allowed in personal baggage and does not name e-cigarettes. Ask Customs before you pack one."
+   ]
+  ],
+  "src": [
+   [
+    "https://www.customs.gov.lk/about-us/directorates-and-divisions/passenger-services-directorate/",
+    "Sri Lanka Customs - Passenger Services Directorate"
+   ],
+   [
+    "https://www.customs.gov.lk/personal/travellers/",
+    "Sri Lanka Customs - Travellers"
+   ]
+  ],
+  "keepSchema": true
+ },
+ "VN": {
+  "sections": [
+   {
+    "h": "⚖️ What WHO and the Vietnamese government say about the ban",
+    "p": "Unofficial source (reliable): WHO Viet Nam statement of 11 December 2025, and the Vietnamese Government News item of the same day on the amended Investment Law (both read on 22 November 2026). Vietnam Customs could not be read, so no passenger rule is quoted.",
+    "table": {
+     "head": [
+      "Point",
+      "What the sources say"
+     ],
+     "rows": [
+      [
+       "Resolution 173/2024/QH15 (November 2024)",
+       "Prohibits production, trade, importation, harbouring, transportation and use of e-cigarettes and heated tobacco products (WHO Viet Nam)"
+      ],
+      [
+       "Amended Investment Law (11 December 2025)",
+       "Bans investment and business activity in e-cigarettes and heated tobacco from 2026, with no exceptions for these products (WHO Viet Nam; Government News)"
+      ],
+      [
+       "Passenger rule",
+       "Not stated in either source"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>Not read:</strong> the resolution text, the customs rule for travellers and the penalty decree. Treat a vape as not to be brought into Vietnam."
+    ]
+   }
+  ],
+  "faq": [
+   [
+    "Can I bring a vape into Vietnam?",
+    "WHO Viet Nam describes Resolution 173/2024/QH15 as prohibiting the importation, transportation and use of e-cigarettes and heated tobacco products. Do not pack a vape for Vietnam and confirm with Vietnamese customs."
+   ]
+  ],
+  "src": [
+   [
+    "https://www.who.int/vietnam/news/detail/11-12-2025-world-health-organization-welcomes-national-assembly-s-strong-stance-on-banned-e-cigarettes-and-heated-tobacco-products",
+    "Unofficial source: WHO Viet Nam - National Assembly stance on banned e-cigarettes (11 December 2025)"
+   ],
+   [
+    "https://en.baochinhphu.vn/print/viet-nam-passes-law-banning-e-cigarette-heated-tobacco-businesses-111251211151656139.htm",
+    "Vietnamese Government News - Viet Nam passes law banning e-cigarette, heated tobacco businesses"
+   ]
+  ],
+  "keepSchema": true
+ },
+ "NG": {
+  "sections": [
+   {
+    "h": "📰 What a secondary profile reports about e-cigarettes in Nigeria",
+    "p": "Less reliable source (secondary profile): the Global State of Tobacco Harm Reduction (GSTHR) country page, updated 16 November 2026 and read on 22 November 2026. It compiles other sources and is not a customs page. The official customs rule for travellers could not be read, so treat this as background and confirm with customs.",
+    "table": {
+     "head": [
+      "Point",
+      "What GSTHR reports"
+     ],
+     "rows": [
+      [
+       "Specific rules",
+       "GSTHR cites other databases saying there are no specific e-cigarette regulations"
+      ],
+      [
+       "Status",
+       "Allowed; vapes are on sale in the country"
+      ],
+      [
+       "Use in public",
+       "Tobacco Control Laws is cited as reporting no ban on use indoors, at work or on public transport"
+      ],
+      [
+       "Age limit",
+       "None reported"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>Not read:</strong> any Nigeria Customs Service rule for passengers. Press in search results mention a House of Representatives review of the tobacco law and a customs seizure of expired disposables in cargo."
+    ]
+   }
+  ],
+  "faq": [
+   [
+    "Can I bring a vape to Nigeria?",
+    "A secondary profile (GSTHR) reports no specific e-cigarette rules in Nigeria and says vapes are on sale, but it gives no traveller allowance. Check with Nigeria Customs."
+   ]
+  ],
+  "src": [
+   [
+    "https://gsthr.org/countries/profile/nga/e_cigarettes/",
+    "Less reliable source (secondary profile): Global State of Tobacco Harm Reduction - e-cigarettes in Nigeria"
+   ]
+  ],
+  "keepSchema": true
+ },
+ "CR": {
+  "sections": [
+   {
+    "h": "📰 What a secondary profile reports about e-cigarettes in Costa Rica",
+    "p": "Less reliable source (secondary profile): the Global State of Tobacco Harm Reduction (GSTHR) country page, updated 16 November 2026 and read on 22 November 2026. It compiles other sources and is not a customs page. The official customs rule for travellers could not be read, so treat this as background and confirm with customs.",
+    "table": {
+     "head": [
+      "Point",
+      "What GSTHR reports"
+     ],
+     "rows": [
+      [
+       "Legal status",
+       "Allowed, including online purchase"
+      ],
+      [
+       "Manufacturers",
+       "Must notify authorities of new products and put health warnings on packs"
+      ],
+      [
+       "Flavours and nicotine",
+       "No restrictions"
+      ],
+      [
+       "Age and public use",
+       "18 to buy; vaping prohibited in public places"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>Not read:</strong> the Costa Rican customs traveller rule (hacienda.go.cr search results mention only general baggage articles and a USD 500 non-baggage exemption)."
+    ]
+   }
+  ],
+  "faq": [
+   [
+    "Is vaping legal in Costa Rica?",
+    "A secondary profile (GSTHR) says e-cigarettes are legal in Costa Rica with a minimum age of 18 and a ban on use in public places. It gives no traveller allowance, so check Costa Rican customs."
+   ]
+  ],
+  "src": [
+   [
+    "https://gsthr.org/countries/profile/cri/e_cigarettes/",
+    "Less reliable source (secondary profile): Global State of Tobacco Harm Reduction - e-cigarettes in Costa Rica"
+   ]
+  ],
+  "keepSchema": true
+ },
+ "ET": {
+  "sections": [
+   {
+    "h": "📰 What a secondary profile reports about e-cigarettes in Ethiopia",
+    "p": "Less reliable source (secondary profile): the Global State of Tobacco Harm Reduction (GSTHR) country page, updated 16 November 2026 and read on 22 November 2026. It compiles other sources and is not a customs page. The official customs rule for travellers could not be read, so treat this as background and confirm with customs.",
+    "table": {
+     "head": [
+      "Point",
+      "What GSTHR reports"
+     ],
+     "rows": [
+      [
+       "Status",
+       "Banned by law"
+      ],
+      [
+       "Regulated as",
+       "Not treated as a consumer, medicinal or tobacco product"
+      ],
+      [
+       "Prohibited activities",
+       "Manufacture, wholesale, distribution, sale and import for trade"
+      ],
+      [
+       "Advertising",
+       "Totally banned"
+      ],
+      [
+       "Online sellers",
+       "Claims of online sales could not be confirmed"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>Not read:</strong> any Ethiopian Customs Commission rule for travellers and the law text."
+    ]
+   }
+  ],
+  "faq": [
+   [
+    "Can I bring a vape to Ethiopia?",
+    "A secondary profile (GSTHR) says vaping is banned by law in Ethiopia, including import for trade. It does not say how a personal device is treated, so check with Ethiopian customs before you pack one."
+   ]
+  ],
+  "src": [
+   [
+    "https://gsthr.org/countries/profile/eth/e_cigarettes/",
+    "Less reliable source (secondary profile): Global State of Tobacco Harm Reduction - e-cigarettes in Ethiopia"
+   ]
+  ],
+  "keepSchema": true
+ },
+ "NP": {
+  "sections": [
+   {
+    "h": "📰 What a secondary profile reports about e-cigarettes in Nepal",
+    "p": "Less reliable source (secondary profile): the Global State of Tobacco Harm Reduction (GSTHR) country page, updated 16 November 2026 and read on 22 November 2026. It compiles other sources and is not a customs page. The official customs rule for travellers could not be read, so treat this as background and confirm with customs.",
+    "table": {
+     "head": [
+      "Point",
+      "What GSTHR reports"
+     ],
+     "rows": [
+      [
+       "Legal status",
+       "Allowed by law, including sales"
+      ],
+      [
+       "Advertising",
+       "Banned"
+      ],
+      [
+       "Use in public",
+       "Restricted in public indoor spaces"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>Not read:</strong> the Nepal customs traveller rule for e-cigarettes."
+    ]
+   }
+  ],
+  "faq": [
+   [
+    "Is vaping legal in Nepal?",
+    "A secondary profile (GSTHR) says e-cigarettes and sales are allowed in Nepal, advertising is banned and indoor public use is restricted. It gives no traveller allowance, so check Nepal customs."
+   ]
+  ],
+  "src": [
+   [
+    "https://gsthr.org/countries/profile/npl/e_cigarettes/",
+    "Less reliable source (secondary profile): Global State of Tobacco Harm Reduction - e-cigarettes in Nepal"
+   ]
+  ],
+  "keepSchema": true
+ },
+ "JO": {
+  "sections": [
+   {
+    "h": "📰 What a secondary profile reports about e-cigarettes in Jordan",
+    "p": "Less reliable source (secondary profile): the Global State of Tobacco Harm Reduction (GSTHR) country page, updated 16 November 2026 and read on 22 November 2026. It compiles other sources and is not a customs page. The official customs rule for travellers could not be read, so treat this as background and confirm with customs.",
+    "table": {
+     "head": [
+      "Point",
+      "What GSTHR reports"
+     ],
+     "rows": [
+      [
+       "Legal status",
+       "Legal and regulated"
+      ],
+      [
+       "Trade",
+       "Import, sale and online purchase of devices and nicotine are permitted"
+      ],
+      [
+       "Prescription",
+       "Buying without a prescription is not allowed"
+      ],
+      [
+       "Advertising and public use",
+       "Advertising banned; vaping prohibited in public indoor places"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>Not read:</strong> the Jordan Customs traveller allowance (customs.gov.jo FAQs found by search list diplomat allowances only)."
+    ]
+   }
+  ],
+  "faq": [
+   [
+    "Can I bring a vape to Jordan?",
+    "A secondary profile (GSTHR) says import and sale of e-cigarettes are permitted in Jordan but buying without a prescription is not allowed. It gives no traveller allowance, so check Jordan Customs."
+   ]
+  ],
+  "src": [
+   [
+    "https://gsthr.org/countries/profile/jor/e_cigarettes/",
+    "Less reliable source (secondary profile): Global State of Tobacco Harm Reduction - e-cigarettes in Jordan"
+   ]
+  ],
+  "keepSchema": true
+ },
+ "BG": {
+  "sections": [
+   {
+    "h": "📰 What a secondary profile reports about e-cigarettes in Bulgaria",
+    "p": "Less reliable source (secondary profile): the Global State of Tobacco Harm Reduction (GSTHR) country page, updated 16 November 2026 and read on 22 November 2026. It compiles other sources and is not a customs page. The official customs rule for travellers could not be read, so treat this as background and confirm with customs.",
+    "table": {
+     "head": [
+      "Point",
+      "What GSTHR reports"
+     ],
+     "rows": [
+      [
+       "Legal status",
+       "Allowed, including importation, sale, use and possession"
+      ],
+      [
+       "Product rules",
+       "Child-resistant and tamper-proof containers, health warnings, nicotine up to 20 mg/ml, tank up to 10 ml"
+      ],
+      [
+       "Age and public use",
+       "18 to buy; vaping prohibited in public places"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>Not read:</strong> the Bulgarian customs traveller allowance for e-liquid. The customs.bg pages could not be opened."
+    ]
+   }
+  ],
+  "faq": [
+   [
+    "Can I bring a vape to Bulgaria?",
+    "A secondary profile (GSTHR) says e-cigarettes, including their import, are allowed in Bulgaria with a 20 mg/ml nicotine cap and a 10 ml tank limit. It gives no traveller allowance, so check Bulgarian customs."
+   ]
+  ],
+  "src": [
+   [
+    "https://gsthr.org/countries/profile/bgr/e_cigarettes/",
+    "Less reliable source (secondary profile): Global State of Tobacco Harm Reduction - e-cigarettes in Bulgaria"
+   ]
+  ],
+  "keepSchema": true
+ },
+ "RO": {
+  "sections": [
+   {
+    "h": "⚖️ What the Romanian e-cigarette law says, per Tobacco Control Laws",
+    "p": "Unofficial source (reliable): Tobacco Control Laws (Campaign for Tobacco-Free Kids legal database), e-cigarette page for Romania, last updated 11 May 2024 and read on 22 November 2026. It summarises Law 64 of 2024 and Law 201 of 2016. It is not a customs page.",
+    "table": {
+     "head": [
+      "Point",
+      "What the database reports"
+     ],
+     "rows": [
+      [
+       "Cross-border online sales",
+       "Distance sales of e-cigarettes to consumers in Romania are prohibited"
+      ],
+      [
+       "Use in public",
+       "Banned wherever smoking is banned; exceptions only for detention spaces and designated rooms in international airport transit areas"
+      ],
+      [
+       "Advertising",
+       "Restricted; many media banned and sponsorship banned"
+      ],
+      [
+       "Traveller allowance",
+       "Not stated"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>Not read:</strong> the customs.ro traveller rule (HTTP 403 Cloudflare) and the law text. Ask Romanian customs before bringing more than a device and a few pods."
+    ]
+   }
+  ],
+  "faq": [
+   [
+    "Can I buy vape liquid online for delivery to Romania?",
+    "Tobacco Control Laws reports that cross-border distance sales of e-cigarettes to consumers in Romania are prohibited. It gives no traveller baggage allowance."
+   ]
+  ],
+  "src": [
+   [
+    "https://tobaccocontrollaws.org/legislation/romania/e-cigarettes",
+    "Unofficial source: Tobacco Control Laws - Romania e-cigarettes"
    ]
   ],
   "keepSchema": true
