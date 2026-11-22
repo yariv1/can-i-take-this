@@ -683,3 +683,57 @@ https://canitakethis.co/country/vietnam/cash/
 - Already on Google (no request needed): /airline/ryanair/perfume-aerosols/
 - NOT requested (quota): /airline/southwest/alcohol/ and the rest of section A; continue tomorrow in the order of GSC_NEW_2026-11-19.md section A
 - Bing: 100 URLs submitted 2026-11-19 via Bing Webmaster URL Submission (logged in bing_submitted.txt)
+
+## Deploy c55a5a112 (2026-11-22): changed pages, rewritten text (TO REQUEST, worst-first)
+https://canitakethis.co/airline/aer-lingus/power-bank/
+https://canitakethis.co/airline/air-france/alcohol/
+https://canitakethis.co/airline/air-france/perfume-aerosols/
+https://canitakethis.co/airline/air-france/power-bank/
+https://canitakethis.co/airline/asiana/alcohol/
+https://canitakethis.co/airline/china-eastern/alcohol/
+https://canitakethis.co/airline/china-southern/alcohol/
+https://canitakethis.co/airline/el-al/alcohol/
+https://canitakethis.co/airline/ethiopian-airlines/perfume-aerosols/
+https://canitakethis.co/airline/etihad-airways/alcohol/
+https://canitakethis.co/airline/etihad-airways/perfume-aerosols/
+https://canitakethis.co/airline/flydubai/alcohol/
+https://canitakethis.co/airline/flydubai/perfume-aerosols/
+https://canitakethis.co/airline/flydubai/power-bank/
+https://canitakethis.co/airline/japan-airlines/alcohol/
+https://canitakethis.co/airline/japan-airlines/perfume-aerosols/
+https://canitakethis.co/airline/royal-jordanian/perfume-aerosols/
+https://canitakethis.co/airline/virgin-australia/alcohol/
+https://canitakethis.co/country/greece/cash/
+https://canitakethis.co/country/greece/plants-seeds/
+https://canitakethis.co/country/ireland/plants-seeds/
+https://canitakethis.co/country/lithuania/plants-seeds/
+https://canitakethis.co/country/luxembourg/plants-seeds/
+https://canitakethis.co/country/malta/alcohol/
+https://canitakethis.co/country/malta/cash/
+https://canitakethis.co/country/malta/plants-seeds/
+https://canitakethis.co/country/malta/tobacco/
+https://canitakethis.co/country/poland/plants-seeds/
+https://canitakethis.co/country/romania/plants-seeds/
+https://canitakethis.co/country/slovakia/plants-seeds/
+https://canitakethis.co/country/slovenia/plants-seeds/
+https://canitakethis.co/pets/bahrain/
+https://canitakethis.co/pets/belgium/
+https://canitakethis.co/pets/bulgaria/
+https://canitakethis.co/pets/costa-rica/
+https://canitakethis.co/pets/cuba/
+https://canitakethis.co/pets/cyprus/
+https://canitakethis.co/pets/georgia/
+https://canitakethis.co/pets/indonesia/
+https://canitakethis.co/pets/latvia/
+https://canitakethis.co/pets/maldives/
+https://canitakethis.co/pets/malta/
+https://canitakethis.co/pets/nepal/
+https://canitakethis.co/pets/panama/
+https://canitakethis.co/pets/philippines/
+https://canitakethis.co/pets/romania/
+https://canitakethis.co/pets/russia/
+https://canitakethis.co/pets/serbia/
+https://canitakethis.co/pets/seychelles/
+https://canitakethis.co/pets/slovakia/
+https://canitakethis.co/pets/taiwan/
+https://canitakethis.co/pets/turkey/
