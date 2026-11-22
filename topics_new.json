@@ -3465,11 +3465,11 @@
  },
  "Etihad Airways": {
   "perfume": {
-   "answer": "Etihad lists creams, lotions, cosmetics, oils, perfumes and sprays, and the contents of pressurised containers such as shaving foam and deodorants, as allowed in cabin baggage with conditions: up to 100ml each.",
+   "answer": "Etihad allows perfumes and sprays in checked baggage and, in cabin baggage, only in containers of up to 100 ml; flammable liquids and spray paint are not permitted.",
    "sections": [
     {
      "h": "🧴 What Etihad Airways says about perfume and aerosols",
-     "p": "From the Etihad page \"Prohibited items and what you can take on board\", table for liquids, aerosols and gels.",
+     "p": "From the Etihad page \"Prohibited items and what you can take on board\", liquids, aerosols and gels table, read on 22 November 2026.",
      "table": {
       "head": [
        "Question",
@@ -3477,42 +3477,43 @@
       ],
       "rows": [
        [
-        "Perfumes, sprays, creams, lotions, oils, gels",
-        "Cabin baggage with conditions: up to 100ml"
+        "Creams, lotions, cosmetics, oils, perfumes, sprays, gels",
+        "Allowed in checked baggage; in cabin baggage only up to 100 ml per container, under the conditions"
        ],
        [
-        "Pressurised containers (shaving foam, deodorants)",
-        "Cabin baggage with conditions: up to 100ml"
+        "Pressurised containers (shaving foam, deodorant)",
+        "Cabin baggage only up to 100 ml per container"
        ],
        [
-        "Pastes, mascara, lip gloss",
-        "Cabin baggage with conditions: up to 100ml"
+        "Flammable liquids such as lighter fluid, petrol, alcohol or ethanol, paint thinner, spray paint",
+        "Not permitted in cabin or checked baggage"
        ]
       ]
      },
      "list": [
-      "<strong>Not on the page:</strong> the table we read gives no checked-baggage quantity for perfume or aerosols; Etihad’s limits depend on the departure airport, so check before you fly."
+      "<strong>Not on the page:</strong> the part of the page read gives no total weight or litre limit for checked perfume."
      ]
     }
    ],
    "faq": [
     [
-     "Can I bring perfume in my Etihad cabin bag?",
-     "Yes, in containers of up to 100ml, according to Etihad’s table."
+     "Can I take perfume in my Etihad hand baggage?",
+     "Only in containers of up to 100 ml. Larger bottles go in checked baggage."
     ],
     [
-     "Can I bring deodorant spray on Etihad?",
-     "Pressurised containers such as deodorant are listed with the same 100ml cabin limit."
+     "Is spray paint allowed on Etihad?",
+     "No. Aerosol spray paint and other flammable liquids are not permitted in cabin or checked baggage."
     ]
    ],
    "sources": [
     [
      "https://www.etihad.com/en/help/baggage-information/prohibited-items",
-     "Etihad &mdash; Prohibited items and what you can take on board"
+     "Etihad Airways &mdash; Prohibited items and what you can take on board"
     ]
    ],
    "keepSchema": true,
-   "checked": "18 October 2026"
+   "checked": "22 November 2026",
+   "unofficial": false
   },
   "liquids": {
    "answer": "We could not take a liquids rule from Etihad's own pages. The rule that security checkpoints apply to cabin baggage is containers of 100 ml or less in one transparent resealable bag of at most 1 litre, according to the International Air Transport Association (IATA).",
@@ -3570,45 +3571,55 @@
    "unofficial": true
   },
   "alcohol": {
-   "answer": "Etihad's pages timed out, so this page gives the UAE government allowance for alcohol arriving by air: no more than 4 litres, or 2 cartons of beer of 24 cans each (355 ml or less per can). Duty and VAT apply above that.",
+   "answer": "Etihad lists alcoholic beverages above 70% alcohol by volume as not permitted in cabin or checked baggage. The page read gives no quantity limit for drinks at or below 70%.",
    "sections": [
     {
-     "h": "🍷 What the UAE government says about alcohol on arrival",
-     "p": "From the UAE government portal u.ae, page \"Customs clearance\" (updated 27 October 2026, read 19 November 2026). It is the customs allowance, not Etihad wording.",
+     "h": "🍷 What Etihad says about alcohol",
+     "p": "From the Etihad page \"Prohibited items and what you can take on board\", read on 22 November 2026.",
      "table": {
       "head": [
        "Question",
-       "u.ae"
+       "Etihad rule"
       ],
       "rows": [
        [
-        "Spirits, wine and similar",
-        "Alcoholic beverages not exceeding 4 litres"
+        "Above 70% alcohol by volume",
+        "Not permitted in cabin or checked baggage"
        ],
        [
-        "Beer instead",
-        "2 cartons of beer, 24 cans each, each can no more than 355 ml"
+        "Flammable liquids such as alcohol or ethanol (fuel, thinner)",
+        "Not permitted in cabin or checked baggage"
        ],
        [
-        "Above the allowance",
-        "Customs duty applies, plus VAT"
+        "Drinks at or below 70%",
+        "No quantity limit is stated on this page"
        ]
       ]
      },
      "list": [
-      "<strong>Not on the page:</strong> Etihad&rsquo;s rules for alcohol in cabin and checked bags, and any age condition. Ask Etihad, and note that bottles bought at duty free for a US-bound flight are treated differently at Abu Dhabi."
+      "<strong>Not on the page:</strong> a litre limit, a rule for duty-free bottles and a rule for drinking your own alcohol are not on this page. Check the Conditions of Carriage and Etihad before you fly."
      ]
     }
    ],
+   "faq": [
+    [
+     "What alcohol is banned on Etihad flights?",
+     "Etihad does not permit alcoholic beverages above 70% alcohol by volume in cabin or checked baggage."
+    ],
+    [
+     "Does Etihad give a litre limit for alcohol?",
+     "Not on its Prohibited items page, so ask Etihad or check its Conditions of Carriage."
+    ]
+   ],
    "sources": [
     [
-     "https://u.ae/en/information-and-services/visiting-and-exploring-the-uae/Tourist-services-and-information/Customs-clearance",
-     "Unofficial source (UAE government): u.ae &mdash; Customs clearance"
+     "https://www.etihad.com/en/help/baggage-information/prohibited-items",
+     "Etihad Airways &mdash; Prohibited items and what you can take on board"
     ]
    ],
    "keepSchema": true,
-   "checked": "19 November 2026",
-   "unofficial": true
+   "checked": "22 November 2026",
+   "unofficial": false
   }
  },
  "Swiss": {
@@ -7196,96 +7207,130 @@
    "unofficial": false
   },
   "alcohol": {
-   "answer": "Japan Airlines's own rule could not be read; the IATA limit is 5 L per person for drinks above 24% up to 70%, and the home-country customs rule is below.",
+   "answer": "JAL allows alcohol in carry-on or checked baggage: drinks of 24% or less have no limit, drinks above 24% and under 70% are limited to five litres per person, and anything over 70% is prohibited.",
    "sections": [
     {
-     "h": "🍷 What the industry rule says about alcohol on JAL",
-     "p": "IATA, the airline industry body. Airports and customs can add stricter limits. Full table: <a href=\"/plane/alcohol/\">alcohol on a plane</a>.",
+     "h": "🍷 What Japan Airlines says about alcohol",
+     "p": "From the JAL international-flights page \"About the restricted articles in checked and carry-on baggage\", read on 22 November 2026.",
      "table": {
       "head": [
        "Question",
-       "IATA rule"
+       "JAL rule"
       ],
       "rows": [
        [
-        "Up to 24% alcohol by volume",
-        "Not subject to any restrictions"
+        "24% alcohol or less",
+        "No limit"
        ],
        [
-        "More than 24% and up to 70%",
-        "Retail packaging, receptacles not exceeding 5 L, total net quantity 5 L per person"
+        "Above 24% and under 70%",
+        "Five litres per person"
        ],
        [
-        "Cabin bag at security",
-        "Liquid limits also apply at the checkpoint; see the liquids rule for Japan Airlines"
+        "Over 70%",
+        "Prohibited in carry-on and checked baggage"
+       ],
+       [
+        "Where to carry it",
+        "Carry-on or checked; JAL strongly recommends glass bottles go in carry-on because they are fragile"
+       ],
+       [
+        "Cabin liquids",
+        "On international flights containers must hold 100 ml or less, in one transparent re-sealable bag of up to one litre"
        ]
       ]
-     }
-    },
-    {
-     "h": "What customs says about bringing alcohol into Japan (Japan Airlines's home country)",
-     "p": "This is the customs rule for people entering Japan, not a rule stated by Japan Airlines for its cabin. Japan Customs lists the duty-free allowance per person over 20 as 3 bottles of alcohol of about 760 ml each, next to 200 cigarettes or 50 cigars or 250 g of other tobacco. The page applies the allowances only to people over 20 and says nothing about younger travellers. Other items are allowed in any quantity as long as each item's overseas market value is 10,000 yen or less, up to 200,000 yen in total. An item worth more than 200,000 yen gets no allowance and is taxed in full, and customs applies the allowance to the items that benefit the traveller most. The page does not state the duty rates or the procedure for alcohol above the allowance. Source read: Japan Customs, Customs Answer 7104 (English). Duty rates above the allowance are not on the page."
+     },
+     "list": [
+      "<strong>Not on the page:</strong> the section read does not explain how bottles bought at foreign duty-free shops are handled at a Japanese connection."
+     ]
     }
+   ],
+   "faq": [
+    [
+     "How much alcohol can I take on a JAL international flight?",
+     "No limit up to 24% alcohol; five litres per person above 24% and under 70%; over 70% is prohibited."
+    ],
+    [
+     "Should I pack a glass bottle in carry-on or checked bags on JAL?",
+     "JAL allows both but strongly recommends carry-on for glass bottles because they are fragile."
+    ]
    ],
    "sources": [
     [
-     "https://www.iata.org/contentassets/6fea26dd84d24b26a7a1fd5788561d6e/dgr-67-en-2.3.a.pdf",
-     "IATA &mdash; Dangerous Goods Regulations, Table 2.3.A (67th edition, 1 January 2026)"
+     "https://www.jal.co.jp/jp/en/inter/baggage/limit/attention/",
+     "Japan Airlines &mdash; Restricted articles in checked and carry-on baggage (international flights)"
     ]
    ],
    "keepSchema": true,
-   "checked": "18 October 2026",
-   "unofficial": true
+   "checked": "22 November 2026",
+   "unofficial": false
   },
   "perfume": {
-   "answer": "Japan Airlines's own rule could not be read. The IATA limit is 0.5 L or 0.5 kg per article and 2 L or 2 kg in total; the table below has the details.",
+   "answer": "JAL allows toiletry articles in carry-on and checked baggage, less than 0.5 kg or 0.5 L per container and less than 2 kg or 2 L per person, with spray nozzles protected.",
    "sections": [
     {
-     "h": "🧴 What the industry rule says about perfume and aerosols on JAL",
-     "p": "IATA, the airline industry body. Airports and customs can add stricter limits.",
+     "h": "🧴 What Japan Airlines says about perfume and aerosols",
+     "p": "From the JAL international-flights page \"About the restricted articles in checked and carry-on baggage\", section \"Toiletry Articles and Medicines\", read on 22 November 2026.",
      "table": {
       "head": [
        "Question",
-       "IATA rule"
+       "Japan Airlines rule"
       ],
       "rows": [
        [
-        "What it covers",
-        "Non-radioactive medicinal or toiletry articles including aerosols, such as hair sprays, perfumes, colognes and medicines containing alcohol, and non-flammable, non-toxic aerosols for sporting or home use"
+        "Allowed where",
+        "Both carry-on and checked baggage"
        ],
        [
-        "Where",
-        "Permitted in carry-on and in checked baggage, without operator approval"
+        "Per container",
+        "Less than 0.5 kg or 0.5 L"
        ],
        [
-        "Total",
-        "Not more than 2 kg or 2 L in total"
+        "Per person",
+        "Less than 2 kg or 2 L in total"
        ],
        [
-        "Each article",
-        "Not more than 0.5 kg or 0.5 L"
+        "Spray cans with gas",
+        "The nozzle must be protected with a cap or similar device so it cannot be activated"
        ],
        [
-        "Aerosol valves",
-        "Release valves must be protected by a cap or other suitable means"
+        "Examples named",
+        "Hair spray, hair tonic, hair colour and bleach, lotion, facial cleansing foam, sunscreen, shaving foam, nail care products"
        ],
        [
-        "In your cabin bag on JAL",
-        "Security liquid limits also apply: On international flights JAL requires all liquids to be in containers of no more than 100 ml, placed in one transparent re-sealable plastic bag of at most one litre, one bag per person."
+        "Medicines",
+        "Must not include radioactive substances"
+       ],
+       [
+        "Cabin liquids",
+        "The separate rule for carry-on liquids, gels and aerosols also applies"
        ]
       ]
-     }
+     },
+     "list": [
+      "<strong>Not on the page:</strong> the part of the page read does not list perfume by name; it covers toiletry articles by category."
+     ]
     }
+   ],
+   "faq": [
+    [
+     "How much of my toiletries can I carry on JAL?",
+     "Less than 0.5 kg or 0.5 L per container and less than 2 kg or 2 L per person, in carry-on or checked baggage."
+    ],
+    [
+     "Do aerosol cans need a cap on JAL?",
+     "Yes, gas-filled spray cans must have the nozzle protected so it cannot be activated."
+    ]
    ],
    "sources": [
     [
-     "https://www.iata.org/contentassets/6fea26dd84d24b26a7a1fd5788561d6e/dgr-67-en-2.3.a.pdf",
-     "IATA &mdash; Dangerous Goods Regulations, Table 2.3.A (67th edition, 1 January 2026)"
+     "https://www.jal.co.jp/jp/en/inter/baggage/limit/attention/",
+     "Japan Airlines &mdash; Restricted articles in checked and carry-on baggage (international flights)"
     ]
    ],
    "keepSchema": true,
-   "checked": "18 October 2026",
-   "unofficial": true
+   "checked": "22 November 2026",
+   "unofficial": false
   },
   "power": {
    "answer": "From 24 April 2026 JAL allows no more than two power banks of 160 Wh or less per passenger, carry-on only; charging them through seat outlets or USB ports and using them to charge other devices on board is prohibited.",
@@ -8933,110 +8978,11 @@
    "unofficial": true
   },
   "alcohol": {
-   "answer": "Air France's own rule could not be read; the IATA limit is 5 L per person for drinks above 24% up to 70%, and the home-country customs rule is below.",
+   "answer": "Air France allows alcohol in checked baggage (5 litres per person for drinks of 24% to 70%) but not in the cabin, except duty-free alcohol bought after security and kept in a sealed bag. Homemade alcohol and anything above 70% are not allowed.",
    "sections": [
     {
-     "h": "🍷 What the industry rule says about alcohol on Air France",
-     "p": "IATA, the airline industry body. Airports and customs can add stricter limits. Full table: <a href=\"/plane/alcohol/\">alcohol on a plane</a>.",
-     "table": {
-      "head": [
-       "Question",
-       "IATA rule"
-      ],
-      "rows": [
-       [
-        "Up to 24% alcohol by volume",
-        "Not subject to any restrictions"
-       ],
-       [
-        "More than 24% and up to 70%",
-        "Retail packaging, receptacles not exceeding 5 L, total net quantity 5 L per person"
-       ],
-       [
-        "Cabin bag at security",
-        "Liquid limits also apply at the checkpoint; see the liquids rule for Air France"
-       ]
-      ]
-     }
-    },
-    {
-     "h": "What customs says about bringing alcohol into France (Air France's home country)",
-     "p": "This is the customs rule for people entering France, not a rule stated by Air France for its cabin. The French customs page for goods brought back from outside the EU gives 4 litres of still wine and 16 litres of beer, plus either 1 litre of drinks above 22% or 2 litres of drinks of 22% or less. It says the allowances can be combined proportionally within one category of goods. People under 17 cannot import tobacco or alcohol duty-free. The separate value allowance is 430 euros for travellers of 15 or over arriving by air or sea, and the value of goods under quantity limits is not counted in it. The page shows no update date; it refers to a customs circular of 28 April 2023. Source read 16 November 2026: French Customs (douane.gouv.fr), page on tobacco, alcohol and other goods bought outside the EU (undated)."
-    }
-   ],
-   "sources": [
-    [
-     "https://www.iata.org/contentassets/6fea26dd84d24b26a7a1fd5788561d6e/dgr-67-en-2.3.a.pdf",
-     "IATA &mdash; Dangerous Goods Regulations, Table 2.3.A (67th edition, 1 January 2026)"
-    ]
-   ],
-   "keepSchema": true,
-   "checked": "18 October 2026",
-   "unofficial": true
-  },
-  "perfume": {
-   "answer": "Air France's pages timed out or returned errors, so this is the French civil aviation authority (DGAC) guidance on the French ecology ministry site: liquids, aerosols, gels and creams in flasks under 100 ml, in one closed bag of up to 1 litre, and aerosols must be checked against the cabin and hold rules before travel.",
-   "sections": [
-    {
-     "h": "🧴 What the French authority says about perfume and aerosols",
-     "p": "From the French ministry page \"Items not permitted to be carried on airplanes or helicopters or subject to restrictions\" (published 17 February 2022, updated 18 October 2023, read 17 November 2026). It is French authority guidance, not Air France wording.",
-     "table": {
-      "head": [
-       "Question",
-       "French authority (DGAC)"
-      ],
-      "rows": [
-       [
-        "What the security rule covers",
-        "All liquids, aerosols, gels, pastes, creams, lotions and mousses"
-       ],
-       [
-        "Container size",
-        "Flasks and bottles of less than 100 mL"
-       ],
-       [
-        "Bag",
-        "One closed plastic bag, transparent and re-closable, up to 1 L (about 20 x 20 cm) per passenger"
-       ],
-       [
-        "Aerosols",
-        "DGAC asks passengers to follow the rules for aerosols in the cabin and hold, to check the airline, and to read the safety data sheet; no quantity is given"
-       ],
-       [
-        "Duty-free liquids",
-        "Allowed in the sealed bag with the proof of purchase visible"
-       ],
-       [
-        "Liquid medicines",
-        "Allowed in the quantity needed for the trip; keep the prescription"
-       ],
-       [
-        "Item refused at security",
-        "Ask the airport about checking it in the hold, collecting it later, or posting it"
-       ]
-      ]
-     },
-     "list": [
-      "<strong>Not on the page:</strong> Air France&rsquo;s own quantity limits for perfume. Confirm them with Air France."
-     ]
-    }
-   ],
-   "sources": [
-    [
-     "https://www.ecologie.gouv.fr/en/public-policies/items-not-permitted-be-carried-airplanes-helicopters-subject-restrictions",
-     "Unofficial source (French civil aviation authority, DGAC): Ministry of Ecological Transition &mdash; Items not permitted on aircraft"
-    ]
-   ],
-   "keepSchema": true,
-   "checked": "17 November 2026",
-   "unofficial": true
-  },
-  "power": {
-   "answer": "We could not take a power bank rule from Air France's own pages. The IATA guidance that airlines are adopting says passengers are limited to a maximum of two lithium-ion power banks not exceeding 100 Wh, in carry-on baggage only.",
-   "sections": [
-    {
-     "h": "🔋 What Air France says about power banks",
-     "p": "This section is from an unofficial source, not Air France's own rules: the IATA guidance document for passengers travelling with lithium batteries (revised for the 2026 regulations, dated 31 March 2026). Air France's own pages could not be read for us.",
+     "h": "🍷 What Air France says about alcohol",
+     "p": "From the Air France page \"Liquides, crèmes - boissons alcoolisées, combustibles, liquides inflammables - Poudres\" (in French), read on 22 November 2026.",
      "table": {
       "head": [
        "Question",
@@ -9044,107 +8990,209 @@
       ],
       "rows": [
        [
-        "How many",
-        "A maximum of two lithium-ion power banks not exceeding 100 Wh"
+        "In the cabin",
+        "No, except alcohol bought in airport duty-free shops after security and placed in a sealed bag"
        ],
        [
-        "Between 100 Wh and 160 Wh",
-        "IATA's Table 1 allows power banks of more than 100 Wh and up to 160 Wh in carry-on baggage only, limited to 2; above 160 Wh power banks are forbidden"
+        "In the hold (checked)",
+        "Yes: up to 5 litres per person for drinks between 24% and 70% alcohol"
        ],
        [
-        "Where",
-        "Carry-on baggage only: power banks are not permitted in checked baggage"
+        "Per container",
+        "For 24% to 70%, at most 5 litres per container and per person"
        ],
        [
-        "Charging the power bank on board",
-        "Must not be recharged from an in-aircraft power supply"
+        "Above 70%, or homemade",
+        "Not allowed"
        ],
        [
-        "Where to keep it",
-        "Should not be stored in the overhead lockers"
+        "Packaging",
+        "Retail packaging, properly closed"
        ],
        [
-        "Use",
-        "Should not be used to power other devices during taxi, take-off or landing"
+        "Prior approval",
+        "Not needed"
        ],
        [
-        "Protection",
-        "Spare batteries individually protected against short circuits: original retail packaging, taped terminals, or each in a separate bag or pouch"
-       ],
-       [
-        "Stricter rules",
-        "Airlines may impose more stringent conditions on the carriage and use of power banks"
+        "Destination",
+        "Extra restrictions may apply depending on where you fly"
        ]
       ]
      },
      "list": [
-      "<strong>Not on the page:</strong> Air France's own rule. Many airlines are stricter than IATA, for example banning use on board or allowing only one power bank, so confirm with Air France before you fly."
-     ]
-    },
-    {
-     "h": "What the French ministry page says about power banks",
-     "p": "Air France's own page could not be read, so this section comes from the French ministry's page on items not permitted on aircraft (ecologie.gouv.fr), which applies to flights from France. It is a state rule, not an Air France rule.",
-     "table": {
-      "head": [
-       "Item",
-       "What the French page says"
-      ],
-      "rows": [
-       [
-        "Power banks",
-        "May be carried in the cabin if the limits and conditions are met; not allowed in the hold"
-       ],
-       [
-        "Spare lithium batteries",
-        "Cabin only; not allowed in the hold"
-       ],
-       [
-        "E-cigarettes and their spare batteries",
-        "Never in checked luggage; must stay switched off and not be charged on board"
-       ],
-       [
-        "Power banks built into suitcases",
-        "Some airlines may refuse them, in the cabin and in the hold"
-       ],
-       [
-        "Protection",
-        "Spare batteries must be individually protected against short circuits, for example in original packaging, taped terminals or separate pouches"
-       ]
-      ]
-     },
-     "list": [
-      "Not on the page: a watt-hour limit for power banks, or a limit on how many you may carry. The page gives 100 Wh per battery for e-cigarette batteries and 2 g of lithium for lithium metal batteries.",
-      "The page says airlines may be stricter than the regulation, so Air France's own limits can differ."
+      "<strong>Not on the page:</strong> the page does not give a limit for drinks of 24% or less, so ask Air France or check the destination's customs rules."
      ]
     }
    ],
    "faq": [
     [
-     "How many power banks can I take on Air France?",
-     "Following the IATA guidance: a maximum of two lithium-ion power banks, each up to 100 Wh, in carry-on baggage. Air France's own page was not readable on this, so confirm with the airline."
+     "Can I take alcohol in my Air France cabin bag?",
+     "Not normally. The exception is alcohol bought in a duty-free shop at the airport after security and kept in a sealed bag."
     ],
     [
-     "Can I use my power bank on a Air France flight?",
-     "IATA says power banks must not be recharged from the aircraft power and should not power other devices during taxi, take-off and landing; many airlines ban use entirely, so confirm with Air France."
-    ],
-    [
-     "Can I put a power bank in checked luggage on a flight from France?",
-     "No. The French ministry page lists power banks among items that are not allowed in the hold. They can go in the cabin if the limits and conditions are met. This is the state rule; the airline may be stricter."
+     "How much alcohol can I check on Air France?",
+     "Up to 5 litres per person for drinks between 24% and 70% alcohol; drinks above 70% and homemade alcohol are not allowed."
     ]
    ],
    "sources": [
     [
-     "https://www.iata.org/contentassets/6fea26dd84d24b26a7a1fd5788561d6e/passengers_travelling_with_lithium_batteries.pdf",
-     "IATA &mdash; Passengers Travelling with Lithium Batteries (2026 guidance)"
-    ],
-    [
-     "https://www.ecologie.gouv.fr/en/public-policies/items-not-permitted-be-carried-airplanes-helicopters-subject-restrictions",
-     "French ministry for ecological transition: items not permitted on aircraft"
+     "https://wwws.airfrance.fr/information/bagages/popin_produits-interdits-et-reglementes/produits-interdits-et-reglementes-11",
+     "Air France &mdash; Liquides, boissons alcoolisées (produits interdits et réglementés)"
     ]
    ],
    "keepSchema": true,
-   "checked": "18 October 2026",
-   "unofficial": true
+   "checked": "22 November 2026",
+   "unofficial": false
+  },
+  "perfume": {
+   "answer": "Air France allows perfume, eau de Cologne, hair spray and deodorant in the cabin and in the hold, up to 0.5 kg or 500 ml per article and 2 kg or 2 l per person, on top of the cabin liquid restrictions.",
+   "sections": [
+    {
+     "h": "🧴 What Air France says about perfume and aerosols",
+     "p": "From the Air France page \"Aérosols, articles de toilette et médicaments\" (in French), read on 22 November 2026.",
+     "table": {
+      "head": [
+       "Question",
+       "Air France rule"
+      ],
+      "rows": [
+       [
+        "Items covered",
+        "Hair spray, deodorant, perfume, eau de Cologne, nail polish remover, nail polish, and medicines containing alcohol"
+       ],
+       [
+        "In the cabin",
+        "Yes"
+       ],
+       [
+        "In the hold (checked)",
+        "Yes"
+       ],
+       [
+        "Total per person",
+        "2 kg or 2 l net for toiletries, non-radioactive medicines and the aerosols listed"
+       ],
+       [
+        "Each article",
+        "No more than 0.5 kg or 500 ml net"
+       ],
+       [
+        "Cabin liquid rule",
+        "These quantities do not replace the separate cabin liquid restrictions"
+       ],
+       [
+        "Duty-free",
+        "You can buy these items in airport duty-free shops after security"
+       ],
+       [
+        "Prior approval",
+        "Not needed"
+       ],
+       [
+        "Non-flammable aerosols (sports or home use)",
+        "Not in the cabin; allowed in the hold; valve must have a cap"
+       ],
+       [
+        "Flammable or toxic aerosols (paints, varnish, acetone, lighter fluid)",
+        "Not in the cabin and not in the hold"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> the page does not name a limit for single perfume bottles in the cabin beyond referring to the cabin liquid restrictions."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "Can I take perfume in my Air France cabin bag?",
+     "Yes, within 0.5 kg or 500 ml per article and 2 kg or 2 l in total per person, and the cabin liquid restrictions still apply."
+    ],
+    [
+     "Can I pack hair spray or deodorant in my Air France checked bag?",
+     "Yes. Toiletries and aerosols of this kind are allowed in the hold within the same quantity limits."
+    ]
+   ],
+   "sources": [
+    [
+     "https://wwws.airfrance.fr/information/bagages/popin_produits-interdits-et-reglementes/produits-interdits-et-reglementes-1",
+     "Air France &mdash; Aérosols, articles de toilette et médicaments"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "22 November 2026",
+   "unofficial": false
+  },
+  "power": {
+   "answer": "Air France allows power banks up to 160 Wh in the cabin only, never in the hold or in the overhead bins. Power banks and spare batteries between 100 and 160 Wh need Air France's approval and are limited to 2 items per person in total.",
+   "sections": [
+    {
+     "h": "🔋 What Air France says about power banks",
+     "p": "From the Air France page \"Electric and electronic devices, batteries and replacement batteries\", read on 22 November 2026.",
+     "table": {
+      "head": [
+       "Question",
+       "Air France rule"
+      ],
+      "rows": [
+       [
+        "Power banks up to 160 Wh (lithium-ion)",
+        "In the cabin yes, but not in the overhead storage bins; in the hold no"
+       ],
+       [
+        "Supervision",
+        "Must stay under your supervision at all times and be readily accessible"
+       ],
+       [
+        "100 to 160 Wh",
+        "Approval is mandatory, requested from Air France or your travel agency before the trip; at most 2 such items per person in total (power banks and spare batteries together)"
+       ],
+       [
+        "Up to 100 Wh",
+        "Each passenger can carry up to 15 battery-powered devices and 20 spare or removed batteries; more needs approval"
+       ],
+       [
+        "Packing",
+        "Each spare battery individually protected against short circuit, ideally in its original packaging, a plastic bag or an individual envelope; cover terminals with non-conductive tape"
+       ],
+       [
+        "Devices in the hold",
+        "Must be switched off and their batteries removed and carried in the cabin"
+       ],
+       [
+        "Damaged or recalled batteries",
+        "Not allowed on board"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> the section read does not say whether using or charging a power bank on board is banned; ask Air France."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "Can I put a power bank in my checked bag on Air France?",
+     "No. External batteries must travel in the cabin, not in the hold."
+    ],
+    [
+     "Do I need approval for a large power bank on Air France?",
+     "Yes for 100 to 160 Wh: approval must be requested from Air France or your travel agency before you travel."
+    ],
+    [
+     "Can I keep my power bank in the overhead bin on Air France?",
+     "No. Power banks are prohibited in the overhead storage bins and must stay accessible."
+    ]
+   ],
+   "sources": [
+    [
+     "https://wwws.airfrance.fr/en/information/bagages/popin_produits-interdits-et-reglementes/produits-interdits-et-reglementes-3",
+     "Air France &mdash; Electric and electronic devices, batteries and replacement batteries"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "22 November 2026",
+   "unofficial": false
   }
  },
  "flydubai": {
@@ -9270,106 +9318,137 @@
    "unofficial": true
   },
   "alcohol": {
-   "answer": "flydubai's baggage pages timed out, so this page gives Dubai Customs' rule for alcohol arriving in Dubai: no more than 4 litres, or 2 cartons of beer (24 cans each, 355 ml or less a can), for passengers over 18 carrying it for personal use.",
+   "answer": "flydubai allows alcohol in both hand baggage and checked baggage. Retail-packaged drinks above 24% and below 70% alcohol are limited to receptacles of 5 litres and 5 litres per passenger; drinks of 24% or less have no restriction.",
    "sections": [
     {
-     "h": "🍺 What Dubai Customs says about alcohol on arrival",
-     "p": "From the Dubai Customs page \"Permitted luggage and items\" (read 19 November 2026; undated). It is customs guidance, not flydubai wording.",
+     "h": "🍷 What flydubai says about alcohol",
+     "p": "From the flydubai Dangerous goods page (restricted and prohibited items), read on 22 November 2026. Its Conditions of Carriage also say passengers may not drink alcohol on board unless flydubai serves it.",
      "table": {
       "head": [
        "Question",
-       "Dubai Customs"
+       "flydubai rule"
       ],
       "rows": [
        [
-        "Spirits, wine and similar",
-        "No more than 4 litres of alcoholic beverages"
+        "Above 24% and below 70% alcohol",
+        "Retail packaging, receptacles up to 5 litres, 5 litres net per passenger"
        ],
        [
-        "Beer",
-        "2 cartons of 24 cans, each can no more than 355 ml"
+        "24% alcohol or less",
+        "Not subject to any restriction"
        ],
        [
-        "Age",
-        "The passenger must be over 18"
+        "Hand baggage",
+        "Yes, allowed"
        ],
        [
-        "Personal use",
-        "Exemptions apply only to goods that are personal and not in commercial quantities"
+        "Checked baggage",
+        "Yes, allowed"
+       ],
+       [
+        "Customs",
+        "Country (origin, destination and transit) and customs rules apply"
        ]
       ]
      },
      "list": [
-      "<strong>Not on the page:</strong> what happens to alcohol above the limit, and flydubai&rsquo;s own cabin and checked-bag rules."
+      "<strong>Not on the page:</strong> flydubai does not say here how the 100 ml cabin liquid limit applies to bottles bought after security; duty-free items are size and weight checked at the gate."
      ]
     }
    ],
+   "faq": [
+    [
+     "How much alcohol can I take on flydubai?",
+     "24% alcohol or less has no restriction; above 24% and below 70% it is limited to 5 litres per passenger in retail packaging, in receptacles up to 5 litres."
+    ],
+    [
+     "Can I put alcohol in hand baggage on flydubai?",
+     "The Dangerous goods page marks alcoholic beverages as allowed in both hand and checked baggage, within those limits and subject to country and customs rules."
+    ]
+   ],
    "sources": [
     [
-     "https://www.dubaicustoms.gov.ae/en/mobile/Pages/PermittedLuggageItems.aspx",
-     "Unofficial source (customs authority): Dubai Customs &mdash; Permitted luggage and items"
+     "https://www.flydubai.com/en/flying-with-us/baggage/dangerous-goods/",
+     "flydubai &mdash; Dangerous goods: restricted and prohibited items"
     ]
    ],
    "keepSchema": true,
-   "checked": "19 November 2026",
-   "unofficial": true
+   "checked": "22 November 2026",
+   "unofficial": false
   },
   "perfume": {
-   "answer": "flydubai's own rule could not be read. The IATA limit is 0.5 L or 0.5 kg per article and 2 L or 2 kg in total; the table below has the details.",
+   "answer": "flydubai allows perfume and other toiletry articles in hand and checked baggage: up to 0.5 kg or 0.5 L per article and 2 kg or 2 L in total, with aerosol valves protected.",
    "sections": [
     {
-     "h": "🧴 What the industry rule says about perfume and aerosols on flydubai",
-     "p": "IATA, the airline industry body. Airports and customs can add stricter limits.",
+     "h": "🧴 What flydubai says about perfume and aerosols",
+     "p": "From the flydubai Dangerous goods page (restricted and prohibited items), read on 22 November 2026.",
      "table": {
       "head": [
        "Question",
-       "IATA rule"
+       "flydubai rule"
       ],
       "rows": [
        [
-        "What it covers",
-        "Non-radioactive medicinal or toiletry articles including aerosols, such as hair sprays, perfumes, colognes and medicines containing alcohol, and non-flammable, non-toxic aerosols for sporting or home use"
+        "Items covered",
+        "Non-radioactive medicinal or toiletry articles, including hair sprays, perfumes, colognes and medicines containing alcohol"
        ],
        [
-        "Where",
-        "Permitted in carry-on and in checked baggage, without operator approval"
+        "Total per passenger",
+        "2 kg or 2 L net for all such articles and non-flammable, non-toxic aerosols (Division 2.2)"
        ],
        [
-        "Total",
-        "Not more than 2 kg or 2 L in total"
-       ],
-       [
-        "Each article",
-        "Not more than 0.5 kg or 0.5 L"
+        "Single article",
+        "0.5 kg or 0.5 L net at most"
        ],
        [
         "Aerosol valves",
-        "Release valves must be protected by a cap or other suitable means"
+        "Protected by a cap or other means so the contents cannot be released by accident"
        ],
        [
-        "In your cabin bag on flydubai",
-        "Security liquid limits also apply: We could not take a liquids rule from flydubai's own pages. The rule that security checkpoints apply to cabin baggage is containers of 100 ml or less in one transparent resealable bag of at most 1 litre, according to the International Air Transport Association (IATA)."
+        "Hand baggage",
+        "Yes, allowed"
+       ],
+       [
+        "Checked baggage",
+        "Yes, allowed"
+       ],
+       [
+        "Liquids in hand baggage",
+        "The page points to its separate liquids restrictions"
        ]
       ]
-     }
+     },
+     "list": [
+      "<strong>Not on the page:</strong> the 100 ml cabin container limit itself is on a separate flydubai page."
+     ]
     }
+   ],
+   "faq": [
+    [
+     "How much perfume can I take on flydubai?",
+     "Each single article may hold up to 0.5 kg or 0.5 L, and all toiletry articles and aerosols together may not exceed 2 kg or 2 L."
+    ],
+    [
+     "Can I carry perfume in hand baggage on flydubai?",
+     "Yes, the Dangerous goods page marks toiletry articles including perfumes as allowed in hand and checked baggage, subject to the liquids restrictions in hand baggage."
+    ]
    ],
    "sources": [
     [
-     "https://www.iata.org/contentassets/6fea26dd84d24b26a7a1fd5788561d6e/dgr-67-en-2.3.a.pdf",
-     "IATA &mdash; Dangerous Goods Regulations, Table 2.3.A (67th edition, 1 January 2026)"
+     "https://www.flydubai.com/en/flying-with-us/baggage/dangerous-goods/",
+     "flydubai &mdash; Dangerous goods: restricted and prohibited items"
     ]
    ],
    "keepSchema": true,
-   "checked": "18 October 2026",
-   "unofficial": true
+   "checked": "22 November 2026",
+   "unofficial": false
   },
   "power": {
-   "answer": "We could not take a power bank rule from flydubai's own pages. The IATA guidance that airlines are adopting says passengers are limited to a maximum of two lithium-ion power banks not exceeding 100 Wh, in carry-on baggage only.",
+   "answer": "flydubai allows one power bank per passenger, of 100 Wh or less with the rating clearly marked. It must be in hand baggage only, switched off, protected from short circuits, never in an overhead locker, never in checked baggage, and not used on board.",
    "sections": [
     {
      "h": "🔋 What flydubai says about power banks",
-     "p": "This section is from an unofficial source, not flydubai's own rules: the IATA guidance document for passengers travelling with lithium batteries (revised for the 2026 regulations, dated 31 March 2026). flydubai's page on lithium batteries shows its guidelines as an image that could not be read.",
+     "p": "From the flydubai Dangerous goods page, section \"Power banks\", read on 22 November 2026.",
      "table": {
       "head": [
        "Question",
@@ -9378,62 +9457,70 @@
       "rows": [
        [
         "How many",
-        "A maximum of two lithium-ion power banks not exceeding 100 Wh"
+        "Only one power bank per passenger"
        ],
        [
-        "Between 100 Wh and 160 Wh",
-        "IATA's Table 1 allows power banks of more than 100 Wh and up to 160 Wh in carry-on baggage only, limited to 2; above 160 Wh power banks are forbidden"
+        "Capacity",
+        "100 Wh or less, clearly marked (labelled, embossed or printed) on the device; over 100 Wh strictly prohibited"
+       ],
+       [
+        "Which devices count",
+        "Any power bank, portable charger, battery pack, pocket charger or power station whose main job is portable power"
+       ],
+       [
+        "State",
+        "Switched off and protected from short circuits and accidental activation; original retail packaging or a pouch is advisable"
+       ],
+       [
+        "On board",
+        "Use is strictly prohibited, including charging devices or the power bank from aircraft sockets"
        ],
        [
         "Where",
-        "Carry-on baggage only: power banks are not permitted in checked baggage"
+        "In hand baggage under the seat or in the seat pocket; not in overhead lockers"
        ],
        [
-        "Charging the power bank on board",
-        "Must not be recharged from an in-aircraft power supply"
+        "Hand baggage",
+        "Yes"
        ],
        [
-        "Where to keep it",
-        "Should not be stored in the overhead lockers"
+        "Checked baggage",
+        "No"
        ],
        [
-        "Use",
-        "Should not be used to power other devices during taxi, take-off or landing"
+        "Breaking the rules",
+        "Can lead to denial of carriage"
        ],
        [
-        "Protection",
-        "Spare batteries individually protected against short circuits: original retail packaging, taped terminals, or each in a separate bag or pouch"
-       ],
-       [
-        "Stricter rules",
-        "Airlines may impose more stringent conditions on the carriage and use of power banks"
+        "Flights to and from India",
+        "The MOBIKINS MK-PB-04 power bank is prohibited in hand baggage, checked baggage and cargo"
        ]
       ]
      },
      "list": [
-      "<strong>Not on the page:</strong> flydubai's own rule. Many airlines are stricter than IATA, for example banning use on board or allowing only one power bank, so confirm with flydubai before you fly."
+      "<strong>Not on the page:</strong> the same page separately allows up to 20 spare lithium batteries per passenger in hand baggage, but says power banks follow the power bank section."
      ]
     }
    ],
    "faq": [
     [
      "How many power banks can I take on flydubai?",
-     "Following the IATA guidance: a maximum of two lithium-ion power banks, each up to 100 Wh, in carry-on baggage. flydubai's own page was not readable on this, so confirm with the airline."
+     "Only one per passenger, of 100 Wh or less, in hand baggage."
     ],
     [
-     "Can I use my power bank on a flydubai flight?",
-     "IATA says power banks must not be recharged from the aircraft power and should not power other devices during taxi, take-off and landing; many airlines ban use entirely, so confirm with flydubai."
+     "Can I charge my phone from a power bank on flydubai?",
+     "No. Using a power bank on board is strictly prohibited, including charging devices or charging the power bank from aircraft sockets."
     ]
    ],
    "sources": [
     [
-     "https://www.iata.org/contentassets/6fea26dd84d24b26a7a1fd5788561d6e/passengers_travelling_with_lithium_batteries.pdf",
-     "IATA &mdash; Passengers Travelling with Lithium Batteries (2026 guidance)"
+     "https://www.flydubai.com/en/flying-with-us/baggage/dangerous-goods/",
+     "flydubai &mdash; Dangerous goods: restricted and prohibited items"
     ]
    ],
    "keepSchema": true,
-   "checked": "18 October 2026",
-   "unofficial": true
+   "checked": "22 November 2026",
+   "unofficial": false
   }
  },
  "South African Airways": {
@@ -10624,46 +10711,59 @@
    "unofficial": false
   },
   "alcohol": {
-   "answer": "Asiana's own rule could not be read; the IATA limit is 5 L per person for drinks above 24% up to 70%, and the home-country customs rule is below.",
+   "answer": "Asiana prohibits alcoholic beverages of 70% or more alcohol in the cabin. Duty-free alcohol bought at airport shops may go in the cabin only when sealed in a security tamper-evident bag. Its Restricted Items page gives no litre limit for checked alcohol.",
    "sections": [
     {
-     "h": "🍷 What the industry rule says about alcohol on Asiana",
-     "p": "IATA, the airline industry body. Airports and customs can add stricter limits. Full table: <a href=\"/plane/alcohol/\">alcohol on a plane</a>.",
+     "h": "🍷 What Asiana says about alcohol",
+     "p": "From the Asiana Restricted Items page (US site, English), read on 22 November 2026.",
      "table": {
       "head": [
        "Question",
-       "IATA rule"
+       "Asiana rule"
       ],
       "rows": [
        [
-        "Up to 24% alcohol by volume",
-        "Not subject to any restrictions"
+        "Alcohol with 70% or higher alcohol content",
+        "Listed as an explosive or flammable material prohibited in the cabin"
        ],
        [
-        "More than 24% and up to 70%",
-        "Retail packaging, receptacles not exceeding 5 L, total net quantity 5 L per person"
+        "Duty-free alcohol bought at an airport",
+        "Allowed in the cabin only when sealed in a security tamper-evident bag"
        ],
        [
-        "Cabin bag at security",
-        "Liquid limits also apply at the checkpoint; see the liquids rule for Asiana"
+        "Liquids in the cabin on international flights",
+        "Containers of 100 ml or less in one transparent resealable 1-litre bag, one bag per passenger"
+       ],
+       [
+        "Connecting after buying duty-free",
+        "Rules depend on the transit country; the page lists country by country (for example Taiwan: duty-free liquids may not go in cabin baggage on a transfer, only as checked baggage)"
        ]
       ]
-     }
-    },
-    {
-     "h": "What customs says about bringing alcohol into South Korea (Asiana's home country)",
-     "p": "This is the customs rule for people entering South Korea, not a rule stated by Asiana for its cabin. The Korea Customs Service page on duty-free allowances says liquor has its own allowance of up to 2 litres together with US$400, which applies outside the US$800 general limit, with 200 cigarette sticks for tobacco and 100 ml of perfume. The page does not list a limit of 1 litre. Minors under 19, counted by year of birth, are not given the tax exemption for liquor and cigarettes. If you declare goods above the allowances yourself, you get a 30% reduction from the standard customs duty. Undeclared goods found later face an additional tax of 40% above the regular tax, or 60% if caught two or more times within 2 years. Source read: Korea Customs Service, duty-free allowance page (English)."
+     },
+     "list": [
+      "<strong>Not on the page:</strong> a litre limit for alcohol in checked baggage."
+     ]
     }
+   ],
+   "faq": [
+    [
+     "Can I carry duty-free alcohol on Asiana?",
+     "Yes, in the cabin when it is sealed in a security tamper-evident bag. On a transfer it may still be confiscated under the transit country's rules."
+    ],
+    [
+     "Is strong alcohol banned on Asiana?",
+     "Alcohol with 70% or higher alcohol content is prohibited in the cabin."
+    ]
    ],
    "sources": [
     [
-     "https://www.iata.org/contentassets/6fea26dd84d24b26a7a1fd5788561d6e/dgr-67-en-2.3.a.pdf",
-     "IATA &mdash; Dangerous Goods Regulations, Table 2.3.A (67th edition, 1 January 2026)"
+     "https://flyasiana.com/C/US/EN/contents/restricted-transport-items",
+     "Asiana &mdash; Restricted Items"
     ]
    ],
    "keepSchema": true,
-   "checked": "18 October 2026",
-   "unofficial": true
+   "checked": "22 November 2026",
+   "unofficial": false
   },
   "perfume": {
    "answer": "Asiana's own rule could not be read. The IATA limit is 0.5 L or 0.5 kg per article and 2 L or 2 kg in total; the table below has the details.",
@@ -11224,11 +11324,11 @@
    "unofficial": true
   },
   "perfume": {
-   "answer": "Royal Jordanian treats perfumes, shaving foam and deodorants as liquids at security: containers of at most 100 ml in one sealed transparent 1-litre bag per passenger, with medicines and baby food exempt. Its dangerous goods rules also list hair sprays and perfumes among items with quantity limits, without stating the numbers, and forbid aerosols such as camping gas.",
+   "answer": "Royal Jordanian lists perfumes, hair sprays and colognes as items that may go in carry-on or checked baggage but only up to limits on quantity. Through security, perfumes and other liquids must be in containers of 100 ml or less in one sealed transparent 1-litre bag.",
    "sections": [
     {
-     "h": "🧴 What Royal Jordanian says about perfumes and aerosols",
-     "p": "From the Royal Jordanian page \"What not to carry\" (read 17 November 2026; the page shows no date).",
+     "h": "🧴 What Royal Jordanian says about perfume and aerosols",
+     "p": "From the Royal Jordanian Baggage restrictions page, read on 22 November 2026.",
      "table": {
       "head": [
        "Question",
@@ -11236,44 +11336,50 @@
       ],
       "rows": [
        [
-        "Perfume, shaving foam, deodorant, gels",
-        "Allowed through security only in small quantities"
+        "Perfumes, colognes, hair sprays",
+        "Allowed in carry-on or checked baggage but restricted to specific limits on quantity or dimensions"
        ],
        [
-        "Container size",
-        "No more than 100 ml each"
+        "Through security (all flights)",
+        "Perfumes, shaving foam, deodorants, gels, sprays, shampoo, lotions, creams, oils and drinks in containers of 100 ml or less"
        ],
        [
-        "Bag",
+        "Bag for the 100 ml containers",
         "One transparent re-sealable 1-litre plastic bag per passenger, completely sealed"
        ],
        [
-        "Medicines and special foods such as baby food",
-        "Do not need to go in the bag, but must be shown at the security check"
+        "Presentation",
+        "Show the items at the security check"
        ],
        [
-        "Hair sprays, perfumes and other toiletry aerosols",
-        "Listed among items with specific quantity limits; the page does not state the numbers"
-       ],
-       [
-        "Aerosols such as camping gas",
-        "On the forbidden list"
+        "Medicines and baby food needed on the flight",
+        "Do not need to go in the plastic bag"
        ]
       ]
      },
      "list": [
-      "<strong>Not on the page:</strong> the quantity limits for toiletry aerosols. Dangerous goods rules apply on all Royal Jordanian flights, so confirm the numbers with the airline."
+      "<strong>Not on the page:</strong> the page names the category of limited articles but gives no weight or litre figure for checked perfume or aerosols."
      ]
     }
+   ],
+   "faq": [
+    [
+     "Can I take perfume through security on Royal Jordanian?",
+     "Yes, in containers of 100 ml or less packed in one transparent resealable 1-litre bag, one bag per passenger."
+    ],
+    [
+     "Are hair sprays allowed on Royal Jordanian?",
+     "Hair sprays, perfumes and colognes are allowed in carry-on or checked baggage within quantity limits, but this page does not state the figures."
+    ]
    ],
    "sources": [
     [
      "https://www.rj.com/en/info-and-tips/baggage-information/what-not-to-carry",
-     "Royal Jordanian &mdash; What not to carry"
+     "Royal Jordanian &mdash; Baggage restrictions"
     ]
    ],
    "keepSchema": true,
-   "checked": "17 November 2026",
+   "checked": "22 November 2026",
    "unofficial": false
   },
   "power": {
@@ -11814,27 +11920,27 @@
    "unofficial": false
   },
   "power": {
-   "answer": "Aer Lingus's Guide to Dangerous Goods (January 2026, revision 5 of 14 April 2026) lets spare lithium-ion batteries and power banks of 100 Wh or less go in the carry-on only, with a maximum of 2 spares per person, and says power banks must not be used or charged during the flight.",
+   "answer": "Aer Lingus treats power banks as spare batteries: carry-on only, individually protected, not used or charged during the flight, with a maximum of 2 spare batteries per person unless the operator approves more.",
    "sections": [
     {
      "h": "🔋 What Aer Lingus says about power banks",
-     "p": "From the Aer Lingus PDF \"Guide to Dangerous Goods\" (January 2026, revision 5 dated 14 April 2026), read 19 November 2026.",
+     "p": "From the Aer Lingus Guide To Dangerous Goods (January 2026, revision 5 dated 14 April 2026), read on 22 November 2026.",
      "table": {
       "head": [
        "Question",
-       "Aer Lingus guide"
+       "Aer Lingus rule"
       ],
       "rows": [
        [
-        "Spare batteries and power banks",
-        "Carry-on baggage; the table marks checked baggage as not permitted"
+        "What counts",
+        "Articles whose main purpose is a power source, such as power banks, are treated as spare batteries"
        ],
        [
-        "Power banks",
-        "Treated as spare batteries because their main purpose is to be a power source"
+        "Where",
+        "Spare or loose lithium batteries in carry-on baggage only; the table marks checked baggage as not permitted"
        ],
        [
-        "Lithium-ion size",
+        "Lithium-ion capacity",
         "Watt-hour rating must not exceed 100 Wh"
        ],
        [
@@ -11843,45 +11949,49 @@
        ],
        [
         "How many",
-        "Each person is limited to 2 spare batteries; the operator may approve more"
+        "Each person is limited to a maximum of 2 spare batteries; the operator may approve more"
        ],
        [
-        "Protection",
-        "Each battery individually protected against short circuit"
+        "Packing",
+        "Each battery individually protected to prevent short circuit"
        ],
        [
         "In flight",
         "Power banks must not be used or charged during the flight"
        ],
        [
-        "E-cigarettes with batteries",
-        "Carry-on, individually protected against accidental activation"
+        "Baggage with installed batteries",
+        "Removable batteries must be taken out before the bag is checked and carried in the cabin"
        ]
       ]
      },
      "list": [
-      "<strong>Not in the guide:</strong> where to stow the power bank in the cabin. Ask Aer Lingus or follow the crew&rsquo;s instruction."
+      "<strong>Not on the page:</strong> the guide's table gives no separate rule for batteries above 100 Wh; they are not permitted without operator approval."
      ]
     }
    ],
    "faq": [
     [
      "How many power banks can I take on Aer Lingus?",
-     "Following the IATA guidance: a maximum of two lithium-ion power banks, each up to 100 Wh, in carry-on baggage. Aer Lingus's own page was not readable on this, so confirm with the airline."
+     "A maximum of 2 spare batteries per person, including power banks, unless the operator approves more."
     ],
     [
-     "Can I use my power bank on a Aer Lingus flight?",
-     "IATA says power banks must not be recharged from the aircraft power and should not power other devices during taxi, take-off and landing; many airlines ban use entirely, so confirm with Aer Lingus."
+     "Can I use my power bank on an Aer Lingus flight?",
+     "No. Power banks must not be used or charged during the flight."
+    ],
+    [
+     "Can I put a power bank in my checked suitcase on Aer Lingus?",
+     "No. Spare batteries and power banks must be carried in carry-on baggage only."
     ]
    ],
    "sources": [
     [
      "https://www.aerlingus.com/media/pdfs/guide-to-dangerous-goods.pdf",
-     "Aer Lingus &mdash; Guide to Dangerous Goods (PDF, January 2026)"
+     "Aer Lingus &mdash; Guide To Dangerous Goods (January 2026)"
     ]
    ],
    "keepSchema": true,
-   "checked": "19 November 2026",
+   "checked": "22 November 2026",
    "unofficial": false
   }
  },
@@ -13246,11 +13356,11 @@
    "unofficial": true
   },
   "perfume": {
-   "answer": "Ethiopian Airlines allows hair sprays, perfumes and medicines containing alcohol in both carry-on and checked baggage, with no more than 0.5 kg or 0.5 L per article and 2.0 kg or 2.0 L in total. Flammable liquids such as lighter fuel and paint are not allowed in either bag.",
+   "answer": "Ethiopian Airlines allows aerosols such as hair spray, perfume and medicines containing alcohol in both carry-on and checked baggage, up to 0.5 kg/L per article and 2.0 kg/L in total.",
    "sections": [
     {
-     "h": "🧴 What Ethiopian Airlines says about perfumes and hair sprays",
-     "p": "From the Ethiopian Airlines Restricted Items page, United States site (read 17 November 2026; the page shows only a 2026 copyright).",
+     "h": "🧴 What Ethiopian Airlines says about perfume and aerosols",
+     "p": "From the Ethiopian Airlines Restricted Items page (US site), read on 22 November 2026.",
      "table": {
       "head": [
        "Question",
@@ -13258,36 +13368,50 @@
       ],
       "rows": [
        [
-        "Hair sprays, perfumes, medicines containing alcohol",
-        "Allowed in carry-on and in checked baggage"
+        "Items covered",
+        "Aerosols: hair sprays, perfumes and medicines containing alcohol"
        ],
        [
-        "One article",
-        "No more than 0.5 kg or 0.5 L"
+        "Carry-on",
+        "Yes"
        ],
        [
-        "All such articles together",
-        "No more than 2.0 kg or 2.0 L"
+        "Checked baggage",
+        "Yes"
        ],
        [
-        "Flammable liquids and solids, such as lighter or heating fuel, paints and thinners",
-        "Not allowed in carry-on or checked baggage"
+        "Each article",
+        "Not more than 0.5 kg or 0.5 L"
+       ],
+       [
+        "All together",
+        "Not more than 2.0 kg or 2.0 L in total weight"
        ]
       ]
      },
      "list": [
-      "<strong>Not on the page:</strong> a carry-on liquid size limit. The page only says carry-on rules may restrict liquids and gels, so check the rule of the airport you fly from."
+      "<strong>Not on the page:</strong> the table does not mention the 100 ml cabin container limit or valve caps."
      ]
     }
+   ],
+   "faq": [
+    [
+     "How much perfume can I take on Ethiopian Airlines?",
+     "Not more than 0.5 kg or 0.5 L per article and 2.0 kg or 2.0 L in total, in carry-on or checked baggage."
+    ],
+    [
+     "Can I carry hair spray in hand baggage on Ethiopian Airlines?",
+     "Yes, the Restricted Items table lists hair sprays and perfumes as allowed in carry-on and check-in within the same limits."
+    ]
    ],
    "sources": [
     [
      "https://www.ethiopianairlines.com/us/information/baggage-information/restricted-items",
-     "Ethiopian Airlines &mdash; Restricted Items (United States site)"
+     "Ethiopian Airlines &mdash; Restricted Items"
     ]
    ],
    "keepSchema": true,
-   "checked": "17 November 2026",
+   "checked": "22 November 2026",
    "unofficial": false
   },
   "power": {
@@ -14062,46 +14186,75 @@
    "unofficial": false
   },
   "alcohol": {
-   "answer": "China Southern's own rule could not be read; the IATA limit is 5 L per person for drinks above 24% up to 70%, and the home-country customs rule is below.",
+   "answer": "China Southern bans alcohol in carry-on unless you bought it in the terminal's sterile area after security. In checked baggage, drinks up to 24% alcohol are unrestricted, drinks above 24% and up to 70% are limited to 5 litres net per person, and anything above 70% is not accepted.",
    "sections": [
     {
-     "h": "🍷 What the industry rule says about alcohol on China Southern",
-     "p": "IATA, the airline industry body. Airports and customs can add stricter limits. Full table: <a href=\"/plane/alcohol/\">alcohol on a plane</a>.",
+     "h": "🍷 What China Southern says about alcohol",
+     "p": "From the China Southern General Conditions of Carriage for Passenger and Baggage (sections 4.5.6, 6.2.9 and 6.3.4.7), read on 22 November 2026. Cabin liquids are covered by its separate carry-on liquids rule.",
      "table": {
       "head": [
        "Question",
-       "IATA rule"
+       "China Southern rule"
       ],
       "rows": [
        [
-        "Up to 24% alcohol by volume",
-        "Not subject to any restrictions"
+        "Alcohol in carry-on",
+        "Prohibited, except alcohol bought in the sterile area of the terminal, which may go on board if it meets the carry-on and alcohol rules"
        ],
        [
-        "More than 24% and up to 70%",
-        "Retail packaging, receptacles not exceeding 5 L, total net quantity 5 L per person"
+        "Checked, 24% alcohol or less",
+        "Unrestricted"
        ],
        [
-        "Cabin bag at security",
-        "Liquid limits also apply at the checkpoint; see the liquids rule for China Southern"
+        "Checked, above 24% up to 70%",
+        "No more than 5 litres net per person"
+       ],
+       [
+        "Above 70%, or homemade distilled spirits",
+        "Not allowed as baggage"
+       ],
+       [
+        "Packaging when checked",
+        "Must meet civil aviation transport rules"
+       ],
+       [
+        "Drinking your own",
+        "Not allowed aboard; only alcohol provided by China Southern may be drunk"
        ]
       ]
-     }
-    },
-    {
-     "h": "What customs says about bringing alcohol into China (China Southern's home country)",
-     "p": "This is the customs rule for people entering China, not a rule stated by China Southern for its cabin. The Travel Doc customs page for China allows travellers aged 16 and over up to 1.5 litres of alcohol of 12% or higher. The page names no publisher and shows no date, so confirm the figures with the customs authority before you travel. Unofficial source, read 16 November 2026: Travel Doc customs information page for China (infopages.traveldoc.aero, undated; it names no publisher). The official customs site could not be read."
+     },
+     "list": [
+      "<strong>Not on the page:</strong> the Conditions do not say what happens to duty-free alcohol bought at an overseas airport; the carry-on FAQ says China Southern follows local regulations for those liquids."
+     ]
     }
+   ],
+   "faq": [
+    [
+     "Can I bring a bottle of alcohol in my China Southern carry-on?",
+     "Not unless you bought it in the sterile area of the terminal after security. Alcohol from elsewhere goes in checked baggage."
+    ],
+    [
+     "How much alcohol can I check on China Southern?",
+     "Up to 24% alcohol is unrestricted; above 24% and up to 70% is limited to 5 litres net per person; above 70% is not accepted."
+    ],
+    [
+     "Can I drink my own alcohol on a China Southern flight?",
+     "No. Passengers may drink only the alcohol China Southern provides on board."
+    ]
    ],
    "sources": [
     [
-     "https://www.iata.org/contentassets/6fea26dd84d24b26a7a1fd5788561d6e/dgr-67-en-2.3.a.pdf",
-     "IATA &mdash; Dangerous Goods Regulations, Table 2.3.A (67th edition, 1 January 2026)"
+     "https://www.csair.com/cts-products/cts/fastdfs/20260626/3edae764dd49418582ef740225391b1a.pdf",
+     "China Southern &mdash; General Conditions of Carriage for Passenger &amp; Baggage"
+    ],
+    [
+     "https://www.csair.com/sg/en/tourguide/faq/baggage/ssxdxlxz.shtml",
+     "China Southern &mdash; Carry-on Baggage FAQ"
     ]
    ],
    "keepSchema": true,
-   "checked": "18 October 2026",
-   "unofficial": true
+   "checked": "22 November 2026",
+   "unofficial": false
   },
   "perfume": {
    "answer": "China Southern answers \"Can I board with hairspray?\" with a plain NO. Its liquids rule limits every liquid, gel and aerosol in the cabin to containers of 100 ml in one transparent bag of at most 1 litre. The IATA limit for checked bags is 0.5 L or 0.5 kg per article and 2 L or 2 kg in total.",
@@ -16140,46 +16293,67 @@
    "unofficial": true
   },
   "alcohol": {
-   "answer": "El Al's own rule could not be read; the IATA limit is 5 L per person for drinks above 24% up to 70%, and the home-country customs rule is below.",
+   "answer": "El Al's dangerous goods document lists whiskey and vodka as allowed in carry-on and checked baggage: more than 24% and up to 70% alcohol is limited to 5 litres total net per person, and drinks under 24% such as wine and beer have no restriction.",
    "sections": [
     {
-     "h": "🍷 What the industry rule says about alcohol on El Al",
-     "p": "IATA, the airline industry body. Airports and customs can add stricter limits. Full table: <a href=\"/plane/alcohol/\">alcohol on a plane</a>.",
+     "h": "🍷 What El Al says about alcohol",
+     "p": "From the El Al document \"Allowable Dangerous Goods carried by passengers\" (English, revision 2 dated October 2022), read on 22 November 2026. It is an older document, so confirm it with El Al.",
      "table": {
       "head": [
        "Question",
-       "IATA rule"
+       "El Al rule"
       ],
       "rows": [
        [
-        "Up to 24% alcohol by volume",
-        "Not subject to any restrictions"
+        "Examples listed",
+        "Whiskey and vodka"
        ],
        [
-        "More than 24% and up to 70%",
-        "Retail packaging, receptacles not exceeding 5 L, total net quantity 5 L per person"
+        "Carry-on",
+        "Yes"
        ],
        [
-        "Cabin bag at security",
-        "Liquid limits also apply at the checkpoint; see the liquids rule for El Al"
+        "Checked baggage",
+        "Yes"
+       ],
+       [
+        "More than 24% and up to 70% alcohol",
+        "5 litres total net quantity per person"
+       ],
+       [
+        "Under 24% (wine, beer)",
+        "No restriction"
+       ],
+       [
+        "Operator approval",
+        "Not needed"
        ]
       ]
-     }
-    },
-    {
-     "h": "What customs says about bringing alcohol into Israel (El Al's home country)",
-     "p": "This is the customs rule for people entering Israel, not a rule stated by El Al for its cabin. The Travel Doc customs page for Israel allows travellers aged 18 and over 1 litre of spirits and 2 litres of wine, together. The page names no publisher and shows no date, so confirm the figures with the customs authority before you travel. Unofficial source, read 16 November 2026: Travel Doc customs information page for Israel (infopages.traveldoc.aero, undated; it names no publisher). The official customs site could not be read."
+     },
+     "list": [
+      "<strong>Not on the page:</strong> the document does not explain duty-free bottles or the 100 ml cabin liquid limit for alcohol."
+     ]
     }
+   ],
+   "faq": [
+    [
+     "How much alcohol can I take on El Al?",
+     "For drinks above 24% and up to 70% alcohol the limit is 5 litres total net per person; wine and beer under 24% have no restriction."
+    ],
+    [
+     "Can I carry spirits in hand baggage on El Al?",
+     "The El Al dangerous goods table marks alcoholic beverages as allowed in both carry-on and checked baggage, within the 5 litre limit."
+    ]
    ],
    "sources": [
     [
-     "https://www.iata.org/contentassets/6fea26dd84d24b26a7a1fd5788561d6e/dgr-67-en-2.3.a.pdf",
-     "IATA &mdash; Dangerous Goods Regulations, Table 2.3.A (67th edition, 1 January 2026)"
+     "https://www.elal.com/SiteCollectionDocuments/Baggage/Materials/Dangerous-EN-May19.pdf",
+     "El Al &mdash; Allowable Dangerous Goods carried by passengers (PDF)"
     ]
    ],
    "keepSchema": true,
-   "checked": "18 October 2026",
-   "unofficial": true
+   "checked": "22 November 2026",
+   "unofficial": false
   },
   "perfume": {
    "answer": "El Al's terms of carriage say medicines and toiletries needed during the journey, such as hairsprays and perfumes, may be carried in limited quantities, while compressed gases and flammable liquids such as lighter fuel are forbidden in passenger baggage. The El Al dangerous goods table covers alcohol (24% to 70%, 5 L per person) but has no perfume row.",
@@ -19260,46 +19434,146 @@
    "unofficial": false
   },
   "alcohol": {
-   "answer": "Virgin Australia's own rule could not be read; the IATA limit is 5 L per person for drinks above 24% up to 70%, and the home-country customs rule is below.",
+   "answer": "Virgin Australia permits alcohol in carry-on or checked baggage in retail packaging, up to a maximum net total of 5 litres per person and not above 70% alcohol. You may not drink alcohol you carry on board.",
    "sections": [
     {
-     "h": "🍷 What the industry rule says about alcohol on Virgin Australia",
-     "p": "IATA, the airline industry body. Airports and customs can add stricter limits. Full table: <a href=\"/plane/alcohol/\">alcohol on a plane</a>.",
+     "h": "🍷 What Virgin Australia says about alcohol",
+     "p": "From the Virgin Australia Dangerous goods page, read on 22 November 2026.",
      "table": {
       "head": [
        "Question",
-       "IATA rule"
+       "Virgin Australia rule"
       ],
       "rows": [
        [
-        "Up to 24% alcohol by volume",
-        "Not subject to any restrictions"
+        "Carry-on baggage",
+        "Permitted"
        ],
        [
-        "More than 24% and up to 70%",
-        "Retail packaging, receptacles not exceeding 5 L, total net quantity 5 L per person"
+        "Checked baggage",
+        "Permitted"
        ],
        [
-        "Cabin bag at security",
-        "Liquid limits also apply at the checkpoint; see the liquids rule for Virgin Australia"
+        "Packaging",
+        "Retail packaging"
+       ],
+       [
+        "Quantity",
+        "Maximum net total of 5 litres per person"
+       ],
+       [
+        "Strength",
+        "Must not be more than 70% alcohol by volume"
+       ],
+       [
+        "Operator approval",
+        "Not required"
+       ],
+       [
+        "Drinking it on board",
+        "Not permitted for alcohol you carry"
+       ],
+       [
+        "International flights",
+        "Liquid, aerosol and gel limits apply in carry-on; the page refers to the Department of Infrastructure"
        ]
       ]
-     }
-    },
-    {
-     "h": "What customs says about bringing alcohol into Australia (Virgin Australia's home country)",
-     "p": "This is the customs rule for people entering Australia, not a rule stated by Virgin Australia for its cabin. Sydney Airport’s information sheet on duty-free allowances for arriving passengers says each adult (18 or over) can bring in 2.25 litres of liquor, wine or champagne duty-free. It adds that duty and tax are payable on all items of that type, not only on the amount above the limit, if the allowance is exceeded. The sheet lists the alcohol allowance for adults only, so we do not show an allowance for travellers under 18. It shows no update date. Because this is an airport operator and not the Australian Border Force, treat it as a guide and confirm on the Border Force website before you fly. Unofficial source, read 16 November 2026: Sydney Airport, duty-free allowances for arriving passengers (airport operator page, undated). The Australian Border Force page could not be opened."
+     },
+     "list": [
+      "<strong>Not on the page:</strong> this page gives no separate rule for drinks of 24% or less."
+     ]
     }
+   ],
+   "faq": [
+    [
+     "How much alcohol can I take on Virgin Australia?",
+     "A maximum net total of 5 litres per person, in retail packaging, and no more than 70% alcohol by volume."
+    ],
+    [
+     "Can I drink my own alcohol on a Virgin Australia flight?",
+     "No. The Dangerous goods page says consumption of alcohol carried on board is not permitted."
+    ]
    ],
    "sources": [
     [
-     "https://www.iata.org/contentassets/6fea26dd84d24b26a7a1fd5788561d6e/dgr-67-en-2.3.a.pdf",
-     "IATA &mdash; Dangerous Goods Regulations, Table 2.3.A (67th edition, 1 January 2026)"
+     "https://www.virginaustralia.com/au/en/travel-info/baggage/dangerous-goods/",
+     "Virgin Australia &mdash; Dangerous goods"
     ]
    ],
    "keepSchema": true,
-   "checked": "18 October 2026",
-   "unofficial": true
+   "checked": "22 November 2026",
+   "unofficial": false
+  },
+  "perfume": {
+   "answer": "Virgin Australia permits perfumes, hair spray, deodorant and hand sanitiser in carry-on or checked baggage, up to 0.5 kg or 0.5 L per article and 2 kg or 2 L in total.",
+   "sections": [
+    {
+     "h": "🧴 What Virgin Australia says about perfume and aerosols",
+     "p": "From the Virgin Australia Dangerous goods page, section \"Toiletry and medicinal articles\", read on 22 November 2026.",
+     "table": {
+      "head": [
+       "Question",
+       "Virgin Australia rule"
+      ],
+      "rows": [
+       [
+        "Items covered",
+        "Aerosols such as hair spray and deodorant, flammable liquids such as hand sanitiser, perfumes and medicines containing alcohol"
+       ],
+       [
+        "Carry-on and checked",
+        "Both permitted"
+       ],
+       [
+        "Operator approval",
+        "Not required"
+       ],
+       [
+        "Single article",
+        "No more than 0.5 kg or 0.5 L"
+       ],
+       [
+        "Total for all articles",
+        "No more than 2 kg or 2 L, including non-flammable aerosols for sporting or home use"
+       ],
+       [
+        "Aerosol valves",
+        "Protected by a cap or other suitable means"
+       ],
+       [
+        "Use",
+        "Personal use only; the aerosol must have no other hazard"
+       ],
+       [
+        "International flights",
+        "Liquid, aerosol and gel limits apply in carry-on"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> the page does not repeat the 100 ml container figure; it refers to the Department of Infrastructure."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "Can I take perfume on Virgin Australia?",
+     "Yes, in carry-on or checked baggage: each article up to 0.5 kg or 0.5 L, and all toiletry and medicinal articles up to 2 kg or 2 L in total."
+    ],
+    [
+     "Is hand sanitiser allowed on Virgin Australia?",
+     "Yes. The Dangerous goods page lists flammable liquids such as hand sanitiser among the permitted toiletry and medicinal articles, within the same limits."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.virginaustralia.com/au/en/travel-info/baggage/dangerous-goods/",
+     "Virgin Australia &mdash; Dangerous goods"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "22 November 2026",
+   "unofficial": false
   }
  },
  "Philippine Airlines": {
@@ -19870,46 +20144,75 @@
    "unofficial": false
   },
   "alcohol": {
-   "answer": "China Eastern's own rule could not be read; the IATA limit is 5 L per person for drinks above 24% up to 70%, and the home-country customs rule is below.",
+   "answer": "China Eastern allows drinks up to 24% alcohol without limit, and 5 litres per person of drinks from 24% to 70% in checked baggage; above 70% is prohibited. Alcohol must go in checked baggage, except what you buy in the passenger terminal, which may go on board.",
    "sections": [
     {
-     "h": "🍷 What the industry rule says about alcohol on China Eastern",
-     "p": "IATA, the airline industry body. Airports and customs can add stricter limits. Full table: <a href=\"/plane/alcohol/\">alcohol on a plane</a>.",
+     "h": "🍷 What China Eastern says about alcohol",
+     "p": "From the China Eastern General Conditions for Transportation of Passengers and Baggage (July 2026), sections 5.4.4 and 7.2.3.8, read on 22 November 2026.",
      "table": {
       "head": [
        "Question",
-       "IATA rule"
+       "China Eastern rule"
       ],
       "rows": [
        [
-        "Up to 24% alcohol by volume",
-        "Not subject to any restrictions"
+        "24% alcohol or less",
+        "No restriction in carry-on or checked baggage"
        ],
        [
-        "More than 24% and up to 70%",
-        "Retail packaging, receptacles not exceeding 5 L, total net quantity 5 L per person"
+        "Above 24% up to 70%",
+        "Containers of at most 5 litres, and 5 litres in total in checked baggage per passenger"
        ],
        [
-        "Cabin bag at security",
-        "Liquid limits also apply at the checkpoint; see the liquids rule for China Eastern"
+        "Above 70%",
+        "Prohibited in carry-on and checked baggage"
+       ],
+       [
+        "Where to carry it",
+        "Check it in; only alcohol bought in the passenger terminal may be carried on board"
+       ],
+       [
+        "Checked packaging",
+        "Retail packaging with a full, clear label; strong sealed outer packaging; China Eastern may ask for a liability waiver"
+       ],
+       [
+        "Stricter local law",
+        "China Eastern follows stricter laws at the departure, transit or destination place"
+       ],
+       [
+        "Drinking your own",
+        "Not permitted in the cabin; only alcohol served by China Eastern"
        ]
       ]
-     }
-    },
-    {
-     "h": "What customs says about bringing alcohol into China (China Eastern's home country)",
-     "p": "This is the customs rule for people entering China, not a rule stated by China Eastern for its cabin. The Travel Doc customs page for China allows travellers aged 16 and over up to 1.5 litres of alcohol of 12% or higher. The page names no publisher and shows no date, so confirm the figures with the customs authority before you travel. Unofficial source, read 16 November 2026: Travel Doc customs information page for China (infopages.traveldoc.aero, undated; it names no publisher). The official customs site could not be read."
+     },
+     "list": [
+      "<strong>Not on the page:</strong> the Conditions give no separate rule for duty-free alcohol bought at an overseas airport."
+     ]
     }
+   ],
+   "faq": [
+    [
+     "How much alcohol can I take on China Eastern?",
+     "Up to 24% alcohol has no limit; 24% to 70% is limited to 5 litres per passenger in checked baggage; above 70% is prohibited."
+    ],
+    [
+     "Can I carry alcohol in the cabin on China Eastern?",
+     "Only alcohol bought in the passenger terminal. Other alcohol must be checked."
+    ],
+    [
+     "Can I drink my own alcohol on China Eastern?",
+     "No. Passengers may drink only alcohol served on board by China Eastern."
+    ]
    ],
    "sources": [
     [
-     "https://www.iata.org/contentassets/6fea26dd84d24b26a7a1fd5788561d6e/dgr-67-en-2.3.a.pdf",
-     "IATA &mdash; Dangerous Goods Regulations, Table 2.3.A (67th edition, 1 January 2026)"
+     "https://www.ceair.com/global/en_static/Announcement/TravelTips/dsGeneralCondition/chinaEasternLuggageRules/domesticRules/202201/W020260724485859129374.pdf",
+     "China Eastern &mdash; General Conditions for Transportation of Passengers and Baggage (July 2026)"
     ]
    ],
    "keepSchema": true,
-   "checked": "18 October 2026",
-   "unofficial": true
+   "checked": "22 November 2026",
+   "unofficial": false
   },
   "perfume": {
    "answer": "China Eastern's own rule could not be read. The IATA limit is 0.5 L or 0.5 kg per article and 2 L or 2 kg in total; the table below has the details.",

@@ -1062,7 +1062,8 @@
  },
  "airline/el-al/alcohol": {
   "official": [
-   "tried 2026-11-16: elal.com dangerous-goods PDF is listed (2019/2022 versions) but the alcohol rows were not read in full; baggage pages HTTP 492"
+   "tried 2026-11-16: elal.com dangerous-goods PDF is listed (2019/2022 versions) but the alcohol rows were not read in full; baggage pages HTTP 492",
+   "read 2026-11-22: elal.com Allowable Dangerous Goods PDF (rev. Oct 2022) alcohol row"
   ],
   "reliable": [
    "IATA Dangerous Goods Regulations, Table 2.3.A (67th edition, 1 January 2026): read, already on the page",
@@ -1071,7 +1072,7 @@
   "other": [
    "none needed: step 2a (IATA) answered the question"
   ],
-  "date": "2026-11-16"
+  "date": "2026-11-22"
  },
  "airline/sunexpress/alcohol": {
   "official": [
@@ -1798,7 +1799,8 @@
  },
  "country/malta/alcohol": {
   "official": [
-   "tried 2026-11-16: official customs page for Malta: HTTP 403 or connection refused, not read"
+   "tried 2026-11-16: official customs page for Malta: HTTP 403 or connection refused, not read",
+   "read 2026-11-22: mtca.gov.mt travellers allowances page"
   ],
   "reliable": [
    "read: Travel Doc customs information page for Malta (infopages.traveldoc.aero)"
@@ -1806,11 +1808,12 @@
   "other": [
    "none needed: step 2a answered the question"
   ],
-  "date": "2026-11-16"
+  "date": "2026-11-22"
  },
  "country/malta/tobacco": {
   "official": [
-   "tried 2026-11-16: official customs page for Malta: HTTP 403 or connection refused, not read"
+   "tried 2026-11-16: official customs page for Malta: HTTP 403 or connection refused, not read",
+   "read 2026-11-22: mtca.gov.mt travellers allowances page"
   ],
   "reliable": [
    "read: Travel Doc customs information page for Malta (infopages.traveldoc.aero)"
@@ -1818,7 +1821,7 @@
   "other": [
    "none needed: step 2a answered the question"
   ],
-  "date": "2026-11-16"
+  "date": "2026-11-22"
  },
  "country/bahrain/alcohol": {
   "official": [
@@ -2374,7 +2377,8 @@
  },
  "country/ireland/plants-seeds": {
   "official": [
-   "tried 2026-11-16: revenue.ie customs page redirected; redirect target not read"
+   "tried 2026-11-16: revenue.ie customs page redirected; redirect target not read",
+   "read 2026-11-22: Revenue Tax and Duty Manual importation of plants (Jan 2026): DAFM, BCPs Dublin Port/Airport/Rosslare, passenger consignments notified to DAFM"
   ],
   "reliable": [
    "read: Travel Doc customs information page for Ireland (infopages.traveldoc.aero)"
@@ -2382,7 +2386,7 @@
   "other": [
    "none needed: step 2a answered the question"
   ],
-  "date": "2026-11-16"
+  "date": "2026-11-22"
  },
  "country/south-korea/plants-seeds": {
   "official": [
@@ -12586,7 +12590,8 @@
  },
  "airline/air-france/power-bank": {
   "official": [
-   "tried 2026-11-16: wwws.airfrance.us and wwws.airfrance.fr prohibited-items pages: timed out, not read"
+   "tried 2026-11-16: wwws.airfrance.us and wwws.airfrance.fr prohibited-items pages: timed out, not read",
+   "read 2026-11-22: airfrance.fr electric and electronic devices page (browser pane)"
   ],
   "reliable": [
    "read 2026-11-16: French ministry for ecological transition: items not permitted on aircraft (https://www.ecologie.gouv.fr/en/public-policies/items-not-permitted-be-carried-airplanes-helicopters-subject-restrictions)"
@@ -12594,7 +12599,7 @@
   "other": [
    "none needed: step 2a answered part of the question"
   ],
-  "date": "2026-11-16"
+  "date": "2026-11-22"
  },
  "airline/frontier/perfume-aerosols": {
   "official": [
@@ -12722,23 +12727,25 @@
  "airline/etihad-airways/alcohol": {
   "official": [
    "tried 2026-11-19: etihad.com dangerous goods carriage guide PDF and prohibited items page: timeouts",
-   "retried 2026-11-19: etihad.com prohibited items page: timeout again on WebFetch (60 s) and curl (25 s)"
+   "retried 2026-11-19: etihad.com prohibited items page: timeout again on WebFetch (60 s) and curl (25 s)",
+   "read 2026-11-22: etihad.com prohibited items page (only above 70 percent)"
   ],
   "reliable": [
    "read 2026-11-19: u.ae customs clearance page (4 L or 2 cartons beer), updated 2026-10-27; tried Abu Dhabi airport pages: SSL error and HTTP 403"
   ],
   "other": [],
-  "date": "2026-11-19"
+  "date": "2026-11-22"
  },
  "airline/flydubai/alcohol": {
   "official": [
-   "tried 2026-11-19: flydubai.com dangerous goods and forbidden items pages: timeouts"
+   "tried 2026-11-19: flydubai.com dangerous goods and forbidden items pages: timeouts",
+   "read 2026-11-22: flydubai.com Dangerous goods page alcohol row"
   ],
   "reliable": [
    "read 2026-11-19: Dubai Customs permitted luggage and items page (4 L / 2 cartons beer, over 18)"
   ],
   "other": [],
-  "date": "2026-11-19"
+  "date": "2026-11-22"
  },
  "airline/vueling/alcohol": {
   "official": [
@@ -12763,7 +12770,10 @@
    "IATA Dangerous Goods Regulations, Table 2.3.A: read, on the page",
    "read 2026-11-16: customs/authority source for Japan as recorded in country_unique.json: Source read: Japan Customs, Customs Answer 7104 (English). Duty rates above the allowance are not on the page."
   ],
-  "date": "2026-11-16"
+  "date": "2026-11-22",
+  "official": [
+   "read 2026-11-22: jal.co.jp international restricted articles page (browser pane)"
+  ]
  },
  "airline/indigo/alcohol": {
   "reliable": [
@@ -12777,7 +12787,10 @@
    "IATA Dangerous Goods Regulations, Table 2.3.A: read, on the page",
    "read 2026-11-16: customs/authority source for France as recorded in country_unique.json: Source read 16 November 2026: French Customs (douane.gouv.fr), page on tobacco, alcohol and other goods bought outside the EU (undated)."
   ],
-  "date": "2026-11-16"
+  "date": "2026-11-22",
+  "official": [
+   "read 2026-11-22: airfrance.fr boissons alcoolisees page (browser pane)"
+  ]
  },
  "airline/south-african-airways/alcohol": {
   "reliable": [
@@ -12819,7 +12832,10 @@
    "IATA Dangerous Goods Regulations, Table 2.3.A: read, on the page",
    "read 2026-11-16: customs/authority source for South Korea as recorded in country_unique.json: Source read: Korea Customs Service, duty-free allowance page (English)."
   ],
-  "date": "2026-11-16"
+  "date": "2026-11-22",
+  "official": [
+   "read 2026-11-22: flyasiana.com Restricted Items page"
+  ]
  },
  "airline/air-arabia/alcohol": {
   "official": [
@@ -12871,14 +12887,20 @@
    "IATA Dangerous Goods Regulations, Table 2.3.A: read, on the page",
    "read 2026-11-16: customs/authority source for China as recorded in country_unique.json: Unofficial source, read 16 November 2026: Travel Doc customs information page for China (infopages.traveldoc.aero, undated; it names no publisher). The official"
   ],
-  "date": "2026-11-16"
+  "date": "2026-11-22",
+  "official": [
+   "read 2026-11-22: csair.com General Conditions of Carriage PDF 4.5.6/6.2.9/6.3.4.7 and carry-on FAQ"
+  ]
  },
  "airline/china-eastern/alcohol": {
   "reliable": [
    "IATA Dangerous Goods Regulations, Table 2.3.A: read, on the page",
    "read 2026-11-16: customs/authority source for China as recorded in country_unique.json: Unofficial source, read 16 November 2026: Travel Doc customs information page for China (infopages.traveldoc.aero, undated; it names no publisher). The official"
   ],
-  "date": "2026-11-16"
+  "date": "2026-11-22",
+  "official": [
+   "read 2026-11-22: ceair.com General Conditions July 2026 5.4.4/7.2.3.8"
+  ]
  },
  "airline/icelandair/alcohol": {
   "reliable": [
@@ -12972,7 +12994,10 @@
    "IATA Dangerous Goods Regulations, Table 2.3.A: read, on the page",
    "read 2026-11-16: customs/authority source for Australia as recorded in country_unique.json: Unofficial source, read 16 November 2026: Sydney Airport, duty-free allowances for arriving passengers (airport operator page, undated). The Australian Border F"
   ],
-  "date": "2026-11-16"
+  "date": "2026-11-22",
+  "official": [
+   "read 2026-11-22: virginaustralia.com Dangerous goods page"
+  ]
  },
  "airline/norwegian/perfume-aerosols": {
   "official": [
@@ -13909,23 +13934,25 @@
  },
  "airline/royal-jordanian/perfume-aerosols": {
   "official": [
-   "read 2026-11-17: https://www.rj.com/en/info-and-tips/baggage-information/what-not-to-carry"
+   "read 2026-11-17: https://www.rj.com/en/info-and-tips/baggage-information/what-not-to-carry",
+   "read 2026-11-22: rj.com baggage restrictions page"
   ],
   "reliable": [],
   "other": [
    "IATA table removed from page: replaced by the airline text"
   ],
-  "date": "2026-11-17"
+  "date": "2026-11-22"
  },
  "airline/ethiopian-airlines/perfume-aerosols": {
   "official": [
-   "read 2026-11-17: https://www.ethiopianairlines.com/us/information/baggage-information/restricted-items"
+   "read 2026-11-17: https://www.ethiopianairlines.com/us/information/baggage-information/restricted-items",
+   "read 2026-11-22: ethiopianairlines.com Restricted Items aerosols row"
   ],
   "reliable": [],
   "other": [
    "IATA table removed from page: replaced by the airline text"
   ],
-  "date": "2026-11-17"
+  "date": "2026-11-22"
  },
  "airline/gol/perfume-aerosols": {
   "official": [
@@ -14050,13 +14077,14 @@
  },
  "airline/air-france/perfume-aerosols": {
   "official": [
-   "tried 2026-11-17: wwws.airfrance.fr aerosols/toiletries popin and prohibited products page: timeouts"
+   "tried 2026-11-17: wwws.airfrance.fr aerosols/toiletries popin and prohibited products page: timeouts",
+   "read 2026-11-22: airfrance.fr aerosols/toiletries page"
   ],
   "reliable": [
    "read 2026-11-17: French ecology ministry DGAC page on items not permitted on aircraft; tried Paris Aeroport regulated items page (empty content)"
   ],
   "other": [],
-  "date": "2026-11-17"
+  "date": "2026-11-22"
  },
  "airline/indigo/perfume-aerosols": {
   "official": [
@@ -14123,23 +14151,25 @@
  },
  "airline/aer-lingus/power-bank": {
   "official": [
-   "read 2026-11-19: Aer Lingus Guide to Dangerous Goods PDF January 2026 rev 5 (14/04/2026): spare batteries 100 Wh, max 2, power banks no use or charging"
+   "read 2026-11-19: Aer Lingus Guide to Dangerous Goods PDF January 2026 rev 5 (14/04/2026): spare batteries 100 Wh, max 2, power banks no use or charging",
+   "read 2026-11-22: aerlingus.com Guide to Dangerous Goods rev 5 (14/04/2026)"
   ],
   "reliable": [],
   "other": [
    "IATA guidance text replaced by the airline text"
   ],
-  "date": "2026-11-19"
+  "date": "2026-11-22"
  },
  "airline/china-southern/power-bank": {
   "official": [
-   "read 2026-11-19: China Southern English page csair.com lkxlzldcdyxgd (power banks carry-on only, 100 Wh, 100-160 Wh approval max 2, over 160 Wh forbidden, no charging in flight)"
+   "read 2026-11-19: China Southern English page csair.com lkxlzldcdyxgd (power banks carry-on only, 100 Wh, 100-160 Wh approval max 2, over 160 Wh forbidden, no charging in flight)",
+   "read 2026-11-22: csair.com Conditions of Carriage 4.5.4.4"
   ],
   "reliable": [
    "read 2026-11-19: CAAC notice on passengers carrying power banks (2014-08-07 text, 2015 republished)"
   ],
   "other": [],
-  "date": "2026-11-19"
+  "date": "2026-11-22"
  },
  "airline/southwest/liquids": {
   "official": [
@@ -15154,6 +15184,144 @@
   "other": [
    "goodsacrossborders and aggregators seen in search, conflicting, not used"
   ],
+  "date": "2026-11-22"
+ },
+ "country/luxembourg/plants-seeds": {
+  "official": [
+   "read 2026-11-22: gouvernement.lu ASTA press release 2023-08-07 (plants, fruit fly, Xylella, confiscation without certificate); no quantity limit"
+  ],
+  "reliable": [],
+  "other": [],
+  "date": "2026-11-22"
+ },
+ "country/poland/plants-seeds": {
+  "official": [
+   "read 2026-11-22: PIORiN gov.pl private-import rules page (two groups, TRACES NT, 24h/4h notification, fee)"
+  ],
+  "reliable": [],
+  "other": [],
+  "date": "2026-11-22"
+ },
+ "country/slovenia/plants-seeds": {
+  "official": [
+   "read 2026-11-22: gov.si personal consignments page (list of plants, certificate + inspection); page under construction"
+  ],
+  "reliable": [],
+  "other": [],
+  "date": "2026-11-22"
+ },
+ "country/romania/plants-seeds": {
+  "official": [
+   "read 2026-11-22: ANF press release 2023-03-03 on border checks, Annex XI/VII Reg 2019/2072; no traveller allowance"
+  ],
+  "reliable": [],
+  "other": [],
+  "date": "2026-11-22"
+ },
+ "country/malta/plants-seeds": {
+  "official": [
+   "read 2026-11-22: publicservice.gov.mt Plant Protection Directorate article 2023-02-01; no traveller allowance; customs.gov.mt plant health page no response"
+  ],
+  "reliable": [],
+  "other": [],
+  "date": "2026-11-22"
+ },
+ "country/slovakia/plants-seeds": {
+  "official": [
+   "read 2026-11-22: financnasprava.sk Zakazy a obmedzenia, plant import section (certificate, five exempt fruits, ÚKSÚP); mpsr.sk ministry page 403 on curl"
+  ],
+  "reliable": [],
+  "other": [],
+  "date": "2026-11-22"
+ },
+ "country/greece/plants-seeds": {
+  "official": [
+   "read 2026-11-22: Region of Attica notice 2020-09-28 relaying ministry notice on seeds from third countries (certificate + inspection, Reg 2016/2031 arts 72-73); aia.gr Cloudflare 403 in browser pane, minagric.gr 403, not bypassed"
+  ],
+  "reliable": [],
+  "other": [],
+  "date": "2026-11-22"
+ },
+ "country/lithuania/plants-seeds": {
+  "official": [],
+  "reliable": [],
+  "other": [
+   "2026-11-22: vatzum.lrv.lt phytosanitary page Cloudflare 403 on curl and in browser pane, muitine.lrv.lt 403 earlier; not bypassed; ladder step 2b: no named readable source found, global rule stays",
+   "read 2026-11-22 (unofficial, 2b): Alkas.lt news article 2022-03-06 quoting Agriculture Ministry and State Plant Service on certificates, phytosanitary posts, Vilnius airport and post"
+  ],
+  "date": "2026-11-22"
+ },
+ "country/bulgaria/plants-seeds": {
+  "official": [],
+  "reliable": [],
+  "other": [
+   "2026-11-22: customs.bg restrictions page navigation failed (no response); mzh.government.bg phytosanitary page read: describes service only, no traveller rule; ladder step 2b: no named readable source found, global rule stays"
+  ],
+  "date": "2026-11-22"
+ },
+ "airline/flydubai/perfume-aerosols": {
+  "official": [
+   "read 2026-11-22: flydubai.com Dangerous goods toiletry row"
+  ],
+  "reliable": [],
+  "other": [],
+  "date": "2026-11-22"
+ },
+ "airline/japan-airlines/perfume-aerosols": {
+  "official": [
+   "read 2026-11-22: jal.co.jp toiletry articles section"
+  ],
+  "reliable": [],
+  "other": [],
+  "date": "2026-11-22"
+ },
+ "airline/virgin-australia/perfume-aerosols": {
+  "official": [
+   "read 2026-11-22: virginaustralia.com Toiletry and medicinal articles"
+  ],
+  "reliable": [],
+  "other": [],
+  "date": "2026-11-22"
+ },
+ "airline/etihad-airways/perfume-aerosols": {
+  "official": [
+   "read 2026-11-22: etihad.com liquids table"
+  ],
+  "reliable": [],
+  "other": [],
+  "date": "2026-11-22"
+ },
+ "airline/china-eastern/power-bank": {
+  "official": [
+   "read 2026-11-22: ceair.com Conditions July 2026 5.4.2.4 / 7.2.1.3"
+  ],
+  "reliable": [],
+  "other": [],
+  "date": "2026-11-22"
+ },
+ "airline/flydubai/power-bank": {
+  "official": [
+   "read 2026-11-22: flydubai.com Dangerous goods Power banks section",
+   "read 2026-11-22: flydubai.com Dangerous goods Power banks section"
+  ],
+  "reliable": [],
+  "other": [],
+  "date": "2026-11-22"
+ },
+ "country/malta/cash": {
+  "official": [
+   "read 2026-11-22: mtca.gov.mt information to travellers on cash declaration"
+  ],
+  "reliable": [],
+  "other": [],
+  "date": "2026-11-22"
+ },
+ "country/greece/cash": {
+  "official": [
+   "read 2026-11-22: aade.gr cash declaration page (browser pane)"
+  ],
+  "reliable": [],
+  "other": [],
   "date": "2026-11-22"
  }
 }
