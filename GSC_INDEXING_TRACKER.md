@@ -808,3 +808,24 @@ Pages changed (not yet requested in GSC):
 - https://canitakethis.co/pets/south-korea/
 - https://canitakethis.co/pets/ukraine/
 - https://canitakethis.co/pets/vietnam/
+
+## Deploy 63dc8eb79 (2026-11-23)
+
+Pages changed (not yet requested in GSC):
+
+- https://canitakethis.co/airline/arkia/alcohol/
+- https://canitakethis.co/airline/avianca/alcohol/
+- https://canitakethis.co/airline/easyjet/alcohol/
+- https://canitakethis.co/airline/israir/alcohol/
+- https://canitakethis.co/airline/malaysia-airlines/alcohol/
+- https://canitakethis.co/airline/royal-air-maroc/alcohol/
+- https://canitakethis.co/airline/royal-air-maroc/perfume-aerosols/
+- https://canitakethis.co/airline/royal-jordanian/alcohol/
+- https://canitakethis.co/airline/virgin-australia/perfume-aerosols/
+- https://canitakethis.co/country/belgium/alcohol/
+- https://canitakethis.co/country/belgium/tobacco/
+- https://canitakethis.co/country/ireland/plants-seeds/
+- https://canitakethis.co/country/poland/cash/
+- https://canitakethis.co/country/romania/alcohol/
+- https://canitakethis.co/country/romania/cash/
+- https://canitakethis.co/country/romania/tobacco/
