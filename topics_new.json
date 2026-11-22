@@ -11534,46 +11534,59 @@
    "unofficial": false
   },
   "alcohol": {
-   "answer": "Royal Jordanian's own rule could not be read; the IATA limit is 5 L per person for drinks above 24% up to 70%, and the home-country customs rule is below.",
+   "answer": "Royal Jordanian's baggage restrictions page lists alcoholic beverages among the items it limits, without giving a quantity on the part we read. The same page sets its own drink rules: one 5-litre bottle of Zamzam water per eligible Umrah passenger, and olive oil only in a welded-cap container inside a wooden box.",
    "sections": [
     {
-     "h": "🍷 What the industry rule says about alcohol on Royal Jordanian",
-     "p": "IATA, the airline industry body. Airports and customs can add stricter limits. Full table: <a href=\"/plane/alcohol/\">alcohol on a plane</a>.",
+     "h": "🥃 What Royal Jordanian says about alcohol",
+     "p": "From the Royal Jordanian \"Baggage restrictions\" page, read on 22 November 2026.",
      "table": {
       "head": [
        "Question",
-       "IATA rule"
+       "Royal Jordanian rule"
       ],
       "rows": [
        [
-        "Up to 24% alcohol by volume",
-        "Not subject to any restrictions"
+        "Alcoholic beverages",
+        "Named in the list of restricted items; no quantity or strength read"
        ],
        [
-        "More than 24% and up to 70%",
-        "Retail packaging, receptacles not exceeding 5 L, total net quantity 5 L per person"
+        "Perfumes, colognes, aerosols and medicines containing alcohol",
+        "Allowed in cabin or checked bags within quantity limits"
        ],
        [
-        "Cabin bag at security",
-        "Liquid limits also apply at the checkpoint; see the liquids rule for Royal Jordanian"
+        "Zamzam water",
+        "One 5 L bottle per eligible Umrah passenger, free of charge, on MED, JED, RUH and DMM stations"
+       ],
+       [
+        "Olive oil",
+        "Welded-cap container in a sturdy wooden box"
        ]
       ]
-     }
-    },
-    {
-     "h": "What customs says about bringing alcohol into Jordan (Royal Jordanian's home country)",
-     "p": "This is the customs rule for people entering Jordan, not a rule stated by Royal Jordanian for its cabin. The Travel Doc customs page for Jordan allows travellers aged 18 and over 1 bottle of alcohol, with a maximum capacity of 1 litre. The page names no publisher and shows no date, so confirm the figures with the customs authority before you travel. Unofficial source, read 16 November 2026: Travel Doc customs information page for Jordan (infopages.traveldoc.aero, undated; it names no publisher). The official customs site could not be read."
+     },
+     "list": [
+      "<strong>Not on the page we read:</strong> the alcohol limit per person and whether it may go in the cabin. Ask Royal Jordanian before you fly with a bottle."
+     ]
     }
+   ],
+   "faq": [
+    [
+     "Can I take alcohol on Royal Jordanian?",
+     "The airline lists alcoholic beverages as restricted but we could not read a quantity; confirm with Royal Jordanian."
+    ],
+    [
+     "Can I carry Zamzam water on Royal Jordanian?",
+     "One 5-litre bottle per eligible Umrah passenger is allowed free of charge on flights from Madinah, Jeddah, Riyadh and Dammam."
+    ]
    ],
    "sources": [
     [
-     "https://www.iata.org/contentassets/6fea26dd84d24b26a7a1fd5788561d6e/dgr-67-en-2.3.a.pdf",
-     "IATA &mdash; Dangerous Goods Regulations, Table 2.3.A (67th edition, 1 January 2026)"
+     "https://www.rj.com/en/info-and-tips/baggage-information/what-not-to-carry",
+     "Royal Jordanian &mdash; Baggage restrictions"
     ]
    ],
    "keepSchema": true,
-   "checked": "18 October 2026",
-   "unofficial": true
+   "checked": "22 November 2026",
+   "unofficial": false
   },
   "perfume": {
    "answer": "Royal Jordanian lists perfumes, hair sprays and colognes as items that may go in carry-on or checked baggage but only up to limits on quantity. Through security, perfumes and other liquids must be in containers of 100 ml or less in one sealed transparent 1-litre bag.",
@@ -11806,46 +11819,68 @@
    "unofficial": false
   },
   "alcohol": {
-   "answer": "Malaysia Airlines's own rule could not be read; the IATA limit is 5 L per person for drinks above 24% up to 70%, and the home-country customs rule is below.",
+   "answer": "Malaysia Airlines' duty-free shop Temptations classes liquor as a liquid, aerosol or gel (LAG) item. On flights from affected airports, liquor bought on board or in the terminal must be in a sealed tamper-evident bag with the receipt visible, and on some connections it is not allowed past security at all.",
    "sections": [
     {
-     "h": "🍷 What the industry rule says about alcohol on Malaysia Airlines",
-     "p": "IATA, the airline industry body. Airports and customs can add stricter limits. Full table: <a href=\"/plane/alcohol/\">alcohol on a plane</a>.",
+     "h": "🥃 What Malaysia Airlines says about duty-free liquor",
+     "p": "From the Malaysia Airlines Temptations page \"Liquids, Aerosols and Gels (LAG) Restrictions\", read on 22 November 2026.",
      "table": {
       "head": [
        "Question",
-       "IATA rule"
+       "Malaysia Airlines (Temptations) rule"
       ],
       "rows": [
        [
-        "Up to 24% alcohol by volume",
-        "Not subject to any restrictions"
+        "Liquor",
+        "Counted as a LAG item with fragrances and most cosmetics"
        ],
        [
-        "More than 24% and up to 70%",
-        "Retail packaging, receptacles not exceeding 5 L, total net quantity 5 L per person"
+        "In sealed bag",
+        "Required for LAG purchases, with the receipt clearly displayed inside; several bags are allowed"
        ],
        [
-        "Cabin bag at security",
-        "Liquid limits also apply at the checkpoint; see the liquids rule for Malaysia Airlines"
+        "Removed from box",
+        "Not required"
+       ],
+       [
+        "Not permitted past security when transiting",
+        "Australia (Adelaide, Brisbane, Melbourne, Perth, Sydney), New Zealand, Delhi, Mumbai, Jeddah, Athens, Beijing, Shanghai, Taipei, Bali, Hanoi and others on the page list"
+       ],
+       [
+        "Must be checked in before the connecting gate",
+        "Houston, Los Angeles, New York JFK and San Francisco"
+       ],
+       [
+        "Needs a Temptations tamper-evident bag and proof of purchase on transit",
+        "Dubai, Istanbul, London, Frankfurt, Paris, Rome, Singapore, Bangkok, Seoul, Tokyo Narita and Haneda and others on the page list"
        ]
       ]
-     }
-    },
-    {
-     "h": "What customs says about bringing alcohol into Malaysia (Malaysia Airlines's home country)",
-     "p": "This is the customs rule for people entering Malaysia, not a rule stated by Malaysia Airlines for its cabin. The Travel Doc customs page for Malaysia lists a duty-free allowance of 1 litre of alcohol, for non-residents staying more than 72 hours and for Malaysian residents who have been abroad for more than 72 hours. The page names no publisher and shows no date, so confirm the figures with the customs authority before you travel. Unofficial source, read 16 November 2026: Travel Doc customs information page for Malaysia (infopages.traveldoc.aero, undated; it names no publisher). The official customs site could not be read."
+     },
+     "list": [
+      "<strong>Advice on the page:</strong> if you connect through a station where liquids are refused, buy liquor only on the last sector of your trip.",
+      "<strong>Not on the page:</strong> a litre limit for alcohol in checked baggage."
+     ]
     }
+   ],
+   "faq": [
+    [
+     "Can I carry duty-free liquor bought on Malaysia Airlines?",
+     "Yes in a sealed tamper-evident bag with the receipt inside, but on some connections it is refused at security or must be checked."
+    ],
+    [
+     "Where should I buy liquor if I transit through Australia?",
+     "Malaysia Airlines says LAG items bought on board are not permitted past security at Australian and New Zealand transit stations, so buy only on the last sector."
+    ]
    ],
    "sources": [
     [
-     "https://www.iata.org/contentassets/6fea26dd84d24b26a7a1fd5788561d6e/dgr-67-en-2.3.a.pdf",
-     "IATA &mdash; Dangerous Goods Regulations, Table 2.3.A (67th edition, 1 January 2026)"
+     "https://temptations.malaysiaairlines.com/page.aspx?p=lag",
+     "Malaysia Airlines Temptations &mdash; Liquids, Aerosols and Gels (LAG) Restrictions"
     ]
    ],
    "keepSchema": true,
-   "checked": "18 October 2026",
-   "unofficial": true
+   "checked": "22 November 2026",
+   "unofficial": false
   },
   "perfume": {
    "answer": "Malaysia Airlines's own rule could not be read. The IATA limit is 0.5 L or 0.5 kg per article and 2 L or 2 kg in total; the table below has the details.",
@@ -14133,96 +14168,114 @@
    "unofficial": false
   },
   "alcohol": {
-   "answer": "Royal Air Maroc's own rule could not be read; the IATA limit is 5 L per person for drinks above 24% up to 70%, and the home-country customs rule is below.",
+   "answer": "Royal Air Maroc says alcohol of up to 70° is authorised subject to strict volume limits per container and per passenger, but the page gives no figures. In the cabin, liquids and creams must be in containers of 100 ml or less inside a transparent 20 cm by 20 cm bag.",
    "sections": [
     {
-     "h": "🍷 What the industry rule says about alcohol on Royal Air Maroc",
-     "p": "IATA, the airline industry body. Airports and customs can add stricter limits. Full table: <a href=\"/plane/alcohol/\">alcohol on a plane</a>.",
+     "h": "🥃 What Royal Air Maroc says about alcohol",
+     "p": "From the \"Baggage restrictions\" block of the Royal Air Maroc Special baggage page, read on 22 November 2026.",
      "table": {
       "head": [
        "Question",
-       "IATA rule"
+       "Royal Air Maroc rule"
       ],
       "rows": [
        [
-        "Up to 24% alcohol by volume",
-        "Not subject to any restrictions"
+        "Alcohol strength",
+        "Up to 70°"
        ],
        [
-        "More than 24% and up to 70%",
-        "Retail packaging, receptacles not exceeding 5 L, total net quantity 5 L per person"
+        "Volume limits",
+        "Strict, per container and per passenger; no numbers on the page"
        ],
        [
-        "Cabin bag at security",
-        "Liquid limits also apply at the checkpoint; see the liquids rule for Royal Air Maroc"
+        "Liquids in the cabin",
+        "Containers of 100 ml or less in a transparent bag of 20 cm by 20 cm"
+       ],
+       [
+        "Alcohol and perfume listed together",
+        "Yes, in one line of the restrictions block"
        ]
       ]
-     }
-    },
-    {
-     "h": "What customs says about bringing alcohol into Morocco (Royal Air Maroc's home country)",
-     "p": "This is the customs rule for people entering Morocco, not a rule stated by Royal Air Maroc for its cabin. The Travel Doc customs page for Morocco lists 1 litre of spirits and 1 litre of wine as free to import. It states no age limit. The page names no publisher and shows no date, so confirm the figures with the customs authority before you travel. Unofficial source, read 16 November 2026: Travel Doc customs information page for Morocco (infopages.traveldoc.aero, undated; it names no publisher). The official customs site could not be read."
+     },
+     "list": [
+      "<strong>Not on the page:</strong> the litre limits, and whether a bottle goes in the cabin or the hold. Ask Royal Air Maroc before you fly with a bottle."
+     ]
     }
+   ],
+   "faq": [
+    [
+     "Can I take alcohol on Royal Air Maroc?",
+     "Yes up to 70° within strict per-container and per-passenger limits that the page does not spell out."
+    ],
+    [
+     "What size bag do liquids go in on Royal Air Maroc?",
+     "A transparent plastic bag of 20 cm by 20 cm, with containers of 100 ml or less."
+    ]
    ],
    "sources": [
     [
-     "https://www.iata.org/contentassets/6fea26dd84d24b26a7a1fd5788561d6e/dgr-67-en-2.3.a.pdf",
-     "IATA &mdash; Dangerous Goods Regulations, Table 2.3.A (67th edition, 1 January 2026)"
+     "https://www.royalairmaroc.com/us-en/special-baggage",
+     "Royal Air Maroc &mdash; Special baggage (baggage restrictions)"
     ]
    ],
    "keepSchema": true,
-   "checked": "18 October 2026",
-   "unofficial": true
+   "checked": "22 November 2026",
+   "unofficial": false
   },
   "perfume": {
-   "answer": "Royal Air Maroc's own rule could not be read. The IATA limit is 0.5 L or 0.5 kg per article and 2 L or 2 kg in total; the table below has the details.",
+   "answer": "Royal Air Maroc authorises perfumes and colognes subject to strict volume limits per container and per passenger, without giving figures. Liquids and creams in the cabin must be in containers of 100 ml or less inside a transparent 20 cm by 20 cm bag.",
    "sections": [
     {
-     "h": "🧴 What the industry rule says about perfume and aerosols on Royal Air Maroc",
-     "p": "IATA, the airline industry body. Airports and customs can add stricter limits.",
+     "h": "🧴 What Royal Air Maroc says about perfume",
+     "p": "From the \"Baggage restrictions\" block of the Royal Air Maroc Special baggage page, read on 22 November 2026.",
      "table": {
       "head": [
        "Question",
-       "IATA rule"
+       "Royal Air Maroc rule"
       ],
       "rows": [
        [
-        "What it covers",
-        "Non-radioactive medicinal or toiletry articles including aerosols, such as hair sprays, perfumes, colognes and medicines containing alcohol, and non-flammable, non-toxic aerosols for sporting or home use"
+        "Perfumes and colognes",
+        "Authorised with strict volume limits per container and per passenger"
        ],
        [
-        "Where",
-        "Permitted in carry-on and in checked baggage, without operator approval"
+        "Cabin liquids and creams",
+        "100 ml or less per container, in a transparent 20 cm by 20 cm bag"
        ],
        [
-        "Total",
-        "Not more than 2 kg or 2 L in total"
+        "Compressed gases such as aerosols",
+        "Listed among restricted items on the baggage information page"
        ],
        [
-        "Each article",
-        "Not more than 0.5 kg or 0.5 L"
-       ],
-       [
-        "Aerosol valves",
-        "Release valves must be protected by a cap or other suitable means"
-       ],
-       [
-        "In your cabin bag on Royal Air Maroc",
-        "Security liquid limits also apply: Royal Air Maroc allows liquids and gels in the cabin only in containers of a maximum of 100 ml each, grouped in a single transparent resealable one-litre plastic bag shown separately at security."
+        "Volume figures",
+        "Not on the page"
        ]
       ]
-     }
+     },
+     "list": [
+      "<strong>Not on the page:</strong> the exact per-container and per-passenger volumes. Confirm with Royal Air Maroc."
+     ]
     }
+   ],
+   "faq": [
+    [
+     "Can I take perfume on Royal Air Maroc?",
+     "Yes within strict per-container and per-passenger volume limits, which the page does not give in numbers."
+    ],
+    [
+     "Are aerosols allowed on Royal Air Maroc?",
+     "The baggage information page lists compressed gases such as aerosols among restricted items."
+    ]
    ],
    "sources": [
     [
-     "https://www.iata.org/contentassets/6fea26dd84d24b26a7a1fd5788561d6e/dgr-67-en-2.3.a.pdf",
-     "IATA &mdash; Dangerous Goods Regulations, Table 2.3.A (67th edition, 1 January 2026)"
+     "https://www.royalairmaroc.com/us-en/special-baggage",
+     "Royal Air Maroc &mdash; Special baggage (baggage restrictions)"
     ]
    ],
    "keepSchema": true,
-   "checked": "18 October 2026",
-   "unofficial": true
+   "checked": "22 November 2026",
+   "unofficial": false
   },
   "power": {
    "answer": "Royal Air Maroc's baggage page says lithium batteries go in carry-on baggage only, a passenger may carry a maximum of two power banks in the cabin, and power banks may not be recharged during the flight.",
@@ -16832,46 +16885,59 @@
    "unofficial": true
   },
   "alcohol": {
-   "answer": "Arkia's own rule could not be read; the IATA limit is 5 L per person for drinks above 24% up to 70%, and the home-country customs rule is below.",
+   "answer": "Arkia's own baggage page could not be read, so this page relies on the Israel Airports Authority: duty-free alcohol from Ben Gurion may fly to Europe sealed in a special packet, while alcohol from other shops or from home is not eased.",
    "sections": [
     {
-     "h": "🍷 What the industry rule says about alcohol on Arkia",
-     "p": "IATA, the airline industry body. Airports and customs can add stricter limits. Full table: <a href=\"/plane/alcohol/\">alcohol on a plane</a>.",
+     "h": "🥃 What the Israel Airports Authority says about duty-free alcohol",
+     "p": "Arkia's own baggage page could not be read, so this section uses the Israel Airports Authority (IAA) page for Ben Gurion Airport, read on 22 November 2026.",
      "table": {
       "head": [
        "Question",
-       "IATA rule"
+       "IAA rule"
       ],
       "rows": [
        [
-        "Up to 24% alcohol by volume",
-        "Not subject to any restrictions"
+        "Alcohol bought at Ben Gurion duty free",
+        "Allowed on flights to any European country and on connections to Europe or the USA, if wrapped in a sealed packet at the shop"
        ],
        [
-        "More than 24% and up to 70%",
-        "Retail packaging, receptacles not exceeding 5 L, total net quantity 5 L per person"
+        "Alcohol from home or other shops",
+        "Not covered by the easing"
        ],
        [
-        "Cabin bag at security",
-        "Liquid limits also apply at the checkpoint; see the liquids rule for Arkia"
+        "Direct flights to the USA",
+        "Duty-free liquids allowed if sealed; at the first US stop the packet must go in the suitcase"
+       ],
+       [
+        "Other liquid duty-free items",
+        "Perfume, cosmetics, sprays and gels follow the same sealed-packet rule"
        ]
       ]
-     }
-    },
-    {
-     "h": "What customs says about bringing alcohol into Israel (Arkia's home country)",
-     "p": "This is the customs rule for people entering Israel, not a rule stated by Arkia for its cabin. The Travel Doc customs page for Israel allows travellers aged 18 and over 1 litre of spirits and 2 litres of wine, together. The page names no publisher and shows no date, so confirm the figures with the customs authority before you travel. Unofficial source, read 16 November 2026: Travel Doc customs information page for Israel (infopages.traveldoc.aero, undated; it names no publisher). The official customs site could not be read."
+     },
+     "list": [
+      "<strong>Not read:</strong> Arkia's own alcohol limit per person. Ask Arkia for its litre limit and any rule on checked bottles."
+     ]
     }
+   ],
+   "faq": [
+    [
+     "Can I take duty-free alcohol from Ben Gurion on Arkia?",
+     "The Israel Airports Authority allows liquids bought in the Ben Gurion duty-free shops, alcohol included, on flights to Europe if they are in a sealed packet; confirm with Arkia."
+    ],
+    [
+     "Can I bring alcohol from home in my hand luggage on Arkia?",
+     "The IAA easing applies only to duty-free purchases at Ben Gurion, not to products brought from home."
+    ]
    ],
    "sources": [
     [
-     "https://www.iata.org/contentassets/6fea26dd84d24b26a7a1fd5788561d6e/dgr-67-en-2.3.a.pdf",
-     "IATA &mdash; Dangerous Goods Regulations, Table 2.3.A (67th edition, 1 January 2026)"
+     "https://www.iaa.gov.il/en/airports/ben-gurion/securitybgn/",
+     "Unofficial source: Israel Airports Authority &mdash; Ben Gurion Airport security, Flying With Liquids"
     ]
    ],
    "keepSchema": true,
-   "checked": "18 October 2026",
-   "unofficial": true
+   "checked": "22 November 2026",
+   "unofficial": false
   },
   "perfume": {
    "answer": "Arkia's contract terms (arkia.co.il and docs.arkia.co.il) returned an error (403), so this is the Israeli airport side: Ben Gurion applies a 100 ml limit per container in one 1-litre bag, and duty-free perfume over 100 ml must stay in the sealed shop bag with its receipt.",
@@ -17089,46 +17155,59 @@
    "unofficial": true
   },
   "alcohol": {
-   "answer": "Israir's own rule could not be read; the IATA limit is 5 L per person for drinks above 24% up to 70%, and the home-country customs rule is below.",
+   "answer": "Israir's own baggage page could not be read, so the rule here comes from the Israel Airports Authority: alcohol bought at Ben Gurion duty free travels in a sealed packet to Europe and on connections, but alcohol brought from home is not covered.",
    "sections": [
     {
-     "h": "🍷 What the industry rule says about alcohol on Israir",
-     "p": "IATA, the airline industry body. Airports and customs can add stricter limits. Full table: <a href=\"/plane/alcohol/\">alcohol on a plane</a>.",
+     "h": "🥃 What the Israel Airports Authority says about duty-free alcohol",
+     "p": "Israir's own baggage page could not be read, so this section uses the Israel Airports Authority (IAA) page for Ben Gurion Airport, read on 22 November 2026.",
      "table": {
       "head": [
        "Question",
-       "IATA rule"
+       "IAA rule"
       ],
       "rows": [
        [
-        "Up to 24% alcohol by volume",
-        "Not subject to any restrictions"
+        "Alcohol bought at Ben Gurion duty free",
+        "Allowed on flights to any European country and on connections to Europe or the USA, if wrapped in a sealed packet at the shop"
        ],
        [
-        "More than 24% and up to 70%",
-        "Retail packaging, receptacles not exceeding 5 L, total net quantity 5 L per person"
+        "Alcohol from home or other shops",
+        "Not covered by the easing"
        ],
        [
-        "Cabin bag at security",
-        "Liquid limits also apply at the checkpoint; see the liquids rule for Israir"
+        "Direct flights to the USA",
+        "Duty-free liquids allowed if sealed; at the first US stop the packet must go in the suitcase"
+       ],
+       [
+        "Other liquid duty-free items",
+        "Perfume, cosmetics, sprays and gels follow the same sealed-packet rule"
        ]
       ]
-     }
-    },
-    {
-     "h": "What customs says about bringing alcohol into Israel (Israir's home country)",
-     "p": "This is the customs rule for people entering Israel, not a rule stated by Israir for its cabin. The Travel Doc customs page for Israel allows travellers aged 18 and over 1 litre of spirits and 2 litres of wine, together. The page names no publisher and shows no date, so confirm the figures with the customs authority before you travel. Unofficial source, read 16 November 2026: Travel Doc customs information page for Israel (infopages.traveldoc.aero, undated; it names no publisher). The official customs site could not be read."
+     },
+     "list": [
+      "<strong>Not read:</strong> Israir's own alcohol limit per person. Ask Israir for its litre limit before you fly."
+     ]
     }
+   ],
+   "faq": [
+    [
+     "Can I take duty-free alcohol from Ben Gurion on Israir?",
+     "The Israel Airports Authority allows liquids bought in the Ben Gurion duty-free shops, alcohol included, on flights to Europe if they are in a sealed packet; confirm with Israir."
+    ],
+    [
+     "Can I bring alcohol from home in my hand luggage on Israir?",
+     "The IAA easing applies only to duty-free purchases at Ben Gurion, not to products brought from home."
+    ]
    ],
    "sources": [
     [
-     "https://www.iata.org/contentassets/6fea26dd84d24b26a7a1fd5788561d6e/dgr-67-en-2.3.a.pdf",
-     "IATA &mdash; Dangerous Goods Regulations, Table 2.3.A (67th edition, 1 January 2026)"
+     "https://www.iaa.gov.il/en/airports/ben-gurion/securitybgn/",
+     "Unofficial source: Israel Airports Authority &mdash; Ben Gurion Airport security, Flying With Liquids"
     ]
    ],
    "keepSchema": true,
-   "checked": "18 October 2026",
-   "unofficial": true
+   "checked": "22 November 2026",
+   "unofficial": false
   },
   "perfume": {
    "answer": "Israir's baggage pages sit behind a waiting-room wall, so this is the Ben Gurion airport side: the Israel Airports Authority lets duty-free perfumes and sprays through only sealed in the shop packet, and a January 2026 Mako article says Ben Gurion officially follows the European 100 ml and 1-litre bag rule.",
@@ -17664,46 +17743,63 @@
    "unofficial": false
   },
   "alcohol": {
-   "answer": "Avianca's own rule could not be read; the IATA limit is 5 L per person for drinks above 24% up to 70%, and the home-country customs rule is below.",
+   "answer": "Avianca's help center says bottled alcoholic beverages are not permitted in checked baggage. On domestic flights they may go in carry-on baggage only, up to 5 litres per passenger and no bottle above 70% alcohol by volume. On international flights you must check the rules of the origin and destination countries first.",
    "sections": [
     {
-     "h": "🍷 What the industry rule says about alcohol on Avianca",
-     "p": "IATA, the airline industry body. Airports and customs can add stricter limits. Full table: <a href=\"/plane/alcohol/\">alcohol on a plane</a>.",
+     "h": "🥃 What Avianca says about alcohol",
+     "p": "From the Avianca help center article \"Can I carry food and drinks in my baggage?\" (English), read on 22 November 2026.",
      "table": {
       "head": [
        "Question",
-       "IATA rule"
+       "Avianca rule"
       ],
       "rows": [
        [
-        "Up to 24% alcohol by volume",
-        "Not subject to any restrictions"
+        "Checked baggage",
+        "Bottled alcoholic beverages not permitted"
        ],
        [
-        "More than 24% and up to 70%",
-        "Retail packaging, receptacles not exceeding 5 L, total net quantity 5 L per person"
+        "Domestic flights, carry-on",
+        "Allowed, maximum 5 L per passenger"
        ],
        [
-        "Cabin bag at security",
-        "Liquid limits also apply at the checkpoint; see the liquids rule for Avianca"
+        "Strength per bottle",
+        "Not above 70% abv"
+       ],
+       [
+        "International flights",
+        "Check beforehand whether the origin and destination countries allow alcohol"
+       ],
+       [
+        "Other drinks and food",
+        "Sealed in airtight containers; perishable food not accepted in checked baggage"
        ]
       ]
-     }
-    },
-    {
-     "h": "What customs says about bringing alcohol into Colombia (Avianca's home country)",
-     "p": "This is the customs rule for people entering Colombia, not a rule stated by Avianca for its cabin. The Travel Doc customs page for Colombia allows travellers aged 18 and over up to 10 units of alcoholic drinks, with a total value not above USD 2,000. The page names no publisher and shows no date, so confirm the figures with the customs authority before you travel. Unofficial source, read 16 November 2026: Travel Doc customs information page for Colombia (infopages.traveldoc.aero, undated; it names no publisher). The official customs site could not be read."
+     },
+     "list": [
+      "<strong>Not on the page:</strong> how the 100 ml cabin liquid limit applies to a bottle on international flights. Ask Avianca or your departure airport."
+     ]
     }
+   ],
+   "faq": [
+    [
+     "Can I put a bottle of alcohol in my checked bag on Avianca?",
+     "No. Avianca says bottled alcoholic beverages are not permitted in checked baggage."
+    ],
+    [
+     "How much alcohol can I carry on an Avianca domestic flight?",
+     "Up to 5 litres per passenger in carry-on, each bottle at 70% abv or less."
+    ]
    ],
    "sources": [
     [
-     "https://www.iata.org/contentassets/6fea26dd84d24b26a7a1fd5788561d6e/dgr-67-en-2.3.a.pdf",
-     "IATA &mdash; Dangerous Goods Regulations, Table 2.3.A (67th edition, 1 January 2026)"
+     "https://ayuda.avianca.com/hc/en-us/articles/13083099344667-Can-I-carry-food-and-drinks-in-my-baggage",
+     "Avianca &mdash; Help Center: Can I carry food and drinks in my baggage?"
     ]
    ],
    "keepSchema": true,
-   "checked": "18 October 2026",
-   "unofficial": true
+   "checked": "22 November 2026",
+   "unofficial": false
   },
   "perfume": {
    "answer": "Avianca's help centre returns an error (403), so this follows what the El Dorado airport in Bogota is reported to apply: on international flights containers over 100 ml are refused, aerosols are prohibited above 100 ml, and perfume is allowed up to 1000 ml on domestic flights.",
@@ -18659,6 +18755,77 @@
    ],
    "keepSchema": true,
    "checked": "18 October 2026",
+   "unofficial": false
+  },
+  "alcohol": {
+   "answer": "easyJet allows alcohol in both cabin and hold baggage if it is in retail packaging, between 24% and 70% alcohol by volume, in containers up to 5 litres, with 5 litres in total per person. Alcohol bought in the airside departure lounge can go in the cabin unopened, in an airport shopping bag or your cabin bag. You may not drink your own alcohol on board.",
+   "sections": [
+    {
+     "h": "🥃 What easyJet says about alcohol",
+     "p": "From two easyJet help pages, \"Restricted and unusual items\" and \"Dangerous Goods &amp; Prohibited Articles\", read on 22 November 2026.",
+     "table": {
+      "head": [
+       "Question",
+       "easyJet rule"
+      ],
+      "rows": [
+       [
+        "Cabin or hold",
+        "Both allowed"
+       ],
+       [
+        "Strength",
+        "More than 24% and not more than 70% alcohol by volume, in retail packaging"
+       ],
+       [
+        "Container size",
+        "Up to 5 L each"
+       ],
+       [
+        "Total per person",
+        "5 L net"
+       ],
+       [
+        "Bought airside",
+        "Allowed in the cabin if unopened and under 70% abv, in an airport shopping bag or your cabin bag"
+       ],
+       [
+        "Drinking on board",
+        "Forbidden unless bought on the aircraft; people found drinking their own alcohol may face prosecution"
+       ],
+       [
+        "Duty-free purchases",
+        "Cannot be consumed on board"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on these pages:</strong> a separate limit for drinks of 24% or less, such as wine and beer."
+     ]
+    }
+   ],
+   "faq": [
+    [
+     "How much alcohol can I take on easyJet?",
+     "Up to 5 litres in total per person for drinks between 24% and 70% abv in retail packaging, in cabin or hold baggage."
+    ],
+    [
+     "Can I drink my own duty-free alcohol on an easyJet flight?",
+     "No. easyJet forbids drinking any alcohol not bought on board and says offenders may be prosecuted."
+    ]
+   ],
+   "sources": [
+    [
+     "https://www.easyjet.com/en/help/baggage/restricted-and-unusual-items",
+     "easyJet &mdash; Restricted and unusual items"
+    ],
+    [
+     "https://www.easyjet.com/en/help-centre/baggage/dangerous-goods",
+     "easyJet &mdash; Dangerous Goods &amp; Prohibited Articles"
+    ]
+   ],
+   "keepSchema": true,
+   "checked": "22 November 2026",
    "unofficial": false
   }
  },
