@@ -15323,5 +15323,37 @@
   "reliable": [],
   "other": [],
   "date": "2026-11-22"
+ },
+ "airline/kenya-airways/perfume-aerosols": {
+  "official": [
+   "read 2026-11-22: kenya-airways.com baggage restrictions page"
+  ],
+  "reliable": [],
+  "other": [],
+  "date": "2026-11-22"
+ },
+ "airline/south-african-airways/perfume-aerosols": {
+  "official": [
+   "read 2026-11-22: flysaa.com restricted items page"
+  ],
+  "reliable": [],
+  "other": [],
+  "date": "2026-11-22"
+ },
+ "airline/gulf-air/power-bank": {
+  "official": [
+   "read 2026-11-22: gulfair.com Conditions of Carriage 8.3.8"
+  ],
+  "reliable": [],
+  "other": [],
+  "date": "2026-11-22"
+ },
+ "airline/south-african-airways/power-bank": {
+  "official": [
+   "read 2026-11-22: flysaa.com restricted items page: Power Banks and Lithium Batteries"
+  ],
+  "reliable": [],
+  "other": [],
+  "date": "2026-11-22"
  }
 }
