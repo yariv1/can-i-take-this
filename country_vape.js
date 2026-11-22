@@ -74,9 +74,7 @@ function build(c) {
     ['General bans on e-cigarettes', A.g + (D.ennds_only_ban ? ' (WHO also lists a ban for non-nicotine e-cigarettes)' : '')],
     ...(N25 ? [] : [['National laws regulate e-cigarettes', D.laws]]),
     ['Use in indoor public places, workplaces, public transport', D.indoor === 'None' ? 'No ban reported' : D.indoor],
-    ['Minimum age of sale', D.minAge ? String(D.minAge) : 'Not reported'],
-    ['Advertising and promotion of devices', D.ads === '—' ? 'Not reported' : D.ads],
-    ['Flavours', D.flavours === '—' ? 'Not reported' : D.flavours]
+    ['Minimum age of sale', D.minAge ? String(D.minAge) : 'Not reported']
   ];
   const faq = [
     ['Is vaping legal in ' + cn + '?', lead],

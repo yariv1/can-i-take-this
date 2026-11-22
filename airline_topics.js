@@ -20,7 +20,7 @@ Object.assign(TOPICS, require('./airline_topics7.js'));
 // topics_new.json (session 35, written by airline_topic_add.js): alcohol / perfume sections read on the airline's own page; they never replace an existing entry and keep title, description and schema unchanged (keepSchema)
 {
   const fs = require('fs'), p = __dirname + '/topics_new.json';
-  if (fs.existsSync(p)) { const N = JSON.parse(fs.readFileSync(p, 'utf8')); for (const a of Object.keys(N)) { TOPICS[a] = TOPICS[a] || {}; for (const c of Object.keys(N[a])) { if (!TOPICS[a][c]) TOPICS[a][c] = N[a][c]; else if (c === 'power' || N[a][c].checked === '22 November 2026') TOPICS[a][c] = Object.assign({}, TOPICS[a][c], N[a][c]); } } }
+  if (fs.existsSync(p)) { const N = JSON.parse(fs.readFileSync(p, 'utf8')); for (const a of Object.keys(N)) { TOPICS[a] = TOPICS[a] || {}; for (const c of Object.keys(N[a])) { if (!TOPICS[a][c]) TOPICS[a][c] = N[a][c]; else if (c === 'power' || N[a][c].checked === '22 November 2026' || N[a][c].checked === '23 November 2026') TOPICS[a][c] = Object.assign({}, TOPICS[a][c], N[a][c]); } } }
 }
 
 function render(a, T) {

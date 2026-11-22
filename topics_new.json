@@ -15517,54 +15517,59 @@
    "unofficial": true
   },
   "perfume": {
-   "answer": "Saudia's own rule could not be read. The IATA limit is 0.5 L or 0.5 kg per article and 2 L or 2 kg in total; the table below has the details.",
+   "answer": "Saudia's carry-on page restricts liquids, gels and aerosols above the permitted limit, typically 100 ml per container, and lists flammable materials and certain aerosols among restricted items. Some restricted items may travel in checked baggage, others not at all.",
    "sections": [
     {
-     "h": "🧴 What the industry rule says about perfume and aerosols on Saudia",
-     "p": "IATA, the airline industry body. Airports and customs can add stricter limits.",
+     "h": "🧴 What Saudia says about perfume and aerosols",
+     "p": "From the Saudia \"Carry-on baggage\" page, question \"What items are restricted in carry-on baggage?\", read on 23 November 2026.",
      "table": {
       "head": [
        "Question",
-       "IATA rule"
+       "Saudia rule"
       ],
       "rows": [
        [
-        "What it covers",
-        "Non-radioactive medicinal or toiletry articles including aerosols, such as hair sprays, perfumes, colognes and medicines containing alcohol, and non-flammable, non-toxic aerosols for sporting or home use"
+        "Liquids, gels and aerosols in the cabin",
+        "Restricted above the permitted limit, typically 100 ml per container"
        ],
        [
-        "Where",
-        "Permitted in carry-on and in checked baggage, without operator approval"
+        "Flammable materials, including fuels, lighter refills and certain aerosols",
+        "Restricted in carry-on baggage"
        ],
        [
-        "Total",
-        "Not more than 2 kg or 2 L in total"
+        "Restricted items in checked baggage",
+        "Some are accepted, others prohibited entirely"
        ],
        [
-        "Each article",
-        "Not more than 0.5 kg or 0.5 L"
-       ],
-       [
-        "Aerosol valves",
-        "Release valves must be protected by a cap or other suitable means"
-       ],
-       [
-        "In your cabin bag on Saudia",
-        "Security liquid limits also apply: Saudia lists liquids, gels and aerosols exceeding the permitted limit, typically 100 ml per container in carry-on baggage, among the items restricted in carry-on."
+        "A named perfume rule",
+        "Not stated on the page"
        ]
       ]
-     }
+     },
+     "list": [
+      "<strong>Not on the page:</strong> a separate perfume limit, a checked-baggage litre limit, and the duty-free sealed-bag rule. Check the latest Saudia baggage rules before you travel."
+     ]
     }
+   ],
+   "faq": [
+    [
+     "Can I take perfume in my hand luggage on Saudia?",
+     "Only within the permitted liquid limit, typically 100 ml per container; larger bottles belong in checked baggage."
+    ],
+    [
+     "Are aerosols allowed in Saudia carry-on baggage?",
+     "Saudia lists certain aerosols and flammable materials as restricted; liquids, gels and aerosols above the limit are not allowed in the cabin."
+    ]
    ],
    "sources": [
     [
-     "https://www.iata.org/contentassets/6fea26dd84d24b26a7a1fd5788561d6e/dgr-67-en-2.3.a.pdf",
-     "IATA &mdash; Dangerous Goods Regulations, Table 2.3.A (67th edition, 1 January 2026)"
+     "https://www.saudia.com/manage/baggage/carry-on-baggage",
+     "Saudia &mdash; Carry On Baggage Rules and Limits"
     ]
    ],
    "keepSchema": true,
-   "checked": "18 October 2026",
-   "unofficial": true
+   "checked": "23 November 2026",
+   "unofficial": false
   },
   "power": {
    "answer": "Saudia allows each passenger a maximum of two rechargeable batteries (power banks), only in carry-on baggage; recharging them on board or using them to charge other devices is forbidden.",
