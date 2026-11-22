@@ -1,3 +1,10 @@
+# TWO HARD RULES for every page correction and page creation (his order, 2026-11-23) - READ FIRST
+
+1. **No duplicated pages** (measure: `node audit_duplicates.js`, `node dup_work/cnt.js .`).
+2. **A user must still get every answer to what they are searching for. Cut repeated wording, NEVER needed information.** Before deleting text ask: does a user searching this term need this fact? If yes keep it (shorten/merge, keep the fact). Never inject names into identical sentences to fool the checker. Accept a higher duplicate count over losing user information. Say in the reply what was removed and what was kept.
+
+(2026-11-23: I removed the certificate issuer / bulbs-cuttings / posted-seeds lines from the EU plants pages to lower the score; he caught it; restored as one sentence in `country_plants.js`.)
+
 # SESSION 60 HANDOFF block (2026-11-22) - same text as memory project_blog_roadmap.md
 
 ## SESSION 60 HANDOFF (2026-11-22, end of session 59) - READ FIRST, OVERRIDES EVERY OLDER BLOCK BELOW
