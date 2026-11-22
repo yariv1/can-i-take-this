@@ -773,3 +773,38 @@ https://canitakethis.co/country/sweden/plants-seeds/
 https://canitakethis.co/pets/dominican-republic/
 https://canitakethis.co/pets/qatar/
 https://canitakethis.co/pets/sri-lanka/
+
+## Deploy 8acfbbf9b (2026-11-22)
+
+Pages changed (not yet requested in GSC):
+
+- https://canitakethis.co/airline/asiana/perfume-aerosols/
+- https://canitakethis.co/airline/austrian/power-bank/
+- https://canitakethis.co/airline/china-eastern/perfume-aerosols/
+- https://canitakethis.co/airline/el-al/power-bank/
+- https://canitakethis.co/airline/indigo/power-bank/
+- https://canitakethis.co/airline/ita-airways/power-bank/
+- https://canitakethis.co/airline/kenya-airways/power-bank/
+- https://canitakethis.co/airline/kuwait-airways/power-bank/
+- https://canitakethis.co/airline/lufthansa/power-bank/
+- https://canitakethis.co/airline/middle-east-airlines/power-bank/
+- https://canitakethis.co/airline/royal-air-maroc/power-bank/
+- https://canitakethis.co/airline/transavia/perfume-aerosols/
+- https://canitakethis.co/airline/united/power-bank/
+- https://canitakethis.co/app/
+- https://canitakethis.co/pets/cambodia/
+- https://canitakethis.co/pets/colombia/
+- https://canitakethis.co/pets/egypt/
+- https://canitakethis.co/pets/greece/
+- https://canitakethis.co/pets/jordan/
+- https://canitakethis.co/pets/kenya/
+- https://canitakethis.co/pets/kuwait/
+- https://canitakethis.co/pets/lebanon/
+- https://canitakethis.co/pets/malaysia/
+- https://canitakethis.co/pets/morocco/
+- https://canitakethis.co/pets/nigeria/
+- https://canitakethis.co/pets/oman/
+- https://canitakethis.co/pets/saudi-arabia/
+- https://canitakethis.co/pets/south-korea/
+- https://canitakethis.co/pets/ukraine/
+- https://canitakethis.co/pets/vietnam/
