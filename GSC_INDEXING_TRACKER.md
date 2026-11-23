@@ -947,3 +947,63 @@ Pages changed (not yet requested in GSC; 2 pages with new facts first: pets/new-
 - https://canitakethis.co/country/united-states/vaping/
 - https://canitakethis.co/country/vietnam/vaping/
 - https://canitakethis.co/pets/new-zealand/
+
+## Deploy f01ae155e (2026-11-23)
+
+Pages changed (not yet requested in GSC; official-source facts first):
+
+- https://canitakethis.co/airline/aegean/medication/
+- https://canitakethis.co/airline/alaska-airlines/medication/
+- https://canitakethis.co/airline/azul/medication/
+- https://canitakethis.co/airline/etihad-airways/liquids/
+- https://canitakethis.co/airline/eurowings/power-bank/
+- https://canitakethis.co/airline/gol/perfume-aerosols/
+- https://canitakethis.co/airline/gulf-air/alcohol/
+- https://canitakethis.co/airline/hawaiian-airlines/medication/
+- https://canitakethis.co/airline/hawaiian-airlines/wifi/
+- https://canitakethis.co/airline/israir/alcohol/
+- https://canitakethis.co/airline/israir/liquids/
+- https://canitakethis.co/airline/kuwait-airways/alcohol/
+- https://canitakethis.co/airline/kuwait-airways/liquids/
+- https://canitakethis.co/airline/kuwait-airways/power-bank/
+- https://canitakethis.co/airline/malaysia-airlines/perfume-aerosols/
+- https://canitakethis.co/airline/middle-east-airlines/alcohol/
+- https://canitakethis.co/airline/middle-east-airlines/perfume-aerosols/
+- https://canitakethis.co/airline/saudia/alcohol/
+- https://canitakethis.co/airline/swiss/power-bank/
+- https://canitakethis.co/airline/wizz-air/alcohol/
+- https://canitakethis.co/app/
+- https://canitakethis.co/blog/is-turks-and-caicos-safe-2026/
+- https://canitakethis.co/blog/level-4-travel-advisory-countries-2026/
+- https://canitakethis.co/blog/travel-warning-by-country-2026/
+- https://canitakethis.co/blog/travel-warning-caribbean-2026/
+- https://canitakethis.co/blog/travel-warning-mexico-2026/
+- https://canitakethis.co/country/austria/plants-seeds/
+- https://canitakethis.co/country/belgium/plants-seeds/
+- https://canitakethis.co/country/bulgaria/alcohol/
+- https://canitakethis.co/country/bulgaria/cash/
+- https://canitakethis.co/country/bulgaria/tobacco/
+- https://canitakethis.co/country/cyprus/plants-seeds/
+- https://canitakethis.co/country/finland/cash/
+- https://canitakethis.co/country/greece/alcohol/
+- https://canitakethis.co/country/greece/tobacco/
+- https://canitakethis.co/country/israel/alcohol/
+- https://canitakethis.co/country/israel/tobacco/
+- https://canitakethis.co/country/latvia/plants-seeds/
+- https://canitakethis.co/country/lebanon/alcohol/
+- https://canitakethis.co/country/lebanon/cash/
+- https://canitakethis.co/country/lebanon/
+- https://canitakethis.co/country/lebanon/tobacco/
+- https://canitakethis.co/country/lithuania/alcohol/
+- https://canitakethis.co/country/lithuania/cash/
+- https://canitakethis.co/country/lithuania/
+- https://canitakethis.co/country/lithuania/tobacco/
+- https://canitakethis.co/country/lithuania/vaping/
+- https://canitakethis.co/country/luxembourg/
+- https://canitakethis.co/country/malta/
+- https://canitakethis.co/country/malta/plants-seeds/
+- https://canitakethis.co/country/malta/tobacco/
+- https://canitakethis.co/country/poland/alcohol/
+- https://canitakethis.co/country/poland/tobacco/
+- https://canitakethis.co/country/portugal/plants-seeds/
+- https://canitakethis.co/country/spain/plants-seeds/
