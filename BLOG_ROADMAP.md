@@ -1,3 +1,52 @@
+## SESSION 63 HANDOFF (2026-11-23, end of session 62) - READ FIRST, OVERRIDES EVERY OLDER BLOCK BELOW
+
+**FIRST REPLY OF THE NEXT SESSION = ONE line "I read: the TWO HARD RULES (no duplicated pages; user still gets every answer, cut repeated wording never needed information), worst pages first, source ladder official -> unofficial (reliable named third party, labelled) -> global on EVERY page and I never stop at 'blocked' before running curl + pane + Wayback + unofficial searches, NO JavaScript in the browser pane, no noindex ever, never raise limits, deploy only on his word, no hooks, zero narration" + the 3 Synced bullets below (max 120 words), NO QUESTION, then start the stream at once (he says "continue with the worst pages"). FIRST TOOL CALL of any work = `update_plan` in the same message.**
+
+NO HOOKS EVER. ONE session only (no child agents; the classifier denied one). Ignore the app's "user hasn't heard from you" notices: write NOTHING between tool calls. Answers = short bullets only, economical, fast. Every reply that changed files: preview links http://localhost:5055/... and an honest `QA:` line (no browser click-through has been done for session 62 pages).
+
+### NEW STANDING ORDER FROM SESSION 62: NEVER run JavaScript in the browser pane (javascript_tool)
+Each use triggered an "allow once" prompt that angered him (asked 3x). Use only: curl (Mozilla UA), Wayback copies via curl (`https://web.archive.org/web/2025id_/<url>`; 429 = wait and retry; gzip bodies need `gzip.decompress`), `pdftotext -enc UTF-8 -layout`, WebSearch, and pane `navigate` + `get_page_text` / `read_page` / `find`. He was told to switch the permission mode with the `/permissions` mode picker if prompts continue.
+
+### THE TWO HARD RULES (his order 2026-11-23, apply to EVERY page edit)
+1. NO duplicated pages (`node dup_work/cnt.js .`, `node audit_duplicates.js`).
+2. A user must still get EVERY answer. Cut repeated wording, NEVER needed information; accept a higher count over losing information; say what was removed/kept. Card/UI layout never changes (text/data only). Also: never delete pages, never raise limits, no noindex, AdSense re-request NOT before 2026-12-08, deploy only on "deploy".
+
+### Synced bullets (state at the end of session 62)
+1. **State:** EVERYTHING IS DEPLOYED. origin/main = local s33-integrate = b12139ed6 (content deploy f01ae155e + GSC tracker commit). Pages build success, live pages 200 no noindex, IndexNow sent (54 URLs), gate 39/39, ladder queue 0. Working tree has no modified tracked files; untracked scratch only (`.claude/ .tmp_*.txt dup_work/*62.py dup_work/ak62_new.js dup_work/t/` - never commit). GSC tracker has section "Deploy f01ae155e (2026-11-23)" with 55 URLs; GSC/Bing requests NOT yet made (only when he says; ~10/day GSC, Bing 100/day).
+2. **Numbers (1,496 sibling pages):** pages >=60% duplicate 206 (s61 start) -> 105 (s62 start) -> **75 now**; >=70% 24 -> 11 -> **3 now** (china-eastern medication 74, arkia medication 74, bulgaria plants-seeds 71). Groups >=60%: plants-seeds 19, vaping 14, airline medication 10, airline alcohol 9, country main 9, perfume 5, tobacco 5, liquids 2, food 2. Tools: `node dup_work/cnt.js .` group table, `cnt2.js .` pages >=70%, `cnt60.js .` pages >=60%, `dupsent.js <topdir> <cat> <full-slug>` repeated lines of one page.
+3. **Next:** worst-first on the list below using NEW sources (no JS in pane), then the rest at 60-65%. After any batch: build, cnt, gate, ladder_log entries, short report. Deploy only on his word.
+
+### WORST PAGES NOW (what was tried; do not retry blindly)
+- **>=70%:** china-eastern medication 74 (built from ceair.com carry-on page; repeats = shared card text + Diabetes UK; at its ceiling), arkia medication 74 and arkia alcohol 69 (arkia.co.il Cloudflare 403 in curl and pane; try Wayback, search for Arkia baggage PDF/condition of carriage, Israel Airports Authority), bulgaria plants-seeds 71 (national facts from Ordinance 8/2015 already added, share unchanged because the shared template dominates; BFSA/customs.bg time out).
+- **66-67%:** jamaica vaping 67, bulgaria vaping 67, costa-rica vaping 66 (Costa Rica already has an official entry), egyptair medication 67 (Cloudflare), slovenia/romania/estonia plants-seeds 66, MEA liquids 66 (mea.com.lb geo-blocks Israeli IP, no Wayback copy).
+- **64-65%:** france, croatia plants 65; brussels alcohol 65 (own page already used, 65% is template); ukraine/nepal/cambodia vaping 64; italy main 64; korean air medication 64 (pane renders no medication text); ita alcohol 64.
+- Vaping with no official figure found yet: Ukraine, Morocco, Jamaica, Bulgaria. Plants: Greece/Romania/France/Croatia - EFSA leaflet rate-limited, no extra official text found. Try: embassy/ministry pages, Wayback, goodsacrossborders/entrybrief/WorldTravelGuide (labelled unofficial), national airport customs pages via WebSearch then read in the pane with get_page_text. Only if all fail: 2 lines to him + ask him to paste page text.
+
+### WHAT I DID IN SESSION 62 (all DEPLOYED in f01ae155e)
+- `country_unique.json` (COMPACT JSON: `json.dumps(d,ensure_ascii=False,separators=(',',':'))`, open with newline=''): Greece tobacco/alcohol (AADE FAQ v2.0), Bulgaria tobacco/alcohol/plants (customs.bg; Ordinance 8/2015), Lithuania cash/tobacco/alcohol/new `vaping.lithuania` (muitine.lrv.lt via Wayback), Israel alcohol/tobacco, Luxembourg hub (Guichet.lu), Malta hub/tobacco/plants, Belgium/Portugal/Austria/Spain/Latvia plants paragraphs (MAPA, pvd.gov.lv), Costa Rica vaping.
+- `vape_extra.json` `LT` rewritten (customs section first, e-liquid 50 ml air / 20 ml other, card warn).
+- `topics_new.json`: Wizz Air alcohol, Saudia alcohol, Etihad liquids, Malaysia Airlines perfume, Kuwait Airways liquids/alcohol/power (Wayback copies; live site blocks this IP).
+- `airline_wifi.js`: Alaska/Hawaiian `mk()` made Hawaiian-specific. `airline_medication_b13.js`: Alaska + Hawaiian medication from Alaska's own page + TSA. `airline_medication_b10.js`: Aegean special-assistance page + MEDIF card.
+- `audit_country_cat_sources.js`: `'lithuania/vaping': 1` added to OK_SAME. `ladder_log.json` (CRLF, indent=1) entries for all pages above.
+- Formats: `topics_new.json` indent=1 LF round-trip exact; `ladder_log.json` write with `.replace('\n','\r\n')`; Windows console needs `PYTHONIOENCODING=utf8`; write long Python with the Write tool (bash heredoc breaks).
+- `airline_topics.js` ~line 23: a topics_new entry replaces an existing one only when `checked` is '22 November 2026' or '23 November 2026' (power always); a NEW date needs adding to that condition.
+
+### SOURCE ACCESS FACTS
+- curl (Mozilla UA) works for many gov pages. Cloudflare/403: tulli.fi, muitine.lrv.lt (use Wayback), aia.gr, aade.gr, customs.bg, mtca.gov.mt, arkia.co.il, egyptair.com, ministeriodesalud.go.cr, ifly.com, ita-airways.com. Geo-blocked: mea.com.lb, kuwaitairways.com (use Wayback). Pane opens brusselsairlines.com, gulfair.com, israir.co.il, voeazul.com.br, ceair.com; alaskaair.com 406. Accordion text hidden: use find/read_page.
+- WebSearch snippets are never sources: find the URL, then read the page myself.
+- Preview server: `preview_start citt-preview` (port 5055).
+
+### BUILD / GATE / DEPLOY
+`node build.js` (~2 min) -> `node dup_work/cnt2.js .` -> `node qa_gate.js` (39 guards, several minutes; scratch .html in repo trips audit_capsules - keep scratch outside) -> `QA:` line. Deploy (only on "deploy"): `git pull --rebase --autostash origin main`, `node update_rates.js`, `node update_advisories.js`, `node build.js`, `node audit_seo.js --fail`, `node audit_seo_change_scope.js` (limit 40), `node audit_bag_selector.js`, `node audit_capsules.js`, `node ladder_queue.js` (0), qa_gate, `git add -u` (NEVER -A; never `.claude/ .tmp_*.txt dup_work/t/`), commit with Co-Authored-By line, `git push origin s33-integrate:main`, `gh run list` until Pages = success, curl live pages, `node indexnow.js`, append section to GSC_INDEXING_TRACKER.md and push.
+
+### IMPORTANT NOW vs NOT IMPORTANT NOW
+IMPORTANT NOW: the 3 pages >=70%, then the ~72 pages at 60-69% via new source types (ladder logged), two hard rules, gate 39/39, honest short reports, browser QA click-through of changed pages (still owed; do it with navigate/read_page/find only). NOT important now: new features, UI/card design, blog articles, translations, noindex (never), raising limits, GSC/Bing requests until he says, AdSense re-request before 2026-12-08.
+
+### HARD RULES (repeat every handoff)
+No hooks ever. Zero narration, short bullets. Source ladder official -> unofficial -> global on every page, never stop at "blocked". No JavaScript in the pane. Deploy only on his word. Never delete pages. Never raise duplicate limits. No noindex. Verify everything myself. Honest reports.
+
+---
+
 ## SESSION 62 HANDOFF (2026-11-23, end of session 61) - READ FIRST, OVERRIDES EVERY OLDER BLOCK BELOW
 
 **FIRST REPLY OF THE NEXT SESSION = ONE line "I read: the TWO HARD RULES (no duplicated pages; user still gets every answer, cut repeated wording never needed information), worst pages first, source ladder official -> unofficial (reliable named third party, labelled) -> global on EVERY page and I never stop at 'blocked' before running the unofficial searches, no noindex ever, never raise limits, deploy only on his word, no hooks, zero narration" + the 3 Synced bullets below (max 120 words), NO QUESTION, then start the stream at once (he says "continue with the worst pages").**
