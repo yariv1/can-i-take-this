@@ -1,7 +1,8 @@
 {
  "airline/aegean/medication": {
   "official": [
-   "read: Aegean: Baggage allowance FAQ"
+   "read: Aegean: Baggage allowance FAQ",
+   "read 2026-11-23: Aegean special assistance page (medical cases, MEDIF) in the browser pane"
   ],
   "reliable": [
    "read: Diabetes UK: Travelling with diabetes"
@@ -122,16 +123,15 @@
  },
  "airline/alaska-airlines/medication": {
   "official": [
-   "tried 2026-11-16: alaskaair.com accessible-services (oxygen) page: HTTP 406; news.alaskaair.com note-to-customers read (2015, only fitness-to-fly, nothing on syringes/liquids)"
+   "read 2026-11-23: Alaska Airlines and Hawaiian Airlines accessible services page \"Traveling with medication\" (alaskaair.com, via Wayback copy because the live page returns 406)"
   ],
   "reliable": [
-   "read: TSA: Medications (pills); TSA: Medications (liquid); TSA: Traveling with medication; TSA: Unused syringes; TSA: Gel ice packs"
+   "read: TSA medication pages"
   ],
   "other": [
-   "none needed: the destination country sets the medicine rules, not the airline; covered by our per-country pages /medication/into/<country>/ (each read from that country authority or INCB filing) plus INCB travellers guidance",
-   "tried 2026-11-17: alaskaair.com carry-on exceptions page and oxygen page: HTTP 406; faa.gov portable oxygen concentrators page: HTTP 403; not read"
+   "none needed: step 1 answered the question"
   ],
-  "date": "2026-11-16"
+  "date": "2026-11-23"
  },
  "airline/american-airlines/medication": {
   "official": [
@@ -208,16 +208,15 @@
  },
  "airline/azul/medication": {
   "official": [
-   "read: Azul: Bagagem de mao (carry-on baggage)"
+   "read 2026-11-23: Azul, Assistencia especial (voeazul.com.br sua-viagem/assistencia-especial) via browser pane; plus carry-on page"
   ],
   "reliable": [
-   "read: ANAC Brazil: Transporte de líquidos em voos internacionais (page in Portuguese); Diabetes UK: Travelling with diabetes"
+   "searched 2026-11-23: Portuguese-language travel guides (Melhores Destinos, Trip.com) repeat the airline rule; none states Azul syringe or cold-storage rules"
   ],
   "other": [
-   "none needed: the destination country sets the medicine rules, not the airline; covered by our per-country pages /medication/into/<country>/ (each read from that country authority or INCB filing) plus INCB travellers guidance",
-   "tried 2026-11-17: gov.br/anac baggage leaflet: human-verification page, not read (no captcha attempted); no readable official Azul or ANAC medication page found"
+   "none: syringes and cold storage have no published Azul rule; TSA/security general rule applies"
   ],
-  "date": "2026-11-16"
+  "date": "2026-11-23"
  },
  "airline/british-airways/medication": {
   "official": [
@@ -450,16 +449,15 @@
  },
  "airline/hawaiian-airlines/medication": {
   "official": [
-   "tried 2026-11-16: hawaiianairlines.com contract of carriage rules and CPAP form found by search: only liability/assistive-device wording, nothing on syringes, liquids or cold storage"
+   "read 2026-11-23: Alaska Airlines and Hawaiian Airlines accessible services page \"Traveling with medication\" (alaskaair.com, via Wayback copy because the live page returns 406)"
   ],
   "reliable": [
-   "read: TSA: Medications (pills); TSA: Medications (liquid); TSA: Traveling with medication; TSA: Insulin; TSA: Gel ice packs; TSA: Insulin supplies"
+   "read: TSA medication pages"
   ],
   "other": [
-   "none needed: the destination country sets the medicine rules, not the airline; covered by our per-country pages /medication/into/<country>/ (each read from that country authority or INCB filing) plus INCB travellers guidance",
-   "tried 2026-11-17: hawaiianairlines.com wifi/medical pages HTTP 406; alaskaair.com carry-on exceptions: HTTP 406; not read"
+   "none needed: step 1 answered the question"
   ],
-  "date": "2026-11-16"
+  "date": "2026-11-23"
  },
  "airline/iberia/medication": {
   "official": [
@@ -1012,16 +1010,13 @@
  },
  "airline/gulf-air/alcohol": {
   "official": [
-   "tried 2026-11-16: gulfair.com conditions of carriage and baggage pages found by search; no page read, only clause 11.4 (on-board consumption) seen in search text, not used"
+   "read 2026-11-23: Gulf Air, Prohibited Items (gulfair.com/en/help/baggage/prohibited-Items); no alcohol rule listed"
   ],
-  "reliable": [
-   "IATA Dangerous Goods Regulations, Table 2.3.A (67th edition, 1 January 2026): read, already on the page",
-   "read 2026-11-16: customs/authority source for Bahrain as recorded in country_unique.json: Unofficial source, read 16 November 2026: Travel Doc customs information page for Bahrain (infopages.traveldoc.aero, undated; it names no publisher). The offici"
-  ],
+  "reliable": [],
   "other": [
-   "none needed: step 2a (IATA) answered the question"
+   "IATA DGR Table 2.3.A fallback kept"
   ],
-  "date": "2026-11-16"
+  "date": "2026-11-23"
  },
  "airline/ethiopian-airlines/alcohol": {
   "official": [
@@ -1100,7 +1095,7 @@
  },
  "airline/malaysia-airlines/perfume-aerosols": {
   "official": [
-   "tried 2026-11-16: malaysiaairlines.com additional-restrictions page read: no perfume or aerosol entry (only flammable liquids and power banks)"
+   "read 2026-11-23: Malaysia Airlines cabin baggage page and additional restrictions page (malaysiaairlines.com) in the browser pane"
   ],
   "reliable": [
    "IATA Dangerous Goods Regulations, Table 2.3.A (67th edition, 1 January 2026): read, already on the page",
@@ -1109,7 +1104,7 @@
   "other": [
    "none needed: step 2a (IATA) answered the question"
   ],
-  "date": "2026-11-17"
+  "date": "2026-11-23"
  },
  "airline/wizz-air/perfume-aerosols": {
   "official": [
@@ -1703,7 +1698,7 @@
  },
  "country/greece/alcohol": {
   "official": [
-   "tried 2026-11-16: official customs page for Greece: HTTP 403 or connection refused, not read"
+   "read 2026-11-23: AADE FAQ on exemptions for travellers from third countries, v2.0 of 3 April 2026 (aade.gr PDF, read in the browser pane via same-origin fetch)"
   ],
   "reliable": [
    "read: Travel Doc customs information page for Greece (infopages.traveldoc.aero)"
@@ -1715,7 +1710,7 @@
  },
  "country/greece/tobacco": {
   "official": [
-   "tried 2026-11-16: official customs page for Greece: HTTP 403 or connection refused, not read"
+   "read 2026-11-23: AADE FAQ on exemptions for travellers from third countries, v2.0 of 3 April 2026 (aade.gr PDF, read in the browser pane via same-origin fetch)"
   ],
   "reliable": [
    "read: Travel Doc customs information page for Greece (infopages.traveldoc.aero)"
@@ -1751,7 +1746,7 @@
  },
  "country/bulgaria/alcohol": {
   "official": [
-   "tried 2026-11-16: official customs page for Bulgaria: HTTP 403 or connection refused, not read"
+   "read 2026-11-23: Bulgarian Customs Agency English page \"Brief summary of the monetary thresholds and quantitative limits\" (customs.bg, via archived copy; live site refuses)"
   ],
   "reliable": [
    "read: Travel Doc customs information page for Bulgaria (infopages.traveldoc.aero)"
@@ -1759,11 +1754,11 @@
   "other": [
    "none needed: step 2a answered the question"
   ],
-  "date": "2026-11-16"
+  "date": "2026-11-23"
  },
  "country/bulgaria/tobacco": {
   "official": [
-   "tried 2026-11-16: official customs page for Bulgaria: HTTP 403 or connection refused, not read"
+   "read 2026-11-23: Bulgarian Customs Agency English page \"Brief summary of the monetary thresholds and quantitative limits\" (customs.bg, via archived copy; live site refuses)"
   ],
   "reliable": [
    "read: Travel Doc customs information page for Bulgaria (infopages.traveldoc.aero)"
@@ -1771,11 +1766,11 @@
   "other": [
    "none needed: step 2a answered the question"
   ],
-  "date": "2026-11-16"
+  "date": "2026-11-23"
  },
  "country/lithuania/alcohol": {
   "official": [
-   "tried 2026-11-16: official customs page for Lithuania: HTTP 403 or connection refused, not read"
+   "read 2026-11-23: Lithuanian Customs \"Coming from third countries\" page (muitine.lrv.lt/en, via Wayback copy; live site 403)"
   ],
   "reliable": [
    "read: Travel Doc customs information page for Lithuania (infopages.traveldoc.aero)"
@@ -1783,11 +1778,11 @@
   "other": [
    "none needed: step 2a answered the question"
   ],
-  "date": "2026-11-16"
+  "date": "2026-11-23"
  },
  "country/lithuania/tobacco": {
   "official": [
-   "tried 2026-11-16: official customs page for Lithuania: HTTP 403 or connection refused, not read"
+   "read 2026-11-23: Lithuanian Customs \"Coming from third countries\" page (muitine.lrv.lt/en, via Wayback copy; live site 403)"
   ],
   "reliable": [
    "read: Travel Doc customs information page for Lithuania (infopages.traveldoc.aero)"
@@ -1795,7 +1790,7 @@
   "other": [
    "none needed: step 2a answered the question"
   ],
-  "date": "2026-11-16"
+  "date": "2026-11-23"
  },
  "country/malta/alcohol": {
   "official": [
@@ -1816,12 +1811,13 @@
    "read 2026-11-22: mtca.gov.mt travellers allowances page"
   ],
   "reliable": [
-   "read: Travel Doc customs information page for Malta (infopages.traveldoc.aero)"
+   "read: Travel Doc customs information page for Malta (infopages.traveldoc.aero)",
+   "read 2026-11-23: Malta International Airport customs page (airport operator)"
   ],
   "other": [
    "none needed: step 2a answered the question"
   ],
-  "date": "2026-11-22"
+  "date": "2026-11-23"
  },
  "country/bahrain/alcohol": {
   "official": [
@@ -1981,7 +1977,8 @@
  },
  "country/israel/alcohol": {
   "official": [
-   "tried 2026-11-16: gov.il customs page: HTTP 403, not read"
+   "tried 2026-11-16: gov.il customs page: HTTP 403, not read",
+   "read 2026-11-23: Israel Tax Authority personal import page (gov.il/en) in the browser pane"
   ],
   "reliable": [
    "read: Travel Doc customs information page for Israel (infopages.traveldoc.aero)"
@@ -1989,11 +1986,12 @@
   "other": [
    "none needed: step 2a answered the question"
   ],
-  "date": "2026-11-16"
+  "date": "2026-11-23"
  },
  "country/israel/tobacco": {
   "official": [
-   "tried 2026-11-16: gov.il customs page: HTTP 403, not read"
+   "tried 2026-11-16: gov.il customs page: HTTP 403, not read",
+   "read 2026-11-23: Israel Tax Authority personal import page (gov.il/en) in the browser pane"
   ],
   "reliable": [
    "read: Travel Doc customs information page for Israel (infopages.traveldoc.aero)"
@@ -2001,7 +1999,7 @@
   "other": [
    "none needed: step 2a answered the question"
   ],
-  "date": "2026-11-16"
+  "date": "2026-11-23"
  },
  "country/israel/plants-seeds": {
   "official": [
@@ -2353,27 +2351,19 @@
  },
  "country/lebanon/alcohol": {
   "official": [
-   "tried 2026-11-16: customs.gov.lb: expired certificate, not read"
+   "read 2026-11-23: Lebanese Customs Administration, Traveller's guide (customs.gov.lb Page.aspx?Item_Id=6)"
   ],
-  "reliable": [
-   "read: Travel Doc customs information page for Lebanon (infopages.traveldoc.aero)"
-  ],
-  "other": [
-   "none needed: step 2a answered the question"
-  ],
-  "date": "2026-11-16"
+  "reliable": [],
+  "other": [],
+  "date": "2026-11-23"
  },
  "country/lebanon/tobacco": {
   "official": [
-   "tried 2026-11-16: customs.gov.lb: expired certificate, not read"
+   "read 2026-11-23: Lebanese Customs Administration, Traveller's guide (customs.gov.lb Page.aspx?Item_Id=6)"
   ],
-  "reliable": [
-   "read: Travel Doc customs information page for Lebanon (infopages.traveldoc.aero)"
-  ],
-  "other": [
-   "none needed: step 2a answered the question"
-  ],
-  "date": "2026-11-16"
+  "reliable": [],
+  "other": [],
+  "date": "2026-11-23"
  },
  "country/ireland/plants-seeds": {
   "official": [
@@ -12866,7 +12856,11 @@
    "IATA Dangerous Goods Regulations, Table 2.3.A: read, on the page",
    "read 2026-11-16: customs/authority source for Kuwait as recorded in country_unique.json: Source read: UK government (FCDO), Kuwait entry requirements. This is an unofficial source and states no alcohol penalty."
   ],
-  "date": "2026-11-16"
+  "date": "2026-11-23",
+  "official": [
+   "read 2026-11-23: Kuwait Airways baggage restrictions page and batteries FAQ PDF via Wayback copies (live site blocks this IP)"
+  ],
+  "other": []
  },
  "airline/kenya-airways/alcohol": {
   "reliable": [
@@ -12917,7 +12911,11 @@
    "IATA Dangerous Goods Regulations, Table 2.3.A: read, on the page",
    "read 2026-11-16: customs/authority source for Saudi Arabia as recorded in country_unique.json: UK government (FCDO) entry requirements page, read 16 November 2026. It is an unofficial source: it is another country's travel advice."
   ],
-  "date": "2026-11-16"
+  "date": "2026-11-23",
+  "official": [
+   "read 2026-11-23: Saudia terms, passenger advice, notices and liability page (saudia.com) in the browser pane"
+  ],
+  "other": []
  },
  "airline/gol/alcohol": {
   "official": [
@@ -12952,21 +12950,31 @@
    "IATA Dangerous Goods Regulations, Table 2.3.A: read, on the page",
    "read 2026-11-16: customs/authority source for Israel as recorded in country_unique.json: Unofficial source, read 16 November 2026: Travel Doc customs information page for Israel (infopages.traveldoc.aero, undated; it names no publisher). The officia"
   ],
-  "date": "2026-11-16"
+  "date": "2026-11-23",
+  "official": [
+   "read 2026-11-23: Israel Tax Authority personal import page (gov.il/en) in the browser pane"
+  ]
  },
  "airline/israir/alcohol": {
-  "reliable": [
-   "IATA Dangerous Goods Regulations, Table 2.3.A: read, on the page",
-   "read 2026-11-16: customs/authority source for Israel as recorded in country_unique.json: Unofficial source, read 16 November 2026: Travel Doc customs information page for Israel (infopages.traveldoc.aero, undated; it names no publisher). The officia"
+  "official": [
+   "read 2026-11-23: Israir baggage policy (israir.co.il Baggage_Policy, Hebrew) via browser pane"
   ],
-  "date": "2026-11-16"
+  "reliable": [],
+  "other": [],
+  "date": "2026-11-23"
  },
  "airline/middle-east-airlines/alcohol": {
-  "reliable": [
-   "IATA Dangerous Goods Regulations, Table 2.3.A: read, on the page",
-   "read 2026-11-16: customs/authority source for Lebanon as recorded in country_unique.json: Unofficial source, read 16 November 2026: Travel Doc customs information page for Lebanon (infopages.traveldoc.aero, undated; it names no publisher). The offici"
+  "official": [
+   "tried 2026-11-23: mea.com.lb baggage pages return Cloudflare 403 in curl and the browser pane",
+   "read 2026-11-23: Lebanese Customs traveller's guide for the Lebanon section"
   ],
-  "date": "2026-11-16"
+  "reliable": [
+   "searched 2026-11-23: ifly.com 403, seat.guru no liquid/alcohol text; baggagepolicies.com (third party) read"
+  ],
+  "other": [
+   "none: no MEA-specific alcohol or perfume rule published anywhere read; IATA rule kept"
+  ],
+  "date": "2026-11-23"
  },
  "airline/avianca/alcohol": {
   "reliable": [
@@ -12980,7 +12988,11 @@
    "IATA Dangerous Goods Regulations, Table 2.3.A: read, on the page",
    "read 2026-11-16: customs/authority source for Hungary as recorded in country_unique.json: UK government (FCDO) entry requirements page, read 16 November 2026. It is an unofficial source: it is another country's travel advice."
   ],
-  "date": "2026-11-16"
+  "date": "2026-11-23",
+  "official": [
+   "read 2026-11-23: Wizz Air restricted items page and cabin baggage page (wizzair.com help centre) in the browser pane"
+  ],
+  "other": []
  },
  "airline/singapore-airlines/alcohol": {
   "reliable": [
@@ -14195,15 +14207,11 @@
  },
  "airline/israir/liquids": {
   "official": [
-   "tried 2026-11-17: israir.co.il baggage policy redirects to a waiting-room queue (queue-it); not bypassed"
+   "read 2026-11-23: Israir baggage policy (israir.co.il Baggage_Policy, Hebrew) via browser pane"
   ],
-  "reliable": [
-   "tried 2026-11-19: Israel Airports Authority Ben Gurion security page has no 100 ml rule (duty-free sealed packet only)"
-  ],
-  "other": [
-   "read 2026-11-19: Mako article 2026-01-28 (lower reliability)"
-  ],
-  "date": "2026-11-19"
+  "reliable": [],
+  "other": [],
+  "date": "2026-11-23"
  },
  "airline/arkia/liquids": {
   "official": [
@@ -14688,7 +14696,8 @@
  },
  "country/lithuania/vaping": {
   "official": [
-   "muitine.lrv.lt traveller page and ntakd.lrv.lt e-cigarette page: HTTP 403 (Cloudflare) 2026-11-22, not bypassed; mano.muitine.lt same wall"
+   "read 2026-11-23: Lithuanian Customs \"Coming from third countries\" page (muitine.lrv.lt/en, via Wayback copy; live site 403)",
+   "read 2026-11-23: ntakd.lrv.lt e-cigarettes page (archived copy)"
   ],
   "reliable": [
    "WHO country profile read 2026-10-08 (base card)"
@@ -14696,7 +14705,7 @@
   "other": [
    "read 2026-11-22: GSTHR e-cigarette profile for Lithuania (page updated 2026-11-16, secondary compilation, lower reliability)"
   ],
-  "date": "2026-11-22"
+  "date": "2026-11-23"
  },
  "country/luxembourg/vaping": {
   "official": [
@@ -15128,15 +15137,18 @@
  },
  "country/costa-rica/vaping": {
   "official": [
-   "hacienda.go.cr and AduanaFacil traveller pages found by search: general baggage rules only, no vape rule read"
+   "hacienda.go.cr and AduanaFacil traveller pages found by search: general baggage rules only, no vape rule read",
+   "tried 2026-11-23: Ministerio de Salud Costa Rica (403 in browser pane and curl)"
   ],
   "reliable": [
-   "WHO country profile read 2026-10-08 (base card)"
+   "WHO country profile read 2026-10-08 (base card)",
+   "read 2026-11-23: WHO FCTC implementation database, Costa Rica Law 10066",
+   "read 2026-11-23: La Nacion 14 May 2024 headline (paywalled)"
   ],
   "other": [
-   "read 2026-11-22: GSTHR e-cigarette profile for Costa Rica (page updated 2026-11-16, secondary compilation, lower reliability)"
+   "WHO country profile on the card"
   ],
-  "date": "2026-11-22"
+  "date": "2026-11-23"
  },
  "country/ethiopia/vaping": {
   "official": [
@@ -15220,11 +15232,14 @@
  },
  "country/malta/plants-seeds": {
   "official": [
-   "read 2026-11-22: publicservice.gov.mt Plant Protection Directorate article 2023-02-01; no traveller allowance; customs.gov.mt plant health page no response"
+   "read 2026-11-22: publicservice.gov.mt Plant Protection Directorate article 2023-02-01; no traveller allowance; customs.gov.mt plant health page no response",
+   "read 2026-11-23: Plant Protection Directorate \"Inspectorate and enforcement\" page (Government of Malta)"
   ],
-  "reliable": [],
+  "reliable": [
+   "read 2026-11-23: Malta Daily, 6 Jan 2026, #PlantHealth4Life reminder"
+  ],
   "other": [],
-  "date": "2026-11-22"
+  "date": "2026-11-23"
  },
  "country/slovakia/plants-seeds": {
   "official": [
@@ -15355,5 +15370,165 @@
   "reliable": [],
   "other": [],
   "date": "2026-11-22"
+ },
+ "country/cyprus/plants-seeds": {
+  "official": [
+   "read 2026-11-23: Cyprus Customs and Excise passenger restrictions list; Cyprus Tourism Organisation entry-requirements page (visitcyprus.com)"
+  ],
+  "reliable": [
+   "read 2026-11-23: Cyprus Mail report of the Department of Agriculture warning, 6 July 2026"
+  ],
+  "other": [],
+  "date": "2026-11-23"
+ },
+ "country/bulgaria/cash": {
+  "official": [
+   "read 2026-11-23: Bulgarian Ministry of Foreign Affairs, Declaring cash (mfa.bg)"
+  ],
+  "reliable": [
+   "read 2026-11-23: BTA news 18 September 2023 on Currency Act amendment"
+  ],
+  "other": [
+   "UK FCDO"
+  ],
+  "date": "2026-11-23"
+ },
+ "country/finland/cash": {
+  "official": [
+   "read 2026-11-23: Suomi.fi Declaring cash when travelling to or from EU nations (Finnish Customs)"
+  ],
+  "reliable": [],
+  "other": [
+   "UK FCDO"
+  ],
+  "date": "2026-11-23"
+ },
+ "country/lebanon/cash": {
+  "official": [
+   "read 2026-11-23: Lebanese Customs Administration, Traveller's guide (customs.gov.lb Page.aspx?Item_Id=6)"
+  ],
+  "reliable": [],
+  "other": [],
+  "date": "2026-11-23"
+ },
+ "airline/middle-east-airlines/perfume": {
+  "official": [
+   "tried 2026-11-23: mea.com.lb baggage pages return Cloudflare 403 in curl and the browser pane"
+  ],
+  "reliable": [
+   "searched 2026-11-23: ifly.com 403, seat.guru no liquid/alcohol text; baggagepolicies.com (third party) read"
+  ],
+  "other": [
+   "none: no MEA-specific alcohol or perfume rule published anywhere read; IATA rule kept"
+  ],
+  "date": "2026-11-23"
+ },
+ "country/lithuania/cash": {
+  "reliable": [
+   "read: UK FCDO Lithuania entry requirements (unofficial)"
+  ],
+  "other": [
+   "none needed"
+  ],
+  "official": [
+   "read 2026-11-23: Lithuanian Customs \"Cash declaration\" page (muitine.lrv.lt/en, via archived copy; live site returns 403)"
+  ],
+  "date": "2026-11-23"
+ },
+ "country/luxembourg": {
+  "official": [
+   "read 2026-11-23: Guichet.lu, importing goods into Luxembourg (guichet.public.lu, French) in the browser pane"
+  ],
+  "reliable": [],
+  "other": [
+   "none needed"
+  ],
+  "date": "2026-11-23"
+ },
+ "country/malta": {
+  "official": [],
+  "reliable": [
+   "read 2026-11-23: Malta International Airport customs page (airport operator)"
+  ],
+  "other": [
+   "none needed"
+  ],
+  "date": "2026-11-23"
+ },
+ "country/belgium/plants-seeds": {
+  "official": [
+   "read 2026-11-23: FASFC \"Plants and plant products\" (fasfc.be) in the browser pane"
+  ],
+  "reliable": [],
+  "other": [
+   "none needed"
+  ],
+  "date": "2026-11-23"
+ },
+ "country/portugal/plants-seeds": {
+  "official": [
+   "read 2026-11-23: Autoridade Tributária e Aduaneira Guia do viajante, February 2026 (info.portaldasfinancas.gov.pt PDF)"
+  ],
+  "reliable": [],
+  "other": [
+   "none needed"
+  ],
+  "date": "2026-11-23"
+ },
+ "country/austria/plants-seeds": {
+  "official": [
+   "read 2026-11-23: Austrian Federal Ministry of Finance, travelling with plants (bmf.gv.at/en) in the browser pane"
+  ],
+  "reliable": [],
+  "other": [
+   "none needed"
+  ],
+  "date": "2026-11-23"
+ },
+ "airline/etihad-airways/liquids": {
+  "official": [
+   "read 2026-11-23: Etihad prohibited items page (etihad.com/en/help/baggage-information) in the browser pane"
+  ],
+  "reliable": [
+   "IATA travel and baggage page"
+  ],
+  "other": [],
+  "date": "2026-11-23"
+ },
+ "airline/kuwait-airways/liquids": {
+  "official": [
+   "read 2026-11-23: Kuwait Airways free baggage / hand baggage page (kuwaitairways.com) from a Wayback copy; the live site refuses connections from here"
+  ],
+  "reliable": [],
+  "other": [],
+  "date": "2026-11-23"
+ },
+ "airline/kuwait-airways/power-bank": {
+  "official": [
+   "read 2026-11-23: Kuwait Airways baggage restrictions page and batteries FAQ PDF via Wayback copies (live site blocks this IP)"
+  ],
+  "reliable": [],
+  "other": [],
+  "date": "2026-11-23"
+ },
+ "country/spain/plants-seeds": {
+  "reliable": [],
+  "other": [
+   "none needed"
+  ],
+  "official": [
+   "read 2026-11-23: MAPA travellers plant page (mapa.gob.es) via curl"
+  ],
+  "date": "2026-11-23"
+ },
+ "country/latvia/plants-seeds": {
+  "reliable": [],
+  "other": [
+   "none needed"
+  ],
+  "official": [
+   "read 2026-11-23: Latvian Food and Veterinary Service infographic PDF (pvd.gov.lv/en/media/10362) via curl"
+  ],
+  "date": "2026-11-23"
  }
 }

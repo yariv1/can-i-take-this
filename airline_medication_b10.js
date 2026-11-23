@@ -147,6 +147,7 @@ module.exports = function (X) {
   // ---------------- AEGEAN ----------------
   {
     const P = ['https://en.aegeanair.com/travel-info/travelling-with-aegean/baggage/baggage-allowance/', 'Aegean: Baggage allowance FAQ', 'Can I carry medicine in my personal item or carry-on bag?'];
+    const P2 = ['https://en.aegeanair.com/travel-info/travelling-with-aegean/special-assistance/traveling-with-people-with-special-needs/extra-details/', 'Aegean: Special assistance, medical cases and MEDIF', 'Medical clearance'];
     add({
       slug: 'aegean', name: 'Aegean Airlines',
       h1: 'Aegean Airlines Medication Policy: Medicine in Hand Baggage on an Aegean Flight (2026)',
@@ -162,9 +163,15 @@ module.exports = function (X) {
         ], [P]),
         gap('needles', 'Insulin & syringes', 'x', 'Needles, syringes, injections', P, 'Aegean', 'needles and syringes'),
         gap('cold', 'Cold medication', 'x', 'Medication that must stay cold', P, 'Aegean', 'keeping medication cold'),
+        card('clearance', 'Treatment during the flight', 'warn', 'Medical clearance (MEDIF)', 'Oxygen, respirator, infusions', 'Aegean treats a passenger who depends on oxygen, a respirator, an incubator or infusions during the flight as a medical case that needs clearance from its Medical Department.', [
+          'Aegean: the Medical Information Form (MEDIF) is completed by your attending physician, so Aegean\'s medical advisers can decide whether and under what conditions you may fly.',
+          'Aegean: its Medical Department may overrule your own physician, and medical cases must always travel with an escort (not under 15 years old).',
+          'Aegean: you also count as a medical case if you travel earlier than 6 months after a heart attack or stroke.'
+        ], [P2]),
         ab(P)
       ],
       faq: [
+        ['Do I need a MEDIF form to fly with Aegean?', 'If you depend on oxygen, a respirator, an incubator or infusions during the flight, or fly within 6 months of a heart attack or stroke, Aegean treats you as a medical case: your physician completes a MEDIF and Aegean\'s Medical Department decides, and it may overrule your physician.'],
         ['Can I carry medicine in my carry-on on Aegean?', 'Yes, essential medications are allowed in your personal item or carry-on bag.'],
         ['Do I need a doctor\'s note for liquid medicine on Aegean?', 'Over 100 ml you may need a prescription or doctor\'s note; check with the Aegean call center.']
       ],
@@ -212,31 +219,42 @@ module.exports = function (X) {
   // ---------------- AZUL ----------------
   {
     const P = ['https://www.voeazul.com.br/br/pt/sua-viagem/planeje/bagagens/de-mao', 'Azul: Bagagem de mao (carry-on baggage)', 'Valuable and fragile items'];
+    const P2 = ['https://www.voeazul.com.br/br/pt/sua-viagem/assistencia-especial', 'Azul: Assistencia especial (special assistance, medicines)', 'Foods and medicines']; // read 23 November 2026
     add({
       slug: 'azul', name: 'Azul',
       h1: 'Azul Medication Policy: Essential Medicine in Your Carry-On on an Azul Flight (2026)',
-      desc: 'Can you bring medication on Azul? Essential medicines must travel with you in the cabin and never be checked. The Azul carry-on page we read gives no rules for syringes or liquids. Checked 20 October 2026.',
+      desc: 'Can you bring medication on Azul? Essential medicines go in the cabin, only the amount needed for the flight, with the prescription from the day of travel. Checked 23 November 2026.',
       answer: 'Azul\'s carry-on page lists essential medicines among the items that must go with you in the cabin: never check them. The page we read gives no rule for syringes, liquid medication or cold storage.',
       srcNote: 'From Azul\'s own carry-on baggage page (in Portuguese), last checked 20 October 2026. Rules change, so confirm with the airline before you fly.',
       scen: [
-        card('pills', 'Pills & tablets', 'go', 'Cabin only', 'Never check them', 'Azul says essential medicines must go with you in the cabin.', [
-          'Azul: essential medicines are among the items that must go with you in the cabin; never check them in.'
-        ], [P], true),
-        gap('liquids', 'Liquid medication', 'x', 'Over 100 ml (3.4 oz)', P, 'Azul', 'liquid medication limits'),
+        card('pills', 'Pills & tablets', 'go', 'Cabin, with prescription', 'Amount for the flight', 'Azul allows the amount of medicine needed on board, in line with the flight time, if you show the prescription on the day.', [
+          'Azul: essential medicines are among the items that must go with you in the cabin; never check them in.',
+          'Azul special assistance page: you may board with the quantity of medicine needed for use on board, compatible with the flight time, if you show the medical prescription on the day of travel.'
+        ], [P, P2], true),
+        card('liquids', 'Liquid medication', 'warn', 'Amount for the flight', 'Over 100 ml (3.4 oz)', 'Azul sets no separate millilitre limit for liquid medicine; the same amount-for-the-flight rule applies.', [
+          'Azul gives one rule for medicines: the quantity needed for use on board, compatible with the flight time, with the prescription from the day of travel.',
+          'The Azul page does not say whether a liquid medicine may exceed the 100 ml carry-on liquid limit on international flights: ask Azul.'
+        ], [P2]),
+        card('checked', 'Checking medicine', 'warn', 'Sign a form', 'Responsibility term at check-in', 'To check medicine in your hold bag you sign a Termo de Responsabilidade at check-in.', [
+          'Azul special assistance page: to check medicines you must sign a Termo de Responsabilidade (responsibility form) at check-in.'
+        ], [P2]),
         gap('needles', 'Insulin & syringes', 'x', 'Needles, syringes, injections', P, 'Azul', 'needles and syringes'),
         gap('cold', 'Cold medication', 'x', 'Medication that must stay cold', P, 'Azul', 'keeping medication cold'),
         ab(P)
       ],
       faq: [
-        ['Can I check my medicine on Azul?', 'Azul says essential medicines must go in the cabin with you and should never be checked.']
+        ['Can I check my medicine on Azul?', 'Azul says essential medicines must go in the cabin and should never be checked. If you do check medicine, you sign a responsibility form at check-in.'],
+        ['How much medicine can I take on Azul?', 'The amount needed for use on board, in line with the flight time, if you show the prescription from the day of travel.']
       ],
       tableTitle: 'Azul medication rules at a glance',
-      tableNote: 'What Azul\'s own carry-on page says. Where Azul is silent we say so.',
+      tableNote: 'What Azul\'s own carry-on and special assistance pages say. Where Azul is silent we say so.',
       rows: [
         ['Essential medicines?', 'Cabin only; never check them'],
-        ['Syringes, liquids, cold storage?', NP]
+        ['How much?', 'The amount needed for the flight, with the prescription from the day of travel'],
+        ['Checking medicine?', 'Sign a responsibility form (Termo de Responsabilidade) at check-in'],
+        ['Syringes, cold storage?', NP]
       ],
-      extra: steps(['Keep essential medicine in your cabin bag.', 'Ask Azul about syringes and liquids before you fly.'])
+      extra: steps(['Keep essential medicine in your cabin bag.', 'Carry the prescription dated for your travel day and ask Azul about syringes before you fly.'])
     });
   }
 

@@ -3583,59 +3583,75 @@
    "unofficial": false
   },
   "liquids": {
-   "answer": "We could not take a liquids rule from Etihad's own pages. The rule that security checkpoints apply to cabin baggage is containers of 100 ml or less in one transparent resealable bag of at most 1 litre, according to the International Air Transport Association (IATA).",
+   "answer": "Cabin bag: liquids, aerosols, gels and creams must be in containers of 100 ml or less, in one transparent resealable bag of at most 1 litre, per Etihad's own prohibited-items page (read 23 November 2026). In checked baggage they are allowed, with Zamzam water up to 5 L and other liquids such as cooking oil up to 10 L. Medicines, baby milk and special diets are exempt in principle; check your departure airport.",
    "sections": [
     {
      "h": "💧 What Etihad says about liquids",
-     "p": "This section is from an unofficial source, not Etihad's own rules: the International Air Transport Association (IATA). Etihad's prohibited items page (read) lists liquids in a table whose columns we could not read reliably.",
+     "p": "Etihad's own prohibited-items table lists drinks, soups, sauces, creams, lotions, perfumes, sprays, hair and shower gel, pressurised containers such as shaving foam and deodorant, and pastes such as toothpaste or mascara as allowed in cabin baggage only up to 100 ml per container, and allowed in checked baggage. Etihad adds that the limit you face depends on where you fly from, and that flights to or from the US and Australia have extra rules. The container and bag rule and the medicine, baby-food and special-diet exemption come from IATA, the airline industry body (unofficial). Airports can add stricter limits.",
      "table": {
       "head": [
        "Question",
-       "Etihad rule"
+       "What applies"
       ],
       "rows": [
        [
-        "Container size",
-        "Containers of 100 ml or equivalent"
+        "Container size in cabin bag",
+        "Up to 100 ml each (Etihad)"
        ],
        [
         "Bag",
-        "A transparent resealable plastic bag with a maximum capacity of 1 litre"
+        "One transparent resealable plastic bag, maximum 1 litre (IATA)"
+       ],
+       [
+        "Liquids in checked baggage",
+        "Allowed (Etihad)"
+       ],
+       [
+        "Zamzam water",
+        "Up to 5 L in checked baggage, up to 100 ml in cabin (Etihad)"
+       ],
+       [
+        "Other liquids such as cooking oil",
+        "Up to 10 L in checked baggage, up to 100 ml in cabin (Etihad)"
        ],
        [
         "Medications, baby foods and special diets",
-        "In principle the restrictions do not apply, but consult your local airport to be sure"
+        "In principle the restrictions do not apply, but consult your local airport to be sure (IATA)"
        ],
        [
-        "Where the rule comes from",
-        "More governments are adopting the guidelines of the International Civil Aviation Organization (ICAO)"
+        "Duty-free on US flights",
+        "Exempt only in a tamper-evident bag if bought after US Customs and Border Protection clearance in Abu Dhabi (Etihad)"
        ]
       ]
      },
      "list": [
-      "<strong>Not on the page:</strong> Etihad's own rule. Etihad and the airports you use can add stricter limits, so confirm with Etihad before you fly."
+      "<strong>Flights to or from Australia and the US:</strong> Etihad says extra rules apply for powders of 350 ml or 350 g and above; medicines and medically prescribed powders and formula are exempt when sealed and backed by supporting evidence."
      ]
     }
    ],
    "faq": [
     [
      "How much liquid can I take in my Etihad cabin bag?",
-     "Following the International Air Transport Association (IATA): containers of 100 ml or less in one transparent resealable bag of at most 1 litre. Etihad's own page was not readable on this, so confirm with the airline."
+     "Containers of 100 ml or less, in one transparent resealable bag of at most 1 litre. Liquids, aerosols, gels and creams can go in your checked baggage, with Zamzam water up to 5 L and other liquids up to 10 L."
     ],
     [
      "Does Etihad allow liquid medicine and baby food over the limit?",
-     "The source says in principle the restrictions do not apply to medications, baby foods and special dietary requirements, but to check with your local airport; confirm with Etihad."
+     "In principle the restrictions do not apply to medications, baby foods and special dietary requirements, but check your local airport. On flights to or from the US or Australia Etihad asks for supporting evidence and sealed packaging."
     ]
    ],
    "sources": [
+    [
+     "https://www.etihad.com/en/help/baggage-information/prohibited-items",
+     "Etihad Airways &mdash; Prohibited items and what you can take on board"
+    ],
     [
      "https://www.iata.org/en/youandiata/travelers/baggage/",
      "IATA &mdash; Travel & Baggage"
     ]
    ],
    "keepSchema": true,
-   "checked": "18 October 2026",
-   "unofficial": true
+   "checked": "23 November 2026",
+   "unofficial": false
   },
   "alcohol": {
    "answer": "Etihad lists alcoholic beverages above 70% alcohol by volume as not permitted in cabin or checked baggage. The page read gives no quantity limit for drinks at or below 70%.",
@@ -12001,10 +12017,42 @@
    "unofficial": false
   },
   "perfume": {
-   "answer": "Malaysia Airlines's own rule could not be read. The IATA limit is 0.5 L or 0.5 kg per article and 2 L or 2 kg in total; the table below has the details.",
+   "answer": "In your cabin bag, perfume and aerosols must follow Malaysia Airlines' liquids rule (read 23 November 2026): 100 ml per item, all in one transparent resealable bag of at most 1 litre, shown separately at screening. Perfume bought at airport duty free on the day or on board is allowed in sealed bags with the receipt visible. The airline sets no per-article limit of its own, so the IATA limit applies: 0.5 L or 0.5 kg per article and 2 L or 2 kg in total.",
    "sections": [
     {
-     "h": "🧴 What the industry rule says about perfume and aerosols on Malaysia Airlines",
+     "h": "🧴 What Malaysia Airlines says about perfume and aerosols in your cabin bag",
+     "p": "Malaysia Airlines' cabin baggage page treats perfume, sprays and aerosols as liquids, aerosols and gels (LAGs). Its additional-restrictions page also bans compressed gases and flammable liquids from checked and cabin bags. It gives no per-article size or total for toiletries in checked baggage, so we show the IATA rule below for that. Airports can add stricter limits.",
+     "table": {
+      "head": [
+       "Question",
+       "What applies"
+      ],
+      "rows": [
+       [
+        "Size per item in your cabin bag",
+        "100 ml maximum per item (Malaysia Airlines)"
+       ],
+       [
+        "Bag",
+        "One re-sealable transparent plastic bag per person, up to 1 litre in total, presented separately at screening (Malaysia Airlines)"
+       ],
+       [
+        "Perfume from airport duty free or on board",
+        "Allowed in the cabin if bought on the day, in sealed plastic bags with the proof of purchase in clear view (Malaysia Airlines)"
+       ],
+       [
+        "Medicine, baby milk and special diets",
+        "Exempt, bring the documents that show the need (Malaysia Airlines)"
+       ],
+       [
+        "Compressed gases, flammable liquids",
+        "Not allowed in checked or cabin bags (Malaysia Airlines)"
+       ]
+      ]
+     }
+    },
+    {
+     "h": "🧴 What the industry rule says about perfume and aerosols on Malaysia Airlines (quantity)",
      "p": "IATA, the airline industry body. Airports and customs can add stricter limits.",
      "table": {
       "head": [
@@ -12042,13 +12090,21 @@
    ],
    "sources": [
     [
+     "https://www.malaysiaairlines.com/us/en/travel-info/baggage/cabin-baggage.html",
+     "Malaysia Airlines &mdash; Cabin baggage (liquids, aerosols and gels)"
+    ],
+    [
+     "https://www.malaysiaairlines.com/hq/en/travel-info/baggage/additional-restrictions.html",
+     "Malaysia Airlines &mdash; Additional restrictions"
+    ],
+    [
      "https://www.iata.org/contentassets/6fea26dd84d24b26a7a1fd5788561d6e/dgr-67-en-2.3.a.pdf",
      "IATA &mdash; Dangerous Goods Regulations, Table 2.3.A (67th edition, 1 January 2026)"
     ]
    ],
    "keepSchema": true,
-   "checked": "18 October 2026",
-   "unofficial": true
+   "checked": "23 November 2026",
+   "unofficial": false
   }
  },
  "Aer Lingus": {
@@ -12754,83 +12810,103 @@
    "unofficial": false
   },
   "liquids": {
-   "answer": "We could not take a liquids rule from Kuwait Airways's own pages. The rule that security checkpoints apply to cabin baggage is containers of 100 ml or less in one transparent resealable bag of at most 1 litre, according to the International Air Transport Association (IATA).",
+   "answer": "From Kuwait International Airport, Kuwait Airways' own baggage page (read 23 November 2026, from an archived copy) says each liquid, aerosol or gel container may hold at most 100 ml, even if partly full, in one resealable tamper-evident bag of at most 1 litre (20 x 20 cm) provided by the airport, one bag per passenger. Prescription medicine, infant food and milk, and health-diet food in reasonable quantities are exempt with proof, subject to security staff. Duty-free liquids are allowed in a sealed, tagged bag with the invoice.",
    "sections": [
     {
      "h": "💧 What Kuwait Airways says about liquids",
-     "p": "This section is from an unofficial source, not Kuwait Airways's own rules: the International Air Transport Association (IATA). Kuwait Airways' carry-on page timed out for us.",
+     "p": "This is Kuwait Airways' own hand baggage notice, which applies to passengers boarding at or transiting through Kuwait International Airport, and says the airport authority (DGCA) may tighten it. Other airports on your route can set their own limits.",
      "table": {
       "head": [
        "Question",
-       "Kuwait Airways rule"
+       "What Kuwait Airways says"
       ],
       "rows": [
        [
         "Container size",
-        "Containers of 100 ml or equivalent"
+        "100 ml each, even if partially full"
        ],
        [
         "Bag",
-        "A transparent resealable plastic bag with a maximum capacity of 1 litre"
+        "One resealable tamper-evident bag of at most 1 litre (20 x 20 cm), provided by the airport, one per passenger"
        ],
        [
-        "Medications, baby foods and special diets",
-        "In principle the restrictions do not apply, but consult your local airport to be sure"
+        "Medicine, infant food and milk, diet food",
+        "Exempt in reasonable quantities for the whole flight including delays, with official proof on request and subject to security staff"
        ],
        [
-        "Where the rule comes from",
-        "More governments are adopting the guidelines of the International Civil Aviation Organization (ICAO)"
+        "Duty-free or on-board purchases",
+        "Allowed through transit if in a transparent tamper-evident bag marked with the country, airport or airline of origin and tagged with the purchase invoice"
+       ],
+       [
+        "Crew in uniform",
+        "Exempt while on duty"
+       ],
+       [
+        "Extra duty-free bag",
+        "You may carry one bag of duty-free items bought on the day of your flight on top of your hand baggage"
        ]
       ]
      },
      "list": [
-      "<strong>Not on the page:</strong> Kuwait Airways's own rule. Kuwait Airways and the airports you use can add stricter limits, so confirm with Kuwait Airways before you fly."
+      "<strong>Note:</strong> the notice warns the checks may stop you carrying duty-free liquids bought earlier, including on board, in your normal hand baggage, so check every transit airport."
      ]
     }
    ],
    "faq": [
     [
      "How much liquid can I take in my Kuwait Airways cabin bag?",
-     "Following the International Air Transport Association (IATA): containers of 100 ml or less in one transparent resealable bag of at most 1 litre. Kuwait Airways's own page was not readable on this, so confirm with the airline."
+     "From Kuwait International Airport: containers of 100 ml or less, even if partly full, in one resealable tamper-evident bag of at most 1 litre provided by the airport, one bag per passenger."
     ],
     [
      "Does Kuwait Airways allow liquid medicine and baby food over the limit?",
-     "The source says in principle the restrictions do not apply to medications, baby foods and special dietary requirements, but to check with your local airport; confirm with Kuwait Airways."
+     "Yes: prescription medicine, infant food and milk, and health-diet food in reasonable quantities for the flight are exempt, but security staff assess them and you must show official proof of the need if asked."
+    ],
+    [
+     "Can I carry duty-free liquids on Kuwait Airways?",
+     "Yes, if they are in a transparent tamper-evident bag marked with the origin and tagged with the purchase invoice; the notice warns transit checks may still stop earlier purchases."
     ]
    ],
    "sources": [
+    [
+     "https://www.kuwaitairways.com/en/is/free-baggage",
+     "Kuwait Airways &mdash; Hand baggage and liquid restrictions (read from an archived copy)"
+    ],
     [
      "https://www.iata.org/en/youandiata/travelers/baggage/",
      "IATA &mdash; Travel & Baggage"
     ]
    ],
    "keepSchema": true,
-   "checked": "18 October 2026",
-   "unofficial": true
+   "checked": "23 November 2026",
+   "unofficial": false
   },
   "alcohol": {
-   "answer": "Kuwait Airways's own rule could not be read; the IATA limit is 5 L per person for drinks above 24% up to 70%, and the home-country customs rule is below.",
+   "answer": "Kuwait Airways' baggage notice (read 23 November 2026, archived copy) gives no rule for spirits, wine or beer. It lists perfumes, hair sprays and medicines containing alcohol as allowed in limited amounts: 2 kg or 2 L in total, and 1 kg or 1 L per package, in hold or cabin. For drinks the IATA limit applies, 5 L per person for drinks above 24% up to 70%, and Kuwait itself bans importing alcohol.",
    "sections": [
     {
-     "h": "🍷 What the industry rule says about alcohol on Kuwait Airways",
-     "p": "IATA, the airline industry body. Airports and customs can add stricter limits. Full table: <a href=\"/plane/alcohol/\">alcohol on a plane</a>.",
+     "h": "🍷 What Kuwait Airways says about alcohol, and the industry rule",
+     "p": "Kuwait Airways' notice lists toiletries and medicines containing alcohol under dangerous goods carried in limited quantities, but names no rule for alcoholic drinks, so we show IATA, the airline industry body, for drinks. Airports and customs can add stricter limits. Full table: <a href=\"/plane/alcohol/\">alcohol on a plane</a>.",
      "table": {
       "head": [
        "Question",
-       "IATA rule"
+       "What applies"
       ],
       "rows": [
        [
+        "Perfume, hair spray, medicine containing alcohol",
+        "2 kg or 2 L in total, 1 kg or 1 L per package, in hold or cabin (Kuwait Airways)"
+       ],
+       [
         "Up to 24% alcohol by volume",
-        "Not subject to any restrictions"
+        "Not subject to any restrictions (IATA)"
        ],
        [
         "More than 24% and up to 70%",
-        "Retail packaging, receptacles not exceeding 5 L, total net quantity 5 L per person"
+        "Retail packaging, receptacles not exceeding 5 L, total net quantity 5 L per person (IATA)"
        ],
        [
         "Cabin bag at security",
-        "Liquid limits also apply at the checkpoint; see the liquids rule for Kuwait Airways"
+        "100 ml containers in one 1-litre bag from Kuwait International Airport (Kuwait Airways)"
        ]
       ]
      }
@@ -12842,13 +12918,17 @@
    ],
    "sources": [
     [
+     "https://www.kuwaitairways.com/en/is/free-baggage",
+     "Kuwait Airways &mdash; Baggage restrictions (read from an archived copy)"
+    ],
+    [
      "https://www.iata.org/contentassets/6fea26dd84d24b26a7a1fd5788561d6e/dgr-67-en-2.3.a.pdf",
      "IATA &mdash; Dangerous Goods Regulations, Table 2.3.A (67th edition, 1 January 2026)"
     ]
    ],
    "keepSchema": true,
-   "checked": "18 October 2026",
-   "unofficial": true
+   "checked": "23 November 2026",
+   "unofficial": false
   },
   "perfume": {
    "answer": "Kuwait Airways' baggage page names liquids, aerosols, perfume, hair spray, toiletries and medicines containing alcohol, and gives two limits: 100 ml per container in the cabin and 2 kg or 2 L in total in the hold. The page does not break the rule down by product.",
@@ -12896,44 +12976,60 @@
    "unofficial": false
   },
   "power": {
-   "answer": "Kuwait Airways' own battery document could not be loaded, so this page uses the ICAO rule that took effect on 27 March 2026: a passenger may carry at most two power banks and may not recharge them during the flight. Confirm the watt-hour limit with Kuwait Airways.",
+   "answer": "Kuwait Airways hosts a battery FAQ (read 23 November 2026, archived copy, based on the US FAA rules): spare lithium batteries, including external battery packs, are banned from checked baggage and go in your carry-on. Consumer lithium-ion batteries up to 100 Wh are allowed; 101-160 Wh spares need airline approval and are limited to two, carry-on only. The ICAO rule from 27 March 2026 adds a limit of two power banks and no recharging in flight. The FAQ pre-dates that rule.",
    "sections": [
     {
-     "h": "🔋 What ICAO says (Kuwait Airways' own page not readable)",
-     "p": "From the ICAO news release of 27 March 2026, read on 22 November 2026.",
+     "h": "🔋 What Kuwait Airways says, and what ICAO adds",
+     "p": "The Kuwait Airways document is an older FAQ, so we mark the ICAO rule of 27 March 2026 separately. Confirm the current limit with Kuwait Airways.",
      "table": {
       "head": [
        "Question",
-       "What the source says"
+       "What applies"
       ],
       "rows": [
        [
-        "Number",
-        "Two power banks per passenger (ICAO, from 27 March 2026)"
+        "Power bank or spare lithium battery in checked baggage",
+        "Prohibited: spare lithium metal and lithium ion batteries, including external battery packs (Kuwait Airways FAQ)"
+       ],
+       [
+        "Consumer lithium-ion batteries in carry-on",
+        "Allowed up to 100 Wh per battery; external chargers count as batteries (Kuwait Airways FAQ)"
+       ],
+       [
+        "101-160 Wh batteries",
+        "Spares limited to two, carry-on only; devices containing them need airline approval (Kuwait Airways FAQ)"
+       ],
+       [
+        "Damaged or recalled batteries",
+        "Not allowed, even inside a device (Kuwait Airways FAQ)"
+       ],
+       [
+        "Spare protection",
+        "Protect terminals from short circuit; protect devices from accidental activation (Kuwait Airways FAQ)"
+       ],
+       [
+        "Number of power banks",
+        "Two per passenger (ICAO, from 27 March 2026)"
        ],
        [
         "Recharging in flight",
         "Prohibited (ICAO)"
-       ],
-       [
-        "Crew",
-        "May still carry and use power banks as the aircraft requires (ICAO)"
-       ],
-       [
-        "Kuwait Airways own rule",
-        "Not read: its battery document did not load"
        ]
       ]
      },
      "list": [
-      "<strong>Not read:</strong> the Kuwait Airways battery FAQ (an older PDF on its site). The Wh limits and checked-baggage rule are therefore not stated here."
+      "<strong>Note:</strong> e-cigarettes and vaporizers are also banned from checked baggage, per the same FAQ."
      ]
     }
    ],
    "faq": [
     [
      "How many power banks can I take on Kuwait Airways?",
-     "The ICAO standard from 27 March 2026 limits passengers to two; Kuwait Airways' own rule could not be read."
+     "The ICAO standard from 27 March 2026 limits passengers to two. Kuwait Airways' older FAQ allows consumer lithium-ion batteries up to 100 Wh in carry-on and limits 101-160 Wh spares to two."
+    ],
+    [
+     "Can I put a power bank in checked baggage on Kuwait Airways?",
+     "No. Kuwait Airways' FAQ says spare lithium batteries, including external battery packs, are prohibited in checked baggage."
     ],
     [
      "Can I charge my power bank on a Kuwait Airways flight?",
@@ -12942,12 +13038,16 @@
    ],
    "sources": [
     [
+     "https://www.kuwaitairways.com/Documents/pdf/Airline_passengers_and_batteries.pdf",
+     "Kuwait Airways &mdash; Batteries carried by airline passengers, FAQ (read from an archived copy)"
+    ],
+    [
      "https://www.icao.int/news/new-power-bank-restrictions-will-safeguard-international-aviation",
      "Unofficial source: ICAO &mdash; New power bank restrictions will safeguard international aviation (27 March 2026)"
     ]
    ],
    "keepSchema": true,
-   "checked": "22 November 2026",
+   "checked": "23 November 2026",
    "unofficial": false
   }
  },
@@ -15593,24 +15693,32 @@
    "unofficial": false
   },
   "alcohol": {
-   "answer": "Saudia's own rule could not be read; the IATA limit is 5 L per person for drinks above 24% up to 70%, and the home-country customs rule is below.",
+   "answer": "No. Saudia's own terms (read 23 November 2026) say it does not serve or permit guests to carry or drink alcoholic beverages on its flights. The IATA limit of 5 L per person for drinks above 24% up to 70% is the general industry rule, but Saudia's rule is stricter, and Saudi Arabia also bans importing alcohol.",
    "sections": [
     {
-     "h": "🍷 What the industry rule says about alcohol on Saudia",
-     "p": "IATA, the airline industry body. Airports and customs can add stricter limits. Full table: <a href=\"/plane/alcohol/\">alcohol on a plane</a>.",
+     "h": "🍷 What Saudia says about alcohol, and the industry rule",
+     "p": "Saudia's passenger advice and notices page says it does not serve or permit guests to carry or drink alcoholic beverages on its flights, so do not pack alcohol in your cabin or checked bags on Saudia. The IATA table below is the general airline-industry rule, which other airlines follow, and does not override Saudia's ban. Full table: <a href=\"/plane/alcohol/\">alcohol on a plane</a>.",
      "table": {
       "head": [
        "Question",
-       "IATA rule"
+       "What applies"
       ],
       "rows": [
        [
+        "Carrying alcohol on Saudia",
+        "Not permitted (Saudia terms)"
+       ],
+       [
+        "Drinking alcohol on board",
+        "Not permitted, and not served (Saudia terms)"
+       ],
+       [
         "Up to 24% alcohol by volume",
-        "Not subject to any restrictions"
+        "Not subject to restrictions under IATA, but Saudia does not permit it"
        ],
        [
         "More than 24% and up to 70%",
-        "Retail packaging, receptacles not exceeding 5 L, total net quantity 5 L per person"
+        "IATA: retail packaging, receptacles not exceeding 5 L, 5 L per person, but Saudia does not permit it"
        ],
        [
         "Cabin bag at security",
@@ -15626,13 +15734,17 @@
    ],
    "sources": [
     [
+     "https://www.saudia.com/pages/help/useful-links/legal-and-terms-and-conditions/saudia-terms-conditions-passenger-advice-notices-and-liability",
+     "Saudia &mdash; Terms, passenger advice, notices and liability (no alcohol carried or drunk)"
+    ],
+    [
      "https://www.iata.org/contentassets/6fea26dd84d24b26a7a1fd5788561d6e/dgr-67-en-2.3.a.pdf",
      "IATA &mdash; Dangerous Goods Regulations, Table 2.3.A (67th edition, 1 January 2026)"
     ]
    ],
    "keepSchema": true,
-   "checked": "18 October 2026",
-   "unofficial": true
+   "checked": "23 November 2026",
+   "unofficial": false
   },
   "perfume": {
    "answer": "Saudia's carry-on page restricts liquids, gels and aerosols above the permitted limit, typically 100 ml per container, and lists flammable materials and certain aerosols among restricted items. Some restricted items may travel in checked baggage, others not at all.",
@@ -15873,11 +15985,11 @@
    "unofficial": true
   },
   "alcohol": {
-   "answer": "Gulf Air's own rule could not be read; the IATA limit is 5 L per person for drinks above 24% up to 70%, and the home-country customs rule is below.",
+   "answer": "Gulf Air's own Prohibited Items page (read 23 November 2026) sets no alcohol rule: it covers power banks, explosives and weapons. The IATA limit applies, 5 L per person for drinks above 24% up to 70%, and the Bahrain customs allowance is below.",
    "sections": [
     {
      "h": "🍷 What the industry rule says about alcohol on Gulf Air",
-     "p": "IATA, the airline industry body. Airports and customs can add stricter limits. Full table: <a href=\"/plane/alcohol/\">alcohol on a plane</a>.",
+     "p": "Gulf Air's own Prohibited Items page lists power banks, explosives, pyrotechnics, weapons and sharp objects, and says nothing on alcohol, so we show the IATA rule, the airline industry body's standard. Airports and customs can add stricter limits. Full table: <a href=\"/plane/alcohol/\">alcohol on a plane</a>.",
      "table": {
       "head": [
        "Question",
@@ -15906,12 +16018,16 @@
    ],
    "sources": [
     [
+     "https://www.gulfair.com/en/help/baggage/prohibited-Items",
+     "Gulf Air &mdash; Prohibited Items (no alcohol rule listed)"
+    ],
+    [
      "https://www.iata.org/contentassets/6fea26dd84d24b26a7a1fd5788561d6e/dgr-67-en-2.3.a.pdf",
      "IATA &mdash; Dangerous Goods Regulations, Table 2.3.A (67th edition, 1 January 2026)"
     ]
    ],
    "keepSchema": true,
-   "checked": "18 October 2026",
+   "checked": "23 November 2026",
    "unofficial": true
   },
   "perfume": {
@@ -16200,40 +16316,40 @@
    "unofficial": true
   },
   "perfume": {
-   "answer": "GOL's own rule could not be read. The IATA limit is 0.5 L or 0.5 kg per article and 2 L or 2 kg in total; the table below has the details.",
+   "answer": "On GOL, perfume in your cabin bag is limited to 4 bottles of under 300 ml or 300 g each on domestic flights, and to bottles of 100 ml or less in one transparent 1-litre bag on international flights. In checked baggage each bottle may be at most 500 g or 500 ml, with 2 kg or 2 L in total per passenger.",
    "sections": [
     {
-     "h": "🧴 What the industry rule says about perfume and aerosols on GOL",
-     "p": "IATA, the airline industry body. Airports and customs can add stricter limits.",
+     "h": "🧴 What GOL says about perfume and aerosols",
+     "p": "GOL's baggage page counts perfumes, colognes, hair spray, deodorant, shaving foam, hand sanitiser and skin insect repellent as toiletries and aerosols.",
      "table": {
       "head": [
        "Question",
-       "IATA rule"
+       "GOL rule"
       ],
       "rows": [
        [
-        "What it covers",
-        "Non-radioactive medicinal or toiletry articles including aerosols, such as hair sprays, perfumes, colognes and medicines containing alcohol, and non-flammable, non-toxic aerosols for sporting or home use"
+        "Conditions for all of them",
+        "Household use only; aerosols and atomisers must be non-toxic and non-flammable; the valve must be protected by a cap or other means; every container must be leak-proof"
        ],
        [
-        "Where",
-        "Permitted in carry-on and in checked baggage, without operator approval"
+        "Cabin bag, domestic flights in Brazil",
+        "4 bottles per person, each with under 300 ml or 300 g"
        ],
        [
-        "Total",
-        "Not more than 2 kg or 2 L in total"
+        "Cabin bag, international flights",
+        "Bottles of up to 100 ml each, in one transparent plastic bag of up to 1 litre that opens and closes so the contents can be seen; one bag per passenger"
        ],
        [
-        "Each article",
-        "Not more than 0.5 kg or 0.5 L"
+        "Over 100 ml on international flights",
+        "Only baby food when travelling with a child aged 0 to 12, dietary food for use during the flight (you may need to prove the need), and flights from Argentina to Brazil"
        ],
        [
-        "Aerosol valves",
-        "Release valves must be protected by a cap or other suitable means"
+        "Checked baggage, domestic and international",
+        "Each product at most 500 g or 500 ml per bottle, and at most 2 kg or 2 L in total per passenger"
        ],
        [
-        "In your cabin bag on GOL",
-        "Security liquid limits also apply: We could not take a liquids rule from GOL's own pages. The rule that security checkpoints apply to cabin baggage is containers of 100 ml or less in one transparent resealable bag of at most 1 litre, according to the International Air Transport Association (IATA)."
+        "Duty Free purchases, international",
+        "May exceed 100 ml if kept in the closed, sealed bag from the shop with the receipt visible"
        ]
       ]
      }
@@ -16241,13 +16357,12 @@
    ],
    "sources": [
     [
-     "https://www.iata.org/contentassets/6fea26dd84d24b26a7a1fd5788561d6e/dgr-67-en-2.3.a.pdf",
-     "IATA &mdash; Dangerous Goods Regulations, Table 2.3.A (67th edition, 1 January 2026)"
+     "https://www.voegol.com.br/pt-br/nh/informacoes/bagagem/artigos-permitidos-restritos-e-proibidos",
+     "GOL &mdash; Artigos permitidos, restritos e proibidos (toiletries and aerosols)"
     ]
    ],
    "keepSchema": true,
-   "checked": "18 October 2026",
-   "unofficial": true
+   "checked": "23 November 2026"
   },
   "power": {
    "answer": "GOL's pages returned an error (403), so this page uses the Brazilian Ministry of Ports and Airports: power banks only in the carry-on, up to two of 100 Wh (about 27,000 mAh) each, with airline approval for 100 to 160 Wh and a ban above 160 Wh.",
@@ -17215,74 +17330,102 @@
    "checked": "14 November 2026"
   },
   "liquids": {
-   "answer": "Israir's pages sit behind a waiting-room queue, so this page uses a Mako article of 28 January 2026: Ben Gurion officially follows the European rule of 100 ml per container in one transparent resealable bag of up to 1 litre, though many passengers report uneven enforcement.",
+   "answer": "Israir's own baggage policy (read 23 November 2026): in the cabin, each liquid, gel or spray container may hold up to 100 ml and the total is 1 litre per passenger in one clear resealable bag, duty-free purchases included.",
    "sections": [
     {
-     "h": "💧 What the Israeli press says about liquids at Ben Gurion",
-     "p": "From a Mako travel article by Ilan Arnon (28 January 2026, updated the same day), translated from Hebrew and read 19 November 2026. It is a news report, so treat it as lower reliability. It does not name Israir.",
+     "h": "💧 What Israir says about liquids in hand baggage",
+     "p": "From Israir's baggage policy page, in Hebrew, read 23 November 2026. It applies to Israir flights only.",
      "table": {
       "head": [
        "Question",
-       "As reported"
+       "Israir rule"
       ],
       "rows": [
        [
-        "Rule at Ben Gurion",
-        "Officially follows European rules"
-       ],
-       [
         "Container size",
-        "Each liquid container up to 100 ml"
+        "Up to 100 ml per package, drinks, creams, sprays and gels included"
        ],
        [
-        "Bag",
-        "One transparent resealable bag, up to 1 litre in total"
+        "Total",
+        "1 litre per passenger, duty-free purchases included"
        ],
        [
-        "Enforcement",
-        "Many passengers report it is applied unevenly; the article advises against taking the risk"
+        "Bags",
+        "One clear bag with a zip or reseal, one bag per passenger"
        ],
        [
-        "Sprays",
-        "A luggage company quoted says Ben Gurion rarely objects, but other airports apply the 100 ml limit"
+        "Connecting flights",
+        "Items banned on board, duty-free included, cannot continue to another flight"
        ],
        [
-        "Duty-free perfume over 100 ml",
-        "Only in the sealed, unopened shop bag with the receipt inside"
+        "Lost items",
+        "Israir is not responsible for items or liquids taken by airport security"
        ]
       ]
      },
      "list": [
-      "<strong>Not in the article:</strong> any Israir wording and the rule for checked bags."
+      "<strong>Not on the page:</strong> the rule for checked bags. Press coverage of Ben Gurion enforcement (Mako, 28 January 2026) reports it as uneven."
      ]
     }
    ],
    "faq": [
     [
      "How much liquid can I take in my Israir cabin bag?",
-     "Following the International Air Transport Association (IATA): containers of 100 ml or less in one transparent resealable bag of at most 1 litre. Israir's own page was not readable on this, so confirm with the airline."
+     "Up to 100 ml per container and 1 litre in total in one clear resealable bag, duty-free included, according to Israir's baggage policy."
     ],
     [
-     "Does Israir allow liquid medicine and baby food over the limit?",
-     "The source says in principle the restrictions do not apply to medications, baby foods and special dietary requirements, but to check with your local airport; confirm with Israir."
+     "Can I take duty-free liquids on a connecting flight with Israir?",
+     "Israir says items banned from the plane, duty-free products included, cannot continue to another flight."
     ]
    ],
    "sources": [
+    [
+     "https://www.israir.co.il/en/Passengers_Info/Baggage_Policy.html",
+     "Israir &mdash; Baggage policy (in Hebrew), liquids in hand baggage"
+    ],
     [
      "https://www.mako.co.il/travel-israel/Article-a5263f9867afb91026.htm",
      "Unofficial source (news, lower reliability): Mako &mdash; liquids at Ben Gurion, 28 January 2026"
     ]
    ],
    "keepSchema": true,
-   "checked": "19 November 2026",
-   "unofficial": true
+   "checked": "23 November 2026",
+   "unofficial": false
   },
   "alcohol": {
-   "answer": "Israir's own baggage page could not be read, so the rule here comes from the Israel Airports Authority: alcohol bought at Ben Gurion duty free travels in a sealed packet to Europe and on connections, but alcohol brought from home is not covered.",
+   "answer": "Israir's own baggage policy (read 23 November 2026) limits cabin liquids, drinks and duty-free purchases included, to 100 ml per container and 1 litre in total in one clear bag. It sets no separate alcohol limit. For duty-free alcohol from Ben Gurion, the Israel Airports Authority allows a sealed packet on flights to Europe.",
    "sections": [
     {
+     "h": "🥃 What Israir says about drinks in the cabin",
+     "p": "From Israir's baggage policy page, in Hebrew, read 23 November 2026.",
+     "table": {
+      "head": [
+       "Question",
+       "Israir rule"
+      ],
+      "rows": [
+       [
+        "Cabin bag size per container",
+        "Up to 100 ml per container, drinks included"
+       ],
+       [
+        "Total per passenger",
+        "1 litre in one clear resealable bag, duty-free purchases included"
+       ],
+       [
+        "Connecting flights",
+        "Items banned from the plane, duty-free included, cannot continue to another flight"
+       ],
+       [
+        "Alcohol-specific limit",
+        "Not stated on the page"
+       ]
+      ]
+     }
+    },
+    {
      "h": "🥃 What the Israel Airports Authority says about duty-free alcohol",
-     "p": "Israir's own baggage page could not be read, so this section uses the Israel Airports Authority (IAA) page for Ben Gurion Airport, read on 22 November 2026.",
+     "p": "Israir's page names no alcohol limit, so this section adds the Israel Airports Authority (IAA) page for Ben Gurion Airport, read on 22 November 2026.",
      "table": {
       "head": [
        "Question",
@@ -17308,7 +17451,7 @@
       ]
      },
      "list": [
-      "<strong>Not read:</strong> Israir's own alcohol limit per person. Ask Israir for its litre limit before you fly."
+      "<strong>Not stated by Israir:</strong> a litre limit for alcohol. Ask Israir before you fly."
      ]
     }
    ],
@@ -17324,12 +17467,16 @@
    ],
    "sources": [
     [
+     "https://www.israir.co.il/en/Passengers_Info/Baggage_Policy.html",
+     "Israir &mdash; Baggage policy (in Hebrew), liquids in hand baggage"
+    ],
+    [
      "https://www.iaa.gov.il/en/airports/ben-gurion/securitybgn/",
      "Unofficial source: Israel Airports Authority &mdash; Ben Gurion Airport security, Flying With Liquids"
     ]
    ],
    "keepSchema": true,
-   "checked": "22 November 2026",
+   "checked": "23 November 2026",
    "unofficial": false
   },
   "perfume": {
@@ -17600,7 +17747,7 @@
    "unofficial": true
   },
   "alcohol": {
-   "answer": "Middle East Airlines's own rule could not be read; the IATA limit is 5 L per person for drinks above 24% up to 70%, and the home-country customs rule is below.",
+   "answer": "Middle East Airlines's own page is blocked to us (Cloudflare 403). The industry IATA limit is 5 L per person for drinks above 24% up to 70%; entering Lebanon, Lebanese Customs allows people aged 18 and over 2 L of spirits or 4 L of any other drink.",
    "sections": [
     {
      "h": "🍷 What the industry rule says about alcohol on MEA",
@@ -17628,17 +17775,21 @@
     },
     {
      "h": "What customs says about bringing alcohol into Lebanon (Middle East Airlines's home country)",
-     "p": "This is the customs rule for people entering Lebanon, not a rule stated by Middle East Airlines for its cabin. The Travel Doc customs page for Lebanon allows travellers aged 18 and over either 2 litres of spirits such as whisky, cognac or champagne, or 4 litres of other alcoholic drinks such as beer or wine. The page names no publisher and shows no date, so confirm the figures with the customs authority before you travel. Unofficial source, read 16 November 2026: Travel Doc customs information page for Lebanon (infopages.traveldoc.aero, undated; it names no publisher). The official customs site could not be read."
+     "p": "This is the customs rule for people entering Lebanon, not a rule stated by Middle East Airlines for its cabin. The Lebanese Customs traveller's guide allows arriving travellers aged 18 and over up to 2 litres of whisky, champagne, cognac or a similar spirit, or 4 litres of any other drink. Travellers under 18 get no spirits allowance. Official source, read 23 November 2026: Lebanese Customs Administration, Traveller's guide (in Arabic)."
     }
    ],
    "sources": [
     [
      "https://www.iata.org/contentassets/6fea26dd84d24b26a7a1fd5788561d6e/dgr-67-en-2.3.a.pdf",
      "IATA &mdash; Dangerous Goods Regulations, Table 2.3.A (67th edition, 1 January 2026)"
+    ],
+    [
+     "http://www.customs.gov.lb/Page.aspx?Item_Id=6",
+     "Lebanese Customs: Traveller's guide (Arabic)"
     ]
    ],
    "keepSchema": true,
-   "checked": "18 October 2026",
+   "checked": "23 November 2026",
    "unofficial": true
   },
   "perfume": {
@@ -17646,7 +17797,7 @@
    "sections": [
     {
      "h": "🧴 What the industry rule says about perfume and aerosols on MEA",
-     "p": "IATA, the airline industry body. Airports and customs can add stricter limits.",
+     "p": "IATA, the airline industry body. Airports and customs can add stricter limits. A third-party guide (baggagepolicies.com, not MEA) says MEA follows IATA-aligned rules and allows cabin liquids above 100 ml per container only if duty-free in a sealed bag; we could not confirm this on MEA's own page.",
      "table": {
       "head": [
        "Question",
@@ -17688,7 +17839,7 @@
     ]
    ],
    "keepSchema": true,
-   "checked": "18 October 2026",
+   "checked": "23 November 2026",
    "unofficial": true
   },
   "power": {
@@ -18713,11 +18864,11 @@
    "unofficial": false
   },
   "alcohol": {
-   "answer": "Wizz Air's own rule could not be read; the IATA limit is 5 L per person for drinks above 24% up to 70%, and the home-country customs rule is below.",
+   "answer": "Wizz Air's own pages (read 23 November 2026) say alcoholic beverages are an exception to its ban on flammable items, that liquids in cabin bags must be 100 ml or less, and that duty-free items bought airside after security can go on board at no extra cost. Wizz sets no litre limit, so the IATA limit applies: 5 L per person for drinks above 24% up to 70%.",
    "sections": [
     {
-     "h": "🍷 What the industry rule says about alcohol on Wizz Air",
-     "p": "IATA, the airline industry body. Airports and customs can add stricter limits. Full table: <a href=\"/plane/alcohol/\">alcohol on a plane</a>.",
+     "h": "🍷 What Wizz Air says about alcohol, and the industry rule",
+     "p": "Wizz Air's restricted-items page bans items containing flammable substances except alcoholic beverages, hair spray, perfume and cologne, so drinks are allowed in principle. Its cabin baggage page says liquids in your cabin bag must be in containers of 100 ml or less, in one transparent resealable 1-litre bag shown separately at security, and that anything else is thrown away at the checkpoint. It also lists duty-free items bought in the airside departure lounge after security as an extra free item on board. Wizz gives no litre figure, so we show IATA, the airline industry body, for the quantity. Airports and customs can add stricter limits. Full table: <a href=\"/plane/alcohol/\">alcohol on a plane</a>.",
      "table": {
       "head": [
        "Question",
@@ -18725,16 +18876,24 @@
       ],
       "rows": [
        [
+        "Drinks in general on Wizz Air",
+        "Allowed: alcoholic beverages are an exception to the flammable-items ban (Wizz restricted items)"
+       ],
+       [
+        "Bottle bought before security, in a cabin bag",
+        "100 ml per container, in one 1-litre bag shown at security (Wizz cabin baggage)"
+       ],
+       [
+        "Duty-free bought after security",
+        "Allowed on board as an extra free item (Wizz cabin baggage)"
+       ],
+       [
         "Up to 24% alcohol by volume",
-        "Not subject to any restrictions"
+        "Not subject to any restrictions (IATA)"
        ],
        [
         "More than 24% and up to 70%",
-        "Retail packaging, receptacles not exceeding 5 L, total net quantity 5 L per person"
-       ],
-       [
-        "Cabin bag at security",
-        "Liquid limits also apply at the checkpoint; see the liquids rule for Wizz Air"
+        "Retail packaging, receptacles not exceeding 5 L, total net quantity 5 L per person (IATA)"
        ]
       ]
      }
@@ -18746,13 +18905,21 @@
    ],
    "sources": [
     [
+     "https://www.wizzair.com/en-gb/help-centre/restricted-items",
+     "Wizz Air &mdash; Restricted items on board"
+    ],
+    [
+     "https://www.wizzair.com/en-gb/help-centre/booking-information-and-services/baggage/baggage-allowance/cabin-baggage",
+     "Wizz Air &mdash; Cabin baggage (liquids and duty-free)"
+    ],
+    [
      "https://www.iata.org/contentassets/6fea26dd84d24b26a7a1fd5788561d6e/dgr-67-en-2.3.a.pdf",
      "IATA &mdash; Dangerous Goods Regulations, Table 2.3.A (67th edition, 1 January 2026)"
     ]
    ],
    "keepSchema": true,
-   "checked": "18 October 2026",
-   "unofficial": true
+   "checked": "23 November 2026",
+   "unofficial": false
   },
   "perfume": {
    "answer": "Wizz Air's restricted-items page would not open for us (HTTP 405), so this follows the EU rule for flights leaving EU airports: perfume and sprays travel in cabin bags only in containers of 100 ml or less inside one transparent bag, and bigger bottles belong in the hold.",

@@ -3525,6 +3525,38 @@
  "LT": {
   "sections": [
    {
+    "h": "🛃 What Lithuanian Customs says about e-liquid and heated tobacco",
+    "p": "Lithuanian Customs (English page \"Coming from third countries\", read 23 November 2026 from an archived copy because the live site refuses our reader) sets a duty-free allowance for one person over 17 arriving from outside the EU.",
+    "table": {
+     "head": [
+      "Item",
+      "By air",
+      "Other transport, crew, border-zone residents"
+     ],
+     "rows": [
+      [
+       "E-cigarette liquid",
+       "50 ml",
+       "20 ml"
+      ],
+      [
+       "Heated tobacco products",
+       "200 units",
+       "40 units"
+      ],
+      [
+       "Cigarettes",
+       "200",
+       "40"
+      ]
+     ]
+    },
+    "list": [
+     "The drug, tobacco and alcohol control department says nicotine-free liquid counts as e-cigarette liquid, and flavoured liquids other than tobacco flavour may not be placed on the Lithuanian market since 1 July 2022, so a flavoured refill carries a risk.",
+     "Imports of cigarettes and tobacco from Russia and Belarus are banned."
+    ]
+   },
+   {
     "h": "📰 What a secondary profile reports about e-cigarettes in Lithuania",
     "p": "Less reliable source (secondary profile): the Global State of Tobacco Harm Reduction (GSTHR) country page, updated 16 November 2026 and read on 22 November 2026. It compiles other sources and is not a customs page. The official customs rule for travellers could not be read, so treat this as background and confirm with customs.",
     "table": {
@@ -3556,7 +3588,7 @@
      ]
     },
     "list": [
-     "<strong>Not read:</strong> the Lithuanian customs traveller allowance for e-liquid and the current law text."
+     "<strong>Not read:</strong> the current law text. The customs allowance is in the section above."
     ]
    },
    {
@@ -3590,7 +3622,11 @@
   "faq": [
    [
     "Can I vape or bring e-liquid in Lithuania?",
-    "GSTHR describes e-cigarettes in Lithuania as legal and regulated like tobacco, with a 20 mg/ml nicotine cap and 2 ml tanks. It gives no traveller allowance, so check Lithuanian customs."
+    "Lithuanian Customs allows one person over 17 arriving from outside the EU 50 ml of e-cigarette liquid by air or 20 ml by any other transport, plus 200 heated-tobacco units by air or 40 otherwise. GSTHR adds a 20 mg/ml nicotine cap and 2 ml tanks. Flavours other than tobacco have been banned from the market since 1 July 2022."
+   ],
+   [
+    "How much e-liquid can I bring into Lithuania?",
+    "50 ml by air or 20 ml by road, rail or sea, per person over 17 arriving from outside the EU, according to Lithuanian Customs."
    ],
    [
     "How common is vaping in Lithuania?",
@@ -3603,11 +3639,26 @@
   ],
   "src": [
    [
+    "https://muitine.lrv.lt/en/for-passengers/coming-from-third-countries/",
+    "Lithuanian Customs &mdash; Coming from third countries (archived copy)"
+   ],
+   [
+    "https://ntakd.lrv.lt/en/eu-ceg/electronic-cigarettes-and-their-refill-containers/",
+    "Drug, Tobacco and Alcohol Control Department &mdash; Electronic cigarettes and their refill containers (archived copy)"
+   ],
+   [
     "https://gsthr.org/countries/profile/ltu/e_cigarettes/",
     "Less reliable source (secondary profile): Global State of Tobacco Harm Reduction - e-cigarettes in Lithuania"
    ]
   ],
-  "keepSchema": true
+  "keepSchema": false,
+  "card": {
+   "status": "warn",
+   "head": "Allowed, with a limit: 50 ml of liquid by air, 20 ml otherwise.",
+   "lines": [
+    "Lithuanian Customs allows 50 ml of e-cigarette liquid by air and 20 ml by other transport, plus heated tobacco units, for travellers over 17 arriving from outside the EU."
+   ]
+  }
  },
  "LU": {
   "sections": [

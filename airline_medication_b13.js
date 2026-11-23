@@ -224,64 +224,89 @@ module.exports = function (X) {
     });
   }
 
-  // ---------------- ALASKA (TSA, UNOFFICIAL) ----------------
+  // ---------------- ALASKA (OWN PAGE read 23 Nov 2026 via archived copy + TSA) ----------------
   {
+    const PA = ['https://www.alaskaair.com/content/travel-info/accessible-services/specialservices-other', 'Alaska Airlines and Hawaiian Airlines: Other services and information', 'Traveling with medication (read from an archived copy, 23 November 2026)'];
     add({
-      slug: 'alaska-airlines', name: 'Alaska Airlines', unofficial: true,
+      slug: 'alaska-airlines', name: 'Alaska Airlines',
       h1: 'Alaska Airlines Medication Policy: Medicine, Liquids & Syringes on an Alaska Flight (2026)',
-      desc: 'Can you bring medication on Alaska Airlines? Alaska\'s own pages were not readable. TSA allows pills in carry-on and checked bags, medically necessary liquids over 3.4 oz if declared, and unused syringes with injectable medication. Checked 20 October 2026.',
-      answer: 'Yes, under TSA rules. Alaska\'s own pages blocked our reader, so the rules below are TSA\'s, which apply on every US flight: pills are allowed in carry-on and checked bags, medically necessary liquids can exceed 3.4 oz if you declare them at the checkpoint, and unused syringes are allowed with injectable medication.',
-      srcNote: 'From TSA\'s medication pages (the US government screening authority), not from Alaska Airlines, whose own pages blocked our reader, last checked 20 October 2026. Rules change, so confirm with the airline before you fly.',
+      desc: 'Can you bring medication on Alaska Airlines? Alaska says keep medication with you in carry-on, never in checked baggage, and that its aircraft have no refrigerators. TSA allows medically necessary liquids over 3.4 oz if declared and unused syringes with injectable medication. Checked 23 November 2026.',
+      answer: 'Yes, in your carry-on. Alaska says medication should always stay with you in carry-on baggage and never go in checked baggage, and its aircraft have no refrigerators. On US flights TSA also lets medically necessary liquids exceed 3.4 oz if you declare them, and unused syringes go with injectable medication.',
+      srcNote: 'The carry-on and refrigerator rules are from Alaska\'s own "Traveling with medication" section (read from an archived copy on 23 November 2026, because the live page blocked our reader); the liquid, syringe and ice-pack rules are TSA\'s, which apply on every US flight. Rules change, so confirm with the airline before you fly.',
       scen: [
-        card('pills', 'Pills & tablets', 'go', 'Carry-on and checked', 'Keep it with you', 'TSA lists pills as allowed in carry-on and checked bags.', [X.TSA_PILLS_LINE], [X.TSA_PILLS], true),
-        card('liquids', 'Liquid medication', 'warn', 'Declare it', 'Over 100 ml (3.4 oz)', 'TSA allows medically necessary liquids over 3.4 oz if declared.', [X.TSA_LIQ_LINE, X.TSA_REMOVE], [X.TSA_LIQ, X.TSA_FAQ]),
+        card('pills', 'Pills & tablets', 'go', 'Carry-on only', 'Never in checked baggage', 'Alaska says medication should always remain with the traveler in carry-on baggage, never in checked baggage.', [
+          'Alaska Airlines: it does not provide medical services or administration of medication, but it helps safely transport medication.',
+          X.TSA_PILLS_LINE
+        ], [PA, X.TSA_PILLS], true),
+        card('liquids', 'Liquid medication', 'warn', 'Declare it', 'Over 100 ml (3.4 oz)', 'TSA allows medically necessary liquids over 3.4 oz if declared.', [X.TSA_LIQ_LINE, X.TSA_REMOVE, 'Alaska Airlines: questions about taking medication or medical supplies through a checkpoint are answered by TSA\'s standard screening procedures.'], [X.TSA_LIQ, X.TSA_FAQ, PA]),
         card('needles', 'Insulin & syringes', 'warn', 'Declare at security', 'Needles, syringes, injections', 'TSA allows unused syringes with injectable medication.', [X.TSA_SYR_LINE], [X.TSA_SYR]),
-        gap('cold', 'Cold medication', 'x', 'Medication that must stay cold', X.TSA_ICE, 'TSA', 'keeping medication cold on board'),
-        ab(X.TSA_FAQ)
+        card('cold', 'Cold medication', 'warn', 'No refrigerators on board', 'Plan your own cooling', 'Alaska says its aircraft are not equipped with refrigerators, so plan accordingly.', [
+          'Alaska Airlines: plan for the whole flight, because crew cannot chill your medication.',
+          X.TSA_ICE_LINE
+        ], [PA, X.TSA_ICE]),
+        card('devices', 'Drips and oxygen', 'warn', 'Rules for IV and oxygen', 'Intravenous devices, personal oxygen', 'Alaska says intravenous devices may not be suspended from the aircraft, and your own oxygen equipment is not allowed in flight unless it is an approved portable oxygen concentrator.', [
+          'Alaska Airlines: the IV rule exists so nothing interferes with the deployment of the emergency oxygen masks.',
+          'Alaska Airlines: FAA regulations prohibit a traveler\'s personal oxygen equipment during flight unless it falls under the Portable Oxygen Concentrator (POC) guidelines.'
+        ], [PA]),
+        ab(PA)
       ],
       faq: [
-        ['Can I carry insulin and syringes on Alaska Airlines?', 'TSA allows unused syringes when they come with injectable medication; declare them at the checkpoint. This is TSA\'s rule, not an Alaska page.']
+        ['Can I carry insulin and syringes on Alaska Airlines?', 'TSA allows unused syringes when they come with injectable medication; declare them at the checkpoint. Alaska says medication stays in your carry-on and its aircraft have no refrigerators.'],
+        ['Can I put medication in checked baggage on Alaska?', 'No: Alaska says medication should always remain with the traveler in carry-on baggage, never in checked baggage.'],
+        ['Does Alaska have a fridge for my medication?', 'No. Alaska says its aircraft are not equipped with refrigerators, so bring a cooling solution; TSA allows medically necessary gel ice packs in reasonable quantities.']
       ],
-      tableTitle: 'Alaska Airlines medication rules at a glance (TSA)',
-      tableNote: 'What TSA says for US flights; Alaska\'s own page could not be read.',
+      tableTitle: 'Alaska Airlines medication rules at a glance',
+      tableNote: 'Carry-on, refrigerator, IV and oxygen rows are Alaska\'s own; the other rows are TSA\'s for US flights.',
       rows: [
-        ['Pills?', 'Carry-on and checked bags'],
-        ['Liquid medicine over 3.4 oz?', 'Allowed if medically necessary and declared'],
-        ['Syringes?', 'Unused syringes with injectable medication, declared'],
-        ['Cold storage on board?', NP]
+        ['Where does medication go?', 'Carry-on baggage, never checked'],
+        ['Pills?', 'Carry-on and checked bags (TSA)'],
+        ['Liquid medicine over 3.4 oz?', 'Allowed if medically necessary and declared (TSA)'],
+        ['Syringes?', 'Unused syringes with injectable medication, declared (TSA)'],
+        ['Cold storage on board?', 'None: no refrigerators on Alaska aircraft'],
+        ['IV devices and own oxygen?', 'IV cannot be suspended; own oxygen only as an approved POC']
       ],
-      extra: steps(['Keep medicine in your carry-on.', 'Tell the officer about liquid medicine and syringes at the checkpoint.', 'Ask Alaska about anything TSA does not cover.'])
+      extra: steps(['Keep all medicine in your carry-on.', 'Bring your own cooling for cold medicine.', 'Tell the officer about liquid medicine and syringes at the checkpoint.'])
     });
   }
 
-  // ---------------- HAWAIIAN (TSA, UNOFFICIAL) ----------------
+  // ---------------- HAWAIIAN (OWN PAGE read 23 Nov 2026 via archived copy + TSA) ----------------
   {
+    const PA = ['https://www.alaskaair.com/content/travel-info/accessible-services/specialservices-other', 'Alaska Airlines and Hawaiian Airlines: Other services and information', 'Traveling with medication (read from an archived copy, 23 November 2026)'];
     add({
-      slug: 'hawaiian-airlines', name: 'Hawaiian Airlines', unofficial: true,
+      slug: 'hawaiian-airlines', name: 'Hawaiian Airlines',
       h1: 'Hawaiian Airlines Medication Policy: Insulin, Pumps & Cold Packs on a Hawaiian Flight (2026)',
-      desc: 'Can you bring medication on Hawaiian Airlines? Hawaiian\'s own pages were not readable. TSA lets you carry insulin and supplies, tell officers about pumps and monitors, and bring medically necessary ice packs. Checked 20 October 2026.',
-      answer: 'Yes, under TSA rules. Hawaiian\'s own pages blocked our reader, so the rules below are TSA\'s, which apply on every US flight: insulin goes in a separate bin for x-ray, you tell officers about a pump or glucose monitor, and medically necessary gel ice packs are allowed in reasonable quantities.',
-      srcNote: 'From TSA\'s medication pages (the US government screening authority), not from Hawaiian Airlines, whose own pages blocked our reader, last checked 20 October 2026. Rules change, so confirm with the airline before you fly.',
+      desc: 'Can you bring medication on Hawaiian Airlines? The joint Alaska and Hawaiian page says keep medication in your carry-on and bring your own cooling, because aircraft have no refrigerators. TSA lets you carry insulin and supplies and medically necessary ice packs. Checked 23 November 2026.',
+      answer: 'Yes. The joint Alaska and Hawaiian accessible-travel page says medication stays with you in carry-on baggage, never checked, and aircraft have no refrigerators. On US flights TSA adds: insulin goes in a separate bin for x-ray, you tell officers about a pump or glucose monitor, and medically necessary gel ice packs are allowed in reasonable quantities.',
+      srcNote: 'The carry-on, refrigerator, IV and oxygen rules are from the joint Alaska Airlines and Hawaiian Airlines "Traveling with medication" section (read from an archived copy on 23 November 2026, because the live page blocked our reader); the insulin, device and ice-pack rules are TSA\'s. Rules change, so confirm with the airline before you fly.',
       scen: [
         card('needles', 'Insulin & syringes', 'warn', 'Separate bin for x-ray', 'Insulin and supplies', 'TSA: tell officers about insulin and put it in a separate bin.', [X.TSA_INS_LINE], [X.TSA_INS], true),
         card('devices', 'Pumps & monitors', 'go', 'Tell the officer', 'Medical devices and supplies', 'TSA: tell officers about a pump or glucose monitor worn on your body.', [X.TSA_DEV_LINE], [X.TSA_SUP]),
-        card('cold', 'Cold medication', 'warn', 'Ice packs allowed', 'Medication that must stay cold', 'TSA allows medically necessary gel ice packs in reasonable quantities.', [X.TSA_ICE_LINE], [X.TSA_ICE]),
-        card('pills', 'Pills & tablets', 'go', 'Carry-on and checked', 'Keep it with you', 'TSA lists pills as allowed in carry-on and checked bags.', [X.TSA_PILLS_LINE], [X.TSA_PILLS]),
-        ab(X.TSA_FAQ)
+        card('cold', 'Cold medication', 'warn', 'Ice packs yes, fridge no', 'Medication that must stay cold', 'TSA allows medically necessary gel ice packs in reasonable quantities, but the joint Alaska and Hawaiian page says the aircraft have no refrigerators.', [X.TSA_ICE_LINE, 'Hawaiian Airlines (joint page with Alaska): bring cooling for the whole flight, since cabin crew have nowhere to chill medicine.'], [X.TSA_ICE, PA]),
+        card('pills', 'Pills & tablets', 'go', 'Carry-on, not checked', 'Keep it with you', 'The joint Alaska and Hawaiian page says medication should always remain with you in carry-on baggage, never in checked baggage.', [
+          'The page adds that the airline does not give medical services or administer medication, but helps transport it safely.',
+          X.TSA_PILLS_LINE
+        ], [PA, X.TSA_PILLS]),
+        card('drips', 'Drips and oxygen', 'warn', 'Rules for IV and oxygen', 'Intravenous devices, personal oxygen', 'The joint page says IV devices may not be hung from the aircraft, and personal oxygen equipment is banned in flight unless it is an approved portable oxygen concentrator.', [
+          'The IV rule keeps the emergency oxygen masks free to deploy.',
+          'FAA regulations allow personal oxygen equipment in flight only under the Portable Oxygen Concentrator (POC) guidelines.'
+        ], [PA]),
+        ab(PA)
       ],
       faq: [
-        ['Can I bring insulin on Hawaiian Airlines?', 'TSA says to tell the officers you carry medically necessary liquids such as insulin and put them in a separate bin for x-ray screening. This is TSA\'s rule, not a Hawaiian page.'],
-        ['Can I bring ice packs for medicine on Hawaiian?', 'TSA allows medically necessary gel ice packs in reasonable quantities, frozen, melted or slushy; tell the officer at the checkpoint.']
+        ['Can I bring insulin on Hawaiian Airlines?', 'TSA says to tell the officers you carry medically necessary liquids such as insulin and put them in a separate bin for x-ray screening. Keep it in your carry-on, as the joint Alaska and Hawaiian page asks.'],
+        ['Can I bring ice packs for medicine on Hawaiian?', 'TSA allows medically necessary gel ice packs in reasonable quantities, frozen, melted or slushy; tell the officer at the checkpoint. There are no refrigerators on board, so bring your own cooling.'],
+        ['Can I check my medication on Hawaiian Airlines?', 'The joint Alaska and Hawaiian page says medication should always stay in carry-on baggage, never in checked baggage.']
       ],
-      tableTitle: 'Hawaiian Airlines medication rules at a glance (TSA)',
-      tableNote: 'What TSA says for US flights; Hawaiian\'s own page could not be read.',
+      tableTitle: 'Hawaiian Airlines medication rules at a glance',
+      tableNote: 'Carry-on, refrigerator, IV and oxygen rows come from the joint Alaska and Hawaiian page; the other rows are TSA\'s for US flights.',
       rows: [
-        ['Insulin?', 'Separate bin for x-ray; tell the officer'],
-        ['Pump or glucose monitor?', 'Tell the officer; carry the supplies'],
-        ['Ice packs for medicine?', 'Allowed, medically necessary, in reasonable quantity'],
-        ['Pills, syringes beyond TSA?', NP]
+        ['Insulin?', 'Separate bin for x-ray; tell the officer (TSA)'],
+        ['Pump or glucose monitor?', 'Tell the officer; carry the supplies (TSA)'],
+        ['Ice packs for medicine?', 'Allowed in reasonable quantity (TSA); no refrigerators on board'],
+        ['Where does medication go?', 'Carry-on baggage, never checked'],
+        ['IV devices and own oxygen?', 'IV cannot be hung; own oxygen only as an approved POC']
       ],
-      extra: steps(['Tell the officer about insulin, pumps and ice packs.', 'Ask Hawaiian about anything TSA does not cover.'])
+      extra: steps(['Keep medicine in your carry-on, with your own cooling if it must stay cold.', 'Tell the officer about insulin, pumps and ice packs.'])
     });
   }
 };

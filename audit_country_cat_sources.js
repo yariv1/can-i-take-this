@@ -16,7 +16,7 @@ const OK_SAME = { 'taiwan/vaping': 1, 'turkey/vaping': 1,
   // read in full 2026-11-19: each cited customs page itself states the e-liquid / tobacco liquid rule (EE 20 ml, HR 10 ml, SI 100 ml EU, LU other-goods value cap)
   'estonia/vaping': 1, 'croatia/vaping': 1, 'slovenia/vaping': 1, 'luxembourg/vaping': 1, 'south-africa/vaping': 1, 'kenya/vaping': 1, 'new-zealand/vaping': 1, 'sri-lanka/vaping': 1, /* NZ Customs duty-free page and Sri Lanka Customs directorate page read 2026-11-22 */ 'dominican-republic/vaping': 1, /* DGA Manual del Viajero page read 2026-11-22, searched for vape/nicotin: none */ 'peru/vaping': 1, /* KRA page + FAQ PDF and SUNAT page read in full 2026-11-22, searched for vape/electronic/nicotine: none */ /* SARS SC-PA-01-03 read in full 2026-11-22, searched for vape/electronic/nicotine: none */
   // read in full 2026-11-21: Cyprus traveller allowance page; the vaping section states that e-liquid is not named on it (tobacco list + 430 euro value cap) and cites it for that
-  'cyprus/vaping': 1 };
+  'cyprus/vaping': 1, /* Lithuanian Customs 'Coming from third countries' read in full 2026-11-23: states e-cigarette liquid 50 ml by air / 20 ml other */ 'lithuania/vaping': 1 };
 for (const c of fs.readdirSync('country')) {
   if (!fs.existsSync(path.join('country', c, 'alcohol'))) continue;
   const base = new Set(); for (const k of ['alcohol', 'tobacco', 'cash']) links(c + '/' + k).forEach(u => base.add(u));
