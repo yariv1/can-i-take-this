@@ -14662,7 +14662,8 @@
  },
  "country/jamaica/vaping": {
   "official": [
-   "jacustoms.gov.jm: TLS certificate error 2026-11-22, not bypassed"
+   "jacustoms.gov.jm: TLS certificate error 2026-11-22, not bypassed",
+   "read 2026-11-23: Jamaica Customs Agency Prohibited Items, Restricted Items and Passenger Allowance pages (jca.gov.jm, WordPress API) via curl"
   ],
   "reliable": [
    "WHO country profile read 2026-10-08 (base card)"
@@ -14670,7 +14671,7 @@
   "other": [
    "read 2026-11-22: GSTHR e-cigarette profile for Jamaica (page updated 2026-11-16, secondary compilation, lower reliability)"
   ],
-  "date": "2026-11-22"
+  "date": "2026-11-23"
  },
  "country/cambodia/vaping": {
   "official": [
@@ -14719,7 +14720,8 @@
  },
  "country/morocco/vaping": {
   "official": [
-   "douane.gov.ma circulars found in search cover domestic tax (TIC) on e-liquid and disposables, not a traveller allowance; finances.gov.ma ADII 2026 PDF: no response 2026-11-22"
+   "douane.gov.ma circulars found in search cover domestic tax (TIC) on e-liquid and disposables, not a traveller allowance; finances.gov.ma ADII 2026 PDF: no response 2026-11-22",
+   "read 2026-11-23: ADII traveller guide 'A votre arrivee au Maroc' PDF (douane.gov.ma) via Wayback copy"
   ],
   "reliable": [
    "WHO country profile read 2026-10-08 (base card)"
@@ -14727,7 +14729,7 @@
   "other": [
    "read 2026-11-22: GSTHR e-cigarette profile for Morocco (page updated 2026-11-16, secondary compilation, lower reliability)"
   ],
-  "date": "2026-11-22"
+  "date": "2026-11-23"
  },
  "country/malta/vaping": {
   "official": [
@@ -14899,7 +14901,8 @@
  },
  "country/ukraine/vaping": {
   "official": [
-   "customs.gov.ua traveller pages found by search: tobacco limit article only, no e-liquid figure read"
+   "customs.gov.ua traveller pages found by search: tobacco limit article only, no e-liquid figure read",
+   "read 2026-11-23: Customs Code of Ukraine articles 374 and 376 (zakon.rada.gov.ua) via Wayback copy"
   ],
   "reliable": [
    "WHO country profile read 2026-10-08 (base card)"
@@ -14907,7 +14910,7 @@
   "other": [
    "read 2026-11-22: GSTHR e-cigarette profile for Ukraine (page updated 2026-11-16, secondary compilation, lower reliability)"
   ],
-  "date": "2026-11-22"
+  "date": "2026-11-23"
  },
  "country/united-states/vaping": {
   "official": [

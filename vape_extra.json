@@ -3355,8 +3355,39 @@
  "JM": {
   "sections": [
    {
+    "h": "🛃 What Jamaica Customs Agency says about what you can bring",
+    "p": "From the Jamaica Customs Agency (JCA) pages \"Prohibited Items\", \"Restricted / Prohibited Items\" and \"Passenger Allowance\" (jca.gov.jm, read 23 November 2026). None of these pages names e-cigarettes or vape liquid, so there is no vape-specific traveller rule to quote.",
+    "table": {
+     "head": [
+      "Point",
+      "What JCA says"
+     ],
+     "rows": [
+      [
+       "Prohibited list",
+       "Absolutely forbidden items include indecent or obscene material, counterfeit coin and certain occult publications; vapes are not named"
+      ],
+      [
+       "Restricted goods",
+       "Goods that need a permit and arrive without one breach section 210 of the Customs Act; JCA says its list is not exhaustive and changes as the government decides"
+      ],
+      [
+       "Tobacco concession",
+       "Tobacco and some potable articles are allowed for personal use in quantities the Commissioner approves; the page gives no figure and does not mention vapes"
+      ],
+      [
+       "Other goods",
+       "Passengers aged 18 or over get a concession on personal effects up to US$1,000 in total value, if not imported for sale"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>What this means:</strong> JCA does not list vapes as banned, and does not give a vape allowance either. Ask JCA before you fly with more than one device and a few bottles of liquid."
+    ]
+   },
+   {
     "h": "📰 What a secondary profile reports about e-cigarettes in Jamaica",
-    "p": "Less reliable source (secondary profile): the Global State of Tobacco Harm Reduction (GSTHR) country page, updated 16 November 2026 and read on 22 November 2026. It compiles other sources and is not a customs page. The official customs rule for travellers could not be read, so treat this as background and confirm with customs.",
+    "p": "Less reliable source (secondary profile): the Global State of Tobacco Harm Reduction (GSTHR) country page, updated 16 November 2026 and read on 22 November 2026. It compiles other sources and is not a customs page, so treat it as background.",
     "table": {
      "head": [
       "Point",
@@ -3378,7 +3409,7 @@
      ]
     },
     "list": [
-     "<strong>Not read:</strong> Jamaica Customs Agency traveller rules (the site had a certificate error) and any rule naming vapes."
+     "<strong>Not found:</strong> a Jamaican law or customs rule that names vapes for travellers."
     ]
    },
    {
@@ -3412,7 +3443,11 @@
   "faq": [
    [
     "Is vaping legal in Jamaica?",
-    "A secondary profile (GSTHR) says vaping is allowed in Jamaica with no nicotine or flavour limits, but use in public places is restricted. It gives no traveller allowance, so check Jamaica Customs."
+    "Jamaica Customs does not list vapes as prohibited on its pages. A secondary profile (GSTHR) says vaping is allowed with no nicotine or flavour limits, but use in public places is restricted. No traveller allowance is published, so check Jamaica Customs."
+   ],
+   [
+    "Do Jamaica Customs list e-cigarettes as banned?",
+    "No. The JCA prohibited list names obscene material, counterfeit coin and certain occult publications. Restricted goods need a permit, and JCA says its list is not exhaustive."
    ],
    [
     "How common is vaping in Jamaica?",
@@ -3424,6 +3459,14 @@
    ]
   ],
   "src": [
+   [
+    "https://jca.gov.jm/individual/passenger/prohibited-items/",
+    "Jamaica Customs Agency: Prohibited Items"
+   ],
+   [
+    "https://jca.gov.jm/individual/passenger/passenger-allowance/",
+    "Jamaica Customs Agency: Passenger Allowance"
+   ],
    [
     "https://gsthr.org/countries/profile/jam/e_cigarettes/",
     "Less reliable source (secondary profile): Global State of Tobacco Harm Reduction - e-cigarettes in Jamaica"
@@ -3758,8 +3801,35 @@
  "MA": {
   "sections": [
    {
+    "h": "🛃 What Moroccan Customs (ADII) tells visitors they may bring",
+    "p": "From the ADII traveller guide \"À votre arrivée au Maroc\" (douane.gov.ma, read 23 November 2026 from an archived copy). The guide does not mention e-cigarettes or e-liquid. It lists what visitors may bring without declaration, and says anything outside these tolerances pays duties and taxes.",
+    "table": {
+     "head": [
+      "Point",
+      "What the ADII guide says"
+     ],
+     "rows": [
+      [
+       "Tobacco",
+       "200 grams of manufactured tobacco, duty-free and without declaration"
+      ],
+      [
+       "Goods without commercial character",
+       "Limited quantities up to 2,000 dirhams in total value, without formalities or duties"
+      ],
+      [
+       "Anything beyond these tolerances",
+       "Subject to duties and taxes, with a payment receipt issued by customs"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>What this means:</strong> there is no vape allowance in the guide. One device for your own use is the cautious choice; extra devices and bottles of liquid may be treated as goods that owe duty."
+    ]
+   },
+   {
     "h": "📰 What a secondary profile reports about e-cigarettes in Morocco",
-    "p": "Less reliable source (secondary profile): the Global State of Tobacco Harm Reduction (GSTHR) country page, updated 16 November 2026 and read on 22 November 2026. It compiles other sources and is not a customs page. The official customs rule for travellers could not be read, so treat this as background and confirm with customs.",
+    "p": "Less reliable source (secondary profile): the Global State of Tobacco Harm Reduction (GSTHR) country page, updated 16 November 2026 and read on 22 November 2026. It compiles other sources and is not a customs page. Treat it as background.",
     "table": {
      "head": [
       "Point",
@@ -3785,7 +3855,7 @@
      ]
     },
     "list": [
-     "<strong>Not read:</strong> any ADII (Moroccan customs) figure for travellers. Search results show customs duty and excise on e-cigarettes and a mandatory product standard from 2026, which are not baggage rules."
+     "<strong>Not found:</strong> an ADII figure for vapes carried by a traveller. Search results show customs duty and excise on e-cigarettes and a mandatory product standard from 2026, which are not baggage rules."
     ]
    },
    {
@@ -3822,6 +3892,10 @@
     "A secondary profile (GSTHR) says there is no specific e-cigarette law and relays that personal-use vapes are generally allowed, citing a vape retailer blog. Customs duties on e-cigarettes are high, so confirm the rule with Moroccan customs."
    ],
    [
+    "Does Moroccan customs give a vape allowance?",
+    "No. The ADII visitor guide allows 200 grams of manufactured tobacco and goods up to 2,000 dirhams, and does not name vapes. Anything beyond the tolerances pays duties and taxes."
+   ],
+   [
     "How common is vaping in Morocco?",
     "Adolescents: 5.3% of adolescents currently use e-cigarettes (boys 6.3%, girls 4.3%) in the survey \"Global Youth Tobacco Survey, 2016\" (national, ages 13-15)."
    ],
@@ -3831,6 +3905,10 @@
    ]
   ],
   "src": [
+   [
+    "https://www.douane.gov.ma/dms_prod/loadDocument?documentId=76361",
+    "ADII (Moroccan customs): traveller guide, À votre arrivée au Maroc"
+   ],
    [
     "https://gsthr.org/countries/profile/mar/e_cigarettes/",
     "Less reliable source (secondary profile): Global State of Tobacco Harm Reduction - e-cigarettes in Morocco"
@@ -4764,8 +4842,39 @@
  "UA": {
   "sections": [
    {
+    "h": "🛃 What the Customs Code of Ukraine says about tobacco and excise goods",
+    "p": "From the Customs Code of Ukraine (zakon.rada.gov.ua), articles 374 and 376, read on 23 November 2026 from an archived copy of the 2025 text. The code does not name e-cigarettes or e-liquid, so the vape rule has to be read from the State Customs Service, which treats e-cigarette liquid as excise goods.",
+    "table": {
+     "head": [
+      "Point",
+      "What the code says"
+     ],
+     "rows": [
+      [
+       "Duty-free personal goods",
+       "Goods worth up to 1,000 euro in hand or accompanied baggage, but excise goods are excluded from this allowance (article 374)"
+      ],
+      [
+       "Tobacco allowance",
+       "Adults 18+: 200 cigarettes, or 50 cigars, or 250 g of tobacco, or a mix up to 250 g in total (article 376)"
+      ],
+      [
+       "Age",
+       "Tobacco products may not be brought in by anyone under 18"
+      ],
+      [
+       "Short trips",
+       "If you were away from Ukraine less than 24 hours, tobacco and alcohol are taxed whatever the quantity"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>What this means:</strong> the 200-cigarette figure is for tobacco, not a vape allowance. No official figure for e-liquid was found, so confirm with the State Customs Service before bringing more than one device and a few refills."
+    ]
+   },
+   {
     "h": "📰 What a secondary profile reports about e-cigarettes in Ukraine",
-    "p": "Less reliable source (secondary profile): the Global State of Tobacco Harm Reduction (GSTHR) country page, updated 16 November 2026 and read on 22 November 2026. It compiles other sources and is not a customs page. The official customs rule for travellers could not be read, so treat this as background and confirm with customs.",
+    "p": "Less reliable source (secondary profile): the Global State of Tobacco Harm Reduction (GSTHR) country page, updated 16 November 2026 and read on 22 November 2026. It compiles other sources and is not a customs page. Treat it as background.",
     "table": {
      "head": [
       "Point",
@@ -4787,7 +4896,7 @@
      ]
     },
     "list": [
-     "<strong>Not read:</strong> the State Customs Service traveller allowance for e-liquid. Its site says liquids for e-cigarettes are excise goods, but no traveller figure was read."
+     "<strong>Not found:</strong> a Ukrainian customs figure for e-liquid carried by a traveller."
     ]
    },
    {
@@ -4824,6 +4933,10 @@
     "A secondary profile (GSTHR) says e-cigarettes are legal in Ukraine with a 20 mg/ml nicotine cap and age 18. It gives no traveller allowance, so check the Ukrainian customs service."
    ],
    [
+    "Is there a duty-free allowance for vapes in Ukraine?",
+    "Not by name. The Customs Code allows adults 200 cigarettes, 50 cigars or 250 g of tobacco, and excludes excise goods from the 1,000 euro allowance. E-liquid is treated as an excise good, so ask customs before you bring more than you need."
+   ],
+   [
     "How common is vaping in Ukraine?",
     "Adults: 5.3% of adults currently use e-cigarettes (men 7.0%, women 3.9%), and 3.9% use them daily in the survey \"Kyiv International Institute of Sociology face-to-face survey, 2024\" (national, ages 18+)."
    ],
@@ -4833,6 +4946,10 @@
    ]
   ],
   "src": [
+   [
+    "https://zakon.rada.gov.ua/laws/show/4495-17",
+    "Customs Code of Ukraine, articles 374 and 376"
+   ],
    [
     "https://gsthr.org/countries/profile/ukr/e_cigarettes/",
     "Less reliable source (secondary profile): Global State of Tobacco Harm Reduction - e-cigarettes in Ukraine"
