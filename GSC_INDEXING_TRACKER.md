@@ -1007,3 +1007,8 @@ Pages changed (not yet requested in GSC; official-source facts first):
 - https://canitakethis.co/country/poland/tobacco/
 - https://canitakethis.co/country/portugal/plants-seeds/
 - https://canitakethis.co/country/spain/plants-seeds/
+
+## Deploy 230c53d63 (2026-11-23)
+- https://canitakethis.co/country/jamaica/vaping/
+- https://canitakethis.co/country/ukraine/vaping/
+- https://canitakethis.co/country/morocco/vaping/
