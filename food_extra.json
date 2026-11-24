@@ -6483,15 +6483,23 @@
   "unofficial": true
  },
  "Costa Rica": {
-  "checked": "9 November 2026",
-  "answer": "Costa Rica's own customs pages could not be used for a traveller food rule, so this comes from the IATA Travel Centre customs page for Costa Rica, which airlines use. The page lists 2 kg of candy and baby food among items allowed in. It has no line on meat, dairy, eggs, fruit, vegetables, plants, seeds or other animal products. The page shows no date, so confirm with Costa Rican customs before you travel.",
+  "checked": "24 November 2026",
+  "answer": "Costa Rica's Ministry of Agriculture and Livestock (MAG) says, in a SENASA notice of 16 December 2025, that bringing in any pork product, from any country, in hand or checked baggage is prohibited under Resolution SENASA-DCA-R0029-2021, because of African swine fever. Raw, cured, cooked or processed pork, sausages, ham, bacon, salami, chorizo, canned goods, fat and lard are all covered, and the rule applies at airports, land borders and ports. Offenders have the goods seized at once and face penalties. The IATA Travel Centre page, which is undated, also lists 2 kg of candy and baby food.",
   "sources": [
+   [
+    "https://mag.go.cr/senasa-recuerda-prohibicion-de-ingreso-de-productos-porcinos/",
+    "Costa Rica Ministry of Agriculture and Livestock: SENASA reminds of the ban on pork products (16 December 2025)"
+   ],
    [
     "https://infopages.traveldoc.aero/Customs/CRI/Plain",
     "IATA Travel Centre — Costa Rica customs: prohibited and restricted goods (undated)"
    ]
   ],
   "faq": [
+   [
+    "Can I bring ham or sausages into Costa Rica?",
+    "No. SENASA says all pork products and by-products, from any country, are prohibited in hand and checked baggage, including ham, chorizo, salami, bacon, canned and dried pork. They are seized at once."
+   ],
    [
     "Can I bring candy into Costa Rica?",
     "The IATA page lists 2 kg of candy."
@@ -6506,6 +6514,25 @@
    ]
   ],
   "topics": [
+   {
+    "id": "pork",
+    "label": "Pork products",
+    "status": "stop",
+    "verdict": "Banned",
+    "head": "Pork products from any country are banned in luggage.",
+    "scen": [
+     {
+      "when": "Ham, sausages, bacon, lard, canned pork",
+      "status": "stop",
+      "tag": "Banned",
+      "lines": [
+       "SENASA says pork and pork by-products in any form are prohibited, raw, cured, cooked or processed, including sausages, ham, bacon, mortadella, salami, chorizo, canned or dehydrated products, fat, lard and pork rinds.",
+       "The ban comes from Resolution SENASA-DCA-R0029-2021 of 5 August 2021, as a precaution against African swine fever, and applies at airports, land borders and ports.",
+       "Seizure is immediate and penalties follow. Ask the Animal Quarantine staff at the border post if in doubt."
+      ]
+     }
+    ]
+   },
    {
     "id": "allowance",
     "label": "Food in luggage",
@@ -7370,26 +7397,26 @@
   "unofficial": true
  },
  "Ukraine": {
-  "checked": "9 November 2026",
-  "answer": "Ukraine's own customs pages could not be used for a traveller food rule, so this comes from the IATA Travel Centre customs page for Ukraine, which airlines use. Food may be brought in if the value does not exceed ₴50, the weight does not exceed 2 kg, and there is only one package of each product. It has no line on meat, dairy, eggs, fruit, vegetables, plants or seeds. The page shows no date, so confirm with Ukrainian customs before you travel.",
+  "checked": "24 November 2026",
+  "answer": "Ukraine's State Service on Food Safety and Consumer Protection (Derzhprodspozhyvsluzhba) says, citing Cabinet of Ministers Resolution No. 434 of 21 May 2012, that you may bring food for your own use worth up to the equivalent of EUR 200 per person: in manufacturer's retail packaging, at most one pack or 2 kg of each item; unpacked, at most 2 kg of each item; and an unpacked indivisible ready-to-eat product, one per item. You must declare it, orally or in writing. Animal-origin foods are also subject to controls on the disease status of the country of origin.",
   "sources": [
    [
-    "https://infopages.traveldoc.aero/Customs/UKR/Plain",
-    "IATA Travel Centre — Ukraine customs: prohibited and restricted goods (undated)"
+    "https://dpss.gov.ua/news/vvezennya-harchovih-produktiv-v-ukrayinu-dlya-vlasnogo-spozhivannya-shcho-varto-znati",
+    "State Service on Food Safety and Consumer Protection of Ukraine: bringing food into Ukraine for own consumption (26 December 2022)"
    ]
   ],
   "faq": [
    [
     "How much food can I bring into Ukraine?",
-    "The IATA page says food may be brought in if the value does not exceed ₴50, the weight does not exceed 2 kg, and there is only one package of each product."
+    "Up to EUR 200 in total per person: at most one retail pack or 2 kg of each item in manufacturer's packaging, or 2 kg of each item unpacked, says the State Service on Food Safety (Resolution 434 of 2012)."
    ],
    [
-    "Are meat and dairy covered?",
-    "The page has no line on them."
+    "Do I have to declare food in Ukraine?",
+    "Yes. The State Service says food brought in by citizens is declared, orally or in writing at the owner's choice or at the customs officer's request."
    ],
    [
-    "Is there a date?",
-    "No, the page shows no update date."
+    "Can animal products be refused?",
+    "Yes. Border inspectors check the animal-disease status of the country the food comes from, and the Service publishes import restrictions after outbreaks of listed diseases."
    ]
   ],
   "topics": [
@@ -7397,57 +7424,64 @@
     "id": "allowance",
     "label": "Food in luggage",
     "status": "warn",
-    "verdict": "2 kg / 1 pack",
-    "head": "Food is allowed within small limits.",
+    "verdict": "EUR 200 / 2 kg per item",
+    "head": "Food for own use is allowed within the Resolution 434 limits.",
     "scen": [
      {
-      "when": "Food for your own use",
+      "when": "Food in manufacturer's retail packaging",
       "status": "warn",
-      "tag": "Small limits",
+      "tag": "Limits",
       "lines": [
-       "The page says food may be brought in if the value does not exceed ₴50, the weight does not exceed 2 kg, and there is only one package of each product."
+       "The State Service says at most one pack, or at most 2 kg, of each item per person, within a total value of EUR 200."
+      ]
+     },
+     {
+      "when": "Unpacked food",
+      "status": "warn",
+      "tag": "Limits",
+      "lines": [
+       "Unpacked food: at most 2 kg of each item per person. An unpacked indivisible product ready to eat: no more than one of each item."
       ]
      }
     ]
    },
    {
-    "id": "fresh",
-    "label": "Meat, dairy, eggs & produce",
+    "id": "declare",
+    "label": "Declaring food",
     "status": "warn",
-    "verdict": "Ask first",
-    "head": "The page gives no rule for meat, dairy, eggs, fruit or vegetables.",
+    "verdict": "Declare it",
+    "head": "Food has to be declared when you bring it in.",
     "scen": [
      {
-      "when": "Meat, dairy, eggs, fruit and vegetables",
+      "when": "Arriving with food",
       "status": "warn",
-      "tag": "Ask first",
+      "tag": "Declare",
       "lines": [
-       "The IATA Travel Centre page does not say whether meat, dairy, eggs, fruit or vegetables are allowed.",
-       "Ask Ukrainian customs before you bring them."
+       "Declaration can be oral or written, as the owner chooses or when a customs officer asks.",
+       "Border specialists of the State Service and customs officers check the food against these limits."
       ]
      }
     ]
    },
    {
-    "id": "notread",
-    "label": "Not covered",
+    "id": "animal",
+    "label": "Meat, dairy & other animal products",
     "status": "warn",
-    "verdict": "Ask first",
-    "head": "The page leaves out some foods and shows no date.",
+    "verdict": "Check the origin",
+    "head": "Animal-origin food depends on the disease status of where it comes from.",
     "scen": [
      {
-      "when": "What the page does not say",
+      "when": "Meat, dairy, eggs and other animal products",
       "status": "warn",
-      "tag": "Ask first",
+      "tag": "Check origin",
       "lines": [
-       "It has no line on meat, dairy, eggs, fruit, vegetables, plants or seeds. The page shows no update date.",
-       "Its own customs pages gave no readable food rule. Ask Ukrainian customs before you bring any food."
+       "The State Service says controls on the disease situation in the country of origin are mandatory, to keep infectious animal diseases out of Ukraine.",
+       "It publishes import restrictions after outbreaks of diseases on the World Organisation for Animal Health list; check its website for the current list before you pack."
       ]
      }
     ]
    }
-  ],
-  "unofficial": true
+  ]
  },
  "Colombia": {
   "checked": "9 November 2026",

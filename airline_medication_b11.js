@@ -143,6 +143,7 @@ module.exports = function (X) {
   // ---------------- KOREAN AIR ----------------
   {
     const P1 = ['https://www.koreanair.com/contents/plan-your-travel/in-flight-experience/travel-tips/healthy-air-travels', 'Korean Air: Healthy air travel', 'Personal medications'];
+    const P2 = ['https://www.airport.kr/ap_en/1434/subview.do', 'Incheon International Airport: Carry-on restricted items FAQ', 'Medicines, syringes, ice packs'];
     add({
       slug: 'korean-air', name: 'Korean Air',
       h1: 'Korean Air Medication Policy: Medicine & Prescriptions on a Korean Air Flight (2026)',
@@ -155,21 +156,34 @@ module.exports = function (X) {
           'Korean Air: customs may ask for a prescription or a medical certificate for your medication.',
           'Korean Air: keep documents about your conditions and medicines in English, in case you need another prescription or a hospital visit.'
         ], [P1], true),
-        gap('liquids', 'Liquid medication', 'x', 'Over 100 ml (3.4 oz)', P1, 'Korean Air', 'liquid limits for medication'),
-        gap('needles', 'Insulin & syringes', 'x', 'Needles, syringes, injections', P1, 'Korean Air', 'needles and syringes'),
-        gap('cold', 'Cold medication', 'x', 'Medication that must stay cold', P1, 'Korean Air', 'keeping medication cold'),
+        card('liquids', 'Liquid medication', 'warn', 'Over 100 ml (3.4 oz)', 'Liquid medicine for the flight', 'Incheon Airport (not Korean Air) lets liquid medicine over 100 ml into the cabin with a doctor\'s note or prescription, only the amount needed for the flight.', [
+          'Incheon International Airport (airport operator, not Korean Air): liquid medicine over 100 ml, such as insulin, needs a doctor\'s note or prescription in Korean or English.',
+          'Incheon: only the amount needed during the flight may go in carry-on; extra liquid medicine must be checked in.',
+          'Incheon: with no prescription, liquids and gels must be 100 ml or less per container, in the 1-litre clear bag.'
+        ], [P2]),
+        card('needles', 'Insulin & syringes', 'go', 'Carry-on or checked', 'Needles, syringes, injections', 'Incheon Airport says syringes, needles and other medical tools may go in both carry-on and checked bags. Korean Air\'s own page is silent.', [
+          'Incheon International Airport (airport operator, not Korean Air): syringes, needles and other medical items can be brought in both carry-on and checked baggage.',
+          'Incheon: for medicines taken to foreign airports, consult your airline.'
+        ], [P2]),
+        card('cold', 'Cold medication', 'warn', 'Ice packs and dry ice', 'Medication that must stay cold', 'Incheon Airport treats ice packs under the liquid rules; dry ice needs airline approval, so ask Korean Air.', [
+          'Incheon International Airport (airport operator, not Korean Air): ice packs follow the liquid, spray and gel limits; coolers with no liquid are allowed in carry-on or checked bags.',
+          'Incheon: dry ice needs airline approval, so check with Korean Air before you fly.'
+        ], [P2]),
         ab(P1)
       ],
       faq: [
         ['Can I take medication in my carry-on on Korean Air?', 'Yes. Korean Air says to pack regular medicine in your carry-on bag.'],
-        ['Do I need a prescription for Korean Air?', 'Korean Air says customs may ask for a prescription or a medical certificate.']
+        ['Do I need a prescription for Korean Air?', 'Korean Air says customs may ask for a prescription or a medical certificate. At Incheon, liquid medicine over 100 ml needs a doctor\'s note or prescription in Korean or English.'],
+        ['Can I carry insulin and syringes from Incheon?', 'Incheon Airport (not Korean Air) says syringes and needles may go in carry-on or checked bags, and liquid medicine over 100 ml needs a doctor\'s note, only the amount needed for the flight.']
       ],
       tableTitle: 'Korean Air medication rules at a glance',
       tableNote: 'What Korean Air\'s own page says. Where Korean Air is silent we say so.',
       rows: [
         ['Where should regular medicine go?', 'Carry-on bag'],
         ['Papers?', 'Customs may ask for a prescription or medical certificate; English notes advised'],
-        ['Syringes, liquids, cold storage?', NP]
+        ['Syringes (Incheon Airport)?', 'Allowed in carry-on and checked bags'],
+        ['Liquid medicine over 100 ml (Incheon Airport)?', 'Doctor\'s note or prescription in Korean or English; flight amount only'],
+        ['Dry ice?', 'Needs airline approval; ask Korean Air']
       ],
       extra: steps(['Pack regular medicine in your carry-on.', 'Take a prescription or doctor\'s note, in English if you can.'])
     });
@@ -178,6 +192,7 @@ module.exports = function (X) {
   // ---------------- CHINA EASTERN ----------------
   {
     const P1 = ['https://www.ceair.com/global/en_static/Announcement/BaggageService/CarryonBaggage/', 'China Eastern Airlines: Carry-on baggage', 'Liquids and medicines'];
+    const P2 = ['http://www.caac.gov.cn/WZWSREL1BIT05FL1hYR0tfMTcvWFhHSy9UWlRHLzIwMTUxMC90MjAxNTEwMjJfMjUzOC5odG1s', 'Civil Aviation Administration of China: Notice on adjusting liquids and lighters on flights (2008, in Chinese)', 'Liquid medicine, domestic flights'];
     add({
       slug: 'china-eastern', name: 'China Eastern Airlines',
       h1: 'China Eastern Airlines Medication Policy: Liquid Medicine for Diabetes & Other Illness (2026)',
@@ -185,7 +200,12 @@ module.exports = function (X) {
       answer: 'Yes, for liquid medicine. China Eastern\'s carry-on page says liquid medicines that patients with diabetes or other illnesses need during the flight can be carried only after they are examined at the security check. The page we read gives no rule for pills, syringes or cold medicine.',
       srcNote: 'From China Eastern\'s own carry-on baggage page, last checked 20 October 2026. Rules change, so confirm with the airline before you fly.',
       scen: [
-        gap('pills', 'Pills & tablets', 'x', 'Keep it with you', P1, 'China Eastern', 'ordinary pills and tablets'),
+        card('domestic', 'Domestic flights in China', 'warn', 'Certificate or prescription', 'Liquid medicine on domestic legs', 'China civil aviation authority (CAAC, 2008 notice): on domestic flights, patients may carry needed liquid medicine if they show a hospital certificate or doctor prescription in their own name. This is the authority, not China Eastern.', [
+          'CAAC notice of 9 December 2008, article 4: diabetics and other patients may carry the liquid medicine they need for the journey, but must show a hospital certificate or a doctor prescription with their own name; liquid milk products for a travelling baby are allowed after the security check.',
+          'CAAC article 3: on domestic flights each liquid container may hold at most 100 ml and the total may not exceed 1,000 ml, except flammable and explosive liquids, which are banned.',
+          'CAAC article 2: on international and regional flights the 2007 liquids announcement still applies.',
+          'The notice is dated 2008; the authority page still marks it as valid.'
+        ], [P2]),
         card('liquids', 'Liquid medication', 'warn', 'Examined at security', 'Over 100 ml (3.4 oz)', 'China Eastern lets patients carry needed liquid medicine after it is examined at security.', [
           'China Eastern: liquid medicines necessary for patients with diabetes or other illnesses during air travel can be carried only after being examined during the security check.'
         ], [P1], true),
@@ -209,6 +229,7 @@ module.exports = function (X) {
   // ---------------- ARKIA ----------------
   {
     const P1 = ['https://docs.arkia.co.il/fliti/general_terms_eng.htm', 'Arkia: Conditions of contract and notices', 'Dangerous articles and medicines'];
+    const P2 = ['https://www.gov.il/en/pages/carrying-medication', 'Israel Ministry of Health: International travel with controlled substances, guidelines for travelers', 'Medicines abroad, permit to carry'];
     add({
       slug: 'arkia', name: 'Arkia',
       h1: 'Arkia Medication Policy: What the Conditions of Contract Say About Medicines (2026)',
@@ -220,7 +241,12 @@ module.exports = function (X) {
           'Arkia: medicines and toiletries in minimal quantities required by the passenger while en route may be carried.'
         ], [P1], true),
         gap('liquids', 'Liquid medication', 'x', 'Over 100 ml (3.4 oz)', P1, 'Arkia', 'liquid limits for medication'),
-        gap('needles', 'Insulin & syringes', 'x', 'Needles, syringes, injections', P1, 'Arkia', 'needles and syringes'),
+        card('needles', 'Insulin & syringes', 'warn', 'Check the destination', 'Controlled medicines abroad', 'Israel Ministry of Health (not Arkia): check each destination country before you fly with narcotic or psychotropic medicines; a "permit to carry a controlled substance" is often needed.', [
+          'Israel Ministry of Health, Pharmaceutics Division (page updated 28 May 2024): travellers leaving Israel with medicines must check the destination and transit countries, because some countries want documents for any amount and others only above a quantity.',
+          'The Ministry says doctors may write up to three same-date prescriptions, about 92 days of treatment in all, marked as for a trip abroad, and the pharmacy asks the district pharmacist for approval and for the permit if one applies. Start at least one week before you leave.',
+          'The pharmacy asks for a passport copy, a copy of the itinerary and a declaration that the medicines are for the patient alone.',
+          'For a medicine that is not controlled, the page gives no rule for insulin or syringes: ask Arkia and your destination.'
+        ], [P2]),
         gap('cold', 'Cold medication', 'x', 'Medication that must stay cold', P1, 'Arkia', 'keeping medication cold'),
         ab(P1)
       ],
@@ -231,6 +257,7 @@ module.exports = function (X) {
       tableNote: 'What Arkia\'s own conditions say. Where Arkia is silent we say so.',
       rows: [
         ['Medicines on the way?', 'Allowed in minimal quantities'],
+        ['Controlled medicines abroad (Ministry of Health)?', 'Check the destination; a permit to carry is often needed; start a week ahead'],
         ['Syringes, liquids, cold storage?', NP]
       ],
       extra: steps(['Carry only the amount of medicine you need on the way.', 'Ask Arkia about syringes and cold medicine.'])

@@ -87,6 +87,7 @@ module.exports = function (X) {
   // ---------------- CHINA SOUTHERN ----------------
   {
     const P1 = ['https://www.csair.com/sg/en/tourguide/faq/baggage/ssxdxlxz.shtml', 'China Southern Airlines: Carry-on baggage FAQ', 'Liquids and liquid drugs'];
+    const P2 = ['http://www.caac.gov.cn/XXGK/XXGK/ZCFB/201511/t20151104_10912.html', 'Civil Aviation Administration of China: Announcement on restricting liquids on civil flights (2007, in Chinese)', 'Medicines, liquids, duty-free'];
     add({
       slug: 'china-southern', name: 'China Southern Airlines',
       h1: 'China Southern Airlines Medication Policy: Liquid Medicine for Diabetics & Other Patients (2026)',
@@ -99,6 +100,11 @@ module.exports = function (X) {
           'China Southern: liquid drugs should be stored in a 100 ml container in a transparent plastic bag.',
           'China Southern, liquids in general: containers up to 100 ml in one transparent resealable bag, one bag per passenger; the part that exceeds goes as checked baggage.'
         ], [P1], true),
+        card('caac', 'China aviation authority rule', 'go', 'Liquid medicine allowed', 'Rule for flights from China', 'China civil aviation authority (CAAC, notice of 2007 still marked valid): patients may carry necessary liquid medicine in a suitable quantity after it passes security checks. This is the authority, not China Southern.', [
+          'CAAC notice, article 4: passengers with babies may carry liquid milk products, and diabetics or other patients may carry the liquid medicine they need, in a suitable quantity, once security checks confirm it is safe.',
+          'CAAC notice, article 2: on international and regional flights from a mainland airport, each liquid container may hold at most 100 ml, in one transparent resealable bag of at most 1 litre per passenger; the excess goes in checked baggage.',
+          'CAAC notice, article 1: on domestic flights you may carry up to 1 litre of liquids in total (not counting alcohol), after the bottles are opened for inspection.'
+        ], [P2]),
         gap('pills', 'Pills & tablets', 'x', 'Keep it with you', P1, 'China Southern', 'ordinary pills and tablets'),
         gap('needles', 'Insulin & syringes', 'x', 'Needles, syringes, injections', P1, 'China Southern', 'needles and syringes'),
         gap('cold', 'Cold medication', 'x', 'Medication that must stay cold', P1, 'China Southern', 'keeping medication cold'),
@@ -209,6 +215,7 @@ module.exports = function (X) {
 
   // ---------------- AEROMEXICO (airport source, UNOFFICIAL) ----------------
   {
+    const P2 = ['https://www.aicm.com.mx/informacionalpasajero/Archivos/GuiaAICM2014.pdf', 'Mexico City International Airport (AICM): Información al pasajero (2014 security guide, in Spanish)', 'Medicines, liquids, diabetes, oxygen'];
     const P1 = ['https://www.aicm.com.mx/wp-content/uploads/2023/09/GuiaDelPasajero.pdf', 'Mexico City International Airport (AICM): Guía del pasajero (2023, in Spanish)', 'Syringes with needles'];
     add({
       slug: 'aeromexico', name: 'Aeromexico', unofficial: true,
@@ -219,10 +226,17 @@ module.exports = function (X) {
       scen: [
         card('needles', 'Insulin & syringes', 'warn', 'Prescription needed', 'Needles, syringes, injections', 'AICM: syringes with needles are allowed only with a medical prescription for diabetes or allergies.', [
           'AICM passenger guide: syringes with needles are allowed only with a medical prescription for diabetes or allergies, accompanied by their respective medicine.',
+          'The older AICM 2014 security guide says diabetics may enter with the medicines and syringes needed for the trip without showing the prescription, and recommends carrying a diabetes patient card. The two guides differ, so carry a prescription.',
           'This is the rule at Mexico City airport; the guide is not Aeromexico\'s own.'
-        ], [P1], true),
-        gap('pills', 'Pills & tablets', 'x', 'Keep it with you', P1, 'AICM', 'ordinary pills and tablets'),
-        gap('liquids', 'Liquid medication', 'x', 'Over 100 ml (3.4 oz)', P1, 'AICM', 'liquid medication over 100 ml'),
+        ], [P1, P2], true),
+        card('pills', 'Pills & tablets', 'go', 'Reasonable amount', 'Medicines for your trip', 'The older AICM security guide allows medicines, in a reasonable quantity for your needs and itinerary, without putting them in the clear bag.', [
+          'AICM 2014 security guide: medicines, baby milk and food, and special dietary products are allowed, and do not have to go in the resealable plastic bag if the quantity is reasonable for the passenger need and itinerary.',
+          'This is the airport guide, not Aeromexico, and it is from 2014.'
+        ], [P2]),
+        card('liquids', 'Liquid medication', 'go', 'Over 100 ml (3.4 oz)', 'Liquid medicine', 'AICM exempts medicines from the 100 ml and clear-bag rule in a reasonable quantity; other liquids over 100 ml must go in checked baggage.', [
+          'AICM 2014 security guide: people under medical treatment may carry liquids, aerosols and gels above 100 ml; ordinary cosmetic and hygiene liquids are limited to 100 ml containers in one resealable bag of up to 1 litre.',
+          'AICM 2014 security guide: oxygen is allowed only as medical gaseous oxygen cylinders up to 5 kg gross with a prescription, or concentrators certified by the civil aviation authority with a prescription.'
+        ], [P2]),
         gap('cold', 'Cold medication', 'x', 'Medication that must stay cold', P1, 'AICM', 'keeping medication cold'),
         ab(P1)
       ],
@@ -233,7 +247,8 @@ module.exports = function (X) {
       tableNote: 'What the Mexico City airport guide says; Aeromexico\'s own page could not be read. Where the guide is silent we say so.',
       rows: [
         ['Syringes with needles?', 'Only with a medical prescription for diabetes or allergies, with the medicine'],
-        ['Pills, liquid size limit, cold storage?', NP]
+        ['Pills and liquid medicine (2014 AICM guide)?', 'Allowed in a reasonable quantity, outside the clear bag'],
+        ['Cold storage?', NP]
       ],
       extra: steps(['Carry the prescription and the medicine together with the syringes.', 'Ask Aeromexico about its own rules.'])
     });
@@ -241,6 +256,8 @@ module.exports = function (X) {
 
   // ---------------- ALASKA (OWN PAGE read 23 Nov 2026 via archived copy + TSA) ----------------
   {
+    const P4 = ['https://www.alaskaair.com/content/travel-info/accessible-services/specialservices-oxygen', 'Alaska Airlines and Hawaiian Airlines: Oxygen and respiratory devices (read from an archived copy, 24 November 2026)', 'Portable oxygen concentrators'];
+    const P3 = ['https://www.tsa.gov/travel/security-screening/whatcanibring/items/portable-oxygen-concentrators', 'TSA: Portable Oxygen Concentrators', 'Carry-on and checked bags'];
     const PA = ['https://www.alaskaair.com/content/travel-info/accessible-services/specialservices-other', 'Alaska Airlines and Hawaiian Airlines: Other services and information', 'Traveling with medication (read from an archived copy, 23 November 2026)'];
     add({
       slug: 'alaska-airlines', name: 'Alaska Airlines',
@@ -259,10 +276,16 @@ module.exports = function (X) {
           'Alaska Airlines: plan for the whole flight, because crew cannot chill your medication.',
           X.TSA_ICE_LINE
         ], [PA, X.TSA_ICE]),
-        card('devices', 'Drips and oxygen', 'warn', 'Rules for IV and oxygen', 'Intravenous devices, personal oxygen', 'Alaska says intravenous devices may not be suspended from the aircraft, and your own oxygen equipment is not allowed in flight unless it is an approved portable oxygen concentrator.', [
-          'Alaska Airlines: the IV rule exists so nothing interferes with the deployment of the emergency oxygen masks.',
-          'Alaska Airlines: FAA regulations prohibit a traveler\'s personal oxygen equipment during flight unless it falls under the Portable Oxygen Concentrator (POC) guidelines.'
-        ], [PA]),
+        card('devices', 'Drips and oxygen', 'warn', 'FAA-approved POC only', 'Intravenous devices, personal oxygen', 'Alaska accepts FAA-approved portable oxygen concentrators and respiratory devices on domestic and international flights if they carry the red FAA label; bring batteries for at least 150% of the flight and tell Alaska 48 hours ahead.', [
+          'Alaska Airlines: it accepts oxygen concentrating devices on domestic and international flights provided each has a permanent label with a statement in red lettering that it meets FAA criteria; use the label on the device, not the kit name, to check the model.',
+          'Alaska Airlines: bring fully charged batteries for no less than 150% of the flight plus ground connection time; spare batteries must go in the cabin, never in checked baggage, with terminals covered or each battery in its own pouch.',
+          'Alaska Airlines: you may use an approved device during taxi, take-off and landing if it stays stowed under the seat in front, positioned so you can see its warnings; a customer service agent must verify the model, the phases of flight you will use it and your batteries.',
+          'Alaska Airlines: advance notice is not required but 48 hours is strongly recommended; you must provide the device (rented or owned) and know how to use it, as Alaska supplies none.',
+          'Alaska Airlines: an unapproved concentrator may travel in the cabin if it meets carry-on size and weight limits with batteries removed.',
+          'TSA: portable oxygen concentrators are allowed in carry-on and checked bags with special instructions, and the officer makes the final decision at the checkpoint.',
+          'Alaska Airlines: intravenous devices may not be suspended from the aircraft, so nothing interferes with the deployment of the emergency oxygen masks.'
+        ], [PA, P4, P3]),
+
         ab(PA)
       ],
       faq: [

@@ -47,10 +47,10 @@ function build(c, CUP) {
     desc = 'How many cigarettes can you bring into ' + cn + ' from outside the EU? Only 40 cigarettes, 20 cigarillos, 10 cigars or 50 g of tobacco (lower EU limit, all travellers).';
   }
   faq = [
-    ['How many cigarettes can I bring into ' + cn + '?', k === 'higher' ? 'From outside the EU, 200 cigarettes (or 100 cigarillos, 50 cigars or 250 g of tobacco). From another EU country the guideline levels may not be lower than 800 cigarettes.' : k === 'landsea' ? 'From outside the EU, 200 cigarettes by air and 40 by land or sea. From another EU country the guideline levels may not be lower than 800 cigarettes.' : 'From outside the EU, 40 cigarettes (all travellers). From another EU country the guideline levels may not be lower than 800 cigarettes.'],
+    ['How many cigarettes can I bring into ' + cn + '?', k === 'higher' ? '200 from outside the EU; at least 800 from another EU country.' : k === 'landsea' ? '200 by air and 40 by land or sea from outside the EU; at least 800 from another EU country.' : '40 from outside the EU; at least 800 from another EU country.'],
     ['How much tobacco can I bring into ' + cn + '?', k === 'lower' ? '50 g of smoking tobacco from outside the EU.' : k === 'landsea' ? '250 g of smoking tobacco by air and 50 g by land or sea, from outside the EU.' : '250 g of smoking tobacco from outside the EU.'],
-    ['Can I bring cigarettes into ' + cn + ' if I am under 17?', 'No duty-free allowance: Your Europe says travellers under 17 are not entitled to the tobacco or alcohol allowance.'],
-    ['How many cigarettes can I bring into ' + cn + ' from another EU country?', 'The EU\'s guideline levels may not be lower than 800 cigarettes, 400 cigarillos, 200 cigars or 1 kg of tobacco for travel between EU countries.']
+    ['Can I bring cigarettes into ' + cn + ' if I am under 17?', 'No: under-17s get no duty-free tobacco allowance, says Your Europe.'],
+    ['How many cigarettes can I bring into ' + cn + ' from another EU country?', 'The guideline levels are at least 800 cigarettes, 400 cigarillos, 200 cigars or 1 kg of tobacco.']
   ];
   if (CUP && CUP.faq) faq = CUP.faq.slice(0);
   const html = '<div class="bd-wrap">' + CSS + '<p class="bd-lead"><strong>' + esc(lead) + '</strong></p>' +

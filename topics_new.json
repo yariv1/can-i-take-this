@@ -3747,6 +3747,41 @@
      "list": [
       "<strong>Note:</strong> hand baggage still has to meet the general liquids rules at security."
      ]
+    },
+    {
+     "h": "🛍️ What the Swiss aviation authority says about duty-free bottles",
+     "p": "Not from SWISS: from the Swiss Federal Office of Civil Aviation (FOCA/BAZL) page \"Liquids\", read on 24 November 2026. It is the national authority for the airports SWISS flies from in Switzerland.",
+     "table": {
+      "head": [
+       "Question",
+       "FOCA rule"
+      ],
+      "rows": [
+       [
+        "Normal carry-on liquids",
+        "Containers of 100 ml or less in one transparent resealable bag of max. 1 litre per person"
+       ],
+       [
+        "Duty-free of any size",
+        "Allowed if bought at a Swiss, EU or EFTA airport or on a Swiss, EU or EFTA plane, the receipt can be shown and the items are in an untampered sealed plastic bag"
+       ],
+       [
+        "The bag",
+        "Open it only at the end of your journey"
+       ],
+       [
+        "Stopovers",
+        "Checks can differ from the departure airport"
+       ],
+       [
+        "CT scanners",
+        "Zurich Airport scanners allow containers up to 2 litres in hand luggage; not yet standard everywhere"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>What this means:</strong> a duty-free bottle over 100 ml stays in its sealed bag with the receipt; the SWISS 5 l and 70% limits above still apply."
+     ]
     }
    ],
    "faq": [
@@ -3757,16 +3792,24 @@
     [
      "Can I drink my own alcohol on SWISS?",
      "No, SWISS says consuming alcohol brought on board is forbidden."
+    ],
+    [
+     "Can I carry a duty-free bottle over 100 ml on SWISS?",
+     "Switzerland's aviation office says yes, if it was bought at a Swiss, EU or EFTA airport or on board, the receipt can be shown and the bag is sealed and untampered. Open it only at the end of your journey. Checks at a stopover may differ."
     ]
    ],
    "sources": [
     [
      "https://www.swiss.com/de/en/prepare/baggage/dangerous-goods",
      "SWISS &mdash; Dangerous goods"
+    ],
+    [
+     "https://www.bazl.admin.ch/en/liquids",
+     "Swiss Federal Office of Civil Aviation &mdash; Liquids"
     ]
    ],
    "keepSchema": true,
-   "checked": "18 October 2026"
+   "checked": "24 November 2026"
   },
   "perfume": {
    "answer": "SWISS counts hair spray, perfume and eau de cologne as toiletries, allowed in hand baggage and checked baggage up to 2 kg or 2 l in total per passenger and 0.5 kg or 0.5 l per item. Only non-toxic, non-flammable aerosols for sport or home use are allowed, with a cap on the release valve.",
@@ -5254,6 +5297,41 @@
      "list": [
       "<strong>Note:</strong> general carry-on liquid rules still apply."
      ]
+    },
+    {
+     "h": "🛍️ Duty-free bottles and carry-on liquids",
+     "p": "From the Brussels Airlines carry-on baggage page and its FAQ on liquids bought at the airport or on board (read from archived copies on 24 November 2026).",
+     "table": {
+      "head": [
+       "Question",
+       "Brussels Airlines rule"
+      ],
+      "rows": [
+       [
+        "Carry-on liquids",
+        "Max. 1 litre in total, bottles of 100 ml or less (the printed size counts), in a transparent resealable bag"
+       ],
+       [
+        "Duty-free bought after security",
+        "Exempt from that limit while it stays in its sealed Tax-Free bag"
+       ],
+       [
+        "Duty-free over 100 ml on a connection",
+        "Allowed through security if it is in the special sealed transparent bag, was bought within 24 hours before your flight and the bag is unopened"
+       ],
+       [
+        "If the bag is opened or items are confiscated",
+        "Brussels Airlines says it cannot accept liability"
+       ],
+       [
+        "Flights within Europe",
+        "Hand baggage can be checked in for free, so the liquid restrictions do not apply to it"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>What this means: a duty-free bottle of spirits over 100 ml is fine through security only in its sealed bag, bought within 24 hours of the flight and still unopened; the 5 l and 70% limits above still apply.</strong>"
+     ]
     }
    ],
    "faq": [
@@ -5264,16 +5342,28 @@
     [
      "Can I take strong spirits on Brussels Airlines?",
      "Drinks with more than 70% alcohol by volume are prohibited for transport."
+    ],
+    [
+     "Can I carry a duty-free bottle of whisky on a Brussels Airlines connection?",
+     "Yes, if it is in the sealed transparent bag, was bought within 24 hours before your flight and the bag is unopened. Brussels Airlines accepts no liability for opened or confiscated items."
     ]
    ],
    "sources": [
     [
      "https://www.brusselsairlines.com/no/en/extra-services/baggage/prohibited-items",
      "Brussels Airlines &mdash; Dangerous goods"
+    ],
+    [
+     "https://www.brusselsairlines.com/us/en/extra-services/baggage/carry-on-baggage",
+     "Brussels Airlines &mdash; Carry-on baggage"
+    ],
+    [
+     "https://faq.brusselsairlines.com/l/en/connecting-flights-and-airport-information/what-are-the-rules-regarding-liquids-bought-at-the-airport-or-on-board",
+     "Brussels Airlines FAQ &mdash; Liquids bought at the airport or on board"
     ]
    ],
    "keepSchema": true,
-   "checked": "18 October 2026"
+   "checked": "24 November 2026"
   },
   "perfume": {
    "answer": "Brussels Airlines lists hairspray, perfume and eau de cologne among care products allowed up to 2 kg/2 l in total per passenger and 0.5 kg/0.5 l per item. Only non-poisonous, non-flammable aerosols for sport or personal domestic use are allowed, with a cap on the release valve.",
@@ -5312,6 +5402,41 @@
      "list": [
       "<strong>Note:</strong> the general safety rules for liquids in carry-on baggage also apply."
      ]
+    },
+    {
+     "h": "🛍️ Duty-free perfume and carry-on liquids",
+     "p": "From the Brussels Airlines carry-on baggage page and its FAQ on liquids bought at the airport or on board (read from archived copies on 24 November 2026).",
+     "table": {
+      "head": [
+       "Question",
+       "Brussels Airlines rule"
+      ],
+      "rows": [
+       [
+        "Carry-on liquids",
+        "Max. 1 litre in total, bottles of 100 ml or less (the printed size counts), in a transparent resealable bag"
+       ],
+       [
+        "Duty-free bought after security",
+        "Exempt from that limit while it stays in its sealed Tax-Free bag"
+       ],
+       [
+        "Duty-free over 100 ml on a connection",
+        "Allowed through security if it is in the special sealed transparent bag, was bought within 24 hours before your flight and the bag is unopened"
+       ],
+       [
+        "If the bag is opened or items are confiscated",
+        "Brussels Airlines says it cannot accept liability"
+       ],
+       [
+        "Flights within Europe",
+        "Hand baggage can be checked in for free, so the liquid restrictions do not apply to it"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>What this means: a duty-free perfume over 100 ml stays in its sealed bag, bought within 24 hours of the flight; the 0.5 l per item and 2 l total limits above still apply.</strong>"
+     ]
     }
    ],
    "faq": [
@@ -5322,16 +5447,28 @@
     [
      "Are aerosols allowed on Brussels Airlines?",
      "Only non-poisonous, non-flammable ones for sport or personal domestic use, with a protected release valve."
+    ],
+    [
+     "Can I carry duty-free perfume over 100 ml on Brussels Airlines?",
+     "Yes, in the sealed transparent bag, bought within 24 hours before your flight and unopened. Perfume in a 100 ml or smaller bottle can go in the 1-litre resealable bag."
     ]
    ],
    "sources": [
     [
      "https://www.brusselsairlines.com/no/en/extra-services/baggage/prohibited-items",
      "Brussels Airlines &mdash; Dangerous goods"
+    ],
+    [
+     "https://www.brusselsairlines.com/us/en/extra-services/baggage/carry-on-baggage",
+     "Brussels Airlines &mdash; Carry-on baggage"
+    ],
+    [
+     "https://faq.brusselsairlines.com/l/en/connecting-flights-and-airport-information/what-are-the-rules-regarding-liquids-bought-at-the-airport-or-on-board",
+     "Brussels Airlines FAQ &mdash; Liquids bought at the airport or on board"
     ]
    ],
    "keepSchema": true,
-   "checked": "18 October 2026"
+   "checked": "24 November 2026"
   },
   "vape": {
    "answer": "Brussels Airlines accepts an e-cigarette in the cabin only, in a quantity for personal use. It cannot go in checked baggage, cannot be used or charged on board, and should not sit in the overhead locker.",
@@ -5509,6 +5646,41 @@
      "list": [
       "<strong>Note:</strong> ITA’s separate liquids rules for carry-on still apply."
      ]
+    },
+    {
+     "h": "🛍️ What EU rules say about duty-free bottles in the cabin",
+     "p": "Not from ITA Airways (its own hand baggage page blocked our reader): from the European Union's Your Europe page \"Luggage restrictions\", read on 24 November 2026. It applies at EU airports, including ITA's Italian ones.",
+     "table": {
+      "head": [
+       "Question",
+       "EU rule"
+      ],
+      "rows": [
+       [
+        "Normal carry-on liquids",
+        "Containers of max. 100 ml in a transparent plastic bag of max. 1 litre; larger containers go in checked baggage"
+       ],
+       [
+        "Duty-free liquids",
+        "Allowed in hand luggage from any airport or airline if the item and receipt stay sealed inside the red-bordered security bag"
+       ],
+       [
+        "The bag",
+        "Do not open it until your final destination"
+       ],
+       [
+        "Screening",
+        "Officers may open the bag and bottles; on a connection, tell them so the liquids are re-sealed in a new bag"
+       ],
+       [
+        "Medicines and baby food",
+        "The volume limit does not apply"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>What this means:</strong> the same sealed-bag rule applies to a bottle on ITA; the 5 l and 70% alcohol limits above are ITA's own."
+     ]
     }
    ],
    "faq": [
@@ -5519,16 +5691,24 @@
     [
      "Can I drink my own alcohol on ITA Airways?",
      "No, consuming alcohol brought on board by passengers is prohibited."
+    ],
+    [
+     "Can I carry a duty-free bottle in my hand baggage on ITA Airways?",
+     "EU rules say yes at EU airports if the bottle and receipt stay sealed in the security bag until your final destination. If officers open it on a connection, tell them so it is re-sealed."
     ]
    ],
    "sources": [
     [
      "https://www.ita-airways.com/us/en/book-and-prepare/travel-information/baggage/restricted-and-prohibited-items",
      "ITA Airways &mdash; Restricted and prohibited items"
+    ],
+    [
+     "https://europa.eu/youreurope/citizens/travel/carry/luggage-restrictions/index_en.htm",
+     "Your Europe &mdash; Luggage restrictions"
     ]
    ],
    "keepSchema": true,
-   "checked": "18 October 2026"
+   "checked": "24 November 2026"
   },
   "perfume": {
    "answer": "ITA Airways counts hairspray, perfume and eau de cologne as toiletries: max. 2 kg/2 l in total per passenger and 0.5 kg/0.5 l per item. Only non-poisonous, non-flammable sprays for sport or personal domestic use (hazard division 2.2) are permitted, with release valves protected by a cap.",
@@ -6388,6 +6568,45 @@
      "list": [
       "<strong>Not on the page:</strong> the dangerous-goods table does not state a rule for drinks above 70% or for drinking your own alcohol on board; carry-on liquid rules at security still apply."
      ]
+    },
+    {
+     "h": "🛍️ What Avinor says about duty-free bottles in Norway",
+     "p": "Not from Norwegian: from the airport operator Avinor (Oslo, Bergen and other Norwegian airports), page \"Useful information about carry-on and check-in luggage\", read on 24 November 2026.",
+     "table": {
+      "head": [
+       "Question",
+       "Avinor rule"
+      ],
+      "rows": [
+       [
+        "Carry-on liquids",
+        "Containers of max. 100 ml in a transparent resealable bag of up to 1 litre"
+       ],
+       [
+        "Duty-free bag",
+        "Must be sealed, with the receipt clearly visible inside the bag"
+       ],
+       [
+        "Screening",
+        "A sealed duty-free bag can be opened to analyse the liquid"
+       ],
+       [
+        "Connecting flight",
+        "Tell the security inspectors; they re-seal your goods in a new bag"
+       ],
+       [
+        "Above 70% alcohol",
+        "Not allowed in hand luggage or checked baggage"
+       ],
+       [
+        "Liquids in checked bags",
+        "Check with your airline; not all companies allow bottles in checked luggage"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>What this means:</strong> on a Norwegian connection through an Avinor airport, say that you are transferring so your duty-free bottle is re-sealed."
+     ]
     }
    ],
    "faq": [
@@ -6398,16 +6617,24 @@
     [
      "Are drinks under 24% restricted on Norwegian?",
      "No, Norwegian says alcoholic beverages with 24% alcohol or less are not subject to any restrictions."
+    ],
+    [
+     "Can I carry duty-free alcohol on a connection in Norway?",
+     "Avinor says the duty-free bag must be sealed with the receipt visible inside. If you transfer, tell the security inspectors and they re-seal it in a new bag; it may be opened to analyse the liquid."
     ]
    ],
    "sources": [
     [
      "https://www.norwegian.com/us/travel-info/baggage/restricted-items/dangerous-goods/",
      "Norwegian &mdash; Dangerous goods"
+    ],
+    [
+     "https://www.avinor.no/en/practical-info/baggage-rules/",
+     "Avinor &mdash; Carry-on and check-in luggage rules"
     ]
    ],
    "keepSchema": true,
-   "checked": "17 November 2026"
+   "checked": "24 November 2026"
   },
   "perfume": {
    "answer": "Norwegian lists non-radioactive medicinal or toiletry articles such as hair sprays, perfumes, colognes and medicines containing alcohol, and non-flammable, non-toxic aerosols for sport or home use, as permitted in checked and carry-on baggage. The total net quantity must not exceed 2 kg or 2 L, each single article 0.5 kg or 0.5 L, and aerosol release valves must be protected by a cap.",
@@ -10819,31 +11046,38 @@
    "unofficial": true
   },
   "alcohol": {
-   "answer": "Oman Air's own rule could not be read; the IATA limit is 5 L per person for drinks above 24% up to 70%, and the home-country customs rule is below.",
+   "answer": "Oman Air's dangerous goods policy allows alcohol between 24% and 70% by volume in retail packaging in both checked and hand baggage, with no airline approval needed; above 70% is strictly prohibited. It sets no litre limit of its own: per-passenger limits follow the rules of the airport you fly from.",
    "sections": [
     {
-     "h": "🍷 What the industry rule says about alcohol on Oman Air",
-     "p": "IATA, the airline industry body. Airports and customs can add stricter limits. Full table: <a href=\"/plane/alcohol/\">alcohol on a plane</a>.",
+     "h": "🥃 What Oman Air says about alcohol",
+     "p": "From the Oman Air page \"Batteries & Dangerous Goods Policy\", entry \"Alcoholic Beverages\", read on 24 November 2026.",
      "table": {
       "head": [
        "Question",
-       "IATA rule"
+       "Oman Air rule"
       ],
       "rows": [
        [
-        "Up to 24% alcohol by volume",
-        "Not subject to any restrictions"
+        "24% to 70% alcohol by volume",
+        "Permitted in retail packaging"
        ],
        [
-        "More than 24% and up to 70%",
-        "Retail packaging, receptacles not exceeding 5 L, total net quantity 5 L per person"
+        "Above 70%",
+        "Strictly prohibited"
        ],
        [
-        "Cabin bag at security",
-        "Liquid limits also apply at the checkpoint; see the liquids rule for Oman Air"
+        "Quantity per passenger",
+        "Not set by Oman Air: the airport's own restrictions apply"
+       ],
+       [
+        "Where",
+        "Checked baggage and hand baggage both ticked; no Oman Air approval needed"
        ]
       ]
-     }
+     },
+     "list": [
+      "<strong>Not on the page:</strong> a litre limit, or a rule on drinking your own alcohol on board. The 5 L figure used by IATA is the usual industry limit, not an Oman Air statement. Liquid limits at the security checkpoint still apply to a bottle in your cabin bag."
+     ]
     },
     {
      "h": "What customs says about bringing alcohol into Oman (Oman Air's home country)",
@@ -10852,13 +11086,26 @@
    ],
    "sources": [
     [
+     "https://www.omanair.com/en/dangerous-goods-policy",
+     "Oman Air &mdash; Batteries &amp; Dangerous Goods Policy"
+    ],
+    [
      "https://www.iata.org/contentassets/6fea26dd84d24b26a7a1fd5788561d6e/dgr-67-en-2.3.a.pdf",
      "IATA &mdash; Dangerous Goods Regulations, Table 2.3.A (67th edition, 1 January 2026)"
     ]
    ],
    "keepSchema": true,
-   "checked": "18 October 2026",
-   "unofficial": true
+   "checked": "24 November 2026",
+   "faq": [
+    [
+     "How much alcohol can I take on Oman Air?",
+     "Oman Air allows alcohol of 24% to 70% in retail packaging in checked and hand baggage, and prohibits more than 70%. It sets no litre limit itself; the departure airport's limits apply."
+    ],
+    [
+     "Can I take strong spirits on Oman Air?",
+     "Not above 70% alcohol by volume: Oman Air says that is strictly prohibited."
+    ]
+   ]
   },
   "perfume": {
    "answer": "Oman Air's dangerous goods policy allows perfumes, hair sprays, colognes and medicines containing alcohol in both hand and checked baggage without airline approval, up to 2 kg or 2 L in total and 0.5 kg or 0.5 L for each item, and adds that the rules of the airport you fly from also apply.",
@@ -12358,6 +12605,41 @@
      "list": [
       "<strong>Not on the page:</strong> the guide is a table whose carry-on and hold columns could not be read reliably, so we do not say which bag the items go in."
      ]
+    },
+    {
+     "h": "🛍️ Duty-free perfume and the 100 ml rule at Aer Lingus airports",
+     "p": "From the Aer Lingus leaflet \"Prepare liquids for security control\" (EU liquids rules from 31 January 2014, aerlingus.com PDF), read on 24 November 2026.",
+     "table": {
+      "head": [
+       "Question",
+       "Aer Lingus leaflet"
+      ],
+      "rows": [
+       [
+        "Containers you can take",
+        "Liquids in containers of 100 ml or less, packed in a single transparent resealable 1-litre plastic bag"
+       ],
+       [
+        "Duty free",
+        "Allowed in a sealed security bag: the item and the receipt must stay sealed inside the bag provided at purchase"
+       ],
+       [
+        "The bag",
+        "Do not open it until your final destination; contents may be confiscated if the bag is tampered with"
+       ],
+       [
+        "Medicines and special dietary products",
+        "Allowed, for example baby food"
+       ],
+       [
+        "Everything else",
+        "All other liquids must go in checked (hold) luggage"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>What this means:</strong> a perfume over 100 ml goes in your checked bag, unless you buy it after security and keep it in the sealed bag with the receipt. The 0.5 L per item and 2 L total limits above also apply."
+     ]
     }
    ],
    "faq": [
@@ -12368,16 +12650,24 @@
     [
      "Do aerosols need a cap on Aer Lingus?",
      "Yes, the release valve must be protected by a cap or other suitable means."
+    ],
+    [
+     "Can I carry duty-free perfume over 100 ml on Aer Lingus?",
+     "The Aer Lingus leaflet says yes in a sealed security bag, with the item and receipt sealed inside, unopened until your final destination. Any other perfume over 100 ml goes in checked luggage."
     ]
    ],
    "sources": [
     [
      "https://www.aerlingus.com/media/pdfs/guide-to-dangerous-goods.pdf",
      "Aer Lingus &mdash; Guide to Dangerous Goods"
+    ],
+    [
+     "https://www.aerlingus.com/media/pdfs/eu-liquids-jan2014.pdf",
+     "Aer Lingus &mdash; Prepare liquids for security control (PDF)"
     ]
    ],
    "keepSchema": true,
-   "checked": "18 October 2026",
+   "checked": "24 November 2026",
    "unofficial": false
   },
   "power": {
@@ -15514,6 +15804,41 @@
        ]
       ]
      }
+    },
+    {
+     "h": "🛂 What Keflavík Airport says about liquids at security",
+     "p": "Not from Icelandair: from the airport operator Isavia's Keflavík Airport page \"Security check at Keflavik airport\", read on 24 November 2026.",
+     "table": {
+      "head": [
+       "Question",
+       "Keflavík Airport rule"
+      ],
+      "rows": [
+       [
+        "Liquids",
+        "Maximum 100 ml per container"
+       ],
+       [
+        "Total",
+        "Liquid volume should not exceed 1 litre"
+       ],
+       [
+        "Bag",
+        "Put all liquids in a transparent zipper bag and take it out of your hand luggage into a tray"
+       ],
+       [
+        "Disposal",
+        "A preparation area before security is for disposing of liquids or prohibited items"
+       ],
+       [
+        "Vapes",
+        "Carry in cabin baggage only"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>What this means:</strong> a perfume bottle of more than 100 ml cannot go through Keflavík security in your cabin bag; pack it in checked baggage."
+     ]
     }
    ],
    "sources": [
@@ -15524,11 +15849,21 @@
     [
      "https://www.iata.org/contentassets/6fea26dd84d24b26a7a1fd5788561d6e/dgr-67-en-2.3.a.pdf",
      "Unofficial source: IATA &mdash; Dangerous Goods Regulations, Table 2.3.A (67th edition, 1 January 2026)"
+    ],
+    [
+     "https://www.kefairport.com/security-check",
+     "Keflavík Airport &mdash; Security check"
     ]
    ],
    "keepSchema": true,
-   "checked": "17 November 2026",
-   "unofficial": false
+   "checked": "24 November 2026",
+   "unofficial": false,
+   "faq": [
+    [
+     "How big can a perfume bottle be at Keflavík security?",
+     "Keflavík Airport allows up to 100 ml per container, all in one transparent bag of up to 1 litre. Bigger bottles go in checked baggage."
+    ]
+   ]
   },
   "power": {
    "answer": "Icelandair allows a maximum of 2 lithium-ion power banks per passenger, each up to 100 Wh, in carry-on baggage only. They cannot be charged on board or stored in the overhead lockers.",
@@ -16012,8 +16347,43 @@
      }
     },
     {
-     "h": "What customs says about bringing alcohol into Bahrain (Gulf Air's home country)",
-     "p": "This is the customs rule for people entering Bahrain, not a rule stated by Gulf Air for its cabin. The Travel Doc customs page for Bahrain allows travellers aged 18 and over 1 litre of spirits and 6 cans of beer, and says the allowance is restricted to non-Muslim travellers. The page names no publisher and shows no date, so confirm the figures with the customs authority before you travel. Unofficial source, read 16 November 2026: Travel Doc customs information page for Bahrain (infopages.traveldoc.aero, undated; it names no publisher). The official customs site could not be read."
+     "h": "What Bahrain Customs says about bringing alcohol into Bahrain (Gulf Air's home country)",
+     "p": "This is the customs rule for people entering Bahrain, not a rule stated by Gulf Air for its cabin. Bahrain Customs Affairs, page \"Duty Free Allowances\", read from an archived copy on 24 November 2026.",
+     "table": {
+      "head": [
+       "Point",
+       "Bahrain Customs"
+      ],
+      "rows": [
+       [
+        "Alcoholic beverages",
+        "3 litres"
+       ],
+       [
+        "Beer",
+        "12 cans"
+       ],
+       [
+        "Age",
+        "Tobacco and alcohol must be in the possession of someone aged 18 or over"
+       ],
+       [
+        "Conditions",
+        "Goods must be personal, not commercial; the traveller must not be a frequent flyer bringing goods in regularly"
+       ],
+       [
+        "Value of personal goods and gifts",
+        "Up to BD 300"
+       ],
+       [
+        "Dutiable goods you do not want to use",
+        "Customs may keep them for up to three months until you leave, at your request"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> any religion-based limit, a rule on alcohol brought by transit passengers, or a penalty. An older undated third-party page gave 1 litre of spirits and 6 beer cans, which does not match this official page."
+     ]
     }
    ],
    "sources": [
@@ -16024,6 +16394,10 @@
     [
      "https://www.iata.org/contentassets/6fea26dd84d24b26a7a1fd5788561d6e/dgr-67-en-2.3.a.pdf",
      "IATA &mdash; Dangerous Goods Regulations, Table 2.3.A (67th edition, 1 January 2026)"
+    ],
+    [
+     "https://www.customs.gov.bh/en/duty-free-purchases",
+     "Bahrain Customs Affairs &mdash; Duty Free Allowances"
     ]
    ],
    "keepSchema": true,
@@ -16561,17 +16935,58 @@
     {
      "h": "What customs says about bringing alcohol into Mexico (Aeromexico's home country)",
      "p": "This is the customs rule for people entering Mexico, not a rule stated by Aeromexico for its cabin. The Mexican customs agency (ANAM) says passengers over 18 may bring up to 3 litres of alcoholic drinks and 6 litres of wine duty-free in their personal luggage, next to 20 packs of cigarettes, 25 cigars or 200 g of tobacco. The separate US$500 goods exemption, for goods beyond personal luggage supported by an invoice or receipt, does not cover alcoholic drinks, manufactured tobacco or fuel beyond the vehicle's tank. Family members arriving together on the same transport can combine the US$500 exemption, and customs staff may set the value if there is no receipt. The page also lists the Heroes Paisanos periods for Mexicans returning for holidays. It does not describe penalties for exceeding the alcohol allowance. Source read: ANAM, Equipaje y franquicia (English). No alcohol penalty is stated."
+    },
+    {
+     "h": "🛂 What Mexico City airport says about bottles at security",
+     "p": "Not from Aeromexico: from the Mexico City International Airport (AICM) pages \"Líquidos, geles y aerosoles\" and its security guide, read on 24 November 2026 (the guide is from 2014, in Spanish).",
+     "table": {
+      "head": [
+       "Question",
+       "AICM rule"
+      ],
+      "rows": [
+       [
+        "Cabin bag liquids",
+        "Only cosmetic or personal-hygiene liquids, gels and aerosols in containers of 100 ml or less, in one resealable bag of up to 1 litre per passenger"
+       ],
+       [
+        "Bigger containers",
+        "Cannot pass the checkpoint even if partly filled; AICM recommends carrying them in checked baggage"
+       ],
+       [
+        "Left at the checkpoint",
+        "Anything you abandon goes to the competent authority"
+       ],
+       [
+        "Exemptions",
+        "Medicines, baby milk and food, and special dietary needs; bottles of alcohol are not listed"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>What this means:</strong> a bottle of spirits you own goes in checked baggage; the AICM pages do not describe a duty-free exception, so ask Aeromexico about sealed duty-free bottles."
+     ]
     }
    ],
    "sources": [
     [
      "https://www.iata.org/contentassets/6fea26dd84d24b26a7a1fd5788561d6e/dgr-67-en-2.3.a.pdf",
      "IATA &mdash; Dangerous Goods Regulations, Table 2.3.A (67th edition, 1 January 2026)"
+    ],
+    [
+     "https://www.aicm.com.mx/pasajeros/tips-para-pasajeros/liquidos-geles-y-aerosoles",
+     "AICM &mdash; Líquidos, geles y aerosoles"
     ]
    ],
    "keepSchema": true,
-   "checked": "18 October 2026",
-   "unofficial": true
+   "checked": "24 November 2026",
+   "unofficial": true,
+   "faq": [
+    [
+     "Can I carry a bottle of tequila in my hand baggage from Mexico City?",
+     "Not through the AICM checkpoint if the container is over 100 ml: AICM allows only cosmetic or hygiene liquids up to 100 ml in the 1-litre bag and recommends checked baggage for larger containers."
+    ]
+   ]
   },
   "perfume": {
    "answer": "Aeromexico's own pages did not open for us, so this follows the guide of its home airport, Mexico City: in the cabin only cosmetic or personal-hygiene liquids, gels and aerosols are allowed, in containers of 100 ml or less (a bigger container is refused even if partly empty), all in one resealable bag of up to 1 litre, one bag per passenger.",
@@ -16778,6 +17193,41 @@
      "list": [
       "<strong>Not on the page:</strong> El Al's own rule. El Al and the airports you use can add stricter limits, so confirm with El Al before you fly."
      ]
+    },
+    {
+     "h": "🇺🇸 What the US Transportation Security Administration says for flights to and from the US",
+     "p": "Not from El Al: from the TSA page \"Liquids, Aerosols, and Gels Rule\" (US Department of Homeland Security), read on 24 November 2026. It applies to screening at US airports, including on El Al's US routes.",
+     "table": {
+      "head": [
+       "Point",
+       "TSA rule"
+      ],
+      "rows": [
+       [
+        "Carry-on liquids",
+        "One quart-size bag of containers of 3.4 oz (100 ml) or less per item; larger containers go in checked baggage"
+       ],
+       [
+        "Exemptions",
+        "Medications, and infant and child nourishments"
+       ],
+       [
+        "Duty free on a connection to the US",
+        "Over 100 ml allowed only if bought internationally, packed by the retailer in a tamper-evident bag showing no tampering, with the original receipt for a purchase made within 48 hours"
+       ],
+       [
+        "TSA recommendation",
+        "Pack liquids over 100 ml in checked baggage even when they are in a sealed bag"
+       ],
+       [
+        "Alarms",
+        "Any liquid that alarms gets extra screening, and may be refused"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>What this means:</strong> for a flight into the US, a duty-free bottle needs its sealed bag, the receipt and a purchase within 48 hours; the safest place for it is the checked bag."
+     ]
     }
    ],
    "faq": [
@@ -16788,16 +17238,24 @@
     [
      "Does El Al allow liquid medicine and baby food over the limit?",
      "The source says in principle the restrictions do not apply to medications, baby foods and special dietary requirements, but to check with your local airport; confirm with El Al."
+    ],
+    [
+     "Can I carry duty-free liquids over 100 ml to the US on El Al?",
+     "The TSA says only in a retailer-sealed tamper-evident bag with the original receipt, bought within 48 hours, on a connecting trip; it recommends putting them in checked baggage anyway."
     ]
    ],
    "sources": [
     [
      "https://www.iata.org/en/youandiata/travelers/baggage/",
      "IATA &mdash; Travel & Baggage"
+    ],
+    [
+     "https://www.tsa.gov/travel/security-screening/liquids-aerosols-gels-rule",
+     "TSA &mdash; Liquids, Aerosols, and Gels Rule"
     ]
    ],
    "keepSchema": true,
-   "checked": "18 October 2026",
+   "checked": "24 November 2026",
    "unofficial": true
   },
   "alcohol": {
@@ -17155,6 +17613,41 @@
      "list": [
       "<strong>Not read:</strong> Arkia's own alcohol limit per person. Ask Arkia for its litre limit and any rule on checked bottles."
      ]
+    },
+    {
+     "h": "🛃 What the Israel Tax Authority says about alcohol when you land in Israel",
+     "p": "Not from Arkia: from the Israel Tax Authority page \"Information for Israeli residents wishing to import goods in personal import\" (gov.il, published 22 October 2025), section on entering Israel after a stay abroad of at least three days, read on 24 November 2026.",
+     "table": {
+      "head": [
+       "Point",
+       "Tax Authority"
+      ],
+      "rows": [
+       [
+        "Alcohol",
+        "1 litre of alcohol exempt from taxes"
+       ],
+       [
+        "Wine",
+        "2 litres exempt"
+       ],
+       [
+        "Other goods",
+        "Up to US$ 200, plus 250 ml of perfume and 250 g of tobacco (one pack)"
+       ],
+       [
+        "Condition",
+        "The exemption applies after a stay abroad of 3 days"
+       ],
+       [
+        "Parcels",
+        "Goods sent by post or freight are taxed by value, and tobacco and alcohol are excluded from the $75 parcel exemption"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>What this means:</strong> on Arkia's flights home to Israel, a bottle above the 1-litre alcohol or 2-litre wine allowance is taxed."
+     ]
     }
    ],
    "faq": [
@@ -17165,16 +17658,24 @@
     [
      "Can I bring alcohol from home in my hand luggage on Arkia?",
      "The IAA easing applies only to duty-free purchases at Ben Gurion, not to products brought from home."
+    ],
+    [
+     "How much alcohol can I bring home to Israel on Arkia?",
+     "The Israel Tax Authority says 1 litre of alcohol and 2 litres of wine are exempt after a stay abroad of at least 3 days, with goods up to US$ 200, 250 ml of perfume and 250 g of tobacco."
     ]
    ],
    "sources": [
     [
      "https://www.iaa.gov.il/en/airports/ben-gurion/securitybgn/",
      "Unofficial source: Israel Airports Authority &mdash; Ben Gurion Airport security, Flying With Liquids"
+    ],
+    [
+     "https://www.gov.il/en/pages/customs-personal-import-general-info",
+     "Israel Tax Authority &mdash; Personal import"
     ]
    ],
    "keepSchema": true,
-   "checked": "22 November 2026",
+   "checked": "24 November 2026",
    "unofficial": false
   },
   "perfume": {
@@ -17724,6 +18225,45 @@
      "list": [
       "<strong>Not on the page:</strong> MEA's own rule. MEA and the airports you use can add stricter limits, so confirm with MEA before you fly."
      ]
+    },
+    {
+     "h": "🇬🇧 What the UK Government says about liquids at UK airports",
+     "p": "Not from MEA (its site is closed to our region and has no archived copy): from the GOV.UK guide \"Hand luggage restrictions at UK airports: liquids\", read on 24 November 2026. It applies at UK airports, where MEA flies to London.",
+     "table": {
+      "head": [
+       "Point",
+       "GOV.UK rule"
+      ],
+      "rows": [
+       [
+        "Containers",
+        "Most UK airports: nothing above 100 ml through security, even part full"
+       ],
+       [
+        "Some airports",
+        "May allow containers up to 2 litres; check your airport"
+       ],
+       [
+        "Bag",
+        "If the airport asks for one: a single transparent resealable bag of a litre or less, about 20 cm x 20 cm, not tied, one per person"
+       ],
+       [
+        "Always allowed up to 2 litres",
+        "Essential medical liquids, special dietary needs, baby food and milk"
+       ],
+       [
+        "Airport or in-flight purchases",
+        "Allowed if sealed in the security bag at purchase with the receipt sealed in and visible, and not opened before your final destination"
+       ],
+       [
+        "Frozen liquids",
+        "Cannot be carried in hand luggage"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>What this means:</strong> check the UK airport and any airport you change planes at, including on the return journey."
+     ]
     }
    ],
    "faq": [
@@ -17734,16 +18274,24 @@
     [
      "Does MEA allow liquid medicine and baby food over the limit?",
      "The source says in principle the restrictions do not apply to medications, baby foods and special dietary requirements, but to check with your local airport; confirm with MEA."
+    ],
+    [
+     "What are the liquid limits on a flight from London with MEA?",
+     "GOV.UK says most UK airports allow containers of 100 ml or less, with exemptions for medical liquids, baby food and sealed duty-free; some airports allow up to 2 litres. Check your airport."
     ]
    ],
    "sources": [
     [
      "https://www.iata.org/en/youandiata/travelers/baggage/",
      "IATA &mdash; Travel & Baggage"
+    ],
+    [
+     "https://www.gov.uk/hand-luggage-restrictions/liquids",
+     "GOV.UK &mdash; Hand luggage restrictions: liquids"
     ]
    ],
    "keepSchema": true,
-   "checked": "18 October 2026",
+   "checked": "24 November 2026",
    "unofficial": true
   },
   "alcohol": {
@@ -17830,17 +18378,54 @@
        ]
       ]
      }
+    },
+    {
+     "h": "🇪🇺 What EU rules say about perfume bought at the airport",
+     "p": "Not from MEA: from the European Union's Your Europe page \"Luggage restrictions\", read on 24 November 2026. It applies when you leave an EU airport on an MEA flight.",
+     "table": {
+      "head": [
+       "Point",
+       "EU rule"
+      ],
+      "rows": [
+       [
+        "Perfume in a cabin bag",
+        "In a container of 100 ml or less, inside a transparent plastic bag of a litre at most; bigger bottles go in checked baggage"
+       ],
+       [
+        "Duty-free perfume",
+        "Allowed in the cabin if the bottle and its receipt stay sealed in the security bag from the shop"
+       ],
+       [
+        "Opening the bag",
+        "Not before your final destination; officers may open it, and on a connection you tell them so it is re-sealed"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>What this means:</strong> perfume you already own over 100 ml goes in the hold; a bottle from the duty-free shop stays in its sealed bag."
+     ]
     }
    ],
    "sources": [
     [
      "https://www.iata.org/contentassets/6fea26dd84d24b26a7a1fd5788561d6e/dgr-67-en-2.3.a.pdf",
      "IATA &mdash; Dangerous Goods Regulations, Table 2.3.A (67th edition, 1 January 2026)"
+    ],
+    [
+     "https://europa.eu/youreurope/citizens/travel/carry/luggage-restrictions/index_en.htm",
+     "Your Europe &mdash; Luggage restrictions"
     ]
    ],
    "keepSchema": true,
-   "checked": "23 November 2026",
-   "unofficial": true
+   "checked": "24 November 2026",
+   "unofficial": true,
+   "faq": [
+    [
+     "Can I take a large duty-free perfume on MEA from an EU airport?",
+     "EU rules say yes while the bottle and receipt stay sealed in the shop's security bag until your final destination. Perfume you bring from home over 100 ml goes in checked baggage."
+    ]
+   ]
   },
   "power": {
    "answer": "MEA's baggage pages blocked our reader (Cloudflare), so this page uses the ICAO rule that took effect on 27 March 2026: at most two power banks per passenger, none recharged during the flight. Check MEA for its watt-hour limit and checked-baggage rule.",
@@ -19360,17 +19945,37 @@
     {
      "h": "What customs says about bringing alcohol into Spain (Air Europa's home country)",
      "p": "This is the customs rule for people entering Spain, not a rule stated by Air Europa for its cabin. The Agencia Tributaria leaflet for travellers arriving from outside the EU allows 1 litre of alcohol and alcoholic drinks above 22% alcohol by volume (or undenatured ethyl alcohol of 80% or more), or 2 litres of drinks of 22% or less, plus 4 litres of still wine and 16 litres of beer, per person. The leaflet says travellers under 17 cannot use these allowances. It also warns that the figures are European Union rules, so a traveller going on to another country should check that country’s own limits. The leaflet separately covers tobacco, pets, cash and cultural property. Source read 16 November 2026: Agencia Tributaria (sede.agenciatributaria.gob.es), leaflet for travellers from non-EU countries (PDF, English and Spanish)."
+    },
+    {
+     "h": "🛍️ Buying a bottle after security on an Air Europa trip",
+     "p": "Not from Air Europa, whose own page we could not read. The EU's Your Europe page (Spanish version, read 24 November 2026) covers flights leaving EU airports such as Madrid and Palma.",
+     "list": [
+      "A bottle from a duty-free shop or an in-flight sale may stay in your cabin bag if it and its receipt remain in the sealed security bag from the till.",
+      "Leave that bag closed until you arrive at your final destination.",
+      "If screening staff open it on a connection, say you are changing planes so they put the bottle in a fresh sealed bag.",
+      "<strong>What this means:</strong> the 100 ml limit does not apply to the sealed duty-free bag, but the 5 l and 70% alcohol limits above still do."
+     ]
     }
    ],
    "sources": [
     [
      "https://www.iata.org/contentassets/6fea26dd84d24b26a7a1fd5788561d6e/dgr-67-en-2.3.a.pdf",
      "IATA &mdash; Dangerous Goods Regulations, Table 2.3.A (67th edition, 1 January 2026)"
+    ],
+    [
+     "https://europa.eu/youreurope/citizens/travel/carry/luggage-restrictions/index_es.htm",
+     "Your Europe &mdash; Luggage restrictions"
     ]
    ],
    "keepSchema": true,
    "checked": "18 October 2026",
-   "unofficial": true
+   "unofficial": true,
+   "faq": [
+    [
+     "Can I carry a duty-free bottle in my hand baggage on Air Europa?",
+     "Under EU rules, yes, while the bottle and receipt stay sealed in the till's security bag. Keep it closed until you land at your final destination."
+    ]
+   ]
   },
   "perfume": {
    "answer": "Air Europa's liquids page returns an error (403), so this follows Aena, the operator of Spain's airports: perfumes, creams and sprays go in the cabin in containers of 100 ml or less, one clear 20 x 20 cm bag per passenger, while the liquid limits do not apply to checked luggage.",

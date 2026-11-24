@@ -36,12 +36,21 @@ module.exports = {
             ["Covered items", "Hair sprays, perfumes, colognes, medicines containing alcohol, aerosols"],
             ["Each article", "Not more than 0.5 kg or 0.5 L"],
             ["All articles together", "Not more than 2 kg or 2 L"] ] },
-          list: ["Security rules limit liquids and aerosols in your cabin bag to 100 ml per container: see the liquids page for easyJet."] }
+          list: ["Security rules limit liquids and aerosols in your cabin bag to 100 ml per container: see the liquids page for easyJet."] },
+        { h: "🛂 What the UK Government says about perfume at UK airports", p: "Not from easyJet: from the GOV.UK guide \"Hand luggage restrictions at UK airports: liquids\", read on 24 November 2026. It applies at UK airports, where most easyJet flights start.",
+          table: { head: ["Question", "GOV.UK rule"], rows: [
+            ["What counts as a liquid", "Perfumes, mascara, lip gloss, sprays such as hairspray and spray deodorant, creams, pastes, gels"],
+            ["Normal limit", "Most airports: containers over 100 ml cannot go through security, even part full"],
+            ["Larger limit", "Some airports allow containers up to 2 litres; check your airport"],
+            ["Bag", "Where required: one transparent resealable bag of a litre or less, about 20 cm x 20 cm, per person"],
+            ["Bought at the airport or on the plane", "Allowed if sealed in the security bag at purchase with the receipt sealed in and visible; do not open it until your final destination"]] },
+          list: ["<strong>What this means:</strong> a perfume over 100 ml bought after security stays in its sealed bag with the receipt; one you already own goes in checked baggage."] }
       ],
       faq: [
-        ["Can I bring perfume on easyJet?", "Yes, within the limits: each article up to 0.5 L or 0.5 kg and 2 L or 2 kg in total. In your cabin bag the 100 ml liquids limit applies."]
+        ["Can I bring perfume on easyJet?", "Yes, within the limits: each article up to 0.5 L or 0.5 kg and 2 L or 2 kg in total. In your cabin bag the 100 ml liquids limit applies."],
+        ["Can I take duty-free perfume over 100 ml from a UK airport?", "The UK Government says yes if it is sealed in the security bag when you buy it, with the receipt sealed in and visible. Do not open the bag until your final destination."]
       ],
-      sources: [[EJ, "easyJet &mdash; Dangerous goods"]]
+      sources: [[EJ, "easyJet &mdash; Dangerous goods"], ["https://www.gov.uk/hand-luggage-restrictions/liquids", "GOV.UK &mdash; Hand luggage restrictions: liquids"]]
     }
   },
   "Virgin Australia": {
@@ -230,12 +239,21 @@ module.exports = {
             ["Container size", "Not more than 5 L"],
             ["Total per person", "5 L"] ] },
           list: ["The page has Carry-on and Checked baggage columns for this item. We could not read which are marked, so check the page before you pack.",
-            "Your destination may limit how much alcohol you can import: see the country rules."] }
+            "Your destination may limit how much alcohol you can import: see the country rules."] },
+        { h: "🛍️ What Manila's airport authority says about bottles bought at the airport", p: "Not from Philippine Airlines: from the Manila International Airport Authority (MIAA) page \"Liquids, Aerosols and Gels\", read from an archived copy on 24 November 2026. It applies to security screening at Manila airport.",
+          table: { head: ["Question", "MIAA rule"], rows: [
+            ["Carry-on liquids", "Containers of 100 ml or less in one transparent resealable bag of 1 litre maximum, one bag per passenger"],
+            ["Larger containers", "Not accepted at the final checkpoint even if partly filled; put them in checked luggage"],
+            ["Bottles bought at the airport or on board", "Exempt when packed in a sealed security tamper-evident bag (STEB) by airport or airline staff"],
+            ["Receipt", "Must be clearly displayed in the bag, and the purchase date must match your travel date(s)"],
+            ["Medicines, baby food, special diets", "Exempt, with extra checks and proof of need"]] },
+          list: ["<strong>What this means:</strong> a bottle of spirits from the duty-free shop is fine in the cabin only in its sealed bag with the same-day receipt visible."] }
       ],
       faq: [
-        ["How much alcohol can I take on Philippine Airlines?", "Alcohol between 24% and 70% in retail packaging, in containers of up to 5 L, 5 L in total per person."]
+        ["How much alcohol can I take on Philippine Airlines?", "Alcohol between 24% and 70% in retail packaging, in containers of up to 5 L, 5 L in total per person."],
+        ["Can I carry a duty-free bottle through Manila security?", "Manila's airport authority says yes if staff packed it in a sealed tamper-evident bag with the receipt visible and the purchase date matching your travel date."]
       ],
-      sources: [[PR, "Philippine Airlines &mdash; Restricted items reminders"]]
+      sources: [[PR, "Philippine Airlines &mdash; Restricted items reminders"], ["https://www.miaa.gov.ph/index.php/faq/3065-liquids-aerosols-and-gels", "Manila International Airport Authority &mdash; Liquids, Aerosols and Gels"]]
     },
     perfume: {
       ttl: "Philippine Airlines Perfume & Aerosol Rules: 2 L Total, 0.5 L per Item",

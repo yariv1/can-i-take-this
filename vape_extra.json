@@ -2583,6 +2583,41 @@
  "CU": {
   "sections": [
    {
+    "h": "🛃 What Cuban Customs and the health ministry resolution say about e-cigarettes",
+    "p": "Two reliable secondary sources, both read on 24 November 2026: the customs-advice site Aduaneando en Cuba (page updated 17 January 2026), which quotes Resolution 23 of 2020 of the Ministry of Public Health, and d-cuba's report of a clarification by the General Customs Service of 23 October 2023. Neither is a customs page itself, and we did not read the resolution.",
+    "table": {
+     "head": [
+      "Point",
+      "What they report"
+     ],
+     "rows": [
+      [
+       "Rule",
+       "Resolution 23/2020 (MINSAP), Art. 2: it is prohibited to import, have, transport or export e-cigarettes or other items that encourage drug use"
+      ],
+      [
+       "Scope",
+       "Customs says the ban applies to non-commercial import as well, and whether use is medicinal or recreational"
+      ],
+      [
+       "Medical prescription",
+       "The resolution does not exempt people who carry a prescription"
+      ],
+      [
+       "Why",
+       "Customs says e-cigarettes can hide cannabis extracts and calls its policy zero tolerance"
+      ],
+      [
+       "Seizures",
+       "Customs of Villa Clara reported more detections at the border in recent months"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>What this means:</strong> do not pack a vape for Cuba. These reports describe a ban on import by any route; they do not give a tobacco allowance."
+    ]
+   },
+   {
     "h": "📰 What a secondary profile reports about e-cigarettes in Cuba",
     "p": "Less reliable source (secondary profile): the Global State of Tobacco Harm Reduction (GSTHR) country page, updated 16 November 2026 and read on 22 November 2026. It compiles other sources and is not a customs page. The official customs rule for travellers could not be read, so treat this as background and confirm with customs.",
     "table": {
@@ -2606,7 +2641,7 @@
      ]
     },
     "list": [
-     "<strong>Not read:</strong> the text of Resolution 23/2020 and any aduana.gob.cu page that names e-cigarettes. The press report is secondary; the two sources do not agree on whether a specific rule exists."
+     "<strong>Not read:</strong> the text of Resolution 23/2020 itself and any aduana.gob.cu page that names e-cigarettes."
     ]
    },
    {
@@ -2640,6 +2675,10 @@
   "faq": [
    [
     "Can I bring a vape to Cuba?",
+    "No, according to Cuban customs as reported: Resolution 23/2020 of the Ministry of Public Health prohibits importing e-cigarettes, and customs says this applies to non-commercial imports and to people with a medical prescription."
+   ],
+   [
+    "Can I bring a vape to Cuba?",
     "Cuban customs, as reported by Directorio Cubano, cites Ministry of Health Resolution 23 of 2020 on non-commercial imports of e-cigarettes, with no exception for prescriptions. GSTHR says references suggest personal import is not allowed. Do not pack a vape for Cuba without written confirmation."
    ],
    [
@@ -2652,6 +2691,14 @@
    ]
   ],
   "src": [
+   [
+    "https://aduaneandoencuba.com/2023/10/24/la-importacion-de-cigarrillos-electronicos/",
+    "Aduaneando en Cuba: customs advice site on e-cigarette import (updated 17 January 2026)"
+   ],
+   [
+    "https://d-cuba.com/actualidad/aduana-de-cuba-aclara-leyes-sobre-importacion-de-cigarrillos-electronicos",
+    "d-cuba: General Customs Service clarification on e-cigarettes (23 October 2023)"
+   ],
    [
     "https://www.directoriocubano.info/?p=99663",
     "Less reliable source (press): Directorio Cubano - customs position on e-cigarettes in Cuba"
@@ -3260,6 +3307,41 @@
  "IT": {
   "sections": [
    {
+    "h": "💶 What the Italian customs agency says about tax on vape liquid",
+    "p": "From the Agenzia delle Dogane e dei Monopoli (ADM) directorial determination Prot. 74240 of 29 January 2026 (in Italian), read on 24 November 2026. It sets the consumption tax on inhalation liquids; it is not a traveller allowance.",
+    "table": {
+     "head": [
+      "Point",
+      "What ADM says"
+     ],
+     "rows": [
+      [
+       "Tax from 1 January 2026",
+       "Liquid inhalation products without combustion, with or without nicotine, pay a consumption tax of 18% (with nicotine) and 13% (without) of the excise on the equivalent number of cigarettes"
+      ],
+      [
+       "Rate from 1 February 2026",
+       "EUR 0.172623 per ml for liquids with nicotine; EUR 0.124672 per ml for liquids without nicotine"
+      ],
+      [
+       "Equivalence",
+       "1 ml of inhalation liquid counts as 5.63 conventional cigarettes (determination of 20 January 2015)"
+      ],
+      [
+       "Flavourings",
+       "Nicotine-free flavouring products for these liquids are taxed at the without-nicotine rate"
+      ],
+      [
+       "Exempt",
+       "Products authorised as medicines"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>What this means:</strong> Italy taxes vape liquid by the millilitre. The determination says nothing about how much a traveller may carry tax-free, so ask Italian customs before you bring more than a device and a few pods."
+    ]
+   },
+   {
     "h": "🛃 What the Italian customs traveller card says about tobacco",
     "p": "From the Agenzia delle Dogane e dei Monopoli (ADM) \"Carta doganale del viaggiatore\", July 2025 edition, read in full on 22 November 2026. The card lists tobacco and alcohol allowances. It does not mention e-cigarettes, vape liquid or nicotine.",
     "table": {
@@ -3336,6 +3418,10 @@
     "The July 2025 ADM traveller card gives limits for cigarettes, cigarillos, cigars and smoking tobacco only. It does not name e-cigarettes or liquid, so check with Italian customs."
    ],
    [
+    "Is vape liquid taxed in Italy?",
+    "Yes. ADM sets a consumption tax of EUR 0.172623 per ml on liquids with nicotine and EUR 0.124672 per ml on liquids without nicotine from 1 February 2026. It does not set a traveller allowance in that determination."
+   ],
+   [
     "How common is vaping in Italy?",
     "Adults: 1.7% of adults currently use e-cigarettes in the survey \"Survey by DOXA/ISS, 2022\" (national, ages 15+). Adolescents: 13.0% of adolescents currently use e-cigarettes (boys 15.0%, girls 12.0%) in the survey \"European School Survey Project on Alcohol and Other Drugs, 2019\" (national, ages 15-16)."
    ],
@@ -3345,6 +3431,10 @@
    ]
   ],
   "src": [
+   [
+    "https://www.adm.gov.it/portale/documents/20182/242317381/DET+%E2%80%93+74240-2026.pdf/92ecf170-16f0-d012-d0b6-f4630f192dca?t=1769851126925",
+    "ADM: directorial determination 74240 of 29 January 2026 on consumption tax for inhalation liquids"
+   ],
    [
     "https://www.adm.gov.it/portale/documents/20182/909438/Carta+doganale+del+viaggiatore_luglio+2025.pdf",
     "ADM - Carta doganale del viaggiatore, July 2025"
@@ -3954,6 +4044,41 @@
  "MT": {
   "sections": [
    {
+    "h": "⚖️ What Maltese regulations say about e-cigarettes",
+    "p": "Reliable secondary source: the Tobacco Control Laws database (Legal Consortium of the Campaign for Tobacco-Free Kids), page \"Main Policies - E-Cigarettes\" for Malta, last updated 22 April 2024, read from an archived copy on 24 November 2026. It quotes Maltese legal notices and is not a customs page.",
+    "table": {
+     "head": [
+      "Point",
+      "What the database says"
+     ],
+     "rows": [
+      [
+       "Nicotine strength",
+       "Liquid must not exceed 20 mg/ml (L.N. 67 of 2016, reg. 18(3)(b))"
+      ],
+      [
+       "Refill containers",
+       "Nicotine-containing refills must not exceed 10 ml; disposable cartridges must not exceed 2 ml"
+      ],
+      [
+       "Device safety",
+       "Child- and tamper-proof, protected against breakage and leakage, refilling without leakage"
+      ],
+      [
+       "Use in public places",
+       "Same restrictions as smoking: banned in public places except designated areas, on public transport and in private vehicles with a child under 16"
+      ],
+      [
+       "Online sales",
+       "Cross-border distance sales to consumers in Malta are prohibited"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>What this means:</strong> a refill bigger than 10 ml or stronger than 20 mg/ml does not meet Maltese product rules; these are sale rules, not a traveller allowance."
+    ]
+   },
+   {
     "h": "🛃 What Malta Customs says about tobacco allowances",
     "p": "From the Malta Customs page \"Accompanied Excise Goods From EU or From Third Countries\" (updated 18 December 2020, page last updated 22 January 2026, read 21 November 2026). The page covers tobacco and alcohol and does not name e-cigarettes or vape liquid.",
     "table": {
@@ -4022,6 +4147,10 @@
     "The Malta Customs page on accompanied excise goods lists only tobacco and alcohol limits and does not name e-cigarette liquid."
    ],
    [
+    "What are the nicotine and bottle limits for vapes in Malta?",
+    "Maltese regulations, as quoted by a legal database, cap nicotine liquid at 20 mg/ml and nicotine refill containers at 10 ml, with disposable cartridges at 2 ml. These are product rules for sale, not a traveller allowance."
+   ],
+   [
     "How common is vaping in Malta?",
     "Adults: 1.0% of adults currently use e-cigarettes in the survey \"Eurobarometer, 2020\" (national, ages 15+). Adolescents: 7.1% of adolescents currently use e-cigarettes (boys 7.7%, girls 6.5%) in the survey \"European School Survey Project on Alcohol and Other Drugs, 2019\" (national, ages 15-16)."
    ],
@@ -4031,6 +4160,10 @@
    ]
   ],
   "src": [
+   [
+    "https://www.tobaccocontrollaws.org/legislation/malta/e-cigarettes/main-policies",
+    "Tobacco Control Laws: E-cigarettes in Malta (Legal Consortium)"
+   ],
    [
     "https://mtca.gov.mt/customs/individual/accompanied-excise-goods-from-eu-or-from-third-countries",
     "Malta Customs - Accompanied excise goods from the EU or from third countries"
@@ -4206,6 +4339,37 @@
  "OM": {
   "sections": [
    {
+    "h": "⚖️ What Omani decrees say about importing e-cigarettes",
+    "p": "Reliable secondary source: the Tobacco Control Laws database (Legal Consortium of the Campaign for Tobacco-Free Kids), page \"Main Policies - E-Cigarettes\" for Oman, last updated 27 August 2024, read from an archived copy on 24 November 2026. It quotes two Omani decrees and is not a customs page.",
+    "table": {
+     "head": [
+      "Point",
+      "What the database says"
+     ],
+     "rows": [
+      [
+       "Import",
+       "Ministerial Decree No. 327/2015 (Art. 1) bans the import of e-cigarettes and e-shisha"
+      ],
+      [
+       "Trade",
+       "Decree No. 698/2015 (Arts. 1, 2) bans their trade"
+      ],
+      [
+       "Use in public places",
+       "No law addresses it, so the database treats it as allowed"
+      ],
+      [
+       "Advertising",
+       "No law addresses it, so the database treats it as allowed"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>What this means:</strong> the decrees ban import in general, with no traveller exception stated; do not rely on carrying a device in. The decrees themselves were not read."
+    ]
+   },
+   {
     "h": "📰 What a secondary profile reports about e-cigarettes in Oman",
     "p": "Less reliable source (secondary profile): the Global State of Tobacco Harm Reduction (GSTHR) country page, updated 16 November 2026 and read on 22 November 2026. It compiles other sources and is not a customs page. The official customs rule for travellers could not be read, so treat this as background and confirm with customs.",
     "table": {
@@ -4262,6 +4426,10 @@
     "A secondary profile (GSTHR, January 2025 data) describes vapes as banned in Oman, including import, sale and use. Do not pack one without written confirmation from Omani customs."
    ],
    [
+    "Is importing a vape into Oman banned?",
+    "A legal database citing Ministerial Decree 327/2015 says importing e-cigarettes and e-shisha is banned, and Decree 698/2015 bans trading them. It states no exception for a traveller's own device, so ask Omani customs before you fly."
+   ],
+   [
     "How common is vaping in Oman?",
     "Adults: 5.3% of adults currently use e-cigarettes (men 8.9%, women 2.3%) in the survey \"STEPS Survey, 2017\" (national, ages 15+)."
    ],
@@ -4271,6 +4439,10 @@
    ]
   ],
   "src": [
+   [
+    "https://www.tobaccocontrollaws.org/legislation/oman/e-cigarettes/main-policies",
+    "Tobacco Control Laws: E-cigarettes in Oman (Legal Consortium)"
+   ],
    [
     "https://gsthr.org/countries/profile/omn/e_cigarettes/",
     "Less reliable source (secondary profile): Global State of Tobacco Harm Reduction - e-cigarettes in Oman"
@@ -4624,6 +4796,37 @@
  "RU": {
   "sections": [
    {
+    "h": "🛃 What Russian Customs said about vapes and tobacco for travellers",
+    "p": "From the press service of the Federal Customs Service of Russia (FTS), notice of 5 October 2022 on the changed rules for importing goods for personal use into the Eurasian Economic Union (EAEU), as published by the customs news site Alta-Soft and read on 24 November 2026. It is an older notice: check the current rule before you travel.",
+    "table": {
+     "head": [
+      "Point",
+      "What FTS said"
+     ],
+     "rows": [
+      [
+       "E-cigarette sticks",
+       "From 8 October 2022 individuals may carry 200 sticks for electronic cigarettes that are officially on the tobacco products list"
+      ],
+      [
+       "Other tobacco",
+       "Unchanged: 200 cigarettes, 50 cigars or cigarillos, 250 g of tobacco; anything above the norm is banned"
+      ],
+      [
+       "Age",
+       "18 in Russia, Belarus, Kyrgyzstan and Armenia; 21 in Kazakhstan"
+      ],
+      [
+       "Legal basis",
+       "EAEU Council decision of 19 August 2022 No. 123 amending decision No. 107 of 20 December 2017"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>What this means:</strong> the notice names e-cigarette sticks, not vape liquid or devices, so a refillable vape and its liquid are not covered by the figure; ask Russian customs."
+    ]
+   },
+   {
     "h": "📰 What a secondary profile reports about e-cigarettes in Russia",
     "p": "Less reliable source (secondary profile): the Global State of Tobacco Harm Reduction (GSTHR) country page, updated 16 November 2026 and read on 22 November 2026. It compiles other sources and is not a customs page. The official customs rule for travellers could not be read, so treat this as background and confirm with customs.",
     "table": {
@@ -4700,6 +4903,10 @@
     "A secondary profile (GSTHR) says e-cigarettes are permitted in Russia with a 20 mg/ml nicotine cap and a full advertising ban. It gives no traveller allowance, so check Russian customs."
    ],
    [
+    "How many e-cigarette sticks can I bring into Russia?",
+    "The Federal Customs Service said in 2022 that individuals may carry 200 sticks for electronic cigarettes officially on the tobacco products list, with 200 cigarettes, 50 cigars or 250 g of tobacco as the other norms. Anything above the norm is banned."
+   ],
+   [
     "How common is vaping in Russia?",
     "Adults: 4.4% of adults currently use e-cigarettes (men 5.2%, women 3.8%) in the survey \"Selective monitoring of the health of the population survey (Rosstat), 2024\" (national, ages 15+). Adolescents: 16.7% of adolescents currently use e-cigarettes (boys 15.8%, girls 17.4%) in the survey \"Global Youth Tobacco Survey, 2021\" (national, ages 13-15)."
    ],
@@ -4709,6 +4916,10 @@
    ]
   ],
   "src": [
+   [
+    "https://www.alta.ru/external_news/93929/",
+    "Alta-Soft: Federal Customs Service of Russia notice on personal-use import rules (5 October 2022)"
+   ],
    [
     "https://gsthr.org/countries/profile/rus/e_cigarettes/",
     "Less reliable source (secondary profile): Global State of Tobacco Harm Reduction - e-cigarettes in Russia"
@@ -4794,6 +5005,37 @@
  "SC": {
   "sections": [
    {
+    "h": "🛃 What Seychelles International Airport says about tobacco allowances",
+    "p": "From the Seychelles International Airport page \"Customs: duty free allowances\" (airport operator, not a customs agency), read on 24 November 2026. It cites the Customs Management (Passenger Allowance) (Amendment) Regulations 2022 (SI 23 of 2022).",
+    "table": {
+     "head": [
+      "Point",
+      "What the airport page says"
+     ],
+     "rows": [
+      [
+       "Tobacco, passengers over 18",
+       "250 g of tobacco product or 200 cigarettes, including cigars, cheroots, snuff, smoking and chewing tobacco"
+      ],
+      [
+       "Vapes and e-liquid",
+       "Not listed"
+      ],
+      [
+       "Other goods",
+       "SCR 15,000 including one tablet, phone or laptop; SCR 3,000 for under-18s"
+      ],
+      [
+       "Excess",
+       "Taxes payable on arrival, calculated from receipts or customs value"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>What this means:</strong> the allowance names tobacco products only, so a vape and its liquid are not covered by it; ask Seychelles customs before you fly."
+    ]
+   },
+   {
     "h": "📰 What a secondary profile reports about e-cigarettes in Seychelles",
     "p": "Less reliable source (secondary profile): the Global State of Tobacco Harm Reduction (GSTHR) country page, updated 16 November 2026 and read on 22 November 2026. It compiles other sources and is not a customs page. The official customs rule for travellers could not be read, so treat this as background and confirm with customs.",
     "table": {
@@ -4858,6 +5100,10 @@
     "A secondary profile (GSTHR) says e-cigarettes are banned in Seychelles, including import, and that personal-use import is reportedly not allowed (unverified). Do not pack a vape without checking with the authorities."
    ],
    [
+    "What tobacco can I bring to Seychelles?",
+    "Seychelles International Airport lists 250 g of tobacco product or 200 cigarettes for passengers over 18. It does not mention vapes or e-liquid."
+   ],
+   [
     "How common is vaping in Seychelles?",
     "Adults: 7.3% of adults currently use e-cigarettes (men 10.0%, women 4.7%) in the survey \"The Seychelles Heart Study V, 2023\" (national, ages 18-74)."
    ],
@@ -4867,6 +5113,10 @@
    ]
   ],
   "src": [
+   [
+    "https://seychellesairports.sc/pre-flight/customs",
+    "Seychelles International Airport: Customs, duty free allowances"
+   ],
    [
     "https://gsthr.org/countries/profile/syc/e_cigarettes/",
     "Less reliable source (secondary profile): Global State of Tobacco Harm Reduction - e-cigarettes in Seychelles"
@@ -5961,6 +6211,33 @@
  "NG": {
   "sections": [
    {
+    "h": "⚖️ What Nigerian law says about e-cigarettes",
+    "p": "Reliable secondary source: the Tobacco Control Laws database (Legal Consortium of the Campaign for Tobacco-Free Kids), page \"Main Policies - E-Cigarettes\" for Nigeria, last updated 7 March 2025, read from an archived copy on 24 November 2026. It is not a customs page.",
+    "table": {
+     "head": [
+      "Point",
+      "What the database says"
+     ],
+     "rows": [
+      [
+       "Sale",
+       "Not regulated, so allowed"
+      ],
+      [
+       "Use in public places",
+       "No law addresses it, so the database treats it as allowed"
+      ],
+      [
+       "Advertising",
+       "No general law; the National Film and Video Censors Board Regulations 2024 ban depicting or promoting e-cigarettes in films, music videos and skits"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>What this means:</strong> no Nigerian rule stopping a traveller from carrying a vape was found in this source; the Customs Service decides at the border."
+    ]
+   },
+   {
     "h": "📰 What a secondary profile reports about e-cigarettes in Nigeria",
     "p": "Less reliable source (secondary profile): the Global State of Tobacco Harm Reduction (GSTHR) country page, updated 16 November 2026 and read on 22 November 2026. It compiles other sources and is not a customs page. The official customs rule for travellers could not be read, so treat this as background and confirm with customs.",
     "table": {
@@ -5996,9 +6273,17 @@
    [
     "Can I bring a vape to Nigeria?",
     "A secondary profile (GSTHR) reports no specific e-cigarette rules in Nigeria and says vapes are on sale, but it gives no traveller allowance. Check with Nigeria Customs."
+   ],
+   [
+    "Are vapes legal in Nigeria?",
+    "A legal database says the sale of e-cigarettes is not regulated in Nigeria and use in public places is not addressed by law, but film regulations of 2024 ban depicting or promoting them. It states no import rule for travellers."
    ]
   ],
   "src": [
+   [
+    "https://www.tobaccocontrollaws.org/legislation/nigeria/e-cigarettes/main-policies",
+    "Tobacco Control Laws: E-cigarettes in Nigeria (Legal Consortium)"
+   ],
    [
     "https://gsthr.org/countries/profile/nga/e_cigarettes/",
     "Less reliable source (secondary profile): Global State of Tobacco Harm Reduction - e-cigarettes in Nigeria"
@@ -6008,6 +6293,41 @@
  },
  "CR": {
   "sections": [
+   {
+    "h": "🏥 What Costa Rica's Ministry of Health says about vapes",
+    "p": "From the Costa Rica Ministry of Health news item \"Listo el reglamento que regulará el uso de los vapeadores en el país\" of 8 August 2024 (read from an archived copy on 24 November 2026). It describes the regulation under Law 10,066 published in La Gaceta No. 146, not a customs rule for travellers.",
+    "table": {
+     "head": [
+      "Point",
+      "What the Ministry says"
+     ],
+     "rows": [
+      [
+       "What is regulated",
+       "Electronic nicotine delivery systems, similar systems without nicotine, heated-tobacco devices, their liquid, accessories and complementary goods"
+      ],
+      [
+       "Where use is banned",
+       "Health facilities, workplaces and their car parks, public and private schools, shopping centres, casinos, nightclubs, bars, restaurants, hotels, sports venues, event venues, lifts and children's leisure centres, among others"
+      ],
+      [
+       "Signs",
+       "Banned places must show the message \"PROHIBIDO FUMAR/VAPEAR\""
+      ],
+      [
+       "Sales to minors",
+       "Banned"
+      ],
+      [
+       "Start",
+       "In force on publication; 3 to 6 months to comply with some provisions"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>What this means:</strong> the item does not ban importing a device or give a traveller allowance; where you may vape is tightly limited, so check the rules before you use it."
+    ]
+   },
    {
     "h": "📰 What a secondary profile reports about e-cigarettes in Costa Rica",
     "p": "Less reliable source (secondary profile): the Global State of Tobacco Harm Reduction (GSTHR) country page, updated 16 November 2026 and read on 22 November 2026. It compiles other sources and is not a customs page. The official customs rule for travellers could not be read, so treat this as background and confirm with customs.",
@@ -6044,9 +6364,17 @@
    [
     "Is vaping legal in Costa Rica?",
     "A secondary profile (GSTHR) says e-cigarettes are legal in Costa Rica with a minimum age of 18 and a ban on use in public places. It gives no traveller allowance, so check Costa Rican customs."
+   ],
+   [
+    "Where can I vape in Costa Rica?",
+    "The Ministry of Health regulation under Law 10,066 bans use in health centres, workplaces, schools, shopping centres, bars, restaurants, hotels, sports venues, lifts and similar places, and requires \"PROHIBIDO FUMAR/VAPEAR\" signs."
    ]
   ],
   "src": [
+   [
+    "https://www.ministeriodesalud.go.cr/index.php/prensa/61-noticias-2024/1922-listo-el-reglamento-que-regulara-el-uso-de-los-vapeadores-en-el-pais",
+    "Costa Rica Ministry of Health: regulation of vapes under Law 10,066 (8 August 2024)"
+   ],
    [
     "https://gsthr.org/countries/profile/cri/e_cigarettes/",
     "Less reliable source (secondary profile): Global State of Tobacco Harm Reduction - e-cigarettes in Costa Rica"
@@ -6056,6 +6384,33 @@
  },
  "ET": {
   "sections": [
+   {
+    "h": "⚖️ What Ethiopian law says about e-cigarettes",
+    "p": "Reliable secondary source: the Tobacco Control Laws database (Legal Consortium of the Campaign for Tobacco-Free Kids), page \"Main Policies - E-Cigarettes\" for Ethiopia, last updated 7 March 2022, read from an archived copy on 24 November 2026. It quotes Ethiopian proclamations and is not a customs page.",
+    "table": {
+     "head": [
+      "Point",
+      "What the database says"
+     ],
+     "rows": [
+      [
+       "Ban",
+       "Food and Medicine Administration Proclamation No. 1112/2019, Sec. 46(2), bans manufacture, wholesale, distribution, sale or offer for sale, and import to trade of any e-cigarette or related technology product"
+      ],
+      [
+       "Use in public places",
+       "No law addresses it, so the database treats it as allowed"
+      ],
+      [
+       "Advertising",
+       "Banned under Advertisement Proclamation No. 759/2012, Art. 25(1)(f)"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>What this means:</strong> the wording bans importing to trade; it does not state a rule for one device in a traveller's bag, so confiscation is possible and customs decides. The proclamation itself was not read."
+    ]
+   },
    {
     "h": "📰 What a secondary profile reports about e-cigarettes in Ethiopia",
     "p": "Less reliable source (secondary profile): the Global State of Tobacco Harm Reduction (GSTHR) country page, updated 16 November 2026 and read on 22 November 2026. It compiles other sources and is not a customs page. The official customs rule for travellers could not be read, so treat this as background and confirm with customs.",
@@ -6096,9 +6451,17 @@
    [
     "Can I bring a vape to Ethiopia?",
     "A secondary profile (GSTHR) says vaping is banned by law in Ethiopia, including import for trade. It does not say how a personal device is treated, so check with Ethiopian customs before you pack one."
+   ],
+   [
+    "Is importing a vape into Ethiopia banned?",
+    "Ethiopian Proclamation 1112/2019, as quoted by a legal database, bans import to trade of e-cigarettes. It does not say what happens to one device a traveller carries, so ask Ethiopian customs before you fly."
    ]
   ],
   "src": [
+   [
+    "https://www.tobaccocontrollaws.org/legislation/ethiopia/e-cigarettes/main-policies",
+    "Tobacco Control Laws: E-cigarettes in Ethiopia (Legal Consortium)"
+   ],
    [
     "https://gsthr.org/countries/profile/eth/e_cigarettes/",
     "Less reliable source (secondary profile): Global State of Tobacco Harm Reduction - e-cigarettes in Ethiopia"
@@ -6236,6 +6599,37 @@
  "BG": {
   "sections": [
    {
+    "h": "🛃 What the Bulgarian Customs Agency says",
+    "p": "From the Customs Agency (Agentsiya Mitnitsi) traveller page \"Goods in personal luggage\" (customs.bg, last updated 21 November 2022, read from an archived copy on 24 November 2026) and an Agency press release of 8 September 2026 reported by the Bulgarian news agency BTA.",
+    "table": {
+     "head": [
+      "Point",
+      "What the Customs Agency says"
+     ],
+     "rows": [
+      [
+       "Tobacco allowance for adults over 17",
+       "200 cigarettes by air (40 other travellers), 100 cigarillos (20), 50 cigars (10) or 250 g of smoking tobacco (50 g); e-liquid and vapes are not listed"
+      ],
+      [
+       "Value limit",
+       "EUR 430 for air and sea travellers, EUR 300 at land borders, for non-commercial goods"
+      ],
+      [
+       "E-cigarette liquid",
+       "Counts as a tobacco product with or without nicotine; excise of EUR 0.28 per millilitre, planned to reach EUR 0.34 by 2028"
+      ],
+      [
+       "Transport",
+       "Excise goods follow a special regime; the press release describes unstamped liquid seized from parcels"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>What this means:</strong> the Agency gives no e-liquid allowance for travellers, so a few bottles for your own use are a matter to ask customs about; large quantities without excise stamps are seized."
+    ]
+   },
+   {
     "h": "📰 What a secondary profile reports about e-cigarettes in Bulgaria",
     "p": "Less reliable source (secondary profile): the Global State of Tobacco Harm Reduction (GSTHR) country page, updated 16 November 2026 and read on 22 November 2026. It compiles other sources and is not a customs page. The official customs rule for travellers could not be read, so treat this as background and confirm with customs.",
     "table": {
@@ -6259,7 +6653,7 @@
      ]
     },
     "list": [
-     "<strong>Not read:</strong> the Bulgarian customs traveller allowance for e-liquid. The customs.bg pages could not be opened."
+     "<strong>Not found:</strong> a Bulgarian traveller allowance for e-liquid or vape devices on the customs pages."
     ]
    }
   ],
@@ -6267,9 +6661,21 @@
    [
     "Can I bring a vape to Bulgaria?",
     "A secondary profile (GSTHR) says e-cigarettes, including their import, are allowed in Bulgaria with a 20 mg/ml nicotine cap and a 10 ml tank limit. It gives no traveller allowance, so check Bulgarian customs."
+   ],
+   [
+    "Does Bulgarian customs treat vape liquid as tobacco?",
+    "Yes. The Customs Agency says e-cigarette liquid, with or without nicotine, is a tobacco product with excise of EUR 0.28 per millilitre. Its traveller page lists only conventional tobacco allowances."
    ]
   ],
   "src": [
+   [
+    "https://customs.bg/wps/portal/agency/home/info-citizens/info-traveling/goods-in-personal-luggage",
+    "Customs Agency (Bulgaria): Goods in personal luggage"
+   ],
+   [
+    "https://www.bta.bg/bg/news/bulgaria/1199784-golyamo-kolichestvo-technosti-za-elektronni-tsigari-otkriha-mitnicheski-sluzhite",
+    "BTA: Customs Agency press release on e-liquid seized in parcels (8 September 2026)"
+   ],
    [
     "https://gsthr.org/countries/profile/bgr/e_cigarettes/",
     "Less reliable source (secondary profile): Global State of Tobacco Harm Reduction - e-cigarettes in Bulgaria"

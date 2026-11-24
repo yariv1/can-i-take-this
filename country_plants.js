@@ -32,19 +32,19 @@ function build(c) {
   const lead = 'Entering ' + cn + ' from a non-EU country, plants, plant products and seeds need a phytosanitary certificate; only fruits of pineapple, coconut, durian, banana or date are exempt.';
   const rows = [
     ['Plants for planting, cut flowers, other plants and plant products', 'Prohibited in personal luggage unless a phytosanitary certificate accompanies them'],
-    ['Seeds for non-commercial use', 'Only allowed with a phytosanitary certificate (a permit from the EU or a certificate issued by the country of origin)'],
-    ['Fruit and vegetables', 'Phytosanitary certificate needed, except fruits of pineapple, coconut, durian, banana or date; Your Europe also says you can bring a limited quantity of fruit and vegetables, without giving an amount']
+    ['Seeds for non-commercial use', 'Only with a phytosanitary certificate from the country of origin or an EU permit'],
+    ['Fruit and vegetables', 'Certificate needed, except pineapple, coconut, durian, banana and date; Your Europe mentions a limited quantity but gives no amount']
   ];
   const faq = [
-    ['Can I bring seeds into ' + cn + '?', 'From a non-EU country, seeds for non-commercial purposes are only allowed into the EU when accompanied by a phytosanitary certificate, according to the European Commission.'],
-    ['Can I bring plants into ' + cn + ' from outside the EU?', 'Not in your luggage unless a phytosanitary certificate accompanies them: the Commission says it is prohibited to introduce plants, plant products and other objects without one, including plants to be planted, fruits, vegetables and cut flowers.'],
-    ['Do I need a certificate for fruit in ' + cn + '?', 'From outside the EU, fruits of pineapple, coconut, durian, banana or date need no phytosanitary certificate. Other fruit does, although Your Europe also says you can bring a limited quantity of fruit and vegetables and does not state an amount.']
+    ['Can I bring seeds into ' + cn + '?', 'Only with a phytosanitary certificate, says the European Commission.'],
+    ['Can I bring plants into ' + cn + ' from outside the EU?', 'Not without a phytosanitary certificate, says the Commission; this covers plants to be planted, fruit, vegetables and cut flowers.'],
+    ['Do I need a certificate for fruit in ' + cn + '?', 'Yes, except pineapple, coconut, durian, banana and date; the table above has the limited-quantity note.']
   ];
   const html = '<div class="bd-wrap">' + CSS + '<p class="bd-lead"><strong>' + esc(lead) + '</strong></p>' +
-    '<section class="bd-sec"><h2>🌱 Plants and seeds: what the EU says for ' + esc(cn) + '</h2><p>' + esc(cn) + ' applies the EU plant-health rules. These are the official statements.</p>' + table({ head: ['Item', 'Official EU rule'], rows }) +
+    '<section class="bd-sec"><h2>🌱 Plants and seeds: what the EU says for ' + esc(cn) + '</h2><p>' + esc(cn) + ' applies the EU plant-health rules.</p>' + table({ head: ['Item', 'Official EU rule'], rows }) +
     '<ul><li>The certificate comes from the plant protection authority of the country you bring the plants from, and it also applies to bulbs, cuttings and seeds sent by post.</li></ul></section>' +
     '<section class="bd-faq"><h2>❓ Quick answers</h2>' + faq.map(q => '<h3>' + esc(q[0]) + '</h3><p>' + esc(q[1]) + '</p>').join('') + '</section>' +
-    '<p class="bd-chk">Read ' + READ + '. This is the EU-wide rule that ' + esc(cn) + ' applies; ask the plant health or customs authority of ' + esc(cn) + ' before you bring plants or seeds.</p>' +
+    '<p class="bd-chk">Read ' + READ + '. Ask the plant health or customs authority of ' + esc(cn) + ' before you bring plants or seeds.</p>' +
     '<div class="bd-src"><div class="h">✓ Official sources</div>' + SOURCES.map(s => '<a href="' + s[0] + '" target="_blank" rel="noopener noreferrer">' + s[1] + '</a>').join('') + '</div></div>';
   const ttl = cn + ' Plants & Seeds 2026: Certificate Required';
   const desc = 'Can you bring seeds or plants into ' + cn + '? From outside the EU you need a phytosanitary certificate; fruits like banana or pineapple are exempt.';
