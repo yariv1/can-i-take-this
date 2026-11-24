@@ -1150,3 +1150,40 @@ No GSC requests made yet.
 - https://canitakethis.co/country/mauritius/cash/
 - https://canitakethis.co/country/russia/alcohol/
 - https://canitakethis.co/country/russia/tobacco/
+
+## Deploy 783b3bb16 (2026-11-25)
+No GSC requests made yet.
+- https://canitakethis.co/airline/austrian/alcohol/
+- https://canitakethis.co/airline/indigo/medication/
+- https://canitakethis.co/airline/swiss/perfume-aerosols/
+- https://canitakethis.co/airline/vueling/power-bank/
+- https://canitakethis.co/country/austria/plants-seeds/
+- https://canitakethis.co/country/belgium/plants-seeds/
+- https://canitakethis.co/country/bulgaria/plants-seeds/
+- https://canitakethis.co/country/chile/vaping/
+- https://canitakethis.co/country/croatia/plants-seeds/
+- https://canitakethis.co/country/cyprus/plants-seeds/
+- https://canitakethis.co/country/czechia/plants-seeds/
+- https://canitakethis.co/country/denmark/plants-seeds/
+- https://canitakethis.co/country/estonia/plants-seeds/
+- https://canitakethis.co/country/finland/plants-seeds/
+- https://canitakethis.co/country/france/plants-seeds/
+- https://canitakethis.co/country/germany/plants-seeds/
+- https://canitakethis.co/country/greece/plants-seeds/
+- https://canitakethis.co/country/hungary/plants-seeds/
+- https://canitakethis.co/country/ireland/plants-seeds/
+- https://canitakethis.co/country/ireland/vaping/
+- https://canitakethis.co/country/italy/plants-seeds/
+- https://canitakethis.co/country/latvia/plants-seeds/
+- https://canitakethis.co/country/lithuania/plants-seeds/
+- https://canitakethis.co/country/luxembourg/plants-seeds/
+- https://canitakethis.co/country/malta/plants-seeds/
+- https://canitakethis.co/country/netherlands/plants-seeds/
+- https://canitakethis.co/country/poland/plants-seeds/
+- https://canitakethis.co/country/portugal/plants-seeds/
+- https://canitakethis.co/country/romania/plants-seeds/
+- https://canitakethis.co/country/slovakia/plants-seeds/
+- https://canitakethis.co/country/slovenia/plants-seeds/
+- https://canitakethis.co/country/slovenia/vaping/
+- https://canitakethis.co/country/spain/plants-seeds/
+- https://canitakethis.co/country/sweden/plants-seeds/
