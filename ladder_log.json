@@ -316,7 +316,8 @@
  },
  "airline/egyptair/medication": {
   "official": [
-   "read: EGYPTAIR: Restricted items"
+   "read: EGYPTAIR: Restricted items",
+   "read 2026-11-24: EGYPTAIR Special & Medical Assistance page (egyptair.com) via Wayback copy"
   ],
   "reliable": [
    "read: CDC Yellow Book: Travelers with chronic illnesses; Diabetes UK: Travelling with diabetes"
@@ -324,7 +325,7 @@
   "other": [
    "none needed: the destination country sets the medicine rules, not the airline; covered by our per-country pages /medication/into/<country>/ (each read from that country authority or INCB filing) plus INCB travellers guidance"
   ],
-  "date": "2026-11-16"
+  "date": "2026-11-24"
  },
  "airline/el-al/medication": {
   "official": [
@@ -14675,7 +14676,8 @@
  },
  "country/cambodia/vaping": {
   "official": [
-   "Cambodia General Department of Customs and Excise traveller page: not found by search, not read"
+   "Cambodia General Department of Customs and Excise traveller page: not found by search, not read",
+   "read 2026-11-24: Royal Government decision 21 Oct 2025 on electronic smoking devices, English translation PDF hosted by Tobacco Control Laws, via curl"
   ],
   "reliable": [
    "WHO country profile read 2026-10-08 (base card)"
@@ -14683,7 +14685,7 @@
   "other": [
    "read 2026-11-22: GSTHR e-cigarette profile for Cambodia (page updated 2026-11-16, secondary compilation, lower reliability)"
   ],
-  "date": "2026-11-22"
+  "date": "2026-11-24"
  },
  "country/south-korea/vaping": {
   "official": [
@@ -15167,7 +15169,8 @@
  },
  "country/nepal/vaping": {
   "official": [
-   "Nepal Department of Customs traveller page: not found by search, not read"
+   "Nepal Department of Customs traveller page: not found by search, not read",
+   "read 2026-11-24: Nepal Tourism Board Custom Formalities page (trade.ntb.gov.np; government body, not customs) via curl"
   ],
   "reliable": [
    "WHO country profile read 2026-10-08 (base card)"
@@ -15175,7 +15178,7 @@
   "other": [
    "read 2026-11-22: GSTHR e-cigarette profile for Nepal (page updated 2026-11-16, secondary compilation, lower reliability)"
   ],
-  "date": "2026-11-22"
+  "date": "2026-11-24"
  },
  "country/jordan/vaping": {
   "official": [
@@ -15219,19 +15222,21 @@
  },
  "country/slovenia/plants-seeds": {
   "official": [
-   "read 2026-11-22: gov.si personal consignments page (list of plants, certificate + inspection); page under construction"
+   "read 2026-11-22: gov.si personal consignments page (list of plants, certificate + inspection); page under construction",
+   "read 2026-11-24: Financial Administration of Slovenia (FURS) Import of plants and plant products page (fu.gov.si) via curl"
   ],
   "reliable": [],
   "other": [],
-  "date": "2026-11-22"
+  "date": "2026-11-24"
  },
  "country/romania/plants-seeds": {
   "official": [
-   "read 2026-11-22: ANF press release 2023-03-03 on border checks, Annex XI/VII Reg 2019/2072; no traveller allowance"
+   "read 2026-11-22: ANF press release 2023-03-03 on border checks, Annex XI/VII Reg 2019/2072; no traveller allowance",
+   "read 2026-11-24: ANF article on plants in luggage, 3 Nov 2026 (anfdf.ro) via curl"
   ],
   "reliable": [],
   "other": [],
-  "date": "2026-11-22"
+  "date": "2026-11-24"
  },
  "country/malta/plants-seeds": {
   "official": [

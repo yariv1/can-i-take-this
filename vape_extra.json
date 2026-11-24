@@ -3477,8 +3477,35 @@
  "KH": {
   "sections": [
    {
+    "h": "⚖️ What the Royal Government decision of 21 October 2025 says",
+    "p": "From the Royal Government's Decision on measures to ban electronic smoking devices, substances and shisha, dated Phnom Penh, 21 October 2025, read on 24 November 2026 as an English translation hosted by Tobacco Control Laws (the translation is not an official government text).",
+    "table": {
+     "head": [
+      "Point",
+      "What the decision says"
+     ],
+     "rows": [
+      [
+       "What is banned",
+       "Importation, distribution, sale, advertisement, use, possession, manufacture and storage of all types and forms of electronic smoking devices and substances, and shisha"
+      ],
+      [
+       "Possession and use",
+       "Authorities act against anyone who uses or possesses them: verbal warning, confiscation, then a written warning and a signed stop-to-use contract"
+      ],
+      [
+       "Importers and sellers",
+       "Written warning, then revocation or suspension of the business certificate or licence"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>What this means:</strong> there is no personal allowance, and possession is covered as well as import. Leave the device and liquid at home when you fly to Cambodia."
+    ]
+   },
+   {
     "h": "📰 What a secondary profile reports about e-cigarettes in Cambodia",
-    "p": "Less reliable source (secondary profile): the Global State of Tobacco Harm Reduction (GSTHR) country page, updated 16 November 2026 and read on 22 November 2026. It compiles other sources and is not a customs page. The official customs rule for travellers could not be read, so treat this as background and confirm with customs.",
+    "p": "Less reliable source (secondary profile): the Global State of Tobacco Harm Reduction (GSTHR) country page, updated 16 November 2026 and read on 22 November 2026. It compiles other sources and is not a customs page. Treat it as background.",
     "table": {
      "head": [
       "Point",
@@ -3500,7 +3527,7 @@
      ]
     },
     "list": [
-     "<strong>Not read:</strong> the Cambodian customs rule for travellers and the text of the ban."
+     "<strong>Not found:</strong> a customs notice for travellers; the government decision above is the rule text."
     ]
    },
    {
@@ -3549,6 +3576,10 @@
     "A secondary profile (GSTHR) says e-cigarettes are banned in Cambodia, including sale, import and advertising. Do not pack one without checking with Cambodian customs."
    ],
    [
+    "Is there a personal allowance for vapes in Cambodia?",
+    "No. The Royal Government decision of 21 October 2025 bans importation and possession of all electronic smoking devices and substances, with no personal-use exception. Authorities confiscate and issue warnings."
+   ],
+   [
     "How common is vaping in Cambodia?",
     "Adults: 0.0% of adults currently use e-cigarettes (men 0.0%, women 0.0%) in the survey \"National Adult Tobacco Survey of Cambodia, 2021\" (national, ages 15+). Adolescents: 0.9% of adolescents currently use e-cigarettes (boys 1.1%, girls 0.8%) in the survey \"Global Youth Tobacco Survey, 2022\" (national, ages 13-15)."
    ],
@@ -3558,6 +3589,10 @@
    ]
   ],
   "src": [
+   [
+    "https://assets.tobaccocontrollaws.org/uploads/legislation/Cambodia/Cambodia-Decision-to-Ban-ENDS-HTPs-Shisha.pdf",
+    "Royal Government of Cambodia: Decision to ban electronic smoking devices and shisha, 21 October 2025 (English translation by Tobacco Control Laws)"
+   ],
    [
     "https://gsthr.org/countries/profile/khm/e_cigarettes/",
     "Less reliable source (secondary profile): Global State of Tobacco Harm Reduction - e-cigarettes in Cambodia"
@@ -6074,8 +6109,35 @@
  "NP": {
   "sections": [
    {
+    "h": "🛃 What the Nepal Tourism Board says visitors may bring duty-free",
+    "p": "From the Nepal Tourism Board trade website page \"Custom Formalities\" (trade.ntb.gov.np, read 24 November 2026). The Board is a government body, not the customs department, and the page does not mention e-cigarettes or e-liquid.",
+    "table": {
+     "head": [
+      "Point",
+      "What the page says"
+     ],
+     "rows": [
+      [
+       "Duty-free tobacco",
+       "200 cigarettes or 50 cigars"
+      ],
+      [
+       "Declaration",
+       "All baggage must be declared and cleared on arrival; the Green Channel is for travellers with no dutiable goods"
+      ],
+      [
+       "Dutiable goods",
+       "Anyone carrying dutiable articles uses the Red Channel for detailed clearance"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>What this means:</strong> vapes are not named in the duty-free list. If you bring more than a device for your own use, use the Red Channel and ask customs."
+    ]
+   },
+   {
     "h": "📰 What a secondary profile reports about e-cigarettes in Nepal",
-    "p": "Less reliable source (secondary profile): the Global State of Tobacco Harm Reduction (GSTHR) country page, updated 16 November 2026 and read on 22 November 2026. It compiles other sources and is not a customs page. The official customs rule for travellers could not be read, so treat this as background and confirm with customs.",
+    "p": "Less reliable source (secondary profile): the Global State of Tobacco Harm Reduction (GSTHR) country page, updated 16 November 2026 and read on 22 November 2026. It compiles other sources and is not a customs page. Treat it as background.",
     "table": {
      "head": [
       "Point",
@@ -6097,7 +6159,7 @@
      ]
     },
     "list": [
-     "<strong>Not read:</strong> the Nepal customs traveller rule for e-cigarettes."
+     "<strong>Not found:</strong> a Nepal customs rule that names e-cigarettes for travellers."
     ]
    }
   ],
@@ -6105,9 +6167,17 @@
    [
     "Is vaping legal in Nepal?",
     "A secondary profile (GSTHR) says e-cigarettes and sales are allowed in Nepal, advertising is banned and indoor public use is restricted. It gives no traveller allowance, so check Nepal customs."
+   ],
+   [
+    "What can I bring into Nepal duty-free?",
+    "The Nepal Tourism Board lists 200 cigarettes or 50 cigars, one 1.15-litre bottle of distilled liquor and 15 rolls of film. Vapes are not named, so declare extras at the Red Channel."
    ]
   ],
   "src": [
+   [
+    "https://trade.ntb.gov.np/travel-essentials/custom-formalities/",
+    "Nepal Tourism Board: Custom Formalities"
+   ],
    [
     "https://gsthr.org/countries/profile/npl/e_cigarettes/",
     "Less reliable source (secondary profile): Global State of Tobacco Harm Reduction - e-cigarettes in Nepal"
