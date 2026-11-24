@@ -261,7 +261,8 @@
  "airline/china-eastern/medication": {
   "official": [
    "read: China Eastern Airlines: Carry-on baggage",
-   "2026-11-24: CAAC 2008 notice on liquids and medicine on domestic flights read"
+   "2026-11-24: CAAC 2008 notice on liquids and medicine on domestic flights read",
+   "read 2026-11-24: https://www.ceair.com/global/en_static/Announcement/TravelTips/SpecialPassengerServiceNotice/Sickpassenger/"
   ],
   "reliable": [
    "read: CDC Yellow Book: Travelers with chronic illnesses; Diabetes UK: Travelling with diabetes"
@@ -1031,7 +1032,8 @@
  },
  "airline/ethiopian-airlines/alcohol": {
   "official": [
-   "tried 2026-11-16: ethiopianairlines.com restricted-items/liquids page: connection closed, not read"
+   "tried 2026-11-16: ethiopianairlines.com restricted-items/liquids page: connection closed, not read",
+   "read 2026-11-24: https://www.ethiopianairlines.com/uk/information/baggage-information/restricted-items (no alcohol-beverage rule found)"
   ],
   "reliable": [
    "IATA Dangerous Goods Regulations, Table 2.3.A (67th edition, 1 January 2026): read, already on the page",
@@ -1040,7 +1042,7 @@
   "other": [
    "none needed: step 2a (IATA) answered the question"
   ],
-  "date": "2026-11-16"
+  "date": "2026-11-24"
  },
  "airline/egyptair/alcohol": {
   "official": [
@@ -2422,7 +2424,8 @@
  },
  "country/mexico/cash": {
   "official": [
-   "tried 2026-11-16: sat.gob.mx: HTTP 504, not read"
+   "tried 2026-11-16: sat.gob.mx: HTTP 504, not read",
+   "read 2026-11-24: https://www.gob.mx/cms/uploads/attachment/file/692368/Aviso_ANAM_Formatos_de_declaracio_n.pdf"
   ],
   "reliable": [
    "read: Travel Doc customs information page for Mexico (infopages.traveldoc.aero)"
@@ -2430,7 +2433,7 @@
   "other": [
    "none needed: step 2a answered the question"
   ],
-  "date": "2026-11-16"
+  "date": "2026-11-24"
  },
  "medication/adderall/argentina": {
   "official": [
@@ -12667,7 +12670,8 @@
  },
  "airline/austrian/power-bank": {
   "official": [
-   "tried 2026-11-16: Austrian own electronic-devices/power-bank page: HTTP 403, not read; Lufthansa Group news page read earlier (group rule)"
+   "tried 2026-11-16: Austrian own electronic-devices/power-bank page: HTTP 403, not read; Lufthansa Group news page read earlier (group rule)",
+   "read 2026-11-24: https://www.austrian.com/gb/en/electronic-devices-and-batteries"
   ],
   "reliable": [
    "read 2026-11-16: https://www.markenkoffer.de/en/blogs/news/austrian-airlines-hand-luggage"
@@ -12675,7 +12679,7 @@
   "other": [
    "none needed: step 2a answered part of the question"
   ],
-  "date": "2026-11-16"
+  "date": "2026-11-24"
  },
  "airline/eurowings/power-bank": {
   "official": [
@@ -13721,7 +13725,7 @@
  },
  "airline/norwegian/alcohol": {
   "official": [
-   "https://www.norwegian.com/us/travel-info/baggage/restricted-items/dangerous-goods/ (alcoholic beverages section, read from user screenshot 2026-11-17; matches our page)"
+   "read 2026-11-24: https://www.norwegian.com/us/travel-info/baggage/restricted-items/dangerous-goods/ (alcoholic beverages section, read from user screenshot 2026-11-17; matches our page)"
   ],
   "other": [],
   "date": "2026-11-24",
@@ -13815,7 +13819,7 @@
  },
  "airline/icelandair/perfume-aerosols": {
   "official": [
-   "https://www.icelandair.com/support/baggage/restrictions/ (full page pasted by user 2026-11-17)"
+   "read 2026-11-24: https://www.icelandair.com/support/baggage/restrictions/ (full page pasted by user 2026-11-17)"
   ],
   "reliable": [
    "read 2026-11-24: Keflavik Airport security check page (airport operator)"
@@ -14367,10 +14371,11 @@
    "tried 2026-11-19: united.com pages: WebFetch timeouts (60 s) and curl timeout (25 s); search of united.com for liquids returned no United page"
   ],
   "reliable": [
-   "read 2026-11-19: TSA liquids, aerosols and gels rule page"
+   "read 2026-11-19: TSA liquids, aerosols and gels rule page",
+   "read 2026-11-24: https://www.faa.gov/hazmat/packsafe/medicinal-toiletry-articles"
   ],
   "other": [],
-  "date": "2026-11-19"
+  "date": "2026-11-24"
  },
  "airline/gol/liquids": {
   "official": [
@@ -15699,6 +15704,30 @@
    "2026-11-24: El Al own page not usable; step 2: TSA liquids rule page read"
   ],
   "other": [],
+  "date": "2026-11-24"
+ },
+ "airline/singapore-airlines/perfume-aerosols": {
+  "official": [
+   "read 2026-11-24: https://www.changiairport.com/en/fly/security-and-baggage-restrictions.html"
+  ],
+  "date": "2026-11-24"
+ },
+ "country/sweden/plants-seeds": {
+  "official": [
+   "read 2026-11-24: https://www.naturvardsverket.se/en/topics/invasive-alien-species/avoid-spreading-invasive-alien-species/"
+  ],
+  "date": "2026-11-24"
+ },
+ "country/netherlands": {
+  "official": [
+   "read 2026-11-24: https://www.government.nl/topics/holidays-and-travels/declaring-cash-you-are-carrying-into-or-out-of-the-eu"
+  ],
+  "date": "2026-11-24"
+ },
+ "country/romania": {
+  "official": [
+   "read 2026-11-24: https://taxation-customs.ec.europa.eu/customs/prohibitions-restrictions/eu-cash-controls_ro"
+  ],
   "date": "2026-11-24"
  }
 }

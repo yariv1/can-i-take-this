@@ -2636,6 +2636,49 @@
      "list": [
       "<strong>Not on the page:</strong> United&rsquo;s own wording, how many bags are allowed, and duty-free bottles. Ask United about those."
      ]
+    },
+    {
+     "h": "🛩️ What the FAA says about toiletries and medicines in your bags",
+     "p": "From the FAA PackSafe page \"Medicinal & Toiletry Articles\" (faa.gov, read 24 November 2026). It is the US safety regulator's rule for any airline flying in the US, including United, and sits on top of the checkpoint limit above.",
+     "table": {
+      "head": [
+       "Point",
+       "FAA wording"
+      ],
+      "rows": [
+       [
+        "Allowed in",
+        "Carry-on and checked bags, for personal use"
+       ],
+       [
+        "Covers",
+        "Hairspray, hand sanitiser, aerosols, rubbing alcohol, inhalers, nail polish and remover, sunscreen, perfume, cologne, shaving cream, medicines"
+       ],
+       [
+        "Per container",
+        "No more than 0.5 kg (18 oz) or 500 ml (17 fl oz)"
+       ],
+       [
+        "Per person in total",
+        "No more than 2 kg (70 oz) or 2 L (68 fl oz)"
+       ],
+       [
+        "Aerosol nozzles",
+        "Must have a cap or other protection against accidental release"
+       ],
+       [
+        "Cabin checkpoint",
+        "Liquids, gels and aerosols in carry-on are still limited to 100 ml containers"
+       ],
+       [
+        "Quick test",
+        "If it does not touch your body when you use it, it probably does not qualify"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> anything specific to United; the FAA applies the same figures to every airline."
+     ]
     }
    ],
    "faq": [
@@ -2646,12 +2689,20 @@
     [
      "Does United allow liquid medicine and baby food over the limit?",
      "The source says the TSA allows exceptions for medically necessary liquids and infant items under its own rules; confirm with United."
+    ],
+    [
+     "How much toiletry liquid can I pack in total on United?",
+     "The FAA caps medicinal and toiletry articles at 2 kg or 2 L per person, with no container above 0.5 kg or 500 ml. Carry-on containers must also be 100 ml or less."
     ]
    ],
    "sources": [
     [
      "https://www.tsa.gov/travel/security-screening/liquids-aerosols-gels-rule",
      "Unofficial source (US government): TSA &mdash; Liquids, aerosols, and gels rule"
+    ],
+    [
+     "https://www.faa.gov/hazmat/packsafe/medicinal-toiletry-articles",
+     "Unofficial source (US government): FAA PackSafe &mdash; Medicinal & Toiletry Articles"
     ]
    ],
    "keepSchema": true,
@@ -5279,6 +5330,45 @@
      "list": [
       "<strong>Approval above 100 Wh:</strong> write to specialcases@austrian.com when you book; a power bank over 160 Wh is not accepted."
      ]
+    },
+    {
+     "h": "⚡ Other battery points on the same Austrian page",
+     "p": "Also from Austrian's \"Electronic items and batteries\" page (UK English version, read 24 November 2026 in a browser, because the site blocks automated readers).",
+     "table": {
+      "head": [
+       "Point",
+       "Austrian says"
+      ],
+      "rows": [
+       [
+        "Damaged or recalled",
+        "Defective, damaged or manufacturer-recalled devices and batteries may not be carried at all"
+       ],
+       [
+        "Several cells in one case",
+        "The Wh of all cells in the casing are added up to decide if it is accepted"
+       ],
+       [
+        "Working out Wh",
+        "Ah x volts, or mAh x volts / 1,000"
+       ],
+       [
+        "Short circuits",
+        "Cover or insulate the contacts, or keep the bank in its retail packaging"
+       ],
+       [
+        "Spare batteries (not power banks)",
+        "Up to 20 in cabin baggage at 100 Wh or less; recharging on board is not permitted"
+       ],
+       [
+        "Confiscation",
+        "Items not allowed for transport risk being confiscated at the airport with no liability"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Stricter rules:</strong> Austrian says it may apply tighter measures for safety and that some countries have stricter laws."
+     ]
     }
    ],
    "faq": [
@@ -5289,6 +5379,10 @@
     [
      "Can I use a power bank in my seat on Austrian?",
      "No. Using and charging power banks is prohibited on board, except for approved medical devices."
+    ],
+    [
+     "How do I work out the Wh of my power bank for Austrian?",
+     "Multiply amp-hours by volts, or milliamp-hours by volts and divide by 1,000. For a pack of several cells, add the cells together."
     ]
    ],
    "sources": [
@@ -20533,6 +20627,45 @@
      "list": [
       "<strong>Not on the page:</strong> the page lists the item among restricted goods without saying which items go in the cabin or the hold."
      ]
+    },
+    {
+     "h": "🛫 What Changi Airport says about perfume and sprays at security",
+     "p": "From the Changi Airport page \"Security & Baggage Restrictions\", Liquids, Aerosols, Gels tab (changiairport.com, read 24 November 2026). It applies to every flight leaving Singapore, whatever the airline.",
+     "table": {
+      "head": [
+       "Point",
+       "Changi Airport rule"
+      ],
+      "rows": [
+       [
+        "Cabin container size",
+        "Nothing over 100 ml gets through, even if partly filled; grams and millilitres count the same"
+       ],
+       [
+        "Bag",
+        "One clear resealable bag per person, closed, all containers together not above 1 litre, shown separately at the screening point"
+       ],
+       [
+        "Perfume and sprays",
+        "Perfumes, deodorants, hairspray, shaving foam and spray deodorants are all listed as liquids, aerosols and gels"
+       ],
+       [
+        "Over the limit",
+        "Anything that does not meet the rules must be thrown away before screening, or checked in"
+       ],
+       [
+        "Bought at Changi",
+        "Over-100 ml duty-free stays in the shop's sealed tamper-evident bag with the receipt visible"
+       ],
+       [
+        "Flights to the EU or Switzerland",
+        "Only liquids in sealed tamper-evident bags with the SGP code, bought in the Changi transit area, are allowed onboard"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Exemptions:</strong> baby food, breast milk with an infant, and items shown with a genuine doctor's letter."
+     ]
     }
    ],
    "faq": [
@@ -20543,12 +20676,20 @@
     [
      "Do aerosols need a cap on Singapore Airlines?",
      "Yes, release valves must be protected by a cap or other suitable means."
+    ],
+    [
+     "Can I carry a full-size perfume through Changi?",
+     "Not in the cabin unless it is a duty-free purchase kept sealed in its tamper-evident bag with the receipt. Otherwise containers over 100 ml go in checked baggage."
     ]
    ],
    "sources": [
     [
      "https://www.singaporeair.com/en_UK/us/travel-info/baggage/baggage-restrictions/",
      "Singapore Airlines &mdash; Baggage Restrictions"
+    ],
+    [
+     "https://www.changiairport.com/en/fly/security-and-baggage-restrictions.html",
+     "Changi Airport &mdash; Security & Baggage Restrictions"
     ]
    ],
    "keepSchema": true,

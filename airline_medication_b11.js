@@ -199,6 +199,7 @@ module.exports = function (X) {
   {
     const P1 = ['https://www.ceair.com/global/en_static/Announcement/BaggageService/CarryonBaggage/', 'China Eastern Airlines: Carry-on baggage', 'Liquids and medicines'];
     const P2 = ['http://www.caac.gov.cn/WZWSREL1BIT05FL1hYR0tfMTcvWFhHSy9UWlRHLzIwMTUxMC90MjAxNTEwMjJfMjUzOC5odG1s', 'Civil Aviation Administration of China: Notice on adjusting liquids and lighters on flights (2008, in Chinese)', 'Liquid medicine, domestic flights'];
+    const P3 = ['https://www.ceair.com/global/en_static/Announcement/TravelTips/SpecialPassengerServiceNotice/Sickpassenger/', 'China Eastern: Sick passenger service notice', 'Medical documents, fitness to fly'];
     add({
       slug: 'china-eastern', name: 'China Eastern Airlines',
       h1: 'China Eastern Airlines Medication Policy: Liquid Medicine for Diabetes & Other Illness (2026)',
@@ -215,6 +216,11 @@ module.exports = function (X) {
         card('liquids', 'Liquid medication', 'warn', 'Examined at security', 'Over 100 ml (3.4 oz)', 'China Eastern lets patients carry needed liquid medicine after it is examined at security.', [
           'China Eastern: liquid medicines necessary for patients with diabetes or other illnesses during air travel can be carried only after being examined during the security check.'
         ], [P1], true),
+        card('pills', 'Pills & tablets', 'warn', 'Documents if unwell', 'Medicine if you are ill or recovering', 'China Eastern publishes no pill rule, but its sick passenger notice asks for a doctor document within 48 hours of travel.', [
+          'China Eastern sick passenger notice: passengers who cannot care for themselves in flight, or with conditions that need a flight risk acknowledgment, must show a fitness-to-fly certificate, Certificate of Diagnosis or post-operative certificate.',
+          'China Eastern: the certificate must be issued within 48 hours before travel by a Grade II or higher hospital in China, or an equivalent clinic or hospital overseas; Chinese hospitals add a stamp and doctor signature, overseas documents need only the signature.',
+          'China Eastern: arrive at least 120 minutes before departure to complete check-in; portable oxygen concentrator requests need 48 hours notice.'
+        ], [P3]),
         gap('needles', 'Insulin & syringes', 'x', 'Needles, syringes, injections', P1, 'China Eastern', 'needles and syringes'),
         gap('cold', 'Cold medication', 'x', 'Medication that must stay cold', P1, 'China Eastern', 'keeping medication cold'),
         ab(P1)
