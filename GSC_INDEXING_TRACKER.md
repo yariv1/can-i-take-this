@@ -1123,3 +1123,15 @@ No GSC requests made yet.
 - https://canitakethis.co/country/jordan/vaping/
 - https://canitakethis.co/country/peru/vaping/
 - https://canitakethis.co/country/ukraine/tobacco/
+
+## Deploy 13d13fe66 (2026-11-24)
+No GSC requests made yet.
+- https://canitakethis.co/airline/austrian/power-bank/
+- https://canitakethis.co/airline/china-eastern/medication/
+- https://canitakethis.co/airline/singapore-airlines/perfume-aerosols/
+- https://canitakethis.co/airline/united/liquids/
+- https://canitakethis.co/blog/level-4-travel-advisory-countries-2026/
+- https://canitakethis.co/country/mexico/cash/
+- https://canitakethis.co/country/netherlands/
+- https://canitakethis.co/country/romania/
+- https://canitakethis.co/country/sweden/plants-seeds/
