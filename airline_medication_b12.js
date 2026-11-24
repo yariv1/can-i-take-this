@@ -106,6 +106,7 @@ module.exports = function (X) {
   // ---------------- VOLARIS ----------------
   {
     const P1 = ['https://cms.volaris.com/es/informacion-util/servicios-especiales/asistencia-medica/', 'Volaris: Asistencia médica a pasajeros (page in Spanish)', 'Medicines on board'];
+    const P2 = ['https://cms.volaris.com/en/travel-info/baggage-policy/restricted-and-forbidden-items/', 'Volaris: Restricted and forbidden items', 'Liquids, aerosols, medical batteries'];
     add({
       slug: 'volaris', name: 'Volaris',
       h1: 'Volaris Medication Policy: Medicine in Your Carry-on on a Volaris Flight (2026)',
@@ -118,7 +119,11 @@ module.exports = function (X) {
           'Volaris: you should have your doctor\'s prescription and carry only reasonable amounts for your trip.',
           'Volaris: its crew are not authorised to give any kind of medication; if you cannot take it yourself you need to travel with someone to help.'
         ], [P1], true),
-        gap('liquids', 'Liquid medication', 'x', 'Over 100 ml (3.4 oz)', P1, 'Volaris', 'liquid limits for medication'),
+        card('liquids', 'Liquid medication', 'warn', 'No exemption stated', 'Over 100 ml (3.4 oz)', 'Volaris says liquids over 100 ml are not allowed in carry-on and gives no medicine exemption; aerosol containers are capped at 500 ml or 500 g.', [
+          'Volaris restricted items page: liquids in containers larger than 100 ml are not permitted in carry-on baggage.',
+          'Volaris: each personal-care aerosol container may not exceed 500 ml or 500 g.',
+          'Volaris: devices with lithium batteries, including portable medical electronic devices, are accepted depending on battery capacity; the page notes some higher-capacity batteries are for medical use only.'
+        ], [P2]),
         gap('needles', 'Insulin & syringes', 'x', 'Needles, syringes, injections', P1, 'Volaris', 'needles and syringes'),
         gap('cold', 'Cold medication', 'x', 'Medication that must stay cold', P1, 'Volaris', 'keeping medication cold'),
         card('devices', 'Medical equipment', 'warn', 'Check the list', 'CPAP and oxygen', 'Volaris lists the breathing devices you may take and limits spare batteries.', [

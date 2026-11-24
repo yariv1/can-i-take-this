@@ -952,7 +952,8 @@
  },
  "airline/volaris/medication": {
   "official": [
-   "read: Volaris: Asistencia médica a pasajeros (page in Spanish)"
+   "read: Volaris: Asistencia médica a pasajeros (page in Spanish)",
+   "read 2026-11-24: Volaris restricted and forbidden items page, https://cms.volaris.com/en/travel-info/baggage-policy/restricted-and-forbidden-items/"
   ],
   "reliable": [
    "read: Diabetes UK: Travelling with diabetes; Mexico City Airport (AICM): Guía del pasajero (2023, in Spanish)"
@@ -960,7 +961,7 @@
   "other": [
    "none needed: the destination country sets the medicine rules, not the airline; covered by our per-country pages /medication/into/<country>/ (each read from that country authority or INCB filing) plus INCB travellers guidance"
   ],
-  "date": "2026-11-16"
+  "date": "2026-11-24"
  },
  "airline/vueling/medication": {
   "official": [
@@ -1375,15 +1376,17 @@
  },
  "food/nepal": {
   "official": [
-   "tried 2026-11-09 (session 43-45): official customs/agriculture portal of nepal blocked, silent or no traveller food rule"
+   "tried 2026-11-09 (session 43-45): official customs/agriculture portal of nepal blocked, silent or no traveller food rule",
+   "tried 2026-11-24: Nepal Customs Rules 2065 (faolex PDF, read: no food rule), Baggage Rules PDF (motac.gov.my): connection failed, lawcommission.gov.np 404; PQPMC plant quarantine pages not returned by search"
   ],
   "reliable": [
-   "IATA Travel Centre customs page infopages.traveldoc.aero (named, undated): read 2026-11-09, quoted on the page"
+   "IATA Travel Centre customs page infopages.traveldoc.aero (named, undated): read 2026-11-09, quoted on the page",
+   "tried 2026-11-24: WebSearch for Nepal passenger food/plant quarantine rule: only traveller guides and legal summaries, no readable official page"
   ],
   "other": [
    "none needed: step 2a answered the question"
   ],
-  "date": "2026-11-16"
+  "date": "2026-11-24"
  },
  "food/nigeria": {
   "official": [
@@ -1946,15 +1949,17 @@
  },
  "country/indonesia/alcohol": {
   "official": [
-   "tried 2026-11-16: beacukai.go.id: connection refused, not read"
+   "tried 2026-11-16: beacukai.go.id: connection refused, not read",
+   "tried 2026-11-24: bcngurahrai.beacukai.go.id page 1316 and beacukai.go.id: connection failed in curl, browser pane denied, Wayback timed out"
   ],
   "reliable": [
-   "read: Travel Doc customs information page for Indonesia (infopages.traveldoc.aero)"
+   "read: Travel Doc customs information page for Indonesia (infopages.traveldoc.aero)",
+   "read 2026-11-24: Hinterland Travel Indonesia customs page: repeats 1 litre and Rp100,000,000 cash, adds nothing new"
   ],
   "other": [
    "none needed: step 2a answered the question"
   ],
-  "date": "2026-11-16"
+  "date": "2026-11-24"
  },
  "country/indonesia/tobacco": {
   "official": [
@@ -2152,39 +2157,45 @@
  },
  "country/costa-rica/alcohol": {
   "official": [
-   "tried 2026-11-16: hacienda.go.cr home page read: no traveller allowances on it"
+   "tried 2026-11-16: hacienda.go.cr home page read: no traveller allowances on it",
+   "tried 2026-11-24: hacienda.go.cr aduanas via WebSearch: no official traveller page returned"
   ],
   "reliable": [
-   "read: Travel Doc customs information page for Costa Rica (infopages.traveldoc.aero)"
+   "read: Travel Doc customs information page for Costa Rica (infopages.traveldoc.aero)",
+   "tried 2026-11-24: La Nacion 2022-12-03 article on airport allowance: paywalled, text not readable"
   ],
   "other": [
    "none needed: step 2a answered the question"
   ],
-  "date": "2026-11-16"
+  "date": "2026-11-24"
  },
  "country/costa-rica/tobacco": {
   "official": [
-   "tried 2026-11-16: hacienda.go.cr home page read: no traveller allowances on it"
+   "tried 2026-11-16: hacienda.go.cr home page read: no traveller allowances on it",
+   "tried 2026-11-24: hacienda.go.cr aduanas via WebSearch: no official traveller page returned"
   ],
   "reliable": [
-   "read: Travel Doc customs information page for Costa Rica (infopages.traveldoc.aero)"
+   "read: Travel Doc customs information page for Costa Rica (infopages.traveldoc.aero)",
+   "tried 2026-11-24: La Nacion 2022-12-03 article on airport allowance: paywalled, text not readable"
   ],
   "other": [
    "none needed: step 2a answered the question"
   ],
-  "date": "2026-11-16"
+  "date": "2026-11-24"
  },
  "country/maldives/tobacco": {
   "official": [
-   "tried 2026-11-16: customs.gov.mv: HTTP 403, not read"
+   "tried 2026-11-16: customs.gov.mv: HTTP 403, not read",
+   "read 2026-11-24: Maldives Civil Aviation Authority Air Transport Circular AT 01/2024 (15 Dec 2024), https://www.caa.gov.mv/attachments/mMHtTZLT0BWlXO8wUVGIlDnt7GQLOMAHSqIl4l5i.pdf"
   ],
   "reliable": [
-   "read: Travel Doc customs information page for the Maldives (infopages.traveldoc.aero)"
+   "read: Travel Doc customs information page for the Maldives (infopages.traveldoc.aero)",
+   "read 2026-11-24: Velana International Airport arrival guide (MACL), https://velana.macl.aero/guide/arrival"
   ],
   "other": [
    "none needed: step 2a answered the question"
   ],
-  "date": "2026-11-16"
+  "date": "2026-11-24"
  },
  "country/maldives/plants-seeds": {
   "official": [
@@ -2225,7 +2236,8 @@
  },
  "country/mauritius/cash": {
   "official": [
-   "tried 2026-11-16: mra.mu travellers page: HTTP 404, not read"
+   "tried 2026-11-16: mra.mu travellers page: HTTP 404, not read",
+   "read 2026-11-24: MRA Currency Declaration page, https://www.mra.mu/index.php/customs1/travellers/currency-declaration"
   ],
   "reliable": [
    "read: Travel Doc customs information page for Mauritius (infopages.traveldoc.aero)"
@@ -2233,7 +2245,7 @@
   "other": [
    "none needed: step 2a answered the question"
   ],
-  "date": "2026-11-16"
+  "date": "2026-11-24"
  },
  "country/mauritius/plants-seeds": {
   "official": [
@@ -2249,15 +2261,17 @@
  },
  "country/nigeria/tobacco": {
   "official": [
-   "tried 2026-11-16: customs.gov.ng: HTTP 403, not read"
+   "tried 2026-11-16: customs.gov.ng: HTTP 403, not read",
+   "read 2026-11-24: Nigeria Customs Service Act 2023 (faolex.fao.org PDF): no passenger tobacco allowance in the Act; customs.gov.ng HTTP 403"
   ],
   "reliable": [
-   "read: Travel Doc customs information page for Nigeria (infopages.traveldoc.aero)"
+   "read: Travel Doc customs information page for Nigeria (infopages.traveldoc.aero)",
+   "tried 2026-11-24: WebSearch for Nigeria Customs passenger allowance: only travel-guide sites and press; base card stays on the IATA Travel Doc figure"
   ],
   "other": [
    "none needed: step 2a answered the question"
   ],
-  "date": "2026-11-16"
+  "date": "2026-11-24"
  },
  "country/morocco/alcohol": {
   "official": [
@@ -2286,7 +2300,8 @@
  },
  "country/russia/alcohol": {
   "official": [
-   "tried 2026-11-16: customs.gov.ru: connection refused, not read"
+   "tried 2026-11-16: customs.gov.ru: connection refused, not read",
+   "read 2026-11-24: FTS traveller memo on Russian MFA consular site kdmid.ru, https://www.kdmid.ru/info-for-traveling-abroad/informatsiya-fts-rossii/"
   ],
   "reliable": [
    "read: Travel Doc customs information page for Russia (infopages.traveldoc.aero)"
@@ -2294,11 +2309,12 @@
   "other": [
    "none needed: step 2a answered the question"
   ],
-  "date": "2026-11-16"
+  "date": "2026-11-24"
  },
  "country/russia/tobacco": {
   "official": [
-   "tried 2026-11-16: customs.gov.ru: connection refused, not read"
+   "tried 2026-11-16: customs.gov.ru: connection refused, not read",
+   "read 2026-11-24: FTS traveller memo on Russian MFA consular site kdmid.ru, https://www.kdmid.ru/info-for-traveling-abroad/informatsiya-fts-rossii/"
   ],
   "reliable": [
    "read: Travel Doc customs information page for Russia (infopages.traveldoc.aero)"
@@ -2306,7 +2322,7 @@
   "other": [
    "none needed: step 2a answered the question"
   ],
-  "date": "2026-11-16"
+  "date": "2026-11-24"
  },
  "country/saudi-arabia/tobacco": {
   "official": [
@@ -12930,9 +12946,12 @@
    "IATA Dangerous Goods Regulations, Table 2.3.A: read, on the page",
    "read 2026-11-16: customs/authority source for Iceland as recorded in country_unique.json: Source read: Skatturinn, Duty-free imports (English). No alcohol penalty is stated."
   ],
-  "date": "2026-11-16",
+  "date": "2026-11-24",
   "other": [
    "2026-11-17: Icelandair restricted-items page pasted has no alcohol rule; Keflavik Airport (Isavia) page https://www.kefairport.com/news/first-time-in-iceland read: arrival duty-free 6 alcohol units, no luggage or airline rule; Frommers claim that Icelandair bans carry-on alcohol is a search snippet only, not used; page stays on IATA global rule + customs, labelled"
+  ],
+  "official": [
+   "read 2026-11-24: Keflavik Airport Security check Q&A (airport operator), https://www.kefairport.com/security-check; icelandair.us restrictions page not readable by curl"
   ]
  },
  "airline/saudia/alcohol": {
@@ -12997,15 +13016,17 @@
  "airline/middle-east-airlines/alcohol": {
   "official": [
    "tried 2026-11-23: mea.com.lb baggage pages return Cloudflare 403 in curl and the browser pane",
-   "read 2026-11-23: Lebanese Customs traveller's guide for the Lebanon section"
+   "read 2026-11-23: Lebanese Customs traveller's guide for the Lebanon section",
+   "tried 2026-11-24: beirutairport.gov.lb page 24 (duty-free shop description only, no security rule); MEA site geo-blocked"
   ],
   "reliable": [
-   "searched 2026-11-23: ifly.com 403, seat.guru no liquid/alcohol text; baggagepolicies.com (third party) read"
+   "searched 2026-11-23: ifly.com 403, seat.guru no liquid/alcohol text; baggagepolicies.com (third party) read",
+   "tried 2026-11-24: WebSearch Beirut airport liquids/alcohol rules: no Beirut-specific page found"
   ],
   "other": [
    "none: no MEA-specific alcohol or perfume rule published anywhere read; IATA rule kept"
   ],
-  "date": "2026-11-23"
+  "date": "2026-11-24"
  },
  "airline/avianca/alcohol": {
   "reliable": [
@@ -13030,7 +13051,10 @@
    "IATA Dangerous Goods Regulations, Table 2.3.A: read, on the page",
    "read 2026-11-16: customs/authority source for Singapore as recorded in country_unique.json: Source read: Singapore Customs, Duty-free concession and GST relief. Fine amounts are not on the page."
   ],
-  "date": "2026-11-16"
+  "date": "2026-11-24",
+  "official": [
+   "read 2026-11-24: Changi Airport Security & Baggage Restrictions, Liquids tab, https://www.changiairport.com/en/fly/security-and-baggage-restrictions.html"
+  ]
  },
  "airline/virgin-australia/alcohol": {
   "reliable": [
@@ -13995,13 +14019,14 @@
  "airline/ethiopian-airlines/perfume-aerosols": {
   "official": [
    "read 2026-11-17: https://www.ethiopianairlines.com/us/information/baggage-information/restricted-items",
-   "read 2026-11-22: ethiopianairlines.com Restricted Items aerosols row"
+   "read 2026-11-22: ethiopianairlines.com Restricted Items aerosols row",
+   "tried 2026-11-24: ethiopianairlines.com restricted-items page via browser pane: aerosol row did not render beyond heading; same page already the base card source"
   ],
   "reliable": [],
   "other": [
    "IATA table removed from page: replaced by the airline text"
   ],
-  "date": "2026-11-22"
+  "date": "2026-11-24"
  },
  "airline/gol/perfume-aerosols": {
   "official": [
@@ -14801,13 +14826,14 @@
  },
  "country/malaysia/vaping": {
   "official": [
-   "no national page needed for this section: WHO profile table read"
+   "no national page needed for this section: WHO profile table read",
+   "read 2026-11-24: WTO Import Licensing database entry for Malaysia (intoxicating liquor, tobacco, denatured spirit): no vape item; Royal Malaysian Customs traveller page not found by search"
   ],
   "reliable": [
    "read 2026-11-19: WHO country profile PDF (downloaded, pdftotext), table of tobacco use prevalence from the latest survey (e-cigarette use rows)"
   ],
   "other": [],
-  "date": "2026-11-19"
+  "date": "2026-11-24"
  },
  "country/norway/vaping": {
   "official": [
@@ -15312,11 +15338,14 @@
  },
  "country/greece/plants-seeds": {
   "official": [
-   "read 2026-11-22: Region of Attica notice 2020-09-28 relaying ministry notice on seeds from third countries (certificate + inspection, Reg 2016/2031 arts 72-73); aia.gr Cloudflare 403 in browser pane, minagric.gr 403, not bypassed"
+   "read 2026-11-22: Region of Attica notice 2020-09-28 relaying ministry notice on seeds from third countries (certificate + inspection, Reg 2016/2031 arts 72-73); aia.gr Cloudflare 403 in browser pane, minagric.gr 403, not bypassed",
+   "tried 2026-11-24: aia.gr customs control page: HTTP 403 Cloudflare in browser pane, no Wayback copy"
   ],
-  "reliable": [],
+  "reliable": [
+   "read 2026-11-24: EFSA PlantHealth4Life Travelling and plants (EU agency), https://www.efsa.europa.eu/en/plh4l/travelling-and-plants"
+  ],
   "other": [],
-  "date": "2026-11-22"
+  "date": "2026-11-24"
  },
  "country/lithuania/plants-seeds": {
   "official": [],
@@ -15727,6 +15756,24 @@
  "country/romania": {
   "official": [
    "read 2026-11-24: https://taxation-customs.ec.europa.eu/customs/prohibitions-restrictions/eu-cash-controls_ro"
+  ],
+  "date": "2026-11-24"
+ },
+ "airline/aer-lingus/alcohol": {
+  "official": [
+   "read 2026-11-24: Dublin Airport Carry-on baggage security page (airport operator), https://www.dublinairport.com/at-the-airport/security/carry-on-baggage"
+  ],
+  "date": "2026-11-24"
+ },
+ "country/hungary/alcohol": {
+  "official": [
+   "read 2026-11-24: NAV travellers FAQ Alcoholic beverages (age 17, mixing rule, still wine, penalty), https://nav.gov.hu/en/intormation_on_customs_matters/travel-guides---faq/english/alcoholic-beverages"
+  ],
+  "date": "2026-11-24"
+ },
+ "airline/jetblue/power-bank": {
+  "official": [
+   "read 2026-11-24: JetBlue Batteries help page in browser pane (full battery table), https://www.jetblue.com/help/batteries"
   ],
   "date": "2026-11-24"
  }

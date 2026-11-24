@@ -4305,6 +4305,37 @@
     "list": [
      "<strong>How to read it:</strong> \"current\" is each survey&rsquo;s own definition of current use."
     ]
+   },
+   {
+    "h": "🛃 What Malaysia's customs import rules say (WTO import licensing notification)",
+    "p": "From Malaysia's entry in the WTO Import Licensing Procedures database for \"Intoxicating liquor, tobacco and denatured spirit\" (importlicensing.wto.org, read 24 November 2026). It quotes the Customs Regulations 2019 and the Customs (Prohibition of Imports) Order 2017. It does not mention e-cigarettes or vape liquid by name.",
+    "table": {
+     "head": [
+      "Point",
+      "What the notification says"
+     ],
+     "rows": [
+      [
+       "Licence",
+       "Importing intoxicating liquor, tobacco or denatured spirit needs a licence from the Director General of Customs"
+      ],
+      [
+       "Private use",
+       "A senior customs officer may let liquor or tobacco in without a licence if satisfied it is for the importer's own consumption, not sale, or exempt from duty"
+      ],
+      [
+       "Legal basis",
+       "Customs Regulations 2019 and the Customs (Prohibition of Imports) Order 2017; no administrative discretion on which products are listed"
+      ],
+      [
+       "Who licenses",
+       "The Panel on Cigarette and Liquors Licensing at the Ministry of Finance"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>Not on the page:</strong> whether a vape device or nicotine liquid counts as tobacco for a traveller. Check Royal Malaysian Customs before you fly."
+    ]
    }
   ],
   "faq": [
@@ -4315,9 +4346,18 @@
    [
     "What does WHO list for e-cigarette use in Malaysia?",
     "4.9% of adults currently use e-cigarettes (men 9.4%, women 0.3%) in the survey \"National Health And Morbidity Survey, 2019\" (national, ages 15-75)."
+   ],
+   [
+    "Do Malaysian customs let tobacco in for personal use?",
+    "The WTO notification says a senior customs officer may admit tobacco or liquor without a licence if satisfied it is for the importer's own use. It does not say whether vapes are covered."
    ]
   ],
-  "src": [],
+  "src": [
+   [
+    "https://importlicensing.wto.org/content/intoxicating-liquor-tobacco-and-denatured-spirit",
+    "WTO Import Licensing: Malaysia, intoxicating liquor, tobacco and denatured spirit"
+   ]
+  ],
   "keepSchema": true
  },
  "NZ": {

@@ -1468,6 +1468,45 @@
      "list": [
       "<strong>Not on the page:</strong> the section gives no Wh limit and no rule for 100 to 160 Wh."
      ]
+    },
+    {
+     "h": "⚡ Other battery rules on the same JetBlue page",
+     "p": "Also from the JetBlue help page \"Batteries\" (read 24 November 2026 in a browser). It sets the general battery rules around the power bank lines above.",
+     "table": {
+      "head": [
+       "Point",
+       "JetBlue says"
+      ],
+      "rows": [
+       [
+        "Packing",
+        "Loose batteries go in original retail packaging or have their contacts wrapped in insulating tape"
+       ],
+       [
+        "Spare lithium batteries",
+        "Accepted in carry-on only; prohibited in checked bags"
+       ],
+       [
+        "Carry-on checked at the gate",
+        "Remove all spare lithium batteries first and keep them with you in the cabin"
+       ],
+       [
+        "Rechargeable lithium-ion",
+        "Must be marked or documented as passing UN 38.3 testing and be no more than 100 Wh"
+       ],
+       [
+        "Mobility aids",
+        "One battery up to 300 Wh with one spare, or two up to 160 Wh with two spares"
+       ],
+       [
+        "Damaged or recalled",
+        "Not allowed in checked or carry-on bags"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> a 100 to 160 Wh approval route for power banks, or an exact Wh cap for the power bank line itself."
+     ]
     }
    ],
    "faq": [
@@ -1478,6 +1517,10 @@
     [
      "Can I use my power bank on JetBlue?",
      "JetBlue says power banks should not be used to charge or power other devices during flight."
+    ],
+    [
+     "Can I put spare lithium batteries in a bag I check at the gate on JetBlue?",
+     "Not inside it. JetBlue says to remove all spare lithium batteries when a carry-on is checked at the gate or planeside and keep them with you in the cabin."
     ]
    ],
    "sources": [
@@ -12687,6 +12730,41 @@
      "list": [
       "<strong>Not on the page:</strong> the guide is a table whose carry-on and hold columns could not be read reliably, so we do not say which bag the drinks go in."
      ]
+    },
+    {
+     "h": "🛫 What Dublin Airport says about bottles in your cabin bag",
+     "p": "From the Dublin Airport \"Carry-on baggage\" security page (dublinairport.com, read 24 November 2026). It is the airport operator's rule for flights leaving Dublin, not Aer Lingus wording, and other airports still use the 100 ml rule.",
+     "table": {
+      "head": [
+       "Point",
+       "Dublin Airport says"
+      ],
+      "rows": [
+       [
+        "Container size",
+        "The old 100 ml limit no longer applies; containers up to 2 litres can go through security"
+       ],
+       [
+        "How many",
+        "No limit on the number of liquids and gels in carry-on"
+       ],
+       [
+        "Clear bag",
+        "Liquids no longer need to be in a clear plastic bag, and can stay in your hand luggage during screening"
+       ],
+       [
+        "Flights to the USA",
+        "Powders are still limited to 350 g in hand luggage"
+       ],
+       [
+        "Restricted item found",
+        "You can hand it over for disposal, or go back landside with it"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> a rule on alcohol strength or duty-free bags; connecting airports may still apply the 100 ml rule, so check them."
+     ]
     }
    ],
    "faq": [
@@ -12697,12 +12775,20 @@
     [
      "Is there a limit for beer and wine on Aer Lingus?",
      "Aer Lingus says drinks of 24% alcohol or less are not subject to any restrictions."
+    ],
+    [
+     "Can I take a bottle of wine in my cabin bag from Dublin?",
+     "Dublin Airport says containers up to 2 litres can now go through its security without the old 100 ml rule. Aer Lingus's dangerous goods limits for strong spirits still apply, and your connecting airport may be stricter."
     ]
    ],
    "sources": [
     [
      "https://www.aerlingus.com/media/pdfs/guide-to-dangerous-goods.pdf",
      "Aer Lingus &mdash; Guide to Dangerous Goods"
+    ],
+    [
+     "https://www.dublinairport.com/at-the-airport/security/carry-on-baggage",
+     "Dublin Airport &mdash; Carry-on baggage"
     ]
    ],
    "keepSchema": true,
@@ -15907,17 +15993,62 @@
     {
      "h": "What customs says about bringing alcohol into Iceland (Icelandair's home country)",
      "p": "This is the customs rule for people entering Iceland, not a rule stated by Icelandair for its cabin. Icelandic Customs (Skatturinn) counts the alcohol allowance in units. It names spirits as drinks above 21% alcohol and wine as any non-beer drink at 21% or below, and gives example combinations such as 1 litre of spirits plus 0.75 litre of wine plus 3 litres of beer, or 3 litres of wine and 6 litres of beer, or 1 litre of spirits and 6 litres of beer, or 1.5 litres of wine and 12 litres of beer, or 18 litres of beer. The minimum age for bringing alcohol into Iceland is 20 and for tobacco 18. The goods must be for personal use or gifts, not for sale, and travel agencies, guides or drivers cannot import duty-free goods on a traveller's behalf. Use the red channel if you have dutiable or restricted goods. The page does not state a penalty for exceeding the alcohol allowance. Source read: Skatturinn, Duty-free imports (English). No alcohol penalty is stated."
+    },
+    {
+     "h": "🛫 What Keflavik Airport says about alcohol at security",
+     "p": "From Keflavik Airport's \"Security check\" page and its Q&A (kefairport.com, read 24 November 2026). It is the airport operator's rule for anyone flying out of Keflavik, not an Icelandair wording.",
+     "table": {
+      "head": [
+       "Point",
+       "Keflavik Airport says"
+      ],
+      "rows": [
+       [
+        "Is alcohol a liquid?",
+        "Yes: alcohol is listed with soft drinks, perfumes and toothpaste as a liquid"
+       ],
+       [
+        "Cabin bag",
+        "Each container 100 ml (1 dl) or less, all in one transparent 1-litre zip bag, one bag per passenger"
+       ],
+       [
+        "At the screening tray",
+        "The bag comes out of your hand luggage and goes in its own tray"
+       ],
+       [
+        "Over the limit",
+        "Throw it away in the preparation area, or check it in if it is allowed in the hold"
+       ],
+       [
+        "Storage",
+        "The airport has no storage for items you cannot take through"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> a limit for duty-free bottles or for checked alcohol; for those use the IATA figure above and Icelandair."
+     ]
     }
    ],
    "sources": [
     [
      "https://www.iata.org/contentassets/6fea26dd84d24b26a7a1fd5788561d6e/dgr-67-en-2.3.a.pdf",
      "IATA &mdash; Dangerous Goods Regulations, Table 2.3.A (67th edition, 1 January 2026)"
+    ],
+    [
+     "https://www.kefairport.com/security-check",
+     "Keflavik Airport &mdash; Security check"
     ]
    ],
    "keepSchema": true,
    "checked": "18 October 2026",
-   "unofficial": true
+   "unofficial": true,
+   "faq": [
+    [
+     "Is alcohol treated as a liquid at Keflavik security?",
+     "Yes. Keflavik Airport lists alcohol among liquids: 100 ml containers or less, together in one 1-litre transparent bag, or put the bottle in checked baggage."
+    ]
+   ]
   },
   "perfume": {
    "answer": "Icelandair says small quantities of medicines and toiletries needed for the journey, such as hair sprays and perfumes, should be packed in your carry-on. The IATA limit for aerosols is 0.5 L or 0.5 kg per article and 2 L or 2 kg in total.",
@@ -20726,17 +20857,62 @@
     {
      "h": "What customs says about bringing alcohol into Singapore (Singapore Airlines's home country)",
      "p": "This is the customs rule for people entering Singapore, not a rule stated by Singapore Airlines for its cabin. Singapore Customs says the liquor concession needs you to be 18 or older, to have spent at least 2 days abroad, not to arrive from Malaysia, and the liquor must be for personal use. The options are 1 litre of spirits plus 1 litre of wine, or 1 litre of spirits plus 1 litre of beer, or 1 litre of wine plus 1 litre of beer, or 2 litres of wine, or 2 litres of beer. Crew have their own smaller options, and there is no concession at all for travellers arriving from Malaysia. Liquor above the concession incurs duty and GST, and more than 10 litres needs a Customs permit. Failing to declare goods at the Red Channel may result in fines or prosecution. The S$500 GST relief for newly bought goods excludes liquor and tobacco, and tobacco has no concession at all. Source read: Singapore Customs, Duty-free concession and GST relief. Fine amounts are not on the page."
+    },
+    {
+     "h": "🛫 What Changi Airport says about bottles at security",
+     "p": "From the Changi Airport page \"Security & Baggage Restrictions\", Liquids, Aerosols, Gels tab (read 24 November 2026). It covers every flight leaving Singapore, whatever the airline, and is separate from the customs concession above.",
+     "table": {
+      "head": [
+       "Point",
+       "Changi Airport rule"
+      ],
+      "rows": [
+       [
+        "Drinks",
+        "Water, juices and other drinks are listed as liquids; containers over 100 ml are not accepted in the cabin, even part-filled"
+       ],
+       [
+        "Bottle bought at Changi",
+        "Keep it sealed in the shop's tamper-evident bag with the receipt showing; cut-off times for such purchases apply"
+       ],
+       [
+        "Flights to the EU or Switzerland",
+        "Only liquids in sealed tamper-evident bags with the SGP state code, bought in the Changi transit area, are allowed onboard"
+       ],
+       [
+        "Not sealed or no receipt",
+        "It must be thrown away before screening or put in checked baggage"
+       ],
+       [
+        "Checked bag",
+        "The Changi page sets no alcohol limit; use the IATA figure above and the airline's own rule"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the Changi page:</strong> a ban or cap on alcohol itself; the limits are about container size and sealed bags."
+     ]
     }
    ],
    "sources": [
     [
      "https://www.iata.org/contentassets/6fea26dd84d24b26a7a1fd5788561d6e/dgr-67-en-2.3.a.pdf",
      "IATA &mdash; Dangerous Goods Regulations, Table 2.3.A (67th edition, 1 January 2026)"
+    ],
+    [
+     "https://www.changiairport.com/en/fly/security-and-baggage-restrictions.html",
+     "Changi Airport &mdash; Security & Baggage Restrictions"
     ]
    ],
    "keepSchema": true,
    "checked": "18 October 2026",
-   "unofficial": true
+   "unofficial": true,
+   "faq": [
+    [
+     "Can I carry a duty-free bottle from Changi in my cabin bag?",
+     "Yes if it stays sealed in the shop's tamper-evident bag with the receipt visible. For flights to the EU or Switzerland it must carry the SGP state code and have been bought in the Changi transit area."
+    ]
+   ]
   }
  },
  "Thai Airways": {
