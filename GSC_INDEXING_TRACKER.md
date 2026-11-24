@@ -1106,3 +1106,20 @@ Pages changed (not yet requested in GSC; official-source facts first):
 - https://canitakethis.co/country/sweden/plants-seeds/
 - https://canitakethis.co/food/costa-rica/
 - https://canitakethis.co/food/ukraine/
+
+## Deploy 4f80cf26c (2026-11-24)
+No GSC requests made yet.
+- https://canitakethis.co/airline/austrian/perfume-aerosols/
+- https://canitakethis.co/airline/el-al/medication/
+- https://canitakethis.co/airline/kenya-airways/alcohol/
+- https://canitakethis.co/blog/is-turks-and-caicos-safe-2026/
+- https://canitakethis.co/blog/level-4-travel-advisory-countries-2026/
+- https://canitakethis.co/blog/travel-warning-by-country-2026/
+- https://canitakethis.co/blog/travel-warning-caribbean-2026/
+- https://canitakethis.co/blog/travel-warning-mexico-2026/
+- https://canitakethis.co/country/bahrain/alcohol/
+- https://canitakethis.co/country/fiji/vaping/
+- https://canitakethis.co/country/greece/vaping/
+- https://canitakethis.co/country/jordan/vaping/
+- https://canitakethis.co/country/peru/vaping/
+- https://canitakethis.co/country/ukraine/tobacco/
