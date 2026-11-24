@@ -176,6 +176,7 @@ module.exports = function (X) {
   // ---------------- INDIGO ----------------
   {
     const P1 = ['https://www.goindigo.in/baggage/dangerous-goods-policy.html', 'IndiGo: Dangerous goods and items not allowed in flight', 'Medicines, liquids, medical equipment'];
+    const P2 = ['https://www.goindigo.in/content/dam/s6web/in/en/assets/documents/Ready-Reckoner-2025.pdf', 'IndiGo: Meda Pax Ready Reckoner (medical team, FSI.006)', 'Medical conditions and flying'];
     add({
       slug: 'indigo', name: 'IndiGo',
       h1: 'IndiGo Medication Policy: Medicines With and Without a Prescription on an IndiGo Flight (2026)',
@@ -185,8 +186,9 @@ module.exports = function (X) {
       scen: [
         card('pills', 'Pills & tablets', 'go', 'Cabin baggage', 'Keep it with you', 'IndiGo recommends all medication goes in cabin baggage; its list names medicines with a proper prescription.', [
           'IndiGo: it recommends that all medication, valuables, fragile and perishable items are carried in cabin baggage, not checked baggage, and accepts no responsibility for these items.',
-          'IndiGo: its list of items you may carry names "Medicines (with proper prescription)", "Non-prescribed medicines" and "Medical equipment (without mercury content)".'
-        ], [P1], true),
+          'IndiGo: its list of items you may carry names "Medicines (with proper prescription)", "Non-prescribed medicines" and "Medical equipment (without mercury content)".',
+          'IndiGo medical team ready reckoner: for passengers with controlled diabetes or heart conditions it says to carry medicines in hand baggage; it lists some conditions as permitted only with a fit-to-fly certificate not older than 72 hours.'
+        ], [P1, P2], true),
         card('liquids', 'Liquid medication', 'warn', 'Screening applies', 'Over 100 ml (3.4 oz)', 'IndiGo allows one clear resealable litre bag of small liquid quantities; contents are screened.', [
           'IndiGo: passengers can carry one clear transparent resealable litre-sized plastic bag containing small quantities of liquids, gels, pastes and aerosols.',
           'IndiGo: the contents are subject to screening and security checks and must follow IndiGo\'s security guidelines about permissible objects.',

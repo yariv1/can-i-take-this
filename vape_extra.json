@@ -1683,6 +1683,41 @@
     "list": [
      "<strong>How to read it:</strong> \"current\" is each survey&rsquo;s own definition of current use."
     ]
+   },
+   {
+    "h": "⚖️ What Ireland's Public Health Act 2023 says about nicotine inhaling products",
+    "p": "From the Public Health (Tobacco Products and Nicotine Inhaling Products) Act 2023 on the Irish Statute Book (sections 25 to 35, read 24 November 2026). It deals with selling and advertising, not with what a traveller may bring in.",
+    "table": {
+     "head": [
+      "Point",
+      "What the Act says"
+     ],
+     "rows": [
+      [
+       "Licence",
+       "Selling tobacco or nicotine inhaling products by retail without a licence is an offence"
+      ],
+      [
+       "Self-service",
+       "Retail sale from a self-service display or vending machine is an offence"
+      ],
+      [
+       "Children",
+       "No sale to a child, and no sale by a child; no sale at events aimed at children"
+      ],
+      [
+       "Advertising",
+       "Advertising of nicotine inhaling products is banned in certain places, including cinemas"
+      ],
+      [
+       "Penalties",
+       "Summary: a class B fine or up to 6 months in prison for a first offence, a class A fine or up to 12 months after that; on indictment up to €500,000 or 3 years"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>Not in the Act:</strong> a traveller allowance or an airport rule. Ask Irish Revenue before you bring in more than a device and a few bottles of liquid."
+    ]
    }
   ],
   "faq": [
@@ -1697,12 +1732,20 @@
    [
     "How common is vaping in Ireland?",
     "Adults: 6.0% of adults currently use e-cigarettes (men 7.0%, women 5.0%) in the survey \"Healthy Ireland Survey, 2022\" (national, ages 15+). Adolescents: 15.0% of adolescents currently use e-cigarettes (boys 20.0%, girls 12.0%) in the survey \"European School Survey Project on Alcohol and Other Drugs, 2019\" (national, ages 15-16)."
+   ],
+   [
+    "Can a shop in Ireland sell vapes from a self-service shelf?",
+    "No. The Public Health Act 2023 makes retail sale of nicotine inhaling products by self-service an offence, and sale to a child is also an offence."
    ]
   ],
   "src": [
    [
     "https://www.revenue.ie/en/companies-and-charities/excise-and-licences/ept/index.aspx",
     "Revenue (Ireland) - E-liquid Products Tax (EPT)"
+   ],
+   [
+    "https://www.irishstatutebook.ie/2023/en/act/pub/0035/sec0028.html",
+    "Irish Statute Book: Public Health (Tobacco Products and Nicotine Inhaling Products) Act 2023"
    ]
   ],
   "keepSchema": true
@@ -2350,6 +2393,49 @@
     "list": [
      "<strong>How to read it:</strong> \"current\" is each survey&rsquo;s own definition of current use."
     ]
+   },
+   {
+    "h": "⚖️ What Chile's Law 21.642 says about vapes",
+    "p": "From Law No. 21.642, published in the Diario Oficial on 4 January 2024 (Ministry of Health; read in Spanish on 24 November 2026). It amends the tobacco law 19.419. It deals with sale, packaging and use, and says nothing about what a traveller may carry in.",
+    "table": {
+     "head": [
+      "Point",
+      "What the law says"
+     ],
+     "rows": [
+      [
+       "Covered products",
+       "Nicotine e-cigarettes, nicotine-free devices, vape liquids, heated tobacco and their accessories"
+      ],
+      [
+       "Minors",
+       "No sale or free supply to anyone under 18; vending machines for these products are banned"
+      ],
+      [
+       "Where you may not vape",
+       "The places where smoking is banned, including enclosed public places; some places allow it only in outdoor areas"
+      ],
+      [
+       "Medical exception",
+       "Therapeutic nicotine-free devices are allowed where use is a pressing medical need and the user carries the prescription"
+      ],
+      [
+       "Nicotine in liquid",
+       "Not more than 45 mg per ml"
+      ],
+      [
+       "Packaging",
+       "Spanish label with maker, place of manufacture, ingredients and strength, plus child-resistant containers"
+      ],
+      [
+       "Fines",
+       "2 monthly tax units for breaking the use ban or vending machine rule; 4 for selling to minors"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>Not in the law:</strong> a traveller allowance or an airport rule. Check Chile Customs (aduana.cl) and your airline before flying with vape liquid."
+    ]
    }
   ],
   "faq": [
@@ -2364,6 +2450,10 @@
    [
     "What does WHO list for e-cigarette use in Chile?",
     "1.0% of adults currently use e-cigarettes (men 1.4%, women 0.5%), and 0.6% use them daily in the survey \"Estudio Nacional de Drogas en Población General de Chile, 2022\" (national, ages 15-64)."
+   ],
+   [
+    "What is the nicotine limit for vape liquid in Chile?",
+    "Law 21.642 says vape liquid with nicotine may not exceed 45 mg per ml."
    ]
   ],
   "src": [
@@ -2374,6 +2464,10 @@
    [
     "https://www.aduana.cl/aduana/site/docs/20230712/20230712145906/manual_de_ingreso_y_salida_a_chile_juegos_panamericanos_y_parapanamericanos_01_06_2023.pdf",
     "Servicio Nacional de Aduanas - Manual de ingreso y salida a Chile (2023)"
+   ],
+   [
+    "https://www.diariooficial.interior.gob.cl/publicaciones/2024/01/04/43741/01/2432486.pdf",
+    "Diario Oficial: Ley 21.642 (4 January 2024), in Spanish"
    ]
   ],
   "keepSchema": true
@@ -5704,18 +5798,61 @@
     "list": [
      "<strong>Not read:</strong> a current FURS figure for e-cigarette filler from outside the EU. Ask FURS before bringing more than a small supply."
     ]
+   },
+   {
+    "h": "⚖️ What Slovenia's notified draft amendment says about e-cigarettes",
+    "p": "From the draft Act amending Slovenia's Act on the Restriction of the Use of Tobacco and Related Products, as notified to the European Commission's technical regulation system (notification 25095, English text, read 24 November 2026). It is a draft; the 2024 amendment and a 2025 press report suggest it has since been adopted, but we did not read the final gazette text.",
+    "table": {
+     "head": [
+      "Point",
+      "What the draft says"
+     ],
+     "rows": [
+      [
+       "Refill size",
+       "Liquid sold in refill containers of at most 10 ml; disposable devices or single-use cartridges hold at most 2 ml"
+      ],
+      [
+       "Flavours",
+       "Nicotine and non-nicotine liquid may contain no flavouring except tobacco or menthol (a later amendment reportedly removed menthol)"
+      ],
+      [
+       "Nicotine-free devices",
+       "Brought under the same rules as nicotine devices"
+      ],
+      [
+       "Warning on label",
+       "\"This product contains nicotine which is a highly addictive substance. It is not recommended for use by non-smokers.\""
+      ],
+      [
+       "Imports from outside the EU",
+       "The Financial Administration supervises that e-cigarettes and refill containers meet these conditions when imported from third countries"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>Not in the draft:</strong> a traveller allowance for devices or liquid. Check FURS before flying in with vape liquid."
+    ]
    }
   ],
   "faq": [
    [
     "How much e-cigarette liquid can I bring into Slovenia from another EU country?",
     "FURS lists 100 ml of filler for electronic cigarettes as personal-use goods without excise duty when brought from another EU member state. The page was refreshed in September 2020."
+   ],
+   [
+    "Can I bring flavoured vape liquid into Slovenia?",
+    "The notified amendment limits liquid on the market to tobacco or menthol flavour, with 10 ml refill containers, and has customs supervise imports from outside the EU. It names no traveller allowance, so ask FURS."
    ]
   ],
   "src": [
    [
     "https://www.fu.gov.si/en/life_events_individuals/import_of_alcoholic_beverages_and_tobacco_products",
     "Slovenian Financial Administration (FURS) - Import of alcoholic beverages and tobacco products"
+   ],
+   [
+    "https://technical-regulation-information-system.ec.europa.eu/en/notification/25095/text/D/EN",
+    "EU TRIS notification 25095: Slovenia, draft Act amending the Act on the Restriction of the Use of Tobacco and Related Products"
    ]
   ],
   "keepSchema": true

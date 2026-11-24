@@ -65,7 +65,8 @@
  },
  "airline/air-china/medication": {
   "official": [
-   "read: Air China: Notice to Passengers; Air China: Notice on carry-on liquids (domestic flights)"
+   "read: Air China: Notice to Passengers; Air China: Notice on carry-on liquids (domestic flights)",
+   "re-read 2026-11-24: Air China domestic liquids notice and checked-baggage list: content already on the page"
   ],
   "reliable": [
    "read: Diabetes UK: Travelling with diabetes"
@@ -73,7 +74,7 @@
   "other": [
    "none needed: the destination country sets the medicine rules, not the airline; covered by our per-country pages /medication/into/<country>/ (each read from that country authority or INCB filing) plus INCB travellers guidance"
   ],
-  "date": "2026-11-16"
+  "date": "2026-11-24"
  },
  "airline/air-europa/medication": {
   "official": [
@@ -446,7 +447,8 @@
  },
  "airline/gulf-air/medication": {
   "official": [
-   "read: Gulf Air: Medical cases"
+   "read: Gulf Air: Medical cases",
+   "tried 2026-11-24: Bahrain Customs traveller PDF and mtt.gov.bh prohibited items PDF: both returned error pages to curl"
   ],
   "reliable": [
    "read: CDC Yellow Book: Travelers with chronic illnesses; Diabetes UK: Travelling with diabetes"
@@ -454,7 +456,7 @@
   "other": [
    "none needed: the destination country sets the medicine rules, not the airline; covered by our per-country pages /medication/into/<country>/ (each read from that country authority or INCB filing) plus INCB travellers guidance"
   ],
-  "date": "2026-11-16"
+  "date": "2026-11-24"
  },
  "airline/hawaiian-airlines/medication": {
   "official": [
@@ -494,7 +496,8 @@
  },
  "airline/indigo/medication": {
   "official": [
-   "read: IndiGo: Dangerous goods and items not allowed in flight"
+   "read: IndiGo: Dangerous goods and items not allowed in flight",
+   "read 2026-11-24: IndiGo Meda Pax Ready Reckoner PDF (medical team) and dangerous-goods page re-read in browser pane"
   ],
   "reliable": [
    "read: Diabetes UK: Travelling with diabetes"
@@ -502,7 +505,7 @@
   "other": [
    "none needed: the destination country sets the medicine rules, not the airline; covered by our per-country pages /medication/into/<country>/ (each read from that country authority or INCB filing) plus INCB travellers guidance"
   ],
-  "date": "2026-11-16"
+  "date": "2026-11-24"
  },
  "airline/israir/medication": {
   "official": [
@@ -1438,7 +1441,8 @@
  },
  "food/vietnam": {
   "official": [
-   "tried 2026-11-09 (session 43-45): official customs/agriculture portal of vietnam blocked, silent or no traveller food rule"
+   "tried 2026-11-09 (session 43-45): official customs/agriculture portal of vietnam blocked, silent or no traveller food rule",
+   "tried 2026-11-24: WebSearch for Vietnam customs/plant protection traveller food rule: only travel blogs and USDA trade reports"
   ],
   "reliable": [
    "IATA Travel Centre customs page infopages.traveldoc.aero (named, undated): read 2026-11-09, quoted on the page"
@@ -1446,7 +1450,7 @@
   "other": [
    "none needed: step 2a answered the question"
   ],
-  "date": "2026-11-16"
+  "date": "2026-11-24"
  },
  "food/egypt": {
   "official": [
@@ -2275,15 +2279,17 @@
  },
  "country/morocco/alcohol": {
   "official": [
-   "tried 2026-11-16: douane.gov.ma: request rejected, not read"
+   "tried 2026-11-16: douane.gov.ma: request rejected, not read",
+   "tried 2026-11-24: finances.gov.ma ADII circulars and 2011 MRE brochure: connection failed; bladi.net copy of the ADII MRE guide 2023 read, no alcohol line"
   ],
   "reliable": [
-   "read: Travel Doc customs information page for Morocco (infopages.traveldoc.aero)"
+   "read: Travel Doc customs information page for Morocco (infopages.traveldoc.aero)",
+   "tried 2026-11-24: WebSearch: Medias24 2022 article says 1 l wine + 1 l spirits, not read in full"
   ],
   "other": [
    "none needed: step 2a answered the question"
   ],
-  "date": "2026-11-16"
+  "date": "2026-11-24"
  },
  "country/morocco/tobacco": {
   "official": [
@@ -2350,7 +2356,8 @@
  },
  "country/ukraine/alcohol": {
   "official": [
-   "tried 2026-11-16: customs.gov.ua: HTTP 403, not read"
+   "tried 2026-11-16: customs.gov.ua: HTTP 403, not read",
+   "tried 2026-11-24: WebSearch for customs.gov.ua passenger rules: not returned; guides conflict on 1 l spirits / 2 l wine / 5 l"
   ],
   "reliable": [
    "read: Travel Doc customs information page for Ukraine (infopages.traveldoc.aero)"
@@ -2358,7 +2365,7 @@
   "other": [
    "none needed: step 2a answered the question"
   ],
-  "date": "2026-11-16"
+  "date": "2026-11-24"
  },
  "country/ukraine/tobacco": {
   "official": [
@@ -13102,7 +13109,8 @@
  },
  "airline/swiss/perfume-aerosols": {
   "official": [
-   "tried 2026-11-16: Swiss own restricted-items/dangerous-goods page; see page source"
+   "tried 2026-11-16: Swiss own restricted-items/dangerous-goods page; see page source",
+   "read 2026-11-24: Swiss FOCA (BAZL) Liquids page, https://www.bazl.admin.ch/en/liquids"
   ],
   "reliable": [
    "read 2026-11-17: Zurich Airport: what is allowed in your baggage (https://www.flughafen-zuerich.ch/en/passengers/fly/all-about-the-flight/what-is-allowed-in-your-baggage)"
@@ -13110,7 +13118,7 @@
   "other": [
    "none needed: step 2a answered part of the question"
   ],
-  "date": "2026-11-17"
+  "date": "2026-11-24"
  },
  "airline/austrian/perfume-aerosols": {
   "official": [
@@ -13427,13 +13435,14 @@
  },
  "airline/norwegian/vape-e-cigarette": {
   "official": [
-   "https://www.norwegian.com/us/travel-info/baggage/restricted-items/dangerous-goods/ (E-cigarettes section, full page pasted by user 2026-11-17; matches our page)"
+   "https://www.norwegian.com/us/travel-info/baggage/restricted-items/dangerous-goods/ (E-cigarettes section, full page pasted by user 2026-11-17; matches our page)",
+   "tried 2026-11-24: norwegian.com batteries-on-board page: Cloudflare 403 in curl and browser pane; Avinor luggage rules page read (no vape line)"
   ],
   "reliable": [
    "read 2026-10-08: WHO global tobacco report 2023 country profile (https://cdn.who.int/media/docs/default-source/country-profiles/tobacco/gtcr-2023/tobacco-2023-nor.pdf)"
   ],
   "other": [],
-  "date": "2026-11-17"
+  "date": "2026-11-24"
  },
  "airline/tap-air-portugal/vape-e-cigarette": {
   "official": [
@@ -14487,7 +14496,8 @@
  },
  "country/ireland/vaping": {
   "official": [
-   "read 2026-11-19: Revenue EPT page (tax from 2025-11-01, supplier liable, travellers not covered)"
+   "read 2026-11-19: Revenue EPT page (tax from 2025-11-01, supplier liable, travellers not covered)",
+   "read 2026-11-24: Irish Statute Book Public Health (Tobacco Products and Nicotine Inhaling Products) Act 2023 sections 26, 28, 30, 35"
   ],
   "reliable": [
    "WHO country profile read 2026-10-08 (base card)",
@@ -14496,7 +14506,7 @@
   "other": [
    "none needed: national tax authority page read"
   ],
-  "date": "2026-11-19"
+  "date": "2026-11-24"
  },
  "country/portugal/vaping": {
   "official": [
@@ -14563,7 +14573,8 @@
  "country/belgium/vaping": {
   "official": [
    "no national page needed for this section: WHO profile table read",
-   "2026-11-22: finance.belgium.be traveller page: captcha wall, not bypassed"
+   "2026-11-22: finance.belgium.be traveller page: captcha wall, not bypassed",
+   "tried 2026-11-24: news.belgium.be disposable vape ban PDF HTTP 403; only press coverage of the 1 Jan 2025 ban returned by search"
   ],
   "reliable": [
    "read 2026-11-19: WHO country profile PDF (downloaded, pdftotext), table of tobacco use prevalence from the latest survey (e-cigarette use rows)",
@@ -14572,7 +14583,7 @@
   "other": [
    "2026-11-22: financien.belgium.be traveller pages found by search give no tobacco or e-liquid quantities in the summaries; not read in full"
   ],
-  "date": "2026-11-19"
+  "date": "2026-11-24"
  },
  "country/canada/vaping": {
   "official": [
@@ -14586,7 +14597,8 @@
  },
  "country/chile/vaping": {
   "official": [
-   "read 2026-11-22: aduana.cl airport page (400 cigarettes, 2.5 l alcohol, over-18 only) and 2023 entry/exit manual PDF (400 units, 500 g tobacco, 50 cigars): no vape word"
+   "read 2026-11-22: aduana.cl airport page (400 cigarettes, 2.5 l alcohol, over-18 only) and 2023 entry/exit manual PDF (400 units, 500 g tobacco, 50 cigars): no vape word",
+   "read 2026-11-24: Diario Oficial Ley 21.642 (4 Jan 2024), https://www.diariooficial.interior.gob.cl/publicaciones/2024/01/04/43741/01/2432486.pdf"
   ],
   "reliable": [
    "WHO country profile read 2026-10-08 (base card)"
@@ -14594,7 +14606,7 @@
   "other": [
    "none needed: national customs pages read"
   ],
-  "date": "2026-11-22"
+  "date": "2026-11-24"
  },
  "country/china/vaping": {
   "official": [
@@ -14859,7 +14871,8 @@
  },
  "country/oman/vaping": {
   "official": [
-   "customs.gov.om traveller services page: no response on curl, navigation failed in browser pane 2026-11-22"
+   "customs.gov.om traveller services page: no response on curl, navigation failed in browser pane 2026-11-22",
+   "checked 2026-11-24: page already carries decree-based import-ban section (Ministerial Decree 327/2015 via Tobacco Control Laws); decree text page HTTP 403"
   ],
   "reliable": [
    "WHO country profile read 2026-10-08 (base card)",
@@ -15038,7 +15051,8 @@
  },
  "country/slovenia/vaping": {
   "official": [
-   "read 2026-11-19: FURS import of alcohol and tobacco page (refreshed 2020-09-23): 100 ml e-cigarette filler from EU, no non-EU figure"
+   "read 2026-11-19: FURS import of alcohol and tobacco page (refreshed 2020-09-23): 100 ml e-cigarette filler from EU, no non-EU figure",
+   "read 2026-11-24: EU TRIS notification 25095 English text of Slovenia draft amendment (FURS import supervision, 10 ml refills, flavour limit), https://technical-regulation-information-system.ec.europa.eu/en/notification/25095/text/D/EN"
   ],
   "reliable": [
    "WHO country profile read 2026-10-08 (base card)"
@@ -15046,7 +15060,7 @@
   "other": [
    "none needed: national tax authority page read"
   ],
-  "date": "2026-11-19"
+  "date": "2026-11-24"
  },
  "country/slovakia/vaping": {
   "official": [
@@ -15169,7 +15183,8 @@
  },
  "country/dominican-republic/vaping": {
   "official": [
-   "read 2026-11-22: DGA Manual del Viajero page FAQ: 20 packs, 25 cigars, 200 g tobacco, 5 l alcohol, restricted list drugs/firearms, no vape word"
+   "read 2026-11-22: DGA Manual del Viajero page FAQ: 20 packs, 25 cigars, 200 g tobacco, 5 l alcohol, restricted list drugs/firearms, no vape word",
+   "tried 2026-11-24: WebSearch: no Dominican law on e-cigarettes found; only pending bills (Senate documents), nothing enacted to quote"
   ],
   "reliable": [
    "WHO country profile read 2026-10-08 (base card)"
@@ -15177,7 +15192,7 @@
   "other": [
    "none needed: national customs page read"
   ],
-  "date": "2026-11-22"
+  "date": "2026-11-24"
  },
  "country/sri-lanka/vaping": {
   "official": [
@@ -15273,7 +15288,8 @@
  },
  "country/romania/vaping": {
   "official": [
-   "customs.ro non-EU arrivals page: HTTP 403 Cloudflare 2026-11-21, not bypassed"
+   "customs.ro non-EU arrivals page: HTTP 403 Cloudflare 2026-11-21, not bypassed",
+   "tried 2026-11-24: EU TRIS notification 26635 Romanian text: HTTP 429 rate limit; customs.ro 403"
   ],
   "reliable": [
    "read 2026-11-22: Tobacco Control Laws Romania e-cigarettes page (updated 2024-05-11): distance sales to Romanian consumers prohibited, public-use ban, advertising limits; WHO country profile read 2026-10-08 (base card)"
@@ -15281,7 +15297,7 @@
   "other": [
    "goodsacrossborders and aggregators seen in search, conflicting, not used"
   ],
-  "date": "2026-11-22"
+  "date": "2026-11-24"
  },
  "country/luxembourg/plants-seeds": {
   "official": [
@@ -15776,5 +15792,44 @@
    "read 2026-11-24: JetBlue Batteries help page in browser pane (full battery table), https://www.jetblue.com/help/batteries"
   ],
   "date": "2026-11-24"
+ },
+ "airline/austrian/alcohol": {
+  "official": [
+   "read 2026-11-24: Vienna Airport Security control page, https://www.viennaairport.com/en/passengers/airport/security_control"
+  ],
+  "date": "2026-11-24"
+ },
+ "airline/vueling/power-bank": {
+  "official": [
+   "read 2026-11-24: Aena lithium battery page (Spanish airport operator), https://www.aena.es/es/pasajeros/equipajes-controles/prepara-tu-equipaje/dispositivos-electronicos-y-baterias-de-litio.html"
+  ],
+  "date": "2026-11-24"
+ },
+ "country/slovakia/tobacco": {
+  "official": [
+   "tried 2026-11-24: WebSearch for financnasprava.sk traveller page: not returned; only travel guides"
+  ],
+  "date": "2026-11-24",
+  "reliable": [
+   "read 2026-11-24: Hinterland Travel Slovakia customs page and VisaVerge Slovak Republic page (over 17, combined 100% rule, 800 cigarettes EU guideline; unofficial)"
+  ]
+ },
+ "country/belgium/cash": {
+  "official": [
+   "tried 2026-11-24: fin.belgium.be liquid assets pages fetched: JavaScript shell, no body text"
+  ],
+  "date": "2026-11-24",
+  "reliable": [
+   "read 2026-11-24: European Commission EU cash controls page (EUR 10,000 declaration, gold, 30-day unaccompanied cash, penalties), https://taxation-customs.ec.europa.eu/customs/prohibitions-restrictions/eu-cash-controls_ro"
+  ]
+ },
+ "airline/lufthansa/perfume-aerosols": {
+  "official": [
+   "tried 2026-11-24: Frankfurt Airport pages conflict (2 l vs 100 ml) across dated URLs; not used"
+  ],
+  "date": "2026-11-24",
+  "reliable": [
+   "read 2026-11-24: Fraport press release 21 Aug 2024 (100 ml / 1 litre bag reapplied at all FRA checkpoints; later Frankfurt pages cite 2 litres, conflict not resolved), https://fraport.com/en/newsroom/press-releases/2024/q3/information-for-passengers--starting-this-september--the-maximum.html"
+  ]
  }
 }

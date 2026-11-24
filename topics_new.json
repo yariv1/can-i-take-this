@@ -3946,6 +3946,41 @@
      "list": [
       "<strong>Note:</strong> SWISS asks you to read the general safety rules for liquids in hand baggage as well."
      ]
+    },
+    {
+     "h": "🛫 What the Swiss aviation office says about sprays and bottles at security",
+     "p": "From the Federal Office of Civil Aviation (FOCA/BAZL) page \"Liquids\" (bazl.admin.ch, read 24 November 2026). It sets the rule for Swiss airports and is not Swiss International Air Lines wording.",
+     "table": {
+      "head": [
+       "Point",
+       "FOCA says"
+      ],
+      "rows": [
+       [
+        "Standard rule",
+        "Containers of 100 ml or less, loose in one transparent resealable bag of at most 1 litre, one bag per person"
+       ],
+       [
+        "Always allowed",
+        "Liquids of any size needed for medical or dietary reasons, such as baby food"
+       ],
+       [
+        "Duty-free",
+        "Items of any size bought at a Swiss, EU or EFTA airport or on a Swiss, EU or EFTA plane, with the receipt, in an untampered sealed bag that you open only at the end of your journey"
+       ],
+       [
+        "From 26 June 2026 at Zurich",
+        "New provisions apply; CT scanners there let you carry containers up to 2 litres in hand luggage"
+       ],
+       [
+        "Other airports",
+        "CT scanners are not yet standard: the outbound and return airports, and any stopover, may apply different limits"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> a rule on perfume or aerosol strength; check the airport and airline."
+     ]
     }
    ],
    "faq": [
@@ -3956,12 +3991,20 @@
     [
      "Do aerosol cans need a cap on SWISS?",
      "Yes, release valves must be protected by a cap or another suitable means."
+    ],
+    [
+     "Can I take a big perfume bottle from Zurich in my hand luggage?",
+     "The Swiss aviation office says Zurich's CT scanners allow containers up to 2 litres from 26 June 2026, but other airports on your trip may still apply the 100 ml rule."
     ]
    ],
    "sources": [
     [
      "https://www.swiss.com/de/en/prepare/baggage/dangerous-goods",
      "SWISS &mdash; Dangerous goods"
+    ],
+    [
+     "https://www.bazl.admin.ch/en/liquids",
+     "Swiss Federal Office of Civil Aviation &mdash; Liquids"
     ]
    ],
    "keepSchema": true,
@@ -5023,6 +5066,37 @@
      "list": [
       "<strong>Note:</strong> hand baggage must also respect the general rules for liquids at security."
      ]
+    },
+    {
+     "h": "🛫 What Vienna Airport says about bottles in your cabin bag",
+     "p": "From Vienna Airport's \"Security control\" page (viennaairport.com, read 24 November 2026). It is the airport operator's rule for flights leaving Vienna, not Austrian Airlines wording.",
+     "table": {
+      "head": [
+       "Point",
+       "Vienna Airport says"
+      ],
+      "rows": [
+       [
+        "Container size",
+        "Liquids up to a container size of 2,000 ml may stay in your cabin bag"
+       ],
+       [
+        "Electronics",
+        "Electrical and electronic devices may also stay in the bag"
+       ],
+       [
+        "Screening",
+        "All liquids are screened; large quantities make extra checks and delays more likely"
+       ],
+       [
+        "Thermos flasks",
+        "Must be presented empty at the check; you can refill them afterwards"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> a limit on alcohol strength or duty-free bags; connecting airports may still apply the 100 ml rule."
+     ]
     }
    ],
    "faq": [
@@ -5033,12 +5107,20 @@
     [
      "Can I drink my own alcohol on Austrian?",
      "No, consuming alcohol brought on board by passengers is prohibited."
+    ],
+    [
+     "Can I take a bottle of spirits in my cabin bag from Vienna?",
+     "Vienna Airport says liquids in containers up to 2,000 ml may remain in the cabin bag and are screened, but your connecting airport may be stricter, and Austrian's own limits for strong spirits still apply."
     ]
    ],
    "sources": [
     [
      "https://www.austrian.com/xx/en/dangerous-goods",
      "Austrian Airlines &mdash; Items forbidden in the aircraft"
+    ],
+    [
+     "https://www.viennaairport.com/en/passengers/airport/security_control",
+     "Vienna Airport &mdash; Security control"
     ]
    ],
    "keepSchema": true,
@@ -8979,6 +9061,49 @@
      "list": [
       "<strong>Not on the page:</strong> the article gives no rule for 100 to 160 Wh."
      ]
+    },
+    {
+     "h": "🔋 What Spain's airport operator Aena says about batteries",
+     "p": "From Aena's page \"Dispositivos electrónicos y baterías de litio\" (aena.es, read in Spanish on 24 November 2026). It covers the Spanish airport network, including Vueling's Barcelona base, and is not Vueling wording.",
+     "table": {
+      "head": [
+       "Point",
+       "Aena says"
+      ],
+      "rows": [
+       [
+        "Loose spare batteries and power banks",
+        "Allowed in the cabin with conditions"
+       ],
+       [
+        "Protection",
+        "Each protected against short circuit (original packaging or a plastic sleeve) and kept away from other batteries and flammable objects"
+       ],
+       [
+        "Size",
+        "100 Wh each; up to 160 Wh with airline approval, and no more than 2 such batteries"
+       ],
+       [
+        "Watching them",
+        "Preferably kept where you can watch them"
+       ],
+       [
+        "In flight",
+        "Using an external battery to charge devices during the flight is not allowed"
+       ],
+       [
+        "Vapes with built-in battery",
+        "Allowed with conditions, no recharging in flight, up to 100 Wh (160 Wh with approval)"
+       ],
+       [
+        "Smart suitcase battery",
+        "Only if 2.7 Wh or less, or removed and carried in the cabin under the loose-battery rules"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not on the page:</strong> a cap on the number of power banks at 100 Wh; check Vueling."
+     ]
     }
    ],
    "faq": [
@@ -8989,12 +9114,20 @@
     [
      "Can I put my power bank in the overhead bin on Vueling?",
      "No, keep it in a visible place, never in the overhead compartments."
+    ],
+    [
+     "Can I use my power bank in my seat on a Vueling flight from Spain?",
+     "Aena says using an external battery to charge devices during the flight is not allowed, and a power bank over 100 Wh up to 160 Wh needs airline approval, with at most 2."
     ]
    ],
    "sources": [
     [
      "https://help.vueling.com/hc/en-gb/articles/49897017809425-Portable-batteries-Power-Banks",
      "Vueling &mdash; Portable batteries (Power Banks)"
+    ],
+    [
+     "https://www.aena.es/es/pasajeros/equipajes-controles/prepara-tu-equipaje/dispositivos-electronicos-y-baterias-de-litio.html",
+     "Aena &mdash; Dispositivos electronicos y baterias de litio (in Spanish)"
     ]
    ],
    "keepSchema": true,

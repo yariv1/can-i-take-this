@@ -29,7 +29,7 @@ function buildCountry(cn, D) {
 function build(c) {
   const cn = c.name;
   if (!EU.includes(cn)) return DATA[cn] ? buildCountry(cn, DATA[cn]) : null;
-  const lead = 'Entering ' + cn + ' from a non-EU country, plants, plant products and seeds need a phytosanitary certificate; only fruits of pineapple, coconut, durian, banana or date are exempt.';
+  const lead = 'A phytosanitary certificate is needed for plants, plant products and seeds entering ' + cn + ' from outside the EU.';
   const rows = [
     ['Plants for planting, cut flowers, other plants and plant products', 'Prohibited in personal luggage unless a phytosanitary certificate accompanies them'],
     ['Seeds for non-commercial use', 'Only with a phytosanitary certificate from the country of origin or an EU permit'],
@@ -37,8 +37,8 @@ function build(c) {
   ];
   const faq = [
     ['Can I bring seeds into ' + cn + '?', 'Only with a phytosanitary certificate, says the European Commission.'],
-    ['Can I bring plants into ' + cn + ' from outside the EU?', 'Not without a phytosanitary certificate, says the Commission; this covers plants to be planted, fruit, vegetables and cut flowers.'],
-    ['Do I need a certificate for fruit in ' + cn + '?', 'Yes, except pineapple, coconut, durian, banana and date; the table above has the limited-quantity note.']
+    ['Can I bring plants into ' + cn + ' from outside the EU?', 'Not without the certificate, says the Commission, whether they are for planting or are fruit, vegetables or cut flowers.'],
+    ['Do I need a certificate for fruit in ' + cn + '?', 'Yes, apart from the five exempt tropical fruits in the table.']
   ];
   const html = '<div class="bd-wrap">' + CSS + '<p class="bd-lead"><strong>' + esc(lead) + '</strong></p>' +
     '<section class="bd-sec"><h2>🌱 Plants and seeds: what the EU says for ' + esc(cn) + '</h2><p>' + esc(cn) + ' applies the EU plant-health rules.</p>' + table({ head: ['Item', 'Official EU rule'], rows }) +
