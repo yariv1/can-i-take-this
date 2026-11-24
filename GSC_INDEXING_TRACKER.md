@@ -1012,3 +1012,10 @@ Pages changed (not yet requested in GSC; official-source facts first):
 - https://canitakethis.co/country/jamaica/vaping/
 - https://canitakethis.co/country/ukraine/vaping/
 - https://canitakethis.co/country/morocco/vaping/
+
+## Deploy b26480c35 (2026-11-24)
+- https://canitakethis.co/country/nepal/vaping/
+- https://canitakethis.co/country/cambodia/vaping/
+- https://canitakethis.co/country/slovenia/plants-seeds/
+- https://canitakethis.co/country/romania/plants-seeds/
+- https://canitakethis.co/airline/egyptair/medication/
