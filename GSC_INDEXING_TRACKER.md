@@ -1135,3 +1135,18 @@ No GSC requests made yet.
 - https://canitakethis.co/country/netherlands/
 - https://canitakethis.co/country/romania/
 - https://canitakethis.co/country/sweden/plants-seeds/
+
+## Deploy d23ae24d2 (2026-11-24)
+No GSC requests made yet.
+- https://canitakethis.co/airline/aer-lingus/alcohol/
+- https://canitakethis.co/airline/icelandair/alcohol/
+- https://canitakethis.co/airline/jetblue/power-bank/
+- https://canitakethis.co/airline/singapore-airlines/alcohol/
+- https://canitakethis.co/airline/volaris/medication/
+- https://canitakethis.co/country/greece/plants-seeds/
+- https://canitakethis.co/country/hungary/alcohol/
+- https://canitakethis.co/country/malaysia/vaping/
+- https://canitakethis.co/country/maldives/tobacco/
+- https://canitakethis.co/country/mauritius/cash/
+- https://canitakethis.co/country/russia/alcohol/
+- https://canitakethis.co/country/russia/tobacco/
