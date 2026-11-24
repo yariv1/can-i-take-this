@@ -335,7 +335,8 @@
  },
  "airline/el-al/medication": {
   "official": [
-   "tried 2026-11-16: elal.com dangerous-goods PDF (insulin and syringes YES carry-on and checked, already on page); Children FAQ page (cooler and ice-pack answer) returned HTTP 492 / empty, not read"
+   "tried 2026-11-16: elal.com dangerous-goods PDF (insulin and syringes YES carry-on and checked, already on page); Children FAQ page (cooler and ice-pack answer) returned HTTP 492 / empty, not read",
+   "read 2026-11-24: Israel Ministry of Health carrying-medication page, read in browser pane"
   ],
   "reliable": [
    "read: CDC Yellow Book: Travelers with chronic illnesses; Diabetes UK: Travelling with diabetes"
@@ -344,7 +345,7 @@
    "none needed: the destination country sets the medicine rules, not the airline; covered by our per-country pages /medication/into/<country>/ (each read from that country authority or INCB filing) plus INCB travellers guidance",
    "tried 2026-11-17: no readable Israel Ministry of Health or Tax Authority medication page found; search returned third-party guides only"
   ],
-  "date": "2026-11-16"
+  "date": "2026-11-24"
  },
  "airline/emirates/medication": {
   "official": [
@@ -1833,7 +1834,8 @@
  },
  "country/bahrain/alcohol": {
   "official": [
-   "tried 2026-11-16: bahraincustoms.gov.bh: connection failed, not read"
+   "tried 2026-11-16: bahraincustoms.gov.bh: connection failed, not read",
+   "read 2026-11-24: Bahrain Customs Affairs duty free allowances (Wayback)"
   ],
   "reliable": [
    "read: Travel Doc customs information page for Bahrain (infopages.traveldoc.aero)"
@@ -1841,7 +1843,7 @@
   "other": [
    "none needed: step 2a answered the question"
   ],
-  "date": "2026-11-16"
+  "date": "2026-11-24"
  },
  "country/bahrain/tobacco": {
   "official": [
@@ -2342,7 +2344,8 @@
  },
  "country/ukraine/tobacco": {
   "official": [
-   "tried 2026-11-16: customs.gov.ua: HTTP 403, not read"
+   "tried 2026-11-16: customs.gov.ua: HTTP 403, not read",
+   "read 2026-11-24: Customs Code of Ukraine arts 374 and 376"
   ],
   "reliable": [
    "read: Travel Doc customs information page for Ukraine (infopages.traveldoc.aero)"
@@ -2350,7 +2353,7 @@
   "other": [
    "none needed: step 2a answered the question"
   ],
-  "date": "2026-11-16"
+  "date": "2026-11-24"
  },
  "country/ukraine/cash": {
   "official": [
@@ -12886,7 +12889,10 @@
    "IATA Dangerous Goods Regulations, Table 2.3.A: read, on the page",
    "read 2026-11-16: customs/authority source for Kenya as recorded in country_unique.json: Source read: KRA, Passenger terminal clearance in Kenya."
   ],
-  "date": "2026-11-16"
+  "date": "2026-11-24",
+  "official": [
+   "read 2026-11-24: Kenya Revenue Authority passenger terminal clearance FAQ"
+  ]
  },
  "airline/royal-air-maroc/alcohol": {
   "reliable": [
@@ -13083,12 +13089,13 @@
    "tried 2026-11-16: Austrian own restricted-items/dangerous-goods page; see page source"
   ],
   "reliable": [
-   "read 2026-11-17: Vienna Airport: security check (https://viennaairport.com/en/passengers/airport/security_control)"
+   "read 2026-11-17: Vienna Airport: security check (https://viennaairport.com/en/passengers/airport/security_control)",
+   "read 2026-11-24: Vienna Airport security leaflet for Austrian airports (PDF)"
   ],
   "other": [
    "none needed: step 2a answered part of the question"
   ],
-  "date": "2026-11-17"
+  "date": "2026-11-24"
  },
  "airline/lufthansa/liquids": {
   "official": [
@@ -14626,12 +14633,13 @@
    "frcs.org.fj traveller page: not found by search, not read"
   ],
   "reliable": [
-   "WHO country profile read 2026-10-08 (base card)"
+   "WHO country profile read 2026-10-08 (base card)",
+   "read 2026-11-24: Tobacco Control Laws database (Wayback), Fiji, updated Feb 2021"
   ],
   "other": [
    "read 2026-11-22: GSTHR e-cigarette profile for Fiji (page updated 2026-11-16, secondary compilation, lower reliability)"
   ],
-  "date": "2026-11-22"
+  "date": "2026-11-24"
  },
  "country/georgia/vaping": {
   "official": [
@@ -14648,12 +14656,13 @@
    "read 2026-11-21: AADE other national taxes page: excise on e-cigarette replenishment fluids, no traveller figure"
   ],
   "reliable": [
-   "WHO country profile read 2026-10-08 (base card)"
+   "WHO country profile read 2026-10-08 (base card)",
+   "read 2026-11-24: taxheaven.gr handbook on Law 4419/2016 nicotine liquid requirements"
   ],
   "other": [
    "AADE customs booklet 2021 (search result only, not read in full): tobacco only"
   ],
-  "date": "2026-11-21"
+  "date": "2026-11-24"
  },
  "country/croatia/vaping": {
   "official": [
@@ -14844,7 +14853,8 @@
  },
  "country/peru/vaping": {
   "official": [
-   "read 2026-11-22: SUNAT travellers baggage page: 20 cigarette packs, 50 cigars, 250 g tobacco, 3 l liquor, US$ 500 other goods, no vape word"
+   "read 2026-11-22: SUNAT travellers baggage page: 20 cigarette packs, 50 cigars, 250 g tobacco, 3 l liquor, US$ 500 other goods, no vape word",
+   "read 2026-11-24: El Peruano text of Law 32159"
   ],
   "reliable": [
    "WHO country profile read 2026-10-08 (base card)"
@@ -14852,7 +14862,7 @@
   "other": [
    "none needed: national customs page read"
   ],
-  "date": "2026-11-22"
+  "date": "2026-11-24"
  },
  "country/philippines/vaping": {
   "official": [
@@ -15222,12 +15232,13 @@
    "customs.gov.jo FAQ page read via search summary only: diplomat allowances, no passenger vape rule"
   ],
   "reliable": [
-   "WHO country profile read 2026-10-08 (base card)"
+   "WHO country profile read 2026-10-08 (base card)",
+   "read 2026-11-24: Tobacco Control Laws database (Wayback), Jordan, updated Jan 2021"
   ],
   "other": [
    "read 2026-11-22: GSTHR e-cigarette profile for Jordan (page updated 2026-11-16, secondary compilation, lower reliability)"
   ],
-  "date": "2026-11-22"
+  "date": "2026-11-24"
  },
  "country/romania/vaping": {
   "official": [

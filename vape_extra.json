@@ -2891,6 +2891,41 @@
  "FJ": {
   "sections": [
    {
+    "h": "⚖️ What Fijian law says about e-cigarettes",
+    "p": "Reliable secondary source: the Tobacco Control Laws database (Legal Consortium of the Campaign for Tobacco-Free Kids), page \"Main Policies - E-Cigarettes\" for Fiji, last updated 19 February 2021, read from an archived copy on 24 November 2026. It quotes the Tobacco Control Decree 2010 and its 2014 amendment and is not a customs page. The rules may have changed since 2021.",
+    "table": {
+     "head": [
+      "Point",
+      "What the database says"
+     ],
+     "rows": [
+      [
+       "Sale",
+       "Allowed with a minimum sales age and a retail registration; vending machine sales are banned (Decree 63 of 2010, secs. 14(1), 23(1))"
+      ],
+      [
+       "Use in public places",
+       "Banned in most, not all, smoke-free places: workplaces open to the public and public service vehicles, including ships and ferries (sec. 19(1))"
+      ],
+      [
+       "Advertising",
+       "Most direct and indirect advertising and promotion banned, including at point of sale; international TV, radio and print media are restricted rather than banned"
+      ],
+      [
+       "Product rules",
+       "No law on flavours, ingredients, nicotine strength, health warnings or device requirements"
+      ],
+      [
+       "Online sales",
+       "Not addressed, so allowed"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>What this means:</strong> no strength or flavour limits were found in this source, and no traveller allowance; confirm with Fijian customs."
+    ]
+   },
+   {
     "h": "📰 What a secondary profile reports about e-cigarettes in Fiji",
     "p": "Less reliable source (secondary profile): the Global State of Tobacco Harm Reduction (GSTHR) country page, updated 16 November 2026 and read on 22 November 2026. It compiles other sources and is not a customs page. The official customs rule for travellers could not be read, so treat this as background and confirm with customs.",
     "table": {
@@ -2955,6 +2990,10 @@
     "A secondary profile (GSTHR) says vaping is allowed in Fiji, with licensed retail, health warnings and a ban on use in public places. It gives no traveller allowance, so check Fiji customs."
    ],
    [
+    "Can I vape on a ferry in Fiji?",
+    "A legal database quoting the Tobacco Control Decree 2010 says use is prohibited in public service vehicles, which covers ships and ferries, and in most workplaces open to the public. It dates from February 2021."
+   ],
+   [
     "How common is vaping in Fiji?",
     "Adolescents: 11.9% of adolescents currently use e-cigarettes in the survey \"Global Youth Tobacco Survey, 2016\" (national, ages 13-15)."
    ],
@@ -2964,6 +3003,10 @@
    ]
   ],
   "src": [
+   [
+    "https://www.tobaccocontrollaws.org/legislation/fiji/e-cigarettes/main-policies",
+    "Tobacco Control Laws: E-cigarettes in Fiji (Legal Consortium)"
+   ],
    [
     "https://gsthr.org/countries/profile/fji/e_cigarettes/",
     "Less reliable source (secondary profile): Global State of Tobacco Harm Reduction - e-cigarettes in Fiji"
@@ -3033,6 +3076,49 @@
  "GR": {
   "sections": [
    {
+    "h": "⚖️ What Greek law (Law 4419/2016) sets for e-cigarettes and refill liquid",
+    "p": "Reliable secondary source: the handbook \"Basic legislative requirements for nicotine liquid for e-cigarettes\" (in Greek), published on the tax news site taxheaven.gr and read on 24 November 2026. It describes Law 4419/2016, which applies EU Directive 2014/40/EU. It sets product rules for the market, not a traveller allowance.",
+    "table": {
+     "head": [
+      "Point",
+      "What the handbook says"
+     ],
+     "rows": [
+      [
+       "Nicotine strength",
+       "Not more than 20 mg/ml"
+      ],
+      [
+       "Refill containers",
+       "Nicotine liquid is sold only in refill containers of at most 10 ml; disposable vials or cartridges at most 2 ml"
+      ],
+      [
+       "Device",
+       "Child-resistant and tamper-proof, protected against breakage and leakage, with leak-free refilling"
+      ],
+      [
+       "Additives",
+       "No vitamins, caffeine, taurine or additives with cancer-causing, mutagenic or reproduction-toxic properties"
+      ],
+      [
+       "Packaging",
+       "Ingredients, nicotine content, batch number and the warning that the product contains nicotine, a highly addictive substance; a Greek leaflet inside"
+      ],
+      [
+       "Not covered",
+       "Nicotine-free e-liquid, and products licensed as medicines or medical devices"
+      ],
+      [
+       "Market checks",
+       "Local health services, trade services, chemical services and Customs"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>What this means:</strong> a refill over 10 ml or stronger than 20 mg/ml does not meet Greek product rules for sale. The handbook states no limit for what a traveller carries in luggage."
+    ]
+   },
+   {
     "h": "🛃 What the Greek Customs authority says about e-cigarette refill fluids",
     "p": "From the Independent Authority for Public Revenue (AADE) page \"Other National Taxes\" (English, no date shown, read 21 November 2026). It is an information page on national excise duty, not a traveller allowance table.",
     "table": {
@@ -3093,6 +3179,10 @@
     "AADE lists electronic cigarette replenishment fluids among the products under national excise duty. It gives no traveller allowance in millilitres on that page."
    ],
    [
+    "What are the nicotine and bottle limits for vapes in Greece?",
+    "Greek Law 4419/2016, as summarised in a Greek handbook, allows nicotine liquid up to 20 mg/ml in refill containers of at most 10 ml, with disposable cartridges at most 2 ml. These are product rules for sale, not a traveller allowance."
+   ],
+   [
     "How common is vaping in Greece?",
     "Adolescents: 11.0% of adolescents currently use e-cigarettes (boys 15.0%, girls 7.6%) in the survey \"European School Survey Project on Alcohol and Other Drugs, 2019\" (national, ages 15-16)."
    ],
@@ -3102,6 +3192,10 @@
    ]
   ],
   "src": [
+   [
+    "https://www.taxheaven.gr/circulars/25199/egxeiridio",
+    "Taxheaven: handbook on the basic legal requirements for nicotine liquid for e-cigarettes (Law 4419/2016)"
+   ],
    [
     "https://www.aade.gr/en/customs/other-national-taxes",
     "Greek Independent Authority for Public Revenue (AADE) - Other national taxes"
@@ -4536,6 +4630,45 @@
  "PE": {
   "sections": [
    {
+    "h": "⚖️ What Peru's Law 32159 says about vaping",
+    "p": "From Law No. 32159, \"Ley del control del consumo de productos de tabaco, nicotina o sucedáneos de ambos para la protección de la vida y la salud\", published in the official gazette El Peruano (read on 24 November 2026, in Spanish). It regulates use, sale, advertising and labelling; it does not set a traveller allowance.",
+    "table": {
+     "head": [
+      "Point",
+      "What the law says"
+     ],
+     "rows": [
+      [
+       "Where vaping is banned",
+       "Health and education sites, public offices, workplaces, closed public spaces and any public transport (art. 6); closed public space means any publicly accessible place with a roof and two or more walls"
+      ],
+      [
+       "Signs",
+       "\"ESTÁ PROHIBIDO FUMAR Y VAPEAR EN ESTE ESTABLECIMIENTO\" must be posted in those places (art. 7)"
+      ],
+      [
+       "Selling",
+       "Banned to or by minors, and in vending machines unless access is limited to adults (art. 14)"
+      ],
+      [
+       "Advertising nicotine products",
+       "Banned on free-to-air TV and radio, at health and education sites, in public offices and within 500 m of schools; must say \"Prohibida su venta a menores de 18 años. Este producto contiene nicotina\" (art. 9)"
+      ],
+      [
+       "Packaging",
+       "Nicotine product packs carry a warning on at least 30% of each main face (art. 11); makers and importers must tell Digesa the composition of nicotine and nicotine-free vaping systems (art. 12)"
+      ],
+      [
+       "Flavours",
+       "Names of sweets or desserts attractive to minors may not be used (art. 13)"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>What this means:</strong> you may not vape in an airport hall, on a bus or in a closed public space in Peru. The law applies to anyone who imports these products but gives no number a traveller may carry; ask SUNAT."
+    ]
+   },
+   {
     "h": "🛃 What SUNAT says about tobacco in traveller baggage",
     "p": "From the SUNAT customs guidance for travellers, page \"Bienes considerados como equipaje inafectos al pago de tributos\" (read in full on 22 November 2026). It lists tobacco and alcohol for adults over 18 and many electronic devices, but not e-cigarettes, vape liquid or nicotine.",
     "table": {
@@ -4608,6 +4741,10 @@
     "The SUNAT traveller page lists 20 packs of cigarettes, 50 cigars, 250 g of tobacco and 3 litres of liquor for adults, and does not name e-cigarettes or liquid. Check with SUNAT customs."
    ],
    [
+    "Where is vaping banned in Peru?",
+    "Law 32159 bans smoking and vaping in health and education sites, public offices, workplaces, closed public spaces and all public transport, and requires signs saying so."
+   ],
+   [
     "How common is vaping in Peru?",
     "Adults: 6.3% of adults currently use e-cigarettes (men 7.1%, women 5.4%) in the survey \"Encuesta Demográfica y de Salud Familiar, 2023\" (national, ages 15+)."
    ],
@@ -4617,6 +4754,10 @@
    ]
   ],
   "src": [
+   [
+    "https://busquedas.elperuano.pe/dispositivo/NL/2343203-1",
+    "El Peruano: Law 32159 on the control of tobacco, nicotine and substitutes"
+   ],
    [
     "https://www.sunat.gob.pe/orientacionaduanera/viajeros/equipaje_bienes.html",
     "SUNAT - Bienes considerados como equipaje inafectos al pago de tributos"
@@ -6551,6 +6692,41 @@
  "JO": {
   "sections": [
    {
+    "h": "⚖️ What Jordanian rules say about e-cigarettes",
+    "p": "Reliable secondary source: the Tobacco Control Laws database (Legal Consortium of the Campaign for Tobacco-Free Kids), page \"Main Policies - E-Cigarettes\" for Jordan, last updated 22 January 2021, read from an archived copy on 24 November 2026. It quotes Jordan Food and Drug Administration (JFDA) regulations and Public Health Law No. 47 of 2008, and is not a customs page. The rules may have changed since 2021.",
+    "table": {
+     "head": [
+      "Point",
+      "What the database says"
+     ],
+     "rows": [
+      [
+       "Sale",
+       "Allowed with notification, registration and licensing, sales-location rules and a minimum age (JFDA rules, art. 4 and arts. 3, 4, 6)"
+      ],
+      [
+       "Use in public places",
+       "Banned in hospitals, health centres, schools, cinemas, theatres, libraries, museums, government premises, means of transport and airport arrival and departure halls (Public Health Law 47/2008, arts. 52, 53(A))"
+      ],
+      [
+       "Advertising",
+       "Banned in any public place and on the internet and social media; display in a shop needs JFDA authorisation"
+      ],
+      [
+       "Online delivery",
+       "Delivery of e-cigarettes or e-liquid to individuals is prohibited"
+      ],
+      [
+       "Additives",
+       "Banned in e-liquid: caffeine, taurine, vitamins, colourants, heavy-metal residues and controlled substances"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>What this means:</strong> do not vape in an airport hall or on transport in Jordan. The database states no traveller allowance; JFDA approval rules apply to products sold in the country."
+    ]
+   },
+   {
     "h": "📰 What a secondary profile reports about e-cigarettes in Jordan",
     "p": "Less reliable source (secondary profile): the Global State of Tobacco Harm Reduction (GSTHR) country page, updated 16 November 2026 and read on 22 November 2026. It compiles other sources and is not a customs page. The official customs rule for travellers could not be read, so treat this as background and confirm with customs.",
     "table": {
@@ -6586,9 +6762,17 @@
    [
     "Can I bring a vape to Jordan?",
     "A secondary profile (GSTHR) says import and sale of e-cigarettes are permitted in Jordan but buying without a prescription is not allowed. It gives no traveller allowance, so check Jordan Customs."
+   ],
+   [
+    "Where is vaping banned in Jordan?",
+    "A legal database quoting Public Health Law 47/2008 lists hospitals, schools, cinemas, libraries, museums, government premises, transport and airport arrival and departure halls. It dates from January 2021."
    ]
   ],
   "src": [
+   [
+    "https://www.tobaccocontrollaws.org/legislation/jordan/e-cigarettes/main-policies",
+    "Tobacco Control Laws: E-cigarettes in Jordan (Legal Consortium)"
+   ],
    [
     "https://gsthr.org/countries/profile/jor/e_cigarettes/",
     "Less reliable source (secondary profile): Global State of Tobacco Harm Reduction - e-cigarettes in Jordan"

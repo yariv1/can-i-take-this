@@ -1,0 +1,6 @@
+import json
+p='country_unique.json'
+raw=open(p,encoding='utf8',newline='').read()
+d=json.loads(raw)
+d['alcohol']['bahrain']={"h":"What Bahrain Customs says about alcohol","p":["Bahrain Customs Affairs, on its page \"Duty Free Allowances\" (read from an archived copy on 24 November 2026), exempts 3 litres of alcoholic beverages and 12 cans of beer carried by a traveller, within the same list as BD 300 of personal goods and gifts.","The conditions on that page: alcohol and tobacco must be in the possession of someone aged 18 or over; goods must be personal and not commercial; the traveller must not be a frequent flyer who brings goods in regularly; and flight crew follow a separate mechanism. Customs may keep dutiable goods for up to three months at the traveller's request. The page names no religion-based rule and no penalty, and an older undated third-party page that gave 1 litre of spirits and 6 cans does not match it."],"src":"Source read: Bahrain Customs Affairs, Duty Free Allowances (customs.gov.bh), read from an archived copy on 24 November 2026.","link":["https://www.customs.gov.bh/en/duty-free-purchases","Bahrain Customs Affairs: Duty Free Allowances"]}
+open(p,'w',encoding='utf8',newline='').write(json.dumps(d,ensure_ascii=False,separators=(',',':'))+('\n' if raw.endswith('\n') else ''))

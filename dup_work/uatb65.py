@@ -1,0 +1,6 @@
+import json
+p='country_unique.json'
+raw=open(p,encoding='utf8',newline='').read()
+d=json.loads(raw)
+d['tobacco']['ukraine']={"h":"What the Customs Code of Ukraine says about tobacco","p":["The Customs Code of Ukraine (zakon.rada.gov.ua, articles 374 and 376, read on 23 and 24 November 2026 from an archived copy of the 2025 text) allows an adult passenger aged 18 or over one of 200 cigarettes, 50 cigars or 250 g of tobacco, or a mix that stays within 250 g in total. Anyone under 18 may not bring tobacco in.","The code keeps excise goods out of the general duty-free allowance of goods worth up to 1,000 euro in hand or accompanied baggage, so tobacco never counts towards that value. If you were away from Ukraine for less than 24 hours, tobacco and alcohol are taxed whatever the quantity. The code does not name e-cigarettes."],"src":"Source read: Customs Code of Ukraine (zakon.rada.gov.ua), articles 374 and 376, from an archived copy of the 2025 text.","link":["https://zakon.rada.gov.ua/laws/show/4495-17","Customs Code of Ukraine: articles 374 and 376"]}
+open(p,'w',encoding='utf8',newline='').write(json.dumps(d,ensure_ascii=False,separators=(',',':'))+('\n' if raw.endswith('\n') else ''))

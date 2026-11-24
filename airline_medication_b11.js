@@ -107,6 +107,7 @@ module.exports = function (X) {
   // ---------------- EL AL ----------------
   {
     const P1 = ['https://www.elal.com/media/4eifwtwx/dangerous-list-en.pdf', 'EL AL: Allowable dangerous goods carried by passengers (PDF, revision October 2022)', 'Insulin and syringes'];
+    const P2 = ['https://www.gov.il/en/pages/carrying-medication', 'Israel Ministry of Health: International travel with controlled substances, guidelines for travelers', 'Medicines abroad, permit to carry'];
     add({
       slug: 'el-al', name: 'EL AL',
       h1: 'EL AL Medication Policy: Insulin & Syringes in Carry-on or Checked Bags on an EL AL Flight (2026)',
@@ -114,7 +115,12 @@ module.exports = function (X) {
       answer: 'Yes for insulin and syringes. EL AL\'s list of dangerous goods that passengers may carry marks insulin and syringes as allowed in both carry-on and checked baggage, with no airline approval required. The page we read does not give rules for other medicines, liquids or keeping medication cold.',
       srcNote: 'From EL AL\'s own allowed-goods document (revision October 2022), last checked 20 October 2026. Rules change, so confirm with the airline before you fly.',
       scen: [
-        gap('pills', 'Pills & tablets', 'x', 'Keep it with you', P1, 'EL AL', 'ordinary pills and tablets'),
+        card('pills', 'Pills & tablets', 'warn', 'Stay under the documented amounts', 'Medicines leaving or entering Israel', 'The Israel Ministry of Health (not EL AL) says the quantity you may carry without documents depends on the destination; for controlled medicines, the UN guideline amounts are the usual cut-off.', [
+          'Israel Ministry of Health, Pharmaceutics Division: for medicines classed as narcotic or psychotropic, check each destination, because some countries want documents for any amount and others only above a set quantity.',
+          'The Ministry reproduces UN guideline quantities above which papers are needed, for example codeine 12 g, morphine 3 g, oxycodone 1 g, methylphenidate 2 g, diazepam 300 mg and lorazepam 75 mg.',
+          'Entering Israel, the Ministry allows a personal supply of up to 90 days of ordinary medicines; narcotic and psychotropic medicines follow different rules, including a 31-day limit with a prescription copy, the original pack and a permit to carry from the country of residence.',
+          'A supplement or vitamin sold freely abroad may count as a medicine in Israel that needs authorisation.'
+        ], [P2]),
         gap('liquids', 'Liquid medication', 'x', 'Over 100 ml (3.4 oz)', P1, 'EL AL', 'the 100 ml liquid limit for medication'),
         card('needles', 'Insulin & syringes', 'go', 'Carry-on and checked', 'Needles, syringes, injections', 'EL AL marks insulin and syringes as allowed in carry-on and in checked baggage.', [
           'EL AL: its list of allowable goods for passengers shows insulin and syringes as YES for carry-on baggage and YES for checked baggage.',
