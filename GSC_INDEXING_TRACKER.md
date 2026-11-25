@@ -1190,3 +1190,6 @@ No GSC requests made yet.
 
 ## Deploy 92fa94303 (2026-11-25)
 Real last-change dates on ~1,600 pages; About wording. No GSC requests made yet.
+
+## Deploy bc8a0bf58 (2026-11-25)
+Ukraine alcohol, Philippine Airlines perfume. No GSC requests made yet.
