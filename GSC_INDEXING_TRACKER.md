@@ -1187,3 +1187,6 @@ No GSC requests made yet.
 - https://canitakethis.co/country/slovenia/vaping/
 - https://canitakethis.co/country/spain/plants-seeds/
 - https://canitakethis.co/country/sweden/plants-seeds/
+
+## Deploy 92fa94303 (2026-11-25)
+Real last-change dates on ~1,600 pages; About wording. No GSC requests made yet.
