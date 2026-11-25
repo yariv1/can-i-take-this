@@ -56,7 +56,7 @@ module.exports = function (ctx) {
     '<h2>Who it is for</h2>' +
     '<p>Travelers anywhere in the world. Sizes and weights show in inches and pounds first, and prices in U.S. dollars first, because most of our readers start from the United States. The unit and currency switches in the header change every page to centimeters, kilograms and your own currency.</p>' +
     '<h2>How we check what we publish</h2>' +
-    '<ul><li><strong>Official sources only.</strong> Airline rules come from the airline&rsquo;s own site. Government rules come from the agency that sets them, such as TSA, CBP, gov.uk or the European Commission.</li>' +
+    '<ul><li><strong>Official sources first.</strong> Airline rules come from the airline&rsquo;s own site. Government rules come from the agency that sets them, such as TSA, CBP, gov.uk or the European Commission. When an official page cannot be read, the page uses a named third-party source and labels it as unofficial, or falls back to the general rule and says so.</li>' +
     '<li><strong>Sources and dates are shown.</strong> Articles list their sources and say when they were last checked.</li>' +
     '<li><strong>We say what we could not confirm.</strong> If an official page is unavailable or unclear, the page says so instead of guessing.</li>' +
     '<li><strong>Prices are converted for convenience.</strong> Converted amounts are approximate; the published price is the one that counts.</li></ul>' +
