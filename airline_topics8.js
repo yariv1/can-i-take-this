@@ -265,10 +265,19 @@ module.exports = {
             ["Covered items", "Aerosols, hairsprays, perfumes, colognes, medicines containing alcohol"],
             ["Each article", "Not more than 0.5 L or 0.5 kg"],
             ["All articles together", "Not more than 2 L or 2 kg"] ] },
-          list: ["The page has Carry-on and Checked baggage columns for this item. We could not read which are marked. Security limits liquids and aerosols in carry-on separately: see the liquids page."] }
+          list: ["The page has Carry-on and Checked baggage columns for this item. We could not read which are marked. Security limits liquids and aerosols in carry-on separately: see the liquids page."] },
+        { h: "🎒 What Philippine Airlines says about a perfume bottle in your cabin bag", p: "From the \"Liquids, Aerosols and Gels [LAG]\" section of the same Philippine Airlines Restricted Items Reminders page, read on 25 November 2026. It is the cabin-bag rule, on top of the 0.5 L per item limit above.",
+          table: { head: ["Question", "Philippine Airlines rule"], rows: [
+            ["Container size", "No more than 100 ml each; a larger container is not accepted even if only partly filled"],
+            ["Empty containers", "An empty container over 100 ml is permitted"],
+            ["Bag", "One transparent resealable plastic bag of no more than 1 litre, for example 20.5 cm x 20.5 cm or 25 cm x 15 cm; the containers must fit comfortably and be fully closed"],
+            ["How many bags", "Only one per passenger, shown separately at screening"]] },
+          list: ["<strong>What this means:</strong> a 200 ml perfume bottle does not go in the cabin on Philippine Airlines, even if it is half empty. Pack it in checked baggage, where the 0.5 L per item and 2 L total limits apply.",
+            "The page's footnote says the LAG limits for cabin baggage also follow the local airport's security rules."] }
       ],
       faq: [
-        ["Can I bring perfume on Philippine Airlines?", "Yes, within the limits: each article up to 0.5 L or 0.5 kg and 2 L or 2 kg in total."]
+        ["Can I bring perfume on Philippine Airlines?", "Yes, within the limits: each article up to 0.5 L or 0.5 kg and 2 L or 2 kg in total."],
+        ["Can I carry a half-empty 200 ml perfume in my cabin bag on Philippine Airlines?", "No. The airline says a container over 100 ml is not accepted in the cabin even if only partly filled; put it in checked baggage."]
       ],
       sources: [[PR, "Philippine Airlines &mdash; Restricted items reminders"]]
     }

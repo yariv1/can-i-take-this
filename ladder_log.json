@@ -2357,7 +2357,8 @@
  "country/ukraine/alcohol": {
   "official": [
    "tried 2026-11-16: customs.gov.ua: HTTP 403, not read",
-   "tried 2026-11-24: WebSearch for customs.gov.ua passenger rules: not returned; guides conflict on 1 l spirits / 2 l wine / 5 l"
+   "tried 2026-11-24: WebSearch for customs.gov.ua passenger rules: not returned; guides conflict on 1 l spirits / 2 l wine / 5 l",
+   "read 2026-11-25: Customs Code of Ukraine article 376, zakon.rada.gov.ua/laws/show/4495-17/print (live text via curl)"
   ],
   "reliable": [
    "read: Travel Doc customs information page for Ukraine (infopages.traveldoc.aero)"
@@ -2365,7 +2366,7 @@
   "other": [
    "none needed: step 2a answered the question"
   ],
-  "date": "2026-11-24"
+  "date": "2026-11-25"
  },
  "country/ukraine/tobacco": {
   "official": [
@@ -15831,5 +15832,11 @@
   "reliable": [
    "read 2026-11-24: Fraport press release 21 Aug 2024 (100 ml / 1 litre bag reapplied at all FRA checkpoints; later Frankfurt pages cite 2 litres, conflict not resolved), https://fraport.com/en/newsroom/press-releases/2024/q3/information-for-passengers--starting-this-september--the-maximum.html"
   ]
+ },
+ "airline/philippine-airlines/perfume-aerosols": {
+  "official": [
+   "read 2026-11-25: Philippine Airlines Restricted Items Reminders page, Liquids Aerosols and Gels accordion and Dangerous Goods table (browser pane)"
+  ],
+  "date": "2026-11-25"
  }
 }

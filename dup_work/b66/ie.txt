@@ -1,0 +1,973 @@
+ 
+ 
+ 
+ 
+ 
+ 
+ {
+ "@graph": [
+ {
+ "@id": "http://www.irishstatutebook.ie/eli/2023/act/35/enacted",
+ "@type": "schema:Legislation",
+ "hasPart": [
+ "http://www.irishstatutebook.ie/eli/2023/act/35/section/26",
+ "http://www.irishstatutebook.ie/eli/2023/act/35/section/16",
+ "http://www.irishstatutebook.ie/eli/2023/act/35/section/2",
+ "http://www.irishstatutebook.ie/eli/2023/act/35/section/23",
+ "http://www.irishstatutebook.ie/eli/2023/act/35/section/28",
+ "http://www.irishstatutebook.ie/eli/2023/act/35/section/46",
+ "http://www.irishstatutebook.ie/eli/2023/act/35/section/42",
+ "http://www.irishstatutebook.ie/eli/2023/act/35/section/4",
+ "http://www.irishstatutebook.ie/eli/2023/act/35/section/35",
+ "http://www.irishstatutebook.ie/eli/2023/act/35/section/25",
+ "http://www.irishstatutebook.ie/eli/2023/act/35/section/31",
+ "http://www.irishstatutebook.ie/eli/2023/act/35/section/21",
+ "http://www.irishstatutebook.ie/eli/2023/act/35/section/40",
+ "http://www.irishstatutebook.ie/eli/2023/act/35/section/15",
+ "http://www.irishstatutebook.ie/eli/2023/act/35/section/7",
+ "http://www.irishstatutebook.ie/eli/2023/act/35/section/14",
+ "http://www.irishstatutebook.ie/eli/2023/act/35/contents",
+ "http://www.irishstatutebook.ie/eli/2023/act/35/section/17",
+ "http://www.irishstatutebook.ie/eli/2023/act/35/section/9",
+ "http://www.irishstatutebook.ie/eli/2023/act/35/section/38",
+ "http://www.irishstatutebook.ie/eli/2023/act/35/section/22",
+ "http://www.irishstatutebook.ie/eli/2023/act/35/section/12",
+ "http://www.irishstatutebook.ie/eli/2023/act/35/section/49",
+ "http://www.irishstatutebook.ie/eli/2023/act/35/section/19",
+ "http://www.irishstatutebook.ie/eli/2023/act/35/section/45",
+ "http://www.irishstatutebook.ie/eli/2023/act/35/section/24",
+ "http://www.irishstatutebook.ie/eli/2023/act/35/section/18",
+ "http://www.irishstatutebook.ie/eli/2023/act/35/section/20",
+ "http://www.irishstatutebook.ie/eli/2023/act/35/section/1",
+ "http://www.irishstatutebook.ie/eli/2023/act/35/section/6",
+ "http://www.irishstatutebook.ie/eli/2023/act/35/section/27",
+ "http://www.irishstatutebook.ie/eli/2023/act/35/section/11",
+ "http://www.irishstatutebook.ie/eli/2023/act/35/section/3",
+ "http://www.irishstatutebook.ie/eli/2023/act/35/section/10",
+ "http://www.irishstatutebook.ie/eli/2023/act/35/section/8",
+ "http://www.irishstatutebook.ie/eli/2023/act/35/section/39",
+ "http://www.irishstatutebook.ie/eli/2023/act/35/section/29",
+ "http://www.irishstatutebook.ie/eli/2023/act/35/section/13",
+ "http://www.irishstatutebook.ie/eli/2023/act/35/section/47",
+ "http://www.irishstatutebook.ie/eli/2023/act/35/section/43",
+ "http://www.irishstatutebook.ie/eli/2023/act/35/section/5",
+ "http://www.irishstatutebook.ie/eli/2023/act/35/section/34",
+ "http://www.irishstatutebook.ie/eli/2023/act/35/section/48",
+ "http://www.irishstatutebook.ie/eli/2023/act/35/section/30",
+ "http://www.irishstatutebook.ie/eli/2023/act/35/section/44",
+ "http://www.irishstatutebook.ie/eli/2023/act/35/section/37",
+ "http://www.irishstatutebook.ie/eli/2023/act/35/section/33",
+ "http://www.irishstatutebook.ie/eli/2023/act/35/section/51",
+ "http://www.irishstatutebook.ie/eli/2023/act/35/section/41",
+ "http://www.irishstatutebook.ie/eli/2023/act/35/section/36",
+ "http://www.irishstatutebook.ie/eli/2023/act/35/section/32",
+ "http://www.irishstatutebook.ie/eli/2023/act/35/section/50"
+ ],
+ "legislationChanges": [
+ "http://www.irishstatutebook.ie/eli/2009/si/57/made",
+ "http://www.irishstatutebook.ie/eli/2009/si/41/made",
+ "http://www.irishstatutebook.ie/eli/2009/si/42/made",
+ "http://www.irishstatutebook.ie/eli/2016/si/271/made",
+ "http://www.irishstatutebook.ie/eli/2002/act/6/enacted",
+ "http://www.irishstatutebook.ie/eli/2010/act/22/enacted"
+ ],
+ "legislationDate": "2023-12-13",
+ "schema:legislationIdentifier": "35",
+ "legislationType": "http://www.irishstatutebook.ie/resources/resource-type#ACT",
+ "spatialCoverage": "http://publications.europa.eu/resource/authority/atu/IRL",
+ "version": "http://www.irishstatutebook.ie/resources/version#ENACTED",
+ "workExample": "http://www.irishstatutebook.ie/eli/2023/act/35/enacted/en"
+ },
+ {
+ "@id": "http://www.irishstatutebook.ie/eli/2023/act/35/enacted/en",
+ "@type": "schema:Legislation",
+ "schema:description": "An Act to provide for the licensing of the sale by retail of tobacco products and nicotine inhaling products; to provide for the establishment and maintenance of a register of licences issued under and in accordance with the Act; to provide for certain related offences; and for those and other purposes, to provide for the amendment of the Public Health (Tobacco) Act 2002; and to provide for the consequential amendment of certain other enactments and the revocation of certain statutory instruments; and to provide for related matters.[13th December, 2023]",
+ "encoding": [
+ "http://www.irishstatutebook.ie/eli/2023/act/35/enacted/en/html",
+ "http://www.irishstatutebook.ie/eli/2023/act/35/enacted/en/pdf",
+ "http://www.irishstatutebook.ie/eli/2023/act/35/enacted/en/xml"
+ ],
+ "exampleOfWork": "http://www.irishstatutebook.ie/eli/2023/act/35/enacted",
+ "inLanguage": "http://publications.europa.eu/resource/authority/language/ENG",
+ "schema:name": "Public Health (Tobacco Products and Nicotine Inhaling Products) Act 2023",
+ "schema:publisher": "Houses of the Oireachtas"
+ },
+ {
+ "@id": "http://www.irishstatutebook.ie/eli/2023/act/35/enacted/en/html",
+ "@type": "schema:LegislationObject",
+ "schema:copyrightHolder": "Houses of the Oireachtas",
+ "encodesCreativeWork": "http://www.irishstatutebook.ie/eli/2023/act/35/enacted/en",
+ "encodingFormat": "http://www.iana.org/assignments/media-types/text/html",
+ "schema:isPartOf": "electronic Irish Statute Book (eISB)",
+ "isPartOf": "http://www.irishstatutebook.ie/",
+ "legislationLegalValue": "schema:OfficialLegalValue",
+ "license": "http://www.irishstatutebook.ie/eli/open-data.html"
+ },
+ {
+ "@id": "http://www.irishstatutebook.ie/eli/2023/act/35/enacted/en/pdf",
+ "@type": "schema:LegislationObject",
+ "encodesCreativeWork": "http://www.irishstatutebook.ie/eli/2023/act/35/enacted/en",
+ "encodingFormat": "http://www.iana.org/assignments/media-types/application/pdf",
+ "isPartOf": "http://irishstatutebook.ie/",
+ "legislationLegalValue": "schema:OfficialLegalValue",
+ "schema:publisher": "Houses of the Oireachtas"
+ },
+ {
+ "@id": "http://www.irishstatutebook.ie/eli/2023/act/35/enacted/en/xml",
+ "@type": "schema:LegislationObject",
+ "encodesCreativeWork": "http://www.irishstatutebook.ie/eli/2023/act/35/enacted/en",
+ "encodingFormat": "http://www.iana.org/assignments/media-types/application/xml",
+ "isPartOf": "http://irishstatutebook.ie/",
+ "legislationLegalValue": "schema:OfficialLegalValue",
+ "schema:publisher": "Houses of the Oireachtas"
+ }
+ ],
+ "@context": {
+ "exampleOfWork": {
+ "@id": "http://schema.org/exampleOfWork",
+ "@type": "@id"
+ },
+ "encoding": {
+ "@id": "http://schema.org/encoding",
+ "@type": "@id"
+ },
+ "name": {
+ "@id": "http://schema.org/name",
+ "@type": "http://www.w3.org/2001/XMLSchema#string"
+ },
+ "description": {
+ "@id": "http://schema.org/description",
+ "@type": "http://www.w3.org/2001/XMLSchema#string"
+ },
+ "inLanguage": {
+ "@id": "http://schema.org/inLanguage",
+ "@type": "@id"
+ },
+ "publisher": {
+ "@id": "http://schema.org/publisher",
+ "@type": "http://www.w3.org/2001/XMLSchema#string"
+ },
+ "legislationLegalValue": {
+ "@id": "http://schema.org/legislationLegalValue",
+ "@type": "@id"
+ },
+ "encodesCreativeWork": {
+ "@id": "http://schema.org/encodesCreativeWork",
+ "@type": "@id"
+ },
+ "encodingFormat": {
+ "@id": "http://schema.org/encodingFormat",
+ "@type": "@id"
+ },
+ "isPartOf": {
+ "@id": "http://schema.org/isPartOf",
+ "@type": "@id"
+ },
+ "copyrightHolder": {
+ "@id": "http://schema.org/copyrightHolder",
+ "@type": "http://www.w3.org/2001/XMLSchema#string"
+ },
+ "license": {
+ "@id": "http://schema.org/license",
+ "@type": "@id"
+ },
+ "hasPart": {
+ "@id": "http://schema.org/hasPart",
+ "@type": "@id"
+ },
+ "legislationChanges": {
+ "@id": "http://schema.org/legislationChanges",
+ "@type": "@id"
+ },
+ "workExample": {
+ "@id": "http://schema.org/workExample",
+ "@type": "@id"
+ },
+ "legislationType": {
+ "@id": "http://schema.org/legislationType",
+ "@type": "@id"
+ },
+ "legislationIdentifier": {
+ "@id": "http://schema.org/legislationIdentifier",
+ "@type": "http://www.w3.org/2001/XMLSchema#string"
+ },
+ "spatialCoverage": {
+ "@id": "http://schema.org/spatialCoverage",
+ "@type": "@id"
+ },
+ "version": {
+ "@id": "http://schema.org/version",
+ "@type": "@id"
+ },
+ "legislationDate": {
+ "@id": "http://schema.org/legislationDate",
+ "@type": "http://www.w3.org/2001/XMLSchema#date"
+ },
+ "schema": "http://schema.org/",
+ "eli": "http://data.europa.eu/eli/ontology#",
+ "owl": "http://www.w3.org/2002/07/owl#",
+ "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+ }
+}
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Public Health (Tobacco Products and Nicotine Inhaling Products) Act 2023 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ window.dataLayer = window.dataLayer || [];
+ function gtag(){dataLayer.push(arguments);}
+ gtag('js', new Date());
+ gtag('config', 'G-SPHQ4PSMDB ', { 'anonymize_ip': true });
+ 
+ 
+ 
+ 
+ 
+ function OptanonWrapper() { }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 	 
+ 		 
+ 			 
+ 				 
+ 			 
+ 		 
+ 		 
+ 			 
+ 				 
+ 					 
+ 						 Skip to content 
+ 						 Disclaimer 
+ 						 Feedback 
+ 						 Helpdesk 
+ 						 Gaeilge 
+ 					 
+ 				 
+ 				 
+ 					 
+ 						 Léim go dtí an t-ábhar 
+ 						 S&eacute;anadh 
+ 						 Aiseolas 
+ 						 Deasc chabhrach 
+ 						 English 
+ 					 
+ 				 
+ 				 
+ 					 
+ 					 Gaeilge 
+ 					 English 
+ 					 
+ 					 
+ 						 
+ 					 
+ 					 
+ 						 
+ 					 
+ 				 
+ 			 
+ 			 
+ 				 
+ 					 
+ 						Produced by the Office of the Attorney General 
+ 					 
+ 				 
+ 				 
+ 					 
+ 						T&aacute;irgthe ag Oifig an Ard-Aighne 
+ 					 
+ 				 
+ 			 
+ 		 
+ 		 
+ 		 
+ 		 
+ 	 
+ 	 
+ 		 
+ 		 
+ 			 Home 
+ 			 
+ 				 Legislation 
+ 				 
+ 					 Acts of the Oireachtas 
+ 					 Statutory Instruments 
+ 					 Pre-1922 Legislation 
+ 				 
+ 			 
+ 			 
+ 				 Constitution 
+ 			 
+ 			 
+ 				 External Resources 
+ 				 
+ 					 Bills (Houses of the Oireachtas) 
+ 					 Iris Oifigiúil / Official Gazette 
+ 					 Revised Acts (LRC) 
+ 					 Classified List of Legislation (LRC) 
+ 					 Translations (acts.ie) 
+ 					 Translations (Houses of the Oireachtas) 
+ 					 Government Publications for Sale 
+ 					 EU Law (EUR-Lex) 
+ 				 
+ 			 
+ 			 FAQ 
+ 			 Disclaimer 
+ 			 Feedback 
+ 			 Helpdesk 
+ 			 
+ 			 
+ 				 Search 
+ 			 
+ 		 
+ 		 
+ 		 
+ 		 
+ 			 Baile 
+ 			 
+ 				 Reachta&iacute;ocht 
+ 				 
+ 					 Achtanna an Oireachtais 
+ 					 Ionstraim&iacute; Reacht&uacute;la 
+ 					 Reachta&iacute;ocht R&eacute;amh-1922 
+ 				 
+ 			 
+ 			 
+ 				 Bunreacht 
+ 			 
+ 			 
+ 				 Acmhainn&iacute; Seachtracha 
+ 				 
+ 					 Bill&iacute; (Tithe an Oireachtais) 
+ 					 Iris Oifigi&uacute;il 
+ 					 Achtanna Athbhreithnithe (CAD) (An Coimisi&uacute;n um Athch&oacute;iri&uacute; an Dl&iacute;) 
+ 					 Liosta Rangaithe Reachta&iacute;ochta 
+ 					 Aistri&uacute;ch&aacute;in (achtanna.ie) 
+ 					 Aistri&uacute;ch&aacute;in (Tithe an Oireachtais) 
+ 					 Foilseach&aacute;in Rialtais ar D&iacute;ol 
+ 					 Dl&iacute; AE (EUR-Lex) 
+ 				 
+ 			 
+ 			 CCanna (Ceisteanna Coitianta) 
+ 			 S&eacute;anadh 
+ 			 Aiseolas 
+ 			 Deasc chabhrach 
+ 			 
+ 			 
+ 				 Cuardach 
+ 			 
+ 		 
+ 		 
+ 	 
+ 	 
+ 		 
+ 			 
+ 			 
+ 				 
+ 					 Title Teideal 
+ 				 
+ 				 
+ 					 
+ 				 
+ 			 
+ 			 
+ 			 
+ 				 
+ 					 Year(s) or range Bliain nó blianta nó raon 
+ 				 
+ 				 
+ 					 
+ 				 
+ 			 
+ 			 
+ 			 
+ 				 
+ 					 Type Cineál 
+ 				 
+ 				 
+ 					 
+ 						 All Legislation 
+ 						 Acts 
+ 						 Statutory Instruments 
+ 					 
+ 				 
+ 			 
+ 			 
+ 			 
+ 			 
+ 				 
+ 			 
+ 			 
+ 				 
+ 			 
+ 			 
+ 			 
+ 			 
+ 				 Advanced Search Cuardach Casta 
+ 			 
+ 		 
+ 	 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Home Baile 
+ Acts Achtanna 
+ 2023 
+ Public Health (Tobacco Products and Nicotine Inhaling Products) Act 2023 
+ 
+ 
+ 
+ 
+ 
+ 
+ Public Health (Tobacco Products and Nicotine Inhaling Products) Act 2023
+ 
+ <a class="link chain dropdown-toggle" title="Permanent Page URL"
+ data-toggle="dropdown" role="button" tabindex="0" aria-expanded="false" aria-label="Copy Permanent Page URL"> 
+ 
+ 
+ 
+ Permanent
+ Page URL 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ View by Section Amharc de réir Ailt 
+ 
+ 
+ View Full Act Amharc ar an Acht Iomlán 
+ 
+ 
+ 
+ 
+ Bill History 
+ Stair Bille 
+ 
+ 
+ 
+ 
+ 
+ Commencement, Amendments, SIs made under the Act 
+ Tosach Feidhme, Leasuithe, IRí arna ndéanamh faoin Acht 
+ 
+ 
+ 
+ 
+ 
+ Revised Act 
+ Acht Athbh… 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Open PDF Oscail PDF 
+ Print Full Act Priontáil an tAcht Iomlán 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Previous Section Alt Roimhe 
+ Next Section An Chéad Alt Eile 
+ Print Section Priontáil an tAlt 
+ 
+ 
+ 
+ 
+<!--
+ *
+ * Original Content
+ *
+ -->
+ 
+ 
+ 
+ 
+ 
+ 
+ Number 35 of 2023 
+ 
+ PUBLIC HEALTH (TOBACCO PRODUCTS AND NICOTINE INHALING PRODUCTS) ACT 2023 
+ 
+CONTENTS 
+ 
+ PART 1 
+ 
+ 
+ Preliminary and General 
+ 
+Section 
+ 
+ 1. Short title, collective citation and commencement 
+ 
+ 
+ 2. Interpretation 
+ 
+ 
+ 3. Application of Act 
+ 
+ 
+ 4. Residence of body corporate or unincorporated body of persons 
+ 
+ 
+ 5. Regulations 
+ 
+ 
+ 6. Expenses 
+ 
+ 
+ 7. Service of documents 
+ 
+ 
+ 8. Remote sale of tobacco products or nicotine inhaling products 
+ 
+ 
+ 9. Repeals and revocations 
+ 
+ 
+ 10. Review of operation of Act 
+ 
+ 
+ PART 2 
+ 
+ 
+ Licence for Sale of Tobacco Products or Nicotine Inhaling Products 
+ 
+ 11. Application for licence 
+ 
+ 
+ 12. Determination of application for licence 
+ 
+ 
+ 13. Issue of licence 
+ 
+ 
+ 14. Duration of licence 
+ 
+ 
+ 15. Renewal of licence 
+ 
+ 
+ 16. Appeal against refusal of licence 
+ 
+ 
+ 17. Copy of licence where lost, stolen, damaged or destroyed 
+ 
+ 
+ 18. Minister may prescribe fee 
+ 
+ 
+ 19. Revocation of licence 
+ 
+ 
+ 20. Representations 
+ 
+ 
+ 21. Appeal against revocation of licence 
+ 
+ 
+ 22. Duty to display licence 
+ 
+ 
+ 23. Register of licences 
+ 
+ 
+ 24. Duty to notify change in information 
+ 
+ 
+ PART 3 
+ 
+ 
+ Certain Offences 
+ 
+ 25. Offence of selling by retail tobacco products or nicotine inhaling products without licence 
+ 
+ 
+ 26. Offence relating to sale by retail of nicotine inhaling products by means of self service 
+ 
+ 
+ 27. Prohibition on sale of tobacco products or nicotine inhaling products by child 
+ 
+ 
+ 28. Prohibition on sale of tobacco products or nicotine inhaling products to child 
+ 
+ 
+ 29. Prohibition on sale of tobacco products or nicotine inhaling products at events aimed at children 
+ 
+ 
+ 30. Prohibition on advertising of nicotine inhaling products in certain places 
+ 
+ 
+ 31. Prohibition on advertising of nicotine inhaling products in cinemas 
+ 
+ 
+ 32. Prohibition on display of suspended, expired or revoked licence 
+ 
+ 
+ PART 4 
+ 
+ 
+ Enforcement and Compliance 
+ 
+ 33. Test purchasing 
+ 
+ 
+ 34. Executive may publish information respecting certain persons 
+ 
+ 
+ PART 5 
+ 
+ 
+ Penalties and Proceedings 
+ 
+ 35. Penalties 
+ 
+ 
+ 36. Defences generally 
+ 
+ 
+ 37. Liability for offences by body corporate 
+ 
+ 
+ 38. Evidence in proceedings for an offence 
+ 
+ 
+ 39. Order of court consequent upon conviction of offence 
+ 
+ 
+ 40. Prosecution of summary offences 
+ 
+ 
+ 41. Time limit where offence may be prosecuted in summary proceedings only 
+ 
+ 
+ PART 6 
+ 
+ 
+ Amendment of Public Health (Tobacco) Act 2002 
+ 
+ 42. Amendment of section 2 of Act of 2002 
+ 
+ 
+ 43. Amendment of section 5 of Act of 2002 
+ 
+ 
+ 44. Amendment of section 7 of Act of 2002 
+ 
+ 
+ 45. Amendment of section 43 of Act of 2002 
+ 
+ 
+ 46. Amendment of section 48 of Act of 2002 
+ 
+ 
+ 47. Amendment of section 50 of Act of 2002 
+ 
+ 
+ 48. Amendment of section 53 of Act of 2002 
+ 
+ 
+ 49. Amendment of Act of 2002 
+ 
+ 
+ PART 7 
+ 
+ 
+ Miscellaneous 
+ 
+ 50. Amendment of Criminal Justice (Psychoactive Substances) Act 2010 
+ 
+ 
+ 51. Amendment of Regulations of 2016 
+ 
+ 
+ 
+Acts Referred to 
+ 
+ Companies Act 2014 
+ (No. 38) 
+ 
+ Criminal Justice (Psychoactive Substances) Act 2010 
+ (No. 22) 
+ 
+ Education Act 1998 
+ (No. 51) 
+ 
+ Intoxicating Liquor Act 1988 
+ (No. 16) 
+ 
+ Irish Medicines Board Act 1995 
+ (No. 29) 
+ 
+ Petty Sessions (Ireland) Act 1851 
+ (14 &#x0026; 15 Vict., c.93) 
+ 
+ Public Health (Standardised Packaging of Tobacco) Act 2015 
+ (No. 4) 
+ 
+ Public Health (Tobacco) Act 2002 
+ (No. 6) 
+ 
+Public Health (Tobacco) Acts 2002 to 2015 
+ 
+ Railway Safety Act 2005 
+ (No. 31) 
+ 
+ Road Traffic Act 1961 
+ (No. 24) 
+ 
+ Taxes Consolidation Act 1997 
+ (No. 39) 
+ 
+ Trade Marks Act 1996 
+ (No. 6) 
+ 
+ Transport (Railway Infrastructure) Act 2001 
+ (No. 55) 
+ 
+ 
+ 
+ Number 35 of 2023 
+ 
+ PUBLIC HEALTH (TOBACCO PRODUCTS AND NICOTINE INHALING PRODUCTS) ACT 2023 
+ 
+An Act to provide for the licensing of the sale by retail of tobacco products and nicotine inhaling products; to provide for the establishment and maintenance of a register of licences issued under and in accordance with the Act; to provide for certain related offences; and for those and other purposes, to provide for the amendment of the 
+ Public Health (Tobacco) Act 2002 
+; and to provide for the consequential amendment of certain other enactments and the revocation of certain statutory instruments; and to provide for related matters. 
+ 
+[13 th December , 2023] 
+ 
+ Be it enacted by the Oireachtas as follows: 
+ 
+ 
+ 
+ 
+ 
+ 
+ 	 
+ 		 
+ 			 
+ 		 
+ 	 
+ 	 
+ 		 
+ 			 
+ 				 
+ 					 Privacy Statement 
+ 					 Accessibility 
+ 					 European Legislation Identifier (PDF) 
+ 					 Open Data License 
+ 					 Cookie List 
+ 				 
+ 			 
+ 			 
+ 				 
+ 					 R&aacute;iteas Pr&iacute;obh&aacute;ideachais 
+ 					 Inrochtaineacht 
+ 					 Aitheant&oacute;ir Eorpach Reachta&iacute;ochta (ELI) 
+ 					 Cead&uacute;nas Sonra&iacute; Oscailte 
+ 					 Liosta Fian&aacute;n 
+ 				 
+ 			 
+ 		 
+ 		 
+ 			 
+ 				 &copy; Government of Ireland. Oireachtas Copyright Material is reproduced with the permission of the Houses of the Oireachtas 
+ 			 
+ 			 
+ 				 &copy; Rialtas na h&Eacute;ireann. At&aacute;irgtear &aacute;bhar faoi Ch&oacute;ipcheart le cead &oacute; Thithe an Oireachtais 
+ 			 
+ 		 
+ 	 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
