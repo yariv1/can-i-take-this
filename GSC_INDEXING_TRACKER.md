@@ -1223,3 +1223,14 @@ Law and regulator sections. No GSC requests made yet.
 - https://canitakethis.co/airline/middle-east-airlines/power-bank/
 - https://canitakethis.co/airline/united/power-bank/
 Source captions corrected site-wide (231 pages show Unofficial guidance); five pages above also changed in content or footer. No GSC requests made yet.
+
+## Deploy 3c1e03817 (2026-11-26)
+- https://canitakethis.co/country/finland/plants-seeds/
+- https://canitakethis.co/country/denmark/plants-seeds/
+- https://canitakethis.co/country/netherlands/plants-seeds/
+- https://canitakethis.co/country/poland/plants-seeds/
+- https://canitakethis.co/country/slovakia/plants-seeds/
+- https://canitakethis.co/country/czechia/plants-seeds/
+- https://canitakethis.co/country/lithuania/plants-seeds/
+- https://canitakethis.co/country/belgium/vaping/
+Wild-plant rules and Belgium disposable ban. No GSC requests made yet.
