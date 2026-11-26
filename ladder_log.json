@@ -1686,7 +1686,8 @@
  },
  "country/belgium/tobacco": {
   "official": [
-   "tried 2026-11-16: fin.belgium.be and belgium.be customs pages: human-verification challenge, not read; not bypassed"
+   "tried 2026-11-16: fin.belgium.be and belgium.be customs pages: human-verification challenge, not read; not bypassed",
+   "read 2026-11-26: news.belgium.be 15 Sep 2025 smoking ban draft (browser pane), https://news.belgium.be/fr/interdiction-de-fumer-dans-certains-lieux"
   ],
   "reliable": [
    "read: Travel Doc customs information page for belgium (infopages.traveldoc.aero)",
@@ -1785,7 +1786,8 @@
  },
  "country/bulgaria/tobacco": {
   "official": [
-   "read 2026-11-23: Bulgarian Customs Agency English page \"Brief summary of the monetary thresholds and quantitative limits\" (customs.bg, via archived copy; live site refuses)"
+   "read 2026-11-23: Bulgarian Customs Agency English page \"Brief summary of the monetary thresholds and quantitative limits\" (customs.bg, via archived copy; live site refuses)",
+   "read 2026-11-26: Health Act arts 56, 56a, 218 (Ministry of Health consolidated text), https://www.mh.government.bg/bg/normativni-aktove/zakoni/zakon-za-zdraveto/"
   ],
   "reliable": [
    "read: Travel Doc customs information page for Bulgaria (infopages.traveldoc.aero)",
@@ -2276,11 +2278,12 @@
   "official": [
    "tried 2026-11-16: customs.gov.ng: HTTP 403, not read",
    "read 2026-11-24: Nigeria Customs Service Act 2023 (faolex.fao.org PDF): no passenger tobacco allowance in the Act; customs.gov.ng HTTP 403",
-   "read 2026-11-26: National Tobacco Control Act 2015 ss 9, 11, 15 (lawyersonline.ng printout on FAOLEX), https://faolex.fao.org/docs/pdf/nig192387.pdf"
+   "tried 2026-11-26: government copy of the Act: search found none on health.gov.ng, nafdac.gov.ng or tobaccocontrol.gov.ng; nesgroup gazette scan 404 (not a government site)"
   ],
   "reliable": [
    "read: Travel Doc customs information page for Nigeria (infopages.traveldoc.aero)",
-   "tried 2026-11-24: WebSearch for Nigeria Customs passenger allowance: only travel-guide sites and press; base card stays on the IATA Travel Doc figure"
+   "tried 2026-11-24: WebSearch for Nigeria Customs passenger allowance: only travel-guide sites and press; base card stays on the IATA Travel Doc figure",
+   "read 2026-11-26: National Tobacco Control Act 2015 ss 9, 11, 15 (lawyersonline.ng printout on FAOLEX), https://faolex.fao.org/docs/pdf/nig192387.pdf"
   ],
   "other": [
    "none needed: step 2a answered the question"

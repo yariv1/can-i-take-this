@@ -2866,7 +2866,7 @@
    ],
    "keepSchema": true,
    "checked": "22 November 2026",
-   "unofficial": false
+   "unofficial": true
   }
  },
  "Cathay Pacific": {
@@ -19039,7 +19039,7 @@
    ],
    "keepSchema": true,
    "checked": "22 November 2026",
-   "unofficial": false
+   "unofficial": true
   }
  },
  "Avianca": {

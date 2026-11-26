@@ -5,6 +5,7 @@
 // Medication cards keep the medication original text (never replaced).
 // Fails on the old airline style: "✓ Official source" / "⚠ Unofficial source" headings, .src-warn paragraphs, source links with section labels, footers without a state label.
 const fs = require('fs'), path = require('path');
+const SRCKIND = require('./source_kind.js');
 const bad = [];
 let pages = 0, cardsN = 0, ok = 0, un = 0, no = 0;
 const MED = 'Medication rules vary by country and can change. This is guidance, not legal advice - in case of a prescribed medicine, carry your prescription and confirm with the official authority before you fly.';
@@ -19,7 +20,7 @@ function check(p) {
   for (const m of s.matchAll(/<div class="help"><div class="help-h">([^<]*)<\/div>([\s\S]*?)<div class="hnote">/g)) {
     cardsN++;
     if (m[1] !== 'Helpful sources') bad.push(p + ': source block heading is "' + m[1] + '"');
-    for (const sm of m[2].matchAll(/<small>([^<]*)<\/small>/g)) if (sm[1] !== 'Official guidance') bad.push(p + ': source link label "' + sm[1] + '" (must be "Official guidance")');
+    for (const sm of m[2].matchAll(/<small>([^<]*)<\/small>/g)) if (!/^(Official|Unofficial) guidance$/.test(sm[1])) bad.push(p + ': source link label "' + sm[1] + '" (must be "Official guidance" or "Unofficial guidance")');
   }
   for (const m of s.matchAll(/<div class="src">([\s\S]*?)<\/div>/g)) {
     const f = m[1];
@@ -56,3 +57,22 @@ console.log('OK source labels');
     }
   }
 })('.');
+
+// Whole site (DS 8.21, 2026-11-26): the caption under a link says whether that source is official, and a card that links only unofficial sources never says OFFICIAL SOURCE.
+(function walk3(d) {
+  for (const f of fs.readdirSync(d, { withFileTypes: true })) {
+    if (['node_modules', 'dup_work', '_site'].includes(f.name) || f.name.startsWith('.')) continue;
+    const p = path.join(d, f.name);
+    if (f.isDirectory()) { walk3(p); continue; }
+    if (f.name !== 'index.html') continue;
+    const url = '/' + p.split(path.sep).join('/').replace(/index\.html$/, '');
+    const s = fs.readFileSync(p, 'utf8').replace(/\\u003c/g, '<').replace(/\\"/g, '"');
+    for (const m of s.matchAll(/<a class="hitem" href="(https?:[^"]*)"(?:(?!hitem)[\s\S]){0,600}?<span class="hi-l">((?:(?!hi-go|hitem)[\s\S]){0,900}?)<small>(Official|Unofficial) guidance<\/small>/g))
+      if (m[3] === 'Official' && SRCKIND.isUnofficial(m[1], m[2], url)) { console.log('UNOFFICIAL LINK CAPTIONED OFFICIAL (DS 8.21): ' + p + ' ' + m[1]); process.exitCode = 1; }
+    for (const m of s.matchAll(/<div class="help[^"]*"><div class="help-h">[^<]*<\/div>((?:<a class="hitem"[\s\S]*?<\/a>)+)<div class="hnote">[^<]*<\/div><\/div><div class="src"><b class="src-ok">/g)) {
+      const ls = [...m[1].matchAll(/href="([^"]*)"[\s\S]*?<span class="hi-l">([\s\S]*?)<small>/g)];
+      if (ls.length && ls.every(x => SRCKIND.isUnofficial(x[1], x[2], url))) { console.log('OFFICIAL SOURCE FOOTER ON UNOFFICIAL LINKS ONLY (DS 8.28): ' + p); process.exitCode = 1; }
+    }
+  }
+})('.');
+if (!fs.readFileSync('canitakethis.html', 'utf8').includes('/*SRCUN*/' + SRCKIND.clientFn() + '/*ENDSRCUN*/')) { console.log('canitakethis.html source rule differs from source_kind.js'); process.exitCode = 1; }
