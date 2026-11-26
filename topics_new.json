@@ -4186,6 +4186,41 @@
      "list": [
       "<strong>Same rule across the group:</strong> SWISS belongs to the Lufthansa Group, which applies these rules from 15 January 2026."
      ]
+    },
+    {
+     "h": "🛫 What the Swiss aviation office says about spare batteries",
+     "p": "From the Federal Office of Civil Aviation (FOCA/BAZL) page \"Batteries\" (bazl.admin.ch, read 26 November 2026). It is the national regulator's guidance, not Swiss International Air Lines wording.",
+     "table": {
+      "head": [
+       "Point",
+       "FOCA says"
+      ],
+      "rows": [
+       [
+        "Damaged or faulty batteries",
+        "Must not be carried at all"
+       ],
+       [
+        "Devices with a built-in battery up to 100 Wh",
+        "May generally be carried; secure them against switching on by accident"
+       ],
+       [
+        "Loose spare batteries up to 100 Wh",
+        "An appropriate number may be carried, each protected against short circuit by covering the contacts or using the original packaging"
+       ],
+       [
+        "Over 160 Wh",
+        "Not allowed in passenger baggage"
+       ],
+       [
+        "Converting mAh to Wh",
+        "Milliampere hours multiplied by volts, divided by 1,000"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Example:</strong> a 20,000 mAh pack rated at 3.7 V works out to 74 Wh by that formula."
+     ]
     }
    ],
    "faq": [
@@ -4196,12 +4231,20 @@
     [
      "Can I charge my phone from a power bank on SWISS?",
      "No. SWISS prohibits charging and using power banks on board, except for approved medical devices."
+    ],
+    [
+     "How do I work out the watt hours of my power bank?",
+     "FOCA's formula is milliampere hours multiplied by volts, divided by 1,000. A 20,000 mAh pack at 3.7 V is 74 Wh."
     ]
    ],
    "sources": [
     [
      "https://www.swiss.com/ch/en/prepare/baggage/electronic-devices-and-batteries",
      "SWISS &mdash; Electronic devices and batteries"
+    ],
+    [
+     "https://www.bazl.admin.ch/en/batteries",
+     "Swiss Federal Office of Civil Aviation &mdash; Batteries"
     ]
    ],
    "keepSchema": true,
@@ -6989,6 +7032,33 @@
      "list": [
       "<strong>Not on the page:</strong> the entry says nothing about e-liquid."
      ]
+    },
+    {
+     "h": "🛃 What Norwegian Customs says when you land in Norway with a vape",
+     "p": "From the Norwegian Customs (Tolletaten) page \"Alcohol and tobacco quotas\" (toll.no, marked updated 29 June 2026, read 26 November 2026). It applies at the border, whichever airline you fly.",
+     "table": {
+      "head": [
+       "Product",
+       "At the border"
+      ],
+      "rows": [
+       [
+        "Nicotine e-cigarettes and e-liquid, tobacco or other flavour",
+        "Not allowed without a medical certificate documenting that you use them to stop smoking"
+       ],
+       [
+        "Nicotine-free e-cigarettes with added flavours",
+        "Not allowed"
+       ],
+       [
+        "Heated tobacco and waterpipe tobacco",
+        "Not allowed"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>So:</strong> a vape that is fine in your cabin bag on the flight can still be refused when you land in Norway."
+     ]
     }
    ],
    "faq": [
@@ -6999,12 +7069,20 @@
     [
      "Can I charge my e-cigarette on a Norwegian flight?",
      "No, e-cigarettes are not allowed to be used or charged onboard."
+    ],
+    [
+     "Can I take my nicotine vape through customs in Norway?",
+     "Norwegian Customs says nicotine e-cigarettes and e-liquid are not allowed without a medical certificate documenting smoking cessation."
     ]
    ],
    "sources": [
     [
      "https://www.norwegian.com/us/travel-info/baggage/restricted-items/dangerous-goods/",
      "Norwegian &mdash; Dangerous goods"
+    ],
+    [
+     "https://www.toll.no/en/goods/alcohol-and-tobacco/quotas/",
+     "Norwegian Customs: Alcohol and tobacco quotas"
     ]
    ],
    "keepSchema": true,
@@ -9291,17 +9369,58 @@
     {
      "h": "What customs says about bringing alcohol into India (IndiGo's home country)",
      "p": "This is the customs rule for people entering India, not a rule stated by IndiGo for its cabin. The Indian customs passenger guide allows alcoholic liquor, wine or beer up to 2 litres within the duty-free allowance for incoming passengers, next to 100 cigarettes, 25 cigars or 125 g of tobacco. Above the allowance, the guide gives the rate for all alcoholic beverages other than beer, including wine, as basic customs duty of 50% plus an agriculture infrastructure and development cess of 100%, and for beer basic duty of 100% plus a 10% social welfare surcharge. These rates come from a guide that may be out of date, so check the current rates with Indian customs before you carry more than the allowance. The guide gives no minimum age and no penalty for alcohol. Some Indian states also restrict alcohol themselves, which the guide does not cover. Source read: CBIC, Customs clearance of passengers at a glance (PDF). The rates may have changed since the guide was issued."
+    },
+    {
+     "h": "✈️ What India's Aircraft Rules say about drinking on board",
+     "p": "From the Aircraft Rules, 1937, in the scanned copy on the Ministry of Civil Aviation website (marked updated February 2011), read 26 November 2026. This is Indian law, not IndiGo wording.",
+     "table": {
+      "head": [
+       "Point",
+       "What the Rules say"
+      ],
+      "rows": [
+       [
+        "Domestic flights",
+        "No domestic operator may serve an alcoholic drink on board, and no passenger on such a service may drink one on board"
+       ],
+       [
+        "Your own bottle",
+        "The ban is on drinking on board, so it covers a bottle you brought yourself"
+       ],
+       [
+        "Intoxication",
+        "No person in a state of intoxication may enter or be in an aircraft"
+       ],
+       [
+        "Crew",
+        "Crew may not have taken an alcoholic drink within twelve hours before a flight"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Check:</strong> replacement aircraft rules are reported to apply from 1 January 2027; we did not read them."
+     ]
     }
    ],
    "sources": [
     [
      "https://www.iata.org/contentassets/6fea26dd84d24b26a7a1fd5788561d6e/dgr-67-en-2.3.a.pdf",
      "IATA &mdash; Dangerous Goods Regulations, Table 2.3.A (67th edition, 1 January 2026)"
+    ],
+    [
+     "https://civilaviation.gov.in/sites/default/files/migration/moca_000947.pdf",
+     "Ministry of Civil Aviation: Aircraft Rules, 1937 (scanned copy)"
     ]
    ],
    "keepSchema": true,
    "checked": "18 October 2026",
-   "unofficial": true
+   "unofficial": true,
+   "faq": [
+    [
+     "Can I drink my own alcohol on a domestic IndiGo flight?",
+     "No. The Aircraft Rules, 1937, say no passenger on a domestic air service in India may drink an alcoholic drink on board."
+    ]
+   ]
   },
   "perfume": {
    "answer": "IndiGo's own pages timed out, so this is the Indian security rule as published by Kannur Airport, which cites the Bureau of Civil Aviation Security (BCAS): liquids in hand baggage only in containers of 100 ml or less, in one clear resealable bag per passenger, with anything larger going in checked luggage.",

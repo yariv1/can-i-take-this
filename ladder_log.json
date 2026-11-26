@@ -1689,12 +1689,13 @@
    "tried 2026-11-16: fin.belgium.be and belgium.be customs pages: human-verification challenge, not read; not bypassed"
   ],
   "reliable": [
-   "read: Travel Doc customs information page for belgium (infopages.traveldoc.aero)"
+   "read: Travel Doc customs information page for belgium (infopages.traveldoc.aero)",
+   "read 2026-11-26: VRT NWS 2026-10-26 terrace ban delayed, https://www.vrt.be/vrtnws/en/2026/10/26/smoking-ban-on-outdoor-terraces-delayed-council-of-state-raises.consumer/"
   ],
   "other": [
    "none needed: step 2a answered the question"
   ],
-  "date": "2026-11-16"
+  "date": "2026-11-26"
  },
  "country/poland/alcohol": {
   "official": [
@@ -1787,12 +1788,13 @@
    "read 2026-11-23: Bulgarian Customs Agency English page \"Brief summary of the monetary thresholds and quantitative limits\" (customs.bg, via archived copy; live site refuses)"
   ],
   "reliable": [
-   "read: Travel Doc customs information page for Bulgaria (infopages.traveldoc.aero)"
+   "read: Travel Doc customs information page for Bulgaria (infopages.traveldoc.aero)",
+   "read 2026-11-26: Health Act English translation arts 56, 56a, https://assets.tobaccocontrollaws.org/uploads/legislation/Bulgaria/Bulgaria-Health-Act.pdf"
   ],
   "other": [
    "none needed: step 2a answered the question"
   ],
-  "date": "2026-11-23"
+  "date": "2026-11-26"
  },
  "country/lithuania/alcohol": {
   "official": [
@@ -1808,7 +1810,8 @@
  },
  "country/lithuania/tobacco": {
   "official": [
-   "read 2026-11-23: Lithuanian Customs \"Coming from third countries\" page (muitine.lrv.lt/en, via Wayback copy; live site 403)"
+   "read 2026-11-23: Lithuanian Customs \"Coming from third countries\" page (muitine.lrv.lt/en, via Wayback copy; live site 403)",
+   "tried 2026-11-26: e-seimas consolidated tobacco control law PDF HTTP 403"
   ],
   "reliable": [
    "read: Travel Doc customs information page for Lithuania (infopages.traveldoc.aero)"
@@ -1816,7 +1819,7 @@
   "other": [
    "none needed: step 2a answered the question"
   ],
-  "date": "2026-11-23"
+  "date": "2026-11-26"
  },
  "country/malta/alcohol": {
   "official": [
@@ -12689,7 +12692,8 @@
  },
  "airline/swiss/power-bank": {
   "official": [
-   "tried 2026-11-16: Swiss own electronic-devices/power-bank page: HTTP 403, not read; Lufthansa Group news page read earlier (group rule)"
+   "tried 2026-11-16: Swiss own electronic-devices/power-bank page: HTTP 403, not read; Lufthansa Group news page read earlier (group rule)",
+   "read 2026-11-26: FOCA Batteries page, https://www.bazl.admin.ch/en/batteries"
   ],
   "reliable": [
    "read 2026-11-16: https://lenews.ch/2026/01/16/swiss-changes-rules-on-flying-with-power-banks/"
@@ -12697,7 +12701,7 @@
   "other": [
    "none needed: step 2a answered part of the question"
   ],
-  "date": "2026-11-16"
+  "date": "2026-11-26"
  },
  "airline/austrian/power-bank": {
   "official": [
@@ -12824,7 +12828,10 @@
    "IATA Dangerous Goods Regulations, Table 2.3.A: read, on the page",
    "read 2026-11-16: customs/authority source for India as recorded in country_unique.json: Source read: CBIC, Customs clearance of passengers at a glance (PDF). The rates may have changed since the guide was issued."
   ],
-  "date": "2026-11-16"
+  "date": "2026-11-26",
+  "official": [
+   "read 2026-11-26: Aircraft Rules 1937 rule 24, https://civilaviation.gov.in/sites/default/files/migration/moca_000947.pdf"
+  ]
  },
  "airline/air-france/alcohol": {
   "reliable": [
@@ -13444,13 +13451,14 @@
  "airline/norwegian/vape-e-cigarette": {
   "official": [
    "https://www.norwegian.com/us/travel-info/baggage/restricted-items/dangerous-goods/ (E-cigarettes section, full page pasted by user 2026-11-17; matches our page)",
-   "tried 2026-11-24: norwegian.com batteries-on-board page: Cloudflare 403 in curl and browser pane; Avinor luggage rules page read (no vape line)"
+   "tried 2026-11-24: norwegian.com batteries-on-board page: Cloudflare 403 in curl and browser pane; Avinor luggage rules page read (no vape line)",
+   "read 2026-11-26: Norwegian Customs quotas page, https://www.toll.no/en/goods/alcohol-and-tobacco/quotas/"
   ],
   "reliable": [
    "read 2026-10-08: WHO global tobacco report 2023 country profile (https://cdn.who.int/media/docs/default-source/country-profiles/tobacco/gtcr-2023/tobacco-2023-nor.pdf)"
   ],
   "other": [],
-  "date": "2026-11-24"
+  "date": "2026-11-26"
  },
  "airline/tap-air-portugal/vape-e-cigarette": {
   "official": [
@@ -14582,7 +14590,8 @@
   "official": [
    "no national page needed for this section: WHO profile table read",
    "2026-11-22: finance.belgium.be traveller page: captcha wall, not bypassed",
-   "tried 2026-11-24: news.belgium.be disposable vape ban PDF HTTP 403; only press coverage of the 1 Jan 2025 ban returned by search"
+   "tried 2026-11-24: news.belgium.be disposable vape ban PDF HTTP 403; only press coverage of the 1 Jan 2025 ban returned by search",
+   "tried 2026-11-26: ejustice royal decree 2016 URL returned an error page"
   ],
   "reliable": [
    "read 2026-11-19: WHO country profile PDF (downloaded, pdftotext), table of tobacco use prevalence from the latest survey (e-cigarette use rows)",
@@ -14591,7 +14600,7 @@
   "other": [
    "2026-11-22: financien.belgium.be traveller pages found by search give no tobacco or e-liquid quantities in the summaries; not read in full"
   ],
-  "date": "2026-11-24"
+  "date": "2026-11-26"
  },
  "country/canada/vaping": {
   "official": [
@@ -14668,7 +14677,8 @@
  },
  "country/denmark/vaping": {
   "official": [
-   "read 2026-11-21: Danish Tax Agency legal guidance E.A.5.4.5 version 3.17 (valid 2026-07-31): nicotine liquid DKK 1.50 per ml up to 12 mg/ml, DKK 2.50 per ml above"
+   "read 2026-11-21: Danish Tax Agency legal guidance E.A.5.4.5 version 3.17 (valid 2026-07-31): nicotine liquid DKK 1.50 per ml up to 12 mg/ml, DKK 2.50 per ml above",
+   "read 2026-11-26: Act on electronic cigarettes LBK 1166/2024 sections 3, 15, 18 b, 25 a, 33, https://www.retsinformation.dk/eli/lta/2024/1166/pdf"
   ],
   "reliable": [
    "WHO country profile read 2026-10-08 (base card)"
@@ -14676,7 +14686,7 @@
   "other": [
    "F.A.29 travel goods page read 2026-11-21: no nicotine liquid rule for travellers"
   ],
-  "date": "2026-11-21"
+  "date": "2026-11-26"
  },
  "country/fiji/vaping": {
   "official": [
@@ -15818,9 +15828,10 @@
  },
  "country/slovakia/tobacco": {
   "official": [
-   "tried 2026-11-24: WebSearch for financnasprava.sk traveller page: not returned; only travel guides"
+   "tried 2026-11-24: WebSearch for financnasprava.sk traveller page: not returned; only travel guides",
+   "read 2026-11-26: Act 377/2004 sections 6-7, https://static.slov-lex.sk/static/SK/ZZ/2004/377/20230101.html"
   ],
-  "date": "2026-11-24",
+  "date": "2026-11-26",
   "reliable": [
    "read 2026-11-24: Hinterland Travel Slovakia customs page and VisaVerge Slovak Republic page (over 17, combined 100% rule, 800 cigarettes EU guideline; unofficial)"
   ]
@@ -15848,5 +15859,12 @@
    "read 2026-11-25: Philippine Airlines Restricted Items Reminders page, Liquids Aerosols and Gels accordion and Dangerous Goods table (browser pane)"
   ],
   "date": "2026-11-25"
+ },
+ "airline/ita-airways/power-bank": {
+  "official": [
+   "read 2026-11-22: ITA Airways \"Electronic devices and batteries\" page (already on the page), https://www.ita-airways.com/us/en/book-and-prepare/travel-information/baggage/electronic-devices-and-batteries",
+   "tried 2026-11-26: ENAC lithium battery pages: poster links only, no rule text"
+  ],
+  "date": "2026-11-26"
  }
 }
