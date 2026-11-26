@@ -1205,3 +1205,13 @@ Ukraine alcohol, Philippine Airlines perfume. No GSC requests made yet.
 - https://canitakethis.co/country/georgia/vaping/
 - https://canitakethis.co/country/romania/vaping/
 Law-text sections. No GSC requests made yet.
+
+## Deploy 90bd84f49 (2026-11-26)
+- https://canitakethis.co/country/denmark/vaping/
+- https://canitakethis.co/airline/swiss/power-bank/
+- https://canitakethis.co/airline/indigo/alcohol/
+- https://canitakethis.co/airline/norwegian/vape-e-cigarette/
+- https://canitakethis.co/country/slovakia/tobacco/
+- https://canitakethis.co/country/bulgaria/tobacco/
+- https://canitakethis.co/country/belgium/tobacco/
+Law and regulator sections. No GSC requests made yet.
