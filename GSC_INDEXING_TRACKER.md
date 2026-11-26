@@ -1193,3 +1193,15 @@ Real last-change dates on ~1,600 pages; About wording. No GSC requests made yet.
 
 ## Deploy bc8a0bf58 (2026-11-25)
 Ukraine alcohol, Philippine Airlines perfume. No GSC requests made yet.
+
+## Deploy bf276859c (2026-11-26)
+- https://canitakethis.co/food/vietnam/
+- https://canitakethis.co/food/cambodia/
+- https://canitakethis.co/food/ethiopia/
+- https://canitakethis.co/food/nepal/
+- https://canitakethis.co/country/costa-rica/tobacco/
+- https://canitakethis.co/country/costa-rica/alcohol/
+- https://canitakethis.co/country/nigeria/tobacco/
+- https://canitakethis.co/country/georgia/vaping/
+- https://canitakethis.co/country/romania/vaping/
+Law-text sections. No GSC requests made yet.
