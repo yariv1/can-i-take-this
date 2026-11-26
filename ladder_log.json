@@ -14594,7 +14594,8 @@
    "no national page needed for this section: WHO profile table read",
    "2026-11-22: finance.belgium.be traveller page: captcha wall, not bypassed",
    "tried 2026-11-24: news.belgium.be disposable vape ban PDF HTTP 403; only press coverage of the 1 Jan 2025 ban returned by search",
-   "tried 2026-11-26: ejustice royal decree 2016 URL returned an error page"
+   "tried 2026-11-26: ejustice royal decree 2016 URL returned an error page",
+   "read 2026-11-26: news.belgium.be 29 Jul 2024 disposable e-cigarette ban (browser pane), https://news.belgium.be/fr/la-belgique-interdit-les-e-cigarettes-jetables"
   ],
   "reliable": [
    "read 2026-11-19: WHO country profile PDF (downloaded, pdftotext), table of tobacco use prevalence from the latest survey (e-cigarette use rows)",
@@ -15325,19 +15326,21 @@
  },
  "country/luxembourg/plants-seeds": {
   "official": [
-   "read 2026-11-22: gouvernement.lu ASTA press release 2023-08-07 (plants, fruit fly, Xylella, confiscation without certificate); no quantity limit"
+   "read 2026-11-22: gouvernement.lu ASTA press release 2023-08-07 (plants, fruit fly, Xylella, confiscation without certificate); no quantity limit",
+   "tried 2026-11-26: Legilux ELI links for 8 Jan 2010 returned other regulations; FAOLEX copies were other texts"
   ],
   "reliable": [],
   "other": [],
-  "date": "2026-11-22"
+  "date": "2026-11-26"
  },
  "country/poland/plants-seeds": {
   "official": [
-   "read 2026-11-22: PIORiN gov.pl private-import rules page (two groups, TRACES NT, 24h/4h notification, fee)"
+   "read 2026-11-22: PIORiN gov.pl private-import rules page (two groups, TRACES NT, 24h/4h notification, fee)",
+   "read 2026-11-26: Polish Journal of Laws 2014, item 1409 (PDF, in Polish), https://api.sejm.gov.pl/eli/acts/DU/2014/1409/text.pdf"
   ],
   "reliable": [],
   "other": [],
-  "date": "2026-11-22"
+  "date": "2026-11-26"
  },
  "country/slovenia/plants-seeds": {
   "official": [
@@ -15370,11 +15373,12 @@
  },
  "country/slovakia/plants-seeds": {
   "official": [
-   "read 2026-11-22: financnasprava.sk Zakazy a obmedzenia, plant import section (certificate, five exempt fruits, ÚKSÚP); mpsr.sk ministry page 403 on curl"
+   "read 2026-11-22: financnasprava.sk Zakazy a obmedzenia, plant import section (certificate, five exempt fruits, ÚKSÚP); mpsr.sk ministry page 403 on curl",
+   "read 2026-11-26: Slov-Lex: Act 543/2002 on nature and landscape protection (in Slovak), https://static.slov-lex.sk/static/SK/ZZ/2002/543/20261110.html"
   ],
   "reliable": [],
   "other": [],
-  "date": "2026-11-22"
+  "date": "2026-11-26"
  },
  "country/greece/plants-seeds": {
   "official": [
@@ -15388,13 +15392,17 @@
   "date": "2026-11-24"
  },
  "country/lithuania/plants-seeds": {
-  "official": [],
-  "reliable": [],
+  "official": [
+   "tried 2026-11-26: e-seimas consolidated text HTTP 403; am.lrv.lt HTTP 403"
+  ],
+  "reliable": [
+   "read 2026-11-26: LRT.lt 2021-04-18 quoting the Environmental Protection Department, https://www.lrt.lt/naujienos/laisvalaikis/13/1388586/klausiate-atsakome-miskus-nuklojo-zibuokliu-patalai-ar-jas-galima-skinti-ir-issikasti"
+  ],
   "other": [
    "2026-11-22: vatzum.lrv.lt phytosanitary page Cloudflare 403 on curl and in browser pane, muitine.lrv.lt 403 earlier; not bypassed; ladder step 2b: no named readable source found, global rule stays",
    "read 2026-11-22 (unofficial, 2b): Alkas.lt news article 2022-03-06 quoting Agriculture Ministry and State Plant Service on certificates, phytosanitary posts, Vilnius airport and post"
   ],
-  "date": "2026-11-22"
+  "date": "2026-11-26"
  },
  "country/bulgaria/plants-seeds": {
   "official": [
@@ -15505,13 +15513,14 @@
  },
  "country/cyprus/plants-seeds": {
   "official": [
-   "read 2026-11-23: Cyprus Customs and Excise passenger restrictions list; Cyprus Tourism Organisation entry-requirements page (visitcyprus.com)"
+   "read 2026-11-23: Cyprus Customs and Excise passenger restrictions list; Cyprus Tourism Organisation entry-requirements page (visitcyprus.com)",
+   "tried 2026-11-26: Department of Forests: only a nature-monument flyer reachable, no picking rule"
   ],
   "reliable": [
    "read 2026-11-23: Cyprus Mail report of the Department of Agriculture warning, 6 July 2026"
   ],
   "other": [],
-  "date": "2026-11-23"
+  "date": "2026-11-26"
  },
  "country/bulgaria/cash": {
   "official": [
@@ -15599,13 +15608,14 @@
  },
  "country/portugal/plants-seeds": {
   "official": [
-   "read 2026-11-23: Autoridade Tributária e Aduaneira Guia do viajante, February 2026 (info.portaldasfinancas.gov.pt PDF)"
+   "read 2026-11-23: Autoridade Tributária e Aduaneira Guia do viajante, February 2026 (info.portaldasfinancas.gov.pt PDF)",
+   "tried 2026-11-26: gov.pt wild-plant licence page HTTP 404 (curl and browser pane)"
   ],
   "reliable": [],
   "other": [
    "none needed"
   ],
-  "date": "2026-11-23"
+  "date": "2026-11-26"
  },
  "country/austria/plants-seeds": {
   "official": [
@@ -15841,9 +15851,10 @@
  },
  "country/belgium/cash": {
   "official": [
-   "tried 2026-11-24: fin.belgium.be liquid assets pages fetched: JavaScript shell, no body text"
+   "tried 2026-11-24: fin.belgium.be liquid assets pages fetched: JavaScript shell, no body text",
+   "tried 2026-11-26: finance.belgium.be cash page: empty page in the browser pane"
   ],
-  "date": "2026-11-24",
+  "date": "2026-11-26",
   "reliable": [
    "read 2026-11-24: European Commission EU cash controls page (EUR 10,000 declaration, gold, 30-day unaccompanied cash, penalties), https://taxation-customs.ec.europa.eu/customs/prohibitions-restrictions/eu-cash-controls_ro"
   ]
@@ -15867,6 +15878,37 @@
   "official": [
    "read 2026-11-22: ITA Airways \"Electronic devices and batteries\" page (already on the page), https://www.ita-airways.com/us/en/book-and-prepare/travel-information/baggage/electronic-devices-and-batteries",
    "tried 2026-11-26: ENAC lithium battery pages: poster links only, no rule text"
+  ],
+  "date": "2026-11-26"
+ },
+ "country/finland/plants-seeds": {
+  "official": [
+   "read 2026-11-26: Luontoon (Metsähallitus): Everyman’s rights, https://www.luontoon.fi/en/articles/everymans-rights"
+  ],
+  "date": "2026-11-26"
+ },
+ "country/denmark/plants-seeds": {
+  "official": [
+   "read 2026-11-26: Danish Environmental Protection Agency: gathering from the countryside (PDF), https://edit.mst.dk/media/l2fk3fva/guide-enkeltsider-eng-sanke.pdf"
+  ],
+  "date": "2026-11-26"
+ },
+ "country/netherlands/plants-seeds": {
+  "official": [
+   "read 2026-11-26: IPLO: national rules on protected animals and plants (in Dutch), https://iplo.nl/regelgeving/regels-voor-activiteiten/activiteiten-natuur/rijksregels-handel-bezit-beschermde-dieren-planten/"
+  ],
+  "date": "2026-11-26"
+ },
+ "country/hungary/plants-seeds": {
+  "official": [
+   "read earlier (already on the page): Source read: NAV, Itt a vakáció! Mi lehet a poggyászban? (in Hungarian). The date and penalties are not shown in the text read.",
+   "tried 2026-11-26: njt.hu Act LIII 1996: curl no response, browser pane navigation failed"
+  ],
+  "date": "2026-11-26"
+ },
+ "country/czechia/plants-seeds": {
+  "official": [
+   "read 2026-11-26: Czech government portal, specially protected species, https://portal.gov.cz/sluzby-vs/vyjimky-ze-zakazu-u-zvlaste-chranenych-druhu-S7529"
   ],
   "date": "2026-11-26"
  }

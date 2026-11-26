@@ -2246,6 +2246,33 @@
  "BE": {
   "sections": [
    {
+    "h": "⚖️ What the Belgian government says about disposable e-cigarettes",
+    "p": "From the federal government’s news portal, release of 29 July 2024 on the amended royal decree of 28 October 2016 (in French, translated by us), read 26 November 2026.",
+    "table": {
+     "head": [
+      "Point",
+      "What the release says"
+     ],
+     "rows": [
+      [
+       "Disposable e-cigarettes",
+       "Marketing them is banned from 1 January 2025, with or without nicotine; this means prefilled, non-rechargeable products"
+      ],
+      [
+       "Online sale",
+       "Already banned since 28 December 2016 for e-cigarettes with nicotine, and since 7 May 2023 for those without"
+      ],
+      [
+       "Enforcement",
+       "Stocks found are withdrawn from the market; breaking the ban is punishable with an administrative fine"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>Not in the release:</strong> a rule on a disposable vape carried by a traveller for their own use. The ban it describes is on putting products on the market."
+    ]
+   },
+   {
     "h": "⚖️ What the European Consumer Centre Belgium says about e-cigarettes",
     "p": "Unofficial source (reliable): European Consumer Centre Belgium, page \"Online sale of e-cigarettes\" (read on 22 November 2026). It is about buying from webshops, not about what you carry in a bag. The Belgian customs page for travellers (finance.belgium.be) sits behind a captcha and was not opened.",
     "table": {
@@ -2306,6 +2333,10 @@
   ],
   "faq": [
    [
+    "Are disposable vapes banned in Belgium?",
+    "Their sale is: the federal government says disposable e-cigarettes, with or without nicotine, may not be marketed from 1 January 2025. The release gives no rule for a traveller’s own device."
+   ],
+   [
     "Can I order a vape online to Belgium?",
     "No. ECC Belgium says online sales of e-cigarettes, including from webshops abroad, are prohibited, and such parcels can be confiscated by customs."
    ],
@@ -2319,6 +2350,10 @@
    ]
   ],
   "src": [
+   [
+    "https://news.belgium.be/fr/la-belgique-interdit-les-e-cigarettes-jetables",
+    "News.belgium: Belgium bans disposable e-cigarettes (in French)"
+   ],
    [
     "https://www.eccbelgium.be/themes/services-in-europe/health-services/online-sale-of-e-cigarettes",
     "Unofficial source: European Consumer Centre Belgium - Online sale of e-cigarettes"
