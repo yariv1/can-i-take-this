@@ -5977,11 +5977,15 @@
  },
  "Vietnam": {
   "checked": "9 November 2026",
-  "answer": "Vietnam's own customs pages could not be used for a traveller food rule, so this comes from the IATA Travel Centre customs page for Vietnam, which airlines use. Certain food products (salt, poultry eggs for example) are restricted and generally need a permit before arrival, as do certain livestock and live plants. It gives no limits and does not name meat, dairy, fruit or vegetables. The page shows no date, so confirm with Vietnamese customs before you travel.",
+  "answer": "Vietnam's own customs pages could not be used for a traveller food rule, so this comes from the IATA Travel Centre customs page for Vietnam, which airlines use. Certain food products (salt, poultry eggs for example) are restricted and generally need a permit before arrival, as do certain livestock and live plants. It gives no limits and does not name meat, dairy, fruit or vegetables. The page shows no date, so confirm with Vietnamese customs before you travel. Separately, Vietnam's plant protection law says plant items carried in luggage must be declared for plant quarantine inspection.",
   "sources": [
    [
     "https://infopages.traveldoc.aero/Customs/VNM/Plain",
     "IATA Travel Centre — Vietnam customs: prohibited and restricted goods (undated)"
+   ],
+   [
+    "https://www.ippc.int/static/media/files/reportingobligation/2015/09/01/PQ_LAW_41_QH_13.pdf",
+    "Vietnam: Law on Plant Protection and Quarantine No. 41/2013/QH13 (English translation on IPPC)"
    ]
   ],
   "faq": [
@@ -5996,6 +6000,14 @@
    [
     "Is there a food limit?",
     "The page states none."
+   ],
+   [
+    "Do I have to declare plants in my luggage in Vietnam?",
+    "Yes. Article 29 of Law No. 41/2013/QH13 says quarantine objects, which include plants and plant products, carried in hand or sent luggage must be declared for inspection."
+   ],
+   [
+    "Can I carry soil into Vietnam?",
+    "Article 13 prohibits sending or carrying in soil that contains harmful organisms."
    ]
   ],
   "topics": [
@@ -6053,6 +6065,49 @@
     ]
    },
    {
+    "id": "law",
+    "label": "Plant quarantine law",
+    "status": "warn",
+    "verdict": "Declare it",
+    "head": "Vietnam's plant protection law says plant items carried in luggage must be declared for inspection.",
+    "scen": [
+     {
+      "when": "Plants and plant products in hand or checked luggage",
+      "status": "warn",
+      "tag": "Declare it",
+      "lines": [
+       "Article 29 of Law No. 41/2013/QH13 says quarantine objects carried in hand luggage, or in luggage sent with a means of transport, must be declared so the plant quarantine agency can inspect them.",
+       "The law counts plants, plant products and other things that could carry harmful organisms as quarantine objects.",
+       "Customs clearance for these items happens only after plant quarantine is finished, at the first border gate or at the place they are brought in from."
+      ]
+     },
+     {
+      "when": "Soil",
+      "status": "stop",
+      "tag": "Not allowed",
+      "lines": [
+       "Article 13 strictly prohibits sending or carrying into Vietnam soil that contains harmful organisms."
+      ]
+     },
+     {
+      "when": "What the law leaves to other rules",
+      "status": "warn",
+      "tag": "Ask first",
+      "lines": [
+       "The item lists and declaration details are set by the agriculture ministry, and we did not read them. The law says nothing about meat or dairy.",
+       "We read an English translation of the 2013 law, posted on the International Plant Protection Convention (IPPC) site."
+      ]
+     }
+    ],
+    "src": [
+     [
+      "https://www.ippc.int/static/media/files/reportingobligation/2015/09/01/PQ_LAW_41_QH_13.pdf",
+      "Vietnam: Law on Plant Protection and Quarantine No. 41/2013/QH13 (English translation on IPPC)"
+     ]
+    ],
+    "official": true
+   },
+   {
     "id": "notread",
     "label": "Not covered",
     "status": "warn",
@@ -6071,15 +6126,20 @@
     ]
    }
   ],
-  "unofficial": true
+  "unofficial": true,
+  "lawNote": "The plant quarantine law card was read on 26 November 2026 in an English translation on the IPPC site."
  },
  "Cambodia": {
   "checked": "9 November 2026",
-  "answer": "Cambodia's own customs pages could not be used for a traveller food rule, so this comes from the IATA Travel Centre customs page for Cambodia, which airlines use. Live plants require a phytosanitary certificate from the Ministry of Agriculture, Forestry and Fishery, and seeds are subject to regulation by the relevant agriculture authorities. It has no line on food, meat, dairy, eggs, fruit or vegetables and no quantity limits. The page shows no date, so confirm with Cambodian customs before you travel.",
+  "answer": "Cambodia's own customs pages could not be used for a traveller food rule, so this comes from the IATA Travel Centre customs page for Cambodia, which airlines use. Live plants require a phytosanitary certificate from the Ministry of Agriculture, Forestry and Fishery, and seeds are subject to regulation by the relevant agriculture authorities. It has no line on food, meat, dairy, eggs, fruit or vegetables and no quantity limits. The page shows no date, so confirm with Cambodian customs before you travel. Cambodia's 2003 phytosanitary sub-decree also says plant material brought in must be declared at the first point of entry and inspected.",
   "sources": [
    [
     "https://infopages.traveldoc.aero/Customs/KHM/Plain",
     "IATA Travel Centre — Cambodia customs: prohibited and restricted goods (undated)"
+   ],
+   [
+    "https://www.ippc.int/static/media/files/reportingobligation/2015/03/30/1115267545020_PQ_S.Decree__English__2013042321-17En.pdf",
+    "Cambodia: Sub-Decree No. 15 on Phytosanitary Inspection (English translation on IPPC)"
    ]
   ],
   "faq": [
@@ -6094,6 +6154,14 @@
    [
     "Is food covered?",
     "The page has no line on food."
+   ],
+   [
+    "Do I have to declare plant products on arrival in Cambodia?",
+    "Sub-Decree No. 15 says plant quarantine material, including plants, uncertified plant products and soil, must be declared and inspected at the first point of entry."
+   ],
+   [
+    "Are canned fruit and vegetables covered?",
+    "The sub-decree's definition of plant leaves out preserved fruit or vegetables in hermetically sealed cans, tins, bottles or other containers."
    ]
   ],
   "topics": [
@@ -6128,10 +6196,63 @@
       "tag": "Ask first",
       "lines": [
        "The IATA Travel Centre page does not say whether food, meat, dairy, fruit or vegetables are allowed.",
-       "Ask Cambodian customs before you bring them."
+       "Ask Cambodian customs before you bring them.",
+       "For plant products such as fresh produce, see the plant inspection law card: uncertified plant products must be declared and inspected."
       ]
      }
     ]
+   },
+   {
+    "id": "law",
+    "label": "Plant inspection law",
+    "status": "warn",
+    "verdict": "Declare it",
+    "head": "Cambodia's phytosanitary sub-decree says plant material brought in must be declared and inspected.",
+    "scen": [
+     {
+      "when": "Plants, plant products and soil",
+      "status": "warn",
+      "tag": "Declare it",
+      "lines": [
+       "Sub-Decree No. 15 of 13 March 2003 says all plant quarantine material brought into Cambodia must be inspected and follow any treatment ordered.",
+       "The material includes plants and plant parts, plant and farm products not certified free of pests, soil (also soil on roots), packaging and live or dead pests.",
+       "Article 22 says the owner must declare it and apply for inspection at the first point of entry."
+      ]
+     },
+     {
+      "when": "Importing plants",
+      "status": "warn",
+      "tag": "Certificate",
+      "lines": [
+       "Article 21 requires a plant quarantine certificate from the exporting country's authority, and the material must be free of quarantine pests.",
+       "Article 22 also asks an importer of plants to inform the quarantine check point 10 days before arrival."
+      ]
+     },
+     {
+      "when": "Sealed cans, tins and bottles",
+      "status": "go",
+      "tag": "Outside the definition",
+      "lines": [
+       "The sub-decree's definition of \"plant\" leaves out preserved fruit or vegetables imported in hermetically sealed cans, tins, bottles or other containers."
+      ]
+     },
+     {
+      "when": "Avoiding inspection",
+      "status": "stop",
+      "tag": "Fine",
+      "lines": [
+       "Article 35 provides a fine for moving plant quarantine material around the check points to avoid inspection.",
+       "We read an English translation by Cambodia's plant protection office, marked \"not for legal purpose\", on the IPPC site. It says nothing about meat or dairy, and we did not check for later changes."
+      ]
+     }
+    ],
+    "src": [
+     [
+      "https://www.ippc.int/static/media/files/reportingobligation/2015/03/30/1115267545020_PQ_S.Decree__English__2013042321-17En.pdf",
+      "Cambodia: Sub-Decree No. 15 on Phytosanitary Inspection (English translation on IPPC)"
+     ]
+    ],
+    "official": true
    },
    {
     "id": "notread",
@@ -6152,7 +6273,8 @@
     ]
    }
   ],
-  "unofficial": true
+  "unofficial": true,
+  "lawNote": "The plant inspection law card was read on 26 November 2026 in an English translation on the IPPC site."
  },
  "Morocco": {
   "checked": "9 November 2026",
@@ -6689,11 +6811,15 @@
  },
  "Ethiopia": {
   "checked": "9 November 2026",
-  "answer": "Ethiopia's own customs pages could not be used for a traveller food rule, so this comes from the IATA Travel Centre customs page for Ethiopia, which airlines use. Spices and butter are allowed up to 5 kg each. Seeds, cereals, teff, beans, raw coffee, seedlings and soil require permits from the Ministry of Agriculture and Natural Resources. It has no line on meat, dairy, eggs, fruit or vegetables. The page shows no date, so confirm with Ethiopian customs before you travel.",
+  "answer": "Ethiopia's own customs pages could not be used for a traveller food rule, so this comes from the IATA Travel Centre customs page for Ethiopia, which airlines use. Spices and butter are allowed up to 5 kg each. Seeds, cereals, teff, beans, raw coffee, seedlings and soil require permits from the Ministry of Agriculture and Natural Resources. It has no line on meat, dairy, eggs, fruit or vegetables. The page shows no date, so confirm with Ethiopian customs before you travel. Ethiopia's 1992 Plant Quarantine Regulation also asks for an import permit and a phytosanitary certificate for listed plants, including fresh fruit and vegetables and coffee, and bans soil and compost.",
   "sources": [
    [
     "https://infopages.traveldoc.aero/Customs/ETH/Plain",
     "IATA Travel Centre — Ethiopia customs: prohibited and restricted goods (undated)"
+   ],
+   [
+    "https://faolex.fao.org/docs/pdf/eth4524.pdf",
+    "Ethiopia: Plant Quarantine Council of Ministers Regulation No. 4/1992 (FAOLEX)"
    ]
   ],
   "faq": [
@@ -6708,6 +6834,14 @@
    [
     "Are meat and dairy covered?",
     "The page has no line on them."
+   ],
+   [
+    "Can I bring fresh fruit or vegetables into Ethiopia?",
+    "Regulation No. 4/1992 lists fresh fruit and vegetables as restricted: they need an import permit and a phytosanitary certificate."
+   ],
+   [
+    "Can I bring soil or compost into Ethiopia?",
+    "No. Schedule II of the regulation prohibits compost and soil, whether alone or attached to plants."
    ]
   ],
   "topics": [
@@ -6759,10 +6893,54 @@
       "tag": "Ask first",
       "lines": [
        "The IATA Travel Centre page does not say whether meat, dairy, eggs, fruit or vegetables are allowed.",
-       "Ask Ethiopian customs before you bring them."
+       "Ask Ethiopian customs before you bring them.",
+       "For fruit and vegetables, see the plant quarantine law card: the 1992 regulation lists them as needing a permit."
       ]
      }
     ]
+   },
+   {
+    "id": "law",
+    "label": "Plant quarantine law",
+    "status": "warn",
+    "verdict": "Permit",
+    "head": "Ethiopia's 1992 plant quarantine regulation asks for an import permit for listed plants and bans soil.",
+    "scen": [
+     {
+      "when": "Fresh fruit, vegetables, coffee and other listed plants",
+      "status": "warn",
+      "tag": "Permit",
+      "lines": [
+       "Article 4 of Regulation No. 4/1992 says no one may import the plants in Schedule I without an import permit from the agriculture minister.",
+       "Schedule I names, among others, fresh fruit and vegetables, coffee, the tea plant, citrus, dates, potatoes, rice, wheat, maize and sesame. Several entries leave out seeds.",
+       "Article 6 says listed plants must come with a phytosanitary certificate, with a copy fixed to the outside of the container."
+      ]
+     },
+     {
+      "when": "Soil, compost and plant packing",
+      "status": "stop",
+      "tag": "Not allowed",
+      "lines": [
+       "Schedule II prohibits compost, soil (alone or stuck to plants), live plant pests and snails, listed weeds, and risky plant packing such as banana leaves, cereal straw, coffee hulls and rice hulls."
+      ]
+     },
+     {
+      "when": "Inspection",
+      "status": "warn",
+      "tag": "Inspected",
+      "lines": [
+       "All imported plants that could carry pests are subject to quarantine. Infected items are treated, sent back or destroyed at the owner's cost.",
+       "We read the Negarit Gazeta text of 2 October 1992 on FAO's FAOLEX database. The minister may change the lists and we did not check for later changes. It says nothing about meat or dairy."
+      ]
+     }
+    ],
+    "src": [
+     [
+      "https://faolex.fao.org/docs/pdf/eth4524.pdf",
+      "Ethiopia: Plant Quarantine Council of Ministers Regulation No. 4/1992 (FAOLEX)"
+     ]
+    ],
+    "official": true
    },
    {
     "id": "notread",
@@ -6783,7 +6961,8 @@
     ]
    }
   ],
-  "unofficial": true
+  "unofficial": true,
+  "lawNote": "The plant quarantine law card was read on 26 November 2026 in the gazette text on FAOLEX."
  },
  "Fiji": {
   "checked": "9 November 2026",
@@ -7092,11 +7271,15 @@
  },
  "Nepal": {
   "checked": "9 November 2026",
-  "answer": "Nepal's own customs pages could not be used for a traveller food rule, so this comes from the IATA Travel Centre customs page for Nepal, which airlines use. Food stuff up to a value of Rs5000 and fresh fruit up to a value of Rs2000 are listed. It has no line on meat, dairy, eggs, vegetables, plants, seeds or other animal products. The page shows no date, so confirm with Nepali customs before you travel.",
+  "answer": "Nepal's own customs pages could not be used for a traveller food rule, so this comes from the IATA Travel Centre customs page for Nepal, which airlines use. Food stuff up to a value of Rs5000 and fresh fruit up to a value of Rs2000 are listed. It has no line on meat, dairy, eggs, vegetables, plants, seeds or other animal products. The page shows no date, so confirm with Nepali customs before you travel. Nepal's Plant Protection Act also asks for an entry permit before plants or plant products are brought in, including for personal use.",
   "sources": [
    [
     "https://infopages.traveldoc.aero/Customs/NPL/Plain",
     "IATA Travel Centre — Nepal customs: prohibited and restricted goods (undated)"
+   ],
+   [
+    "https://lpr.adb.org/sites/default/files/resource/%5Bnid%5D/nep100397.pdf",
+    "Nepal: Plant Protection Act 2064 (2007), Nepal Gazette text (hosted by ADB)"
    ]
   ],
   "faq": [
@@ -7111,6 +7294,14 @@
    [
     "Are meat and dairy covered?",
     "The page does not mention them."
+   ],
+   [
+    "Do I need a permit to bring plants or seeds into Nepal?",
+    "The Plant Protection Act 2064 (2007) says an entry permit must be obtained before importing plants or plant products, and lets the office issue one for personal use for a fee."
+   ],
+   [
+    "Is it an offence to bring plants without papers?",
+    "Section 22 lists importing without an entry permit or a phytosanitary certificate as an offence."
    ]
   ],
   "topics": [
@@ -7143,7 +7334,8 @@
       "status": "go",
       "tag": "Up to Rs 2,000",
       "lines": [
-       "The page lists fresh fruit up to a value of Rs2000."
+       "The page lists fresh fruit up to a value of Rs2000.",
+       "This value limit does not remove the entry permit that the Plant Protection Act asks for; see the plant permit law card."
       ]
      }
     ]
@@ -7167,6 +7359,49 @@
     ]
    },
    {
+    "id": "law",
+    "label": "Plant permit law",
+    "status": "warn",
+    "verdict": "Permit",
+    "head": "Nepal's Plant Protection Act asks for an entry permit before plants or plant products are brought in.",
+    "scen": [
+     {
+      "when": "Plants, plant products and soil",
+      "status": "warn",
+      "tag": "Permit",
+      "lines": [
+       "Sections 7 and 11 of the Plant Protection Act 2064 (2007) say an entry permit must be obtained before importing plants, plant products, beneficial organisms, or growing media such as soil and moss.",
+       "The Act's definition of a plant includes stems, bark, roots, leaves, fruit and seeds."
+      ]
+     },
+     {
+      "when": "For your own use",
+      "status": "warn",
+      "tag": "Permit",
+      "lines": [
+       "Section 7(3) lets the plant quarantine office issue an entry permit, for a fee, to a person bringing plants or plant products for personal or research use.",
+       "A permit is valid for three months."
+      ]
+     },
+     {
+      "when": "Without the papers",
+      "status": "stop",
+      "tag": "Offence",
+      "lines": [
+       "Importing without an entry permit, or without a phytosanitary certificate, is listed as an offence in Section 22.",
+       "We read the 2007 Nepal Gazette text hosted by the Asian Development Bank. A 2022 amendment changed several sections, including penalties, so we quote no fine amounts. The Act says nothing about meat or dairy."
+      ]
+     }
+    ],
+    "src": [
+     [
+      "https://lpr.adb.org/sites/default/files/resource/%5Bnid%5D/nep100397.pdf",
+      "Nepal: Plant Protection Act 2064 (2007), Nepal Gazette text (hosted by ADB)"
+     ]
+    ],
+    "official": true
+   },
+   {
     "id": "notread",
     "label": "Not covered",
     "status": "warn",
@@ -7185,7 +7420,8 @@
     ]
    }
   ],
-  "unofficial": true
+  "unofficial": true,
+  "lawNote": "The plant permit law card was read on 26 November 2026 in the gazette text hosted by the Asian Development Bank."
  },
  "Nigeria": {
   "checked": "9 November 2026",

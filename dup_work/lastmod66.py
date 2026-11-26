@@ -15,6 +15,6 @@ for f,d in newest.items():
     u='/'+f[:-10]
     if u.startswith('/blog/') or u=='//': continue
     cur=ov.get(u,base)
-    if d>cur and d<='2026-11-25': add[u]=d
+    if d>cur and d<='2026-11-26': add[u]=d
 print(len(add),collections.Counter(add.values()).most_common(12))
 json.dump(add,open('dup_work/lastmod66.json','w'),indent=1)

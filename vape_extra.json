@@ -3111,6 +3111,49 @@
  "GE": {
   "sections": [
    {
+    "h": "⚖️ What Georgia's Law on Tobacco Control says about e-cigarettes",
+    "p": "From the Law of Georgia on Tobacco Control, consolidated English text on the Legislative Herald (matsne.gov.ge), with amendments listed up to 18 March 2025, read 26 November 2026.",
+    "table": {
+     "head": [
+      "Point",
+      "What the law says"
+     ],
+     "rows": [
+      [
+       "What counts",
+       "An electronic cigarette includes single-use and refillable devices and their cartridges and tanks"
+      ],
+      [
+       "Nicotine cartridges",
+       "Nicotine-containing material, cartridges and capsules are counted as tobacco products; the device is a tobacco accessory"
+      ],
+      [
+       "Age",
+       "No sale to anyone under 18"
+      ],
+      [
+       "Where it may not be sold",
+       "Schools, medical, sports and cultural institutions, public institutions and vending machines, among others"
+      ],
+      [
+       "Online and post",
+       "Retail sale on the internet or by mail is banned, with an exception for accessories and devices that show no tobacco industry brand or trade name"
+      ],
+      [
+       "Smoking indoors",
+       "Article 10 bans tobacco smoking inside buildings and on public transport, with listed exceptions"
+      ],
+      [
+       "Brought in by travellers",
+       "Article 9 says the law's standards (except Article 10) do not apply to amounts allowed by the Customs Code, brought by air in one calendar day, or otherwise once in 30 days"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>Not in this law:</strong> a number of devices or millilitres a traveller may bring; that is set by customs law."
+    ]
+   },
+   {
     "h": "📊 How common vaping is in Georgia, per the WHO survey figures",
     "p": "From the same WHO report on the global tobacco epidemic 2023, country profile for Georgia, table \"Tobacco use prevalence from the latest survey\". These are survey results, not a law or a customs rule, and each survey has its own age group.",
     "table": {
@@ -3156,6 +3199,10 @@
   ],
   "faq": [
    [
+    "Can I order e-cigarette liquid online in Georgia?",
+    "Georgia's tobacco control law counts nicotine cartridges and liquids as tobacco products and bans retail sale of tobacco products on the internet or by mail."
+   ],
+   [
     "How common is vaping in Georgia?",
     "Adults: 0.3% of adults currently use e-cigarettes (men 0.6%, women 0.0%) in the survey \"National tobacco survey, 2019\" (national, ages 18-69). Adolescents: 7.0% of adolescents currently use e-cigarettes (boys 11.0%, girls 4.0%), and 2.0% use them daily in the survey \"European School Survey Project on Alcohol and Other Drugs, 2019\" (national, ages 15-16)."
    ],
@@ -3164,7 +3211,12 @@
     "0.3% of adults currently use e-cigarettes (men 0.6%, women 0.0%) in the survey \"National tobacco survey, 2019\" (national, ages 18-69)."
    ]
   ],
-  "src": [],
+  "src": [
+   [
+    "https://matsne.gov.ge/en/document/view/1160150",
+    "Legislative Herald of Georgia: Law on Tobacco Control (consolidated, English)"
+   ]
+  ],
   "keepSchema": true
  },
  "GR": {
@@ -7076,18 +7128,65 @@
     "list": [
      "<strong>Not read:</strong> the customs.ro traveller rule (HTTP 403 Cloudflare) and the law text. Ask Romanian customs before bringing more than a device and a few pods."
     ]
+   },
+   {
+    "h": "🧪 What Law 201/2016 requires of vape products sold in Romania",
+    "p": "Unofficial copy: the text of Law 201/2016 as published in the Official Gazette, on the private legal site legeaz.net, read in Romanian on 26 November 2026. These are rules for products put on the market, not a baggage allowance.",
+    "table": {
+     "head": [
+      "Item",
+      "Rule for products on sale"
+     ],
+     "rows": [
+      [
+       "Nicotine refill bottle",
+       "At most 10 ml"
+      ],
+      [
+       "Cartridge or tank",
+       "At most 2 ml"
+      ],
+      [
+       "Nicotine strength",
+       "At most 20 mg per ml"
+      ],
+      [
+       "Leaflet in the pack",
+       "Instructions, storage, that use is not recommended for young people and non-smokers, contraindications, adverse effects, addiction and toxicity, maker contact"
+      ],
+      [
+       "Health warning",
+       "States that the product contains nicotine, which is highly addictive"
+      ],
+      [
+       "Advertising",
+       "Banned in online services, the press and print (trade publications excepted), on radio, in cinemas and on billboards"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>Not confirmed:</strong> whether this copy includes later amendments. The official legislation portal did not respond."
+    ]
    }
   ],
   "faq": [
    [
     "Can I buy vape liquid online for delivery to Romania?",
     "Tobacco Control Laws reports that cross-border distance sales of e-cigarettes to consumers in Romania are prohibited. It gives no traveller baggage allowance."
+   ],
+   [
+    "What nicotine strength may vape liquid have in Romania?",
+    "Law 201/2016, read in an unofficial copy, limits products on sale to 20 mg of nicotine per ml, refill bottles to 10 ml and cartridges or tanks to 2 ml."
    ]
   ],
   "src": [
    [
     "https://tobaccocontrollaws.org/legislation/romania/e-cigarettes",
     "Unofficial source: Tobacco Control Laws - Romania e-cigarettes"
+   ],
+   [
+    "https://legeaz.net/monitorul-oficial-906-2016/legea-201-2016-conditii-fabricare-prezentare-vanzare-tutun-tigari",
+    "Unofficial copy: Law 201/2016 on legeaz.net (in Romanian)"
    ]
   ],
   "keepSchema": true

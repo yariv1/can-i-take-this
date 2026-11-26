@@ -27,14 +27,15 @@ const ICON = { go: '<path d="M20 6 9 17l-5-5"/>', warn: '<path d="M12 9v4m0 4h.0
 const TOPICS = Object.assign({ Romania: require('./food_topics_romania.js') }, require('./food_topics.js'));
 // Session 34: countries added with food_add_country.js live in food_extra.json (answer, faq, sources, checked, topics)
 const EXTRA = (function () { try { return JSON.parse(require('fs').readFileSync(require('path').join(__dirname, 'food_extra.json'), 'utf8')); } catch (e) { return {}; } })();
-Object.keys(EXTRA).forEach(function (k) { const e = EXTRA[k]; DETAIL[k] = { answer: e.answer, stats: [], sections: [], faq: e.faq, sources: e.sources, checked: e.checked, unofficial: !!e.unofficial }; TOPICS[k] = { slab: 'What are you bringing?', topics: e.topics }; });
+Object.keys(EXTRA).forEach(function (k) { const e = EXTRA[k]; DETAIL[k] = { answer: e.answer, stats: [], sections: [], faq: e.faq, sources: e.sources, checked: e.checked, unofficial: !!e.unofficial, lawNote: e.lawNote }; TOPICS[k] = { slab: 'What are you bringing?', topics: e.topics }; });
 
 // Source block inside every verified card: links first, then the OFFICIAL SOURCE footer (DESIGN_SYSTEM.md 8.28)
-function srcBlock(c) {
+function srcBlock(c, t) {
   const d = DETAIL[c.name];
   if (!d || !d.sources) return '';
-  const UN = !!d.unofficial;
-  const rows = d.sources.map(x => '<a class="hitem" href="' + x[0] + '" target="_blank" rel="noopener"><span class="hi-ic">🌐</span><span class="hi-l">' + x[1] + '<small>' + (UN ? 'Unofficial guidance' : 'Official guidance') + '</small></span><span class="hi-go">↗</span></a>').join('');
+  const own = t && t.src;   // a card may carry its own source (official law card beside unofficial cards)
+  const UN = own ? !t.official : !!d.unofficial;
+  const rows = (own ? t.src : d.sources).map(x => '<a class="hitem" href="' + x[0] + '" target="_blank" rel="noopener"><span class="hi-ic">🌐</span><span class="hi-l">' + x[1] + '<small>' + (UN ? 'Unofficial guidance' : 'Official guidance') + '</small></span><span class="hi-go">↗</span></a>').join('');
   return '<div class="help' + (UN ? ' src-un' : '') + '"><div class="help-h">' + (UN ? 'Unofficial sources' : 'Helpful sources') + '</div>' + rows + '<div class="hnote">To be 100% sure, we always recommend confirming with the official channels.</div></div>' +
     '<div class="src">' + (UN ? '<b class="src-un">⚠ UNOFFICIAL SOURCE</b> The rules above are taken from unofficial sources. It doesn\u2019t mean that they are not correct, just not officially from ' + c.name + '. To be more sure and learn further, please check the links placed here above.' : '<b class="src-ok">✓ OFFICIAL SOURCE</b> The rule above is from the official rules. To be more sure and learn further, please check the links placed here above.') + ' Food rules protect against pests and disease. When unsure, always declare it - declaring is free, smuggling is fined.</div>';
 }
@@ -43,7 +44,7 @@ function srcBlock(c) {
 function cardFn(c) {
   return (t, i) => '<div class="cc" id="cc-' + t.id + '"' + (i === 0 ? '' : ' hidden') + '><div class="pass ' + t.status + ' print"><div class="strip"><div class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">' + ICON[t.status] + '</svg></div><div><div class="verdict">' + esc(t.verdict) + '</div><div class="vsub">' + esc(t.label) + '</div></div></div><div class="perf"></div><div class="body"><div class="route"><span>🥩 <b>' + esc(c.name) + '</b></span><span>FOOD</span></div><p class="headline">' + esc(t.head) + '</p>' +
     t.scen.map(s => '<div class="fsc"><div class="fsc-h"><span class="fsc-b fsc-' + s.status + '">' + esc(s.tag) + '</span><span>' + esc(s.when) + '</span></div><ul class="detail">' + s.lines.map(l => '<li>' + esc(l) + '</li>').join('') + '</ul></div>').join('') +
-    srcBlock(c) + '</div></div></div>';
+    srcBlock(c, t) + '</div></div></div>';
 }
 
 // Chip picker + one expanded card per topic (the same pattern as the Compensation pages). EXAMPLE on Romania, pending the user's approval for the others.
@@ -62,7 +63,7 @@ function render(c, d) {
     (TOPICS[c.name] ? [] : d.sections.filter((s, i) => skip.indexOf(i) < 0)).map(s => '<section class="bd-sec"><h2>' + s.h + '</h2>' + (s.p ? '<p>' + s.p + '</p>' : '') + (s.table ? table(s.table) : '') +
       (s.list ? '<ul>' + s.list.map(x => '<li>' + x + '</li>').join('') + '</ul>' : '') + '</section>').join('') +
     '<section class="bd-faq"><h2>❓ Quick answers</h2>' + d.faq.map(q => '<h3>' + esc(q[0]) + '</h3><p>' + esc(q[1]) + '</p>').join('') + '</section>' +
-    '<p class="bd-chk">Checked ' + (d.checked || CHECKED) + (d.unofficial ? ' on a reliable named source, not an official ' + esc(c.name) + ' page (linked in the cards above).' : ' on ' + esc(c.name) + "'s official government pages (linked in the cards above).") + " Food import rules change with animal and plant disease outbreaks: confirm with the authority before you travel.</p>" +
+    '<p class="bd-chk">Checked ' + (d.checked || CHECKED) + (d.unofficial ? ' on a reliable named source, not an official ' + esc(c.name) + ' page (linked in the cards above).' : ' on ' + esc(c.name) + "'s official government pages (linked in the cards above).") + (d.lawNote ? ' ' + d.lawNote : '') + " Food import rules change with animal and plant disease outbreaks: confirm with the authority before you travel.</p>" +
     (TOPICS[c.name] ? '' : '<div class="bd-src"><div class="h">' + (d.unofficial ? '⚠ Unofficial sources' : '✓ Official sources') + '</div>' + d.sources.map(s => '<a href="' + s[0] + '" target="_blank" rel="noopener noreferrer">' + s[1] + '</a>').join('') + '</div>');
 }
 
