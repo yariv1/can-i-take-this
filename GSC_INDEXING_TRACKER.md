@@ -1215,3 +1215,11 @@ Law-text sections. No GSC requests made yet.
 - https://canitakethis.co/country/bulgaria/tobacco/
 - https://canitakethis.co/country/belgium/tobacco/
 Law and regulator sections. No GSC requests made yet.
+
+## Deploy 0c263d5a0 (2026-11-26)
+- https://canitakethis.co/country/bulgaria/tobacco/
+- https://canitakethis.co/country/belgium/tobacco/
+- https://canitakethis.co/country/nigeria/tobacco/
+- https://canitakethis.co/airline/middle-east-airlines/power-bank/
+- https://canitakethis.co/airline/united/power-bank/
+Source captions corrected site-wide (231 pages show Unofficial guidance); five pages above also changed in content or footer. No GSC requests made yet.
