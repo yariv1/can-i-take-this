@@ -326,6 +326,11 @@ module.exports = function (X) {
           'The page adds that the airline does not give medical services or administer medication, but helps transport it safely.',
           X.TSA_PILLS_LINE
         ], [PA, X.TSA_PILLS]),
+        card('cannabis', 'Medical cannabis', 'warn', 'State advises against it', 'Flying with a cannabis card', 'Hawaii\'s Department of Health does not recommend travelling with medical cannabis, because flying passes through federal jurisdiction and may put you at risk of delay or arrest.', [
+          'A visitor with a medical cannabis card from another US state or territory may apply for a temporary Hawaii registration, valid up to 60 days and renewable once a calendar year, for a non-refundable 47.41 US dollar fee; apply up to 60 days ahead.',
+          'The health department lists licensed dispensaries on Hawaii Island, Maui, Oahu and Kauai.',
+          'TSA says its officers do not search for illegal drugs, but refer any they find during screening to law enforcement.'
+        ], [['https://health.hawaii.gov/medicalcannabisregistry/travel/', 'Hawaii Department of Health: Out-of-state patient application', 'Medical cannabis and travel (read 27 November 2026)'], ['https://www.tsa.gov/travel/security-screening/whatcanibring/items/medical-marijuana', 'TSA: Medical marijuana', 'Last updated 27 April 2026']]),
         card('drips', 'Drips and oxygen', 'warn', 'Rules for IV and oxygen', 'Intravenous devices, personal oxygen', 'The joint page says IV devices may not be hung from the aircraft, and personal oxygen equipment is banned in flight unless it is an approved portable oxygen concentrator.', [
           'The IV rule keeps the emergency oxygen masks free to deploy.',
           'FAA regulations allow personal oxygen equipment in flight only under the Portable Oxygen Concentrator (POC) guidelines.'
@@ -335,7 +340,8 @@ module.exports = function (X) {
       faq: [
         ['Can I bring insulin on Hawaiian Airlines?', 'TSA says to tell the officers you carry medically necessary liquids such as insulin and put them in a separate bin for x-ray screening. Keep it in your carry-on, as the joint Alaska and Hawaiian page asks.'],
         ['Can I bring ice packs for medicine on Hawaiian?', 'TSA allows medically necessary gel ice packs in reasonable quantities, frozen, melted or slushy; tell the officer at the checkpoint. There are no refrigerators on board, so bring your own cooling.'],
-        ['Can I check my medication on Hawaiian Airlines?', 'The joint Alaska and Hawaiian page says medication should always stay in carry-on baggage, never in checked baggage.']
+        ['Can I check my medication on Hawaiian Airlines?', 'The joint Alaska and Hawaiian page says medication should always stay in carry-on baggage, never in checked baggage.'],
+        ['Can I fly with medical cannabis in Hawaii?', 'Hawaii\'s Department of Health does not recommend travelling with it, because flying passes through federal jurisdiction and may put you at risk of delay or arrest.']
       ],
       tableTitle: 'Hawaiian Airlines medication rules at a glance',
       tableNote: 'Carry-on, refrigerator, IV and oxygen rows come from the joint Alaska and Hawaiian page; the other rows are TSA\'s for US flights.',
@@ -343,6 +349,7 @@ module.exports = function (X) {
         ['Insulin?', 'Separate bin for x-ray; tell the officer (TSA)'],
         ['Pump or glucose monitor?', 'Tell the officer; carry the supplies (TSA)'],
         ['Ice packs for medicine?', 'Allowed in reasonable quantity (TSA); no refrigerators on board'],
+        ['Medical cannabis?', 'Hawaii health department advises against flying with it'],
         ['Where does medication go?', 'Carry-on baggage, never checked'],
         ['IV devices and own oxygen?', 'IV cannot be hung; own oxygen only as an approved POC']
       ],

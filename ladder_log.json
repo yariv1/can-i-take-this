@@ -460,7 +460,8 @@
  },
  "airline/hawaiian-airlines/medication": {
   "official": [
-   "read 2026-11-23: Alaska Airlines and Hawaiian Airlines accessible services page \"Traveling with medication\" (alaskaair.com, via Wayback copy because the live page returns 406)"
+   "read 2026-11-23: Alaska Airlines and Hawaiian Airlines accessible services page \"Traveling with medication\" (alaskaair.com, via Wayback copy because the live page returns 406)",
+   "read 2026-11-27: Alaska/Hawaiian joint page (Wayback 20260714), Hawaii DOH and TSA medical marijuana pages, https://health.hawaii.gov/medicalcannabisregistry/travel/ https://www.tsa.gov/travel/security-screening/whatcanibring/items/medical-marijuana"
   ],
   "reliable": [
    "read: TSA medication pages"
@@ -468,7 +469,7 @@
   "other": [
    "none needed: step 1 answered the question"
   ],
-  "date": "2026-11-23"
+  "date": "2026-11-27"
  },
  "airline/iberia/medication": {
   "official": [
@@ -1192,13 +1193,14 @@
  },
  "airline/israir/power-bank": {
   "official": [
-   "tried 2026-11-19: israir.co.il pages redirect to a waiting-room queue (queue-it); not bypassed"
+   "tried 2026-11-19: israir.co.il pages redirect to a waiting-room queue (queue-it); not bypassed",
+   "read 2026-11-27: Israir lithium battery PDF (2019) and baggage policy page (browser pane), https://storage.googleapis.com/prod-wgclients/isra2023/document/84325_bateries_litum.pdf?alt=media https://www.israir.co.il/en/Passengers_Info/Baggage_Policy.html"
   ],
   "reliable": [
    "read 2026-11-19: Israel Airports Authority Ben Gurion security page (lithium batteries forbidden in checked baggage)"
   ],
   "other": [],
-  "date": "2026-11-19"
+  "date": "2026-11-27"
  },
  "airline/kenya-airways/power-bank": {
   "official": [
@@ -13037,11 +13039,12 @@
  },
  "airline/israir/alcohol": {
   "official": [
-   "read 2026-11-23: Israir baggage policy (israir.co.il Baggage_Policy, Hebrew) via browser pane"
+   "read 2026-11-23: Israir baggage policy (israir.co.il Baggage_Policy, Hebrew) via browser pane",
+   "read 2026-11-27: Israir baggage policy page (browser pane), https://www.israir.co.il/en/Passengers_Info/Baggage_Policy.html"
   ],
   "reliable": [],
   "other": [],
-  "date": "2026-11-23"
+  "date": "2026-11-27"
  },
  "airline/middle-east-airlines/alcohol": {
   "official": [
@@ -14060,13 +14063,16 @@
   "official": [
    "read 2026-11-17: https://www.ethiopianairlines.com/us/information/baggage-information/restricted-items",
    "read 2026-11-22: ethiopianairlines.com Restricted Items aerosols row",
-   "tried 2026-11-24: ethiopianairlines.com restricted-items page via browser pane: aerosol row did not render beyond heading; same page already the base card source"
+   "tried 2026-11-24: ethiopianairlines.com restricted-items page via browser pane: aerosol row did not render beyond heading; same page already the base card source",
+   "read 2026-11-27: Ethiopian carry-on baggage and restricted items pages, https://www.ethiopianairlines.com/us/information/baggage-information/carry-on-baggage"
   ],
-  "reliable": [],
+  "reliable": [
+   "read 2026-11-27: English copy of Directive 923/2014, https://www.ethiopianairlines.com/docs/globallibraries/default-document-library/minster-of-finance-english.pdf"
+  ],
   "other": [
    "IATA table removed from page: replaced by the airline text"
   ],
-  "date": "2026-11-24"
+  "date": "2026-11-27"
  },
  "airline/gol/perfume-aerosols": {
   "official": [

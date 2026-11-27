@@ -14711,7 +14711,7 @@
    "unofficial": false
   },
   "perfume": {
-   "answer": "Ethiopian Airlines allows aerosols such as hair spray, perfume and medicines containing alcohol in both carry-on and checked baggage, up to 0.5 kg/L per article and 2.0 kg/L in total.",
+   "answer": "Ethiopian Airlines allows hair spray, perfume and medicines containing alcohol in carry-on and checked baggage, up to 0.5 kg or 0.5 L per article and 2.0 kg or 2.0 L in total, and lists duty-free items among the extras you may carry. Entering Ethiopia, a directive allows 500 ml of perfume and 500 ml of soft perfume duty-free.",
    "sections": [
     {
      "h": "🧴 What Ethiopian Airlines says about perfume and aerosols",
@@ -14747,6 +14747,57 @@
      "list": [
       "<strong>Not on the page:</strong> the table does not mention the 100 ml cabin container limit or valve caps."
      ]
+    },
+    {
+     "h": "🛍️ Duty-free perfume and your Ethiopian cabin allowance",
+     "p": "From Ethiopian Airlines&rsquo; carry-on baggage page (US site), read 27 November 2026.",
+     "table": {
+      "head": [
+       "Point",
+       "Ethiopian Airlines wording, in short"
+      ],
+      "rows": [
+       [
+        "Cabin bag size",
+        "23 x 40 x 55 cm"
+       ],
+       [
+        "Economy weight",
+        "7 kg"
+       ],
+       [
+        "Extras carried free",
+        "Duty-free items are on the list, with a handbag, coat, reading material and infant items; the extras may weigh 5 kg at most"
+       ],
+       [
+        "Check-in",
+        "All carry-on baggage must be presented for inspection at check-in"
+       ]
+      ]
+     }
+    },
+    {
+     "h": "🇪🇹 Perfume you can bring into Ethiopia without duty",
+     "p": "This is a customs rule for arrivals, not an airline rule. From Ethiopian Ministry of Finance Directive No. 923/2014, read 27 November 2026 in an English copy on ethiopianairlines.com, which is why we treat it as unofficial.",
+     "table": {
+      "head": [
+       "Item",
+       "Duty-free for personal use"
+      ],
+      "rows": [
+       [
+        "Perfume",
+        "500 ml"
+       ],
+       [
+        "Soft perfume",
+        "500 ml"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Check the current figure</strong> with the Ethiopian Customs Commission; the copy gives no penalty for going over."
+     ]
     }
    ],
    "faq": [
@@ -14757,16 +14808,28 @@
     [
      "Can I carry hair spray in hand baggage on Ethiopian Airlines?",
      "Yes, the Restricted Items table lists hair sprays and perfumes as allowed in carry-on and check-in within the same limits."
+    ],
+    [
+     "How much perfume can I bring into Ethiopia?",
+     "Directive 923/2014, read in an unofficial English copy, allows 500 ml of perfume and 500 ml of soft perfume for personal use without duty or tax."
     ]
    ],
    "sources": [
     [
      "https://www.ethiopianairlines.com/us/information/baggage-information/restricted-items",
      "Ethiopian Airlines &mdash; Restricted Items"
+    ],
+    [
+     "https://www.ethiopianairlines.com/us/information/baggage-information/carry-on-baggage",
+     "Ethiopian Airlines &mdash; Carry-on baggage"
+    ],
+    [
+     "https://www.ethiopianairlines.com/docs/globallibraries/default-document-library/minster-of-finance-english.pdf",
+     "Unofficial source: English copy of Ethiopian Ministry of Finance Directive 923/2014 (PDF)"
     ]
    ],
    "keepSchema": true,
-   "checked": "22 November 2026",
+   "checked": "27 November 2026",
    "unofficial": false
   },
   "power": {
@@ -18585,7 +18648,7 @@
    "unofficial": false
   },
   "alcohol": {
-   "answer": "Israir's own baggage policy (read 23 November 2026) limits cabin liquids, drinks and duty-free purchases included, to 100 ml per container and 1 litre in total in one clear bag. It sets no separate alcohol limit. For duty-free alcohol from Ben Gurion, the Israel Airports Authority allows a sealed packet on flights to Europe.",
+   "answer": "Israir's own baggage policy (read 23 November 2026) limits cabin liquids, drinks and duty-free purchases included, to 100 ml per container and 1 litre in total in one clear bag. It sets no separate alcohol limit, and says the liquid limits do not apply to checked baggage. For duty-free alcohol from Ben Gurion, the Israel Airports Authority allows a sealed packet on flights to Europe.",
    "sections": [
     {
      "h": "🥃 What Israir says about drinks in the cabin",
@@ -18614,6 +18677,45 @@
        ]
       ]
      }
+    },
+    {
+     "h": "🍾 Taking bottles in the hold on Israir",
+     "p": "From the same Israir baggage policy page, read again 27 November 2026. Fees are as shown that day.",
+     "table": {
+      "head": [
+       "Point",
+       "Israir policy"
+      ],
+      "rows": [
+       [
+        "Liquid limits",
+        "Do not apply to checked baggage, so such products can be sent to the hold"
+       ],
+       [
+        "Checked bag on international flights",
+        "Not in the ticket price (New York flights include one in economy); up to 65 x 45 x 30 cm and 23 kg"
+       ],
+       [
+        "First checked bag, bought in advance",
+        "65 US dollars each way; 100 dollars if bought at Ben Gurion"
+       ],
+       [
+        "Domestic flights",
+        "First bag 20 shekels each way when paid in advance"
+       ],
+       [
+        "At the gate",
+        "The security authorities may carry out further checks there"
+       ],
+       [
+        "Once the bag is sent to the plane",
+        "Nothing may be taken out of it"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Packing:</strong> a bottle from home over 100 ml belongs in the checked bag, so add one to your booking in advance."
+     ]
     },
     {
      "h": "🥃 What the Israel Airports Authority says about duty-free alcohol",
@@ -18668,7 +18770,7 @@
     ]
    ],
    "keepSchema": true,
-   "checked": "23 November 2026",
+   "checked": "27 November 2026",
    "unofficial": false
   },
   "perfume": {
@@ -18749,8 +18851,86 @@
    "unofficial": true
   },
   "power": {
-   "answer": "Israir's pages sit behind a waiting-room queue, so this page uses the Israel Airports Authority's Ben Gurion security page: it is forbidden to put lithium-ion and lithium-metal batteries in baggage checked into the aircraft hold, and the page links to IATA's lithium battery guidance for more detail.",
+   "answer": "Israir's battery document puts loose power banks of up to 100 Wh in the cabin, protected against short circuit, and never loose in checked baggage; 100-160 Wh needs approval, two spares at most. It also bans laptops and tablets from checked baggage.",
    "sections": [
+    {
+     "h": "🔋 What Israir&rsquo;s battery document says",
+     "p": "From Israir&rsquo;s own document on lithium batteries (PDF in Hebrew, file dated August 2019), read 27 November 2026, translated by us.",
+     "table": {
+      "head": [
+       "Item",
+       "Israir rule"
+      ],
+      "rows": [
+       [
+        "Power banks and other lithium-ion batteries up to 100 Wh",
+        "Cabin: allowed, loose ones protected against damage or short circuit. Checked baggage: loose ones forbidden"
+       ],
+       [
+        "The same battery inside a device, in checked baggage",
+        "Allowed only with approval"
+       ],
+       [
+        "100 to 160 Wh",
+        "Cabin only, with the airline’s approval, no more than two spares; forbidden in checked baggage"
+       ],
+       [
+        "Number up to 100 Wh",
+        "No limit stated for ordinary consumer batteries"
+       ],
+       [
+        "Laptops and tablets",
+        "Forbidden in checked baggage on Israir flights; carry them in hand baggage"
+       ],
+       [
+        "Smart suitcase",
+        "Forbidden if it is larger than cabin size (55 x 40 x 25 cm) and the battery cannot be removed; if it goes in the hold, remove the battery and take it into the cabin"
+       ],
+       [
+        "Hoverboards, Solowheels and mini Segways",
+        "Forbidden in hand and checked baggage"
+       ],
+       [
+        "Protecting spares",
+        "Original packaging, a battery case or a separate pocket; tape over exposed terminals"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Newer than this document:</strong> current industry guidance (IATA) allows two power banks and says not to recharge them on board, so plan on two."
+     ]
+    },
+    {
+     "h": "🧳 If your Israir trolley goes to the hold",
+     "p": "From Israir&rsquo;s baggage policy page, in Hebrew, read 27 November 2026.",
+     "table": {
+      "head": [
+       "Point",
+       "Israir policy"
+      ],
+      "rows": [
+       [
+        "Small personal bag",
+        "Up to 40 x 30 x 20 cm, included, goes under the seat in front"
+       ],
+       [
+        "Trolley or large backpack",
+        "Up to 55 x 40 x 25 cm and 10 kg, paid on international flights other than New York"
+       ],
+       [
+        "Cabin space",
+        "About 50 such bags; once it is full, the rest go to the hold, even if paid for"
+       ],
+       [
+        "After a bag is sent to the plane",
+        "Nothing may be taken out of it"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>What to do:</strong> pack the power bank in the small personal bag, or take it out before a trolley is tagged for the hold."
+     ]
+    },
     {
      "h": "🔋 What Ben Gurion airport says about lithium batteries",
      "p": "From the Israel Airports Authority page \"Ben Gurion Airport\" on security (read 19 November 2026; undated). It is airport guidance, not Israir wording.",
@@ -18770,19 +18950,19 @@
        ],
        [
         "More detail",
-        "The page links to IATA&rsquo;s lithium battery guidance"
+        "The page links to IATA’s lithium battery guidance"
        ]
       ]
      },
      "list": [
-      "<strong>Not on the page:</strong> a Wh limit, a number of power banks and whether you may use one on board. Ask Israir, and see the IATA guidance."
+      "<strong>Not on the airport page:</strong> a Wh limit or a number of power banks."
      ]
     }
    ],
    "faq": [
     [
      "How many power banks can I take on Israir?",
-     "Following the IATA guidance: a maximum of two lithium-ion power banks, each up to 100 Wh, in carry-on baggage. Israir's own page was not readable on this, so confirm with the airline."
+     "Israir's 2019 battery document states no number up to 100 Wh and allows two spares of 100-160 Wh with approval. Industry guidance now allows two power banks, so plan on two."
     ],
     [
      "Can I use my power bank on a Israir flight?",
@@ -18791,13 +18971,21 @@
    ],
    "sources": [
     [
+     "https://storage.googleapis.com/prod-wgclients/isra2023/document/84325_bateries_litum.pdf?alt=media",
+     "Israir &mdash; Lithium batteries: allowed and forbidden (PDF in Hebrew, 2019)"
+    ],
+    [
+     "https://www.israir.co.il/en/Passengers_Info/Baggage_Policy.html",
+     "Israir &mdash; Baggage policy (in Hebrew)"
+    ],
+    [
      "https://www.iaa.gov.il/en/airports/ben-gurion/securitybgn/",
      "Unofficial source (airport operator): Israel Airports Authority &mdash; Ben Gurion security"
     ]
    ],
    "keepSchema": true,
-   "checked": "19 November 2026",
-   "unofficial": true
+   "checked": "27 November 2026",
+   "unofficial": false
   }
  },
  "Middle East Airlines": {
