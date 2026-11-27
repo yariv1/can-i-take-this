@@ -1738,7 +1738,8 @@
  },
  "country/greece/tobacco": {
   "official": [
-   "read 2026-11-23: AADE FAQ on exemptions for travellers from third countries, v2.0 of 3 April 2026 (aade.gr PDF, read in the browser pane via same-origin fetch)"
+   "read 2026-11-23: AADE FAQ on exemptions for travellers from third countries, v2.0 of 3 April 2026 (aade.gr PDF, read in the browser pane via same-origin fetch)",
+   "read 2026-11-27: Ministry of Health smoking ban places and sales bans, https://www.moh.gov.gr/articles/health/domes-kai-draseis-gia-thn-ygeia/antimetwpish-eksarthsewn/loipes-eksarthseis/prostasia-twn-anhlikwn-apo-ton-kapno/14245-xwroi-poy-apagoreyetai-to-kapnisma-kai-h-xrhsh-synafwn-proiontwn https://www.moh.gov.gr/articles/health/domes-kai-draseis-gia-thn-ygeia/antimetwpish-eksarthsewn/loipes-eksarthseis/prostasia-twn-anhlikwn-apo-ton-kapno/14242-apagoreyseis-sthn-pwlhsh-kapnikwn-kai-synafwn-proiontwn"
   ],
   "reliable": [
    "read: Travel Doc customs information page for Greece (infopages.traveldoc.aero)"
@@ -1746,7 +1747,7 @@
   "other": [
    "none needed: step 2a answered the question"
   ],
-  "date": "2026-11-16"
+  "date": "2026-11-27"
  },
  "country/romania/alcohol": {
   "official": [
@@ -14909,16 +14910,18 @@
  "country/oman/vaping": {
   "official": [
    "customs.gov.om traveller services page: no response on curl, navigation failed in browser pane 2026-11-22",
-   "checked 2026-11-24: page already carries decree-based import-ban section (Ministerial Decree 327/2015 via Tobacco Control Laws); decree text page HTTP 403"
+   "checked 2026-11-24: page already carries decree-based import-ban section (Ministerial Decree 327/2015 via Tobacco Control Laws); decree text page HTTP 403",
+   "read 2026-11-27: Royal Oman Police customs traveller services page, https://www.customs.gov.om/ar/traveller-services/"
   ],
   "reliable": [
    "WHO country profile read 2026-10-08 (base card)",
-   "read 2026-11-24: Tobacco Control Laws database (Wayback) quoting Decrees 327/2015 and 698/2015"
+   "read 2026-11-24: Tobacco Control Laws database (Wayback) quoting Decrees 327/2015 and 698/2015",
+   "read 2026-11-27: Qanoon.om copy of Consumer Protection Authority Decision 756/2023, https://qanoon.om/p/2023/cpa20230756/"
   ],
   "other": [
    "read 2026-11-22: GSTHR e-cigarette profile for Oman (page updated 2026-11-16, secondary compilation, lower reliability)"
   ],
-  "date": "2026-11-24"
+  "date": "2026-11-27"
  },
  "country/panama/vaping": {
   "official": [
@@ -15221,15 +15224,17 @@
  "country/dominican-republic/vaping": {
   "official": [
    "read 2026-11-22: DGA Manual del Viajero page FAQ: 20 packs, 25 cigars, 200 g tobacco, 5 l alcohol, restricted list drugs/firearms, no vape word",
-   "tried 2026-11-24: WebSearch: no Dominican law on e-cigarettes found; only pending bills (Senate documents), nothing enacted to quote"
+   "tried 2026-11-24: WebSearch: no Dominican law on e-cigarettes found; only pending bills (Senate documents), nothing enacted to quote",
+   "tried 2026-11-27: Poder Judicial PDF of Law 16-19 HTTP 403, no Wayback copy"
   ],
   "reliable": [
-   "WHO country profile read 2026-10-08 (base card)"
+   "WHO country profile read 2026-10-08 (base card)",
+   "read 2026-11-27: Tobacco Control Laws copy of Resolution 000066 of 2021, https://assets.tobaccocontrollaws.org/uploads/legislation/Dominican%20Republic/Dominican-Republic-Res.-No.-66-2021-native.pdf"
   ],
   "other": [
    "none needed: national customs page read"
   ],
-  "date": "2026-11-24"
+  "date": "2026-11-27"
  },
  "country/sri-lanka/vaping": {
   "official": [
@@ -15341,11 +15346,12 @@
  "country/luxembourg/plants-seeds": {
   "official": [
    "read 2026-11-22: gouvernement.lu ASTA press release 2023-08-07 (plants, fruit fly, Xylella, confiscation without certificate); no quantity limit",
-   "tried 2026-11-26: Legilux ELI links for 8 Jan 2010 returned other regulations; FAOLEX copies were other texts"
+   "tried 2026-11-26: Legilux ELI links for 8 Jan 2010 returned other regulations; FAOLEX copies were other texts",
+   "read 2026-11-27: Law of 18 July 2018, articles 18, 20, 75, https://environnement.public.lu/dam-assets/documents/natur/biodiversite/Loi-du-18-juillet-2018-concernant-la-protection-de-la-nature-et-des-ressources-naturelles.pdf"
   ],
   "reliable": [],
   "other": [],
-  "date": "2026-11-26"
+  "date": "2026-11-27"
  },
  "country/poland/plants-seeds": {
   "official": [
@@ -15922,7 +15928,10 @@
    "read earlier (already on the page): Source read: NAV, Itt a vakáció! Mi lehet a poggyászban? (in Hungarian). The date and penalties are not shown in the text read.",
    "tried 2026-11-26: njt.hu Act LIII 1996: curl no response, browser pane navigation failed"
   ],
-  "date": "2026-11-26"
+  "date": "2026-11-27",
+  "reliable": [
+   "read 2026-11-27: Act LIII of 1996 on net.jogtar.hu (in force 1 October 2026), https://net.jogtar.hu/jogszabaly?docid=99600053.tv"
+  ]
  },
  "country/czechia/plants-seeds": {
   "official": [

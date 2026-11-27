@@ -4701,6 +4701,41 @@
  "OM": {
   "sections": [
    {
+    "h": "⚖️ The e-cigarette decision now in force in Oman",
+    "p": "Unofficial source: Consumer Protection Authority Decision 756/2023, signed 31 December 2023 and shown as published in Official Gazette 1527 of 7 January 2024, read 27 November 2026 on Qanoon.om, a private legal database that says it is not an official source (in Arabic, translated by us).",
+    "table": {
+     "head": [
+      "Point",
+      "Decision 756/2023"
+     ],
+     "rows": [
+      [
+       "Banned",
+       "Circulating (dealing in) e-cigarettes, e-shisha and their accessories"
+      ],
+      [
+       "Administrative fine",
+       "Up to 1,000 Omani rials, doubled for a repeat breach"
+      ],
+      [
+       "Breach that continues",
+       "50 rials for each day, 2,000 rials at most in total"
+      ],
+      [
+       "Seized goods",
+       "Destroyed"
+      ],
+      [
+       "Older decision",
+       "698/2015 is repealed"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>For a traveller:</strong> the decision is worded around circulation and does not mention a device in your own luggage. The Omani customs traveller page, read 27 November 2026, gives a 400-cigarette exemption and the text we read does not name e-cigarettes."
+    ]
+   },
+   {
     "h": "⚖️ What Omani decrees say about importing e-cigarettes",
     "p": "Reliable secondary source: the Tobacco Control Laws database (Legal Consortium of the Campaign for Tobacco-Free Kids), page \"Main Policies - E-Cigarettes\" for Oman, last updated 27 August 2024, read from an archived copy on 24 November 2026. It quotes two Omani decrees and is not a customs page.",
     "table": {
@@ -4715,7 +4750,7 @@
       ],
       [
        "Trade",
-       "Decree No. 698/2015 (Arts. 1, 2) bans their trade"
+       "Decree No. 698/2015 (Arts. 1, 2) banned their trade; it has since been repealed and replaced by Decision 756/2023, above"
       ],
       [
        "Use in public places",
@@ -4733,7 +4768,7 @@
    },
    {
     "h": "📰 What a secondary profile reports about e-cigarettes in Oman",
-    "p": "Less reliable source (secondary profile): the Global State of Tobacco Harm Reduction (GSTHR) country page, updated 16 November 2026 and read on 22 November 2026. It compiles other sources and is not a customs page. The official customs rule for travellers could not be read, so treat this as background and confirm with customs.",
+    "p": "Less reliable source (secondary profile): the Global State of Tobacco Harm Reduction (GSTHR) country page, updated 16 November 2026 and read on 22 November 2026. It compiles other sources and is not a customs page. The customs page we read (above) does not name e-cigarettes, so treat this as background and confirm with customs.",
     "table": {
      "head": [
       "Point",
@@ -4755,7 +4790,7 @@
      ]
     },
     "list": [
-     "<strong>Not read:</strong> the Omani customs traveller page (no response), the legal text of the ban and anything newer than January 2025."
+     "<strong>Not covered:</strong> GSTHR does not give the legal text of the ban or anything newer than January 2025."
     ]
    },
    {
@@ -4789,7 +4824,7 @@
    ],
    [
     "Is importing a vape into Oman banned?",
-    "A legal database citing Ministerial Decree 327/2015 says importing e-cigarettes and e-shisha is banned, and Decree 698/2015 bans trading them. It states no exception for a traveller's own device, so ask Omani customs before you fly."
+    "A legal database citing Ministerial Decree 327/2015 says importing e-cigarettes and e-shisha is banned, and Decision 756/2023 now bans dealing in them. Neither text we read states an exception for a traveller's own device, so ask Omani customs before you fly."
    ],
    [
     "How common is vaping in Oman?",
@@ -4801,6 +4836,14 @@
    ]
   ],
   "src": [
+   [
+    "https://qanoon.om/p/2023/cpa20230756/",
+    "Unofficial source: Qanoon.om, Decision 756/2023 banning e-cigarette circulation (Arabic)"
+   ],
+   [
+    "https://www.customs.gov.om/ar/traveller-services/",
+    "Royal Oman Police, customs: traveller services (Arabic)"
+   ],
    [
     "https://www.tobaccocontrollaws.org/legislation/oman/e-cigarettes/main-policies",
     "Tobacco Control Laws: E-cigarettes in Oman (Legal Consortium)"
@@ -6499,6 +6542,37 @@
  "DO": {
   "sections": [
    {
+    "h": "🚭 Where vaping is banned in Dominican health sites",
+    "p": "Unofficial source: Resolution 000066 of the Ministry of Public Health, signed 16 December 2021, read 27 November 2026 in a copy on the Tobacco Control Laws website (in Spanish, translated by us).",
+    "table": {
+     "head": [
+      "Point",
+      "Resolution 000066"
+     ],
+     "rows": [
+      [
+       "Places",
+       "All public and private health establishments, among them hospitals, clinics, laboratories, radiology centres, medical and dental offices and health ministry offices"
+      ],
+      [
+       "Outdoors",
+       "The whole perimeter is included, with corridors, car parks and other outside areas"
+      ],
+      [
+       "Products",
+       "Cigarettes, cigars, e-cigarettes or vaporisers and heated-tobacco devices"
+      ],
+      [
+       "Wider laws it cites",
+       "Law 48-00, which bans smoking in enclosed spaces, and Law 16-19, which bans hookah in public and private places"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>Not in the resolution:</strong> any rule on bringing a vape or liquid into the country."
+    ]
+   },
+   {
     "h": "🛃 What Dominican customs says about tobacco in traveller baggage",
     "p": "From the Dirección General de Aduanas (DGA) \"Manual del Viajero\" page and its traveller FAQ (read on 22 November 2026). It lists cigarettes, cigars and tobacco and does not name e-cigarettes, vape liquid or nicotine.",
     "table": {
@@ -6549,6 +6623,10 @@
    ]
   ],
   "src": [
+   [
+    "https://assets.tobaccocontrollaws.org/uploads/legislation/Dominican%20Republic/Dominican-Republic-Res.-No.-66-2021-native.pdf",
+    "Unofficial source: Tobacco Control Laws, copy of Resolution 000066 (PDF, Spanish)"
+   ],
    [
     "https://www.aduanas.gob.do/manual-del-viajero/",
     "Dirección General de Aduanas - Manual del Viajero"
