@@ -217,7 +217,7 @@ module.exports = function (X) {
         ['Hypodermic needles and syringes?', 'Only for medical reasons, with a medical certificate'],
         ['Tablets, liquids, cold storage?', NP]
       ],
-      extra: steps(['Carry a medical certificate for syringes.', 'Ask Air Arabia about liquids and cold medication.'])
+      extra: steps(['Carry a medical certificate for syringes.', 'Ask Air Arabia about liquids and cold medication.']) + "<section class=\"bd-sec\"><h2>🇦🇪 Approval before you fly into the UAE</h2><p>Air Arabia is based in Sharjah. The UAE Embassy in the United States sets out what a traveller must do before arriving with medicine.</p><ul><li>Controlled medication needs approval through the Ministry of Health website, completed before the trip.</li><li>Other prescription medicine and over-the-counter medicine does not need that prior approval.</li><li>Carry the prescription for the quantity of medicine you bring.</li><li>Ask your doctor whether your medicine counts as controlled, and which quantity and documents then apply.</li></ul><p class=\"bd-chk\">Official UAE government source (not Air Arabia), read 27 November 2026: <a href=\"https://www.uae-embassy.org/permitted-prescriptionsdrugs-while-entering-uae\" target=\"_blank\" rel=\"noopener\">UAE Embassy: permitted prescription drugs</a></p></section>"
     });
   }
 

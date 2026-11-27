@@ -424,7 +424,7 @@ module.exports = function (X) {
         ['Diabetic meal?', 'Request at booking or 24 hours before'],
         ['Tablets and liquid limits?', NP]
       ],
-      extra: steps(['Carry insulin, syringes and needles with you.', 'Pack insulin so it stays at temperature without a Gulf Air chiller.', 'Request a diabetic meal at least 24 hours ahead.'])
+      extra: steps(['Carry insulin, syringes and needles with you.', 'Pack insulin so it stays at temperature without a Gulf Air chiller.', 'Request a diabetic meal at least 24 hours ahead.']) + "<section class=\"bd-sec\"><h2>🩺 Flying Gulf Air with a medical condition</h2><p>The same Gulf Air page sets rules for passengers who need medical clearance or equipment, not only for diabetes.</p><ul><li>The treating doctor completes the medical passenger application online at least 72 hours before departure.</li><li>The detailed medical report must be issued no more than 14 days before departure.</li><li>Cabin crew are trained in first aid only and may not give any injection.</li><li>Therapeutic oxygen can be requested on the form; ask for a wheelchair at least two days before travel.</li><li>Conditions Gulf Air lists as unacceptable for air travel include pregnancy beyond the end of week 36, chest surgery within 21 days, simple abdominal surgery within 10 days and acute contagious disease.</li></ul><p class=\"bd-chk\">Official source read 27 November 2026: <a href=\"https://www.gulfair.com/help/medical-cases\" target=\"_blank\" rel=\"noopener\">Gulf Air: Medical cases</a></p></section>"
     });
   }
 

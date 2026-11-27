@@ -1923,6 +1923,37 @@
      "list": [
       "<strong>Note:</strong> Lufthansa’s English page was not available when we checked, so this follows the German page."
      ]
+    },
+    {
+     "h": "🛫 Bigger bottles at Frankfurt Airport security",
+     "p": "Not from Lufthansa: Frankfurt Airport’s own security check page, read 27 November 2026. It matters if your journey starts at Lufthansa’s Frankfurt hub, because the liquid limit there depends on the checkpoint.",
+     "table": {
+      "head": [
+       "Where at Frankfurt",
+       "Liquids in hand luggage"
+      ],
+      "rows": [
+       [
+        "Most checkpoints in Terminal 1 and all checkpoints in Terminal 3",
+        "Up to 2 litres, thanks to CT scanners; no plastic bag required"
+       ],
+       [
+        "Certain special checkpoints in Terminal 1, and transfer checkpoints",
+        "Containers of up to 100 ml in one resealable bag of up to 1 litre"
+       ],
+       [
+        "Duty-free purchases when you transfer",
+        "Keep them in the sealed bags"
+       ],
+       [
+        "Finding your checkpoint",
+        "Look up your departure gate under Departures before you pack"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>For perfume:</strong> Lufthansa’s own limit of 0.5 litres per item still applies. The card above shows the standard 100 ml limit, and another airport on your return may apply it."
+     ]
     }
    ],
    "faq": [
@@ -1933,12 +1964,20 @@
     [
      "Do aerosol cans need a cap on Lufthansa?",
      "Yes, spray valves must be protected by a cap or another suitable device."
+    ],
+    [
+     "Can I take a perfume bottle over 100 ml from Frankfurt?",
+     "At the checkpoints with CT scanners Frankfurt Airport allows liquids up to 2 litres in hand luggage. Transfer checkpoints and some special ones still apply 100 ml."
     ]
    ],
    "sources": [
     [
      "https://www.lufthansa.com/de/de/gefaehrliche-gegenstaende",
      "Lufthansa &mdash; Gef&auml;hrliche Gegenst&auml;nde (dangerous items)"
+    ],
+    [
+     "https://www.frankfurt-airport.com/en/travel-planning/check-in-luggage-controls/security-check.html",
+     "Unofficial source: Frankfurt Airport — security check"
     ]
    ],
    "keepSchema": true,
@@ -2052,6 +2091,42 @@
      "list": [
       "<strong>Approval above 100 Wh:</strong> request it through the Lufthansa Help Center when you book; a power bank over 160 Wh is not accepted."
      ]
+    },
+    {
+     "h": "🧳 Smart suitcases, e-scooters and luggage trackers on Lufthansa",
+     "p": "From the same Lufthansa battery page, read 27 November 2026. These are battery items that follow different rules from a power bank.",
+     "table": {
+      "head": [
+       "Item",
+       "Lufthansa rule"
+      ],
+      "rows": [
+       [
+        "Smart suitcase with a removable battery",
+        "Take the battery out and carry it in the cabin; the case without it may be checked"
+       ],
+       [
+        "Smart suitcase with a fixed battery",
+        "Prohibited above 2.7 Wh or 0.3 g lithium"
+       ],
+       [
+        "Hoverboards, e-bikes, e-scooters, monowheels, Segways, ride-on luggage",
+        "Prohibited as baggage, whatever the battery size and even with it removed"
+       ],
+       [
+        "Luggage tracker up to 2.7 Wh",
+        "Cabin or checked; it may stay switched on inside a bag"
+       ],
+       [
+        "GPS tracker above 2.7 Wh, up to 100 Wh",
+        "Cabin only, switched off and protected from accidental activation"
+       ],
+       [
+        "All devices with lithium batteries",
+        "At most 15 per passenger; in checked baggage at most 3 that are larger than a smartphone"
+       ]
+      ]
+     }
     }
    ],
    "faq": [
@@ -2066,6 +2141,10 @@
     [
      "Can a medication cooling bag run off a power bank on Lufthansa?",
      "No. Lufthansa says cooling bags are not medical devices, so they must run on built-in batteries or cooling packs."
+    ],
+    [
+     "Can I check in a smart suitcase on Lufthansa?",
+     "Yes if you take the removable battery out and carry it in the cabin. A suitcase with a fixed lithium battery above 2.7 Wh is prohibited."
     ]
    ],
    "sources": [
@@ -2075,7 +2154,7 @@
     ]
    ],
    "keepSchema": true,
-   "checked": "22 November 2026",
+   "checked": "27 November 2026",
    "unofficial": false
   }
  },
@@ -6256,6 +6335,42 @@
      "list": [
       "<strong>Approval above 100 Wh:</strong> tell ITA's Customer Information Assistance Center at booking, or write to prenotazione.assistenza@ita-airways.com; ITA then issues a transport authorisation. Over 160 Wh is not accepted."
      ]
+    },
+    {
+     "h": "🔋 Spare camera and laptop batteries, and wheelchairs, on ITA Airways",
+     "p": "From the same ITA Airways battery page, read 27 November 2026. ITA counts loose spare batteries separately from power banks, with a much higher number.",
+     "table": {
+      "head": [
+       "Item",
+       "ITA Airways rule"
+      ],
+      "rows": [
+       [
+        "Spare lithium batteries up to 100 Wh or 2 g lithium",
+        "Hand baggage; up to 20 per person, a total that includes every battery type"
+       ],
+       [
+        "Spare lithium-ion batteries above 100 Wh up to 160 Wh",
+        "Hand baggage, with ITA’s transport authorisation"
+       ],
+       [
+        "Lithium-metal batteries above 2 g up to 8 g",
+        "At most 2, for medical equipment only, with authorisation"
+       ],
+       [
+        "Protecting spares",
+        "Original packaging, taped terminals, or a protective case or separate plastic bag for each"
+       ],
+       [
+        "Charging spare batteries on board",
+        "Not permitted"
+       ],
+       [
+        "Battery wheelchair or mobility aid",
+        "Needs authorisation: send the maker’s details to ITA’s assistance team and attach ITA’s battery mobility aid form to the device"
+       ]
+      ]
+     }
     }
    ],
    "faq": [
@@ -6266,6 +6381,10 @@
     [
      "Can I charge devices from a power bank on ITA Airways?",
      "No. ITA prohibits charging and using power banks on board, except for approved medical devices."
+    ],
+    [
+     "How many spare camera batteries can I take on ITA Airways?",
+     "Up to 20 spare batteries of up to 100 Wh each in hand baggage. This count is separate from the two power banks."
     ]
    ],
    "sources": [
@@ -6275,7 +6394,7 @@
     ]
    ],
    "keepSchema": true,
-   "checked": "22 November 2026",
+   "checked": "27 November 2026",
    "unofficial": false
   }
  },

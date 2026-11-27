@@ -80,7 +80,7 @@ module.exports = function (X) {
         ['Liquids on international flights?', 'CAAC rules of 17 March 2007 (not repeated on the page)'],
         ['Syringes, cold storage?', NP]
       ],
-      extra: steps(['Keep medicine you take regularly in your carry-on.', 'On a domestic flight, give liquid medicine to the crew after the security check.', 'Ask Air China about syringes and cold storage.'])
+      extra: steps(['Keep medicine you take regularly in your carry-on.', 'On a domestic flight, give liquid medicine to the crew after the security check.', 'Ask Air China about syringes and cold storage.']) + "<section class=\"bd-sec\"><h2>🇨🇳 Strong painkillers and certain psychiatric drugs into or out of China</h2><p>This is Chinese law, not an Air China rule. Article 44 of the State Council regulation on narcotic and psychotropic drugs covers patients who carry them.</p><ul><li>It applies to narcotic drugs and to China’s first class of psychotropic drugs.</li><li>Carry the medical diagnosis issued by a medical institution and your own identity document.</li><li>The amount may not exceed the maximum for a single prescription.</li><li>At the border, Chinese customs releases them on the test of personal use and a reasonable amount.</li><li>Ask the nearest Chinese embassy whether your medicine is on China’s controlled lists and whether a foreign doctor’s document is accepted; the article does not say.</li></ul><p class=\"bd-chk\">Official source read 27 November 2026, text published in the State Council Gazette after the 2016 amendment (in Chinese, translated by us): <a href=\"https://www.gov.cn/gongbao/content/2016/content_5139413.htm\" target=\"_blank\" rel=\"noopener\">gov.cn: regulation on narcotic and psychotropic drugs</a></p></section>"
     });
   }
 

@@ -45,7 +45,7 @@ const CPLANT=require('./country_plants.js');
 const CDEP=require('./country_depth.js');
 const CALC=require('./country_alcohol.js');
 const CUNIQ=(function(){try{return JSON.parse(fs.readFileSync(path.join(__dirname,'country_unique.json'),'utf8'));}catch(e){return {};}})();
-function CUMORE(e){return ((e&&e.more)||[]).map(function(m){return '<section class="bd-sec"><h2>'+m.h+'</h2>'+m.p.map(function(x){return '<p>'+x+'</p>';}).join('')+'<p class="bd-chk">'+m.src+'</p></section>'+'<div class="bd-src"><div class="h">'+(m.unofficial?'⚠ Unofficial source':'✓ Official source')+'</div><a href="'+m.link[0]+'" target="_blank" rel="noopener noreferrer">'+m.link[1]+'</a></div>';}).join('');}
+function CUMORE(e){return ((e&&e.more)||[]).map(function(m){return '<section class="bd-sec"><h2>'+m.h+'</h2>'+m.p.map(function(x){return '<p>'+x+'</p>';}).join('')+'<p class="bd-chk">'+m.src+'</p></section>'+'<div class="bd-src"><div class="h">'+(m.unofficial?'⚠ Unofficial source':'✓ Official source')+(m.side?' for this section':'')+'</div><a href="'+m.link[0]+'" target="_blank" rel="noopener noreferrer">'+m.link[1]+'</a></div>';}).join('');}
 const CUNIQ_URLS=new Set();Object.keys(CUNIQ).forEach(function(cat){Object.keys(CUNIQ[cat]).forEach(function(cn){CUNIQ_URLS.add('/country/'+cn+'/'+cat+'/');});});
 /* GLOBAL_URLS (2026-11-16): pages whose unique section only applies the global rule (no source read for that country) stay noindex until a real source is read. */
 /* NOINDEX_ENABLED=false (2026-11-17, user order): NO page is ever noindex, every page stays indexable and in the sitemap. Never set this to true. */
