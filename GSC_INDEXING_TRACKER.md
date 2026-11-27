@@ -1254,3 +1254,11 @@ Cabin liquid limit by departure airport (also home app). No GSC requests made ye
 - https://canitakethis.co/airline/ethiopian-airlines/alcohol/
 - https://canitakethis.co/country/lithuania/tobacco/
 Batch 1 pages; also the card subtitle on country, medicine and pet pages. No GSC requests made yet.
+
+## Deploy 74482a3ac (2026-11-27)
+- https://canitakethis.co/country/oman/vaping/
+- https://canitakethis.co/country/dominican-republic/vaping/
+- https://canitakethis.co/country/luxembourg/plants-seeds/
+- https://canitakethis.co/country/hungary/plants-seeds/
+- https://canitakethis.co/country/greece/tobacco/
+Batch 2 pages. No GSC requests made yet.
