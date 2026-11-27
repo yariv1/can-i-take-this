@@ -2582,6 +2582,34 @@
  "CN": {
   "sections": [
    {
+    "h": "🏙️ Shenzhen counts vaping as smoking",
+    "p": "From the Shenzhen Special Economic Zone Smoking Control Regulation as published in the city government gazette, read 27 November 2026 (in Chinese, translated by us). It is a city rule; other Chinese cities set their own.",
+    "table": {
+     "head": [
+      "Point",
+      "Shenzhen rule"
+     ],
+     "rows": [
+      [
+       "Definition",
+       "“Smoking” includes using an e-cigarette, with or without nicotine"
+      ],
+      [
+       "Smoking where banned",
+       "Ordered to stop, with a 50 yuan fine collected on the spot"
+      ],
+      [
+       "Refusing to stop",
+       "200 yuan"
+      ],
+      [
+       "Obstructing enforcement",
+       "500 yuan"
+      ]
+     ]
+    }
+   },
+   {
     "h": "🛃 What the Chinese customs guide says about e-cigarettes in luggage",
     "p": "From the Customs clearance guide for inbound passengers on the Shanghai government English site (source: General Administration of Customs, updated 13 October 2025, read 21 November 2026). The guide lists what sends you to the red channel, so the figures below are the most you can carry without declaring.",
     "table": {
@@ -2671,6 +2699,10 @@
    ]
   ],
   "src": [
+   [
+    "https://www.sz.gov.cn/zfgb/2019/gb1108/content/post_4963996.html",
+    "Shenzhen government gazette: smoking control regulation (in Chinese)"
+   ],
    [
     "https://english.shanghai.gov.cn/en-CustomsImmigration/20231212/9a3c7f512d464e0798be3fc76c8dd6f2.html",
     "Shanghai Municipal Government - Customs clearance guide for inbound passengers (source: General Administration of Customs)"
@@ -4351,6 +4383,34 @@
  "LU": {
   "sections": [
    {
+    "h": "🛝 Luxembourg: vapes follow the smoking bans",
+    "p": "Unofficial source: the business news site Paperjam, 10 August 2017, on the anti-tobacco law that had just taken effect, read 27 November 2026 (in French, translated by us).",
+    "table": {
+     "head": [
+      "Smoking, and so vaping, banned",
+      "Detail"
+     ],
+     "rows": [
+      [
+       "Children’s playgrounds",
+       "Banned"
+      ],
+      [
+       "Open sports grounds",
+       "Banned while under-16s are playing there"
+      ],
+      [
+       "Private cars",
+       "Banned with a child under 12 on board"
+      ],
+      [
+       "Fines reported",
+       "€25 to €250"
+      ]
+     ]
+    }
+   },
+   {
     "h": "🛃 What Luxembourg Customs says about e-liquids in luggage",
     "p": "From the Customs page for travellers arriving from outside the EU (French, last updated 30 July 2026) and the Customs FAQ on e-liquids (French, last updated 8 May 2026), both read 19 November 2026 and translated.",
     "table": {
@@ -4432,6 +4492,10 @@
    ]
   ],
   "src": [
+   [
+    "https://paperjam.lu/article/news-en-guerre-ouverte-contre-la-cigarette",
+    "Unofficial source: Paperjam on the 2017 anti-tobacco law (in French)"
+   ],
    [
     "https://douanes.public.lu/fr/voyages-demenagement/franchises/hors-ce.html",
     "Luxembourg Customs - Arriving from outside the EU (French)"
@@ -5501,6 +5565,33 @@
  "RS": {
   "sections": [
    {
+    "h": "🧪 What Serbia’s tobacco law changed for vapes",
+    "p": "Unofficial source: the news site 021.rs, 5 November 2023, reporting the amendments to the Tobacco Law published in the official gazette, read 27 November 2026 (in Serbian, translated by us).",
+    "table": {
+     "head": [
+      "Point",
+      "As reported"
+     ],
+     "rows": [
+      [
+       "Covered products",
+       "E-cigarettes with or without nicotine, refill liquid, heated herbal products and nicotine pouches"
+      ],
+      [
+       "From 1 January 2025",
+       "Nicotine limited to 2%, and disposable e-cigarettes to 2 ml of liquid"
+      ],
+      [
+       "Sales",
+       "Banned to minors, at a distance and through personal offers"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>Not stated:</strong> any rule on what a traveller may carry in luggage."
+    ]
+   },
+   {
     "h": "📊 How common vaping is in Serbia, per the WHO survey figures",
     "p": "From the same WHO report on the global tobacco epidemic 2025, country profile for Serbia, table \"Tobacco use prevalence from the latest survey\". These are survey results, not a law or a customs rule, and each survey has its own age group.",
     "table": {
@@ -5538,7 +5629,12 @@
     "18.4% of adults currently use e-cigarettes (men 17.5%, women 19.3%) in the survey \"Survey on psychoactive substance use and gambling among adults , 2023\" (national, ages 18-64)."
    ]
   ],
-  "src": [],
+  "src": [
+   [
+    "https://www.021.rs/story/Info/Srbija/357543/Novi-Zakon-o-duvanu-posebno-regulise-e-cigarete-Ovo-su-kljucne-tacke.html",
+    "Unofficial source: 021.rs on the amended Tobacco Law (in Serbian)"
+   ]
+  ],
   "keepSchema": true
  },
  "RU": {
@@ -6669,6 +6765,30 @@
  "KW": {
   "sections": [
    {
+    "h": "🚌 Smoking bans in Kuwait now, and sales limits from 2027",
+    "p": "Unofficial sources, read 27 November 2026 (in Arabic, translated by us): a presentation hosted by WHO quoting article 56 of the Environment Protection Law 42 of 2014, and Emarat Al Youm of 16 August 2026 on the new ministerial resolution.",
+    "table": {
+     "head": [
+      "Point",
+      "What the sources say"
+     ],
+     "rows": [
+      [
+       "Already in the 2014 law",
+       "No smoking at all on public transport; in enclosed and semi-enclosed public places only in designated areas"
+      ],
+      [
+       "From 1 January 2027: vapes",
+       "Treated like smoking in places where smoking is banned"
+      ],
+      [
+       "From 1 January 2027: where sold",
+       "Not within 200 metres of educational institutions, and only at set-aside spots in cooperative societies"
+      ]
+     ]
+    }
+   },
+   {
     "h": "📰 What Gulf News reports about Kuwait's new nicotine rules",
     "p": "Less reliable source (press): Gulf News, \"Kuwait bans online tobacco sales and sets minimum age at 21\" (last updated 16 August 2026), reporting Ministerial Resolution No. 237 of 2026 as published by Al Anbaa. The Kuwait customs and health ministry pages were not read.",
     "table": {
@@ -6711,6 +6831,14 @@
    ]
   ],
   "src": [
+   [
+    "https://www.emaratalyoum.com/politics/news/2026-08-16-1.2074483",
+    "Unofficial source: Emarat Al Youm on the 2026 resolution (in Arabic)"
+   ],
+   [
+    "https://extranet.who.int/fctcapps/sites/default/files/kh-media/Kuwait-smoking.pdf",
+    "Unofficial source: WHO-hosted presentation on Kuwait’s smoking law (PDF, in Arabic)"
+   ],
    [
     "https://gulfnews.com/world/gulf/kuwait/kuwait-bans-online-tobacco-sales-and-sets-minimum-age-at-21-1.500642680",
     "Less reliable source (press): Gulf News - Kuwait bans online tobacco sales and sets minimum age at 21"

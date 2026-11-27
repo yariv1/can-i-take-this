@@ -266,7 +266,8 @@
   "official": [
    "read: China Eastern Airlines: Carry-on baggage",
    "2026-11-24: CAAC 2008 notice on liquids and medicine on domestic flights read",
-   "read 2026-11-24: https://www.ceair.com/global/en_static/Announcement/TravelTips/SpecialPassengerServiceNotice/Sickpassenger/"
+   "read 2026-11-24: https://www.ceair.com/global/en_static/Announcement/TravelTips/SpecialPassengerServiceNotice/Sickpassenger/",
+   "read 2026-11-27: CAAC 2008 notice and current guidance, http://www.caac.gov.cn/INDEX/HLFW/HKLXCS/202303/t20230316_217597.html"
   ],
   "reliable": [
    "read: CDC Yellow Book: Travelers with chronic illnesses; Diabetes UK: Travelling with diabetes"
@@ -274,12 +275,13 @@
   "other": [
    "none needed: the destination country sets the medicine rules, not the airline; covered by our per-country pages /medication/into/<country>/ (each read from that country authority or INCB filing) plus INCB travellers guidance"
   ],
-  "date": "2026-11-24"
+  "date": "2026-11-27"
  },
  "airline/china-southern/medication": {
   "official": [
    "read: China Southern Airlines: Carry-on baggage FAQ",
-   "read 2026-11-24: CAAC (civil aviation authority) 2007 announcement on liquids, marked valid"
+   "read 2026-11-24: CAAC (civil aviation authority) 2007 announcement on liquids, marked valid",
+   "read 2026-11-27: CAAC carry and check guidance, http://www.caac.gov.cn/INDEX/HLFW/HKLXCS/202303/t20230316_217597.html"
   ],
   "reliable": [
    "read: CDC Yellow Book: Travelers with chronic illnesses; Diabetes UK: Travelling with diabetes"
@@ -287,7 +289,7 @@
   "other": [
    "none needed: the destination country sets the medicine rules, not the airline; covered by our per-country pages /medication/into/<country>/ (each read from that country authority or INCB filing) plus INCB travellers guidance"
   ],
-  "date": "2026-11-24"
+  "date": "2026-11-27"
  },
  "airline/copa-airlines/medication": {
   "official": [
@@ -1765,7 +1767,8 @@
  },
  "country/romania/alcohol": {
   "official": [
-   "tried 2026-11-16: official customs page for Romania: HTTP 403 or connection refused, not read"
+   "tried 2026-11-16: official customs page for Romania: HTTP 403 or connection refused, not read",
+   "read 2026-11-27: Law 61/1991 (Wayback copy of legislatie.just.ro), https://legislatie.just.ro/Public/DetaliiDocument/1534"
   ],
   "reliable": [
    "read: Travel Doc customs information page for Romania (infopages.traveldoc.aero)"
@@ -1773,7 +1776,7 @@
   "other": [
    "none needed: step 2a answered the question"
   ],
-  "date": "2026-11-16"
+  "date": "2026-11-27"
  },
  "country/romania/tobacco": {
   "official": [
@@ -1922,7 +1925,8 @@
  },
  "country/china/alcohol": {
   "official": [
-   "tried 2026-11-16: english.customs.gov.cn: certificate error, not read"
+   "tried 2026-11-16: english.customs.gov.cn: certificate error, not read",
+   "read 2026-11-27: CAAC carry and check guidance, http://www.caac.gov.cn/INDEX/HLFW/HKLXCS/202303/t20230316_217597.html"
   ],
   "reliable": [
    "read: Travel Doc customs information page for China (infopages.traveldoc.aero)"
@@ -1930,7 +1934,7 @@
   "other": [
    "none needed: step 2a answered the question"
   ],
-  "date": "2026-11-16"
+  "date": "2026-11-27"
  },
  "country/china/tobacco": {
   "official": [
@@ -2134,12 +2138,13 @@
    "tried 2026-11-16: customs.gov.ph: HTTP 403, not read"
   ],
   "reliable": [
-   "read: Travel Doc customs information page for the Philippines (infopages.traveldoc.aero)"
+   "read: Travel Doc customs information page for the Philippines (infopages.traveldoc.aero)",
+   "read 2026-11-27: LawPhil RA 10586, https://lawphil.net/statutes/repacts/ra2013/ra_10586_2013.html"
   ],
   "other": [
    "none needed: step 2a answered the question"
   ],
-  "date": "2026-11-16"
+  "date": "2026-11-27"
  },
  "country/philippines/tobacco": {
   "official": [
@@ -2380,7 +2385,8 @@
  },
  "country/saudi-arabia/cash": {
   "official": [
-   "tried 2026-11-16: zatca.gov.sa rules page: request failed, not read"
+   "tried 2026-11-16: zatca.gov.sa rules page: request failed, not read",
+   "read 2026-11-27: ZATCA declaration (Wayback 20260518; live site no answer), https://zatca.gov.sa/en/RulesRegulations/Taxes/Pages/customs_individual/Travel_pages/declare.aspx"
   ],
   "reliable": [
    "read: Travel Doc customs information page for Saudi Arabia (infopages.traveldoc.aero)"
@@ -2388,7 +2394,7 @@
   "other": [
    "none needed: step 2a answered the question"
   ],
-  "date": "2026-11-16"
+  "date": "2026-11-27"
  },
  "country/ukraine/alcohol": {
   "official": [
@@ -12707,7 +12713,8 @@
  },
  "airline/egyptair/liquids": {
   "official": [
-   "tried 2026-11-16: egyptair.com carry-on baggage page: HTTP 403, not read"
+   "tried 2026-11-16: egyptair.com carry-on baggage page: HTTP 403, not read",
+   "read 2026-11-27: EgyptAir conditions of carriage (Wayback 20251224), https://www.egyptair.com/en/Pages/Conditions-of-Carriage.aspx"
   ],
   "reliable": [
    "read 2026-11-16: Cairo Airport: customs regulations (https://www.cairo-airport.com/en-us/Services/Passenger-Guide/Customs-Regulations)"
@@ -12715,7 +12722,7 @@
   "other": [
    "none needed: step 2a answered part of the question"
   ],
-  "date": "2026-11-16"
+  "date": "2026-11-27"
  },
  "airline/swiss/power-bank": {
   "official": [
@@ -13547,7 +13554,8 @@
  },
  "airline/oman-air/vape-e-cigarette": {
   "official": [
-   "tried 2026-11-16: Oman Air own e-cigarette/restricted-items page; see page source"
+   "tried 2026-11-16: Oman Air own e-cigarette/restricted-items page; see page source",
+   "read 2026-11-27: Oman Air conditions of carriage, https://www.omanair.com/storage/frontend/PDF/conditions_carriage.pdf"
   ],
   "reliable": [
    "read 2026-10-08: WHO global tobacco report 2023 country profile (https://cdn.who.int/media/docs/default-source/country-profiles/tobacco/gtcr-2023/tobacco-2023-omn.pdf)"
@@ -13555,11 +13563,12 @@
   "other": [
    "none needed: step 2a answered part of the question"
   ],
-  "date": "2026-11-17"
+  "date": "2026-11-27"
  },
  "airline/royal-jordanian/vape-e-cigarette": {
   "official": [
-   "tried 2026-11-16: Royal Jordanian own e-cigarette/restricted-items page; see page source"
+   "tried 2026-11-16: Royal Jordanian own e-cigarette/restricted-items page; see page source",
+   "read 2026-11-27: Royal Jordanian conditions of carriage, https://www.rj.com/en/info-and-tips/conditions-of-carriage"
   ],
   "reliable": [
    "read 2026-10-08: WHO global tobacco report 2023 country profile (https://cdn.who.int/media/docs/default-source/country-profiles/tobacco/gtcr-2023/tobacco-2023-jor.pdf)"
@@ -13567,7 +13576,7 @@
   "other": [
    "none needed: step 2a answered part of the question"
   ],
-  "date": "2026-11-17"
+  "date": "2026-11-27"
  },
  "airline/kuwait-airways/vape-e-cigarette": {
   "official": [
@@ -14317,13 +14326,14 @@
  },
  "airline/southwest/liquids": {
   "official": [
-   "read 2026-11-19: Southwest carry-on policy page (size only; liquids article not found by search)"
+   "read 2026-11-19: Southwest carry-on policy page (size only; liquids article not found by search)",
+   "read 2026-11-27: Southwest hazardous materials (browser pane), https://support.southwest.com/helpcenter/article/hazardous-materials"
   ],
   "reliable": [
    "read 2026-11-19: TSA liquids rule 3-1-1 page"
   ],
   "other": [],
-  "date": "2026-11-19"
+  "date": "2026-11-27"
  },
  "airline/gulf-air/liquids": {
   "official": [
@@ -14677,7 +14687,8 @@
  },
  "country/china/vaping": {
   "official": [
-   "read 2026-11-21: Shanghai government English guide, source General Administration of Customs, updated 2025-10-13: over 2 devices, over 6 cartridges or 12 ml liquid, halved from HK/Macao"
+   "read 2026-11-21: Shanghai government English guide, source General Administration of Customs, updated 2025-10-13: over 2 devices, over 6 cartridges or 12 ml liquid, halved from HK/Macao",
+   "read 2026-11-27: Shenzhen smoking control regulation, https://www.sz.gov.cn/zfgb/2019/gb1108/content/post_4963996.html"
   ],
   "reliable": [
    "WHO country profile read 2026-10-08 (base card)"
@@ -14685,7 +14696,7 @@
   "other": [
    "Shantou customs guide PDF: certificate error 2026-11-21, not bypassed"
   ],
-  "date": "2026-11-21"
+  "date": "2026-11-27"
  },
  "country/colombia/vaping": {
   "official": [
@@ -14868,10 +14879,11 @@
    "read 2026-11-19: douanes.public.lu non-EU arrivals page (updated 2026-07-30) and e-liquids FAQ (updated 2026-05-08)"
   ],
   "reliable": [
-   "read 2026-11-19: WHO country profile PDF, tobacco use prevalence table"
+   "read 2026-11-19: WHO country profile PDF, tobacco use prevalence table",
+   "read 2026-11-27: Paperjam 2017-08-10, https://paperjam.lu/article/news-en-guerre-ouverte-contre-la-cigarette"
   ],
   "other": [],
-  "date": "2026-11-19"
+  "date": "2026-11-27"
  },
  "country/morocco/vaping": {
   "official": [
@@ -15013,10 +15025,11 @@
    "no national page needed for this section: WHO profile table read"
   ],
   "reliable": [
-   "read 2026-11-19: WHO country profile PDF (downloaded, pdftotext), table of tobacco use prevalence from the latest survey (e-cigarette use rows)"
+   "read 2026-11-19: WHO country profile PDF (downloaded, pdftotext), table of tobacco use prevalence from the latest survey (e-cigarette use rows)",
+   "read 2026-11-27: 021.rs 2023-11-05, https://www.021.rs/story/Info/Srbija/357543/Novi-Zakon-o-duvanu-posebno-regulise-e-cigarete-Ovo-su-kljucne-tacke.html"
   ],
   "other": [],
-  "date": "2026-11-19"
+  "date": "2026-11-27"
  },
  "country/russia/vaping": {
   "official": [
@@ -15205,12 +15218,13 @@
    "Kuwait General Administration of Customs and Ministry of Health pages: no readable vape rule found 2026-11-21"
   ],
   "reliable": [
-   "Tobacco Control Laws Kuwait e-cigarettes page read 2026-11-21: no data available (last updated 2021-12-22)"
+   "Tobacco Control Laws Kuwait e-cigarettes page read 2026-11-21: no data available (last updated 2021-12-22)",
+   "read 2026-11-27: Emarat Al Youm 2026-08-16 and WHO-hosted presentation, https://www.emaratalyoum.com/politics/news/2026-08-16-1.2074483"
   ],
   "other": [
    "read 2026-11-21: Gulf News 2026-08-16 (lower reliability, press): Ministerial Resolution 237/2026, effective 2027-01-01, min age 21, online sales banned, import covered"
   ],
-  "date": "2026-11-21"
+  "date": "2026-11-27"
  },
  "country/bahrain/vaping": {
   "official": [
@@ -16059,6 +16073,24 @@
  "airline/middle-east-airlines/power-bank": {
   "official": [
    "read 2026-11-27: MEA restricted items (Wayback 20240926; live site bans our region, not bypassed), https://www.mea.com.lb/english/traveler-info/baggage-info/restricted-items"
+  ],
+  "date": "2026-11-27"
+ },
+ "country/croatia/tobacco": {
+  "official": [
+   "read 2026-11-27: Narodne novine 45/2017 art 25, https://narodne-novine.nn.hr/clanci/sluzbeni/2017_05_45_1047.html"
+  ],
+  "date": "2026-11-27"
+ },
+ "airline/lot-polish/alcohol": {
+  "official": [
+   "read 2026-11-27: LOT conditions of carriage (browser pane), https://www.lot.com/pl/en/regulations/conditions-of-carriage"
+  ],
+  "date": "2026-11-27"
+ },
+ "airline/norwegian/power-bank": {
+  "official": [
+   "read 2026-11-27: Norwegian batteries on board, https://www.norwegian.com/en/travel-info/baggage/batteries-on-board/"
   ],
   "date": "2026-11-27"
  }

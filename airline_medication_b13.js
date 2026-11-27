@@ -87,7 +87,7 @@ module.exports = function (X) {
   // ---------------- CHINA SOUTHERN ----------------
   {
     const P1 = ['https://www.csair.com/sg/en/tourguide/faq/baggage/ssxdxlxz.shtml', 'China Southern Airlines: Carry-on baggage FAQ', 'Liquids and liquid drugs'];
-    const P2 = ['http://www.caac.gov.cn/XXGK/XXGK/ZCFB/201511/t20151104_10912.html', 'Civil Aviation Administration of China: Announcement on restricting liquids on civil flights (2007, in Chinese)', 'Medicines, liquids, duty-free'];
+    const P2 = ['http://www.caac.gov.cn/INDEX/HLFW/HKLXCS/202303/t20230316_217597.html', 'Civil Aviation Administration of China: what you may carry and check (in Chinese)', 'Medicines, liquids, duty-free'];
     add({
       slug: 'china-southern', name: 'China Southern Airlines',
       h1: 'China Southern Airlines Medication Policy: Liquid Medicine for Diabetics & Other Patients (2026)',
@@ -100,10 +100,10 @@ module.exports = function (X) {
           'China Southern: liquid drugs should be stored in a 100 ml container in a transparent plastic bag.',
           'China Southern, liquids in general: containers up to 100 ml in one transparent resealable bag, one bag per passenger; the part that exceeds goes as checked baggage.'
         ], [P1], true),
-        card('caac', 'China aviation authority rule', 'go', 'Liquid medicine allowed', 'Rule for flights from China', 'China civil aviation authority (CAAC, notice of 2007 still marked valid): patients may carry necessary liquid medicine in a suitable quantity after it passes security checks. This is the authority, not China Southern.', [
-          'CAAC notice, article 4: passengers with babies may carry liquid milk products, and diabetics or other patients may carry the liquid medicine they need, in a suitable quantity, once security checks confirm it is safe.',
-          'CAAC notice, article 2: on international and regional flights from a mainland airport, each liquid container may hold at most 100 ml, in one transparent resealable bag of at most 1 litre per passenger; the excess goes in checked baggage.',
-          'CAAC notice, article 1: on domestic flights you may carry up to 1 litre of liquids in total (not counting alcohol), after the bottles are opened for inspection.'
+        card('caac', 'China aviation authority rule', 'go', 'Liquid medicine allowed', 'Rule for flights from China', 'China civil aviation authority (CAAC, current travel guidance): patients may carry necessary liquid medicine in a suitable quantity after it passes security checks. This is the authority, not China Southern.', [
+          'CAAC guidance: liquid milk products needed for a baby and liquid medicine needed by diabetics or other patients may go in the cabin once the security check confirms them.',
+          'CAAC guidance: on international and regional flights from a mainland airport, each liquid container may hold at most 100 ml, in one transparent resealable bag of at most 1 litre per passenger; the excess goes in checked baggage.',
+          'CAAC guidance: on domestic flights liquids may not go in the cabin, apart from your own cosmetics (one of each, up to 100 ml), toothpaste and shaving cream (one each).'
         ], [P2]),
         gap('pills', 'Pills & tablets', 'x', 'Keep it with you', P1, 'China Southern', 'ordinary pills and tablets'),
         gap('needles', 'Insulin & syringes', 'x', 'Needles, syringes, injections', P1, 'China Southern', 'needles and syringes'),

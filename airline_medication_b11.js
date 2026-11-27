@@ -209,10 +209,10 @@ module.exports = function (X) {
       scen: [
         card('domestic', 'Domestic flights in China', 'warn', 'Certificate or prescription', 'Liquid medicine on domestic legs', 'China civil aviation authority (CAAC, 2008 notice): on domestic flights, patients may carry needed liquid medicine if they show a hospital certificate or doctor prescription in their own name. This is the authority, not China Eastern.', [
           'CAAC notice of 9 December 2008, article 4: diabetics and other patients may carry the liquid medicine they need for the journey, but must show a hospital certificate or a doctor prescription with their own name; liquid milk products for a travelling baby are allowed after the security check.',
-          'CAAC article 3: on domestic flights each liquid container may hold at most 100 ml and the total may not exceed 1,000 ml, except flammable and explosive liquids, which are banned.',
+          'The authority’s current travel guidance is stricter on other liquids: none in the cabin on domestic flights except your own cosmetics (one of each, up to 100 ml), toothpaste and shaving cream, with needed medicine excepted after the security check. The 2008 figure of 1,000 ml in total no longer matches it.',
           'CAAC article 2: on international and regional flights the 2007 liquids announcement still applies.',
           'The notice is dated 2008; the authority page still marks it as valid.'
-        ], [P2]),
+        ], [P2, ['http://www.caac.gov.cn/INDEX/HLFW/HKLXCS/202303/t20230316_217597.html', 'Civil Aviation Administration of China: what you may carry and check (in Chinese)', 'Liquids, medicines']]),
         card('liquids', 'Liquid medication', 'warn', 'Examined at security', 'Over 100 ml (3.4 oz)', 'China Eastern lets patients carry needed liquid medicine after it is examined at security.', [
           'China Eastern: liquid medicines necessary for patients with diabetes or other illnesses during air travel can be carried only after being examined during the security check.'
         ], [P1], true),

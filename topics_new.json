@@ -6800,6 +6800,33 @@
      "list": [
       "<strong>Not on the page:</strong> the hazardous-materials page does not mention drinking your own alcohol on board; LOT’s other pages cover it."
      ]
+    },
+    {
+     "h": "🚫 Your own alcohol on a LOT flight",
+     "p": "From LOT’s General Conditions of Carriage, articles 9.1.1 and 11.1, read 27 November 2026.",
+     "table": {
+      "head": [
+       "Point",
+       "LOT conditions"
+      ],
+      "rows": [
+       [
+        "Drinking alcohol you brought",
+        "Strictly prohibited on board, as is smoking"
+       ],
+       [
+        "Rectified spirit",
+        "Not accepted in baggage"
+       ],
+       [
+        "Other alcoholic drinks in baggage",
+        "Only in originally sealed packages"
+       ]
+      ]
+     },
+     "list": [
+      "Source: <a href=\"https://www.lot.com/pl/en/regulations/conditions-of-carriage\" target=\"_blank\" rel=\"noopener\">LOT: General Conditions of Carriage</a>"
+     ]
     }
    ],
    "faq": [
@@ -6810,6 +6837,10 @@
     [
      "Are drinks under 24% restricted on LOT?",
      "No, alcoholic beverages containing 24% alcohol or less are not restricted."
+    ],
+    [
+     "Can I drink my duty-free alcohol on LOT?",
+     "No. LOT’s conditions of carriage strictly prohibit drinking alcohol you brought on board."
     ]
    ],
    "sources": [
@@ -7397,6 +7428,38 @@
      "list": [
       "<strong>Not on the page:</strong> the part of the table read does not say where in the cabin to keep a power bank."
      ]
+    },
+    {
+     "h": "🧳 Smart bags and wheelchair batteries on Norwegian",
+     "p": "From the same Norwegian page, read 27 November 2026.",
+     "table": {
+      "head": [
+       "Item",
+       "Norwegian rule"
+      ],
+      "rows": [
+       [
+        "Smart bag, removable battery",
+        "Take the battery out and carry it in hand baggage if the bag is checked"
+       ],
+       [
+        "Smart bag, fixed battery up to 2.7 Wh or 0.3 g lithium metal",
+        "Allowed"
+       ],
+       [
+        "Smart bag, fixed battery above that",
+        "Forbidden"
+       ],
+       [
+        "Battery removed from a mobility aid",
+        "Hand baggage only, up to 300 Wh, at most 2"
+       ],
+       [
+        "E-cigarettes",
+        "On your person only; no use or charging on board"
+       ]
+      ]
+     }
     }
    ],
    "faq": [
@@ -7407,6 +7470,10 @@
     [
      "Can I use my power bank on a Norwegian flight?",
      "No, for safety reasons power banks cannot be used on board."
+    ],
+    [
+     "Can I take a smart suitcase on Norwegian?",
+     "Yes if the battery comes out or is no larger than 2.7 Wh; a bag with a bigger fixed battery is forbidden."
     ]
    ],
    "sources": [
@@ -7544,6 +7611,33 @@
      "list": [
       "<strong>Not on the page:</strong> Southwest&rsquo;s own liquids wording. The TSA officer makes the final call at the checkpoint."
      ]
+    },
+    {
+     "h": "🧴 Southwest’s own limit on toiletries in your bags",
+     "p": "From Southwest’s Help Center article on hazardous materials, read 27 November 2026.",
+     "table": {
+      "head": [
+       "Item",
+       "Southwest wording"
+      ],
+      "rows": [
+       [
+        "Medicinal and toilet articles in your luggage",
+        "Special exception for small quantities, up to 70 oz in total"
+       ],
+       [
+        "Aerosols, paints and flammable liquids",
+        "Forbidden in checked and carry-on bags unless the regulations allow an exception"
+       ],
+       [
+        "E-cigarettes and spare batteries",
+        "Not allowed in checked baggage"
+       ]
+      ]
+     },
+     "list": [
+      "Source: <a href=\"https://support.southwest.com/helpcenter/article/hazardous-materials\" target=\"_blank\" rel=\"noopener\">Southwest Help Center: hazardous materials</a>"
+     ]
     }
    ],
    "faq": [
@@ -7554,6 +7648,10 @@
     [
      "Does Southwest allow liquid medicine and baby food over the limit?",
      "The source says the TSA allows exceptions for medically necessary liquids and infant items under its own rules; confirm with Southwest."
+    ],
+    [
+     "How much toiletry liquid can I pack on Southwest in total?",
+     "Southwest’s hazardous materials article allows small quantities of medicinal and toilet articles in your luggage up to 70 oz in total; the carry-on liquids rule still applies at security."
     ]
    ],
    "sources": [
@@ -11687,6 +11785,33 @@
      "list": [
       "<strong>Not on the page:</strong> the page gives no battery size limit for vapes and no e-liquid rule."
      ]
+    },
+    {
+     "h": "⚠️ If you ignore crew instructions on smoking",
+     "p": "From Oman Air’s Conditions of Carriage, article 11, read 27 November 2026.",
+     "table": {
+      "head": [
+       "Step",
+       "Oman Air may"
+      ],
+      "rows": [
+       [
+        "On the spot",
+        "Restrain you, refuse boarding, take you off the aircraft or refuse onward and future carriage"
+       ],
+       [
+        "Authorities",
+        "Report the matter to police; you may be prosecuted for offences on board"
+       ],
+       [
+        "Costs",
+        "Claim back the cost of the measures taken, compensation to others affected and damage, and diversion costs"
+       ]
+      ]
+     },
+     "list": [
+      "Source: <a href=\"https://www.omanair.com/storage/frontend/PDF/conditions_carriage.pdf\" target=\"_blank\" rel=\"noopener\">Oman Air: Conditions of Carriage (PDF)</a>"
+     ]
     }
    ],
    "faq": [
@@ -12563,6 +12688,33 @@
      },
      "list": [
       "<strong>Not on the page:</strong> the entry gives no battery size limit and no e-liquid rule."
+     ]
+    },
+    {
+     "h": "🚭 Royal Jordanian’s smoking policy",
+     "p": "From Royal Jordanian’s Conditions of Carriage, conduct on board, read 27 November 2026.",
+     "table": {
+      "head": [
+       "Point",
+       "What the conditions say"
+      ],
+      "rows": [
+       [
+        "Smoking",
+        "Not permitted on any Royal Jordanian flight"
+       ],
+       [
+        "Breaking your duties on board",
+        "The airline may report the matter to police"
+       ],
+       [
+        "Measures",
+        "May include physical restraint, removal from the aircraft or refusal to carry you further"
+       ]
+      ]
+     },
+     "list": [
+      "Source: <a href=\"https://www.rj.com/en/info-and-tips/conditions-of-carriage\" target=\"_blank\" rel=\"noopener\">Royal Jordanian: Conditions of Carriage</a>"
      ]
     }
    ],
@@ -14289,6 +14441,30 @@
      "list": [
       "The page does not mention alcohol or perfume, and it shows no date."
      ]
+    },
+    {
+     "h": "📄 What EgyptAir’s conditions say about liquids in baggage",
+     "p": "From EgyptAir’s conditions of carriage, article 8.3.1.1, read 27 November 2026 in the Internet Archive copy saved on 24 December 2025.",
+     "table": {
+      "head": [
+       "Point",
+       "Wording"
+      ],
+      "rows": [
+       [
+        "Listed as unacceptable as baggage",
+        "“Liquids of any kind”, in a list with explosives, gases, corrosives and poisons"
+       ],
+       [
+        "Stated exception",
+        "Liquids in the passenger’s unchecked (cabin) baggage for use in the course of the journey"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Read with care:</strong> this broad wording is stricter than usual airport practice for checked bags, so ask EgyptAir before packing bottles in the hold.",
+      "Source: <a href=\"https://www.egyptair.com/en/Pages/Conditions-of-Carriage.aspx\" target=\"_blank\" rel=\"noopener\">EgyptAir: Conditions of Carriage</a>"
+     ]
     }
    ],
    "faq": [
@@ -14303,6 +14479,10 @@
     [
      "Can I take liquids over 100 ml out of Cairo Airport duty free?",
      "The Cairo Airport page says liquids above 100 ml are banned in baggage, except those bought in the airport duty free, which must stay sealed with the receipt. It also bans frozen items in baggage. This is the airport's guidance, not an EgyptAir statement."
+    ],
+    [
+     "Can I check liquids on EgyptAir?",
+     "EgyptAir’s conditions list liquids of any kind as unacceptable baggage, except those in your cabin bag for use on the journey, so ask EgyptAir before checking bottles."
     ]
    ],
    "sources": [
