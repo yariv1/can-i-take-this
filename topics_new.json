@@ -12851,7 +12851,7 @@
    "unofficial": false
   },
   "liquids": {
-   "answer": "Aer Lingus's own pages give the EU rule: liquids in hand luggage in containers of at most 100 ml, in one clear resealable bag of up to one litre per passenger. Dublin Airport has since relaxed this for departures from Dublin (since 17 September 2025: containers up to 2 litres, no clear bag), but other airports still apply the 100 ml rule.",
+   "answer": "It depends on the airport you leave from. Dublin and Shannon let you take containers of up to 2 litres in hand luggage; Cork still applies 100 ml in one clear 1-litre bag. Aer Lingus's own liquids guide, written before these changes, states the 100 ml rule.",
    "sections": [
     {
      "h": "💧 What Aer Lingus says about liquids",
@@ -12889,7 +12889,7 @@
       ]
      },
      "list": [
-      "<strong>Out of date for Dublin:</strong> see the next section. These Aer Lingus pages were written before the Dublin change."
+      "<strong>Out of date for Dublin and Shannon:</strong> these Aer Lingus pages were written before those airports changed. The Aer Lingus restricted items page, read 27 November 2026, still links the 2014 EU liquids guide."
      ]
     },
     {
@@ -12927,12 +12927,43 @@
        ]
       ]
      }
+    },
+    {
+     "h": "Shannon and Cork: two different limits",
+     "p": "From the Shannon Airport Group release of 7 September 2026 and Cork Airport&rsquo;s page on preparing for security, both read 27 November 2026. These are the airport operators&rsquo; rules, not Aer Lingus wording.",
+     "table": {
+      "head": [
+       "Departing from",
+       "Hand luggage rule"
+      ],
+      "rows": [
+       [
+        "Shannon",
+        "Liquids, aerosols and gels in containers of up to 2 litres, in place of the 100 ml limit"
+       ],
+       [
+        "Cork",
+        "The 100 ml rule still applies: containers under 100 ml in one clear resealable bag of at most 1 litre, shown separately"
+       ],
+       [
+        "Cork, travelling with a baby",
+        "As much formula, milk and snacks as the flight requires"
+       ],
+       [
+        "Return journey",
+        "Shannon says other airports may apply different requirements, so check the one you leave from"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Coming at Cork:</strong> an unofficial report (Deep Arrival, citing Travel Extra and the Irish Examiner) says a new security area with CT scanners opens in early December 2026. Until Cork Airport changes its page, pack to 100 ml."
+     ]
     }
    ],
    "faq": [
     [
      "How much liquid can I take in my Aer Lingus cabin bag?",
-     "Following the European Commission: containers of 100 ml or less in one transparent resealable bag of at most 1 litre. Aer Lingus's own page was not readable on this, so confirm with the airline."
+     "From Dublin or Shannon, containers of up to 2 litres can go in hand luggage. From Cork, containers of 100 ml or less in one clear resealable bag of at most 1 litre. At other airports, check that airport."
     ],
     [
      "Does Aer Lingus allow liquid medicine and baby food over the limit?",
@@ -12950,11 +12981,27 @@
     ],
     [
      "https://www.dublinairport.com/latest-news/2025/09/17/passenger-joy-as-security-rules-eased-at-dublin-airport",
-     "Unofficial source (airport operator): Dublin Airport &mdash; Security rules eased, 17 September 2025"
+     "Dublin Airport &mdash; Security rules eased, 17 September 2025"
+    ],
+    [
+     "https://www.dublinairport.com/at-the-airport/security/carry-on-baggage",
+     "Dublin Airport &mdash; Carry-on baggage"
+    ],
+    [
+     "https://www.snnairportgroup.ie/2026/shannon-airport-announces-enhancement-to-hand-luggage-rules/",
+     "Shannon Airport Group &mdash; Enhancement to hand luggage rules, 7 September 2026"
+    ],
+    [
+     "https://www.corkairport.com/at-the-airport/airport-security/how-to-prepare-for-security",
+     "Cork Airport &mdash; How to prepare for security"
+    ],
+    [
+     "https://deeparrival.com/news/cork-airport-new-security-area-ct-scanners-liquids-december-2026/",
+     "Unofficial source: Deep Arrival &mdash; Cork Airport new security hall"
     ]
    ],
    "keepSchema": true,
-   "checked": "19 November 2026",
+   "checked": "27 November 2026",
    "unofficial": false
   },
   "alcohol": {
@@ -12985,7 +13032,7 @@
     },
     {
      "h": "🛫 What Dublin Airport says about bottles in your cabin bag",
-     "p": "From the Dublin Airport \"Carry-on baggage\" security page (dublinairport.com, read 24 November 2026). It is the airport operator's rule for flights leaving Dublin, not Aer Lingus wording, and other airports still use the 100 ml rule.",
+     "p": "From the Dublin Airport \"Carry-on baggage\" security page (dublinairport.com, read 24 November 2026). It is the airport operator's rule for flights leaving Dublin, not Aer Lingus wording, and many other airports, Cork among them, still use the 100 ml rule (Shannon lifted it on 7 September 2026).",
      "table": {
       "head": [
        "Point",
@@ -13041,6 +13088,14 @@
     [
      "https://www.dublinairport.com/at-the-airport/security/carry-on-baggage",
      "Dublin Airport &mdash; Carry-on baggage"
+    ],
+    [
+     "https://www.snnairportgroup.ie/2026/shannon-airport-announces-enhancement-to-hand-luggage-rules/",
+     "Shannon Airport Group &mdash; Enhancement to hand luggage rules, 7 September 2026"
+    ],
+    [
+     "https://www.corkairport.com/at-the-airport/airport-security/how-to-prepare-for-security",
+     "Cork Airport &mdash; How to prepare for security"
     ]
    ],
    "keepSchema": true,
@@ -13113,7 +13168,7 @@
       ]
      },
      "list": [
-      "<strong>What this means:</strong> a perfume over 100 ml goes in your checked bag, unless you buy it after security and keep it in the sealed bag with the receipt. The 0.5 L per item and 2 L total limits above also apply."
+      "<strong>What this means:</strong> from an airport that applies 100 ml, such as Cork, a bigger perfume goes in your checked bag unless you buy it after security and keep it sealed with the receipt. From Dublin and Shannon, containers of up to 2 litres can go through security, but the Aer Lingus limits of 0.5 L per item and 2 L in total still apply."
      ]
     }
    ],
@@ -13128,7 +13183,7 @@
     ],
     [
      "Can I carry duty-free perfume over 100 ml on Aer Lingus?",
-     "The Aer Lingus leaflet says yes in a sealed security bag, with the item and receipt sealed inside, unopened until your final destination. Any other perfume over 100 ml goes in checked luggage."
+     "From Dublin or Shannon a perfume bottle can be larger than 100 ml, up to Aer Lingus's 0.5 L per item. Where 100 ml applies, such as Cork, duty-free perfume must stay in its sealed security bag with the receipt, and other larger bottles go in checked luggage."
     ]
    ],
    "sources": [
@@ -13139,10 +13194,22 @@
     [
      "https://www.aerlingus.com/media/pdfs/eu-liquids-jan2014.pdf",
      "Aer Lingus &mdash; Prepare liquids for security control (PDF)"
+    ],
+    [
+     "https://www.dublinairport.com/at-the-airport/security/carry-on-baggage",
+     "Dublin Airport &mdash; Carry-on baggage"
+    ],
+    [
+     "https://www.snnairportgroup.ie/2026/shannon-airport-announces-enhancement-to-hand-luggage-rules/",
+     "Shannon Airport Group &mdash; Enhancement to hand luggage rules, 7 September 2026"
+    ],
+    [
+     "https://www.corkairport.com/at-the-airport/airport-security/how-to-prepare-for-security",
+     "Cork Airport &mdash; How to prepare for security"
     ]
    ],
    "keepSchema": true,
-   "checked": "24 November 2026",
+   "checked": "27 November 2026",
    "unofficial": false
   },
   "power": {

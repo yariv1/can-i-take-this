@@ -967,6 +967,17 @@ function verdict(){
   if(mode==='plane'){
     if(cat==='liquids'||cat==='perfume'||cat==='alcohol'){
       var ml=detail?parseInt(detail,10):null;
+      if(airline==='Aer Lingus'&&carry){
+        var eiSrc=[cat==='liquids'?{label:'Aer Lingus EU liquids guide (PDF, 2014)',url:'https://www.aerlingus.com/media/pdfs/eu-liquids-jan2014.pdf'}:{label:'Aer Lingus \u2014 Guide to Dangerous Goods',url:'https://www.aerlingus.com/media/pdfs/guide-to-dangerous-goods.pdf'},
+          {label:'Dublin Airport \u2014 Carry-on baggage',url:'https://www.dublinairport.com/at-the-airport/security/carry-on-baggage'},
+          {label:'Shannon Airport \u2014 100 ml limit lifted, 7 September 2026',url:'https://www.snnairportgroup.ie/2026/shannon-airport-announces-enhancement-to-hand-luggage-rules/'},
+          {label:'Cork Airport \u2014 Preparing for security',url:'https://www.corkairport.com/at-the-airport/airport-security/how-to-prepare-for-security'}];
+        function EI(st,hd,ls){var r=R(st,hd,ls.filter(Boolean),"From Aer Lingus's own guide and the Dublin, Shannon and Cork airport pages, checked 27 November 2026. Rules change, so confirm before you fly.");r.source=eiSrc[0];r.sources=eiSrc;r.airportMix=true;return r;}
+        var eiX=cat==='perfume'?'Aer Lingus caps toiletry and medicinal items, aerosols included, at 0.5 L each and 2 L in total.':(cat==='alcohol'?'Drinks above 24% and up to 70% alcohol: 5 L per person, in retail packaging.':'Medicines and baby food needed for the trip are allowed in larger amounts.');
+        if(ml===null)return EI('warn','Depends on your departure airport.',['Dublin and Shannon: containers up to 2 litres.','Cork: 100 ml or less, in one clear 1-litre bag.',eiX]);
+        if(ml<=100)return EI('go','Yes - carry it on.',[ml+' ml is allowed from Dublin, Shannon and Cork.','At Cork, put it in one clear resealable 1-litre bag and show it at security. Dublin no longer needs the bag.',eiX]);
+        return EI('warn','Depends on your departure airport.',['From Dublin or Shannon: containers up to 2 litres can go in your hand luggage.','From Cork: 100 ml is still the limit, so pack it in your checked bag.','Flying back or connecting: the airport you leave from sets the limit, and many still use 100 ml.',eiX]);
+      }
       var LR=cat==='liquids'?LIQ_RULES[airline]:null;
       if(LR){
         var lsrc='From '+airline+"'s own published rules, checked October 2026. Rules change, so confirm with the airline before you fly.";
@@ -1411,9 +1422,9 @@ function liveFallback(wrap){
 }
 /*SRCUN*/var THIRD_PARTY=["iata.org","diabetes.org.uk","tobaccocontrollaws.org","gsthr.org","infopages.traveldoc.aero","entrybrief.com","meduza.io","unotv.com","futuretravelexperience.com","panrotas.com.br","vietnamlawmagazine.vn","lugless.com","globaltimes.cn","airfi.aero","thenationalnews.com","paxex.aero","onemileatatime.com","aerotime.aero","aduaneandoencuba.com","d-cuba.com","directoriocubano.info","diariolibre.com","eldia.com.do","expat-finland.com","taxheaven.gr","news.ddtc.co.id","gulfnews.com","atolltimes.mv","alta.ru","2firsts.com","saudigazette.com.sa","vertic.org","english.luatvietnam.vn","aegeanhub.com","bta.bg","legeaz.net","vrt.be","lenews.ch"];function isUnofficial(url, label, pageUrl) {if (/unofficial/i.test(String(label || ''))) return true;const u = String(url || '');const m = u.match(/^https?:\/\/([^\/?#]+)/i);if (!m) return false;const host = m[1].toLowerCase().replace(/^www\./, '');if (THIRD_PARTY.some(d => host === d || host.endsWith('.' + d))) return true;if (/gov\.uk\/foreign-travel-advice\//i.test(u) && !/united-kingdom/i.test(String(pageUrl || ''))) return true;return false;}function srcUn(u,l){return isUnofficial(u,l,location.pathname);}/*ENDSRCUN*/
 function linkRow(icon,label,sub,url){var inner='<span class="hi-ic">'+SICON[icon]+'</span><span class="hi-l">'+label+(sub?'<small>'+sub+'</small>':'')+'</span>'+(url?'<span class="hi-go">\u2197</span>':'');return url?('<a class="hitem" href="'+url+'" target="_blank" rel="noopener">'+inner+'</a>'):('<div class="hitem">'+inner+'</div>');}
-/*app-synced*/function helpBlock(authority){
+/*app-synced*/function helpBlock(authority,own){
   var rows='';
-  if(S.mode==='plane'){var a=airlineByName(S.airline),d=a.site;if(d)rows+=linkRow('web',a.name+' website','Baggage & rules','https://www.'+d);}
+  if(S.mode==='plane'&&!own){var a=airlineByName(S.airline),d=a.site;if(d)rows+=linkRow('web',a.name+' website','Baggage & rules','https://www.'+d);}
   else{var arr=(authority&&authority.length)?authority:(authority&&authority.url?[authority]:[]);for(var _i=0;_i<arr.length;_i++){var au=arr[_i];if(au&&au.url)rows+=linkRow('web',au.label,(srcUn(au.url,au.label)?'Unofficial':'Official')+' guidance',au.url);}}
   if(!rows)return '';
   return '<div class="help"><div class="help-h">Helpful sources</div>'+rows+'<div class="hnote">To be 100% sure, we always recommend confirming with the official channels.</div></div>';
@@ -1426,6 +1437,7 @@ function appSrcFoot(v){
   var cat=S.cat,base=v.src||'';
   var SENT={med:['health','medicine'],food:['customs or quarantine','food rule'],animal:['animal import','pet import rule'],alcohol:['customs','allowance'],tobacco:['customs','allowance'],cash:['customs','limit'],plants:['customs or biosecurity','plant rule'],vape:['','vape rule']};
   /* airline cards in the app: the card shows the airline link, so the state follows the link (DS 8.28 / 8.32): OFFICIAL with the approved sentence */
+  if(S.mode==='plane'&&v.airportMix)return '<b class="src-ok">✓ OFFICIAL SOURCE</b> The rule above is from official airline and airport pages. To be more sure and learn further, please check the links placed here above. '+base;
   if(S.mode==='plane'&&v.status!=='nomatch')return '<b class="src-ok">✓ OFFICIAL SOURCE</b> The rule above is from the official airline rules. To be more sure and learn further, please check the links placed here above. '+base;
   if(S.mode!=='country'||!SENT[cat]||v.status==='nomatch')return base;
   var s=v.source,arr=(s&&s.length)?s:(s&&s.url?[s]:[]);
@@ -1439,7 +1451,7 @@ function renderPass(v,wrap){
   var route=S.mode==='plane'?'<span>&#9992; <b>'+S.airline+'</b></span><span>'+(S.bag==='carry'?'CARRY-ON':'CHECKED')+'</span><span>&rarr; <b>'+S.country+'</b></span>':'<span>&#128706; ENTERING</span><span><b>'+S.country+'</b> '+(CFLAG[S.country]||'')+'</span>';
   var tagsHtml=(v.tags&&v.tags.length)?'<div class="tagrow">'+v.tags.map(function(t){return '<span class="tag tag-'+t.k+'">'+t.t+'</span>';}).join('')+'</div>':'';
   var xlink='';
-  wrap.innerHTML='<div class="pass '+v.status+' print"><div class="strip"><div class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">'+VICON[v.status]+'</svg></div><div><div class="verdict">'+VLABEL[v.status]+'</div><div class="vsub">'+(S.mode==='plane'?'On the aircraft':'At the border')+'</div></div>'+tcBtnHtml()+'</div><div class="perf"></div><div class="body"><div class="route">'+route+'</div>'+tagsHtml+'<p class="headline">'+v.head+'</p><ul class="detail">'+v.lines.map(function(l){return '<li>'+srcPtr(l,v)+'</li>';}).join('')+'</ul>'+helpBlock(v.source)+'<div class="src">'+appSrcFoot(v)+'</div></div></div>'+worthHtml();
+  wrap.innerHTML='<div class="pass '+v.status+' print"><div class="strip"><div class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">'+VICON[v.status]+'</svg></div><div><div class="verdict">'+VLABEL[v.status]+'</div><div class="vsub">'+(S.mode==='plane'?'On the aircraft':'At the border')+'</div></div>'+tcBtnHtml()+'</div><div class="perf"></div><div class="body"><div class="route">'+route+'</div>'+tagsHtml+'<p class="headline">'+v.head+'</p><ul class="detail">'+v.lines.map(function(l){return '<li>'+srcPtr(l,v)+'</li>';}).join('')+'</ul>'+(v.airportMix?helpBlock(v.sources,true):helpBlock(v.source))+'<div class="src">'+appSrcFoot(v)+'</div></div></div>'+worthHtml();
   var t=$('#toCountry');if(t)t.onclick=function(e){e.preventDefault();S.mode='country';S.detail=null;S.animal=null;S.dogSize=null;S.aniQ='';render();$('#itemInput').value=S.item?S.item.n:'';renderVerdict();};
   bindHelp(wrap);var _tb=$('#tcBtn');if(_tb)_tb.onclick=tcOpen;
 }

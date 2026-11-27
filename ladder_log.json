@@ -14347,13 +14347,16 @@
  },
  "airline/aer-lingus/liquids": {
   "official": [
-   "read 2026-11-19: Aer Lingus EU liquids factsheet PDF (2006 rules) and Aer Lingus Hub Dublin tips page (2022): 100 ml, 1 L bag"
+   "read 2026-11-19: Aer Lingus EU liquids factsheet PDF (2006 rules) and Aer Lingus Hub Dublin tips page (2022): 100 ml, 1 L bag",
+   "read 2026-11-27: Aer Lingus restricted items page (browser pane; no new liquids wording, links the 2014 guide), https://www.aerlingus.com/prepare/bags/restricted-items/",
+   "read 2026-11-27: Dublin, Shannon and Cork airport pages, https://www.dublinairport.com/at-the-airport/security/carry-on-baggage https://www.snnairportgroup.ie/2026/shannon-airport-announces-enhancement-to-hand-luggage-rules/ https://www.corkairport.com/at-the-airport/airport-security/how-to-prepare-for-security"
   ],
   "reliable": [
-   "read 2026-11-19: Dublin Airport carry-on page and news item 2025-09-17 (2 L, no bag, C3 scanners)"
+   "read 2026-11-19: Dublin Airport carry-on page and news item 2025-09-17 (2 L, no bag, C3 scanners)",
+   "read 2026-11-27: Deep Arrival on the new Cork security area, https://deeparrival.com/news/cork-airport-new-security-area-ct-scanners-liquids-december-2026/"
   ],
   "other": [],
-  "date": "2026-11-19"
+  "date": "2026-11-27"
  },
  "airline/sunexpress/liquids": {
   "official": [
@@ -15715,11 +15718,13 @@
  },
  "airline/aer-lingus/perfume-aerosols": {
   "official": [
-   "read 2026-11-24: Aer Lingus leaflet Prepare liquids for security control (eu-liquids-jan2014.pdf)"
+   "read 2026-11-24: Aer Lingus leaflet Prepare liquids for security control (eu-liquids-jan2014.pdf)",
+   "read 2026-11-27: Aer Lingus restricted items page (browser pane; no new liquids wording, links the 2014 guide), https://www.aerlingus.com/prepare/bags/restricted-items/",
+   "read 2026-11-27: Dublin, Shannon and Cork airport pages, https://www.dublinairport.com/at-the-airport/security/carry-on-baggage https://www.snnairportgroup.ie/2026/shannon-airport-announces-enhancement-to-hand-luggage-rules/ https://www.corkairport.com/at-the-airport/airport-security/how-to-prepare-for-security"
   ],
   "reliable": [],
   "other": [],
-  "date": "2026-11-24"
+  "date": "2026-11-27"
  },
  "airline/easyjet/perfume-aerosols": {
   "official": [],
@@ -15811,9 +15816,11 @@
  },
  "airline/aer-lingus/alcohol": {
   "official": [
-   "read 2026-11-24: Dublin Airport Carry-on baggage security page (airport operator), https://www.dublinairport.com/at-the-airport/security/carry-on-baggage"
+   "read 2026-11-24: Dublin Airport Carry-on baggage security page (airport operator), https://www.dublinairport.com/at-the-airport/security/carry-on-baggage",
+   "read 2026-11-27: Aer Lingus restricted items page (browser pane; no new liquids wording, links the 2014 guide), https://www.aerlingus.com/prepare/bags/restricted-items/",
+   "read 2026-11-27: Dublin, Shannon and Cork airport pages, https://www.dublinairport.com/at-the-airport/security/carry-on-baggage https://www.snnairportgroup.ie/2026/shannon-airport-announces-enhancement-to-hand-luggage-rules/ https://www.corkairport.com/at-the-airport/airport-security/how-to-prepare-for-security"
   ],
-  "date": "2026-11-24"
+  "date": "2026-11-27"
  },
  "country/hungary/alcohol": {
   "official": [
