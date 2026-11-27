@@ -1262,3 +1262,18 @@ Batch 1 pages; also the card subtitle on country, medicine and pet pages. No GSC
 - https://canitakethis.co/country/hungary/plants-seeds/
 - https://canitakethis.co/country/greece/tobacco/
 Batch 2 pages. No GSC requests made yet.
+
+## Deploy e4220e06a4 (2026-11-27)
+- https://canitakethis.co/airline/ethiopian-airlines/perfume-aerosols/
+- https://canitakethis.co/airline/hawaiian-airlines/medication/
+- https://canitakethis.co/airline/israir/alcohol/
+- https://canitakethis.co/airline/israir/power-bank/
+- https://canitakethis.co/app/
+- https://canitakethis.co/blog/is-turks-and-caicos-safe-2026/
+- https://canitakethis.co/blog/level-4-travel-advisory-countries-2026/
+- https://canitakethis.co/blog/travel-warning-by-country-2026/
+- https://canitakethis.co/blog/travel-warning-caribbean-2026/
+- https://canitakethis.co/blog/travel-warning-mexico-2026/
+- https://canitakethis.co/
+
+No GSC requests made yet.
