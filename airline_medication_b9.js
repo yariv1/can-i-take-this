@@ -192,7 +192,7 @@ module.exports = function (X) {
         ['Medically ill passenger?', 'Tell reservations at booking; MEDIF by the physician'],
         ['Needles, syringes, over 100 ml?', NP]
       ],
-      extra: steps(['Put all medication you may need in hand luggage.', 'Carry discharge summaries or a doctor\'s certificate.', 'Bring your own cool bag for temperature-sensitive medication.'])
+      extra: steps(['Put all medication you may need in hand luggage.', 'Carry discharge summaries or a doctor\'s certificate.', 'Bring your own cool bag for temperature-sensitive medication.']) + "<section class=\"bd-sec\"><h2>🇪🇹 Bringing medicine into Ethiopia</h2><p>This is the rule of the Ethiopian Food and Drug Authority (EFDA), not of Ethiopian Airlines. It governs medicine imported for personal use.</p><ul><li>You submit a request to EFDA for clearance, with a copy of your passport or national ID.</li><li>Over-the-counter medicine needs no prescription; both it and prescription medicine are limited to a 90-day supply.</li><li>Prescription medicine needs a valid prescription. For treatment over 90 days EFDA may allow up to a 6-month supply with full medical documents.</li><li>Narcotics and psychotropics need a prescription issued within the last three months. A foreign one must show the prescriber’s full name, signature, registration number if available and the drug details, with the total quantity in words and numbers.</li></ul><p class=\"bd-chk\">Official source read 27 November 2026: <a href=\"https://www.efda.gov.et/wp-content/uploads/2025/09/Guideline-For-Medicine-and-Medicine-Raw-Material-Port-Clearance-version-001-2025.pdf\" target=\"_blank\" rel=\"noopener\">EFDA: port clearance guideline, section 6 (PDF, 2025)</a></p></section>"
     });
   }
 

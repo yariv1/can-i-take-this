@@ -166,7 +166,8 @@
  "airline/arkia/medication": {
   "official": [
    "read: Arkia: Conditions of contract and notices",
-   "2026-11-24: Arkia own page silent; step 2: Israel Ministry of Health gov.il carrying-medication read in browser pane"
+   "2026-11-24: Arkia own page silent; step 2: Israel Ministry of Health gov.il carrying-medication read in browser pane",
+   "read 2026-11-27: Arkia special assistance page; docs.arkia.co.il showed a Cloudflare block and was not bypassed, https://ssr.arkia.co.il/he/content/special-assistance"
   ],
   "reliable": [
    "read: Diabetes UK: Travelling with diabetes"
@@ -175,7 +176,7 @@
    "none needed: the destination country sets the medicine rules, not the airline; covered by our per-country pages /medication/into/<country>/ (each read from that country authority or INCB filing) plus INCB travellers guidance",
    "tried 2026-11-17: no readable Israel Ministry of Health or Tax Authority medication page found; search returned third-party guides only"
   ],
-  "date": "2026-11-24"
+  "date": "2026-11-27"
  },
  "airline/asiana/medication": {
   "official": [
@@ -365,7 +366,8 @@
  },
  "airline/ethiopian-airlines/medication": {
   "official": [
-   "read: Ethiopian Airlines: Special need / medical case passengers"
+   "read: Ethiopian Airlines: Special need / medical case passengers",
+   "read 2026-11-27: EFDA port clearance guideline, https://www.efda.gov.et/wp-content/uploads/2025/09/Guideline-For-Medicine-and-Medicine-Raw-Material-Port-Clearance-version-001-2025.pdf"
   ],
   "reliable": [
    "read: Diabetes UK: Travelling with diabetes"
@@ -373,7 +375,7 @@
   "other": [
    "none needed: the destination country sets the medicine rules, not the airline; covered by our per-country pages /medication/into/<country>/ (each read from that country authority or INCB filing) plus INCB travellers guidance"
   ],
-  "date": "2026-11-16"
+  "date": "2026-11-27"
  },
  "airline/etihad-airways/medication": {
   "official": [
@@ -425,7 +427,8 @@
  },
  "airline/frontier/medication": {
   "official": [
-   "read: Frontier: May I bring medicine and/or medical devices on the plane?; TSA: Medications (pills); Frontier: What does TSA allow and not allow on flights?; TSA: Medications (liquid); TSA: Traveling with medication; TSA: Unused syringes; TSA: Insulin; TSA: Insulin supplies"
+   "read: Frontier: May I bring medicine and/or medical devices on the plane?; TSA: Medications (pills); Frontier: What does TSA allow and not allow on flights?; TSA: Medications (liquid); TSA: Traveling with medication; TSA: Unused syringes; TSA: Insulin; TSA: Insulin supplies",
+   "read 2026-11-27: Frontier special services, https://www.flyfrontier.com/travel/travel-info/special-services/"
   ],
   "reliable": [
    "read: TSA: Gel ice packs"
@@ -433,7 +436,7 @@
   "other": [
    "none needed: the destination country sets the medicine rules, not the airline; covered by our per-country pages /medication/into/<country>/ (each read from that country authority or INCB filing) plus INCB travellers guidance"
   ],
-  "date": "2026-11-16"
+  "date": "2026-11-27"
  },
  "airline/gol/medication": {
   "official": [
@@ -996,7 +999,8 @@
  },
  "airline/wizz-air/medication": {
   "official": [
-   "read: Wizz Air: Special Assistance Information"
+   "read: Wizz Air: Special Assistance Information",
+   "read 2026-11-27: Wizz Air special assistance, https://www.wizzair.com/en-gb/information-and-services/travel-information/special-assistance"
   ],
   "reliable": [
    "read: European Commission: Liquids, aerosols and gels; Your Europe: Airport and airline security FAQ"
@@ -1004,7 +1008,7 @@
   "other": [
    "none needed: the destination country sets the medicine rules, not the airline; covered by our per-country pages /medication/into/<country>/ (each read from that country authority or INCB filing) plus INCB travellers guidance"
   ],
-  "date": "2026-11-16"
+  "date": "2026-11-27"
  },
  "airline/united/alcohol": {
   "official": [
@@ -1055,14 +1059,15 @@
  },
  "airline/egyptair/alcohol": {
   "official": [
-   "https://www.egyptair.com/en/fly/baggage/Pages/restricted-items.aspx (full page pasted by user 2026-11-17); page has no alcohol rule"
+   "https://www.egyptair.com/en/fly/baggage/Pages/restricted-items.aspx (full page pasted by user 2026-11-17); page has no alcohol rule",
+   "read 2026-11-27: EgyptAir conditions of carriage, Wayback 20251224, https://www.egyptair.com/en/Pages/Conditions-of-Carriage.aspx"
   ],
   "reliable": [
    "IATA Dangerous Goods Regulations, Table 2.3.A (67th edition, 1 January 2026): read, already on the page",
    "read 2026-11-16: customs/authority source for Egypt as recorded in country_unique.json: Source read: Egyptian Customs Authority, Travel and tourism (in Arabic). The passport record is not mentioned on the page."
   ],
   "other": [],
-  "date": "2026-11-17"
+  "date": "2026-11-27"
  },
  "airline/air-china/alcohol": {
   "official": [
@@ -2136,12 +2141,13 @@
    "tried 2026-11-16: customs.gov.ph: HTTP 403, not read"
   ],
   "reliable": [
-   "read: Travel Doc customs information page for the Philippines (infopages.traveldoc.aero)"
+   "read: Travel Doc customs information page for the Philippines (infopages.traveldoc.aero)",
+   "read 2026-11-27: LawPhil EO 26, https://lawphil.net/executive/execord/eo2017/eo_26_2017.html"
   ],
   "other": [
    "none needed: step 2a answered the question"
   ],
-  "date": "2026-11-16"
+  "date": "2026-11-27"
  },
  "country/philippines/plants-seeds": {
   "official": [
@@ -2437,7 +2443,8 @@
  "country/ireland/plants-seeds": {
   "official": [
    "tried 2026-11-16: revenue.ie customs page redirected; redirect target not read",
-   "read 2026-11-22: Revenue Tax and Duty Manual importation of plants (Jan 2026): DAFM, BCPs Dublin Port/Airport/Rosslare, passenger consignments notified to DAFM"
+   "read 2026-11-22: Revenue Tax and Duty Manual importation of plants (Jan 2026): DAFM, BCPs Dublin Port/Airport/Rosslare, passenger consignments notified to DAFM",
+   "read 2026-11-27: Wildlife Act s.21 revised and NPWS, https://revisedacts.lawreform.ie/eli/1976/act/39/section/21/revised/en/html"
   ],
   "reliable": [
    "read: Travel Doc customs information page for Ireland (infopages.traveldoc.aero)"
@@ -2445,7 +2452,7 @@
   "other": [
    "none needed: step 2a answered the question"
   ],
-  "date": "2026-11-22"
+  "date": "2026-11-27"
  },
  "country/south-korea/plants-seeds": {
   "official": [
@@ -14490,7 +14497,8 @@
  },
  "country/germany/vaping": {
   "official": [
-   "read 2026-11-19: Zoll travellers allowances page (liquids = tobacco substitutes, value limit 430 EUR, age 17)"
+   "read 2026-11-19: Zoll travellers allowances page (liquids = tobacco substitutes, value limit 430 EUR, age 17)",
+   "read 2026-11-27: Youth Protection Act section 10, https://www.gesetze-im-internet.de/juschg/__10.html"
   ],
   "reliable": [
    "WHO country profile read 2026-10-08 (kept as the base card)",
@@ -14499,7 +14507,7 @@
   "other": [
    "none needed: national customs page read"
   ],
-  "date": "2026-11-19"
+  "date": "2026-11-27"
  },
  "country/spain/vaping": {
   "official": [
@@ -14698,12 +14706,13 @@
    "read 2026-11-21: Cyprus customs traveller allowances page (updated 2020-02-05) and excise general information page: e-liquid EUR 0.12/ml, no traveller ml figure"
   ],
   "reliable": [
-   "WHO country profile read 2026-10-08 (base card)"
+   "WHO country profile read 2026-10-08 (base card)",
+   "read 2026-11-27: copy of Law 24(I)/2017, https://assets.tobaccocontrollaws.org/uploads/legislation/Cyprus/Cyprus-TC-Law-2017.pdf"
   ],
   "other": [
    "none needed: national customs pages read"
   ],
-  "date": "2026-11-21"
+  "date": "2026-11-27"
  },
  "country/denmark/vaping": {
   "official": [
@@ -15130,12 +15139,13 @@
    "read 2026-11-21: Israel Tax Authority tourist customs guide, green channel chapter (updated 2026-07-30): tobacco 250 g, USD 200 other goods, no vape text"
   ],
   "reliable": [
-   "WHO country profile read 2026-10-08 (base card)"
+   "WHO country profile read 2026-10-08 (base card)",
+   "read 2026-11-27: Tobacco Control Laws e-cigarette page, https://www.tobaccocontrollaws.org/legislation/israel/e-cigarettes"
   ],
   "other": [
    "other chapters of the guide are a script-driven page that returned no text; not read"
   ],
-  "date": "2026-11-21"
+  "date": "2026-11-27"
  },
  "country/maldives/vaping": {
   "official": [
@@ -15185,7 +15195,8 @@
  },
  "country/bahrain/vaping": {
   "official": [
-   "customs.gov.bh / bahraincustoms.gov.bh: HTTP 403 earlier, not bypassed"
+   "customs.gov.bh / bahraincustoms.gov.bh: HTTP 403 earlier, not bypassed",
+   "read 2026-11-27: Bahrain Customs duty free page, Wayback 20260208 (live site no answer), https://bahraincustoms.gov.bh/en/duty-free-purchases"
   ],
   "reliable": [
    "read 2026-11-22: Tobacco Control Laws entry for Ministry of Industry and Commerce Decision 38/2013 (title, date, in-effect date 2019-09-17); WHO country profile read 2026-10-08"
@@ -15193,7 +15204,7 @@
   "other": [
    "goodsacrossborders and expat forum seen in search, conflicting, not used"
   ],
-  "date": "2026-11-22"
+  "date": "2026-11-27"
  },
  "country/bulgaria/vaping": {
   "official": [
@@ -15210,7 +15221,8 @@
  },
  "country/south-africa/vaping": {
   "official": [
-   "read 2026-11-22: SARS SC-PA-01-03 guide effective 2026-07-01 (pdftotext) and SARS duties-and-taxes page: tobacco and alcohol limits, no vape word"
+   "read 2026-11-22: SARS SC-PA-01-03 guide effective 2026-07-01 (pdftotext) and SARS duties-and-taxes page: tobacco and alcohol limits, no vape word",
+   "read 2026-11-27: SARS tariff Schedule 1 Part 2A, https://www.sars.gov.za/wp-content/uploads/Legal/SCEA1964/Legal-LPrim-CE-Sch1P2A-Schedule-No-1-Part-2A.pdf"
   ],
   "reliable": [
    "WHO country profile read 2026-10-08 (base card)"
@@ -15218,7 +15230,7 @@
   "other": [
    "none needed: national customs guide read"
   ],
-  "date": "2026-11-22"
+  "date": "2026-11-27"
  },
  "country/kenya/vaping": {
   "official": [
@@ -15277,12 +15289,13 @@
   ],
   "reliable": [
    "WHO country profile read 2026-10-08 (base card)",
-   "read 2026-11-24: Tobacco Control Laws database (Wayback)"
+   "read 2026-11-24: Tobacco Control Laws database (Wayback)",
+   "read 2026-11-27: FAOLEX reprint of the Tobacco Control Act and BusinessDay, https://faolex.fao.org/docs/pdf/nig192387.pdf https://businessday.ng/news/article/reps-to-review-tobacco-law-says-nicotine-drug-abuse-national-crisis/"
   ],
   "other": [
    "read 2026-11-22: GSTHR e-cigarette profile for Nigeria (page updated 2026-11-16, secondary compilation, lower reliability)"
   ],
-  "date": "2026-11-24"
+  "date": "2026-11-27"
  },
  "country/costa-rica/vaping": {
   "official": [
@@ -15641,13 +15654,16 @@
  "country/portugal/plants-seeds": {
   "official": [
    "read 2026-11-23: Autoridade Tributária e Aduaneira Guia do viajante, February 2026 (info.portaldasfinancas.gov.pt PDF)",
-   "tried 2026-11-26: gov.pt wild-plant licence page HTTP 404 (curl and browser pane)"
+   "tried 2026-11-26: gov.pt wild-plant licence page HTTP 404 (curl and browser pane)",
+   "read 2026-11-27: ICNF visitor code, https://icnf.pt/api/file/doc/dec9fe218d76ab5f"
   ],
-  "reliable": [],
+  "reliable": [
+   "read 2026-11-27: Agroportal on Decree-Law 423/89, https://www.agroportal.pt/o-azevinho-ilex-aquifolium-l-e-uma-especie-protegida-pelo-que-a-colheita-o-corte-total-ou-parcial-o-arranque-o-transporte-e-a-venda-sao-proibidos-em-portugal-continental/"
+  ],
   "other": [
    "none needed"
   ],
-  "date": "2026-11-26"
+  "date": "2026-11-27"
  },
  "country/austria/plants-seeds": {
   "official": [
@@ -15805,11 +15821,12 @@
  },
  "country/estonia/plants-seeds": {
   "official": [
-   "read 2026-11-24: EMTA prohibited and restricted goods, hemp seeds and mushroom spawn note"
+   "read 2026-11-24: EMTA prohibited and restricted goods, hemp seeds and mushroom spawn note",
+   "read 2026-11-27: Riigi Teataja Forest Act and Nature Conservation Act (browser pane), https://www.riigiteataja.ee/en/akt/520082026001?leiaKehtiv"
   ],
   "reliable": [],
   "other": [],
-  "date": "2026-11-24"
+  "date": "2026-11-27"
  },
  "airline/el-al/liquids": {
   "official": [],
@@ -15980,6 +15997,18 @@
  "country/italy/plants-seeds": {
   "reliable": [
    "read 2026-11-27: Bolzano Provincial Law 6/2010 copy, https://www.astrid-online.it/static/upload/Prov/ProvBolzano-L.pr-12_05_10n6.pdf"
+  ],
+  "date": "2026-11-27"
+ },
+ "airline/sas/power-bank": {
+  "official": [
+   "read 2026-11-27: SAS restricted items page (browser pane), https://www.flysas.com/en/travel-info/baggage/restricted-prohibited-items"
+  ],
+  "date": "2026-11-27"
+ },
+ "airline/lufthansa/alcohol": {
+  "official": [
+   "read 2026-11-27: Lufthansa Onboard Delights brochure, https://www.lufthansa.com/content/dam/lh/documents/during-your-trip/food-and-beverages/onboard-delights/lh_mobile-version_onboard-delights_en.pdf"
   ],
   "date": "2026-11-27"
  }

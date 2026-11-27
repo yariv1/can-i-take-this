@@ -1857,6 +1857,29 @@
      "list": [
       "<strong>Note:</strong> Lufthansa’s English dangerous-goods page was not available when we checked, so this follows the German page; hand baggage still has to meet the liquids rules for security."
      ]
+    },
+    {
+     "h": "🍺 Buying alcohol on board Lufthansa’s European flights",
+     "p": "From Lufthansa’s Onboard Delights food and drink brochure, summer 2025 edition on lufthansa.com, read 27 November 2026. Onboard Delights is the paid service on European flights scheduled to take more than 45 minutes.",
+     "table": {
+      "head": [
+       "Drink bought on board",
+       "Age rule"
+      ],
+      "rows": [
+       [
+        "Alcoholic drinks",
+        "Sold only to people aged 16 and over"
+       ],
+       [
+        "Spirits",
+        "Sold only to people aged 18 and over"
+       ]
+      ]
+     },
+     "list": [
+      "Source: <a href=\"https://www.lufthansa.com/content/dam/lh/documents/during-your-trip/food-and-beverages/onboard-delights/lh_mobile-version_onboard-delights_en.pdf\" target=\"_blank\" rel=\"noopener\">Lufthansa &mdash; Onboard Delights brochure, summer 2025 (PDF)</a>"
+     ]
     }
    ],
    "faq": [
@@ -1871,6 +1894,10 @@
     [
      "Can I take strong spirits on Lufthansa?",
      "Drinks above 70% alcohol by volume are prohibited for transport."
+    ],
+    [
+     "How old must I be to buy alcohol on a Lufthansa flight?",
+     "Lufthansa’s Onboard Delights brochure of summer 2025 sells alcoholic drinks only to people aged 16 and over, and spirits only to people aged 18 and over."
     ]
    ],
    "sources": [
@@ -2593,6 +2620,30 @@
      "list": [
       "<strong>Not on the page:</strong> the page does not say how a 100 to 160 Wh battery is approved."
      ]
+    },
+    {
+     "h": "♿ Removed wheelchair batteries on SAS",
+     "p": "From the same SAS page, read 27 November 2026. A battery taken out of a wheelchair or other mobility device has higher limits than a spare phone or laptop battery.",
+     "table": {
+      "head": [
+       "Battery",
+       "SAS rule"
+      ],
+      "rows": [
+       [
+        "Removed from a wheelchair or mobility device",
+        "Up to 300 Wh"
+       ],
+       [
+        "Spare mobility batteries",
+        "1 of up to 300 Wh, or 2 of up to 160 Wh each"
+       ],
+       [
+        "Protection",
+        "In a protective pouch, or secured so it cannot be crushed or short-circuited"
+       ]
+      ]
+     }
     }
    ],
    "faq": [
@@ -2603,6 +2654,10 @@
     [
      "How many power banks can I take on SAS?",
      "A maximum of 2, up to 100 Wh each, in your carry-on only."
+    ],
+    [
+     "Can I take a spare wheelchair battery on SAS?",
+     "Yes: one spare of up to 300 Wh, or two of up to 160 Wh each, protected from damage."
     ]
    ],
    "sources": [
@@ -2612,7 +2667,7 @@
     ]
    ],
    "keepSchema": true,
-   "checked": "18 October 2026",
+   "checked": "27 November 2026",
    "unofficial": false
   }
  },
@@ -14141,8 +14196,37 @@
    "unofficial": true
   },
   "alcohol": {
-   "answer": "EgyptAir's own rule could not be read; the IATA limit is 5 L per person for drinks above 24% up to 70%, and the home-country customs rule is below.",
+   "answer": "EgyptAir’s conditions of carriage say you may not drink alcohol on board unless EgyptAir serves it to you. We did not find an EgyptAir limit for packing bottles: the IATA limit is 5 L per person for drinks above 24% up to 70%, and the home-country customs rule is below.",
    "sections": [
+    {
+     "h": "🚫 Drinking on board EgyptAir",
+     "p": "From EgyptAir’s conditions of carriage, article 11.3, read 27 November 2026 in the Internet Archive copy saved on 24 December 2025.",
+     "table": {
+      "head": [
+       "Question",
+       "EgyptAir rule"
+      ],
+      "rows": [
+       [
+        "Your own bottle, including duty free",
+        "You may not drink it on board unless EgyptAir has served it to you"
+       ],
+       [
+        "Duty free bought from EgyptAir",
+        "The same rule applies"
+       ],
+       [
+        "Being served",
+        "EgyptAir may refuse to serve alcohol, or take back what it served, at its discretion"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Older third-party report:</strong> The Points Guy (2018, updated 2019) quotes an EgyptAir spokesperson saying the airline does not serve alcohol but would provide set-ups on selected routes. Ask the crew before you open anything.",
+      "Source: <a href=\"https://www.egyptair.com/en/Pages/Conditions-of-Carriage.aspx\" target=\"_blank\" rel=\"noopener\">EgyptAir &mdash; Conditions of Carriage</a>",
+      "Source: <a href=\"https://thepointsguy.com/news/fancy-a-cocktail-on-these-airlines-forget-about-it/\" target=\"_blank\" rel=\"noopener\">Unofficial source: The Points Guy on airlines that do not serve alcohol</a>"
+     ]
+    },
     {
      "h": "🍷 What the industry rule says about alcohol on EgyptAir",
      "p": "IATA, the airline industry body. Airports and customs can add stricter limits. Full table: <a href=\"/plane/alcohol/\">alcohol on a plane</a>.",
@@ -14179,8 +14263,14 @@
     ]
    ],
    "keepSchema": true,
-   "checked": "18 October 2026",
-   "unofficial": true
+   "checked": "27 November 2026",
+   "unofficial": true,
+   "faq": [
+    [
+     "Can I drink my duty-free alcohol on EgyptAir?",
+     "No, not unless the crew serves it to you: article 11.3 of EgyptAir’s conditions of carriage forbids drinking alcohol on board that EgyptAir has not served."
+    ]
+   ]
   },
   "perfume": {
    "answer": "In EgyptAir hand luggage, perfume goes in containers of 100 ml or less, all in one resealable 1-litre bag shown separately at screening; larger bottles can go in checked baggage. Its restricted items page also forbids compressed gases such as aerosols, without saying whether toiletry sprays are meant.",

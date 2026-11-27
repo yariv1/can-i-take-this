@@ -272,7 +272,7 @@ module.exports = function (X) {
         ['Controlled medicines abroad (Ministry of Health)?', 'Check the destination; a permit to carry is often needed; start a week ahead'],
         ['Syringes, liquids, cold storage?', NP]
       ],
-      extra: steps(['Carry only the amount of medicine you need on the way.', 'Ask Arkia about syringes and cold medicine.'])
+      extra: steps(['Carry only the amount of medicine you need on the way.', 'Ask Arkia about syringes and cold medicine.']) + "<section class=\"bd-sec\"><h2>🤰 Flying Arkia while pregnant</h2><p>Arkia’s special assistance page sets these rules (in Hebrew, translated by us).</p><ul><li>With one baby you may fly up to and including week 36; with more than one, up to and including week 32.</li><li>From week 28 you need an official doctor’s document, in English, that expressly confirms you are fit to fly.</li><li>You also sign Arkia’s liability release form, at any stage of pregnancy.</li><li>For a return trip the document must cover both flights and state their dates.</li></ul><p class=\"bd-chk\">Official source read 27 November 2026: <a href=\"https://ssr.arkia.co.il/he/content/special-assistance\" target=\"_blank\" rel=\"noopener\">Arkia: special assistance (in Hebrew)</a></p></section>"
     });
   }
 };

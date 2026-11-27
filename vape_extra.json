@@ -1250,6 +1250,34 @@
  "DE": {
   "sections": [
    {
+    "h": "🔞 Under-18s and vapes in Germany",
+    "p": "From section 10 of the Youth Protection Act (Jugendschutzgesetz) on the federal justice ministry’s law website, read 27 November 2026 (in German, translated by us). It covers nicotine-free e-cigarettes and e-shishas as well, and their containers.",
+    "table": {
+     "head": [
+      "Rule",
+      "What the law says"
+     ],
+     "rows": [
+      [
+       "Handing over",
+       "No giving or selling to children or young people in restaurants, shops or elsewhere in public"
+      ],
+      [
+       "Use in public",
+       "Children and young people may not be allowed to vape"
+      ],
+      [
+       "Vending machines",
+       "Not in public, unless placed or secured so that minors cannot use them"
+      ],
+      [
+       "Mail order",
+       "May not be offered or delivered to children or young people"
+      ]
+     ]
+    }
+   },
+   {
     "h": "🛃 What German Customs says about e-cigarette liquids",
     "p": "From the Zoll (German Customs) page \"Travellers' allowances\" (English, read 19 November 2026; undated). It is customs guidance on what you may bring in; it does not cover using vapes in Germany.",
     "table": {
@@ -1336,9 +1364,17 @@
    [
     "How common is vaping in Germany?",
     "Adults: 3.9% of adults currently use e-cigarettes (men 4.5%, women 3.3%) in the survey \"Epidemiologischer Suchtsurvey (ESA), 2021\" (national, ages 18-64). Adolescents: 16.0% of adolescents currently use e-cigarettes (boys 20.0%, girls 12.0%) in the survey \"European School Survey Project on Alcohol and Other Drugs, 2019\" (national, ages 15-16)."
+   ],
+   [
+    "Can a 17-year-old vape in public in Germany?",
+    "No. Germany’s Youth Protection Act says children and young people may not be allowed to vape in public, including nicotine-free e-cigarettes."
    ]
   ],
   "src": [
+   [
+    "https://www.gesetze-im-internet.de/juschg/__10.html",
+    "Official: Youth Protection Act, section 10 (in German)"
+   ],
    [
     "https://www.zoll.de/EN/Private-individuals/Travel/Entering-Germany/Duties-and-taxes/Travellers-allowances/travellers-allowances.html",
     "Zoll (German Customs) - Travellers' allowances"
@@ -2842,6 +2878,42 @@
  "CY": {
   "sections": [
    {
+    "h": "🚫 Where you may not vape in Cyprus",
+    "p": "Unofficial source: the Law Commissioner’s English translation of the Protection of Health (Control of Smoking) Law 2017, amendments to 2020 included, in a copy on the Tobacco Control Laws website, read 27 November 2026. The ban on e-cigarettes covers nicotine-free ones too.",
+    "table": {
+     "head": [
+      "Where",
+      "Rule"
+     ],
+     "rows": [
+      [
+       "Indoor public places",
+       "Banned, among them airports, ports, hospitals, schools, museums, cinemas, hotels, shopping malls, restaurants, cafés, bars, discos and internet cafés"
+      ],
+      [
+       "Exceptions",
+       "Specially built waiting areas for boarding passengers at airports and ports, and certain designated hotel areas"
+      ],
+      [
+       "Outdoors",
+       "Banned in school grounds and in hospital open areas, apart from designated spots at hospitals"
+      ],
+      [
+       "Vehicles",
+       "Banned in public vehicles, and in a private car with a passenger under 18"
+      ],
+      [
+       "Workplaces",
+       "Banned"
+      ],
+      [
+       "Maximum fine on conviction",
+       "€2,000"
+      ]
+     ]
+    }
+   },
+   {
     "h": "🛃 What Cyprus Customs says about e-cigarette liquid",
     "p": "From the Department of Customs and Excise pages \"Channel system and concessions\" (last updated 5 February 2020) and \"Excise Duties - General Information\", both read 21 November 2026. The allowance page lists tobacco products but not vapes.",
     "table": {
@@ -2923,6 +2995,10 @@
    ]
   ],
   "src": [
+   [
+    "https://assets.tobaccocontrollaws.org/uploads/legislation/Cyprus/Cyprus-TC-Law-2017.pdf",
+    "Unofficial source: Tobacco Control Laws, copy of Cyprus Law 24(I)/2017 in English (PDF)"
+   ],
    [
     "https://www.mof.gov.cy/mof/customs/customs.nsf/All/D8E0334067181B47C22572BF002DF37C?OpenDocument=",
     "Cyprus Customs and Excise - Travellers, channel system and concessions"
@@ -6094,6 +6170,33 @@
  "IL": {
   "sections": [
    {
+    "h": "🏢 Where vaping is restricted indoors in Israel, and the nicotine cap",
+    "p": "Unofficial source: Tobacco Control Laws (Campaign for Tobacco-Free Kids legal database), Israel e-cigarette page last updated 20 July 2022, read 27 November 2026.",
+    "table": {
+     "head": [
+      "Point",
+      "What the database reports"
+     ],
+     "rows": [
+      [
+       "Use banned in listed places",
+       "Among them government offices, hospitals, childcare facilities, preschools, and primary and secondary schools"
+      ],
+      [
+       "Designated smoking rooms allowed",
+       "In other indoor public places and workplaces, such as malls, restaurants, bars, pubs and nightclubs"
+      ],
+      [
+       "Nicotine strength on sale",
+       "E-cigarettes above 20 mg/ml may not be sold"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>Not stated:</strong> whether the 20 mg/ml sales cap applies to liquid in a traveller’s bag."
+    ]
+   },
+   {
     "h": "🛃 What the Israel Tax Authority says about tobacco and other goods",
     "p": "From the Israel Tax Authority \"Customs Guide for Tourists and Foreign Residents\" (updated 30 July 2026, read 21 November 2026), the chapter on the green channel. The guide does not name e-cigarettes or vape liquid.",
     "table": {
@@ -6132,6 +6235,10 @@
    ]
   ],
   "src": [
+   [
+    "https://www.tobaccocontrollaws.org/legislation/israel/e-cigarettes",
+    "Unofficial source: Tobacco Control Laws, e-cigarettes in Israel"
+   ],
    [
     "https://www.gov.il/en/pages/guide-tourist-customs?chapterIndex=3",
     "Israel Tax Authority - Customs Guide for Tourists and Foreign Residents"
@@ -6366,8 +6473,39 @@
  "BH": {
   "sections": [
    {
+    "h": "🛂 What Bahrain Customs lets travellers bring for vaping",
+    "p": "From the Bahrain Customs page Duty Free Allowances, read 27 November 2026 in the Internet Archive copy saved on 8 February 2026, because the live site did not answer. The items are exempt from customs duty when carried by the traveller and not for trade.",
+    "table": {
+     "head": [
+      "Item",
+      "Duty-free amount"
+     ],
+     "rows": [
+      [
+       "Electronic cigarettes",
+       "10"
+      ],
+      [
+       "Electronic hookah device",
+       "1"
+      ],
+      [
+       "Electronic heating device",
+       "1"
+      ],
+      [
+       "Liquid for electronic hookah filling",
+       "60 ml"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>Not covered:</strong> frequent travellers bringing goods regularly do not qualify for the exemption. The page puts the age condition of 18 on tobacco and alcohol."
+    ]
+   },
+   {
     "h": "⚖️ What the Bahrain e-cigarette decision is titled",
-    "p": "Unofficial source: Tobacco Control Laws (Campaign for Tobacco-Free Kids legal database), read 22 November 2026. It lists Ministry of Industry and Commerce Decision No. 38 of 2013, dated 6 May 2013, titled \"Concerning Banning of Importation, Distribution, or Selling of Electronic Cigarettes\". The database says the laws shown were in effect as of 17 September 2019. Bahrain Customs could not be read from here (HTTP 403).",
+    "p": "Unofficial source: Tobacco Control Laws (Campaign for Tobacco-Free Kids legal database), read 22 November 2026. It lists Ministry of Industry and Commerce Decision No. 38 of 2013, dated 6 May 2013, titled \"Concerning Banning of Importation, Distribution, or Selling of Electronic Cigarettes\". The database says the laws shown were in effect as of 17 September 2019.",
     "table": {
      "head": [
       "Point",
@@ -6393,26 +6531,66 @@
      ]
     },
     "list": [
-     "<strong>Not read:</strong> the decision text, anything newer than 2019, and the Bahrain Customs traveller rules. Treat vapes as possibly refused or confiscated at the border and check with Bahrain Customs first."
+     "<strong>Not read:</strong> the decision text and anything newer than 2019. It predates the customs list above, so ask Bahrain Customs if you carry more than a small personal supply."
     ]
    }
   ],
   "faq": [
    [
     "Can I bring a vape into Bahrain?",
-    "A 2013 Ministry of Industry and Commerce decision, listed by Tobacco Control Laws, bans importing, distributing and selling e-cigarettes. Its current status for travellers is not confirmed, so check with Bahrain Customs before you fly."
+    "Bahrain Customs lists 10 electronic cigarettes, one electronic hookah device, one electronic heating device and 60 ml of electronic hookah liquid among the duty-free items for travellers, for non-commercial use. A 2013 decision listed by Tobacco Control Laws bans importing and selling e-cigarettes and predates that list."
    ]
   ],
   "src": [
+   [
+    "https://bahraincustoms.gov.bh/en/duty-free-purchases",
+    "Bahrain Customs: Duty Free Allowances"
+   ],
    [
     "https://www.tobaccocontrollaws.org/laws/decision-no-38-2013-on-e-cigs-bahrain",
     "Unofficial source: Tobacco Control Laws - Bahrain Decision No. 38 of 2013"
    ]
   ],
-  "keepSchema": true
+  "keepSchema": true,
+  "card": {
+   "status": "warn",
+   "head": "Duty-free limit: 10 e-cigarettes and 60 ml of liquid.",
+   "lines": [
+    "Bahrain Customs lists 10 electronic cigarettes and 60 ml of electronic hookah liquid as duty-free for a traveller.",
+    "One electronic hookah device and one electronic heating device are on the same list.",
+    "Personal use only; frequent travellers bringing goods regularly do not qualify."
+   ]
+  }
  },
  "ZA": {
   "sections": [
+   {
+    "h": "💰 What South Africa’s excise tariff charges on vaping liquid",
+    "p": "From the South African Revenue Service Customs and Excise Tariff, Schedule 1 Part 2A, issue dated 30 April 2026, read 27 November 2026.",
+    "table": {
+     "head": [
+      "Tariff line",
+      "Excise duty"
+     ],
+     "rows": [
+      [
+       "Nicotine products for inhalation without burning, other than tobacco sticks (2404.12)",
+       "R3.29 per ml"
+      ],
+      [
+       "The same with nicotine substitutes (2404.19.10)",
+       "R3.29 per ml"
+      ],
+      [
+       "E-cigarettes presented with vaping liquid, with or without nicotine (8543.40.10)",
+       "R3.29 per ml"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>For a traveller:</strong> this is the tariff. It states no duty-free quantity for luggage, so ask SARS how it applies to what you carry."
+    ]
+   },
    {
     "h": "🛃 What SARS says about duty-free tobacco for travellers",
     "p": "From the South African Revenue Service guide \"Duty Free Allowances for Travellers\" (SC-PA-01-03, effective 1 July 2026) and the SARS page \"Duties and Taxes for Travellers\", both read on 22 November 2026. Both list tobacco and alcohol only. Neither names e-cigarettes, vape liquid or nicotine.",
@@ -6457,7 +6635,7 @@
      ]
     },
     "list": [
-     "<strong>Not read:</strong> any SARS rule or tariff note for e-cigarettes and liquid, so the traveller allowance for them is unknown. Ask SARS before carrying more than a device and a few pods."
+     "<strong>Not found:</strong> any SARS traveller allowance for e-cigarettes and liquid, so the traveller allowance for them is unknown. Ask SARS before carrying more than a device and a few pods."
     ]
    }
   ],
@@ -6468,6 +6646,10 @@
    ]
   ],
   "src": [
+   [
+    "https://www.sars.gov.za/wp-content/uploads/Legal/SCEA1964/Legal-LPrim-CE-Sch1P2A-Schedule-No-1-Part-2A.pdf",
+    "SARS: Customs and Excise Tariff, Schedule 1 Part 2A (PDF)"
+   ],
    [
     "https://www.sars.gov.za/wp-content/uploads/Docs/Customs/SC-PA-01-03-Duty-Free-Allowances-for-Travellers-External-Guide.pdf",
     "SARS - Duty Free Allowances for Travellers, external guide (effective 1 July 2026)"
@@ -6741,6 +6923,33 @@
  "NG": {
   "sections": [
    {
+    "h": "📜 Why Nigeria’s 2015 smoking ban does not name vapes",
+    "p": "Unofficial source: a reprint of the National Tobacco Control Act 2015 held on FAO’s FAOLEX database, read 27 November 2026.",
+    "table": {
+     "head": [
+      "Point",
+      "What the Act says"
+     ],
+     "rows": [
+      [
+       "Tobacco products, as defined",
+       "Products made wholly or partly of leaf tobacco, for smoking, sucking, chewing or snuffing"
+      ],
+      [
+       "Where smoking tobacco is banned",
+       "Public transport, listed indoor public places such as medical facilities, schools and workplaces, and homes shared with anyone under 18 (the smoker’s own room excepted)"
+      ],
+      [
+       "Minimum age for tobacco sales",
+       "18"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>Review announced:</strong> BusinessDay reported on 25 February 2026 that a House of Representatives committee planned to review the Act to deal with e-cigarettes and vape devices. We found no passed change, so check before you travel."
+    ]
+   },
+   {
     "h": "⚖️ What Nigerian law says about e-cigarettes",
     "p": "Reliable secondary source: the Tobacco Control Laws database (Legal Consortium of the Campaign for Tobacco-Free Kids), page \"Main Policies - E-Cigarettes\" for Nigeria, last updated 7 March 2025, read from an archived copy on 24 November 2026. It is not a customs page.",
     "table": {
@@ -6810,6 +7019,14 @@
    ]
   ],
   "src": [
+   [
+    "https://faolex.fao.org/docs/pdf/nig192387.pdf",
+    "Unofficial source: FAOLEX reprint of the National Tobacco Control Act 2015 (PDF)"
+   ],
+   [
+    "https://businessday.ng/news/article/reps-to-review-tobacco-law-says-nicotine-drug-abuse-national-crisis/",
+    "Unofficial source: BusinessDay on the planned review of the tobacco law"
+   ],
    [
     "https://www.tobaccocontrollaws.org/legislation/nigeria/e-cigarettes/main-policies",
     "Tobacco Control Laws: E-cigarettes in Nigeria (Legal Consortium)"
