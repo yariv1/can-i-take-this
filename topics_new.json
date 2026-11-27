@@ -5083,6 +5083,33 @@
    "answer": "Copa does not allow electronic cigarettes and other personal vaporizers with a battery in checked baggage; they can go in carry-on, but charging and using them on board is not allowed.",
    "sections": [
     {
+     "h": "🇵🇦 What changed in Panama for vapers",
+     "p": "Not from Copa: La Prensa, a Panamanian newspaper, 22 July 2025, read 27 November 2026 (in Spanish, translated by us). It concerns the ground in Copa’s home country, not the cabin.",
+     "table": {
+      "head": [
+       "When",
+       "Change"
+      ],
+      "rows": [
+       [
+        "14 May 2024",
+        "The Supreme Court declared the 2022 law banning e-cigarettes unconstitutional"
+       ],
+       [
+        "13 August 2025",
+        "Health ministry Resolution 146 took effect: no sales to minors, no advertising"
+       ],
+       [
+        "Same resolution",
+        "No vaping in places such as offices, transport terminals, restaurants, bars and hotels"
+       ]
+      ]
+     },
+     "list": [
+      "Source: <a href=\"https://www.prensa.com/sociedad/regulacion-sobre-cigarrillos-electronicos-empezara-a-aplicarse-el-jueves-31-de-julio-en-panama/\" target=\"_blank\" rel=\"noopener\">La Prensa, unofficial (in Spanish)</a>"
+     ]
+    },
+    {
      "h": "🚭 What Copa says about e-cigarettes",
      "p": "From the Copa Airlines page on restricted baggage, Electronic cigarettes section.",
      "table": {
@@ -5122,6 +5149,10 @@
     [
      "Can I charge or use my vape on a Copa flight?",
      "No, charging and using these devices or their batteries on board is not allowed."
+    ],
+    [
+     "Are vapes banned in Panama?",
+     "Not any more: the Supreme Court struck down the ban in 2024. Since August 2025 health ministry rules restrict sale, advertising and where you may vape, La Prensa reports."
     ]
    ],
    "sources": [
@@ -8685,11 +8716,11 @@
    "unofficial": false
   },
   "power": {
-   "answer": "Korean Air lists power banks as carry-on only and says the use and charging of power banks on board are strictly prohibited.",
+   "answer": "Korean Air takes power banks in the cabin only, two per person, with airline approval for those over 100 Wh up to 160 Wh, and strictly prohibits using or charging them on board.",
    "sections": [
     {
      "h": "🔋 What Korean Air says about power banks",
-     "p": "From the Korean Air page \"Restricted items\", travel regulations for batteries.",
+     "p": "From the Korean Air page \"Restricted items\", section Power banks and spare batteries, read 27 November 2026.",
      "table": {
       "head": [
        "Question",
@@ -8697,26 +8728,59 @@
       ],
       "rows": [
        [
-        "Carry-on",
-        "Allowed"
+        "Where",
+        "Carry-on only; checked baggage prohibited"
        ],
        [
-        "Checked baggage",
-        "Prohibited"
+        "Power banks",
+        "2 per person; over 100 Wh up to 160 Wh needs airline approval"
+       ],
+       [
+        "Spare batteries up to 100 Wh",
+        "5 per person; the page also says to get approval at check-in if you carry more than 6"
+       ],
+       [
+        "Spare batteries over 100 Wh up to 160 Wh",
+        "2 per person with approval, and no more than 2 in total together with power banks of that size"
+       ],
+       [
+        "Over 160 Wh",
+        "Not permitted at all"
+       ],
+       [
+        "More than 6 spares of up to 100 Wh",
+        "Only for special purposes such as medical use, on your person, 20 at most"
+       ],
+       [
+        "Protection",
+        "Each in a clear plastic bag, or terminals taped; never in the overhead bin"
        ],
        [
         "Use and charging on board",
-        "Strictly prohibited"
-       ],
-       [
-        "Spare batteries",
-        "A maximum of 20 batteries is permitted; spare batteries may be used on board for medical purposes only"
+        "Power banks strictly prohibited; spare batteries only for medical devices such as an oxygen concentrator or CPAP"
        ]
       ]
-     },
-     "list": [
-      "<strong>Not on the page:</strong> the part read gives no number or capacity limit for power banks (Korean Air links a separate PDF \"How to carry on spare batteries and e-cigarettes\")."
-     ]
+     }
+    },
+    {
+     "h": "🧳 Smart luggage on Korean Air",
+     "p": "From the same page.",
+     "table": {
+      "head": [
+       "Suitcase battery",
+       "Rule"
+      ],
+      "rows": [
+       [
+        "Cannot be removed",
+        "Not carried, in the cabin or checked"
+       ],
+       [
+        "Removable",
+        "Take it out and carry it in the cabin, protected against short circuit; over 160 Wh is banned"
+       ]
+      ]
+     }
     }
    ],
    "faq": [
@@ -8727,6 +8791,10 @@
     [
      "Can I check my power bank on Korean Air?",
      "No, power banks are prohibited in checked baggage."
+    ],
+    [
+     "How many power banks can I take on Korean Air?",
+     "Two per person; one over 100 Wh and up to 160 Wh needs airline approval."
     ]
    ],
    "sources": [
@@ -8736,7 +8804,7 @@
     ]
    ],
    "keepSchema": true,
-   "checked": "18 October 2026",
+   "checked": "27 November 2026",
    "unofficial": false
   }
  },
@@ -10725,6 +10793,33 @@
      "list": [
       "<strong>Not on the page:</strong> the section gives no battery size limit and no e-liquid rule for e-cigarettes."
      ]
+    },
+    {
+     "h": "🔕 Vaping instructions and smoke detectors on SAA",
+     "p": "From South African Airways’ Conditions of Carriage, March 2022 edition, articles 8.1.2 and 12.1, read 27 November 2026.",
+     "table": {
+      "head": [
+       "Situation",
+       "What the conditions say"
+      ],
+      "rows": [
+       [
+        "Ignoring staff instructions on smoking or vaping",
+        "A listed ground for refusing to carry you"
+       ],
+       [
+        "Caught earlier smoking, trying to smoke or tampering with a smoke detector",
+        "SAA may refuse you, even if it happened on a previous flight"
+       ],
+       [
+        "Breaking instructions on board",
+        "The crew may take measures including restraint; you may be disembarked, refused carriage and prosecuted"
+       ]
+      ]
+     },
+     "list": [
+      "Source: <a href=\"https://www.flysaa.com/documents/d/south-african-airways/saa-conditions-of-carriage-march-2022\" target=\"_blank\" rel=\"noopener\">South African Airways: Conditions of Carriage, March 2022 (PDF)</a>"
+     ]
     }
    ],
    "faq": [
@@ -10813,6 +10908,29 @@
    "answer": "South African Airways's own rule could not be read; the IATA limit is 5 L per person for drinks above 24% up to 70%, and the home-country customs rule is below.",
    "sections": [
     {
+     "h": "🚫 Drinking your own alcohol on South African Airways",
+     "p": "From South African Airways’ Conditions of Carriage, March 2022 edition, article 8.1.2, read 27 November 2026.",
+     "table": {
+      "head": [
+       "Point",
+       "SAA rule"
+      ],
+      "rows": [
+       [
+        "Alcohol not served by the crew",
+        "Drinking it is a listed ground for refusing or removing you, duty free purchases included"
+       ],
+       [
+        "What the airline may do",
+        "Among other steps, confiscate the alcohol, remove you, refuse onward or future carriage and report you to the police"
+       ]
+      ]
+     },
+     "list": [
+      "Source: <a href=\"https://www.flysaa.com/documents/d/south-african-airways/saa-conditions-of-carriage-march-2022\" target=\"_blank\" rel=\"noopener\">South African Airways: Conditions of Carriage, March 2022 (PDF)</a>"
+     ]
+    },
+    {
      "h": "🍷 What the industry rule says about alcohol on SAA",
      "p": "IATA, the airline industry body. Airports and customs can add stricter limits. Full table: <a href=\"/plane/alcohol/\">alcohol on a plane</a>.",
      "table": {
@@ -10849,7 +10967,13 @@
    ],
    "keepSchema": true,
    "checked": "18 October 2026",
-   "unofficial": true
+   "unofficial": true,
+   "faq": [
+    [
+     "Can I drink my duty-free alcohol on South African Airways?",
+     "No. The conditions of carriage list drinking alcohol that the crew has not served you, duty free included, as a ground for removal."
+    ]
+   ]
   },
   "perfume": {
    "answer": "South African Airways allows alcohol-based hand sanitiser in cabin and checked baggage in reasonable quantities, within 0.5 kg/L per article and 2 kg/L in total, and duty-free perfume in reasonable quantities. On international flights cabin liquids are limited to 100 ml containers in one transparent bag.",
@@ -14224,7 +14348,7 @@
      "list": [
       "<strong>Older third-party report:</strong> The Points Guy (2018, updated 2019) quotes an EgyptAir spokesperson saying the airline does not serve alcohol but would provide set-ups on selected routes. Ask the crew before you open anything.",
       "Source: <a href=\"https://www.egyptair.com/en/Pages/Conditions-of-Carriage.aspx\" target=\"_blank\" rel=\"noopener\">EgyptAir &mdash; Conditions of Carriage</a>",
-      "Source: <a href=\"https://thepointsguy.com/news/fancy-a-cocktail-on-these-airlines-forget-about-it/\" target=\"_blank\" rel=\"noopener\">Unofficial source: The Points Guy on airlines that do not serve alcohol</a>"
+      "Source: <a href=\"https://thepointsguy.com/news/fancy-a-cocktail-on-these-airlines-forget-about-it/\" target=\"_blank\" rel=\"noopener\">The Points Guy, unofficial: airlines that do not serve alcohol</a>"
      ]
     },
     {
@@ -16385,6 +16509,33 @@
      "list": [
       "<strong>Not on the page:</strong> a rule for aerosols such as hairspray, and any rule for the cabin. The page points to separate Air China pages for checked and unchecked baggage."
      ]
+    },
+    {
+     "h": "🧳 A bottle over 100 ml at Beijing Capital Airport",
+     "p": "Not from Air China: the Beijing municipal government’s English site, article of 25 March 2026, read 27 November 2026. It applies to departures from Beijing Capital Airport, domestic and international.",
+     "table": {
+      "head": [
+       "Situation",
+       "What the airport offers"
+      ],
+      "rows": [
+       [
+        "Cosmetics or personal care products over 100 ml stopped at security",
+        "Temporary storage, in general for up to 30 days"
+       ],
+       [
+        "Where",
+        "Passenger service centres at Terminal 3 and on level B2 of Terminal 2"
+       ],
+       [
+        "Questions",
+        "Airport hotline +86-10-96158"
+       ]
+      ]
+     },
+     "list": [
+      "Source: <a href=\"https://english.beijing.gov.cn/travellinginbeijing/essentials/inboundtourismfacilitationmeasures/202603/t20260325_4566181.html\" target=\"_blank\" rel=\"noopener\">Beijing government: temporary storage at Capital Airport</a>"
+     ]
     }
    ],
    "sources": [
@@ -16399,7 +16550,13 @@
    ],
    "keepSchema": true,
    "checked": "17 November 2026",
-   "unofficial": false
+   "unofficial": false,
+   "faq": [
+    [
+     "What can I do with a perfume over 100 ml at Beijing Capital Airport?",
+     "The airport has a temporary storage service for security-restricted items, including cosmetics over 100 ml, generally for up to 30 days."
+    ]
+   ]
   },
   "power": {
    "answer": "Air China's lithium battery page treats power banks as spare batteries that must travel in the cabin, not in checked bags: up to 100 Wh is allowed, 100-160 Wh needs the airline's approval with at most two spares, over 160 Wh is prohibited, and a power bank may not be used to charge devices in flight.",
@@ -18719,6 +18876,29 @@
      "list": [
       "<strong>This conflicts with airline rules</strong> that allow power banks of up to 100 Wh in the carry-on, so do not rely on this line alone. Check Arkia and the IATA guidance."
      ]
+    },
+    {
+     "h": "🎒 Where Arkia suggests you keep a portable charger",
+     "p": "From Arkia’s baggage page (in Hebrew, translated by us), read 27 November 2026.",
+     "table": {
+      "head": [
+       "Point",
+       "Arkia baggage page"
+      ],
+      "rows": [
+       [
+        "Small bag under the seat in front",
+        "Up to 40 × 30 × 20 cm on international flights; Arkia names a portable charger among the essentials it should hold, with documents, wallet, medicines and phone"
+       ],
+       [
+        "Wet batteries",
+        "Listed among dangerous goods that may not be carried in baggage or on your body"
+       ]
+      ]
+     },
+     "list": [
+      "Source: <a href=\"https://ssr.arkia.co.il/he/luggage-information\" target=\"_blank\" rel=\"noopener\">Arkia: baggage information (in Hebrew)</a>"
+     ]
     }
    ],
    "faq": [
@@ -19559,10 +19739,42 @@
    ]
   },
   "power": {
-   "answer": "MEA's baggage pages blocked our reader (Cloudflare), so this page uses the ICAO rule that took effect on 27 March 2026: at most two power banks per passenger, none recharged during the flight. Check MEA for its watt-hour limit and checked-baggage rule.",
+   "answer": "MEA’s restricted items page (saved September 2024) takes power banks of up to 100 Wh in the cabin only, 100 to 160 Wh with approval, and none from Iraqi airports except Erbil’s small ones. Since 27 March 2026 the ICAO rule also limits you to two, with no recharging in flight.",
    "sections": [
     {
-     "h": "🔋 What ICAO says (MEA's own page not readable)",
+     "h": "🔋 What MEA’s restricted items page says about batteries",
+     "p": "From MEA’s page \"Restricted items\", read 27 November 2026 in the Internet Archive copy saved on 26 September 2024, because MEA’s site refuses access from our location.",
+     "table": {
+      "head": [
+       "Item",
+       "MEA rule"
+      ],
+      "rows": [
+       [
+        "Lithium-ion up to 100 Wh, power banks included",
+        "Cabin only, protected against short circuit; never checked"
+       ],
+       [
+        "Lithium-ion over 100 Wh up to 160 Wh",
+        "Subject to MEA’s approval; never checked"
+       ],
+       [
+        "Power banks from Iraqi airports",
+        "Not accepted, except at Erbil, where banks under 10,000 mAh may go in hand luggage"
+       ],
+       [
+        "Smart suitcase, removable battery under 100 Wh",
+        "Bag may be checked once the battery is removed and carried in the cabin"
+       ],
+       [
+        "Hoverboards and Airwheels with lithium batteries",
+        "Not accepted"
+       ]
+      ]
+     }
+    },
+    {
+     "h": "🔋 What the ICAO rule adds",
      "p": "From the ICAO news release of 27 March 2026, read on 22 November 2026.",
      "table": {
       "head": [
@@ -19581,43 +19793,71 @@
        [
         "Crew",
         "May still carry and use power banks as the aircraft requires (ICAO)"
-       ],
-       [
-        "MEA's own rule",
-        "Not read: the page returned an access-denied error"
        ]
       ]
-     },
-     "list": [
-      "<strong>Not read:</strong> MEA's own luggage rules. The Wh limit and carry-on or checked rule are not stated here."
-     ]
+     }
     }
    ],
    "faq": [
     [
      "How many power banks can I carry on MEA?",
-     "The ICAO standard from 27 March 2026 limits passengers to two; MEA's own page could not be read."
+     "The ICAO rule from 27 March 2026 limits passengers to two; MEA’s own page (2024) accepts them up to 100 Wh in the cabin."
     ],
     [
      "Can I recharge a power bank on a MEA flight?",
      "Under the ICAO standard, passengers are prohibited from recharging power banks during flights."
+    ],
+    [
+     "Can I take a power bank on MEA from Iraq?",
+     "MEA’s restricted items page says power banks are not accepted from Iraqi airports, except Erbil for banks under 10,000 mAh in hand luggage."
     ]
    ],
    "sources": [
+    [
+     "https://www.mea.com.lb/english/traveler-info/baggage-info/restricted-items",
+     "MEA &mdash; Restricted items"
+    ],
     [
      "https://www.icao.int/news/new-power-bank-restrictions-will-safeguard-international-aviation",
      "Unofficial source: ICAO &mdash; New power bank restrictions will safeguard international aviation (27 March 2026)"
     ]
    ],
    "keepSchema": true,
-   "checked": "22 November 2026",
-   "unofficial": true
+   "checked": "27 November 2026",
+   "unofficial": false
   }
  },
  "Avianca": {
   "vape": {
    "answer": "Avianca says electronic cigarettes must always be carried in your carry-on baggage and may not be transported in checked baggage. The same rule applies to loose lithium batteries and power banks.",
    "sections": [
+    {
+     "h": "🇨🇴 Where vaping now counts as smoking in Colombia",
+     "p": "Not an Avianca rule: Colombia’s Law 2354 of 9 May 2024 on the government database Función Pública, read 27 November 2026 (in Spanish, translated by us).",
+     "table": {
+      "head": [
+       "Point",
+       "Effect for a passenger on the ground"
+      ],
+      "rows": [
+       [
+        "“Smoke-free” signs and areas",
+        "They now mean free of aerosols as well, so do not vape where smoking is barred"
+       ],
+       [
+        "Nicotine-free devices",
+        "Covered as well as nicotine ones"
+       ],
+       [
+        "Heated tobacco and nicotine pouches",
+        "Brought under the same tobacco law"
+       ]
+      ]
+     },
+     "list": [
+      "Source: <a href=\"https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=240576\" target=\"_blank\" rel=\"noopener\">Función Pública: Law 2354 of 2024 (in Spanish)</a>"
+     ]
+    },
     {
      "h": "🚭 What Avianca says about e-cigarettes",
      "p": "From the Avianca Help Center article \"What items should I carry in my carry-on baggage?\".",
@@ -19658,6 +19898,10 @@
     [
      "How many power banks can I take on Avianca?",
      "Avianca allows a maximum of 2 power banks, each up to 100 Wh, carried with you in the cabin."
+    ],
+    [
+     "Can I vape in Colombia after landing?",
+     "Not where smoking is banned: since Law 2354 of 2024, smoke-free places in Colombia are also free of aerosols."
     ]
    ],
    "sources": [

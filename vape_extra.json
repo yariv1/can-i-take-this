@@ -1853,6 +1853,38 @@
  "CZ": {
   "sections": [
    {
+    "h": "🚏 Where vaping is banned in Czechia",
+    "p": "From the Czech Health Ministry’s questions and answers on the smoking law, Act 65/2017, read 27 November 2026 (in Czech, translated by us). The ministry says e-cigarettes are banned wherever the law bans smoking, with an exception for food and drink venues. The page dates from the law’s introduction.",
+    "table": {
+     "head": [
+      "Place",
+      "Vaping"
+     ],
+     "rows": [
+      [
+       "Public transport platforms, shelters and waiting rooms",
+       "Banned"
+      ],
+      [
+       "Hospitals, schools and children’s playgrounds",
+       "Banned"
+      ],
+      [
+       "Sports halls, shopping centres and theatres",
+       "Banned"
+      ],
+      [
+       "Restaurants, bars and cafés",
+       "Not banned by this law; the operator may still forbid it"
+      ],
+      [
+       "Public spaces near schools",
+       "A town may ban it by local decree"
+      ]
+     ]
+    }
+   },
+   {
     "h": "🛃 What Czech Customs says about e-cigarette refills",
     "p": "From the Celni sprava page \"Quantity limits for goods carried by individuals\" (read 19 November 2026, translated from Czech; the page shows only a version number). It covers goods carried by a person from other EU member states for personal consumption.",
     "table": {
@@ -1942,6 +1974,10 @@
    ]
   ],
   "src": [
+   [
+    "https://mzd.gov.cz/nejcastejsi-dotazy-a-odpovedi-na-tema-noveho-tzv-protikurackeho-zakona-c-65-2017-sb/",
+    "Czech Health Ministry: questions on Act 65/2017 (in Czech)"
+   ],
    [
     "https://celnisprava.gov.cz/cz/dane/WebSPD/WebInFO/Stranky/InfoFO_limity_doprava.aspx",
     "Celni sprava CR - Quantity limits for goods carried by individuals"
@@ -2645,6 +2681,30 @@
  "CO": {
   "sections": [
    {
+    "h": "📜 Law 2354 of 2024: smoke-free now means aerosol-free",
+    "p": "From Law 2354 of 9 May 2024 on the Colombian government’s legal database Función Pública, read 27 November 2026 (in Spanish, translated by us).",
+    "table": {
+     "head": [
+      "Change",
+      "What the law says"
+     ],
+     "rows": [
+      [
+       "Products now covered",
+       "Electronic nicotine systems, similar nicotine-free systems, heated tobacco and oral nicotine products, alongside tobacco"
+      ],
+      [
+       "Meaning of “smoke-free”",
+       "Read as free of smoke and of aerosols"
+      ],
+      [
+       "What that does",
+       "The rules of the 2009 tobacco law on use, sale, advertising and promotion now reach vaping"
+      ]
+     ]
+    }
+   },
+   {
     "h": "🛃 What DIAN says about the traveller baggage allowance",
     "p": "From the DIAN page \"Modalidad de viajeros\" (read on 22 November 2026). It sets value and unit limits for baggage goods. It does not name tobacco, e-cigarettes or vape liquid.",
     "table": {
@@ -2739,11 +2799,17 @@
   ],
   "src": [
    [
+    "https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=240576",
+    "Función Pública: Law 2354 of 2024 (in Spanish)"
+   ],
+   [
     "https://www.dian.gov.co/Viajeros-y-Servicios-aduaneros/Paginas/Modalidad-viajeros.aspx",
     "DIAN - Modalidad de viajeros"
    ]
   ],
-  "keepSchema": true
+  "keepSchema": true,
+  "indoor": "Since Law 2354 of 9 May 2024, Colombia reads its smoke-free rules as covering aerosols too, so places closed to smoking are closed to vaping.",
+  "desc": "Is vaping legal in Colombia? No general ban, but since 2024 smoke-free places are aerosol-free too. See the law and customs notes."
  },
  "CU": {
   "sections": [
@@ -3510,6 +3576,26 @@
  "HR": {
   "sections": [
    {
+    "h": "🏠 Croatia’s indoor ban covers vapes with and without nicotine",
+    "p": "Unofficial source: a copy of Croatia’s 2025 amendment to its tobacco law, article 8, on the Tobacco Control Laws website, read 27 November 2026 (in Croatian, translated by us).",
+    "table": {
+     "head": [
+      "Rule",
+      "Detail"
+     ],
+     "rows": [
+      [
+       "All enclosed public places",
+       "Smoking, e-cigarettes with or without nicotine, waterpipes and heated tobacco are banned"
+      ],
+      [
+       "Sales",
+       "E-cigarettes, refills and disposable cartridges may not be sold to anyone under 18"
+      ]
+     ]
+    }
+   },
+   {
     "h": "🛃 What the Croatian Customs Administration says about e-liquid in luggage",
     "p": "From the Customs Administration page \"Relief from duties and restrictions on the import of goods in the passenger personal luggage\" (English version, no date shown, read 19 November 2026). The figures are exemptions from excise duty for goods arriving from outside the EU.",
     "table": {
@@ -3593,6 +3679,10 @@
   ],
   "src": [
    [
+    "https://assets.tobaccocontrollaws.org/uploads/legislation/Croatia/Croatia-2025-Amding-Act-native.pdf",
+    "Unofficial source: Tobacco Control Laws, copy of the 2025 amending act (PDF, in Croatian)"
+   ],
+   [
     "https://carina.gov.hr/featured/information-for-passengers-natural-persons/relief-from-duties-and-restrictions-on-the-import-of-goods-in-the-passenger-s-personal-luggage/6715",
     "Croatian Customs Administration - Relief from duties and restrictions, passenger luggage"
    ]
@@ -3601,6 +3691,34 @@
  },
  "ID": {
   "sections": [
+   {
+    "h": "🔞 Who may be sold vapes in Indonesia, and where",
+    "p": "Unofficial source: Hukumonline, a legal news service, on Government Regulation 28 of 2024, articles 434 and 442, read 27 November 2026 (in Indonesian, translated by us).",
+    "table": {
+     "head": [
+      "Rule on selling tobacco and e-cigarettes",
+      "Detail"
+     ],
+     "rows": [
+      [
+       "Buyer",
+       "No sales to anyone under 21 or to pregnant women"
+      ],
+      [
+       "Near schools and playgrounds",
+       "No sales within 200 metres"
+      ],
+      [
+       "Smoke-free areas",
+       "No sales there, except in a spot set aside for selling"
+      ],
+      [
+       "Machines and online",
+       "No self-service machines, and no websites or apps without age checks"
+      ]
+     ]
+    }
+   },
    {
     "h": "📰 What Indonesian tax news reports from Finance Ministry Regulation 82/2024",
     "p": "Less reliable source (press): DDTCNews, \"Olahan Tembakau dan Rokok Elektrik dari Luar Negeri Bisa Bebas Cukai\" (6 November 2024, translated from Indonesian), quoting Article 36 of Finance Minister Regulation (PMK) No. 82/2024. The Directorate General of Customs and Excise pages could not be reached from here, so the figures are as reported.",
@@ -3695,6 +3813,10 @@
    ]
   ],
   "src": [
+   [
+    "https://www.hukumonline.com/berita/a/penjualan-rokok-dalam-pp-kesehatan-lt66aee26d8d053/",
+    "Unofficial source: Hukumonline on Government Regulation 28/2024 (in Indonesian)"
+   ],
    [
     "https://news.ddtc.co.id/berita/nasional/1806663/olahan-tembakau-dan-rokok-elektrik-dari-luar-negeri-bisa-bebas-cukai",
     "Less reliable source (press): DDTCNews - PMK 82/2024, tobacco products and e-cigarettes from abroad"
@@ -4442,6 +4564,30 @@
  "MT": {
   "sections": [
    {
+    "h": "💶 What breaking Malta’s smoking law costs",
+    "p": "From the Tobacco (Smoking Control) Act, chapter 315, article 18, on the government’s legislation site, read 27 November 2026. The database cited further down reports that the smoking rules are applied to e-cigarettes in public places.",
+    "table": {
+     "head": [
+      "Offence",
+      "Penalty in the Act"
+     ],
+     "rows": [
+      [
+       "First conviction",
+       "Fine of €232.94 to €1,164.69"
+      ],
+      [
+       "An offence lasting more than a day",
+       "A further €23.29 to €116.47 for each day"
+      ],
+      [
+       "Second or later conviction",
+       "The fines, and on the prosecution’s request up to three months in prison and suspension of the premises’ or vehicle’s licence for one week to one month"
+      ]
+     ]
+    }
+   },
+   {
     "h": "⚖️ What Maltese regulations say about e-cigarettes",
     "p": "Reliable secondary source: the Tobacco Control Laws database (Legal Consortium of the Campaign for Tobacco-Free Kids), page \"Main Policies - E-Cigarettes\" for Malta, last updated 22 April 2024, read from an archived copy on 24 November 2026. It quotes Maltese legal notices and is not a customs page.",
     "table": {
@@ -4558,6 +4704,10 @@
    ]
   ],
   "src": [
+   [
+    "https://legislation.mt/eli/cap/315/eng/pdf",
+    "Malta: Tobacco (Smoking Control) Act, chapter 315 (PDF)"
+   ],
    [
     "https://www.tobaccocontrollaws.org/legislation/malta/e-cigarettes/main-policies",
     "Tobacco Control Laws: E-cigarettes in Malta (Legal Consortium)"
@@ -4934,6 +5084,34 @@
  "PA": {
   "sections": [
    {
+    "h": "🚫 Panama’s rules on where you may vape since August 2025",
+    "p": "Unofficial source: La Prensa, a Panamanian newspaper, 22 July 2025, read 27 November 2026 (in Spanish, translated by us). It reports health ministry Resolution 146 of 31 January 2025, in force from 13 August 2025, issued after the Supreme Court struck down the 2022 ban in a ruling of 14 May 2024.",
+    "table": {
+     "head": [
+      "Point",
+      "What the newspaper reports"
+     ],
+     "rows": [
+      [
+       "No use in",
+       "Public and private offices, transport and terminals, workplaces, schools and health sites"
+      ],
+      [
+       "Also no use in",
+       "Enclosed places open to the public, such as churches, salons, internet cafés, restaurants, bars, clubs and hotels, and sports areas"
+      ],
+      [
+       "Products",
+       "E-cigarettes with or without nicotine, and their accessories"
+      ],
+      [
+       "Sales",
+       "None to minors; advertising and sponsorship banned"
+      ]
+     ]
+    }
+   },
+   {
     "h": "⚖️ What Panama customs said about e-cigarette bills in March 2026",
     "p": "From the Autoridad Nacional de Aduanas (ANA) news item of 10 March 2026, \"Aduanas expone desafios del control de dispositivos electronicos de nicotina ante la Asamblea Nacional\" (read on 22 November 2026). It reports a hearing in the National Assembly health subcommittee. It is not a traveller allowance, and ANA did not publish a vape limit there.",
     "table": {
@@ -5008,11 +5186,17 @@
   ],
   "src": [
    [
+    "https://www.prensa.com/sociedad/regulacion-sobre-cigarrillos-electronicos-empezara-a-aplicarse-el-jueves-31-de-julio-en-panama/",
+    "Unofficial source: La Prensa on the e-cigarette rules (in Spanish)"
+   ],
+   [
     "https://www.ana.gob.pa/index.php/2026/03/10/aduanas-expone-desafios-del-control-de-dispositivos-electronicos-de-nicotina-ante-la-asamblea-nacional/",
     "Autoridad Nacional de Aduanas - Aduanas expone desafios del control de dispositivos electronicos de nicotina (10 March 2026)"
    ]
   ],
-  "keepSchema": true
+  "keepSchema": true,
+  "indoor": "Panama’s health ministry rules in force since 13 August 2025 bar vaping in offices, transport, terminals, enclosed public places, workplaces, schools and health sites, La Prensa reports.",
+  "desc": "Is vaping legal in Panama? The 2022 ban was struck down in 2024; rules since 2025 bar vaping in many places. See what applies."
  },
  "PE": {
   "sections": [
@@ -5155,6 +5339,38 @@
  "PH": {
   "sections": [
    {
+    "h": "🚭 Where you may not vape in the Philippines",
+    "p": "Unofficial source: section 15 of Republic Act 11900 of 2022 on LawPhil, a private legal database, read 27 November 2026. Vaping is banned in all indoor public places except designated vaping areas and shop product demonstrations.",
+    "table": {
+     "head": [
+      "Banned outright in",
+      "Detail"
+     ],
+     "rows": [
+      [
+       "Youth centres",
+       "Schools, colleges, universities, youth hostels and recreation facilities for under-18s"
+      ],
+      [
+       "Health sites",
+       "Inside hospitals, clinics, health centres, nursing homes and laboratories"
+      ],
+      [
+       "Fire risk areas",
+       "Gas stations and stores of flammable or explosive materials, plus elevators and stairwells"
+      ],
+      [
+       "Travel and eating places",
+       "Public transport, airport and ship terminals, train and bus stations, restaurants and conference halls (designated areas excepted)"
+      ],
+      [
+       "Also",
+       "Food preparation areas, places of worship and government premises (designated areas excepted at government offices)"
+      ]
+     ]
+    }
+   },
+   {
     "h": "⚖️ What Republic Act 11900 says about importers and age",
     "p": "Unofficial source (reliable): the text of Republic Act No. 11900, the Vaporized Nicotine and Non-Nicotine Products Regulation Act (22 July 2022 law), as published by the Lawphil legal database and read on 22 November 2026. It regulates importation and trade. It does not set a traveller allowance, and the Bureau of Customs site could not be read (HTTP 403).",
     "table": {
@@ -5232,6 +5448,10 @@
    ]
   ],
   "src": [
+   [
+    "https://lawphil.net/statutes/repacts/ra2022/ra_11900_2022.html",
+    "Unofficial source: LawPhil, Republic Act 11900"
+   ],
    [
     "https://lawphil.net/statutes/repacts/ra2022/ra_11900_2022.html",
     "Unofficial source: Lawphil - Republic Act No. 11900 (Vaporized Nicotine and Non-Nicotine Products Regulation Act)"
@@ -6361,6 +6581,30 @@
  "LB": {
   "sections": [
    {
+    "h": "🏥 Smoke-free places in Lebanon under Law 174",
+    "p": "Lebanon’s Ministry of Public Health quotes article 5 of Law 174 of 2011, read 27 November 2026: smoking or lighting a tobacco product, or using such products, is forbidden in all indoor places, workplaces and public transport.",
+    "table": {
+     "head": [
+      "Point",
+      "Detail"
+     ],
+     "rows": [
+      [
+       "Are e-cigarettes covered?",
+       "Yes, as tobacco alternatives, according to the Tobacco Control Laws database (unofficial)"
+      ],
+      [
+       "Outdoors",
+       "The database says outdoor areas of health, education and sports facilities must be smoke free too"
+      ],
+      [
+       "Hotels",
+       "They may set aside 20% of rooms for smoking, according to the database"
+      ]
+     ]
+    }
+   },
+   {
     "h": "⚖️ What a tobacco-control legal database lists for e-cigarettes in Lebanon",
     "p": "Unofficial source: Tobacco Control Laws (Campaign for Tobacco-Free Kids), \"Main Policies - E-Cigarettes, Lebanon\", last updated 22 October 2026, read 21 November 2026. It summarises Law No. 174 and Ministry of Finance Resolution No. 877/2015. The Lebanese customs pages name no vape rule for travellers.",
     "table": {
@@ -6411,6 +6655,10 @@
    ]
   ],
   "src": [
+   [
+    "https://www.moph.gov.lb/en/Pages/0/22374/tobacco-program",
+    "Lebanon Ministry of Public Health: tobacco programme"
+   ],
    [
     "https://www.tobaccocontrollaws.org/legislation/lebanon/e-cigarettes",
     "Unofficial source: Tobacco Control Laws - E-cigarettes, Lebanon (Campaign for Tobacco-Free Kids)"
@@ -7132,6 +7380,33 @@
  "ET": {
   "sections": [
    {
+    "h": "⛓️ The penalty in Ethiopia’s law",
+    "p": "Unofficial source: a scanned copy of Proclamation 1112/2019 in the Federal Negarit Gazette, held on FAO’s FAOLEX database, read 27 November 2026.",
+    "table": {
+     "head": [
+      "Point",
+      "Proclamation 1112/2019"
+     ],
+     "rows": [
+      [
+       "Covered device",
+       "An electronic nicotine delivery system, with its cartridge, tank and parts"
+      ],
+      [
+       "Penalty for making, importing, wholesaling, distributing, storing or selling one",
+       "Simple imprisonment of three months to three years and a fine of 1,000 to 200,000 birr"
+      ],
+      [
+       "Selling tobacco to a person under 21",
+       "Imprisonment of at least three months, or a fine of 1,000 to 3,000 birr"
+      ]
+     ]
+    },
+    "list": [
+     "<strong>For a traveller:</strong> the penalty is worded around trade acts such as importing and storing, with no stated exception for your own device."
+    ]
+   },
+   {
     "h": "⚖️ What Ethiopian law says about e-cigarettes",
     "p": "Reliable secondary source: the Tobacco Control Laws database (Legal Consortium of the Campaign for Tobacco-Free Kids), page \"Main Policies - E-Cigarettes\" for Ethiopia, last updated 7 March 2022, read from an archived copy on 24 November 2026. It quotes Ethiopian proclamations and is not a customs page.",
     "table": {
@@ -7205,6 +7480,10 @@
    ]
   ],
   "src": [
+   [
+    "https://faolex.fao.org/docs/pdf/eth208821.pdf",
+    "Unofficial source: FAOLEX copy of Proclamation 1112/2019 (PDF)"
+   ],
    [
     "https://www.tobaccocontrollaws.org/legislation/ethiopia/e-cigarettes/main-policies",
     "Tobacco Control Laws: E-cigarettes in Ethiopia (Legal Consortium)"
@@ -7567,5 +7846,67 @@
    ]
   ],
   "keepSchema": true
+ },
+ "JP": {
+  "sections": [
+   {
+    "h": "💊 How much nicotine vape liquid Japan lets you bring",
+    "p": "From the health ministry’s questions and answers on importing medicines (dated 30 June 2025), question 67, read 27 November 2026 (in Japanese, translated by us). In Japan, cartridges and liquid containing nicotine count as medicines.",
+    "table": {
+     "head": [
+      "Item",
+      "Without an import confirmation certificate"
+     ],
+     "rows": [
+      [
+       "Nicotine liquid",
+       "Up to one month’s supply: 120 ml"
+      ],
+      [
+       "Nicotine cartridges",
+       "Up to 60"
+      ],
+      [
+       "Cartridges and liquid together",
+       "Added together against the same one-month limit"
+      ],
+      [
+       "Vaporising device for them",
+       "One, plus one spare if needed"
+      ],
+      [
+       "More than these amounts",
+       "An import confirmation certificate is needed"
+      ],
+      [
+       "Nicotine-free liquid and its device",
+       "Not regulated by this medicines law"
+      ]
+     ]
+    }
+   }
+  ],
+  "faq": [
+   [
+    "Can I bring nicotine e-liquid into Japan?",
+    "Yes, up to one month’s supply (120 ml of liquid or 60 cartridges) for your own use without an import confirmation certificate, according to Japan’s health ministry. More needs the certificate."
+   ]
+  ],
+  "src": [
+   [
+    "https://www.mhlw.go.jp/content/001601120.pdf",
+    "Japan Ministry of Health: import questions and answers (PDF, in Japanese)"
+   ]
+  ],
+  "keepSchema": true,
+  "card": {
+   "status": "warn",
+   "head": "Personal import limit: 120 ml of nicotine liquid.",
+   "lines": [
+    "Japan’s health ministry allows up to 120 ml of nicotine liquid or 60 cartridges for personal use without a certificate.",
+    "One vaporising device, plus one spare if needed, comes in without a certificate.",
+    "Above these amounts you need an import confirmation certificate."
+   ]
+  }
  }
 }

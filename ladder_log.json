@@ -391,7 +391,8 @@
  },
  "airline/eurowings/medication": {
   "official": [
-   "read: Eurowings: Travelling healthy"
+   "read: Eurowings: Travelling healthy",
+   "read 2026-11-27: Eurowings travelling healthy, https://www.eurowings.com/en/information/on-board/travelling-healthy.html"
   ],
   "reliable": [
    "read: European Commission: Liquids, aerosols and gels; Your Europe: Airport and airline security FAQ"
@@ -399,7 +400,7 @@
   "other": [
    "none needed: the destination country sets the medicine rules, not the airline; covered by our per-country pages /medication/into/<country>/ (each read from that country authority or INCB filing) plus INCB travellers guidance"
   ],
-  "date": "2026-11-16"
+  "date": "2026-11-27"
  },
  "airline/finnair/medication": {
   "official": [
@@ -564,7 +565,8 @@
  },
  "airline/kenya-airways/medication": {
   "official": [
-   "read: Kenya Airways: Medical and special needs; Kenya Airways: Baggage restrictions"
+   "read: Kenya Airways: Medical and special needs; Kenya Airways: Baggage restrictions",
+   "read 2026-11-27: Kenya Airways medical support, https://www.kenya-airways.com/en/plan/special-care/medical-special-support/"
   ],
   "reliable": [
    "read: Diabetes UK: Travelling with diabetes"
@@ -572,7 +574,7 @@
   "other": [
    "none needed: the destination country sets the medicine rules, not the airline; covered by our per-country pages /medication/into/<country>/ (each read from that country authority or INCB filing) plus INCB travellers guidance"
   ],
-  "date": "2026-11-16"
+  "date": "2026-11-27"
  },
  "airline/klm/medication": {
   "official": [
@@ -1159,7 +1161,8 @@
  },
  "airline/air-china/perfume-aerosols": {
   "official": [
-   "read 2026-11-17: https://pcm.ca.amadeus.com/HK/GB/info/Checked-baggage-restrictions/ (item 9 cosmetics containing alcohol; no aerosol rule)"
+   "read 2026-11-17: https://pcm.ca.amadeus.com/HK/GB/info/Checked-baggage-restrictions/ (item 9 cosmetics containing alcohol; no aerosol rule)",
+   "read 2026-11-27: Beijing government storage article, https://english.beijing.gov.cn/travellinginbeijing/essentials/inboundtourismfacilitationmeasures/202603/t20260325_4566181.html"
   ],
   "reliable": [
    "CAAC travel guide section kept (read earlier)"
@@ -1167,7 +1170,7 @@
   "other": [
    "IATA table removed from page: replaced by Air China rule"
   ],
-  "date": "2026-11-17"
+  "date": "2026-11-27"
  },
  "airline/pegasus/alcohol": {
   "official": [
@@ -1183,13 +1186,14 @@
  },
  "airline/arkia/power-bank": {
   "official": [
-   "tried 2026-11-19: docs.arkia.co.il general terms and arkia.co.il legal terms HTTP 403"
+   "tried 2026-11-19: docs.arkia.co.il general terms and arkia.co.il legal terms HTTP 403",
+   "read 2026-11-27: Arkia baggage information, https://ssr.arkia.co.il/he/luggage-information"
   ],
   "reliable": [
    "read 2026-11-19: Israel Airports Authority Terminal 1 useful information page (lithium batteries listed as forbidden items; garbled sentence)"
   ],
   "other": [],
-  "date": "2026-11-19"
+  "date": "2026-11-27"
  },
  "airline/icelandair/power-bank": {
   "official": [
@@ -1905,7 +1909,8 @@
  },
  "country/bahrain/cash": {
   "official": [
-   "tried 2026-11-16: bahraincustoms.gov.bh: connection failed, not read"
+   "tried 2026-11-16: bahraincustoms.gov.bh: connection failed, not read",
+   "read 2026-11-27: LLOC Law 54 of 2006, https://www.lloc.gov.bh/Legislation/HTM/K5406"
   ],
   "reliable": [
    "read: Travel Doc customs information page for Bahrain (infopages.traveldoc.aero)"
@@ -1913,7 +1918,7 @@
   "other": [
    "none needed: step 2a answered the question"
   ],
-  "date": "2026-11-16"
+  "date": "2026-11-27"
  },
  "country/china/alcohol": {
   "official": [
@@ -12870,7 +12875,10 @@
    "IATA Dangerous Goods Regulations, Table 2.3.A: read, on the page",
    "read 2026-11-16: customs/authority source for South Africa as recorded in country_unique.json: Source read: SARS, SC-PA-01-03 Duty-free allowances for travellers (external guide, PDF). Penalties are not in the part read."
   ],
-  "date": "2026-11-16"
+  "date": "2026-11-27",
+  "official": [
+   "read 2026-11-27: SAA conditions of carriage March 2022, https://www.flysaa.com/documents/d/south-african-airways/saa-conditions-of-carriage-march-2022"
+  ]
  },
  "airline/transavia/alcohol": {
   "official": [
@@ -13453,12 +13461,13 @@
    "tried 2026-11-16: Copa Airlines own e-cigarette/restricted-items page; see page source"
   ],
   "reliable": [
-   "read 2026-10-08: WHO global tobacco report 2023 country profile (https://cdn.who.int/media/docs/default-source/country-profiles/tobacco/gtcr-2023/tobacco-2023-pan.pdf)"
+   "read 2026-10-08: WHO global tobacco report 2023 country profile (https://cdn.who.int/media/docs/default-source/country-profiles/tobacco/gtcr-2023/tobacco-2023-pan.pdf)",
+   "read 2026-11-27: La Prensa 2025-07-22, https://www.prensa.com/sociedad/regulacion-sobre-cigarrillos-electronicos-empezara-a-aplicarse-el-jueves-31-de-julio-en-panama/"
   ],
   "other": [
    "none needed: step 2a answered part of the question"
   ],
-  "date": "2026-11-17"
+  "date": "2026-11-27"
  },
  "airline/lot-polish/vape-e-cigarette": {
   "official": [
@@ -13524,7 +13533,8 @@
  "airline/south-african-airways/vape-e-cigarette": {
   "official": [
    "tried 2026-11-16: South African Airways own e-cigarette/restricted-items page; see page source",
-   "read 2026-11-17: flysaa.com restricted-items page (official); already fully on the page"
+   "read 2026-11-17: flysaa.com restricted-items page (official); already fully on the page",
+   "read 2026-11-27: SAA conditions of carriage March 2022, https://www.flysaa.com/documents/d/south-african-airways/saa-conditions-of-carriage-march-2022"
   ],
   "reliable": [
    "read 2026-10-08: WHO global tobacco report 2023 country profile (https://cdn.who.int/media/docs/default-source/country-profiles/tobacco/gtcr-2023/tobacco-2023-zaf.pdf)"
@@ -13533,7 +13543,7 @@
    "none needed: step 2a answered part of the question",
    "tried 2026-11-17: flysaa.com restricted-items page: HTTP 403; not read"
   ],
-  "date": "2026-11-17"
+  "date": "2026-11-27"
  },
  "airline/oman-air/vape-e-cigarette": {
   "official": [
@@ -13670,7 +13680,8 @@
  },
  "airline/avianca/vape-e-cigarette": {
   "official": [
-   "tried 2026-11-16: Avianca own e-cigarette/restricted-items page; see page source"
+   "tried 2026-11-16: Avianca own e-cigarette/restricted-items page; see page source",
+   "read 2026-11-27: Ley 2354 de 2024, https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=240576 ; avianca contract PDF no answer, avianca.com 403"
   ],
   "reliable": [
    "read 2026-10-08: WHO global tobacco report 2023 country profile (https://cdn.who.int/media/docs/default-source/country-profiles/tobacco/gtcr-2023/tobacco-2023-col.pdf)"
@@ -13678,7 +13689,7 @@
   "other": [
    "none needed: step 2a answered part of the question"
   ],
-  "date": "2026-11-17"
+  "date": "2026-11-27"
  },
  "airline/korean-air/vape-e-cigarette": {
   "official": [
@@ -14575,7 +14586,8 @@
  },
  "country/czechia/vaping": {
   "official": [
-   "read 2026-11-19: Celni sprava quantity limits page (e-cigarette refills 80 ml, EU personal consumption)"
+   "read 2026-11-19: Celni sprava quantity limits page (e-cigarette refills 80 ml, EU personal consumption)",
+   "read 2026-11-27: Czech MoH FAQ Act 65/2017, https://mzd.gov.cz/nejcastejsi-dotazy-a-odpovedi-na-tema-noveho-tzv-protikurackeho-zakona-c-65-2017-sb/"
   ],
   "reliable": [
    "WHO country profile read 2026-10-08 (base card)",
@@ -14584,7 +14596,7 @@
   "other": [
    "none needed: national customs page read"
   ],
-  "date": "2026-11-19"
+  "date": "2026-11-27"
  },
  "country/poland/vaping": {
   "official": [
@@ -14677,7 +14689,8 @@
  },
  "country/colombia/vaping": {
   "official": [
-   "read 2026-11-22: DIAN modalidad de viajeros page: USD 2,000, 10 units of the same kind, 15% single tax, form 530, no vape word"
+   "read 2026-11-22: DIAN modalidad de viajeros page: USD 2,000, 10 units of the same kind, 15% single tax, form 530, no vape word",
+   "read 2026-11-27: Ley 2354 de 2024, https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=240576"
   ],
   "reliable": [
    "WHO country profile read 2026-10-08 (base card)"
@@ -14685,7 +14698,7 @@
   "other": [
    "none needed: national customs page read"
   ],
-  "date": "2026-11-22"
+  "date": "2026-11-27"
  },
  "country/cuba/vaping": {
   "official": [
@@ -14769,22 +14782,24 @@
    "read 2026-11-19: Croatian Customs Administration passenger luggage page (undated): e-liquid 10 ml, heated tobacco 50 g"
   ],
   "reliable": [
-   "read 2026-11-19: WHO country profile PDF, tobacco use prevalence table"
+   "read 2026-11-19: WHO country profile PDF, tobacco use prevalence table",
+   "read 2026-11-27: copy of 2025 amending act, https://assets.tobaccocontrollaws.org/uploads/legislation/Croatia/Croatia-2025-Amding-Act-native.pdf"
   ],
   "other": [],
-  "date": "2026-11-19"
+  "date": "2026-11-27"
  },
  "country/indonesia/vaping": {
   "official": [
    "beacukai.go.id passenger goods pages: connection refused or host not found on WebFetch and curl 2026-11-19, retried 2026-11-21"
   ],
   "reliable": [
-   "WHO country profile read 2026-10-08 (base card)"
+   "WHO country profile read 2026-10-08 (base card)",
+   "read 2026-11-27: Hukumonline on PP 28/2024, https://www.hukumonline.com/berita/a/penjualan-rokok-dalam-pp-kesehatan-lt66aee26d8d053/"
   ],
   "other": [
    "read 2026-11-21: DDTCNews 2024-11-06 (lower reliability, tax press) quoting PMK 82/2024 Art. 36: 30 ml open, 12 ml closed, 140 sticks or 40 capsules"
   ],
-  "date": "2026-11-21"
+  "date": "2026-11-27"
  },
  "country/italy/vaping": {
   "official": [
@@ -14873,7 +14888,8 @@
  },
  "country/malta/vaping": {
   "official": [
-   "read 2026-11-21: Malta Customs accompanied excise goods page (updated 2020-12-18, page 2026-01-22): tobacco limits only, no e-liquid"
+   "read 2026-11-21: Malta Customs accompanied excise goods page (updated 2020-12-18, page 2026-01-22): tobacco limits only, no e-liquid",
+   "read 2026-11-27: legislation.mt Cap 315 art 18, https://legislation.mt/eli/cap/315/eng/pdf"
   ],
   "reliable": [
    "WHO country profile read 2026-10-08 (base card)",
@@ -14882,7 +14898,7 @@
   "other": [
    "none needed: national customs page read"
   ],
-  "date": "2026-11-24"
+  "date": "2026-11-27"
  },
  "country/mexico/vaping": {
   "official": [
@@ -14948,12 +14964,13 @@
    "read 2026-11-22: ANA news item 2026-03-10 on Bill 263 (ban on use, import, sale of e-cigarettes) and Bill 347, both in technical analysis; no traveller allowance; ANA traveller declaration page is script-driven, text not readable by curl"
   ],
   "reliable": [
-   "WHO country profile read 2026-10-08 (base card)"
+   "WHO country profile read 2026-10-08 (base card)",
+   "read 2026-11-27: La Prensa 2025-07-22, https://www.prensa.com/sociedad/regulacion-sobre-cigarrillos-electronicos-empezara-a-aplicarse-el-jueves-31-de-julio-en-panama/"
   ],
   "other": [
    "none needed: national customs page read"
   ],
-  "date": "2026-11-22"
+  "date": "2026-11-27"
  },
  "country/peru/vaping": {
   "official": [
@@ -14973,12 +14990,13 @@
    "customs.gov.ph: HTTP 403 2026-11-21 and again web.senate.gov.ph RA 11900 PDF 403 2026-11-22, not bypassed"
   ],
   "reliable": [
-   "read 2026-11-22: Lawphil text of RA 11900 (sections 1-8, 19, 23, 27); WHO country profile read 2026-10-08 (base card)"
+   "read 2026-11-22: Lawphil text of RA 11900 (sections 1-8, 19, 23, 27); WHO country profile read 2026-10-08 (base card)",
+   "read 2026-11-27: LawPhil RA 11900 s.15, https://lawphil.net/statutes/repacts/ra2022/ra_11900_2022.html"
   ],
   "other": [
    "travel-guide sites with conflicting allowances (200 ml e-juice) not used"
   ],
-  "date": "2026-11-22"
+  "date": "2026-11-27"
  },
  "country/qatar/vaping": {
   "official": [
@@ -15173,13 +15191,14 @@
  },
  "country/lebanon/vaping": {
   "official": [
-   "Lebanese customs traveller pages: no vape text (search results and tariff pages only, 2026-11-21)"
+   "Lebanese customs traveller pages: no vape text (search results and tariff pages only, 2026-11-21)",
+   "read 2026-11-27: Lebanon MoPH tobacco programme, https://www.moph.gov.lb/en/Pages/0/22374/tobacco-program"
   ],
   "reliable": [
    "read 2026-11-21: Tobacco Control Laws Lebanon e-cigarettes page (updated 2026-10-22): sale allowed with restrictions, Law 174, MoF Resolution 877/2015"
   ],
   "other": [],
-  "date": "2026-11-21"
+  "date": "2026-11-27"
  },
  "country/kuwait/vaping": {
   "official": [
@@ -15319,12 +15338,13 @@
   ],
   "reliable": [
    "WHO country profile read 2026-10-08 (base card)",
-   "read 2026-11-24: Tobacco Control Laws database (Wayback) quoting Proclamation 1112/2019"
+   "read 2026-11-24: Tobacco Control Laws database (Wayback) quoting Proclamation 1112/2019",
+   "read 2026-11-27: FAOLEX scan of Proclamation 1112/2019, https://faolex.fao.org/docs/pdf/eth208821.pdf"
   ],
   "other": [
    "read 2026-11-22: GSTHR e-cigarette profile for Ethiopia (page updated 2026-11-16, secondary compilation, lower reliability)"
   ],
-  "date": "2026-11-24"
+  "date": "2026-11-27"
  },
  "country/nepal/vaping": {
   "official": [
@@ -16009,6 +16029,36 @@
  "airline/lufthansa/alcohol": {
   "official": [
    "read 2026-11-27: Lufthansa Onboard Delights brochure, https://www.lufthansa.com/content/dam/lh/documents/during-your-trip/food-and-beverages/onboard-delights/lh_mobile-version_onboard-delights_en.pdf"
+  ],
+  "date": "2026-11-27"
+ },
+ "country/japan/vaping": {
+  "official": [
+   "read 2026-11-27: MHLW import Q&A 2025-06-30 Q67, https://www.mhlw.go.jp/content/001601120.pdf"
+  ],
+  "date": "2026-11-27"
+ },
+ "country/jordan/plants-seeds": {
+  "reliable": [
+   "read 2026-11-27: UNEP-LEAP Resolution Z/24 of 2016, https://leap.unep.org/en/countries/jo/national-legislation/resolution-noz24-2016-identify-perennial-or-rare-trees-and-wild"
+  ],
+  "date": "2026-11-27"
+ },
+ "country/philippines/cash": {
+  "official": [
+   "read 2026-11-27: Bureau of Customs foreign currency (Wayback 20250914), https://customs.gov.ph/foreign-currency/"
+  ],
+  "date": "2026-11-27"
+ },
+ "airline/korean-air/power-bank": {
+  "official": [
+   "read 2026-11-27: Korean Air restricted items (browser pane), https://www.koreanair.com/contents/plan-your-travel/baggage/restricted-item"
+  ],
+  "date": "2026-11-27"
+ },
+ "airline/middle-east-airlines/power-bank": {
+  "official": [
+   "read 2026-11-27: MEA restricted items (Wayback 20240926; live site bans our region, not bypassed), https://www.mea.com.lb/english/traveler-info/baggage-info/restricted-items"
   ],
   "date": "2026-11-27"
  }

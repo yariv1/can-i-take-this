@@ -31,6 +31,7 @@ function indoorText(cn, D) {
 }
 
 function build(c) {
+  const OV = (EXTRA[c.code] || {}).indoor, indoorLine = (n, d) => OV || indoorText(n, d); // newer national rule than the WHO table, written in vape_extra.json
   const D = DATA25.c[c.code] || DATA.c[c.code];
   if (!D) {
     // country without a WHO profile: page built only from the country's own official page (vape_extra.json); title and description stay as before (X.ttl / X.desc)
@@ -50,24 +51,24 @@ function build(c) {
   if (A.none) {
     status = 'No General Ban'; card = { status: 'warn', head: 'No general ban - but no traveller limit is published.' };
     lead = RPT + cn + YR + ' lists no general ban on e-cigarettes' +
-      (N25 ? '' : (D.laws === 'Yes' ? ' and says national laws or regulations regulate them' : ' and says no national law regulates them')) + '. ' + indoorText(cn, D) +
+      (N25 ? '' : (D.laws === 'Yes' ? ' and says national laws or regulations regulate them' : ' and says no national law regulates them')) + '. ' + indoorLine(cn, D) +
       ' That is the law on e-cigarette products: it does not say how many devices or how much e-liquid customs lets you carry in a bag, so check with the customs authority before you travel.';
     travel = 'WHO lists no general ban on e-cigarettes in ' + cn + ', but its profile does not publish a traveller allowance. Check the customs rules for ' + cn + ', and on the plane keep the device in your cabin baggage as airlines require.';
   } else if (A.presc) {
     status = 'Prescription Needed'; card = { status: 'warn', head: 'Needs a prescription (WHO) - check customs.' };
-    lead = RPT + cn + YR + ' lists the sale and import of nicotine e-cigarettes as banned without a doctor\'s prescription. ' + indoorText(cn, D) + ' Treat nicotine vapes and e-liquid as items you cannot simply pack for ' + cn + ' and check the customs and health rules first.';
+    lead = RPT + cn + YR + ' lists the sale and import of nicotine e-cigarettes as banned without a doctor\'s prescription. ' + indoorLine(cn, D) + ' Treat nicotine vapes and e-liquid as items you cannot simply pack for ' + cn + ' and check the customs and health rules first.';
     travel = 'WHO\'s wording for ' + cn + ' is "' + A.g + '", so nicotine e-cigarettes are not freely sold or imported. Check the rules for travellers with the customs and health authorities before you pack one.';
   } else if (A.hasImport && A.except) {
     status = 'Import Banned, Personal Use Exception'; card = { status: 'warn', head: 'Import banned, personal-use exception (WHO).' };
-    lead = RPT + cn + YR + ' lists "' + A.g + '". ' + indoorText(cn, D) + ' The personal-use exception is WHO\'s wording; the profile gives no quantity, so confirm what is allowed with the customs authority.';
+    lead = RPT + cn + YR + ' lists "' + A.g + '". ' + indoorLine(cn, D) + ' The personal-use exception is WHO\'s wording; the profile gives no quantity, so confirm what is allowed with the customs authority.';
     travel = 'WHO lists a ban on importing e-cigarettes into ' + cn + ' with an exception for personal use, and gives no quantity. Confirm with customs before you pack one.';
   } else if (A.hasImport) {
     status = A.hasUse ? 'Use, Sale and Import Banned' : 'Sale and Import Banned'; card = { status: 'stop', head: 'Import banned (WHO) - leave it at home.' };
-    lead = RPT + cn + YR + ' lists "' + A.g + '" for e-cigarettes. ' + indoorText(cn, D) + ' Treat vapes, pods and e-liquid as items not to pack for ' + cn + ' unless the customs authority confirms otherwise.';
+    lead = RPT + cn + YR + ' lists "' + A.g + '" for e-cigarettes. ' + indoorLine(cn, D) + ' Treat vapes, pods and e-liquid as items not to pack for ' + cn + ' unless the customs authority confirms otherwise.';
     travel = 'WHO lists a ban on importing e-cigarettes into ' + cn + ' ("' + A.g + '"). Do not pack a vape or e-liquid unless the customs authority confirms in writing that you may.';
   } else {
     status = 'Sale Restricted'; card = { status: 'warn', head: 'Sale restricted (WHO) - check customs.' };
-    lead = RPT + cn + YR + ' lists "' + A.g + '" for e-cigarettes. ' + indoorText(cn, D) + ' It does not mention importing, so check the customs rules for travellers before you pack one.';
+    lead = RPT + cn + YR + ' lists "' + A.g + '" for e-cigarettes. ' + indoorLine(cn, D) + ' It does not mention importing, so check the customs rules for travellers before you pack one.';
     travel = 'WHO lists "' + A.g + '" for ' + cn + ' but does not list an import ban. It also publishes no traveller allowance, so check with the customs authority.';
   }
   const rows = [
@@ -79,7 +80,7 @@ function build(c) {
   const faq = [
     ['Is vaping legal in ' + cn + '?', lead],
     ['Can I bring a vape to ' + cn + '?', travel],
-    ['Can I vape in public places in ' + cn + '?', indoorText(cn, D)],
+    ['Can I vape in public places in ' + cn + '?', indoorLine(cn, D)],
     ['What is the minimum age to buy a vape in ' + cn + '?', D.minAge ? 'WHO reports a minimum age of sale of ' + D.minAge + ' for e-cigarettes in ' + cn + '.' : 'WHO\'s profile does not report a minimum age of sale for e-cigarettes in ' + cn + '.']
   ];
   const X = EXTRA[c.code];
@@ -88,6 +89,7 @@ function build(c) {
   const list = [];
   if (D.note) list.push('<strong>WHO note:</strong> ' + esc(D.note));
   list.push('<strong>How old is this:</strong> WHO ' + (N25 ? '2025 report, 2024 data' : '2023 report, 2022 data') + '; laws change, so check the authority below.');
+  if (OV) list.push('<strong>Indoor row out of date:</strong> a newer national rule on where you may vape is set out below.');
   list.push('<strong>On the plane:</strong> airlines want vapes in the cabin, not checked baggage.');
   const html = '<div class="bd-wrap">' + CSS + '<p class="bd-lead"><strong>' + esc(lead) + '</strong></p>' +
     '<section class="bd-sec"><h2>🚭 What WHO reports for ' + esc(cn) + '</h2><p>From the WHO report on the global tobacco epidemic ' + (N25 ? '2025' : '2023') + ', country profile for ' + esc(cn) + ', table "Regulation of ENDS and ENNDS" (nicotine e-cigarettes).</p>' +

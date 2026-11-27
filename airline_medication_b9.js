@@ -458,7 +458,7 @@ module.exports = function (X) {
         ['Label?', 'Printed by the medical office, pharmacy or manufacturer'],
         ['Tablets, liquids, cold storage?', NP]
       ],
-      extra: steps(['Keep prescription medication in the labelled pharmacy packaging.', 'Carry syringes only together with that medication.'])
+      extra: steps(['Keep prescription medication in the labelled pharmacy packaging.', 'Carry syringes only together with that medication.']) + "<section class=\"bd-sec\"><h2>📋 When Kenya Airways needs a medical clearance</h2><p>Kenya Airways’ medical support page lists who has to be cleared before flying.</p><ul><li>You need clearance after a recent major event such as a heart attack or stroke, surgery in the previous two weeks, an existing heart or breathing condition, a history of clots in the lung or thrombophlebitis, or an unstable mental illness.</li><li>The same applies if you need a stretcher, oxygen, a portable oxygen concentrator, a ventilator, a medical procedure in flight or battery-powered medical equipment other than a CPAP.</li><li>Send the completed MEDIF form to doctors.kq@kenya-airways.com at least 24 hours before travel.</li><li>It must be filled in in English, signed and stamped, and is valid for 7 days from issue. A return trip needs a new one.</li></ul><p class=\"bd-chk\">Official source read 27 November 2026: <a href=\"https://www.kenya-airways.com/en/plan/special-care/medical-special-support/\" target=\"_blank\" rel=\"noopener\">Kenya Airways: medical and special needs assistance</a></p></section>"
     });
   }
 
@@ -676,7 +676,7 @@ module.exports = function (X) {
         ['Cold storage?', 'Crew cannot; freezer packs or dry ice'],
         ['Over 100 ml?', NP]
       ],
-      extra: steps(['Pack 1.5 to 2 times your expected medication in hand baggage.', 'Take a doctor\'s certificate for larger quantities of insulin or EpiPens.', 'Register extra medical hand baggage via the contact form.'])
+      extra: steps(['Pack 1.5 to 2 times your expected medication in hand baggage.', 'Take a doctor\'s certificate for larger quantities of insulin or EpiPens.', 'Register extra medical hand baggage via the contact form.']) + "<section class=\"bd-sec\"><h2>🤰 Flying Eurowings while pregnant</h2><p>Eurowings sets these terms on the same health page.</p><ul><li>With an uncomplicated pregnancy you may fly without a gynaecologist’s certificate up to the end of week 36, which is up to four weeks before the due date.</li><li>From week 28 Eurowings recommends carrying a current medical certificate.</li><li>It should confirm the pregnancy is without complications, that it does not stop you flying, and give the due date.</li></ul><p class=\"bd-chk\">Official source read 27 November 2026: <a href=\"https://www.eurowings.com/en/information/on-board/travelling-healthy.html\" target=\"_blank\" rel=\"noopener\">Eurowings: travelling healthy</a></p></section>"
     });
   }
 };
