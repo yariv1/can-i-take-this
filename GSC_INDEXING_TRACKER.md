@@ -1234,3 +1234,9 @@ Source captions corrected site-wide (231 pages show Unofficial guidance); five p
 - https://canitakethis.co/country/lithuania/plants-seeds/
 - https://canitakethis.co/country/belgium/vaping/
 Wild-plant rules and Belgium disposable ban. No GSC requests made yet.
+
+## Deploy 7c9d3485b (2026-11-27)
+- https://canitakethis.co/airline/aer-lingus/liquids/
+- https://canitakethis.co/airline/aer-lingus/perfume-aerosols/
+- https://canitakethis.co/airline/aer-lingus/alcohol/
+Cabin liquid limit by departure airport (also home app). No GSC requests made yet.
