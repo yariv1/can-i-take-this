@@ -1292,3 +1292,55 @@ No GSC requests made yet.
 - https://canitakethis.co/country/morocco/alcohol/
 
 No GSC requests made yet.
+
+## Deploy c95d26bf73 (2026-11-27)
+- https://canitakethis.co/airline/arkia/medication/
+- https://canitakethis.co/airline/egyptair/alcohol/
+- https://canitakethis.co/airline/ethiopian-airlines/medication/
+- https://canitakethis.co/airline/frontier/medication/
+- https://canitakethis.co/airline/lufthansa/alcohol/
+- https://canitakethis.co/airline/sas/power-bank/
+- https://canitakethis.co/airline/wizz-air/medication/
+- https://canitakethis.co/country/argentina/alcohol/
+- https://canitakethis.co/country/argentina/tobacco/
+- https://canitakethis.co/country/bahrain/cash/
+- https://canitakethis.co/country/bahrain/
+- https://canitakethis.co/country/bahrain/plants-seeds/
+- https://canitakethis.co/country/bahrain/vaping/
+- https://canitakethis.co/country/china/alcohol/
+- https://canitakethis.co/country/china/plants-seeds/
+- https://canitakethis.co/country/china/tobacco/
+- https://canitakethis.co/country/colombia/alcohol/
+- https://canitakethis.co/country/colombia/tobacco/
+- https://canitakethis.co/country/cyprus/vaping/
+- https://canitakethis.co/country/estonia/plants-seeds/
+- https://canitakethis.co/country/germany/vaping/
+- https://canitakethis.co/country/indonesia/alcohol/
+- https://canitakethis.co/country/indonesia/cash/
+- https://canitakethis.co/country/indonesia/plants-seeds/
+- https://canitakethis.co/country/indonesia/tobacco/
+- https://canitakethis.co/country/ireland/plants-seeds/
+- https://canitakethis.co/country/israel/cash/
+- https://canitakethis.co/country/israel/plants-seeds/
+- https://canitakethis.co/country/israel/vaping/
+- https://canitakethis.co/country/malaysia/alcohol/
+- https://canitakethis.co/country/malaysia/plants-seeds/
+- https://canitakethis.co/country/maldives/plants-seeds/
+- https://canitakethis.co/country/mauritius/alcohol/
+- https://canitakethis.co/country/mauritius/plants-seeds/
+- https://canitakethis.co/country/mexico/cash/
+- https://canitakethis.co/country/morocco/alcohol/
+- https://canitakethis.co/country/nigeria/tobacco/
+- https://canitakethis.co/country/nigeria/vaping/
+- https://canitakethis.co/country/peru/plants-seeds/
+- https://canitakethis.co/country/philippines/alcohol/
+- https://canitakethis.co/country/philippines/plants-seeds/
+- https://canitakethis.co/country/philippines/tobacco/
+- https://canitakethis.co/country/portugal/plants-seeds/
+- https://canitakethis.co/country/saudi-arabia/cash/
+- https://canitakethis.co/country/saudi-arabia/tobacco/
+- https://canitakethis.co/country/south-africa/vaping/
+- https://canitakethis.co/country/south-korea/plants-seeds/
+- https://canitakethis.co/country/ukraine/cash/
+
+No GSC requests made yet.
