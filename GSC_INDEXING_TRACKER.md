@@ -1246,3 +1246,11 @@ Cabin liquid limit by departure airport (also home app). No GSC requests made ye
 - https://canitakethis.co/airline/ryanair/perfume-aerosols/
 - https://canitakethis.co/airline/ryanair/alcohol/
 Cabin liquid limit by departure airport (also home app). No GSC requests made yet.
+
+## Deploy 8eca999a4 (2026-11-27)
+- https://canitakethis.co/airline/egyptair/perfume-aerosols/
+- https://canitakethis.co/airline/china-southern/perfume-aerosols/
+- https://canitakethis.co/airline/middle-east-airlines/alcohol/
+- https://canitakethis.co/airline/ethiopian-airlines/alcohol/
+- https://canitakethis.co/country/lithuania/tobacco/
+Batch 1 pages; also the card subtitle on country, medicine and pet pages. No GSC requests made yet.
