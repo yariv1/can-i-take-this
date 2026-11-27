@@ -1240,3 +1240,9 @@ Wild-plant rules and Belgium disposable ban. No GSC requests made yet.
 - https://canitakethis.co/airline/aer-lingus/perfume-aerosols/
 - https://canitakethis.co/airline/aer-lingus/alcohol/
 Cabin liquid limit by departure airport (also home app). No GSC requests made yet.
+
+## Deploy db345e781 (2026-11-27)
+- https://canitakethis.co/airline/ryanair/liquids/
+- https://canitakethis.co/airline/ryanair/perfume-aerosols/
+- https://canitakethis.co/airline/ryanair/alcohol/
+Cabin liquid limit by departure airport (also home app). No GSC requests made yet.
