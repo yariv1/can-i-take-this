@@ -14064,8 +14064,51 @@
    "unofficial": true
   },
   "perfume": {
-   "answer": "EgyptAir lists compressed gases such as aerosols among items forbidden in checked and unchecked baggage, but its page does not say whether toiletry aerosols, hair spray or perfume are meant. The industry limit for toiletries is 0.5 L per article and 2 L in total; check with EgyptAir before packing aerosols.",
+   "answer": "In EgyptAir hand luggage, perfume goes in containers of 100 ml or less, all in one resealable 1-litre bag shown separately at screening; larger bottles can go in checked baggage. Its restricted items page also forbids compressed gases such as aerosols, without saying whether toiletry sprays are meant.",
    "sections": [
+    {
+     "h": "🧴 What EgyptAir says about perfume in hand luggage",
+     "p": "From EgyptAir&rsquo;s &ldquo;Carry-on baggage&rdquo; page, read 27 November 2026 in a copy archived on 30 September 2026; the live page refused our reader.",
+     "table": {
+      "head": [
+       "Point",
+       "EgyptAir rule"
+      ],
+      "rows": [
+       [
+        "Covered",
+        "Perfumes, sprays, creams, mascara, toothpaste, lip gloss and other liquids, aerosols, gels and pastes"
+       ],
+       [
+        "Container",
+        "Not greater than 100 ml each"
+       ],
+       [
+        "Bag",
+        "One resealable transparent bag of no more than one litre (about 20 x 20 cm) per passenger, presented separately"
+       ],
+       [
+        "Bigger bottles",
+        "Can be packed in checked baggage"
+       ],
+       [
+        "Duty-free perfume",
+        "Allowed from any airport or airline, sealed at purchase with the receipt in a red-bordered security bag; keep it shut until your final destination"
+       ],
+       [
+        "Connecting with duty-free",
+        "Tell the security officer, so the bag can be resealed if it has to be opened"
+       ],
+       [
+        "Flying from or within Egypt",
+        "Passengers at Egyptian airports are asked to follow the same rules"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>At the checkpoint:</strong> the page says security may exceptionally open bottles, or not permit a liquid."
+     ]
+    },
     {
      "h": "🧴 What EgyptAir says about aerosols",
      "p": "From the EgyptAir \"Restricted items\" page, read 17 November 2026.",
@@ -14086,47 +14129,19 @@
       ]
      },
      "list": [
-      "<strong>Not on the page:</strong> the page does not mention perfume, hair spray or toiletry aerosols by name, and gives no exception for them. Because of that, we cannot tell you EgyptAir allows an aerosol; ask EgyptAir."
+      "<strong>How the two EgyptAir pages fit:</strong> the restricted items page does not name perfume or toiletry sprays, while the carry-on page names sprays and aerosols among the liquids allowed in small containers. Ask EgyptAir before packing a pressurised spray."
      ]
     },
     {
-     "h": "What the industry rule says about toiletries and perfume (IATA)",
-     "p": "IATA, the airline industry body. Airports and customs can add stricter limits.",
-     "table": {
-      "head": [
-       "Question",
-       "IATA rule"
-      ],
-      "rows": [
-       [
-        "What it covers",
-        "Non-radioactive medicinal or toiletry articles including aerosols, such as hair sprays, perfumes, colognes and medicines containing alcohol, and non-flammable, non-toxic aerosols for sporting or home use"
-       ],
-       [
-        "Where",
-        "Permitted in carry-on and in checked baggage, without operator approval"
-       ],
-       [
-        "Total",
-        "Not more than 2 kg or 2 L in total"
-       ],
-       [
-        "Each article",
-        "Not more than 0.5 kg or 0.5 L"
-       ],
-       [
-        "Aerosol valves",
-        "Release valves must be protected by a cap or other suitable means"
-       ],
-       [
-        "In your cabin bag on EgyptAir",
-        "Security liquid limits also apply: containers of 100 ml or less in one transparent resealable bag of at most 1 litre. EgyptAir page above does not give its own liquids rule."
-       ]
-      ]
-     }
+     "h": "Per-bottle and total limits",
+     "p": "From IATA&rsquo;s 2026 dangerous goods table, industry guidance and not EgyptAir wording: toiletry and medicinal articles, perfume included, may total 2 kg or 2 L per person, with no single article above 0.5 kg or 0.5 L and aerosol release valves protected."
     }
    ],
    "sources": [
+    [
+     "https://www.egyptair.com/en/fly/baggage/Pages/carry-on-baggage.aspx",
+     "EgyptAir &mdash; Carry-on baggage"
+    ],
     [
      "https://www.egyptair.com/en/fly/baggage/Pages/restricted-items.aspx",
      "EgyptAir &mdash; Restricted items"
@@ -14137,7 +14152,7 @@
     ]
    ],
    "keepSchema": true,
-   "checked": "17 November 2026",
+   "checked": "27 November 2026",
    "unofficial": false
   },
   "power": {
@@ -14635,46 +14650,65 @@
    "unofficial": false
   },
   "alcohol": {
-   "answer": "Ethiopian Airlines's own rule could not be read; the IATA limit is 5 L per person for drinks above 24% up to 70%, and the home-country customs rule is below.",
+   "answer": "No Ethiopian Airlines page we read gives its own quantity limit for alcohol in your bags. The industry figure is 5 L per person for drinks above 24% and up to 70%, and Ethiopian's conditions of carriage let it refuse or act against a passenger who appears to be under the influence.",
    "sections": [
     {
-     "h": "🍷 What the industry rule says about alcohol on Ethiopian Airlines",
-     "p": "IATA, the airline industry body. Airports and customs can add stricter limits. Full table: <a href=\"/plane/alcohol/\">alcohol on a plane</a>.",
+     "h": "🥂 What Ethiopian Airlines says about drink and passengers",
+     "p": "From Ethiopian&rsquo;s conditions of carriage, its Addis Ababa lounge page and its restricted items page, read 27 November 2026.",
      "table": {
       "head": [
-       "Question",
-       "IATA rule"
+       "Situation",
+       "Ethiopian Airlines wording, in short"
       ],
       "rows": [
        [
-        "Up to 24% alcohol by volume",
-        "Not subject to any restrictions"
+        "Boarding or in flight",
+        "It may deny boarding or take action during the flight if a passenger appears to be under the influence of alcohol or drugs"
        ],
        [
-        "More than 24% and up to 70%",
-        "Retail packaging, receptacles not exceeding 5 L, total net quantity 5 L per person"
+        "Addis Ababa lounges, age",
+        "Guests under 21 are not permitted to drink alcohol in any Ethiopian Airlines lounge"
        ],
        [
-        "Cabin bag at security",
-        "Liquid limits also apply at the checkpoint; see the liquids rule for Ethiopian Airlines"
+        "Addis Ababa lounges, service",
+        "Staff may refuse drinks to a guest who appears intoxicated or behaves unruly"
        ]
       ]
-     }
+     },
+     "list": [
+      "<strong>Not on those pages:</strong> a litre limit for your baggage, or a rule on drinking a bottle you brought yourself."
+     ]
+    },
+    {
+     "h": "🍷 Bottle limits when the airline states none",
+     "p": "IATA&rsquo;s dangerous goods table (2026), which is industry guidance and not Ethiopian wording: drinks up to 24% alcohol are unrestricted; above 24% and up to 70%, they must be in retail packaging, in receptacles of no more than 5 L, with 5 L per person in total. Security liquid limits still apply to your cabin bag. See <a href=\"/plane/alcohol/\">alcohol on a plane</a>."
     },
     {
      "h": "What customs says about bringing alcohol into Ethiopia (Ethiopian Airlines's home country)",
-     "p": "This is the customs rule for people entering Ethiopia, not a rule stated by Ethiopian Airlines for its cabin. Ethiopian Ministry of Finance Directive No. 923/2014 on goods imported or exported for personal use says any traveller may import for personal use, without duty or tax, 2 litres of alcoholic drink, next to 200 grams of cigarettes, 250 grams of loose tobacco and perfume allowances. The directive was circulated in 2022 and applies to travellers by land or at international airports. The file we read is held on an airline's site, not the customs commission's, which is why the card is marked unofficial. It does not give a minimum age or a penalty for alcohol above the allowance, so check the current rules with the Ethiopian Customs Commission. Source read: Ethiopian Ministry of Finance Directive No. 923/2014 (English copy on ethiopianairlines.com). It is an unofficial copy and states no alcohol penalty."
+     "p": "This is the customs rule for people entering Ethiopia, not a rule stated by Ethiopian Airlines for its cabin. Ethiopian Ministry of Finance Directive No. 923/2014 on goods imported or exported for personal use says any traveller may import for personal use, without duty or tax, 2 litres of alcoholic drink, next to 200 grams of cigarettes, 250 grams of loose tobacco and perfume allowances. The directive was circulated in 2022 and applies to travellers by land or at international airports. The file we read is held on an airline's site, not the customs commission's, which is why we treat it as unofficial. It does not give a minimum age or a penalty for alcohol above the allowance, so check the current rules with the Ethiopian Customs Commission. Source read: Ethiopian Ministry of Finance Directive No. 923/2014 (English copy on ethiopianairlines.com). It is an unofficial copy and states no alcohol penalty."
     }
    ],
    "sources": [
     [
+     "https://www.ethiopianairlines.com/us/information/rules-and-regulations/conditions-of-carriage",
+     "Ethiopian Airlines &mdash; Conditions of carriage"
+    ],
+    [
+     "https://www.ethiopianairlines.com/us/services/services-at-the-airport/lounges-at-addis-ababa",
+     "Ethiopian Airlines &mdash; Lounges at Addis Ababa"
+    ],
+    [
+     "https://www.ethiopianairlines.com/uk/information/baggage-information/restricted-items",
+     "Ethiopian Airlines &mdash; Restricted items"
+    ],
+    [
      "https://www.iata.org/contentassets/6fea26dd84d24b26a7a1fd5788561d6e/dgr-67-en-2.3.a.pdf",
-     "IATA &mdash; Dangerous Goods Regulations, Table 2.3.A (67th edition, 1 January 2026)"
+     "Unofficial source: IATA &mdash; Dangerous Goods Regulations, Table 2.3.A (67th edition, 1 January 2026)"
     ]
    ],
    "keepSchema": true,
-   "checked": "18 October 2026",
-   "unofficial": true
+   "checked": "27 November 2026",
+   "unofficial": false
   },
   "perfume": {
    "answer": "Ethiopian Airlines allows aerosols such as hair spray, perfume and medicines containing alcohol in both carry-on and checked baggage, up to 0.5 kg/L per article and 2.0 kg/L in total.",
@@ -15616,8 +15650,71 @@
    "unofficial": false
   },
   "perfume": {
-   "answer": "China Southern answers \"Can I board with hairspray?\" with a plain NO. Its liquids rule limits every liquid, gel and aerosol in the cabin to containers of 100 ml in one transparent bag of at most 1 litre. The IATA limit for checked bags is 0.5 L or 0.5 kg per article and 2 L or 2 kg in total.",
+   "answer": "China Southern counts perfume as a liquid: in the cabin each container may be 100 ml at most, and its guide says a 500 ml perfume has to be checked. On flights inside China only own-use cosmetics may ride in hand luggage, one of each kind. Its FAQ answers a plain NO to boarding with hairspray.",
    "sections": [
+    {
+     "h": "🧴 What China Southern&rsquo;s liquids guide says about perfume",
+     "p": "From China Southern&rsquo;s own Chinese-language baggage guide (Seoul station page), read 27 November 2026, translated by us.",
+     "table": {
+      "head": [
+       "Point",
+       "Guide"
+      ],
+      "rows": [
+       [
+        "Counted as liquids",
+        "Perfume and deodorant; creams, lotions and oils; mascara and lip gloss; toothpaste; shaving foam, hair spray and deodorant spray; hair gel, shower gel and contact lens solution"
+       ],
+       [
+        "A 500 ml perfume",
+        "Not allowed in the cabin; it can only be checked"
+       ],
+       [
+        "What the 100 ml measures",
+        "The size of the container, not how much is left in it"
+       ],
+       [
+        "Bag",
+        "One resealable transparent bag of at most 1 litre per passenger"
+       ],
+       [
+        "Bought after security",
+        "Liquids bought in the secure waiting area may be taken on board"
+       ]
+      ]
+     }
+    },
+    {
+     "h": "🇨🇳 Flights inside China are stricter",
+     "p": "From the Civil Aviation Administration of China page on baggage (published March 2023), read 27 November 2026, translated by us. This is the national rule, not China Southern wording.",
+     "table": {
+      "head": [
+       "On a domestic flight",
+       "National rule"
+      ],
+      "rows": [
+       [
+        "Liquids in hand luggage",
+        "Not allowed, apart from your own cosmetics, toothpaste and shaving cream"
+       ],
+       [
+        "Cosmetics",
+        "One of each kind, in a container of at most 100 ml, opened for inspection"
+       ],
+       [
+        "Toothpaste and shaving cream",
+        "One of each, at most 100 g or 100 ml"
+       ],
+       [
+        "Duty-free from an international leg",
+        "Kept only if you stay in the same airport’s secure area, show the receipt, keep the sealed bag intact and pass screening; if you leave the secure area, check it"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Not named:</strong> the notice does not say perfume by name when it lists the cosmetics exception."
+     ]
+    },
     {
      "h": "🧴 What China Southern says about hairspray and aerosols",
      "p": "From the China Southern carry-on baggage FAQ, questions 6 and 10 (read in full on 17 November 2026 from a full-page copy pasted by the user).",
@@ -15630,62 +15727,30 @@
        [
         "Hairspray in the cabin",
         "No: the FAQ answers \"Can I board with hairspray?\" with NO"
-       ],
-       [
-        "Liquids, gels and aerosols in the cabin",
-        "Containers of a maximum of 100 ml in one transparent resealable bag of at most 1 litre, one bag per passenger"
-       ],
-       [
-        "Container larger than 100 ml, even if not full",
-        "Not allowed in the cabin; it goes in checked baggage"
        ]
       ]
      },
      "list": [
-      "<strong>Not on the page:</strong> a quantity limit for perfume in checked baggage, and whether a perfume of 100 ml or less is accepted when hairspray is refused. The IATA table below is the industry rule, not China Southern wording. Confirm with China Southern before you fly."
+      "<strong>Not on the pages we read:</strong> a China Southern quantity limit for perfume in checked baggage."
      ]
     },
     {
-     "h": "🧴 What the industry rule says about perfume and aerosols on China Southern",
-     "p": "IATA, the airline industry body. Airports and customs can add stricter limits.",
-     "table": {
-      "head": [
-       "Question",
-       "IATA rule"
-      ],
-      "rows": [
-       [
-        "What it covers",
-        "Non-radioactive medicinal or toiletry articles including aerosols, such as hair sprays, perfumes, colognes and medicines containing alcohol, and non-flammable, non-toxic aerosols for sporting or home use"
-       ],
-       [
-        "Where",
-        "Permitted in carry-on and in checked baggage, without operator approval"
-       ],
-       [
-        "Total",
-        "Not more than 2 kg or 2 L in total"
-       ],
-       [
-        "Each article",
-        "Not more than 0.5 kg or 0.5 L"
-       ],
-       [
-        "Aerosol valves",
-        "Release valves must be protected by a cap or other suitable means"
-       ],
-       [
-        "In your cabin bag on China Southern",
-        "Security liquid limits also apply: China Southern allows liquids, gels and aerosols in the cabin only in containers of a maximum of 100 ml, in one resealable transparent bag of at most 1 litre per passenger."
-       ]
-      ]
-     }
+     "h": "Checked-bag and per-bottle limits",
+     "p": "Industry guidance from IATA&rsquo;s 2026 dangerous goods table, not China Southern wording: perfume, colognes and toiletry aerosols are permitted in cabin and checked bags without airline approval, up to 0.5 kg or 0.5 L for each article and 2 kg or 2 L altogether, with aerosol valves capped."
     }
    ],
    "sources": [
     [
+     "https://www.csair.com/h5/cn/haiwai/asia/Seoul/1al3mc82p5km4.shtml",
+     "China Southern &mdash; Baggage guide: banned and restricted items, liquids (in Chinese)"
+    ],
+    [
      "https://www.csair.com/sg/en/tourguide/faq/baggage/ssxdxlxz.shtml",
      "China Southern &mdash; Carry-on baggage FAQ"
+    ],
+    [
+     "http://www.caac.gov.cn/INDEX/HLFW/HKLXCS/202303/t20230316_217597.html",
+     "Civil Aviation Administration of China &mdash; Baggage rules (in Chinese)"
     ],
     [
      "https://www.iata.org/contentassets/6fea26dd84d24b26a7a1fd5788561d6e/dgr-67-en-2.3.a.pdf",
@@ -15693,7 +15758,7 @@
     ]
    ],
    "keepSchema": true,
-   "checked": "17 November 2026",
+   "checked": "27 November 2026",
    "unofficial": false
   },
   "power": {
@@ -18921,31 +18986,66 @@
    "unofficial": true
   },
   "alcohol": {
-   "answer": "Middle East Airlines's own page is blocked to us (Cloudflare 403). The industry IATA limit is 5 L per person for drinks above 24% up to 70%; entering Lebanon, Lebanese Customs allows people aged 18 and over 2 L of spirits or 4 L of any other drink.",
+   "answer": "Middle East Airlines lists alcoholic drinks of up to 70% alcohol by volume, 5 L in total per person, as allowed in hand and checked baggage, and asks you to check the destination's allowance when booking. Its page also caps liquid containers in hand baggage at 100 ml. Entering Lebanon, adults may bring 2 L of spirits or 4 L of another drink.",
    "sections": [
     {
-     "h": "🍷 What the industry rule says about alcohol on MEA",
-     "p": "IATA, the airline industry body. Airports and customs can add stricter limits. Full table: <a href=\"/plane/alcohol/\">alcohol on a plane</a>.",
+     "h": "🍷 What MEA says about alcohol in your bags",
+     "p": "From MEA&rsquo;s own &ldquo;Restricted Items&rdquo; page, read 27 November 2026 in a copy archived on 26 September 2024; the live site refuses our reader.",
      "table": {
       "head": [
-       "Question",
-       "IATA rule"
+       "Point",
+       "MEA rule"
       ],
       "rows": [
        [
-        "Up to 24% alcohol by volume",
-        "Not subject to any restrictions"
+        "Strength",
+        "Not more than 70% alcohol by volume"
        ],
        [
-        "More than 24% and up to 70%",
-        "Retail packaging, receptacles not exceeding 5 L, total net quantity 5 L per person"
+        "Quantity",
+        "5 L in total per person"
        ],
        [
-        "Cabin bag at security",
-        "Liquid limits also apply at the checkpoint; see the liquids rule for Middle East Airlines"
+        "Hand baggage",
+        "Yes, with the remark to check at booking the quantity allowed at your destination"
+       ],
+       [
+        "Checked baggage",
+        "Yes, with the same remark"
+       ],
+       [
+        "Liquid containers in hand baggage",
+        "At most 100 ml, in one clear zip bag of up to 1 litre, shown separately at security"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Packing a bottle from home:</strong> because of the 100 ml line on the same page, a full-size bottle belongs in checked baggage."
+     ]
+    },
+    {
+     "h": "🧾 Drinking on board MEA",
+     "p": "From MEA&rsquo;s conditions of carriage, read 27 November 2026 in a copy archived on 23 September 2024.",
+     "table": {
+      "head": [
+       "Case",
+       "What MEA may do"
+      ],
+      "rows": [
+       [
+        "Impaired by alcohol before flying",
+        "Refuse carriage where your state causes discomfort to others or a hazard or risk"
+       ],
+       [
+        "Ignoring crew instructions on alcohol",
+        "Take measures including restraint, disembark you, refuse onward carriage; offences on board may be prosecuted"
        ]
       ]
      }
+    },
+    {
+     "h": "How the industry table compares",
+     "p": "IATA&rsquo;s 2026 dangerous goods table, industry guidance, leaves drinks up to 24% unrestricted and applies its 5 L per person to those above 24% and up to 70%, in retail packaging. MEA&rsquo;s page words its 5 L for anything up to 70%, so plan on MEA&rsquo;s figure."
     },
     {
      "h": "What customs says about bringing alcohol into Lebanon (Middle East Airlines's home country)",
@@ -18954,17 +19054,25 @@
    ],
    "sources": [
     [
-     "https://www.iata.org/contentassets/6fea26dd84d24b26a7a1fd5788561d6e/dgr-67-en-2.3.a.pdf",
-     "IATA &mdash; Dangerous Goods Regulations, Table 2.3.A (67th edition, 1 January 2026)"
+     "https://www.mea.com.lb/english/traveler-info/baggage-info/restricted-items",
+     "Middle East Airlines &mdash; Restricted items"
+    ],
+    [
+     "https://www.mea.com.lb/english/plan-and-book/legal-notices/conditions-of-carriage",
+     "Middle East Airlines &mdash; Conditions of carriage"
     ],
     [
      "http://www.customs.gov.lb/Page.aspx?Item_Id=6",
      "Lebanese Customs: Traveller's guide (Arabic)"
+    ],
+    [
+     "https://www.iata.org/contentassets/6fea26dd84d24b26a7a1fd5788561d6e/dgr-67-en-2.3.a.pdf",
+     "Unofficial source: IATA &mdash; Dangerous Goods Regulations, Table 2.3.A (67th edition, 1 January 2026)"
     ]
    ],
    "keepSchema": true,
-   "checked": "23 November 2026",
-   "unofficial": true
+   "checked": "27 November 2026",
+   "unofficial": false
   },
   "perfume": {
    "answer": "Middle East Airlines's own rule could not be read. The IATA limit is 0.5 L or 0.5 kg per article and 2 L or 2 kg in total; the table below has the details.",

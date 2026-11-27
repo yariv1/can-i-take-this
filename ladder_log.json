@@ -1037,7 +1037,8 @@
  "airline/ethiopian-airlines/alcohol": {
   "official": [
    "tried 2026-11-16: ethiopianairlines.com restricted-items/liquids page: connection closed, not read",
-   "read 2026-11-24: https://www.ethiopianairlines.com/uk/information/baggage-information/restricted-items (no alcohol-beverage rule found)"
+   "read 2026-11-24: https://www.ethiopianairlines.com/uk/information/baggage-information/restricted-items (no alcohol-beverage rule found)",
+   "read 2026-11-27: conditions of carriage, Addis Ababa lounges and restricted items pages, https://www.ethiopianairlines.com/us/information/rules-and-regulations/conditions-of-carriage https://www.ethiopianairlines.com/us/services/services-at-the-airport/lounges-at-addis-ababa https://www.ethiopianairlines.com/uk/information/baggage-information/restricted-items"
   ],
   "reliable": [
    "IATA Dangerous Goods Regulations, Table 2.3.A (67th edition, 1 January 2026): read, already on the page",
@@ -1046,7 +1047,7 @@
   "other": [
    "none needed: step 2a (IATA) answered the question"
   ],
-  "date": "2026-11-24"
+  "date": "2026-11-27"
  },
  "airline/egyptair/alcohol": {
   "official": [
@@ -1813,15 +1814,18 @@
  "country/lithuania/tobacco": {
   "official": [
    "read 2026-11-23: Lithuanian Customs \"Coming from third countries\" page (muitine.lrv.lt/en, via Wayback copy; live site 403)",
-   "tried 2026-11-26: e-seimas consolidated tobacco control law PDF HTTP 403"
+   "tried 2026-11-26: e-seimas consolidated tobacco control law PDF HTTP 403",
+   "tried 2026-11-27: e-seimas consolidated law, browser pane blocked by Cloudflare (403)"
   ],
   "reliable": [
-   "read: Travel Doc customs information page for Lithuania (infopages.traveldoc.aero)"
+   "read: Travel Doc customs information page for Lithuania (infopages.traveldoc.aero)",
+   "read 2026-11-27: LRT.lt 2025-06-11, https://www.lrt.lt/en/news-in-english/19/2587120/lithuanian-parliament-rejects-proposal-to-raise-tobacco-purchase-age-to-21",
+   "read 2026-11-27: English copy of Law I-1143 (to 18 October 2018), https://assets.tobaccocontrollaws.org/uploads/legislation/Lithuania/Lithuania-TC-Law.pdf"
   ],
   "other": [
    "none needed: step 2a answered the question"
   ],
-  "date": "2026-11-26"
+  "date": "2026-11-27"
  },
  "country/malta/alcohol": {
   "official": [
@@ -13042,7 +13046,8 @@
   "official": [
    "tried 2026-11-23: mea.com.lb baggage pages return Cloudflare 403 in curl and the browser pane",
    "read 2026-11-23: Lebanese Customs traveller's guide for the Lebanon section",
-   "tried 2026-11-24: beirutairport.gov.lb page 24 (duty-free shop description only, no security rule); MEA site geo-blocked"
+   "tried 2026-11-24: beirutairport.gov.lb page 24 (duty-free shop description only, no security rule); MEA site geo-blocked",
+   "read 2026-11-27: MEA restricted items (Wayback 20240926161951) and conditions of carriage (Wayback 20240923120820), https://www.mea.com.lb/english/traveler-info/baggage-info/restricted-items https://www.mea.com.lb/english/plan-and-book/legal-notices/conditions-of-carriage"
   ],
   "reliable": [
    "searched 2026-11-23: ifly.com 403, seat.guru no liquid/alcohol text; baggagepolicies.com (third party) read",
@@ -13051,7 +13056,7 @@
   "other": [
    "none: no MEA-specific alcohol or perfume rule published anywhere read; IATA rule kept"
   ],
-  "date": "2026-11-24"
+  "date": "2026-11-27"
  },
  "airline/avianca/alcohol": {
   "reliable": [
@@ -13838,11 +13843,12 @@
  },
  "airline/egyptair/perfume-aerosols": {
   "official": [
-   "https://www.egyptair.com/en/fly/baggage/Pages/restricted-items.aspx (full page pasted by user 2026-11-17)"
+   "https://www.egyptair.com/en/fly/baggage/Pages/restricted-items.aspx (full page pasted by user 2026-11-17)",
+   "read 2026-11-27: EgyptAir carry-on baggage page (Wayback 20260930154024; live page Cloudflare 403 in curl and pane), https://www.egyptair.com/en/fly/baggage/Pages/carry-on-baggage.aspx"
   ],
   "reliable": [],
   "other": [],
-  "date": "2026-11-17"
+  "date": "2026-11-27"
  },
  "airline/azul/power-bank": {
   "official": [
@@ -13891,13 +13897,16 @@
  },
  "airline/china-southern/perfume-aerosols": {
   "official": [
-   "https://www.csair.com/sg/en/tourguide/faq/baggage/ssxdxlxz.shtml (questions 6 and 10, full page pasted by user 2026-11-17)"
+   "https://www.csair.com/sg/en/tourguide/faq/baggage/ssxdxlxz.shtml (questions 6 and 10, full page pasted by user 2026-11-17)",
+   "read 2026-11-27: China Southern baggage guide (Chinese), https://www.csair.com/h5/cn/haiwai/asia/Seoul/1al3mc82p5km4.shtml",
+   "read 2026-11-27: CAAC baggage page (Chinese), http://www.caac.gov.cn/INDEX/HLFW/HKLXCS/202303/t20230316_217597.html",
+   "tried 2026-11-27: csair.com/tw liquids page HTTP 404"
   ],
   "reliable": [],
   "other": [
    "IATA table kept as unofficial"
   ],
-  "date": "2026-11-17"
+  "date": "2026-11-27"
  },
  "airline/air-canada/power-bank": {
   "official": [

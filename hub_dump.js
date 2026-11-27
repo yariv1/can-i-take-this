@@ -6,6 +6,6 @@ for(const c of process.argv.slice(2)){
   const p='country/'+c+'/'+cat+'/index.html';if(!fs.existsSync(p))continue;
   let t=txt(p);const i=t.indexOf('ENTERING');t=t.slice(i>=0?i:0);
   const j=t.indexOf('Helpful sources');
-  console.log('['+cat+'] '+t.slice(0,j>0?Math.min(j,900):900).replace(/Some rules apply Read the rule below\.|Allowed Usually fine/,'').trim());
+  console.log('['+cat+'] '+t.slice(0,j>0?Math.min(j,900):900).replace(/Allowed Usually fine/,'').trim());
  }
 }
