@@ -1344,3 +1344,34 @@ No GSC requests made yet.
 - https://canitakethis.co/country/ukraine/cash/
 
 No GSC requests made yet.
+
+## Deploy a3d4376d59 (2026-11-27)
+- https://canitakethis.co/airline/air-china/perfume-aerosols/
+- https://canitakethis.co/airline/arkia/power-bank/
+- https://canitakethis.co/airline/avianca/vape-e-cigarette/
+- https://canitakethis.co/airline/copa-airlines/vape-e-cigarette/
+- https://canitakethis.co/airline/egyptair/alcohol/
+- https://canitakethis.co/airline/eurowings/medication/
+- https://canitakethis.co/airline/kenya-airways/medication/
+- https://canitakethis.co/airline/korean-air/power-bank/
+- https://canitakethis.co/airline/middle-east-airlines/power-bank/
+- https://canitakethis.co/airline/south-african-airways/alcohol/
+- https://canitakethis.co/airline/south-african-airways/vape-e-cigarette/
+- https://canitakethis.co/app/
+- https://canitakethis.co/country/bahrain/cash/
+- https://canitakethis.co/country/colombia/vaping/
+- https://canitakethis.co/country/croatia/vaping/
+- https://canitakethis.co/country/czechia/vaping/
+- https://canitakethis.co/country/ethiopia/vaping/
+- https://canitakethis.co/country/indonesia/vaping/
+- https://canitakethis.co/country/japan/
+- https://canitakethis.co/country/japan/vaping/
+- https://canitakethis.co/country/jordan/plants-seeds/
+- https://canitakethis.co/country/lebanon/vaping/
+- https://canitakethis.co/country/malta/vaping/
+- https://canitakethis.co/country/panama/vaping/
+- https://canitakethis.co/country/philippines/cash/
+- https://canitakethis.co/country/philippines/vaping/
+- https://canitakethis.co/
+
+No GSC requests made yet.
