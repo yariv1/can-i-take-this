@@ -978,6 +978,18 @@ function verdict(){
         if(ml<=100)return EI('go','Yes - carry it on.',[ml+' ml is allowed from Dublin, Shannon and Cork.','At Cork, put it in one clear resealable 1-litre bag and show it at security. Dublin no longer needs the bag.',eiX]);
         return EI('warn','Depends on your departure airport.',['From Dublin or Shannon: containers up to 2 litres can go in your hand luggage.','From Cork: 100 ml is still the limit, so pack it in your checked bag.','Flying back or connecting: the airport you leave from sets the limit, and many still use 100 ml.',eiX]);
       }
+      if(airline==='Ryanair'&&carry){
+        var frSrc=[{label:'Ryanair — What liquids are permitted on board?',url:'https://help.ryanair.com/hc/en-gb/articles/12890779032209-What-liquids-are-permitted-on-board'}].concat(cat==='alcohol'?[{label:'Ryanair — Permitted items (duty-free)',url:'https://help.ryanair.com/hc/en-gb/articles/12890774807569-What-items-are-permitted-on-board'},{label:'Ryanair — Prohibited items',url:'https://help.ryanair.com/hc/en-gb/articles/12890928594705-What-items-are-prohibited-on-board-and-in-Check-in-Bags'}]:[],
+          [{label:'Dublin Airport — Security FAQs',url:'https://www.dublinairport.com/at-the-airport/security/security-faqs'},
+          {label:'Shannon Airport — 100 ml limit lifted, 7 September 2026',url:'https://www.snnairportgroup.ie/2026/shannon-airport-announces-enhancement-to-hand-luggage-rules/'},
+          {label:'Ireland West Airport (Knock) — Security',url:'https://www.irelandwestairport.com/at-the-airport/security-customs/'},
+          {label:'London Stansted Airport — Security',url:'https://www.stanstedairport.com/help/security/'}]);
+        function FR(st,hd,ls){var r=R(st,hd,ls.filter(Boolean),"From Ryanair's help centre and the Dublin, Shannon, Knock and Stansted airport pages, checked 27 November 2026. Rules change, so confirm before you fly.");r.source=frSrc[0];r.sources=frSrc;r.airportMix=true;return r;}
+        var frX=cat==='perfume'?'Perfume and aerosols count as liquids under the same rule.':(cat==='alcohol'?'Alcohol over 70% ABV is banned on Ryanair. A duty-free bag is allowed in the cabin with your cabin bags.':'Liquid medicine for the flight, and baby food and milk for an infant, may go over the limit.');
+        if(ml===null)return FR('warn','Depends on your departure airport.',['Most airports, London Stansted among them: 100 ml or less per container, in one clear resealable bag of up to 1 litre.','Dublin, Shannon and Knock: airport security takes containers up to 2 litres.',"Ryanair's own liquids page still states 100 ml and points to the current EU security rules.",frX]);
+        if(ml<=100)return FR('go','Yes - carry it on.',[ml+" ml is within Ryanair's 100 ml limit.",'Use one transparent resealable bag of up to 20 x 20 cm and 1 litre. Security at Dublin, Shannon and Knock no longer asks for the bag.',frX]);
+        return FR('warn','Depends on your departure airport.',['Most airports, London Stansted among them: not through security, so pack it in your checked bag.','From Dublin, Shannon or Knock: security allows containers up to 2 litres, although the Ryanair liquids page still states 100 ml.','On the way back, the airport you leave from sets the limit.',frX]);
+      }
       var LR=cat==='liquids'?LIQ_RULES[airline]:null;
       if(LR){
         var lsrc='From '+airline+"'s own published rules, checked October 2026. Rules change, so confirm with the airline before you fly.";

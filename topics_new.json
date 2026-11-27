@@ -20332,11 +20332,11 @@
  },
  "Ryanair": {
   "liquids": {
-   "answer": "Ryanair follows EU security rules: each liquid container at most 100 ml, all in one transparent resealable bag of up to 20 x 20 cm and 1 litre, taken out of your bag at security.",
+   "answer": "Ryanair's liquids page states 100 ml per container, all in one transparent resealable bag of up to 20 x 20 cm and 1 litre, and ties this to the current EU security rules. Security at some airports now takes more: Dublin, Shannon and Knock allow containers of up to 2 litres, while Cork and London Stansted still apply 100 ml.",
    "sections": [
     {
      "h": "💧 What Ryanair says about liquids",
-     "p": "From the Ryanair help centre article \"What liquids are permitted on board?\" (read in a copy of the page saved on 12 May 2026).",
+     "p": "From the Ryanair help centre article \"What liquids are permitted on board?\", updated 26 November 2026 and read 27 November 2026.",
      "table": {
       "head": [
        "Question",
@@ -20366,18 +20366,65 @@
        [
         "Liquid medicine",
         "As much as you need for your flight, outside the transparent bag; keep it ready for inspection"
+       ],
+       [
+        "Duty-free",
+        "The duty-free bag is permitted in the cabin along with your cabin bags (Ryanair, \"What items are permitted on board?\")"
        ]
       ]
      },
      "list": [
-      "<strong>Not on the page:</strong> the article does not cover duty-free liquids or the rule for checked baggage. It was read in a dated copy, so check the live page before you fly."
+      "<strong>Not on the page:</strong> the liquids article names no airport with a higher limit and gives no rule for checked baggage."
+     ]
+    },
+    {
+     "h": "The airport you fly Ryanair from can change the limit",
+     "p": "From each airport&rsquo;s own security page and the UK government&rsquo;s page on liquids in hand luggage, read 27 November 2026. These are airport and government rules, not Ryanair wording.",
+     "table": {
+      "head": [
+       "Departing from",
+       "At security"
+      ],
+      "rows": [
+       [
+        "Dublin",
+        "Any number of containers, none above 2 litres"
+       ],
+       [
+        "Shannon",
+        "Up to 2 litres per container since 7 September 2026"
+       ],
+       [
+        "Ireland West (Knock)",
+        "Up to 2 litres per container, no clear bag needed"
+       ],
+       [
+        "Cork",
+        "Under 100 ml, in one clear resealable bag of at most 1 litre"
+       ],
+       [
+        "London Stansted",
+        "Each liquid under 100 ml (page last updated September 2026)"
+       ],
+       [
+        "Other UK airports",
+        "100 ml at most airports; the UK government says some may allow up to 2 litres"
+       ],
+       [
+        "Stansted, medicine over 100 ml",
+        "Carry proof that it is prescribed to you"
+       ]
+      ]
+     },
+     "list": [
+      "<strong>Round trips:</strong> the limit is set where you are screened, so a large bottle that left Dublin may not get through on the way back."
      ]
     }
    ],
    "faq": [
     [
      "How much liquid can I take in my Ryanair hand baggage?",
-     "Containers of at most 100 ml, all in one transparent resealable bag of up to 20 x 20 cm and 1 litre."
+     "Ryanair states containers of at most 100 ml in one transparent resealable bag of up to 20 x 20 cm and 1 litre. Dublin, Shannon and Knock security allow containers up to 2 litres; Cork and London Stansted do not."
     ],
     [
      "Can I take baby milk on Ryanair?",
@@ -20388,18 +20435,70 @@
     [
      "https://help.ryanair.com/hc/en-gb/articles/12890779032209-What-liquids-are-permitted-on-board",
      "Ryanair &mdash; What liquids are permitted on board?"
+    ],
+    [
+     "https://help.ryanair.com/hc/en-gb/articles/12890774807569-What-items-are-permitted-on-board",
+     "Ryanair &mdash; What items are permitted on board?"
+    ],
+    [
+     "https://www.dublinairport.com/at-the-airport/security/security-faqs",
+     "Dublin Airport &mdash; Security FAQs"
+    ],
+    [
+     "https://www.snnairportgroup.ie/2026/shannon-airport-announces-enhancement-to-hand-luggage-rules/",
+     "Shannon Airport Group &mdash; Enhancement to hand luggage rules, 7 September 2026"
+    ],
+    [
+     "https://www.irelandwestairport.com/at-the-airport/security-customs/",
+     "Ireland West Airport &mdash; Security and customs"
+    ],
+    [
+     "https://www.corkairport.com/at-the-airport/airport-security/how-to-prepare-for-security",
+     "Cork Airport &mdash; How to prepare for security"
+    ],
+    [
+     "https://www.stanstedairport.com/help/security/",
+     "London Stansted Airport &mdash; Security"
+    ],
+    [
+     "https://www.gov.uk/hand-luggage-restrictions/liquids",
+     "GOV.UK &mdash; Hand luggage restrictions: liquids"
     ]
    ],
    "keepSchema": true,
-   "checked": "18 October 2026",
+   "checked": "27 November 2026",
    "unofficial": false
   },
   "perfume": {
-   "answer": "Ryanair's help centre did not open for us (HTTP 403), so this follows the rules that apply on its flights: on flights leaving EU airports each container in the cabin is limited to 100 ml in one 1-litre bag, and at UK airports the Civil Aviation Authority limits toiletry aerosols such as hairspray and perfume to 0.5 L each and 2 L in total.",
+   "answer": "Ryanair puts liquids, aerosols and gels under the current EU security rules and states 100 ml per container in one 1-litre bag, so that is the figure for perfume at most of its airports. Security at Dublin, Shannon and Knock takes containers up to 2 litres, and on UK flights toiletry sprays and perfume are also capped at 0.5 L each and 2 L in total.",
    "sections": [
     {
+     "h": "🧴 Perfume on Ryanair: the airline's line and the airport's line",
+     "p": "From Ryanair&rsquo;s liquids article (updated 26 November 2026) and the airport security pages, read 27 November 2026.",
+     "table": {
+      "head": [
+       "Who says it",
+       "Perfume in hand luggage"
+      ],
+      "rows": [
+       [
+        "Ryanair",
+        "Liquids, aerosols and gels: no more than 100 ml per item, in the 1-litre bag"
+       ],
+       [
+        "Dublin, Shannon and Knock security",
+        "Containers up to 2 litres go through"
+       ],
+       [
+        "Cork and London Stansted security",
+        "100 ml remains the limit"
+       ]
+      ]
+     }
+    },
+    {
      "h": "🧴 What EU security rules say about perfume and aerosols in the cabin",
-     "p": "From the EU Your Europe page on luggage restrictions, read 17 November 2026. Ryanair is an Irish airline flying mainly from EU airports, but this is the EU rule, not a Ryanair page.",
+     "p": "From the EU Your Europe page on luggage restrictions, read 17 November 2026. It is the general EU rule, which Ryanair's own liquids page points to; Dublin, Shannon and Knock security now allow larger containers.",
      "table": {
       "head": [
        "Question",
@@ -20456,13 +20555,41 @@
        ],
        [
         "Cabin liquids over 100 ml",
-        "Not permitted through the security point"
+        "Not permitted through the security point, as the CAA page words it; the UK government says some airports may allow up to 2 litres"
        ]
       ]
      }
     }
    ],
    "sources": [
+    [
+     "https://help.ryanair.com/hc/en-gb/articles/12890779032209-What-liquids-are-permitted-on-board",
+     "Ryanair &mdash; What liquids are permitted on board?"
+    ],
+    [
+     "https://www.dublinairport.com/at-the-airport/security/security-faqs",
+     "Dublin Airport &mdash; Security FAQs"
+    ],
+    [
+     "https://www.snnairportgroup.ie/2026/shannon-airport-announces-enhancement-to-hand-luggage-rules/",
+     "Shannon Airport Group &mdash; Enhancement to hand luggage rules, 7 September 2026"
+    ],
+    [
+     "https://www.irelandwestairport.com/at-the-airport/security-customs/",
+     "Ireland West Airport &mdash; Security and customs"
+    ],
+    [
+     "https://www.corkairport.com/at-the-airport/airport-security/how-to-prepare-for-security",
+     "Cork Airport &mdash; How to prepare for security"
+    ],
+    [
+     "https://www.stanstedairport.com/help/security/",
+     "London Stansted Airport &mdash; Security"
+    ],
+    [
+     "https://www.gov.uk/hand-luggage-restrictions/liquids",
+     "GOV.UK &mdash; Hand luggage restrictions: liquids"
+    ],
     [
      "https://www.europa.eu/youreurope/citizens/travel/carry/luggage-restrictions/index_en.htm",
      "Unofficial source: EU Your Europe &mdash; Luggage restrictions"
@@ -20473,8 +20600,8 @@
     ]
    ],
    "keepSchema": true,
-   "checked": "17 November 2026",
-   "unofficial": true
+   "checked": "27 November 2026",
+   "unofficial": false
   }
  },
  "Air Europa": {

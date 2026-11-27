@@ -13943,7 +13943,9 @@
  },
  "airline/ryanair/perfume-aerosols": {
   "official": [
-   "tried 2026-11-17: help.ryanair.com permitted items section HTTP 403"
+   "tried 2026-11-17: help.ryanair.com permitted items section HTTP 403",
+   "read 2026-11-27: Ryanair liquids article updated 26 November 2026 (help centre article feed), https://help.ryanair.com/hc/en-gb/articles/12890779032209-What-liquids-are-permitted-on-board",
+   "read 2026-11-27: Dublin, Shannon, Knock, Cork and Stansted airport pages, https://www.dublinairport.com/at-the-airport/security/security-faqs https://www.snnairportgroup.ie/2026/shannon-airport-announces-enhancement-to-hand-luggage-rules/ https://www.irelandwestairport.com/at-the-airport/security-customs/ https://www.corkairport.com/at-the-airport/airport-security/how-to-prepare-for-security https://www.stanstedairport.com/help/security/"
   ],
   "reliable": [
    "read 2026-11-17: EU Your Europe luggage restrictions; UK CAA items allowed in baggage"
@@ -13951,7 +13953,7 @@
   "other": [
    "none needed: regulator sources read"
   ],
-  "date": "2026-11-17"
+  "date": "2026-11-27"
  },
  "airline/emirates/perfume-aerosols": {
   "official": [
@@ -15918,5 +15920,21 @@
    "read 2026-11-26: Czech government portal, specially protected species, https://portal.gov.cz/sluzby-vs/vyjimky-ze-zakazu-u-zvlaste-chranenych-druhu-S7529"
   ],
   "date": "2026-11-26"
+ },
+ "airline/ryanair/liquids": {
+  "official": [
+   "read 2026-11-27: Ryanair liquids article updated 26 November 2026 (help centre article feed), https://help.ryanair.com/hc/en-gb/articles/12890779032209-What-liquids-are-permitted-on-board",
+   "read 2026-11-27: Dublin, Shannon, Knock, Cork and Stansted airport pages, https://www.dublinairport.com/at-the-airport/security/security-faqs https://www.snnairportgroup.ie/2026/shannon-airport-announces-enhancement-to-hand-luggage-rules/ https://www.irelandwestairport.com/at-the-airport/security-customs/ https://www.corkairport.com/at-the-airport/airport-security/how-to-prepare-for-security https://www.stanstedairport.com/help/security/",
+   "read 2026-11-27: GOV.UK liquids page, https://www.gov.uk/hand-luggage-restrictions/liquids"
+  ],
+  "date": "2026-11-27"
+ },
+ "airline/ryanair/alcohol": {
+  "official": [
+   "read 2026-11-27: Ryanair liquids article updated 26 November 2026 (help centre article feed), https://help.ryanair.com/hc/en-gb/articles/12890779032209-What-liquids-are-permitted-on-board",
+   "read 2026-11-27: Dublin, Shannon, Knock, Cork and Stansted airport pages, https://www.dublinairport.com/at-the-airport/security/security-faqs https://www.snnairportgroup.ie/2026/shannon-airport-announces-enhancement-to-hand-luggage-rules/ https://www.irelandwestairport.com/at-the-airport/security-customs/ https://www.corkairport.com/at-the-airport/airport-security/how-to-prepare-for-security https://www.stanstedairport.com/help/security/",
+   "read 2026-11-27: Ryanair permitted and prohibited items articles, https://help.ryanair.com/hc/en-gb/articles/12890774807569-What-items-are-permitted-on-board https://help.ryanair.com/hc/en-gb/articles/12890928594705-What-items-are-prohibited-on-board-and-in-Check-in-Bags"
+  ],
+  "date": "2026-11-27"
  }
 }
