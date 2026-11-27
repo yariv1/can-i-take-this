@@ -1277,3 +1277,18 @@ Batch 2 pages. No GSC requests made yet.
 - https://canitakethis.co/
 
 No GSC requests made yet.
+
+## Deploy d6b446b1a7 (2026-11-27)
+- https://canitakethis.co/airline/air-arabia/medication/
+- https://canitakethis.co/airline/air-china/medication/
+- https://canitakethis.co/airline/gulf-air/medication/
+- https://canitakethis.co/airline/ita-airways/power-bank/
+- https://canitakethis.co/airline/lufthansa/perfume-aerosols/
+- https://canitakethis.co/airline/lufthansa/power-bank/
+- https://canitakethis.co/country/belgium/cash/
+- https://canitakethis.co/country/cyprus/plants-seeds/
+- https://canitakethis.co/country/indonesia/alcohol/
+- https://canitakethis.co/country/italy/plants-seeds/
+- https://canitakethis.co/country/morocco/alcohol/
+
+No GSC requests made yet.
