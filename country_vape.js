@@ -71,6 +71,9 @@ function build(c) {
     lead = RPT + cn + YR + ' lists "' + A.g + '" for e-cigarettes. ' + indoorLine(cn, D) + ' It does not mention importing, so check the customs rules for travellers before you pack one.';
     travel = 'WHO lists "' + A.g + '" for ' + cn + ' but does not list an import ban. It also publishes no traveller allowance, so check with the customs authority.';
   }
+  const XO = EXTRA[c.code] || {}; // newer national law than the WHO table, written in vape_extra.json
+  if (XO.lead) lead = XO.lead;
+  if (XO.travel) travel = XO.travel;
   const rows = [
     ['General bans on e-cigarettes', A.g + (D.ennds_only_ban ? ' (WHO also lists a ban for non-nicotine e-cigarettes)' : '')],
     ...(N25 ? [] : [['National laws regulate e-cigarettes', D.laws]]),
@@ -81,7 +84,7 @@ function build(c) {
     ['Is vaping legal in ' + cn + '?', lead],
     ['Can I bring a vape to ' + cn + '?', travel],
     ['Can I vape in public places in ' + cn + '?', indoorLine(cn, D)],
-    ['What is the minimum age to buy a vape in ' + cn + '?', D.minAge ? 'WHO reports a minimum age of sale of ' + D.minAge + ' for e-cigarettes in ' + cn + '.' : 'WHO\'s profile does not report a minimum age of sale for e-cigarettes in ' + cn + '.']
+    ['What is the minimum age to buy a vape in ' + cn + '?', XO.age ? XO.age : D.minAge ? 'WHO reports a minimum age of sale of ' + D.minAge + ' for e-cigarettes in ' + cn + '.' : 'WHO\'s profile does not report a minimum age of sale for e-cigarettes in ' + cn + '.']
   ];
   const X = EXTRA[c.code];
   const faqSchema = faq.slice();
@@ -90,6 +93,10 @@ function build(c) {
   if (D.note) list.push('<strong>WHO note:</strong> ' + esc(D.note));
   list.push('<strong>How old is this:</strong> WHO ' + (N25 ? '2025 report, 2024 data' : '2023 report, 2022 data') + '; laws change, so check the authority below.');
   if (OV) list.push('<strong>Indoor row out of date:</strong> a newer national rule on where you may vape is set out below.');
+  if (XO.lead) list.push('<strong>Ban row out of date:</strong> a newer national law is set out below.');
+  const whoLink = '<a href="' + D.pdf + '" target="_blank" rel="noopener noreferrer">WHO report on the global tobacco epidemic ' + (N25 ? '2025' : '2023') + ': country profile, ' + esc(cn) + '</a>';
+  if (XO.lead) list.push('Source: ' + whoLink);
+  if (XO.age) list.push('<strong>Age row out of date:</strong> a newer national age limit is set out below.');
   list.push('<strong>On the plane:</strong> airlines want vapes in the cabin, not checked baggage.');
   const html = '<div class="bd-wrap">' + CSS + '<p class="bd-lead"><strong>' + esc(lead) + '</strong></p>' +
     '<section class="bd-sec"><h2>🚭 What WHO reports for ' + esc(cn) + '</h2><p>From the WHO report on the global tobacco epidemic ' + (N25 ? '2025' : '2023') + ', country profile for ' + esc(cn) + ', table "Regulation of ENDS and ENNDS" (nicotine e-cigarettes).</p>' +
@@ -97,7 +104,7 @@ function build(c) {
     (X ? X.sections.map(sc => '<section class="bd-sec"><h2>' + sc.h + '</h2><p>' + esc(sc.p) + '</p>' + (sc.table ? table(sc.table) : '') + (sc.list ? '<ul>' + sc.list.map(x => '<li>' + x + '</li>').join('') + '</ul>' : '') + '</section>').join('') : '') +
     '<section class="bd-faq"><h2>❓ Quick answers</h2>' + faq.map(q => '<h3>' + esc(q[0]) + '</h3><p>' + esc(q[1]) + '</p>').join('') + '</section>' +
     '<p class="bd-chk">WHO profile read ' + (N25 ? READ25 : READ) + '. This is guidance, not a customs allowance: confirm with the customs authority of ' + esc(cn) + ' before you travel.</p>' +
-    '<div class="bd-src"><div class="h">✓ Official source</div><a href="' + D.pdf + '" target="_blank" rel="noopener noreferrer">WHO report on the global tobacco epidemic ' + (N25 ? '2025' : '2023') + ': country profile, ' + esc(cn) + '</a>' + (X ? X.src.map(u => '<a href="' + u[0] + '" target="_blank" rel="noopener noreferrer">' + esc(u[1]) + '</a>').join('') : '') + '</div></div>';
+    '<div class="bd-src"><div class="h">✓ Official source</div>' + (XO.lead ? '' : whoLink) + (X ? X.src.map(u => '<a href="' + u[0] + '" target="_blank" rel="noopener noreferrer">' + esc(u[1]) + '</a>').join('') : '') + '</div></div>';
   let ttl = 'Vaping in ' + cn + ' 2026: ' + status;
   if (ttl.length > 62) ttl = 'Vaping in ' + cn + ' 2026: ' + (A.none ? 'No General Ban' : A.hasImport ? 'Import Banned' : status);
   if (ttl.length > 62) ttl = 'Vaping in ' + cn + ' 2026: Is It Legal?';

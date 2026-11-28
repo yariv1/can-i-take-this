@@ -2203,6 +2203,18 @@
  "AT": {
   "sections": [
    {
+    "h": "🚭 Where you may not vape in Austria",
+    "p": "Unofficial source read 28 November 2026: jusline.at’s consolidated copy of the Tobacco and Non-Smoker Protection Act, sections 1, 12, 13 and 14, in German, translated by us; the government legal database did not open for us.",
+    "list": [
+     "The Act counts e-cigarettes and their liquids as related products, and its smoking bans apply to using them.",
+     "Covered: rooms used for teaching, meetings or school sport, places where children are looked after (outdoor areas included), multipurpose halls and festival tents.",
+     "Covered too: every guest area of restaurants, bars and cafés except open-air ones.",
+     "Public transport is included, and so is a private car carrying someone under 18.",
+     "The ban extends to other indoor public places, where a separate smoking room may be set up in generally accessible areas.",
+     "Using one where it is banned and signposted costs up to €100, or up to €1,000 for a repeat."
+    ]
+   },
+   {
     "h": "🛃 What Austrian customs says about tobacco and e-cigarettes",
     "p": "From the Austrian Federal Ministry of Finance (page \"Mitnahme von Tabakwaren aus anderen EU-Staaten\" on oesterreich.gv.at, updated 21 October 2026, read 22 November 2026) and its customs press release of 17 November 2025 on summer checks at Vienna airport. The ministry page lists tobacco and heated tobacco only; it does not name e-cigarettes or vape liquid.",
     "table": {
@@ -2301,9 +2313,17 @@
    [
     "What does WHO list for e-cigarette use in Austria?",
     "3.4% of adults currently use e-cigarettes (men 4.5%, women 2.2%), and 0.9% use them daily in the survey \"Repräsentativerhebung zum Substanzgebrauch, 2020\" (national, ages 15+)."
+   ],
+   [
+    "Can I vape in an Austrian restaurant or car?",
+    "Not in a restaurant’s indoor guest areas, and not in a private car with a passenger under 18, under the Act as reproduced on jusline.at."
    ]
   ],
   "src": [
+   [
+    "https://www.jusline.at/gesetz/tabakg/paragraf/12",
+    "Unofficial source: jusline.at: Austrian Tobacco and Non-Smoker Protection Act, §12"
+   ],
    [
     "https://www.oesterreich.gv.at/de/themen/eu_und_international/einfuhr-von-waren-nach-oesterreich-und-zoll/3/Seite.2960170",
     "Austrian Ministry of Finance - Mitnahme von Tabakwaren (oesterreich.gv.at)"
@@ -5774,6 +5794,17 @@
  "SA": {
   "sections": [
    {
+    "h": "⚖️ What Saudi Arabia’s anti-smoking law says about vaping",
+    "p": "Official source read 28 November 2026: the Anti-Smoking Law and its Implementing Regulations published by the Ministry of Health, in the Internet Archive copy because the ministry site did not open for us. It governs use and sale, not what customs lets you carry.",
+    "list": [
+     "Regulation 2.1 counts electronic smoking systems as smoking, so the law’s smoking bans cover vapes.",
+     "Banned places include mosques and their yards, government bodies, schools, hospitals and workplaces.",
+     "All public transport, airplanes included, plus bus and train stations and airports are covered, as are restaurants, cafés and fuel stations.",
+     "Smoking in a banned place carries a fine of SAR 200 (Article 14).",
+     "Where a smoking area is set aside, under-18s may not enter it."
+    ]
+   },
+   {
     "h": "📰 What Saudi press reports about customs and e-cigarettes",
     "p": "Less reliable source (press): Saudi Gazette / Okaz, 30 August 2020, and industry news site 2Firsts, 27 February 2023 (both read on 22 November 2026). The ZATCA (customs) pages could not be opened from here, so the figures are as reported and may have changed.",
     "table": {
@@ -5832,9 +5863,17 @@
    [
     "What does WHO list for e-cigarette use in Saudi Arabia?",
     "5.4% of adults currently use e-cigarettes (men 6.1%, women 4.7%) in the survey \"National Health Survey, 2023\" (national, ages 15+)."
+   ],
+   [
+    "Can I vape at a Saudi airport?",
+    "Airports are on the regulation’s list of banned places, and electronic smoking systems count as smoking; the fine in the law is SAR 200."
    ]
   ],
   "src": [
+   [
+    "https://www.moh.gov.sa/en/Ministry/Rules/Documents/Anti-Tobacco-Executive-Regulations.pdf",
+    "Saudi Ministry of Health: Anti-Smoking Law and Implementing Regulations"
+   ],
    [
     "https://www.2firsts.com/news/saudi-arabia-allows-limited-entry-of-e-cigarettes",
     "Less reliable source (press): 2Firsts - Saudi Arabia allows limited entry of e-cigarettes (2023)"
@@ -5848,6 +5887,17 @@
  },
  "SC": {
   "sections": [
+   {
+    "h": "📜 What Seychelles’ customs regulations say about e-cigarettes",
+    "p": "Official sources read 28 November 2026: the Customs Management (Prohibited and Restricted Goods) Regulations, 2023 (SI 87, Revenue Commission copy) and the Tobacco Control (Amendment) Bill, 2024 on the National Assembly site.",
+    "list": [
+     "The first schedule of prohibited goods bans non-tobacco products made to resemble tobacco, and expressly excludes electronic cigarettes, their e-liquids and cartridges.",
+     "The 2024 Bill described e-cigarettes as freely marketed and sold at the time, and proposed to regulate their import, supply and sale.",
+     "Under the Bill, someone importing devices or liquid for personal consumption would not have to meet its health-warning or flavour rules.",
+     "We found no text confirming that the Bill was passed.",
+     "This conflicts with the secondary profile further down, which calls imports banned."
+    ]
+   },
    {
     "h": "🛃 What Seychelles International Airport says about tobacco allowances",
     "p": "From the Seychelles International Airport page \"Customs: duty free allowances\" (airport operator, not a customs agency), read on 24 November 2026. It cites the Customs Management (Passenger Allowance) (Amendment) Regulations 2022 (SI 23 of 2022).",
@@ -5881,7 +5931,7 @@
    },
    {
     "h": "📰 What a secondary profile reports about e-cigarettes in Seychelles",
-    "p": "Less reliable source (secondary profile): the Global State of Tobacco Harm Reduction (GSTHR) country page, updated 16 November 2026 and read on 22 November 2026. It compiles other sources and is not a customs page. The official customs rule for travellers could not be read, so treat this as background and confirm with customs.",
+    "p": "Less reliable source (secondary profile): the Global State of Tobacco Harm Reduction (GSTHR) country page, updated 16 November 2026 and read on 22 November 2026. It compiles other sources and is not a customs page. Treat it as background: it is not an official Seychelles page.",
     "table": {
      "head": [
       "Point",
@@ -5905,10 +5955,7 @@
        "Check with the authorities before bringing anything"
       ]
      ]
-    },
-    "list": [
-     "<strong>Not read:</strong> any Seychelles Revenue Commission rule for travellers."
-    ]
+    }
    },
    {
     "h": "📊 How common vaping is in Seychelles, per the WHO survey figures",
@@ -5941,7 +5988,7 @@
   "faq": [
    [
     "Can I bring a vape to Seychelles?",
-    "A secondary profile (GSTHR) says e-cigarettes are banned in Seychelles, including import, and that personal-use import is reportedly not allowed (unverified). Do not pack a vape without checking with the authorities."
+    "The 2023 customs regulations leave e-cigarettes out of the ban on tobacco lookalikes, while the secondary profile GSTHR calls their import banned. Ask Seychelles customs before you pack one."
    ],
    [
     "What tobacco can I bring to Seychelles?",
@@ -5957,6 +6004,14 @@
    ]
   ],
   "src": [
+   [
+    "https://src.gov.sc/wp-content/uploads/2023/11/SI-87-Customs-Management-Prohibited-and-Restricted-Goods-Regulations-2023.pdf",
+    "Seychelles Revenue Commission: Prohibited and Restricted Goods Regulations, 2023 (SI 87)"
+   ],
+   [
+    "https://nationalassembly.sc/sites/default/files/2024-05/Bill%204%202024%20-%20Tobacco%20Control%20%28Amendment%29%20Bill%202024.pdf",
+    "National Assembly of Seychelles: Tobacco Control (Amendment) Bill, 2024"
+   ],
    [
     "https://seychellesairports.sc/pre-flight/customs",
     "Seychelles International Airport: Customs, duty free allowances"
@@ -6237,6 +6292,17 @@
  "LV": {
   "sections": [
    {
+    "h": "🔞 Latvia’s age limit for vapes is now 20",
+    "p": "Official source read 28 November 2026: LV portāls, the state publisher’s explanation of the amended law on tobacco and e-cigarettes (31 December 2024, in Latvian, translated by us).",
+    "list": [
+     "Since 1 January 2025 e-cigarettes and refill tanks may not be sold to or bought by anyone under 20.",
+     "An adult under 20 may not smoke or keep smoking products; buying or holding an e-cigarette at that age brings a warning or a fine of up to €15.",
+     "Drawing such a person into smoking or into using tobacco substitutes carries a fine of €35 to €700.",
+     "E-cigarette liquids with flavourings other than tobacco may no longer be placed on the market.",
+     "A shop employee who sells to someone under 20 faces €280 to €700."
+    ]
+   },
+   {
     "h": "🛃 What the Latvian State Revenue Service says about e-cigarette liquid",
     "p": "From the State Revenue Service (VID) page \"Travelling within the European Union\" (published 31 October 2022, read 19 November 2026). It covers duty-paid goods bought in another EU state; the page does not give a figure for travellers from outside the EU.",
     "table": {
@@ -6277,15 +6343,24 @@
    [
     "Can I order e-cigarettes online to Latvia?",
     "VID says buying tobacco products and e-cigarettes in online stores and receiving them by mail is prohibited."
+   ],
+   [
+    "Can a 19-year-old visitor vape in Latvia?",
+    "The law bars adults under 20 from keeping e-cigarettes, with a warning or a fine of up to €15; the explanation we read names no exception for visitors."
    ]
   ],
   "src": [
+   [
+    "https://lvportals.lv/skaidrojumi/371405-no-1-janvara-stajas-speka-smekesanas-ierobezojumi-lidz-20-gadu-vecumam-2025",
+    "LV portāls: age limit of 20 for smoking products from 1 January 2025 (in Latvian)"
+   ],
    [
     "https://www.vid.gov.lv/en/travelling-within-european-union",
     "Latvian State Revenue Service - Travelling within the European Union"
    ]
   ],
-  "keepSchema": true
+  "keepSchema": true,
+  "age": "Latvia’s law sets 20 since 1 January 2025 for buying e-cigarettes and refill tanks; the older WHO profile still shows 18."
  },
  "HU": {
   "sections": [
@@ -6565,8 +6640,18 @@
  "MV": {
   "sections": [
    {
+    "h": "⚖️ Maldives law: vapes are banned",
+    "p": "Official sources read 28 November 2026: President’s Office releases of 13 November 2024 and 21 May 2025 on the amendments to the Tobacco Control Act, and the Visit Maldives notice of 9 November 2024.",
+    "list": [
+     "The first amendment bans the import, sale, free distribution and use of e-cigarettes, vaping devices and products made for them.",
+     "The second amendment, ratified in May 2025, also names possession and covers accessories.",
+     "Visit Maldives gives the dates: no import from 15 November 2024, and no possession, use or sale from 15 December 2024, for residents and visitors.",
+     "It says a visitor arriving with a vaporiser is not penalised or refused entry: the device is taken at the border and returned on departure."
+    ]
+   },
+   {
     "h": "🚫 What Maldives news says about the vape ban and fines",
-    "p": "Less reliable source (local press): Atoll Times, \"Customs seizes 800 vape cartridges at Velana International Airport\" (7 August 2026), quoting Maldives Customs and the 2024 Tobacco Control Act amendments. The Maldives Customs pages returned 403, so no official page was read.",
+    "p": "Less reliable source (local press): Atoll Times, \"Customs seizes 800 vape cartridges at Velana International Airport\" (7 August 2026), quoting Maldives Customs and the 2024 Tobacco Control Act amendments.",
     "table": {
      "head": [
       "Item",
@@ -6596,23 +6681,47 @@
      ]
     },
     "list": [
-     "<strong>Not read:</strong> any Maldives Customs notice for tourists. Treat a vape as something that will be seized and fined, and confirm with Maldives Customs before you travel."
+     "<strong>Where the accounts differ:</strong> the press reports fines for importing, while Visit Maldives (November 2024) describes a device being held without penalty. Confirm with Maldives Customs."
     ]
    }
   ],
   "faq": [
    [
-    "Can I bring a vape to the Maldives?",
-    "No. Atoll Times, quoting Maldives Customs, reports that importing, selling and using vaping products is prohibited, with a 50,000 rufiyaa fine for importing plus 10,000 rufiyaa per device."
+    "What happens to a vape I arrive with?",
+    "Visit Maldives said in November 2024 that it is confiscated at the border and returned when you leave, without a penalty; Atoll Times reports fines of 50,000 rufiyaa plus 10,000 per device for importing."
    ]
   ],
   "src": [
+   [
+    "https://presidency.gov.mv/Press/Article/33779",
+    "President’s Office of the Maldives: Second Amendment to the Tobacco Control Act (21 May 2025)"
+   ],
+   [
+    "https://presidency.gov.mv/Press/Article/32159",
+    "President’s Office of the Maldives: First Amendment to the Tobacco Control Act (13 November 2024)"
+   ],
+   [
+    "https://corporate.visitmaldives.com/?p=23716",
+    "Visit Maldives: new regulations on vaporiser products (9 November 2024)"
+   ],
    [
     "https://atolltimes.mv/post/news/16751",
     "Less reliable source (press): Atoll Times - Customs seizes 800 vape cartridges at Velana International Airport"
    ]
   ],
-  "keepSchema": true
+  "keepSchema": true,
+  "card": {
+   "status": "stop",
+   "head": "Banned: leave your vape at home.",
+   "lines": [
+    "Maldives law bans importing, possessing and using e-cigarettes, for visitors too. Visit Maldives says a vape you arrive with is held at the border until you leave."
+   ]
+  },
+  "lead": "Maldives law now bans e-cigarettes: importing, selling and using them is prohibited, and the 2025 amendment also names possession. WHO’s 2023 country profile (data as at 2022) predates the ban.",
+  "travel": "Do not pack a vape or e-liquid for the Maldives. Import has been banned since 15 November 2024, and the ban applies to visitors.",
+  "indoor": "The Maldives has banned using e-cigarettes altogether since 15 December 2024, so there is no place where a visitor may vape.",
+  "ttl": "Vaping in Maldives 2026: Banned",
+  "desc": "Vapes are banned in the Maldives, for visitors too: no import since 15 November 2024, no possession or use since 15 December 2024. What happens at the border."
  },
  "FI": {
   "sections": [

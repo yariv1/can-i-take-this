@@ -120,7 +120,7 @@ module.exports = function (X) {
         ['Other liquids?', '100 ml containers, one 1-litre bag per passenger'],
         ['Pills, syringes, cold storage?', NP]
       ],
-      extra: steps(['Take the medical certification with you.', 'Keep liquid medicine in 100 ml containers in a clear bag.', 'Ask China Southern about syringes and cold storage.'])
+      extra: steps(['Take the medical certification with you.', 'Keep liquid medicine in 100 ml containers in a clear bag.', 'Ask China Southern about syringes and cold storage.']) + "<section class=\"bd-sec\"><h2>Oxygen concentrators, pregnancy and medical certificates</h2><p>From China Southern’s General Conditions of Carriage for Passengers and Baggage (June 2026 file on csair.com), read 28 November 2026.</p><ul><li>Apply at least 48 hours ahead to use a portable oxygen concentrator, and bring a medical certificate, issued no more than 10 days before the flight, saying you need it throughout and are fit to fly.</li><li>Batteries and spares must last the flight time plus three hours; China Southern does not promise power at your seat.</li><li>Concentrator users are seated by a window where possible and never in an exit row.</li><li>More than 32 and less than 36 weeks pregnant: bring a doctor’s certificate stating the week, issued within 30 days before the flight, and sign a risk notice.</li><li>The conditions also list passengers who need intravenous injections among the cases that call for a medical certificate of fitness to fly.</li></ul><p class=\"bd-chk\">Source: <a href=\"https://www.csair.com/cts-products/cts/fastdfs/20260626/3edae764dd49418582ef740225391b1a.pdf\" target=\"_blank\" rel=\"noopener\">China Southern: General Conditions of Carriage</a></p></section>"
     });
   }
 
@@ -211,7 +211,7 @@ module.exports = function (X) {
         ['Liquids?', 'One clear resealable litre-sized bag, screened'],
         ['Syringes, cold storage?', NP]
       ],
-      extra: steps(['Pack medication in cabin baggage.', 'Carry the prescription for prescription medicines.', 'Ask IndiGo about syringes and liquid medicine.'])
+      extra: steps(['Pack medication in cabin baggage.', 'Carry the prescription for prescription medicines.', 'Ask IndiGo about syringes and liquid medicine.']) + "<section class=\"bd-sec\"><h2>Portable oxygen concentrators on IndiGo</h2><p>From IndiGo’s page for passengers with special needs, in the Internet Archive copy of July 2025 because the live page did not open for us; read 28 November 2026.</p><ul><li>Ask IndiGo at least 48 hours before departure to carry or use one.</li><li>Only concentrators approved by the US Federal Aviation Administration are accepted, in hand or checked baggage, free of charge and subject to conditions.</li><li>One used on board may weigh no more than 7 kg and sits under the seat in front during taxi, take-off and landing.</li><li>Users are given a window seat, though not in rows 1, 12 and 13.</li><li>Before checking a concentrator in, take out its lithium battery and keep the battery in your hand baggage.</li><li>If cabin pressure drops, use the aircraft’s oxygen mask, not the concentrator.</li></ul><p class=\"bd-chk\">Source: <a href=\"https://www.goindigo.in/travel-information/en/passengers-with-special-needs.html\" target=\"_blank\" rel=\"noopener\">IndiGo: Passengers with special needs</a></p></section>"
     });
   }
 

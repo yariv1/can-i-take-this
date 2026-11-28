@@ -1527,8 +1527,27 @@
        "The type of product, its weight, its country of origin and the EU country of destination.",
        "Dutch Customs (douane.nl) lists the animal products that do not need a health certificate; we did not read that list."
       ]
+     },
+     {
+      "when": "From Switzerland, Norway and four neighbours",
+      "status": "go",
+      "tag": "Own use",
+      "lines": [
+       "Meat or dairy for your own use may travel into the Netherlands from Switzerland or Norway: the EU’s Your Europe page counts them, with Andorra, Iceland, Liechtenstein and San Marino, alongside the EU countries."
+      ]
      }
-    ]
+    ],
+    "src": [
+     [
+      "https://www.government.nl/topics/travelling-outside-the-netherlands/customs-declarations/transport-of-animal-products-to-the-netherlands",
+      "Government of the Netherlands — Transport of animal products to the Netherlands"
+     ],
+     [
+      "https://europa.eu/youreurope/citizens/travel/carry/meat-dairy-animal/index_en.htm",
+      "European Union (Your Europe): Taking animal products, food or plants with you"
+     ]
+    ],
+    "official": true
    },
    {
     "id": "cites",
@@ -3510,8 +3529,27 @@
       "lines": [
        "Meat, milk and their products are allowed up to 10 kg per person."
       ]
+     },
+     {
+      "when": "From Switzerland, Norway and four neighbours",
+      "status": "go",
+      "tag": "Own use",
+      "lines": [
+       "Meat or dairy for your own use may travel into Poland from Switzerland or Norway: the EU’s Your Europe page counts them, with Andorra, Iceland, Liechtenstein and San Marino, alongside the EU countries."
+      ]
      }
-    ]
+    ],
+    "src": [
+     [
+      "https://www.wetgiw.gov.pl/handel-eksport-import/przywoz-zywnosci-na-wlasny-uzytek",
+      "Główny Inspektorat Weterynarii (GIW) — Bringing food and pet food for personal use"
+     ],
+     [
+      "https://europa.eu/youreurope/citizens/travel/carry/meat-dairy-animal/index_en.htm",
+      "European Union (Your Europe): Taking animal products, food or plants with you"
+     ]
+    ],
+    "official": true
    },
    {
     "id": "other",
@@ -3627,8 +3665,27 @@
       "lines": [
        "Pork cannot be brought in from any third country or EU area where African swine fever occurs."
       ]
+     },
+     {
+      "when": "From Switzerland, Norway and four neighbours",
+      "status": "go",
+      "tag": "Own use",
+      "lines": [
+       "Flying into Hungary from Zurich or Oslo is different: Your Europe applies the inside-the-EU rule to Switzerland and Norway (also Iceland, Liechtenstein, Andorra and San Marino), so own-use meat and dairy are allowed."
+      ]
      }
-    ]
+    ],
+    "src": [
+     [
+      "https://portal.nebih.gov.hu/-/szigoru-szabalyozas-a-poggyaszban-behozott-elelmiszerekre-vonatkozoan",
+      "Nébih — Strict rules for food brought in luggage (24 January 2020)"
+     ],
+     [
+      "https://europa.eu/youreurope/citizens/travel/carry/meat-dairy-animal/index_en.htm",
+      "European Union (Your Europe): Taking animal products, food or plants with you"
+     ]
+    ],
+    "official": true
    },
    {
     "id": "small",
@@ -3737,8 +3794,27 @@
        "The DGAV sheet lists meat and meat products and milk and milk products as items you cannot bring.",
        "Exception: up to 10 kg per person from the Faroe Islands or Greenland."
       ]
+     },
+     {
+      "when": "From Switzerland, Norway and four neighbours",
+      "status": "go",
+      "tag": "Own use",
+      "lines": [
+       "The ban does not reach food for yourself carried to Portugal from Andorra, Iceland, Liechtenstein, Norway, San Marino or Switzerland, which Your Europe treats like EU countries."
+      ]
      }
-    ]
+    ],
+    "src": [
+     [
+      "https://www.dgav.pt/wp-content/uploads/2021/05/Viajar-com-produtos-de-origem-animal-EN.pdf",
+      "DGAV (Portugal) — Data sheet: travelling with products of animal origin from non-EU countries (reviewed May 2021)"
+     ],
+     [
+      "https://europa.eu/youreurope/citizens/travel/carry/meat-dairy-animal/index_en.htm",
+      "European Union (Your Europe): Taking animal products, food or plants with you"
+     ]
+    ],
+    "official": true
    },
    {
     "id": "allowed",
@@ -4393,6 +4469,14 @@
       "lines": [
        "Up to 10 kg each of meat, dairy, honey and eggs."
       ]
+     },
+     {
+      "when": "From Switzerland, Norway and four neighbours",
+      "status": "go",
+      "tag": "Own use",
+      "lines": [
+       "Flying into Greece from Zurich or Oslo is different: Your Europe applies the inside-the-EU rule to Switzerland and Norway (also Iceland, Liechtenstein, Andorra and San Marino), so own-use meat and dairy are allowed."
+      ]
      }
     ]
    },
@@ -4555,6 +4639,14 @@
       "lines": [
        "The customs page has a Meat and dairy products section that links to the European Commission.",
        "The EU page says undeclared products are confiscated and destroyed, and you can be fined or prosecuted."
+      ]
+     },
+     {
+      "when": "From Switzerland, Norway and four neighbours",
+      "status": "go",
+      "tag": "Own use",
+      "lines": [
+       "Meat or dairy for your own use may travel into Lithuania from Switzerland or Norway: the EU’s Your Europe page counts them, with Andorra, Iceland, Liechtenstein and San Marino, alongside the EU countries."
       ]
      }
     ]
@@ -4736,6 +4828,14 @@
        "Luxembourg's portal lists animal foods under health bans among prohibited imports.",
        "The EU page confirms meat and dairy are not allowed; undeclared items are confiscated and destroyed."
       ]
+     },
+     {
+      "when": "From Switzerland, Norway and four neighbours",
+      "status": "go",
+      "tag": "Own use",
+      "lines": [
+       "The ban does not reach food for yourself carried to Luxembourg from Andorra, Iceland, Liechtenstein, Norway, San Marino or Switzerland, which Your Europe treats like EU countries."
+      ]
      }
     ]
    },
@@ -4890,6 +4990,14 @@
       "lines": [
        "This is the EU rule; Malta's customs allowance page does not mention it.",
        "Undeclared meat or dairy is confiscated and destroyed, with a possible fine or prosecution."
+      ]
+     },
+     {
+      "when": "From Switzerland, Norway and four neighbours",
+      "status": "go",
+      "tag": "Own use",
+      "lines": [
+       "Flying into Malta from Zurich or Oslo is different: Your Europe applies the inside-the-EU rule to Switzerland and Norway (also Iceland, Liechtenstein, Andorra and San Marino), so own-use meat and dairy are allowed."
       ]
      }
     ]
@@ -5061,6 +5169,14 @@
       "lines": [
        "Only specially heat-treated dairy products that come with the EU import certificate."
       ]
+     },
+     {
+      "when": "From Switzerland, Norway and four neighbours",
+      "status": "go",
+      "tag": "Own use",
+      "lines": [
+       "Flying into Slovakia from Zurich or Oslo is different: Your Europe applies the inside-the-EU rule to Switzerland and Norway (also Iceland, Liechtenstein, Andorra and San Marino), so own-use meat and dairy are allowed."
+      ]
      }
     ]
    },
@@ -5211,6 +5327,14 @@
       "lines": [
        "The only exception is up to 2 kg of powdered baby milk, baby food or special animal feed.",
        "The page names foot-and-mouth disease, African swine fever and sheep and goat plague as the reasons."
+      ]
+     },
+     {
+      "when": "From Switzerland, Norway and four neighbours",
+      "status": "go",
+      "tag": "Own use",
+      "lines": [
+       "Meat or dairy for your own use may travel into Slovenia from Switzerland or Norway: the EU’s Your Europe page counts them, with Andorra, Iceland, Liechtenstein and San Marino, alongside the EU countries."
       ]
      }
     ]
@@ -5879,101 +6003,164 @@
   "unofficial": true
  },
  "China": {
-  "checked": "9 November 2026",
-  "answer": "China's own customs pages could not be used for a traveller food rule, so this comes from the IATA Travel Centre customs page for China, which airlines use. Foodstuff coming from an epidemic stricken area which may be harmful to humans and livestock is prohibited. Animals, plants, and their derivative products must be declared and are subject to restrictions and quarantine on arrival. It sets no quantity limits and has no separate rules for meat, dairy, eggs, fruit or vegetables. The page shows no date, so confirm with Chinese customs before you travel.",
+  "checked": "28 November 2026",
+  "answer": "China bans travellers from carrying or posting in meat, dairy, eggs, fresh fruit and vegetables, seeds and a series of other animal and plant products. The list comes from the Ministry of Agriculture and Rural Affairs and the General Administration of Customs (Announcement 470 of 2021). It lets through only items approved by the national authorities that come with an official quarantine certificate from the exporting country.",
   "sources": [
    [
-    "https://infopages.traveldoc.aero/Customs/CHN/Plain",
-    "IATA Travel Centre — China customs: prohibited and restricted goods (undated)"
+    "https://www.beijing.gov.cn/zhengce/zhengcefagui/qtwj/202204/W020220418641448394727.docx",
+    "Beijing municipal government: China’s list of animals, plants and products banned from carry-in or post (in Chinese, Word file)"
+   ],
+   [
+    "https://english.shanghai.gov.cn/en-ImmigrationCustoms/20241120/c3a5f1e4d3444229a8bbf9659bd50e31.html",
+    "Shanghai government: customs question with the English text of the list (20 November 2024)"
    ]
   ],
   "faq": [
    [
-    "Is any food banned in China?",
-    "The IATA page prohibits foodstuff from an epidemic-stricken area that may be harmful to humans and livestock."
+    "Can I bring cheese, ham or eggs into China?",
+    "No. Meat and meat products, dairy and eggs are all named on the list."
    ],
    [
-    "Do I declare plants and animal products?",
-    "Yes. The page says animals, plants and their derivative products must be declared and are subject to restrictions and quarantine on arrival."
+    "Can I bring fruit into China?",
+    "Fresh fruit and vegetables are banned. The list does not name dried fruit, so declare it and let customs decide."
    ],
    [
-    "Is there a limit on food?",
-    "The page sets no quantity limits."
+    "Is there a personal allowance?",
+    "The list gives none: it bans the named items without a quantity threshold."
+   ],
+   [
+    "Does a transit stop count?",
+    "Shanghai’s government quotes the same list when asked about fruit carried through on an overnight transit, so pack nothing on it if you leave the airport."
    ]
   ],
   "topics": [
    {
-    "id": "epi",
-    "label": "Food from epidemic areas",
+    "id": "meat",
+    "label": "Meat, dairy & eggs",
     "status": "stop",
     "verdict": "Not allowed",
-    "head": "Food from an epidemic-stricken area is prohibited.",
+    "head": "Meat, dairy and eggs cannot be carried in.",
     "scen": [
      {
-      "when": "Foodstuff from an epidemic-stricken area",
+      "when": "Meat, raw or cooked",
       "status": "stop",
       "tag": "Not allowed",
       "lines": [
-       "The page prohibits foodstuff that may be harmful to humans and livestock."
+       "Raw and cooked meat, offal and meat products are on the banned list."
+      ]
+     },
+     {
+      "when": "Milk and dairy",
+      "status": "stop",
+      "tag": "Not allowed",
+      "lines": [
+       "Raw, pasteurised, sterilised, formulated and fermented milk, cream, butter, cheese, condensed milk and other dairy products are named."
+      ]
+     },
+     {
+      "when": "Eggs and bird’s nest",
+      "status": "stop",
+      "tag": "Not allowed",
+      "lines": [
+       "Fresh, preserved and salted eggs, liquid egg, eggshells and egg-yolk sauce are named.",
+       "Bird’s nest is banned too, except the commercially sterilised canned kind."
       ]
      }
     ]
    },
    {
-    "id": "plants",
-    "label": "Plants & seeds",
-    "status": "warn",
-    "verdict": "Declare",
-    "head": "Animals, plants and their products must be declared.",
+    "id": "produce",
+    "label": "Fruit, vegetables & seeds",
+    "status": "stop",
+    "verdict": "Not allowed",
+    "head": "Fresh fruit, vegetables and seeds are banned.",
     "scen": [
      {
-      "when": "Animals, plants and their derivative products",
+      "when": "Fresh produce and flowers",
+      "status": "stop",
+      "tag": "Not allowed",
+      "lines": [
+       "Fresh fruit, fresh vegetables and cut flowers are on the list."
+      ]
+     },
+     {
+      "when": "Seeds, leaf and soil",
+      "status": "stop",
+      "tag": "Not allowed",
+      "lines": [
+       "Seeds, seedlings and other plant material that can propagate are listed, and so are tobacco leaf, soil and organic growing media."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "fish",
+    "label": "Fish & seafood",
+    "status": "warn",
+    "verdict": "Mostly banned",
+    "head": "Aquatic animal products are banned, with a narrow exception.",
+    "scen": [
+     {
+      "when": "Fish and seafood products",
+      "status": "warn",
+      "tag": "Narrow exception",
+      "lines": [
+       "The list names aquatic animal products.",
+       "Its exception, in the English text Shanghai publishes: dried, cooked and fermented aquatic animal products made into edible sauces."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "permit",
+    "label": "Documents & permits",
+    "status": "warn",
+    "verdict": "Certificate",
+    "head": "An exception needs approval and a quarantine certificate.",
+    "scen": [
+     {
+      "when": "A listed item with paperwork",
+      "status": "warn",
+      "tag": "Both needed",
+      "lines": [
+       "An item on the list falls outside the ban only with approval from the competent state authority and an official quarantine certificate from the exporting country or region."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "epi",
+    "label": "Epidemic areas & declaring",
+    "status": "warn",
+    "verdict": "Declare",
+    "head": "Declare animal and plant products.",
+    "scen": [
+     {
+      "when": "Animals, plants and their derivatives",
       "status": "warn",
       "tag": "Declare",
       "lines": [
-       "They must be declared and are subject to restrictions and quarantine on arrival."
+       "The IATA Travel Centre says they must be declared and are subject to restrictions and quarantine on arrival."
       ]
-     }
-    ]
-   },
-   {
-    "id": "fresh",
-    "label": "Meat, dairy, eggs & produce",
-    "status": "warn",
-    "verdict": "Ask first",
-    "head": "The page gives no rule for meat, dairy, eggs, fruit or vegetables.",
-    "scen": [
+     },
      {
-      "when": "Meat, dairy, eggs, fruit and vegetables",
-      "status": "warn",
-      "tag": "Ask first",
+      "when": "Food from an epidemic-stricken area",
+      "status": "stop",
+      "tag": "Not allowed",
       "lines": [
-       "The IATA Travel Centre page does not say whether meat, dairy, eggs, fruit or vegetables are allowed.",
-       "Ask Chinese customs before you bring them."
+       "The same page prohibits foodstuff from such an area that may be harmful to humans and livestock."
       ]
      }
-    ]
-   },
-   {
-    "id": "notread",
-    "label": "Not covered",
-    "status": "warn",
-    "verdict": "Ask first",
-    "head": "The page leaves out some foods and shows no date.",
-    "scen": [
-     {
-      "when": "What the page does not say",
-      "status": "warn",
-      "tag": "Ask first",
-      "lines": [
-       "It sets no quantity limits and has no separate rules for meat, dairy, eggs, fruit or vegetables. The page shows no update date.",
-       "Its own customs pages gave no readable food rule. Ask Chinese customs before you bring any food."
-      ]
-     }
-    ]
+    ],
+    "src": [
+     [
+      "https://infopages.traveldoc.aero/Customs/CHN/Plain",
+      "IATA Travel Centre: China customs, prohibited and restricted goods (undated)"
+     ]
+    ],
+    "official": false
    }
-  ],
-  "unofficial": true
+  ]
  },
  "Vietnam": {
   "checked": "9 November 2026",
@@ -6277,97 +6464,95 @@
   "lawNote": "The plant inspection law card was read on 26 November 2026 in an English translation on the IPPC site."
  },
  "Morocco": {
-  "checked": "9 November 2026",
-  "answer": "Morocco's own customs pages could not be used for a traveller food rule, so this comes from the IATA Travel Centre customs page for Morocco, which airlines use. All products of animal origin require a health certification from a veterinarian in the country of origin and may be inspected on arrival; certain plants are subject to phytosanitary inspection. It has no line naming food, fruit, vegetables or eggs, and no quantity limits. The page shows no date, so confirm with Moroccan customs before you travel.",
+  "checked": "28 November 2026",
+  "answer": "Morocco does not let travellers bring in plants, ornamental plants or seeds: the food safety office ONSSA announced the ban on 21 June 2022 against the Xylella fastidiosa bacterium and said such items are seized and destroyed. A customs guide for Moroccans living abroad asks for an ONSSA veterinary certificate for animal products and a phytosanitary certificate for plant products. We read a press report and a copy of that guide, not a current ONSSA or customs page.",
   "sources": [
    [
+    "https://fr.hespress.com/268867-268867.html",
+    "Hespress with the MAP agency: ONSSA bans plants carried by travellers (21 June 2022, in French)"
+   ],
+   [
+    "https://www.bladi.net/img/pdf/guide-mre-douane-maroc-2.pdf",
+    "Copy on bladi.net of the Moroccan customs guide for residents abroad (undated, in French)"
+   ],
+   [
     "https://infopages.traveldoc.aero/Customs/MAR/Plain",
-    "IATA Travel Centre — Morocco customs: prohibited and restricted goods (undated)"
+    "IATA Travel Centre: Morocco customs, prohibited and restricted goods (undated)"
    ]
   ],
   "faq": [
    [
-    "Can I bring meat or dairy into Morocco?",
-    "The IATA page says all products of animal origin require a health certification from a veterinarian in the country of origin."
+    "Can I bring plants or seeds into Morocco?",
+    "No. ONSSA’s June 2022 announcement bans every type of plant, ornamental plant and seed carried by travellers."
    ],
    [
-    "Are plants checked?",
-    "Yes. Certain plants are subject to phytosanitary inspection, and certain plants and plant products are prohibited."
+    "Can I bring meat or cheese into Morocco?",
+    "Only with a veterinary certificate, according to the customs guide and the IATA Travel Centre."
    ],
    [
-    "Is there a limit?",
-    "The page states none."
+    "Is there a food allowance in kilos?",
+    "None of the three sources gives one."
    ]
   ],
   "topics": [
+   {
+    "id": "plants",
+    "label": "Plants & seeds",
+    "status": "stop",
+    "verdict": "Not allowed",
+    "head": "Travellers may not bring in plants or seeds.",
+    "scen": [
+     {
+      "when": "Plants, ornamental plants and seeds in luggage",
+      "status": "stop",
+      "tag": "Not allowed",
+      "lines": [
+       "ONSSA announced that travellers entering Morocco may not bring in any type of plant, and that such items are seized and destroyed.",
+       "We found no later notice lifting the ban."
+      ]
+     },
+     {
+      "when": "Why the ban exists",
+      "status": "warn",
+      "tag": "Plant disease",
+      "lines": [
+       "It aims to keep out Xylella fastidiosa, which ONSSA describes as a threat to more than 350 species, including olive, citrus, vine and almond."
+      ]
+     }
+    ]
+   },
    {
     "id": "animal",
     "label": "Meat & dairy",
     "status": "warn",
     "verdict": "Certificate",
-    "head": "Animal products need a vet health certificate.",
+    "head": "Animal products need a veterinary certificate.",
     "scen": [
      {
       "when": "Products of animal origin",
       "status": "warn",
       "tag": "Certificate",
       "lines": [
-       "The page says all products of animal origin require a health certification from a veterinarian in the country of origin.",
-       "They may be inspected on arrival."
-      ]
-     }
-    ]
-   },
-   {
-    "id": "plants",
-    "label": "Plants & seeds",
-    "status": "warn",
-    "verdict": "Inspection",
-    "head": "Certain plants are inspected, and some plant products are banned.",
-    "scen": [
-     {
-      "when": "Plants and plant products",
-      "status": "warn",
-      "tag": "Inspected",
-      "lines": [
-       "Certain plants are subject to phytosanitary inspection when they enter Morocco.",
-       "Certain plants and plant products likely to carry organisms harmful to Moroccan flora are prohibited."
+       "The customs guide lists animals and animal products among imports that need a veterinary certificate from the services of ONSSA.",
+       "The IATA Travel Centre words it as a health certificate from a veterinarian in the country of origin, and says the goods may be inspected."
       ]
      }
     ]
    },
    {
     "id": "fresh",
-    "label": "Meat, dairy, eggs & produce",
+    "label": "Fruit & vegetables",
     "status": "warn",
     "verdict": "Ask first",
-    "head": "The page gives no rule for fruit, vegetables and eggs.",
+    "head": "Plant products need a phytosanitary certificate.",
     "scen": [
      {
-      "when": "Meat, dairy, eggs, fruit and vegetables",
+      "when": "Plant products",
       "status": "warn",
-      "tag": "Ask first",
+      "tag": "Certificate",
       "lines": [
-       "The IATA Travel Centre page does not say whether fruit, vegetables and eggs are allowed.",
-       "Ask Moroccan customs before you bring them."
-      ]
-     }
-    ]
-   },
-   {
-    "id": "notread",
-    "label": "Not covered",
-    "status": "warn",
-    "verdict": "Ask first",
-    "head": "The page leaves out some foods and shows no date.",
-    "scen": [
-     {
-      "when": "What the page does not say",
-      "status": "warn",
-      "tag": "Ask first",
-      "lines": [
-       "It has no line naming food, fruit, vegetables or eggs, and no quantity limits. The page shows no update date.",
-       "Its own customs pages gave no readable food rule. Ask Moroccan customs before you bring any food."
+       "The customs guide lists plant products among imports that need a phytosanitary certificate from ONSSA’s services.",
+       "It does not name fruit or vegetables one by one, so ask Moroccan customs before you pack them."
       ]
      }
     ]
@@ -8700,8 +8885,27 @@
       "lines": [
        "Meat, dairy and other animal products up to 10 kg each."
       ]
+     },
+     {
+      "when": "From Switzerland, Norway and four neighbours",
+      "status": "go",
+      "tag": "Own use",
+      "lines": [
+       "The ban does not reach food for yourself carried to Denmark from Andorra, Iceland, Liechtenstein, Norway, San Marino or Switzerland, which Your Europe treats like EU countries."
+      ]
      }
-    ]
+    ],
+    "src": [
+     [
+      "https://www.borger.dk/transport-trafik-rejser/udlandsrejser/hvad-maa-du-tage-med-hjem-fra-rejsen/rejser-uden-for-eu-det-maa-du-tage-med-hjem",
+      "Borger.dk (Danish public portal; Agency for Food, Agriculture and Fisheries) — Travel outside the EU: what you may take home (undated)"
+     ],
+     [
+      "https://europa.eu/youreurope/citizens/travel/carry/meat-dairy-animal/index_en.htm",
+      "European Union (Your Europe): Taking animal products, food or plants with you"
+     ]
+    ],
+    "official": true
    },
    {
     "id": "plants",
@@ -8905,8 +9109,31 @@
       "lines": [
        "All foods in quantities for personal consumption; ask the Agriculture and Food Board (PTA) for details."
       ]
+     },
+     {
+      "when": "From Switzerland, Norway and four neighbours",
+      "status": "go",
+      "tag": "Own use",
+      "lines": [
+       "The ban does not reach food for yourself carried to Estonia from Andorra, Iceland, Liechtenstein, Norway, San Marino or Switzerland, which Your Europe treats like EU countries."
+      ]
      }
-    ]
+    ],
+    "src": [
+     [
+      "https://www.emta.ee/eraklient/saadetised-reisimine-elama-asumine/reisimine/keelatud-ja-eriloaga-kaubad",
+      "Estonian Tax and Customs Board (EMTA) — Prohibited goods and goods needing a permit (undated)"
+     ],
+     [
+      "https://www.emta.ee/eraklient/saadetised-reisimine-elama-asumine/reisimine/eestisse-kolmandast-riigist",
+      "Estonian Tax and Customs Board (EMTA) — Coming to Estonia from a third country (updated 27 October 2026)"
+     ],
+     [
+      "https://europa.eu/youreurope/citizens/travel/carry/meat-dairy-animal/index_en.htm",
+      "European Union (Your Europe): Taking animal products, food or plants with you"
+     ]
+    ],
+    "official": true
    },
    {
     "id": "plants",
@@ -9131,6 +9358,14 @@
       "lines": [
        "Meat, dairy, honey and eggs, 10 kg each."
       ]
+     },
+     {
+      "when": "From Switzerland, Norway and four neighbours",
+      "status": "go",
+      "tag": "Own use",
+      "lines": [
+       "Meat or dairy for your own use may travel into Cyprus from Switzerland or Norway: the EU’s Your Europe page counts them, with Andorra, Iceland, Liechtenstein and San Marino, alongside the EU countries."
+      ]
      }
     ]
    },
@@ -9247,8 +9482,8 @@
   ]
  },
  "Bulgaria": {
-  "checked": "14 November 2026",
-  "answer": "For travellers arriving from outside the EU, Bulgaria applies the EU personal-import rules: no meat or dairy, limited fruit, vegetables, eggs and honey, fish up to 20 kg and up to 2 kg of baby or medical food. We could not open Bulgarian Customs Agency or Food Safety Agency pages, so this page shows only the EU rule. Confirm with Bulgarian customs before you bring anything beyond it.",
+  "checked": "28 November 2026",
+  "answer": "Arriving from most countries outside the EU, you meet the EU personal-import rules in Bulgaria: no meat or dairy, limited fruit, vegetables, eggs and honey, fish up to 20 kg and up to 2 kg of baby or medical food. Food for your own use from Andorra, Iceland, Liechtenstein, Norway, San Marino or Switzerland is treated like food moving inside the EU. Bulgarian Customs Agency and Food Safety Agency pages did not open for us.",
   "sources": [
    [
     "https://europa.eu/youreurope/citizens/travel/carry/meat-dairy-animal/index_en.htm",
@@ -9258,7 +9493,7 @@
   "faq": [
    [
     "Can I bring salami or white cheese into Bulgaria from a non-EU country?",
-    "No. The EU page says meat and dairy are not allowed when travelling from outside the EU, apart from under 10 kg from the Faroe Islands or Greenland."
+    "Not from most of them, for example Turkey or Serbia: the EU ban applies. The exceptions are the Faroe Islands and Greenland (up to 10 kg) and the six countries treated like the EU, among them Switzerland and Norway."
    ],
    [
     "Do I need a certificate for plants?",
@@ -9267,10 +9502,6 @@
    [
     "What are the limits for fish and baby food?",
     "Fish up to 20 kg or one fish. Powdered infant milk, baby food and medical food up to 2 kg in sealed retail packs."
-   ],
-   [
-    "Did you read a Bulgarian national page?",
-    "No. We could not open the Bulgarian customs or food safety pages, so only the EU rule is shown here."
    ]
   ],
   "topics": [
@@ -9279,14 +9510,14 @@
     "label": "Meat & dairy",
     "status": "stop",
     "verdict": "Not allowed",
-    "head": "Bulgaria follows the EU ban on meat and dairy from outside the EU.",
+    "head": "No meat or dairy from most non-EU countries.",
     "scen": [
      {
       "when": "Salami, ham, cheese, yoghurt from a non-EU country",
       "status": "stop",
       "tag": "Not allowed",
       "lines": [
-       "The EU page forbids meat and dairy for travellers from outside the EU.",
+       "The EU page forbids meat and dairy for travellers from non-EU countries, apart from the exceptions on this card.",
        "Undeclared items are confiscated and destroyed, with a possible fine or prosecution."
       ]
      },
@@ -9296,6 +9527,15 @@
       "tag": "Up to 10 kg",
       "lines": [
        "10 kg each of meat, dairy, honey and eggs."
+      ]
+     },
+     {
+      "when": "From Andorra, Iceland, Liechtenstein, Norway, San Marino or Switzerland",
+      "status": "go",
+      "tag": "Own use",
+      "lines": [
+       "The EU page counts these six with the EU countries: meat and dairy for your own consumption may come with you, unless a local animal-disease restriction applies.",
+       "Fruit, vegetables and cut flowers from them follow the inside-the-EU rule: grown there and free from pests."
       ]
      }
     ]
@@ -9368,22 +9608,29 @@
     ]
    },
    {
-    "id": "notread",
-    "label": "Not covered",
+    "id": "border",
+    "label": "Border checks",
     "status": "warn",
-    "verdict": "Ask first",
-    "head": "No Bulgarian national page was readable.",
+    "verdict": "Checked",
+    "head": "Bulgaria seizes animal products that lack papers.",
     "scen": [
      {
-      "when": "What we could not confirm",
+      "when": "Kapitan Andreevo crossing, June 2026",
       "status": "warn",
-      "tag": "Ask first",
+      "tag": "Seized",
       "lines": [
-       "Bulgarian Customs Agency and Food Safety Agency pages did not open, so any Bulgarian detail is missing.",
-       "Ask Bulgarian customs before you bring anything not listed."
+       "Food safety inspectors working with customs found 206 kg of dairy products without the required documents in a Bulgarian-registered car.",
+       "The goods were seized and due to be destroyed."
       ]
      }
-    ]
+    ],
+    "src": [
+     [
+      "https://bntnews.bg/news/bfsa-seizes-over-a-tonne-of-animal-products-without-documents-at-kapitan-andreevo-border-crossing-1398750news.html",
+      "Bulgarian National Television: animal products seized at Kapitan Andreevo (16 June 2026)"
+     ]
+    ],
+    "official": false
    }
   ]
  },

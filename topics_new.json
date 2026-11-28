@@ -2285,6 +2285,16 @@
      "list": [
       "<strong>Not on the page:</strong> additional restrictions may apply, which the page does not detail."
      ]
+    },
+    {
+     "h": "🛬 Perfume when you change planes in Doha",
+     "p": "From Hamad International Airport’s security and customs page, read 28 November 2026. It is the airport’s rule, not a Qatar Airways page.",
+     "list": [
+      "Departing from Doha: liquid containers go in a clear resealable bag, each 100 ml or less.",
+      "Transferring: your hand baggage is screened again, and the resealable bag for personal liquids holds at most 1 litre.",
+      "Duty-free perfume over 100 ml bought at another airport must be sealed in a tamper-evident bag with the receipt, or it is confiscated at the transfer check.",
+      "Source: <a href=\"https://dohahamadairport.com/airport-guide/at-the-airport/security-customs\" target=\"_blank\" rel=\"noopener\">Hamad International Airport: Security and customs (unofficial for Qatar Airways)</a>"
+     ]
     }
    ],
    "faq": [
@@ -2295,6 +2305,10 @@
     [
      "Can I carry a large perfume bottle in hand baggage on Qatar Airways?",
      "No, containers larger than 100 ml cannot be accepted in hand baggage even if only partly filled."
+    ],
+    [
+     "Will my duty-free perfume get through a Doha connection?",
+     "Only if a bottle over 100 ml bought at another airport is still sealed in its tamper-evident bag with the receipt."
     ]
    ],
    "sources": [
@@ -6217,6 +6231,16 @@
      "list": [
       "<strong>Note:</strong> ITA also asks passengers to observe the general safety rules for liquids in carry-on baggage."
      ]
+    },
+    {
+     "h": "🛫 Perfume at Milan’s airports",
+     "p": "From the baggage rules of the Milan airports operator, read 28 November 2026. It is the airports’ rule, not an ITA Airways rule.",
+     "list": [
+      "At Linate and Malpensa Terminal 1, liquids, aerosols and gels may go in containers of up to 2 litres, without taking them out of hand baggage.",
+      "At Malpensa Terminal 2 the limit is 100 ml per container, in a clear plastic bag taken out of hand baggage.",
+      "So check your Malpensa terminal before you pack a full-size bottle.",
+      "Source: <a href=\"https://www.milanomalpensa-airport.com/en/assistance/baggage-rules\" target=\"_blank\" rel=\"noopener\">Milan Malpensa airport: baggage rules (unofficial for ITA Airways)</a>"
+     ]
     }
    ],
    "faq": [
@@ -6227,6 +6251,10 @@
     [
      "Do spray cans need a cap on ITA Airways?",
      "Yes, release valves must be protected by a cap or other suitable means."
+    ],
+    [
+     "Can I carry a large perfume bottle through Milan?",
+     "Up to 2 litres per container at Linate and Malpensa Terminal 1; only 100 ml at Malpensa Terminal 2."
     ]
    ],
    "sources": [
@@ -11576,7 +11604,7 @@
    "unofficial": false
   },
   "alcohol": {
-   "answer": "Transavia's help pages returned an error (403), so this page gives the Dutch Customs allowance for alcohol you bring into the Netherlands from another EU country: per person aged 17 or older, 110 litres of beer, 90 litres of wine and 10 litres of spirits, duty-free.",
+   "answer": "This page gives the Dutch Customs allowance for alcohol you bring into the Netherlands from another EU country: per person aged 17 or older, 110 litres of beer, 90 litres of wine and 10 litres of spirits, duty-free.",
    "sections": [
     {
      "h": "🍺 What Dutch Customs allows on arrival from an EU country",
@@ -11616,6 +11644,16 @@
      "list": [
       "<strong>Not on this page:</strong> Transavia&rsquo;s own bag rules. Non-EU arrivals have far lower limits; see the KLM page for those."
      ]
+    },
+    {
+     "h": "🥂 Drinking your own alcohol on a Transavia flight",
+     "p": "From Transavia’s General Conditions of Carriage on transavia.com, read 28 November 2026.",
+     "list": [
+      "Only alcoholic drinks bought on board may be consumed there, so your duty-free bottle stays closed.",
+      "Cabin crew may restrict both the sale and the drinking of alcohol for safety reasons.",
+      "The conditions except alcoholic drinks from the risky substances that may never travel in baggage.",
+      "Source: <a href=\"https://www.transavia.com/en-EU/conditions/conditions-of-carriage/\" target=\"_blank\" rel=\"noopener\">Transavia: General Conditions of Carriage</a>"
+     ]
     }
    ],
    "sources": [
@@ -11625,8 +11663,14 @@
     ]
    ],
    "keepSchema": true,
-   "checked": "19 November 2026",
-   "unofficial": true
+   "checked": "28 November 2026",
+   "unofficial": true,
+   "faq": [
+    [
+     "Can I drink my own alcohol on Transavia?",
+     "No. Transavia’s conditions allow passengers to consume only alcoholic drinks bought on board."
+    ]
+   ]
   },
   "perfume": {
    "answer": "Transavia treats perfume and liquid make-up like any other liquid in the cabin: containers of up to 100 ml each, 1 litre in total. A bottle over 100 ml must be checked in, unless you buy it after the security check. Solid and powder make-up can always go in the cabin bag.",
@@ -13278,6 +13322,15 @@
      "list": [
       "<strong>Not on the page:</strong> the guide is a table: it gives no rule on using or charging a vape on board in this entry and no e-liquid rule."
      ]
+    },
+    {
+     "h": "✈️ Aer Lingus Regional flights: carry it, never use it",
+     "p": "From the Conditions of Carriage for flights operated by Emerald Airlines, which flies as Aer Lingus Regional, published on aerlingus.com (February 2026 file); read 28 November 2026.",
+     "list": [
+      "You may carry electronic cigarettes on board.",
+      "Using an electronic cigarette, or any other kind of cigarette, on board the aircraft is strictly forbidden.",
+      "Source: <a href=\"https://www.aerlingus.com/media/pdfs/conditions-of-carriage-emerald-airlines-feb-2026.pdf\" target=\"_blank\" rel=\"noopener\">Aer Lingus: Conditions of Carriage, Emerald Airlines flights</a>"
+     ]
     }
    ],
    "faq": [
@@ -13288,6 +13341,10 @@
     [
      "Does Aer Lingus need to approve my e-cigarette?",
      "No, the guide shows operator approval is not required, but each device must be individually protected against accidental activation."
+    ],
+    [
+     "Can I use my vape on an Aer Lingus Regional flight?",
+     "No. The Emerald Airlines conditions let you carry it on board but strictly forbid using it."
     ]
    ],
    "sources": [
@@ -21660,21 +21717,28 @@
    ]
   },
   "perfume": {
-   "answer": "Air Europa's liquids page returns an error (403), so this follows Aena, the operator of Spain's airports: perfumes, creams and sprays go in the cabin in containers of 100 ml or less, one clear 20 x 20 cm bag per passenger, while the liquid limits do not apply to checked luggage.",
+   "answer": "Air Europa counts perfume and sprays as liquids: in hand baggage they travel in containers of up to 100 ml, all inside one transparent resealable bag of up to 1 litre per passenger. Larger bottles bought after security or on board may travel sealed with the receipt.",
    "sections": [
     {
-     "h": "🧴 What Aena says about perfume and sprays in hand luggage",
-     "p": "From the Aena hand luggage page, read 17 November 2026 (the page shows only a 2026 copyright). Aena runs the Spanish airports Air Europa flies from; this is not an Air Europa page.",
+     "h": "🧴 What Air Europa says about perfume and sprays",
+     "p": "From Air Europa’s page on safety measures and liquids, read 28 November 2026.",
+     "list": [
+      "Perfumes, gels, creams, oils, lotions and toothpaste count as liquids, and so do aerosols, foams and deodorants.",
+      "In hand baggage: containers of up to 100 ml inside one transparent resealable bag of up to 1 litre, one bag per passenger, shown separately at security.",
+      "Larger amounts are allowed for liquid medicines needed on the journey, baby food, breast milk and sterilised water for babies, presented at security.",
+      "Shop purchases made after security or on board may travel in the sealed bag with the receipt.",
+      "Chemical substances, gases and incapacitating sprays are not permitted."
+     ]
+    },
+    {
+     "h": "🇪🇸 What Spanish airports add, per Aena",
+     "p": "From the Aena hand luggage page, read 17 November 2026 (the page shows only a 2026 copyright). Aena runs the Spanish airports; this is not an Air Europa page.",
      "table": {
       "head": [
        "Question",
        "Aena"
       ],
       "rows": [
-       [
-        "Size of each container",
-        "Up to 100 ml"
-       ],
        [
         "Bag",
         "All containers in one transparent resealable bag of about 20 x 20 cm (1 litre), fully closed; one bag per passenger, children included"
@@ -21684,33 +21748,31 @@
         "The bag goes in a separate tray, and staff may ask you to open a container"
        ],
        [
-        "Medicines and special diets",
-        "Allowed when needed on the trip; carry the prescription where possible"
-       ],
-       [
-        "Perfume bought at the airport or on board",
-        "Allowed in the sealed security bag with the receipt, not opened before your final destination"
-       ],
-       [
         "Checked luggage",
         "The liquid restrictions do not apply"
        ]
       ]
      },
      "list": [
-      "<strong>Not on the page:</strong> any Air Europa wording and a limit for aerosols in checked luggage."
+      "Source: <a href=\"https://www.aena.es/en/passengers/baggage-controls/hand-luggage.html\" target=\"_blank\" rel=\"noopener\">Aena: Hand luggage (unofficial for Air Europa)</a>"
      ]
     }
    ],
    "sources": [
     [
-     "https://www.aena.es/en/passengers/baggage-controls/hand-luggage.html",
-     "Unofficial source: Aena &mdash; Hand luggage"
+     "https://www.aireuropa.com/us/en/aea/travel-information/security/safety-measures-and-liquids.html",
+     "Air Europa &mdash; Safety measures and liquids"
     ]
    ],
    "keepSchema": true,
-   "checked": "17 November 2026",
-   "unofficial": true
+   "checked": "28 November 2026",
+   "unofficial": false,
+   "faq": [
+    [
+     "Can I take perfume in my Air Europa cabin bag?",
+     "Yes, in a container of up to 100 ml inside your single 1-litre resealable bag."
+    ]
+   ]
   },
   "power": {
    "answer": "Air Europa allows a maximum of 15 devices and 20 spare batteries of 100 Wh or less per passenger, and only 2 spare batteries between 100 Wh and 160 Wh in hand luggage; lithium-ion above 160 Wh is not permitted.",

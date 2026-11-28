@@ -281,7 +281,8 @@
   "official": [
    "read: China Southern Airlines: Carry-on baggage FAQ",
    "read 2026-11-24: CAAC (civil aviation authority) 2007 announcement on liquids, marked valid",
-   "read 2026-11-27: CAAC carry and check guidance, http://www.caac.gov.cn/INDEX/HLFW/HKLXCS/202303/t20230316_217597.html"
+   "read 2026-11-27: CAAC carry and check guidance, http://www.caac.gov.cn/INDEX/HLFW/HKLXCS/202303/t20230316_217597.html",
+   "read 28 November 2026: https://www.csair.com/cts-products/cts/fastdfs/20260626/3edae764dd49418582ef740225391b1a.pdf"
   ],
   "reliable": [
    "read: CDC Yellow Book: Travelers with chronic illnesses; Diabetes UK: Travelling with diabetes"
@@ -289,7 +290,7 @@
   "other": [
    "none needed: the destination country sets the medicine rules, not the airline; covered by our per-country pages /medication/into/<country>/ (each read from that country authority or INCB filing) plus INCB travellers guidance"
   ],
-  "date": "2026-11-27"
+  "date": "2026-11-28"
  },
  "airline/copa-airlines/medication": {
   "official": [
@@ -507,7 +508,8 @@
  "airline/indigo/medication": {
   "official": [
    "read: IndiGo: Dangerous goods and items not allowed in flight",
-   "read 2026-11-24: IndiGo Meda Pax Ready Reckoner PDF (medical team) and dangerous-goods page re-read in browser pane"
+   "read 2026-11-24: IndiGo Meda Pax Ready Reckoner PDF (medical team) and dangerous-goods page re-read in browser pane",
+   "read 28 November 2026: https://www.goindigo.in/travel-information/en/passengers-with-special-needs.html"
   ],
   "reliable": [
    "read: Diabetes UK: Travelling with diabetes"
@@ -515,7 +517,7 @@
   "other": [
    "none needed: the destination country sets the medicine rules, not the airline; covered by our per-country pages /medication/into/<country>/ (each read from that country authority or INCB filing) plus INCB travellers guidance"
   ],
-  "date": "2026-11-24"
+  "date": "2026-11-28"
  },
  "airline/israir/medication": {
   "official": [
@@ -1277,7 +1279,8 @@
  },
  "food/china": {
   "official": [
-   "tried 2026-11-09 (session 43-45): official customs/agriculture portal of china blocked, silent or no traveller food rule"
+   "tried 2026-11-09 (session 43-45): official customs/agriculture portal of china blocked, silent or no traveller food rule",
+   "read 28 November 2026: carry-in ban list (beijing.gov.cn Word file; english.shanghai.gov.cn English text)"
   ],
   "reliable": [
    "IATA Travel Centre customs page infopages.traveldoc.aero (named, undated): read 2026-11-09, quoted on the page"
@@ -1285,7 +1288,7 @@
   "other": [
    "none needed: step 2a answered the question"
   ],
-  "date": "2026-11-16"
+  "date": "2026-11-28"
  },
  "food/costa-rica": {
   "official": [
@@ -1389,12 +1392,13 @@
    "tried 2026-11-09 (session 43-45): official customs/agriculture portal of morocco blocked, silent or no traveller food rule"
   ],
   "reliable": [
-   "IATA Travel Centre customs page infopages.traveldoc.aero (named, undated): read 2026-11-09, quoted on the page"
+   "IATA Travel Centre customs page infopages.traveldoc.aero (named, undated): read 2026-11-09, quoted on the page",
+   "read 28 November 2026: Hespress/MAP and H24info on the ONSSA ban; copy of ADII guide (bladi.net). douane.gov.ma rejected the request; onssa.gov.ma home page showed no traveller rule"
   ],
   "other": [
    "none needed: step 2a answered the question"
   ],
-  "date": "2026-11-16"
+  "date": "2026-11-28"
  },
  "food/nepal": {
   "official": [
@@ -12889,13 +12893,14 @@
  },
  "airline/transavia/alcohol": {
   "official": [
-   "tried 2026-11-19: transavia.com liquids rules, hold luggage and food and drinks help pages: HTTP 403"
+   "tried 2026-11-19: transavia.com liquids rules, hold luggage and food and drinks help pages: HTTP 403",
+   "read 28 November 2026: https://www.transavia.com/en-EU/conditions/conditions-of-carriage/"
   ],
   "reliable": [
    "read 2026-11-19: Dutch Customs (douane.nl) bringing alcohol from abroad, updated 2026-07-14 (EU arrivals)"
   ],
   "other": [],
-  "date": "2026-11-19"
+  "date": "2026-11-28"
  },
  "airline/klm/alcohol": {
   "official": [
@@ -13142,12 +13147,13 @@
    "tried 2026-11-16: ITA Airways own restricted-items/dangerous-goods page; see page source"
   ],
   "reliable": [
-   "read 2026-11-17: Aeroporti di Roma: Fiumicino security controls (https://www.adr.it/it/pax-fco-controlli-di-sicurezza)"
+   "read 2026-11-17: Aeroporti di Roma: Fiumicino security controls (https://www.adr.it/it/pax-fco-controlli-di-sicurezza)",
+   "read 28 November 2026: https://www.milanomalpensa-airport.com/en/assistance/baggage-rules"
   ],
   "other": [
    "none needed: step 2a answered part of the question"
   ],
-  "date": "2026-11-17"
+  "date": "2026-11-28"
  },
  "airline/thai-airways/perfume-aerosols": {
   "official": [
@@ -13731,9 +13737,10 @@
   "other": [
    "tried 2026-11-17: Aer Lingus conditions of carriage PDF: not machine-readable; aerlingus.com vape page not found"
   ],
-  "date": "2026-11-17",
+  "date": "2026-11-28",
   "official": [
-   "read 2026-11-17: https://www.aerlingus.com/media/pdfs/guide-to-dangerous-goods.pdf (Guide To Dangerous Goods January 2026, Revision 5, 14/04/2026, extracted with pdftotext: e-cigarettes YES carry-on, NO checked, YES on person; matches our page)"
+   "read 2026-11-17: https://www.aerlingus.com/media/pdfs/guide-to-dangerous-goods.pdf (Guide To Dangerous Goods January 2026, Revision 5, 14/04/2026, extracted with pdftotext: e-cigarettes YES carry-on, NO checked, YES on person; matches our page)",
+   "read 28 November 2026: https://www.aerlingus.com/media/pdfs/conditions-of-carriage-emerald-airlines-feb-2026.pdf"
   ]
  },
  "airline/air-canada/vape-e-cigarette": {
@@ -14050,7 +14057,8 @@
  },
  "airline/air-europa/perfume-aerosols": {
   "official": [
-   "tried 2026-11-17: aireuropa.com liquids page HTTP 403"
+   "tried 2026-11-17: aireuropa.com liquids page HTTP 403",
+   "read 28 November 2026: https://www.aireuropa.com/us/en/aea/travel-information/security/safety-measures-and-liquids.html"
   ],
   "reliable": [
    "read 2026-11-17: Aena hand luggage page (Spanish airport operator)"
@@ -14058,7 +14066,7 @@
   "other": [
    "none needed: airport operator source read"
   ],
-  "date": "2026-11-17"
+  "date": "2026-11-28"
  },
  "airline/kuwait-airways/perfume-aerosols": {
   "official": [
@@ -14638,12 +14646,13 @@
    "read 2026-11-22: oesterreich.gv.at tobacco page (BMF, updated 2026-10-21): tobacco and heated tobacco limits, no e-liquid; bmf.gv.at press release 2025-11-17: 518 e-cigarettes and liquids found"
   ],
   "reliable": [
-   "WHO country profile read 2026-10-08 (base card)"
+   "WHO country profile read 2026-10-08 (base card)",
+   "read 28 November 2026: jusline.at TNRSG 1, 12, 13, 14; ris.bka.gv.at returned 503"
   ],
   "other": [
    "bmf.gv.at Zoll-Info PDF July 2023: HTTP 404 on curl 2026-11-22"
   ],
-  "date": "2026-11-22"
+  "date": "2026-11-28"
  },
  "country/belgium/vaping": {
   "official": [
@@ -15046,7 +15055,8 @@
  },
  "country/saudi-arabia/vaping": {
   "official": [
-   "zatca.gov.sa FAQ 321 and tobacco quantity pages: no response on curl, navigation failed in browser pane 2026-11-22"
+   "zatca.gov.sa FAQ 321 and tobacco quantity pages: no response on curl, navigation failed in browser pane 2026-11-22",
+   "read 28 November 2026: MOH Anti-Smoking Law regulations (Wayback)"
   ],
   "reliable": [
    "WHO country profile read 2026-10-08 (base card)"
@@ -15054,11 +15064,12 @@
   "other": [
    "read 2026-11-22: Saudi Gazette 2020-08-30 and 2Firsts 2023-02-27 (lower reliability press)"
   ],
-  "date": "2026-11-22"
+  "date": "2026-11-28"
  },
  "country/seychelles/vaping": {
   "official": [
-   "Seychelles Revenue Commission traveller page: not found by search, not read"
+   "Seychelles Revenue Commission traveller page: not found by search, not read",
+   "read 28 November 2026: SI 87 of 2023; Bill 4 of 2024"
   ],
   "reliable": [
    "WHO country profile read 2026-10-08 (base card)",
@@ -15067,7 +15078,7 @@
   "other": [
    "read 2026-11-22: GSTHR e-cigarette profile for Seychelles (page updated 2026-11-16, secondary compilation, lower reliability)"
   ],
-  "date": "2026-11-24"
+  "date": "2026-11-28"
  },
  "country/thailand/vaping": {
   "official": [
@@ -15118,7 +15129,8 @@
  },
  "country/latvia/vaping": {
   "official": [
-   "read 2026-11-19: VID Travelling within the EU (published 2022-10-31): 300 ml e-cigarette liquid, 300 g tobacco substitutes, EU duty paid"
+   "read 2026-11-19: VID Travelling within the EU (published 2022-10-31): 300 ml e-cigarette liquid, 300 g tobacco substitutes, EU duty paid",
+   "read 28 November 2026: LV portals 371405"
   ],
   "reliable": [
    "WHO country profile read 2026-10-08 (base card)"
@@ -15126,7 +15138,7 @@
   "other": [
    "none needed: national tax authority page read; no non-EU figure on the page"
   ],
-  "date": "2026-11-19"
+  "date": "2026-11-28"
  },
  "country/hungary/vaping": {
   "official": [
@@ -15180,7 +15192,8 @@
  },
  "country/maldives/vaping": {
   "official": [
-   "customs.gov.mv restricted items page: 403 on WebFetch and curl 2026-11-19; archive copy not fetched"
+   "customs.gov.mv restricted items page: 403 on WebFetch and curl 2026-11-19; archive copy not fetched",
+   "read 28 November 2026: presidency.gov.mv 32159 and 33779; Visit Maldives notice"
   ],
   "reliable": [
    "Maldives High Commission UK customs page: browser navigation refused 2026-11-21"
@@ -15188,7 +15201,7 @@
   "other": [
    "read 2026-11-21: Atoll Times 2026-08-07 (lower reliability, press): import/sale/use prohibited, fines MVR 50,000 + 10,000 per device"
   ],
-  "date": "2026-11-21"
+  "date": "2026-11-28"
  },
  "country/finland/vaping": {
   "official": [
@@ -16093,5 +16106,21 @@
    "read 2026-11-27: Norwegian batteries on board, https://www.norwegian.com/en/travel-info/baggage/batteries-on-board/"
   ],
   "date": "2026-11-27"
+ },
+ "airline/qatar-airways/perfume-aerosols": {
+  "reliable": [
+   "read 2026-11-28: https://dohahamadairport.com/airport-guide/at-the-airport/security-customs"
+  ],
+  "date": "2026-11-28"
+ },
+ "food/bulgaria": {
+  "reliable": [
+   "read 28 November 2026: BNT 16 June 2026; Your Europe EN and BG. bfsa.egov.bg and customs.bg did not open (curl, pane)"
+  ],
+  "date": "2026-11-28",
+  "official": [
+   "read 28 November 2026: European Union Your Europe page (EN and BG); applies to Bulgaria",
+   "tried 28 November 2026: bfsa.egov.bg and customs.bg did not open (curl, pane); Wayback listed no traveller food page"
+  ]
  }
 }
