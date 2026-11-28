@@ -3712,6 +3712,16 @@
      "list": [
       "<strong>Not on the page:</strong> the section gives no battery size limit; battery and power bank limits are on a separate page that was not read for this section."
      ]
+    },
+    {
+     "h": "🥝 What New Zealand’s aviation regulator says about vapes",
+     "p": "Not from Air New Zealand: the Civil Aviation Authority’s poster “What can you take on the plane”, in the Internet Archive copy because the live file did not open for us; read 28 November 2026.",
+     "list": [
+      "E-cigarettes and vapes with batteries cannot go in checked luggage, because of the fire risk; carry them on.",
+      "The same applies to power banks and spare batteries.",
+      "One lighter may travel on your person, never in a bag, and blue-flame cigar lighters are not permitted.",
+      "<a href=\"https://www.aviation.govt.nz/assets/passenger/posters-and-flyers/What-can-you-take-on-the-plane.pdf\" target=\"_blank\" rel=\"noopener\">CAA New Zealand: What can you take on the plane (PDF)</a>"
+     ]
     }
    ],
    "faq": [
@@ -4928,6 +4938,17 @@
      "list": [
       "<strong>Not on the page:</strong> the section gives no rule for 100 to 160 Wh."
      ]
+    },
+    {
+     "h": "🇧🇷 Brazil’s power bank limits from 2026",
+     "p": "Not from LATAM: a Brasilturis report (21 May 2026, in Portuguese, less reliable than the regulator’s own text) on the campaign by Brazil’s aviation agency ANAC, the Ports and Airports Ministry and the airline association Abear; read 28 November 2026.",
+     "list": [
+      "Up to two power banks of at most 100 Wh each per passenger.",
+      "From 100 to 160 Wh the airline must authorise them at the check-in desk; above 160 Wh they do not fly.",
+      "They go in hand baggage, under the seat in front or in the seat pocket, not in the overhead bin, and never in checked bags.",
+      "The advice is also not to plug them into the aircraft’s USB sockets.",
+      "<a href=\"https://brasilturis.com.br/2026/05/21/anac-atualiza-regras-para-transporte-de-power-banks-em-voos/\" target=\"_blank\" rel=\"noopener\">Brasilturis: new power bank rules (in Portuguese)</a>"
+     ]
     }
    ],
    "faq": [
@@ -4938,6 +4959,10 @@
     [
      "Can I use my power bank on LATAM?",
      "No, it must not be used as a power source for any device and cannot be plugged into the aircraft outlets."
+    ],
+    [
+     "Does Brazil allow a 150 Wh power bank?",
+     "Only with the airline’s authorisation at check-in, according to a report on the ANAC rules."
     ]
    ],
    "sources": [
@@ -10086,6 +10111,16 @@
      "list": [
       "<strong>Not on the page:</strong> the page does not give the rule for checked baggage."
      ]
+    },
+    {
+     "h": "🏛️ Athens is still a 100 ml airport",
+     "p": "Not from Aegean: Euronews (30 January 2026), an unofficial news source, read 28 November 2026.",
+     "list": [
+      "Athens was among the airports where the 100 ml limit stayed in place.",
+      "Airport authorities told Euronews that they plan to introduce scanners allowing 2 litres in early 2027, once expansion works are finished.",
+      "A bottle bought or carried under a looser rule elsewhere can therefore be stopped on the way home through Athens.",
+      "<a href=\"https://www.euronews.com/2026/01/30/liquid-anxiety-which-european-airports-have-scrapped-the-100ml-limit\" target=\"_blank\" rel=\"noopener\">Euronews: which airports have scrapped the 100 ml limit</a>"
+     ]
     }
    ],
    "faq": [
@@ -10096,6 +10131,10 @@
     [
      "Can I take duty-free liquids on Aegean?",
      "Yes, from shops after security, in the sealed bag provided; do not open it before screening."
+    ],
+    [
+     "When will Athens allow bigger liquid bottles?",
+     "Airport authorities told Euronews in January 2026 that they plan 2-litre scanners in early 2027."
     ]
    ],
    "sources": [
@@ -10745,6 +10784,16 @@
      },
      "list": [
       "<strong>Not on the page:</strong> the bag size, exemptions for medicine and baby food, and duty-free rules. Ask flydubai or check the Dubai Airports guidance."
+     ]
+    },
+    {
+     "h": "🛄 New scanners at Dubai International in 2026",
+     "p": "Not from flydubai: The National (11 February 2026), an unofficial news source, read 28 November 2026.",
+     "list": [
+      "Dubai Airports said it would upgrade more than 100 hand-luggage scanners during 2026, with six already working at the time.",
+      "The paper reports that the new machines let travellers leave laptops and liquids, including containers over 100 ml, in their bags.",
+      "It did not say the rollout was complete, and the airport’s FAQ above still gives 100 ml, so pack to that limit unless your checkpoint says otherwise.",
+      "<a href=\"https://www.thenationalnews.com/business/aviation/2026/02/11/no-need-to-remove-liquids-and-laptops-at-airport-dubai-installs-ai-powered-hand-luggage-scanners/\" target=\"_blank\" rel=\"noopener\">The National: Dubai installs new hand-luggage scanners</a>"
      ]
     }
    ],
@@ -12572,6 +12621,16 @@
      "list": [
       "<strong>Not on the page:</strong> the page gives no rule on using an e-cigarette on board or on e-liquid."
      ]
+    },
+    {
+     "h": "📜 Vaping on board in Air Arabia’s conditions",
+     "p": "From Air Arabia’s General Conditions of Carriage (file dated 15 December 2025 on airarabia.com), articles 14.2 and 14.3, read 28 November 2026.",
+     "list": [
+      "Smoking, electronic and other artificial forms included, is not permitted on board.",
+      "A passenger who breaks the rule may be restrained, removed or refused onward carriage, and reported to the police.",
+      "The airline may refuse to carry the passenger again and require them to repay costs, including those of a diversion.",
+      "<a href=\"https://www.airarabia.com/-/media/conditions-of-carriage/20251215_gcoc_english_version_air-arabia.pdf\" target=\"_blank\" rel=\"noopener\">Air Arabia: General Conditions of Carriage (PDF)</a>"
+     ]
     }
    ],
    "faq": [
@@ -12582,6 +12641,10 @@
     [
      "Can I put a vape in my checked bag on Air Arabia?",
      "No, e-cigarettes and personal vaporizers are not accepted in checked baggage."
+    ],
+    [
+     "What happens if I vape on an Air Arabia flight?",
+     "The conditions allow restraint, removal, a police report, refusal of future carriage and recovery of costs."
     ]
    ],
    "sources": [
@@ -17457,7 +17520,17 @@
       ]
      },
      "list": [
-      "<strong>Not on the page:</strong> the page does not say whether vapes go in hand baggage or checked baggage, and gives no device or battery limit."
+      "<strong>Not in this article:</strong> a general rule on hand or checked baggage, or a battery limit; the country rules Saudia gives are below."
+     ]
+    },
+    {
+     "h": "🧳 What Saudia’s prohibited items page says by country",
+     "p": "From Saudia’s “Prohibited items in baggage and cabin” page, in the Internet Archive copy of April 2026; read 28 November 2026.",
+     "list": [
+      "In its section on the Chinese aviation authority’s rules, e-cigarettes of all kinds appear among items not to pack in checked baggage.",
+      "In its section on Oman customs law, electronic cigarettes are on the prohibited list.",
+      "So on a trip touching China keep any vape out of the hold, and do not take one into Oman.",
+      "<a href=\"https://www.saudia.com/en-SA/manage/baggage/prohibited-items\" target=\"_blank\" rel=\"noopener\">Saudia: Prohibited items</a>"
      ]
     }
    ],
@@ -17465,6 +17538,10 @@
     [
      "Can I use my vape on a Saudia flight?",
      "No, Saudia prohibits smoking on board all flights, including electronic cigarettes."
+    ],
+    [
+     "Can I fly Saudia to Oman with a vape?",
+     "Saudia’s page lists electronic cigarettes among items prohibited under Oman customs law."
     ]
    ],
    "sources": [

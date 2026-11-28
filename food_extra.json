@@ -7475,9 +7475,13 @@
   ]
  },
  "Maldives": {
-  "checked": "9 November 2026",
-  "answer": "Maldives's own customs pages could not be used for a traveller food rule, so this comes from the IATA Travel Centre customs page for Maldives, which airlines use. Pork needs a permit from the Ministry of Economic Development. Other animal products need a sanitary certificate and inspection, and live plants and their products need a phytosanitary certificate and inspection by the Ministry of Fisheries and Agriculture. Live pigs are prohibited. It has no line on dairy, eggs, fruit, vegetables or seeds, and no food limit. The page shows no date, so confirm with Maldives customs before you travel.",
+  "checked": "28 November 2026",
+  "answer": "Maldives Customs bans importing pork and its by-products without prior approval from the Ministry of Economic Development, and says all plants need a valid phytosanitary or sanitary certificate, with inspection and approval by the Ministry of Fisheries and Agriculture. For other animal products, the IATA Travel Centre says a sanitary certificate and inspection are needed. Neither source gives a food quantity limit, and the customs guide is undated.",
   "sources": [
+   [
+    "https://www.customs.gov.mv/d/tourist.pdf",
+    "Maldives Customs Service: guide for tourists (PDF, undated)"
+   ],
    [
     "https://infopages.traveldoc.aero/Customs/MDV/Plain",
     "IATA Travel Centre — Maldives customs: prohibited and restricted goods (undated)"
@@ -7486,15 +7490,15 @@
   "faq": [
    [
     "Can I bring pork into the Maldives?",
-    "The IATA page says pork and its derivative products require a permit from the Ministry of Economic Development, and live pigs are prohibited."
+    "Not without prior approval: Maldives Customs cites Law 4/1975, with the permit issued by the Ministry of Economic Development."
    ],
    [
     "What about other animal products?",
-    "They require a sanitary certificate and inspection by the Ministry of Fisheries and Agriculture."
+    "The IATA Travel Centre says they require a sanitary certificate and inspection by the Ministry of Fisheries and Agriculture."
    ],
    [
     "Do plants need a certificate?",
-    "Live plants and their products need a phytosanitary certificate."
+    "Yes. Customs says all plants need a valid phytosanitary or sanitary certificate and must be inspected and approved."
    ]
   ],
   "topics": [
@@ -7503,17 +7507,50 @@
     "label": "Pork",
     "status": "warn",
     "verdict": "Permit",
-    "head": "Pork and its products need a permit.",
+    "head": "Pork needs prior approval.",
     "scen": [
      {
-      "when": "Pork and derivative products",
+      "when": "Pork and its by-products",
       "status": "warn",
       "tag": "Permit",
       "lines": [
-       "The page says they require a permit from the Ministry of Economic Development."
+       "Customs says importing them without prior approval is prohibited under the Import Prohibition Act, Law 4/1975.",
+       "The permit comes from the Ministry of Economic Development."
       ]
      }
-    ]
+    ],
+    "src": [
+     [
+      "https://www.customs.gov.mv/d/tourist.pdf",
+      "Maldives Customs Service: guide for tourists (PDF, undated)"
+     ]
+    ],
+    "official": true
+   },
+   {
+    "id": "plants",
+    "label": "Plants & seeds",
+    "status": "warn",
+    "verdict": "Certificate",
+    "head": "All plants need a certificate and inspection.",
+    "scen": [
+     {
+      "when": "Plants",
+      "status": "warn",
+      "tag": "Certificate",
+      "lines": [
+       "Customs says every plant needs a valid phytosanitary or sanitary certificate.",
+       "It must be inspected and approved by the Ministry of Fisheries and Agriculture."
+      ]
+     }
+    ],
+    "src": [
+     [
+      "https://www.customs.gov.mv/d/tourist.pdf",
+      "Maldives Customs Service: guide for tourists (PDF, undated)"
+     ]
+    ],
+    "official": true
    },
    {
     "id": "animal",
@@ -7530,45 +7567,41 @@
        "The page says they require a sanitary certificate and must be inspected and approved by the Ministry of Fisheries and Agriculture."
       ]
      }
-    ]
-   },
-   {
-    "id": "plants",
-    "label": "Plants & seeds",
-    "status": "warn",
-    "verdict": "Certificate",
-    "head": "Live plants and their products need a phytosanitary certificate.",
-    "scen": [
-     {
-      "when": "Live plants and their derivative products",
-      "status": "warn",
-      "tag": "Certificate",
-      "lines": [
-       "The page says they require a phytosanitary certificate and inspection by the Ministry of Fisheries and Agriculture."
-      ]
-     }
-    ]
+    ],
+    "src": [
+     [
+      "https://infopages.traveldoc.aero/Customs/MDV/Plain",
+      "IATA Travel Centre — Maldives customs: prohibited and restricted goods (undated)"
+     ]
+    ],
+    "official": false
    },
    {
     "id": "notread",
     "label": "Not covered",
     "status": "warn",
     "verdict": "Ask first",
-    "head": "The page leaves out some foods and shows no date.",
+    "head": "Neither source covers every food.",
     "scen": [
      {
-      "when": "What the page does not say",
+      "when": "Foods that are not named",
       "status": "warn",
       "tag": "Ask first",
       "lines": [
-       "It has no line on dairy, eggs, fruit, vegetables or seeds, and no food limit. The page shows no update date.",
-       "Its own customs pages gave no readable food rule. Ask Maldives customs before you bring any food."
+       "Neither the customs guide nor the IATA page names dairy, eggs, fruit or vegetables, and neither gives a food quantity limit.",
+       "Both are undated: ask Maldives Customs before you pack fresh food."
       ]
      }
-    ]
+    ],
+    "src": [
+     [
+      "https://infopages.traveldoc.aero/Customs/MDV/Plain",
+      "IATA Travel Centre — Maldives customs: prohibited and restricted goods (undated)"
+     ]
+    ],
+    "official": false
    }
-  ],
-  "unofficial": true
+  ]
  },
  "Nepal": {
   "checked": "9 November 2026",

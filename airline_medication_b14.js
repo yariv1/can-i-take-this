@@ -47,7 +47,7 @@ module.exports = function (X) {
         ['Ventilator, POC or CPAP?', '48 hours notice'],
         ['Pills, syringes, cold storage?', NP]
       ],
-      extra: steps(['Carry medicine in its original packaging with the prescription.', 'Bring proof that you need liquid medicine over 100 ml.', 'Give 72 hours notice for airline oxygen, 48 hours for a POC or CPAP.'])
+      extra: steps(['Carry medicine in its original packaging with the prescription.', 'Bring proof that you need liquid medicine over 100 ml.', 'Give 72 hours notice for airline oxygen, 48 hours for a POC or CPAP.']) + "<section class=\"bd-sec\"><h2>Stretchers and incubators on Kuwait Airways</h2><p>From Kuwait Airways’ “Medical Attention” page, in the Internet Archive copy of February 2025; read 28 November 2026.</p><ul><li>Give 48 hours’ notice to travel on a stretcher or to carry an incubator; contact a Kuwait Airways sales office, which arranges it with the airline’s medical and engineering departments.</li><li>The page lists a 700% surcharge for a stretcher in economy class, and incubator fares of 300% of the normal one-way fare in peak season and 200% off peak.</li><li>On flights to and from the United States a safety assistant must go with a stretcher or incubator passenger: aged at least 16, of full mobility and not looking after anyone else who needs help.</li><li>Wheelchairs are free of charge.</li></ul><p class=\"bd-chk\">Source: <a href=\"https://www.kuwaitairways.com/en/services/optionalservices/Pages/medical-attention.aspx\" target=\"_blank\" rel=\"noopener\">Kuwait Airways: Medical attention</a></p></section>"
     });
   }
 

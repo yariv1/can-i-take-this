@@ -216,7 +216,8 @@
  },
  "airline/azul/medication": {
   "official": [
-   "read 2026-11-23: Azul, Assistencia especial (voeazul.com.br sua-viagem/assistencia-especial) via browser pane; plus carry-on page"
+   "read 2026-11-23: Azul, Assistencia especial (voeazul.com.br sua-viagem/assistencia-especial) via browser pane; plus carry-on page",
+   "read 28 November 2026: https://www.voeazul.com.br/us/en/medif"
   ],
   "reliable": [
    "searched 2026-11-23: Portuguese-language travel guides (Melhores Destinos, Trip.com) repeat the airline rule; none states Azul syringe or cold-storage rules"
@@ -224,7 +225,7 @@
   "other": [
    "none: syringes and cold storage have no published Azul rule; TSA/security general rule applies"
   ],
-  "date": "2026-11-23"
+  "date": "2026-11-28"
  },
  "airline/british-airways/medication": {
   "official": [
@@ -606,7 +607,8 @@
  },
  "airline/kuwait-airways/medication": {
   "official": [
-   "read: Kuwait Airways: Free baggage, liquids rules and dangerous goods in baggage; Kuwait Airways: Optional services, medical attention"
+   "read: Kuwait Airways: Free baggage, liquids rules and dangerous goods in baggage; Kuwait Airways: Optional services, medical attention",
+   "read 28 November 2026: archived https://www.kuwaitairways.com/en/services/optionalservices/Pages/medical-attention.aspx"
   ],
   "reliable": [
    "read: CDC Yellow Book: Travelers with chronic illnesses; Diabetes UK: Travelling with diabetes"
@@ -614,7 +616,7 @@
   "other": [
    "none needed: the destination country sets the medicine rules, not the airline; covered by our per-country pages /medication/into/<country>/ (each read from that country authority or INCB filing) plus INCB travellers guidance"
   ],
-  "date": "2026-11-16"
+  "date": "2026-11-28"
  },
  "airline/latam/medication": {
   "official": [
@@ -654,7 +656,8 @@
  },
  "airline/malaysia-airlines/medication": {
   "official": [
-   "read: Malaysia Airlines: Cabin baggage; Malaysia Airlines: Special requirements"
+   "read: Malaysia Airlines: Cabin baggage; Malaysia Airlines: Special requirements",
+   "read 28 November 2026: archived https://www.malaysiaairlines.com/au/en/plan-your-trip/health-medical.html"
   ],
   "reliable": [
    "read: Diabetes UK: Travelling with diabetes"
@@ -662,7 +665,7 @@
   "other": [
    "none needed: the destination country sets the medicine rules, not the airline; covered by our per-country pages /medication/into/<country>/ (each read from that country authority or INCB filing) plus INCB travellers guidance"
   ],
-  "date": "2026-11-16"
+  "date": "2026-11-28"
  },
  "airline/middle-east-airlines/medication": {
   "official": [
@@ -1383,15 +1386,17 @@
  },
  "food/maldives": {
   "official": [
-   "tried 2026-11-09 (session 43-45): official customs/agriculture portal of maldives blocked, silent or no traveller food rule"
+   "tried 2026-11-09 (session 43-45): official customs/agriculture portal of maldives blocked, silent or no traveller food rule",
+   "read 28 November 2026: https://www.customs.gov.mv/d/tourist.pdf"
   ],
   "reliable": [
-   "IATA Travel Centre customs page infopages.traveldoc.aero (named, undated): read 2026-11-09, quoted on the page"
+   "IATA Travel Centre customs page infopages.traveldoc.aero (named, undated): read 2026-11-09, quoted on the page",
+   "read 28 November 2026: IATA Travel Centre kept for other animal products"
   ],
   "other": [
    "none needed: step 2a answered the question"
   ],
-  "date": "2026-11-16"
+  "date": "2026-11-28"
  },
  "food/morocco": {
   "official": [
@@ -1873,7 +1878,8 @@
  "country/malta/tobacco": {
   "official": [
    "tried 2026-11-16: official customs page for Malta: HTTP 403 or connection refused, not read",
-   "read 2026-11-22: mtca.gov.mt travellers allowances page"
+   "read 2026-11-22: mtca.gov.mt travellers allowances page",
+   "read 28 November 2026: https://legislation.mt/eli/sl/315.4/eng/pdf"
   ],
   "reliable": [
    "read: Travel Doc customs information page for Malta (infopages.traveldoc.aero)",
@@ -1882,7 +1888,7 @@
   "other": [
    "none needed: step 2a answered the question"
   ],
-  "date": "2026-11-23"
+  "date": "2026-11-28"
  },
  "country/bahrain/alcohol": {
   "official": [
@@ -12693,13 +12699,14 @@
  },
  "airline/frontier/perfume-aerosols": {
   "official": [
-   "read 2026-11-17: https://www.flyfrontier.com/travel/travel-info/bag-options/ (aerosols prohibited in checked bags)"
+   "read 2026-11-17: https://www.flyfrontier.com/travel/travel-info/bag-options/ (aerosols prohibited in checked bags)",
+   "read 2026-11-28: card aligned with the rule quoted on the page"
   ],
   "reliable": [
    "read 2026-11-17: TSA hairspray page"
   ],
   "other": [],
-  "date": "2026-11-17"
+  "date": "2026-11-28"
  },
  "airline/air-china/liquids": {
   "official": [
@@ -13111,7 +13118,10 @@
    "IATA Dangerous Goods Regulations, Table 2.3.A: read, on the page",
    "read 2026-11-16: customs/authority source for Colombia as recorded in country_unique.json: Unofficial source, read 16 November 2026: Travel Doc customs information page for Colombia (infopages.traveldoc.aero, undated; it names no publisher). The offic"
   ],
-  "date": "2026-11-16"
+  "date": "2026-11-28",
+  "official": [
+   "read 2026-11-28: card aligned with the rule quoted on the page"
+  ]
  },
  "airline/wizz-air/alcohol": {
   "reliable": [
@@ -13423,7 +13433,8 @@
  },
  "airline/air-new-zealand/vape-e-cigarette": {
   "official": [
-   "tried 2026-11-16: Air New Zealand own e-cigarette/restricted-items page; see page source"
+   "tried 2026-11-16: Air New Zealand own e-cigarette/restricted-items page; see page source",
+   "read 28 November 2026: CAA New Zealand poster, archived https://www.aviation.govt.nz/assets/passenger/posters-and-flyers/What-can-you-take-on-the-plane.pdf"
   ],
   "reliable": [
    "read 2026-10-08: WHO global tobacco report 2023 country profile (https://cdn.who.int/media/docs/default-source/country-profiles/tobacco/gtcr-2023/tobacco-2023-nzl.pdf)"
@@ -13431,7 +13442,7 @@
   "other": [
    "none needed: step 2a answered part of the question"
   ],
-  "date": "2026-11-17"
+  "date": "2026-11-28"
  },
  "airline/malaysia-airlines/vape-e-cigarette": {
   "official": [
@@ -13447,7 +13458,8 @@
  },
  "airline/vietnam-airlines/vape-e-cigarette": {
   "official": [
-   "tried 2026-11-16: Vietnam Airlines own e-cigarette/restricted-items page; see page source"
+   "tried 2026-11-16: Vietnam Airlines own e-cigarette/restricted-items page; see page source",
+   "read 2026-11-28: card aligned with the rule quoted on the page"
   ],
   "reliable": [
    "read 2026-10-08: WHO global tobacco report 2023 country profile (https://cdn.who.int/media/docs/default-source/country-profiles/tobacco/gtcr-2023/tobacco-2023-vnm.pdf)"
@@ -13455,7 +13467,7 @@
   "other": [
    "none needed: step 2a answered part of the question"
   ],
-  "date": "2026-11-17"
+  "date": "2026-11-28"
  },
  "airline/finnair/vape-e-cigarette": {
   "official": [
@@ -13471,7 +13483,8 @@
  },
  "airline/latam/vape-e-cigarette": {
   "official": [
-   "tried 2026-11-16: LATAM own e-cigarette/restricted-items page; see page source"
+   "tried 2026-11-16: LATAM own e-cigarette/restricted-items page; see page source",
+   "read 2026-11-28: card aligned with the rule quoted on the page"
   ],
   "reliable": [
    "read 2026-10-08: WHO global tobacco report 2023 country profile (https://cdn.who.int/media/docs/default-source/country-profiles/tobacco/gtcr-2023/tobacco-2023-chl.pdf)"
@@ -13479,7 +13492,7 @@
   "other": [
    "none needed: step 2a answered part of the question"
   ],
-  "date": "2026-11-17"
+  "date": "2026-11-28"
  },
  "airline/copa-airlines/vape-e-cigarette": {
   "official": [
@@ -13545,7 +13558,8 @@
  },
  "airline/air-france/vape-e-cigarette": {
   "official": [
-   "tried 2026-11-16: Air France own e-cigarette/restricted-items page; see page source"
+   "tried 2026-11-16: Air France own e-cigarette/restricted-items page; see page source",
+   "read 2026-11-28: card aligned with the rule quoted on the page"
   ],
   "reliable": [
    "read 2026-10-08: WHO global tobacco report 2023 country profile (https://cdn.who.int/media/docs/default-source/country-profiles/tobacco/gtcr-2023/tobacco-2023-fra.pdf)"
@@ -13553,7 +13567,7 @@
   "other": [
    "none needed: step 2a answered part of the question"
   ],
-  "date": "2026-11-17"
+  "date": "2026-11-28"
  },
  "airline/south-african-airways/vape-e-cigarette": {
   "official": [
@@ -13672,7 +13686,8 @@
  },
  "airline/saudia/vape-e-cigarette": {
   "official": [
-   "tried 2026-11-16: Saudia own e-cigarette/restricted-items page; see page source"
+   "tried 2026-11-16: Saudia own e-cigarette/restricted-items page; see page source",
+   "read 28 November 2026: archived April 2026 https://www.saudia.com/en-SA/manage/baggage/prohibited-items"
   ],
   "reliable": [
    "read 2026-10-08: WHO global tobacco report 2023 country profile (https://cdn.who.int/media/docs/default-source/country-profiles/tobacco/gtcr-2023/tobacco-2023-sau.pdf)"
@@ -13680,7 +13695,7 @@
   "other": [
    "none needed: step 2a answered part of the question"
   ],
-  "date": "2026-11-17"
+  "date": "2026-11-28"
  },
  "airline/gulf-air/vape-e-cigarette": {
   "official": [
@@ -13735,7 +13750,10 @@
   "reliable": [
    "read 2026-11-17: Air Arabia Prohibited items FAQ (official) battery rules added to the page"
   ],
-  "date": "2026-11-17"
+  "date": "2026-11-28",
+  "official": [
+   "read 28 November 2026: https://www.airarabia.com/-/media/conditions-of-carriage/20251215_gcoc_english_version_air-arabia.pdf"
+  ]
  },
  "airline/virgin-australia/vape-e-cigarette": {
   "other": [
@@ -14462,13 +14480,15 @@
  },
  "airline/flydubai/liquids": {
   "official": [
-   "tried 2026-11-19: flydubai.com forbidden items page timeout, hand baggage page timeout (retried, user-interrupted once)"
+   "tried 2026-11-19: flydubai.com forbidden items page timeout, hand baggage page timeout (retried, user-interrupted once)",
+   "read 28 November 2026: flydubai pages timed out earlier"
   ],
   "reliable": [
-   "read 2026-11-19: Dubai Airports FAQ carry-on answer (100 ml, clear re-sealable bag); tried Dubai Airports baggage regulations page: no liquids text"
+   "read 2026-11-19: Dubai Airports FAQ carry-on answer (100 ml, clear re-sealable bag); tried Dubai Airports baggage regulations page: no liquids text",
+   "read 28 November 2026: https://www.thenationalnews.com/business/aviation/2026/02/11/no-need-to-remove-liquids-and-laptops-at-airport-dubai-installs-ai-powered-hand-luggage-scanners/"
   ],
   "other": [],
-  "date": "2026-11-19"
+  "date": "2026-11-28"
  },
  "airline/middle-east-airlines/liquids": {
   "official": [
@@ -14553,7 +14573,8 @@
  },
  "country/spain/vaping": {
   "official": [
-   "read 2026-11-19: Agencia Tributaria e-cigarette liquids tax exemption page, updated 2026-03-27 (20 ml for travellers over 17)"
+   "read 2026-11-19: Agencia Tributaria e-cigarette liquids tax exemption page, updated 2026-03-27 (20 ml for travellers over 17)",
+   "read 28 November 2026: Law 28/2005 https://www.boe.es/buscar/act.php?id=BOE-A-2005-21261"
   ],
   "reliable": [
    "WHO country profile read 2026-10-08 (base card)",
@@ -14562,7 +14583,7 @@
   "other": [
    "none needed: national tax agency page read"
   ],
-  "date": "2026-11-19"
+  "date": "2026-11-28"
  },
  "country/france/vaping": {
   "official": [
@@ -14579,7 +14600,8 @@
  },
  "country/netherlands/vaping": {
   "official": [
-   "read 2026-11-19: Douane cigarettes or tobacco from abroad page, updated 2026-11-09 (vapes only for own use, no resale)"
+   "read 2026-11-19: Douane cigarettes or tobacco from abroad page, updated 2026-11-09 (vapes only for own use, no resale)",
+   "read 28 November 2026: https://www.rijksoverheid.nl/onderwerpen/roken/regels-vapes"
   ],
   "reliable": [
    "WHO country profile read 2026-10-08 (base card)"
@@ -14587,7 +14609,7 @@
   "other": [
    "none needed: national customs page read"
   ],
-  "date": "2026-11-19"
+  "date": "2026-11-28"
  },
  "country/ireland/vaping": {
   "official": [
@@ -14777,16 +14799,18 @@
  },
  "country/fiji/vaping": {
   "official": [
-   "frcs.org.fj traveller page: not found by search, not read"
+   "frcs.org.fj traveller page: not found by search, not read",
+   "read 28 November 2026: Tobacco Control Act 2010 contents https://www.laws.gov.fj/Acts/DisplayAct/3041"
   ],
   "reliable": [
    "WHO country profile read 2026-10-08 (base card)",
-   "read 2026-11-24: Tobacco Control Laws database (Wayback), Fiji, updated Feb 2021"
+   "read 2026-11-24: Tobacco Control Laws database (Wayback), Fiji, updated Feb 2021",
+   "read 28 November 2026: https://www.fijivillage.com/news/cabinet-backs-review-of-tobacco-laws-to-address-vaping-and-illicit-trade-9b499a/"
   ],
   "other": [
    "read 2026-11-22: GSTHR e-cigarette profile for Fiji (page updated 2026-11-16, secondary compilation, lower reliability)"
   ],
-  "date": "2026-11-24"
+  "date": "2026-11-28"
  },
  "country/georgia/vaping": {
   "official": [
@@ -14814,14 +14838,16 @@
  },
  "country/croatia/vaping": {
   "official": [
-   "read 2026-11-19: Croatian Customs Administration passenger luggage page (undated): e-liquid 10 ml, heated tobacco 50 g"
+   "read 2026-11-19: Croatian Customs Administration passenger luggage page (undated): e-liquid 10 ml, heated tobacco 50 g",
+   "read 28 November 2026: sabor.hr notice on the 2025 amendment adds nothing on vaping use"
   ],
   "reliable": [
    "read 2026-11-19: WHO country profile PDF, tobacco use prevalence table",
-   "read 2026-11-27: copy of 2025 amending act, https://assets.tobaccocontrollaws.org/uploads/legislation/Croatia/Croatia-2025-Amding-Act-native.pdf"
+   "read 2026-11-27: copy of 2025 amending act, https://assets.tobaccocontrollaws.org/uploads/legislation/Croatia/Croatia-2025-Amding-Act-native.pdf",
+   "read 28 November 2026: https://www.croatiaweek.com/croatian-cafes-face-smoking-crackdown/"
   ],
   "other": [],
-  "date": "2026-11-27"
+  "date": "2026-11-28"
  },
  "country/indonesia/vaping": {
   "official": [
@@ -14889,15 +14915,17 @@
  "country/lithuania/vaping": {
   "official": [
    "read 2026-11-23: Lithuanian Customs \"Coming from third countries\" page (muitine.lrv.lt/en, via Wayback copy; live site 403)",
-   "read 2026-11-23: ntakd.lrv.lt e-cigarettes page (archived copy)"
+   "read 2026-11-23: ntakd.lrv.lt e-cigarettes page (archived copy)",
+   "read 28 November 2026: e-seimas consolidated tobacco law: refused our reader (Cloudflare), not bypassed"
   ],
   "reliable": [
-   "WHO country profile read 2026-10-08 (base card)"
+   "WHO country profile read 2026-10-08 (base card)",
+   "read 28 November 2026: https://www.lrt.lt/en/news-in-english/19/1731525/lithuania-bans-flavoured-e-cigarettes"
   ],
   "other": [
    "read 2026-11-22: GSTHR e-cigarette profile for Lithuania (page updated 2026-11-16, secondary compilation, lower reliability)"
   ],
-  "date": "2026-11-23"
+  "date": "2026-11-28"
  },
  "country/luxembourg/vaping": {
   "official": [
@@ -15061,16 +15089,18 @@
  },
  "country/russia/vaping": {
   "official": [
-   "customs.gov.ru traveller page: not found by search, not read"
+   "customs.gov.ru traveller page: not found by search, not read",
+   "read 28 November 2026: official portal not found; law text read as a copy"
   ],
   "reliable": [
    "WHO country profile read 2026-10-08 (base card)",
-   "read 2026-11-24: FTS Russia press-service notice of 5 Oct 2022 via Alta-Soft"
+   "read 2026-11-24: FTS Russia press-service notice of 5 Oct 2022 via Alta-Soft",
+   "read 28 November 2026: https://www.alta.ru/tamdoc/13fz0015/"
   ],
   "other": [
    "read 2026-11-22: GSTHR e-cigarette profile for Russia (page updated 2026-11-16, secondary compilation, lower reliability)"
   ],
-  "date": "2026-11-24"
+  "date": "2026-11-28"
  },
  "country/saudi-arabia/vaping": {
   "official": [
@@ -15112,15 +15142,17 @@
  "country/ukraine/vaping": {
   "official": [
    "customs.gov.ua traveller pages found by search: tobacco limit article only, no e-liquid figure read",
-   "read 2026-11-23: Customs Code of Ukraine articles 374 and 376 (zakon.rada.gov.ua) via Wayback copy"
+   "read 2026-11-23: Customs Code of Ukraine articles 374 and 376 (zakon.rada.gov.ua) via Wayback copy",
+   "read 28 November 2026: zakon.rada.gov.ua law 2899-IV: archive copy had no text, live site rate limited"
   ],
   "reliable": [
-   "WHO country profile read 2026-10-08 (base card)"
+   "WHO country profile read 2026-10-08 (base card)",
+   "read 28 November 2026: https://www.tobaccocontrollaws.org/legislation/ukraine/e-cigarettes"
   ],
   "other": [
    "read 2026-11-22: GSTHR e-cigarette profile for Ukraine (page updated 2026-11-16, secondary compilation, lower reliability)"
   ],
-  "date": "2026-11-23"
+  "date": "2026-11-28"
  },
  "country/united-states/vaping": {
   "official": [
@@ -15188,7 +15220,8 @@
  },
  "country/slovakia/vaping": {
   "official": [
-   "read 2026-11-21: Financial Administration press release 2025-02-19 (browser pane): ITV/e-cigarette refills 2 consumer packages, 5x by air, age 17"
+   "read 2026-11-21: Financial Administration press release 2025-02-19 (browser pane): ITV/e-cigarette refills 2 consumer packages, 5x by air, age 17",
+   "read 28 November 2026: Act 377/2004 https://static.slov-lex.sk/static/SK/ZZ/2004/377/20230101.html"
   ],
   "reliable": [
    "WHO country profile read 2026-10-08 (base card)"
@@ -15196,7 +15229,7 @@
   "other": [
    "excise page financnasprava.sk/en/.../excise-duties read 2026-11-21: no e-cigarette refill text"
   ],
-  "date": "2026-11-21"
+  "date": "2026-11-28"
  },
  "country/israel/vaping": {
   "official": [
@@ -15330,15 +15363,17 @@
  },
  "country/sri-lanka/vaping": {
   "official": [
-   "read 2026-11-22: Sri Lanka Customs passenger services directorate page (cigarettes, cigars, beedies, snuff not allowed as baggage) and passenger guide page: no vape word"
+   "read 2026-11-22: Sri Lanka Customs passenger services directorate page (cigarettes, cigars, beedies, snuff not allowed as baggage) and passenger guide page: no vape word",
+   "read 28 November 2026: nata.gov.lk home page carries no e-cigarette text"
   ],
   "reliable": [
-   "WHO country profile read 2026-10-08 (base card)"
+   "WHO country profile read 2026-10-08 (base card)",
+   "read 28 November 2026: https://www.tobaccocontrollaws.org/legislation/sri-lanka/e-cigarettes"
   ],
   "other": [
    "none needed: national customs pages read"
   ],
-  "date": "2026-11-22"
+  "date": "2026-11-28"
  },
  "country/vietnam/vaping": {
   "official": [
@@ -15399,15 +15434,17 @@
  "country/nepal/vaping": {
   "official": [
    "Nepal Department of Customs traveller page: not found by search, not read",
-   "read 2026-11-24: Nepal Tourism Board Custom Formalities page (trade.ntb.gov.np; government body, not customs) via curl"
+   "read 2026-11-24: Nepal Tourism Board Custom Formalities page (trade.ntb.gov.np; government body, not customs) via curl",
+   "read 28 November 2026: no official court or customs text found"
   ],
   "reliable": [
-   "WHO country profile read 2026-10-08 (base card)"
+   "WHO country profile read 2026-10-08 (base card)",
+   "read 28 November 2026: https://tobaccoreporter.com/2025/07/01/nepal-court-lifts-ban-on-e-cigarettes/ ; https://commonlaw.com.np/publications/tobacco-law-in-nepal"
   ],
   "other": [
    "read 2026-11-22: GSTHR e-cigarette profile for Nepal (page updated 2026-11-16, secondary compilation, lower reliability)"
   ],
-  "date": "2026-11-24"
+  "date": "2026-11-28"
  },
  "country/jordan/vaping": {
   "official": [
@@ -15596,11 +15633,12 @@
  },
  "airline/kenya-airways/perfume-aerosols": {
   "official": [
-   "read 2026-11-22: kenya-airways.com baggage restrictions page"
+   "read 2026-11-22: kenya-airways.com baggage restrictions page",
+   "read 2026-11-28: card aligned with the rule quoted on the page"
   ],
   "reliable": [],
   "other": [],
-  "date": "2026-11-22"
+  "date": "2026-11-28"
  },
  "airline/south-african-airways/perfume-aerosols": {
   "official": [
@@ -15917,9 +15955,10 @@
  },
  "country/sweden/plants-seeds": {
   "official": [
-   "read 2026-11-24: https://www.naturvardsverket.se/en/topics/invasive-alien-species/avoid-spreading-invasive-alien-species/"
+   "read 2026-11-24: https://www.naturvardsverket.se/en/topics/invasive-alien-species/avoid-spreading-invasive-alien-species/",
+   "read 28 November 2026: archived copy https://www.tullverket.se/endangeredanimalsandplants.4.311bf4f016e69d6ea0dcb5.html"
   ],
-  "date": "2026-11-24"
+  "date": "2026-11-28"
  },
  "country/netherlands": {
   "official": [
@@ -16241,5 +16280,65 @@
    "read 28 November 2026: card aligned with the airline rule quoted on the page"
   ],
   "date": "2026-11-28"
+ },
+ "airline/indigo/vape-e-cigarette": {
+  "official": [
+   "read 2026-11-28: card aligned with the rule quoted on the page"
+  ],
+  "date": "2026-11-28"
+ },
+ "airline/air-india/vape-e-cigarette": {
+  "official": [
+   "read 2026-11-28: card aligned with the rule quoted on the page"
+  ],
+  "date": "2026-11-28"
+ },
+ "airline/gol/vape-e-cigarette": {
+  "reliable": [
+   "read 2026-11-28: card aligned with the rule quoted on the page"
+  ],
+  "date": "2026-11-28"
+ },
+ "airline/virgin-atlantic/vape-e-cigarette": {
+  "official": [
+   "read 2026-11-28: card aligned with the rule quoted on the page"
+  ],
+  "date": "2026-11-28"
+ },
+ "airline/volaris/perfume-aerosols": {
+  "official": [
+   "read 2026-11-28: card aligned with the rule quoted on the page"
+  ],
+  "date": "2026-11-28"
+ },
+ "country/latvia/tobacco": {
+  "official": [
+   "read 28 November 2026: https://likumi.lv/ta/en/en/id/282077"
+  ],
+  "date": "2026-11-28"
+ },
+ "country/ireland/tobacco": {
+  "official": [
+   "read 28 November 2026: https://revisedacts.lawreform.ie/eli/2002/act/6/revised/en/pdf?annotations=true"
+  ],
+  "date": "2026-11-28"
+ },
+ "airline/latam/power-bank": {
+  "official": [
+   "read 28 November 2026: LATAM help article already quoted"
+  ],
+  "date": "2026-11-28",
+  "reliable": [
+   "read 28 November 2026: https://brasilturis.com.br/2026/05/21/anac-atualiza-regras-para-transporte-de-power-banks-em-voos/"
+  ]
+ },
+ "airline/aegean/liquids": {
+  "official": [
+   "read 28 November 2026: Aegean liquids page already quoted"
+  ],
+  "date": "2026-11-28",
+  "reliable": [
+   "read 28 November 2026: https://www.euronews.com/2026/01/30/liquid-anxiety-which-european-airports-have-scrapped-the-100ml-limit"
+  ]
  }
 }

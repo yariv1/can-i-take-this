@@ -259,7 +259,7 @@ module.exports = function (X) {
         ['Checking medicine?', 'Sign a responsibility form (Termo de Responsabilidade) at check-in'],
         ['Syringes, cold storage?', NP]
       ],
-      extra: steps(['Keep essential medicine in your cabin bag.', 'Carry the prescription dated for your travel day and ask Azul about syringes before you fly.'])
+      extra: steps(['Keep essential medicine in your cabin bag.', 'Carry the prescription dated for your travel day and ask Azul about syringes before you fly.']) + "<section class=\"bd-sec\"><h2>Azul’s medical form (MEDIF): when and for whom</h2><p>From Azul’s own MEDIF page on voeazul.com.br, read 28 November 2026.</p><ul><li>Passengers with a condition that needs special attention in flight, such as recent surgery or an unstable condition, must present a MEDIF completed and signed by their doctor, under article 9 of ANAC Resolution 280.</li><li>Send it at least 72 working hours before the flight; Azul’s aviation doctors answer within 48 hours, and carriage depends on their approval.</li><li>No authorisation is needed for diabetes, high blood pressure or cholesterol, arthritis or artificial limbs that are controlled and stable.</li><li>Passengers who cannot follow safety instructions or manage their physical needs alone must travel with an adult companion.</li></ul><p class=\"bd-chk\">Source: <a href=\"https://www.voeazul.com.br/us/en/medif\" target=\"_blank\" rel=\"noopener\">Azul: MEDIF</a></p></section>"
     });
   }
 
@@ -343,7 +343,7 @@ module.exports = function (X) {
         ['Proof?', 'Documents showing special medical needs, shown at security'],
         ['Syringes, cold storage?', NP]
       ],
-      extra: steps(['Carry documents showing your medical needs.', 'Show the medicine at airport security.'])
+      extra: steps(['Carry documents showing your medical needs.', 'Show the medicine at airport security.']) + "<section class=\"bd-sec\"><h2>Medical clearance deadlines on Malaysia Airlines</h2><p>From Malaysia Airlines’ “Health and medical” page (Australian edition, Internet Archive copy of April 2023 because the live page returned an error, so confirm the current deadlines); read 28 November 2026.</p><ul><li>The MEDIF form, filled in by you and your doctor, goes to the airline’s medical desk: at least 10 working days ahead for a stretcher or an infant incubator.</li><li>Your own portable oxygen concentrator needs it 3 calendar days ahead; a rented one 3 days from Kuala Lumpur and 10 days from other airports. Other medical cases and devices: 3 calendar days.</li><li>An approved MEDIF is valid for 20 calendar days. Portable medical electronic devices must be FAA approved.</li><li>A normal pregnancy needs no clearance, but bring a doctor’s fit-to-fly letter; travel is not recommended after 32 weeks with a multiple pregnancy, or after 36 with a single one.</li></ul><p class=\"bd-chk\">Source: <a href=\"https://www.malaysiaairlines.com/au/en/plan-your-trip/health-medical.html\" target=\"_blank\" rel=\"noopener\">Malaysia Airlines: Health and medical</a></p></section>"
     });
   }
 };
