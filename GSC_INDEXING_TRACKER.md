@@ -1510,3 +1510,45 @@ No GSC requests made yet.
 - https://canitakethis.co/pets/malaysia/
 
 No GSC requests made yet.
+
+## Deploy ac100c2dc5 (2026-11-28)
+
+- https://canitakethis.co/airline/aegean/liquids/
+- https://canitakethis.co/airline/air-arabia/vape-e-cigarette/
+- https://canitakethis.co/airline/air-france/vape-e-cigarette/
+- https://canitakethis.co/airline/air-india/vape-e-cigarette/
+- https://canitakethis.co/airline/air-new-zealand/vape-e-cigarette/
+- https://canitakethis.co/airline/avianca/alcohol/
+- https://canitakethis.co/airline/azul/medication/
+- https://canitakethis.co/airline/flydubai/liquids/
+- https://canitakethis.co/airline/frontier/perfume-aerosols/
+- https://canitakethis.co/airline/gol/vape-e-cigarette/
+- https://canitakethis.co/airline/indigo/vape-e-cigarette/
+- https://canitakethis.co/airline/kenya-airways/perfume-aerosols/
+- https://canitakethis.co/airline/kuwait-airways/medication/
+- https://canitakethis.co/airline/latam/power-bank/
+- https://canitakethis.co/airline/latam/vape-e-cigarette/
+- https://canitakethis.co/airline/malaysia-airlines/medication/
+- https://canitakethis.co/airline/saudia/vape-e-cigarette/
+- https://canitakethis.co/airline/vietnam-airlines/vape-e-cigarette/
+- https://canitakethis.co/airline/virgin-atlantic/vape-e-cigarette/
+- https://canitakethis.co/airline/volaris/perfume-aerosols/
+- https://canitakethis.co/app/
+- https://canitakethis.co/country/croatia/vaping/
+- https://canitakethis.co/country/fiji/vaping/
+- https://canitakethis.co/country/ireland/tobacco/
+- https://canitakethis.co/country/latvia/tobacco/
+- https://canitakethis.co/country/lithuania/vaping/
+- https://canitakethis.co/country/malta/tobacco/
+- https://canitakethis.co/country/nepal/vaping/
+- https://canitakethis.co/country/netherlands/vaping/
+- https://canitakethis.co/country/russia/vaping/
+- https://canitakethis.co/country/slovakia/vaping/
+- https://canitakethis.co/country/spain/vaping/
+- https://canitakethis.co/country/sri-lanka/vaping/
+- https://canitakethis.co/country/sweden/plants-seeds/
+- https://canitakethis.co/country/ukraine/vaping/
+- https://canitakethis.co/food/maldives/
+- https://canitakethis.co/
+
+No GSC requests made yet.
