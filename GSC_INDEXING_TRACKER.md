@@ -1428,3 +1428,42 @@ No GSC requests made yet.
 - https://canitakethis.co/country/ukraine/cash/
 
 No GSC requests made yet.
+
+## Deploy c61361ae44 (2026-11-28)
+
+- https://canitakethis.co/airline/aer-lingus/vape-e-cigarette/
+- https://canitakethis.co/airline/air-europa/perfume-aerosols/
+- https://canitakethis.co/airline/china-southern/medication/
+- https://canitakethis.co/airline/indigo/medication/
+- https://canitakethis.co/airline/ita-airways/perfume-aerosols/
+- https://canitakethis.co/airline/qatar-airways/perfume-aerosols/
+- https://canitakethis.co/airline/transavia/alcohol/
+- https://canitakethis.co/blog/is-turks-and-caicos-safe-2026/
+- https://canitakethis.co/blog/level-4-travel-advisory-countries-2026/
+- https://canitakethis.co/blog/travel-warning-by-country-2026/
+- https://canitakethis.co/blog/travel-warning-caribbean-2026/
+- https://canitakethis.co/blog/travel-warning-mexico-2026/
+- https://canitakethis.co/country/austria/vaping/
+- https://canitakethis.co/country/latvia/vaping/
+- https://canitakethis.co/country/maldives/
+- https://canitakethis.co/country/maldives/vaping/
+- https://canitakethis.co/country/saudi-arabia/vaping/
+- https://canitakethis.co/country/seychelles/vaping/
+- https://canitakethis.co/food/bulgaria/
+- https://canitakethis.co/food/china/
+- https://canitakethis.co/food/cyprus/
+- https://canitakethis.co/food/denmark/
+- https://canitakethis.co/food/estonia/
+- https://canitakethis.co/food/greece/
+- https://canitakethis.co/food/hungary/
+- https://canitakethis.co/food/lithuania/
+- https://canitakethis.co/food/luxembourg/
+- https://canitakethis.co/food/malta/
+- https://canitakethis.co/food/morocco/
+- https://canitakethis.co/food/netherlands/
+- https://canitakethis.co/food/poland/
+- https://canitakethis.co/food/portugal/
+- https://canitakethis.co/food/slovakia/
+- https://canitakethis.co/food/slovenia/
+
+No GSC requests made yet.
