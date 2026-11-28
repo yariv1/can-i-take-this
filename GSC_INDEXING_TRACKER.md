@@ -1467,3 +1467,46 @@ No GSC requests made yet.
 - https://canitakethis.co/food/slovenia/
 
 No GSC requests made yet.
+
+## Deploy 4020bab4d5 (2026-11-28)
+
+- https://canitakethis.co/airline/aegean/power-bank/
+- https://canitakethis.co/airline/air-china/alcohol/
+- https://canitakethis.co/airline/air-india/alcohol/
+- https://canitakethis.co/airline/asiana/vape-e-cigarette/
+- https://canitakethis.co/airline/china-eastern/alcohol/
+- https://canitakethis.co/airline/china-southern/alcohol/
+- https://canitakethis.co/airline/egyptair/vape-e-cigarette/
+- https://canitakethis.co/airline/finnair/alcohol/
+- https://canitakethis.co/airline/finnair/power-bank/
+- https://canitakethis.co/airline/iberia/vape-e-cigarette/
+- https://canitakethis.co/airline/kenya-airways/alcohol/
+- https://canitakethis.co/airline/korean-air/alcohol/
+- https://canitakethis.co/airline/lot-polish/perfume-aerosols/
+- https://canitakethis.co/airline/philippine-airlines/power-bank/
+- https://canitakethis.co/airline/saudia/alcohol/
+- https://canitakethis.co/airline/saudia/medication/
+- https://canitakethis.co/airline/tap-air-portugal/power-bank/
+- https://canitakethis.co/airline/volaris/alcohol/
+- https://canitakethis.co/app/
+- https://canitakethis.co/country/belgium/plants-seeds/
+- https://canitakethis.co/country/croatia/plants-seeds/
+- https://canitakethis.co/country/hungary/vaping/
+- https://canitakethis.co/country/jamaica/cash/
+- https://canitakethis.co/country/jamaica/vaping/
+- https://canitakethis.co/country/jordan/cash/
+- https://canitakethis.co/country/kenya/vaping/
+- https://canitakethis.co/country/malta/plants-seeds/
+- https://canitakethis.co/country/morocco/vaping/
+- https://canitakethis.co/country/poland/tobacco/
+- https://canitakethis.co/country/poland/vaping/
+- https://canitakethis.co/country/portugal/tobacco/
+- https://canitakethis.co/country/portugal/vaping/
+- https://canitakethis.co/country/qatar/vaping/
+- https://canitakethis.co/country/united-states/vaping/
+- https://canitakethis.co/food/cuba/
+- https://canitakethis.co/food/jamaica/
+- https://canitakethis.co/
+- https://canitakethis.co/pets/malaysia/
+
+No GSC requests made yet.
