@@ -6897,26 +6897,30 @@
   "unofficial": true
  },
  "Cuba": {
-  "checked": "9 November 2026",
-  "answer": "Cuba's own customs pages could not be used for a traveller food rule, so this comes from the IATA Travel Centre customs page for Cuba, which airlines use. Canned food products and treated products of animal origin are strictly regulated and in most cases need a permit before arrival. Live animals and their derivative products that may carry disease are prohibited. It has no line on fruit, vegetables, eggs or seeds and no quantity limits. The page shows no date, so confirm with Cuban customs before you travel.",
+  "checked": "28 November 2026",
+  "answer": "Cuba’s own customs pages did not give us a traveller food rule, so this comes from two unofficial sources. The IATA Travel Centre says canned food and treated animal products are strictly regulated and usually need a permit. A 2025 travel blog says fresh meat, fresh dairy, fresh fruit and vegetables, plants and seeds are banned, while industrially processed, vacuum-packed and labelled food is accepted. Neither names eggs, and the IATA page shows no date, so confirm with Cuban customs.",
   "sources": [
    [
     "https://infopages.traveldoc.aero/Customs/CUB/Plain",
     "IATA Travel Centre — Cuba customs: prohibited and restricted goods (undated)"
+   ],
+   [
+    "https://onlinetours.es/blog/cuba/que-se-puede-llevar-a-cuba/",
+    "Less reliable source: Onlinetours travel blog on Cuban customs rules (2025, in Spanish)"
    ]
   ],
   "faq": [
    [
     "Can I bring canned food into Cuba?",
-    "The IATA page lists canned food products as restricted: strictly regulated, usually needing a permit before arrival."
+    "The IATA page lists canned food as strictly regulated, usually needing a permit before arrival; a 2025 travel blog says labelled canned goods are accepted. Ask Cuban customs."
    ],
    [
-    "What about meat?",
-    "Treated products of animal origin are restricted; animal products that may carry disease are prohibited."
+    "Can I bring fresh meat or fruit?",
+    "A 2025 travel blog lists both as banned: uncertified fresh meat, and fresh fruit and vegetables even for personal use."
    ],
    [
-    "Is there a limit?",
-    "The page states none."
+    "Is food taxed?",
+    "The blog reports a duty exemption for food for personal use, packed separately; check it is still in force."
    ]
   ],
   "topics": [
@@ -6958,38 +6962,75 @@
    {
     "id": "fresh",
     "label": "Meat, dairy, eggs & produce",
-    "status": "warn",
-    "verdict": "Ask first",
-    "head": "The page gives no rule for meat, dairy, eggs, fruit or vegetables.",
+    "status": "stop",
+    "verdict": "Fresh banned",
+    "head": "A travel blog lists fresh animal and plant foods as banned.",
     "scen": [
      {
-      "when": "Meat, dairy, eggs, fruit and vegetables",
-      "status": "warn",
-      "tag": "Ask first",
+      "when": "Fresh and cured meat",
+      "status": "stop",
+      "tag": "Not allowed",
       "lines": [
-       "The IATA Travel Centre page does not say whether meat, dairy, eggs, fruit or vegetables are allowed.",
-       "Ask Cuban customs before you bring them."
+       "Fresh, raw or frozen meat without official health certification, and sausages or hams that are not vacuum packed."
+      ]
+     },
+     {
+      "when": "Dairy and honey",
+      "status": "stop",
+      "tag": "Not allowed",
+      "lines": [
+       "Fresh milk, yoghurt and other fresh dairy, and honey that is unprocessed or uncertified."
+      ]
+     },
+     {
+      "when": "Fruit, vegetables and plants",
+      "status": "stop",
+      "tag": "Not allowed",
+      "lines": [
+       "Fresh fruit, vegetables and tubers, even for your own use, and plants, seeds, cuttings, bulbs and fresh flowers."
+      ]
+     },
+     {
+      "when": "Processed food",
+      "status": "go",
+      "tag": "Accepted",
+      "lines": [
+       "The blog says animal or plant food is accepted only when industrially processed, vacuum packed and visibly labelled, such as canned goods, nuts and biscuits."
       ]
      }
-    ]
+    ],
+    "src": [
+     [
+      "https://onlinetours.es/blog/cuba/que-se-puede-llevar-a-cuba/",
+      "Less reliable source: Onlinetours travel blog on Cuban customs rules (2025, in Spanish)"
+     ]
+    ],
+    "official": false
    },
    {
-    "id": "notread",
-    "label": "Not covered",
+    "id": "duty",
+    "label": "Duty on food",
     "status": "warn",
-    "verdict": "Ask first",
-    "head": "The page leaves out some foods and shows no date.",
+    "verdict": "Exempt",
+    "head": "The blog reports a duty exemption for food.",
     "scen": [
      {
-      "when": "What the page does not say",
-      "status": "warn",
-      "tag": "Ask first",
+      "when": "Food in a separate bag",
+      "status": "go",
+      "tag": "Duty free",
       "lines": [
-       "It has no line on fruit, vegetables, eggs or seeds and no quantity limits. The page shows no update date.",
-       "Its own customs pages gave no readable food rule. Ask Cuban customs before you bring any food."
+       "Food, toiletries and medicines for personal use are reported free of duty with no value or weight limit, packed apart from the rest of your luggage.",
+       "The measure dates from July 2021 and has been extended more than once: the blog describes it as in force in October 2025, so check before you fly."
       ]
      }
-    ]
+    ],
+    "src": [
+     [
+      "https://onlinetours.es/blog/cuba/que-se-puede-llevar-a-cuba/",
+      "Less reliable source: Onlinetours travel blog on Cuban customs rules (2025, in Spanish)"
+     ]
+    ],
+    "official": false
    }
   ],
   "unofficial": true
@@ -7263,9 +7304,13 @@
   "unofficial": true
  },
  "Jamaica": {
-  "checked": "9 November 2026",
-  "answer": "Jamaica's own customs pages could not be used for a traveller food rule, so this comes from the IATA Travel Centre customs page for Jamaica, which airlines use. Meat and milk-based products need a permit from the Ministry of Industry, Agriculture and Fisheries; fruits, vegetables and plants need a phytosanitary certificate. It does not mention eggs or seeds and states no quantity limits. The page shows no date, so confirm with Jamaican customs before you travel.",
+  "checked": "28 November 2026",
+  "answer": "Jamaica’s Veterinary Services Division lets travellers bring a short list of animal products, up to 5 kg, without a permit. Meat, poultry, fish and pasteurised dairy beyond that need a permit and must come from the USA or Canada, up to 45 kg. Eggs, raw honey, conch, lobster and unpasteurised cheese are banned. Declare every animal product. Fruit, vegetables and plants need a phytosanitary certificate, according to the IATA Travel Centre.",
   "sources": [
+   [
+    "https://www.moa.gov.jm/sites/default/files/DECEMBER%202%202025%20update%20DOMESTIC%20IMPORT%20OF%20ANIMAL%20and%20animal%20products%20document%20for%20NMIA%20and%20MBJ.pdf",
+    "Jamaica Veterinary Services Division: animal products for personal use (updated 2 December 2025, PDF)"
+   ],
    [
     "https://infopages.traveldoc.aero/Customs/JAM/Plain",
     "IATA Travel Centre — Jamaica customs: prohibited and restricted goods (undated)"
@@ -7273,32 +7318,91 @@
   ],
   "faq": [
    [
-    "Can I bring meat or dairy into Jamaica?",
-    "The IATA page says meat and milk-based products require a permit from the Ministry of Industry, Agriculture and Fisheries."
+    "Can I bring cheese into Jamaica?",
+    "Pasteurised cheese needs a veterinary import permit and must come from the USA or Canada, up to 45 kg. Unpasteurised cheese is prohibited."
+   ],
+   [
+    "Can I bring fried or salted fish?",
+    "Yes, cooked, salted, dried or smoked fish up to 5 kg needs no permit, in original packaging or clearly identifiable, with proof of origin and subject to inspection."
    ],
    [
     "What about fruit and vegetables?",
-    "They require a phytosanitary certificate."
+    "They require a phytosanitary certificate, according to the IATA Travel Centre."
    ],
    [
-    "Are eggs covered?",
-    "The page does not mention eggs or seeds."
+    "Are eggs allowed?",
+    "No. Table eggs and hatching eggs of domestic poultry are prohibited."
    ]
   ],
   "topics": [
    {
     "id": "meat",
-    "label": "Meat & dairy",
+    "label": "Meat & fish",
     "status": "warn",
-    "verdict": "Permit",
-    "head": "Meat and milk-based products need a permit.",
+    "verdict": "Depends",
+    "head": "Some fish and canned goods are free of permits; fresh and cured meat is not.",
     "scen": [
      {
-      "when": "Meat, meat products and milk-based products",
+      "when": "Up to 5 kg without a permit",
+      "status": "go",
+      "tag": "Allowed",
+      "lines": [
+       "Salted, dried or smoked fish and shrimp, cooked fish, and commercially sealed canned fish.",
+       "Canned corned beef, Vienna sausage and Spam from the USA or Canada only.",
+       "No uncooked meat or poultry; keep original packaging with proof of origin. Everything can still be inspected."
+      ]
+     },
+     {
+      "when": "Meat, poultry and other seafood",
       "status": "warn",
       "tag": "Permit",
       "lines": [
-       "The page says they require a permit from the Ministry of Industry, Agriculture and Fisheries."
+       "Beef, lamb, goat and poultry, processed and cured kinds included, need a veterinary import permit, as do other fish and shellfish: up to 45 kg, from the USA or Canada."
+      ]
+     },
+     {
+      "when": "Restricted or banned",
+      "status": "stop",
+      "tag": "Restricted",
+      "lines": [
+       "Meat, poultry, fish, dairy and pet food from Asia, Europe, Africa, Central and South America, the Dominican Republic, Haiti and some Caribbean countries are restricted: ask the permit office first.",
+       "Restricted too: US pork other than sealed cans, canned pork ham, raw or cured pork ham and raw chicken.",
+       "Live or processed conch and lobster are prohibited."
+      ]
+     }
+    ]
+   },
+   {
+    "id": "dairy",
+    "label": "Dairy, eggs & honey",
+    "status": "warn",
+    "verdict": "Depends",
+    "head": "Pasteurised dairy needs a permit; eggs and raw honey are banned.",
+    "scen": [
+     {
+      "when": "Milk, cheese and butter",
+      "status": "warn",
+      "tag": "Permit",
+      "lines": [
+       "Pasteurised milk, cheese and butter need a veterinary permit, up to 45 kg, from the USA or Canada.",
+       "Unpasteurised cheese and butter are prohibited."
+      ]
+     },
+     {
+      "when": "Eggs and honey",
+      "status": "stop",
+      "tag": "Not allowed",
+      "lines": [
+       "Table eggs and hatching eggs of domestic poultry are prohibited.",
+       "So are raw honey and honey products."
+      ]
+     },
+     {
+      "when": "Baby and dry foods, up to 5 kg",
+      "status": "go",
+      "tag": "Allowed",
+      "lines": [
+       "Infant formula, nutritional drinks, dry drink mixes, baked goods and puddings without meat, cereals, sweets and instant noodle soups need no permit."
       ]
      }
     ]
@@ -7318,7 +7422,14 @@
        "The page says they require a phytosanitary certificate."
       ]
      }
-    ]
+    ],
+    "src": [
+     [
+      "https://infopages.traveldoc.aero/Customs/JAM/Plain",
+      "IATA Travel Centre — Jamaica customs: prohibited and restricted goods (undated)"
+     ]
+    ],
+    "official": false
    },
    {
     "id": "coconut",
@@ -7335,28 +7446,33 @@
        "The page says they require a permit from the Coconut Industry Board."
       ]
      }
-    ]
+    ],
+    "src": [
+     [
+      "https://infopages.traveldoc.aero/Customs/JAM/Plain",
+      "IATA Travel Centre — Jamaica customs: prohibited and restricted goods (undated)"
+     ]
+    ],
+    "official": false
    },
    {
-    "id": "notread",
-    "label": "Not covered",
+    "id": "declare",
+    "label": "Declare it",
     "status": "warn",
-    "verdict": "Ask first",
-    "head": "The page leaves out some foods and shows no date.",
+    "verdict": "Declare",
+    "head": "Declare every animal product on arrival.",
     "scen": [
      {
-      "when": "What the page does not say",
+      "when": "The C5 form",
       "status": "warn",
-      "tag": "Ask first",
+      "tag": "Declare",
       "lines": [
-       "It does not mention eggs or seeds and states no quantity limits. The page shows no update date.",
-       "Its own customs pages gave no readable food rule. Ask Jamaican customs before you bring any food."
+       "The law requires travellers to declare all products of animal origin on the electronic C5 passenger form: answer yes to item 1 under “I am bringing”."
       ]
      }
     ]
    }
-  ],
-  "unofficial": true
+  ]
  },
  "Maldives": {
   "checked": "9 November 2026",

@@ -1789,6 +1789,17 @@
  "PT": {
   "sections": [
    {
+    "h": "🏛️ Portugal’s smoking law covers vapes with nicotine",
+    "p": "Official source read 28 November 2026: Law 37/2007, consolidated text on the site of the Lisbon Regional Public Prosecutor’s Office (in Portuguese, translated by us), articles 2, 4, 5, 15 and 25.",
+    "list": [
+     "Using an e-cigarette with nicotine counts as smoking, so it is banned wherever smoking is banned.",
+     "That includes workplaces, public services, health and school buildings, shops and shopping centres, hotels, restaurants and bars, museums and show venues.",
+     "It also covers airports, rail, bus and ferry terminals, the public areas of the metro, public transport and taxis.",
+     "Many of these places allow it in their open-air areas, and some may set aside smoking rooms.",
+     "E-cigarettes may not be sold to anyone under 18."
+    ]
+   },
+   {
     "h": "🛃 What the Portuguese Tax Authority says about e-cigarette liquid",
     "p": "From the Autoridade Tributaria \"Travellers guide\" (PDF, last modified 30 June 2026, read 19 November 2026, translated from Portuguese). It is the tax and customs allowance table, not a rule on using vapes.",
     "table": {
@@ -1840,9 +1851,17 @@
    [
     "Is there an age limit for the Portuguese allowances?",
     "Travellers under 17 coming from third countries get no exemption for tobacco products and alcohol, according to the guide."
+   ],
+   [
+    "Can I vape in a Lisbon metro station?",
+    "Not with nicotine: the law bans it in the public areas of the metro."
    ]
   ],
   "src": [
+   [
+    "https://www.pgdlisboa.pt/leis/lei_mostra_articulado.php?nid=1066&tabela=leis",
+    "Lisbon Public Prosecutor’s Office: Law 37/2007, consolidated (in Portuguese)"
+   ],
    [
     "https://info.portaldasfinancas.gov.pt/pt/apoio_contribuinte/Folhetos_informativos/Documents/Guia_viajantes.pdf",
     "Autoridade Tributaria e Aduaneira - Travellers guide (PDF)"
@@ -1988,6 +2007,17 @@
  "PL": {
   "sections": [
    {
+    "h": "🏛️ Where you may not vape in Poland, and the fine",
+    "p": "Official source read 28 November 2026: the consolidated Act on protecting health against the effects of tobacco use (Dziennik Ustaw 2026, item 1214, in Polish, translated by us), articles 5, 6 and 13.",
+    "list": [
+     "E-cigarettes may not be used in healthcare facilities, schools, universities, social care units, indoor workplaces, culture and leisure venues, bars and restaurants.",
+     "The same applies on public transport, in passenger buildings, at transport stops, in sports halls, in children’s play areas and in other indoor places open to the public.",
+     "A town council may add further vapour-free public places.",
+     "Vaping where it is banned carries a fine of up to 500 złoty (article 13).",
+     "E-cigarettes and refill containers may not be supplied to anyone under 18."
+    ]
+   },
+   {
     "h": "🛃 What Polish tax administration (KAS) says about e-cigarette liquid",
     "p": "From the gov.pl article of the Krajowa Administracja Skarbowa \"Planning a trip abroad? Remember this\" (published 26 June 2021, read 19 November 2026, translated from Polish). It is old: search results for KAS also show a 2026 tourist guide with different figures that we could not read.",
     "table": {
@@ -2074,9 +2104,17 @@
    [
     "How common is vaping in Poland?",
     "Adults: 0.9% of adults currently use e-cigarettes (men 1.5%, women 0.4%) in the survey \"Public Opinion Research Center (CBOS) nicotine consumption survey, 2021\" (national, ages 18+). Adolescents: 22.3% of adolescents currently use e-cigarettes (boys 21.2%, girls 23.4%) in the survey \"Global Youth Tobacco Survey, 2022\" (national, ages 13-15)."
+   ],
+   [
+    "Can I vape on a Polish tram or while waiting at the stop?",
+    "No. The law names public transport, passenger buildings and transport stops, with a fine of up to 500 złoty."
    ]
   ],
   "src": [
+   [
+    "https://api.sejm.gov.pl/eli/acts/DU/2026/1214/text/T/D20261214L.pdf",
+    "Sejm legal database: consolidated tobacco law, Dziennik Ustaw 2026 item 1214 (in Polish)"
+   ],
    [
     "https://www.gov.pl/web/kas/planujesz-zagraniczny-wyjazd-o-tym-pamietaj",
     "KAS (Poland) - Planning a trip abroad? Remember this (2021)"
@@ -4017,6 +4055,16 @@
  "JM": {
   "sections": [
    {
+    "h": "🏛️ Where Jamaica bans vaping",
+    "p": "Official source read 28 November 2026: the Ministry of Health and Wellness tobacco control page on the Public Health (Tobacco Control) Regulations, 2013.",
+    "list": [
+     "Holding a lit or electronic tobacco product is banned in enclosed public places, enclosed workplaces and public vehicles.",
+     "Even without a roof it is banned at government buildings, health facilities and pharmacies, sports facilities, schools, bus stops and station or port waiting areas.",
+     "Also on beaches, in parks and heritage sites, in outdoor dining areas and markets, at public swimming pools and at outdoor gatherings, and in areas for children.",
+     "The ban reaches 5 metres from the entrances, exits, windows and air intakes of those places."
+    ]
+   },
+   {
     "h": "🛃 What Jamaica Customs Agency says about what you can bring",
     "p": "From the Jamaica Customs Agency (JCA) pages \"Prohibited Items\", \"Restricted / Prohibited Items\" and \"Passenger Allowance\" (jca.gov.jm, read 23 November 2026). None of these pages names e-cigarettes or vape liquid, so there is no vape-specific traveller rule to quote.",
     "table": {
@@ -4118,9 +4166,17 @@
    [
     "What does WHO list for e-cigarette use in Jamaica?",
     "11.7% of adolescents currently use e-cigarettes (boys 13.7%, girls 9.7%) in the survey \"Global Youth Tobacco Survey, 2017\" (national, ages 13-15)."
+   ],
+   [
+    "Can I vape on the beach in Jamaica?",
+    "No. The Health Ministry lists beaches among the places where holding an electronic tobacco product is banned."
    ]
   ],
   "src": [
+   [
+    "https://www.moh.gov.jm/programmes-policies/tobacco-control/",
+    "Jamaica Ministry of Health and Wellness: Tobacco control"
+   ],
    [
     "https://jca.gov.jm/individual/passenger/prohibited-items/",
     "Jamaica Customs Agency: Prohibited Items"
@@ -4529,6 +4585,17 @@
  },
  "MA": {
   "sections": [
+   {
+    "h": "📰 A product standard for vapes sold in Morocco from February 2026",
+    "p": "Less reliable source (news site): L’ODJ, 21 October 2025, in French, read 28 November 2026. It is newer than the WHO table above.",
+    "list": [
+     "From February 2026, e-cigarettes, heated tobacco and nicotine pouches sold in Morocco must meet a mandatory standard of IMANOR, the national standards institute.",
+     "The standard covers composition, labelling, traceability and safety, with eleven items of information required on each pack.",
+     "Firms may not market the products without a certificate of conformity; the duty falls mainly on importers.",
+     "The article describes rules for sellers and gives no traveller quantity.",
+     "Source: <a href=\"https://www.lodj.ma/Maroc-Des-fevrier-2026-une-norme-obligatoire-encadrera-les-cigarettes-electroniques-et-produits-sans-fumee_a148653.html?print=1\" target=\"_blank\" rel=\"noopener\">L’ODJ: mandatory standard for e-cigarettes (in French)</a>"
+    ]
+   },
    {
     "h": "🛃 What Moroccan Customs (ADII) tells visitors they may bring",
     "p": "From the ADII traveller guide \"À votre arrivée au Maroc\" (douane.gov.ma, read 23 November 2026 from an archived copy). The guide does not mention e-cigarettes or e-liquid. It lists what visitors may bring without declaration, and says anything outside these tolerances pays duties and taxes.",
@@ -5546,6 +5613,15 @@
  "QA": {
   "sections": [
    {
+    "h": "⚖️ What Qatar’s tobacco law says about e-cigarettes",
+    "p": "Official text read 28 November 2026: Law No. 10 of 2016 on the control of tobacco and its derivatives, in the English copy filed with Qatar’s 2018 report to the WHO tobacco treaty secretariat.",
+    "list": [
+     "Article 7 bans importing, circulating, displaying, selling, distributing or making electronic cigarettes, and names no exception for personal use.",
+     "Breaking article 7 carries up to six months in prison, a fine of up to 100,000 riyals, or both (article 16).",
+     "On conviction a court may order the e-cigarettes confiscated, re-exported or destroyed, whatever the quantity (article 20)."
+    ]
+   },
+   {
     "h": "📊 How common vaping is in Qatar, per the WHO survey figures",
     "p": "From the same WHO report on the global tobacco epidemic 2025, country profile for Qatar, table \"Tobacco use prevalence from the latest survey\". These are survey results, not a law or a customs rule, and each survey has its own age group.",
     "table": {
@@ -5577,9 +5653,18 @@
    [
     "What does WHO list for e-cigarette use in Qatar?",
     "11.3% of adults currently use e-cigarettes (men 15.0%, women 7.8%) in the survey \"Qatar STEPS, 2023\" (national, ages 18-69)."
+   ],
+   [
+    "What is the penalty for bringing a vape into Qatar?",
+    "The law bans importing e-cigarettes and allows up to six months in prison, a fine of up to 100,000 riyals, or both, with confiscation."
    ]
   ],
-  "src": [],
+  "src": [
+   [
+    "https://extranet.who.int/fctcapps/sites/default/files/2023-04/qatar_2018_annex-1_law_on_control_of_tobacco_and_its_derivatives_2016.pdf",
+    "WHO treaty secretariat: Qatar Law No. 10 of 2016 (English copy)"
+   ]
+  ],
   "keepSchema": true
  },
  "RS": {
@@ -6144,6 +6229,15 @@
  "US": {
   "sections": [
    {
+    "h": "🪪 Buying vapes in the United States: age 21",
+    "p": "Official source read 28 November 2026: the FDA page “Tobacco 21”.",
+    "list": [
+     "Since 20 December 2019 it has been illegal for a retailer to sell any tobacco product, e-cigarettes included, to anyone under 21.",
+     "Since 30 September 2024 retailers must check photo ID for buyers under 30.",
+     "These products may not be sold from vending machines where people under 21 are present or allowed in."
+    ]
+   },
+   {
     "h": "🛃 What the FDA says about importing e-cigarettes",
     "p": "From the FDA page \"Importing and Exporting\" (tobacco products), read on 22 November 2026. It sets the rule for tobacco products imported into the United States. It is not a traveller allowance and does not give a quantity for personal vapes.",
     "table": {
@@ -6214,9 +6308,17 @@
    [
     "What does WHO list for e-cigarette use in United States?",
     "3.5% of adults currently use e-cigarettes (men 3.1%, women 3.9%) in the survey \"National Survey on Drug Use and Health (NSDUH), 2023\" (national, ages 18+)."
+   ],
+   [
+    "Will a US shop ask for my passport to sell me a vape?",
+    "The FDA requires retailers to check photo ID for anyone under 30, and sales to under-21s are illegal."
    ]
   ],
   "src": [
+   [
+    "https://www.fda.gov/tobacco-products/retail-sales-tobacco-products/tobacco-21",
+    "U.S. FDA: Tobacco 21"
+   ],
    [
     "https://www.fda.gov/tobacco-products/products-guidance-regulations/importing-and-exporting",
     "U.S. FDA - Importing and Exporting (tobacco products)"
@@ -6365,6 +6467,17 @@
  "HU": {
   "sections": [
    {
+    "h": "🏛️ Hungary treats vaping like smoking",
+    "p": "Official source read 28 November 2026: Act XLII of 1999 on the protection of non-smokers on the National Legislation Database (njt.jog.gov.hu, in Hungarian, translated by us), sections 2, 2/A and 7.",
+    "list": [
+     "Outside marked smoking spots, no e-cigarettes in the public rooms of places open to the public, on public transport or at work.",
+     "Pedestrian underpasses, enclosed passageways and public playgrounds are covered, with a 5 metre margin around a playground.",
+     "So are passenger areas of the railway, and transport stops and waiting areas, including 5 metres around an open one, plus 10 metres from a health provider’s public entrance.",
+     "Hotel rooms let and marked as smoking rooms are an exception.",
+     "For breaches in public outdoor areas, wardens can fine up to 30,000 forints on the spot; the health authority imposes a separate health protection fine on people aged 14 or over."
+    ]
+   },
+   {
     "h": "🛃 What the Hungarian Tax and Customs Authority says about \"fluid charge\"",
     "p": "From the NAV English travel FAQ \"Tobacco products\" (no date shown on the page, read 19 November 2026). NAV calls e-liquid \"fluid charge\". The figures are for goods brought in from outside the EU and depend on how you travel.",
     "table": {
@@ -6404,9 +6517,17 @@
    [
     "What happens if I bring more than the limit into Hungary?",
     "NAV says it imposes a customs administrative fine and seizes or confiscates the excess tobacco products."
+   ],
+   [
+    "Can I vape at a Budapest tram stop?",
+    "No. The act bans it at transport stops and waiting areas, and within 5 metres of an open one."
    ]
   ],
   "src": [
+   [
+    "https://njt.jog.gov.hu/jogszabaly/1999-42-00-00",
+    "National Legislation Database: Act XLII of 1999 (in Hungarian)"
+   ],
    [
     "https://nav.gov.hu/en/intormation_on_customs_matters/travel-guides---faq/english/tobacco-products",
     "Hungarian Tax and Customs Authority (NAV) - Tobacco products travel FAQ"
@@ -7149,6 +7270,17 @@
  "KE": {
   "sections": [
    {
+    "h": "📰 A bill before Kenya’s Parliament would bring vapes under the tobacco law",
+    "p": "Less reliable than a law text (newspaper report): The Star, Kenya, 26 November 2026, read 28 November 2026. This is a bill, not law yet.",
+    "list": [
+     "The National Assembly health committee wants the Tobacco Control (Amendment) Bill, 2024 passed, with amendments.",
+     "It would place e-cigarettes, vaping devices, heated tobacco, nicotine pouches and synthetic nicotine under the Tobacco Control Act, 2007.",
+     "The committee kept a ban on selling these products online and restrictions on flavoured nicotine products.",
+     "Makers and importers would need the health minister’s approval before bringing products to market.",
+     "Source: <a href=\"https://www.the-star.co.ke/business/kenya/2026-11-26-mps-back-tougher-tobacco-controls-but-seek-safeguards-for-businesses\" target=\"_blank\" rel=\"noopener\">The Star: MPs back tougher tobacco controls</a>"
+    ]
+   },
+   {
     "h": "🛃 What the Kenya Revenue Authority says about tobacco for passengers",
     "p": "From the KRA page \"Passenger Terminal Clearance in Kenya\" and the KRA \"Passenger Terminals FAQs\" PDF, both read on 22 November 2026. Both give an allowance for tobacco and alcohol and do not name e-cigarettes, vape liquid or nicotine.",
     "table": {
@@ -7192,6 +7324,10 @@
    [
     "Is there a limit for vape liquid in Kenya?",
     "KRA passenger pages list 250 g of tobacco products and set alcohol and perfume limits, but do not name e-cigarettes or liquid. Ask KRA customs before bringing vapes."
+   ],
+   [
+    "Is Kenya changing its vape law?",
+    "A bill backed by a parliamentary health committee in November 2026 would bring vapes under the Tobacco Control Act; it was not law when we read the report."
    ]
   ],
   "src": [

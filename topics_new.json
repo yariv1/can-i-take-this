@@ -1570,7 +1570,16 @@
       ]
      },
      "list": [
-      "<strong>Not on the page:</strong> Finnair does not say anything about drinking your own alcohol on board."
+      "For drinking on board, see the next section."
+     ]
+    },
+    {
+     "h": "🥂 Drinking your own bottle on a Finnair flight",
+     "p": "From Finnair’s answer “Is smoking or drinking alcohol allowed on board?”, in the Internet Archive copy of 1 September 2026; read 28 November 2026.",
+     "list": [
+      "Drinking alcohol you brought yourself is not allowed: the aircraft is a licensed area for serving and selling alcohol.",
+      "Drinks served on board are the ones you may have, and Finnair asks passengers to drink responsibly.",
+      "<a href=\"https://www.finnair.com/en/frequently-asked-questions/food-and-diets/is-smoking-or-drinking-alcohol-allowed-on-board--3767742\" target=\"_blank\" rel=\"noopener\">Finnair: smoking and drinking on board</a>"
      ]
     }
    ],
@@ -1582,6 +1591,10 @@
     [
      "Can I take strong spirits on Finnair?",
      "Alcohol above 70% by volume is prohibited."
+    ],
+    [
+     "Can I drink my own alcohol on Finnair?",
+     "No. The aircraft is a licensed area, so only drinks served on board may be consumed."
     ]
    ],
    "sources": [
@@ -1768,7 +1781,7 @@
    "checked": "18 October 2026"
   },
   "power": {
-   "answer": "Finnair does not allow charging a power bank from the aircraft power outlet or using a power bank to charge your own devices during the flight.",
+   "answer": "Finnair allows at most two power banks per person, in the cabin only, and bans both charging them from the aircraft outlet and using them to charge your devices during the flight.",
    "sections": [
     {
      "h": "🔋 What Finnair says about power banks",
@@ -1790,7 +1803,19 @@
       ]
      },
      "list": [
-      "<strong>Not on the page:</strong> the FAQ gives no limit on the number or size of power banks: see Finnair's restricted items page."
+      "The FAQ gives no number or size limit; the next section does."
+     ]
+    },
+    {
+     "h": "🔋 What Finnair’s restricted items page adds",
+     "p": "From Finnair’s “Travelling with restricted items” page, in the Internet Archive copy of 24 October 2026; read 28 November 2026.",
+     "list": [
+      "Power banks travel in the cabin only, at most two per person.",
+      "Keep them where you can watch them, preferably on you, and tell the crew at once if one overheats or bulges.",
+      "Using a power bank to charge your devices, and charging it from the aircraft outlet, are both banned.",
+      "Lithium-ion batteries over 160 Wh, and lithium metal batteries over 2 g, are forbidden in all baggage.",
+      "Protect the terminals: original packaging, tape, or a separate bag or case for each battery.",
+      "<a href=\"https://www.finnair.com/en/baggage-on-finnair-flights/travelling-with-restricted-items\" target=\"_blank\" rel=\"noopener\">Finnair: Travelling with restricted items</a>"
      ]
     }
    ],
@@ -1802,6 +1827,10 @@
     [
      "Can I charge my power bank from the seat outlet on Finnair?",
      "No, charging a power bank from the aircraft's power outlet is not allowed."
+    ],
+    [
+     "How many power banks can I take on Finnair?",
+     "At most two per person, in the cabin only."
     ]
    ],
    "sources": [
@@ -6917,6 +6946,16 @@
      "list": [
       "<strong>Not read:</strong> the 100 ml carry-on rule for liquids is on LOT’s separate cosmetics and liquids help pages."
      ]
+    },
+    {
+     "h": "🛫 Perfume through security at Warsaw Chopin Airport",
+     "p": "Not from LOT: Warsaw Chopin Airport’s notice of 6 May 2026 and a news report of 3 November 2026 (Deep Arrival, less reliable), both read 28 November 2026.",
+     "list": [
+      "The airport’s notice keeps the old rule while new scanners are installed: containers of 100 ml or less in one transparent resealable bag of up to 1 litre.",
+      "Deep Arrival reported that lanes in zones A and B and Fast Track already took containers of up to 2 litres, and that the airport expected every checkpoint to follow by the end of November.",
+      "Until you know your lane has a new scanner, pack perfume over 100 ml in your checked bag.",
+      "<a href=\"https://lotnisko-chopina.pl/en/news/security-control-modernisation/\" target=\"_blank\" rel=\"noopener\">Warsaw Chopin Airport: security modernisation</a>; <a href=\"https://deeparrival.com/news/warsaw-chopin-airport-100ml-liquid-limit-ends-november-2026/\" target=\"_blank\" rel=\"noopener\">Deep Arrival: Warsaw liquid limit</a>"
+     ]
     }
    ],
    "faq": [
@@ -7952,7 +7991,18 @@
       ]
      },
      "list": [
-      "<strong>Not on the page:</strong> the page gives no packing, battery size or e-liquid rule for e-cigarettes. Iberia also links a dangerous goods guide (PDF) that was not read."
+      "<strong>Not on these pages:</strong> a battery size or e-liquid limit for vapes."
+     ]
+    },
+    {
+     "h": "🎒 Where Iberia wants your vape during the flight",
+     "p": "From Iberia’s help centre answer “Can I smoke e-cigarettes on an Iberia flight?” and its electronic devices page, in Internet Archive copies of May and June 2026; read 28 November 2026.",
+     "list": [
+      "Carry it in its case or a protective bag.",
+      "On board, keep it in your pocket, the seat pocket or under the seat in front: overhead lockers are strictly forbidden.",
+      "Do not use or recharge it.",
+      "Flights to Venezuela will not let these devices into the country, where their sale and use are prohibited.",
+      "<a href=\"https://help.iberia.com/frequently_asked_question/can-i-smoke-e-cigarettes-on-an-iberia-flight\" target=\"_blank\" rel=\"noopener\">Iberia help: e-cigarettes</a>; <a href=\"https://www.iberia.com/gb/luggage/electronic-devices/\" target=\"_blank\" rel=\"noopener\">Iberia: electronic devices</a>"
      ]
     }
    ],
@@ -7964,6 +8014,10 @@
     [
      "Can I use my e-cigarette on an Iberia flight?",
      "No, Iberia prohibits the use of e-cigarettes on board."
+    ],
+    [
+     "Can my vape go in the overhead locker on Iberia?",
+     "No. Iberia says to keep it in a pocket, the seat pocket or under the seat in front."
     ]
    ],
    "sources": [
@@ -8768,6 +8822,16 @@
      "list": [
       "<strong>Not on the page:</strong> the page does not give a rule for alcohol of 24% or less, or above 70%."
      ]
+    },
+    {
+     "h": "🛍️ Duty-free bottles at Incheon, before you connect",
+     "p": "Not from Korean Air: from Incheon International Airport’s “Transfer Security Screening Information” page, read 28 November 2026.",
+     "list": [
+      "Liquids go in the cabin only in containers of 100 ml or less, in a sealed transparent 1-litre bag.",
+      "Duty-free purchases are carried only when packed in a duty-free liquid item bag.",
+      "Airports abroad can apply other transfer rules and may take your bottle, so check the connecting country with Korean Air or your agent.",
+      "<a href=\"https://www.airport.kr/ap_en/1468/subview.do\" target=\"_blank\" rel=\"noopener\">Incheon Airport: Transfer security screening</a>"
+     ]
     }
    ],
    "faq": [
@@ -9218,6 +9282,17 @@
      },
      "list": [
       "<strong>Not on the page:</strong> the entry gives no rule for 100 to 160 Wh."
+     ]
+    },
+    {
+     "h": "🔋 Spare batteries and smart bags on TAP",
+     "p": "From TAP’s “Forbidden and dangerous items” page on flytap.com, read 28 November 2026.",
+     "list": [
+      "Spare batteries up to 100 Wh travel in hand baggage only, and TAP’s approval is needed for more than 20.",
+      "Spare batteries of 100 to 160 Wh need approval, with no more than two per passenger.",
+      "Devices with batteries up to 100 Wh need approval when you carry more than 15.",
+      "A smart bag with a removable battery may be checked once the battery is out and carried into the cabin.",
+      "<a href=\"https://flytap.com/en-rs/baggage/dangerous-goods\" target=\"_blank\" rel=\"noopener\">TAP: Forbidden and dangerous items</a>"
      ]
     }
    ],
@@ -10181,6 +10256,16 @@
      },
      "list": [
       "<strong>Not on the page:</strong> the part read gives no rule for 100 to 160 Wh."
+     ]
+    },
+    {
+     "h": "🛄 A power bank left in a checked bag at Athens",
+     "p": "From Aegean’s Dangerous Goods page, in the Internet Archive copy of 26 October 2026; read 28 November 2026.",
+     "list": [
+      "Since 8 September 2026 Athens International Airport screens checked bags more closely for items banned from the hold, power banks, spare lithium batteries and e-cigarettes among them.",
+      "A found item is removed in a camera-monitored area with an airport representative present, then sent for recycling.",
+      "The airport leaves a notice inside the bag saying what was taken out.",
+      "<a href=\"https://en.aegeanair.com/travel-info/travelling-with-aegean/baggage/dangerous-goods/\" target=\"_blank\" rel=\"noopener\">Aegean: Prohibited items and baggage guidelines</a>"
      ]
     }
    ],
@@ -12165,6 +12250,16 @@
      "list": [
       "<strong>Not on the page:</strong> the page gives no battery size limit for e-cigarettes and no e-liquid rule; it lists power banks with their own limits."
      ]
+    },
+    {
+     "h": "🧳 Keeping a vape and spare batteries on Asiana",
+     "p": "From Asiana’s Restricted Items page (Korea edition, in English) on flyasiana.com, read 28 November 2026.",
+     "list": [
+      "Tape the terminals of spare batteries or put each one in its own clear zip bag, and carry it on your person: the overhead bin is strictly prohibited.",
+      "Asiana says power banks, e-cigarettes and wireless heating devices found in the cabin, at check-in counters or in lounges are disposed of at once because of fire risk.",
+      "It warns that some countries, such as Thailand, Taiwan, Vietnam and Singapore, completely ban bringing in e-cigarettes.",
+      "<a href=\"https://flyasiana.com/C/KR/EN/contents/restricted-transport-items\" target=\"_blank\" rel=\"noopener\">Asiana: Restricted items (Korea edition)</a>"
+     ]
     }
    ],
    "faq": [
@@ -12175,6 +12270,10 @@
     [
      "Can I use or charge my e-cigarette on an Asiana flight?",
      "No, in-flight use and charging of electronic cigarettes are not permitted."
+    ],
+    [
+     "Which destinations does Asiana warn about for vapes?",
+     "It names Thailand, Taiwan, Vietnam and Singapore as examples of countries that ban importing e-cigarettes."
     ]
    ],
    "sources": [
@@ -14420,6 +14519,17 @@
      "list": [
       "<strong>Not on the page:</strong> the page words it as a recommendation, gives no rule on use on board, no battery size limit and no e-liquid rule."
      ]
+    },
+    {
+     "h": "📜 EgyptAir’s non-smoking rule",
+     "p": "From EgyptAir’s Conditions of Carriage (the 2010 edition on egyptair.com, in the Internet Archive copy of April 2025), read 28 November 2026. They do not name e-cigarettes.",
+     "list": [
+      "All EgyptAir flights are non-smoking, and smoking is prohibited in every area of the aircraft (article 11.3).",
+      "The airline may refuse to carry a passenger who fails to observe the non-smoking rule (article 7.1.11).",
+      "Passengers who ignore crew instructions on smoking may be restrained, put off the aircraft and prosecuted (article 11).",
+      "The text is older than most vaping rules, so treat a vape as covered and ask before assuming otherwise.",
+      "<a href=\"https://www.egyptair.com/eanew/Updated_conditions_of_carriage_Mar13.pdf\" target=\"_blank\" rel=\"noopener\">EgyptAir: Conditions of carriage (PDF)</a>"
+     ]
     }
    ],
    "faq": [
@@ -15617,7 +15727,7 @@
    "unofficial": true
   },
   "alcohol": {
-   "answer": "Kenya Airways's own rule could not be read; the IATA limit is 5 L per person for drinks above 24% up to 70%, and the home-country customs rule is below.",
+   "answer": "Kenya Airways states no bottle limit that we found: its conditions keep onboard drinking rules in separate regulations available on request. For bottles in your bags the IATA limit applies, 5 L per person for drinks above 24% up to 70%, and the Kenyan customs allowance is below.",
    "sections": [
     {
      "h": "🍷 What the industry rule says about alcohol on Kenya Airways",
@@ -15680,6 +15790,16 @@
      },
      "list": [
       "<strong>Note:</strong> the same KRA page also states a concession of USD 2,000 for personal and household goods and asks you to declare items worth over USD 500; a separate KRA FAQ PDF gives USD 500, so confirm the value limit with KRA. The alcohol limits above are the same in both."
+     ]
+    },
+    {
+     "h": "📜 Drinking on board: what Kenya Airways’ conditions say",
+     "p": "From Kenya Airways’ Conditions of Carriage, in the Internet Archive copy of 18 June 2026; read 28 November 2026. They set no bottle limit.",
+     "list": [
+      "Rules on drinking alcohol on board sit in separate regulations that the airline gives on request.",
+      "Carriage may be refused if your condition, including impairment from alcohol or drugs, is a hazard or risk (article 7).",
+      "Ignoring crew instructions on alcohol can lead to restraint, removal at any point and prosecution (article 11).",
+      "<a href=\"https://www.kenya-airways.com/en-us/policies/conditions-of-carriage/\" target=\"_blank\" rel=\"noopener\">Kenya Airways: Conditions of carriage</a>"
      ]
     }
    ],
@@ -16637,35 +16757,51 @@
    "unofficial": true
   },
   "alcohol": {
-   "answer": "Air China's own rule could not be read; the IATA limit is 5 L per person for drinks above 24% up to 70%, and the home-country customs rule is below.",
+   "answer": "Air China takes alcoholic drinks as checked baggage only: in retail packaging, containers of 5 L or less, no quantity limit up to 24% alcohol, 5 L per passenger above 24% up to 70%, and nothing above 70%.",
    "sections": [
     {
-     "h": "🍷 What the industry rule says about alcohol on Air China",
-     "p": "IATA, the airline industry body. Airports and customs can add stricter limits. Full table: <a href=\"/plane/alcohol/\">alcohol on a plane</a>.",
+     "h": "🍷 What Air China says about alcohol",
+     "p": "From Air China’s General Conditions of Carriage for Passengers and Baggage, article 6.2.5.8, on its Amadeus-hosted booking site, read 28 November 2026.",
      "table": {
       "head": [
        "Question",
-       "IATA rule"
+       "Air China rule"
       ],
       "rows": [
        [
-        "Up to 24% alcohol by volume",
-        "Not subject to any restrictions"
+        "Cabin bag",
+        "No: alcoholic drinks travel only as checked baggage"
        ],
        [
-        "More than 24% and up to 70%",
-        "Retail packaging, receptacles not exceeding 5 L, total net quantity 5 L per person"
+        "Packaging",
+        "Retail packaging with complete, clear labels; solid, sealed outer packing so nothing leaks"
        ],
        [
-        "Cabin bag at security",
-        "Liquid limits also apply at the checkpoint; see the liquids rule for Air China"
+        "Container size",
+        "5 L or less each"
+       ],
+       [
+        "24% alcohol or less",
+        "No quantity limit"
+       ],
+       [
+        "Above 24% up to 70%",
+        "Up to 5 L per passenger"
+       ],
+       [
+        "Above 70%",
+        "Refused"
+       ],
+       [
+        "Stricter local law",
+        "Applies for the origin, transit and destination"
        ]
       ]
      }
     },
     {
      "h": "What the Chinese aviation authority says about alcohol",
-     "p": "Air China's own page could not be read, so this section comes from the Civil Aviation Administration of China (CAAC) travel guide, which sets the rules for flights in China. It is the authority's guidance, not an Air China rule. The page is in Chinese and the figures below are translated.",
+     "p": "The Civil Aviation Administration of China (CAAC) travel guide for flights in China gives the same cabin answer. The page is in Chinese and the figures below are translated by us.",
      "table": {
       "head": [
        "Where",
@@ -16689,20 +16825,17 @@
         "Not allowed in carry-on or checked baggage"
        ]
       ]
-     },
-     "list": [
-      "This differs from the general IATA rule above, which allows stronger alcohol in the cabin. Expect Chinese security to follow the CAAC rule."
-     ]
+     }
     },
     {
      "h": "What customs says about bringing alcohol into China (Air China's home country)",
-     "p": "This is the customs rule for people entering China, not a rule stated by Air China for its cabin. The Travel Doc customs page for China allows travellers aged 16 and over up to 1.5 litres of alcohol of 12% or higher. The page names no publisher and shows no date, so confirm the figures with the customs authority before you travel. Unofficial source, read 16 November 2026: Travel Doc customs information page for China (infopages.traveldoc.aero, undated; it names no publisher). The official customs site could not be read."
+     "p": "This is the customs rule for people entering China, not a rule stated by Air China for its cabin. The Travel Doc customs page for China allows travellers aged 16 and over up to 1.5 litres of alcohol of 12% or higher. The page names no publisher and shows no date, so confirm the figures with the customs authority before you travel. Unofficial source, read 16 November 2026: Travel Doc customs information page for China (infopages.traveldoc.aero, undated; it names no publisher)."
     }
    ],
    "sources": [
     [
-     "https://www.iata.org/contentassets/6fea26dd84d24b26a7a1fd5788561d6e/dgr-67-en-2.3.a.pdf",
-     "IATA &mdash; Dangerous Goods Regulations, Table 2.3.A (67th edition, 1 January 2026)"
+     "https://pcm.ca.amadeus.com/HK/GB/General-Conditions-of-Carriage-for-Passengers-and-Baggage",
+     "Air China &mdash; General Conditions of Carriage for Passengers and Baggage"
     ],
     [
      "http://www.caac.gov.cn/INDEX/HLFW/HKLXCS/202303/t20230316_217597.html",
@@ -16710,8 +16843,18 @@
     ]
    ],
    "keepSchema": true,
-   "checked": "18 October 2026",
-   "unofficial": true
+   "checked": "28 November 2026",
+   "unofficial": false,
+   "faq": [
+    [
+     "Can I carry alcohol in the cabin on Air China?",
+     "No. Air China’s conditions say alcoholic drinks can only be transported as checked baggage."
+    ],
+    [
+     "How much alcohol can I check on Air China?",
+     "Up to 24% there is no quantity limit; above 24% up to 70% it is 5 L per passenger; above 70% is refused."
+    ]
+   ]
   },
   "perfume": {
    "answer": "Air China's checked baggage page covers cosmetics that contain alcohol: each container may hold at most 5 L, there is no quantity limit at 24% alcohol or below, and a passenger may carry at most 5 L of products above 24% and up to 70%. For the cabin, the Chinese aviation authority's guide limits liquids to small travel containers.",
@@ -22771,6 +22914,16 @@
      },
      "list": [
       "<strong>Not on the page:</strong> the advisory gives no rule for 100 to 160 Wh."
+     ]
+    },
+    {
+     "h": "🇵🇭 The Philippine aviation regulator’s power bank limits",
+     "p": "Not from PAL: a PhilStar Life report (7 March 2025) of a reminder by the Civil Aviation Authority of the Philippines (CAAP), read 28 November 2026. Less reliable than the authority’s own text, and older than PAL’s advisory above.",
+     "list": [
+      "Power banks are not allowed in checked baggage; hand carry is permitted.",
+      "Up to 100 Wh needs no approval, 100 to 160 Wh needs the airline’s approval, and above 160 Wh may not fly.",
+      "PAL’s own advisory above stops at 100 Wh per power bank, so on PAL plan on that stricter figure.",
+      "<a href=\"https://philstarlife.com/amp/article/445511-power-banks-exceeding-160wh-not-longer-allowed-flights\" target=\"_blank\" rel=\"noopener\">PhilStar Life: CAAP power bank reminder</a>"
      ]
     }
    ],
